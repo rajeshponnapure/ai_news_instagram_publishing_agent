@@ -1,17 +1,19 @@
 # AI News Summary Report
 
-Generated: 2026-05-17T22:13:22+05:30
-Source: built-in sample emails
+Generated: 2026-05-17T17:02:56+00:00
+Source: grdevelopers.co@gmail.com
 Emails summarized: 1
 
 ## Executive Brief
 
-- OpenAI releases new reasoning tools for developers.
-- The email did not include enough readable detail for a stronger summary.
+- Tracks new AI launch activity from MarkTechPost AI.
+- Best posting angle: explain what changed, who it helps, and why creators should care.
+- Primary entities to watch: NVIDIA, MarkTechPost AI.
+- Likely content themes: model release, developer tools, hardware and compute.
 
 ## Most Mentioned Companies
 
-OpenAI (1)
+NVIDIA (1), MarkTechPost AI (1)
 
 ## Most Mentioned Models
 
@@ -19,24 +21,29 @@ No clear model mentions found.
 
 ## Main Topics
 
-general AI update (1)
+model release (1), developer tools (1), hardware and compute (1), media generation (1)
 
 ## Voice Script Hooks
 
-- OpenAI just made a move in general AI update: OpenAI releases new reasoning tools for developers
+- NVIDIA just made a move in model release: NVIDIA Introduces SANA-WM: A 2.6B-Parameter Open-Source World Model That Generates Minute-Scale 720p Video...
 
 ## Per-Email Summaries
 
-### 1. OpenAI releases new reasoning tools for developers
+### 1. NVIDIA Introduces SANA-WM: A 2.6B-Parameter Open-Source World Model That Generates Minute-Scale 720p Video...
 
-Source date: Wed, 22 Apr 2026 10:00:00 +0530
-Confidence: 0.62
+Source date: Sun, 17 May 2026 21:32:32 +0530
+Confidence: 0.78
+Article: https://www.marktechpost.com/2026/05/16/nvidia-introduces-sana-wm-a-2-6b-parameter-open-source-world-model-that-generates-minute-scale-720p-video-on-a-single-gpu/
+Article title: NVIDIA Introduces SANA-WM: A 2.6B-Parameter Open-Source World Model That Generates Minute-Scale 720p Video on a Single GPU
 
-OpenAI releases new reasoning tools for developers. The email did not include enough readable detail for a stronger summary.
+Article excerpt: NVIDIA Introduces SANA-WM: A 2.6B-Parameter Open-Source World Model That Generates Minute-Scale 720p Video on a Single GPU
+
+A launch alert from MarkTechPost AI, useful for spotting fresh AI products, model upgrades, and developer tools before they become mainstream.
 
 Key points:
-- OpenAI releases new reasoning tools for developers.
-- The email did not include enough readable detail for a stronger summary.
-- The email did not include enough readable detail for a stronger summary.
-Companies: OpenAI
-Topics: general AI update
+- Tracks new AI launch activity from MarkTechPost AI.
+- Best posting angle: explain what changed, who it helps, and why creators should care.
+- Primary entities to watch: NVIDIA, MarkTechPost AI.
+- Likely content themes: model release, developer tools, hardware and compute.
+Companies: NVIDIA, MarkTechPost AI
+Topics: model release, developer tools, hardware and compute, media generation
