@@ -6,6 +6,17 @@ Project folder:
 C:\Users\saimo\OneDrive\Desktop\projects\AI_Instagram_News_Agent
 ```
 
+## Zero-budget cloud automation
+
+If you want the agent to publish to Instagram with no paid hosting, use the free Cloudflare Tunnel path first.
+
+```powershell
+winget install Cloudflare.cloudflared
+powershell -ExecutionPolicy Bypass -File .\scripts\run_free_auto_publish.ps1
+```
+
+This exposes the generated carousel images through a temporary public HTTPS URL so Instagram can fetch them automatically.
+
 ## 1. Enable Gmail IMAP
 
 1. Open Gmail in your browser.

@@ -89,7 +89,7 @@ jobs:
           
           # Add files if they exist
           [ -f reports/latest.md ] && git add reports/latest.md
-          [ -d reports/instagram_posts ] && git add reports/instagram_posts/
+          [ -d reports/instagram_posts ] && git add -f reports/instagram_posts/
           [ -f data/agent.sqlite3 ] && git add data/agent.sqlite3
           
           # Check if there are staged changes and commit/push if so

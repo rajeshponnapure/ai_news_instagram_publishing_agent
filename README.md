@@ -6,6 +6,17 @@
 
 > **Automated AI news summarization & Instagram content generation from email—fully local, completely free, zero paid APIs.**
 
+## Zero-Budget Automation First
+
+If you want the fully automatic cloud version with no paid hosting, start here:
+
+```powershell
+winget install Cloudflare.cloudflared
+powershell -ExecutionPolicy Bypass -File .\scripts\run_free_auto_publish.ps1
+```
+
+This uses a free Cloudflare Tunnel to expose the generated Instagram assets over public HTTPS so the bot can publish without a human in the loop.
+
 Transform AI news emails into beautifully formatted Instagram carousel posts. This intelligent agent reads emails from your inbox, intelligently summarizes article content locally using AI, generates professional markdown reports, and automatically creates image-rich social media content—all while keeping your data private and your costs at $0.
 
 ---

@@ -10,6 +10,7 @@ $ReportsRoot = Join-Path $Root 'reports\instagram_posts'
 $LogDir = Join-Path $Root 'logs'
 $ServerLog = Join-Path $LogDir 'public_media_server.log'
 $ServerErr = Join-Path $LogDir 'public_media_server.err.log'
+$TunnelOut = Join-Path $LogDir 'cloudflared_tunnel.out.log'
 $TunnelLog = Join-Path $LogDir 'cloudflared_tunnel.log'
 $TunnelErr = Join-Path $LogDir 'cloudflared_tunnel.err.log'
 $AgentLog = Join-Path $LogDir 'instagram_auto_publish.log'
@@ -58,27 +59,33 @@ $serverProcess = Start-Process -FilePath 'python' -ArgumentList $pythonServerArg
 Write-Host "[auto-publish] Local media server PID: $($serverProcess.Id)"
 
 $tunnelArgs = @('tunnel', '--url', 'http://127.0.0.1:8088')
-$tunnelProcess = Start-Process -FilePath $cloudflared.Source -ArgumentList $tunnelArgs -PassThru -WindowStyle Hidden -RedirectStandardOutput $TunnelLog -RedirectStandardError $TunnelErr
+$tunnelProcess = Start-Process -FilePath $cloudflared.Source -ArgumentList $tunnelArgs -PassThru -WindowStyle Hidden -RedirectStandardOutput $TunnelOut -RedirectStandardError $TunnelErr
 Write-Host "[auto-publish] Tunnel process PID: $($tunnelProcess.Id)"
 
 try {
     $publicRoot = $null
-    $deadline = (Get-Date).AddSeconds(60)
+    $deadline = (Get-Date).AddSeconds(120)
     while ((Get-Date) -lt $deadline -and -not $publicRoot) {
-        if (Test-Path $TunnelErr) {
-            $tunnelText = Get-Content -Path $TunnelErr -Raw -ErrorAction SilentlyContinue
-            if ($tunnelText) {
-                $match = [regex]::Match($tunnelText, 'https://[a-zA-Z0-9-]+\.trycloudflare\.com')
-                if ($match.Success) {
-                    $publicRoot = $match.Value
+        $tunnelText = @()
+        foreach ($path in @($TunnelErr, $TunnelOut, $TunnelLog)) {
+            if (Test-Path $path) {
+                $content = Get-Content -Path $path -Raw -ErrorAction SilentlyContinue
+                if ($content) {
+                    $tunnelText += $content
                 }
+            }
+        }
+        if ($tunnelText) {
+            $match = [regex]::Match(($tunnelText -join "`n"), 'https://[a-zA-Z0-9-]+\.trycloudflare\.com')
+            if ($match.Success) {
+                $publicRoot = $match.Value
             }
         }
         if (-not $publicRoot) { Start-Sleep -Milliseconds 500 }
     }
 
     if (-not $publicRoot) {
-        throw "Could not detect the Cloudflare Tunnel URL within timeout. Check $TunnelErr"
+        throw "Could not detect the Cloudflare Tunnel URL within timeout. Check $TunnelErr and $TunnelOut"
     }
 
     Write-Host "[auto-publish] Public media root: $publicRoot"
