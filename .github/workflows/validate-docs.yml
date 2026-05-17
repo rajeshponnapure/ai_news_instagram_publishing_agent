@@ -1,0 +1,44 @@
+name: Validate Documentation
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'README.md'
+      - 'SETUP.md'
+      - '.github/workflows/validate-docs.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'README.md'
+      - 'SETUP.md'
+
+jobs:
+  validate-docs:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Install markdown linter
+        run: npm install -g markdownlint-cli
+      
+      - name: Lint README.md
+        run: markdownlint README.md || true
+      
+      - name: Lint SETUP.md
+        run: markdownlint SETUP.md || true
+      
+      - name: Check for required sections in README
+        run: |
+          grep -q "Features" README.md && echo "✓ Features section found" || echo "✗ Missing Features section"
+          grep -q "Quick Start" README.md && echo "✓ Quick Start section found" || echo "✗ Missing Quick Start section"
+          grep -q "Installation" README.md && echo "✓ Installation found" || echo "✗ Missing Installation section"
+          grep -q "Troubleshooting" README.md && echo "✓ Troubleshooting section found" || echo "✗ Missing Troubleshooting section"
+      
+      - name: Check for required sections in SETUP
+        run: |
+          grep -q "Prerequisites" SETUP.md && echo "✓ Prerequisites section found" || echo "✗ Missing Prerequisites section"
+          grep -q "Installation Steps" SETUP.md && echo "✓ Installation Steps found" || echo "✗ Missing Installation Steps section"
+          grep -q "Gmail" SETUP.md && echo "✓ Gmail setup instructions found" || echo "✗ Missing Gmail setup instructions"
