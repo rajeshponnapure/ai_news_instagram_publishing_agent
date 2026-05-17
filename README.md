@@ -229,8 +229,8 @@ The agent auto-detects Ollama and uses it if available. Without Ollama, it falls
 
 ### Python Requirements
 - **Python 3.10+** (for modern language features)
-- **No pip packages needed** for basic operation
-- See [requirements.txt](requirements.txt) for optional dependencies
+- **One required pip package**: [Pillow](https://python-pillow.org/) for Instagram carousel image generation
+- See [requirements.txt](requirements.txt) for the installed dependency list
 
 ---
 
