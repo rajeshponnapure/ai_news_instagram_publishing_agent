@@ -6,6 +6,10 @@ on:
     - cron: '*/15 * * * *'
   workflow_dispatch:  # Allow manual trigger
 
+permissions:
+  contents: write
+  pull-requests: read
+
 jobs:
   process-emails:
     runs-on: ubuntu-latest
@@ -74,10 +78,18 @@ jobs:
       - name: Commit and push generated reports
         if: success()
         run: |
-          git config --global user.name "AI News Agent"
-          git config --global user.email "actions@github.com"
-          git add reports/latest.md reports/instagram_posts/ || true
-          git add data/agent.sqlite3 || true
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update news reports and Instagram assets [skip ci]" && git push)
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Add files if they exist
+          [ -f reports/latest.md ] && git add reports/latest.md
+          [ -d reports/instagram_posts ] && git add reports/instagram_posts/
+          [ -f data/agent.sqlite3 ] && git add data/agent.sqlite3
+          
+          # Check if there are staged changes and commit/push if so
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update news reports and Instagram assets [skip ci]"
+            git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
+          else
+            echo "No changes to commit"
+          fi
