@@ -1,0 +1,86 @@
+{
+  "email_received_at": "2026-05-18T04:49+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Vercel Labs Introduces Zero, a Systems Programming Language Designed So AI Agents Can Read, Repair, and...",
+  "subject": "\ud83d\ude80 AI Digest \u2014 18 May 2026 | 50 updates \u00b7 50 launches",
+  "source_date": "Sun, 17 May 2026 21:49:14 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "NVIDIA"
+  ],
+  "models": [
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.marktechpost.com/2026/05/17/vercel-labs-introduces-zero-a-systems-programming-language-designed-so-ai-agents-can-read-repair-and-ship-native-programs/",
+  "article_title": "Vercel Labs Introduces Zero, a Systems Programming Language Designed So AI Agents Can Read, Repair, and Ship Native Programs",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a9b2769e44e9c98e.png",
+  "article_image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-25.png",
+  "article_items": [
+    {
+      "url": "https://www.marktechpost.com/2026/05/17/vercel-labs-introduces-zero-a-systems-programming-language-designed-so-ai-agents-can-read-repair-and-ship-native-programs/",
+      "title": "Vercel Labs Introduces Zero, a Systems Programming Language Designed So AI Agents Can Read, Repair, and Ship Native Programs",
+      "description": "Zero is an experimental systems language from Vercel Labs that compiles to sub-10 KiB native binaries, emits JSON diagnostics",
+      "excerpt": "Zero is an experimental systems language from Vercel Labs that compiles to sub-10 KiB native binaries, emits JSON diagnostics",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a9b2769e44e9c98e.png",
+      "image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-25.png"
+    },
+    {
+      "url": "https://www.gsmarena.com/googles_new_gemini_intelligence_will_only_be_available_on_a_handful_of_the_best_current_android_flag-news-72861.php",
+      "title": "Google\u2019s new Gemini Intelligence will only be available on a handful of the best current Android flagships for now",
+      "description": "The advanced AI-powered feature seems to have some crazy high requirements, both hardware and arbitrary ones. A few days ago, Google announced Gemini...",
+      "excerpt": "The advanced AI-powered feature seems to have some crazy high requirements, both hardware and arbitrary ones. A few days ago, Google announced Gemini...",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/71aa6a082303e8b9.jpg",
+      "image_url": "https://fdn.gsmarena.com/imgroot/news/26/05/gemini-intelligence-smartphone-requirements/-952x498w6/gsmarena_001.jpg"
+    },
+    {
+      "url": "https://news.slashdot.org/story/26/05/16/2047205/how-i-added-an-llm-based-grammar-checking--tex-math-import-to-libreoffice",
+      "title": "How I Added an LLM-Based Grammar Checking + TeX Math Import To LibreOffice - Slashdot",
+      "description": "Former Microsoft programmer Keith Curtis \"wrote and self-published After the Software Wars to explain the caliber of free and open source software,\" according to his entry on Wikipedia, \"and why he believes Linux is technically superior to any proprietary OS.\" He's also KeithCu (long-time Slashdot...",
+      "excerpt": "Former Microsoft programmer Keith Curtis \"wrote and self-published After the Software Wars to explain the caliber of free and open source software,\" according to his entry on Wikipedia, \"and why he believes Linux is technically superior to any proprietary OS.\" He's also KeithCu (long-time Slashdot...",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/565d964813f26d40.png",
+      "image_url": "https://a.fsdn.com/sd/topics/opensource_64.png"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/05/16/cerebras-blockbuster-ipo-boosts-hype-for-spacex-openai-anthropic.html",
+      "title": "Cerebras' blockbuster IPO boosts hype for SpaceX and OpenAI, but crowds out smaller players",
+      "description": "After Cerebras popped in its market debut, all attention turns to SpaceX, OpenAI and Anthropic, which are already among the most valuable U.S. tech companies.",
+      "excerpt": "After Cerebras popped in its market debut, all attention turns to SpaceX, OpenAI and Anthropic, which are already among the most valuable U.S. tech companies.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/94d39ebd18942bb0.jpg",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108307041-1778771828789-gettyimages-2275640162-CEREBRAS_IPO.jpeg?v=1778771866&w=1920&h=1080"
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-04-28-nemotron-omni",
+      "title": "Run Highly Efficient Multimodal Agentic AI with NVIDIA Nemotron 3 Nano Omni Using vLLM",
+      "description": "We are excited to support the newly released NVIDIA Nemotron 3 Nano Omni model on vLLM.",
+      "excerpt": "We are excited to support the newly released NVIDIA Nemotron 3 Nano Omni model on vLLM.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9a99cb1e307038d2.png",
+      "image_url": "https://vllm.ai/og?title=Run%20Highly%20Efficient%20Multimodal%20Agentic%20AI%20with%20NVIDIA%20Nemotron%203%20Nano%20Omni%20Using%20vLLM&authors=NVIDIA%20Nemotron%20Team&date=2026-04-28&path=/blog"
+    }
+  ],
+  "slides": [
+    "Vercel Labs Introduces Zero, a Systems Programming Language Designed So AI Agents...",
+    "Vercel Labs Introduces Zero, a Systems Programming Language Designed So AI Agents...",
+    "What happens next",
+    "Google\u2019s new Gemini Intelligence will only be available on a handful of the best...",
+    "Google\u2019s new Gemini Intelligence will only be available on a handful of the best...",
+    "What happens next",
+    "How I Added an LLM-Based Grammar Checking + TeX Math Import To LibreOffice - Slashdot",
+    "How I Added an LLM-Based Grammar Checking + TeX Math Import To LibreOffice - Slashdot",
+    "What happens next",
+    "Follow for the next AI drop"
+  ]
+}
