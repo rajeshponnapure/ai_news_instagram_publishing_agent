@@ -1,0 +1,15 @@
+New in Deep Agents v0.6
+
+Deep Agents 0.6 ships a code interpreter, harness profiles, streaming v3, delta channels, and ContextHub, making agents faster, cheaper, and more scalable.
+
+Covered from 2 linked story/stories in this email.
+
+Quick takeaways:
+- Tracks 2 new launches AI launch activity from LangChain Blog, GitHub Blog.
+- Best posting angle: explain what changed, who it helps, and why creators should care.
+- Primary entities to watch: Anthropic, gpt-5.2-codex, gpt-5.3-codex.
+- Likely content themes: model release, developer tools, hardware and compute.
+
+Disclaimer: This post is an AI-assisted news summary. Check the linked source before making business, legal, or investment decisions.
+
+#Anthropic #Gpt52Codex #Gpt53Codex #ModelRelease #DeveloperTools #HardwareAndCompute #AiNews #AiTools #Automation #TechUpdate #ArtificialIntelligence
