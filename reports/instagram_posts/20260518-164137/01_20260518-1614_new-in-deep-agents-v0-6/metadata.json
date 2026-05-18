@@ -1,0 +1,85 @@
+{
+  "email_received_at": "2026-05-18T16:14+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "New in Deep Agents v0.6",
+  "subject": "\ud83d\udea8 AI Alert: 5 new launches \u2014 LangChain Blog",
+  "source_date": "Mon, 18 May 2026 09:14:28 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Amazon",
+    "AWS"
+  ],
+  "models": [
+    "gpt-5.2-codex",
+    "gpt-5.3-codex",
+    "Claude"
+  ],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.langchain.com/blog/deep-agents-0-6",
+  "article_title": "New in Deep Agents v0.6",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f9f6178befe89a09.png",
+  "article_image_url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a047cf0dfb6150e5807787d_New%20in%20Deep%20Agents.png",
+  "article_items": [
+    {
+      "url": "https://www.langchain.com/blog/deep-agents-0-6",
+      "title": "New in Deep Agents v0.6",
+      "description": "Deep Agents 0.6 ships a code interpreter, harness profiles, streaming v3, delta channels, and ContextHub, making agents faster, cheaper, and more scalable.",
+      "excerpt": "Deep Agents 0.6 ships a code interpreter, harness profiles, streaming v3, delta channels, and ContextHub, making agents faster, cheaper, and more scalable.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f9f6178befe89a09.png",
+      "image_url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a047cf0dfb6150e5807787d_New%20in%20Deep%20Agents.png"
+    },
+    {
+      "url": "https://www.langchain.com/blog/interrupt-2026-overview",
+      "title": "Everything we shipped at Interrupt",
+      "description": "From autonomous debugging to one-line deploys, here's every product LangChain launched at Interrupt 2026 to help teams build, test, and ship agents in production.",
+      "excerpt": "From autonomous debugging to one-line deploys, here's every product LangChain launched at Interrupt 2026 to help teams build, test, and ship agents in production.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6158615a38b6e3cb.img",
+      "image_url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a0b0ffdf203491984cb01ce_everything-we-shipped.avif"
+    },
+    {
+      "url": "https://www.langchain.com/blog/tuning-deep-agents-different-models",
+      "title": "Tuning Deep Agents to Work Well with Different Models",
+      "description": "Deep Agents was previously designed in a generic way to work well across model families. Today we\u2019re adding model-specific profiles to adjust prompts, tools, and middleware. We ship profiles for OpenAI, Anthropic, and Google models out of the box, which we see leads to a 10\u201320 point jump on a subset of tau2-bench over the default harness.",
+      "excerpt": "Deep Agents was previously designed in a generic way to work well across model families. Today we\u2019re adding model-specific profiles to adjust prompts, tools, and middleware. We ship profiles for OpenAI, Anthropic, and Google models out of the box, which we see leads to a 10\u201320 point jump on a subset of tau2-bench over the default harness.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/94674085647b4dd9.png",
+      "image_url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/69f20536df00c0eb15eab1d3_blue-77%20characters%20max.png"
+    },
+    {
+      "url": "https://www.zdnet.com/article/microsoft-edge-passwords-ram-plaintext/",
+      "title": "Microsoft Edge just stopped storing your passwords in plaintext - but you'll need the latest update",
+      "description": "Though Microsoft claimed that storing plaintext passwords in memory was by design, the company has changed the behavior to better protect your passwords.",
+      "excerpt": "Though Microsoft claimed that storing plaintext passwords in memory was by design, the company has changed the behavior to better protect your passwords.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3048ae3944b3fc5c.jpg",
+      "image_url": "https://www.zdnet.com/a/img/resize/5f9c26dc969c039af9580ef3ecbe16ae094ef62f/2026/05/06/9ada5742-25e0-49a6-aed6-cecede83a470/microsoft-edge.jpg?auto=webp&fit=crop&height=675&width=1200"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-custom-code-based-evaluators-in-amazon-bedrock-agentcore/",
+      "title": "Build custom code-based evaluators in Amazon Bedrock AgentCore | Amazon Web Services",
+      "description": "In this post, you will implement four Lambda-based custom code evaluators for a financial market-intelligence agent, register each with AgentCore, and run them in on-demand and online modes. You will also see how to combine custom code-based evaluators with built-in evaluators and how to call other AWS services for grounded fact-checking, PII detection, and real-time alerting.",
+      "excerpt": "In this post, you will implement four Lambda-based custom code evaluators for a financial market-intelligence agent, register each with AgentCore, and run them in on-demand and online modes. You will also see how to combine custom code-based evaluators with built-in evaluators and how to call other AWS services for grounded fact-checking, PII detection, and real-time alerting.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4b258e1bfa2a94a1.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/18/ml-20799.png"
+    }
+  ],
+  "slides": [
+    "New in Deep Agents v0.6",
+    "New in Deep Agents v0.6",
+    "What happens next",
+    "Everything we shipped at Interrupt",
+    "Everything we shipped at Interrupt",
+    "What happens next",
+    "Tuning Deep Agents to Work Well with Different Models",
+    "Tuning Deep Agents to Work Well with Different Models",
+    "What happens next",
+    "Follow for the next AI drop"
+  ]
+}
