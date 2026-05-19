@@ -1,0 +1,87 @@
+{
+  "email_received_at": "2026-05-19T19:24+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Google I/O 2026 live: Our takes on Gemini 3.5, Spark, Android XR, and more",
+  "subject": "\ud83d\udea8 AI Alert: 21 new launches \u2014 ZDNet AI, CNBC Technology",
+  "source_date": "Tue, 19 May 2026 12:24:00 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "ZDNet AI",
+    "CNBC Technology",
+    "Shield AI",
+    "AI Studio"
+  ],
+  "models": [
+    "Claude",
+    "Gemini 3.5",
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "media generation"
+  ],
+  "article_url": "https://www.zdnet.com/article/google-io-05-19-2026-live-blog/",
+  "article_title": "Google I/O 2026 live: Our takes on Gemini 3.5, Spark, Android XR, and more",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c618f1190012fce4.jpg",
+  "article_image_url": "https://www.zdnet.com/a/img/resize/a51153c4d1a4e53d2da41218afebe9489ca556ce/2026/05/08/b82b10eb-f9ab-468e-b9f1-27bb60e7cb8f/google-io-zdnet-02.jpg?auto=webp&fit=crop&height=675&width=1200",
+  "article_items": [
+    {
+      "url": "https://www.zdnet.com/article/google-io-05-19-2026-live-blog/",
+      "title": "Google I/O 2026 live: Our takes on Gemini 3.5, Spark, Android XR, and more",
+      "description": "We're reporting live from Mountain View at Google's annual developer conference today. Stay tuned for the latest updates.",
+      "excerpt": "We're reporting live from Mountain View at Google's annual developer conference today. Stay tuned for the latest updates.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c618f1190012fce4.jpg",
+      "image_url": "https://www.zdnet.com/a/img/resize/a51153c4d1a4e53d2da41218afebe9489ca556ce/2026/05/08/b82b10eb-f9ab-468e-b9f1-27bb60e7cb8f/google-io-zdnet-02.jpg?auto=webp&fit=crop&height=675&width=1200"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html",
+      "title": "Google debuts new AI models, personal AI agents in effort to keep pace with OpenAI and Anthropic",
+      "description": "Google made a number of AI announcements at its annual developer conference, rolling out more-advanced models and agentic tools for its expansive user base.",
+      "excerpt": "Google made a number of AI announcements at its annual developer conference, rolling out more-advanced models and agentic tools for its expansive user base.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/74e115fa7996a4c0.jpg",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108309206-1779213871939-108309206-1779210844055-108309206-1779210774213-gettyimages-2276576410-GOOGLE_IO.jpg?v=1779213879&w=1920&h=1080"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/05/19/pentagon-taps-shield-ai-for-low-cost-missile-program.html",
+      "title": "Pentagon taps Shield AI for low-cost drone program as Iran war accelerates demand for cheap drones",
+      "description": "Shield AI is fresh off a $1 billion funding round, which valued the company at $12.7 billion",
+      "excerpt": "Shield AI is fresh off a $1 billion funding round, which valued the company at $12.7 billion",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/42e070005c567a2b.jpg",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108265728-1771006314333-gettyimages-2260956079-SHIELD_AI.jpeg?v=1771006376&w=1920&h=1080"
+    },
+    {
+      "url": "https://techcrunch.com/2026/05/19/with-gemini-3-5-flash-google-bets-its-next-ai-wave-on-agents-not-chatbots/",
+      "title": "With Gemini 3.5 Flash, Google bets its next AI wave on agents, not chatbots | TechCrunch",
+      "description": "Google launched Gemini 3.5 Flash, its most powerful coding and agentic AI model yet, at the company's annual developer conference. It is capable of autonomously executing complex tasks and building software from scratch.",
+      "excerpt": "Google launched Gemini 3.5 Flash, its most powerful coding and agentic AI model yet, at the company's annual developer conference. It is capable of autonomously executing complex tasks and building software from scratch.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7f6fe4546431b397.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/IMG_1192.jpg?resize=1200,900"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/",
+      "title": "I/O 2026",
+      "description": "At Google I/O 2026, we shared how we\u2019re making AI more helpful for everyone. See everything we announced.",
+      "excerpt": "At Google I/O 2026, we shared how we\u2019re making AI more helpful for everyone. See everything we announced.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6ff39053886b3e8f.png",
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOCollection_social.max-1440x810.png"
+    }
+  ],
+  "slides": [
+    "Google I/O 2026 live: Our takes on Gemini 3.5, Spark, Android XR, and more",
+    "Google I/O 2026 live: Our takes on Gemini 3.5, Spark, Android XR, and more",
+    "What happens next",
+    "Google debuts new AI models, personal AI agents in effort to keep pace with OpenAI...",
+    "Google debuts new AI models, personal AI agents in effort to keep pace with OpenAI...",
+    "What happens next",
+    "Pentagon taps Shield AI for low-cost drone program as Iran war accelerates demand...",
+    "Pentagon taps Shield AI for low-cost drone program as Iran war accelerates demand...",
+    "What happens next",
+    "Follow for the next AI drop"
+  ]
+}
