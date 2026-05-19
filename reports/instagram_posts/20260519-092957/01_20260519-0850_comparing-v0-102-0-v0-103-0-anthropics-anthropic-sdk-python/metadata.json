@@ -1,0 +1,46 @@
+{
+  "email_received_at": "2026-05-19T08:50+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Comparing v0.102.0...v0.103.0 \u00b7 anthropics/anthropic-sdk-python",
+  "subject": "\ud83d\udea8 AI Alert: 1 new launch \u2014 Anthropic",
+  "source_date": "Tue, 19 May 2026 01:50:01 -0700",
+  "companies": [
+    "Anthropic"
+  ],
+  "models": [],
+  "topics": [
+    "model release",
+    "developer tools"
+  ],
+  "article_url": "https://github.com/anthropics/anthropic-sdk-python/compare/v0.102.0...v0.103.0",
+  "article_title": "Comparing v0.102.0...v0.103.0 \u00b7 anthropics/anthropic-sdk-python",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/10a710533628b2b4.png",
+  "article_image_url": "https://opengraph.githubassets.com/36fca0398aa53e11ee37c5654067d88075ebdb5d03ae877d51c4cc8aecd597ba/anthropics/anthropic-sdk-python",
+  "article_items": [
+    {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/compare/v0.102.0...v0.103.0",
+      "title": "Comparing v0.102.0...v0.103.0 \u00b7 anthropics/anthropic-sdk-python",
+      "description": "Contribute to anthropics/anthropic-sdk-python development by creating an account on GitHub.",
+      "excerpt": "Contribute to anthropics/anthropic-sdk-python development by creating an account on GitHub.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/10a710533628b2b4.png",
+      "image_url": "https://opengraph.githubassets.com/36fca0398aa53e11ee37c5654067d88075ebdb5d03ae877d51c4cc8aecd597ba/anthropics/anthropic-sdk-python"
+    },
+    {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.103.0",
+      "title": "Release v0.103.0 \u00b7 anthropics/anthropic-sdk-python",
+      "description": "0.103.0 (2026-05-19) Full Changelog: v0.102.0...v0.103.0 Features client: Add support for self-hosted sandboxes in CMA with sandbox helpers (e5625b0)",
+      "excerpt": "0.103.0 (2026-05-19) Full Changelog: v0.102.0...v0.103.0 Features client: Add support for self-hosted sandboxes in CMA with sandbox helpers (e5625b0)",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/32f7aed607cd5453.png",
+      "image_url": "https://opengraph.githubassets.com/328e7b859a970b69c842b2bd304b3952cd4c61c40677471f2b9034907935e7e5/anthropics/anthropic-sdk-python/releases/tag/v0.103.0"
+    }
+  ],
+  "slides": [
+    "Comparing v0.102.0...v0.103.0 \u00b7 anthropics/anthropic-sdk-python",
+    "Comparing v0.102.0...v0.103.0 \u00b7 anthropics/anthropic-sdk-python",
+    "What happens next",
+    "Release v0.103.0 \u00b7 anthropics/anthropic-sdk-python",
+    "Release v0.103.0 \u00b7 anthropics/anthropic-sdk-python",
+    "What happens next",
+    "Follow for the next AI drop"
+  ]
+}
