@@ -1,0 +1,78 @@
+{
+  "email_received_at": "2026-05-20T22:52+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "xAI burned $6.4B last year \u2014 SpaceX\u2019s IPO filing shows why the spending is far from over | TechCrunch",
+  "subject": "\ud83d\udea8 AI Alert: 4 new launches \u2014 TechCrunch AI, CNBC Technology",
+  "source_date": "Wed, 20 May 2026 15:52:02 -0700",
+  "companies": [
+    "OpenAI",
+    "Anthropic",
+    "Apple",
+    "Amazon",
+    "xAI",
+    "TechCrunch AI",
+    "CNBC Technology",
+    "While AI"
+  ],
+  "models": [
+    "Grok"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://techcrunch.com/2026/05/20/xai-burned-6-4b-last-year-spacexs-ipo-filing-shows-why-the-spending-is-far-from-over/",
+  "article_title": "xAI burned $6.4B last year \u2014 SpaceX\u2019s IPO filing shows why the spending is far from over | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2bc8d346c84bf394.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2259661359.jpg?w=1024",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/05/20/xai-burned-6-4b-last-year-spacexs-ipo-filing-shows-why-the-spending-is-far-from-over/",
+      "title": "xAI burned $6.4B last year \u2014 SpaceX\u2019s IPO filing shows why the spending is far from over | TechCrunch",
+      "description": "SpaceX's IPO filing reveals xAI lost $6.4 billion in 2025 while planning a massive Grok expansion \u2014 offering the first public look at Elon Musk's AI financials and more details about his ambitions.",
+      "excerpt": "SpaceX's IPO filing reveals xAI lost $6.4 billion in 2025 while planning a massive Grok expansion \u2014 offering the first public look at Elon Musk's AI financials and more details about his ambitions.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2bc8d346c84bf394.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2259661359.jpg?w=1024"
+    },
+    {
+      "url": "https://techcrunch.com/2026/05/20/musks-xai-is-being-sued-over-its-data-center-generators-now-its-buying-2-8b-more/",
+      "title": "Musk\u2019s xAI is being sued over its data center generators \u2014 now it\u2019s buying $2.8B more | TechCrunch",
+      "description": "Elon Musk's xAI said it will buy $2.8 billion worth of natural gas turbines over the next three years, according to SpaceX's IPO filing.",
+      "excerpt": "Elon Musk's xAI said it will buy $2.8 billion worth of natural gas turbines over the next three years, according to SpaceX's IPO filing.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fe25dd04ea857a21.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-2217198328.jpeg?resize=1200,800"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/05/20/jeff-bezos-taxes-ai-corporations-trump.html",
+      "title": "Bezos defends billionaires, hypes AI, talks taxes and praises Trump in CNBC interview",
+      "description": "Jeff Bezos rejected accusations that Amazon's decision to release a documentary on first lady Melania Trump was an effort to curry favor with the president.",
+      "excerpt": "Jeff Bezos rejected accusations that Amazon's decision to release a documentary on first lady Melania Trump was an effort to curry favor with the president.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9aadb5d3daa343af.jpg",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108309737-1779283120589-JeffBezos9.jpg?v=1779308190&w=1920&h=1080"
+    },
+    {
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.4.0",
+      "title": "Release langchain-fireworks==1.4.0 \u00b7 langchain-ai/langchain",
+      "description": "Changes since langchain-fireworks==1.3.1 release(fireworks): 1.4.0 (#37582) feat(fireworks): migrate to fireworks-ai 1.x SDK (#37581) chore(model-profiles): refresh model profile data (#37574) chor...",
+      "excerpt": "Changes since langchain-fireworks==1.3.1 release(fireworks): 1.4.0 (#37582) feat(fireworks): migrate to fireworks-ai 1.x SDK (#37581) chore(model-profiles): refresh model profile data (#37574) chor...",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/98165ef91678f409.png",
+      "image_url": "https://opengraph.githubassets.com/001beb28716f521691028a30dab8e1be4f5db0f844b566a94dc861909e102c8d/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.4.0"
+    }
+  ],
+  "slides": [
+    "xAI burned $6.4B last year \u2014 SpaceX\u2019s IPO filing shows why the spending is far from...",
+    "xAI burned $6.4B last year \u2014 SpaceX\u2019s IPO filing shows why the spending is far from...",
+    "What happens next",
+    "Musk\u2019s xAI is being sued over its data center generators \u2014 now it\u2019s buying $2.8B...",
+    "Musk\u2019s xAI is being sued over its data center generators \u2014 now it\u2019s buying $2.8B...",
+    "What happens next",
+    "Bezos defends billionaires, hypes AI, talks taxes and praises Trump in CNBC interview",
+    "Bezos defends billionaires, hypes AI, talks taxes and praises Trump in CNBC interview",
+    "What happens next",
+    "Follow for the next AI drop"
+  ]
+}
