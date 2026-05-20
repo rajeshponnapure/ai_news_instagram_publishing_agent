@@ -1,0 +1,80 @@
+{
+  "email_received_at": "2026-05-20T17:32+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "OpenAI barrels towards IPO that may happen in September | TechCrunch",
+  "subject": "\ud83d\udea8 AI Alert: 4 new launches \u2014 TechCrunch AI, CNBC Technology, AWS Machine Learning",
+  "source_date": "Wed, 20 May 2026 10:32:26 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Amazon",
+    "AWS",
+    "xAI",
+    "Mistral",
+    "Hugging Face"
+  ],
+  "models": [
+    "Gemini 3.5",
+    "Gemini",
+    "Mistral"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://techcrunch.com/2026/05/20/openai-barrels-towards-ipo-that-may-happen-in-september/",
+  "article_title": "OpenAI barrels towards IPO that may happen in September | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/62d171249159fac1.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2025/05/GettyImages-2213399157.jpg?resize=1200,800",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/05/20/openai-barrels-towards-ipo-that-may-happen-in-september/",
+      "title": "OpenAI barrels towards IPO that may happen in September | TechCrunch",
+      "description": "A day after Elon Musk lost his lawsuit that threatened OpenAI's structure, leadership and finances, OpenAI is reportedly back to prepping for its IPO.",
+      "excerpt": "A day after Elon Musk lost his lawsuit that threatened OpenAI's structure, leadership and finances, OpenAI is reportedly back to prepping for its IPO.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/62d171249159fac1.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/05/GettyImages-2213399157.jpg?resize=1200,800"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/05/20/openai-ipo-filing.html",
+      "title": "OpenAI to confidentially file for IPO as soon as Friday: Source",
+      "description": "OpenAI is working with banks including Goldman Sachs and Morgan Stanley.",
+      "excerpt": "OpenAI is working with banks including Goldman Sachs and Morgan Stanley.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5429799a521e6681.jpg",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108276787-1773253292188-gettyimages-2265445220-BLACKROCK_INFRASTRUCTURE_SUMMIT.jpeg?v=1779296174&w=1920&h=1080"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-real-time-voice-applications-with-amazon-sagemaker-ai-and-vllm/",
+      "title": "Build real-time voice applications with Amazon SageMaker AI and vLLM | Amazon Web Services",
+      "description": "Voice agents, live captioning, contact center analytics, and accessibility tools all depend on real-time speech-to-text, where your application streams audio in and receives transcription back simultaneously over a single persistent connection. Traditional request-response inference falls short here because transcription cannot begin until the entire audio recording has been received, adding latency that breaks the real-time [\u2026]",
+      "excerpt": "Voice agents, live captioning, contact center analytics, and accessibility tools all depend on real-time speech-to-text, where your application streams audio in and receives transcription back simultaneously over a single persistent connection. Traditional request-response inference falls short here because transcription cannot begin until the entire audio recording has been received, adding latency that breaks the real-time [\u2026]",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fa782b169c5dbf1f.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/20/20779.png"
+    },
+    {
+      "url": "https://www.zdnet.com/article/google-says-ai-agents-spending-your-money-is-a-more-fun-way-to-shop/",
+      "title": "Google says AI agents spending your money is a 'more fun' way to shop",
+      "description": "Google's new Universal Cart consolidates products from multiple retailers into one place.",
+      "excerpt": "Google's new Universal Cart consolidates products from multiple retailers into one place.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0f6f558d748c70bb.jpg",
+      "image_url": "https://www.zdnet.com/a/img/resize/80b8213f924a956e442cd8b10031a205e145ca20/2026/05/19/5dba0949-7913-4f5b-a69e-46616b4c9be4/img-2175.jpg?auto=webp&fit=crop&height=675&width=1200"
+    }
+  ],
+  "slides": [
+    "OpenAI barrels towards IPO that may happen in September | TechCrunch",
+    "OpenAI barrels towards IPO that may happen in September | TechCrunch",
+    "What happens next",
+    "OpenAI to confidentially file for IPO as soon as Friday: Source",
+    "OpenAI to confidentially file for IPO as soon as Friday: Source",
+    "What happens next",
+    "Build real-time voice applications with Amazon SageMaker AI and vLLM | Amazon Web...",
+    "Build real-time voice applications with Amazon SageMaker AI and vLLM | Amazon Web...",
+    "What happens next",
+    "Follow for the next AI drop"
+  ]
+}
