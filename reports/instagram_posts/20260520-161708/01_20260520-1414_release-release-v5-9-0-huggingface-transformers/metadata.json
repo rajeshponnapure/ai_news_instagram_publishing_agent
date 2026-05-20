@@ -1,0 +1,66 @@
+{
+  "email_received_at": "2026-05-20T14:14+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Release Release v5.9.0 \u00b7 huggingface/transformers",
+  "subject": "\ud83d\udea8 AI Alert: 3 new launches \u2014 Hugging Face, TechCrunch AI, CNBC Technology",
+  "source_date": "Wed, 20 May 2026 07:14:05 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Microsoft",
+    "Amazon",
+    "Hugging Face",
+    "Cohere",
+    "TechCrunch AI",
+    "CNBC Technology"
+  ],
+  "models": [],
+  "topics": [
+    "model release",
+    "funding or business",
+    "developer tools",
+    "media generation"
+  ],
+  "article_url": "https://github.com/huggingface/transformers/releases/tag/v5.9.0",
+  "article_title": "Release Release v5.9.0 \u00b7 huggingface/transformers",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5b91ac31fa45f719.png",
+  "article_image_url": "https://opengraph.githubassets.com/3c81e6ea30dd6942476b819afda0837e24a1a317b64d9ab469b4c7eaf332b4b1/huggingface/transformers/releases/tag/v5.9.0",
+  "article_items": [
+    {
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.9.0",
+      "title": "Release Release v5.9.0 \u00b7 huggingface/transformers",
+      "description": "Release v5.9.0 New Model additions Cohere2Moe Command A+ is a Mixture-of-Experts (MoE) language model from Cohere that features a hybrid attention pattern combining sliding window and full attentio...",
+      "excerpt": "Release v5.9.0 New Model additions Cohere2Moe Command A+ is a Mixture-of-Experts (MoE) language model from Cohere that features a hybrid attention pattern combining sliding window and full attentio...",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5b91ac31fa45f719.png",
+      "image_url": "https://opengraph.githubassets.com/3c81e6ea30dd6942476b819afda0837e24a1a317b64d9ab469b4c7eaf332b4b1/huggingface/transformers/releases/tag/v5.9.0"
+    },
+    {
+      "url": "https://techcrunch.com/2026/05/20/nanoclaw-creator-turns-down-20m-buyout-offer-raises-12m-seed-instead/",
+      "title": "NanoClaw creator turns down $20M buyout offer, raises $12M seed instead | TechCrunch",
+      "description": "NanoCo, the company behind OpenClaw alternative NanoClaw, has raised a $12 million seed after a viral launch, the founders tell TechCrunch.",
+      "excerpt": "NanoCo, the company behind OpenClaw alternative NanoClaw, has raised a $12 million seed after a viral launch, the founders tell TechCrunch.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d5190981543286d3.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/03/NanoClaw-fouders-2.jpg?resize=1200,708"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/05/20/bezos-ai-bubble-concerns-amazon-prometheum-blue-origin.html",
+      "title": "Bezos brushes off concerns of an AI bubble: 'You shouldn't worry about it'",
+      "description": "Amazon founder Jeff Bezos shrugged off concerns of a looming AI bubble, saying the massive investments will ultimately drive the technology forward over time.",
+      "excerpt": "Amazon founder Jeff Bezos shrugged off concerns of a looming AI bubble, saying the massive investments will ultimately drive the technology forward over time.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/391736c990edd9b0.jpg",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108207487-17594964962025-10-03t115108z_554891998_rc2b4hawf640_rtrmadp_0_italy-techweek.jpeg?v=1759496522&w=1920&h=1080"
+    }
+  ],
+  "slides": [
+    "Release Release v5.9.0 \u00b7 huggingface/transformers",
+    "Release Release v5.9.0 \u00b7 huggingface/transformers",
+    "What happens next",
+    "NanoClaw creator turns down $20M buyout offer, raises $12M seed instead | TechCrunch",
+    "NanoClaw creator turns down $20M buyout offer, raises $12M seed instead | TechCrunch",
+    "What happens next",
+    "Bezos brushes off concerns of an AI bubble: 'You shouldn't worry about it'",
+    "Bezos brushes off concerns of an AI bubble: 'You shouldn't worry about it'",
+    "What happens next",
+    "Follow for the next AI drop"
+  ]
+}
