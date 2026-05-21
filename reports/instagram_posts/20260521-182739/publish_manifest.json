@@ -12,10 +12,20 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/01_20260521-1709_from-token-streams-to-agent-streams-part-1/slide_06.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/01_20260521-1709_from-token-streams-to-agent-streams-part-1/slide_07.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/01_20260521-1709_from-token-streams-to-agent-streams-part-1/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/01_20260521-1709_from-token-streams-to-agent-streams-part-1/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/01_20260521-1709_from-token-streams-to-agent-streams-part-1/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/01_20260521-1709_from-token-streams-to-agent-streams-part-1/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/01_20260521-1709_from-token-streams-to-agent-streams-part-1/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/01_20260521-1709_from-token-streams-to-agent-streams-part-1/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/01_20260521-1709_from-token-streams-to-agent-streams-part-1/slide_07.png"
+      ],
+      "status": "publish_failed_retryable",
       "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 3 concrete signal(s)"
+      "story_selected_reason": "article image available, source URL available, 3 concrete signal(s)",
+      "creation_id": "18043891055577438",
+      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"Aj2CsQgpXxzI1g-Mb8i9Sbd\"}}"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/02_20260521-1709_from-token-streams-to-agent-streams-part-2",
@@ -30,10 +40,21 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/02_20260521-1709_from-token-streams-to-agent-streams-part-2/slide_07.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/02_20260521-1709_from-token-streams-to-agent-streams-part-2/slide_08.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/02_20260521-1709_from-token-streams-to-agent-streams-part-2/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/02_20260521-1709_from-token-streams-to-agent-streams-part-2/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/02_20260521-1709_from-token-streams-to-agent-streams-part-2/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/02_20260521-1709_from-token-streams-to-agent-streams-part-2/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/02_20260521-1709_from-token-streams-to-agent-streams-part-2/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/02_20260521-1709_from-token-streams-to-agent-streams-part-2/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/02_20260521-1709_from-token-streams-to-agent-streams-part-2/slide_07.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/02_20260521-1709_from-token-streams-to-agent-streams-part-2/slide_08.png"
+      ],
+      "status": "publish_failed_retryable",
       "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 7 concrete signal(s)"
+      "story_selected_reason": "article image available, source URL available, 7 concrete signal(s)",
+      "creation_id": "18043891622577438",
+      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"A6wi_Ru02XISC0KjLrIQoUa\"}}"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/03_20260521-1709_from-token-streams-to-agent-streams-part-3",
@@ -48,10 +69,21 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/03_20260521-1709_from-token-streams-to-agent-streams-part-3/slide_07.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/03_20260521-1709_from-token-streams-to-agent-streams-part-3/slide_08.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/03_20260521-1709_from-token-streams-to-agent-streams-part-3/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/03_20260521-1709_from-token-streams-to-agent-streams-part-3/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/03_20260521-1709_from-token-streams-to-agent-streams-part-3/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/03_20260521-1709_from-token-streams-to-agent-streams-part-3/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/03_20260521-1709_from-token-streams-to-agent-streams-part-3/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/03_20260521-1709_from-token-streams-to-agent-streams-part-3/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/03_20260521-1709_from-token-streams-to-agent-streams-part-3/slide_07.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/03_20260521-1709_from-token-streams-to-agent-streams-part-3/slide_08.png"
+      ],
+      "status": "publish_failed_retryable",
       "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 3 concrete signal(s)"
+      "story_selected_reason": "article image available, source URL available, 3 concrete signal(s)",
+      "creation_id": "18043892891577438",
+      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"ACTv5RlLhCEbxdkQ0spVKm7\"}}"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/04_20260521-1709_from-token-streams-to-agent-streams-part-4",
@@ -65,10 +97,20 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/04_20260521-1709_from-token-streams-to-agent-streams-part-4/slide_06.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/04_20260521-1709_from-token-streams-to-agent-streams-part-4/slide_07.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/04_20260521-1709_from-token-streams-to-agent-streams-part-4/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/04_20260521-1709_from-token-streams-to-agent-streams-part-4/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/04_20260521-1709_from-token-streams-to-agent-streams-part-4/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/04_20260521-1709_from-token-streams-to-agent-streams-part-4/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/04_20260521-1709_from-token-streams-to-agent-streams-part-4/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/04_20260521-1709_from-token-streams-to-agent-streams-part-4/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/04_20260521-1709_from-token-streams-to-agent-streams-part-4/slide_07.png"
+      ],
+      "status": "publish_failed_retryable",
       "story_score": 1.0,
-      "story_selected_reason": "source URL available, 4 concrete signal(s)"
+      "story_selected_reason": "source URL available, 4 concrete signal(s)",
+      "creation_id": "18043893503577438",
+      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"AMmpNl0Em3NeNHNfGXzs1Xs\"}}"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/05_20260521-1709_from-token-streams-to-agent-streams-part-5",
@@ -83,10 +125,21 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/05_20260521-1709_from-token-streams-to-agent-streams-part-5/slide_07.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/05_20260521-1709_from-token-streams-to-agent-streams-part-5/slide_08.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/05_20260521-1709_from-token-streams-to-agent-streams-part-5/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/05_20260521-1709_from-token-streams-to-agent-streams-part-5/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/05_20260521-1709_from-token-streams-to-agent-streams-part-5/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/05_20260521-1709_from-token-streams-to-agent-streams-part-5/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/05_20260521-1709_from-token-streams-to-agent-streams-part-5/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/05_20260521-1709_from-token-streams-to-agent-streams-part-5/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/05_20260521-1709_from-token-streams-to-agent-streams-part-5/slide_07.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-182739/05_20260521-1709_from-token-streams-to-agent-streams-part-5/slide_08.png"
+      ],
+      "status": "publish_failed_retryable",
       "story_score": 1.0,
-      "story_selected_reason": "source URL available, 9 concrete signal(s)"
+      "story_selected_reason": "source URL available, 9 concrete signal(s)",
+      "creation_id": "18043894241577438",
+      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"At8_qzg38YQRrT4Js4kFcWl\"}}"
     }
   ]
 }
