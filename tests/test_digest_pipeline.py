@@ -13,7 +13,14 @@ from email_summary_agent.models import EmailItem, EmailSummary
 
 
 class DigestPipelineTests(unittest.TestCase):
-    def test_single_news_email_creates_four_slide_plan(self) -> None:
+    def setUp(self) -> None:
+        self._reference_patch = patch("email_summary_agent.instagram._find_reference_image_for_article", return_value="")
+        self._reference_patch.start()
+
+    def tearDown(self) -> None:
+        self._reference_patch.stop()
+
+    def test_single_short_news_email_creates_four_slide_plan(self) -> None:
         summary = _summary_with_articles(1)
 
         parts = _split_summary_for_carousels(summary)
@@ -22,7 +29,16 @@ class DigestPipelineTests(unittest.TestCase):
         self.assertEqual(len(parts), 1)
         self.assertEqual([slide["kind"] for slide in slides], ["image", "text", "text", "cta"])
 
-    def test_two_news_digest_creates_seven_slide_plan(self) -> None:
+    def test_single_long_news_email_creates_five_slide_plan(self) -> None:
+        summary = _summary_with_articles(1, long=True)
+
+        parts = _split_summary_for_carousels(summary)
+        slides = _build_slide_specs(parts[0], datetime(2026, 5, 21, 9, 0))
+
+        self.assertEqual(len(parts), 1)
+        self.assertEqual([slide["kind"] for slide in slides], ["image", "text", "text", "text", "cta"])
+
+    def test_two_news_digest_creates_nine_slide_plan(self) -> None:
         summary = _summary_with_articles(2)
 
         parts = _split_summary_for_carousels(summary)
@@ -39,7 +55,7 @@ class DigestPipelineTests(unittest.TestCase):
         slide_counts = [len(_build_slide_specs(part, datetime(2026, 5, 21, 9, 0))) for part in parts]
 
         self.assertEqual(len(parts), 2)
-        self.assertEqual(slide_counts, [10, 4])
+        self.assertEqual(slide_counts, [7, 7])
         self.assertTrue(parts[0].headline.endswith("Part 1"))
         self.assertTrue(parts[1].headline.endswith("Part 2"))
 
@@ -98,13 +114,20 @@ class DigestPipelineTests(unittest.TestCase):
         self.assertEqual(slides[0]["image_path"], "data/article_assets/reference.jpg")
 
 
-def _summary_with_articles(count: int) -> EmailSummary:
+def _summary_with_articles(count: int, long: bool = False) -> EmailSummary:
+    detail = (
+        "It explains what changed, who it affects, what technical details matter, how the market could react, "
+        "why developers should care, what adoption signals are worth watching, and what limitations or follow-up "
+        "announcements would make the update more important for real-world AI workflows. "
+    )
+    if long:
+        detail = detail * 5
     articles = [
         {
             "url": f"https://example.com/story-{index}",
             "title": f"Story {index} headline",
             "description": f"Story {index} describes an important AI update with enough detail for a summary slide. "
-            f"It explains what changed, who it affects, and what to watch next.",
+            f"{detail}",
             "excerpt": f"Story {index} excerpt with useful context for creators and developers.",
             "image_path": "",
             "image_url": "",

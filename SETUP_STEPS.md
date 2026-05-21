@@ -98,9 +98,12 @@ IMAP_PASSWORD
 EMAIL_SENDER_FILTER
 IG_USER_ID
 IG_ACCESS_TOKEN
+FB_PAGE_ID                 # optional, enables Facebook Page publishing
+FB_PAGE_ACCESS_TOKEN       # optional; use the Page token with pages_manage_posts
 ```
 
 Then open Settings -> Pages and enable GitHub Pages for GitHub Actions. The workflow `.github/workflows/instagram-auto-publish.yml` will run every 15 minutes.
+To rebuild all posts once after a reset, run the workflow manually and set `rebuild_all=true`.
 
 ### Manual Testing Before Automation
 

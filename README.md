@@ -197,6 +197,11 @@ CREATE_INSTAGRAM_POSTS=true
 AUTO_PUBLISH_INSTAGRAM=false
 IG_USER_ID=your_instagram_id
 IG_ACCESS_TOKEN=your_token
+
+# Facebook Page Publishing (Optional)
+AUTO_PUBLISH_FACEBOOK=false
+FB_PAGE_ID=your_facebook_page_id
+FB_PAGE_ACCESS_TOKEN=your_page_access_token
 ```
 
 ### Advanced Settings
@@ -208,6 +213,7 @@ IG_ACCESS_TOKEN=your_token
 | `MAX_ARTICLE_LINKS_PER_EMAIL` | 5 | Limit article extraction per email |
 | `ENRICH_ARTICLES` | true | Fetch and parse full article content |
 | `AUTO_PUBLISH_INSTAGRAM` | false | Automatically post to Instagram |
+| `AUTO_PUBLISH_FACEBOOK` | false | Also publish generated slide images to a Facebook Page |
 
 ---
 

@@ -5,10 +5,15 @@ import re
 import urllib.error
 import urllib.request
 from collections import Counter
+from pathlib import Path
 from typing import Any
 
 from .models import EmailItem, EmailSummary
 from .article_enricher import ArticleData
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+SUMMARY_SKILL_PATH = PROJECT_ROOT / "skills" / "instagram-ai-news-summary-v2.md"
 
 
 STOP_WORDS = {
@@ -252,9 +257,12 @@ class SummaryProvider:
 Return only JSON with these exact keys:
 headline, summary, key_points, companies, models, topics, confidence.
 
+Summary skill:
+{_load_summary_skill()}
+
 Rules:
 - Summarize the AI news in plain English for a faceless Instagram news workflow.
-- key_points must be 3 to 5 short bullets.
+- key_points must be 5 to 8 useful article-derived bullets.
 - companies, models, and topics must be arrays of strings.
 - confidence must be a number from 0 to 1.
 - Do not invent facts that are not in the email.
@@ -293,12 +301,23 @@ Body:
             source_date=email.date,
             headline=_string(parsed.get("headline")) or _fallback_headline(email),
             summary=_string(parsed.get("summary")) or summarize_locally(email).summary,
-            key_points=_string_list(parsed.get("key_points"))[:5]
+            key_points=_string_list(parsed.get("key_points"))[:8]
             or summarize_locally(email).key_points,
             companies=_string_list(parsed.get("companies"))[:8],
             models=_string_list(parsed.get("models"))[:8],
             topics=_string_list(parsed.get("topics"))[:8],
             confidence=_float(parsed.get("confidence"), 0.7),
+        )
+
+
+def _load_summary_skill() -> str:
+    try:
+        return SUMMARY_SKILL_PATH.read_text(encoding="utf-8")[:3500]
+    except OSError:
+        return (
+            "Summarize the whole linked article in a human AI-news editor voice. "
+            "Cover what happened, why it matters, and what to watch next. "
+            "Use concrete article details and avoid generic category labels."
         )
 
 
@@ -670,24 +689,24 @@ def _human_article_summary(article: ArticleData) -> tuple[str, list[str]]:
     sentences = [sentence for sentence in _split_sentences(source) if not _is_low_value_sentence(sentence)]
     if not sentences:
         fallback = article.description or article.excerpt or article.title or "This update is worth watching."
-        return _trim_sentence(fallback, 760), [_trim_sentence(fallback, 180)]
+        return _trim_sentence(fallback, 1400), [_trim_sentence(fallback, 220)]
 
     ranked = _rank_sentences(sentences)
-    chosen = [sentences[index] for index, _score in sorted(ranked[:6])]
+    chosen = [sentences[index] for index, _score in sorted(ranked[:10])]
     if not chosen:
-        chosen = sentences[:4]
+        chosen = sentences[:8]
 
     title = article.title.strip()
     opener = chosen[0]
-    detail = " ".join(chosen[1:5])
+    detail = " ".join(chosen[1:9])
     if title and title.lower() not in opener.lower():
         summary = f"{title}. {opener} {detail}".strip()
     else:
         summary = f"{opener} {detail}".strip()
 
     points = []
-    for sentence in chosen[:5]:
-        point = _trim_sentence(sentence, 190)
+    for sentence in chosen[:8]:
+        point = _trim_sentence(sentence, 240)
         if point and point not in points and not _is_low_value_sentence(point):
             points.append(point)
-    return _trim_sentence(summary, 950), points[:5]
+    return _trim_sentence(summary, 1800), points[:8]

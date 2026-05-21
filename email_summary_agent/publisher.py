@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 import time
 import urllib.parse
 import urllib.request
@@ -66,6 +67,8 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
             _publish_container_with_retry(settings, creation_id)
             post["status"] = "published"
             post["published_at"] = datetime.now().astimezone().isoformat(timespec="seconds")
+            if settings.auto_publish_facebook:
+                _publish_facebook_post(settings, post)
             published += 1
         except RuntimeError as exc:
             post["status"] = "publish_failed_retryable" if _is_retryable_publish_error(str(exc)) else "publish_failed"
@@ -73,6 +76,33 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
             manifest_path.write_text(json.dumps(manifest, ensure_ascii=True, indent=2), encoding="utf-8")
             if post["status"] == "publish_failed":
                 raise
+    manifest_path.write_text(json.dumps(manifest, ensure_ascii=True, indent=2), encoding="utf-8")
+    return published
+
+
+def publish_ready_facebook_posts(settings: Settings, manifest_path: Path) -> int:
+    if not settings.auto_publish_facebook:
+        return 0
+    if not settings.fb_page_id or not settings.fb_page_access_token:
+        raise ValueError("FB_PAGE_ID and FB_PAGE_ACCESS_TOKEN are required for Facebook auto-publishing.")
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    published = 0
+    for post in manifest.get("posts", []):
+        if post.get("facebook_status") == "published":
+            continue
+        if post.get("status") not in {"published", "ready_for_publish"}:
+            continue
+        urls = [url for url in post.get("public_slide_urls", []) if url]
+        if not urls:
+            continue
+        try:
+            _publish_facebook_post(settings, post)
+            published += 1
+        except RuntimeError as exc:
+            post["facebook_status"] = "publish_failed"
+            post["facebook_error"] = str(exc)
+            manifest_path.write_text(json.dumps(manifest, ensure_ascii=True, indent=2), encoding="utf-8")
+            raise
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=True, indent=2), encoding="utf-8")
     return published
 
@@ -99,6 +129,45 @@ def _create_carousel_container(settings: Settings, image_urls: list[str], captio
         },
     )
     return parent["id"]
+
+
+def _publish_facebook_post(settings: Settings, post: dict) -> None:
+    if post.get("facebook_status") == "published":
+        return
+    urls = [url for url in post.get("public_slide_urls", []) if url][:10]
+    if not urls:
+        return
+    media_ids = []
+    for image_url in urls:
+        photo = _facebook_graph_post(
+            settings,
+            f"{settings.fb_page_id}/photos",
+            {
+                "url": image_url,
+                "published": "false",
+                "temporary": "true",
+            },
+        )
+        if photo.get("id"):
+            media_ids.append(photo["id"])
+    if not media_ids:
+        raise RuntimeError("Facebook did not return any uploaded photo IDs.")
+    fields = {
+        "message": _facebook_caption(post.get("caption", "")),
+        "published": "true",
+    }
+    for index, media_id in enumerate(media_ids):
+        fields[f"attached_media[{index}]"] = json.dumps({"media_fbid": media_id})
+    result = _facebook_graph_post(settings, f"{settings.fb_page_id}/feed", fields)
+    post["facebook_status"] = "published"
+    post["facebook_post_id"] = result.get("id", "")
+    post["facebook_published_at"] = datetime.now().astimezone().isoformat(timespec="seconds")
+
+
+def _facebook_caption(caption: str) -> str:
+    caption = re.sub(r"\n{3,}", "\n\n", caption or "").strip()
+    suffix = "\n\nAlso published on Instagram by Graitech."
+    return (caption[:4500] + suffix)[:5000]
 
 
 def _publish_container(settings: Settings, creation_id: str) -> dict:
@@ -156,6 +225,19 @@ def _graph_post(settings: Settings, path: str, fields: dict[str, str]) -> dict:
         raise RuntimeError(f"Graph API request failed for {path}: {exc.code} {exc.reason}. Response: {body}") from exc
 
 
+def _facebook_graph_post(settings: Settings, path: str, fields: dict[str, str]) -> dict:
+    url = f"https://graph.facebook.com/{settings.ig_api_version}/{path}"
+    payload = {**fields, "access_token": settings.fb_page_access_token}
+    data = urllib.parse.urlencode(payload).encode("utf-8")
+    request = urllib.request.Request(url, data=data, method="POST")
+    try:
+        with urllib.request.urlopen(request, timeout=60) as response:
+            return json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"Facebook Graph API request failed for {path}: {exc.code} {exc.reason}. Response: {body}") from exc
+
+
 def _graph_get(settings: Settings, path: str, fields: dict[str, str]) -> dict:
     url = f"https://graph.facebook.com/{settings.ig_api_version}/{path}"
     query = urllib.parse.urlencode({**fields, "access_token": settings.ig_access_token})
@@ -206,7 +288,15 @@ def _existing_manifest_posts(manifest_path: Path) -> dict[str, dict]:
 
 def _carry_publish_fields(existing: dict) -> dict:
     carried = {}
-    for key in ("creation_id", "published_at", "error"):
+    for key in (
+        "creation_id",
+        "published_at",
+        "error",
+        "facebook_status",
+        "facebook_post_id",
+        "facebook_published_at",
+        "facebook_error",
+    ):
         if existing.get(key):
             carried[key] = existing[key]
     return carried

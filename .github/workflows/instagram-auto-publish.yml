@@ -4,6 +4,15 @@ on:
   schedule:
     - cron: '*/15 * * * *'
   workflow_dispatch:
+    inputs:
+      rebuild_all:
+        description: 'Rebuild posts from all matching sender emails once'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
 
 concurrency:
   group: instagram-auto-publish
@@ -59,8 +68,13 @@ jobs:
       - name: Install Playwright browser
         run: python -m playwright install chromium
 
-      - name: Process new AI news email
-        run: python -m email_summary_agent --poll-once
+      - name: Process AI news email
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.rebuild_all }}" = "true" ]; then
+            python -m email_summary_agent --once --all --reprocess
+          else
+            python -m email_summary_agent --poll-once
+          fi
 
       - name: Commit generated reports and state
         id: commit
@@ -84,9 +98,19 @@ jobs:
         run: |
           if find reports/instagram_posts -mindepth 2 -maxdepth 2 -type d 2>/dev/null | grep -q .; then
             echo "has_batch=true" >> "$GITHUB_OUTPUT"
+            echo "Publishable carousel batch found. Deploy and publish jobs will run."
           else
             echo "has_batch=false" >> "$GITHUB_OUTPUT"
+            echo "No publishable carousel batch found."
+            echo "This is expected when no new sender email arrived, or immediately after a reset when --poll-once seeds the mailbox watermark."
+            echo "To rebuild old mailbox items, run this workflow manually with rebuild_all=true."
           fi
+
+      - name: Explain skipped publish
+        if: steps.detect.outputs.has_batch != 'true'
+        run: |
+          echo "Deploy and publish are skipped because generate produced no reports/instagram_posts batch."
+          echo "Nothing failed; there is simply nothing new to upload or publish."
 
       - name: Upload GitHub Pages artifact
         if: steps.detect.outputs.has_batch == 'true'
@@ -118,8 +142,11 @@ jobs:
 
     env:
       AUTO_PUBLISH_INSTAGRAM: 'true'
+      AUTO_PUBLISH_FACEBOOK: ${{ secrets.FB_PAGE_ID != '' }}
       IG_USER_ID: ${{ secrets.IG_USER_ID }}
       IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+      FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN || secrets.IG_ACCESS_TOKEN }}
       IG_API_VERSION: v24.0
       PUBLIC_MEDIA_BASE_URL: ${{ needs.deploy-pages.outputs.page_url }}instagram_posts
       PYTHONUTF8: '1'

@@ -20,12 +20,31 @@ from .models import EmailSummary
 CANVAS_W = 1080
 CANVAS_H = 1350
 MAX_CAROUSEL_SLIDES = 10
+STORIES_PER_CAROUSEL = 2
 POSTING_SLOTS = ("08:00", "14:00", "18:00", "22:00")
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 WATERMARK_CANDIDATES = [PROJECT_ROOT / "GR watermark.png", PROJECT_ROOT / "GR Watermark.png", PROJECT_ROOT / "GR watermark.svg"]
 FINAL_LOGO_CANDIDATES = [PROJECT_ROOT / "GR INSTA LOGO.png", PROJECT_ROOT / "GRInstaLogo.png", PROJECT_ROOT / "GR INSTA LOGO.svg"]
 ARTICLE_ASSET_DIR = PROJECT_ROOT / "data" / "article_assets"
 REFERENCE_IMAGE_DIR = ARTICLE_ASSET_DIR / "reference_images"
+REFERENCE_BRANDS = (
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "AWS",
+    "NVIDIA",
+    "Apple",
+    "LangChain",
+    "Mistral",
+    "Perplexity",
+    "Hugging Face",
+    "Cohere",
+    "Salesforce",
+)
 ACCENT_GREEN = "#C8FF00"
 PAGE_BLACK = "#050505"
 TEXT_WHITE = "#FFFFFF"
@@ -66,10 +85,10 @@ def write_instagram_carousels(
 ) -> list[Path]:
     """Create Instagram carousel batches.
 
-    A single-story summary produces one 4-slide post. A digest summary with
-    multiple article_items is split into carousel parts of up to three stories
-    each because the Instagram publishing API commonly caps carousel children at
-    10 media items: 3 stories * 3 slides + one CTA slide.
+    A single-story summary produces one image slide, three content slides, and
+    one CTA slide. Digest summaries are split into parts of up to two stories
+    each because Instagram caps carousel children at 10 media items:
+    2 stories * 4 slides + one CTA slide.
     """
     if not summaries:
         return []
@@ -142,9 +161,9 @@ def write_instagram_carousels(
 
 def _split_summary_for_carousels(summary: EmailSummary) -> list[EmailSummary]:
     articles = _article_items(summary)
-    if len(articles) <= 3:
+    if len(articles) <= STORIES_PER_CAROUSEL:
         return [summary]
-    chunks = [articles[index : index + 3] for index in range(0, len(articles), 3)]
+    chunks = [articles[index : index + STORIES_PER_CAROUSEL] for index in range(0, len(articles), STORIES_PER_CAROUSEL)]
     parts: list[EmailSummary] = []
     for part_number, chunk in enumerate(chunks, start=1):
         headline = f"{_tighten(summary.headline or summary.subject or 'Daily AI Digest', 88)} - Part {part_number}"
@@ -188,7 +207,7 @@ def _build_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[s
         ]
 
     slides: list[dict[str, Any]] = []
-    for article_index, article in enumerate(articles[:3], start=1):
+    for article_index, article in enumerate(articles[:STORIES_PER_CAROUSEL], start=1):
         headline = _tighten(
             _clean_public_text(str(article.get("title") or summary.headline or summary.subject or "AI update"))
             or _tighten(summary.headline or summary.subject or "AI update", 88),
@@ -209,16 +228,16 @@ def _build_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[s
         )
 
         narrative = _compose_article_narrative(summary, article)
-        first_half, second_half = _split_narrative_for_two_pages(narrative)
-        if not second_half:
-            second_half = _fallback_story_second_page(summary, article)
+        content_pages = _split_narrative_for_content_pages(narrative)
+        while len(content_pages) < 2:
+            content_pages.append(_fallback_story_page(summary, article, len(content_pages) + 1))
 
         slides.append(
             {
                 "kind": "text",
                 "eyebrow": f"STORY {article_index:02d} - WHAT HAPPENED",
                 "title": headline,
-                "body": _tighten(first_half, 820),
+                "body": _tighten(content_pages[0], 620),
                 "supporting": _supporting_note(summary, article, article_index, "Why this matters", variant="why"),
                 "image_path": "",
                 "topic": topic,
@@ -228,15 +247,28 @@ def _build_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[s
         slides.append(
             {
                 "kind": "text",
-                "eyebrow": f"STORY {article_index:02d} - NEXT",
-                "title": "What to watch next",
-                "body": _tighten(second_half, 780),
-                "supporting": _supporting_note(summary, article, article_index, "Watch this angle", variant="watch"),
+                "eyebrow": f"STORY {article_index:02d} - WHY IT MATTERS",
+                "title": "Why it matters",
+                "body": _tighten(content_pages[1], 620),
+                "supporting": _supporting_note(summary, article, article_index, "The bigger signal", variant="signal"),
                 "image_path": "",
                 "topic": topic,
                 "url": article.get("url", ""),
             }
         )
+        if len(content_pages) >= 3:
+            slides.append(
+                {
+                    "kind": "text",
+                    "eyebrow": f"STORY {article_index:02d} - WATCH NEXT",
+                    "title": "What to watch next",
+                    "body": _tighten(content_pages[2], 620),
+                    "supporting": _supporting_note(summary, article, article_index, "Watch this next", variant="watch"),
+                    "image_path": "",
+                    "topic": topic,
+                    "url": article.get("url", ""),
+                }
+            )
 
     slides.append(
         {
@@ -257,9 +289,9 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
     image = Image.new("RGBA", (CANVAS_W, CANVAS_H), PAGE_BLACK)
     draw = ImageDraw.Draw(image, "RGBA")
     # Large fonts for full-page text coverage with minimal whitespace
-    font_eyebrow = _font(ImageFont, 22, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
-    font_title = _font(ImageFont, 50, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/arialbd.ttf"])
-    font_body = _font(ImageFont, 34, bold=False, preferred=["C:/Windows/Fonts/seguisb.ttf", "C:/Windows/Fonts/segoeui.ttf", "C:/Windows/Fonts/arial.ttf"])
+    font_eyebrow = _font(ImageFont, 34, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
+    font_title = _font(ImageFont, 58, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/arialbd.ttf"])
+    font_body = _font(ImageFont, 32, bold=False, preferred=["C:/Windows/Fonts/seguisb.ttf", "C:/Windows/Fonts/segoeui.ttf", "C:/Windows/Fonts/arial.ttf"])
     font_meta = _font(ImageFont, 22, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
     font_cta = _font(ImageFont, 42, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf"])
     font_brand = _font(ImageFont, 108, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
@@ -306,19 +338,19 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
         _draw_centered_text(draw, "Save this post for your next AI briefing.", (130, 1000, 950, 1080), font_body, TEXT_WHITE, 1)
         _draw_centered_text(draw, f"{slide_number:02d}/{total_slides:02d}", (450, 1120, 630, 1170), font_meta, ACCENT_GREEN, 1)
     else:
-        _draw_centered_text(draw, slide["eyebrow"], (170, 86, 910, 132), font_eyebrow, ACCENT_GREEN, 1)
-        title_box = (120, 152, 960, 336)
+        _draw_centered_text(draw, slide["eyebrow"], (110, 74, 970, 130), font_eyebrow, ACCENT_GREEN, 1)
+        title_box = (110, 152, 970, 338)
         # Draw the title top-aligned to avoid large vertical centering gaps
         _draw_top_centered_text_block(draw, slide.get("title", ""), title_box, font_title, TEXT_WHITE, max_lines=2)
-        body_box = (120, 340, 960, 880)
+        body_box = (110, 348, 970, 892)
         _draw_left_text_block(
             draw,
             slide["body"],
             box=body_box,
             font=font_body,
             fill=SOFT_WHITE,
-            line_gap=6,
-            max_lines=11,
+            line_gap=5,
+            max_lines=13,
         )
         supporting = str(slide.get("supporting", "")).strip()
         if supporting:
@@ -718,10 +750,10 @@ def _compose_article_narrative(summary: EmailSummary, article: dict[str, Any]) -
     points = [point for point in points if point and point.lower() not in primary.lower()]
     narrative = primary
     if points:
-        narrative = f"{primary} Key details: {' '.join(points[:5])}"
+        narrative = f"{primary} Key details: {' '.join(points[:8])}"
     if title and title.lower() not in narrative.lower():
         narrative = f"{title}. {narrative}"
-    return _tighten(re.sub(r"\s+", " ", narrative).strip(), 1500)
+    return _tighten(re.sub(r"\s+", " ", narrative).strip(), 2400)
 
 
 def _split_narrative_for_two_pages(text: str) -> tuple[str, str]:
@@ -747,6 +779,63 @@ def _split_narrative_for_two_pages(text: str) -> tuple[str, str]:
         second = first[split_at:].strip()
         first = first[:split_at].strip()
     return _tighten(first, 680), _tighten(second, 650)
+
+
+def _split_narrative_for_content_pages(text: str) -> list[str]:
+    text = re.sub(r"\s+", " ", text or "").strip()
+    if not text:
+        return []
+    if len(text) <= 1040:
+        return _split_narrative_for_page_count(text, page_count=2, target_chars=520)
+    return _split_narrative_for_page_count(text, page_count=3, target_chars=520)
+
+
+def _split_narrative_for_three_pages(text: str) -> list[str]:
+    return _split_narrative_for_page_count(text, page_count=3, target_chars=520)
+
+
+def _split_narrative_for_page_count(text: str, page_count: int, target_chars: int) -> list[str]:
+    text = re.sub(r"\s+", " ", text or "").strip()
+    if not text:
+        return []
+    sentences = [sentence.strip() for sentence in re.split(r"(?<=[.!?])\s+", text) if sentence.strip()]
+    if len(sentences) < page_count and len(text) > target_chars:
+        return [_tighten(part, 620) for part in _split_by_length(text, page_count)]
+
+    pages = [""] * page_count
+    page_index = 0
+    for sentence in sentences:
+        candidate = " ".join(part for part in [pages[page_index], sentence] if part).strip()
+        if len(candidate) <= target_chars or not pages[page_index]:
+            pages[page_index] = candidate
+        elif page_index < page_count - 1:
+            page_index += 1
+            pages[page_index] = sentence
+        else:
+            pages[page_index] = " ".join([pages[page_index], sentence]).strip()
+
+    pages = [_tighten(page, 620) for page in pages if page.strip()]
+    if len(pages) == 1 and len(pages[0]) > target_chars and page_count > 1:
+        pages = [_tighten(part, 620) for part in _split_by_length(pages[0], page_count)]
+    elif page_count == 3 and len(pages) == 2 and len(pages[0]) > 500:
+        first_split = _split_by_length(pages[0], 2)
+        pages = [_tighten(first_split[0], 620), _tighten(first_split[1], 620), pages[1]]
+    return pages[:page_count]
+
+
+def _split_by_length(text: str, parts: int) -> list[str]:
+    words = text.split()
+    if not words:
+        return []
+    target = max(1, len(words) // parts)
+    chunks: list[str] = []
+    for index in range(parts):
+        start = index * target
+        end = None if index == parts - 1 else (index + 1) * target
+        chunk = " ".join(words[start:end]).strip()
+        if chunk:
+            chunks.append(chunk)
+    return chunks
 
 
 def _fetch_unsplash_for_topic(topic: str, width: int, height: int) -> str | None:
@@ -784,29 +873,47 @@ def _download_url(url: str, dest: Path) -> None:
 
 
 def _find_reference_image_for_article(article: dict[str, Any], topic: str) -> str | None:
-    query = _reference_image_query(article, topic)
-    if not query:
-        return None
-    cache_key = hashlib.sha1(query.lower().encode("utf-8")).hexdigest()[:16]
-    for suffix in (".jpg", ".jpeg", ".png", ".webp"):
-        cached = REFERENCE_IMAGE_DIR / f"{cache_key}{suffix}"
-        if cached.exists():
-            return str(cached)
-    image_url = _search_wikimedia_image(query)
-    if not image_url:
-        return None
-    return _download_reference_image(image_url, cache_key)
+    for query in _reference_image_queries(article, topic):
+        cache_key = hashlib.sha1(query.lower().encode("utf-8")).hexdigest()[:16]
+        for suffix in (".jpg", ".jpeg", ".png", ".webp"):
+            cached = REFERENCE_IMAGE_DIR / f"{cache_key}{suffix}"
+            if cached.exists():
+                return str(cached)
+        image_url = _search_wikimedia_image(query)
+        if image_url:
+            downloaded = _download_reference_image(image_url, cache_key)
+            if downloaded:
+                return downloaded
+    return None
 
 
-def _reference_image_query(article: dict[str, Any], topic: str) -> str:
+def _reference_image_queries(article: dict[str, Any], topic: str) -> list[str]:
     title = _strip_decorative_symbols(str(article.get("title") or "")).strip()
     source = _source_label_from_url(str(article.get("url") or ""))
-    parts = [title, topic, source]
-    query = " ".join(part for part in parts if part)
-    query = re.sub(r"\b(update|launch|announces|announced|new|latest|story)\b", " ", query, flags=re.I)
-    query = re.sub(r"[^A-Za-z0-9 .&+-]+", " ", query)
-    query = re.sub(r"\s+", " ", query).strip()
-    return _tighten(query, 120)
+    raw_candidates = [
+        title,
+        *_brand_queries(title),
+        source,
+        topic,
+        "artificial intelligence" if "ai" in f"{title} {topic}".lower() else "",
+    ]
+    queries: list[str] = []
+    seen: set[str] = set()
+    for raw in raw_candidates:
+        query = re.sub(r"\b(update|launch|announces|announced|new|latest|story|research|hub|plans)\b", " ", raw, flags=re.I)
+        query = re.sub(r"[^A-Za-z0-9 .&+-]+", " ", query)
+        query = re.sub(r"\s+", " ", query).strip()
+        query = _tighten(query, 120)
+        key = query.lower()
+        if len(query) >= 3 and key not in seen:
+            seen.add(key)
+            queries.append(query)
+    return queries
+
+
+def _brand_queries(text: str) -> list[str]:
+    lowered = text.lower()
+    return [brand for brand in REFERENCE_BRANDS if brand.lower() in lowered]
 
 
 def _search_wikimedia_image(query: str) -> str | None:
@@ -837,6 +944,8 @@ def _search_wikimedia_image(query: str) -> str | None:
         image_url = str(info.get("url") or "")
         if not image_url:
             continue
+        if not _image_result_matches_query(query, title, image_url):
+            continue
         if mime not in {"image/jpeg", "image/png", "image/webp"}:
             continue
         if width < 500 or height < 350:
@@ -845,6 +954,38 @@ def _search_wikimedia_image(query: str) -> str | None:
             continue
         return image_url
     return None
+
+
+def _image_result_matches_query(query: str, title: str, image_url: str) -> bool:
+    haystack = f"{title} {urllib.parse.unquote(image_url).lower()}"
+    tokens = _important_query_tokens(query)
+    if not tokens:
+        return False
+    if any(token in haystack for token in tokens):
+        return True
+    return False
+
+
+def _important_query_tokens(query: str) -> list[str]:
+    blocked = {
+        "the",
+        "and",
+        "for",
+        "with",
+        "from",
+        "that",
+        "this",
+        "news",
+        "model",
+        "models",
+        "release",
+        "support",
+        "endpoint",
+        "endpoints",
+        "technology",
+    }
+    tokens = re.findall(r"[A-Za-z][A-Za-z0-9+-]{2,}", query.lower())
+    return [token for token in tokens if token not in blocked and len(token) >= 4]
 
 
 def _download_reference_image(image_url: str, cache_key: str) -> str | None:
@@ -1107,15 +1248,26 @@ def _fallback_public_points(summary: EmailSummary) -> list[str]:
 
 
 def _fallback_story_second_page(summary: EmailSummary, article: dict[str, Any]) -> str:
+    return _fallback_story_page(summary, article, 3)
+
+
+def _fallback_story_page(summary: EmailSummary, article: dict[str, Any], page_number: int) -> str:
     companies = ", ".join(_clean_entity_list(summary.companies)[:3])
     topics = ", ".join(summary.topics[:3])
     title = _tighten(_clean_public_text(str(article.get("title") or summary.headline or "AI update")), 72)
+    if page_number == 1:
+        return f"The main update is {title}. The article points to a concrete AI development rather than a broad category label."
+    if page_number == 2:
+        entity = companies or "the companies and users affected by this update"
+        theme = topics or "AI product adoption"
+        return f"The bigger signal is how this could affect {entity}. The practical angle is {theme}, especially for people tracking AI tools, launches, and platform shifts."
     parts = [
-        f"Story focus: {title}." if title else "",
+        f"Watch how {title} develops next." if title else "",
         f"Teams to watch: {companies}." if companies else "",
-        f"Theme: {topics}." if topics else "",
+        f"Key signal: {topics}." if topics else "",
+        "The next useful signal will be adoption, pricing, benchmarks, limitations, or user reaction.",
     ]
-    return " ".join(part for part in parts if part) or "Watch adoption signals, developer feedback, and the next release milestone."
+    return " ".join(part for part in parts if part)
 
 
 def _dedupe_lead_text(text: str, headline: str) -> str:
@@ -1190,6 +1342,9 @@ def _supporting_note(summary: EmailSummary, article: dict[str, Any], article_ind
     article_title = _tighten(_clean_public_text(str(article.get("title") or summary.headline or summary.subject or "AI update")), 72)
     if variant == "why":
         detail = points[1] if len(points) > 1 else points[0] if points else f"This matters because it changes the practical AI tooling story around {topics}."
+        return f"{heading}\n\n{_tighten(detail, 180)}"
+    if variant == "signal":
+        detail = points[2] if len(points) > 2 else f"The bigger signal is whether this becomes useful in real workflows, not just another announcement."
         return f"{heading}\n\n{_tighten(detail, 180)}"
     detail = points[2] if len(points) > 2 else f"Watch adoption, developer feedback, and follow-up releases around {article_title}."
     return f"{heading}\n\n{_tighten(detail, 180)}"
