@@ -37,6 +37,9 @@ def main() -> int:
         status = post.get("status", "unknown")
         statuses[status] = statuses.get(status, 0) + 1
     print(f"Published {published} carousel(s) from {batch_dir}. Statuses: {statuses}")
+    failed = statuses.get("publish_failed", 0)
+    if failed:
+        return 1
     return 0
 
 

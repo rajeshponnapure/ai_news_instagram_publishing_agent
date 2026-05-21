@@ -20,6 +20,7 @@ jobs:
     timeout-minutes: 25
     outputs:
       changed: ${{ steps.commit.outputs.changed }}
+      has_batch: ${{ steps.detect.outputs.has_batch }}
 
     env:
       IMAP_HOST: imap.gmail.com
@@ -78,15 +79,24 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Detect latest unpublished batch
+        id: detect
+        run: |
+          if find reports/instagram_posts -mindepth 2 -maxdepth 2 -type d 2>/dev/null | grep -q .; then
+            echo "has_batch=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_batch=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Upload GitHub Pages artifact
-        if: steps.commit.outputs.changed == 'true'
+        if: steps.detect.outputs.has_batch == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: reports
 
   deploy-pages:
     needs: generate
-    if: needs.generate.outputs.changed == 'true'
+    if: needs.generate.outputs.has_batch == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

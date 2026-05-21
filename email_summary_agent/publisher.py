@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import time
 import urllib.parse
 import urllib.request
 import urllib.error
@@ -14,10 +15,17 @@ def write_publish_manifest(carousel_dirs: list[Path], public_media_base_url: str
     if not carousel_dirs:
         return None
     batch_dir = carousel_dirs[0].parent
+    manifest_path = batch_dir / "publish_manifest.json"
+    existing_posts = _existing_manifest_posts(manifest_path)
     posts = []
     for index, carousel_dir in enumerate(carousel_dirs):
         slides = sorted(carousel_dir.glob("slide_*.png"))[:10]
         caption_path = carousel_dir / "caption.txt"
+        existing = existing_posts.get(str(carousel_dir), {})
+        existing_status = existing.get("status", "")
+        status = "ready_for_upload" if not public_media_base_url else "ready_for_publish"
+        if existing_status in {"published", "container_created", "publish_failed_retryable"}:
+            status = existing_status
         posts.append(
             {
                 "folder": str(carousel_dir),
@@ -28,10 +36,10 @@ def write_publish_manifest(carousel_dirs: list[Path], public_media_base_url: str
                     for path in slides
                     if public_media_base_url
                 ],
-                "status": "ready_for_upload" if not public_media_base_url else "ready_for_publish",
+                "status": status,
+                **_carry_publish_fields(existing),
             }
         )
-    manifest_path = batch_dir / "publish_manifest.json"
     manifest_path.write_text(json.dumps({"posts": posts}, ensure_ascii=True, indent=2), encoding="utf-8")
     return manifest_path
 
@@ -44,16 +52,27 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     published = 0
     for post in manifest.get("posts", []):
-        if post.get("status") not in {"ready_for_publish", "ready_for_upload"}:
+        if post.get("status") not in {"ready_for_publish", "ready_for_upload", "container_created", "publish_failed_retryable"}:
             continue
         urls = [url for url in post.get("public_slide_urls", []) if url]
         if len(urls) < 2:
             continue
-        creation_id = _create_carousel_container(settings, urls[:10], post.get("caption", ""))
-        _publish_container(settings, creation_id)
-        post["status"] = "published"
-        post["creation_id"] = creation_id
-        published += 1
+        try:
+            creation_id = post.get("creation_id") or _create_carousel_container(settings, urls[:10], post.get("caption", ""))
+            post["creation_id"] = creation_id
+            post["status"] = "container_created"
+            manifest_path.write_text(json.dumps(manifest, ensure_ascii=True, indent=2), encoding="utf-8")
+            _wait_until_container_ready(settings, creation_id)
+            _publish_container_with_retry(settings, creation_id)
+            post["status"] = "published"
+            post["published_at"] = datetime.now().astimezone().isoformat(timespec="seconds")
+            published += 1
+        except RuntimeError as exc:
+            post["status"] = "publish_failed_retryable" if _is_retryable_publish_error(str(exc)) else "publish_failed"
+            post["error"] = str(exc)
+            manifest_path.write_text(json.dumps(manifest, ensure_ascii=True, indent=2), encoding="utf-8")
+            if post["status"] == "publish_failed":
+                raise
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=True, indent=2), encoding="utf-8")
     return published
 
@@ -90,6 +109,40 @@ def _publish_container(settings: Settings, creation_id: str) -> dict:
     )
 
 
+def _publish_container_with_retry(settings: Settings, creation_id: str) -> dict:
+    last_error = ""
+    for attempt in range(1, 7):
+        try:
+            return _publish_container(settings, creation_id)
+        except RuntimeError as exc:
+            last_error = str(exc)
+            if not _is_retryable_publish_error(last_error):
+                raise
+            time.sleep(min(90, attempt * 15))
+    raise RuntimeError(last_error or f"Instagram container {creation_id} was not ready for publishing.")
+
+
+def _wait_until_container_ready(settings: Settings, creation_id: str) -> None:
+    last_status = ""
+    for attempt in range(1, 13):
+        status = _container_status(settings, creation_id)
+        last_status = status.get("status_code", "") or status.get("status", "")
+        if last_status == "FINISHED":
+            return
+        if last_status in {"ERROR", "EXPIRED"}:
+            raise RuntimeError(f"Instagram media container {creation_id} failed with status {last_status}: {status}")
+        time.sleep(min(60, attempt * 10))
+    raise RuntimeError(f"Instagram media container {creation_id} was not ready after waiting. Last status: {last_status}")
+
+
+def _container_status(settings: Settings, creation_id: str) -> dict:
+    return _graph_get(
+        settings,
+        creation_id,
+        {"fields": "status_code,status"},
+    )
+
+
 def _graph_post(settings: Settings, path: str, fields: dict[str, str]) -> dict:
     url = f"https://graph.facebook.com/{settings.ig_api_version}/{path}"
     payload = {**fields, "access_token": settings.ig_access_token}
@@ -103,8 +156,57 @@ def _graph_post(settings: Settings, path: str, fields: dict[str, str]) -> dict:
         raise RuntimeError(f"Graph API request failed for {path}: {exc.code} {exc.reason}. Response: {body}") from exc
 
 
+def _graph_get(settings: Settings, path: str, fields: dict[str, str]) -> dict:
+    url = f"https://graph.facebook.com/{settings.ig_api_version}/{path}"
+    query = urllib.parse.urlencode({**fields, "access_token": settings.ig_access_token})
+    request = urllib.request.Request(f"{url}?{query}", method="GET")
+    try:
+        with urllib.request.urlopen(request, timeout=60) as response:
+            return json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"Graph API request failed for {path}: {exc.code} {exc.reason}. Response: {body}") from exc
+
+
+def _is_retryable_publish_error(message: str) -> bool:
+    lowered = message.lower()
+    return any(
+        marker in lowered
+        for marker in (
+            "media id is not available",
+            "not ready for publishing",
+            "was not ready",
+            '"code":9007',
+            '"error_subcode":2207027',
+            "temporarily",
+            "transient",
+        )
+    )
+
+
 def _public_url(base_url: str, batch_dir: Path, local_path: Path) -> str:
     relative = local_path.relative_to(batch_dir).as_posix()
     return base_url.rstrip("/") + "/" + urllib.parse.quote(batch_dir.name) + "/" + urllib.parse.quote(relative)
 
 
+def _existing_manifest_posts(manifest_path: Path) -> dict[str, dict]:
+    if not manifest_path.exists():
+        return {}
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    posts = {}
+    for post in manifest.get("posts", []):
+        folder = str(post.get("folder", ""))
+        if folder:
+            posts[folder] = post
+    return posts
+
+
+def _carry_publish_fields(existing: dict) -> dict:
+    carried = {}
+    for key in ("creation_id", "published_at", "error"):
+        if existing.get(key):
+            carried[key] = existing[key]
+    return carried
