@@ -33,7 +33,11 @@ def main() -> int:
         return 0
 
     published = publish_ready_carousels(settings, manifest_path)
-    facebook_published = publish_ready_facebook_posts(settings, manifest_path)
+    facebook_published = 0
+    try:
+        facebook_published = publish_ready_facebook_posts(settings, manifest_path)
+    except RuntimeError as fb_exc:
+        print(f"WARNING: Facebook publishing failed: {fb_exc}")
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     statuses = {}
     for post in manifest.get("posts", []):

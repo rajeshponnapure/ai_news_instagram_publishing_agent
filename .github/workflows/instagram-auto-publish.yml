@@ -2,6 +2,9 @@ name: Instagram Auto Publish
 
 on:
   schedule:
+    # Primary cron trigger — acts as a watchdog/recovery in case the
+    # self-chain below misses a beat. GitHub may delay this by up to
+    # 30 min but it ensures the workflow never stays dormant for long.
     - cron: '*/15 * * * *'
   workflow_dispatch:
     inputs:
@@ -14,6 +17,11 @@ on:
           - 'backfill_24h'
           - 'poll_new'
           - 'rebuild_all'
+      _chained:
+        description: 'Internal — set to true when triggered by self-chain'
+        required: false
+        default: 'false'
+        type: string
 
 concurrency:
   group: instagram-auto-publish
@@ -189,3 +197,30 @@ jobs:
             git commit -m 'Update Instagram publish status [skip ci]'
             git push
           fi
+
+  # ─── Self-chain ────────────────────────────────────────────────────────────
+  # Triggers the next run exactly 15 minutes after this one finishes.
+  # This guarantees near-real-time polling even when GitHub's cron scheduler
+  # is delayed or throttled. The cron above acts as a watchdog/recovery only.
+  # Depends only on `generate` so it always runs — even when no new email
+  # was found and the publish/deploy jobs were skipped.
+  self-chain:
+    needs: [generate]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Wait 15 minutes then re-trigger
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          REF: ${{ github.ref_name }}
+        run: |
+          echo "Sleeping 15 minutes before triggering next run..."
+          sleep 900
+          gh workflow run instagram-auto-publish.yml \
+            --repo "$REPO" \
+            --ref "$REF" \
+            --field run_mode=poll_new \
+            --field _chained=true
+          echo "Next run triggered successfully."

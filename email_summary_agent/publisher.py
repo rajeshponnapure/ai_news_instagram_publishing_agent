@@ -68,7 +68,13 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
             post["status"] = "published"
             post["published_at"] = datetime.now().astimezone().isoformat(timespec="seconds")
             if settings.auto_publish_facebook:
-                _publish_facebook_post(settings, post)
+                try:
+                    _publish_facebook_post(settings, post)
+                except RuntimeError as fb_exc:
+                    # Facebook failure must not abort a successful Instagram publish
+                    post["facebook_status"] = "publish_failed"
+                    post["facebook_error"] = str(fb_exc)
+                    print(f"WARNING: Facebook publish failed (Instagram was published successfully): {fb_exc}")
             published += 1
         except RuntimeError as exc:
             post["status"] = "publish_failed_retryable" if _is_retryable_publish_error(str(exc)) else "publish_failed"
@@ -102,6 +108,7 @@ def publish_ready_facebook_posts(settings: Settings, manifest_path: Path) -> int
             post["facebook_status"] = "publish_failed"
             post["facebook_error"] = str(exc)
             manifest_path.write_text(json.dumps(manifest, ensure_ascii=True, indent=2), encoding="utf-8")
+            # Re-raise so the caller knows publishing failed and can set exit code 1
             raise
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=True, indent=2), encoding="utf-8")
     return published
@@ -132,32 +139,60 @@ def _create_carousel_container(settings: Settings, image_urls: list[str], captio
 
 
 def _publish_facebook_post(settings: Settings, post: dict) -> None:
+    """Publish a multi-image post to a Facebook Page.
+
+    Requires a Page Access Token with the ``pages_manage_posts`` and
+    ``pages_read_engagement`` permissions.  The old ``publish_actions``
+    user-level permission is NOT required and must NOT be used.
+
+    Flow:
+      1. Upload each slide as an unpublished photo (``published=false``).
+      2. Attach all photo IDs to a single ``/{page_id}/feed`` post.
+
+    If photo staging fails with a 403/deprecated error the function raises a
+    ``RuntimeError`` with a human-readable explanation of which permissions
+    are needed so the caller can surface it clearly.
+    """
     if post.get("facebook_status") == "published":
         return
     urls = [url for url in post.get("public_slide_urls", []) if url][:10]
     if not urls:
         return
+
     media_ids = []
     for image_url in urls:
-        photo = _facebook_graph_post(
-            settings,
-            f"{settings.fb_page_id}/photos",
-            {
-                "url": image_url,
-                "published": "false",
-                "temporary": "true",
-            },
-        )
+        try:
+            photo = _facebook_graph_post(
+                settings,
+                f"{settings.fb_page_id}/photos",
+                {
+                    "url": image_url,
+                    "published": "false",
+                },
+            )
+        except RuntimeError as exc:
+            error_body = str(exc)
+            if "publish_actions" in error_body or "deprecated" in error_body.lower():
+                raise RuntimeError(
+                    "Facebook photo upload failed because the token is missing required permissions. "
+                    "You need a Page Access Token (not a User token) with 'pages_manage_posts' and "
+                    "'pages_read_engagement' permissions. The old 'publish_actions' permission is "
+                    f"deprecated and must not be used. Original error: {error_body}"
+                ) from exc
+            raise
         if photo.get("id"):
             media_ids.append(photo["id"])
+
     if not media_ids:
         raise RuntimeError("Facebook did not return any uploaded photo IDs.")
-    fields = {
+
+    fields: dict[str, str] = {
         "message": _facebook_caption(post.get("caption", "")),
         "published": "true",
     }
     for index, media_id in enumerate(media_ids):
         fields[f"attached_media[{index}]"] = json.dumps({"media_fbid": media_id})
+
     result = _facebook_graph_post(settings, f"{settings.fb_page_id}/feed", fields)
     post["facebook_status"] = "published"
     post["facebook_post_id"] = result.get("id", "")
