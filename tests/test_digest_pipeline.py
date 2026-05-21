@@ -1,15 +1,25 @@
 from __future__ import annotations
 
 import unittest
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from email.message import EmailMessage
+from pathlib import Path
+from tempfile import TemporaryDirectory
 from unittest.mock import patch
 
 from email_summary_agent.article_enricher import extract_article_urls
+from email_summary_agent.agent import _email_scan_due
+from email_summary_agent.config import Settings
+from email_summary_agent.content_rag import retrieve_context
+from email_summary_agent.db import AgentStore
 from email_summary_agent.digest import parse_news_items
 from email_summary_agent.email_client import extract_body
-from email_summary_agent.instagram import _build_slide_specs, _split_summary_for_carousels
+from email_summary_agent.instagram import _build_slide_specs, _find_library_image, _split_summary_for_carousels
 from email_summary_agent.models import EmailItem, EmailSummary
+from email_summary_agent.publisher import _score_story_candidate
+from email_summary_agent.summarizer import _article_item_for_instagram
+from email_summary_agent.article_enricher import ArticleData
+from scripts.publish_latest_instagram import _facebook_publish_enabled
 
 
 class DigestPipelineTests(unittest.TestCase):
@@ -113,6 +123,78 @@ class DigestPipelineTests(unittest.TestCase):
 
         self.assertEqual(slides[0]["image_path"], "data/article_assets/reference.jpg")
 
+    def test_email_scan_gate_waits_for_configured_interval(self) -> None:
+        with TemporaryDirectory() as tmp:
+            store = AgentStore(Path(tmp) / "agent.sqlite3")
+            store.initialize()
+            key = "last_email_scan_at|INBOX|sender@example.com"
+            store.set_state(key, datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"))
+
+            self.assertFalse(_email_scan_due(store, key, 50))
+
+            old = datetime.now(timezone.utc).astimezone() - timedelta(minutes=51)
+            store.set_state(key, old.isoformat(timespec="seconds"))
+            self.assertTrue(_email_scan_due(store, key, 50))
+            store.close()
+
+    def test_facebook_publish_reports_missing_page_token(self) -> None:
+        settings = _settings(auto_publish_facebook=True, fb_page_id="1154443704417851", fb_page_access_token="")
+
+        with patch("builtins.print") as mocked_print:
+            enabled = _facebook_publish_enabled(settings)
+
+        self.assertFalse(enabled)
+        self.assertIn("FB_PAGE_ACCESS_TOKEN", mocked_print.call_args.args[0])
+
+    def test_image_library_rejects_unrelated_cached_image(self) -> None:
+        with TemporaryDirectory() as tmp:
+            image_dir = Path(tmp)
+            (image_dir / "abc123.jpg").write_bytes(b"fake image")
+            (image_dir / "index.json").write_text(
+                '{"images":[{"id":"abc123","path":"' + str(image_dir / "abc123.jpg").replace("\\", "\\\\") + '","seed":"OpenAI GPT model launch","tokens":["openai","model"]}]}',
+                encoding="utf-8",
+            )
+            with patch("email_summary_agent.instagram.IMAGE_LIBRARY_DIR", image_dir), patch(
+                "email_summary_agent.instagram.IMAGE_INDEX_PATH", image_dir / "index.json"
+            ):
+                self.assertIsNone(_find_library_image("AWS voice inference deployment"))
+                self.assertEqual(_find_library_image("OpenAI GPT developer model"), str(image_dir / "abc123.jpg"))
+
+    def test_story_candidate_scoring_rewards_image_source_and_facts(self) -> None:
+        with TemporaryDirectory() as tmp:
+            carousel = Path(tmp)
+            (carousel / "metadata.json").write_text(
+                '{"article_url":"https://example.com/openai","article_items":[{"image_path":"data/images/openai.jpg","url":"https://example.com/openai"}]}',
+                encoding="utf-8",
+            )
+            score, reason = _score_story_candidate(
+                carousel,
+                "OpenAI shipped GPT-5 API updates in 2026 for developers.",
+                5,
+            )
+
+        self.assertGreater(score, 0.7)
+        self.assertIn("article image", reason)
+
+    def test_rag_retrieves_creator_rules_for_ai_launch(self) -> None:
+        context = retrieve_context("OpenAI released a new developer API and model launch", limit=2)
+
+        self.assertTrue(context.rules)
+        self.assertTrue(any("product" in entry.get("id", "") or "editorial" in entry.get("id", "") for entry in context.entries))
+
+    def test_article_item_includes_retrieved_rag_metadata(self) -> None:
+        article = ArticleData(
+            url="https://example.com/openai-api",
+            title="OpenAI launches a developer API for agents",
+            description="OpenAI launched an API that helps developers build agent workflows.",
+            text="OpenAI launched an API that helps developers build agent workflows. The update improves tool use and deployment for teams.",
+        )
+
+        item = _article_item_for_instagram(article)
+
+        self.assertTrue(item["rag_angles"])
+        self.assertTrue(item["rag_rules"])
+
 
 def _summary_with_articles(count: int, long: bool = False) -> EmailSummary:
     detail = (
@@ -147,6 +229,42 @@ def _summary_with_articles(count: int, long: bool = False) -> EmailSummary:
         confidence=0.8,
         article_items=articles,
     )
+
+
+def _settings(**overrides) -> Settings:
+    values = dict(
+        imap_host="imap.gmail.com",
+        imap_port=993,
+        imap_username="user@example.com",
+        imap_password="password",
+        email_sender_filter="sender@example.com",
+        email_folder="INBOX",
+        lookback_hours=48,
+        max_emails_per_run=5,
+        poll_interval_minutes=15,
+        email_check_interval_minutes=50,
+        summary_provider="local",
+        ollama_url="http://localhost:11434",
+        ollama_model="llama3.2:3b",
+        db_path=Path(":memory:"),
+        reports_dir=Path("reports"),
+        instagram_dir=Path("reports/instagram_posts"),
+        create_instagram_posts=True,
+        process_all_matching=False,
+        enrich_articles=True,
+        max_article_links_per_email=20,
+        article_assets_dir=Path("data/article_assets"),
+        public_media_base_url="https://example.github.io/reports/instagram_posts",
+        auto_publish_instagram=True,
+        ig_user_id="17841447323115790",
+        ig_access_token="ig-token",
+        ig_api_version="v24.0",
+        auto_publish_facebook=False,
+        fb_page_id="",
+        fb_page_access_token="",
+    )
+    values.update(overrides)
+    return Settings(**values)
 
 
 if __name__ == "__main__":

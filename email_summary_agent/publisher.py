@@ -22,15 +22,17 @@ def write_publish_manifest(carousel_dirs: list[Path], public_media_base_url: str
     for index, carousel_dir in enumerate(carousel_dirs):
         slides = sorted(carousel_dir.glob("slide_*.png"))[:10]
         caption_path = carousel_dir / "caption.txt"
+        caption = caption_path.read_text(encoding="utf-8") if caption_path.exists() else ""
         existing = existing_posts.get(str(carousel_dir), {})
         existing_status = existing.get("status", "")
         status = "ready_for_upload" if not public_media_base_url else "ready_for_publish"
         if existing_status in {"published", "container_created", "publish_failed_retryable", "publish_failed"}:
             status = existing_status
+        story_score, story_reason = _score_story_candidate(carousel_dir, caption, len(slides))
         posts.append(
             {
                 "folder": str(carousel_dir),
-                "caption": caption_path.read_text(encoding="utf-8") if caption_path.exists() else "",
+                "caption": caption,
                 "local_slides": [str(path) for path in slides],
                 "public_slide_urls": [
                     _public_url(public_media_base_url, batch_dir, path)
@@ -38,6 +40,8 @@ def write_publish_manifest(carousel_dirs: list[Path], public_media_base_url: str
                     if public_media_base_url
                 ],
                 "status": status,
+                "story_score": existing.get("story_score", story_score),
+                "story_selected_reason": existing.get("story_selected_reason", story_reason),
                 **_carry_publish_fields(existing),
             }
         )
@@ -70,9 +74,7 @@ def publish_instagram_story(settings: Settings, manifest_path: Path) -> int:
         urls = [u for u in post.get("public_slide_urls", []) if u]
         if not urls:
             continue
-        if best_post is None or len(urls) > len(
-            [u for u in best_post.get("public_slide_urls", []) if u]
-        ):
+        if best_post is None or _story_rank(post) > _story_rank(best_post):
             best_post = post
 
     if not best_post:
@@ -105,6 +107,7 @@ def publish_instagram_story(settings: Settings, manifest_path: Path) -> int:
         )
         best_post["story_published"] = True
         best_post["story_published_at"] = datetime.now().astimezone().isoformat(timespec="seconds")
+        best_post["story_selected_reason"] = best_post.get("story_selected_reason") or "Highest quality score among published carousels."
         manifest_path.write_text(json.dumps(manifest, ensure_ascii=True, indent=2), encoding="utf-8")
         return 1
     except RuntimeError as exc:
@@ -179,6 +182,55 @@ def publish_ready_facebook_posts(settings: Settings, manifest_path: Path) -> int
             raise
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=True, indent=2), encoding="utf-8")
     return published
+
+
+def _score_story_candidate(carousel_dir: Path, caption: str, slide_count: int) -> tuple[float, str]:
+    metadata_path = carousel_dir / "metadata.json"
+    metadata = {}
+    try:
+        metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+    except Exception:
+        pass
+
+    article_items = metadata.get("article_items") or []
+    has_article_image = any(
+        item.get("image_path") or item.get("image_url")
+        for item in article_items
+        if isinstance(item, dict)
+    )
+    has_source = bool(metadata.get("article_url") or any(isinstance(item, dict) and item.get("url") for item in article_items))
+    caption_words = re.findall(r"[A-Za-z][A-Za-z0-9-]{3,}", caption or "")
+    concrete_facts = len(re.findall(r"\b(?:20\d{2}|\d+(?:\.\d+)?%?|GPT|Claude|Gemini|Llama|API|GPU|AI)\b", caption or "", flags=re.I))
+    noise_hits = len(re.findall(r"\b(cookie|unsubscribe|privacy policy|terms of service|primary entities|likely themes)\b", caption or "", flags=re.I))
+
+    score = 0.0
+    score += min(slide_count, 10) * 0.08
+    score += 0.35 if has_article_image else 0.0
+    score += 0.20 if has_source else 0.0
+    score += min(len(caption_words) / 120, 0.25)
+    score += min(concrete_facts * 0.05, 0.20)
+    score -= min(noise_hits * 0.20, 0.60)
+    score = round(max(0.0, min(score, 1.0)), 3)
+
+    reasons = []
+    if has_article_image:
+        reasons.append("article image available")
+    if has_source:
+        reasons.append("source URL available")
+    if concrete_facts:
+        reasons.append(f"{concrete_facts} concrete signal(s)")
+    if not reasons:
+        reasons.append("best available carousel")
+    return score, ", ".join(reasons)
+
+
+def _story_rank(post: dict) -> tuple[float, int]:
+    urls = [url for url in post.get("public_slide_urls", []) if url]
+    try:
+        score = float(post.get("story_score") or 0.0)
+    except (TypeError, ValueError):
+        score = 0.0
+    return score, len(urls)
 
 
 def _create_carousel_container(settings: Settings, image_urls: list[str], caption: str) -> str:

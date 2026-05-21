@@ -46,6 +46,7 @@ jobs:
       SUMMARY_PROVIDER: local
       PROCESS_ALL_MATCHING: 'false'
       LOOKBACK_HOURS: '48'
+      EMAIL_CHECK_INTERVAL_MINUTES: '50'
       MAX_EMAILS_PER_RUN: '5'
       MAX_ARTICLE_LINKS_PER_EMAIL: '20'
       ENRICH_ARTICLES: 'true'
@@ -72,6 +73,11 @@ jobs:
 
       - name: Install Playwright browser
         run: python -m playwright install chromium
+
+      - name: Log trigger
+        run: |
+          echo "Workflow event: ${{ github.event_name }}"
+          echo "Email check interval: ${EMAIL_CHECK_INTERVAL_MINUTES} minutes"
 
       - name: Process AI news email
         run: |

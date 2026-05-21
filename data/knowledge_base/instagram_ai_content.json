@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "ai_product_launch",
+      "title": "AI product launch carousel pattern",
+      "tags": ["launch", "release", "product", "model", "api", "developer"],
+      "rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "patterns": [
+        "{entity} is not just announcing a feature; it is changing how people use {topic}.",
+        "The practical shift is simple: {impact}.",
+        "The next signal to watch is whether this moves from announcement to daily usage."
+      ]
+    },
+    {
+      "id": "ai_business_market",
+      "title": "AI business and market signal pattern",
+      "tags": ["funding", "valuation", "partnership", "revenue", "acquisition", "enterprise"],
+      "rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "patterns": [
+        "This matters because money and distribution often decide which AI tools survive.",
+        "The bigger signal is where companies are putting real budget, not just attention.",
+        "Watch whether this turns into product access, pricing changes, or customer adoption."
+      ]
+    },
+    {
+      "id": "ai_research_model",
+      "title": "AI research and model capability pattern",
+      "tags": ["research", "benchmark", "reasoning", "multimodal", "training", "inference"],
+      "rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result."
+      ],
+      "angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready"
+      ],
+      "patterns": [
+        "The important part is not the label; it is what the model can now handle more reliably.",
+        "For users, the question is whether this capability appears in real products.",
+        "The catch to watch is whether benchmarks translate into everyday performance."
+      ]
+    },
+    {
+      "id": "ai_regulation_safety",
+      "title": "AI regulation and safety pattern",
+      "tags": ["regulation", "policy", "safety", "privacy", "lawsuit", "copyright", "risk"],
+      "rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty."
+      ],
+      "angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next"
+      ],
+      "patterns": [
+        "This matters because AI adoption now depends on trust, rules, and distribution.",
+        "The practical impact is about what companies can safely build or ship.",
+        "Watch for enforcement, appeals, policy updates, or product changes."
+      ]
+    },
+    {
+      "id": "instagram_editorial_quality",
+      "title": "Instagram editorial quality guardrails",
+      "tags": ["instagram", "caption", "carousel", "engagement", "creator", "summary"],
+      "rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "patterns": [
+        "Here is the part that matters.",
+        "The practical impact is bigger than the headline.",
+        "Save this if you track AI product moves."
+      ]
+    }
+  ]
+}

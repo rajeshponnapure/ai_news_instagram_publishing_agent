@@ -47,6 +47,12 @@ class AgentStore:
                 last_uid INTEGER NOT NULL DEFAULT 0,
                 updated_at TEXT NOT NULL
             );
+
+            CREATE TABLE IF NOT EXISTS agent_state (
+                key TEXT PRIMARY KEY,
+                value TEXT NOT NULL,
+                updated_at TEXT NOT NULL
+            );
             """
         )
         self.connection.commit()
@@ -100,6 +106,24 @@ class AgentStore:
             VALUES (?, ?, ?)
             """,
             (mailbox_key, int(last_uid), _now()),
+        )
+        self.connection.commit()
+
+    def get_state(self, key: str) -> str:
+        cursor = self.connection.execute(
+            "SELECT value FROM agent_state WHERE key = ? LIMIT 1",
+            (key,),
+        )
+        row = cursor.fetchone()
+        return str(row[0]) if row else ""
+
+    def set_state(self, key: str, value: str) -> None:
+        self.connection.execute(
+            """
+            INSERT OR REPLACE INTO agent_state (key, value, updated_at)
+            VALUES (?, ?, ?)
+            """,
+            (key, value, _now()),
         )
         self.connection.commit()
 

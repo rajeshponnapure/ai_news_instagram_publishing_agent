@@ -54,6 +54,7 @@ class Settings:
     lookback_hours: int
     max_emails_per_run: int
     poll_interval_minutes: int
+    email_check_interval_minutes: int
     summary_provider: str
     ollama_url: str
     ollama_model: str
@@ -90,6 +91,7 @@ class Settings:
             lookback_hours=_int_env("LOOKBACK_HOURS", 24),
             max_emails_per_run=_int_env("MAX_EMAILS_PER_RUN", 20),
             poll_interval_minutes=_int_env("POLL_INTERVAL_MINUTES", 1),
+            email_check_interval_minutes=_int_env("EMAIL_CHECK_INTERVAL_MINUTES", 50),
             summary_provider=os.environ.get("SUMMARY_PROVIDER", "auto").lower(),
             ollama_url=os.environ.get("OLLAMA_URL", "http://localhost:11434"),
             ollama_model=os.environ.get("OLLAMA_MODEL", "llama3.2:3b"),

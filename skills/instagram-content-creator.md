@@ -10,6 +10,7 @@ that feel like they were written by a sharp human editor — not a bot.
 - Lead with the most surprising or impactful fact, not a category label.
 - Write like a smart friend explaining the news, not a press release.
 - Every slide must earn its place. No filler, no padding, no generic statements.
+- Use the local RAG knowledge base before creating slides. The knowledge base provides proven editorial angles and guardrails; the article provides the facts.
 
 ## Slide Structure (per story)
 
@@ -58,6 +59,13 @@ that feel like they were written by a sharp human editor — not a bot.
 - **No cookie text, legal boilerplate, or newsletter noise.** Ever.
 - **Short paragraphs.** 2–3 sentences per paragraph maximum.
 - **Numbers anchor credibility.** Always include them when the article has them.
+
+## RAG Usage Rules
+- Retrieve from `data/knowledge_base/instagram_ai_content.json` using the article title, article text, company names, model names, and topic.
+- Use retrieved angles to decide the post's framing.
+- Use retrieved rules to remove weak text, robotic text, decorative symbols, and filler.
+- Never treat retrieved patterns as facts.
+- Save retrieved angle/rule metadata with article items when possible so later pipeline stages can reuse it.
 
 ## Caption Rules
 - First line: the actual news headline (not a category).

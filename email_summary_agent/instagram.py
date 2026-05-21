@@ -29,6 +29,7 @@ ARTICLE_ASSET_DIR = PROJECT_ROOT / "data" / "article_assets"
 REFERENCE_IMAGE_DIR = ARTICLE_ASSET_DIR / "reference_images"
 # Shared image library — all downloaded images land here for reuse across posts
 IMAGE_LIBRARY_DIR = PROJECT_ROOT / "data" / "images"
+IMAGE_INDEX_PATH = IMAGE_LIBRARY_DIR / "index.json"
 REFERENCE_BRANDS = (
     "OpenAI",
     "Google",
@@ -106,6 +107,30 @@ PUBLIC_BLOCKED_PHRASES = (
     "you are receiving this",
     "sent to you because",
     "no longer wish to receive",
+)
+STOP_IMAGE_TOKENS = frozenset(
+    {
+        "about",
+        "after",
+        "article",
+        "blog",
+        "content",
+        "cookie",
+        "from",
+        "image",
+        "launch",
+        "latest",
+        "more",
+        "news",
+        "privacy",
+        "release",
+        "story",
+        "summary",
+        "technology",
+        "this",
+        "update",
+        "with",
+    }
 )
 
 
@@ -754,6 +779,7 @@ def _select_article_image(article: dict[str, Any], topic: str) -> str:
     """
     title = str(article.get("title") or "")
     url = str(article.get("url") or "")
+    query_text = _image_query_text(article, topic)
 
     # 1. Blog/article image — most relevant, already downloaded by enricher
     for key in ("image_path", "image_url"):
@@ -761,7 +787,7 @@ def _select_article_image(article: dict[str, Any], topic: str) -> str:
         if value:
             # If it's a URL, download it to the library and return the local path
             if value.startswith(("http://", "https://")):
-                local = _download_to_library(value, title or topic)
+                local = _download_to_library(value, query_text or title or topic)
                 if local:
                     return local
             else:
@@ -770,7 +796,7 @@ def _select_article_image(article: dict[str, Any], topic: str) -> str:
                     return value
 
     # 2. Check the shared image library for a relevant cached image
-    library_match = _find_library_image(title or topic)
+    library_match = _find_library_image(query_text or title or topic)
     if library_match:
         return library_match
 
@@ -780,6 +806,20 @@ def _select_article_image(article: dict[str, Any], topic: str) -> str:
         return web_image
 
     return ""
+
+
+def _image_query_text(article: dict[str, Any], topic: str) -> str:
+    return " ".join(
+        str(part or "")
+        for part in (
+            article.get("title"),
+            article.get("description"),
+            article.get("summary"),
+            article.get("excerpt"),
+            topic,
+            _source_label_from_url(str(article.get("url") or "")),
+        )
+    )
 
 
 def _resolve_image_source(image_path: str) -> Path | None:
@@ -821,7 +861,9 @@ def _download_to_library(url: str, seed_text: str) -> str | None:
     dest.write_bytes(data)
     # Save a sidecar metadata file so we can match images to topics later
     meta = IMAGE_LIBRARY_DIR / f"{cache_key}.json"
-    meta.write_text(json.dumps({"url": url, "seed": seed_text}, ensure_ascii=True), encoding="utf-8")
+    meta_data = {"url": url, "seed": seed_text, "path": str(dest), "tokens": sorted(_important_image_tokens(seed_text))}
+    meta.write_text(json.dumps(meta_data, ensure_ascii=True), encoding="utf-8")
+    _upsert_image_index(cache_key, meta_data)
     return str(dest)
 
 
@@ -829,30 +871,94 @@ def _find_library_image(query: str) -> str | None:
     """Search the data/images library for an image relevant to the query."""
     if not IMAGE_LIBRARY_DIR.exists():
         return None
-    query_tokens = set(re.findall(r"[A-Za-z]{4,}", query.lower()))
+    query_tokens = _important_image_tokens(query)
     if not query_tokens:
         return None
     best_path: str | None = None
-    best_score = 0
+    best_score = 0.0
+    for image_id, meta in _iter_image_metadata():
+        seed = str(meta.get("seed", ""))
+        meta_tokens = set(meta.get("tokens") or []) or _important_image_tokens(seed)
+        overlap = query_tokens & meta_tokens
+        if not overlap:
+            continue
+        score = len(overlap) / max(4, len(query_tokens))
+        if any(token in overlap for token in _brand_tokens(query)):
+            score += 0.35
+        if score <= best_score:
+            continue
+        candidate = _image_path_from_metadata(image_id, meta)
+        if candidate:
+            best_score = score
+            best_path = str(candidate)
+    return best_path if best_score >= 0.22 else None
+
+
+def _iter_image_metadata() -> list[tuple[str, dict[str, Any]]]:
+    items: dict[str, dict[str, Any]] = {}
+    try:
+        data = json.loads(IMAGE_INDEX_PATH.read_text(encoding="utf-8"))
+        for item in data.get("images", []):
+            image_id = str(item.get("id") or "")
+            if image_id:
+                items[image_id] = item
+    except Exception:
+        pass
+
     for meta_file in IMAGE_LIBRARY_DIR.glob("*.json"):
+        if meta_file.name == IMAGE_INDEX_PATH.name:
+            continue
         try:
             meta = json.loads(meta_file.read_text(encoding="utf-8"))
         except Exception:
             continue
-        seed = str(meta.get("seed", "")).lower()
-        seed_tokens = set(re.findall(r"[A-Za-z]{4,}", seed))
-        score = len(query_tokens & seed_tokens)
-        if score > best_score:
-            # Find the matching image file
-            stem = meta_file.stem
-            for suffix in (".jpg", ".jpeg", ".png", ".webp"):
-                candidate = IMAGE_LIBRARY_DIR / f"{stem}{suffix}"
-                if candidate.exists():
-                    best_score = score
-                    best_path = str(candidate)
-                    break
-    # Only return if there's a meaningful match (at least 2 tokens in common)
-    return best_path if best_score >= 2 else None
+        meta.setdefault("id", meta_file.stem)
+        items[meta_file.stem] = meta
+    return sorted(items.items())
+
+
+def _upsert_image_index(image_id: str, meta: dict[str, Any]) -> None:
+    IMAGE_LIBRARY_DIR.mkdir(parents=True, exist_ok=True)
+    data = {"images": []}
+    try:
+        data = json.loads(IMAGE_INDEX_PATH.read_text(encoding="utf-8"))
+    except Exception:
+        pass
+    images = [item for item in data.get("images", []) if item.get("id") != image_id]
+    images.append({"id": image_id, **meta})
+    IMAGE_INDEX_PATH.write_text(json.dumps({"images": images}, ensure_ascii=True, indent=2), encoding="utf-8")
+
+
+def _image_path_from_metadata(image_id: str, meta: dict[str, Any]) -> Path | None:
+    raw_path = str(meta.get("path") or "")
+    if raw_path:
+        path = Path(raw_path)
+        if path.exists():
+            return path
+    for suffix in (".jpg", ".jpeg", ".png", ".webp"):
+        candidate = IMAGE_LIBRARY_DIR / f"{image_id}{suffix}"
+        if candidate.exists():
+            return candidate
+    return None
+
+
+def _important_image_tokens(text: str) -> set[str]:
+    tokens = {
+        token
+        for token in re.findall(r"[A-Za-z][A-Za-z0-9-]{3,}", (text or "").lower())
+        if token not in STOP_IMAGE_TOKENS
+    }
+    return tokens
+
+
+def _brand_tokens(text: str) -> set[str]:
+    lowered = (text or "").lower()
+    return {
+        token
+        for brand in REFERENCE_BRANDS
+        if brand.lower() in lowered
+        for token in _important_image_tokens(brand)
+    }
 
 
 def _compose_article_narrative(summary: EmailSummary, article: dict[str, Any]) -> str:
@@ -1020,7 +1126,7 @@ def _find_reference_image_for_article(article: dict[str, Any], topic: str) -> st
                 return str(cached)
         image_url = _search_wikimedia_image(query)
         if image_url:
-            downloaded = _download_reference_image(image_url, cache_key)
+            downloaded = _download_reference_image(image_url, cache_key, query)
             if downloaded:
                 return downloaded
     return None
@@ -1127,7 +1233,7 @@ def _important_query_tokens(query: str) -> list[str]:
     return [token for token in tokens if token not in blocked and len(token) >= 4]
 
 
-def _download_reference_image(image_url: str, cache_key: str) -> str | None:
+def _download_reference_image(image_url: str, cache_key: str, seed_text: str = "") -> str | None:
     try:
         request = urllib.request.Request(image_url, headers={"User-Agent": "AIInstagramNewsAgent/1.0"})
         with urllib.request.urlopen(request, timeout=12) as response:
@@ -1152,6 +1258,14 @@ def _download_reference_image(image_url: str, cache_key: str) -> str | None:
     lib_dest = IMAGE_LIBRARY_DIR / f"{cache_key}{suffix}"
     if not lib_dest.exists():
         lib_dest.write_bytes(data)
+    meta_data = {
+        "url": image_url,
+        "seed": seed_text or image_url,
+        "path": str(lib_dest),
+        "tokens": sorted(_important_image_tokens(seed_text or image_url)),
+    }
+    (IMAGE_LIBRARY_DIR / f"{cache_key}.json").write_text(json.dumps(meta_data, ensure_ascii=True), encoding="utf-8")
+    _upsert_image_index(cache_key, meta_data)
     return str(dest)
 
 

@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import json
 import re
+import unicodedata
 import urllib.error
 import urllib.request
 from collections import Counter
@@ -17,6 +18,7 @@ from typing import Any
 
 from .models import EmailItem, EmailSummary
 from .article_enricher import ArticleData
+from .content_rag import format_context, retrieve_context
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -218,11 +220,13 @@ class SummaryProvider:
         return self._ollama_available
 
     def _summarize_with_ollama(self, email: EmailItem) -> EmailSummary:
+        rag_context = format_context(f"{email.subject}\n{email.body[:4000]}", limit=4)
         prompt = (
             "Return ONLY valid JSON with these exact keys: "
             "headline, what_happened, why_it_matters, what_to_watch, "
             "key_points, companies, models, topics, confidence.\n\n"
             f"Skill guide:\n{_load_summary_skill()}\n\n"
+            f"{rag_context}\n\n"
             "Rules:\n"
             "- headline: one punchy sentence, max 100 chars, names the real event.\n"
             "- what_happened: 2-3 sentences. What was announced/released/changed. "
@@ -286,7 +290,7 @@ def _load_summary_skill() -> str:
     parts = []
     for path in (SUMMARY_SKILL_PATH, CREATOR_SKILL_PATH):
         try:
-            parts.append(path.read_text(encoding="utf-8")[:2000])
+            parts.append(path.read_text(encoding="utf-8")[:2600])
         except OSError:
             pass
     return "\n\n".join(parts) if parts else (
@@ -361,6 +365,7 @@ def _summarize_article_list(email: EmailItem, articles: list[ArticleData]) -> Em
 def _extract_narrative_sections(article: ArticleData, title: str) -> tuple[str, str, str]:
     """Extract what-happened / why-it-matters / what-to-watch from article text."""
     text = _clean_text(f"{article.description} {article.text}")
+    rag = retrieve_context(f"{title} {text[:2500]}", limit=3)
     sentences = _good_sentences(text)
     if not sentences:
         desc = _clean_text(article.description or article.excerpt or title)
@@ -373,7 +378,13 @@ def _extract_narrative_sections(article: ArticleData, title: str) -> tuple[str, 
     what_happened_parts = _dedupe_sentences(action_sentences[:2] + detail_sentences[:1])
     if not what_happened_parts:
         what_happened_parts = top_sentences[:2]
-    what_happened = " ".join(what_happened_parts[:2])
+    what_happened = _make_editorial_section(
+        "what",
+        title,
+        what_happened_parts[:2],
+        rag,
+        fallback=top_sentences[:2],
+    )
     # Why it matters: impact/benefit sentences
     impact_sentences = [
         s for s in top_sentences
@@ -381,7 +392,13 @@ def _extract_narrative_sections(article: ArticleData, title: str) -> tuple[str, 
                      r"developer|user|customer|team|company|creator|platform)\b", s, re.I)
         and s not in what_happened_parts
     ]
-    why_matters = " ".join(impact_sentences[:2]) if impact_sentences else ""
+    why_matters = _make_editorial_section(
+        "why",
+        title,
+        impact_sentences[:2],
+        rag,
+        fallback=[s for s in top_sentences if s not in what_happened_parts][:2],
+    )
     # What to watch: forward-looking sentences
     watch_sentences = [
         s for s in top_sentences
@@ -389,7 +406,13 @@ def _extract_narrative_sections(article: ArticleData, title: str) -> tuple[str, 
                      r"competition|limit|benchmark|reaction|availab)\b", s, re.I)
         and s not in what_happened_parts and s not in impact_sentences
     ]
-    what_watch = watch_sentences[0] if watch_sentences else ""
+    what_watch = _make_editorial_section(
+        "watch",
+        title,
+        watch_sentences[:1],
+        rag,
+        fallback=[s for s in top_sentences if s not in what_happened_parts and s not in impact_sentences][:1],
+    )
     return (
         _trim(what_happened, 500),
         _trim(why_matters, 400),
@@ -416,6 +439,50 @@ def _extract_key_points(article: ArticleData, title: str) -> list[str]:
         if len(points) >= 6:
             break
     return points
+
+
+def _make_editorial_section(
+    section: str,
+    title: str,
+    primary_sentences: list[str],
+    rag,
+    fallback: list[str] | None = None,
+) -> str:
+    sentences = _dedupe_sentences([*primary_sentences, *(fallback or [])])
+    if not sentences:
+        return ""
+
+    source = " ".join(sentences[:2])
+    source = _trim(source, 520)
+    if section == "what":
+        return _trim(source, 520)
+
+    angles = rag.angles if hasattr(rag, "angles") else []
+    angle = angles[0] if angles else "what changes in practical terms"
+    title_bits = _important_title_bits(title)
+    entity = title_bits[0] if title_bits else "this update"
+
+    if section == "why":
+        if source:
+            return _trim(f"The practical impact: {source}", 430)
+        return _trim(f"The practical impact is how {entity} changes {angle}.", 430)
+    if section == "watch":
+        if source:
+            return _trim(f"Watch next: {source}", 320)
+        return _trim(f"Watch next for {angle} around {entity}.", 320)
+    return source
+
+
+def _important_title_bits(title: str) -> list[str]:
+    cleaned = _clean_text(title)
+    candidates = re.findall(r"\b[A-Z][A-Za-z0-9&.-]+(?:\s+[A-Z][A-Za-z0-9&.-]+){0,2}\b", cleaned)
+    useful = []
+    for candidate in candidates:
+        if candidate in CAPITALIZED_BLOCKLIST:
+            continue
+        if len(candidate) >= 3:
+            useful.append(candidate)
+    return useful[:3]
 
 
 def _summarize_digest_email(email: EmailItem) -> EmailSummary:
@@ -464,10 +531,22 @@ def _summarize_digest_email(email: EmailItem) -> EmailSummary:
 def _clean_text(text: str) -> str:
     """Strip all noise, boilerplate, and cookie consent from raw text."""
     text = re.sub(r"\r\n?", "\n", text or "")
+    text = _strip_decorative_symbols(text)
     text = _NOISE_RE.sub(" ", text)
     text = text.replace("\u2014", " - ").replace("\u00b7", " ")
     text = re.sub(r"\s+", " ", text)
     return text.strip()
+
+
+def _strip_decorative_symbols(text: str) -> str:
+    cleaned: list[str] = []
+    for char in text or "":
+        category = unicodedata.category(char)
+        if category in {"So", "Sk", "Cs", "Co", "Cc"} and char not in "\n\t":
+            cleaned.append(" ")
+            continue
+        cleaned.append(char)
+    return "".join(cleaned)
 
 
 def _good_sentences(text: str) -> list[str]:
@@ -665,7 +744,8 @@ def _article_item_for_instagram(article: ArticleData) -> dict[str, Any]:
     )
     key_points = _extract_key_points(article, article.title or "")
     # Build a clean summary from the narrative sections
-    summary_parts = [p for p in [what_happened, why_matters] if p]
+    rag = retrieve_context(f"{article.title} {article.description} {article.text[:1600]}", limit=3)
+    summary_parts = [p for p in [what_happened, why_matters, what_watch] if p]
     summary_text = " ".join(summary_parts) or _clean_text(article.description or article.excerpt or article.title or "")
     return {
         "url": article.url,
@@ -677,6 +757,8 @@ def _article_item_for_instagram(article: ArticleData) -> dict[str, Any]:
         "why_matters": why_matters,
         "what_to_watch": what_watch,
         "key_points": key_points,
+        "rag_angles": rag.angles[:4],
+        "rag_rules": rag.rules[:4],
         "image_path": article.image_path,
         "image_url": article.image_url,
     }

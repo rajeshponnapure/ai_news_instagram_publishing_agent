@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import sys
+from dataclasses import replace
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -22,7 +23,7 @@ def main() -> int:
     settings.validate_instagram_publish()
 
     # Facebook validation is optional — skip gracefully if not configured
-    fb_enabled = bool(settings.auto_publish_facebook and settings.fb_page_id and settings.fb_page_access_token)
+    fb_enabled = _facebook_publish_enabled(settings)
     if fb_enabled:
         try:
             settings.validate_facebook_publish()
@@ -30,6 +31,7 @@ def main() -> int:
             print(f"WARNING: Facebook publishing disabled — {exc}")
             fb_enabled = False
 
+    carousel_settings = replace(settings, auto_publish_facebook=False)
     settings.instagram_dir.mkdir(parents=True, exist_ok=True)
     batches = (
         [path for path in settings.instagram_dir.iterdir() if path.is_dir()]
@@ -47,7 +49,7 @@ def main() -> int:
     batch_dir, manifest_path = selected
 
     # ── Instagram carousels ───────────────────────────────────────────────────
-    published = publish_ready_carousels(settings, manifest_path)
+    published = publish_ready_carousels(carousel_settings, manifest_path)
 
     # ── Instagram Story — post the cover slide of the best carousel ───────────
     story_published = 0
@@ -81,6 +83,21 @@ def main() -> int:
     )
     failed = statuses.get("publish_failed", 0)
     return 1 if failed else 0
+
+
+def _facebook_publish_enabled(settings: Settings) -> bool:
+    if not settings.auto_publish_facebook:
+        print("Facebook publishing disabled: AUTO_PUBLISH_FACEBOOK is false.")
+        return False
+    missing = []
+    if not settings.fb_page_id:
+        missing.append("FB_PAGE_ID")
+    if not settings.fb_page_access_token:
+        missing.append("FB_PAGE_ACCESS_TOKEN")
+    if missing:
+        print(f"Facebook publishing disabled: missing {', '.join(missing)}.")
+        return False
+    return True
 
 
 def _find_latest_publishable_batch(

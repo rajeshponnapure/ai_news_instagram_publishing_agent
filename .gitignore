@@ -45,6 +45,8 @@ reports/instagram_posts/
 data/*
 !data/agent.sqlite3
 !data/.gitkeep
+!data/knowledge_base/
+!data/knowledge_base/*.json
 
 data/article_assets/
 # Image library — large files, not committed; kept locally and on runner cache

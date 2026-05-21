@@ -4,6 +4,7 @@ import argparse
 import sys
 import time
 from dataclasses import dataclass
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from .config import Settings
@@ -111,8 +112,31 @@ def poll_new_once(settings: Settings) -> AgentResult:
     store.mark_stale_runs()
     run_id = store.start_run()
     mailbox_key = f"{settings.email_folder}|{settings.email_sender_filter or settings.imap_username}"
+    scan_state_key = f"last_email_scan_at|{mailbox_key}"
 
     try:
+        if not _email_scan_due(store, scan_state_key, settings.email_check_interval_minutes):
+            result = AgentResult(
+                fetched_count=0,
+                skipped_count=0,
+                deferred_count=0,
+                summarized_count=0,
+                report_path=None,
+                instagram_count=0,
+                published_count=0,
+            )
+            last_scan = store.get_state(scan_state_key)
+            _safe_print(
+                f"Email scan skipped for {mailbox_key}. Last scan: {last_scan or 'never'}; "
+                f"interval: {settings.email_check_interval_minutes} minutes."
+            )
+            store.finish_run(
+                run_id,
+                "ok",
+                f"Email scan skipped for {mailbox_key}. Last scan: {last_scan or 'never'}; interval: {settings.email_check_interval_minutes} minutes.",
+            )
+            return result
+
         emails = []
         baseline = store.get_mailbox_watermark(mailbox_key)
         with ImapEmailClient(settings) as client:
@@ -134,6 +158,8 @@ def poll_new_once(settings: Settings) -> AgentResult:
                     "ok",
                     f"Seeded mailbox watermark for {mailbox_key} at UID {baseline}. No new sender mail processed.",
                 )
+                _safe_print(f"Seeded mailbox watermark for {mailbox_key} at UID {baseline}.")
+                store.set_state(scan_state_key, _now_iso())
                 return result
 
             emails = client.fetch_matching(all_matching=False, since_uid=baseline)
@@ -153,6 +179,8 @@ def poll_new_once(settings: Settings) -> AgentResult:
                 "ok",
                 f"No new mail found for {mailbox_key}. Nothing to publish.",
             )
+            _safe_print(f"No new mail found for {mailbox_key}. Nothing to publish.")
+            store.set_state(scan_state_key, _now_iso())
             return result
 
         result = process_items(
@@ -171,6 +199,8 @@ def poll_new_once(settings: Settings) -> AgentResult:
             "ok",
             f"Processed {result.summarized_count} new email(s) for {mailbox_key}.",
         )
+        _safe_print(f"Processed {result.summarized_count} new email(s) for {mailbox_key}.")
+        store.set_state(scan_state_key, _now_iso())
         return result
     except ConnectionError as exc:
         _safe_print("Internet disconnected or offline. Sleeping until next cycle...")
@@ -181,6 +211,25 @@ def poll_new_once(settings: Settings) -> AgentResult:
         raise
     finally:
         store.close()
+
+
+def _email_scan_due(store: AgentStore, key: str, interval_minutes: int) -> bool:
+    if interval_minutes <= 0:
+        return True
+    raw = store.get_state(key)
+    if not raw:
+        return True
+    try:
+        last_scan = datetime.fromisoformat(raw)
+    except ValueError:
+        return True
+    if last_scan.tzinfo is None:
+        last_scan = last_scan.replace(tzinfo=timezone.utc)
+    return datetime.now(timezone.utc).astimezone() - last_scan >= timedelta(minutes=interval_minutes)
+
+
+def _now_iso() -> str:
+    return datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds")
 
 def process_items(
     emails: list[EmailItem],
