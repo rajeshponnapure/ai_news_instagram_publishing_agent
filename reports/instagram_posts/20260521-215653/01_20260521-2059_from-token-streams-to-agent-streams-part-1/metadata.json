@@ -1,0 +1,108 @@
+{
+  "email_received_at": "2026-05-21T20:59+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "From Token Streams to Agent Streams - Part 1",
+  "subject": "\ud83d\udea8 AI Alert: 10 new launches \u2014 Wired AI, LangChain Blog, AI Business",
+  "source_date": "Thu, 21 May 2026 13:59:44 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "AWS",
+    "Wired AI"
+  ],
+  "models": [
+    "claude-code"
+  ],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.langchain.com/blog/token-streams-to-agent-streams",
+  "article_title": "From Token Streams to Agent Streams",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/aecb9a316ff7fe1b.png",
+  "article_image_url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a0f012b2ff304b9a169e892_blue-57%20characters%20max.png",
+  "article_items": [
+    {
+      "url": "https://www.langchain.com/blog/token-streams-to-agent-streams",
+      "title": "From Token Streams to Agent Streams",
+      "description": "Move beyond token streaming. Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and resilient frontend experiences for building production-ready agent applications.",
+      "excerpt": "Move beyond token streaming. Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and resilient frontend experiences for building production-ready agent applications.",
+      "summary": "Scoped subscriptions make complex agent UIs scalable Frontends only stream the parts of the agent tree they render, enabling efficient subagent inspectors, dashboards, and long-running production workloads. Consider a research agent that delegates to three subagents, each calling tools, updating state, and streaming intermediate findings. The practical impact: Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and resilient frontend experiences for building production-ready agent applications. Alongside the release, we're publishing a streaming cookbook with runnable Python and TypeScript examples. Watch next: A single Deep Agents run can plan, delegate to subagents, call tools, pause for human approval, and produce text, structured data, or media along the way. Alongside the release, we're publishing a streaming cookbook with runnable Python and TypeScript examples.",
+      "what_happened": "Scoped subscriptions make complex agent UIs scalable Frontends only stream the parts of the agent tree they render, enabling efficient subagent inspectors, dashboards, and long-running production workloads. Consider a research agent that delegates to three subagents, each calling tools, updating state, and streaming intermediate findings.",
+      "why_matters": "The practical impact: Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and resilient frontend experiences for building production-ready agent applications. Alongside the release, we're publishing a streaming cookbook with runnable Python and TypeScript examples.",
+      "what_to_watch": "Watch next: A single Deep Agents run can plan, delegate to subagents, call tools, pause for human approval, and produce text, structured data, or media along the way. Alongside the release, we're publishing a streaming cookbook with runnable Python and TypeScript examples.",
+      "key_points": [
+        "Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and resilient frontend experiences for building...",
+        "Scoped subscriptions make complex agent UIs scalable Frontends only stream the parts of the agent tree they render, enabling efficient subagent inspectors, dashboards, and long-running production workloads.",
+        "Consider a research agent that delegates to three subagents, each calling tools, updating state, and streaming intermediate findings.",
+        "Alongside the release, we're publishing a streaming cookbook with runnable Python and TypeScript examples.",
+        "A single Deep Agents run can plan, delegate to subagents, call tools, pause for human approval, and produce text, structured data, or media along the way.",
+        "One streaming model works across runtimes and modalities The same architecture powers local and remote runs, React/Vue/Svelte/Angular SDKs, and supports text, tools, images, audio, video, and custom application events."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/aecb9a316ff7fe1b.png",
+      "image_url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a0f012b2ff304b9a169e892_blue-57%20characters%20max.png"
+    },
+    {
+      "url": "https://www.langchain.com/blog/how-auth-proxy-secures-network-access-for-langsmith-agent-sandboxes",
+      "title": "How Auth Proxy secures LangSmith agent sandboxes",
+      "description": "Agents need credentials and network access to do useful work, but those capabilities create new security risks. This post explains how Auth Proxy keeps secrets out of LangSmith Sandboxes runtimes, constrains agent egress, and gives teams infrastructure-level control over how agents reach external services.",
+      "excerpt": "Agents need credentials and network access to do useful work, but those capabilities create new security risks. This post explains how Auth Proxy keeps secrets out of LangSmith Sandboxes runtimes, constrains agent egress, and gives teams infrastructure-level control over how agents reach external services.",
+      "summary": "Introducing the sandbox Auth Proxy LangSmith Sandboxes give agents isolated environments for running code and interacting with filesystems without affecting your main infrastructure. How Auth Proxy secures network access for LangSmith agent sandboxes Agent sandboxes need stronger network controls because agents can run code, install packages, call APIs, and follow instructions from untrusted content. The practical impact: Agents change the scale and shape of this problem. Teams get a cleaner separation of concerns: the agent focuses on the task, the sandbox provides isolation, the proxy handles network authorization and credential injection, and the application or auth service handles user-scoped access and token refresh. Watch next: How Auth Proxy secures network access for LangSmith agent sandboxes Agent sandboxes need stronger network controls because agents can run code, install packages, call APIs, and follow instructions from untrusted content.",
+      "what_happened": "Introducing the sandbox Auth Proxy LangSmith Sandboxes give agents isolated environments for running code and interacting with filesystems without affecting your main infrastructure. How Auth Proxy secures network access for LangSmith agent sandboxes Agent sandboxes need stronger network controls because agents can run code, install packages, call APIs, and follow instructions from untrusted content.",
+      "why_matters": "The practical impact: Agents change the scale and shape of this problem. Teams get a cleaner separation of concerns: the agent focuses on the task, the sandbox provides isolation, the proxy handles network authorization and credential injection, and the application or auth service handles user-scoped access and token refresh.",
+      "what_to_watch": "Watch next: How Auth Proxy secures network access for LangSmith agent sandboxes Agent sandboxes need stronger network controls because agents can run code, install packages, call APIs, and follow instructions from untrusted content.",
+      "key_points": [
+        "Introducing the sandbox Auth Proxy LangSmith Sandboxes give agents isolated environments for running code and interacting with filesystems without affecting your main infrastructure.",
+        "How Auth Proxy secures network access for LangSmith agent sandboxes Agent sandboxes need stronger network controls because agents can run code, install packages, call APIs, and follow instructions from untrusted content.",
+        "The agent can use an API without being able to read the API key, which reduces the damage from prompt injection, malicious dependencies, accidental logging, and model mistakes.",
+        "If the agent only needs GitHub and an LLM provider, it should not be able to talk to every random host on the internet.",
+        "If the task is known, the network can be narrower.",
+        "The sandbox auth proxy is a way to control the boundary between agent-generated behavior and the rest of the world."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/bd656a2f95074d60.png",
+      "image_url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a0e9744f0232c559869a96b_auth-proxy-sandboxes.png"
+    }
+  ],
+  "carousel_part": 1,
+  "carousel_total_parts": 6,
+  "slides": [
+    "From Token Streams to Agent Streams",
+    "From Token Streams to Agent Streams",
+    "Why it matters",
+    "How Auth Proxy secures LangSmith agent sandboxes",
+    "How Auth Proxy secures LangSmith agent sandboxes",
+    "Why it matters",
+    "Follow for the next AI briefing"
+  ]
+}

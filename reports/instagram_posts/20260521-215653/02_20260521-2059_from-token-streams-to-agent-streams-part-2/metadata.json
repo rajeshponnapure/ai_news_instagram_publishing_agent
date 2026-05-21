@@ -1,0 +1,105 @@
+{
+  "email_received_at": "2026-05-21T20:59+00:00",
+  "recommended_post_time": "14:00",
+  "headline": "From Token Streams to Agent Streams - Part 2",
+  "subject": "\ud83d\udea8 AI Alert: 10 new launches \u2014 Wired AI, LangChain Blog, AI Business",
+  "source_date": "Thu, 21 May 2026 13:59:44 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "AWS",
+    "Wired AI"
+  ],
+  "models": [
+    "claude-code"
+  ],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+  "article_title": "The Anatomy of an Agent Harness",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f8606b94d66c8402.img",
+  "article_image_url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a05712fb78026e376dbdeda_LangSmith-for-Startups--4-.avif",
+  "article_items": [
+    {
+      "url": "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+      "title": "The Anatomy of an Agent Harness",
+      "description": "Learn how agent harnesses transform AI models into autonomous work engines. Explore core components: filesystems, sandboxes, and memory.",
+      "excerpt": "Learn how agent harnesses transform AI models into autonomous work engines. Explore core components: filesystems, sandboxes, and memory.",
+      "summary": "The model contains the intelligence and the harness makes that intelligence useful. From a Model's Perspective There are things we want an agent to do that a model cannot do out of the box. The practical impact: The Anatomy of an Agent Harness Break down complex objectives: Planning tools let agents decompose tasks, track progress, and adapt as they learn Delegate work in parallel: Spawn subagents for independent subtasks, each with isolated context TLDR: Agent = Model + Harness. Orchestration Logic (subagent spawning, handoffs, model routing) Hooks/Middleware for deterministic... Watch next: The Anatomy of an Agent Harness Break down complex objectives: Planning tools let agents decompose tasks, track progress, and adapt as they learn Delegate work in parallel: Spawn subagents for independent subtasks, each with isolated context TLDR: Agent = Model + Harness.",
+      "what_happened": "The model contains the intelligence and the harness makes that intelligence useful. From a Model's Perspective There are things we want an agent to do that a model cannot do out of the box.",
+      "why_matters": "The practical impact: The Anatomy of an Agent Harness Break down complex objectives: Planning tools let agents decompose tasks, track progress, and adapt as they learn Delegate work in parallel: Spawn subagents for independent subtasks, each with isolated context TLDR: Agent = Model + Harness. Orchestration Logic (subagent spawning, handoffs, model routing) Hooks/Middleware for deterministic...",
+      "what_to_watch": "Watch next: The Anatomy of an Agent Harness Break down complex objectives: Planning tools let agents decompose tasks, track progress, and adapt as they learn Delegate work in parallel: Spawn subagents for independent subtasks, each with isolated context TLDR: Agent = Model + Harness.",
+      "key_points": [
+        "The model contains the intelligence and the harness makes that intelligence useful.",
+        "From a Model's Perspective There are things we want an agent to do that a model cannot do out of the box.",
+        "The Anatomy of an Agent Harness Break down complex objectives: Planning tools let agents decompose tasks, track progress, and adapt as they learn Delegate work in parallel: Spawn subagents for independent subtasks...",
+        "Orchestration Logic (subagent spawning, handoffs, model routing) Hooks/Middleware for deterministic execution (compaction, continuation, lint checks) There are many messy ways to split the boundaries of an agent...",
+        "The main idea is that we want to convert a desired agent behavior into an actual feature in the harness.",
+        "Models (mostly) take in data like text, images, audio, video and they output text."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f8606b94d66c8402.img",
+      "image_url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a05712fb78026e376dbdeda_LangSmith-for-Startups--4-.avif"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/intelligent-radiology-workflow-optimization-with-ai-agents-2/",
+      "title": "Intelligent radiology workflow optimization with AI agents | Amazon Web Services",
+      "description": "Many healthcare organizations report that traditional worklist systems rely on rigid rules that ignore critical context, radiologist specialization, current workload, fatigue levels, and case complexity. This creates a persistent challenge: radiologists cherry-pick easier, higher-value cases while avoiding complex studies, leading to diagnostic delays and increased costs. Research across 62 hospitals analyzing 2.2 million studies found",
+      "excerpt": "Many healthcare organizations report that traditional worklist systems rely on rigid rules that ignore critical context, radiologist specialization, current workload, fatigue levels, and case complexity. This creates a persistent challenge: radiologists cherry-pick easier, higher-value cases while avoiding complex studies, leading to diagnostic delays and increased costs. Research across 62 hospitals analyzing 2.2 million studies found",
+      "summary": "Research across 62 hospitals analyzing 2.2 million studies found This creates a persistent challenge: radiologists cherry-pick easier, higher-value cases while avoiding complex studies, leading to diagnostic delays and increased costs. The practical impact: This creates a persistent challenge: radiologists cherry-pick easier, higher-value cases while avoiding complex studies, leading to diagnostic delays and increased costs. Many healthcare organizations report that traditional worklist systems rely on rigid rules that ignore critical context, radiologist specialization, current workload, fatigue levels, and case complexity. Watch next: This creates a persistent challenge: radiologists cherry-pick easier, higher-value cases while avoiding complex studies, leading to diagnostic delays and increased costs.",
+      "what_happened": "Research across 62 hospitals analyzing 2.2 million studies found This creates a persistent challenge: radiologists cherry-pick easier, higher-value cases while avoiding complex studies, leading to diagnostic delays and increased costs.",
+      "why_matters": "The practical impact: This creates a persistent challenge: radiologists cherry-pick easier, higher-value cases while avoiding complex studies, leading to diagnostic delays and increased costs. Many healthcare organizations report that traditional worklist systems rely on rigid rules that ignore critical context, radiologist specialization, current workload, fatigue levels, and case complexity.",
+      "what_to_watch": "Watch next: This creates a persistent challenge: radiologists cherry-pick easier, higher-value cases while avoiding complex studies, leading to diagnostic delays and increased costs.",
+      "key_points": [
+        "Research across 62 hospitals analyzing 2.2 million studies found",
+        "This creates a persistent challenge: radiologists cherry-pick easier, higher-value cases while avoiding complex studies, leading to diagnostic delays and increased costs.",
+        "Many healthcare organizations report that traditional worklist systems rely on rigid rules that ignore critical context, radiologist specialization, current workload, fatigue levels, and case complexity."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/cf350cb3c183e0d7.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/21/20471.png"
+    }
+  ],
+  "carousel_part": 2,
+  "carousel_total_parts": 6,
+  "slides": [
+    "The Anatomy of an Agent Harness",
+    "The Anatomy of an Agent Harness",
+    "Why it matters",
+    "Intelligent radiology workflow optimization with AI agents | Amazon Web Services",
+    "Intelligent radiology workflow optimization with AI agents | Amazon Web Services",
+    "Why it matters",
+    "Follow for the next AI briefing"
+  ]
+}
