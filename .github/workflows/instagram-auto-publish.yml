@@ -3,7 +3,7 @@ name: Instagram Auto Publish
 on:
   schedule:
     # Runs every 50 minutes. Always polls for new emails only.
-    - cron: '*/50 * * * *'
+    - cron: '*/15 * * *'
   workflow_dispatch:
     # Manual trigger — only for maintenance/recovery operations.
     # Automatic runs never use this path.
