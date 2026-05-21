@@ -1,0 +1,92 @@
+{
+  "posts": [
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/01_20260521-1709_from-token-streams-to-agent-streams-part-1",
+      "caption": "From Token Streams to Agent Streams - Part 1\n\nMove beyond token streaming. Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and resilient frontend experiences for building production-ready agent applications.\n\nKey takeaways:\n- Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility...\n- Scoped subscriptions make complex agent UIs scalable Frontends only stream the parts of the agent tree they render, enabling efficient subagent...\n- Consider a research agent that delegates to three subagents, each calling tools, updating state, and streaming intermediate findings.\n- Alongside the release, we're publishing a streaming cookbook with runnable Python and TypeScript examples.\n\nSource: langchain.com | Curated by Graitech AI.\n\n#Openai #Anthropic #Microsoft #Amazon #Aws #Nvidia #Tesla #Cohere #Claude #ModelRelease #RegulationOrSafety #DeveloperTools #HardwareAndCompute #MediaGeneration\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/01_20260521-1709_from-token-streams-to-agent-streams-part-1/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/01_20260521-1709_from-token-streams-to-agent-streams-part-1/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/01_20260521-1709_from-token-streams-to-agent-streams-part-1/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/01_20260521-1709_from-token-streams-to-agent-streams-part-1/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/01_20260521-1709_from-token-streams-to-agent-streams-part-1/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/01_20260521-1709_from-token-streams-to-agent-streams-part-1/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/01_20260521-1709_from-token-streams-to-agent-streams-part-1/slide_07.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload",
+      "story_score": 1.0,
+      "story_selected_reason": "article image available, source URL available, 3 concrete signal(s)"
+    },
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/02_20260521-1709_from-token-streams-to-agent-streams-part-2",
+      "caption": "From Token Streams to Agent Streams - Part 2\n\nIn this post, we show you how OPLOG developed three AI agents using the Strands Agents SDK, deployed them to Amazon Bedrock AgentCore, and integrated Amazon Bedrock with Anthropic\u2019s Claude Sonnet and Amazon Bedrock Knowledge Bases for Retrieval Augmented Generation (RAG).\n\nKey takeaways:\n- The company needed a solution that could autonomously process data across the systems, deliver real-time intelligence, and remove manual reporting...\n- In this post, we show you how OPLOG developed three AI agents using the Strands Agents SDK, deployed them to Amazon Bedrock AgentCore, and...\n- Artificial Intelligence Build AI agents for business intelligence with Amazon Bedrock AgentCore OPLOG , a technology-driven fulfillment company...\n- The agents operate independently without communicating with each other; each processes data from specific sources and delivers targeted...\n\nSource: aws.amazon.com | Curated by Graitech AI.\n\n#Openai #Anthropic #Microsoft #Amazon #Aws #Nvidia #Tesla #Cohere #Claude #ModelRelease #RegulationOrSafety #DeveloperTools #HardwareAndCompute #MediaGeneration\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/02_20260521-1709_from-token-streams-to-agent-streams-part-2/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/02_20260521-1709_from-token-streams-to-agent-streams-part-2/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/02_20260521-1709_from-token-streams-to-agent-streams-part-2/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/02_20260521-1709_from-token-streams-to-agent-streams-part-2/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/02_20260521-1709_from-token-streams-to-agent-streams-part-2/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/02_20260521-1709_from-token-streams-to-agent-streams-part-2/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/02_20260521-1709_from-token-streams-to-agent-streams-part-2/slide_07.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/02_20260521-1709_from-token-streams-to-agent-streams-part-2/slide_08.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload",
+      "story_score": 1.0,
+      "story_selected_reason": "article image available, source URL available, 7 concrete signal(s)"
+    },
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/03_20260521-1709_from-token-streams-to-agent-streams-part-3",
+      "caption": "From Token Streams to Agent Streams - Part 3\n\nThis post explores design considerations for architecting multi-tenant agentic applications and the framework needed to address SaaS architecture challenges with Amazon Bedrock AgentCore.\n\nKey takeaways:\n- A hybrid approach, using less capable models for standard tiers and fine-tuned or more capable models for premium enterprise customers, balances...\n- The option to select the model based on tenant tier (Tier-specific model) allows flexibility and balances cost, performance, and accuracy across...\n- It provides constructs for deploying agents and hosting MCP servers, with built-in support for identity management, memory, observability, and...\n- Artificial Intelligence Building multi-tenant agents with Amazon Bedrock AgentCore Software as a service (SaaS) providers building multi-tenant...\n\nSource: aws.amazon.com | Curated by Graitech AI.\n\n#Openai #Anthropic #Microsoft #Amazon #Aws #Nvidia #Tesla #Cohere #Claude #ModelRelease #RegulationOrSafety #DeveloperTools #HardwareAndCompute #MediaGeneration\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/03_20260521-1709_from-token-streams-to-agent-streams-part-3/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/03_20260521-1709_from-token-streams-to-agent-streams-part-3/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/03_20260521-1709_from-token-streams-to-agent-streams-part-3/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/03_20260521-1709_from-token-streams-to-agent-streams-part-3/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/03_20260521-1709_from-token-streams-to-agent-streams-part-3/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/03_20260521-1709_from-token-streams-to-agent-streams-part-3/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/03_20260521-1709_from-token-streams-to-agent-streams-part-3/slide_07.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/03_20260521-1709_from-token-streams-to-agent-streams-part-3/slide_08.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload",
+      "story_score": 1.0,
+      "story_selected_reason": "article image available, source URL available, 3 concrete signal(s)"
+    },
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/04_20260521-1709_from-token-streams-to-agent-streams-part-4",
+      "caption": "From Token Streams to Agent Streams - Part 4\n\nevents, scoped subscriptions, subagent visibility, multimodal outputs, and Link : [HIGH] Tesla brings 'Full Self-Driving (Supervised)' to China after years of delays as local EV rivals race ahead Company : CNBC Technology Summary : Tesla's 'Full Self-Driving (Supervised)' capabilities are now available in China, the company said in an X post on Thursday, after years of delays. Link : [HIGH] Break the context...\n\nKey takeaways:\n- Link : [HIGH] Break the context window barrier with Amazon Bedrock AgentCore Company : AWS Machine Learning Summary : In this post, you will learn...\n- By the end, you will know how to process docum Link : [HIGH] Build AI...\n- events, scoped subscriptions, subagent visibility, multimodal outputs, and Link : [HIGH] Tesla brings 'Full Self-Driving (Supervised)' to China...\n- Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility...\n\nSource: cnbc.com | Curated by Graitech AI.\n\n#Openai #Anthropic #Microsoft #Amazon #Aws #Nvidia #Tesla #Cohere #Claude #ModelRelease #RegulationOrSafety #DeveloperTools #HardwareAndCompute #MediaGeneration\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/04_20260521-1709_from-token-streams-to-agent-streams-part-4/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/04_20260521-1709_from-token-streams-to-agent-streams-part-4/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/04_20260521-1709_from-token-streams-to-agent-streams-part-4/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/04_20260521-1709_from-token-streams-to-agent-streams-part-4/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/04_20260521-1709_from-token-streams-to-agent-streams-part-4/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/04_20260521-1709_from-token-streams-to-agent-streams-part-4/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/04_20260521-1709_from-token-streams-to-agent-streams-part-4/slide_07.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload",
+      "story_score": 1.0,
+      "story_selected_reason": "source URL available, 4 concrete signal(s)"
+    },
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/05_20260521-1709_from-token-streams-to-agent-streams-part-5",
+      "caption": "From Token Streams to Agent Streams - Part 5\n\nthe latest breakthroughs shaping every industry, covering topics spanning AI fact Link : [HIGH] Bloom Energy rises 12% after partnering with European AI infrastructure upstart in $2.6 billion deal Company : CNBC Technology Summary : Nebius said Wednesday that it would deploy Bloom's fuel-cell technology to generate electricity faster and more quickly at its data centers. Link : [MEDIUM] How Auth Proxy secures...\n\nKey takeaways:\n- the latest breakthroughs shaping every industry, covering topics spanning AI fact Link : [HIGH] Bloom Energy rises 12% after partnering with...\n- Link : [MEDIUM] How Auth Proxy secures LangSmith agent sandboxes Company : LangChain Blog Summary : Agents need credentials and network access to...\n- This post explains how Auth Proxy keeps secrets out of LangSmith Sandboxes runtimes, con Link : [MEDIUM] Building multi-tenant agents with...\n- Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility...\n\nSource: cnbc.com | Curated by Graitech AI.\n\n#Openai #Anthropic #Microsoft #Amazon #Aws #Nvidia #Tesla #Cohere #Claude #ModelRelease #RegulationOrSafety #DeveloperTools #HardwareAndCompute #MediaGeneration\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/05_20260521-1709_from-token-streams-to-agent-streams-part-5/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/05_20260521-1709_from-token-streams-to-agent-streams-part-5/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/05_20260521-1709_from-token-streams-to-agent-streams-part-5/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/05_20260521-1709_from-token-streams-to-agent-streams-part-5/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/05_20260521-1709_from-token-streams-to-agent-streams-part-5/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/05_20260521-1709_from-token-streams-to-agent-streams-part-5/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/05_20260521-1709_from-token-streams-to-agent-streams-part-5/slide_07.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-182739/05_20260521-1709_from-token-streams-to-agent-streams-part-5/slide_08.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload",
+      "story_score": 1.0,
+      "story_selected_reason": "source URL available, 9 concrete signal(s)"
+    }
+  ]
+}

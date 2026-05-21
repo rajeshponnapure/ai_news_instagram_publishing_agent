@@ -1,53 +1,54 @@
 # AI News Summary Report
 
-Generated: 2026-05-21T16:40:35+00:00
+Generated: 2026-05-21T18:27:39+00:00
 Source: grdevelopers.co@gmail.com
 Emails summarized: 1
 
 ## Executive Brief
 
-- Link : [HIGH] Hark raises $700M Series A for its secretive “universal” AI interface Company : TechCrunch AI Summary : Brett Adcock's new AI startup is now valued at $6 billion by its investors.
-- BREAKING AI UPDATE - 21 May 2026, 07:52 PM IST 4 new AI event(s) detected ================================================== [HIGH] Bloom Energy rises 2% after partnering with European AI infrastructure upstart in...
-- Link : [MEDIUM] Google is pitching an AI agent ecosystem to consumers who may not buy it Company : TechCrunch AI Summary : The AI agents are coming.
-- ology Summary : Nebius said Wednesday that it would deploy Bloom's fuel-cell technology to generate electricity faster and more quickly at its data centers.
-- Link : [MEDIUM] I tested Motorola's $1,500 Razr Ultra, and it's so close to being my dream flip phone Company : ZDNet AI Summary : The 2026 Razr Ultra delivers major hardware...
-- Link : k raises $700M Series A for its secretive “universal” AI interface Company : TechCrunch AI Summary : Brett Adcock's new AI startup is now valued at $6 billion by its investors.
+- Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and resilient frontend experiences for building...
+- Scoped subscriptions make complex agent UIs scalable Frontends only stream the parts of the agent tree they render, enabling efficient subagent inspectors, dashboards, and long-running production workloads.
+- Consider a research agent that delegates to three subagents, each calling tools, updating state, and streaming intermediate findings.
+- Alongside the release, we're publishing a streaming cookbook with runnable Python and TypeScript examples.
+- A single Deep Agents run can plan, delegate to subagents, call tools, pause for human approval, and produce text, structured data, or media along the way.
+- One streaming model works across runtimes and modalities The same architecture powers local and remote runs, React/Vue/Svelte/Angular SDKs, and supports text, tools, images, audio, video, and custom application events.
 
 ## Most Mentioned Companies
 
-Google (1), CNBC Technology (1), European AI (1), The AI (1)
+OpenAI (1), Anthropic (1), Microsoft (1), Amazon (1), AWS (1), NVIDIA (1), Tesla (1), Cohere (1)
 
 ## Most Mentioned Models
 
-No clear model mentions found.
+Claude (1)
 
 ## Main Topics
 
-general AI update (1)
+model release (1), regulation or safety (1), developer tools (1), hardware and compute (1), media generation (1)
 
 ## Voice Script Hooks
 
-- Google just made a move in general AI update: BREAKING AI UPDATE - 21 May 2026, 07:52 PM IST
+- OpenAI just made a move in model release: From Token Streams to Agent Streams
 
 ## Per-Email Summaries
 
-### 1. BREAKING AI UPDATE - 21 May 2026, 07:52 PM IST
+### 1. From Token Streams to Agent Streams
 
-Source date: Thu, 21 May 2026 07:22:56 -0700
+Source date: Thu, 21 May 2026 10:09:15 -0700
 Confidence: 0.82
-Article: https://www.cnbc.com/2026/05/21/bloom-energy-nebius-ai-infrastructure-firm-partnership.html
-Article title: ⚡ BREAKING AI UPDATE — 21 May 2026, 07:52 PM IST
+Article: https://www.langchain.com/blog/token-streams-to-agent-streams
+Article title: From Token Streams to Agent Streams
 
-Article excerpt: ⚡ BREAKING AI UPDATE — 21 May 2026, 07:52 PM IST 4 new AI event(s) detected ================================================== [HIGH] Bloom Energy rises 2% after partnering with European AI infrastructure upstart in $2.6 billion deal Company : CNBC Technology Summary : Nebius said Wednesday that it would deploy Bloom's fuel-cell technology to generate electricity faster and more quickly at its data centers. Link : [HIGH] Hark raises $700M Series A for its secretive “universal” AI interface Company : TechCrunch AI Summary : Brett Adcock's new AI startup is now valued at $6 billion by its investors. Link ...
+Article excerpt: Move beyond token streaming. Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and resilient frontend experiences for building production-ready agent applications.
 
-BREAKING AI UPDATE - 21 May 2026, 07:52 PM IST 4 new AI event(s) detected ================================================== [HIGH] Bloom Energy rises 2% after partnering with European AI infrastructure upstart in $2.6 billion deal Company : CNBC Technology Summary : Nebius said Wednesday that it would deploy Bloom's fuel-cell technology to generate electricity faster and more quickly at its data centers. Link : [HIGH] Hark raises $700M Series A for its secretive “universal” AI interface Company : TechCrunch AI Summary : Brett Adcock's new AI startup is now valued at $6 billion by its...
+Scoped subscriptions make complex agent UIs scalable Frontends only stream the parts of the agent tree they render, enabling efficient subagent inspectors, dashboards, and long-running production workloads. Consider a research agent that delegates to three subagents, each calling tools, updating state, and streaming intermediate findings. The practical impact: Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and resilient frontend experiences for building production-ready...
 
 Key points:
-- Link : [HIGH] Hark raises $700M Series A for its secretive “universal” AI interface Company : TechCrunch AI Summary : Brett Adcock's new AI startup is now valued at $6 billion by its investors.
-- BREAKING AI UPDATE - 21 May 2026, 07:52 PM IST 4 new AI event(s) detected ================================================== [HIGH] Bloom Energy rises 2% after partnering with European AI infrastructure upstart in...
-- Link : [MEDIUM] Google is pitching an AI agent ecosystem to consumers who may not buy it Company : TechCrunch AI Summary : The AI agents are coming.
-- ology Summary : Nebius said Wednesday that it would deploy Bloom's fuel-cell technology to generate electricity faster and more quickly at its data centers.
-- Link : [MEDIUM] I tested Motorola's $1,500 Razr Ultra, and it's so close to being my dream flip phone Company : ZDNet AI Summary : The 2026 Razr Ultra delivers major hardware...
-- Link : k raises $700M Series A for its secretive “universal” AI interface Company : TechCrunch AI Summary : Brett Adcock's new AI startup is now valued at $6 billion by its investors.
-Companies: Google, CNBC Technology, European AI, The AI
-Topics: general AI update
+- Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and resilient frontend experiences for building...
+- Scoped subscriptions make complex agent UIs scalable Frontends only stream the parts of the agent tree they render, enabling efficient subagent inspectors, dashboards, and long-running production workloads.
+- Consider a research agent that delegates to three subagents, each calling tools, updating state, and streaming intermediate findings.
+- Alongside the release, we're publishing a streaming cookbook with runnable Python and TypeScript examples.
+- A single Deep Agents run can plan, delegate to subagents, call tools, pause for human approval, and produce text, structured data, or media along the way.
+- One streaming model works across runtimes and modalities The same architecture powers local and remote runs, React/Vue/Svelte/Angular SDKs, and supports text, tools, images, audio, video, and custom application events.
+Companies: OpenAI, Anthropic, Microsoft, Amazon, AWS, NVIDIA, Tesla, Cohere
+Models: Claude
+Topics: model release, regulation or safety, developer tools, hardware and compute, media generation
