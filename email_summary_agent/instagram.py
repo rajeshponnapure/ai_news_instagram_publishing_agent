@@ -27,6 +27,26 @@ ACCENT_GREEN = "#C8FF00"
 PAGE_BLACK = "#050505"
 TEXT_WHITE = "#FFFFFF"
 SOFT_WHITE = "#D7D7D7"
+VIDEO_BLOCKED_TERMS = ("video", "videos", "reel", "reels", "clip", "clips", "short", "shorts")
+NOISY_ENTITY_TERMS = ("releases", "introduces", "designed", "tracks", "posting", "angle", "primary", "entities")
+NOISY_POINT_PREFIXES = (
+    "tracks new ai launch activity",
+    "best posting angle",
+    "primary entities to watch",
+    "likely content themes",
+)
+PUBLIC_BLOCKED_PHRASES = (
+    "article 1 title:",
+    "article title:",
+    "build software better",
+    "read every piece of feedback",
+    "gitHub is where people build software".lower(),
+    "more than 150 million people",
+    "contribute to over 420 million projects",
+    "get tips, technical guides, and best practices",
+    "sign up for",
+    "subscribe to",
+)
 
 
 def write_instagram_carousels(
@@ -35,7 +55,13 @@ def write_instagram_carousels(
     generated_at: datetime | None = None,
     clear_existing: bool = False,
 ) -> list[Path]:
-    """Create one clean, image-led Instagram carousel per email summary."""
+    """Create Instagram carousel batches.
+
+    A single-story summary produces one 4-slide post. A digest summary with
+    multiple article_items is split into carousel parts of up to three stories
+    each because the Instagram publishing API commonly caps carousel children at
+    10 media items: 3 stories * 3 slides + one CTA slide.
+    """
     if not summaries:
         return []
     if clear_existing:
@@ -47,56 +73,95 @@ def write_instagram_carousels(
 
     carousel_dirs: list[Path] = []
     index_rows: list[str] = []
-    for index, summary in enumerate(summaries, start=1):
+    carousel_index = 0
+    for summary in summaries:
         email_dt = _email_datetime(summary.source_date) or now
-        slug = _slugify(summary.headline or summary.subject or f"ai-news-{index}")
-        folder_name = f"{index:02d}_{email_dt.strftime('%Y%m%d-%H%M')}_{slug}"
-        carousel_dir = batch_dir / folder_name
-        carousel_dir.mkdir(parents=True, exist_ok=True)
+        for part_summary in _split_summary_for_carousels(summary):
+            carousel_index += 1
+            index = carousel_index
+            slug = _slugify(part_summary.headline or part_summary.subject or f"ai-news-{index}")
+            folder_name = f"{index:02d}_{email_dt.strftime('%Y%m%d-%H%M')}_{slug}"
+            carousel_dir = batch_dir / folder_name
+            carousel_dir.mkdir(parents=True, exist_ok=True)
 
-        slides = _build_slide_specs(summary, email_dt)
-        for slide_number, slide in enumerate(slides, start=1):
-            _write_slide_png(
-                carousel_dir / f"slide_{slide_number:02d}.png",
-                slide_number=slide_number,
-                total_slides=len(slides),
-                slide=slide,
-                email_dt=email_dt,
+            slides = _build_slide_specs(part_summary, email_dt)
+            for slide_number, slide in enumerate(slides, start=1):
+                _write_slide_png(
+                    carousel_dir / f"slide_{slide_number:02d}.png",
+                    slide_number=slide_number,
+                    total_slides=len(slides),
+                    slide=slide,
+                    email_dt=email_dt,
+                )
+
+            caption = _build_caption(part_summary)
+            (carousel_dir / "caption.txt").write_text(caption, encoding="utf-8")
+            (carousel_dir / "metadata.json").write_text(
+                json.dumps(
+                    {
+                        "email_received_at": email_dt.isoformat(timespec="minutes"),
+                        "recommended_post_time": POSTING_SLOTS[(index - 1) % len(POSTING_SLOTS)],
+                        "headline": part_summary.headline,
+                        "subject": part_summary.subject,
+                        "source_date": part_summary.source_date,
+                        "companies": part_summary.companies,
+                        "models": part_summary.models,
+                        "topics": part_summary.topics,
+                        "article_url": part_summary.article_url,
+                        "article_title": part_summary.article_title,
+                        "article_image_path": part_summary.article_image_path,
+                        "article_image_url": part_summary.article_image_url,
+                        "article_items": part_summary.article_items or [],
+                        "carousel_part": getattr(part_summary, "_carousel_part", None),
+                        "carousel_total_parts": getattr(part_summary, "_carousel_total_parts", None),
+                        "slides": [slide["title"] for slide in slides],
+                    },
+                    ensure_ascii=True,
+                    indent=2,
+                ),
+                encoding="utf-8",
             )
-
-        caption = _build_caption(summary)
-        (carousel_dir / "caption.txt").write_text(caption, encoding="utf-8")
-        (carousel_dir / "metadata.json").write_text(
-            json.dumps(
-                {
-                    "email_received_at": email_dt.isoformat(timespec="minutes"),
-                    "recommended_post_time": POSTING_SLOTS[(index - 1) % len(POSTING_SLOTS)],
-                    "headline": summary.headline,
-                    "subject": summary.subject,
-                    "source_date": summary.source_date,
-                    "companies": summary.companies,
-                    "models": summary.models,
-                    "topics": summary.topics,
-                    "article_url": summary.article_url,
-                    "article_title": summary.article_title,
-                    "article_image_path": summary.article_image_path,
-                    "article_image_url": summary.article_image_url,
-                    "article_items": summary.article_items or [],
-                    "slides": [slide["title"] for slide in slides],
-                },
-                ensure_ascii=True,
-                indent=2,
-            ),
-            encoding="utf-8",
-        )
-        index_rows.append(
-            f'<li><a href="{carousel_dir.name}/slide_01.png">{html.escape(summary.headline)}</a> '
-            f'<span>{len(slides)} slides - {POSTING_SLOTS[(index - 1) % len(POSTING_SLOTS)]}</span></li>'
-        )
-        carousel_dirs.append(carousel_dir)
+            index_rows.append(
+                f'<li><a href="{carousel_dir.name}/slide_01.png">{html.escape(part_summary.headline)}</a> '
+                f'<span>{len(slides)} slides - {POSTING_SLOTS[(index - 1) % len(POSTING_SLOTS)]}</span></li>'
+            )
+            carousel_dirs.append(carousel_dir)
 
     (batch_dir / "index.html").write_text(_render_index(index_rows), encoding="utf-8")
     return carousel_dirs
+
+
+def _split_summary_for_carousels(summary: EmailSummary) -> list[EmailSummary]:
+    articles = _article_items(summary)
+    if len(articles) <= 3:
+        return [summary]
+    chunks = [articles[index : index + 3] for index in range(0, len(articles), 3)]
+    parts: list[EmailSummary] = []
+    for part_number, chunk in enumerate(chunks, start=1):
+        headline = f"{_tighten(summary.headline or summary.subject or 'Daily AI Digest', 88)} - Part {part_number}"
+        first = chunk[0]
+        part = EmailSummary(
+            message_key=f"{summary.message_key}:part:{part_number}",
+            subject=summary.subject,
+            source_date=summary.source_date,
+            headline=headline,
+            summary=summary.summary,
+            key_points=summary.key_points,
+            companies=summary.companies,
+            models=summary.models,
+            topics=summary.topics,
+            confidence=summary.confidence,
+            article_url=str(first.get("url", "")),
+            article_title=str(first.get("title", "")),
+            article_image_path=str(first.get("image_path", "")),
+            article_image_url=str(first.get("image_url", "")),
+            article_excerpt=str(first.get("excerpt") or first.get("description") or ""),
+            article_items=chunk,
+        )
+        object.__setattr__(part, "_carousel_part", part_number)
+        object.__setattr__(part, "_carousel_total_parts", len(chunks))
+        parts.append(part)
+    return parts
 
 
 def _build_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[str, Any]]:
@@ -104,26 +169,29 @@ def _build_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[s
     if not articles:
         articles = [
             {
-                "title": summary.headline or summary.subject or "AI news",
-                "description": summary.summary,
+                "url": summary.article_url,
+                "title": summary.article_title or summary.headline or summary.subject or "AI update",
+                "description": summary.article_excerpt or summary.summary,
                 "excerpt": summary.article_excerpt,
                 "image_path": summary.article_image_path,
                 "image_url": summary.article_image_url,
-                "url": summary.article_url,
             }
         ]
 
     slides: list[dict[str, Any]] = []
-    total_articles = min(len(articles), 3)
     for article_index, article in enumerate(articles[:3], start=1):
-        title = _tighten(article.get("title") or summary.headline or summary.subject or "AI news", 88)
-        topic = ", ".join([part for part in [title, *summary.topics[:2]] if part]) or "AI news"
+        headline = _tighten(
+            _clean_public_text(str(article.get("title") or summary.headline or summary.subject or "AI update"))
+            or _tighten(summary.headline or summary.subject or "AI update", 88),
+            88,
+        )
+        topic = ", ".join(summary.topics[:2]) or headline
         image_path = _select_article_image(article, topic)
         slides.append(
             {
                 "kind": "image",
                 "eyebrow": f"STORY {article_index:02d}",
-                "title": title,
+                "title": headline,
                 "body": "",
                 "image_path": image_path,
                 "topic": topic,
@@ -133,13 +201,16 @@ def _build_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[s
 
         narrative = _compose_article_narrative(summary, article)
         first_half, second_half = _split_narrative_for_two_pages(narrative)
+        if not second_half:
+            second_half = _fallback_story_second_page(summary, article)
+
         slides.append(
             {
                 "kind": "text",
-                "eyebrow": f"STORY {article_index:02d} - PART 1",
-                "title": title,
-                "body": first_half,
-                "supporting": _supporting_note(summary, article, article_index, "Why it matters", variant="why"),
+                "eyebrow": f"STORY {article_index:02d} - WHAT HAPPENED",
+                "title": headline,
+                "body": _tighten(first_half, 520),
+                "supporting": _supporting_note(summary, article, article_index, "Why this matters", variant="why"),
                 "image_path": "",
                 "topic": topic,
                 "url": article.get("url", ""),
@@ -148,10 +219,10 @@ def _build_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[s
         slides.append(
             {
                 "kind": "text",
-                "eyebrow": f"STORY {article_index:02d} - PART 2",
-                "title": "What happens next",
-                "body": second_half,
-                "supporting": _supporting_note(summary, article, article_index, "What to watch next", variant="watch"),
+                "eyebrow": f"STORY {article_index:02d} - NEXT",
+                "title": "What to watch next",
+                "body": _tighten(second_half, 500),
+                "supporting": _supporting_note(summary, article, article_index, "Watch this angle", variant="watch"),
                 "image_path": "",
                 "topic": topic,
                 "url": article.get("url", ""),
@@ -162,10 +233,9 @@ def _build_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[s
         {
             "kind": "cta",
             "eyebrow": "GRAITECH",
-            "title": "Follow for the next AI drop",
-            "body": "Share • comment • follow",
+            "title": "Follow for the next AI briefing",
+            "body": "LIKE | COMMENT | FOLLOW | SAVE",
             "image_path": "",
-            "topic": "graitech",
         }
     )
 
@@ -177,9 +247,10 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
 
     image = Image.new("RGBA", (CANVAS_W, CANVAS_H), PAGE_BLACK)
     draw = ImageDraw.Draw(image, "RGBA")
-    font_eyebrow = _font(ImageFont, 26, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
-    font_title = _font(ImageFont, 58, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/arialbd.ttf"])
-    font_body = _font(ImageFont, 42, bold=False, preferred=["C:/Windows/Fonts/seguisb.ttf", "C:/Windows/Fonts/segoeui.ttf", "C:/Windows/Fonts/arial.ttf"])
+    # Large fonts for full-page text coverage with minimal whitespace
+    font_eyebrow = _font(ImageFont, 22, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
+    font_title = _font(ImageFont, 50, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/arialbd.ttf"])
+    font_body = _font(ImageFont, 40, bold=False, preferred=["C:/Windows/Fonts/seguisb.ttf", "C:/Windows/Fonts/segoeui.ttf", "C:/Windows/Fonts/arial.ttf"])
     font_meta = _font(ImageFont, 22, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
     font_cta = _font(ImageFont, 42, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf"])
     font_brand = _font(ImageFont, 108, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
@@ -201,28 +272,30 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
         )
         artwork = ImageEnhance.Color(artwork).enhance(0.90)
         artwork = ImageEnhance.Contrast(artwork).enhance(1.05)
-        _paste_contained(image, artwork, image_box, radius=36, pad=24)
+        # Paste artwork with minimal padding to display full image without cropping
+        _paste_contained(image, artwork, image_box, radius=36, pad=6, cover=False)
         draw.rounded_rectangle(image_box, radius=36, outline=ACCENT_GREEN, width=2)
     elif slide["kind"] == "cta":
         draw.rounded_rectangle((margin, 92, CANVAS_W - margin, 1258), radius=46, fill="#0B0B0B", outline="#1F1F1F", width=2)
         _draw_centered_text(draw, "GRAITECH", (140, 150, 940, 240), font_brand, ACCENT_GREEN, 1)
         _draw_centered_text(draw, "Instagram-ready AI news", (140, 280, 940, 380), font_title, TEXT_WHITE, 1)
-        _draw_centered_text(draw, "Share • comment • follow", (160, 400, 920, 470), font_cta, SOFT_WHITE, 1)
+        _draw_centered_text(draw, "LIKE | COMMENT | FOLLOW", (160, 400, 920, 470), font_cta, ACCENT_GREEN, 1)
         _draw_centered_logo_panel(image, (240, 545, 840, 955))
         _draw_centered_text(draw, "Save this post for your next AI briefing.", (130, 1000, 950, 1080), font_body, TEXT_WHITE, 1)
         _draw_centered_text(draw, f"{slide_number:02d}/{total_slides:02d}", (450, 1120, 630, 1170), font_meta, ACCENT_GREEN, 1)
     else:
         _draw_centered_text(draw, slide["eyebrow"], (170, 86, 910, 132), font_eyebrow, ACCENT_GREEN, 1)
         title_box = (120, 152, 960, 336)
-        _draw_centered_text(draw, slide.get("title", ""), title_box, font_title, TEXT_WHITE, 2)
-        body_box = (120, 340, 960, 860)
-        _draw_centered_text_block(
+        # Draw the title top-aligned to avoid large vertical centering gaps
+        _draw_top_centered_text_block(draw, slide.get("title", ""), title_box, font_title, TEXT_WHITE, max_lines=2)
+        body_box = (120, 340, 960, 880)
+        _draw_left_text_block(
             draw,
             slide["body"],
             box=body_box,
             font=font_body,
             fill=SOFT_WHITE,
-            line_gap=18,
+            line_gap=6,
             max_lines=8,
         )
         supporting = str(slide.get("supporting", "")).strip()
@@ -437,7 +510,7 @@ def _font(image_font, size: int, bold: bool = False, mono: bool = False, preferr
     return image_font.load_default()
 
 
-def _paste_contained(base_image, artwork, box: tuple[int, int, int, int], radius: int, pad: int = 24) -> None:
+def _paste_contained(base_image, artwork, box: tuple[int, int, int, int], radius: int, pad: int = 24, cover: bool = False) -> None:
     from PIL import Image, ImageDraw, ImageOps
 
     x1, y1, x2, y2 = box
@@ -445,15 +518,52 @@ def _paste_contained(base_image, artwork, box: tuple[int, int, int, int], radius
     height = y2 - y1
     inner_width = max(1, width - pad * 2)
     inner_height = max(1, height - pad * 2)
-    fitted = ImageOps.contain(artwork, (inner_width, inner_height), method=Image.Resampling.LANCZOS)
+    if cover:
+        # Fill the area, cropping if necessary so there are no empty bands
+        fitted = ImageOps.fit(artwork, (inner_width, inner_height), method=Image.Resampling.LANCZOS)
+    else:
+        # Contain within the inner box (preserve whole image, add letterbox if needed)
+        fitted = ImageOps.contain(artwork, (inner_width, inner_height), method=Image.Resampling.LANCZOS)
     mask = Image.new("L", (width, height), 0)
     mask_draw = ImageDraw.Draw(mask)
     mask_draw.rounded_rectangle((0, 0, width, height), radius=radius, fill=255)
     layer = Image.new("RGBA", (width, height), PAGE_BLACK)
-    offset_x = (width - fitted.width) // 2
-    offset_y = (height - fitted.height) // 2
+    # center the fitted artwork within the padded area
+    offset_x = pad + (inner_width - fitted.width) // 2
+    offset_y = pad + (inner_height - fitted.height) // 2
     layer.paste(fitted, (offset_x, offset_y))
     base_image.paste(layer, (x1, y1), mask)
+
+
+def _draw_top_centered_text_block(draw, text: str, box: tuple[int, int, int, int], font, fill: str, max_lines: int) -> int:
+    """Draw centered text but top-aligned in the given box."""
+    x1, y1, x2, y2 = box
+    width = x2 - x1
+    lines = _wrap_to_width(draw, text, font, width, max_lines)
+    y = y1
+    for line in lines:
+        bbox = draw.textbbox((0, 0), line, font=font)
+        text_width = bbox[2] - bbox[0]
+        text_height = bbox[3] - bbox[1]
+        x = x1 + max(0, (width - text_width) // 2)
+        draw.text((x, y), line, fill=fill, font=font)
+        y += text_height + 6
+    return y
+
+
+def _draw_left_text_block(draw, text: str, box: tuple[int, int, int, int], font, fill: str, line_gap: int, max_lines: int) -> int:
+    """Draw left-aligned text block starting at the top-left of the box."""
+    x1, y1, x2, y2 = box
+    width = x2 - x1
+    lines = _wrap_to_width(draw, text, font, width, max_lines)
+    y = y1
+    for line in lines:
+        if y > y2:
+            break
+        draw.text((x1, y), line, fill=fill, font=font)
+        bbox = draw.textbbox((x1, y), line, font=font)
+        y += (bbox[3] - bbox[1]) + line_gap
+    return y
 
 
 def _select_article_image(article: dict[str, Any], topic: str) -> str:
@@ -480,13 +590,25 @@ def _resolve_image_source(image_path: str) -> Path | None:
 
 
 def _compose_article_narrative(summary: EmailSummary, article: dict[str, Any]) -> str:
-    title = str(article.get("title") or summary.headline or summary.subject or "AI update").strip()
-    description = str(article.get("description") or article.get("excerpt") or summary.summary or "").strip()
-    points = [point.strip() for point in summary.key_points if point.strip()]
-    lead = description or summary.summary or ""
+    title = _clean_public_text(str(article.get("title") or summary.headline or summary.subject or "AI update"))
+    article_summary = _clean_public_text(str(article.get("summary") or ""))
+    description = _clean_public_text(str(article.get("description") or ""))
+    excerpt = _clean_public_text(str(article.get("excerpt") or ""))
+    summary_text = _clean_public_text(summary.summary)
+
+    primary = article_summary if len(article_summary) >= 120 else description
+    if len(primary) < 120:
+        primary = excerpt
+    if len(primary) < 120:
+        primary = summary_text
+    if not primary:
+        primary = _fallback_summary_text(summary, title or (summary.headline or "AI update"))
+
+    points = [str(point).strip() for point in article.get("key_points", []) if str(point).strip()]
+    narrative = primary
     if points:
-        lead = lead + "\n\nKey takeaways:\n- " + "\n- ".join(points[:4])
-    return f"{title}\n\n{lead}".strip()
+        narrative = f"{primary} Key details: {' '.join(points[:3])}"
+    return _tighten(re.sub(r"\s+", " ", narrative).strip(), 950)
 
 
 def _split_narrative_for_two_pages(text: str) -> tuple[str, str]:
@@ -494,28 +616,33 @@ def _split_narrative_for_two_pages(text: str) -> tuple[str, str]:
     if not text:
         return ("", "")
     sentences = re.split(r"(?<=[\.\!\?])\s+", text)
-    if len(sentences) <= 2:
-        midpoint = max(1, len(text) // 2)
-        split_at = text.rfind(" ", 0, midpoint)
+    first_parts: list[str] = []
+    second_parts: list[str] = []
+    for sentence in sentences:
+        candidate = " ".join(first_parts + [sentence]).strip()
+        if len(candidate) <= 420 or not first_parts:
+            first_parts.append(sentence)
+        else:
+            second_parts.append(sentence)
+    first = " ".join(first_parts).strip()
+    second = " ".join(second_parts).strip()
+    if not second and len(first) > 320:
+        midpoint = max(1, len(first) // 2)
+        split_at = first.rfind(" ", 0, midpoint)
         if split_at == -1:
             split_at = midpoint
-        first = text[:split_at].strip()
-        second = text[split_at:].strip()
-    else:
-        half = max(1, len(sentences) // 2)
-        first = " ".join(sentences[:half]).strip()
-        second = " ".join(sentences[half:]).strip()
-    if not first:
-        first = text[: max(1, len(text) // 2)].strip()
-    if not second:
-        second = text[max(1, len(text) // 2):].strip()
-    return first, second
+        second = first[split_at:].strip()
+        first = first[:split_at].strip()
+    return _tighten(first, 430), _tighten(second, 420)
 
 
 def _fetch_unsplash_for_topic(topic: str, width: int, height: int) -> str | None:
     try:
-        query = urllib.parse.quote_plus(re.sub(r"[^a-zA-Z0-9 ]+", " ", topic or "technology").strip() or "technology")
-        url = f"https://source.unsplash.com/featured/{width}x{height}/?{query}"
+        # Use high-quality parameter and add orientation for better images
+        clean_topic = re.sub(r"[^a-zA-Z0-9 ]+", " ", topic or "technology").strip() or "technology"
+        query = urllib.parse.quote_plus(clean_topic)
+        # Use Unsplash's featured endpoint for high-quality curated images
+        url = f"https://source.unsplash.com/1200x1200/?{query},professional,high-quality"
         tmp_dir = Path(tempfile.gettempdir()) / "ai_news_instagram"
         tmp_dir.mkdir(parents=True, exist_ok=True)
         dest = tmp_dir / f"{_slugify(topic)}_{width}x{height}_{int(datetime.now().timestamp())}.jpg"
@@ -603,20 +730,29 @@ def _split_text_into_sections(text: str, approx_chars: int = 380) -> list[str]:
 
 def _build_caption(summary: EmailSummary) -> str:
     keywords = _keywords(summary)
-    hashtags = " ".join(f"#{_hashtag(word)}" for word in keywords[:16])
-    article_count = len(_article_items(summary))
-    source_line = f"Covered from {article_count} linked story/stories in this email." if article_count else "Covered from this email briefing."
+    hashtags = " ".join(f"#{_hashtag(word)}" for word in keywords[:12])
+    article = (_article_items(summary) or [{}])[0]
+    lead = _clean_public_text(
+        str(article.get("description") or article.get("excerpt") or summary.summary)
+    )
+    cleaned_points = _clean_public_points(summary.key_points, summary.headline, lead)
+    if not cleaned_points:
+        cleaned_points = _fallback_public_points(summary)
+    lead = lead or _fallback_summary_text(summary, summary.headline or summary.subject or "")
+    lead = _dedupe_lead_text(lead, summary.headline or summary.subject or "")
+    if not lead or re.sub(r"\s+", " ", lead).strip().lower() == re.sub(r"\s+", " ", (summary.headline or summary.subject or "")).strip().lower():
+        lead = _fallback_summary_text(summary, summary.headline or summary.subject or "")
     lines = [
-        _tighten(summary.headline, 120),
+        _tighten(summary.headline or summary.subject or "AI news", 120),
         "",
-        _tighten(summary.summary, 420),
+        _tighten(lead, 420),
         "",
-        source_line,
+        "Built from the linked article shared in today's AI news email.",
         "",
         "Quick takeaways:",
-        *[f"- {_tighten(point, 150)}" for point in summary.key_points[:4]],
+        *[f"- {_tighten(point, 150)}" for point in cleaned_points[:4]],
         "",
-        "Disclaimer: This post is an AI-assisted news summary. Check the linked source before making business, legal, or investment decisions.",
+        "Disclaimer: This is an AI-assisted summary of the email brief.",
         "",
         hashtags,
     ]
@@ -672,6 +808,136 @@ def _article_items(summary: EmailSummary) -> list[dict[str, Any]]:
     return []
 
 
+def _clean_public_text(text: str) -> str:
+    text = re.sub(r"\s+", " ", text or "").strip()
+    if not text:
+        return ""
+    sentences = re.split(r"(?<=[\.!?])\s+", text)
+    kept: list[str] = []
+    for sentence in sentences:
+        lowered = sentence.lower()
+        if any(term in lowered for term in VIDEO_BLOCKED_TERMS):
+            continue
+        if sentence.startswith(("Article ", "Article 1 Title:", "Article title:")):
+            continue
+        if any(phrase in lowered for phrase in PUBLIC_BLOCKED_PHRASES):
+            continue
+        kept.append(sentence.strip())
+    result = " ".join(part for part in kept if part)
+    return result
+
+
+def _clean_public_points(points: list[str], headline: str, summary_text: str) -> list[str]:
+    cleaned: list[str] = []
+    seen: set[str] = set()
+    headline_key = re.sub(r"\s+", " ", headline or "").strip().lower()
+    summary_key = re.sub(r"\s+", " ", summary_text or "").strip().lower()
+    for point in points:
+        cleaned_point = _clean_public_text(point)
+        normalized = re.sub(r"\s+", " ", cleaned_point).strip().lower()
+        if not cleaned_point:
+            continue
+        if normalized in seen:
+            continue
+        if normalized == headline_key or normalized == summary_key:
+            continue
+        if any(normalized.startswith(prefix) for prefix in NOISY_POINT_PREFIXES):
+            continue
+        if headline_key and (normalized.startswith(headline_key) or headline_key in normalized):
+            continue
+        if len(cleaned_point) < 12:
+            continue
+        seen.add(normalized)
+        cleaned.append(cleaned_point)
+    return cleaned
+
+
+def _fallback_summary_text(summary: EmailSummary, headline: str) -> str:
+    parts = [headline.strip()]
+    if summary.companies:
+        parts.append(f"Company: {summary.companies[0]}")
+    if summary.models:
+        parts.append(f"Model: {summary.models[0]}")
+    if summary.topics:
+        parts.append(f"Topic: {summary.topics[0]}")
+    return " | ".join(part for part in parts if part)
+
+
+def _fallback_public_points(summary: EmailSummary) -> list[str]:
+    points: list[str] = []
+    if summary.companies:
+        points.append(f"Primary company in this update: {summary.companies[0]}")
+    if summary.models:
+        points.append(f"Model highlighted: {summary.models[0]}")
+    if summary.topics:
+        points.append(f"Main topic: {summary.topics[0]}")
+    if summary.article_title:
+        points.append(_tighten(summary.article_title, 120))
+    return points
+
+
+def _fallback_story_second_page(summary: EmailSummary, article: dict[str, Any]) -> str:
+    companies = ", ".join(_clean_entity_list(summary.companies)[:3])
+    topics = ", ".join(summary.topics[:3])
+    title = _tighten(_clean_public_text(str(article.get("title") or summary.headline or "AI update")), 72)
+    parts = [
+        f"Story focus: {title}." if title else "",
+        f"Teams to watch: {companies}." if companies else "",
+        f"Theme: {topics}." if topics else "",
+    ]
+    return " ".join(part for part in parts if part) or "Watch adoption signals, developer feedback, and the next release milestone."
+
+
+def _dedupe_lead_text(text: str, headline: str) -> str:
+    text = re.sub(r"\s+", " ", text or "").strip()
+    headline = re.sub(r"\s+", " ", headline or "").strip()
+    if not text or not headline:
+        return text
+    lowered = text.lower()
+    headline_lower = headline.lower()
+    if lowered == headline_lower:
+        return text
+    if lowered.startswith(headline_lower):
+        remainder = text[len(headline):].strip()
+        if remainder.startswith(("-", "|", ":", ".")):
+            remainder = remainder[1:].strip()
+        return remainder or headline
+    return text
+
+
+def _signal_line(summary: EmailSummary) -> str:
+    parts = []
+    if summary.companies:
+        parts.append(f"Companies: {', '.join(summary.companies[:2])}")
+    if summary.models:
+        parts.append(f"Models: {', '.join(summary.models[:2])}")
+    if summary.topics:
+        parts.append(f"Topics: {', '.join(summary.topics[:2])}")
+    return " | ".join(parts)
+
+
+def _takeaway_title(index: int, summary: EmailSummary, point: str) -> str:
+    if index == 1 and summary.companies:
+        return summary.companies[0]
+    if index == 2 and summary.models:
+        return summary.models[0]
+    return f"Takeaway {index}"
+
+
+def _takeaway_support(summary: EmailSummary, index: int) -> str:
+    if summary.topics:
+        return f"Focus: {', '.join(summary.topics[:2])}."
+    return f"Key point {index} pulled from the email summary."
+
+
+def _watch_title(summary: EmailSummary) -> str:
+    if summary.topics:
+        return _tighten(f"Watch: {summary.topics[0]}", 72)
+    if summary.companies:
+        return _tighten(f"Watch: {summary.companies[0]}", 72)
+    return "What to watch next"
+
+
 def _first_image(articles: list[dict[str, Any]]) -> str:
     for article in articles:
         image_path = article.get("image_path", "")
@@ -688,14 +954,14 @@ def _recap_text(summary: EmailSummary, articles: list[dict[str, Any]]) -> str:
 
 
 def _supporting_note(summary: EmailSummary, article: dict[str, Any], article_index: int, heading: str, variant: str = "why") -> str:
-    companies = ", ".join(summary.companies[:3]) or "the named source"
+    companies = ", ".join(_clean_entity_list(summary.companies)[:3]) or "the named source"
     topics = ", ".join(summary.topics[:3]) or "AI product updates"
-    article_title = _tighten(str(article.get("title") or summary.headline or summary.subject or "AI update"), 78)
-    lead = _tighten(str(article.get("excerpt") or article.get("description") or summary.summary or ""), 180)
+    article_title = _tighten(str(article.get("title") or summary.headline or summary.subject or "AI update"), 56)
+    lead = _tighten(_clean_public_text(str(article.get("excerpt") or article.get("description") or summary.summary or "")), 80)
     if variant == "why":
-        return f"{heading}\n\n{companies} are the names to watch here.\n{topics} is the theme.\n{lead}"
+        return f"{heading}\n\nNames: {companies}.\nTheme: {topics}."
     # variant == 'watch' or others
-    return f"{heading}\n\nNext steps for {article_title}: monitor {topics}.\n{lead}"
+    return f"{heading}\n\nWatch {article_title}.\nTrack: {topics}."
 
 
 def _email_datetime(value: str) -> datetime | None:
@@ -709,14 +975,14 @@ def _email_datetime(value: str) -> datetime | None:
 
 
 def _keywords(summary: EmailSummary) -> list[str]:
-    raw = [*summary.companies, *summary.models, *summary.topics]
+    raw = [*_clean_entity_list(summary.companies), *summary.models, *summary.topics]
     raw.extend(["AI news", "AI tools", "automation", "tech update", "artificial intelligence"])
     seen: set[str] = set()
     keywords: list[str] = []
     for item in raw:
         cleaned = re.sub(r"\s+", " ", item).strip()
         key = cleaned.lower()
-        if cleaned and key not in seen:
+        if cleaned and key not in seen and not any(term in key for term in VIDEO_BLOCKED_TERMS):
             seen.add(key)
             keywords.append(cleaned)
     return keywords
@@ -737,3 +1003,40 @@ def _slugify(value: str) -> str:
 def _hashtag(value: str) -> str:
     tag = re.sub(r"[^a-zA-Z0-9]", "", value.title())
     return tag or "AINews"
+
+
+def _clean_entity_list(values: list[str]) -> list[str]:
+    cleaned: list[str] = []
+    seen: set[str] = set()
+    for raw in values:
+        value = re.sub(r"\s+", " ", raw or "").strip()
+        if not value:
+            continue
+        lowered = value.lower()
+        if any(term in lowered for term in NOISY_ENTITY_TERMS):
+            continue
+        if len(value.split()) > 4:
+            continue
+        key = lowered
+        if key in seen:
+            continue
+        seen.add(key)
+        cleaned.append(value)
+    return cleaned
+
+
+def _derive_story_points(text: str, summary: EmailSummary) -> list[str]:
+    text = _clean_public_text(text)
+    if not text:
+        return []
+    sentences = [part.strip() for part in re.split(r"(?<=[\.!?])\s+", text) if part.strip()]
+    points: list[str] = []
+    for sentence in sentences:
+        if len(sentence) < 40:
+            continue
+        points.append(_tighten(sentence, 160))
+        if len(points) >= 3:
+            break
+    if points:
+        return points
+    return _fallback_public_points(summary)

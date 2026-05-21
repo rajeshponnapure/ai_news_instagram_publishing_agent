@@ -2,35 +2,41 @@ name: Instagram Auto Publish
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/15 * * * *'
   workflow_dispatch:
 
 concurrency:
   group: instagram-auto-publish
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
-  publish:
-    runs-on: windows-latest
-    timeout-minutes: 30
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
 
     env:
+      IMAP_HOST: imap.gmail.com
+      IMAP_PORT: '993'
       IMAP_USERNAME: ${{ secrets.IMAP_USERNAME }}
       IMAP_PASSWORD: ${{ secrets.IMAP_PASSWORD }}
-      EMAIL_SENDER_FILTER: grdevelopers.co@gmail.com
+      EMAIL_SENDER_FILTER: ${{ secrets.EMAIL_SENDER_FILTER || 'grdevelopers.co@gmail.com' }}
+      EMAIL_FOLDER: INBOX
       SUMMARY_PROVIDER: local
       PROCESS_ALL_MATCHING: 'false'
-      LOOKBACK_HOURS: '24'
-      MAX_EMAILS_PER_RUN: '20'
+      LOOKBACK_HOURS: '48'
+      MAX_EMAILS_PER_RUN: '5'
+      MAX_ARTICLE_LINKS_PER_EMAIL: '20'
       ENRICH_ARTICLES: 'true'
       CREATE_INSTAGRAM_POSTS: 'true'
-      AUTO_PUBLISH_INSTAGRAM: 'true'
-      IG_USER_ID: ${{ secrets.IG_USER_ID }}
-      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-      IG_API_VERSION: v24.0
+      AUTO_PUBLISH_INSTAGRAM: 'false'
+      PYTHONUTF8: '1'
 
     steps:
       - name: Check out repository
@@ -42,36 +48,103 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+          cache: pip
 
-      - name: Install Python dependency
-        shell: powershell
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if (Test-Path requirements.txt) {
-            python -m pip install -r requirements.txt
-          }
+          python -m pip install -r requirements.txt
 
-      - name: Install cloudflared
-        shell: powershell
-        run: |
-          Invoke-WebRequest -Uri 'https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-windows-amd64.exe' -OutFile 'cloudflared.exe'
-          "$(Get-Location)" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+      - name: Install Playwright browser
+        run: python -m playwright install chromium
 
-      - name: Run one publish pass
-        shell: powershell
-        run: |
-          & .\scripts\run_free_auto_publish.ps1 -PollOnce
+      - name: Process new AI news email
+        run: python -m email_summary_agent --poll-once
 
-      - name: Commit updated state
-        shell: powershell
+      - name: Commit generated reports and state
+        id: commit
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          if (Test-Path 'data/agent.sqlite3') { git add data/agent.sqlite3 }
-          if (Test-Path 'reports/latest.md') { git add reports/latest.md }
-          if (Test-Path 'reports/instagram_posts') { git add -f reports/instagram_posts/ }
-          git diff --cached --quiet
-          if ($LASTEXITCODE -ne 0) {
-            git commit -m 'Update Instagram publish state [skip ci]'
+          [ -f data/agent.sqlite3 ] && git add data/agent.sqlite3
+          [ -f reports/latest.md ] && git add reports/latest.md
+          [ -d reports/instagram_posts ] && git add -f reports/instagram_posts/
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No generated changes."
+          else
+            git commit -m 'Update AI news Instagram assets [skip ci]'
             git push
-          }
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Upload GitHub Pages artifact
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: reports
+
+  deploy-pages:
+    needs: generate
+    if: needs.generate.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  publish:
+    needs: deploy-pages
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    env:
+      AUTO_PUBLISH_INSTAGRAM: 'true'
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      IG_API_VERSION: v24.0
+      PUBLIC_MEDIA_BASE_URL: ${{ needs.deploy-pages.outputs.page_url }}instagram_posts
+      PYTHONUTF8: '1'
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Pull generated commit
+        run: git pull --ff-only
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Publish latest carousel to Instagram
+        run: python scripts/publish_latest_instagram.py
+
+      - name: Commit publish manifest status
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          [ -d reports/instagram_posts ] && git add -f reports/instagram_posts/
+          if git diff --cached --quiet; then
+            echo "No publish status changes."
+          else
+            git commit -m 'Update Instagram publish status [skip ci]'
+            git push
+          fi

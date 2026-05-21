@@ -8,14 +8,7 @@
 
 ## Zero-Budget Automation First
 
-If you want the fully automatic cloud version with no paid hosting, start here:
-
-```powershell
-winget install Cloudflare.cloudflared
-powershell -ExecutionPolicy Bypass -File .\scripts\run_free_auto_publish.ps1
-```
-
-This uses a free Cloudflare Tunnel to expose the generated Instagram assets over public HTTPS so the bot can publish without a human in the loop.
+For a completely free no-billing production setup, use GitHub Actions plus GitHub Pages. GitHub Actions checks Gmail every 15 minutes, generates carousel assets, publishes those assets through GitHub Pages, and then posts the carousel through the Instagram API.
 
 Transform AI news emails into beautifully formatted Instagram carousel posts. This intelligent agent reads emails from your inbox, intelligently summarizes article content locally using AI, generates professional markdown reports, and automatically creates image-rich social media content—all while keeping your data private and your costs at $0.
 
@@ -106,7 +99,7 @@ The agent will:
 ## 🎮 Operating Modes
 
 ### Single Pass (Process Emails Once)
-```bash
+```powershell
 # Process all unread emails from sender
 python -m email_summary_agent --once --all
 
@@ -115,16 +108,14 @@ python -m email_summary_agent --once --all --reprocess
 ```
 
 ### Watch Mode (Continuous Monitoring)
-```bash
+```powershell
 # Run continuously, processing new emails as they arrive
 python -m email_summary_agent --watch-new
 ```
 
-### Task Scheduler Integration (Windows)
-```powershell
-# Run agent every 15 minutes via Windows Task Scheduler
-powershell -ExecutionPolicy Bypass -File .\scripts\run_email_summary_watch.ps1
-```
+### Automated With GitHub Actions (Recommended)
+
+Enable GitHub Pages from Actions and add the required repository secrets. The workflow checks for new sender email every 15 minutes and publishes generated carousel assets through GitHub Pages before posting to Instagram.
 
 ### Reset Generated Content
 ```powershell
@@ -420,43 +411,23 @@ For issues or questions:
 
 ---
 
-**Ready to automate your AI news workflow?** Start with [SETUP.md](SETUP.md) for step-by-step instructions! 🚀
-
-For a zero-budget setup, use Cloudflare Tunnel. It gives you a temporary public HTTPS URL for free and works with the local `reports/instagram_posts` folder.
-
-```powershell
-winget install Cloudflare.cloudflared
-powershell -ExecutionPolicy Bypass -File .\scripts\run_free_auto_publish.ps1
-```
+**Ready to automate your AI news workflow?** Start with:
+- **[LOCAL_AUTOMATION_GUIDE.md](LOCAL_AUTOMATION_GUIDE.md)** ← **Start here!** Complete setup with Windows Task Scheduler
+- [CAROUSEL_QUALITY_GUIDE.md](CAROUSEL_QUALITY_GUIDE.md) ← Fix repeated slides, get beautiful content
+- [SETUP_STEPS.md](SETUP_STEPS.md) ← Detailed configuration reference
 
 ## GitHub Actions automation
 
-GitHub Actions can run the same pipeline on a schedule, publish from a cloud runner, and then commit the updated email-state database back to the repo so the same message is not processed again.
+The production workflow lives at `.github/workflows/instagram-auto-publish.yml`.
 
-This is a polling trigger, not a true Gmail push trigger. The current workflow checks every 5 minutes.
-It uses a persisted sender UID watermark so a later run skips the same email instead of reposting it.
+It runs every 15 minutes and:
 
-Set these repository secrets in GitHub:
-
-- `IMAP_USERNAME`
-- `IMAP_PASSWORD`
-- `IG_USER_ID`
-- `IG_ACCESS_TOKEN`
-
-Then enable the workflow in `.github/workflows/instagram-auto-publish.yml` and run it once with `workflow_dispatch` to verify the setup.
-
-What the workflow does:
-
-1. Checks Gmail for new sender mail.
-2. Opens article links and summarizes the content.
-3. Generates Instagram carousel slides.
-4. Starts a temporary public tunnel for the slide images.
-5. Publishes the carousel to Instagram.
-6. Commits the updated `data/agent.sqlite3` state and `reports/latest.md` back to the repo.
-
-If no new email arrived since the last stored sender UID, the workflow exits without creating or publishing a post.
-
-If you need a true instant trigger later, the next step is Gmail push notifications through Google Cloud Pub/Sub plus a webhook receiver. GitHub Actions is the simpler and cheaper first version.
+1. Checks Gmail for new sender emails.
+2. Opens every article link in the email.
+3. Extracts article text and article images.
+4. Writes reports and Instagram carousel PNGs.
+5. Deploys the generated files to GitHub Pages.
+6. Publishes the latest carousel using the GitHub Pages image URLs.
 
 ## Local model option
 

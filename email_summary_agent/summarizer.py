@@ -187,6 +187,32 @@ class SummaryProvider:
         articles: list[ArticleData] | None = None,
     ) -> EmailSummary:
         article_list = articles or ([article] if article else [])
+
+        # If we have full article content from linked pages, prioritize summarizing that
+        if article_list:
+            # Create a synthetic 'email' that contains the full article text for better summary
+            combined_parts = []
+            for idx, art in enumerate(article_list, start=1):
+                combined_parts.append(f"Article {idx} Title: {art.title}\n\n{art.text}")
+            combined_body = "\n\n".join(combined_parts)
+            pseudo_email = EmailItem(
+                uid=email.uid,
+                message_id=email.message_id,
+                sender=email.sender,
+                subject=email.subject,
+                date=email.date,
+                body=combined_body,
+            )
+            # Use Ollama when available, otherwise local summarizer on the full article text
+            if self.provider in {"auto", "ollama"} and self._can_use_ollama():
+                try:
+                    return _with_article_fields(self._summarize_with_ollama(pseudo_email), article_list)
+                except Exception:
+                    if self.provider == "ollama":
+                        raise
+            return _with_article_fields(summarize_locally(pseudo_email), article_list)
+
+        # Fallback: no linked article content — summarize email as before
         if _is_digest_subject(email.subject):
             return _with_article_fields(summarize_locally(email), article_list)
         if self.provider in {"auto", "ollama"} and self._can_use_ollama():
@@ -560,12 +586,13 @@ def _with_article_fields(summary: EmailSummary, articles: list[ArticleData] | No
     if not articles:
         return summary
     article = articles[0]
+    article_items = [_article_item_for_instagram(item) for item in articles]
     headline = summary.headline
     if article.title and (not headline or _is_digest_subject(headline)):
         headline = _trim_sentence(article.title, 110)
-    summary_text = summary.summary
+    summary_text = article_items[0].get("summary", summary.summary)
     if article.description and len(article.description) > len(summary_text):
-        summary_text = _trim_sentence(article.description, 480)
+        summary_text = _trim_sentence(article.description, 700)
     return EmailSummary(
         message_key=summary.message_key,
         subject=summary.subject,
@@ -582,15 +609,47 @@ def _with_article_fields(summary: EmailSummary, articles: list[ArticleData] | No
         article_image_path=article.image_path,
         article_image_url=article.image_url,
         article_excerpt=article.excerpt,
-        article_items=[
-            {
-                "url": item.url,
-                "title": item.title,
-                "description": item.description,
-                "excerpt": item.excerpt,
-                "image_path": item.image_path,
-                "image_url": item.image_url,
-            }
-            for item in articles
-        ],
+        article_items=article_items,
     )
+
+
+def _article_item_for_instagram(article: ArticleData) -> dict[str, Any]:
+    summary, points = _human_article_summary(article)
+    return {
+        "url": article.url,
+        "title": article.title,
+        "description": article.description,
+        "excerpt": article.excerpt,
+        "summary": summary,
+        "key_points": points,
+        "image_path": article.image_path,
+        "image_url": article.image_url,
+    }
+
+
+def _human_article_summary(article: ArticleData) -> tuple[str, list[str]]:
+    source = _normalize_text(" ".join(part for part in [article.description, article.text] if part))
+    sentences = _split_sentences(source)
+    if not sentences:
+        fallback = article.description or article.excerpt or article.title or "This update is worth watching."
+        return _trim_sentence(fallback, 760), [_trim_sentence(fallback, 160)]
+
+    ranked = _rank_sentences(sentences)
+    chosen = [sentences[index] for index, _score in sorted(ranked[:6])]
+    if not chosen:
+        chosen = sentences[:4]
+
+    title = article.title.strip()
+    opener = _trim_sentence(chosen[0], 220)
+    detail = " ".join(_trim_sentence(sentence, 210) for sentence in chosen[1:5])
+    if title and title.lower() not in opener.lower():
+        summary = f"{title}. {opener} {detail}".strip()
+    else:
+        summary = f"{opener} {detail}".strip()
+
+    points = []
+    for sentence in chosen[:5]:
+        point = _trim_sentence(sentence, 170)
+        if point and point not in points:
+            points.append(point)
+    return _trim_sentence(summary, 950), points[:5]

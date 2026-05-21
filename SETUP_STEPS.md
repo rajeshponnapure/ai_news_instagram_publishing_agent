@@ -8,14 +8,7 @@ C:\Users\saimo\OneDrive\Desktop\projects\AI_Instagram_News_Agent
 
 ## Zero-budget cloud automation
 
-If you want the agent to publish to Instagram with no paid hosting, use the free Cloudflare Tunnel path first.
-
-```powershell
-winget install Cloudflare.cloudflared
-powershell -ExecutionPolicy Bypass -File .\scripts\run_free_auto_publish.ps1
-```
-
-This exposes the generated carousel images through a temporary public HTTPS URL so Instagram can fetch them automatically.
+Use GitHub Actions plus GitHub Pages for the no-billing production pipeline. GitHub Actions runs every 15 minutes, checks Gmail, generates carousel assets, publishes them to GitHub Pages, and posts the latest carousel to Instagram.
 
 ## 1. Enable Gmail IMAP
 
@@ -95,9 +88,23 @@ To rebuild everything from the sender again:
 python -m email_summary_agent --once --all --reprocess
 ```
 
-## 6. Run every 15 minutes
+## 6. Set Up GitHub Actions Automation
 
-Simple terminal mode:
+In GitHub, open the repository settings and add these Actions secrets:
+
+```text
+IMAP_USERNAME
+IMAP_PASSWORD
+EMAIL_SENDER_FILTER
+IG_USER_ID
+IG_ACCESS_TOKEN
+```
+
+Then open Settings -> Pages and enable GitHub Pages for GitHub Actions. The workflow `.github/workflows/instagram-auto-publish.yml` will run every 15 minutes.
+
+### Manual Testing Before Automation
+
+If you want to test manually first:
 
 ```powershell
 python -m email_summary_agent --watch-new
@@ -127,23 +134,8 @@ If you are using the free auto-publish flow, leave only the auto-publish task en
 - `logs\email_summary_agent.log` stores Task Scheduler runs.
 - Running the same Gmail pass twice should skip already processed emails.
 
-## 8. GitHub Actions option
+## 8. Cloud automation (removed)
 
-If you want the automation to run in the cloud instead of only on your PC, add the repository secrets below in GitHub:
+This repository previously contained GitHub Actions workflows for cloud-based automation. Those workflows have been removed: this project now targets local, Windows-based automation via Task Scheduler.
 
-- `IMAP_USERNAME`
-- `IMAP_PASSWORD`
-- `IG_USER_ID`
-- `IG_ACCESS_TOKEN`
-
-Then enable the workflow at `.github/workflows/instagram-auto-publish.yml`.
-
-The workflow:
-
-1. Runs every 5 minutes.
-2. Reads new email from Gmail.
-3. Generates the report and Instagram carousel.
-4. Publishes through a temporary tunnel.
-5. Commits `data/agent.sqlite3` and `reports/latest.md` back to the repo so the same mail is not processed twice.
-
-This is the recommended cloud version if you want the system to keep working even when your own PC is off.
+If you still want cloud automation in the future, you can reintroduce a workflow that mirrors the local flow: install dependencies, run `python -m email_summary_agent --once --all`, and publish generated assets to a public host. For now, follow the Task Scheduler steps earlier to run everything locally.

@@ -56,7 +56,7 @@ def parse_report(path: Path) -> list[EmailSummary]:
             atitle = re.search(r"Article title:\s*(.+)", block)
             if atitle:
                 article_title = atitle.group(1).strip()
-            aex = re.search(r"Article excerpt:\s*(.+)", block, re.DOTALL)
+            aex = re.search(r"^Article excerpt:\s*(.+)$", block, re.MULTILINE)
             if aex:
                 article_excerpt = aex.group(1).strip()
             # summary is the first paragraph after metadata
@@ -66,7 +66,9 @@ def parse_report(path: Path) -> list[EmailSummary]:
                 s = p.strip()
                 if not s:
                     continue
-                if s.startswith("Source date:") or s.startswith("Confidence:") or s.startswith("Article:") or s.startswith("Article title:") or s.startswith("Article excerpt:"):
+                if s.startswith("Source date:") or s.startswith("Confidence:") or s.startswith("Article:") or s.startswith("Article title:") or s.startswith("Article excerpt:") or s.startswith("Key points:") or s.startswith("Companies:") or s.startswith("Models:") or s.startswith("Topics:"):
+                    continue
+                if s.startswith("-"):
                     continue
                 # first non-meta paragraph is the summary
                 summary_text = s

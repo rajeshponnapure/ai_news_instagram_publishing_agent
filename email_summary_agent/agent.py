@@ -7,8 +7,9 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from .config import Settings
-from .article_enricher import enrich_email_with_articles
+from .article_enricher import ArticleData, enrich_email_with_articles
 from .db import AgentStore
+from .digest import parse_news_items
 from .email_client import ImapEmailClient
 from .instagram import write_instagram_carousels
 from .models import EmailItem, EmailSummary
@@ -204,12 +205,15 @@ def process_items(
             _safe_print(f"Summarizing: {email.subject}")
             articles = []
             enriched_email = email
+            story_limit = _story_limit(settings, email)
+            seed_items = parse_news_items(email, max_links=story_limit)
             if settings.enrich_articles:
                 enriched_email, articles = enrich_email_with_articles(
                     email,
                     settings.article_assets_dir,
-                    max_links=settings.max_article_links_per_email,
+                    max_links=story_limit,
                 )
+            articles = _merge_article_fallbacks(articles, seed_items)
             summaries.append((email, provider.summarize(enriched_email, articles=articles)))
 
         report_path = None
@@ -250,6 +254,32 @@ def process_items(
             store.close()
 
 
+def _story_limit(settings: Settings, email: EmailItem) -> int:
+    subject = email.subject.lower()
+    if "digest" in subject or "updates" in subject:
+        return max(settings.max_article_links_per_email, 20)
+    return settings.max_article_links_per_email
+
+
+def _merge_article_fallbacks(articles: list[ArticleData], seed_items) -> list[ArticleData]:
+    if not seed_items:
+        return articles
+    by_url = {article.url: article for article in articles}
+    merged = list(articles)
+    for item in seed_items:
+        if item.url in by_url:
+            continue
+        merged.append(
+            ArticleData(
+                url=item.url,
+                title=item.title,
+                description=item.context,
+                text=item.context,
+            )
+        )
+    return merged
+
+
 def _process_new_mail_cycle(settings: Settings, store: AgentStore, mailbox_key: str) -> None:
     with ImapEmailClient(settings) as client:
         baseline = store.get_mailbox_watermark(mailbox_key)
@@ -277,7 +307,7 @@ def run_sample(settings: Settings) -> AgentResult:
             sender="ai-news-agent@example.com",
             subject="OpenAI releases new reasoning tools for developers",
             date="Wed, 22 Apr 2026 10:00:00 +0530",
-            body="Sample content.",
+            body="OpenAI just released groundbreaking new reasoning tools that enable developers to build smarter AI applications.\n\nKey highlights:\n- The new o1 model includes advanced reasoning capabilities that improve problem-solving on complex tasks\n- Developers can now leverage chain-of-thought reasoning for better accuracy\n- The tools are optimized for research, coding, and mathematical problem-solving\n- OpenAI is democratizing access to powerful reasoning models through their API\n\nThis represents a major step forward in making AI reasoning capabilities available to the broader developer community. The tools can handle nuanced reasoning tasks that previously required human expertise.\n\nFor more details, visit: https://openai.com/research/reasoning",
         ),
     ]
     sample_settings = Settings(**{**settings.__dict__, "db_path": ":memory:"})
