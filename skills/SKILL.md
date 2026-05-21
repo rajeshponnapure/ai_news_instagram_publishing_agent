@@ -1,5 +1,5 @@
 ---
-name: ui-design-skill
+name: skills
 description: >
   MANDATORY UI design skill. Activate this skill for ANY task that involves creating, designing,
   or styling a user interface — no exceptions. This includes: web pages, landing pages, dashboards,
