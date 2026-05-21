@@ -110,21 +110,56 @@ jobs:
       - name: Detect latest unpublished batch
         id: detect
         run: |
-          if find reports/instagram_posts -mindepth 2 -maxdepth 2 -type d 2>/dev/null | grep -q .; then
+          # Find the latest batch directory
+          BATCH_DIR=$(find reports/instagram_posts -mindepth 1 -maxdepth 1 -type d 2>/dev/null | sort | tail -1)
+          if [ -z "$BATCH_DIR" ]; then
+            echo "has_batch=false" >> "$GITHUB_OUTPUT"
+            echo "No instagram_posts batch directory found. Nothing to publish."
+            exit 0
+          fi
+
+          # Check the publish manifest for any posts that are NOT yet published
+          MANIFEST="$BATCH_DIR/publish_manifest.json"
+          if [ ! -f "$MANIFEST" ]; then
+            # No manifest yet — batch exists but hasn't been through publish step
+            if find "$BATCH_DIR" -mindepth 2 -maxdepth 2 -type d 2>/dev/null | grep -q .; then
+              echo "has_batch=true" >> "$GITHUB_OUTPUT"
+              echo "Batch found with no manifest — will deploy and publish."
+            else
+              echo "has_batch=false" >> "$GITHUB_OUTPUT"
+              echo "Batch directory exists but contains no carousel folders."
+            fi
+            exit 0
+          fi
+
+          # Parse the manifest: count posts that still need publishing
+          UNPUBLISHED=$(python3 -c "
+          import json, sys
+          try:
+              data = json.load(open('$MANIFEST'))
+              pending = [
+                  p for p in data.get('posts', [])
+                  if p.get('status') not in ('published', 'publish_failed')
+              ]
+              print(len(pending))
+          except Exception as e:
+              print(0)
+          ")
+
+          if [ "$UNPUBLISHED" -gt 0 ]; then
             echo "has_batch=true" >> "$GITHUB_OUTPUT"
-            echo "Publishable carousel batch found. Deploy and publish jobs will run."
+            echo "Found $UNPUBLISHED unpublished carousel(s) in $BATCH_DIR. Deploy and publish will run."
           else
             echo "has_batch=false" >> "$GITHUB_OUTPUT"
-            echo "No publishable carousel batch found."
-            echo "This is expected when no new sender email arrived, or immediately after a reset when --poll-once seeds the mailbox watermark."
-            echo "To rebuild old mailbox items, run this workflow manually with run_mode=rebuild_all."
+            echo "All carousels in $BATCH_DIR are already published or failed. Skipping deploy and publish."
           fi
 
       - name: Explain skipped publish
         if: steps.detect.outputs.has_batch != 'true'
         run: |
-          echo "Deploy and publish are skipped because generate produced no reports/instagram_posts batch."
-          echo "Nothing failed; there is simply nothing new to upload or publish."
+          echo "Deploy and publish are skipped — either no new email arrived this run,"
+          echo "or all existing carousels are already published/failed."
+          echo "This is normal and expected on most runs."
 
       - name: Upload GitHub Pages artifact
         if: steps.detect.outputs.has_batch == 'true'
