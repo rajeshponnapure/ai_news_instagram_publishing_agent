@@ -1,0 +1,138 @@
+{
+  "posts": [
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/01_20260521-2223_from-token-streams-to-agent-streams-part-1",
+      "caption": "From Token Streams to Agent Streams - Part 1\n\nMove beyond token streaming. Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and resilient frontend experiences for building production-ready agent applications.\n\nKey takeaways:\n- Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility...\n- Scoped subscriptions make complex agent UIs scalable Frontends only stream the parts of the agent tree they render, enabling efficient subagent...\n- Consider a research agent that delegates to three subagents, each calling tools, updating state, and streaming intermediate findings.\n- Alongside the release, we're publishing a streaming cookbook with runnable Python and TypeScript examples.\n\nSource: langchain.com | Curated by Graitech AI.\n\n#Openai #Google #Anthropic #Microsoft #Meta #Amazon #Aws #Cohere #ClaudeCode #ModelRelease #RegulationOrSafety #DeveloperTools #MediaGeneration #AiNews\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/01_20260521-2223_from-token-streams-to-agent-streams-part-1/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/01_20260521-2223_from-token-streams-to-agent-streams-part-1/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/01_20260521-2223_from-token-streams-to-agent-streams-part-1/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/01_20260521-2223_from-token-streams-to-agent-streams-part-1/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/01_20260521-2223_from-token-streams-to-agent-streams-part-1/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/01_20260521-2223_from-token-streams-to-agent-streams-part-1/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/01_20260521-2223_from-token-streams-to-agent-streams-part-1/slide_07.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/01_20260521-2223_from-token-streams-to-agent-streams-part-1/slide_08.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload",
+      "story_score": 1.0,
+      "story_selected_reason": "article image available, source URL available, 2 concrete signal(s)"
+    },
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/02_20260521-2223_from-token-streams-to-agent-streams-part-2",
+      "caption": "From Token Streams to Agent Streams - Part 2\n\nAgents need credentials and network access to do useful work, but those capabilities create new security risks. This post explains how Auth Proxy keeps secrets out of LangSmith Sandboxes runtimes, constrains agent egress, and gives teams infrastructure-level control over how agents reach external services.\n\nKey takeaways:\n- Introducing the sandbox Auth Proxy LangSmith Sandboxes give agents isolated environments for running code and interacting with filesystems without...\n- How Auth Proxy secures network access for LangSmith agent sandboxes Agent sandboxes need stronger network controls because agents can run code...\n- The agent can use an API without being able to read the API key, which reduces the damage from prompt injection, malicious dependencies...\n- If the agent only needs GitHub and an LLM provider, it should not be able to talk to every random host on the internet.\n\nSource: langchain.com | Curated by Graitech AI.\n\n#Openai #Google #Anthropic #Microsoft #Meta #Amazon #Aws #Cohere #ClaudeCode #ModelRelease #RegulationOrSafety #DeveloperTools #MediaGeneration #AiNews\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/02_20260521-2223_from-token-streams-to-agent-streams-part-2/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/02_20260521-2223_from-token-streams-to-agent-streams-part-2/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/02_20260521-2223_from-token-streams-to-agent-streams-part-2/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/02_20260521-2223_from-token-streams-to-agent-streams-part-2/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/02_20260521-2223_from-token-streams-to-agent-streams-part-2/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/02_20260521-2223_from-token-streams-to-agent-streams-part-2/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/02_20260521-2223_from-token-streams-to-agent-streams-part-2/slide_07.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload",
+      "story_score": 1.0,
+      "story_selected_reason": "article image available, source URL available, 4 concrete signal(s)"
+    },
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/03_20260521-2223_from-token-streams-to-agent-streams-part-3",
+      "caption": "From Token Streams to Agent Streams - Part 3\n\n53 AM IST 10 new AI event(s) detected ================================================== [HIGH] Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs on as Few as Two H100 GPUs Company : MarkTechPost AI Summary : Cohere releases Command A+, an open-source 218B Sparse Mixture-of-Experts model consolidating four prior Command A variants into one. It runs on as few as two H100 GPUs at...\n\nKey takeaways:\n- 53 AM IST 10 new AI event(s) detected ================================================== [HIGH] Cohere Releases Command A+: A 218B Sparse MoE...\n- Link : [HIGH] From Token Streams to Agent Streams Company : LangChain Blog Summary...\n- It runs on as few as two H100 GPUs at W4A4 quantization, supports Link : [HIGH] Meta Is in Crisis, Google Search\u2019s Makeover, and AI Gets Booed by...\n- Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility...\n\nSource: marktechpost.com | Curated by Graitech AI.\n\n#Openai #Google #Anthropic #Microsoft #Meta #Amazon #Aws #Cohere #ClaudeCode #ModelRelease #RegulationOrSafety #DeveloperTools #MediaGeneration #AiNews\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/03_20260521-2223_from-token-streams-to-agent-streams-part-3/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/03_20260521-2223_from-token-streams-to-agent-streams-part-3/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/03_20260521-2223_from-token-streams-to-agent-streams-part-3/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/03_20260521-2223_from-token-streams-to-agent-streams-part-3/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/03_20260521-2223_from-token-streams-to-agent-streams-part-3/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/03_20260521-2223_from-token-streams-to-agent-streams-part-3/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/03_20260521-2223_from-token-streams-to-agent-streams-part-3/slide_07.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload",
+      "story_score": 1.0,
+      "story_selected_reason": "source URL available, 10 concrete signal(s)"
+    },
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/04_20260521-2223_from-token-streams-to-agent-streams-part-4",
+      "caption": "From Token Streams to Agent Streams - Part 4\n\n: LangChain Blog Summary : Move beyond token streaming. Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and Link : [HIGH] Microsoft and EY Link Up to Speed Enterprise AI Adoption Company : AI Business Summary : The longtime partners expanded their relationship. Link : [MEDIUM] Amazon Nova Act is...\n\nKey takeaways:\n- Link : [MEDIUM] langchain-ai/langchain: langchain-openai==1.2.2 Company : LangChain Summary : Changes since langchain-openai==1.2.1 release(openai)...\n- Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility...\n- Link : [MEDIUM] Amazon Nova Act is now HIPAA eligible Company : AWS Machine Learning Summary : In this post, you will learn what Nova Act offers...\n- : LangChain Blog Summary : Move beyond token streaming.\n\nSource: aibusiness.com | Curated by Graitech AI.\n\n#Openai #Google #Anthropic #Microsoft #Meta #Amazon #Aws #Cohere #ClaudeCode #ModelRelease #RegulationOrSafety #DeveloperTools #MediaGeneration #AiNews\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/04_20260521-2223_from-token-streams-to-agent-streams-part-4/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/04_20260521-2223_from-token-streams-to-agent-streams-part-4/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/04_20260521-2223_from-token-streams-to-agent-streams-part-4/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/04_20260521-2223_from-token-streams-to-agent-streams-part-4/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/04_20260521-2223_from-token-streams-to-agent-streams-part-4/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/04_20260521-2223_from-token-streams-to-agent-streams-part-4/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/04_20260521-2223_from-token-streams-to-agent-streams-part-4/slide_07.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload",
+      "story_score": 1.0,
+      "story_selected_reason": "source URL available, 9 concrete signal(s)"
+    },
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/05_20260521-2223_from-token-streams-to-agent-streams-part-5",
+      "caption": "From Token Streams to Agent Streams - Part 5\n\n.2.2 Company : LangChain Summary : Changes since langchain-openai==1.2.1 release(openai): 1.2.2 (#37617) chore(infra): bump langchain-tests floor to 1.1.9 (#37610) test(openai): unbreak audio chat and Azure embedding integration tes Link : [MEDIUM] openai/openai-python: v2.38.0 Company : OpenAI Summary : ## 2.38.0 (2026-05-21) Full Changelog: [v2.37.0...v2.38.0]() ### Features * **api:** api update ([33d1d01](...\n\nKey takeaways:\n- .2.2 Company : LangChain Summary : Changes since langchain-openai==1.2.1 release(openai): 1.2.2 (#37617) chore(infra): bump langchain-tests floor...\n- It is off by default - set CLAUDE_CODE_WORKFLOWS=1 to enable - Pinned background sessions ( Ctrl+T in cl Link ...\n- Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility...\n- Scoped subscriptions make complex agent UIs scalable Frontends only stream the parts of the agent tree they render, enabling efficient subagent...\n\nSource: github.com | Curated by Graitech AI.\n\n#Openai #Google #Anthropic #Microsoft #Meta #Amazon #Aws #Cohere #ClaudeCode #ModelRelease #RegulationOrSafety #DeveloperTools #MediaGeneration #AiNews\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/05_20260521-2223_from-token-streams-to-agent-streams-part-5/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/05_20260521-2223_from-token-streams-to-agent-streams-part-5/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/05_20260521-2223_from-token-streams-to-agent-streams-part-5/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/05_20260521-2223_from-token-streams-to-agent-streams-part-5/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/05_20260521-2223_from-token-streams-to-agent-streams-part-5/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/05_20260521-2223_from-token-streams-to-agent-streams-part-5/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/05_20260521-2223_from-token-streams-to-agent-streams-part-5/slide_07.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload",
+      "story_score": 1.0,
+      "story_selected_reason": "source URL available, 28 concrete signal(s)"
+    },
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/06_20260521-2223_from-token-streams-to-agent-streams-part-6",
+      "caption": "From Token Streams to Agent Streams - Part 6\n\nr to 1.1.9 (#37610) test(openai): unbreak audio chat and Azure embedding integration tes Link : [MEDIUM] openai/openai-python: v2.38.0 Company : OpenAI Summary : ## 2.38.0 (2026-05-21) Full Changelog: [v2.37.0...v2.38.0]( ### Features * **api:** api update ([33d1d01]( Link : [MEDIUM] anthropics/claude-code: v2.1.147 Company : Anthropic Summary : ## What's changed - Added the Workflow tool for deterministic...\n\nKey takeaways:\n- It is off by default - set CLAUDE_CODE_WORKFLOWS=1 to enable - Pinned background sessions ( Ctrl+T in cl Link : [MEDIUM] How Auth Proxy secures...\n- r to 1.1.9 (#37610) test(openai): unbreak audio chat and Azure embedding integration tes Link : [MEDIUM] openai/openai-python: v2.38.0 Company ...\n- Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility...\n- Scoped subscriptions make complex agent UIs scalable Frontends only stream the parts of the agent tree they render, enabling efficient subagent...\n\nSource: github.com | Curated by Graitech AI.\n\n#Openai #Google #Anthropic #Microsoft #Meta #Amazon #Aws #Cohere #ClaudeCode #ModelRelease #RegulationOrSafety #DeveloperTools #MediaGeneration #AiNews\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/06_20260521-2223_from-token-streams-to-agent-streams-part-6/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/06_20260521-2223_from-token-streams-to-agent-streams-part-6/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/06_20260521-2223_from-token-streams-to-agent-streams-part-6/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/06_20260521-2223_from-token-streams-to-agent-streams-part-6/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/06_20260521-2223_from-token-streams-to-agent-streams-part-6/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/06_20260521-2223_from-token-streams-to-agent-streams-part-6/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/06_20260521-2223_from-token-streams-to-agent-streams-part-6/slide_07.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload",
+      "story_score": 1.0,
+      "story_selected_reason": "source URL available, 22 concrete signal(s)"
+    },
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/07_20260521-2223_from-token-streams-to-agent-streams-part-7",
+      "caption": "From Token Streams to Agent Streams - Part 7\n\nBREAKING AI UPDATE 10 New AI Events Detected 22 May 2026, 03:53 AM IST Major AI events just happened. Here's what you need to know: NEW LAUNCH HIGH HARDWARE & INFRASTRUCTURE Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs on as Few as Two H100 GPUs MarkTechPost AI Cohere releases Command A+, an open-source 218B Sparse Mixture-of-Experts model consolidating four prior Command A...\n\nKey takeaways:\n- Here's what you need to know: NEW LAUNCH HIGH HARDWARE & INFRASTRUCTURE Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows...\n- It runs on as few as two H100 GPUs at W4A4 quantization, supports 48 languages, and is Cohere's first multimodal reasoning model.\n- The post Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs on as Few as Two H100 GPUs appeared first on...\n- BREAKING AI UPDATE 10 New AI Events Detected 22 May 2026, 03:53 AM IST Major AI events just happened.\n\nSource: github.com | Curated by Graitech AI.\n\n#Openai #Google #Anthropic #Microsoft #Meta #Amazon #Aws #Cohere #ClaudeCode #ModelRelease #RegulationOrSafety #DeveloperTools #MediaGeneration #AiNews\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/07_20260521-2223_from-token-streams-to-agent-streams-part-7/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/07_20260521-2223_from-token-streams-to-agent-streams-part-7/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/07_20260521-2223_from-token-streams-to-agent-streams-part-7/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/07_20260521-2223_from-token-streams-to-agent-streams-part-7/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/07_20260521-2223_from-token-streams-to-agent-streams-part-7/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/07_20260521-2223_from-token-streams-to-agent-streams-part-7/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/07_20260521-2223_from-token-streams-to-agent-streams-part-7/slide_07.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload",
+      "story_score": 1.0,
+      "story_selected_reason": "source URL available, 20 concrete signal(s)"
+    },
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/08_20260521-2223_from-token-streams-to-agent-streams-part-8",
+      "caption": "From Token Streams to Agent Streams - Part 8\n\nBREAKING AI UPDATE 10 New AI Events Detected 22 May 2026, 03:53 AM IST Major AI events just happened. Here's what you need to know: NEW LAUNCH HIGH HARDWARE & INFRASTRUCTURE Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs on as Few as Two H100 GPUs MarkTechPost AI Cohere releases Command A+, an open-source 218B Sparse Mixture-of-Experts model consolidating four prior Command A...\n\nKey takeaways:\n- Here's what you need to know: NEW LAUNCH HIGH HARDWARE & INFRASTRUCTURE Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows...\n- It runs on as few as two H100 GPUs at W4A4 quantization, supports 48 languages, and is Cohere's first multimodal reasoning model.\n- The post Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs on as Few as Two H100 GPUs appeared first on...\n- BREAKING AI UPDATE 10 New AI Events Detected 22 May 2026, 03:53 AM IST Major AI events just happened.\n\nSource: github.com | Curated by Graitech AI.\n\n#Openai #Google #Anthropic #Microsoft #Meta #Amazon #Aws #Cohere #ClaudeCode #ModelRelease #RegulationOrSafety #DeveloperTools #MediaGeneration #AiNews\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/08_20260521-2223_from-token-streams-to-agent-streams-part-8/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/08_20260521-2223_from-token-streams-to-agent-streams-part-8/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/08_20260521-2223_from-token-streams-to-agent-streams-part-8/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-225907/08_20260521-2223_from-token-streams-to-agent-streams-part-8/slide_04.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload",
+      "story_score": 0.97,
+      "story_selected_reason": "source URL available, 20 concrete signal(s)"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # AI News Summary Report
 
-Generated: 2026-05-21T21:56:53+00:00
+Generated: 2026-05-21T22:59:07+00:00
 Source: grdevelopers.co@gmail.com
 Emails summarized: 1
 
@@ -15,7 +15,7 @@ Emails summarized: 1
 
 ## Most Mentioned Companies
 
-OpenAI (1), Google (1), Anthropic (1), Microsoft (1), Meta (1), Amazon (1), AWS (1), Wired AI (1)
+OpenAI (1), Google (1), Anthropic (1), Microsoft (1), Meta (1), Amazon (1), AWS (1), Cohere (1)
 
 ## Most Mentioned Models
 
@@ -23,7 +23,7 @@ claude-code (1)
 
 ## Main Topics
 
-model release (1), regulation or safety (1), developer tools (1), hardware and compute (1), media generation (1)
+model release (1), regulation or safety (1), developer tools (1), media generation (1)
 
 ## Voice Script Hooks
 
@@ -33,7 +33,7 @@ model release (1), regulation or safety (1), developer tools (1), hardware and c
 
 ### 1. From Token Streams to Agent Streams
 
-Source date: Thu, 21 May 2026 13:59:44 -0700
+Source date: Thu, 21 May 2026 15:23:51 -0700
 Confidence: 0.82
 Article: https://www.langchain.com/blog/token-streams-to-agent-streams
 Article title: From Token Streams to Agent Streams
@@ -49,6 +49,6 @@ Key points:
 - Alongside the release, we're publishing a streaming cookbook with runnable Python and TypeScript examples.
 - A single Deep Agents run can plan, delegate to subagents, call tools, pause for human approval, and produce text, structured data, or media along the way.
 - One streaming model works across runtimes and modalities The same architecture powers local and remote runs, React/Vue/Svelte/Angular SDKs, and supports text, tools, images, audio, video, and custom application events.
-Companies: OpenAI, Google, Anthropic, Microsoft, Meta, Amazon, AWS, Wired AI
+Companies: OpenAI, Google, Anthropic, Microsoft, Meta, Amazon, AWS, Cohere
 Models: claude-code
-Topics: model release, regulation or safety, developer tools, hardware and compute, media generation
+Topics: model release, regulation or safety, developer tools, media generation

@@ -1,0 +1,108 @@
+{
+  "email_received_at": "2026-05-21T22:23+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "From Token Streams to Agent Streams - Part 1",
+  "subject": "\ud83d\udea8 AI Alert: 10 new launches \u2014 MarkTechPost AI, Wired AI, LangChain Blog",
+  "source_date": "Thu, 21 May 2026 15:23:51 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "AWS",
+    "Cohere"
+  ],
+  "models": [
+    "claude-code"
+  ],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "developer tools",
+    "media generation"
+  ],
+  "article_url": "https://www.langchain.com/blog/token-streams-to-agent-streams",
+  "article_title": "From Token Streams to Agent Streams",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/aecb9a316ff7fe1b.png",
+  "article_image_url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a0f012b2ff304b9a169e892_blue-57%20characters%20max.png",
+  "article_items": [
+    {
+      "url": "https://www.langchain.com/blog/token-streams-to-agent-streams",
+      "title": "From Token Streams to Agent Streams",
+      "description": "Move beyond token streaming. Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and resilient frontend experiences for building production-ready agent applications.",
+      "excerpt": "Move beyond token streaming. Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and resilient frontend experiences for building production-ready agent applications.",
+      "summary": "Scoped subscriptions make complex agent UIs scalable Frontends only stream the parts of the agent tree they render, enabling efficient subagent inspectors, dashboards, and long-running production workloads. Consider a research agent that delegates to three subagents, each calling tools, updating state, and streaming intermediate findings. The practical impact: Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and resilient frontend experiences for building production-ready agent applications. Alongside the release, we're publishing a streaming cookbook with runnable Python and TypeScript examples. Watch next: A single Deep Agents run can plan, delegate to subagents, call tools, pause for human approval, and produce text, structured data, or media along the way. Alongside the release, we're publishing a streaming cookbook with runnable Python and TypeScript examples.",
+      "what_happened": "Scoped subscriptions make complex agent UIs scalable Frontends only stream the parts of the agent tree they render, enabling efficient subagent inspectors, dashboards, and long-running production workloads. Consider a research agent that delegates to three subagents, each calling tools, updating state, and streaming intermediate findings.",
+      "why_matters": "The practical impact: Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and resilient frontend experiences for building production-ready agent applications. Alongside the release, we're publishing a streaming cookbook with runnable Python and TypeScript examples.",
+      "what_to_watch": "Watch next: A single Deep Agents run can plan, delegate to subagents, call tools, pause for human approval, and produce text, structured data, or media along the way. Alongside the release, we're publishing a streaming cookbook with runnable Python and TypeScript examples.",
+      "key_points": [
+        "Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and resilient frontend experiences for building...",
+        "Scoped subscriptions make complex agent UIs scalable Frontends only stream the parts of the agent tree they render, enabling efficient subagent inspectors, dashboards, and long-running production workloads.",
+        "Consider a research agent that delegates to three subagents, each calling tools, updating state, and streaming intermediate findings.",
+        "Alongside the release, we're publishing a streaming cookbook with runnable Python and TypeScript examples.",
+        "A single Deep Agents run can plan, delegate to subagents, call tools, pause for human approval, and produce text, structured data, or media along the way.",
+        "One streaming model works across runtimes and modalities The same architecture powers local and remote runs, React/Vue/Svelte/Angular SDKs, and supports text, tools, images, audio, video, and custom application events."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/aecb9a316ff7fe1b.png",
+      "image_url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a0f012b2ff304b9a169e892_blue-57%20characters%20max.png"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-nova-act-is-now-hipaa-eligible/",
+      "title": "Amazon Nova Act is now HIPAA eligible | Amazon Web Services",
+      "description": "In this post, you will learn what Nova Act offers, how HIPAA eligibility applies to agentic AI, and how to get started.",
+      "excerpt": "In this post, you will learn what Nova Act offers, how HIPAA eligibility applies to agentic AI, and how to get started.",
+      "summary": "Nova Act also integrates with external tools through API calls, remote Model Control Protoco l (MCP), or agentic frameworks, such as Strand Agents. While agentic AI can automate these workflows, compliance requirements under the Health Insurance Portability and Accountability Act (HIPAA) have limited adoption where electronically protected health information (ePHI) might be present.Amazon Nova Act now qualifies as a HIPAA eligible service, so you can deploy autonomous, browser-based AI... The practical impact: Artificial Intelligence Amazon Nova Act is now HIPAA eligible Healthcare and life sciences (HCLS) organizations depend on repetitive, manual browser-based tasks for critical workflows like claims processing and referral coordination. About Amazon Nova Act Amazon Nova Act is available as an AWS service to build and manage fleets of reliable AI agents for automating... Watch next: Artificial Intelligence Amazon Nova Act is now HIPAA eligible Healthcare and life sciences (HCLS) organizations depend on repetitive, manual browser-based tasks for critical workflows like claims processing and referral coordination.",
+      "what_happened": "Nova Act also integrates with external tools through API calls, remote Model Control Protoco l (MCP), or agentic frameworks, such as Strand Agents. While agentic AI can automate these workflows, compliance requirements under the Health Insurance Portability and Accountability Act (HIPAA) have limited adoption where electronically protected health information (ePHI) might be present.Amazon Nova Act now qualifies as a HIPAA eligible service, so you can deploy autonomous, browser-based AI...",
+      "why_matters": "The practical impact: Artificial Intelligence Amazon Nova Act is now HIPAA eligible Healthcare and life sciences (HCLS) organizations depend on repetitive, manual browser-based tasks for critical workflows like claims processing and referral coordination. About Amazon Nova Act Amazon Nova Act is available as an AWS service to build and manage fleets of reliable AI agents for automating...",
+      "what_to_watch": "Watch next: Artificial Intelligence Amazon Nova Act is now HIPAA eligible Healthcare and life sciences (HCLS) organizations depend on repetitive, manual browser-based tasks for critical workflows like claims processing and referral coordination.",
+      "key_points": [
+        "Nova Act also integrates with external tools through API calls, remote Model Control Protoco l (MCP), or agentic frameworks, such as Strand Agents.",
+        "Artificial Intelligence Amazon Nova Act is now HIPAA eligible Healthcare and life sciences (HCLS) organizations depend on repetitive, manual browser-based tasks for critical workflows like claims processing and...",
+        "About Amazon Nova Act Amazon Nova Act is available as an AWS service to build and manage fleets of reliable AI agents for automating production UI workflows at scale.",
+        "While agentic AI can automate these workflows, compliance requirements under the Health Insurance Portability and Accountability Act (HIPAA) have limited adoption where electronically protected health information...",
+        "You can also send and track referrals between providers and gather data from multiple systems for compliance reporting.",
+        "Under the AWS Shared Responsibility Model , we manage the security of the underlying infrastructure, and you remain responsible for configuring controls to achieve HIPAA compliance within your deployments."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3a0d3bfb1fa5f77f.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/21/20736.png"
+    }
+  ],
+  "carousel_part": 1,
+  "carousel_total_parts": 8,
+  "slides": [
+    "From Token Streams to Agent Streams",
+    "From Token Streams to Agent Streams",
+    "Why it matters",
+    "Amazon Nova Act is now HIPAA eligible | Amazon Web Services",
+    "Amazon Nova Act is now HIPAA eligible | Amazon Web Services",
+    "Why it matters",
+    "What to watch next",
+    "Follow for the next AI briefing"
+  ]
+}

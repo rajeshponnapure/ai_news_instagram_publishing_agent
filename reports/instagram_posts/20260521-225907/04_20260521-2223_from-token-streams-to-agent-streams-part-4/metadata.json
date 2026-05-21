@@ -1,0 +1,101 @@
+{
+  "email_received_at": "2026-05-21T22:23+00:00",
+  "recommended_post_time": "22:00",
+  "headline": "From Token Streams to Agent Streams - Part 4",
+  "subject": "\ud83d\udea8 AI Alert: 10 new launches \u2014 MarkTechPost AI, Wired AI, LangChain Blog",
+  "source_date": "Thu, 21 May 2026 15:23:51 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "AWS",
+    "Cohere"
+  ],
+  "models": [
+    "claude-code"
+  ],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "developer tools",
+    "media generation"
+  ],
+  "article_url": "https://aibusiness.com/generative-ai/microsoft-ey-link-up-speed-enterprise-ai-adoption",
+  "article_title": ": LangChain Blog",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://aibusiness.com/generative-ai/microsoft-ey-link-up-speed-enterprise-ai-adoption",
+      "title": ": LangChain Blog",
+      "description": ": LangChain Blog Summary : Move beyond token streaming. Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and Link : [HIGH] Microsoft and EY Link Up to Speed Enterprise AI Adoption Company : AI Business Summary : The longtime partners expanded their relationship. Link : [MEDIUM] Amazon Nova Act is now HIPAA eligible Company : AWS Machine Learning Summary : In this post, you will learn what Nova Act offers, how HIPAA eligibility applies to agentic AI, and how to get started. Link : [MEDIUM] langchain-ai/langchain: langchain-openai==1.2.2 Company : LangChain Summary : Changes since langchain-openai==1.2.1 release(openai)...",
+      "excerpt": ": LangChain Blog Summary : Move beyond token streaming. Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and Link : [HIGH] Microsoft and EY Link Up to Speed Enterprise AI Adoption Company : AI Business Summary : The longtime partners expanded their relationship. Link : [MEDIUM] Amazon Nova Act is now HIPAA eligible Company : AWS Machine Learning Summary : In this post, you will learn what Nova Act offers, how HIPAA eligibility applies to agentic AI, and how to get started. Link ...",
+      "summary": "Link : [MEDIUM] langchain-ai/langchain: langchain-openai==1.2.2 Company : LangChain Summary : Changes since langchain-openai==1.2.1 release(openai)... The practical impact: Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and Link : [HIGH] Microsoft and EY Link Up to Speed Enterprise AI Adoption Company : AI Business Summary : The longtime partners expanded their relationship. Watch next: : LangChain Blog Summary : Move beyond token streaming.",
+      "what_happened": "Link : [MEDIUM] langchain-ai/langchain: langchain-openai==1.2.2 Company : LangChain Summary : Changes since langchain-openai==1.2.1 release(openai)...",
+      "why_matters": "The practical impact: Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and Link : [HIGH] Microsoft and EY Link Up to Speed Enterprise AI Adoption Company : AI Business Summary : The longtime partners expanded their relationship.",
+      "what_to_watch": "Watch next: : LangChain Blog Summary : Move beyond token streaming.",
+      "key_points": [
+        "Link : [MEDIUM] langchain-ai/langchain: langchain-openai==1.2.2 Company : LangChain Summary : Changes since langchain-openai==1.2.1 release(openai)...",
+        "Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and Link : [HIGH] Microsoft and EY Link Up to...",
+        "Link : [MEDIUM] Amazon Nova Act is now HIPAA eligible Company : AWS Machine Learning Summary : In this post, you will learn what Nova Act offers, how HIPAA eligibility applies to agentic AI, and how to get started.",
+        ": LangChain Blog Summary : Move beyond token streaming."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": ""
+    },
+    {
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.2.2",
+      "title": "IPAA eligibility applies to agentic AI, and how to get started.",
+      "description": "IPAA eligibility applies to agentic AI, and how to get started. Link : [MEDIUM] langchain-ai/langchain: langchain-openai==1.2.2 Company : LangChain Summary : Changes since langchain-openai==1.2.1 release(openai): 1.2.2 (#37617) chore(infra): bump langchain-tests floor to 1.1.9 (#37610) test(openai): unbreak audio chat and Azure embedding integration tes Link : [MEDIUM] openai/openai-python: v2.38.0 Company : OpenAI Summary : ## 2.38.0 (2026-05-21) Full Changelog: [v2.37.0...v2.38.0]( ### Features * **api:** api update ([33d1d01]( Link : [MEDIUM] anthropics/claude-code: v2.1.147 Company : Anthropic Summary : ## What's changed - Added the Workflow ...",
+      "excerpt": "IPAA eligibility applies to agentic AI, and how to get started. Link : [MEDIUM] langchain-ai/langchain: langchain-openai==1.2.2 Company : LangChain Summary : Changes since langchain-openai==1.2.1 release(openai): 1.2.2 (#37617) chore(infra): bump langchain-tests floor to 1.1.9 (#37610) test(openai): unbreak audio chat and Azure embedding integration tes Link : [MEDIUM] openai/openai-python: v2.38.0 Company : OpenAI Summary : ## 2.38.0 (2026-05-21) Full Changelog: [v2.37.0...v2.38.0]( ### Features * **api:** api update...",
+      "summary": "Link : [MEDIUM] langchain-ai/langchain: langchain-openai==1.2.2 Company : LangChain Summary : Changes since langchain-openai==1.2.1 release(openai): 1.2.2 (#37617) chore(infra): bump langchain-tests floor to 1.1.9 (#37610) test(openai): unbreak audio chat and Azure embedding integration tes Link : [MEDIUM] openai/openai-python: v2.38.0 Company : OpenAI Summary : ## 2.38.0 (2026-05-21) Full Changelog: [v2.37.0...v2.38.0]( ### Features * **api:** api update ([33d1d01]( Link : [MEDIUM]... The practical impact: IPAA eligibility applies to agentic AI, and how to get started. Watch next: IPAA eligibility applies to agentic AI, and how to get started.",
+      "what_happened": "Link : [MEDIUM] langchain-ai/langchain: langchain-openai==1.2.2 Company : LangChain Summary : Changes since langchain-openai==1.2.1 release(openai): 1.2.2 (#37617) chore(infra): bump langchain-tests floor to 1.1.9 (#37610) test(openai): unbreak audio chat and Azure embedding integration tes Link : [MEDIUM] openai/openai-python: v2.38.0 Company : OpenAI Summary : ## 2.38.0 (2026-05-21) Full Changelog: [v2.37.0...v2.38.0]( ### Features * **api:** api update ([33d1d01]( Link : [MEDIUM]...",
+      "why_matters": "The practical impact: IPAA eligibility applies to agentic AI, and how to get started.",
+      "what_to_watch": "Watch next: IPAA eligibility applies to agentic AI, and how to get started.",
+      "key_points": [
+        "Link : [MEDIUM] langchain-ai/langchain: langchain-openai==1.2.2 Company : LangChain Summary : Changes since langchain-openai==1.2.1 release(openai): 1.2.2 (#37617) chore(infra): bump langchain-tests floor to 1.1.9...",
+        "IPAA eligibility applies to agentic AI, and how to get started."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "",
+      "image_url": ""
+    }
+  ],
+  "carousel_part": 4,
+  "carousel_total_parts": 8,
+  "slides": [
+    ": LangChain Blog",
+    ": LangChain Blog",
+    "Why it matters",
+    "IPAA eligibility applies to agentic AI, and how to get started.",
+    "IPAA eligibility applies to agentic AI, and how to get started.",
+    "Why it matters",
+    "Follow for the next AI briefing"
+  ]
+}
