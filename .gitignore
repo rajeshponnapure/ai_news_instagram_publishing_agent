@@ -47,6 +47,9 @@ data/*
 !data/.gitkeep
 
 data/article_assets/
+# Image library — large files, not committed; kept locally and on runner cache
+data/images/
+!data/images/.gitkeep
 
 # Temporary tunnel binary if downloaded into repo root
 cloudflared.exe

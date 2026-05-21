@@ -21,6 +21,7 @@ from .article_enricher import ArticleData
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SUMMARY_SKILL_PATH = PROJECT_ROOT / "skills" / "instagram-ai-news-summary-v2.md"
+CREATOR_SKILL_PATH = PROJECT_ROOT / "skills" / "instagram-content-creator.md"
 
 # ── Noise patterns stripped before any summarisation ─────────────────────────
 _NOISE_PATTERNS = [
@@ -281,14 +282,19 @@ class SummaryProvider:
 
 
 def _load_summary_skill() -> str:
-    try:
-        return SUMMARY_SKILL_PATH.read_text(encoding="utf-8")[:3500]
-    except OSError:
-        return (
-            "Summarize the linked article in a human AI-news editor voice. "
-            "Cover what happened, why it matters, and what to watch next. "
-            "Use concrete article details. Avoid generic category labels."
-        )
+    """Load the combined skill guide for the LLM prompt."""
+    parts = []
+    for path in (SUMMARY_SKILL_PATH, CREATOR_SKILL_PATH):
+        try:
+            parts.append(path.read_text(encoding="utf-8")[:2000])
+        except OSError:
+            pass
+    return "\n\n".join(parts) if parts else (
+        "Summarize the linked article in a human AI-news editor voice. "
+        "Cover what happened, why it matters, and what to watch next. "
+        "Use concrete article details. Avoid generic category labels. "
+        "Never include cookie consent text, legal boilerplate, or newsletter noise."
+    )
 
 
 # ── Core local summariser ─────────────────────────────────────────────────────

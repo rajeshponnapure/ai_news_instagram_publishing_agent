@@ -27,6 +27,8 @@ WATERMARK_CANDIDATES = [PROJECT_ROOT / "GR watermark.png", PROJECT_ROOT / "GR Wa
 FINAL_LOGO_CANDIDATES = [PROJECT_ROOT / "GR INSTA LOGO.png", PROJECT_ROOT / "GRInstaLogo.png", PROJECT_ROOT / "GR INSTA LOGO.svg"]
 ARTICLE_ASSET_DIR = PROJECT_ROOT / "data" / "article_assets"
 REFERENCE_IMAGE_DIR = ARTICLE_ASSET_DIR / "reference_images"
+# Shared image library — all downloaded images land here for reuse across posts
+IMAGE_LIBRARY_DIR = PROJECT_ROOT / "data" / "images"
 REFERENCE_BRANDS = (
     "OpenAI",
     "Google",
@@ -318,13 +320,14 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
 
     image = Image.new("RGBA", (CANVAS_W, CANVAS_H), PAGE_BLACK)
     draw = ImageDraw.Draw(image, "RGBA")
-    # Large fonts for full-page text coverage with minimal whitespace
-    font_eyebrow = _font(ImageFont, 34, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
-    font_title = _font(ImageFont, 58, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/arialbd.ttf"])
-    font_body = _font(ImageFont, 32, bold=False, preferred=["C:/Windows/Fonts/seguisb.ttf", "C:/Windows/Fonts/segoeui.ttf", "C:/Windows/Fonts/arial.ttf"])
-    font_meta = _font(ImageFont, 22, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
-    font_cta = _font(ImageFont, 42, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf"])
-    font_brand = _font(ImageFont, 108, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
+    # Font sizes tuned for a 1080×1350 canvas — body text is large enough to
+    # fill the slide and be readable on a phone screen without zooming.
+    font_eyebrow = _font(ImageFont, 36, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
+    font_title   = _font(ImageFont, 64, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/arialbd.ttf"])
+    font_body    = _font(ImageFont, 42, bold=False, preferred=["C:/Windows/Fonts/seguisb.ttf", "C:/Windows/Fonts/segoeui.ttf", "C:/Windows/Fonts/arial.ttf"])
+    font_meta    = _font(ImageFont, 26, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
+    font_cta     = _font(ImageFont, 46, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf"])
+    font_brand   = _font(ImageFont, 112, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
 
     _draw_background_grid(draw)
 
@@ -369,39 +372,39 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
         _draw_centered_text(draw, f"{slide_number:02d}/{total_slides:02d}", (450, 1120, 630, 1170), font_meta, ACCENT_GREEN, 1)
     else:
         _draw_centered_text(draw, slide["eyebrow"], (110, 74, 970, 130), font_eyebrow, ACCENT_GREEN, 1)
-        title_box = (110, 152, 970, 338)
-        # Draw the title top-aligned to avoid large vertical centering gaps
+        title_box = (110, 148, 970, 330)
         _draw_top_centered_text_block(draw, slide.get("title", ""), title_box, font_title, TEXT_WHITE, max_lines=2)
 
-        # Dark container behind body text so it's readable over the background grid
-        body_container = (72, 340, CANVAS_W - 72, 896)
-        draw.rounded_rectangle(body_container, radius=22, fill=(10, 10, 10, 220))
+        # Dark container behind body text — readable over the background grid
+        body_container = (64, 336, CANVAS_W - 64, 900)
+        draw.rounded_rectangle(body_container, radius=24, fill=(8, 8, 8, 230))
 
-        body_box = (110, 360, 970, 880)
+        body_box = (100, 358, 980, 886)
         _draw_left_text_block(
             draw,
             slide["body"],
             box=body_box,
             font=font_body,
             fill=SOFT_WHITE,
-            line_gap=5,
-            max_lines=13,
+            line_gap=10,
+            max_lines=9,
         )
         supporting = str(slide.get("supporting", "")).strip()
         if supporting:
-            support_box = (160, 900, 920, 1168)
-            draw.rounded_rectangle(support_box, radius=28, outline=ACCENT_GREEN, width=2, fill="#0B0B0B")
+            support_box = (100, 908, 980, 1200)
+            draw.rounded_rectangle(support_box, radius=28, outline=ACCENT_GREEN, width=2, fill="#0A0A0A")
+            font_support = _font(ImageFont, 34, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf"])
             _draw_centered_text_block(
                 draw,
                 supporting,
-                box=(190, 930, 890, 1136),
-                font=_font(ImageFont, 30, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf"]),
+                box=(130, 936, 950, 1172),
+                font=font_support,
                 fill=TEXT_WHITE,
-                line_gap=12,
-                max_lines=6,
+                line_gap=14,
+                max_lines=5,
             )
-        draw.rounded_rectangle((180, 1240, 900, 1254), radius=3, fill=ACCENT_GREEN)
-        _draw_centered_text(draw, f"{slide_number:02d}/{total_slides:02d}", (450, 1262, 630, 1300), font_meta, SOFT_WHITE, 1)
+        draw.rounded_rectangle((160, 1248, 920, 1262), radius=3, fill=ACCENT_GREEN)
+        _draw_centered_text(draw, f"{slide_number:02d}/{total_slides:02d}", (450, 1270, 630, 1310), font_meta, SOFT_WHITE, 1)
 
     path.parent.mkdir(parents=True, exist_ok=True)
     _draw_watermark_overlay(image)
@@ -743,11 +746,40 @@ def _draw_left_text_block(draw, text: str, box: tuple[int, int, int, int], font,
 
 
 def _select_article_image(article: dict[str, Any], topic: str) -> str:
-    for key in ("image_path", "image_url", "thumbnail", "thumbnail_url"):
+    """Smart image selection pipeline:
+    1. Use the image extracted directly from the blog/article (best relevance)
+    2. Check the shared data/images library for a previously downloaded relevant image
+    3. Search Wikimedia Commons for a relevant image and save it to the library
+    4. Fall back to a reference image from the brand/topic cache
+    """
+    title = str(article.get("title") or "")
+    url = str(article.get("url") or "")
+
+    # 1. Blog/article image — most relevant, already downloaded by enricher
+    for key in ("image_path", "image_url"):
         value = str(article.get(key, "") or "").strip()
         if value:
-            return value
-    return _find_reference_image_for_article(article, topic) or ""
+            # If it's a URL, download it to the library and return the local path
+            if value.startswith(("http://", "https://")):
+                local = _download_to_library(value, title or topic)
+                if local:
+                    return local
+            else:
+                path = Path(value)
+                if path.exists():
+                    return value
+
+    # 2. Check the shared image library for a relevant cached image
+    library_match = _find_library_image(title or topic)
+    if library_match:
+        return library_match
+
+    # 3. Search the web for a relevant image and save to library
+    web_image = _find_reference_image_for_article(article, topic)
+    if web_image:
+        return web_image
+
+    return ""
 
 
 def _resolve_image_source(image_path: str) -> Path | None:
@@ -760,6 +792,67 @@ def _resolve_image_source(image_path: str) -> Path | None:
     if path.exists():
         return path
     return None
+
+
+def _download_to_library(url: str, seed_text: str) -> str | None:
+    """Download an image URL to the shared data/images library and return the local path."""
+    IMAGE_LIBRARY_DIR.mkdir(parents=True, exist_ok=True)
+    cache_key = hashlib.sha1(url.encode("utf-8")).hexdigest()[:16]
+    # Check if already downloaded
+    for suffix in (".jpg", ".jpeg", ".png", ".webp"):
+        cached = IMAGE_LIBRARY_DIR / f"{cache_key}{suffix}"
+        if cached.exists():
+            return str(cached)
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (compatible; AIInstagramAgent/1.0)",
+            "Referer": url,
+        }
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=12) as resp:
+            content_type = resp.headers.get("Content-Type", "").split(";")[0].lower().strip()
+            suffix = {"image/jpeg": ".jpg", "image/png": ".png", "image/webp": ".webp"}.get(content_type, ".jpg")
+            data = resp.read(8_000_000)
+    except Exception:
+        return None
+    if len(data) < 10_000:
+        return None
+    dest = IMAGE_LIBRARY_DIR / f"{cache_key}{suffix}"
+    dest.write_bytes(data)
+    # Save a sidecar metadata file so we can match images to topics later
+    meta = IMAGE_LIBRARY_DIR / f"{cache_key}.json"
+    meta.write_text(json.dumps({"url": url, "seed": seed_text}, ensure_ascii=True), encoding="utf-8")
+    return str(dest)
+
+
+def _find_library_image(query: str) -> str | None:
+    """Search the data/images library for an image relevant to the query."""
+    if not IMAGE_LIBRARY_DIR.exists():
+        return None
+    query_tokens = set(re.findall(r"[A-Za-z]{4,}", query.lower()))
+    if not query_tokens:
+        return None
+    best_path: str | None = None
+    best_score = 0
+    for meta_file in IMAGE_LIBRARY_DIR.glob("*.json"):
+        try:
+            meta = json.loads(meta_file.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        seed = str(meta.get("seed", "")).lower()
+        seed_tokens = set(re.findall(r"[A-Za-z]{4,}", seed))
+        score = len(query_tokens & seed_tokens)
+        if score > best_score:
+            # Find the matching image file
+            stem = meta_file.stem
+            for suffix in (".jpg", ".jpeg", ".png", ".webp"):
+                candidate = IMAGE_LIBRARY_DIR / f"{stem}{suffix}"
+                if candidate.exists():
+                    best_score = score
+                    best_path = str(candidate)
+                    break
+    # Only return if there's a meaningful match (at least 2 tokens in common)
+    return best_path if best_score >= 2 else None
 
 
 def _compose_article_narrative(summary: EmailSummary, article: dict[str, Any]) -> str:
@@ -1051,9 +1144,14 @@ def _download_reference_image(image_url: str, cache_key: str) -> str | None:
         return None
     if len(data) < 20_000:
         return None
+    # Save to both the reference cache and the shared library
     REFERENCE_IMAGE_DIR.mkdir(parents=True, exist_ok=True)
+    IMAGE_LIBRARY_DIR.mkdir(parents=True, exist_ok=True)
     dest = REFERENCE_IMAGE_DIR / f"{cache_key}{suffix}"
     dest.write_bytes(data)
+    lib_dest = IMAGE_LIBRARY_DIR / f"{cache_key}{suffix}"
+    if not lib_dest.exists():
+        lib_dest.write_bytes(data)
     return str(dest)
 
 

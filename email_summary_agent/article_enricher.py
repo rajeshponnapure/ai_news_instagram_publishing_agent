@@ -300,6 +300,19 @@ def _download_image(image_url: str, assets_dir: Path, source_url: str) -> str:
     assets_dir.mkdir(parents=True, exist_ok=True)
     path = assets_dir / f"{digest}{suffix}"
     path.write_bytes(data)
+    # Also save to the shared image library for reuse across posts
+    library_dir = Path(__file__).resolve().parents[1] / "data" / "images"
+    library_dir.mkdir(parents=True, exist_ok=True)
+    lib_path = library_dir / f"{digest}{suffix}"
+    if not lib_path.exists():
+        lib_path.write_bytes(data)
+    # Save sidecar metadata for relevance matching
+    meta_path = library_dir / f"{digest}.json"
+    if not meta_path.exists():
+        meta_path.write_text(
+            __import__("json").dumps({"url": image_url, "seed": source_url}, ensure_ascii=True),
+            encoding="utf-8",
+        )
     return str(path)
 
 
