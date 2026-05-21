@@ -1,0 +1,90 @@
+{
+  "email_received_at": "2026-05-21T11:52+00:00",
+  "recommended_post_time": "22:00",
+  "headline": "Announcing OpenAI-compatible API support for Amazon SageMaker AI endpoints | Amazon... - Part 4",
+  "subject": "Fwd: \ud83d\ude80 AI Digest \u2014 21 May 2026 | 50 updates \u00b7 50 launches",
+  "source_date": "Thu, 21 May 2026 17:22:11 +0530",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Microsoft",
+    "Amazon",
+    "AWS",
+    "NVIDIA"
+  ],
+  "models": [
+    "Claude",
+    "Gemini",
+    "Gemini 3.5",
+    "Gemini 3.1",
+    "Gemini 3",
+    "Stable Diffusion"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html",
+  "article_title": "Google debuts new AI models, personal AI agents in effort to keep pace with OpenAI and Anthropic",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c8443694b00b82f6.jpg",
+  "article_image_url": "https://image.cnbcfm.com/api/v1/image/108309206-1779213871939-108309206-1779210844055-108309206-1779210774213-gettyimages-2276576410-GOOGLE_IO.jpg?v=1779223380&w=1920&h=1080",
+  "article_items": [
+    {
+      "url": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html",
+      "title": "Google debuts new AI models, personal AI agents in effort to keep pace with OpenAI and Anthropic",
+      "description": "Google made a number of AI announcements at its annual developer conference, rolling out more-advanced models and agentic tools for its expansive user base.",
+      "excerpt": "Google made a number of AI announcements at its annual developer conference, rolling out more-advanced models and agentic tools for its expansive user base.",
+      "summary": "Google debuts new AI models, personal AI agents in effort to keep pace with OpenAI and Anthropic. Google made a number of AI announcements at its annual developer conference, rolling out more-advanced models and agentic tools for its expansive user base. Google debuts new AI models, personal AI agents in effort to keep pace with OpenAI and Anthropic Google is showcasing Gemini 3.5 Flash, a lighter-weight addition to its suite that offers cutting-edge capabilities. Google is rolling out its latest version of Gemini and a new artificial intelligence model designed to simulate the physical world, as the search giant races to keep pace in model development while also providing more agentic services to its massive user base. The company made the announcements at its annual Google I/O developer conference on Tuesday, gaining an audience for new product debuts at a time when the market has been focused on the soaring valuations of OpenAI and Anthropic, which are both gearing up for IPOs as soon as this year. The centerpiece of Google\u2019s AI strategy is Gemini, its family of models and tools. The company is showcasing Gemini 3.5 Flash, a lighter-weight addition to its suite that offers cutting-edge capabilities at half, or in some cases close to one-third, the price of comparable frontier models, according to CEO Sundar Pichai . In a news briefing with reporters ahead of Tuesday\u2019s event, Pichai said Gemini 3.5 Flash is \u201cremarkably fast.\u201d The company said 3.5 Flash will now be the default model for the Gemini app and AI mode in search globally. Google announced Gemini Spark, a new general-purpose AI agent in the Gemini app that can reason across information in connected apps. Expectations for AI companies continue to grow, particularly in light of Anthropic\u2019s recently released...",
+      "key_points": [
+        "Google made a number of AI announcements at its annual developer conference, rolling out more-advanced models and agentic tools for its expansive user base.",
+        "Google debuts new AI models, personal AI agents in effort to keep pace with OpenAI and Anthropic Google is showcasing Gemini 3.5 Flash, a lighter-weight addition to its suite that offers cutting-edge capabilities.",
+        "Google is rolling out its latest version of Gemini and a new artificial intelligence model designed to simulate the physical world, as the search giant races to keep pace in model development while also providing more agentic services...",
+        "The company made the announcements at its annual Google I/O developer conference on Tuesday, gaining an audience for new product debuts at a time when the market has been focused on the soaring valuations of OpenAI and Anthropic, which...",
+        "The centerpiece of Google\u2019s AI strategy is Gemini, its family of models and tools.",
+        "The company is showcasing Gemini 3.5 Flash, a lighter-weight addition to its suite that offers cutting-edge capabilities at half, or in some cases close to one-third, the price of comparable frontier models, according to CEO Sundar Pichai .",
+        "In a news briefing with reporters ahead of Tuesday\u2019s event, Pichai said Gemini 3.5 Flash is \u201cremarkably fast.\u201d The company said 3.5 Flash will now be the default model for the Gemini app and AI mode in search globally.",
+        "Google announced Gemini Spark, a new general-purpose AI agent in the Gemini app that can reason across information in connected apps."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c8443694b00b82f6.jpg",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108309206-1779213871939-108309206-1779210844055-108309206-1779210774213-gettyimages-2276576410-GOOGLE_IO.jpg?v=1779223380&w=1920&h=1080"
+    },
+    {
+      "url": "https://openai.com/index/introducing-openai-for-singapore/",
+      "title": "Introducing OpenAI for Singapore",
+      "description": "OpenAI for Singapore launches a multi-year AI partnership to expand deployment, build local talent, and support businesses and public services with AI.",
+      "excerpt": "OpenAI for Singapore launches a multi-year AI partnership to expand deployment, build local talent, and support businesses and public services with AI.",
+      "summary": "Introducing OpenAI for Singapore. Singapore launches a multi-year AI partnership to expand deployment, build local talent, and support businesses and public services with AI. Frontier deployment to support Singapore\u2019s national AI priorities Helping more people and businesses across Singapore benefit from AI Introducing OpenAI for Singapore Today at the ATx Summit in Singapore, we\u2019re launching OpenAI for Singapore, a partnership with the Ministry of Digital Development and Information (MDDI) to support Singapore\u2019s National AI strategy. Singapore is a global leader in AI and has made it central to its plans for economic growth, public services, and how people learn, work, and build. As intelligence becomes more like a utility, OpenAI for Singapore is designed to support Singapore\u2019s ambition to become an AI-powered economy. Backed by a commitment of more than S$300 million, the initiative will focus on three key areas: Helping organisations in Singapore deploy frontier AI and solve some of their hardest problems Helping more people and businesses across Singapore benefit from AI Frontier deployment to support Singapore\u2019s national AI priorities At the centre of the partnership is the establishment of our Applied AI Lab in Singapore... What this means in practice is that OpenAI will create more than 200 Singapore-based technical roles over the next few years and make Singapore one of its global hubs for Forward-Deployed Engineers. Forward-Deployed Engineers sit at the point where frontier research meets real-world deployment. Through the partnership, the Lab will support work aligned with Singapore\u2019s AI Mission priorities, particularly in areas such as public service, finance, healthcare and digital infrastructure. Developing the next generation of AI talent in Singapore...",
+      "key_points": [
+        "Singapore launches a multi-year AI partnership to expand deployment, build local talent, and support businesses and public services with AI.",
+        "Frontier deployment to support Singapore\u2019s national AI priorities Helping more people and businesses across Singapore benefit from AI Introducing OpenAI for Singapore Today at the ATx Summit in Singapore, we\u2019re launching OpenAI for...",
+        "Singapore is a global leader in AI and has made it central to its plans for economic growth, public services, and how people learn, work, and build.",
+        "As intelligence becomes more like a utility, OpenAI for Singapore is designed to support Singapore\u2019s ambition to become an AI-powered economy.",
+        "Backed by a commitment of more than S$300 million, the initiative will focus on three key areas: Helping organisations in Singapore deploy frontier AI and solve some of their hardest problems Helping more people and businesses across...",
+        "What this means in practice is that OpenAI will create more than 200 Singapore-based technical roles over the next few years and make Singapore one of its global hubs for Forward-Deployed Engineers.",
+        "Forward-Deployed Engineers sit at the point where frontier research meets real-world deployment.",
+        "Through the partnership, the Lab will support work aligned with Singapore\u2019s AI Mission priorities, particularly in areas such as public service, finance, healthcare and digital infrastructure."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b9514fef20095a0b.png",
+      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/7aPpcq7lYKo3JZBg2cAti2/40c003351401ac4d87962c84e8b93f67/release-og-frame-1.png?w=1600&h=900&fit=fill"
+    }
+  ],
+  "carousel_part": 4,
+  "carousel_total_parts": 11,
+  "slides": [
+    "Google debuts new AI models, personal AI agents in effort to keep pace with OpenAI...",
+    "Google debuts new AI models, personal AI agents in effort to keep pace with OpenAI...",
+    "Why it matters",
+    "What to watch next",
+    "Introducing OpenAI for Singapore",
+    "Introducing OpenAI for Singapore",
+    "Why it matters",
+    "What to watch next",
+    "Follow for the next AI briefing"
+  ]
+}

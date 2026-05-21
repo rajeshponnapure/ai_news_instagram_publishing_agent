@@ -1,0 +1,15 @@
+Announcing OpenAI-compatible API support for Amazon SageMaker AI endpoints | Amazon... - Part 6
+
+ing appeared first on MarkTechPost . → Read more <https://www.marktechpost.com/2026/05/20/google-introduces-gemini-3-5-flash-at-i-o-2026-a-faster-and-cheaper-model-for-ai-agents-and-coding/> LAUNCH HIGH CNBC Technology Nvidia to launch Singapore research hub as city-state boosts AI plans Singapore has announced a new Nvidia research center and its first testbed to research, test and deploy physical AI, along with...
+
+Built from the linked article shared in today's AI news email.
+
+Quick takeaways:
+- If you use the OpenAI SDK, LangChain, or Strands Agents, you can now invoke models on SageMaker AI by changing only your endpoint URL.
+- Overview With this launch, SageMaker AI endpoints […] Select your cookie preferences Customize cookie preferences Essential cookies are necessary...
+- You may review and change your choices at any time by selecting Cookie preferences in the footer of this site.
+- For more information about cookies and how we use them, read our Cookie Notice .
+
+Disclaimer: This is an AI-assisted summary of the email brief.
+
+#Openai #Google #Deepmind #Anthropic #Microsoft #Amazon #Aws #Nvidia #Claude #Gemini #Gemini35 #Gemini31

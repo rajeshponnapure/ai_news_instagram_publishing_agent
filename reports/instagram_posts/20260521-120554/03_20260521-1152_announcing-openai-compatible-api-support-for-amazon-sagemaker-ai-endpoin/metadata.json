@@ -1,0 +1,90 @@
+{
+  "email_received_at": "2026-05-21T11:52+00:00",
+  "recommended_post_time": "18:00",
+  "headline": "Announcing OpenAI-compatible API support for Amazon SageMaker AI endpoints | Amazon... - Part 3",
+  "subject": "Fwd: \ud83d\ude80 AI Digest \u2014 21 May 2026 | 50 updates \u00b7 50 launches",
+  "source_date": "Thu, 21 May 2026 17:22:11 +0530",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Microsoft",
+    "Amazon",
+    "AWS",
+    "NVIDIA"
+  ],
+  "models": [
+    "Claude",
+    "Gemini",
+    "Gemini 3.5",
+    "Gemini 3.1",
+    "Gemini 3",
+    "Stable Diffusion"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://aibusiness.com/generative-ai/google-aims-enterprise-cost-efficiency-with-gemini-3-5-flash",
+  "article_title": "Google Aims at Enterprise Cost Efficiency With Gemini 3.5 Flash",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9ddf69bec7b73526.jpg",
+  "article_image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltde4293defea3746b/6a0cf6d5130b7c4581cc0a49/Pichar.JPG?disable=upscale&width=1200&height=630&fit=crop",
+  "article_items": [
+    {
+      "url": "https://aibusiness.com/generative-ai/google-aims-enterprise-cost-efficiency-with-gemini-3-5-flash",
+      "title": "Google Aims at Enterprise Cost Efficiency With Gemini 3.5 Flash",
+      "description": "Google introduced Gemini 3.5 Flash and other agentic AI tools for enterprises.",
+      "excerpt": "Google introduced Gemini 3.5 Flash and other agentic AI tools for enterprises.",
+      "summary": "Google Aims at Enterprise Cost Efficiency With Gemini 3.5 Flash. Google introduced Gemini 3.5 Flash and other agentic AI tools for enterprises. TechTarget and Informa TechTarget and Informa Tech\u2019s Digital Business Combine. Google Aims at Enterprise Cost Efficiency With Gemini 3.5 Flash The new model allows enterprises to spend less on tokens than they would previously, while one of the newly released agents competes against OpenClaw. At I/O 2026, its developer conference on Tuesday, the tech giant rolled out a new enterprise AI model, Gemini 3.5 Flash, which is aimed directly at the cost problem. Google also introduced Gemini Omni, a new multimodal model, and new agents, including Daily Brief and Gemini Spark. Gemini Flash 3.5 homes in on one of the major hurdles enterprises face when using AI agents . As the use of AI agents grows, enterprises are becoming more sensitive to the number of tokens required to power them. For example, Anthropic's new Claude Opus 4.6 model reduced costs to $5 per million input tokens and $25 per million output tokens, a significant drop from $15 per million input tokens and $75 per million output tokens. Gemini Flash 3.5 follows that trend, with Google touting the model as the least expensive to use proprietary frontier model, costing $1.50 per million tokens.",
+      "key_points": [
+        "Google introduced Gemini 3.5 Flash and other agentic AI tools for enterprises.",
+        "TechTarget and Informa TechTarget and Informa Tech\u2019s Digital Business Combine.",
+        "Google Aims at Enterprise Cost Efficiency With Gemini 3.5 Flash The new model allows enterprises to spend less on tokens than they would previously, while one of the newly released agents competes against OpenClaw.",
+        "At I/O 2026, its developer conference on Tuesday, the tech giant rolled out a new enterprise AI model, Gemini 3.5 Flash, which is aimed directly at the cost problem.",
+        "Google also introduced Gemini Omni, a new multimodal model, and new agents, including Daily Brief and Gemini Spark.",
+        "Gemini Flash 3.5 homes in on one of the major hurdles enterprises face when using AI agents .",
+        "As the use of AI agents grows, enterprises are becoming more sensitive to the number of tokens required to power them.",
+        "For example, Anthropic's new Claude Opus 4.6 model reduced costs to $5 per million input tokens and $25 per million output tokens, a significant drop from $15 per million input tokens and $75 per million output tokens."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9ddf69bec7b73526.jpg",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltde4293defea3746b/6a0cf6d5130b7c4581cc0a49/Pichar.JPG?disable=upscale&width=1200&height=630&fit=crop"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/05/19/openai-announces-new-guaranteed-capacity-offering-for-customers-to-secure-compute.html",
+      "title": "OpenAI announces new Guaranteed Capacity offering for customers to secure compute",
+      "description": "Altman said OpenAI will make sure it leaves enough capacity available for its products like ChatGPT and its coding assistant Codex.",
+      "excerpt": "Altman said OpenAI will make sure it leaves enough capacity available for its products like ChatGPT and its coding assistant Codex.",
+      "summary": "OpenAI announces new Guaranteed Capacity offering for customers to secure compute. Altman said OpenAI will make sure it leaves enough capacity available for its products like ChatGPT and its coding assistant Codex. OpenAI announces new Guaranteed Capacity offering for customers to secure compute OpenAI announced Guaranteed Capacity, which allows customers to secure long-term access to compute. The company said customers can choose between one, two and three-year-long commitments and their corresponding discounts. OpenAI CEO Sam Altman said the new offering will help the company plan ahead, which he hopes will be a \u201cbig win-win.\u201d OpenAI on Tuesday announced a new offering called Guaranteed Capacity , which allows customers to secure long-term access to compute to power their artificial intelligence products, agents and workflows. Altman said the new offering will help OpenAI plan ahead, which he hopes will be a \u201cbig win-win.\u201d He added that OpenAI will offer Guaranteed Capacity until it sells out of its current allocation, but that the company plans to offer it again in the future. In the AI industry, compute refers to the computational power and resources required to train and run large AI models. The company\u2019s new Guaranteed Capacity program could help lay the foundation for what its compute business model will eventually look like.",
+      "key_points": [
+        "Altman said OpenAI will make sure it leaves enough capacity available for its products like ChatGPT and its coding assistant Codex.",
+        "OpenAI announces new Guaranteed Capacity offering for customers to secure compute",
+        "OpenAI announced Guaranteed Capacity, which allows customers to secure long-term access to compute.",
+        "The company said customers can choose between one, two and three-year-long commitments and their corresponding discounts.",
+        "OpenAI CEO Sam Altman said the new offering will help the company plan ahead, which he hopes will be a \u201cbig win-win.\u201d OpenAI on",
+        "Tuesday announced a new offering called Guaranteed Capacity , which allows customers to secure long-term access to compute to power their artificial intelligence products, agents and workflows.",
+        "Altman said the new offering will help OpenAI plan ahead, which he hopes will be a \u201cbig win-win.\u201d He added that OpenAI will offer Guaranteed Capacity until it sells out of its current allocation, but that the company plans to offer it...",
+        "In the AI industry, compute refers to the computational power and resources required to train and run large AI models."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3d5e5da01197273e.jpg",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108305703-17786016292026-05-12t155911z_721436228_rc2r7laxed0y_rtrmadp_0_musk-openai-court.jpeg?v=1778601644&w=1920&h=1080"
+    }
+  ],
+  "carousel_part": 3,
+  "carousel_total_parts": 11,
+  "slides": [
+    "Google Aims at Enterprise Cost Efficiency With Gemini 3.5 Flash",
+    "Google Aims at Enterprise Cost Efficiency With Gemini 3.5 Flash",
+    "Why it matters",
+    "What to watch next",
+    "OpenAI announces new Guaranteed Capacity offering for customers to secure compute",
+    "OpenAI announces new Guaranteed Capacity offering for customers to secure compute",
+    "Why it matters",
+    "What to watch next",
+    "Follow for the next AI briefing"
+  ]
+}
