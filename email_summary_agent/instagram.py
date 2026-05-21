@@ -1,10 +1,12 @@
 from __future__ import annotations
 
 import html
+import hashlib
 import json
 import re
 import shutil
 import tempfile
+import unicodedata
 import urllib.request
 import urllib.parse
 from datetime import datetime, timezone
@@ -23,6 +25,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 WATERMARK_CANDIDATES = [PROJECT_ROOT / "GR watermark.png", PROJECT_ROOT / "GR Watermark.png", PROJECT_ROOT / "GR watermark.svg"]
 FINAL_LOGO_CANDIDATES = [PROJECT_ROOT / "GR INSTA LOGO.png", PROJECT_ROOT / "GRInstaLogo.png", PROJECT_ROOT / "GR INSTA LOGO.svg"]
 ARTICLE_ASSET_DIR = PROJECT_ROOT / "data" / "article_assets"
+REFERENCE_IMAGE_DIR = ARTICLE_ASSET_DIR / "reference_images"
 ACCENT_GREEN = "#C8FF00"
 PAGE_BLACK = "#050505"
 TEXT_WHITE = "#FFFFFF"
@@ -38,6 +41,12 @@ NOISY_POINT_PREFIXES = (
 PUBLIC_BLOCKED_PHRASES = (
     "article 1 title:",
     "article title:",
+    "use essential cookies",
+    "advertising partners",
+    "show you ads",
+    "cookie settings",
+    "accept all cookies",
+    "reject all cookies",
     "build software better",
     "read every piece of feedback",
     "gitHub is where people build software".lower(),
@@ -209,7 +218,7 @@ def _build_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[s
                 "kind": "text",
                 "eyebrow": f"STORY {article_index:02d} - WHAT HAPPENED",
                 "title": headline,
-                "body": _tighten(first_half, 520),
+                "body": _tighten(first_half, 820),
                 "supporting": _supporting_note(summary, article, article_index, "Why this matters", variant="why"),
                 "image_path": "",
                 "topic": topic,
@@ -221,7 +230,7 @@ def _build_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[s
                 "kind": "text",
                 "eyebrow": f"STORY {article_index:02d} - NEXT",
                 "title": "What to watch next",
-                "body": _tighten(second_half, 500),
+                "body": _tighten(second_half, 780),
                 "supporting": _supporting_note(summary, article, article_index, "Watch this angle", variant="watch"),
                 "image_path": "",
                 "topic": topic,
@@ -250,7 +259,7 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
     # Large fonts for full-page text coverage with minimal whitespace
     font_eyebrow = _font(ImageFont, 22, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
     font_title = _font(ImageFont, 50, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/arialbd.ttf"])
-    font_body = _font(ImageFont, 40, bold=False, preferred=["C:/Windows/Fonts/seguisb.ttf", "C:/Windows/Fonts/segoeui.ttf", "C:/Windows/Fonts/arial.ttf"])
+    font_body = _font(ImageFont, 34, bold=False, preferred=["C:/Windows/Fonts/seguisb.ttf", "C:/Windows/Fonts/segoeui.ttf", "C:/Windows/Fonts/arial.ttf"])
     font_meta = _font(ImageFont, 22, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
     font_cta = _font(ImageFont, 42, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf"])
     font_brand = _font(ImageFont, 108, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
@@ -270,17 +279,30 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
             ImageFilter,
             ImageOps,
         )
-        artwork = ImageEnhance.Color(artwork).enhance(0.90)
-        artwork = ImageEnhance.Contrast(artwork).enhance(1.05)
-        # Paste artwork with minimal padding to display full image without cropping
-        _paste_contained(image, artwork, image_box, radius=36, pad=6, cover=False)
-        draw.rounded_rectangle(image_box, radius=36, outline=ACCENT_GREEN, width=2)
+        if artwork is not None:
+            artwork = ImageEnhance.Color(artwork).enhance(0.90)
+            artwork = ImageEnhance.Contrast(artwork).enhance(1.05)
+            # Paste artwork with minimal padding to display the full image without cropping.
+            _paste_contained(image, artwork, image_box, radius=36, pad=6, cover=False)
+            draw.rounded_rectangle(image_box, radius=36, outline=ACCENT_GREEN, width=2)
+        else:
+            _draw_no_image_story_card(
+                draw,
+                slide.get("eyebrow", "STORY"),
+                slide.get("title", "AI update"),
+                slide.get("url", ""),
+                image_box,
+                font_eyebrow,
+                font_title,
+                font_body,
+                font_meta,
+            )
     elif slide["kind"] == "cta":
         draw.rounded_rectangle((margin, 92, CANVAS_W - margin, 1258), radius=46, fill="#0B0B0B", outline="#1F1F1F", width=2)
         _draw_centered_text(draw, "GRAITECH", (140, 150, 940, 240), font_brand, ACCENT_GREEN, 1)
-        _draw_centered_text(draw, "Instagram-ready AI news", (140, 280, 940, 380), font_title, TEXT_WHITE, 1)
-        _draw_centered_text(draw, "LIKE | COMMENT | FOLLOW", (160, 400, 920, 470), font_cta, ACCENT_GREEN, 1)
-        _draw_centered_logo_panel(image, (240, 545, 840, 955))
+        _draw_centered_text(draw, "Instagram-ready AI news", (140, 278, 940, 365), font_title, TEXT_WHITE, 1)
+        _draw_social_icons(draw, (140, 410, 940, 540), font_meta)
+        _draw_centered_logo_panel(image, (240, 575, 840, 945))
         _draw_centered_text(draw, "Save this post for your next AI briefing.", (130, 1000, 950, 1080), font_body, TEXT_WHITE, 1)
         _draw_centered_text(draw, f"{slide_number:02d}/{total_slides:02d}", (450, 1120, 630, 1170), font_meta, ACCENT_GREEN, 1)
     else:
@@ -296,7 +318,7 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
             font=font_body,
             fill=SOFT_WHITE,
             line_gap=6,
-            max_lines=8,
+            max_lines=11,
         )
         supporting = str(slide.get("supporting", "")).strip()
         if supporting:
@@ -399,44 +421,94 @@ def _wrap_to_width(draw, text: str, font, width: int, max_lines: int) -> list[st
 
 
 def _load_artwork(image_path: str, topic: str, box: tuple[int, int, int, int], image_cls, draw_cls, enhance_cls, filter_cls, ops_cls):
-    width = box[2] - box[0]
-    height = box[3] - box[1]
     path = _resolve_image_source(image_path)
     if path and path.exists():
         try:
             art = image_cls.open(path).convert("RGB")
-            art = ops_cls.fit(art, (width, height), method=image_cls.Resampling.LANCZOS)
             art = enhance_cls.Color(art).enhance(0.88)
             art = enhance_cls.Contrast(art).enhance(1.08)
             return art.filter(filter_cls.UnsharpMask(radius=2, percent=110))
         except Exception:
             pass
+    return None
 
-    # If we don't have a source image, try fetching a royalty-free representative image
-    if not path or not path.exists():
-        try:
-            tmp = _fetch_unsplash_for_topic(topic, width, height)
-            if tmp:
-                art = image_cls.open(tmp).convert("RGB")
-                art = ops_cls.fit(art, (width, height), method=image_cls.Resampling.LANCZOS)
-                art = enhance_cls.Color(art).enhance(0.92)
-                art = enhance_cls.Contrast(art).enhance(1.04)
-                return art.filter(filter_cls.UnsharpMask(radius=1, percent=100))
-        except Exception:
-            pass
 
-    art = image_cls.new("RGB", (width, height), PAGE_BLACK)
-    draw = draw_cls.Draw(art, "RGBA")
-    seed = sum(ord(ch) for ch in topic)
-    colors = [ACCENT_GREEN, "#FFFFFF", "#4D7CFF", "#17D1B8"]
-    for i in range(10):
-        x = (seed * (i + 4) * 37) % width
-        y = (seed * (i + 6) * 53) % height
-        size = 80 + ((seed + i * 29) % 260)
-        draw.ellipse((x - size, y - size, x + size, y + size), fill=colors[(seed + i) % len(colors)] + "22")
-    for i in range(-height, width, 86):
-        draw.line((i, height, i + height, 0), fill=(255, 255, 255, 28), width=3)
-    return art.filter(filter_cls.GaussianBlur(radius=0.4))
+def _draw_no_image_story_card(
+    draw,
+    eyebrow: str,
+    title: str,
+    url: str,
+    box: tuple[int, int, int, int],
+    font_eyebrow,
+    font_title,
+    font_body,
+    font_meta,
+) -> None:
+    x1, y1, x2, y2 = box
+    draw.rounded_rectangle(box, radius=36, fill="#080808", outline=ACCENT_GREEN, width=2)
+    draw.rectangle((x1 + 36, y1 + 36, x2 - 36, y1 + 44), fill=ACCENT_GREEN)
+    _draw_centered_text(draw, _strip_decorative_symbols(eyebrow).upper(), (x1 + 70, y1 + 96, x2 - 70, y1 + 142), font_eyebrow, ACCENT_GREEN, 1)
+    _draw_centered_text_block(
+        draw,
+        _strip_decorative_symbols(title),
+        (x1 + 86, y1 + 220, x2 - 86, y1 + 520),
+        font_title,
+        TEXT_WHITE,
+        line_gap=14,
+        max_lines=4,
+    )
+    source = _source_label_from_url(url)
+    footer = f"Source: {source}" if source else "Source: email brief"
+    _draw_centered_text_block(
+        draw,
+        footer,
+        (x1 + 110, y2 - 210, x2 - 110, y2 - 120),
+        font_body,
+        SOFT_WHITE,
+        line_gap=10,
+        max_lines=2,
+    )
+    _draw_centered_text(draw, "SOURCE BRIEF", (x1 + 160, y2 - 96, x2 - 160, y2 - 52), font_meta, ACCENT_GREEN, 1)
+
+
+def _draw_social_icons(draw, box: tuple[int, int, int, int], font_meta) -> None:
+    x1, y1, x2, y2 = box
+    centers = [
+        (x1 + 120, y1 + 58, "LIKE"),
+        (x1 + 340, y1 + 58, "COMMENT"),
+        (x1 + 560, y1 + 58, "SHARE"),
+        (x1 + 780, y1 + 58, "SAVE"),
+    ]
+    for cx, cy, label in centers:
+        draw.rounded_rectangle((cx - 60, cy - 62, cx + 60, cy + 34), radius=22, outline=ACCENT_GREEN, width=2, fill="#050505")
+        if label == "LIKE":
+            _draw_heart_icon(draw, cx, cy - 18)
+        elif label == "COMMENT":
+            _draw_comment_icon(draw, cx, cy - 18)
+        elif label == "SHARE":
+            _draw_share_icon(draw, cx, cy - 18)
+        else:
+            _draw_save_icon(draw, cx, cy - 18)
+        _draw_centered_text(draw, label, (cx - 74, cy + 48, cx + 74, cy + 82), font_meta, TEXT_WHITE, 1)
+
+
+def _draw_heart_icon(draw, cx: int, cy: int) -> None:
+    points = [(cx, cy + 28), (cx - 36, cy - 2), (cx - 24, cy - 32), (cx, cy - 18), (cx + 24, cy - 32), (cx + 36, cy - 2)]
+    draw.line(points + [points[0]], fill=ACCENT_GREEN, width=5, joint="curve")
+
+
+def _draw_comment_icon(draw, cx: int, cy: int) -> None:
+    draw.rounded_rectangle((cx - 34, cy - 28, cx + 34, cy + 20), radius=16, outline=ACCENT_GREEN, width=5)
+    draw.line((cx - 8, cy + 20, cx - 26, cy + 36), fill=ACCENT_GREEN, width=5)
+
+
+def _draw_share_icon(draw, cx: int, cy: int) -> None:
+    draw.polygon([(cx - 34, cy + 28), (cx + 38, cy - 30), (cx + 12, cy + 38), (cx + 2, cy + 8)], outline=ACCENT_GREEN, fill=None)
+    draw.line((cx - 34, cy + 28, cx + 38, cy - 30, cx + 12, cy + 38, cx + 2, cy + 8, cx - 34, cy + 28), fill=ACCENT_GREEN, width=5)
+
+
+def _draw_save_icon(draw, cx: int, cy: int) -> None:
+    draw.line((cx - 28, cy - 34, cx + 28, cy - 34, cx + 28, cy + 36, cx, cy + 14, cx - 28, cy + 36, cx - 28, cy - 34), fill=ACCENT_GREEN, width=5)
 
 
 def _draw_watermark_overlay(base_image) -> None:
@@ -608,10 +680,7 @@ def _select_article_image(article: dict[str, Any], topic: str) -> str:
         value = str(article.get(key, "") or "").strip()
         if value:
             return value
-    local_asset = _pick_local_article_asset(topic or str(article.get("title", "")))
-    if local_asset:
-        return str(local_asset)
-    return _fetch_unsplash_for_topic(topic, 1080, 1080) or ""
+    return _find_reference_image_for_article(article, topic) or ""
 
 
 def _resolve_image_source(image_path: str) -> Path | None:
@@ -641,11 +710,18 @@ def _compose_article_narrative(summary: EmailSummary, article: dict[str, Any]) -
     if not primary:
         primary = _fallback_summary_text(summary, title or (summary.headline or "AI update"))
 
-    points = [str(point).strip() for point in article.get("key_points", []) if str(point).strip()]
+    points = [
+        _clean_public_text(str(point).strip())
+        for point in article.get("key_points", [])
+        if str(point).strip()
+    ]
+    points = [point for point in points if point and point.lower() not in primary.lower()]
     narrative = primary
     if points:
-        narrative = f"{primary} Key details: {' '.join(points[:3])}"
-    return _tighten(re.sub(r"\s+", " ", narrative).strip(), 950)
+        narrative = f"{primary} Key details: {' '.join(points[:5])}"
+    if title and title.lower() not in narrative.lower():
+        narrative = f"{title}. {narrative}"
+    return _tighten(re.sub(r"\s+", " ", narrative).strip(), 1500)
 
 
 def _split_narrative_for_two_pages(text: str) -> tuple[str, str]:
@@ -657,20 +733,20 @@ def _split_narrative_for_two_pages(text: str) -> tuple[str, str]:
     second_parts: list[str] = []
     for sentence in sentences:
         candidate = " ".join(first_parts + [sentence]).strip()
-        if len(candidate) <= 420 or not first_parts:
+        if len(candidate) <= 620 or not first_parts:
             first_parts.append(sentence)
         else:
             second_parts.append(sentence)
     first = " ".join(first_parts).strip()
     second = " ".join(second_parts).strip()
-    if not second and len(first) > 320:
+    if not second and len(first) > 420:
         midpoint = max(1, len(first) // 2)
         split_at = first.rfind(" ", 0, midpoint)
         if split_at == -1:
             split_at = midpoint
         second = first[split_at:].strip()
         first = first[:split_at].strip()
-    return _tighten(first, 430), _tighten(second, 420)
+    return _tighten(first, 680), _tighten(second, 650)
 
 
 def _fetch_unsplash_for_topic(topic: str, width: int, height: int) -> str | None:
@@ -705,6 +781,98 @@ def _download_url(url: str, dest: Path) -> None:
     request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(request, timeout=8) as response:
         dest.write_bytes(response.read())
+
+
+def _find_reference_image_for_article(article: dict[str, Any], topic: str) -> str | None:
+    query = _reference_image_query(article, topic)
+    if not query:
+        return None
+    cache_key = hashlib.sha1(query.lower().encode("utf-8")).hexdigest()[:16]
+    for suffix in (".jpg", ".jpeg", ".png", ".webp"):
+        cached = REFERENCE_IMAGE_DIR / f"{cache_key}{suffix}"
+        if cached.exists():
+            return str(cached)
+    image_url = _search_wikimedia_image(query)
+    if not image_url:
+        return None
+    return _download_reference_image(image_url, cache_key)
+
+
+def _reference_image_query(article: dict[str, Any], topic: str) -> str:
+    title = _strip_decorative_symbols(str(article.get("title") or "")).strip()
+    source = _source_label_from_url(str(article.get("url") or ""))
+    parts = [title, topic, source]
+    query = " ".join(part for part in parts if part)
+    query = re.sub(r"\b(update|launch|announces|announced|new|latest|story)\b", " ", query, flags=re.I)
+    query = re.sub(r"[^A-Za-z0-9 .&+-]+", " ", query)
+    query = re.sub(r"\s+", " ", query).strip()
+    return _tighten(query, 120)
+
+
+def _search_wikimedia_image(query: str) -> str | None:
+    params = {
+        "action": "query",
+        "format": "json",
+        "generator": "search",
+        "gsrnamespace": "6",
+        "gsrlimit": "10",
+        "gsrsearch": query,
+        "prop": "imageinfo",
+        "iiprop": "url|mime|size",
+    }
+    url = "https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode(params)
+    try:
+        request = urllib.request.Request(url, headers={"User-Agent": "AIInstagramNewsAgent/1.0"})
+        with urllib.request.urlopen(request, timeout=10) as response:
+            data = json.loads(response.read().decode("utf-8"))
+    except Exception:
+        return None
+    pages = data.get("query", {}).get("pages", {})
+    for page in pages.values():
+        title = str(page.get("title") or "").lower()
+        info = (page.get("imageinfo") or [{}])[0]
+        mime = str(info.get("mime") or "").lower()
+        width = int(info.get("width") or 0)
+        height = int(info.get("height") or 0)
+        image_url = str(info.get("url") or "")
+        if not image_url:
+            continue
+        if mime not in {"image/jpeg", "image/png", "image/webp"}:
+            continue
+        if width < 500 or height < 350:
+            continue
+        if any(term in title for term in ("logo", "icon", "symbol", "seal", "flag")) and not _query_looks_like_company(query):
+            continue
+        return image_url
+    return None
+
+
+def _download_reference_image(image_url: str, cache_key: str) -> str | None:
+    try:
+        request = urllib.request.Request(image_url, headers={"User-Agent": "AIInstagramNewsAgent/1.0"})
+        with urllib.request.urlopen(request, timeout=12) as response:
+            content_type = response.headers.get("Content-Type", "").split(";", 1)[0].lower()
+            suffix = {
+                "image/jpeg": ".jpg",
+                "image/png": ".png",
+                "image/webp": ".webp",
+            }.get(content_type)
+            if not suffix:
+                return None
+            data = response.read(5_000_000)
+    except Exception:
+        return None
+    if len(data) < 20_000:
+        return None
+    REFERENCE_IMAGE_DIR.mkdir(parents=True, exist_ok=True)
+    dest = REFERENCE_IMAGE_DIR / f"{cache_key}{suffix}"
+    dest.write_bytes(data)
+    return str(dest)
+
+
+def _query_looks_like_company(query: str) -> bool:
+    lowered = query.lower()
+    return any(company.lower() in lowered for company in ("openai", "google", "microsoft", "meta", "amazon", "aws", "nvidia", "anthropic"))
 
 
 def _pick_local_article_asset(seed_text: str) -> Path | None:
@@ -847,6 +1015,14 @@ def _article_items(summary: EmailSummary) -> list[dict[str, Any]]:
 
 def _clean_public_text(text: str) -> str:
     text = re.sub(r"\s+", " ", text or "").strip()
+    text = _strip_decorative_symbols(text)
+    text = re.sub(
+        r"\b(?:We use essential cookies|We and our advertising partners|Cookie settings|Accept all cookies|Reject all cookies)\b.*?(?=(?:\s+[A-Z][a-z]|\s*$))",
+        " ",
+        text,
+        flags=re.I,
+    )
+    text = re.sub(r"\s+", " ", text).strip()
     if not text:
         return ""
     sentences = re.split(r"(?<=[\.!?])\s+", text)
@@ -862,6 +1038,23 @@ def _clean_public_text(text: str) -> str:
         kept.append(sentence.strip())
     result = " ".join(part for part in kept if part)
     return result
+
+
+def _strip_decorative_symbols(text: str) -> str:
+    cleaned: list[str] = []
+    for char in text or "":
+        category = unicodedata.category(char)
+        if category == "So":
+            continue
+        cleaned.append(char)
+    return re.sub(r"\s+", " ", "".join(cleaned)).strip()
+
+
+def _source_label_from_url(url: str) -> str:
+    match = re.search(r"https?://(?:www\.)?([^/?#]+)", url or "")
+    if not match:
+        return ""
+    return match.group(1).replace("www.", "")
 
 
 def _clean_public_points(points: list[str], headline: str, summary_text: str) -> list[str]:
@@ -991,14 +1184,15 @@ def _recap_text(summary: EmailSummary, articles: list[dict[str, Any]]) -> str:
 
 
 def _supporting_note(summary: EmailSummary, article: dict[str, Any], article_index: int, heading: str, variant: str = "why") -> str:
-    companies = ", ".join(_clean_entity_list(summary.companies)[:3]) or "the named source"
+    points = [_clean_public_text(str(point)) for point in article.get("key_points", []) if str(point).strip()]
+    points = [point for point in points if point]
     topics = ", ".join(summary.topics[:3]) or "AI product updates"
-    article_title = _tighten(str(article.get("title") or summary.headline or summary.subject or "AI update"), 56)
-    lead = _tighten(_clean_public_text(str(article.get("excerpt") or article.get("description") or summary.summary or "")), 80)
+    article_title = _tighten(_clean_public_text(str(article.get("title") or summary.headline or summary.subject or "AI update")), 72)
     if variant == "why":
-        return f"{heading}\n\nNames: {companies}.\nTheme: {topics}."
-    # variant == 'watch' or others
-    return f"{heading}\n\nWatch {article_title}.\nTrack: {topics}."
+        detail = points[1] if len(points) > 1 else points[0] if points else f"This matters because it changes the practical AI tooling story around {topics}."
+        return f"{heading}\n\n{_tighten(detail, 180)}"
+    detail = points[2] if len(points) > 2 else f"Watch adoption, developer feedback, and follow-up releases around {article_title}."
+    return f"{heading}\n\n{_tighten(detail, 180)}"
 
 
 def _email_datetime(value: str) -> datetime | None:

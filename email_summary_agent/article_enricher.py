@@ -41,6 +41,7 @@ class _ArticleParser(HTMLParser):
         self.images: list[str] = []
         self._capture_title = False
         self._capture_paragraph = False
+        self._capture_heading = False
         self._paragraph_parts: list[str] = []
         self._skip_depth = 0
 
@@ -59,7 +60,10 @@ class _ArticleParser(HTMLParser):
             content = attrs_map.get("content", "")
             if key and content:
                 self.meta[key.lower()] = html.unescape(content.strip())
-        elif tag == "p":
+        elif tag in {"h1", "h2", "h3"}:
+            self._capture_heading = True
+            self._paragraph_parts = []
+        elif tag in {"p", "li"}:
             self._capture_paragraph = True
             self._paragraph_parts = []
         elif tag == "img":
@@ -81,7 +85,13 @@ class _ArticleParser(HTMLParser):
             return
         if tag == "title":
             self._capture_title = False
-        elif tag == "p" and self._capture_paragraph:
+        elif tag in {"h1", "h2", "h3"} and self._capture_heading:
+            text = _clean_text(" ".join(self._paragraph_parts))
+            if len(text) >= 20 and not _is_boilerplate(text):
+                self.paragraphs.append(text)
+            self._capture_heading = False
+            self._paragraph_parts = []
+        elif tag in {"p", "li"} and self._capture_paragraph:
             text = _clean_text(" ".join(self._paragraph_parts))
             if len(text) >= 60 and not _is_boilerplate(text):
                 self.paragraphs.append(text)
@@ -93,7 +103,7 @@ class _ArticleParser(HTMLParser):
             return
         if self._capture_title:
             self.title += data
-        elif self._capture_paragraph:
+        elif self._capture_paragraph or self._capture_heading:
             self._paragraph_parts.append(data)
 
 
@@ -147,7 +157,7 @@ def enrich_email_with_articles(
 
 
 def extract_article_urls(text: str) -> list[str]:
-    candidates = re.findall(r"https?://[^\s<>\")']+", text)
+    candidates = re.findall(r"https?://[^\s<>\")']+", html.unescape(text or ""))
     urls: list[str] = []
     seen: set[str] = set()
     for raw in candidates:
@@ -156,8 +166,6 @@ def extract_article_urls(text: str) -> list[str]:
         if any(blocked in lowered for blocked in ("unsubscribe", "privacy", "mailto:", "facebook.com/help")):
             continue
         if any(ext in lowered for ext in (".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg")):
-            continue
-        if any(repo in lowered for repo in ("github.com", "gitlab.com", "bitbucket.org", "sourcehut.org")):
             continue
         if url not in seen:
             seen.add(url)
@@ -326,6 +334,13 @@ def _is_boilerplate(text: str) -> bool:
             "all rights reserved",
             "sign up for",
             "subscribe to",
+            "use essential cookies",
+            "advertising partners",
+            "show you ads",
+            "cookie settings",
+            "manage cookies",
+            "accept all cookies",
+            "reject all cookies",
             "cookie policy",
             "privacy policy",
             "terms of service",

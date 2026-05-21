@@ -2,8 +2,12 @@ from __future__ import annotations
 
 import unittest
 from datetime import datetime
+from email.message import EmailMessage
+from unittest.mock import patch
 
+from email_summary_agent.article_enricher import extract_article_urls
 from email_summary_agent.digest import parse_news_items
+from email_summary_agent.email_client import extract_body
 from email_summary_agent.instagram import _build_slide_specs, _split_summary_for_carousels
 from email_summary_agent.models import EmailItem, EmailSummary
 
@@ -61,6 +65,37 @@ class DigestPipelineTests(unittest.TestCase):
         self.assertEqual(len(items), 2)
         self.assertEqual(items[0].title, "OpenAI launches a new coding model")
         self.assertIn("voice inference", items[1].title.lower())
+
+    def test_html_email_preserves_link_hrefs(self) -> None:
+        message = EmailMessage()
+        message["Subject"] = "AI Alert"
+        message.set_content("Plain fallback without links")
+        message.add_alternative(
+            '<html><body><h2>LangChain launch</h2><a href="https://example.com/langchain-launch">Read more</a></body></html>',
+            subtype="html",
+        )
+
+        body = extract_body(message)
+        urls = extract_article_urls(body)
+
+        self.assertIn("https://example.com/langchain-launch", urls)
+
+    def test_missing_article_image_does_not_use_placeholder_url(self) -> None:
+        summary = _summary_with_articles(1)
+
+        with patch("email_summary_agent.instagram._find_reference_image_for_article", return_value=""):
+            slides = _build_slide_specs(summary, datetime(2026, 5, 21, 9, 0))
+
+        self.assertEqual(slides[0]["kind"], "image")
+        self.assertEqual(slides[0]["image_path"], "")
+
+    def test_missing_article_image_can_use_reference_search_result(self) -> None:
+        summary = _summary_with_articles(1)
+
+        with patch("email_summary_agent.instagram._find_reference_image_for_article", return_value="data/article_assets/reference.jpg"):
+            slides = _build_slide_specs(summary, datetime(2026, 5, 21, 9, 0))
+
+        self.assertEqual(slides[0]["image_path"], "data/article_assets/reference.jpg")
 
 
 def _summary_with_articles(count: int) -> EmailSummary:

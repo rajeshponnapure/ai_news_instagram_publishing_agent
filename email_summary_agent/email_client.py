@@ -26,7 +26,13 @@ class _HTMLTextExtractor(HTMLParser):
             self.parts.append(cleaned)
 
     def handle_starttag(self, tag: str, attrs) -> None:
-        if tag.lower() in {"br", "p", "div", "li", "tr", "h1", "h2", "h3", "h4"}:
+        tag = tag.lower()
+        attrs_map = {key.lower(): value for key, value in attrs if key and value}
+        if tag == "a":
+            href = attrs_map.get("href", "").strip()
+            if href and href.startswith(("http://", "https://")):
+                self.parts.append(f"\n{href}\n")
+        if tag in {"br", "p", "div", "li", "tr", "h1", "h2", "h3", "h4"}:
             self.parts.append("\n")
 
     def get_text(self) -> str:
@@ -82,10 +88,12 @@ def extract_body(message: EmailMessage) -> str:
         elif content_type == "text/html":
             html_parts.append(_html_to_text(_decode_payload(part)))
 
-    body = "\n\n".join(part for part in plain_parts if part)
-    if body:
-        return body
-    return "\n\n".join(part for part in html_parts if part)
+    body_parts: list[str] = []
+    body_parts.extend(part for part in plain_parts if part)
+    for part in html_parts:
+        if part and part not in body_parts:
+            body_parts.append(part)
+    return "\n\n".join(body_parts)
 
 class ImapEmailClient:
     def __init__(self, settings: Settings) -> None:

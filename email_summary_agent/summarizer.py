@@ -193,7 +193,18 @@ class SummaryProvider:
             # Create a synthetic 'email' that contains the full article text for better summary
             combined_parts = []
             for idx, art in enumerate(article_list, start=1):
-                combined_parts.append(f"Article {idx} Title: {art.title}\n\n{art.text}")
+                combined_parts.append(
+                    "\n\n".join(
+                        part
+                        for part in [
+                            f"Article {idx} Title: {art.title}",
+                            f"Article {idx} Description: {art.description}",
+                            f"Article {idx} Excerpt: {art.excerpt}",
+                            art.text,
+                        ]
+                        if part and part.strip()
+                    )
+                )
             combined_body = "\n\n".join(combined_parts)
             pseudo_email = EmailItem(
                 uid=email.uid,
@@ -430,7 +441,19 @@ def _is_low_value_sentence(sentence: str) -> bool:
     lowered = sentence.lower()
     if len(sentence.strip()) < 40:
         return True
-    noisy_terms = {"unsubscribe", "view in browser", "privacy policy", "copyright"}
+    noisy_terms = {
+        "unsubscribe",
+        "view in browser",
+        "privacy policy",
+        "copyright",
+        "use essential cookies",
+        "advertising partners",
+        "show you ads",
+        "cookie settings",
+        "accept all cookies",
+        "reject all cookies",
+        "terms of service",
+    }
     if any(term in lowered for term in noisy_terms):
         return True
     return bool(re.fullmatch(r"(source|impact|link|low|medium|high|\d+|[\W_])+", lowered.strip()))
@@ -644,7 +667,7 @@ def _article_item_for_instagram(article: ArticleData) -> dict[str, Any]:
 
 def _human_article_summary(article: ArticleData) -> tuple[str, list[str]]:
     source = _normalize_text(" ".join(part for part in [article.description, article.text] if part))
-    sentences = _split_sentences(source)
+    sentences = [sentence for sentence in _split_sentences(source) if not _is_low_value_sentence(sentence)]
     if not sentences:
         fallback = article.description or article.excerpt or article.title or "This update is worth watching."
         return _trim_sentence(fallback, 760), [_trim_sentence(fallback, 180)]
@@ -665,6 +688,6 @@ def _human_article_summary(article: ArticleData) -> tuple[str, list[str]]:
     points = []
     for sentence in chosen[:5]:
         point = _trim_sentence(sentence, 190)
-        if point and point not in points:
+        if point and point not in points and not _is_low_value_sentence(point):
             points.append(point)
     return _trim_sentence(summary, 950), points[:5]
