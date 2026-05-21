@@ -12,10 +12,20 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-201821/01_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_06.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-201821/01_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_07.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-201821/01_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-201821/01_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-201821/01_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-201821/01_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-201821/01_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-201821/01_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-201821/01_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_07.png"
+      ],
+      "status": "publish_failed_retryable",
       "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 12 concrete signal(s)"
+      "story_selected_reason": "article image available, source URL available, 12 concrete signal(s)",
+      "creation_id": "18043900496577438",
+      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"A9ENC0rTvpIj1Idq4Iqyy2P\"}}"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-201821/02_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment",
@@ -29,10 +39,20 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-201821/02_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_06.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-201821/02_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_07.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-201821/02_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-201821/02_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-201821/02_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-201821/02_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-201821/02_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-201821/02_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-201821/02_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_07.png"
+      ],
+      "status": "publish_failed_retryable",
       "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 6 concrete signal(s)"
+      "story_selected_reason": "article image available, source URL available, 6 concrete signal(s)",
+      "creation_id": "18043901507577438",
+      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"A60MIBsHkHKflE1YJGceMz9\"}}"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-201821/03_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment",
@@ -43,10 +63,17 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-201821/03_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_03.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260521-201821/03_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_04.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-201821/03_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-201821/03_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-201821/03_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260521-201821/03_20260521-1916_anthropic-microsoft-in-talks-for-ai-chip-deal-after-5-billion-investment/slide_04.png"
+      ],
+      "status": "publish_failed_retryable",
       "story_score": 0.97,
-      "story_selected_reason": "source URL available, 24 concrete signal(s)"
+      "story_selected_reason": "source URL available, 24 concrete signal(s)",
+      "creation_id": "18043901807577438",
+      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"A2jx_f4h1mYXe_juhfiZUVT\"}}"
     }
   ]
 }
