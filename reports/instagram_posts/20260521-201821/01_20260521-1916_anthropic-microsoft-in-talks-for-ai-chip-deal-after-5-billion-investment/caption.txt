@@ -1,0 +1,13 @@
+Anthropic, Microsoft in talks for AI chip deal after $5 billion investment - Part 1
+
+Microsoft has not made the Maia 200 chips available to customers, but they are used in the company's data centers, offering better efficiency than other silicon.
+
+Key takeaways:
+- Anthropic, Microsoft in talks for AI chip deal after $5 billion investment Anthropic is in talks with Microsoft to adopt its Maia artificial...
+- Anthropic CEO Dario Amodei recently said the company has had “difficulties with compute.” Microsoft is in talks to supply its custom artificial...
+- The company did say the Maia 200 processor would run OpenAI’s GPT-5.2 model.
+- Microsoft announced its second-generation Maia AI chip in January, but has yet to make it available through its Azure cloud.
+
+Source: cnbc.com | Curated by Graitech AI.
+
+#Openai #Google #Anthropic #Microsoft #Amazon #Aws #Nvidia #Tesla #Gpt52 #Claude #ModelRelease #RegulationOrSafety #DeveloperTools #HardwareAndCompute
