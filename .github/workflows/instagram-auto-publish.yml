@@ -26,6 +26,8 @@ on:
 concurrency:
   group: instagram-auto-publish
   cancel-in-progress: false
+  # Only one run at a time. If a new trigger fires while a run is in progress,
+  # it waits rather than running in parallel — this prevents duplicate posts.
 
 permissions:
   contents: write

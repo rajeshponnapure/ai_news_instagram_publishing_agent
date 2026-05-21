@@ -25,7 +25,7 @@ def write_publish_manifest(carousel_dirs: list[Path], public_media_base_url: str
         existing = existing_posts.get(str(carousel_dir), {})
         existing_status = existing.get("status", "")
         status = "ready_for_upload" if not public_media_base_url else "ready_for_publish"
-        if existing_status in {"published", "container_created", "publish_failed_retryable"}:
+        if existing_status in {"published", "container_created", "publish_failed_retryable", "publish_failed"}:
             status = existing_status
         posts.append(
             {

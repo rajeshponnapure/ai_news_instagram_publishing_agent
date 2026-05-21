@@ -61,11 +61,18 @@ PUBLIC_BLOCKED_PHRASES = (
     "article 1 title:",
     "article title:",
     "use essential cookies",
+    "essential cookies are necessary",
     "advertising partners",
     "show you ads",
     "cookie settings",
+    "cookie preferences",
+    "customize cookie",
     "accept all cookies",
     "reject all cookies",
+    "you may review and change your choices",
+    "cookie notice",
+    "privacy policy",
+    "terms of service",
     "build software better",
     "read every piece of feedback",
     "gitHub is where people build software".lower(),
@@ -74,6 +81,29 @@ PUBLIC_BLOCKED_PHRASES = (
     "get tips, technical guides, and best practices",
     "sign up for",
     "subscribe to",
+    "select your cookie",
+    "deactivated",
+    "footer of this site",
+    "read our cookie",
+    "how we use them",
+    "manage your preferences",
+    "opt out",
+    "gdpr",
+    "ccpa",
+    "data protection",
+    "third-party cookies",
+    "tracking cookies",
+    "functional cookies",
+    "performance cookies",
+    "analytics cookies",
+    "marketing cookies",
+    "view in browser",
+    "unsubscribe",
+    "manage subscriptions",
+    "email preferences",
+    "you are receiving this",
+    "sent to you because",
+    "no longer wish to receive",
 )
 
 
@@ -342,7 +372,12 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
         title_box = (110, 152, 970, 338)
         # Draw the title top-aligned to avoid large vertical centering gaps
         _draw_top_centered_text_block(draw, slide.get("title", ""), title_box, font_title, TEXT_WHITE, max_lines=2)
-        body_box = (110, 348, 970, 892)
+
+        # Dark container behind body text so it's readable over the background grid
+        body_container = (72, 340, CANVAS_W - 72, 896)
+        draw.rounded_rectangle(body_container, radius=22, fill=(10, 10, 10, 220))
+
+        body_box = (110, 360, 970, 880)
         _draw_left_text_block(
             draw,
             slide["body"],
@@ -728,6 +763,17 @@ def _resolve_image_source(image_path: str) -> Path | None:
 
 
 def _compose_article_narrative(summary: EmailSummary, article: dict[str, Any]) -> str:
+    """Build a clean narrative from the structured article fields produced by the new summariser."""
+    # Prefer the pre-structured narrative sections if available
+    what_happened = _clean_public_text(str(article.get("what_happened") or ""))
+    why_matters = _clean_public_text(str(article.get("why_matters") or ""))
+    what_watch = _clean_public_text(str(article.get("what_to_watch") or ""))
+
+    if what_happened:
+        parts = [p for p in [what_happened, why_matters, what_watch] if p]
+        return _tighten(re.sub(r"\s+", " ", " ".join(parts)).strip(), 2400)
+
+    # Fallback: build from description/summary/key_points
     title = _clean_public_text(str(article.get("title") or summary.headline or summary.subject or "AI update"))
     article_summary = _clean_public_text(str(article.get("summary") or ""))
     description = _clean_public_text(str(article.get("description") or ""))
@@ -747,10 +793,10 @@ def _compose_article_narrative(summary: EmailSummary, article: dict[str, Any]) -
         for point in article.get("key_points", [])
         if str(point).strip()
     ]
-    points = [point for point in points if point and point.lower() not in primary.lower()]
+    points = [p for p in points if p and p.lower() not in primary.lower()]
     narrative = primary
     if points:
-        narrative = f"{primary} Key details: {' '.join(points[:8])}"
+        narrative = f"{primary} {' '.join(points[:4])}"
     if title and title.lower() not in narrative.lower():
         narrative = f"{title}. {narrative}"
     return _tighten(re.sub(r"\s+", " ", narrative).strip(), 2400)
@@ -1075,30 +1121,69 @@ def _split_text_into_sections(text: str, approx_chars: int = 380) -> list[str]:
 
 
 def _build_caption(summary: EmailSummary) -> str:
-    keywords = _keywords(summary)
-    hashtags = " ".join(f"#{_hashtag(word)}" for word in keywords[:12])
+    """Build a fully unique caption for each carousel post.
+
+    Every field — lead text, takeaways, hashtags, and the closing line —
+    is derived from *this* summary's article content so no two posts share
+    the same body even when they come from the same email digest.
+    """
     article = (_article_items(summary) or [{}])[0]
+
+    # ── Lead paragraph ────────────────────────────────────────────────────────
     lead = _clean_public_text(
-        str(article.get("description") or article.get("excerpt") or summary.summary)
+        str(article.get("description") or article.get("excerpt") or summary.summary or "")
     )
-    cleaned_points = _clean_public_points(summary.key_points, summary.headline, lead)
-    if not cleaned_points:
-        cleaned_points = _fallback_public_points(summary)
-    lead = lead or _fallback_summary_text(summary, summary.headline or summary.subject or "")
     lead = _dedupe_lead_text(lead, summary.headline or summary.subject or "")
     if not lead or re.sub(r"\s+", " ", lead).strip().lower() == re.sub(r"\s+", " ", (summary.headline or summary.subject or "")).strip().lower():
         lead = _fallback_summary_text(summary, summary.headline or summary.subject or "")
+    lead = _tighten(lead, 420)
+
+    # ── Takeaway bullets — pulled from this article's key_points only ─────────
+    cleaned_points = _clean_public_points(summary.key_points, summary.headline or "", lead)
+    if not cleaned_points:
+        cleaned_points = _fallback_public_points(summary)
+    # Use article-specific points, not shared digest points
+    article_points = [_clean_public_text(str(p)) for p in article.get("key_points", []) if str(p).strip()]
+    article_points = [p for p in article_points if p and len(p) > 20]
+    if article_points:
+        # Merge article-specific points first, then fall back to summary points
+        merged: list[str] = []
+        seen_keys: set[str] = set()
+        for p in [*article_points, *cleaned_points]:
+            key = re.sub(r"\s+", " ", p).strip().lower()[:80]
+            if key not in seen_keys:
+                seen_keys.add(key)
+                merged.append(p)
+        cleaned_points = merged
+    bullets = [f"- {_tighten(point, 150)}" for point in cleaned_points[:4]]
+
+    # ── Hashtags — unique per post based on this article's entities ───────────
+    keywords = _keywords(summary)
+    # Add article-specific title words as extra tags
+    article_title = str(article.get("title") or summary.headline or "")
+    title_words = [w for w in re.findall(r"[A-Za-z]{4,}", article_title) if w.lower() not in {"with", "that", "this", "from", "into", "over", "your", "their", "have", "been", "will", "also", "more", "than", "when", "what", "about"}]
+    extra_tags = [w for w in title_words[:4] if w not in keywords]
+    all_keywords = keywords + extra_tags
+    hashtags = " ".join(f"#{_hashtag(word)}" for word in all_keywords[:14])
+
+    # ── Closing line — unique per article ─────────────────────────────────────
+    source_domain = _source_label_from_url(str(article.get("url") or summary.article_url or ""))
+    if source_domain:
+        closing = f"Source: {source_domain} | Curated by Graitech AI."
+    elif summary.companies:
+        closing = f"Covering {summary.companies[0]} and the latest in AI. Curated by Graitech."
+    else:
+        closing = "AI news curated and summarised by Graitech."
+
     lines = [
         _tighten(summary.headline or summary.subject or "AI news", 120),
         "",
-        _tighten(lead, 420),
+        lead,
         "",
-        "Built from the linked article shared in today's AI news email.",
+        "Key takeaways:",
+        *bullets,
         "",
-        "Quick takeaways:",
-        *[f"- {_tighten(point, 150)}" for point in cleaned_points[:4]],
-        "",
-        "Disclaimer: This is an AI-assisted summary of the email brief.",
+        closing,
         "",
         hashtags,
     ]
@@ -1157,11 +1242,21 @@ def _article_items(summary: EmailSummary) -> list[dict[str, Any]]:
 def _clean_public_text(text: str) -> str:
     text = re.sub(r"\s+", " ", text or "").strip()
     text = _strip_decorative_symbols(text)
+    # Strip cookie consent blocks that appear mid-text (e.g. from AWS/blog scrapers)
     text = re.sub(
-        r"\b(?:We use essential cookies|We and our advertising partners|Cookie settings|Accept all cookies|Reject all cookies)\b.*?(?=(?:\s+[A-Z][a-z]|\s*$))",
+        r"\[…\]\s*Select your cookie.*?(?=\s{2,}|\Z)",
+        "",
+        text,
+        flags=re.I | re.S,
+    )
+    text = re.sub(
+        r"(?:Select your cookie preferences|Customize cookie preferences|Essential cookies are necessary"
+        r"|You may review and change your choices|Cookie Notice|Cookie preferences"
+        r"|Accept all cookies|Reject all cookies|We use essential cookies"
+        r"|We and our advertising partners|Cookie settings).*?(?=(?:\s+[A-Z][a-z]|\s*$))",
         " ",
         text,
-        flags=re.I,
+        flags=re.I | re.S,
     )
     text = re.sub(r"\s+", " ", text).strip()
     if not text:
@@ -1175,6 +1270,9 @@ def _clean_public_text(text: str) -> str:
         if sentence.startswith(("Article ", "Article 1 Title:", "Article title:")):
             continue
         if any(phrase in lowered for phrase in PUBLIC_BLOCKED_PHRASES):
+            continue
+        # Drop sentences that are mostly cookie/legal noise even if not exact match
+        if re.search(r"\bcookies?\b|\bGDPR\b|\bCCPA\b|\bopt.out\b|\bunsubscribe\b", sentence, re.I):
             continue
         kept.append(sentence.strip())
     result = " ".join(part for part in kept if part)
@@ -1336,18 +1434,22 @@ def _recap_text(summary: EmailSummary, articles: list[dict[str, Any]]) -> str:
 
 
 def _supporting_note(summary: EmailSummary, article: dict[str, Any], article_index: int, heading: str, variant: str = "why") -> str:
-    points = [_clean_public_text(str(point)) for point in article.get("key_points", []) if str(point).strip()]
-    points = [point for point in points if point]
+    # Prefer the pre-structured narrative fields from the new summariser
+    why_matters = _clean_public_text(str(article.get("why_matters") or ""))
+    what_watch = _clean_public_text(str(article.get("what_to_watch") or ""))
+    what_happened = _clean_public_text(str(article.get("what_happened") or ""))
+    points = [_clean_public_text(str(p)) for p in article.get("key_points", []) if str(p).strip()]
+    points = [p for p in points if p]
     topics = ", ".join(summary.topics[:3]) or "AI product updates"
     article_title = _tighten(_clean_public_text(str(article.get("title") or summary.headline or summary.subject or "AI update")), 72)
     if variant == "why":
-        detail = points[1] if len(points) > 1 else points[0] if points else f"This matters because it changes the practical AI tooling story around {topics}."
-        return f"{heading}\n\n{_tighten(detail, 180)}"
+        detail = why_matters or (points[1] if len(points) > 1 else points[0] if points else f"This changes the practical AI tooling story around {topics}.")
+        return f"{heading}\n\n{_tighten(detail, 200)}"
     if variant == "signal":
-        detail = points[2] if len(points) > 2 else f"The bigger signal is whether this becomes useful in real workflows, not just another announcement."
-        return f"{heading}\n\n{_tighten(detail, 180)}"
-    detail = points[2] if len(points) > 2 else f"Watch adoption, developer feedback, and follow-up releases around {article_title}."
-    return f"{heading}\n\n{_tighten(detail, 180)}"
+        detail = what_watch or (points[2] if len(points) > 2 else f"Watch whether this becomes useful in real workflows, not just another announcement.")
+        return f"{heading}\n\n{_tighten(detail, 200)}"
+    detail = what_watch or (points[2] if len(points) > 2 else f"Watch adoption, developer feedback, and follow-up releases around {article_title}.")
+    return f"{heading}\n\n{_tighten(detail, 200)}"
 
 
 def _email_datetime(value: str) -> datetime | None:
