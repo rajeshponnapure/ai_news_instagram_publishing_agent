@@ -133,8 +133,8 @@ class ImapEmailClient:
         finally:
             self._imap = None
 
-    def fetch_recent(self) -> list[EmailItem]:
-        return self.fetch_matching(all_matching=False)
+    def fetch_recent(self, limit: int | None = 100) -> list[EmailItem]:
+        return self.fetch_matching(all_matching=False, limit=limit)
 
     def fetch_all_from_sender(self) -> list[EmailItem]:
         return self.fetch_matching(all_matching=True)
@@ -159,7 +159,12 @@ class ImapEmailClient:
             return 0
         return max(int(uid.decode("ascii", errors="ignore") or 0) for uid in uids)
 
-    def fetch_matching(self, all_matching: bool = False, since_uid: int | None = None) -> list[EmailItem]:
+    def fetch_matching(
+        self,
+        all_matching: bool = False,
+        since_uid: int | None = None,
+        limit: int | None = 100,
+    ) -> list[EmailItem]:
         if self._imap is None:
             raise RuntimeError("IMAP client is not connected")
 
@@ -182,7 +187,7 @@ class ImapEmailClient:
             raise RuntimeError(f"IMAP search failed with criteria: {' '.join(criteria)}")
 
         uids = data[0].split() if data and data[0] else []
-        selected = uids if all_matching else uids[-100:]
+        selected = uids if all_matching or limit is None else uids[-limit:]
         emails: list[EmailItem] = []
 
         # Process in normal order (oldest to newest) so we clear the backlog chronologically

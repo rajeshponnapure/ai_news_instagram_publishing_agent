@@ -27,7 +27,12 @@ class AgentResult:
     instagram_count: int
     published_count: int
 
-def run_once(settings: Settings, all_matching: bool = False, reprocess: bool = False) -> AgentResult:
+def run_once(
+    settings: Settings,
+    all_matching: bool = False,
+    reprocess: bool = False,
+    recent_limit: int | None = 100,
+) -> AgentResult:
     settings.validate_email_access()
     store = AgentStore(settings.db_path)
     store.initialize()
@@ -37,13 +42,13 @@ def run_once(settings: Settings, all_matching: bool = False, reprocess: bool = F
     try:
         with ImapEmailClient(settings) as client:
             should_fetch_all = all_matching or settings.process_all_matching
-            emails = client.fetch_all_from_sender() if should_fetch_all else client.fetch_recent()
+            emails = client.fetch_all_from_sender() if should_fetch_all else client.fetch_recent(limit=recent_limit)
         result = process_items(
             emails=emails,
             settings=settings,
             store=store,
             source_label=settings.email_sender_filter or settings.imap_username,
-            process_all=should_fetch_all,
+            process_all=should_fetch_all or recent_limit is None,
             reprocess=reprocess,
         )
         store.finish_run(
@@ -61,6 +66,11 @@ def run_once(settings: Settings, all_matching: bool = False, reprocess: bool = F
         raise
     finally:
         store.close()
+
+
+def run_recent_backfill(settings: Settings) -> AgentResult:
+    """Process every matching sender email from the configured lookback window in one run."""
+    return run_once(settings, recent_limit=None)
 
 
 def watch_new(settings: Settings) -> None:
@@ -388,6 +398,7 @@ def _safe_print(message: str) -> None:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Local AI news email summary agent")
     parser.add_argument("--once", action="store_true", help="Run one email summary pass")
+    parser.add_argument("--recent-all", action="store_true", help="Run one pass over all matching sender mail from the lookback window")
     parser.add_argument("--watch", action="store_true", help="Run forever on the configured interval")
     parser.add_argument("--watch-new", action="store_true", help="Run forever and only process new mail after startup")
     parser.add_argument("--poll-once", action="store_true", help="Check once for brand-new sender mail and exit if none arrived")
@@ -401,6 +412,8 @@ def main(argv: list[str] | None = None) -> int:
     try:
         if args.sample:
             result = run_sample(settings)
+        elif args.recent_all:
+            result = run_recent_backfill(settings)
         elif args.poll_once:
             result = poll_new_once(settings)
         elif args.test_latest:
