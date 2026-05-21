@@ -5,11 +5,11 @@ on:
     # Runs every 15 minutes. Always polls for new emails only.
     - cron: '*/15 * * * *'
   workflow_dispatch:
-    # Manual trigger — only for maintenance/recovery operations.
+    # Manual trigger - only for maintenance/recovery operations.
     # Automatic runs never use this path.
     inputs:
       run_mode:
-        description: 'Maintenance mode — what to process'
+        description: 'Maintenance mode - what to process'
         required: false
         default: 'backfill_24h'
         type: choice
@@ -21,7 +21,7 @@ concurrency:
   group: instagram-auto-publish
   cancel-in-progress: false
   # Only one run at a time. If a new trigger fires while a run is in progress,
-  # it waits rather than running in parallel — this prevents duplicate posts.
+  # it waits rather than running in parallel - this prevents duplicate posts.
 
 permissions:
   contents: write
@@ -80,7 +80,7 @@ jobs:
           elif [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.run_mode }}" = "backfill_24h" ]; then
             python -m email_summary_agent --recent-all
           else
-            # Automatic schedule run — only check for new emails
+            # Automatic schedule run - only check for new emails
             python -m email_summary_agent --poll-once
           fi
 
@@ -102,57 +102,56 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Detect latest unpublished batch
+      - name: Detect unpublished batches
         id: detect
         run: |
-          # Find the latest batch directory
-          BATCH_DIR=$(find reports/instagram_posts -mindepth 1 -maxdepth 1 -type d 2>/dev/null | sort | tail -1)
-          if [ -z "$BATCH_DIR" ]; then
+          if [ ! -d reports/instagram_posts ]; then
             echo "has_batch=false" >> "$GITHUB_OUTPUT"
             echo "No instagram_posts batch directory found. Nothing to publish."
             exit 0
           fi
 
-          # Check the publish manifest for any posts that are NOT yet published
-          MANIFEST="$BATCH_DIR/publish_manifest.json"
-          if [ ! -f "$MANIFEST" ]; then
-            # No manifest yet — batch exists but hasn't been through publish step
-            if find "$BATCH_DIR" -mindepth 2 -maxdepth 2 -type d 2>/dev/null | grep -q .; then
-              echo "has_batch=true" >> "$GITHUB_OUTPUT"
-              echo "Batch found with no manifest — will deploy and publish."
-            else
-              echo "has_batch=false" >> "$GITHUB_OUTPUT"
-              echo "Batch directory exists but contains no carousel folders."
-            fi
-            exit 0
-          fi
+          UNPUBLISHED=$(python3 <<'PY'
+          import json
+          from pathlib import Path
 
-          # Parse the manifest: count posts that still need publishing
-          UNPUBLISHED=$(python3 -c "
-          import json, sys
-          try:
-              data = json.load(open('$MANIFEST'))
-              pending = [
-                  p for p in data.get('posts', [])
-                  if p.get('status') not in ('published', 'publish_failed')
-              ]
-              print(len(pending))
-          except Exception as e:
-              print(0)
-          ")
+          root = Path("reports/instagram_posts")
+          terminal = {"published", "publish_failed"}
+          pending = 0
+
+          for batch in sorted([p for p in root.iterdir() if p.is_dir()]):
+              carousels = [p for p in batch.iterdir() if p.is_dir()]
+              if not carousels:
+                  continue
+              manifest = batch / "publish_manifest.json"
+              if not manifest.exists():
+                  pending += len(carousels)
+                  continue
+              try:
+                  data = json.loads(manifest.read_text(encoding="utf-8"))
+              except Exception:
+                  pending += len(carousels)
+                  continue
+              pending += sum(
+                  1 for post in data.get("posts", [])
+                  if post.get("status") not in terminal
+              )
+
+          print(pending)
+          PY
+          )
 
           if [ "$UNPUBLISHED" -gt 0 ]; then
             echo "has_batch=true" >> "$GITHUB_OUTPUT"
-            echo "Found $UNPUBLISHED unpublished carousel(s) in $BATCH_DIR. Deploy and publish will run."
+            echo "Found $UNPUBLISHED unpublished carousel(s). Deploy and publish will run."
           else
             echo "has_batch=false" >> "$GITHUB_OUTPUT"
-            echo "All carousels in $BATCH_DIR are already published or failed. Skipping deploy and publish."
+            echo "All carousels are already published or failed. Skipping deploy and publish."
           fi
-
       - name: Explain skipped publish
         if: steps.detect.outputs.has_batch != 'true'
         run: |
-          echo "Deploy and publish are skipped — either no new email arrived this run,"
+          echo "Deploy and publish are skipped - either no new email arrived this run,"
           echo "or all existing carousels are already published/failed."
           echo "This is normal and expected on most runs."
 
@@ -228,30 +227,4 @@ jobs:
           else
             git commit -m 'Update Instagram publish status [skip ci]'
             git push
-          fi
-
-  # ─── Self-chain ────────────────────────────────────────────────────────────
-  # Triggers the next poll run immediately after this one completes.
-  # Combined with the 50-min cron, this keeps the workflow alive between ticks.
-  # Manual dispatch runs do NOT self-chain to avoid looping heavy operations.
-  self-chain:
-    needs: [generate]
-    if: always()
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - name: Trigger next run
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPO: ${{ github.repository }}
-          REF: ${{ github.ref_name }}
-        run: |
-          if [ "${{ github.event_name }}" = "schedule" ]; then
-            echo "Triggering next scheduled poll run..."
-            gh workflow run instagram-auto-publish.yml \
-              --repo "$REPO" \
-              --ref "$REF"
-            echo "Next run triggered."
-          else
-            echo "Manual dispatch — skipping self-chain to avoid loop."
           fi

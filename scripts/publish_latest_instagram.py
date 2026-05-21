@@ -40,16 +40,11 @@ def main() -> int:
         print("No Instagram carousel batches found.")
         return 0
 
-    batch_dir = max(batches, key=lambda path: path.name)
-    carousel_dirs = [path for path in sorted(batch_dir.iterdir()) if path.is_dir()]
-    if not carousel_dirs:
-        print(f"No carousel folders found in {batch_dir}.")
+    selected = _find_latest_publishable_batch(batches, settings.public_media_base_url)
+    if not selected:
+        print("No unpublished Instagram carousel batch found.")
         return 0
-
-    manifest_path = write_publish_manifest(carousel_dirs, settings.public_media_base_url)
-    if not manifest_path:
-        print("No publish manifest was created.")
-        return 0
+    batch_dir, manifest_path = selected
 
     # ── Instagram carousels ───────────────────────────────────────────────────
     published = publish_ready_carousels(settings, manifest_path)
@@ -86,6 +81,27 @@ def main() -> int:
     )
     failed = statuses.get("publish_failed", 0)
     return 1 if failed else 0
+
+
+def _find_latest_publishable_batch(
+    batches: list[Path],
+    public_media_base_url: str,
+) -> tuple[Path, Path] | None:
+    for batch_dir in sorted(batches, key=lambda path: path.name, reverse=True):
+        carousel_dirs = [path for path in sorted(batch_dir.iterdir()) if path.is_dir()]
+        if not carousel_dirs:
+            continue
+        manifest_path = write_publish_manifest(carousel_dirs, public_media_base_url)
+        if not manifest_path:
+            continue
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        has_pending = any(
+            post.get("status") not in {"published", "publish_failed"}
+            for post in manifest.get("posts", [])
+        )
+        if has_pending:
+            return batch_dir, manifest_path
+    return None
 
 
 if __name__ == "__main__":
