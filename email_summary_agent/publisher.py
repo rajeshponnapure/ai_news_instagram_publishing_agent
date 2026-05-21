@@ -45,6 +45,73 @@ def write_publish_manifest(carousel_dirs: list[Path], public_media_base_url: str
     return manifest_path
 
 
+def publish_instagram_story(settings: Settings, manifest_path: Path) -> int:
+    """Publish the cover slide of the highest-quality carousel as an Instagram Story.
+
+    Picks the first successfully published carousel post, takes its first
+    public slide URL (the cover/image slide), and posts it as a Story via
+    the Instagram Graph API media container flow with ``media_type=IMAGE``.
+
+    Returns 1 if a story was published, 0 otherwise.
+    """
+    if not settings.auto_publish_instagram:
+        return 0
+    if not settings.ig_user_id or not settings.ig_access_token:
+        return 0
+
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    # Find the best published post — prefer the one with the most slides
+    best_post: dict | None = None
+    for post in manifest.get("posts", []):
+        if post.get("status") != "published":
+            continue
+        if post.get("story_published"):
+            continue  # already posted as a story
+        urls = [u for u in post.get("public_slide_urls", []) if u]
+        if not urls:
+            continue
+        if best_post is None or len(urls) > len(
+            [u for u in best_post.get("public_slide_urls", []) if u]
+        ):
+            best_post = post
+
+    if not best_post:
+        return 0
+
+    # Use the first slide (cover/image slide) as the story image
+    story_url = [u for u in best_post.get("public_slide_urls", []) if u][0]
+
+    try:
+        # Create a single-image media container for the Story
+        container = _graph_post(
+            settings,
+            f"{settings.ig_user_id}/media",
+            {
+                "image_url": story_url,
+                "media_type": "IMAGE",
+                "is_story": "true",
+            },
+        )
+        story_container_id = container.get("id", "")
+        if not story_container_id:
+            raise RuntimeError(f"Instagram did not return a story container ID. Response: {container}")
+
+        _wait_until_container_ready(settings, story_container_id)
+
+        _graph_post(
+            settings,
+            f"{settings.ig_user_id}/media_publish",
+            {"creation_id": story_container_id},
+        )
+        best_post["story_published"] = True
+        best_post["story_published_at"] = datetime.now().astimezone().isoformat(timespec="seconds")
+        manifest_path.write_text(json.dumps(manifest, ensure_ascii=True, indent=2), encoding="utf-8")
+        return 1
+    except RuntimeError as exc:
+        print(f"WARNING: Instagram Story publish failed: {exc}")
+        return 0
+
+
 def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
     if not settings.auto_publish_instagram:
         return 0
@@ -227,16 +294,22 @@ def _publish_container_with_retry(settings: Settings, creation_id: str) -> dict:
 
 
 def _wait_until_container_ready(settings: Settings, creation_id: str) -> None:
+    """Poll until the media container is FINISHED. Max wait ~8 minutes."""
     last_status = ""
-    for attempt in range(1, 13):
+    for attempt in range(1, 17):  # up to 16 attempts
         status = _container_status(settings, creation_id)
         last_status = status.get("status_code", "") or status.get("status", "")
         if last_status == "FINISHED":
             return
         if last_status in {"ERROR", "EXPIRED"}:
-            raise RuntimeError(f"Instagram media container {creation_id} failed with status {last_status}: {status}")
-        time.sleep(min(60, attempt * 10))
-    raise RuntimeError(f"Instagram media container {creation_id} was not ready after waiting. Last status: {last_status}")
+            raise RuntimeError(
+                f"Instagram media container {creation_id} failed with status {last_status}: {status}"
+            )
+        # Back-off: 10s, 15s, 20s … capped at 30s
+        time.sleep(min(30, 10 + attempt * 5))
+    raise RuntimeError(
+        f"Instagram media container {creation_id} was not ready after waiting. Last status: {last_status}"
+    )
 
 
 def _container_status(settings: Settings, creation_id: str) -> dict:
@@ -331,6 +404,8 @@ def _carry_publish_fields(existing: dict) -> dict:
         "facebook_post_id",
         "facebook_published_at",
         "facebook_error",
+        "story_published",
+        "story_published_at",
     ):
         if existing.get(key):
             carried[key] = existing[key]

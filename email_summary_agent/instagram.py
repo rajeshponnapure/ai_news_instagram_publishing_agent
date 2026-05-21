@@ -323,8 +323,8 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
     # Font sizes tuned for a 1080×1350 canvas — body text is large enough to
     # fill the slide and be readable on a phone screen without zooming.
     font_eyebrow = _font(ImageFont, 36, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
-    font_title   = _font(ImageFont, 64, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/arialbd.ttf"])
-    font_body    = _font(ImageFont, 42, bold=False, preferred=["C:/Windows/Fonts/seguisb.ttf", "C:/Windows/Fonts/segoeui.ttf", "C:/Windows/Fonts/arial.ttf"])
+    font_title   = _font(ImageFont, 62, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/arialbd.ttf"])
+    font_body    = _font(ImageFont, 38, bold=False, preferred=["C:/Windows/Fonts/seguisb.ttf", "C:/Windows/Fonts/segoeui.ttf", "C:/Windows/Fonts/arial.ttf"])
     font_meta    = _font(ImageFont, 26, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
     font_cta     = _font(ImageFont, 46, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf"])
     font_brand   = _font(ImageFont, 112, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
@@ -386,8 +386,8 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
             box=body_box,
             font=font_body,
             fill=SOFT_WHITE,
-            line_gap=10,
-            max_lines=9,
+            line_gap=12,
+            max_lines=11,
         )
         supporting = str(slide.get("supporting", "")).strip()
         if supporting:
