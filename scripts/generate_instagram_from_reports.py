@@ -110,6 +110,8 @@ def parse_report(path: Path) -> list[EmailSummary]:
 def main() -> int:
     settings = Settings.from_env()
     reports_dir = settings.reports_dir
+    reports_dir.mkdir(parents=True, exist_ok=True)
+    settings.instagram_dir.mkdir(parents=True, exist_ok=True)
     all_summaries: list[EmailSummary] = []
     seen: set[tuple[str, str]] = set()
     for path in sorted(reports_dir.glob("*_ai_news_report.md")):

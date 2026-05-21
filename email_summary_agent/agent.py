@@ -34,6 +34,7 @@ def run_once(
     recent_limit: int | None = 100,
 ) -> AgentResult:
     settings.validate_email_access()
+    _ensure_output_dirs(settings)
     store = AgentStore(settings.db_path)
     store.initialize()
     store.mark_stale_runs()
@@ -104,6 +105,7 @@ def watch_new(settings: Settings) -> None:
 def poll_new_once(settings: Settings) -> AgentResult:
     """Check only for brand-new sender mail once and do nothing if nothing new arrived."""
     settings.validate_email_access()
+    _ensure_output_dirs(settings)
     store = AgentStore(settings.db_path)
     store.initialize()
     store.mark_stale_runs()
@@ -329,6 +331,7 @@ def run_sample(settings: Settings) -> AgentResult:
 def run_latest(settings: Settings) -> AgentResult:
     """Process the latest matching sender email once for end-to-end testing."""
     settings.validate_email_access()
+    _ensure_output_dirs(settings)
     store = AgentStore(settings.db_path)
     store.initialize()
     store.mark_stale_runs()
@@ -394,6 +397,11 @@ def _safe_print(message: str) -> None:
     encoding = sys.stdout.encoding or "utf-8"
     safe = message.encode(encoding, errors="replace").decode(encoding, errors="replace")
     print(safe, flush=True)
+
+
+def _ensure_output_dirs(settings: Settings) -> None:
+    settings.reports_dir.mkdir(parents=True, exist_ok=True)
+    settings.instagram_dir.mkdir(parents=True, exist_ok=True)
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Local AI news email summary agent")

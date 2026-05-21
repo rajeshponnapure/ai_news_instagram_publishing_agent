@@ -16,6 +16,7 @@ def main() -> int:
     settings = Settings.from_env()
     settings.validate_instagram_publish()
     settings.validate_facebook_publish()
+    settings.instagram_dir.mkdir(parents=True, exist_ok=True)
     batches = [path for path in settings.instagram_dir.iterdir() if path.is_dir()] if settings.instagram_dir.exists() else []
     if not batches:
         print("No Instagram carousel batches found.")
