@@ -1,50 +1,52 @@
 # AI News Summary Report
 
-Generated: 2026-05-20T23:29:35+05:30
+Generated: 2026-05-21T06:54:44+00:00
 Source: grdevelopers.co@gmail.com
 Emails summarized: 1
 
 ## Executive Brief
 
-- Tracks 4 new launches AI launch activity from TechCrunch AI, CNBC Technology, AWS Machine Learning.
-- Best posting angle: explain what changed, who it helps, and why creators should care.
-- Primary entities to watch: Amazon, AWS, Mistral.
-- Likely content themes: regulation or safety, developer tools, hardware and compute.
+- If you use the OpenAI SDK, LangChain, or Strands Agents, you can now invoke models on SageMaker AI by changing only your endpoint URL.
+- Overview With this launch, SageMaker AI endpoints […] We use essential cookies and similar tools that are necessary to provide our site and services.
+- We and our advertising partners (“we”) may use information we collect from or about you to show you ads on other websites and online services.
+- “We run AI coding agents that use multiple LLM providers through an LLM gateway (Bifrost) speaking the OpenAI chat completions protocol.
+- This year at Google I/O 2026, we announced Gemini Omni, Google Antigravity, Universal Cart and so much more.
 
 ## Most Mentioned Companies
 
-Amazon (1), AWS (1), Mistral (1), TechCrunch AI (1), CNBC Technology (1), Amazon SageMaker AI (1), Mistral AI (1), SageMaker AI (1)
+OpenAI (1), Google (1), Anthropic (1), Microsoft (1), Meta (1), Amazon (1), AWS (1), NVIDIA (1)
 
 ## Most Mentioned Models
 
-Mistral (1)
+Claude (1), Gemini 3.5 (1), Gemini (1), Gemini 3.1 (1), Gemini 3 (1), Llama (1), Mistral (1), Stable Diffusion (1)
 
 ## Main Topics
 
-regulation or safety (1), developer tools (1), hardware and compute (1), media generation (1)
+model release (1), funding or business (1), regulation or safety (1), developer tools (1), hardware and compute (1), media generation (1)
 
 ## Voice Script Hooks
 
-- Amazon just made a move in regulation or safety: Build real-time voice applications with Amazon SageMaker AI and vLLM | Amazon Web Services
+- OpenAI just made a move in model release: Announcing OpenAI-compatible API support for Amazon SageMaker AI endpoints | Amazon Web Services
 
 ## Per-Email Summaries
 
-### 1. Build real-time voice applications with Amazon SageMaker AI and vLLM | Amazon Web Services
+### 1. Announcing OpenAI-compatible API support for Amazon SageMaker AI endpoints | Amazon Web Services
 
-Source date: Wed, 20 May 2026 10:32:26 -0700
+Source date: Wed, 20 May 2026 21:51:04 -0700
 Confidence: 0.78
-Article: https://aws.amazon.com/blogs/machine-learning/build-real-time-voice-applications-with-amazon-sagemaker-ai-and-vllm/
-Article title: Build real-time voice applications with Amazon SageMaker AI and vLLM | Amazon Web Services
+Article: https://aws.amazon.com/blogs/machine-learning/announcing-openai-compatible-api-support-for-amazon-sagemaker-ai-endpoints/
+Article title: Announcing OpenAI-compatible API support for Amazon SageMaker AI endpoints | Amazon Web Services
 
-Article excerpt: Voice agents, live captioning, contact center analytics, and accessibility tools all depend on real-time speech-to-text, where your application streams audio in and receives transcription back simultaneously over a single persistent connection. Traditional request-response inference falls short here because transcription cannot begin until the entire audio recording has been received, adding latency that breaks the real-time […]
+Article excerpt: Today, Amazon SageMaker AI introduces OpenAI-compatible API support for real-time inference endpoints. If you use the OpenAI SDK, LangChain, or Strands Agents, you can now invoke models on SageMaker AI by changing only your endpoint URL. You don’t need a custom client, a SigV4 wrapper, or code rewrites. Overview With this launch, SageMaker AI endpoints […]
 
-Voice agents, live captioning, contact center analytics, and accessibility tools all depend on real-time speech-to-text, where your application streams audio in and receives transcription back simultaneously over a single persistent connection. Traditional request-response inference falls short here because transcription cannot begin until the entire audio recording has been received, adding latency that breaks the real-time […]
+Announcing OpenAI-compatible API support for Amazon SageMaker AI endpoints | Amazon Web Services. If you use the OpenAI SDK, LangChain, or Strands Agents, you can now invoke models on SageMaker AI by changing only your endpoint URL. Overview With this launch, SageMaker AI endpoints […] We use essential cookies and similar tools that are necessary to provide our site and services. We and our advertising partners (“we”) may use information we collect from or about you to show you ads on other websites and online services. If you use the OpenAI SDK, LangChain, or Strands Agents, you can now invoke models on SageMaker AI by changing only your endpoint URL. “We run AI coding agents that use multiple LLM providers through an LLM gateway (Bifrost) speaking the OpenAI chat completions protocol.
 
 Key points:
-- Tracks 4 new launches AI launch activity from TechCrunch AI, CNBC Technology, AWS Machine Learning.
-- Best posting angle: explain what changed, who it helps, and why creators should care.
-- Primary entities to watch: Amazon, AWS, Mistral.
-- Likely content themes: regulation or safety, developer tools, hardware and compute.
-Companies: Amazon, AWS, Mistral, TechCrunch AI, CNBC Technology, Amazon SageMaker AI, Mistral AI, SageMaker AI
-Models: Mistral
-Topics: regulation or safety, developer tools, hardware and compute, media generation
+- If you use the OpenAI SDK, LangChain, or Strands Agents, you can now invoke models on SageMaker AI by changing only your endpoint URL.
+- Overview With this launch, SageMaker AI endpoints […] We use essential cookies and similar tools that are necessary to provide our site and services.
+- We and our advertising partners (“we”) may use information we collect from or about you to show you ads on other websites and online services.
+- “We run AI coding agents that use multiple LLM providers through an LLM gateway (Bifrost) speaking the OpenAI chat completions protocol.
+- This year at Google I/O 2026, we announced Gemini Omni, Google Antigravity, Universal Cart and so much more.
+Companies: OpenAI, Google, Anthropic, Microsoft, Meta, Amazon, AWS, NVIDIA
+Models: Claude, Gemini 3.5, Gemini, Gemini 3.1, Gemini 3, Llama, Mistral, Stable Diffusion
+Topics: model release, funding or business, regulation or safety, developer tools, hardware and compute, media generation

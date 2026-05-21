@@ -1,0 +1,15 @@
+Announcing OpenAI-compatible API support for Amazon SageMaker AI endpoints | Amazon... - Part 5
+
+Company: OpenAI | Model: Claude | Topic: model release
+
+Built from the linked article shared in today's AI news email.
+
+Quick takeaways:
+- If you use the OpenAI SDK, LangChain, or Strands Agents, you can now invoke models on SageMaker AI by changing only your endpoint URL.
+- Overview With this launch, SageMaker AI endpoints […] We use essential cookies and similar tools that are necessary to provide our site and services.
+- We and our advertising partners (“we”) may use information we collect from or about you to show you ads on other websites and online services.
+- “We run AI coding agents that use multiple LLM providers through an LLM gateway (Bifrost) speaking the OpenAI chat completions protocol.
+
+Disclaimer: This is an AI-assisted summary of the email brief.
+
+#Openai #Google #Anthropic #Microsoft #Meta #Amazon #Aws #Nvidia #Claude #Gemini35 #Gemini #Gemini31
