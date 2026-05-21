@@ -22,11 +22,10 @@ description: >
 ```
 ui-design-skill/
 ├── SKILL.md                          ← You are here (read first, always)
-├── references/
-│   ├── design-systems.md             ← Tokens, typography, color, spacing systems
-│   ├── ui-patterns.md                ← Component patterns for every UI type
-│   ├── uniqueness-engine.md          ← Anti-repetition rules and variation system
-│   └── platform-specs.md            ← Platform-specific rules (web/mobile/PDF/app)
+├── design-systems.md                 ← Tokens, typography, color, spacing systems
+├── ui-patterns.md                    ← Component patterns for every UI type
+├── uniqueness-engine.md              ← Anti-repetition rules and variation system
+└── platform-specs.md                 ← Platform-specific rules (web/mobile/PDF/app)
 ```
 
 **When to load reference files:**
@@ -165,6 +164,8 @@ Output complete, production-ready code.
 Include all CSS (variables-based, scoped).
 Include interaction states.
 Comment code sections clearly.
+
+For React, keep styling token-based and scoped; use the host project's styling system consistently.
 
 ### PDF / Print / Report
 Output layout specification + tool-appropriate code.
