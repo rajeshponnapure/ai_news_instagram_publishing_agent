@@ -27,7 +27,7 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 35
     outputs:
       changed: ${{ steps.commit.outputs.changed }}
       has_batch: ${{ steps.detect.outputs.has_batch }}
@@ -141,7 +141,7 @@ jobs:
   publish:
     needs: deploy-pages
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
 
     env:
       AUTO_PUBLISH_INSTAGRAM: 'true'
