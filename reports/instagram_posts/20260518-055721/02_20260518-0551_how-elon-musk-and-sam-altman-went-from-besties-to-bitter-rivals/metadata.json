@@ -1,0 +1,53 @@
+{
+  "email_received_at": "2026-05-18T05:51+00:00",
+  "recommended_post_time": "14:00",
+  "headline": "How Elon Musk and Sam Altman went from besties to bitter rivals",
+  "subject": "\ud83d\udea8 AI Alert: 2 new launches \u2014 CNBC Technology",
+  "source_date": "Sun, 17 May 2026 22:51:49 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "NVIDIA",
+    "Tesla",
+    "xAI",
+    "CNBC Technology",
+    "France. AI"
+  ],
+  "models": [],
+  "topics": [
+    "model release",
+    "funding or business",
+    "hardware and compute"
+  ],
+  "article_url": "https://www.cnbc.com/2026/05/18/how-elon-musk-and-sam-altman-went-from-besties-to-bitter-rivals.html",
+  "article_title": "How Elon Musk and Sam Altman went from besties to bitter rivals",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4e709506a92e8e0f.jpg",
+  "article_image_url": "https://image.cnbcfm.com/api/v1/image/108299329-17774844982026-04-29t174052z_1503926160_rc21zka40miz_rtrmadp_0_musk-openai-court.jpeg?v=1777484582&w=1920&h=1080",
+  "article_items": [
+    {
+      "url": "https://www.cnbc.com/2026/05/18/how-elon-musk-and-sam-altman-went-from-besties-to-bitter-rivals.html",
+      "title": "How Elon Musk and Sam Altman went from besties to bitter rivals",
+      "description": "In the 11 years since Elon Musk and Sam Altman helped start OpenAI, their once tight bond has unwound, leaving the two billionaires fighting it out in court.",
+      "excerpt": "In the 11 years since Elon Musk and Sam Altman helped start OpenAI, their once tight bond has unwound, leaving the two billionaires fighting it out in court.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4e709506a92e8e0f.jpg",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108299329-17774844982026-04-29t174052z_1503926160_rc21zka40miz_rtrmadp_0_musk-openai-court.jpeg?v=1777484582&w=1920&h=1080"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/05/18/europe-ai-energy-electricity-costs-data-centers-china-us.html",
+      "title": "High energy prices could derail Europe\u2019s AI race with U.S. and China",
+      "description": "Energy costs vary widely across Europe, creating clear winners and losers in attracting investment.",
+      "excerpt": "Energy costs vary widely across Europe, creating clear winners and losers in attracting investment.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9055cd713fca5ea6.jpg",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108172182-1752594309297-gettyimages-1213009893-liiv_linemen__005.jpeg?v=1752594343&w=1920&h=1080"
+    }
+  ],
+  "slides": [
+    "How Elon Musk and Sam Altman went from besties to bitter rivals",
+    "How Elon Musk and Sam Altman went from besties to bitter rivals",
+    "What happens next",
+    "High energy prices could derail Europe\u2019s AI race with U.S. and China",
+    "High energy prices could derail Europe\u2019s AI race with U.S. and China",
+    "What happens next",
+    "Follow for the next AI drop"
+  ]
+}

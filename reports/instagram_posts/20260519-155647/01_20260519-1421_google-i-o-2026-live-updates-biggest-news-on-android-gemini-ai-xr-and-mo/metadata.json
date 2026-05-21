@@ -1,0 +1,57 @@
+{
+  "email_received_at": "2026-05-19T14:21+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Google I/O 2026 live updates: Biggest news on Android, Gemini AI, XR, and more we're seeing",
+  "subject": "\ud83d\udea8 AI Alert: 2 new launches \u2014 ZDNet AI, CNBC Technology",
+  "source_date": "Tue, 19 May 2026 07:21:39 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Apple",
+    "Tesla",
+    "xAI",
+    "ZDNet AI",
+    "CNBC Technology"
+  ],
+  "models": [
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "developer tools",
+    "media generation"
+  ],
+  "article_url": "https://www.zdnet.com/article/google-io-05-19-2026-live-blog/",
+  "article_title": "Google I/O 2026 live updates: Biggest news on Android, Gemini AI, XR, and more we're seeing",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c47482bec1473f64.jpg",
+  "article_image_url": "https://www.zdnet.com/a/img/resize/931c29d4e9538c704e94da99f82073934357fef6/2026/03/02/fe89069f-05f6-417a-953a-2260270f0ed5/dsc09551.jpg?auto=webp&fit=crop&height=675&width=1200",
+  "article_items": [
+    {
+      "url": "https://www.zdnet.com/article/google-io-05-19-2026-live-blog/",
+      "title": "Google I/O 2026 live updates: Biggest news on Android, Gemini AI, XR, and more we're seeing",
+      "description": "We're reporting live from Mountain View at Google's annual developer conference today. Stay tuned for the latest updates.",
+      "excerpt": "We're reporting live from Mountain View at Google's annual developer conference today. Stay tuned for the latest updates.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c47482bec1473f64.jpg",
+      "image_url": "https://www.zdnet.com/a/img/resize/931c29d4e9538c704e94da99f82073934357fef6/2026/03/02/fe89069f-05f6-417a-953a-2260270f0ed5/dsc09551.jpg?auto=webp&fit=crop&height=675&width=1200"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/05/19/musk-altman-take-their-battle-from-court-to-wall-street-ahead-of-ipos.html",
+      "title": "Musk and Altman take their battle from court to Wall Street ahead of landmark IPOs",
+      "description": "Now that the Musk-Altman trial has reached a verdict, the two billionaires can turn their attention to readying their companies for the public market.",
+      "excerpt": "Now that the Musk-Altman trial has reached a verdict, the two billionaires can turn their attention to readying their companies for the public market.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/33903b34b89e05b6.jpg",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108300077-1777564113758-gettyimages-2273245544-2026_apr_30_muskvsaltman_0666.jpeg?v=1777564136&w=1920&h=1080"
+    }
+  ],
+  "slides": [
+    "Google I/O 2026 live updates: Biggest news on Android, Gemini AI, XR, and more we're...",
+    "Google I/O 2026 live updates: Biggest news on Android, Gemini AI, XR, and more we're...",
+    "What happens next",
+    "Musk and Altman take their battle from court to Wall Street ahead of landmark IPOs",
+    "Musk and Altman take their battle from court to Wall Street ahead of landmark IPOs",
+    "What happens next",
+    "Follow for the next AI drop"
+  ]
+}

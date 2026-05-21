@@ -1,0 +1,44 @@
+{
+  "email_received_at": "2026-05-20T01:33+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Google Aims at Enterprise Cost Efficiency With Gemini 3.5 Flash",
+  "subject": "\ud83d\udea8 AI Alert: 1 new launch \u2014 AI Business",
+  "source_date": "Tue, 19 May 2026 18:33:36 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "NVIDIA",
+    "Google Cloud"
+  ],
+  "models": [
+    "Claude",
+    "Gemini 3.5",
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "developer tools",
+    "media generation"
+  ],
+  "article_url": "https://aibusiness.com/generative-ai/google-aims-enterprise-cost-efficiency-with-gemini-3-5-flash",
+  "article_title": "Google Aims at Enterprise Cost Efficiency With Gemini 3.5 Flash",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9ddf69bec7b73526.jpg",
+  "article_image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltde4293defea3746b/6a0cf6d5130b7c4581cc0a49/Pichar.JPG?disable=upscale&width=1200&height=630&fit=crop",
+  "article_items": [
+    {
+      "url": "https://aibusiness.com/generative-ai/google-aims-enterprise-cost-efficiency-with-gemini-3-5-flash",
+      "title": "Google Aims at Enterprise Cost Efficiency With Gemini 3.5 Flash",
+      "description": "Google introduced Gemini 3.5 Flash and other agentic AI tools for enterprises.",
+      "excerpt": "Google introduced Gemini 3.5 Flash and other agentic AI tools for enterprises.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9ddf69bec7b73526.jpg",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltde4293defea3746b/6a0cf6d5130b7c4581cc0a49/Pichar.JPG?disable=upscale&width=1200&height=630&fit=crop"
+    }
+  ],
+  "slides": [
+    "Google Aims at Enterprise Cost Efficiency With Gemini 3.5 Flash",
+    "Google Aims at Enterprise Cost Efficiency With Gemini 3.5 Flash",
+    "What happens next",
+    "Follow for the next AI drop"
+  ]
+}

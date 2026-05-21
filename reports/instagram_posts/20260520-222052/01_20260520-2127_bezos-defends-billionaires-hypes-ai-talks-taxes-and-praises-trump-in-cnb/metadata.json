@@ -1,0 +1,73 @@
+{
+  "email_received_at": "2026-05-20T21:27+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Bezos defends billionaires, hypes AI, talks taxes and praises Trump in CNBC interview",
+  "subject": "\ud83d\udea8 AI Alert: 3 new launches \u2014 CNBC Technology, TechCrunch AI, Google AI Blog",
+  "source_date": "Wed, 20 May 2026 14:27:01 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Apple",
+    "Amazon",
+    "CNBC Technology",
+    "TechCrunch AI",
+    "Google AI Studio"
+  ],
+  "models": [
+    "GPT-5",
+    "Gemini",
+    "Gemini 3.5",
+    "Gemini 3.1",
+    "Gemini 3"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "media generation"
+  ],
+  "article_url": "https://www.cnbc.com/2026/05/20/jeff-bezos-taxes-ai-corporations-trump.html",
+  "article_title": "Bezos defends billionaires, hypes AI, talks taxes and praises Trump in CNBC interview",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9aadb5d3daa343af.jpg",
+  "article_image_url": "https://image.cnbcfm.com/api/v1/image/108309737-1779283120589-JeffBezos9.jpg?v=1779308190&w=1920&h=1080",
+  "article_items": [
+    {
+      "url": "https://www.cnbc.com/2026/05/20/jeff-bezos-taxes-ai-corporations-trump.html",
+      "title": "Bezos defends billionaires, hypes AI, talks taxes and praises Trump in CNBC interview",
+      "description": "Jeff Bezos rejected accusations that Amazon's decision to release a documentary on first lady Melania Trump was an effort to curry favor with the president.",
+      "excerpt": "Jeff Bezos rejected accusations that Amazon's decision to release a documentary on first lady Melania Trump was an effort to curry favor with the president.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9aadb5d3daa343af.jpg",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108309737-1779283120589-JeffBezos9.jpg?v=1779308190&w=1920&h=1080"
+    },
+    {
+      "url": "https://techcrunch.com/2026/05/20/openai-claims-it-solved-an-80-year-old-math-problem-for-real-this-time/",
+      "title": "OpenAI claims it solved an 80-year-old math problem \u2014 for real this time | TechCrunch",
+      "description": "OpenAI claims its reasoning model disproved a geometry conjecture unsolved since 1946 \u2014 and this time, the mathematicians who exposed its last embarrassing claim are backing it up.",
+      "excerpt": "OpenAI claims its reasoning model disproved a geometry conjecture unsolved since 1946 \u2014 and this time, the mathematicians who exposed its last embarrassing claim are backing it up.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/38f1e6d65f3f872e.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/Erdos-problems.png?resize=1200,863"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
+      "title": "100 things we announced at I/O 2026",
+      "description": "This year at Google I/O 2026, we announced Gemini Omni, Google Antigravity, Universal Cart and so much more. Here are the highlights.",
+      "excerpt": "This year at Google I/O 2026, we announced Gemini Omni, Google Antigravity, Universal Cart and so much more. Here are the highlights.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c1d86290d1f01286.png",
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/100_things_Social.width-1300.png"
+    }
+  ],
+  "slides": [
+    "Bezos defends billionaires, hypes AI, talks taxes and praises Trump in CNBC interview",
+    "Bezos defends billionaires, hypes AI, talks taxes and praises Trump in CNBC interview",
+    "What happens next",
+    "OpenAI claims it solved an 80-year-old math problem \u2014 for real this time | TechCrunch",
+    "OpenAI claims it solved an 80-year-old math problem \u2014 for real this time | TechCrunch",
+    "What happens next",
+    "100 things we announced at I/O 2026",
+    "100 things we announced at I/O 2026",
+    "What happens next",
+    "Follow for the next AI drop"
+  ]
+}

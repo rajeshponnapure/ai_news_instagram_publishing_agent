@@ -1,0 +1,53 @@
+{
+  "email_received_at": "2026-05-18T23:38+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "NVIDIA CEO Jensen Huang at Dell Technologies World: \u201cDemand Is Going Parabolic, Utterly Parabolic\u201d",
+  "subject": "\ud83d\udea8 AI Alert: 2 new launches \u2014 Nvidia Blog",
+  "source_date": "Mon, 18 May 2026 16:38:21 -0700",
+  "companies": [
+    "OpenAI",
+    "Anthropic",
+    "NVIDIA",
+    "Oracle",
+    "Agentic AI",
+    "Top AI Labs",
+    "Enterprise AI"
+  ],
+  "models": [],
+  "topics": [
+    "model release",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://blogs.nvidia.com/blog/dell-technologies-agent-enterprise-ai/",
+  "article_title": "NVIDIA CEO Jensen Huang at Dell Technologies World: \u201cDemand Is Going Parabolic, Utterly Parabolic\u201d",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fb7db2524505fc5f.jpg",
+  "article_image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/05/26-dtw-keynote-jhh-dell-CG3A2688_Option2-scaled.jpg",
+  "article_items": [
+    {
+      "url": "https://blogs.nvidia.com/blog/dell-technologies-agent-enterprise-ai/",
+      "title": "NVIDIA CEO Jensen Huang at Dell Technologies World: \u201cDemand Is Going Parabolic, Utterly Parabolic\u201d",
+      "description": "NVIDIA CEO Jensen Huang joined Dell CEO Michael Dell on stage Monday to unveil the latest updates to the Dell AI Factory with NVIDIA \u2014 delivering a full-stack platform for autonomous agents, from deskside workstations to data center racks.",
+      "excerpt": "NVIDIA CEO Jensen Huang joined Dell CEO Michael Dell on stage Monday to unveil the latest updates to the Dell AI Factory with NVIDIA \u2014 delivering a full-stack platform for autonomous agents, from deskside workstations to data center racks.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fb7db2524505fc5f.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/05/26-dtw-keynote-jhh-dell-CG3A2688_Option2-scaled.jpg"
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/vera-cpu-delivery/",
+      "title": "Vera Arrives: NVIDIA\u2019s First CPU Built for Agents Lands at Top AI Labs",
+      "description": "Ian Buck hand-delivers the first NVIDIA Vera CPU systems to Anthropic, OpenAI, Oracle Cloud Infrastructure and SpaceXAI \u2014 marking the moment agentic CPUs move from announcement to production.",
+      "excerpt": "Ian Buck hand-delivers the first NVIDIA Vera CPU systems to Anthropic, OpenAI, Oracle Cloud Infrastructure and SpaceXAI \u2014 marking the moment agentic CPUs move from announcement to production.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7e66b9bca19dfd49.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/05/Vera-CPU_Tray_Open-34_Wide_R6C-FNL-5260651.jpg"
+    }
+  ],
+  "slides": [
+    "NVIDIA CEO Jensen Huang at Dell Technologies World: \u201cDemand Is Going Parabolic...",
+    "NVIDIA CEO Jensen Huang at Dell Technologies World: \u201cDemand Is Going Parabolic...",
+    "What happens next",
+    "Vera Arrives: NVIDIA\u2019s First CPU Built for Agents Lands at Top AI Labs",
+    "Vera Arrives: NVIDIA\u2019s First CPU Built for Agents Lands at Top AI Labs",
+    "What happens next",
+    "Follow for the next AI drop"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "email_received_at": "2026-05-18T21:21+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Anthropic has acquired the dev tools startup used by OpenAI, Google, and Cloudflare | TechCrunch",
+  "subject": "\ud83d\udea8 AI Alert: 2 new launches \u2014 TechCrunch AI, MarkTechPost AI",
+  "source_date": "Mon, 18 May 2026 14:21:38 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Apple",
+    "Amazon",
+    "Runway",
+    "TechCrunch AI",
+    "MarkTechPost AI"
+  ],
+  "models": [
+    "Claude"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "developer tools",
+    "hardware and compute"
+  ],
+  "article_url": "https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/",
+  "article_title": "Anthropic has acquired the dev tools startup used by OpenAI, Google, and Cloudflare | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/878baaed2bd2bdd0.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2252871842.jpg?w=1024",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/",
+      "title": "Anthropic has acquired the dev tools startup used by OpenAI, Google, and Cloudflare | TechCrunch",
+      "description": "Stainless, a New York-based startup, founded in 2022, rose to prominence in the emerging AI industry for automating the creation and maintenance of software development kits, or SDKs \u2014 the libraries developers use to interact with APIs.",
+      "excerpt": "Stainless, a New York-based startup, founded in 2022, rose to prominence in the emerging AI industry for automating the creation and maintenance of software development kits, or SDKs \u2014 the libraries developers use to interact with APIs.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/878baaed2bd2bdd0.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2252871842.jpg?w=1024"
+    },
+    {
+      "url": "https://www.marktechpost.com/2026/05/18/stochastic-gradient-descent-sgds-frequency-bias-and-how-adam-fixes-it/",
+      "title": "Stochastic Gradient Descent (SGD's) Frequency Bias and How Adam Fixes It",
+      "description": "Understand SGD's frequency bias and discover how Adam's adaptive optimization enhances performance of language models.",
+      "excerpt": "Understand SGD's frequency bias and discover how Adam's adaptive optimization enhances performance of language models.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/50d69fd8fba56ee1.png",
+      "image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-27.png"
+    }
+  ],
+  "slides": [
+    "Anthropic has acquired the dev tools startup used by OpenAI, Google, and Cloudflare...",
+    "Anthropic has acquired the dev tools startup used by OpenAI, Google, and Cloudflare...",
+    "What happens next",
+    "Stochastic Gradient Descent (SGD's) Frequency Bias and How Adam Fixes It",
+    "Stochastic Gradient Descent (SGD's) Frequency Bias and How Adam Fixes It",
+    "What happens next",
+    "Follow for the next AI drop"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "email_received_at": "2026-05-18T18:12+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "New in Deep Agents v0.6",
+  "subject": "\ud83d\udea8 AI Alert: 2 new launches \u2014 LangChain Blog, GitHub Blog",
+  "source_date": "Mon, 18 May 2026 11:12:43 -0700",
+  "companies": [
+    "Anthropic"
+  ],
+  "models": [
+    "gpt-5.2-codex",
+    "gpt-5.3-codex"
+  ],
+  "topics": [
+    "model release",
+    "developer tools",
+    "hardware and compute"
+  ],
+  "article_url": "https://www.langchain.com/blog/deep-agents-0-6",
+  "article_title": "New in Deep Agents v0.6",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f9f6178befe89a09.png",
+  "article_image_url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a047cf0dfb6150e5807787d_New%20in%20Deep%20Agents.png",
+  "article_items": [
+    {
+      "url": "https://www.langchain.com/blog/deep-agents-0-6",
+      "title": "New in Deep Agents v0.6",
+      "description": "Deep Agents 0.6 ships a code interpreter, harness profiles, streaming v3, delta channels, and ContextHub, making agents faster, cheaper, and more scalable.",
+      "excerpt": "Deep Agents 0.6 ships a code interpreter, harness profiles, streaming v3, delta channels, and ContextHub, making agents faster, cheaper, and more scalable.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f9f6178befe89a09.png",
+      "image_url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a047cf0dfb6150e5807787d_New%20in%20Deep%20Agents.png"
+    },
+    {
+      "url": "https://github.blog/news-insights/product-news/take-your-local-github-sessions-anywhere/",
+      "title": "Take your local GitHub sessions anywhere",
+      "description": "Kick off work in VS Code or the CLI, finish it from your phone. Remote control for GitHub Copilot sessions is now generally available.",
+      "excerpt": "Kick off work in VS Code or the CLI, finish it from your phone. Remote control for GitHub Copilot sessions is now generally available.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/18197ac953502ff3.png",
+      "image_url": "https://github.blog/wp-content/uploads/2026/01/generic-github-copilot-logo-stripe.png"
+    }
+  ],
+  "slides": [
+    "New in Deep Agents v0.6",
+    "New in Deep Agents v0.6",
+    "What happens next",
+    "Take your local GitHub sessions anywhere",
+    "Take your local GitHub sessions anywhere",
+    "What happens next",
+    "Follow for the next AI drop"
+  ]
+}

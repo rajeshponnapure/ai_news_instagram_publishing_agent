@@ -1,0 +1,56 @@
+{
+  "email_received_at": "2026-05-20T08:46+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Alibaba Qwen Team Introduces Qwen3.5-LiveTranslate-Flash: Real-Time Multimodal Interpretation Across 60...",
+  "subject": "\ud83d\udea8 AI Alert: 2 new launches \u2014 MarkTechPost AI",
+  "source_date": "Wed, 20 May 2026 01:46:33 -0700",
+  "companies": [
+    "Google",
+    "Hugging Face",
+    "Salesforce",
+    "MarkTechPost AI",
+    "Google AI Studio"
+  ],
+  "models": [
+    "Gemini 3.5",
+    "Gemini 3.1",
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.marktechpost.com/2026/05/20/alibaba-qwen-team-introduces-qwen3-5-livetranslate-flash-real-time-multimodal-interpretation-across-60-languages-at-2-8-second-latency/",
+  "article_title": "Alibaba Qwen Team Introduces Qwen3.5-LiveTranslate-Flash: Real-Time Multimodal Interpretation Across 60 Languages at 2.8-Second Latency",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/24c7267b84a5d06f.png",
+  "article_image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-1-14.png",
+  "article_items": [
+    {
+      "url": "https://www.marktechpost.com/2026/05/20/alibaba-qwen-team-introduces-qwen3-5-livetranslate-flash-real-time-multimodal-interpretation-across-60-languages-at-2-8-second-latency/",
+      "title": "Alibaba Qwen Team Introduces Qwen3.5-LiveTranslate-Flash: Real-Time Multimodal Interpretation Across 60 Languages at 2.8-Second Latency",
+      "description": "Qwen3.5-LiveTranslate-Flash delivers real-time multimodal interpretation across 60 languages at 2.8-second latency with real-time voice cloning",
+      "excerpt": "Qwen3.5-LiveTranslate-Flash delivers real-time multimodal interpretation across 60 languages at 2.8-second latency with real-time voice cloning",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/24c7267b84a5d06f.png",
+      "image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-1-14.png"
+    },
+    {
+      "url": "https://www.marktechpost.com/2026/05/20/google-introduces-gemini-3-5-flash-at-i-o-2026-a-faster-and-cheaper-model-for-ai-agents-and-coding/",
+      "title": "Google Introduces Gemini 3.5 Flash at I/O 2026: A Faster and Cheaper Model for AI Agents and Coding",
+      "description": "Google releases Gemini 3.5 Flash at I/O 2026, outperforming Gemini 3.1 Pro on coding and agentic benchmarks at 4x the speed.",
+      "excerpt": "Google releases Gemini 3.5 Flash at I/O 2026, outperforming Gemini 3.1 Pro on coding and agentic benchmarks at 4x the speed.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/cbbc6724bc0cdb16.png",
+      "image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-31.png"
+    }
+  ],
+  "slides": [
+    "Alibaba Qwen Team Introduces Qwen3.5-LiveTranslate-Flash: Real-Time Multimodal...",
+    "Alibaba Qwen Team Introduces Qwen3.5-LiveTranslate-Flash: Real-Time Multimodal...",
+    "What happens next",
+    "Google Introduces Gemini 3.5 Flash at I/O 2026: A Faster and Cheaper Model for AI...",
+    "Google Introduces Gemini 3.5 Flash at I/O 2026: A Faster and Cheaper Model for AI...",
+    "What happens next",
+    "Follow for the next AI drop"
+  ]
+}

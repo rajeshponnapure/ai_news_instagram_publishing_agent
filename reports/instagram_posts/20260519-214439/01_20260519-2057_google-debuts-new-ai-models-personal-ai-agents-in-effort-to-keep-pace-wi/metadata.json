@@ -1,0 +1,89 @@
+{
+  "email_received_at": "2026-05-19T20:57+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Google debuts new AI models, personal AI agents in effort to keep pace with OpenAI and Anthropic",
+  "subject": "\ud83d\udea8 AI Alert: 7 new launches \u2014 CNBC Technology, Nvidia Blog",
+  "source_date": "Tue, 19 May 2026 13:57:19 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Meta",
+    "Apple",
+    "NVIDIA",
+    "CNBC Technology"
+  ],
+  "models": [
+    "Gemini",
+    "Gemini 3.5",
+    "Gemini-powered",
+    "Sora"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html",
+  "article_title": "Google debuts new AI models, personal AI agents in effort to keep pace with OpenAI and Anthropic",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c8443694b00b82f6.jpg",
+  "article_image_url": "https://image.cnbcfm.com/api/v1/image/108309206-1779213871939-108309206-1779210844055-108309206-1779210774213-gettyimages-2276576410-GOOGLE_IO.jpg?v=1779223380&w=1920&h=1080",
+  "article_items": [
+    {
+      "url": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html",
+      "title": "Google debuts new AI models, personal AI agents in effort to keep pace with OpenAI and Anthropic",
+      "description": "Google made a number of AI announcements at its annual developer conference, rolling out more-advanced models and agentic tools for its expansive user base.",
+      "excerpt": "Google made a number of AI announcements at its annual developer conference, rolling out more-advanced models and agentic tools for its expansive user base.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c8443694b00b82f6.jpg",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108309206-1779213871939-108309206-1779210844055-108309206-1779210774213-gettyimages-2276576410-GOOGLE_IO.jpg?v=1779223380&w=1920&h=1080"
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/google-cloud-developer-community-ai-builders/",
+      "title": "NVIDIA and Google Cloud Empower the Next Wave of AI Builders",
+      "description": "Over 100,000 developers have joined the companies\u2019 joint developer community, tapping into NVIDIA and Google Cloud technologies, learning paths and hands-on labs to build what\u2019s next in AI.",
+      "excerpt": "Over 100,000 developers have joined the companies\u2019 joint developer community, tapping into NVIDIA and Google Cloud technologies, learning paths and hands-on labs to build what\u2019s next in AI.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/241648e8228c30b1.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/05/google-cloud-nvidia-1920x1080-1.jpg"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/05/19/google-gives-first-glimpse-of-new-ai-glasses-ahead-of-fall-launch-.html",
+      "title": "Google gives first glimpse of new AI glasses ahead of fall launch",
+      "description": "At its annual developers conference, Google offered a first look at its audio smart glasses that will be available later this year.",
+      "excerpt": "At its annual developers conference, Google offered a first look at its audio smart glasses that will be available later this year.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/162d6732dda45221.jpg",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108309302-1779217145213-gettyimages-2276588932-2026_may_19_googleio_1355.jpeg?v=1779217197&w=1920&h=1080"
+    },
+    {
+      "url": "https://www.wired.com/story/everything-google-announced-at-google-io-2026/",
+      "title": "Everything Announced at Google I/O 2026",
+      "description": "Google is sprucing up its Gemini models, revamping search, and enabling AI agents in everything. There are also some spiffy new smart glasses coming this fall.",
+      "excerpt": "Google is sprucing up its Gemini models, revamping search, and enabling AI agents in everything. There are also some spiffy new smart glasses coming this fall.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5326cb5460154877.jpg",
+      "image_url": "https://media.wired.com/photos/6a047ecbec98d3bd8037fdbe/191:100/w_1280,c_limit/GettyImages-2215577882.jpg"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/05/19/polymarket-launches-private-company-trading-so-investors-can-speculate-on-anthropic-openai.html",
+      "title": "Polymarket launches private company trading so investors can speculate on Anthropic, OpenAI",
+      "description": "The company is launching prediction markets tied to private company milestones, including valuations, IPO timing and secondary-market activity for names like OpenAI and Anthropic.",
+      "excerpt": "The company is launching prediction markets tied to private company milestones, including valuations, IPO timing and secondary-market activity for names like OpenAI and Anthropic.",
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/98ffd8d9780c70b6.jpg",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108296876-1777038731785-gettyimages-2272104582-omarques_23042026_tech_14_of_17.jpeg?v=1777038754&w=1920&h=1080"
+    }
+  ],
+  "slides": [
+    "Google debuts new AI models, personal AI agents in effort to keep pace with OpenAI...",
+    "Google debuts new AI models, personal AI agents in effort to keep pace with OpenAI...",
+    "What happens next",
+    "NVIDIA and Google Cloud Empower the Next Wave of AI Builders",
+    "NVIDIA and Google Cloud Empower the Next Wave of AI Builders",
+    "What happens next",
+    "Google gives first glimpse of new AI glasses ahead of fall launch",
+    "Google gives first glimpse of new AI glasses ahead of fall launch",
+    "What happens next",
+    "Follow for the next AI drop"
+  ]
+}
