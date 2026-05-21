@@ -236,28 +236,36 @@ jobs:
           fi
 
   # ─── Self-chain ────────────────────────────────────────────────────────────
-  # Triggers the next run exactly 15 minutes after this one finishes.
-  # This guarantees near-real-time polling even when GitHub's cron scheduler
-  # is delayed or throttled. The cron above acts as a watchdog/recovery only.
+  # Immediately triggers the next run after this one completes.
+  # The cron schedule (*/15 * * * *) handles the 15-minute spacing.
+  # This job just ensures the workflow never goes dormant between cron ticks.
   # Depends only on `generate` so it always runs — even when no new email
   # was found and the publish/deploy jobs were skipped.
   self-chain:
     needs: [generate]
     if: always()
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 3
     steps:
-      - name: Wait 15 minutes then re-trigger
+      - name: Trigger next run
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
           REF: ${{ github.ref_name }}
         run: |
-          echo "Sleeping 15 minutes before triggering next run..."
-          sleep 900
-          gh workflow run instagram-auto-publish.yml \
-            --repo "$REPO" \
-            --ref "$REF" \
-            --field run_mode=poll_new \
-            --field _chained=true
-          echo "Next run triggered successfully."
+          # Only self-chain when triggered by schedule or a previous chain link.
+          # Manual workflow_dispatch runs (backfill, rebuild) do NOT chain —
+          # that would cause an infinite loop of heavy runs.
+          TRIGGER="${{ github.event_name }}"
+          CHAINED="${{ inputs._chained }}"
+          if [ "$TRIGGER" = "schedule" ] || [ "$CHAINED" = "true" ]; then
+            echo "Triggering next poll run..."
+            gh workflow run instagram-auto-publish.yml \
+              --repo "$REPO" \
+              --ref "$REF" \
+              --field run_mode=poll_new \
+              --field _chained=true
+            echo "Next run triggered."
+          else
+            echo "Manual dispatch detected (run_mode=${{ inputs.run_mode }}). Skipping self-chain to avoid loop."
+          fi
