@@ -2,26 +2,20 @@ name: Instagram Auto Publish
 
 on:
   schedule:
-    # Primary cron trigger — acts as a watchdog/recovery in case the
-    # self-chain below misses a beat. GitHub may delay this by up to
-    # 30 min but it ensures the workflow never stays dormant for long.
-    - cron: '*/15 * * * *'
+    # Runs every 50 minutes. Always polls for new emails only.
+    - cron: '*/50 * * * *'
   workflow_dispatch:
+    # Manual trigger — only for maintenance/recovery operations.
+    # Automatic runs never use this path.
     inputs:
       run_mode:
-        description: 'Choose whether to backfill recent mail or only check for new mail'
+        description: 'Maintenance mode — what to process'
         required: false
         default: 'backfill_24h'
         type: choice
         options:
           - 'backfill_24h'
-          - 'poll_new'
           - 'rebuild_all'
-      _chained:
-        description: 'Internal — set to true when triggered by self-chain'
-        required: false
-        default: 'false'
-        type: string
 
 concurrency:
   group: instagram-auto-publish
@@ -86,6 +80,7 @@ jobs:
           elif [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.run_mode }}" = "backfill_24h" ]; then
             python -m email_summary_agent --recent-all
           else
+            # Automatic schedule run — only check for new emails
             python -m email_summary_agent --poll-once
           fi
 
@@ -236,11 +231,9 @@ jobs:
           fi
 
   # ─── Self-chain ────────────────────────────────────────────────────────────
-  # Immediately triggers the next run after this one completes.
-  # The cron schedule (*/15 * * * *) handles the 15-minute spacing.
-  # This job just ensures the workflow never goes dormant between cron ticks.
-  # Depends only on `generate` so it always runs — even when no new email
-  # was found and the publish/deploy jobs were skipped.
+  # Triggers the next poll run immediately after this one completes.
+  # Combined with the 50-min cron, this keeps the workflow alive between ticks.
+  # Manual dispatch runs do NOT self-chain to avoid looping heavy operations.
   self-chain:
     needs: [generate]
     if: always()
@@ -253,19 +246,12 @@ jobs:
           REPO: ${{ github.repository }}
           REF: ${{ github.ref_name }}
         run: |
-          # Only self-chain when triggered by schedule or a previous chain link.
-          # Manual workflow_dispatch runs (backfill, rebuild) do NOT chain —
-          # that would cause an infinite loop of heavy runs.
-          TRIGGER="${{ github.event_name }}"
-          CHAINED="${{ inputs._chained }}"
-          if [ "$TRIGGER" = "schedule" ] || [ "$CHAINED" = "true" ]; then
-            echo "Triggering next poll run..."
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            echo "Triggering next scheduled poll run..."
             gh workflow run instagram-auto-publish.yml \
               --repo "$REPO" \
-              --ref "$REF" \
-              --field run_mode=poll_new \
-              --field _chained=true
+              --ref "$REF"
             echo "Next run triggered."
           else
-            echo "Manual dispatch detected (run_mode=${{ inputs.run_mode }}). Skipping self-chain to avoid loop."
+            echo "Manual dispatch — skipping self-chain to avoid loop."
           fi
