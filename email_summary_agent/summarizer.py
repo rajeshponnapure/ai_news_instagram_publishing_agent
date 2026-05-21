@@ -593,13 +593,28 @@ def _with_article_fields(summary: EmailSummary, articles: list[ArticleData] | No
     summary_text = article_items[0].get("summary", summary.summary)
     if article.description and len(article.description) > len(summary_text):
         summary_text = _trim_sentence(article.description, 700)
+
+    # Build rich key points from the articles themselves instead of generic placeholders
+    merged_points = []
+    for item in article_items:
+        points = item.get("key_points", [])
+        for pt in points:
+            cleaned = _normalize_text(pt)
+            if cleaned and cleaned not in merged_points and not _is_low_value_sentence(cleaned):
+                lowered = cleaned.lower()
+                # Exclude noisy placeholders
+                if not any(prefix in lowered for prefix in ("tracks new", "best posting angle", "primary entities", "likely content themes")):
+                    merged_points.append(cleaned)
+                    
+    final_points = merged_points[:5] if merged_points else summary.key_points
+
     return EmailSummary(
         message_key=summary.message_key,
         subject=summary.subject,
         source_date=summary.source_date,
         headline=headline,
         summary=summary_text,
-        key_points=summary.key_points,
+        key_points=final_points,
         companies=summary.companies,
         models=summary.models,
         topics=summary.topics,
@@ -632,7 +647,7 @@ def _human_article_summary(article: ArticleData) -> tuple[str, list[str]]:
     sentences = _split_sentences(source)
     if not sentences:
         fallback = article.description or article.excerpt or article.title or "This update is worth watching."
-        return _trim_sentence(fallback, 760), [_trim_sentence(fallback, 160)]
+        return _trim_sentence(fallback, 760), [_trim_sentence(fallback, 180)]
 
     ranked = _rank_sentences(sentences)
     chosen = [sentences[index] for index, _score in sorted(ranked[:6])]
@@ -640,8 +655,8 @@ def _human_article_summary(article: ArticleData) -> tuple[str, list[str]]:
         chosen = sentences[:4]
 
     title = article.title.strip()
-    opener = _trim_sentence(chosen[0], 220)
-    detail = " ".join(_trim_sentence(sentence, 210) for sentence in chosen[1:5])
+    opener = chosen[0]
+    detail = " ".join(chosen[1:5])
     if title and title.lower() not in opener.lower():
         summary = f"{title}. {opener} {detail}".strip()
     else:
@@ -649,7 +664,7 @@ def _human_article_summary(article: ArticleData) -> tuple[str, list[str]]:
 
     points = []
     for sentence in chosen[:5]:
-        point = _trim_sentence(sentence, 170)
+        point = _trim_sentence(sentence, 190)
         if point and point not in points:
             points.append(point)
     return _trim_sentence(summary, 950), points[:5]

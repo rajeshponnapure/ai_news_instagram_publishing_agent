@@ -494,6 +494,31 @@ def _remove_logo_background(logo) -> Any:
 
 
 def _font(image_font, size: int, bold: bool = False, mono: bool = False, preferred: list[str] | None = None):
+    # Try bundled fonts first
+    bundled_dir = Path(__file__).resolve().parent / "fonts"
+    bundled_candidates = []
+    if mono:
+        bundled_candidates.append(bundled_dir / "RobotoMono-Regular.ttf")
+    elif bold:
+        bundled_candidates.append(bundled_dir / "Roboto-Bold.ttf")
+    else:
+        bundled_candidates.append(bundled_dir / "Roboto-Regular.ttf")
+    
+    # Fallback to other styles just in case
+    bundled_candidates.extend([
+        bundled_dir / "Roboto-Bold.ttf",
+        bundled_dir / "Roboto-Regular.ttf",
+        bundled_dir / "RobotoMono-Regular.ttf"
+    ])
+    
+    for cand in bundled_candidates:
+        if cand.exists():
+            try:
+                return image_font.truetype(str(cand), size=size)
+            except OSError:
+                pass
+
+    # Fallback to system fonts
     candidates = []
     if preferred:
         candidates.extend(preferred)
@@ -502,6 +527,18 @@ def _font(image_font, size: int, bold: bool = False, mono: bool = False, preferr
     if bold:
         candidates.extend(["C:/Windows/Fonts/arialbd.ttf", "C:/Windows/Fonts/segoeuib.ttf"])
     candidates.extend(["C:/Windows/Fonts/arial.ttf", "C:/Windows/Fonts/segoeui.ttf"])
+    
+    # Add Linux standard font paths for extra safety
+    linux_paths = [
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+        "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+        "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
+        "/usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf"
+    ]
+    candidates.extend(linux_paths)
+    
     for candidate in candidates:
         try:
             return image_font.truetype(candidate, size=size)

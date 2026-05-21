@@ -101,8 +101,9 @@ def poll_new_once(settings: Settings) -> AgentResult:
     mailbox_key = f"{settings.email_folder}|{settings.email_sender_filter or settings.imap_username}"
 
     try:
+        emails = []
+        baseline = store.get_mailbox_watermark(mailbox_key)
         with ImapEmailClient(settings) as client:
-            baseline = store.get_mailbox_watermark(mailbox_key)
             if baseline <= 0:
                 baseline = client.fetch_latest_uid()
                 if baseline > 0:
@@ -124,40 +125,41 @@ def poll_new_once(settings: Settings) -> AgentResult:
                 return result
 
             emails = client.fetch_matching(all_matching=False, since_uid=baseline)
-            if not emails:
-                result = AgentResult(
-                    fetched_count=0,
-                    skipped_count=0,
-                    deferred_count=0,
-                    summarized_count=0,
-                    report_path=None,
-                    instagram_count=0,
-                    published_count=0,
-                )
-                store.finish_run(
-                    run_id,
-                    "ok",
-                    f"No new mail found for {mailbox_key}. Nothing to publish.",
-                )
-                return result
 
-            result = process_items(
-                emails=emails,
-                settings=settings,
-                store=store,
-                source_label=settings.email_sender_filter or settings.imap_username,
-                process_all=False,
-                reprocess=False,
+        if not emails:
+            result = AgentResult(
+                fetched_count=0,
+                skipped_count=0,
+                deferred_count=0,
+                summarized_count=0,
+                report_path=None,
+                instagram_count=0,
+                published_count=0,
             )
-            latest_uid = max(int(email.uid) for email in emails if str(email.uid).isdigit())
-            if latest_uid > baseline:
-                store.set_mailbox_watermark(mailbox_key, latest_uid)
             store.finish_run(
                 run_id,
                 "ok",
-                f"Processed {result.summarized_count} new email(s) for {mailbox_key}.",
+                f"No new mail found for {mailbox_key}. Nothing to publish.",
             )
             return result
+
+        result = process_items(
+            emails=emails,
+            settings=settings,
+            store=store,
+            source_label=settings.email_sender_filter or settings.imap_username,
+            process_all=False,
+            reprocess=False,
+        )
+        latest_uid = max(int(email.uid) for email in emails if str(email.uid).isdigit())
+        if latest_uid > baseline:
+            store.set_mailbox_watermark(mailbox_key, latest_uid)
+        store.finish_run(
+            run_id,
+            "ok",
+            f"Processed {result.summarized_count} new email(s) for {mailbox_key}.",
+        )
+        return result
     except ConnectionError as exc:
         _safe_print("Internet disconnected or offline. Sleeping until next cycle...")
         store.finish_run(run_id, "offline", str(exc))
@@ -281,23 +283,23 @@ def _merge_article_fallbacks(articles: list[ArticleData], seed_items) -> list[Ar
 
 
 def _process_new_mail_cycle(settings: Settings, store: AgentStore, mailbox_key: str) -> None:
+    baseline = store.get_mailbox_watermark(mailbox_key)
     with ImapEmailClient(settings) as client:
-        baseline = store.get_mailbox_watermark(mailbox_key)
         emails = client.fetch_matching(all_matching=False, since_uid=baseline)
-        if not emails:
-            return
-        result = process_items(
-            emails=emails,
-            settings=settings,
-            store=store,
-            source_label=settings.email_sender_filter or settings.imap_username,
-            process_all=False,
-            reprocess=False,
-        )
-        latest_uid = max(int(email.uid) for email in emails if str(email.uid).isdigit())
-        if latest_uid > baseline:
-            store.set_mailbox_watermark(mailbox_key, latest_uid)
-        _safe_print(_format_result(result))
+    if not emails:
+        return
+    result = process_items(
+        emails=emails,
+        settings=settings,
+        store=store,
+        source_label=settings.email_sender_filter or settings.imap_username,
+        process_all=False,
+        reprocess=False,
+    )
+    latest_uid = max(int(email.uid) for email in emails if str(email.uid).isdigit())
+    if latest_uid > baseline:
+        store.set_mailbox_watermark(mailbox_key, latest_uid)
+    _safe_print(_format_result(result))
 
 def run_sample(settings: Settings) -> AgentResult:
     sample_emails = [

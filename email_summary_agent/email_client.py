@@ -115,10 +115,14 @@ class ImapEmailClient:
             return
         try:
             self._imap.close()
-        except imaplib.IMAP4.error:
+        except Exception:
+            pass
+
+        try:
+            self._imap.logout()
+        except Exception:
             pass
         finally:
-            self._imap.logout()
             self._imap = None
 
     def fetch_recent(self) -> list[EmailItem]:
