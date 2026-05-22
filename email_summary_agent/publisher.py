@@ -161,6 +161,7 @@ def publish_ready_facebook_posts(settings: Settings, manifest_path: Path) -> int
         return 0
     if not settings.fb_page_id or not settings.fb_page_access_token:
         raise ValueError("FB_PAGE_ID and FB_PAGE_ACCESS_TOKEN are required for Facebook auto-publishing.")
+    _preflight_facebook_publish(settings)
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     published = 0
     for post in manifest.get("posts", []):
@@ -199,16 +200,22 @@ def _score_story_candidate(carousel_dir: Path, caption: str, slide_count: int) -
         if isinstance(item, dict)
     )
     has_source = bool(metadata.get("article_url") or any(isinstance(item, dict) and item.get("url") for item in article_items))
+    article_count = len([item for item in article_items if isinstance(item, dict)])
     caption_words = re.findall(r"[A-Za-z][A-Za-z0-9-]{3,}", caption or "")
     concrete_facts = len(re.findall(r"\b(?:20\d{2}|\d+(?:\.\d+)?%?|GPT|Claude|Gemini|Llama|API|GPU|AI)\b", caption or "", flags=re.I))
     noise_hits = len(re.findall(r"\b(cookie|unsubscribe|privacy policy|terms of service|primary entities|likely themes)\b", caption or "", flags=re.I))
+    source_links = len(re.findall(r"https?://\S+", caption or ""))
+    source_domains = len({re.sub(r"^https?://(?:www\.)?([^/]+).*$", r"\1", item.get("url", ""), flags=re.I) for item in article_items if isinstance(item, dict) and item.get("url")})
 
     score = 0.0
     score += min(slide_count, 10) * 0.08
     score += 0.35 if has_article_image else 0.0
     score += 0.20 if has_source else 0.0
+    score += min(article_count, 4) * 0.05
     score += min(len(caption_words) / 120, 0.25)
     score += min(concrete_facts * 0.05, 0.20)
+    score += min(source_links * 0.03, 0.12)
+    score += min(source_domains * 0.04, 0.12)
     score -= min(noise_hits * 0.20, 0.60)
     score = round(max(0.0, min(score, 1.0)), 3)
 
@@ -219,6 +226,8 @@ def _score_story_candidate(carousel_dir: Path, caption: str, slide_count: int) -
         reasons.append("source URL available")
     if concrete_facts:
         reasons.append(f"{concrete_facts} concrete signal(s)")
+    if source_links:
+        reasons.append(f"{source_links} source link(s)")
     if not reasons:
         reasons.append("best available carousel")
     return score, ", ".join(reasons)
@@ -396,6 +405,39 @@ def _facebook_graph_post(settings: Settings, path: str, fields: dict[str, str]) 
     except urllib.error.HTTPError as exc:
         body = exc.read().decode("utf-8", errors="replace")
         raise RuntimeError(f"Facebook Graph API request failed for {path}: {exc.code} {exc.reason}. Response: {body}") from exc
+
+
+def _preflight_facebook_publish(settings: Settings) -> None:
+    if not settings.fb_app_id or not settings.fb_app_secret:
+        return
+    app_access_token = f"{settings.fb_app_id}|{settings.fb_app_secret}"
+    query = urllib.parse.urlencode({
+        "input_token": settings.fb_page_access_token,
+        "access_token": app_access_token,
+    })
+    request = urllib.request.Request(f"https://graph.facebook.com/debug_token?{query}", method="GET")
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"Facebook token debug failed: {exc.code} {exc.reason}. Response: {body}") from exc
+    except urllib.error.URLError as exc:
+        raise RuntimeError(f"Facebook token debug failed: {exc}") from exc
+
+    data = payload.get("data", {}) if isinstance(payload, dict) else {}
+    if not data.get("is_valid"):
+        raise RuntimeError(f"Facebook Page access token is invalid or expired: {payload}")
+
+    token_type = str(data.get("type", "")).upper()
+    if token_type and token_type != "PAGE":
+        raise RuntimeError(f"Facebook token type must be PAGE, got {token_type}. Debug payload: {payload}")
+
+    scopes = {str(scope) for scope in data.get("scopes", []) if str(scope)}
+    required_scopes = {"pages_manage_posts", "pages_read_engagement"}
+    missing_scopes = sorted(required_scopes - scopes)
+    if missing_scopes:
+        raise RuntimeError(f"Facebook token is missing required scopes: {', '.join(missing_scopes)}. Debug payload: {payload}")
 
 
 def _graph_get(settings: Settings, path: str, fields: dict[str, str]) -> dict:

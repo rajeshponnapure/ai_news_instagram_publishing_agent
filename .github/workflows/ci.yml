@@ -1,0 +1,64 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-and-sample:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONWARNINGS: ignore::DeprecationWarning
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install Playwright browsers (Chromium)
+        if: always()
+        run: |
+          python -m pip install playwright || true
+          npx playwright install --with-deps chromium || npx playwright install chromium || true
+
+      - name: Run tests
+        run: |
+          export PYTHONPATH='.'
+          pytest -q
+
+      - name: Run sample stepwise zero-budget pass
+        env:
+          # Make sure CI run uses zero-publish to avoid accidental network publish
+          CREATE_INSTAGRAM_POSTS: 'false'
+          AUTO_PUBLISH_FACEBOOK: 'false'
+          OLLAMA_URL: ''
+          OLLAMA_MODEL: ''
+        run: |
+          export PYTHONPATH='.'
+          python -m email_summary_agent.agent --sample --once --stepwise --zero-budget
+
+      - name: Upload reports (if any)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports
+          path: reports || |
+            reports

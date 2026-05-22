@@ -188,8 +188,7 @@ Open the PNG files and verify:
 
 - [README.md](README.md) - Project overview and features
 - [SETUP_STEPS.md](SETUP_STEPS.md) - Installation and configuration
-- [scripts/run_free_auto_publish.ps1](scripts/run_free_auto_publish.ps1) - Free cloud publishing
-- [scripts/register_ai_instagram_tasks.ps1](scripts/register_ai_instagram_tasks.ps1) - Local Task Scheduler setup
+- [.github/workflows/instagram-auto-publish.yml](.github/workflows/instagram-auto-publish.yml) - GitHub Actions automation
 
 ---
 

@@ -39,6 +39,7 @@ class _ArticleParser(HTMLParser):
         self.meta: dict[str, str] = {}
         self.paragraphs: list[str] = []
         self.images: list[str] = []
+        self.image_candidates: list[dict[str, str]] = []
         self._capture_title = False
         self._capture_paragraph = False
         self._capture_heading = False
@@ -74,7 +75,18 @@ class _ArticleParser(HTMLParser):
                 or attrs_map.get("data-original")
             )
             if src and not _is_low_value_image(src):
-                self.images.append(html.unescape(src.strip()))
+                cleaned_src = html.unescape(src.strip())
+                self.images.append(cleaned_src)
+                self.image_candidates.append(
+                    {
+                        "src": cleaned_src,
+                        "alt": html.unescape(attrs_map.get("alt", "").strip()),
+                        "title": html.unescape(attrs_map.get("title", "").strip()),
+                        "width": attrs_map.get("width", ""),
+                        "height": attrs_map.get("height", ""),
+                        "loading": attrs_map.get("loading", ""),
+                    }
+                )
 
     def handle_endtag(self, tag: str) -> None:
         tag = tag.lower()
@@ -202,10 +214,10 @@ def fetch_article(url: str, assets_dir: Path) -> ArticleData | None:
         or parser.meta.get("twitter:description")
         or parser.meta.get("description")
     )
-    image_url = parser.meta.get("og:image") or parser.meta.get("twitter:image") or (parser.images[0] if parser.images else "")
+    text = _clean_text(" ".join(parser.paragraphs))  # keep the full article body for downstream chunking
+    image_url = _select_best_image(parser, final_url, title, description, text)
     image_url = urllib.parse.urljoin(final_url, image_url) if image_url else ""
     image_path = _download_image(image_url, assets_dir, final_url) if image_url else ""
-    text = _clean_text(" ".join(parser.paragraphs[:18]))
     # If the basic fetch didn't yield useful paragraphs, try a rendered fetch using Playwright
     if not parser.paragraphs and not (parser.meta or parser.title) and not used_playwright:
         try:
@@ -226,10 +238,11 @@ def fetch_article(url: str, assets_dir: Path) -> ArticleData | None:
                     or parser2.meta.get("description")
                 )
                 if not image_url:
-                    image_url = parser2.meta.get("og:image") or parser2.meta.get("twitter:image") or (parser2.images[0] if parser2.images else "")
+                    text2 = _clean_text(" ".join(parser2.paragraphs))
+                    image_url = _select_best_image(parser2, final_url2, title, description, text2)
                     image_url = urllib.parse.urljoin(final_url2, image_url) if image_url else ""
                     image_path = _download_image(image_url, assets_dir, final_url2) if image_url else image_path
-                text = text or _clean_text(" ".join(parser2.paragraphs[:18]))
+                text = text or _clean_text(" ".join(parser2.paragraphs))
                 final_url = final_url2 or final_url
         except Exception:
             pass
@@ -237,7 +250,7 @@ def fetch_article(url: str, assets_dir: Path) -> ArticleData | None:
         url=final_url,
         title=title,
         description=description,
-        text=_tighten(text, 5000),
+        text=text,
         image_url=image_url,
         image_path=image_path,
     )
@@ -257,7 +270,7 @@ def _read_url(url: str, timeout: int) -> tuple[bytes, str]:
         content_type = response.headers.get("Content-Type", "")
         if "text/html" not in content_type and "application/xhtml" not in content_type:
             raise ValueError(f"Not an HTML page: {content_type}")
-        return response.read(1_500_000), response.geturl()
+        return response.read(4_000_000), response.geturl()  # 4MB — enough for any long-form article
 
 
 def _render_with_playwright(url: str, timeout: int) -> Tuple[bytes, str]:
@@ -340,50 +353,29 @@ def _repair_mojibake(text: str) -> str:
 
 
 def _is_boilerplate(text: str) -> bool:
-    lowered = text.lower()
+    lowered = text.lower().strip()
+    # Reject single-word or very short noise tokens
+    if re.fullmatch(r"(low|medium|high|impact|source|link|\d+\.?)", lowered):
+        return True
     return any(
         phrase in lowered
         for phrase in (
-            "all rights reserved",
-            "sign up for",
-            "subscribe to",
-            "use essential cookies",
-            "advertising partners",
-            "show you ads",
-            "cookie settings",
-            "manage cookies",
-            "accept all cookies",
-            "reject all cookies",
-            "cookie policy",
-            "privacy policy",
-            "terms of service",
-            "cookie preferences",
-            "customize cookie",
-            "essential cookies are necessary",
-            "you may review and change",
-            "cookie notice",
-            "select your cookie",
-            "gdpr",
-            "ccpa",
-            "opt out",
-            "data protection",
-            "third-party cookies",
-            "tracking cookies",
-            "functional cookies",
-            "performance cookies",
-            "analytics cookies",
-            "marketing cookies",
-            "view in browser",
-            "unsubscribe",
-            "manage subscriptions",
-            "email preferences",
-            "you are receiving this",
-            "sent to you because",
-            "no longer wish to receive",
-            "read more",
-            "click here",
-            "learn more",
-            "find out more",
+            "all rights reserved", "sign up for", "subscribe to",
+            "use essential cookies", "advertising partners", "show you ads",
+            "cookie settings", "manage cookies", "accept all cookies",
+            "reject all cookies", "cookie policy", "privacy policy",
+            "terms of service", "cookie preferences", "customize cookie",
+            "essential cookies are necessary", "you may review and change",
+            "cookie notice", "select your cookie", "gdpr", "ccpa",
+            "opt out", "data protection", "third-party cookies",
+            "tracking cookies", "functional cookies", "performance cookies",
+            "analytics cookies", "marketing cookies", "view in browser",
+            "unsubscribe", "manage subscriptions", "email preferences",
+            "you are receiving this", "sent to you because",
+            "no longer wish to receive", "read more", "click here",
+            "learn more", "find out more",
+            "impact: low", "impact: medium", "impact: high",
+            "source:", "link:", "read time:",
         )
     )
 
@@ -411,3 +403,76 @@ def _tighten(text: str, limit: int) -> str:
     if len(text) <= limit:
         return text
     return text[: limit - 3].rsplit(" ", 1)[0].rstrip(".,;:") + "..."
+
+
+def _select_best_image(parser: _ArticleParser, final_url: str, title: str, description: str, text: str) -> str:
+    candidates = []
+    meta_image = parser.meta.get("og:image") or parser.meta.get("twitter:image")
+    if meta_image:
+        candidates.append({"src": meta_image, "source": "meta"})
+    if parser.images:
+        candidates.extend(parser.image_candidates or [{"src": src, "source": "img"} for src in parser.images])
+
+    if not candidates:
+        return ""
+
+    best_src = ""
+    best_score = 0.0
+    context = " ".join(part for part in [title, description, text] if part)
+    for candidate in candidates:
+        src = str(candidate.get("src") or "").strip()
+        if not src or _is_low_value_image(src):
+            continue
+        score = _score_image_candidate(candidate, context, final_url)
+        if score > best_score:
+            best_score = score
+            best_src = src
+    return best_src
+
+
+def _score_image_candidate(candidate: dict[str, str], context: str, final_url: str) -> float:
+    src = str(candidate.get("src") or "").lower()
+    alt = _clean_text(candidate.get("alt", ""))
+    title = _clean_text(candidate.get("title", ""))
+    tokens = _important_tokens(" ".join([src, alt, title, context, final_url]))
+    context_tokens = _important_tokens(context)
+    overlap = tokens & context_tokens
+    score = len(overlap) * 0.22
+    if overlap:
+        score += min(0.20, 0.04 * len(overlap))
+    if alt:
+        score += 0.12
+    if title:
+        score += 0.08
+    if any(term in alt.lower() for term in ("hero", "feature", "cover", "main", "lead")):
+        score += 0.08
+    if any(term in src for term in ("hero", "cover", "article", "feature")):
+        score += 0.08
+    width = _safe_int(candidate.get("width", ""))
+    height = _safe_int(candidate.get("height", ""))
+    if width >= 900 and height >= 500:
+        score += 0.10
+    elif width and height:
+        score += 0.04
+    if any(term in src for term in ("logo", "avatar", "icon", "sprite", "pixel", "tracking")):
+        score -= 0.40
+    if candidate.get("loading", "").lower() == "lazy":
+        score += 0.02
+    if re.search(r"\b(openai|google|microsoft|meta|amazon|aws|nvidia|anthropic|open source|launch|model|api)\b", context, re.I):
+        score += 0.06 if any(term in src for term in ("model", "launch", "api", "product", "news", "blog")) else 0.0
+    return score
+
+
+def _important_tokens(text: str) -> set[str]:
+    return {
+        token
+        for token in re.findall(r"[A-Za-z][A-Za-z0-9-]{3,}", (text or "").lower())
+        if token not in {"about", "after", "article", "blog", "cookie", "image", "news", "privacy", "story", "update", "with"}
+    }
+
+
+def _safe_int(value: str) -> int:
+    try:
+        return int(str(value).strip())
+    except ValueError:
+        return 0

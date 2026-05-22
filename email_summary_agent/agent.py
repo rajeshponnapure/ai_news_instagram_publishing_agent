@@ -1,8 +1,8 @@
 from __future__ import annotations
 
 import argparse
+import os
 import sys
-import time
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -14,7 +14,7 @@ from .digest import parse_news_items
 from .email_client import ImapEmailClient
 from .instagram import write_instagram_carousels
 from .models import EmailItem, EmailSummary
-from .publisher import publish_ready_carousels, write_publish_manifest
+from .publisher import publish_ready_carousels, publish_ready_facebook_posts, write_publish_manifest
 from .report import write_report
 from .summarizer import SummaryProvider
 
@@ -73,34 +73,6 @@ def run_once(
 def run_recent_backfill(settings: Settings) -> AgentResult:
     """Process every matching sender email from the configured lookback window in one run."""
     return run_once(settings, recent_limit=None)
-
-
-def watch_new(settings: Settings) -> None:
-    """Continuously watch for new sender mail and process only arrivals after startup."""
-    settings.validate_email_access()
-    store = AgentStore(settings.db_path)
-    store.initialize()
-    store.mark_stale_runs()
-    mailbox_key = f"{settings.email_folder}|{settings.email_sender_filter or settings.imap_username}"
-
-    try:
-        with ImapEmailClient(settings) as client:
-            baseline = client.fetch_latest_uid()
-        current = store.get_mailbox_watermark(mailbox_key)
-        if baseline > current:
-            store.set_mailbox_watermark(mailbox_key, baseline)
-        _safe_print(
-            f"Watching for new mail from {settings.email_sender_filter or settings.imap_username!r}. "
-            f"Starting after UID {store.get_mailbox_watermark(mailbox_key)}."
-        )
-        while True:
-            try:
-                _process_new_mail_cycle(settings, store, mailbox_key)
-            except ConnectionError:
-                _safe_print("Mailbox temporarily unreachable. Retrying on the next cycle...")
-            time.sleep(max(60, settings.poll_interval_minutes * 60))
-    finally:
-        store.close()
 
 
 def poll_new_once(settings: Settings) -> AgentResult:
@@ -246,11 +218,14 @@ def process_items(
         store.initialize()
 
     try:
+        # Always use configured summary provider (no local-only toggle)
         provider = SummaryProvider(
             provider=settings.summary_provider,
             ollama_url=settings.ollama_url,
             ollama_model=settings.ollama_model,
         )
+        if settings.auto_publish_facebook:
+            settings.validate_facebook_publish()
         
         # Filter out everything we have already processed.
         fresh_emails = emails if reprocess else [email for email in emails if not store.is_processed(email.message_key)]
@@ -263,10 +238,10 @@ def process_items(
                 _safe_print(f"Found {len(fresh_emails)} new emails. Processing the oldest {chunk_size} this round; {deferred_count} left for later.")
                 fresh_emails = fresh_emails[:chunk_size]
 
+        # Strict stepwise processing: fully complete one email end-to-end before next
         summaries: list[tuple[EmailItem, EmailSummary]] = []
         for email in fresh_emails:
-            _safe_print(f"Summarizing: {email.subject}")
-            articles = []
+            _safe_print(f"Stepwise processing: {email.subject}")
             enriched_email = email
             story_limit = _story_limit(settings, email)
             seed_items = parse_news_items(email, max_links=story_limit)
@@ -276,8 +251,31 @@ def process_items(
                     settings.article_assets_dir,
                     max_links=story_limit,
                 )
+            else:
+                articles = []
             articles = _merge_article_fallbacks(articles, seed_items)
-            summaries.append((email, provider.summarize(enriched_email, articles=articles)))
+
+            # Summarize with full-extract (no truncation)
+            summary = provider.summarize(enriched_email, articles=articles, full_extract=True)
+
+            # Create a per-email report and Instagram post immediately
+            report_path = write_report([summary], settings.reports_dir, source_label=source_label)
+            carousel_dirs = []
+            if settings.create_instagram_posts:
+                try:
+                    settings.validate_instagram_publish()
+                    carousel_dirs = write_instagram_carousels([summary], settings.instagram_dir, clear_existing=False)
+                    if carousel_dirs:
+                        manifest_path = write_publish_manifest(carousel_dirs, settings.public_media_base_url)
+                        if manifest_path:
+                            publish_ready_carousels(settings, manifest_path)
+                            if settings.auto_publish_facebook:
+                                publish_ready_facebook_posts(settings, manifest_path)
+                except Exception:
+                    # Do not abort the whole run; mark this email as deferred if rendering/publishing fails
+                    _safe_print(f"Warning: failed to render/publish carousel for {email.subject}")
+
+            summaries.append((email, summary))
 
         report_path = None
         instagram_count = 0
@@ -300,6 +298,8 @@ def process_items(
                 manifest_path = write_publish_manifest(carousel_dirs, settings.public_media_base_url)
                 if manifest_path:
                     published_count = publish_ready_carousels(settings, manifest_path)
+                    if settings.auto_publish_facebook:
+                        publish_ready_facebook_posts(settings, manifest_path)
             for email, summary in summaries:
                 store.mark_processed(email, summary, report_path)
 
@@ -342,25 +342,6 @@ def _merge_article_fallbacks(articles: list[ArticleData], seed_items) -> list[Ar
         )
     return merged
 
-
-def _process_new_mail_cycle(settings: Settings, store: AgentStore, mailbox_key: str) -> None:
-    baseline = store.get_mailbox_watermark(mailbox_key)
-    with ImapEmailClient(settings) as client:
-        emails = client.fetch_matching(all_matching=False, since_uid=baseline)
-    if not emails:
-        return
-    result = process_items(
-        emails=emails,
-        settings=settings,
-        store=store,
-        source_label=settings.email_sender_filter or settings.imap_username,
-        process_all=False,
-        reprocess=False,
-    )
-    latest_uid = max(int(email.uid) for email in emails if str(email.uid).isdigit())
-    if latest_uid > baseline:
-        store.set_mailbox_watermark(mailbox_key, latest_uid)
-    _safe_print(_format_result(result))
 
 def run_sample(settings: Settings) -> AgentResult:
     sample_emails = [
@@ -422,16 +403,6 @@ def run_latest(settings: Settings) -> AgentResult:
     finally:
         store.close()
 
-def watch(settings: Settings) -> None:
-    _safe_print(f"Email summary agent started. Polling every {settings.poll_interval_minutes} minutes.")
-    while True:
-        try:
-            result = run_once(settings)
-            _safe_print(_format_result(result))
-        except Exception as exc:
-            print(f"Run failed: {exc}", file=sys.stderr, flush=True)
-        time.sleep(settings.poll_interval_minutes * 60)
-
 def _format_result(result: AgentResult) -> str:
     report = str(result.report_path) if result.report_path else "no new report"
     return (
@@ -453,17 +424,22 @@ def _ensure_output_dirs(settings: Settings) -> None:
     settings.instagram_dir.mkdir(parents=True, exist_ok=True)
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Local AI news email summary agent")
+    parser = argparse.ArgumentParser(description="AI news email summary agent (CI-only)")
     parser.add_argument("--once", action="store_true", help="Run one email summary pass")
     parser.add_argument("--recent-all", action="store_true", help="Run one pass over all matching sender mail from the lookback window")
-    parser.add_argument("--watch", action="store_true", help="Run forever on the configured interval")
-    parser.add_argument("--watch-new", action="store_true", help="Run forever and only process new mail after startup")
     parser.add_argument("--poll-once", action="store_true", help="Check once for brand-new sender mail and exit if none arrived")
     parser.add_argument("--test-latest", action="store_true", help="Process the latest matching sender email once")
     parser.add_argument("--sample", action="store_true", help="Generate a report from sample emails")
     parser.add_argument("--all", action="store_true", help="Fetch every matching email from the configured sender")
     parser.add_argument("--reprocess", action="store_true", help="Summarize matching emails again even if they were already processed")
+    # NOTE: CLI runs are restricted to GitHub Actions. This binary will early-exit locally.
     args = parser.parse_args(argv)
+
+    # Prevent running locally from the command line — allow only inside GitHub Actions CI.
+    # Tests import functions directly and are unaffected.
+    if not (os.environ.get("GITHUB_ACTIONS", "false").lower() == "true"):
+        print("This agent is configured to run only on GitHub Actions. To run locally for development, set GITHUB_ACTIONS=true (not recommended).", file=sys.stderr)
+        return 1
 
     settings = Settings.from_env()
     try:
@@ -475,12 +451,6 @@ def main(argv: list[str] | None = None) -> int:
             result = poll_new_once(settings)
         elif args.test_latest:
             result = run_latest(settings)
-        elif args.watch:
-            watch(settings)
-            return 0
-        elif args.watch_new:
-            watch_new(settings)
-            return 0
         else:
             result = run_once(settings, all_matching=args.all, reprocess=args.reprocess)
         _safe_print(_format_result(result))

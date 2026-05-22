@@ -267,8 +267,8 @@ def _build_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[s
     for article_index, article in enumerate(articles[:STORIES_PER_CAROUSEL], start=1):
         headline = _tighten(
             _clean_public_text(str(article.get("title") or summary.headline or summary.subject or "AI update"))
-            or _tighten(summary.headline or summary.subject or "AI update", 88),
-            88,
+            or _tighten(summary.headline or summary.subject or "AI update", 100),
+            100,
         )
         topic = ", ".join(summary.topics[:2]) or headline
         image_path = _select_article_image(article, topic)
@@ -281,6 +281,7 @@ def _build_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[s
                 "image_path": image_path,
                 "topic": topic,
                 "url": article.get("url", ""),
+                "source_label": _source_label_from_url(str(article.get("url") or "")),
             }
         )
 
@@ -299,6 +300,7 @@ def _build_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[s
                 "image_path": "",
                 "topic": topic,
                 "url": article.get("url", ""),
+                "source_label": _source_label_from_url(str(article.get("url") or "")),
             }
         )
         slides.append(
@@ -311,6 +313,7 @@ def _build_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[s
                 "image_path": "",
                 "topic": topic,
                 "url": article.get("url", ""),
+                "source_label": _source_label_from_url(str(article.get("url") or "")),
             }
         )
         if len(content_pages) >= 3:
@@ -324,6 +327,7 @@ def _build_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[s
                     "image_path": "",
                     "topic": topic,
                     "url": article.get("url", ""),
+                    "source_label": _source_label_from_url(str(article.get("url") or "")),
                 }
             )
 
@@ -334,6 +338,7 @@ def _build_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[s
             "title": "Follow for the next AI briefing",
             "body": "LIKE | COMMENT | FOLLOW | SAVE",
             "image_path": "",
+            "source_label": "",
         }
     )
 
@@ -355,10 +360,19 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
     font_brand   = _font(ImageFont, 112, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
 
     _draw_background_grid(draw)
+    _draw_accent_frame(draw)
 
     margin = 72
     if slide["kind"] == "image":
         image_box = (margin, 150, CANVAS_W - margin, 1070)
+        _draw_slide_chip(
+            draw,
+            slide.get("eyebrow", "STORY"),
+            (margin + 10, 104, margin + 250, 148),
+            font_meta,
+            fill="#0B0B0B",
+            outline=ACCENT_GREEN,
+        )
         artwork = _load_artwork(
             slide.get("image_path", ""),
             slide.get("topic", "AI"),
@@ -375,6 +389,18 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
             # Paste artwork with minimal padding to display the full image without cropping.
             _paste_contained(image, artwork, image_box, radius=36, pad=6, cover=False)
             draw.rounded_rectangle(image_box, radius=36, outline=ACCENT_GREEN, width=2)
+            overlay_box = (margin + 18, 934, CANVAS_W - margin - 18, 1040)
+            draw.rounded_rectangle(overlay_box, radius=24, fill=(5, 5, 5, 168), outline=(200, 255, 0, 120), width=2)
+            _draw_top_centered_text_block(
+                draw,
+                slide.get("title", "AI update"),
+                (overlay_box[0] + 30, overlay_box[1] + 14, overlay_box[2] - 30, overlay_box[1] + 60),
+                font_title,
+                TEXT_WHITE,
+                max_lines=2,
+            )
+            source_text = f"Source: {slide.get('source_label') or 'email brief'}"
+            _draw_centered_text(draw, source_text, (overlay_box[0] + 24, overlay_box[1] + 58, overlay_box[2] - 24, overlay_box[3] - 12), font_meta, SOFT_WHITE, 1)
         else:
             _draw_no_image_story_card(
                 draw,
@@ -389,47 +415,79 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
             )
     elif slide["kind"] == "cta":
         draw.rounded_rectangle((margin, 92, CANVAS_W - margin, 1258), radius=46, fill="#0B0B0B", outline="#1F1F1F", width=2)
+        draw.rounded_rectangle((92, 126, 988, 184), radius=18, fill=(200, 255, 0, 20), outline=(200, 255, 0, 130), width=2)
         _draw_centered_text(draw, "GRAITECH", (140, 150, 940, 240), font_brand, ACCENT_GREEN, 1)
         _draw_centered_text(draw, "Instagram-ready AI news", (140, 278, 940, 365), font_title, TEXT_WHITE, 1)
         _draw_social_icons(draw, (140, 410, 940, 540), font_meta)
         _draw_centered_logo_panel(image, (240, 575, 840, 945))
         _draw_centered_text(draw, "Save this post for your next AI briefing.", (130, 1000, 950, 1080), font_body, TEXT_WHITE, 1)
         _draw_centered_text(draw, f"{slide_number:02d}/{total_slides:02d}", (450, 1120, 630, 1170), font_meta, ACCENT_GREEN, 1)
+        _draw_cta_pills(draw, font_meta)
     else:
-        _draw_centered_text(draw, slide["eyebrow"], (110, 74, 970, 130), font_eyebrow, ACCENT_GREEN, 1)
-        title_box = (110, 148, 970, 330)
+        # ── Eyebrow label ─────────────────────────────────────────────────────
+        _draw_slide_chip(
+            draw,
+            slide["eyebrow"],
+            (64, 60, 420, 116),
+            font_meta,
+            fill="#0B0B0B",
+            outline=ACCENT_GREEN,
+        )
+        source_label = slide.get("source_label") or _source_label_from_url(str(slide.get("url") or ""))
+        if source_label:
+            _draw_slide_chip(
+                draw,
+                f"SOURCE: {source_label}",
+                (648, 60, 1016, 116),
+                font_meta,
+                fill="#0B0B0B",
+                outline=(80, 80, 80, 180),
+            )
+
+        # ── Title — centered, max 2 lines ─────────────────────────────────────
+        title_box = (84, 150, CANVAS_W - 84, 330)
+        draw.rounded_rectangle((72, 142, CANVAS_W - 72, 352), radius=30, fill=(8, 8, 8, 228), outline=(200, 255, 0, 120), width=2)
         _draw_top_centered_text_block(draw, slide.get("title", ""), title_box, font_title, TEXT_WHITE, max_lines=2)
+        draw.line((104, 340, CANVAS_W - 104, 340), fill=ACCENT_GREEN, width=3)
 
-        # Dark container behind body text — readable over the background grid
-        body_container = (64, 336, CANVAS_W - 64, 900)
-        draw.rounded_rectangle(body_container, radius=24, fill=(8, 8, 8, 230))
+        # ── Body container — same dark rounded style as supporting box ─────────
+        body_container = (64, 364, CANVAS_W - 64, 902)
+        draw.rounded_rectangle(body_container, radius=30, fill=(8, 8, 8, 235), outline=(40, 40, 40, 180), width=1)
+        draw.rounded_rectangle((84, 384, 316, 436), radius=18, fill=(200, 255, 0, 18), outline=(200, 255, 0, 110), width=2)
+        _draw_centered_text(draw, "WHAT HAPPENED", (92, 392, 308, 430), font_meta, ACCENT_GREEN, 1)
 
-        body_box = (100, 358, 980, 886)
-        _draw_left_text_block(
+        # Body text — centered horizontally, top-aligned vertically
+        body_box = (96, 420, CANVAS_W - 96, 886)
+        _draw_centered_body_block(
             draw,
             slide["body"],
             box=body_box,
             font=font_body,
             fill=SOFT_WHITE,
-            line_gap=12,
-            max_lines=11,
+            line_gap=14,
+            max_lines=10,
         )
+
+        # ── Supporting note box ───────────────────────────────────────────────
         supporting = str(slide.get("supporting", "")).strip()
         if supporting:
-            support_box = (100, 908, 980, 1200)
-            draw.rounded_rectangle(support_box, radius=28, outline=ACCENT_GREEN, width=2, fill="#0A0A0A")
+            support_box = (64, 912, CANVAS_W - 64, 1210)
+            draw.rounded_rectangle(support_box, radius=28, outline=ACCENT_GREEN, width=2, fill=(10, 10, 10, 245))
+            draw.line((108, 956, 972, 956), fill=(200, 255, 0, 60), width=2)
             font_support = _font(ImageFont, 34, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf"])
             _draw_centered_text_block(
                 draw,
                 supporting,
-                box=(130, 936, 950, 1172),
+                box=(96, 940, CANVAS_W - 96, 1182),
                 font=font_support,
                 fill=TEXT_WHITE,
                 line_gap=14,
                 max_lines=5,
             )
-        draw.rounded_rectangle((160, 1248, 920, 1262), radius=3, fill=ACCENT_GREEN)
-        _draw_centered_text(draw, f"{slide_number:02d}/{total_slides:02d}", (450, 1270, 630, 1310), font_meta, SOFT_WHITE, 1)
+
+        # ── Slide counter ─────────────────────────────────────────────────────
+        draw.rounded_rectangle((160, 1252, 920, 1266), radius=3, fill=ACCENT_GREEN)
+        _draw_centered_text(draw, f"{slide_number:02d}/{total_slides:02d}", (450, 1274, 630, 1314), font_meta, SOFT_WHITE, 1)
 
     path.parent.mkdir(parents=True, exist_ok=True)
     _draw_watermark_overlay(image)
@@ -445,25 +503,30 @@ def _draw_background_grid(draw) -> None:
     draw.rounded_rectangle((28, 28, 1052, 1322), radius=42, outline=(255, 255, 255, 20), width=2)
 
 
-def _draw_header(draw, font_meta, font_page, slide_number: int, total_slides: int, email_dt: datetime) -> None:
-    draw.text((72, 78), "AI SIGNAL DAILY", fill=TEXT_WHITE, font=font_meta)
-    draw.text((72, 120), email_dt.strftime("%d %b %Y - %H:%M"), fill=SOFT_WHITE, font=font_meta)
-    page = f"{slide_number:02d}/{total_slides:02d}"
-    bbox = draw.textbbox((0, 0), page, font=font_page)
-    draw.text((1008 - (bbox[2] - bbox[0]), 86), page, fill=ACCENT_GREEN, font=font_page)
+def _draw_accent_frame(draw) -> None:
+    draw.line((86, 94, 318, 94), fill=ACCENT_GREEN, width=4)
+    draw.line((762, 94, 994, 94), fill=ACCENT_GREEN, width=4)
+    draw.line((86, 1256, 318, 1256), fill=ACCENT_GREEN, width=4)
+    draw.line((762, 1256, 994, 1256), fill=ACCENT_GREEN, width=4)
+    draw.line((92, 124, 92, 214), fill=(200, 255, 0, 70), width=3)
+    draw.line((988, 124, 988, 214), fill=(200, 255, 0, 70), width=3)
 
 
-def _draw_text_box(draw, text: str, box: tuple[int, int, int, int], font, fill: str, line_gap: int, max_lines: int) -> int:
-    x1, y1, x2, y2 = box
-    lines = _wrap_to_width(draw, text, font, x2 - x1, max_lines)
-    y = y1
-    for line in lines:
-        if y > y2:
-            break
-        draw.text((x1, y), line, fill=fill, font=font)
-        bbox = draw.textbbox((x1, y), line, font=font)
-        y += (bbox[3] - bbox[1]) + line_gap
-    return y
+def _draw_slide_chip(draw, text: str, box: tuple[int, int, int, int], font, fill: str, outline: tuple[int, int, int] | str) -> None:
+    draw.rounded_rectangle(box, radius=18, fill=fill, outline=outline, width=2)
+    _draw_centered_text(draw, text, box, font, TEXT_WHITE, 1)
+
+
+def _draw_cta_pills(draw, font_meta) -> None:
+    pills = [
+        ((138, 1160, 304, 1212), "SAVE"),
+        ((324, 1160, 540, 1212), "FOLLOW"),
+        ((560, 1160, 790, 1212), "SHARE"),
+        ((810, 1160, 942, 1212), "READ"),
+    ]
+    for box, label in pills:
+        draw.rounded_rectangle(box, radius=20, fill="#0A0A0A", outline=(200, 255, 0, 120), width=2)
+        _draw_centered_text(draw, label, box, font_meta, ACCENT_GREEN, 1)
 
 
 def _draw_centered_text(draw, text: str, box: tuple[int, int, int, int], font, fill: str, max_lines: int) -> int:
@@ -488,10 +551,6 @@ def _draw_centered_text_block(draw, text: str, box: tuple[int, int, int, int], f
         draw.text((x, y), line, fill=fill, font=font)
         y += text_height + line_gap
     return y
-
-
-def _draw_single_line(draw, text: str, xy: tuple[int, int], font, fill: str, max_chars: int) -> None:
-    draw.text(xy, _tighten(text, max_chars), fill=fill, font=font)
 
 
 def _wrap_to_width(draw, text: str, font, width: int, max_lines: int) -> list[str]:
@@ -755,8 +814,10 @@ def _draw_top_centered_text_block(draw, text: str, box: tuple[int, int, int, int
     return y
 
 
-def _draw_left_text_block(draw, text: str, box: tuple[int, int, int, int], font, fill: str, line_gap: int, max_lines: int) -> int:
-    """Draw left-aligned text block starting at the top-left of the box."""
+def _draw_centered_body_block(draw, text: str, box: tuple[int, int, int, int], font, fill: str, line_gap: int, max_lines: int) -> int:
+    """Draw body text centered horizontally, top-aligned vertically within the box.
+    Each line is individually centered so the text looks balanced on the slide.
+    """
     x1, y1, x2, y2 = box
     width = x2 - x1
     lines = _wrap_to_width(draw, text, font, width, max_lines)
@@ -764,9 +825,12 @@ def _draw_left_text_block(draw, text: str, box: tuple[int, int, int, int], font,
     for line in lines:
         if y > y2:
             break
-        draw.text((x1, y), line, fill=fill, font=font)
-        bbox = draw.textbbox((x1, y), line, font=font)
-        y += (bbox[3] - bbox[1]) + line_gap
+        bbox = draw.textbbox((0, 0), line, font=font)
+        line_w = bbox[2] - bbox[0]
+        line_h = bbox[3] - bbox[1]
+        x = x1 + max(0, (width - line_w) // 2)
+        draw.text((x, y), line, fill=fill, font=font)
+        y += line_h + line_gap
     return y
 
 
@@ -780,6 +844,7 @@ def _select_article_image(article: dict[str, Any], topic: str) -> str:
     title = str(article.get("title") or "")
     url = str(article.get("url") or "")
     query_text = _image_query_text(article, topic)
+    query_text = _tighten(query_text, 1200)
 
     # 1. Blog/article image — most relevant, already downloaded by enricher
     for key in ("image_path", "image_url"):
@@ -816,6 +881,7 @@ def _image_query_text(article: dict[str, Any], topic: str) -> str:
             article.get("description"),
             article.get("summary"),
             article.get("excerpt"),
+            " ".join(article.get("key_points", [])[:6]) if isinstance(article.get("key_points"), list) else "",
             topic,
             _source_label_from_url(str(article.get("url") or "")),
         )
@@ -861,7 +927,7 @@ def _download_to_library(url: str, seed_text: str) -> str | None:
     dest.write_bytes(data)
     # Save a sidecar metadata file so we can match images to topics later
     meta = IMAGE_LIBRARY_DIR / f"{cache_key}.json"
-    meta_data = {"url": url, "seed": seed_text, "path": str(dest), "tokens": sorted(_important_image_tokens(seed_text))}
+    meta_data = {"url": url, "seed": seed_text, "path": str(dest), "tokens": sorted(_important_image_tokens(seed_text)), "topic": _image_topic_signature(seed_text)}
     meta.write_text(json.dumps(meta_data, ensure_ascii=True), encoding="utf-8")
     _upsert_image_index(cache_key, meta_data)
     return str(dest)
@@ -874,24 +940,30 @@ def _find_library_image(query: str) -> str | None:
     query_tokens = _important_image_tokens(query)
     if not query_tokens:
         return None
+    query_brand = _brand_tokens(query)
+    query_signature = _image_topic_signature(query)
     best_path: str | None = None
     best_score = 0.0
     for image_id, meta in _iter_image_metadata():
         seed = str(meta.get("seed", ""))
         meta_tokens = set(meta.get("tokens") or []) or _important_image_tokens(seed)
         overlap = query_tokens & meta_tokens
-        if not overlap:
-            continue
-        score = len(overlap) / max(4, len(query_tokens))
-        if any(token in overlap for token in _brand_tokens(query)):
-            score += 0.35
+        score = len(overlap) / max(4, len(query_tokens)) if overlap else 0.0
+        if query_brand:
+            score += 0.25 * len(query_brand & meta_tokens)
+        if query_signature and query_signature == _image_topic_signature(seed):
+            score += 0.18
+        if any(token in seed.lower() for token in query_tokens):
+            score += 0.10
+        if any(token in overlap for token in query_brand):
+            score += 0.20
         if score <= best_score:
             continue
         candidate = _image_path_from_metadata(image_id, meta)
         if candidate:
             best_score = score
             best_path = str(candidate)
-    return best_path if best_score >= 0.22 else None
+    return best_path if best_score >= 0.45 else None
 
 
 def _iter_image_metadata() -> list[tuple[str, dict[str, Any]]]:
@@ -1001,41 +1073,12 @@ def _compose_article_narrative(summary: EmailSummary, article: dict[str, Any]) -
     return _tighten(re.sub(r"\s+", " ", narrative).strip(), 2400)
 
 
-def _split_narrative_for_two_pages(text: str) -> tuple[str, str]:
-    text = re.sub(r"\s+", " ", text or "").strip()
-    if not text:
-        return ("", "")
-    sentences = re.split(r"(?<=[\.\!\?])\s+", text)
-    first_parts: list[str] = []
-    second_parts: list[str] = []
-    for sentence in sentences:
-        candidate = " ".join(first_parts + [sentence]).strip()
-        if len(candidate) <= 620 or not first_parts:
-            first_parts.append(sentence)
-        else:
-            second_parts.append(sentence)
-    first = " ".join(first_parts).strip()
-    second = " ".join(second_parts).strip()
-    if not second and len(first) > 420:
-        midpoint = max(1, len(first) // 2)
-        split_at = first.rfind(" ", 0, midpoint)
-        if split_at == -1:
-            split_at = midpoint
-        second = first[split_at:].strip()
-        first = first[:split_at].strip()
-    return _tighten(first, 680), _tighten(second, 650)
-
-
 def _split_narrative_for_content_pages(text: str) -> list[str]:
     text = re.sub(r"\s+", " ", text or "").strip()
     if not text:
         return []
     if len(text) <= 1040:
         return _split_narrative_for_page_count(text, page_count=2, target_chars=520)
-    return _split_narrative_for_page_count(text, page_count=3, target_chars=520)
-
-
-def _split_narrative_for_three_pages(text: str) -> list[str]:
     return _split_narrative_for_page_count(text, page_count=3, target_chars=520)
 
 
@@ -1083,22 +1126,6 @@ def _split_by_length(text: str, parts: int) -> list[str]:
     return chunks
 
 
-def _fetch_unsplash_for_topic(topic: str, width: int, height: int) -> str | None:
-    try:
-        # Use high-quality parameter and add orientation for better images
-        clean_topic = re.sub(r"[^a-zA-Z0-9 ]+", " ", topic or "technology").strip() or "technology"
-        query = urllib.parse.quote_plus(clean_topic)
-        # Use Unsplash's featured endpoint for high-quality curated images
-        url = f"https://source.unsplash.com/1200x1200/?{query},professional,high-quality"
-        tmp_dir = Path(tempfile.gettempdir()) / "ai_news_instagram"
-        tmp_dir.mkdir(parents=True, exist_ok=True)
-        dest = tmp_dir / f"{_slugify(topic)}_{width}x{height}_{int(datetime.now().timestamp())}.jpg"
-        _download_url(url, dest)
-        return str(dest)
-    except Exception:
-        return None
-
-
 def _download_remote_image(url: str) -> Path | None:
     try:
         tmp_dir = Path(tempfile.gettempdir()) / "ai_news_instagram"
@@ -1134,10 +1161,13 @@ def _find_reference_image_for_article(article: dict[str, Any], topic: str) -> st
 
 def _reference_image_queries(article: dict[str, Any], topic: str) -> list[str]:
     title = _strip_decorative_symbols(str(article.get("title") or "")).strip()
+    description = _strip_decorative_symbols(str(article.get("description") or article.get("summary") or article.get("excerpt") or "")).strip()
     source = _source_label_from_url(str(article.get("url") or ""))
     raw_candidates = [
         title,
+        description,
         *_brand_queries(title),
+        *_brand_queries(description),
         source,
         topic,
         "artificial intelligence" if "ai" in f"{title} {topic}".lower() else "",
@@ -1233,6 +1263,11 @@ def _important_query_tokens(query: str) -> list[str]:
     return [token for token in tokens if token not in blocked and len(token) >= 4]
 
 
+def _image_topic_signature(text: str) -> tuple[str, ...]:
+    tokens = [token for token in _important_image_tokens(text) if token not in {"latest", "update", "article", "story", "image"}]
+    return tuple(sorted(tokens)[:5])
+
+
 def _download_reference_image(image_url: str, cache_key: str, seed_text: str = "") -> str | None:
     try:
         request = urllib.request.Request(image_url, headers={"User-Agent": "AIInstagramNewsAgent/1.0"})
@@ -1274,16 +1309,6 @@ def _query_looks_like_company(query: str) -> bool:
     return any(company.lower() in lowered for company in ("openai", "google", "microsoft", "meta", "amazon", "aws", "nvidia", "anthropic"))
 
 
-def _pick_local_article_asset(seed_text: str) -> Path | None:
-    if not ARTICLE_ASSET_DIR.exists():
-        return None
-    candidates = [path for path in ARTICLE_ASSET_DIR.iterdir() if path.is_file() and path.suffix.lower() in {".jpg", ".jpeg", ".png", ".webp", ".img"}]
-    if not candidates:
-        return None
-    index = abs(hash(seed_text or "ai-news")) % len(candidates)
-    return candidates[index]
-
-
 def _cleanup_existing_outputs(output_dir: Path) -> None:
     try:
         if not output_dir.exists():
@@ -1299,39 +1324,6 @@ def _cleanup_existing_outputs(output_dir: Path) -> None:
         return
 
 
-def _split_text_into_sections(text: str, approx_chars: int = 380) -> list[str]:
-    # Split by paragraphs first, then fall back to sentence boundaries.
-    if not text:
-        return [""]
-    paras = [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]
-    if not paras:
-        paras = [text.strip()]
-    sections: list[str] = []
-    for para in paras:
-        if len(para) <= approx_chars:
-            sections.append(para)
-        else:
-            # split long paragraph into sentence-like chunks
-            parts = re.split(r"(?<=[\.\!\?])\s+", para)
-            current = ""
-            for part in parts:
-                if not current:
-                    current = part
-                elif len(current) + 1 + len(part) <= approx_chars:
-                    current = current + " " + part
-                else:
-                    sections.append(current.strip())
-                    current = part
-            if current:
-                sections.append(current.strip())
-    # Ensure we don't exceed reasonable slide count
-    if len(sections) > (MAX_CAROUSEL_SLIDES - 2):
-        # merge trailing sections
-        combined = " ".join(sections[(MAX_CAROUSEL_SLIDES - 3):])
-        sections = sections[: (MAX_CAROUSEL_SLIDES - 3)] + [combined]
-    return sections or [text.strip()]
-
-
 def _build_caption(summary: EmailSummary) -> str:
     """Build a fully unique caption for each carousel post.
 
@@ -1339,7 +1331,8 @@ def _build_caption(summary: EmailSummary) -> str:
     is derived from *this* summary's article content so no two posts share
     the same body even when they come from the same email digest.
     """
-    article = (_article_items(summary) or [{}])[0]
+    articles = _article_items(summary)
+    article = articles[0] if articles else {}
 
     # ── Lead paragraph ────────────────────────────────────────────────────────
     lead = _clean_public_text(
@@ -1387,6 +1380,14 @@ def _build_caption(summary: EmailSummary) -> str:
     else:
         closing = "AI news curated and summarised by Graitech."
 
+    source_lines: list[str] = []
+    for index, item in enumerate(articles[:4], start=1):
+        url = _clean_public_text(str(item.get("url") or ""))
+        if not url:
+            continue
+        title = _tighten(_clean_public_text(str(item.get("title") or "")) or f"Story {index}", 120)
+        source_lines.append(f"{index}. {title}: {url}")
+
     lines = [
         _tighten(summary.headline or summary.subject or "AI news", 120),
         "",
@@ -1396,6 +1397,7 @@ def _build_caption(summary: EmailSummary) -> str:
         *bullets,
         "",
         closing,
+        *(["", "Sources:", *source_lines] if source_lines else []),
         "",
         hashtags,
     ]
@@ -1486,6 +1488,9 @@ def _clean_public_text(text: str) -> str:
         # Drop sentences that are mostly cookie/legal noise even if not exact match
         if re.search(r"\bcookies?\b|\bGDPR\b|\bCCPA\b|\bopt.out\b|\bunsubscribe\b", sentence, re.I):
             continue
+        # Drop newsletter metadata lines like "Impact: HIGH", "Source: X", "Link: 3"
+        if re.fullmatch(r"\s*(impact|source|link|read time)\s*:\s*(low|medium|high|\d+.*)?", sentence, re.I):
+            continue
         kept.append(sentence.strip())
     result = " ".join(part for part in kept if part)
     return result
@@ -1557,10 +1562,6 @@ def _fallback_public_points(summary: EmailSummary) -> list[str]:
     return points
 
 
-def _fallback_story_second_page(summary: EmailSummary, article: dict[str, Any]) -> str:
-    return _fallback_story_page(summary, article, 3)
-
-
 def _fallback_story_page(summary: EmailSummary, article: dict[str, Any], page_number: int) -> str:
     companies = ", ".join(_clean_entity_list(summary.companies)[:3])
     topics = ", ".join(summary.topics[:3])
@@ -1595,54 +1596,6 @@ def _dedupe_lead_text(text: str, headline: str) -> str:
             remainder = remainder[1:].strip()
         return remainder or headline
     return text
-
-
-def _signal_line(summary: EmailSummary) -> str:
-    parts = []
-    if summary.companies:
-        parts.append(f"Companies: {', '.join(summary.companies[:2])}")
-    if summary.models:
-        parts.append(f"Models: {', '.join(summary.models[:2])}")
-    if summary.topics:
-        parts.append(f"Topics: {', '.join(summary.topics[:2])}")
-    return " | ".join(parts)
-
-
-def _takeaway_title(index: int, summary: EmailSummary, point: str) -> str:
-    if index == 1 and summary.companies:
-        return summary.companies[0]
-    if index == 2 and summary.models:
-        return summary.models[0]
-    return f"Takeaway {index}"
-
-
-def _takeaway_support(summary: EmailSummary, index: int) -> str:
-    if summary.topics:
-        return f"Focus: {', '.join(summary.topics[:2])}."
-    return f"Key point {index} pulled from the email summary."
-
-
-def _watch_title(summary: EmailSummary) -> str:
-    if summary.topics:
-        return _tighten(f"Watch: {summary.topics[0]}", 72)
-    if summary.companies:
-        return _tighten(f"Watch: {summary.companies[0]}", 72)
-    return "What to watch next"
-
-
-def _first_image(articles: list[dict[str, Any]]) -> str:
-    for article in articles:
-        image_path = article.get("image_path", "")
-        if image_path:
-            return image_path
-    return ""
-
-
-def _recap_text(summary: EmailSummary, articles: list[dict[str, Any]]) -> str:
-    if articles:
-        titles = [article.get("title", "") for article in articles[:3] if article.get("title")]
-        return "This email points to " + "; ".join(titles) + ". The common thread: " + (", ".join(summary.topics[:3]) or "AI industry movement") + "."
-    return " ".join(summary.key_points[:3]) or summary.summary
 
 
 def _supporting_note(summary: EmailSummary, article: dict[str, Any], article_index: int, heading: str, variant: str = "why") -> str:
@@ -1723,20 +1676,3 @@ def _clean_entity_list(values: list[str]) -> list[str]:
         seen.add(key)
         cleaned.append(value)
     return cleaned
-
-
-def _derive_story_points(text: str, summary: EmailSummary) -> list[str]:
-    text = _clean_public_text(text)
-    if not text:
-        return []
-    sentences = [part.strip() for part in re.split(r"(?<=[\.!?])\s+", text) if part.strip()]
-    points: list[str] = []
-    for sentence in sentences:
-        if len(sentence) < 40:
-            continue
-        points.append(_tighten(sentence, 160))
-        if len(points) >= 3:
-            break
-    if points:
-        return points
-    return _fallback_public_points(summary)

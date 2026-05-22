@@ -16,8 +16,8 @@ from email_summary_agent.digest import parse_news_items
 from email_summary_agent.email_client import extract_body
 from email_summary_agent.instagram import _build_slide_specs, _find_library_image, _split_summary_for_carousels
 from email_summary_agent.models import EmailItem, EmailSummary
-from email_summary_agent.publisher import _score_story_candidate
-from email_summary_agent.summarizer import _article_item_for_instagram
+from email_summary_agent.publisher import _preflight_facebook_publish, _score_story_candidate
+from email_summary_agent.summarizer import _article_item_for_instagram, _format_prompt_body, SummaryProvider
 from email_summary_agent.article_enricher import ArticleData
 from scripts.publish_latest_instagram import _facebook_publish_enabled
 
@@ -146,6 +146,77 @@ class DigestPipelineTests(unittest.TestCase):
         self.assertFalse(enabled)
         self.assertIn("FB_PAGE_ACCESS_TOKEN", mocked_print.call_args.args[0])
 
+    def test_facebook_preflight_accepts_valid_page_token(self) -> None:
+        settings = _settings(
+            auto_publish_facebook=True,
+            fb_page_id="1154443704417851",
+            fb_page_access_token="page-token",
+            fb_app_id="123456789",
+            fb_app_secret="app-secret",
+        )
+
+        class DummyResponse:
+            def __init__(self, payload: dict[str, object]) -> None:
+                self._payload = payload
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, exc_type, exc, tb):
+                return False
+
+            def read(self) -> bytes:
+                import json
+
+                return json.dumps(self._payload).encode("utf-8")
+
+        payload = {
+            "data": {
+                "is_valid": True,
+                "type": "PAGE",
+                "scopes": ["pages_manage_posts", "pages_read_engagement"],
+            }
+        }
+
+        with patch("email_summary_agent.publisher.urllib.request.urlopen", return_value=DummyResponse(payload)):
+            _preflight_facebook_publish(settings)
+
+    def test_facebook_preflight_rejects_wrong_token_scope(self) -> None:
+        settings = _settings(
+            auto_publish_facebook=True,
+            fb_page_id="1154443704417851",
+            fb_page_access_token="page-token",
+            fb_app_id="123456789",
+            fb_app_secret="app-secret",
+        )
+
+        class DummyResponse:
+            def __init__(self, payload: dict[str, object]) -> None:
+                self._payload = payload
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, exc_type, exc, tb):
+                return False
+
+            def read(self) -> bytes:
+                import json
+
+                return json.dumps(self._payload).encode("utf-8")
+
+        payload = {
+            "data": {
+                "is_valid": True,
+                "type": "USER",
+                "scopes": ["pages_read_engagement"],
+            }
+        }
+
+        with patch("email_summary_agent.publisher.urllib.request.urlopen", return_value=DummyResponse(payload)):
+            with self.assertRaises(RuntimeError):
+                _preflight_facebook_publish(settings)
+
     def test_image_library_rejects_unrelated_cached_image(self) -> None:
         with TemporaryDirectory() as tmp:
             image_dir = Path(tmp)
@@ -194,6 +265,37 @@ class DigestPipelineTests(unittest.TestCase):
 
         self.assertTrue(item["rag_angles"])
         self.assertTrue(item["rag_rules"])
+
+    def test_full_extract_prompt_keeps_whole_blog_text(self) -> None:
+        body = "Paragraph one with details.\n\nParagraph two with more details.\n\nParagraph three finishes the story."
+
+        self.assertEqual(_format_prompt_body(body, full_extract=True), body)
+
+    def test_full_extract_summary_includes_later_blog_details(self) -> None:
+        provider = SummaryProvider(provider="local", ollama_url="http://localhost:11434", ollama_model="llama3.2:3b")
+        email = EmailItem(
+            uid="1",
+            message_id="<blog@example.com>",
+            sender="writer@example.com",
+            subject="Blog post",
+            date="Thu, 21 May 2026 09:00:00 +0530",
+            body="",
+        )
+        article = ArticleData(
+            url="https://example.com/blog",
+            title="Long blog post",
+            description="First part explains the launch.",
+            text=(
+                "First part explains the launch. "
+                "Second part gives technical details and rollout notes. "
+                "Final part explains limitations, follow-up steps, and why readers should care."
+            ),
+        )
+
+        summary = provider.summarize(email, article=article)
+
+        self.assertIn("Final part explains limitations", summary.summary)
+        self.assertGreaterEqual(len(summary.key_points), 3)
 
 
 def _summary_with_articles(count: int, long: bool = False) -> EmailSummary:
@@ -262,6 +364,8 @@ def _settings(**overrides) -> Settings:
         auto_publish_facebook=False,
         fb_page_id="",
         fb_page_access_token="",
+        fb_app_id="",
+        fb_app_secret="",
     )
     values.update(overrides)
     return Settings(**values)

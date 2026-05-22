@@ -74,6 +74,8 @@ class Settings:
     auto_publish_facebook: bool
     fb_page_id: str
     fb_page_access_token: str
+    fb_app_id: str
+    fb_app_secret: str
 
     @classmethod
     def from_env(cls) -> "Settings":
@@ -111,6 +113,8 @@ class Settings:
             auto_publish_facebook=_bool_env("AUTO_PUBLISH_FACEBOOK", False),
             fb_page_id=os.environ.get("FB_PAGE_ID", ""),
             fb_page_access_token=os.environ.get("FB_PAGE_ACCESS_TOKEN", os.environ.get("IG_ACCESS_TOKEN", "")),
+            fb_app_id=os.environ.get("FB_APP_ID", ""),
+            fb_app_secret=os.environ.get("FB_APP_SECRET", ""),
         )
 
     def validate_email_access(self) -> None:

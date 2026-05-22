@@ -107,21 +107,9 @@ python -m email_summary_agent --once --all
 python -m email_summary_agent --once --all --reprocess
 ```
 
-### Watch Mode (Continuous Monitoring)
-```powershell
-# Run continuously, processing new emails as they arrive
-python -m email_summary_agent --watch-new
-```
+### Automated With GitHub Actions (Only Mode)
 
-### Automated With GitHub Actions (Recommended)
-
-Enable GitHub Pages from Actions and add the required repository secrets. The workflow checks for new sender email every 15 minutes and publishes generated carousel assets through GitHub Pages before posting to Instagram.
-
-### Reset Generated Content
-```powershell
-# Delete all reports and Instagram assets
-powershell -ExecutionPolicy Bypass -File .\scripts\reset_generated_outputs.ps1
-```
+The agent is designed to run exclusively in GitHub Actions. Enable GitHub Pages from Actions and add the required repository secrets. The workflow checks for new sender email every 15 minutes and publishes generated carousel assets through GitHub Pages before posting to Instagram.
 
 ---
 
@@ -151,10 +139,9 @@ AI_Instagram_News_Agent/
 │   └── instagram_posts/          # Instagram carousel assets
 │
 ├── scripts/                      # Utility scripts
-│   ├── run_email_summary_watch.ps1
-│   ├── run_email_summary_once.ps1
-│   ├── reset_generated_outputs.ps1
-│   └── generate_instagram_from_reports.py
+│   ├── download_fonts.py
+│   ├── generate_instagram_from_reports.py
+│   └── publish_latest_instagram.py
 │
 ├── logs/                         # Application logs
 ├── .env                          # Configuration (add your credentials here)
@@ -418,9 +405,8 @@ For issues or questions:
 ---
 
 **Ready to automate your AI news workflow?** Start with:
-- **[LOCAL_AUTOMATION_GUIDE.md](LOCAL_AUTOMATION_GUIDE.md)** ← **Start here!** Complete setup with Windows Task Scheduler
 - [CAROUSEL_QUALITY_GUIDE.md](CAROUSEL_QUALITY_GUIDE.md) ← Fix repeated slides, get beautiful content
-- [SETUP_STEPS.md](SETUP_STEPS.md) ← Detailed configuration reference
+- [GITHUB_ACTIONS_SETUP.md](GITHUB_ACTIONS_SETUP.md) ← GitHub Actions configuration guide
 
 ## GitHub Actions automation
 

@@ -166,6 +166,7 @@ class SummaryProvider:
         email: EmailItem,
         article: ArticleData | None = None,
         articles: list[ArticleData] | None = None,
+        full_extract: bool = True,
     ) -> EmailSummary:
         article_list = articles or ([article] if article else [])
 
@@ -190,17 +191,17 @@ class SummaryProvider:
             )
             if self.provider in {"auto", "ollama"} and self._can_use_ollama():
                 try:
-                    return _with_article_fields(self._summarize_with_ollama(pseudo_email), article_list)
+                    return _with_article_fields(self._summarize_with_ollama(pseudo_email, full_extract=full_extract), article_list)
                 except Exception:
                     if self.provider == "ollama":
                         raise
-            return _with_article_fields(_summarize_article_list(pseudo_email, article_list), article_list)
+            return _with_article_fields(_summarize_article_list(pseudo_email, article_list, full_extract=full_extract), article_list)
 
         if _is_digest_subject(email.subject):
             return _with_article_fields(_summarize_digest_email(email), article_list)
         if self.provider in {"auto", "ollama"} and self._can_use_ollama():
             try:
-                return _with_article_fields(self._summarize_with_ollama(email), article_list)
+                return _with_article_fields(self._summarize_with_ollama(email, full_extract=full_extract), article_list)
             except Exception:
                 if self.provider == "ollama":
                     raise
@@ -219,8 +220,9 @@ class SummaryProvider:
             self._ollama_available = False
         return self._ollama_available
 
-    def _summarize_with_ollama(self, email: EmailItem) -> EmailSummary:
-        rag_context = format_context(f"{email.subject}\n{email.body[:4000]}", limit=4)
+    def _summarize_with_ollama(self, email: EmailItem, full_extract: bool = True) -> EmailSummary:
+        rag_context = format_context(f"{email.subject}\n{email.body}", limit=6)
+        prompt_body = _format_prompt_body(email.body, full_extract=full_extract)
         prompt = (
             "Return ONLY valid JSON with these exact keys: "
             "headline, what_happened, why_it_matters, what_to_watch, "
@@ -228,6 +230,7 @@ class SummaryProvider:
             f"Skill guide:\n{_load_summary_skill()}\n\n"
             f"{rag_context}\n\n"
             "Rules:\n"
+            "- Extract every meaningful detail from the article body when full_extract is enabled.\n"
             "- headline: one punchy sentence, max 100 chars, names the real event.\n"
             "- what_happened: 2-3 sentences. What was announced/released/changed. "
             "  Name the company, product, model, or person. Include concrete details "
@@ -242,7 +245,7 @@ class SummaryProvider:
             "- confidence: float 0-1.\n"
             "- Do NOT invent facts. If the article does not say it, omit it.\n"
             "- Do NOT include cookie consent text, legal boilerplate, or newsletter noise.\n\n"
-            f"Subject: {email.subject}\nDate: {email.date}\nBody:\n{email.body[:6000]}"
+            f"Subject: {email.subject}\nDate: {email.date}\nBody:\n{prompt_body}"
         )
         payload = {
             "model": self.ollama_model,
@@ -267,8 +270,8 @@ class SummaryProvider:
         what_happened = _string(parsed.get("what_happened"))
         why_matters = _string(parsed.get("why_it_matters"))
         what_watch = _string(parsed.get("what_to_watch"))
-        summary_text = " ".join(p for p in [what_happened, why_matters] if p)
-        key_points = _string_list(parsed.get("key_points"))[:6]
+        summary_text = " ".join(p for p in [what_happened, why_matters, what_watch] if p)
+        key_points = _string_list(parsed.get("key_points"))[:12]
         if not key_points:
             key_points = [p for p in [what_happened, why_matters, what_watch] if p]
         return EmailSummary(
@@ -276,7 +279,7 @@ class SummaryProvider:
             subject=email.subject,
             source_date=email.date,
             headline=_string(parsed.get("headline")) or _fallback_headline(email),
-            summary=_trim(summary_text, 600) or summarize_locally(email).summary,
+            summary=summary_text or summarize_locally(email).summary,
             key_points=key_points or summarize_locally(email).key_points,
             companies=_string_list(parsed.get("companies"))[:8],
             models=_string_list(parsed.get("models"))[:8],
@@ -290,7 +293,7 @@ def _load_summary_skill() -> str:
     parts = []
     for path in (SUMMARY_SKILL_PATH, CREATOR_SKILL_PATH):
         try:
-            parts.append(path.read_text(encoding="utf-8")[:2600])
+            parts.append(path.read_text(encoding="utf-8"))
         except OSError:
             pass
     return "\n\n".join(parts) if parts else (
@@ -299,6 +302,36 @@ def _load_summary_skill() -> str:
         "Use concrete article details. Avoid generic category labels. "
         "Never include cookie consent text, legal boilerplate, or newsletter noise."
     )
+
+
+def _format_prompt_body(text: str, full_extract: bool = True) -> str:
+    if full_extract:
+        return text
+    chunks = _chunk_text(text, max_chars=7000)
+    if len(chunks) <= 1:
+        return text
+    return "\n\n".join(f"[Chunk {index}]\n{chunk}" for index, chunk in enumerate(chunks, start=1))
+
+
+def _chunk_text(text: str, max_chars: int = 7000) -> list[str]:
+    cleaned = _clean_text(text)
+    if not cleaned:
+        return [""]
+    paragraphs = [part.strip() for part in re.split(r"\n\s*\n", cleaned) if part.strip()]
+    if not paragraphs:
+        paragraphs = [cleaned]
+    chunks: list[str] = []
+    current = ""
+    for paragraph in paragraphs:
+        candidate = f"{current}\n\n{paragraph}".strip() if current else paragraph
+        if len(candidate) <= max_chars or not current:
+            current = candidate
+            continue
+        chunks.append(current)
+        current = paragraph
+    if current:
+        chunks.append(current)
+    return chunks or [cleaned]
 
 
 # ── Core local summariser ─────────────────────────────────────────────────────
@@ -317,8 +350,8 @@ def summarize_locally(email: EmailItem) -> EmailSummary:
     headline = _build_headline(email.subject, companies, models)
     # Rank and pick the best sentences
     ranked = _rank_sentences(sentences)
-    top = [sentences[i] for i, _ in ranked[:6]]
-    key_points = [_trim(s, 220) for s in top[:5]]
+    top = [sentences[i] for i, _ in ranked[:8]]
+    key_points = [_trim(s, 220) for s in top[:6]]
     if len(key_points) < 3:
         key_points += [_trim(s, 220) for s in sentences if _trim(s, 220) not in key_points][:3 - len(key_points)]
     summary = " ".join(top[:2])
@@ -336,7 +369,7 @@ def summarize_locally(email: EmailItem) -> EmailSummary:
     )
 
 
-def _summarize_article_list(email: EmailItem, articles: list[ArticleData]) -> EmailSummary:
+def _summarize_article_list(email: EmailItem, articles: list[ArticleData], full_extract: bool = True) -> EmailSummary:
     """Build a structured summary from enriched article data."""
     base = summarize_locally(email)
     if not articles:
@@ -344,16 +377,19 @@ def _summarize_article_list(email: EmailItem, articles: list[ArticleData]) -> Em
     article = articles[0]
     title = _clean_text(article.title or email.subject or "AI update")
     # Build the three narrative sections from the article text
-    what_happened, why_matters, what_watch = _extract_narrative_sections(article, title)
-    key_points = _extract_key_points(article, title)
-    summary_text = " ".join(p for p in [what_happened, why_matters] if p) or base.summary
+    what_happened, why_matters, what_watch = _extract_narrative_sections(article, title, full_extract=full_extract)
+    key_points = _extract_key_points(article, title, full_extract=full_extract)
+    if full_extract:
+        summary_text = _summarize_full_article(article, title, key_points, what_happened, why_matters, what_watch)
+    else:
+        summary_text = " ".join(p for p in [what_happened, why_matters] if p) or base.summary
     headline = _trim(title, 110) if title else base.headline
     return EmailSummary(
         message_key=email.message_key,
         subject=email.subject,
         source_date=email.date,
         headline=headline,
-        summary=_trim(summary_text, 600),
+        summary=summary_text if full_extract else _trim(summary_text, 600),
         key_points=key_points or base.key_points,
         companies=base.companies or _find_companies(article.text or ""),
         models=base.models or _find_models(article.text or ""),
@@ -362,7 +398,7 @@ def _summarize_article_list(email: EmailItem, articles: list[ArticleData]) -> Em
     )
 
 
-def _extract_narrative_sections(article: ArticleData, title: str) -> tuple[str, str, str]:
+def _extract_narrative_sections(article: ArticleData, title: str, full_extract: bool = True) -> tuple[str, str, str]:
     """Extract what-happened / why-it-matters / what-to-watch from article text."""
     text = _clean_text(f"{article.description} {article.text}")
     rag = retrieve_context(f"{title} {text[:2500]}", limit=3)
@@ -371,7 +407,7 @@ def _extract_narrative_sections(article: ArticleData, title: str) -> tuple[str, 
         desc = _clean_text(article.description or article.excerpt or title)
         return desc, "", ""
     ranked = _rank_sentences(sentences)
-    top_sentences = [sentences[i] for i, _ in ranked[:10]]
+    top_sentences = [sentences[i] for i, _ in ranked[:24]] if full_extract else [sentences[i] for i, _ in ranked[:10]]
     # What happened: action sentences with concrete details
     action_sentences = [s for s in top_sentences if _ACTION_RE.search(s)]
     detail_sentences = [s for s in top_sentences if re.search(r"\b\d+\b", s)]
@@ -413,6 +449,12 @@ def _extract_narrative_sections(article: ArticleData, title: str) -> tuple[str, 
         rag,
         fallback=[s for s in top_sentences if s not in what_happened_parts and s not in impact_sentences][:1],
     )
+    if full_extract:
+        return (
+            _trim(what_happened, 1200),
+            _trim(why_matters, 900),
+            _trim(what_watch, 700),
+        )
     return (
         _trim(what_happened, 500),
         _trim(why_matters, 400),
@@ -420,14 +462,14 @@ def _extract_narrative_sections(article: ArticleData, title: str) -> tuple[str, 
     )
 
 
-def _extract_key_points(article: ArticleData, title: str) -> list[str]:
+def _extract_key_points(article: ArticleData, title: str, full_extract: bool = True) -> list[str]:
     """Extract 4-6 specific, clean bullet points from article content."""
     text = _clean_text(f"{article.description} {article.text}")
     sentences = _good_sentences(text)
     if not sentences:
         return [_trim(article.description or title, 220)] if (article.description or title) else []
     ranked = _rank_sentences(sentences)
-    candidates = [sentences[i] for i, _ in ranked[:12]]
+    candidates = [sentences[i] for i, _ in ranked[:24]] if full_extract else [sentences[i] for i, _ in ranked[:12]]
     points: list[str] = []
     seen: set[str] = set()
     for s in candidates:
@@ -436,9 +478,23 @@ def _extract_key_points(article: ArticleData, title: str) -> list[str]:
             continue
         seen.add(key)
         points.append(_trim(s, 220))
-        if len(points) >= 6:
+        if len(points) >= (10 if full_extract else 6):
             break
     return points
+
+
+def _summarize_full_article(article: ArticleData, title: str, key_points: list[str], what_happened: str, why_matters: str, what_watch: str) -> str:
+    sections = [part for part in [what_happened, why_matters, what_watch] if part]
+    if not sections:
+        sections = [_clean_text(article.description or article.text or article.excerpt or title)]
+    narrative = " ".join(sections)
+    if key_points:
+        narrative = f"{narrative} {' '.join(key_points)}"
+    text = _clean_text(f"{article.description} {article.text}")
+    sentences = _good_sentences(text)
+    if sentences:
+        narrative = f"{narrative} {' '.join(_dedupe_sentences(sentences))}"
+    return re.sub(r"\s+", " ", narrative).strip()
 
 
 def _make_editorial_section(
@@ -555,7 +611,7 @@ def _good_sentences(text: str) -> list[str]:
     result: list[str] = []
     for s in raw:
         s = s.strip()
-        if len(s) < 40 or len(s) > 800:
+        if len(s) < 25:
             continue
         if _BOILERPLATE_RE.search(s):
             continue
