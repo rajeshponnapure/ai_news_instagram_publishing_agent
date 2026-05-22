@@ -1,0 +1,13 @@
+From Token Streams to Agent Streams - Part 2
+
+Agents need credentials and network access to do useful work, but those capabilities create new security risks. This post explains how Auth Proxy keeps secrets out of LangSmith Sandboxes runtimes, constrains agent egress, and gives teams infrastructure-level control over how agents reach external services.
+
+Key takeaways:
+- Introducing the sandbox Auth Proxy LangSmith Sandboxes give agents isolated environments for running code and interacting with filesystems without...
+- How Auth Proxy secures network access for LangSmith agent sandboxes Agent sandboxes need stronger network controls because agents can run code...
+- The agent can use an API without being able to read the API key, which reduces the damage from prompt injection, malicious dependencies...
+- If the agent only needs GitHub and an LLM provider, it should not be able to talk to every random host on the internet.
+
+Source: langchain.com | Curated by Graitech AI.
+
+#Openai #Google #Anthropic #Microsoft #Meta #Amazon #Aws #Cohere #ClaudeCode #ModelRelease #RegulationOrSafety #DeveloperTools #MediaGeneration #AiNews

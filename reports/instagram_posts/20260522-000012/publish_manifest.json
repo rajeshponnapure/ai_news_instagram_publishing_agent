@@ -1,0 +1,60 @@
+{
+  "posts": [
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-000012/01_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-",
+      "caption": "Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs... - Part 1\n\nCohere releases Command A+, a 218B Sparse MoE open-source model for agentic workflows, running on two H100 GPUs.\n\nKey takeaways:\n- Command A+ is Cohere\u2019s first multimodal reasoning model.\n- Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs on as Few as Two H100 GPUs Cohere just released Command A+, as...\n- Prior Command A Models On \u03c4\u00b2-Bench Telecom, scores improved from 37% to 85% over Command A Reasoning, and Terminal-Bench Hard agentic coding...\n- It unifies capabilities from four prior models - Command A, Command A Reasoning, Command A Vision, and Command A Translate - into a single...\n\nSource: marktechpost.com | Curated by Graitech AI.\n\n#Openai #Google #Amazon #Aws #Cohere #MarktechpostAi #MostAi #ArenaAi #Gpt55 #Claude #Gemini35 #Gemini31 #ModelRelease #RegulationOrSafety\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-000012/01_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-000012/01_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-000012/01_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-000012/01_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-000012/01_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-000012/01_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-000012/01_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_07.png"
+      ],
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-000012/01_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-000012/01_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-000012/01_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-000012/01_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-000012/01_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-000012/01_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-000012/01_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_07.png"
+      ],
+      "status": "publish_failed_retryable",
+      "story_score": 1.0,
+      "story_selected_reason": "article image available, source URL available, 5 concrete signal(s)",
+      "creation_id": "18043915574577438",
+      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"AaHYnDgOT3i-Og6mM3Et8fP\"}}"
+    },
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-000012/02_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-",
+      "caption": "Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs... - Part 2\n\nIn this post, you will learn what Nova Act offers, how HIPAA eligibility applies to agentic AI, and how to get started.\n\nKey takeaways:\n- Nova Act also integrates with external tools through API calls, remote Model Control Protoco l (MCP), or agentic frameworks, such as Strand Agents.\n- Artificial Intelligence Amazon Nova Act is now HIPAA eligible Healthcare and life sciences (HCLS) organizations depend on repetitive, manual...\n- About Amazon Nova Act Amazon Nova Act is available as an AWS service to build and manage fleets of reliable AI agents for automating production UI...\n- While agentic AI can automate these workflows, compliance requirements under the Health Insurance Portability and Accountability Act (HIPAA) have...\n\nSource: aws.amazon.com | Curated by Graitech AI.\n\n#Openai #Google #Amazon #Aws #Cohere #MarktechpostAi #MostAi #ArenaAi #Gpt55 #Claude #Gemini35 #Gemini31 #ModelRelease #RegulationOrSafety\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-000012/02_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-000012/02_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-000012/02_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-000012/02_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-000012/02_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-000012/02_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-000012/02_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_07.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-000012/02_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_08.png"
+      ],
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-000012/02_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-000012/02_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-000012/02_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-000012/02_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-000012/02_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-000012/02_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-000012/02_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_07.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-000012/02_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_08.png"
+      ],
+      "status": "publish_failed_retryable",
+      "story_score": 1.0,
+      "story_selected_reason": "article image available, source URL available, 7 concrete signal(s)",
+      "creation_id": "18043915943577438",
+      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"AgOOrdy7GH5PtogzXBUF0W6\"}}"
+    }
+  ]
+}

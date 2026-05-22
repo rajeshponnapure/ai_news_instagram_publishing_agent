@@ -1,0 +1,71 @@
+{
+  "email_received_at": "2026-05-21T19:16+00:00",
+  "recommended_post_time": "18:00",
+  "headline": "Anthropic, Microsoft in talks for AI chip deal after $5 billion investment - Part 3",
+  "subject": "\ud83d\udea8 AI Alert: 5 new launches \u2014 CNBC Technology, AWS Machine Learning",
+  "source_date": "Thu, 21 May 2026 12:16:24 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Amazon",
+    "AWS",
+    "NVIDIA",
+    "Tesla"
+  ],
+  "models": [
+    "GPT-5.2",
+    "Claude"
+  ],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-tests%3D%3D1.1.9",
+  "article_title": "rkload, fatigue levels, and case complexi",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-tests%3D%3D1.1.9",
+      "title": "rkload, fatigue levels, and case complexi",
+      "description": "rkload, fatigue levels, and case complexi Link : [MEDIUM] langchain-ai/langchain: langchain-tests==1.1.9 Company : LangChain Summary : Changes since langchain-tests==1.1.8 release(standard-tests): 1.1.9 (#37609) test(standard-tests): allow extra content blocks in streaming assertions (#37592) chore: bump idna from 3.11 to 3.15 in /l Link : [MEDIUM] The Anatomy of an Agent Harness Company : LangChain Blog Summary : Learn how agent harnesses transform AI models into autonomous work engines. Explore core components: filesystems, sandboxes, and memory. Link :",
+      "excerpt": "rkload, fatigue levels, and case complexi Link : [MEDIUM] langchain-ai/langchain: langchain-tests==1.1.9 Company : LangChain Summary : Changes since langchain-tests==1.1.8 release(standard-tests): 1.1.9 (#37609) test(standard-tests): allow extra content blocks in streaming assertions (#37592) chore: bump idna from 3.11 to 3.15 in /l Link : [MEDIUM] The Anatomy of an Agent Harness Company : LangChain Blog Summary : Learn how agent harnesses transform AI models into autonomous work engines. Explore core components: filesystems, sandboxes, and memory. Link ...",
+      "summary": "Link : rkload, fatigue levels, and case complexi Link : [MEDIUM] langchain-ai/langchain: langchain-tests==1.1.9 Company : LangChain Summary : Changes since langchain-tests==1.1.8 release(standard-tests): 1.1.9 (#37609) test(standard-tests): allow extra content blocks in streaming assertions (#37592) chore: bump idna from 3.11 to 3.15 in /l Link : [MEDIUM] The Anatomy of an Agent Harness Company : LangChain Blog Summary : Learn how agent harnesses transform AI models into autonomous work... The practical impact: Explore core components: filesystems, sandboxes, and memory. Watch next: Explore core components: filesystems, sandboxes, and memory.",
+      "what_happened": "Link : rkload, fatigue levels, and case complexi Link : [MEDIUM] langchain-ai/langchain: langchain-tests==1.1.9 Company : LangChain Summary : Changes since langchain-tests==1.1.8 release(standard-tests): 1.1.9 (#37609) test(standard-tests): allow extra content blocks in streaming assertions (#37592) chore: bump idna from 3.11 to 3.15 in /l Link : [MEDIUM] The Anatomy of an Agent Harness Company : LangChain Blog Summary : Learn how agent harnesses transform AI models into autonomous work...",
+      "why_matters": "The practical impact: Explore core components: filesystems, sandboxes, and memory.",
+      "what_to_watch": "Watch next: Explore core components: filesystems, sandboxes, and memory.",
+      "key_points": [
+        "Link : rkload, fatigue levels, and case complexi Link : [MEDIUM] langchain-ai/langchain: langchain-tests==1.1.9 Company : LangChain Summary : Changes since langchain-tests==1.1.8 release(standard-tests): 1.1.9...",
+        "rkload, fatigue levels, and case complexi Link : [MEDIUM] langchain-ai/langchain: langchain-tests==1.1.9 Company : LangChain Summary : Changes since langchain-tests==1.1.8 release(standard-tests): 1.1.9 (#37609)...",
+        "Explore core components: filesystems, sandboxes, and memory."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "",
+      "image_url": ""
+    }
+  ],
+  "carousel_part": 3,
+  "carousel_total_parts": 3,
+  "slides": [
+    "rkload, fatigue levels, and case complexi",
+    "rkload, fatigue levels, and case complexi",
+    "Why it matters",
+    "Follow for the next AI briefing"
+  ]
+}

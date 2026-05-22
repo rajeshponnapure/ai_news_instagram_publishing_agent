@@ -1,0 +1,13 @@
+From Token Streams to Agent Streams - Part 2
+
+In this post, we show you how OPLOG developed three AI agents using the Strands Agents SDK, deployed them to Amazon Bedrock AgentCore, and integrated Amazon Bedrock with Anthropic’s Claude Sonnet and Amazon Bedrock Knowledge Bases for Retrieval Augmented Generation (RAG).
+
+Key takeaways:
+- The company needed a solution that could autonomously process data across the systems, deliver real-time intelligence, and remove manual reporting...
+- In this post, we show you how OPLOG developed three AI agents using the Strands Agents SDK, deployed them to Amazon Bedrock AgentCore, and...
+- Artificial Intelligence Build AI agents for business intelligence with Amazon Bedrock AgentCore OPLOG , a technology-driven fulfillment company...
+- The agents operate independently without communicating with each other; each processes data from specific sources and delivers targeted...
+
+Source: aws.amazon.com | Curated by Graitech AI.
+
+#Openai #Anthropic #Microsoft #Amazon #Aws #Nvidia #Tesla #Cohere #Claude #ModelRelease #RegulationOrSafety #DeveloperTools #HardwareAndCompute #MediaGeneration

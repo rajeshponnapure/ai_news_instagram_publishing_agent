@@ -1,0 +1,104 @@
+{
+  "email_received_at": "2026-05-21T20:59+00:00",
+  "recommended_post_time": "22:00",
+  "headline": "From Token Streams to Agent Streams - Part 4",
+  "subject": "\ud83d\udea8 AI Alert: 10 new launches \u2014 Wired AI, LangChain Blog, AI Business",
+  "source_date": "Thu, 21 May 2026 13:59:44 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "AWS",
+    "Wired AI"
+  ],
+  "models": [
+    "claude-code"
+  ],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.cnbc.com/2026/05/21/anthropic-microsoft-maia-200-ai-chip.html",
+  "article_title": "Summary : The longtime partners expanded their relationship.",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.cnbc.com/2026/05/21/anthropic-microsoft-maia-200-ai-chip.html",
+      "title": "Summary : The longtime partners expanded their relationship.",
+      "description": "usiness Summary : The longtime partners expanded their relationship. Link : [HIGH] Anthropic, Microsoft in talks for AI chip deal after $5 billion investment Company : CNBC Technology Summary : Microsoft has not made the Maia 200 chips available to customers, but they are used in the company's data centers, offering better efficiency than other silicon. Link : [MEDIUM] anthropics/claude-code: v2.1.147 Company : Anthropic Summary : ## What's changed - Added the Workflow tool for deterministic multi-agent orchestration. It is off by default - set CLAUDE_CODE_WORKFLOWS=1 to enable - Pinned background sessions ( Ctrl+T in cl Link : [MEDIUM] How Auth Proxy secures LangSmith agent sandboxes Company : LangChain Blog Summary : Agents...",
+      "excerpt": "usiness Summary : The longtime partners expanded their relationship. Link : [HIGH] Anthropic, Microsoft in talks for AI chip deal after $5 billion investment Company : CNBC Technology Summary : Microsoft has not made the Maia 200 chips available to customers, but they are used in the company's data centers, offering better efficiency than other silicon. Link : [MEDIUM] anthropics/claude-code: v2.1.147 Company : Anthropic Summary : ## What's changed - Added the Workflow tool for deterministic multi-agent orchestration. It is off by default - set CLAUDE_CODE_WORKFLOWS=1 to enable - Pinned background...",
+      "summary": "usiness Summary : The longtime partners expanded their relationship. Link : [HIGH] Anthropic, Microsoft in talks for AI chip deal after $5 billion investment Company : CNBC Technology Summary : Microsoft has not made the Maia 200 chips available to customers, but they are used in the company's data centers, offering better efficiency than other silicon. The practical impact: It is off by default - set CLAUDE_CODE_WORKFLOWS=1 to enable - Pinned background sessions ( Ctrl+T in cl Link : [MEDIUM] How Auth Proxy secures LangSmith agent sandboxes Company : LangChain Blog Summary : Agents...",
+      "what_happened": "usiness Summary : The longtime partners expanded their relationship. Link : [HIGH] Anthropic, Microsoft in talks for AI chip deal after $5 billion investment Company : CNBC Technology Summary : Microsoft has not made the Maia 200 chips available to customers, but they are used in the company's data centers, offering better efficiency than other silicon.",
+      "why_matters": "The practical impact: It is off by default - set CLAUDE_CODE_WORKFLOWS=1 to enable - Pinned background sessions ( Ctrl+T in cl Link : [MEDIUM] How Auth Proxy secures LangSmith agent sandboxes Company : LangChain Blog Summary : Agents...",
+      "what_to_watch": "",
+      "key_points": [
+        "Link : [HIGH] Anthropic, Microsoft in talks for AI chip deal after $5 billion investment Company : CNBC Technology Summary : Microsoft has not made the Maia 200 chips available to customers, but they are used in the...",
+        "It is off by default - set CLAUDE_CODE_WORKFLOWS=1 to enable - Pinned background sessions ( Ctrl+T in cl Link : [MEDIUM] How Auth Proxy secures LangSmith agent sandboxes Company : LangChain Blog Summary : Agents...",
+        "usiness Summary : The longtime partners expanded their relationship.",
+        "Link : [MEDIUM] anthropics/claude-code: v2.1.147 Company : Anthropic Summary : ## What's changed - Added the Workflow tool for deterministic multi-agent orchestration."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "",
+      "image_url": ""
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.147",
+      "title": "ey are used in the company's data centers, offering better efficiency than other silicon.",
+      "description": "ey are used in the company's data centers, offering better efficiency than other silicon. Link : [MEDIUM] anthropics/claude-code: v2.1.147 Company : Anthropic Summary : ## What's changed - Added the Workflow tool for deterministic multi-agent orchestration. It is off by default - set CLAUDE_CODE_WORKFLOWS=1 to enable - Pinned background sessions ( Ctrl+T in cl Link : [MEDIUM] How Auth Proxy secures LangSmith agent sandboxes Company : LangChain Blog Summary : Agents need credentials and network access to do useful work, but those capabilities create new security risks. This post explains how Auth Proxy keeps secrets out of LangSmith Sandboxes runtimes, con Link : [MEDIUM] The Anatomy of an Agent Harness...",
+      "excerpt": "ey are used in the company's data centers, offering better efficiency than other silicon. Link : [MEDIUM] anthropics/claude-code: v2.1.147 Company : Anthropic Summary : ## What's changed - Added the Workflow tool for deterministic multi-agent orchestration. It is off by default - set CLAUDE_CODE_WORKFLOWS=1 to enable - Pinned background sessions ( Ctrl+T in cl Link : [MEDIUM] How Auth Proxy secures LangSmith agent sandboxes Company : LangChain Blog Summary : Agents need credentials and network access to do useful work, but those capabilities create new security risks. This post explains how Auth Proxy keeps...",
+      "summary": "It is off by default - set CLAUDE_CODE_WORKFLOWS=1 to enable - Pinned background sessions ( Ctrl+T in cl Link : [MEDIUM] How Auth Proxy secures LangSmith agent sandboxes Company : LangChain Blog Summary : Agents need credentials and network access to do useful work, but those capabilities create new security risks. The practical impact: Link : [MEDIUM] anthropics/claude-code: v2.1.147 Company : Anthropic Summary : ## What's changed - Added the Workflow tool for deterministic multi-agent orchestration. This post explains how Auth Proxy keeps secrets out of LangSmith Sandboxes runtimes, con Link : [MEDIUM] The Anatomy of an Agent Harness... Watch next: This post explains how Auth Proxy keeps secrets out of LangSmith Sandboxes runtimes, con Link : [MEDIUM] The Anatomy of an Agent Harness...",
+      "what_happened": "It is off by default - set CLAUDE_CODE_WORKFLOWS=1 to enable - Pinned background sessions ( Ctrl+T in cl Link : [MEDIUM] How Auth Proxy secures LangSmith agent sandboxes Company : LangChain Blog Summary : Agents need credentials and network access to do useful work, but those capabilities create new security risks.",
+      "why_matters": "The practical impact: Link : [MEDIUM] anthropics/claude-code: v2.1.147 Company : Anthropic Summary : ## What's changed - Added the Workflow tool for deterministic multi-agent orchestration. This post explains how Auth Proxy keeps secrets out of LangSmith Sandboxes runtimes, con Link : [MEDIUM] The Anatomy of an Agent Harness...",
+      "what_to_watch": "Watch next: This post explains how Auth Proxy keeps secrets out of LangSmith Sandboxes runtimes, con Link : [MEDIUM] The Anatomy of an Agent Harness...",
+      "key_points": [
+        "It is off by default - set CLAUDE_CODE_WORKFLOWS=1 to enable - Pinned background sessions ( Ctrl+T in cl Link : [MEDIUM] How Auth Proxy secures LangSmith agent sandboxes Company : LangChain Blog Summary : Agents need...",
+        "This post explains how Auth Proxy keeps secrets out of LangSmith Sandboxes runtimes, con Link : [MEDIUM] The Anatomy of an Agent Harness...",
+        "Link : [MEDIUM] anthropics/claude-code: v2.1.147 Company : Anthropic Summary : ## What's changed - Added the Workflow tool for deterministic multi-agent orchestration.",
+        "ey are used in the company's data centers, offering better efficiency than other silicon."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": ""
+    }
+  ],
+  "carousel_part": 4,
+  "carousel_total_parts": 6,
+  "slides": [
+    "Summary : The longtime partners expanded their relationship.",
+    "Summary : The longtime partners expanded their relationship.",
+    "Why it matters",
+    "ey are used in the company's data centers, offering better efficiency than other...",
+    "ey are used in the company's data centers, offering better efficiency than other...",
+    "Why it matters",
+    "Follow for the next AI briefing"
+  ]
+}

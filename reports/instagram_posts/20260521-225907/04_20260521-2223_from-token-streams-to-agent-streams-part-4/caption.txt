@@ -1,0 +1,13 @@
+From Token Streams to Agent Streams - Part 4
+
+: LangChain Blog Summary : Move beyond token streaming. Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility, multimodal outputs, and Link : [HIGH] Microsoft and EY Link Up to Speed Enterprise AI Adoption Company : AI Business Summary : The longtime partners expanded their relationship. Link : [MEDIUM] Amazon Nova Act is...
+
+Key takeaways:
+- Link : [MEDIUM] langchain-ai/langchain: langchain-openai==1.2.2 Company : LangChain Summary : Changes since langchain-openai==1.2.1 release(openai)...
+- Learn how the latest streaming primitives in Deep Agents, LangChain, and LangGraph enable typed events, scoped subscriptions, subagent visibility...
+- Link : [MEDIUM] Amazon Nova Act is now HIPAA eligible Company : AWS Machine Learning Summary : In this post, you will learn what Nova Act offers...
+- : LangChain Blog Summary : Move beyond token streaming.
+
+Source: aibusiness.com | Curated by Graitech AI.
+
+#Openai #Google #Anthropic #Microsoft #Meta #Amazon #Aws #Cohere #ClaudeCode #ModelRelease #RegulationOrSafety #DeveloperTools #MediaGeneration #AiNews

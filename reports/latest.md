@@ -1,53 +1,54 @@
 # AI News Summary Report
 
-Generated: 2026-05-21T16:40:35+00:00
+Generated: 2026-05-22T00:00:12+00:00
 Source: grdevelopers.co@gmail.com
 Emails summarized: 1
 
 ## Executive Brief
 
-- Link : [HIGH] Hark raises $700M Series A for its secretive “universal” AI interface Company : TechCrunch AI Summary : Brett Adcock's new AI startup is now valued at $6 billion by its investors.
-- BREAKING AI UPDATE - 21 May 2026, 07:52 PM IST 4 new AI event(s) detected ================================================== [HIGH] Bloom Energy rises 2% after partnering with European AI infrastructure upstart in...
-- Link : [MEDIUM] Google is pitching an AI agent ecosystem to consumers who may not buy it Company : TechCrunch AI Summary : The AI agents are coming.
-- ology Summary : Nebius said Wednesday that it would deploy Bloom's fuel-cell technology to generate electricity faster and more quickly at its data centers.
-- Link : [MEDIUM] I tested Motorola's $1,500 Razr Ultra, and it's so close to being my dream flip phone Company : ZDNet AI Summary : The 2026 Razr Ultra delivers major hardware...
-- Link : k raises $700M Series A for its secretive “universal” AI interface Company : TechCrunch AI Summary : Brett Adcock's new AI startup is now valued at $6 billion by its investors.
+- Command A+ is Cohere’s first multimodal reasoning model.
+- Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs on as Few as Two H100 GPUs Cohere just released Command A+, as an open-source model targeting enterprise agentic workflows.
+- Prior Command A Models On τ²-Bench Telecom, scores improved from 37% to 85% over Command A Reasoning, and Terminal-Bench Hard agentic coding performance reached 25% from 3%.
+- It unifies capabilities from four prior models - Command A, Command A Reasoning, Command A Vision, and Command A Translate - into a single scalable model.
+- Command A+ expands multilingual coverage from 23 to 48 languages, with gains in machine translation and multilingual reasoning.
+- Cohere releases Command A+, a 218B Sparse MoE open-source model for agentic workflows, running on two H100 GPUs.
 
 ## Most Mentioned Companies
 
-Google (1), CNBC Technology (1), European AI (1), The AI (1)
+OpenAI (1), Google (1), Amazon (1), AWS (1), Cohere (1), MarkTechPost AI (1), Most AI (1), Arena AI (1)
 
 ## Most Mentioned Models
 
-No clear model mentions found.
+GPT-5.5 (1), Claude (1), Gemini 3.5 (1), Gemini 3.1 (1)
 
 ## Main Topics
 
-general AI update (1)
+model release (1), regulation or safety (1), developer tools (1), hardware and compute (1), media generation (1)
 
 ## Voice Script Hooks
 
-- Google just made a move in general AI update: BREAKING AI UPDATE - 21 May 2026, 07:52 PM IST
+- OpenAI just made a move in model release: Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs on as Few as Two H100 GPUs
 
 ## Per-Email Summaries
 
-### 1. BREAKING AI UPDATE - 21 May 2026, 07:52 PM IST
+### 1. Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs on as Few as Two H100 GPUs
 
-Source date: Thu, 21 May 2026 07:22:56 -0700
+Source date: Thu, 21 May 2026 16:32:44 -0700
 Confidence: 0.82
-Article: https://www.cnbc.com/2026/05/21/bloom-energy-nebius-ai-infrastructure-firm-partnership.html
-Article title: ⚡ BREAKING AI UPDATE — 21 May 2026, 07:52 PM IST
+Article: https://www.marktechpost.com/2026/05/21/cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-that-runs-on-as-few-as-two-h100-gpus/
+Article title: Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs on as Few as Two H100 GPUs
 
-Article excerpt: ⚡ BREAKING AI UPDATE — 21 May 2026, 07:52 PM IST 4 new AI event(s) detected ================================================== [HIGH] Bloom Energy rises 2% after partnering with European AI infrastructure upstart in $2.6 billion deal Company : CNBC Technology Summary : Nebius said Wednesday that it would deploy Bloom's fuel-cell technology to generate electricity faster and more quickly at its data centers. Link : [HIGH] Hark raises $700M Series A for its secretive “universal” AI interface Company : TechCrunch AI Summary : Brett Adcock's new AI startup is now valued at $6 billion by its investors. Link ...
+Article excerpt: Cohere releases Command A+, a 218B Sparse MoE open-source model for agentic workflows, running on two H100 GPUs.
 
-BREAKING AI UPDATE - 21 May 2026, 07:52 PM IST 4 new AI event(s) detected ================================================== [HIGH] Bloom Energy rises 2% after partnering with European AI infrastructure upstart in $2.6 billion deal Company : CNBC Technology Summary : Nebius said Wednesday that it would deploy Bloom's fuel-cell technology to generate electricity faster and more quickly at its data centers. Link : [HIGH] Hark raises $700M Series A for its secretive “universal” AI interface Company : TechCrunch AI Summary : Brett Adcock's new AI startup is now valued at $6 billion by its...
+Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs on as Few as Two H100 GPUs Cohere just released Command A+, as an open-source model targeting enterprise agentic workflows. Command A+ expands multilingual coverage from 23 to 48 languages, with gains in machine translation and multilingual reasoning. The practical impact: Command A+ is Cohere’s first multimodal reasoning model. It unifies capabilities from four prior models - Command A, Command A Reasoning, Command A Vision, and Command A Translate - into a single scalable model.
 
 Key points:
-- Link : [HIGH] Hark raises $700M Series A for its secretive “universal” AI interface Company : TechCrunch AI Summary : Brett Adcock's new AI startup is now valued at $6 billion by its investors.
-- BREAKING AI UPDATE - 21 May 2026, 07:52 PM IST 4 new AI event(s) detected ================================================== [HIGH] Bloom Energy rises 2% after partnering with European AI infrastructure upstart in...
-- Link : [MEDIUM] Google is pitching an AI agent ecosystem to consumers who may not buy it Company : TechCrunch AI Summary : The AI agents are coming.
-- ology Summary : Nebius said Wednesday that it would deploy Bloom's fuel-cell technology to generate electricity faster and more quickly at its data centers.
-- Link : [MEDIUM] I tested Motorola's $1,500 Razr Ultra, and it's so close to being my dream flip phone Company : ZDNet AI Summary : The 2026 Razr Ultra delivers major hardware...
-- Link : k raises $700M Series A for its secretive “universal” AI interface Company : TechCrunch AI Summary : Brett Adcock's new AI startup is now valued at $6 billion by its investors.
-Companies: Google, CNBC Technology, European AI, The AI
-Topics: general AI update
+- Command A+ is Cohere’s first multimodal reasoning model.
+- Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs on as Few as Two H100 GPUs Cohere just released Command A+, as an open-source model targeting enterprise agentic workflows.
+- Prior Command A Models On τ²-Bench Telecom, scores improved from 37% to 85% over Command A Reasoning, and Terminal-Bench Hard agentic coding performance reached 25% from 3%.
+- It unifies capabilities from four prior models - Command A, Command A Reasoning, Command A Vision, and Command A Translate - into a single scalable model.
+- Command A+ expands multilingual coverage from 23 to 48 languages, with gains in machine translation and multilingual reasoning.
+- Cohere releases Command A+, a 218B Sparse MoE open-source model for agentic workflows, running on two H100 GPUs.
+Companies: OpenAI, Google, Amazon, AWS, Cohere, MarkTechPost AI, Most AI, Arena AI
+Models: GPT-5.5, Claude, Gemini 3.5, Gemini 3.1
+Topics: model release, regulation or safety, developer tools, hardware and compute, media generation

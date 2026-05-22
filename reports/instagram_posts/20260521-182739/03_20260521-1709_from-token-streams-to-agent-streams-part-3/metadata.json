@@ -1,0 +1,109 @@
+{
+  "email_received_at": "2026-05-21T17:09+00:00",
+  "recommended_post_time": "18:00",
+  "headline": "From Token Streams to Agent Streams - Part 3",
+  "subject": "\ud83d\udea8 AI Alert: 10 new launches \u2014 LangChain Blog, CNBC Technology, AWS Machine Learning",
+  "source_date": "Thu, 21 May 2026 10:09:15 -0700",
+  "companies": [
+    "OpenAI",
+    "Anthropic",
+    "Microsoft",
+    "Amazon",
+    "AWS",
+    "NVIDIA",
+    "Tesla",
+    "Cohere"
+  ],
+  "models": [
+    "Claude"
+  ],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://aws.amazon.com/blogs/machine-learning/building-multi-tenant-agents-with-amazon-bedrock-agentcore/",
+  "article_title": "Building multi-tenant agents with Amazon Bedrock AgentCore | Amazon Web Services",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/37fd40cd38fc6457.png",
+  "article_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/21/Ml-20532-image-1-1-1101x630.png",
+  "article_items": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-multi-tenant-agents-with-amazon-bedrock-agentcore/",
+      "title": "Building multi-tenant agents with Amazon Bedrock AgentCore | Amazon Web Services",
+      "description": "This post explores design considerations for architecting multi-tenant agentic applications and the framework needed to address SaaS architecture challenges with Amazon Bedrock AgentCore.",
+      "excerpt": "This post explores design considerations for architecting multi-tenant agentic applications and the framework needed to address SaaS architecture challenges with Amazon Bedrock AgentCore.",
+      "summary": "A hybrid approach, using less capable models for standard tiers and fine-tuned or more capable models for premium enterprise customers, balances cost efficiency with customization needs.Amazon Bedrock provides a choice of large language models (LLMs) from leading providers, allowing SaaS providers to pick a model suitable for tenant and tier-specific needs. The option to select the model based on tenant tier (Tier-specific model) allows flexibility and balances cost, performance, and... The practical impact: It provides constructs for deploying agents and hosting MCP servers, with built-in support for identity management, memory, observability, and evaluations, all designed to make multi-tenant agent architectures straightforward to build. Artificial Intelligence Building multi-tenant agents with Amazon Bedrock AgentCore Software as a service (SaaS) providers building... Watch next: It provides constructs for deploying agents and hosting MCP servers, with built-in support for identity management, memory, observability, and evaluations, all designed to make multi-tenant agent architectures straightforward to build.",
+      "what_happened": "A hybrid approach, using less capable models for standard tiers and fine-tuned or more capable models for premium enterprise customers, balances cost efficiency with customization needs.Amazon Bedrock provides a choice of large language models (LLMs) from leading providers, allowing SaaS providers to pick a model suitable for tenant and tier-specific needs. The option to select the model based on tenant tier (Tier-specific model) allows flexibility and balances cost, performance, and...",
+      "why_matters": "The practical impact: It provides constructs for deploying agents and hosting MCP servers, with built-in support for identity management, memory, observability, and evaluations, all designed to make multi-tenant agent architectures straightforward to build. Artificial Intelligence Building multi-tenant agents with Amazon Bedrock AgentCore Software as a service (SaaS) providers building...",
+      "what_to_watch": "Watch next: It provides constructs for deploying agents and hosting MCP servers, with built-in support for identity management, memory, observability, and evaluations, all designed to make multi-tenant agent architectures straightforward to build.",
+      "key_points": [
+        "A hybrid approach, using less capable models for standard tiers and fine-tuned or more capable models for premium enterprise customers, balances cost efficiency with customization needs.Amazon Bedrock provides a...",
+        "The option to select the model based on tenant tier (Tier-specific model) allows flexibility and balances cost, performance, and accuracy across tenant tiers.",
+        "It provides constructs for deploying agents and hosting MCP servers, with built-in support for identity management, memory, observability, and evaluations, all designed to make multi-tenant agent architectures...",
+        "Artificial Intelligence Building multi-tenant agents with Amazon Bedrock AgentCore Software as a service (SaaS) providers building multi-tenant agentic applications must address architectural challenges beyond the...",
+        "Fine-Tuned Models Shared foundation models (FMs) serve as the recommended starting point for most multi-tenant deployments, offering streamlined operations with single model maintenance.",
+        "Closing the gap between a working demo and a production deployment requires infrastructure built for multi-tenant environments.Amazon Bedrock AgentCore is a managed, serverless service for building, deploying and..."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/37fd40cd38fc6457.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/21/Ml-20532-image-1-1-1101x630.png"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-ai-powered-dashboard-automation-agents-with-nlp-on-amazon-bedrock-agentcore/",
+      "title": "Build AI-powered dashboard automation agents with NLP on Amazon Bedrock AgentCore | Amazon Web Services",
+      "description": "This solution combines the power of Amazon Bedrock AgentCore, Strands Agents, and Amazon Quick transforms to deliver a secure, scalable, and intelligent system for building and operating AI agents while transforming data into actionable business insights.",
+      "excerpt": "This solution combines the power of Amazon Bedrock AgentCore, Strands Agents, and Amazon Quick transforms to deliver a secure, scalable, and intelligent system for building and operating AI agents while transforming data into actionable business insights.",
+      "summary": "Amazon Bedrock AgentCore is an agentic platform for building, deploying, and operating effective agents securely at scale, no infrastructure management needed. The Modify Dashboard Agent executes configuration changes by validating columns, updating table visuals, and creating new dashboard versions. The practical impact: It accelerates agents to production with intelligent memory and a gateway to enable secure, controlled access to tools and data. The Orchestrator Agent routes user requests to the appropriate specialized agents based on intent classification. Watch next: To implement the agentic AI solution for Quick self-service, complete the following high-level steps: Build the agents (Find Dashboard Agent, Modify Dashboard Agent, and Orchestrator Agent).",
+      "what_happened": "Amazon Bedrock AgentCore is an agentic platform for building, deploying, and operating effective agents securely at scale, no infrastructure management needed. The Modify Dashboard Agent executes configuration changes by validating columns, updating table visuals, and creating new dashboard versions.",
+      "why_matters": "The practical impact: It accelerates agents to production with intelligent memory and a gateway to enable secure, controlled access to tools and data. The Orchestrator Agent routes user requests to the appropriate specialized agents based on intent classification.",
+      "what_to_watch": "Watch next: To implement the agentic AI solution for Quick self-service, complete the following high-level steps: Build the agents (Find Dashboard Agent, Modify Dashboard Agent, and Orchestrator Agent).",
+      "key_points": [
+        "To implement the agentic AI solution for Quick self-service, complete the following high-level steps: Build the agents (Find Dashboard Agent, Modify Dashboard Agent, and Orchestrator Agent).",
+        "This solution combines the power of Amazon Bedrock AgentCore, Strands Agents, and Amazon Quick transforms to deliver a secure, scalable, and intelligent system for building and operating AI agents while transforming...",
+        "Artificial Intelligence Build AI-powered dashboard automation agents with NLP on Amazon Bedrock AgentCore Business analysts often wait days for dashboard modifications when responding to changing business requirements.",
+        "Amazon Bedrock AgentCore is an agentic platform for building, deploying, and operating effective agents securely at scale, no infrastructure management needed.",
+        "The Modify Dashboard Agent executes configuration changes by validating columns, updating table visuals, and creating new dashboard versions.",
+        "Amazon Bedrock AgentCore \u2013 Hosts the Strands Agent orchestrator and specialized sub-agents."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7704e6c3cc78dbb6.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/20/image-35.png"
+    }
+  ],
+  "carousel_part": 3,
+  "carousel_total_parts": 5,
+  "slides": [
+    "Building multi-tenant agents with Amazon Bedrock AgentCore | Amazon Web Services",
+    "Building multi-tenant agents with Amazon Bedrock AgentCore | Amazon Web Services",
+    "Why it matters",
+    "What to watch next",
+    "Build AI-powered dashboard automation agents with NLP on Amazon Bedrock AgentCore |...",
+    "Build AI-powered dashboard automation agents with NLP on Amazon Bedrock AgentCore |...",
+    "Why it matters",
+    "Follow for the next AI briefing"
+  ]
+}
