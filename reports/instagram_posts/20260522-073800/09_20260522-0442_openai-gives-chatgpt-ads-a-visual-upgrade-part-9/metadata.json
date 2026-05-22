@@ -1,0 +1,124 @@
+{
+  "email_received_at": "2026-05-22T04:42+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "OpenAI gives ChatGPT ads a visual upgrade - Part 9",
+  "subject": "\ud83d\ude80 AI Digest \u2014 22 May 2026 | 50 updates \u00b7 50 launches",
+  "source_date": "Thu, 21 May 2026 21:42:36 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "AWS",
+    "NVIDIA"
+  ],
+  "models": [
+    "GPT-5",
+    "GPT-4o-mini",
+    "Claude-powered",
+    "Claude",
+    "Gemini",
+    "Gemini 3.5",
+    "Gemini 3.1",
+    "Gemini 3"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://arxiv.org/abs/2601.19674",
+  "article_title": "Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://arxiv.org/abs/2601.19674",
+      "title": "Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters",
+      "description": "Ambitious decarbonisation targets are rapidly increasing the commission of new offshore wind farms. For these newly commissioned plants to run, accurate power forecasts are needed from the onset. These allow grid stability, good reserve management and efficient energy trading. Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have. To overcome this data scarcity, we propose a novel transfer learning framework that clusters power output according to covariate meteorological features. Rather than training a single, general-purpose model, we thus forecast with an ensemble of expert models, each trained on a cluster. As these pre-trained models each specialise in a distinct weather pattern, they adapt efficiently to new sites and capture transferable, climate-dependent dynamics. Our contributions are two-fold - we propose this novel framework and comprehensively evaluate it on eight offshore wind farms, achieving accurate cross-domain forecasting with under five months of site-specific data. Our experiments achieve a MAE of 3.52\\%, providing empirical verification that reliable forecasts do not require a full annual cycle. Beyond power forecasting, this climate-aware transfer learning method opens new opportunities for offshore wind applications such as early-stage wind resource assessment, where reducing data requirements can significantly accelerate project development whilst effectively mitigating its inherent risks.",
+      "excerpt": "Ambitious decarbonisation targets are rapidly increasing the commission of new offshore wind farms. For these newly commissioned plants to run, accurate power forecasts are needed from the onset. These allow grid stability, good reserve management and efficient energy trading. Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have. To overcome this data scarcity, we propose a novel transfer learning framework that clusters power output according to covariate meteorological features. Rather than training a single, general-purpose model, we thus forecast with an ensemble of expert models, each...",
+      "summary": "Computer Science > Machine Learning Title: Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. arXiv is... The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. These allow grid stability, good reserve management and efficient energy trading. Watch next: Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have.",
+      "what_happened": "Computer Science > Machine Learning Title: Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. arXiv is...",
+      "why_matters": "The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. These allow grid stability, good reserve management and efficient energy trading.",
+      "what_to_watch": "Watch next: Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have.",
+      "key_points": [
+        "Computer Science > Machine Learning Title: Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters Current browse context: References & Citations BibTeX formatted citation...",
+        "Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have.",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "To overcome this data scarcity, we propose a novel transfer learning framework that clusters power output according to covariate meteorological features.",
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "Rather than training a single, general-purpose model, we thus forecast with an ensemble of expert models, each trained on a cluster.",
+        "Beyond power forecasting, this climate-aware transfer learning method opens new opportunities for offshore wind applications such as early-stage wind resource assessment, where reducing data requirements can...",
+        "These allow grid stability, good reserve management and efficient energy trading.",
+        "Our contributions are two-fold - we propose this novel framework and comprehensively evaluate it on eight offshore wind farms, achieving accurate cross-domain forecasting with under five months of site-specific data.",
+        "As these pre-trained models each specialise in a distinct weather pattern, they adapt efficiently to new sites and capture transferable, climate-dependent dynamics."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": ""
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.22629",
+      "title": "Detecting Concept Drift in Evolving Malware Families Using Rule-Based Classifier Representations",
+      "description": "This work proposes a structural approach to concept drift detection in malware classification using decision tree rulesets. Classifiers are trained across temporal windows on the EMBER2024 dataset, and drift is quantified by comparing extracted rule representations using feature importance, prediction agreement, activation stability, and coverage metrics. These metrics are correlated with both accuracy degradation and data distribution shift as complementary drift indicators. The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines. Results show that fixed two-month windowing with feature-level Pearson correlation is the most reliable configuration, being the only one where all family pairs produce positive drift-accuracy correlations. The methods are complementary - no single approach dominates across all pairs.",
+      "excerpt": "This work proposes a structural approach to concept drift detection in malware classification using decision tree rulesets. Classifiers are trained across temporal windows on the EMBER2024 dataset, and drift is quantified by comparing extracted rule representations using feature importance, prediction agreement, activation stability, and coverage metrics. These metrics are correlated with both accuracy degradation and data distribution shift as complementary drift indicators. The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines...",
+      "summary": "arXiv is committed to these values and only works with partners that adhere to them. Computer Science > Cryptography and Security Title: Detecting Concept Drift in Evolving Malware Families Using Rule-Based Classifier Representations Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that... The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines. Watch next: The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines.",
+      "what_happened": "arXiv is committed to these values and only works with partners that adhere to them. Computer Science > Cryptography and Security Title: Detecting Concept Drift in Evolving Malware Families Using Rule-Based Classifier Representations Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that...",
+      "why_matters": "The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines.",
+      "what_to_watch": "Watch next: The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines.",
+      "key_points": [
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "Computer Science > Cryptography and Security Title: Detecting Concept Drift in Evolving Malware Families Using Rule-Based Classifier Representations Current browse context: References & Citations BibTeX formatted...",
+        "The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines.",
+        "These metrics are correlated with both accuracy degradation and data distribution shift as complementary drift indicators.",
+        "Classifiers are trained across temporal windows on the EMBER2024 dataset, and drift is quantified by comparing extracted rule representations using feature importance, prediction agreement, activation stability, and...",
+        "The methods are complementary - no single approach dominates across all pairs.",
+        "This work proposes a structural approach to concept drift detection in malware classification using decision tree rulesets.",
+        "Results show that fixed two-month windowing with feature-level Pearson correlation is the most reliable configuration, being the only one where all family pairs produce positive drift-accuracy correlations."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "",
+      "image_url": ""
+    }
+  ],
+  "carousel_part": 9,
+  "carousel_total_parts": 11,
+  "slides": [
+    "Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters",
+    "Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters",
+    "Why it matters",
+    "Detecting Concept Drift in Evolving Malware Families Using Rule-Based Classifier Representations",
+    "Detecting Concept Drift in Evolving Malware Families Using Rule-Based Classifier Representations",
+    "Why it matters",
+    "What to watch next",
+    "Follow for the next AI briefing"
+  ]
+}

@@ -1,0 +1,17 @@
+OpenAI gives ChatGPT ads a visual upgrade - Part 5
+
+We propose Mochi, a Graph Foundation Model that addresses task unification and training efficiency by adopting a meta-learning based training framework. Prior models pre-train with reconstruction-based objectives such as link prediction, and assume that the resulting representations can be aligned with downstream tasks through a separate unification step such as class prototypes. We demonstrate through synthetic...
+
+Key takeaways:
+- Computer Science > Machine Learning Title: Mochi: Aligning Pre-training and Inference for Efficient Graph Foundation Models via Meta-Learning...
+- We propose Mochi, a Graph Foundation Model that addresses task unification and training efficiency by adopting a meta-learning based training...
+- We show that Mochi, along with its more powerful variant Mochi++, achieves competitive or superior performance compared to existing Graph...
+- arXiv is committed to these values and only works with partners that adhere to them.
+
+Source: arxiv.org | Curated by Graitech AI.
+
+Sources:
+1. Mochi: Aligning Pre-training and Inference for Efficient Graph Foundation Models via Meta-Learning: https://arxiv.org/abs/2604.22031
+2. Ethics Testing: Proactive Identification of Generative AI System Harms: https://arxiv.org/abs/2604.22089
+
+#Openai #Google #Anthropic #Microsoft #Meta #Amazon #Aws #Nvidia #Gpt5 #Gpt4OMini #ClaudePowered #Claude #Gemini #Gemini35

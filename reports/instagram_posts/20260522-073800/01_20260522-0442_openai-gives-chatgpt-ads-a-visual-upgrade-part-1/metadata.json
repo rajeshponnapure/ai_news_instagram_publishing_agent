@@ -1,0 +1,119 @@
+{
+  "email_received_at": "2026-05-22T04:42+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "OpenAI gives ChatGPT ads a visual upgrade - Part 1",
+  "subject": "\ud83d\ude80 AI Digest \u2014 22 May 2026 | 50 updates \u00b7 50 launches",
+  "source_date": "Thu, 21 May 2026 21:42:36 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "AWS",
+    "NVIDIA"
+  ],
+  "models": [
+    "GPT-5",
+    "GPT-4o-mini",
+    "Claude-powered",
+    "Claude",
+    "Gemini",
+    "Gemini 3.5",
+    "Gemini 3.1",
+    "Gemini 3"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://digiday.com/marketing/brands-can-now-customize-how-their-ads-appear-in-chatgpt/",
+  "article_title": "OpenAI gives ChatGPT ads a visual upgrade",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/949614a8d66fc7c1.jpg",
+  "article_image_url": "https://digiday.com/wp-content/uploads/sites/3/2023/12/retail-media-surge-digiday.jpg?w=439&h=277&crop=1",
+  "article_items": [
+    {
+      "url": "https://digiday.com/marketing/brands-can-now-customize-how-their-ads-appear-in-chatgpt/",
+      "title": "OpenAI gives ChatGPT ads a visual upgrade",
+      "description": "The platform is building on its single format to include some new iterations that give advertisers more optionality over their appearances.",
+      "excerpt": "The platform is building on its single format to include some new iterations that give advertisers more optionality over their appearances.",
+      "summary": "01 Marketing on Platforms TikTok launches MCP server to let AI agents run campaigns 02 Member Exclusive Marketing Briefing: Twitter, TikTok vie for ad dollars, offer incentives as they seek to own second screen for Super Bowl Sponsored Amid signal loss and fragmentation, omnichannel orchestration is driving performance 03 Marketing on Platforms OpenAI makes it easier to run shopping ads in ChatGPT 01 The Business of AI \u2018Moved that drop dead date\u2019: Omnicom accelerates LiveRamp exit after Publicis deal 02 AI... The practical impact: It opens the platform to the long tail of advertisers - the mid-market brands, the performance shops and the agencies testing on behalf of clients who aren\u2019t yet ready to commit big sums - and dramatically increases the volume of creative and spend data flowing through the system. It\u2019s also introducing a dedicated e-commerce format that can be displayed in either portrait or landscape orientation and... Watch next: allowing advertisers to retarget existing customers or exclude them entirely, with lookalike audiences likely to follow - is in gated rollout. The new formats, while minor updates to that design, give marketers more control over how their...",
+      "what_happened": "01 Marketing on Platforms TikTok launches MCP server to let AI agents run campaigns 02 Member Exclusive Marketing Briefing: Twitter, TikTok vie for ad dollars, offer incentives as they seek to own second screen for Super Bowl Sponsored Amid signal loss and fragmentation, omnichannel orchestration is driving performance 03 Marketing on Platforms OpenAI makes it easier to run shopping ads in ChatGPT 01 The Business of AI \u2018Moved that drop dead date\u2019: Omnicom accelerates LiveRamp exit after Publicis deal 02 AI...",
+      "why_matters": "The practical impact: It opens the platform to the long tail of advertisers - the mid-market brands, the performance shops and the agencies testing on behalf of clients who aren\u2019t yet ready to commit big sums - and dramatically increases the volume of creative and spend data flowing through the system. It\u2019s also introducing a dedicated e-commerce format that can be displayed in either portrait or landscape orientation and...",
+      "what_to_watch": "Watch next: allowing advertisers to retarget existing customers or exclude them entirely, with lookalike audiences likely to follow - is in gated rollout. The new formats, while minor updates to that design, give marketers more control over how their brands appear and, for the first time, a direct response element...",
+      "key_points": [
+        "01 Marketing on Platforms TikTok launches MCP server to let AI agents run campaigns 02 Member Exclusive Marketing Briefing: Twitter, TikTok vie for ad dollars, offer incentives as they seek to own second screen for...",
+        "Editor\u2019s note: This article has been updated to reflect the additional details about the CTA dynamic ads that are now being tested within the ads manager.",
+        "The new formats, while minor updates to that design, give marketers more control over how their brands appear and, for the first time, a direct response element within the ad unit itself.",
+        "One exec, who currently has advertisers participating both directly and via OpenAI partners, said there are two big wish list items they want to see: scale and the ability to optimize toward business outcomes, such...",
+        "It opens the platform to the long tail of advertisers - the mid-market brands, the performance shops and the agencies testing on behalf of clients who aren\u2019t yet ready to commit big sums - and dramatically increases...",
+        "Bigger changes to the actual ads are on the way.",
+        "It\u2019s also introducing a dedicated e-commerce format that can be displayed in either portrait or landscape orientation and pulls in shopping data including price and customer reviews.",
+        "The portrait version is designed to stack, potentially allowing three or four ads to sit side-by-side, opening the door to a carousel-style placement.",
+        "Google announced a new souped up suite of agentic ad tools backed by its LLM, Gemini.",
+        "With enough live data now flowing through the platform, OpenAI appears to be amassing the breadth of signal needed to act on that."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/949614a8d66fc7c1.jpg",
+      "image_url": "https://digiday.com/wp-content/uploads/sites/3/2023/12/retail-media-surge-digiday.jpg?w=439&h=277&crop=1"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/announcing-openai-compatible-api-support-for-amazon-sagemaker-ai-endpoints/",
+      "title": "Announcing OpenAI-compatible API support for Amazon SageMaker AI endpoints | Amazon Web Services",
+      "description": "Today, Amazon SageMaker AI introduces OpenAI-compatible API support for real-time inference endpoints. If you use the OpenAI SDK, LangChain, or Strands Agents, you can now invoke models on SageMaker AI by changing only your endpoint URL. You don\u2019t need a custom client, a SigV4 wrapper, or code rewrites. Overview With this launch, SageMaker AI endpoints",
+      "excerpt": "Today, Amazon SageMaker AI introduces OpenAI-compatible API support for real-time inference endpoints. If you use the OpenAI SDK, LangChain, or Strands Agents, you can now invoke models on SageMaker AI by changing only your endpoint URL. You don\u2019t need a custom client, a SigV4 wrapper, or code rewrites. Overview With this launch, SageMaker AI endpoints",
+      "summary": "Overview With this launch, SageMaker AI endpoints Today, Amazon SageMaker AI introduces OpenAI-compatible API support for real-time inference endpoints. The practical impact: If you use the OpenAI SDK, LangChain, or Strands Agents, you can now invoke models on SageMaker AI by changing only your endpoint URL. You don\u2019t need a custom client, a SigV4 wrapper, or code rewrites. Watch next: If you use the OpenAI SDK, LangChain, or Strands Agents, you can now invoke models on SageMaker AI by changing only your endpoint URL.",
+      "what_happened": "Overview With this launch, SageMaker AI endpoints Today, Amazon SageMaker AI introduces OpenAI-compatible API support for real-time inference endpoints.",
+      "why_matters": "The practical impact: If you use the OpenAI SDK, LangChain, or Strands Agents, you can now invoke models on SageMaker AI by changing only your endpoint URL. You don\u2019t need a custom client, a SigV4 wrapper, or code rewrites.",
+      "what_to_watch": "Watch next: If you use the OpenAI SDK, LangChain, or Strands Agents, you can now invoke models on SageMaker AI by changing only your endpoint URL.",
+      "key_points": [
+        "Overview With this launch, SageMaker AI endpoints",
+        "Today, Amazon SageMaker AI introduces OpenAI-compatible API support for real-time inference endpoints.",
+        "If you use the OpenAI SDK, LangChain, or Strands Agents, you can now invoke models on SageMaker AI by changing only your endpoint URL.",
+        "You don\u2019t need a custom client, a SigV4 wrapper, or code rewrites."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5b569932aedf26c9.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/20/ML-21074-2.png"
+    }
+  ],
+  "carousel_part": 1,
+  "carousel_total_parts": 11,
+  "slides": [
+    "OpenAI gives ChatGPT ads a visual upgrade",
+    "OpenAI gives ChatGPT ads a visual upgrade",
+    "Why it matters",
+    "What to watch next",
+    "Announcing OpenAI-compatible API support for Amazon SageMaker AI endpoints | Amazon Web Services",
+    "Announcing OpenAI-compatible API support for Amazon SageMaker AI endpoints | Amazon Web Services",
+    "Why it matters",
+    "Follow for the next AI briefing"
+  ]
+}
