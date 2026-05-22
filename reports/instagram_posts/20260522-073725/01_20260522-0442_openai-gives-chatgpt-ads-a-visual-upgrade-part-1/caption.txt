@@ -1,0 +1,17 @@
+OpenAI gives ChatGPT ads a visual upgrade - Part 1
+
+The platform is building on its single format to include some new iterations that give advertisers more optionality over their appearances.
+
+Key takeaways:
+- 01 Marketing on Platforms TikTok launches MCP server to let AI agents run campaigns 02 Member Exclusive Marketing Briefing: Twitter, TikTok vie...
+- Editor’s note: This article has been updated to reflect the additional details about the CTA dynamic ads that are now being tested within the ads...
+- The new formats, while minor updates to that design, give marketers more control over how their brands appear and, for the first time, a direct...
+- One exec, who currently has advertisers participating both directly and via OpenAI partners, said there are two big wish list items they want to...
+
+Source: digiday.com | Curated by Graitech AI.
+
+Sources:
+1. OpenAI gives ChatGPT ads a visual upgrade: https://digiday.com/marketing/brands-can-now-customize-how-their-ads-appear-in-chatgpt/
+2. Announcing OpenAI-compatible API support for Amazon SageMaker AI endpoints | Amazon Web Services: https://aws.amazon.com/blogs/machine-learning/announcing-openai-compatible-api-support-for-amazon-sagemaker-ai-endpoints/
+
+#Openai #Google #Anthropic #Microsoft #Meta #Amazon #Aws #Nvidia #Gpt5 #Gpt4OMini #ClaudePowered #Claude #Gemini #Gemini35

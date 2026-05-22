@@ -1,0 +1,17 @@
+OpenAI gives ChatGPT ads a visual upgrade - Part 10
+
+AI Update Digest - 22 May 2026 Total: 50 updates ================================================== AI LAUNCHES & RELEASES ---------------------------------------- [HIGH] Meta Is in Crisis, Google Search’s Makeover, and AI Gets Booed by Graduates Wired AI | [HIGH] OpenAI gives ChatGPT ads a visual upgrade Digiday | [HIGH] Announcing OpenAI-compatible API support for Amazon SageMaker AI endpoints AWS Machine...
+
+Key takeaways:
+- AI Update Digest - 22 May 2026 Total: 50 updates ================================================== AI LAUNCHES & RELEASES...
+- 01 Marketing on Platforms TikTok launches MCP server to let AI agents run campaigns 02 Member Exclusive Marketing Briefing: Twitter, TikTok vie...
+- Editor’s note: This article has been updated to reflect the additional details about the CTA dynamic ads that are now being tested within the ads...
+- The new formats, while minor updates to that design, give marketers more control over how their brands appear and, for the first time, a direct...
+
+Source: wired.com | Curated by Graitech AI.
+
+Sources:
+1. AI Update Digest — 22 May 2026: https://www.wired.com/story/uncanny-valley-podcast-meta-in-crisis-google-search-makeover-ai-booed-by-graduates/
+2. AI Update Digest — 22 May 2026: http://digiday.com/marketing/brands-can-now-customize-how-their-ads-appear-in-chatgpt/
+
+#Openai #Google #Anthropic #Microsoft #Meta #Amazon #Aws #Nvidia #Gpt5 #Gpt4OMini #ClaudePowered #Claude #Gemini #Gemini35
