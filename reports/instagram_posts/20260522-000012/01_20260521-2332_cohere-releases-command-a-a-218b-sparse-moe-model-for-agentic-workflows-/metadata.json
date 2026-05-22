@@ -1,0 +1,111 @@
+{
+  "email_received_at": "2026-05-21T23:32+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs... - Part 1",
+  "subject": "\ud83d\udea8 AI Alert: 4 new launches \u2014 MarkTechPost AI, AWS Machine Learning",
+  "source_date": "Thu, 21 May 2026 16:32:44 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Amazon",
+    "AWS",
+    "Cohere",
+    "MarkTechPost AI",
+    "Most AI",
+    "Arena AI"
+  ],
+  "models": [
+    "GPT-5.5",
+    "Claude",
+    "Gemini 3.5",
+    "Gemini 3.1"
+  ],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.marktechpost.com/2026/05/21/cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-that-runs-on-as-few-as-two-h100-gpus/",
+  "article_title": "Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs on as Few as Two H100 GPUs",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/eda384acac17943c.png",
+  "article_image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-36.png",
+  "article_items": [
+    {
+      "url": "https://www.marktechpost.com/2026/05/21/cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-that-runs-on-as-few-as-two-h100-gpus/",
+      "title": "Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs on as Few as Two H100 GPUs",
+      "description": "Cohere releases Command A+, a 218B Sparse MoE open-source model for agentic workflows, running on two H100 GPUs.",
+      "excerpt": "Cohere releases Command A+, a 218B Sparse MoE open-source model for agentic workflows, running on two H100 GPUs.",
+      "summary": "Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs on as Few as Two H100 GPUs Cohere just released Command A+, as an open-source model targeting enterprise agentic workflows. Command A+ expands multilingual coverage from 23 to 48 languages, with gains in machine translation and multilingual reasoning. The practical impact: Command A+ is Cohere\u2019s first multimodal reasoning model. It unifies capabilities from four prior models - Command A, Command A Reasoning, Command A Vision, and Command A Translate - into a single scalable model. Watch next: Command A+ is Cohere\u2019s first multimodal reasoning model.",
+      "what_happened": "Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs on as Few as Two H100 GPUs Cohere just released Command A+, as an open-source model targeting enterprise agentic workflows. Command A+ expands multilingual coverage from 23 to 48 languages, with gains in machine translation and multilingual reasoning.",
+      "why_matters": "The practical impact: Command A+ is Cohere\u2019s first multimodal reasoning model. It unifies capabilities from four prior models - Command A, Command A Reasoning, Command A Vision, and Command A Translate - into a single scalable model.",
+      "what_to_watch": "Watch next: Command A+ is Cohere\u2019s first multimodal reasoning model.",
+      "key_points": [
+        "Command A+ is Cohere\u2019s first multimodal reasoning model.",
+        "Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs on as Few as Two H100 GPUs Cohere just released Command A+, as an open-source model targeting enterprise agentic workflows.",
+        "Prior Command A Models On \u03c4\u00b2-Bench Telecom, scores improved from 37% to 85% over Command A Reasoning, and Terminal-Bench Hard agentic coding performance reached 25% from 3%.",
+        "It unifies capabilities from four prior models - Command A, Command A Reasoning, Command A Vision, and Command A Translate - into a single scalable model.",
+        "Command A+ expands multilingual coverage from 23 to 48 languages, with gains in machine translation and multilingual reasoning.",
+        "Cohere releases Command A+, a 218B Sparse MoE open-source model for agentic workflows, running on two H100 GPUs."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/eda384acac17943c.png",
+      "image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-36.png"
+    },
+    {
+      "url": "https://www.marktechpost.com/2026/05/21/qwen-introduces-qwen3-7-max-a-reasoning-agent-model-with-a-1m-token-context-window/",
+      "title": "Qwen Introduces Qwen3.7-Max: A Reasoning Agent Model With a 1M-Token Context Window",
+      "description": "Alibaba's Qwen3.7-Max is a reasoning agent model with a 1M-token context window, scoring 56.6 on the Artificial Analysis Intelligence Index.",
+      "excerpt": "Alibaba's Qwen3.7-Max is a reasoning agent model with a 1M-token context window, scoring 56.6 on the Artificial Analysis Intelligence Index.",
+      "summary": "Qwen Introduces Qwen3.7-Max: A Reasoning Agent Model With a 1M-Token Context Window Most AI models today are not designed for sustained, multi-step autonomous execution. Two Preview Models Released Simultaneously Alibaba previewed two models simultaneously: Qwen3.7-Max-Preview and Qwen3.7-Plus-Preview. The practical impact: What is Qwen3.7-Max Designed For Alibaba Qwen team described Qwen3.7-Max as its most advanced and comprehensive agent model to date. Extended-Thinking Mode Qwen3.7-Max is a reasoning model. Watch next: When Artificial Analysis ran its Intelligence Index evaluation, Qwen3.7-Max generated about 97 million tokens, compared to an average of 24 million for models on that benchmark. Extended-Thinking Mode Qwen3.7-Max is a reasoning model.",
+      "what_happened": "Qwen Introduces Qwen3.7-Max: A Reasoning Agent Model With a 1M-Token Context Window Most AI models today are not designed for sustained, multi-step autonomous execution. Two Preview Models Released Simultaneously Alibaba previewed two models simultaneously: Qwen3.7-Max-Preview and Qwen3.7-Plus-Preview.",
+      "why_matters": "The practical impact: What is Qwen3.7-Max Designed For Alibaba Qwen team described Qwen3.7-Max as its most advanced and comprehensive agent model to date. Extended-Thinking Mode Qwen3.7-Max is a reasoning model.",
+      "what_to_watch": "Watch next: When Artificial Analysis ran its Intelligence Index evaluation, Qwen3.7-Max generated about 97 million tokens, compared to an average of 24 million for models on that benchmark. Extended-Thinking Mode Qwen3.7-Max is a reasoning model.",
+      "key_points": [
+        "Alibaba's Qwen3.7-Max is a reasoning agent model with a 1M-token context window, scoring 56.6 on the Artificial Analysis Intelligence Index.",
+        "Qwen Introduces Qwen3.7-Max: A Reasoning Agent Model With a 1M-Token Context Window Most AI models today are not designed for sustained, multi-step autonomous execution.",
+        "Two Preview Models Released Simultaneously Alibaba previewed two models simultaneously: Qwen3.7-Max-Preview and Qwen3.7-Plus-Preview.",
+        "Extended-Thinking Mode Qwen3.7-Max is a reasoning model.",
+        "This article covers Qwen3.7-Max, as it is the model Alibaba formally announced with API access.",
+        "Qwen3.7-Max is the text-only reasoning flagship."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4713b21b8f82c205.png",
+      "image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-37-1024x731.png"
+    }
+  ],
+  "carousel_part": 1,
+  "carousel_total_parts": 2,
+  "slides": [
+    "Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs...",
+    "Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs...",
+    "Why it matters",
+    "Qwen Introduces Qwen3.7-Max: A Reasoning Agent Model With a 1M-Token Context Window",
+    "Qwen Introduces Qwen3.7-Max: A Reasoning Agent Model With a 1M-Token Context Window",
+    "Why it matters",
+    "Follow for the next AI briefing"
+  ]
+}

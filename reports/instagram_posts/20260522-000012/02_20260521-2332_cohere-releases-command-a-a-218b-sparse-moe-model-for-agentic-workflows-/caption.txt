@@ -1,0 +1,13 @@
+Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs... - Part 2
+
+In this post, you will learn what Nova Act offers, how HIPAA eligibility applies to agentic AI, and how to get started.
+
+Key takeaways:
+- Nova Act also integrates with external tools through API calls, remote Model Control Protoco l (MCP), or agentic frameworks, such as Strand Agents.
+- Artificial Intelligence Amazon Nova Act is now HIPAA eligible Healthcare and life sciences (HCLS) organizations depend on repetitive, manual...
+- About Amazon Nova Act Amazon Nova Act is available as an AWS service to build and manage fleets of reliable AI agents for automating production UI...
+- While agentic AI can automate these workflows, compliance requirements under the Health Insurance Portability and Accountability Act (HIPAA) have...
+
+Source: aws.amazon.com | Curated by Graitech AI.
+
+#Openai #Google #Amazon #Aws #Cohere #MarktechpostAi #MostAi #ArenaAi #Gpt55 #Claude #Gemini35 #Gemini31 #ModelRelease #RegulationOrSafety
