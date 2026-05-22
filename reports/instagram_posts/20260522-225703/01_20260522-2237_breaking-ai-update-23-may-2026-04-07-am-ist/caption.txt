@@ -1,0 +1,16 @@
+BREAKING AI UPDATE - 23 May 2026, 04:07 AM IST.
+
+👉 Swipe to see the full breakdown →
+
+1 new AI event(s) detected ================================================== [MEDIUM] anthropics/claude-code: v2.1.149 Company : Anthropic Summary : ## What's changed - /usage now shows a per-category breakdown of what's driving your limits usage - skills, subagents, plugins, and per-MCP-server cost - /diff detail view can now be scrolled wit Link : BREAKING AI UPDATE - 23 May 2026, 04:07 AM IST 1 new AI event(s).
+
+🔹 BREAKING AI UPDATE - 23 May 2026, 04:07 AM IST 1 new AI event(s) detected ================================================== [MEDIUM].
+
+Would you use something like this in your daily work? Yes or no in the comments.
+
+💾 Save this post — you'll want to come back to this one.
+
+📰 Source: github.com
+🔗 https://github.com/anthropics/claude-code/releases/tag/v2.1.149
+
+#AINews #AITools #GenerativeAI #Anthropic #Claude #Innovation #EmergingTech #TechNews #DigitalTransformation #Technology #Tech #AIExplained #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing #MLNews #AIWeekly #TechInnovation #AIStartups

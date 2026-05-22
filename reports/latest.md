@@ -1,21 +1,20 @@
 # AI News Summary Report
 
-Generated: 2026-05-22T20:53:11+00:00
+Generated: 2026-05-22T22:57:03+00:00
 Source: grdevelopers.co@gmail.com
 Emails summarized: 1
 
 ## Executive Brief
 
-- BREAKING AI UPDATE - 23 May 2026, 01:42 AM IST 1 new AI event(s) detected ================================================== [MEDIUM] cohere-ai/cohere-developer-experience: python@7.0.0 Company : Cohere Summary ...
-- Link : BREAKING AI UPDATE - 23 May 2026, 01:42 AM IST 1 new AI event(s) detected ================================================== [MEDIUM] cohere-ai/cohere-developer-experience: python@7.0.0 Company : Cohere...
+- BREAKING AI UPDATE - 23 May 2026, 04:07 AM IST 1 new AI event(s) detected ================================================== [MEDIUM] anthropics/claude-code: v2.1.149 Company : Anthropic Summary : ## What's changed -...
 
 ## Most Mentioned Companies
 
-Cohere (1)
+Anthropic (1)
 
 ## Most Mentioned Models
 
-No clear model mentions found.
+claude-code (1)
 
 ## Main Topics
 
@@ -23,23 +22,23 @@ model release (1)
 
 ## Voice Script Hooks
 
-- Cohere just made a move in model release: BREAKING AI UPDATE - 23 May 2026, 01:42 AM IST
+- Anthropic just made a move in model release: BREAKING AI UPDATE - 23 May 2026, 04:07 AM IST
 
 ## Per-Email Summaries
 
-### 1. BREAKING AI UPDATE - 23 May 2026, 01:42 AM IST
+### 1. BREAKING AI UPDATE - 23 May 2026, 04:07 AM IST
 
-Source date: Fri, 22 May 2026 13:12:21 -0700
+Source date: Fri, 22 May 2026 15:37:56 -0700
 Confidence: 0.82
-Article: https://github.com/cohere-ai/cohere-developer-experience/releases/tag/python%407.0.0
-Article title: ⚡ BREAKING AI UPDATE — 23 May 2026, 01:42 AM IST
+Article: https://github.com/anthropics/claude-code/releases/tag/v2.1.149
+Article title: ⚡ BREAKING AI UPDATE — 23 May 2026, 04:07 AM IST
 
-Article excerpt: ⚡ BREAKING AI UPDATE — 23 May 2026, 01:42 AM IST 1 new AI event(s) detected ================================================== [MEDIUM] cohere-ai/cohere-developer-experience: python@7.0.0 Company : Cohere Summary : This release updates the python package to 7.0.0. Link :
+Article excerpt: ⚡ BREAKING AI UPDATE — 23 May 2026, 04:07 AM IST 1 new AI event(s) detected ================================================== [MEDIUM] anthropics/claude-code: v2.1.149 Company : Anthropic Summary : ## What's changed - `/usage` now shows a per-category breakdown of what's driving your limits usage — skills, subagents, plugins, and per-MCP-server cost - `/diff` detail view can now be scrolled wit Link :
 
-BREAKING AI UPDATE - 23 May 2026, 01:42 AM IST 1 new AI event(s) detected ================================================== [MEDIUM] cohere-ai/cohere-developer-experience: python@7.0.0 Company : Cohere Summary : This release updates the python package to 7.0.0. Link : BREAKING AI UPDATE - 23 May 2026, 01:42 AM IST 1 new AI event(s) detected ================================================== [MEDIUM] cohere-ai/cohere-developer-experience: python@7.0.0 Company : Cohere Summary : This release updates the python... BREAKING AI UPDATE - 23 May 2026, 01:42 AM IST 1 new AI event(s) detected ================================================== [MEDIUM] cohere-ai/cohere-developer-experience: python@7.0.0 Company : Cohere Summary ... Link : BREAKING AI UPDATE - 23 May 2026, 01:42 AM IST 1 new AI event(s) detected ================================================== [MEDIUM] cohere-ai/cohere-developer-experience: python@7.0.0 Company : Cohere... BREAKING AI UPDATE - 23 May 2026, 01:42 AM IST 1 new AI event(s) detected ================================================== [MEDIUM] cohere-ai/cohere-developer-experience: python@7.0.0 Company : Cohere Summary : This release updates the python package to 7.0.0. Link : BREAKING AI UPDATE - 23 May 2026, 01:42 AM IST 1 new AI event(s) detected ================================================== [MEDIUM] cohere-ai/cohere-developer-experience: python@7.0.0 Company : Cohere Summary : This release updates the python package to 7.0.0.
+BREAKING AI UPDATE - 23 May 2026, 04:07 AM IST 1 new AI event(s) detected ================================================== [MEDIUM] anthropics/claude-code: v2.1.149 Company : Anthropic Summary : ## What's changed - /usage now shows a per-category breakdown of what's driving your limits usage - skills, subagents, plugins, and per-MCP-server cost - /diff detail view can now be scrolled wit Link : BREAKING AI UPDATE - 23 May 2026, 04:07 AM IST 1 new AI event(s) detected... BREAKING AI UPDATE - 23 May 2026, 04:07 AM IST 1 new AI event(s) detected ================================================== [MEDIUM] anthropics/claude-code: v2.1.149 Company : Anthropic Summary : ## What's changed -... BREAKING AI UPDATE - 23 May 2026, 04:07 AM IST 1 new AI event(s) detected ================================================== [MEDIUM] anthropics/claude-code: v2.1.149 Company : Anthropic Summary : ## What's changed - /usage now shows a per-category breakdown of what's driving your limits usage - skills, subagents, plugins, and per-MCP-server cost - /diff detail view can now be scrolled wit Link : BREAKING AI UPDATE - 23 May 2026, 04:07 AM IST 1 new AI event(s) detected ================================================== [MEDIUM] anthropics/claude-code: v2.1.149 Company : Anthropic Summary : ## What's changed - /usage now shows a per-category breakdown of what's driving your limits usage - skills, subagents, plugins, and per-MCP-server cost - /diff detail view can now be scrolled wit Link :
 
 Key points:
-- BREAKING AI UPDATE - 23 May 2026, 01:42 AM IST 1 new AI event(s) detected ================================================== [MEDIUM] cohere-ai/cohere-developer-experience: python@7.0.0 Company : Cohere Summary ...
-- Link : BREAKING AI UPDATE - 23 May 2026, 01:42 AM IST 1 new AI event(s) detected ================================================== [MEDIUM] cohere-ai/cohere-developer-experience: python@7.0.0 Company : Cohere...
-Companies: Cohere
+- BREAKING AI UPDATE - 23 May 2026, 04:07 AM IST 1 new AI event(s) detected ================================================== [MEDIUM] anthropics/claude-code: v2.1.149 Company : Anthropic Summary : ## What's changed -...
+Companies: Anthropic
+Models: claude-code
 Topics: model release
