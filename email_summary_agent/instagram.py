@@ -19,8 +19,17 @@ from .models import EmailSummary
 
 CANVAS_W = 1080
 CANVAS_H = 1350
-MAX_CAROUSEL_SLIDES = 10
-STORIES_PER_CAROUSEL = 2
+# Instagram allows up to 20 slides per carousel post — use the full limit.
+MAX_CAROUSEL_SLIDES = 20
+# For digest posts: pack up to 19 news-story slides + 1 CTA = 20 slides per post.
+DIGEST_NEWS_PER_POST = 19
+# For regular single-article posts: one article tells its full story across slides.
+STORIES_PER_CAROUSEL = 1
+# For normal (non-digest) emails: pack up to 2 news stories per carousel post.
+# Each story gets an image+headline slide + N key-point slides.
+NORMAL_NEWS_PER_POST = 2
+# Hard minimum readable font size — never go below this on any slide.
+FONT_MIN_READABLE = 26
 POSTING_SLOTS = ("08:00", "14:00", "18:00", "22:00")
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 WATERMARK_CANDIDATES = [PROJECT_ROOT / "GR watermark.png", PROJECT_ROOT / "GR Watermark.png", PROJECT_ROOT / "GR watermark.svg"]
@@ -216,14 +225,94 @@ def write_instagram_carousels(
     return carousel_dirs
 
 
-def _split_summary_for_carousels(summary: EmailSummary) -> list[EmailSummary]:
+def _is_digest_summary(summary: EmailSummary) -> bool:
+    """Return True when this summary represents a daily digest email.
+
+    Digest emails are the once-per-day bulk emails containing 15–50 news items.
+    Normal emails arrive throughout the day with 1–N articles (N is typically small).
+
+    Detection rules:
+    1. subject/headline matches a known digest pattern (strongest signal)
+    2. article_items >= 8 (genuine digest — normal emails rarely exceed 4-5 articles)
+    """
+    import re as _re
+    subject = summary.subject or summary.headline or ""
+    if _re.search(
+        r"\b(AI\s+Alert|AI\s+Digest|AI\s+Updates|daily\s+digest|news\s+digest|"
+        r"morning\s+brief|evening\s+brief|weekly\s+digest|ai\s+roundup|tech\s+digest)\b",
+        subject, _re.I,
+    ):
+        return True
     articles = _article_items(summary)
-    if len(articles) <= STORIES_PER_CAROUSEL:
+    # Only treat as digest when article count is large enough to be a bulk email.
+    # Normal emails with 2-7 articles are still treated as normal posts.
+    return len(articles) >= 8
+
+
+def _split_summary_for_carousels(summary: EmailSummary) -> list[EmailSummary]:
+    """Split a summary into one or more carousel-sized EmailSummary objects.
+
+    DIGEST emails (8+ article_items OR subject matches digest pattern):
+        Each article_item becomes one digest slide.
+        Posts are capped at DIGEST_NEWS_PER_POST news slides + 1 CTA = MAX_CAROUSEL_SLIDES.
+        If the digest has more items than fit in one post, extra posts are created.
+
+    NORMAL emails (< 8 article_items, no digest subject):
+        Articles are grouped in pairs (NORMAL_NEWS_PER_POST = 2 per carousel).
+        Each pair becomes one post with image+headline + keypoint slides.
+    """
+    articles = _article_items(summary)
+
+    # ── Normal email — group articles in pairs (NORMAL_NEWS_PER_POST per post) ─
+    if not _is_digest_summary(summary):
+        articles = _article_items(summary)
+        if len(articles) <= NORMAL_NEWS_PER_POST:
+            return [summary]
+        # Split into groups of NORMAL_NEWS_PER_POST articles
+        normal_parts: list[EmailSummary] = []
+        for chunk_start in range(0, len(articles), NORMAL_NEWS_PER_POST):
+            chunk = articles[chunk_start:chunk_start + NORMAL_NEWS_PER_POST]
+            first = chunk[0]
+            part = EmailSummary(
+                message_key=f"{summary.message_key}:n{chunk_start // NORMAL_NEWS_PER_POST + 1}",
+                subject=summary.subject,
+                source_date=summary.source_date,
+                headline=summary.headline,
+                summary=summary.summary,
+                key_points=summary.key_points,
+                companies=summary.companies,
+                models=summary.models,
+                topics=summary.topics,
+                confidence=summary.confidence,
+                article_url=str(first.get("url", "")),
+                article_title=str(first.get("title", "")),
+                article_image_path=str(first.get("image_path", "")),
+                article_image_url=str(first.get("image_url", "")),
+                article_excerpt=str(first.get("excerpt") or first.get("description") or ""),
+                article_items=chunk,
+            )
+            normal_parts.append(part)
+        return normal_parts
+
+    # ── Digest email — split into posts of DIGEST_NEWS_PER_POST items ─────────
+    if not articles:
         return [summary]
-    chunks = [articles[index : index + STORIES_PER_CAROUSEL] for index in range(0, len(articles), STORIES_PER_CAROUSEL)]
+
+    chunks = [
+        articles[i : i + DIGEST_NEWS_PER_POST]
+        for i in range(0, len(articles), DIGEST_NEWS_PER_POST)
+    ]
+    total_parts = len(chunks)
     parts: list[EmailSummary] = []
+
+    base_headline = _clean_headline(summary.headline or summary.subject or "Daily AI Digest")
+
     for part_number, chunk in enumerate(chunks, start=1):
-        headline = f"{_tighten(summary.headline or summary.subject or 'Daily AI Digest', 88)} - Part {part_number}"
+        if total_parts > 1:
+            headline = f"{base_headline} — Part {part_number} of {total_parts}"
+        else:
+            headline = base_headline
+
         first = chunk[0]
         part = EmailSummary(
             message_key=f"{summary.message_key}:part:{part_number}",
@@ -244,12 +333,107 @@ def _split_summary_for_carousels(summary: EmailSummary) -> list[EmailSummary]:
             article_items=chunk,
         )
         object.__setattr__(part, "_carousel_part", part_number)
-        object.__setattr__(part, "_carousel_total_parts", len(chunks))
+        object.__setattr__(part, "_carousel_total_parts", total_parts)
+        object.__setattr__(part, "_is_digest", True)
         parts.append(part)
+
     return parts
 
 
+def _clean_headline(text: str) -> str:
+    """Remove trailing dots/ellipsis from a headline and tighten whitespace."""
+    text = re.sub(r"\s+", " ", text or "").strip()
+    text = re.sub(r"[.…]+$", "", text).strip()
+    return text
+
+
 def _build_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[str, Any]]:
+    """Route to the correct slide builder based on whether this is a digest or a normal post."""
+    if getattr(summary, "_is_digest", False) or _is_digest_summary(summary):
+        return _build_digest_slide_specs(summary, email_dt)
+    return _build_normal_slide_specs(summary, email_dt)
+
+
+def _build_digest_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[str, Any]]:
+    """Build slides for a digest email carousel.
+
+    Layout per slide:
+        • Top 52%: unique article image (from blog; web fallback if missing)
+        • Bottom 48%: eyebrow label | headline | brief 2–3 sentence summary | source credit
+        • One CTA slide at the end
+
+    Images are deduplicated across all slides in this carousel — no two slides
+    ever share the same image URL or local file.
+    """
+    articles = _article_items(summary)
+    if not articles:
+        return _build_normal_slide_specs(summary, email_dt)
+
+    slides: list[dict[str, Any]] = []
+    # Track URLs and local paths used so far — prevents any image reuse.
+    used_image_urls: set[str] = set()
+    used_image_paths: set[str] = set()
+
+    for article_index, article in enumerate(articles[:DIGEST_NEWS_PER_POST], start=1):
+        headline = _clean_headline(
+            _clean_public_text(str(article.get("title") or summary.headline or "AI update"))
+        ) or "AI Update"
+
+        topic = ", ".join(summary.topics[:2]) or headline
+        source_label = _source_label_from_url(str(article.get("url") or ""))
+
+        # Build a brief, complete summary for this slide (2–3 sentences, no dots).
+        brief = _build_digest_slide_brief(summary, article)
+
+        # Select a unique image for this article.
+        image_path = _select_unique_article_image(
+            article, topic, used_image_urls, used_image_paths
+        )
+
+        slides.append(
+            {
+                "kind": "digest",
+                "slide_index": article_index,
+                "eyebrow": _pick_digest_eyebrow(article, summary),
+                "title": headline,
+                "body": brief,
+                "image_path": image_path,
+                "topic": topic,
+                "url": str(article.get("url", "")),
+                "source_label": source_label,
+            }
+        )
+
+    # CTA slide
+    slides.append(
+        {
+            "kind": "cta",
+            "eyebrow": "GRAITECH",
+            "title": "Follow for the next AI briefing",
+            "body": "LIKE | COMMENT | FOLLOW | SAVE",
+            "image_path": "",
+            "source_label": "",
+        }
+    )
+
+    return slides[:MAX_CAROUSEL_SLIDES]
+
+
+def _build_normal_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[str, Any]]:
+    """Build the carousel for a regular (non-digest) email.
+
+    Structure per post:
+    • Up to NORMAL_NEWS_PER_POST (2) news articles per carousel post.
+    • Per article:
+        - Slide 1: image + headline  (kind="image")
+        - Slides 2-N: one key point per slide  (kind="keypoint")
+          N depends on how many key points the extractor produces (3–6).
+    • Final slide: CTA  (kind="cta")
+
+    If the email contains more than NORMAL_NEWS_PER_POST articles, this
+    function is called once per group of NORMAL_NEWS_PER_POST articles via
+    _split_summary_for_carousels().
+    """
     articles = _article_items(summary)
     if not articles:
         articles = [
@@ -264,85 +448,351 @@ def _build_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[s
         ]
 
     slides: list[dict[str, Any]] = []
-    for article_index, article in enumerate(articles[:STORIES_PER_CAROUSEL], start=1):
-        headline = _tighten(
+    used_image_urls: set[str] = set()
+    used_image_paths: set[str] = set()
+
+    KP_EMOJIS = ["⚡", "🔹", "🧠", "📊", "🔬", "💡", "🛠️", "🌍", "🤖", "📈", "🎯", "🚀"]
+
+    for article_index, article in enumerate(articles[:NORMAL_NEWS_PER_POST], start=1):
+        headline = _clean_headline(
             _clean_public_text(str(article.get("title") or summary.headline or summary.subject or "AI update"))
-            or _tighten(summary.headline or summary.subject or "AI update", 100),
-            100,
-        )
+        ) or "AI Update"
         topic = ", ".join(summary.topics[:2]) or headline
-        image_path = _select_article_image(article, topic)
-        slides.append(
-            {
-                "kind": "image",
-                "eyebrow": f"STORY {article_index:02d}",
-                "title": headline,
-                "body": "",
-                "image_path": image_path,
-                "topic": topic,
-                "url": article.get("url", ""),
-                "source_label": _source_label_from_url(str(article.get("url") or "")),
-            }
-        )
+        source_label = _source_label_from_url(str(article.get("url") or ""))
 
-        narrative = _compose_article_narrative(summary, article)
-        content_pages = _split_narrative_for_content_pages(narrative)
-        while len(content_pages) < 2:
-            content_pages.append(_fallback_story_page(summary, article, len(content_pages) + 1))
+        # ── Slide 1: Image + headline ─────────────────────────────────────────
+        image_path = _select_unique_article_image(article, topic, used_image_urls, used_image_paths)
+        slides.append({
+            "kind": "image",
+            "eyebrow": f"STORY {article_index:02d}",
+            "title": headline,
+            "body": "",
+            "image_path": image_path,
+            "topic": topic,
+            "url": str(article.get("url") or ""),
+            "source_label": source_label,
+        })
 
-        slides.append(
-            {
-                "kind": "text",
-                "eyebrow": f"STORY {article_index:02d} - WHAT HAPPENED",
+        # ── Slides 2-N: Key-point slides ─────────────────────────────────────
+        key_points = _extract_instagram_key_points(article, summary, max_points=6)
+        for kp_idx, kp_text in enumerate(key_points):
+            emoji = KP_EMOJIS[kp_idx % len(KP_EMOJIS)]
+            slides.append({
+                "kind": "keypoint",
+                "eyebrow": f"STORY {article_index:02d} · POINT {kp_idx + 1}/{len(key_points)}",
                 "title": headline,
-                "body": _tighten(content_pages[0], 620),
-                "supporting": _supporting_note(summary, article, article_index, "Why this matters", variant="why"),
+                "body": kp_text,
+                "emoji": emoji,
+                "point_num": kp_idx + 1,
+                "total_points": len(key_points),
                 "image_path": "",
                 "topic": topic,
-                "url": article.get("url", ""),
-                "source_label": _source_label_from_url(str(article.get("url") or "")),
-            }
-        )
-        slides.append(
-            {
-                "kind": "text",
-                "eyebrow": f"STORY {article_index:02d} - WHY IT MATTERS",
-                "title": "Why it matters",
-                "body": _tighten(content_pages[1], 620),
-                "supporting": _supporting_note(summary, article, article_index, "The bigger signal", variant="signal"),
-                "image_path": "",
-                "topic": topic,
-                "url": article.get("url", ""),
-                "source_label": _source_label_from_url(str(article.get("url") or "")),
-            }
-        )
-        if len(content_pages) >= 3:
-            slides.append(
-                {
-                    "kind": "text",
-                    "eyebrow": f"STORY {article_index:02d} - WATCH NEXT",
-                    "title": "What to watch next",
-                    "body": _tighten(content_pages[2], 620),
-                    "supporting": _supporting_note(summary, article, article_index, "Watch this next", variant="watch"),
-                    "image_path": "",
-                    "topic": topic,
-                    "url": article.get("url", ""),
-                    "source_label": _source_label_from_url(str(article.get("url") or "")),
-                }
-            )
+                "url": str(article.get("url") or ""),
+                "source_label": source_label,
+            })
 
-    slides.append(
-        {
-            "kind": "cta",
-            "eyebrow": "GRAITECH",
-            "title": "Follow for the next AI briefing",
-            "body": "LIKE | COMMENT | FOLLOW | SAVE",
-            "image_path": "",
-            "source_label": "",
-        }
-    )
+    # ── CTA slide ─────────────────────────────────────────────────────────────
+    slides.append({
+        "kind": "cta",
+        "eyebrow": "GRAITECH",
+        "title": "Follow for the next AI briefing",
+        "body": "LIKE | COMMENT | FOLLOW | SAVE",
+        "image_path": "",
+        "source_label": "",
+    })
 
     return slides[:MAX_CAROUSEL_SLIDES]
+
+
+def _build_digest_slide_brief(summary: EmailSummary, article: dict[str, Any]) -> str:
+    """Build a brief, complete 2–3 sentence summary for a single digest slide.
+
+    Uses the pre-structured narrative sections when available.  Falls back
+    gracefully through description → excerpt → key_points → generic summary.
+    Never adds truncation dots — returns complete sentences only.
+    """
+    what_happened = _clean_public_text(str(article.get("what_happened") or ""))
+    why_matters = _clean_public_text(str(article.get("why_matters") or ""))
+
+    if what_happened and why_matters:
+        combined = f"{what_happened} {why_matters}"
+        return _trim_no_dots(combined, 480)
+
+    if what_happened:
+        # Pad with description if we only have what_happened
+        desc = _clean_public_text(str(article.get("description") or article.get("excerpt") or ""))
+        combined = f"{what_happened} {desc}".strip()
+        return _trim_no_dots(combined, 480)
+
+    # Fallback hierarchy
+    for key in ("summary", "description", "excerpt"):
+        text = _clean_public_text(str(article.get(key) or ""))
+        if len(text) >= 80:
+            return _trim_no_dots(text, 480)
+
+    # Last resort: stitch key points into prose
+    points = [_clean_public_text(str(p)) for p in article.get("key_points", []) if str(p).strip()]
+    if points:
+        return _trim_no_dots(" ".join(points[:3]), 480)
+
+    return _trim_no_dots(summary.summary or summary.headline or "AI update.", 480)
+
+
+def _pick_digest_eyebrow(article: dict[str, Any], summary: EmailSummary) -> str:
+    """Pick an appropriate eyebrow category label for a digest slide."""
+    _EYEBROW_RULES = {
+        "🔬 RESEARCH":  ("paper", "research", "arxiv", "study", "benchmark", "dataset"),
+        "⚡ BREAKING":  ("breaking", "just announced", "just released", "today"),
+        "💼 INDUSTRY":  ("funding", "acquisition", "valuation", "ipo", "revenue", "partnership"),
+        "🌍 POLICY":    ("regulation", "policy", "law", "ban", "government", "eu", "senate"),
+        "🛠️ TOOLS":     ("api", "sdk", "tool", "plugin", "open-source", "github", "developer"),
+        "📊 DATA":      ("benchmark", "performance", "statistic", "report", "survey"),
+        "🧠 DEEP DIVE": ("how it works", "architecture", "technical", "explained"),
+    }
+    combined = " ".join([
+        str(article.get("title") or ""),
+        str(article.get("description") or ""),
+        " ".join(summary.topics),
+    ]).lower()
+
+    for label, keywords in _EYEBROW_RULES.items():
+        if any(kw in combined for kw in keywords):
+            return label
+    return "🤖 AI NEWS"
+
+
+def _trim_no_dots(text: str, limit: int) -> str:
+    """Trim text to a word boundary without adding trailing dots.
+
+    Unlike _tighten(), this never appends '...' — the sentence is simply cut
+    cleanly at the last complete word that fits within `limit` characters.
+    """
+    text = re.sub(r"\s+", " ", text or "").strip().rstrip(".…")
+    if len(text) <= limit:
+        # Still ensure the text ends with a proper sentence terminator.
+        if text and text[-1] not in ".!?":
+            text = text + "."
+        return text
+    truncated = text[:limit].rsplit(" ", 1)[0].rstrip(".,;:—-")
+    if truncated and truncated[-1] not in ".!?":
+        truncated = truncated + "."
+    return truncated
+
+
+# ── Adaptive typography helpers ───────────────────────────────────────────────
+
+def _auto_fit_font(
+    image_font,
+    text: str,
+    box_width: int,
+    box_height: int,
+    bold: bool = False,
+    size_max: int = 72,
+    size_min: int = 28,
+    step: int = 2,
+    max_lines: int = 10,
+) -> Any:
+    """Return the largest font that fits `text` inside box_width × box_height.
+
+    Starts at size_max and steps down by `step` until the rendered text block
+    fits.  Never goes below max(size_min, FONT_MIN_READABLE) so text always
+    stays legible.  Returns the font object.
+    """
+    # Enforce the global readable minimum — callers may pass a lower size_min
+    # but we never render below FONT_MIN_READABLE.
+    effective_min = max(size_min, FONT_MIN_READABLE)
+    # We need a temporary draw surface for measuring — use a tiny proxy image.
+    from PIL import Image as _PIL_Image, ImageDraw as _PIL_Draw
+    _probe = _PIL_Image.new("L", (box_width + 4, max(box_height + 4, 10)))
+    _draw = _PIL_Draw.Draw(_probe)
+
+    for size in range(size_max, effective_min - 1, -step):
+        font = _font(image_font, size, bold=bold)
+        lines = _wrap_to_width(_draw, text, font, box_width, max_lines)
+        total_h = 0
+        for line in lines:
+            bbox = _draw.textbbox((0, 0), line, font=font)
+            total_h += (bbox[3] - bbox[1]) + 8
+        if total_h <= box_height:
+            return font
+    return _font(image_font, effective_min, bold=bold)
+
+
+def _draw_autofit_text(
+    draw,
+    text: str,
+    box: tuple[int, int, int, int],
+    image_font,
+    fill: str,
+    bold: bool = False,
+    size_max: int = 72,
+    size_min: int = 28,
+    max_lines: int = 10,
+    align: str = "center",
+) -> tuple[int, str]:
+    """Draw text auto-sized to fit inside `box`.
+
+    Returns (last_y, overflow_text) where:
+    - last_y is the y-pixel position after the last drawn line
+    - overflow_text is any text that did not fit (empty string when all fits)
+
+    Text is never truncated or ended with dots.  If the content does not fit
+    at the minimum readable font size the overflow is returned so the caller
+    can push it onto the next slide.
+    """
+    x1, y1, x2, y2 = box
+    width = x2 - x1
+    height = y2 - y1
+    font = _auto_fit_font(
+        image_font, text, width, height,
+        bold=bold, size_max=size_max, size_min=size_min, max_lines=max_lines,
+    )
+    lines, overflow_text = _wrap_to_width_overflow(draw, text, font, width, max_lines)
+
+    line_heights = []
+    for line in lines:
+        bbox = draw.textbbox((0, 0), line, font=font)
+        line_heights.append(bbox[3] - bbox[1])
+
+    gap = 10
+    block_h = sum(line_heights) + max(0, len(lines) - 1) * gap
+    y = y1 + max(0, (height - block_h) // 2)
+
+    for idx, line in enumerate(lines):
+        bbox = draw.textbbox((0, 0), line, font=font)
+        line_w = bbox[2] - bbox[0]
+        if align == "center":
+            x = x1 + max(0, (width - line_w) // 2)
+        elif align == "left":
+            x = x1
+        else:
+            x = x1 + max(0, width - line_w)
+        draw.text((x, y), line, fill=fill, font=font)
+        y += line_heights[idx] + gap
+
+    return y, overflow_text
+
+
+# ── Digest slide renderer ─────────────────────────────────────────────────────
+
+def _write_digest_slide(
+    image,
+    draw,
+    slide_number: int,
+    total_slides: int,
+    slide: dict[str, Any],
+    image_font,
+    image_cls,
+    draw_cls,
+    enhance_cls,
+    filter_cls,
+    ops_cls,
+) -> None:
+    """Render a digest carousel slide.
+
+    Layout (1080 × 1350 px):
+      • y   0 – 700  : Article image (full width, rounded corners)
+      • y 700 – 760  : Eyebrow chip + slide counter
+      • y 760 – 920  : Headline (auto-sized, never truncated)
+      • y 920 – 1230 : Brief summary body (auto-sized, no dots)
+      • y1230 – 1310 : Source credit + progress bar
+    """
+    _draw_background_grid(draw)
+    _draw_accent_frame(draw)
+
+    margin = 54
+    image_box = (margin, 40, CANVAS_W - margin, 700)
+
+    # ── Article image (top half) ──────────────────────────────────────────────
+    artwork = _load_artwork(
+        slide.get("image_path", ""),
+        slide.get("topic", "AI"),
+        image_box,
+        image_cls, draw_cls, enhance_cls, filter_cls, ops_cls,
+    )
+    if artwork is not None:
+        artwork = enhance_cls.Color(artwork).enhance(0.88)
+        artwork = enhance_cls.Contrast(artwork).enhance(1.08)
+        _paste_contained(image, artwork, image_box, radius=32, pad=4, cover=True)
+        draw.rounded_rectangle(image_box, radius=32, outline=ACCENT_GREEN, width=2)
+        # Subtle gradient overlay on bottom of image for readability
+        for gy in range(580, 700):
+            alpha = int(180 * (gy - 580) / 120)
+            draw.line([(margin, gy), (CANVAS_W - margin, gy)], fill=(5, 5, 5, alpha))
+    else:
+        # No image — draw a branded placeholder
+        draw.rounded_rectangle(image_box, radius=32, fill="#0A0A0A", outline=ACCENT_GREEN, width=2)
+        draw.rounded_rectangle((margin + 30, 260, CANVAS_W - margin - 30, 440), radius=20, fill="#111111", outline=(200, 255, 0, 60))
+        draw.text(
+            (CANVAS_W // 2 - 40, 320),
+            "🤖",
+            fill=ACCENT_GREEN,
+            font=_font(image_font, 72, bold=True),
+        )
+
+    # ── Eyebrow + slide counter row ───────────────────────────────────────────
+    font_meta = _font(image_font, 26, bold=True, mono=True)
+    eyebrow = str(slide.get("eyebrow", "🤖 AI NEWS"))
+    _draw_slide_chip(
+        draw,
+        eyebrow,
+        (margin, 714, margin + 280, 756),
+        font_meta,
+        fill="#0B0B0B",
+        outline=ACCENT_GREEN,
+    )
+    counter_text = f"{slide_number:02d} / {total_slides:02d}"
+    _draw_slide_chip(
+        draw,
+        counter_text,
+        (CANVAS_W - margin - 160, 714, CANVAS_W - margin, 756),
+        font_meta,
+        fill="#0B0B0B",
+        outline=(60, 60, 60, 200),
+    )
+
+    # ── Headline — auto-sized, full text, no truncation ───────────────────────
+    headline = _clean_headline(str(slide.get("title", "AI Update")))
+    headline_box = (margin, 768, CANVAS_W - margin, 930)
+    _draw_autofit_text(
+        draw, headline, headline_box, image_font,
+        fill=TEXT_WHITE, bold=True, size_max=68, size_min=32, max_lines=3, align="left",
+    )
+
+    # ── Separator line ────────────────────────────────────────────────────────
+    draw.line([(margin, 938), (CANVAS_W - margin, 938)], fill=ACCENT_GREEN, width=2)
+
+    # ── Body summary — auto-sized, no dots, complete sentences ───────────────
+    body_text = str(slide.get("body", "")).strip()
+    if body_text:
+        body_box = (margin, 950, CANVAS_W - margin, 1220)
+        _draw_autofit_text(
+            draw, body_text, body_box, image_font,
+            fill=SOFT_WHITE, bold=False, size_max=36, size_min=FONT_MIN_READABLE, max_lines=8, align="left",
+        )
+
+    # ── Source credit ─────────────────────────────────────────────────────────
+    source = str(slide.get("source_label", "")).strip()
+    if source:
+        draw.rounded_rectangle(
+            (margin, 1232, CANVAS_W - margin, 1270),
+            radius=10, fill=(12, 12, 12, 200), outline=(80, 80, 80, 100),
+        )
+        font_source = _font(image_font, 24, bold=False)
+        draw.text(
+            (margin + 16, 1242),
+            f"Source: {source}",
+            fill=SOFT_WHITE,
+            font=font_source,
+        )
+
+    # ── Progress bar ─────────────────────────────────────────────────────────
+    bar_x1, bar_y = margin, 1290
+    bar_total = CANVAS_W - margin * 2
+    draw.rounded_rectangle((bar_x1, bar_y, bar_x1 + bar_total, bar_y + 6), radius=3, fill=(40, 40, 40))
+    filled = int(bar_total * slide_number / total_slides)
+    if filled > 0:
+        draw.rounded_rectangle((bar_x1, bar_y, bar_x1 + filled, bar_y + 6), radius=3, fill=ACCENT_GREEN)
 
 
 def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: dict[str, Any], email_dt: datetime) -> None:
@@ -363,6 +813,18 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
     _draw_accent_frame(draw)
 
     margin = 72
+
+    # ── Digest slide — each news item gets its own visual card ────────────────
+    if slide["kind"] == "digest":
+        _write_digest_slide(
+            image, draw, slide_number, total_slides, slide,
+            ImageFont, Image, ImageDraw, ImageEnhance, ImageFilter, ImageOps,
+        )
+        path.parent.mkdir(parents=True, exist_ok=True)
+        _draw_watermark_overlay(image)
+        image.save(path, "PNG", optimize=True)
+        return
+
     if slide["kind"] == "image":
         image_box = (margin, 150, CANVAS_W - margin, 1070)
         _draw_slide_chip(
@@ -391,13 +853,12 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
             draw.rounded_rectangle(image_box, radius=36, outline=ACCENT_GREEN, width=2)
             overlay_box = (margin + 18, 934, CANVAS_W - margin - 18, 1040)
             draw.rounded_rectangle(overlay_box, radius=24, fill=(5, 5, 5, 168), outline=(200, 255, 0, 120), width=2)
-            _draw_top_centered_text_block(
+            _draw_autofit_text(
                 draw,
-                slide.get("title", "AI update"),
+                _clean_headline(slide.get("title", "AI update")),
                 (overlay_box[0] + 30, overlay_box[1] + 14, overlay_box[2] - 30, overlay_box[1] + 60),
-                font_title,
-                TEXT_WHITE,
-                max_lines=2,
+                ImageFont,
+                fill=TEXT_WHITE, bold=True, size_max=58, size_min=28, max_lines=2,
             )
             source_text = f"Source: {slide.get('source_label') or 'email brief'}"
             _draw_centered_text(draw, source_text, (overlay_box[0] + 24, overlay_box[1] + 58, overlay_box[2] - 24, overlay_box[3] - 12), font_meta, SOFT_WHITE, 1)
@@ -413,6 +874,75 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
                 font_body,
                 font_meta,
             )
+    elif slide["kind"] == "keypoint":
+        # ── Key-point slide layout ────────────────────────────────────────────
+        # A focused, readable card: one insight per slide.
+        #
+        # Layout (1080 × 1350):
+        #   y 56–112  : eyebrow chip (story N · point X/Y)
+        #   y 112–380 : big emoji centred in accent circle
+        #   y 390–500 : point number label
+        #   y 510–1050: key-point text (auto-sized, left-aligned in card)
+        #   y 1060–    : source label + slide counter
+        # ─────────────────────────────────────────────────────────────────────
+        _draw_slide_chip(
+            draw,
+            slide.get("eyebrow", "KEY POINT"),
+            (64, 56, CANVAS_W - 64, 110),
+            font_meta,
+            fill="#0B0B0B",
+            outline=ACCENT_GREEN,
+        )
+
+        # Big accent emoji in circle
+        emoji_str = slide.get("emoji", "⚡")
+        emoji_font = _font(ImageFont, 108, bold=False, preferred=[
+            "C:/Windows/Fonts/seguiemj.ttf", "C:/Windows/Fonts/segoeui.ttf",
+        ])
+        circle_cx, circle_cy, circle_r = CANVAS_W // 2, 248, 118
+        draw.ellipse(
+            (circle_cx - circle_r, circle_cy - circle_r, circle_cx + circle_r, circle_cy + circle_r),
+            fill=(200, 255, 0, 28), outline=ACCENT_GREEN, width=3,
+        )
+        try:
+            e_bbox = draw.textbbox((0, 0), emoji_str, font=emoji_font)
+            e_w = e_bbox[2] - e_bbox[0]
+            e_h = e_bbox[3] - e_bbox[1]
+            draw.text((circle_cx - e_w // 2, circle_cy - e_h // 2), emoji_str, font=emoji_font, fill=TEXT_WHITE)
+        except Exception:
+            draw.text((circle_cx - 54, circle_cy - 54), emoji_str, font=emoji_font, fill=ACCENT_GREEN)
+
+        # Point number pill
+        pt_num = slide.get("point_num", 1)
+        pt_tot = slide.get("total_points", 1)
+        pt_label = f"KEY INSIGHT  {pt_num} / {pt_tot}"
+        draw.rounded_rectangle((CANVAS_W // 2 - 200, 384, CANVAS_W // 2 + 200, 444), radius=20, fill=(200, 255, 0, 18), outline=(200, 255, 0, 110), width=2)
+        _draw_centered_text(draw, pt_label, (CANVAS_W // 2 - 200, 384, CANVAS_W // 2 + 200, 444), font_meta, ACCENT_GREEN, 1)
+
+        # Key-point text — big, centred card
+        kp_text = str(slide.get("body", ""))
+        kp_card = (72, 460, CANVAS_W - 72, 1040)
+        draw.rounded_rectangle(kp_card, radius=36, fill=(8, 8, 8, 240), outline=(200, 255, 0, 80), width=2)
+        kp_box = (108, 490, CANVAS_W - 108, 1010)
+        _draw_autofit_text(
+            draw, kp_text, kp_box, ImageFont,
+            fill=TEXT_WHITE, bold=True, size_max=64, size_min=FONT_MIN_READABLE,
+            max_lines=8, align="center",
+        )  # overflow is silently accepted here — key points are ≤110 chars by design
+
+        # Source label
+        source_label = slide.get("source_label") or _source_label_from_url(str(slide.get("url") or ""))
+        if source_label:
+            _draw_slide_chip(
+                draw, f"SOURCE: {source_label}",
+                (64, 1056, CANVAS_W - 64, 1106), font_meta,
+                fill="#0B0B0B", outline=(60, 60, 60, 180),
+            )
+
+        # Progress bar + counter
+        draw.rounded_rectangle((160, 1252, 920, 1266), radius=3, fill=ACCENT_GREEN)
+        _draw_centered_text(draw, f"{slide_number:02d}/{total_slides:02d}", (450, 1274, 630, 1314), font_meta, SOFT_WHITE, 1)
+
     elif slide["kind"] == "cta":
         draw.rounded_rectangle((margin, 92, CANVAS_W - margin, 1258), radius=46, fill="#0B0B0B", outline="#1F1F1F", width=2)
         draw.rounded_rectangle((92, 126, 988, 184), radius=18, fill=(200, 255, 0, 20), outline=(200, 255, 0, 130), width=2)
@@ -444,11 +974,14 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
                 outline=(80, 80, 80, 180),
             )
 
-        # ── Title — centered, max 2 lines ─────────────────────────────────────
-        title_box = (84, 150, CANVAS_W - 84, 330)
-        draw.rounded_rectangle((72, 142, CANVAS_W - 72, 352), radius=30, fill=(8, 8, 8, 228), outline=(200, 255, 0, 120), width=2)
-        _draw_top_centered_text_block(draw, slide.get("title", ""), title_box, font_title, TEXT_WHITE, max_lines=2)
-        draw.line((104, 340, CANVAS_W - 104, 340), fill=ACCENT_GREEN, width=3)
+        # ── Title — auto-sized, complete text, never truncated ───────────────
+        title_box = (84, 150, CANVAS_W - 84, 340)
+        draw.rounded_rectangle((72, 142, CANVAS_W - 72, 360), radius=30, fill=(8, 8, 8, 228), outline=(200, 255, 0, 120), width=2)
+        _draw_autofit_text(
+            draw, _clean_headline(slide.get("title", "")), title_box, ImageFont,
+            fill=TEXT_WHITE, bold=True, size_max=62, size_min=FONT_MIN_READABLE, max_lines=3, align="center",
+        )
+        draw.line((104, 352, CANVAS_W - 104, 352), fill=ACCENT_GREEN, width=3)
 
         # ── Body container — same dark rounded style as supporting box ─────────
         body_container = (64, 364, CANVAS_W - 64, 902)
@@ -456,16 +989,11 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
         draw.rounded_rectangle((84, 384, 316, 436), radius=18, fill=(200, 255, 0, 18), outline=(200, 255, 0, 110), width=2)
         _draw_centered_text(draw, "WHAT HAPPENED", (92, 392, 308, 430), font_meta, ACCENT_GREEN, 1)
 
-        # Body text — centered horizontally, top-aligned vertically
-        body_box = (96, 420, CANVAS_W - 96, 886)
-        _draw_centered_body_block(
-            draw,
-            slide["body"],
-            box=body_box,
-            font=font_body,
-            fill=SOFT_WHITE,
-            line_gap=14,
-            max_lines=10,
+        # Body text — auto-sized so the full summary always fits, no dots
+        body_box = (96, 432, CANVAS_W - 96, 890)
+        _draw_autofit_text(
+            draw, str(slide["body"]), body_box, ImageFont,
+            fill=SOFT_WHITE, bold=False, size_max=38, size_min=FONT_MIN_READABLE, max_lines=12, align="center",
         )
 
         # ── Supporting note box ───────────────────────────────────────────────
@@ -554,24 +1082,47 @@ def _draw_centered_text_block(draw, text: str, box: tuple[int, int, int, int], f
 
 
 def _wrap_to_width(draw, text: str, font, width: int, max_lines: int) -> list[str]:
+    """Word-wrap text to fit within `width` pixels, returning at most `max_lines`.
+
+    IMPORTANT: This function NEVER appends '...' or truncates mid-word.
+    When used with _auto_fit_font(), the font will already be sized so that
+    all words fit cleanly.  For fixed-font contexts (chip labels, slide counter)
+    max_lines naturally limits output but we still never add dots.
+    """
+    lines, _ = _wrap_to_width_overflow(draw, text, font, width, max_lines)
+    return lines
+
+
+def _wrap_to_width_overflow(draw, text: str, font, width: int, max_lines: int) -> tuple[list[str], str]:
+    """Like _wrap_to_width but also returns leftover text that didn't fit.
+
+    Returns (lines, overflow_text) where overflow_text is the portion of `text`
+    that could not fit within max_lines at the given font size.  overflow_text
+    is empty when everything fits.  This enables callers to push the overflow
+    onto the next slide instead of silently dropping it.
+    """
     words = re.sub(r"\s+", " ", text or "").strip().split()
     lines: list[str] = []
     current: list[str] = []
-    for word in words:
+    overflow_start_idx = len(words)
+    for idx, word in enumerate(words):
         candidate = " ".join([*current, word])
         bbox = draw.textbbox((0, 0), candidate, font=font)
         if bbox[2] - bbox[0] > width and current:
             lines.append(" ".join(current))
             current = [word]
+            if len(lines) >= max_lines:
+                # Hit the line limit — record where overflow begins.
+                overflow_start_idx = idx
+                current = []
+                break
         else:
             current.append(word)
-        if len(lines) >= max_lines:
-            break
     if current and len(lines) < max_lines:
         lines.append(" ".join(current))
-    if len(lines) == max_lines and len(" ".join(words)) > len(" ".join(lines)):
-        lines[-1] = _tighten(lines[-1], max(10, len(lines[-1]) - 3))
-    return lines or [""]
+        overflow_start_idx = len(words)
+    overflow_text = " ".join(words[overflow_start_idx:]).strip()
+    return (lines or [""]), overflow_text
 
 
 def _load_artwork(image_path: str, topic: str, box: tuple[int, int, int, int], image_cls, draw_cls, enhance_cls, filter_cls, ops_cls):
@@ -835,42 +1386,139 @@ def _draw_centered_body_block(draw, text: str, box: tuple[int, int, int, int], f
 
 
 def _select_article_image(article: dict[str, Any], topic: str) -> str:
-    """Smart image selection pipeline:
-    1. Use the image extracted directly from the blog/article (best relevance)
-    2. Check the shared data/images library for a previously downloaded relevant image
-    3. Search Wikimedia Commons for a relevant image and save it to the library
-    4. Fall back to a reference image from the brand/topic cache
+    """Smart image selection pipeline (no deduplication guard).
+    Use _select_unique_article_image() when building carousel batches."""
+    return _select_unique_article_image(article, topic, set(), set())
+
+
+def _select_unique_article_image(
+    article: dict[str, Any],
+    topic: str,
+    used_image_urls: set[str],
+    used_image_paths: set[str],
+) -> str:
+    """Deduplicated image selection pipeline.
+
+    Priority order:
+    1. Article's own featured/hero image (from blog — highest relevance)
+    2. Shared image library — best semantic match that has NOT been used yet
+    3. Wikimedia Commons web search — unique image downloaded fresh
+    4. Return empty string (slide will render text-only fallback)
+
+    Deduplication uses both the remote URL and the local file path so that
+    the same physical file is never shown on two different slides in one batch.
     """
     title = str(article.get("title") or "")
-    url = str(article.get("url") or "")
-    query_text = _image_query_text(article, topic)
-    query_text = _tighten(query_text, 1200)
+    query_text = _tighten(_image_query_text(article, topic), 1200)
 
-    # 1. Blog/article image — most relevant, already downloaded by enricher
+    # ── 0. Scrape og:image directly from the article URL ─────────────────────
+    # This is the highest-priority source — pull the editor-chosen hero image
+    # straight from the blog before touching the library or web search.
+    article_url = str(article.get("url") or "")
+    if article_url and not article.get("image_url") and not article.get("image_path"):
+        scraped_url = _fetch_og_image_from_url(article_url)
+        if scraped_url and scraped_url not in used_image_urls:
+            local = _download_to_library(scraped_url, query_text or title or topic)
+            if local and local not in used_image_paths:
+                used_image_urls.add(scraped_url)
+                used_image_paths.add(local)
+                # Cache back onto the article dict so later calls reuse it
+                article["image_url"] = scraped_url
+                article["image_path"] = local
+                return local
+
+    # ── 1. Blog/article image (pre-populated by summariser) ──────────────────
     for key in ("image_path", "image_url"):
         value = str(article.get(key, "") or "").strip()
-        if value:
-            # If it's a URL, download it to the library and return the local path
-            if value.startswith(("http://", "https://")):
-                local = _download_to_library(value, query_text or title or topic)
-                if local:
-                    return local
-            else:
-                path = Path(value)
-                if path.exists():
-                    return value
+        if not value:
+            continue
+        if value.startswith(("http://", "https://")):
+            # Skip if we've already used this URL in this carousel batch.
+            if value in used_image_urls:
+                continue
+            local = _download_to_library(value, query_text or title or topic)
+            if local and local not in used_image_paths:
+                used_image_urls.add(value)
+                used_image_paths.add(local)
+                return local
+        else:
+            path = Path(value)
+            if path.exists() and value not in used_image_paths:
+                used_image_paths.add(value)
+                return value
 
-    # 2. Check the shared image library for a relevant cached image
-    library_match = _find_library_image(query_text or title or topic)
+    # ── 2. Shared image library — deduplicated semantic match ─────────────────
+    library_match = _find_library_image_unique(
+        query_text or title or topic, used_image_paths
+    )
     if library_match:
+        used_image_paths.add(library_match)
         return library_match
 
-    # 3. Search the web for a relevant image and save to library
-    web_image = _find_reference_image_for_article(article, topic)
+    # ── 3. Web image search — fresh download ──────────────────────────────────
+    web_image = _find_reference_image_for_article_unique(
+        article, topic, used_image_paths
+    )
     if web_image:
+        used_image_paths.add(web_image)
         return web_image
 
     return ""
+
+
+def _find_library_image_unique(query: str, exclude_paths: set[str]) -> str | None:
+    """Like _find_library_image but skips any path already in exclude_paths."""
+    if not IMAGE_LIBRARY_DIR.exists():
+        return None
+    query_tokens = _important_image_tokens(query)
+    if not query_tokens:
+        return None
+    query_brand = _brand_tokens(query)
+    query_signature = _image_topic_signature(query)
+    best_path: str | None = None
+    best_score = 0.0
+    for image_id, meta in _iter_image_metadata():
+        candidate = _image_path_from_metadata(image_id, meta)
+        if not candidate:
+            continue
+        candidate_str = str(candidate)
+        # Skip images already used in this carousel
+        if candidate_str in exclude_paths:
+            continue
+        seed = str(meta.get("seed", ""))
+        meta_tokens = set(meta.get("tokens") or []) or _important_image_tokens(seed)
+        overlap = query_tokens & meta_tokens
+        score = len(overlap) / max(4, len(query_tokens)) if overlap else 0.0
+        if query_brand:
+            score += 0.25 * len(query_brand & meta_tokens)
+        if query_signature and query_signature == _image_topic_signature(seed):
+            score += 0.18
+        if any(token in seed.lower() for token in query_tokens):
+            score += 0.10
+        if any(token in overlap for token in query_brand):
+            score += 0.20
+        if score > best_score:
+            best_score = score
+            best_path = candidate_str
+    return best_path if best_score >= 0.45 else None
+
+
+def _find_reference_image_for_article_unique(
+    article: dict[str, Any], topic: str, exclude_paths: set[str]
+) -> str | None:
+    """Like _find_reference_image_for_article but skips already-used images."""
+    for query in _reference_image_queries(article, topic):
+        cache_key = hashlib.sha1(query.lower().encode("utf-8")).hexdigest()[:16]
+        for suffix in (".jpg", ".jpeg", ".png", ".webp"):
+            cached = REFERENCE_IMAGE_DIR / f"{cache_key}{suffix}"
+            if cached.exists() and str(cached) not in exclude_paths:
+                return str(cached)
+        image_url = _search_wikimedia_image(query)
+        if image_url:
+            downloaded = _download_reference_image(image_url, cache_key, query)
+            if downloaded and downloaded not in exclude_paths:
+                return downloaded
+    return None
 
 
 def _image_query_text(article: dict[str, Any], topic: str) -> str:
@@ -898,6 +1546,78 @@ def _resolve_image_source(image_path: str) -> Path | None:
     if path.exists():
         return path
     return None
+
+
+def _fetch_og_image_from_url(article_url: str) -> str:
+    """Scrape the article page and return the best image URL found.
+
+    Priority:
+    1. og:image meta tag  (most reliable — editors set this deliberately)
+    2. twitter:image meta tag
+    3. First <img> inside <article> / <main> / <div class*=content>
+    4. Returns "" if nothing found or the page can't be fetched.
+
+    This is called before any library / web-search fallback so that the slide
+    image always comes from the actual article first.
+    """
+    if not article_url or not article_url.startswith(("http://", "https://")):
+        return ""
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (compatible; AIInstagramAgent/1.0; +https://graitech.ai)",
+            "Accept": "text/html,application/xhtml+xml",
+            "Accept-Language": "en-US,en;q=0.9",
+        }
+        req = urllib.request.Request(article_url, headers=headers)
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            raw_html = resp.read(300_000).decode("utf-8", errors="replace")
+    except Exception:
+        return ""
+
+    # 1. og:image
+    og = re.search(
+        r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\'][^>]*/?\\s*>',
+        raw_html, re.I,
+    )
+    if not og:
+        og = re.search(
+            r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\'][^>]*/?\\s*>',
+            raw_html, re.I,
+        )
+    if og:
+        img_url = og.group(1).strip()
+        if img_url.startswith(("http://", "https://")):
+            return img_url
+
+    # 2. twitter:image
+    tw = re.search(
+        r'<meta[^>]+(?:name|property)=["\']twitter:image["\'][^>]+content=["\']([^"\']+)["\'][^>]*/?\\s*>',
+        raw_html, re.I,
+    )
+    if not tw:
+        tw = re.search(
+            r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:name|property)=["\']twitter:image["\'][^>]*/?\\s*>',
+            raw_html, re.I,
+        )
+    if tw:
+        img_url = tw.group(1).strip()
+        if img_url.startswith(("http://", "https://")):
+            return img_url
+
+    # 3. First substantive <img> in article/main content area
+    content_block = re.search(
+        r'<(?:article|main)[^>]*>(.*?)</(?:article|main)>',
+        raw_html, re.I | re.S,
+    )
+    search_zone = content_block.group(1) if content_block else raw_html
+    for img_match in re.finditer(r'<img[^>]+src=["\']([^"\']+)["\'][^>]*/?\\s*>', search_zone, re.I):
+        src = img_match.group(1).strip()
+        if (src.startswith(("http://", "https://"))
+                and any(ext in src.lower() for ext in (".jpg", ".jpeg", ".png", ".webp"))
+                and not any(skip in src.lower() for skip in ("logo", "icon", "avatar", "pixel", "tracking", "badge", "1x1", "spacer"))):
+            return src
+
+    return ""
 
 
 def _download_to_library(url: str, seed_text: str) -> str | None:
@@ -1031,6 +1751,90 @@ def _brand_tokens(text: str) -> set[str]:
         if brand.lower() in lowered
         for token in _important_image_tokens(brand)
     }
+
+
+def _extract_instagram_key_points(
+    article: dict[str, Any],
+    summary: "EmailSummary",
+    max_points: int = 6,
+) -> list[str]:
+    """Extract punchy, attention-grabbing key points for Instagram slides.
+
+    Writes like a professional content creator:
+    - Short and impactful (≤ 90 chars each)
+    - Starts with a verb, stat, or striking claim when possible
+    - Avoids fluff words and filler phrases
+    - Each point must add new information (no repeats)
+    - Returns 3–6 points ordered by impact (most striking first)
+    """
+    STOP_PREFIXES = (
+        "this article", "in this post", "the article", "we discuss",
+        "this piece", "this blog", "you will learn", "click here",
+        "read more", "find out", "learn how", "sign up",
+    )
+    POWER_VERBS = (
+        "launches", "releases", "achieves", "beats", "surpasses", "reveals",
+        "breaks", "builds", "cuts", "doubles", "enables", "expands",
+        "introduces", "joins", "reaches", "replaces", "sets", "ships",
+        "shows", "trains", "upgrades",
+    )
+
+    raw: list[str] = []
+
+    # 1. Use pre-structured key_points from article (highest quality)
+    for p in article.get("key_points", []):
+        cleaned = _clean_public_text(str(p)).strip()
+        if len(cleaned) > 12 and not any(cleaned.lower().startswith(pfx) for pfx in STOP_PREFIXES):
+            raw.append(cleaned)
+
+    # 2. Also pull from summary-level key_points
+    for p in (summary.key_points or []):
+        cleaned = _clean_public_text(str(p)).strip()
+        if cleaned and cleaned not in raw and len(cleaned) > 12:
+            if not any(cleaned.lower().startswith(pfx) for pfx in STOP_PREFIXES):
+                raw.append(cleaned)
+
+    # 3. Fallback — mine structured fields for insight sentences
+    if len(raw) < 3:
+        for field in ("what_happened", "why_matters", "what_to_watch", "description", "excerpt"):
+            text = _clean_public_text(str(article.get(field) or ""))
+            if not text:
+                continue
+            for sent in re.split(r"(?<=[.!?])\s+", text):
+                sent = sent.strip()
+                if len(sent) > 30 and sent not in raw:
+                    raw.append(sent)
+                if len(raw) >= max_points * 2:
+                    break
+            if len(raw) >= max_points * 2:
+                break
+
+    # Deduplicate by first-60-chars fingerprint
+    seen: set[str] = set()
+    deduped: list[str] = []
+    for p in raw:
+        key = re.sub(r"\s+", " ", p).lower()[:60]
+        if key not in seen:
+            seen.add(key)
+            deduped.append(p)
+
+    # Score: prefer shorter + starts with power verb / stat
+    def _point_score(pt: str) -> float:
+        score = 0.0
+        pt_l = pt.lower()
+        if any(pt_l.startswith(v) for v in POWER_VERBS):
+            score += 0.4
+        if re.search(r"\b\d[\d,]*(?:\.\d+)?(?:B|M|K|bn|mn|%|x|\s+(?:billion|million|percent|times))", pt, re.I):
+            score += 0.35
+        if len(pt) <= 80:
+            score += 0.25
+        return score
+
+    deduped.sort(key=_point_score, reverse=True)
+
+    # Trim each point to a readable length without dots
+    final = [_trim_no_dots(pt, 110) for pt in deduped[:max_points]]
+    return final if final else [_trim_no_dots(summary.headline or summary.subject or "AI update", 110)]
 
 
 def _compose_article_narrative(summary: EmailSummary, article: dict[str, Any]) -> str:
@@ -1324,85 +2128,265 @@ def _cleanup_existing_outputs(output_dir: Path) -> None:
         return
 
 
-def _build_caption(summary: EmailSummary) -> str:
-    """Build a fully unique caption for each carousel post.
 
-    Every field — lead text, takeaways, hashtags, and the closing line —
-    is derived from *this* summary's article content so no two posts share
-    the same body even when they come from the same email digest.
+def _build_caption(summary: EmailSummary) -> str:
+    """Build a high-quality Instagram caption following editorial rules.
+
+    Structure:
+        1. Hook line (<125 chars, no hashtag start)
+        2. Lead paragraph (2–3 sentences)
+        3. 3–5 emoji-prefixed bullet points
+        4. Closing question (drives comments)
+        5. Source credit with URL
+        6. Exactly 5 CamelCase hashtags
+        7. Disclaimer if content warrants one
     """
+    try:
+        from .knowledge import get_rag as _get_rag
+        _get_rag()  # warm the cache; errors are silently ignored
+    except Exception:
+        pass
+
     articles = _article_items(summary)
     article = articles[0] if articles else {}
 
+    headline = _clean_headline(summary.headline or summary.subject or "AI update")
+    article_url = str(article.get("url") or summary.article_url or "")
+    source_domain = _source_label_from_url(article_url)
+
+    # ── Hook line ─────────────────────────────────────────────────────────────
+    hook = _build_caption_hook(summary, article, headline)
+
     # ── Lead paragraph ────────────────────────────────────────────────────────
-    lead = _clean_public_text(
-        str(article.get("description") or article.get("excerpt") or summary.summary or "")
+    lead_raw = _clean_public_text(
+        str(article.get("what_happened") or article.get("description") or
+            article.get("excerpt") or summary.summary or "")
     )
-    lead = _dedupe_lead_text(lead, summary.headline or summary.subject or "")
-    if not lead or re.sub(r"\s+", " ", lead).strip().lower() == re.sub(r"\s+", " ", (summary.headline or summary.subject or "")).strip().lower():
-        lead = _fallback_summary_text(summary, summary.headline or summary.subject or "")
-    lead = _tighten(lead, 420)
+    lead_raw = _dedupe_lead_text(lead_raw, headline)
+    if not lead_raw or len(lead_raw) < 60:
+        lead_raw = _fallback_summary_text(summary, headline)
+    lead = _trim_no_dots(lead_raw, 420)
 
-    # ── Takeaway bullets — pulled from this article's key_points only ─────────
-    cleaned_points = _clean_public_points(summary.key_points, summary.headline or "", lead)
-    if not cleaned_points:
-        cleaned_points = _fallback_public_points(summary)
-    # Use article-specific points, not shared digest points
-    article_points = [_clean_public_text(str(p)) for p in article.get("key_points", []) if str(p).strip()]
-    article_points = [p for p in article_points if p and len(p) > 20]
-    if article_points:
-        # Merge article-specific points first, then fall back to summary points
-        merged: list[str] = []
-        seen_keys: set[str] = set()
-        for p in [*article_points, *cleaned_points]:
-            key = re.sub(r"\s+", " ", p).strip().lower()[:80]
-            if key not in seen_keys:
-                seen_keys.add(key)
-                merged.append(p)
-        cleaned_points = merged
-    bullets = [f"- {_tighten(point, 150)}" for point in cleaned_points[:4]]
+    # ── Takeaway bullets ──────────────────────────────────────────────────────
+    bullets = _build_caption_bullets(summary, article, lead)
 
-    # ── Hashtags — unique per post based on this article's entities ───────────
-    keywords = _keywords(summary)
-    # Add article-specific title words as extra tags
-    article_title = str(article.get("title") or summary.headline or "")
-    title_words = [w for w in re.findall(r"[A-Za-z]{4,}", article_title) if w.lower() not in {"with", "that", "this", "from", "into", "over", "your", "their", "have", "been", "will", "also", "more", "than", "when", "what", "about"}]
-    extra_tags = [w for w in title_words[:4] if w not in keywords]
-    all_keywords = keywords + extra_tags
-    hashtags = " ".join(f"#{_hashtag(word)}" for word in all_keywords[:14])
+    # ── Closing question ──────────────────────────────────────────────────────
+    closing_q = _build_closing_question(summary, article)
 
-    # ── Closing line — unique per article ─────────────────────────────────────
-    source_domain = _source_label_from_url(str(article.get("url") or summary.article_url or ""))
-    if source_domain:
-        closing = f"Source: {source_domain} | Curated by Graitech AI."
-    elif summary.companies:
-        closing = f"Covering {summary.companies[0]} and the latest in AI. Curated by Graitech."
+    # ── Source credit ─────────────────────────────────────────────────────────
+    if source_domain and article_url:
+        source_credit = f"📰 Source: {source_domain}\n🔗 {article_url}"
+    elif article_url:
+        source_credit = f"🔗 {article_url}"
     else:
-        closing = "AI news curated and summarised by Graitech."
+        source_credit = "📰 Curated by Graitech AI News"
 
-    source_lines: list[str] = []
-    for index, item in enumerate(articles[:4], start=1):
-        url = _clean_public_text(str(item.get("url") or ""))
-        if not url:
-            continue
-        title = _tighten(_clean_public_text(str(item.get("title") or "")) or f"Story {index}", 120)
-        source_lines.append(f"{index}. {title}: {url}")
+    # ── Hashtags — exactly 5 CamelCase ───────────────────────────────────────
+    hashtags_line = _build_editorial_hashtags(summary, article)
 
-    lines = [
-        _tighten(summary.headline or summary.subject or "AI news", 120),
-        "",
-        lead,
-        "",
-        "Key takeaways:",
-        *bullets,
-        "",
-        closing,
-        *(["", "Sources:", *source_lines] if source_lines else []),
-        "",
-        hashtags,
+    # ── Disclaimer ────────────────────────────────────────────────────────────
+    disclaimer = _build_disclaimer_if_needed(summary, article)
+
+    parts: list[str] = [hook, "", lead, ""]
+    if bullets:
+        parts.extend(bullets)
+        parts.append("")
+    parts.append(closing_q)
+    parts.append("")
+    parts.append(source_credit)
+    parts.append("")
+    parts.append(hashtags_line)
+    if disclaimer:
+        parts.append("")
+        parts.append(disclaimer)
+
+    return "\n".join(parts).strip() + "\n"
+
+
+def _build_caption_hook(summary: EmailSummary, article: dict[str, Any], headline: str) -> str:
+    """Hook line: < 125 chars, never starts with hashtag or 'I/We'."""
+    companies = summary.companies[:1]
+    entity = companies[0] if companies else (summary.models[:1] or ["AI"])[0]
+
+    text_pool = " ".join([
+        str(article.get("what_happened") or ""),
+        str(article.get("description") or ""),
+        " ".join(summary.key_points[:3]),
+    ])
+    stat = _extract_stat_from_text(text_pool)
+
+    if stat:
+        hook = f"{stat} — and that changes everything you knew about {entity}."
+    elif len(headline) <= 110 and not headline.lower().startswith(("i ", "we ")):
+        hook = headline if headline.endswith(".") else headline + "."
+    else:
+        hook = f"{entity} just did something no one expected. Here's what it actually means."
+
+    if len(hook) > 125:
+        hook = _trim_no_dots(hook, 125)
+    hook = re.sub(r"^#+\s*", "", hook).strip()
+    return hook
+
+
+def _build_caption_bullets(summary: EmailSummary, article: dict[str, Any], lead: str) -> list[str]:
+    """3–5 emoji-prefixed bullet points, each adding new info not in the lead."""
+    EMOJIS = ["🔹", "⚡", "🧠", "📊", "🔬", "💡", "🛠️", "🌍", "🤖", "📈"]
+    raw_points: list[str] = []
+
+    for p in article.get("key_points", []):
+        cleaned = _clean_public_text(str(p))
+        if len(cleaned) > 25 and cleaned.lower() not in lead.lower():
+            raw_points.append(cleaned)
+    for p in summary.key_points:
+        cleaned = _clean_public_text(str(p))
+        if len(cleaned) > 25 and cleaned.lower() not in lead.lower() and cleaned not in raw_points:
+            raw_points.append(cleaned)
+
+    seen: set[str] = set()
+    deduped: list[str] = []
+    for p in raw_points:
+        key = re.sub(r"\s+", " ", p).lower()[:70]
+        if key not in seen:
+            seen.add(key)
+            deduped.append(p)
+
+    bullets = [
+        f"{EMOJIS[i % len(EMOJIS)]} {_trim_no_dots(pt, 140)}"
+        for i, pt in enumerate(deduped[:5])
     ]
-    return "\n".join(line for line in lines if line is not None).strip() + "\n"
 
+    if not bullets:
+        for field in ("what_happened", "why_matters", "what_to_watch"):
+            text = _clean_public_text(str(article.get(field) or ""))
+            if text and len(text) > 30:
+                bullets.append(f"🔹 {_trim_no_dots(text, 140)}")
+            if len(bullets) >= 3:
+                break
+
+    return bullets[:5]
+
+
+def _build_closing_question(summary: EmailSummary, article: dict[str, Any]) -> str:
+    """Closing question that a non-technical reader can answer."""
+    companies = summary.companies[:1]
+    entity = companies[0] if companies else "this technology"
+
+    questions = [
+        f"Do you think {entity}'s move here is exciting or a risk? Drop your take below.",
+        "Which industry do you think will feel the impact of this first?",
+        "Would you use something like this in your daily work? Yes or no in the comments.",
+        f"Is {entity} moving too fast, or not fast enough? Let's hear it.",
+        "What's the one thing about this that surprised you most?",
+    ]
+    url_hash = abs(hash(str(article.get("url") or summary.message_key or "")))
+    return questions[url_hash % len(questions)]
+
+
+def _build_editorial_hashtags(summary: EmailSummary, article: dict[str, Any]) -> str:
+    """Exactly 5 CamelCase hashtags: niche + company + medium + broad + format."""
+    _NICHE_MAP = {
+        "llm": "#LargeLanguageModels", "language": "#LanguageAI",
+        "generative": "#GenerativeAI", "video": "#AIVideo", "image": "#AIArt",
+        "agent": "#AIAgents", "autonomous": "#AutonomousAI",
+        "policy": "#AIPolicy", "regulation": "#AIRegulation", "ethics": "#AIEthics",
+        "research": "#AIResearch", "machine learning": "#MachineLearning",
+        "tool": "#AITools", "productivity": "#AIProductivity",
+        "chip": "#AIChips", "hardware": "#AIInfrastructure",
+        "robot": "#AIRobotics", "health": "#AIHealth", "medical": "#MedicalAI",
+        "enterprise": "#EnterpriseAI", "business": "#BusinessAI",
+    }
+    _COMPANY_MAP = {
+        "openai": "#OpenAI", "chatgpt": "#ChatGPT", "gpt": "#GPT4",
+        "google": "#GoogleAI", "gemini": "#Gemini", "deepmind": "#GoogleDeepMind",
+        "anthropic": "#Anthropic", "claude": "#Claude",
+        "meta": "#MetaAI", "llama": "#LlamaAI",
+        "microsoft": "#MicrosoftAI", "copilot": "#Copilot",
+        "apple": "#AppleAI", "nvidia": "#NVIDIA",
+        "mistral": "#MistralAI", "hugging face": "#HuggingFace",
+    }
+    _MEDIUM = ["#AINewsDaily", "#TechNews", "#AIUpdates"]
+    _BROAD = ["#ArtificialIntelligence", "#MachineLearning", "#AI", "#FutureOfAI", "#TechTrends"]
+    _FORMAT = ["#AIExplained", "#LearnAI", "#AIForEveryone", "#AICarousel"]
+
+    combined = " ".join([
+        str(article.get("title") or ""),
+        " ".join(summary.topics),
+        " ".join(summary.companies),
+        " ".join(summary.models),
+    ]).lower()
+
+    niche = "#AINews"
+    for kw, tag in _NICHE_MAP.items():
+        if kw in combined:
+            niche = tag
+            break
+
+    company_tag = "#FutureOfWork"
+    for kw, tag in _COMPANY_MAP.items():
+        if kw in combined:
+            company_tag = tag
+            break
+
+    key_hash = abs(hash(summary.message_key or ""))
+    medium = _MEDIUM[key_hash % len(_MEDIUM)]
+    broad = _BROAD[key_hash % len(_BROAD)]
+    fmt = _FORMAT[key_hash % len(_FORMAT)]
+
+    seen_tags: set[str] = set()
+    unique_tags: list[str] = []
+    for tag in [niche, company_tag, medium, broad, fmt]:
+        if tag not in seen_tags:
+            seen_tags.add(tag)
+            unique_tags.append(tag)
+
+    fallbacks = ["#AINews", "#DeepLearning", "#AIUpdates", "#FutureOfAI", "#LearnAI"]
+    for fb in fallbacks:
+        if len(unique_tags) >= 5:
+            break
+        if fb not in seen_tags:
+            unique_tags.append(fb)
+            seen_tags.add(fb)
+
+    return " ".join(unique_tags[:5])
+
+
+def _extract_stat_from_text(text: str) -> str:
+    """Extract a concrete statistic from text for use in a hook line."""
+    match = re.search(
+        r"\b(\d[\d,]*(?:\.\d+)?(?:B|M|K|bn|mn|%|\s+(?:billion|million|thousand|percent|times|x)))\b",
+        text, re.I,
+    )
+    if not match:
+        return ""
+    start = max(0, match.start() - 40)
+    end = min(len(text), match.end() + 60)
+    snippet = re.sub(r"\s+", " ", text[start:end]).strip()
+    period_pos = snippet.find(".", match.end() - start)
+    if period_pos > 0:
+        snippet = snippet[:period_pos + 1]
+    return _trim_no_dots(snippet, 100) if len(snippet) > 10 else ""
+
+
+def _build_disclaimer_if_needed(summary: EmailSummary, article: dict[str, Any]) -> str:
+    """Return a short disclaimer when article content warrants one."""
+    text = " ".join([
+        str(article.get("title") or ""),
+        str(article.get("description") or ""),
+        " ".join(summary.key_points[:4]),
+        " ".join(summary.topics),
+    ]).lower()
+
+    if any(kw in text for kw in ("benchmark", "performance score", "eval")):
+        return "─\n⚠️ Benchmarks reflect results at publication time and may change as models are updated.\n─"
+    if any(kw in text for kw in ("price", "pricing", "$", "cost per")):
+        return "─\n⚠️ Pricing information is subject to change — verify directly with the provider.\n─"
+    if any(kw in text for kw in ("medical", "health", "diagnosis", "clinical")):
+        return "─\n⚠️ This is not medical advice. AI health tools do not replace professional care.\n─"
+    if any(kw in text for kw in ("invest", "financial", "stock", "trading")):
+        return "─\n⚠️ This is not financial advice. AI investment tools carry significant risks.\n─"
+    if any(kw in text for kw in ("regulation", "law", "legal", "compliance", "gdpr")):
+        return "─\n⚠️ This is not legal advice. Consult a qualified professional for guidance.\n─"
+    return ""
 
 def _render_index(rows: list[str]) -> str:
     items = "\n".join(rows)
@@ -1626,7 +2610,6 @@ def _email_datetime(value: str) -> datetime | None:
         parsed = parsed.replace(tzinfo=timezone.utc)
     return parsed.astimezone()
 
-
 def _keywords(summary: EmailSummary) -> list[str]:
     raw = [*_clean_entity_list(summary.companies), *summary.models, *summary.topics]
     raw.extend(["AI news", "AI tools", "automation", "tech update", "artificial intelligence"])
@@ -1651,7 +2634,6 @@ def _tighten(text: str, limit: int) -> str:
 def _slugify(value: str) -> str:
     slug = re.sub(r"[^a-zA-Z0-9]+", "-", value.lower()).strip("-")
     return slug[:72] or "ai-news"
-
 
 def _hashtag(value: str) -> str:
     tag = re.sub(r"[^a-zA-Z0-9]", "", value.title())

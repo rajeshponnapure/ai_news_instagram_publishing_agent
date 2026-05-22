@@ -31,7 +31,9 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    # Digest emails with 50 news items produce up to ~150 slides across posts.
+    # Allow extra time for image downloads and slide rendering.
+    timeout-minutes: 55
     outputs:
       changed: ${{ steps.commit.outputs.changed }}
       has_batch: ${{ steps.detect.outputs.has_batch }}
@@ -48,10 +50,15 @@ jobs:
       LOOKBACK_HOURS: '48'
       EMAIL_CHECK_INTERVAL_MINUTES: '50'
       MAX_EMAILS_PER_RUN: '5'
-      MAX_ARTICLE_LINKS_PER_EMAIL: '20'
+      # Digest emails can have 15–50 news items — set the ceiling high enough
+      # to capture every story in one pass.  Each item becomes one carousel slide.
+      MAX_ARTICLE_LINKS_PER_EMAIL: '50'
       ENRICH_ARTICLES: 'true'
       CREATE_INSTAGRAM_POSTS: 'true'
       AUTO_PUBLISH_INSTAGRAM: 'false'
+      # Instagram carousel maximum is 20 slides per post.  The agent splits
+      # digest posts automatically when they exceed this cap.
+      MAX_CAROUSEL_SLIDES: '20'
       PYTHONUTF8: '1'
 
     steps:
@@ -221,16 +228,4 @@ jobs:
           python -m pip install -r requirements.txt
 
       - name: Publish latest carousel to Instagram
-        run: python scripts/publish_latest_instagram.py
-
-      - name: Commit publish manifest status
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
-          [ -d reports/instagram_posts ] && git add -f reports/instagram_posts/
-          if git diff --cached --quiet; then
-            echo "No publish status changes."
-          else
-            git commit -m 'Update Instagram publish status [skip ci]'
-            git push
-          fi
+        r
