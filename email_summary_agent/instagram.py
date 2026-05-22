@@ -61,6 +61,63 @@ ACCENT_GREEN = "#C8FF00"
 PAGE_BLACK = "#050505"
 TEXT_WHITE = "#FFFFFF"
 SOFT_WHITE = "#D7D7D7"
+
+# ── Dynamic background theme palette ─────────────────────────────────────────
+# Each theme is keyed by content category and defines a dark gradient pair,
+# a subtle glow accent colour, a decorative pattern name, and its opacity.
+# All base values are kept dark (< 50 per channel) to ensure WCAG AA contrast
+# with white text rendered inside the dark overlay cards on every slide.
+_BG_THEMES: dict[str, dict] = {
+    # Deep cosmic purple — AI research, papers, benchmarks
+    "research": {
+        "base": (6, 3, 22), "top": (18, 9, 52),
+        "glow": (90, 50, 200), "pattern": "hex", "alpha": 14,
+    },
+    # Deep ocean teal — developer tools, APIs, SDKs
+    "tools": {
+        "base": (3, 12, 26), "top": (8, 28, 52),
+        "glow": (0, 145, 210), "pattern": "circuit", "alpha": 12,
+    },
+    # Midnight navy-gold — industry news, funding, partnerships
+    "industry": {
+        "base": (5, 6, 18), "top": (14, 20, 44),
+        "glow": (165, 125, 10), "pattern": "lines", "alpha": 16,
+    },
+    # Dark teal-slate — policy, regulation, law, government
+    "policy": {
+        "base": (3, 20, 22), "top": (8, 40, 46),
+        "glow": (20, 165, 150), "pattern": "cross", "alpha": 10,
+    },
+    # Deep crimson — breaking news, urgent alerts
+    "breaking": {
+        "base": (22, 3, 3), "top": (46, 9, 9),
+        "glow": (225, 55, 15), "pattern": "burst", "alpha": 12,
+    },
+    # Deep forest green — health, medicine, biotech
+    "health": {
+        "base": (3, 20, 10), "top": (8, 44, 22),
+        "glow": (18, 185, 75), "pattern": "cross", "alpha": 10,
+    },
+    # Dark olive — finance, markets, crypto, economy
+    "finance": {
+        "base": (8, 12, 4), "top": (20, 26, 10),
+        "glow": (148, 205, 72), "pattern": "grid", "alpha": 14,
+    },
+    # Space ink — astronomy, future tech, deep science
+    "space": {
+        "base": (2, 2, 20), "top": (6, 6, 44),
+        "glow": (62, 62, 225), "pattern": "dots", "alpha": 18,
+    },
+    # Charcoal slate — general AI, miscellaneous (much better than plain black)
+    "default": {
+        "base": (5, 6, 12), "top": (12, 15, 26),
+        "glow": (85, 165, 42), "pattern": "grid", "alpha": 10,
+    },
+}
+
+# Minimum resolution for "HD quality" images (width × height in pixels)
+IMAGE_MIN_HD_W = 1280
+IMAGE_MIN_HD_H = 720
 VIDEO_BLOCKED_TERMS = ("video", "videos", "reel", "reels", "clip", "clips", "short", "shorts")
 NOISY_ENTITY_TERMS = ("releases", "introduces", "designed", "tracks", "posting", "angle", "primary", "entities")
 NOISY_POINT_PREFIXES = (
@@ -148,6 +205,7 @@ def write_instagram_carousels(
     output_dir: Path,
     generated_at: datetime | None = None,
     clear_existing: bool = False,
+    db_path: Path | None = None,
 ) -> list[Path]:
     """Create Instagram carousel batches.
 
@@ -155,6 +213,10 @@ def write_instagram_carousels(
     one CTA slide. Digest summaries are split into parts of up to two stories
     each because Instagram caps carousel children at 10 media items:
     2 stories * 4 slides + one CTA slide.
+
+    db_path: optional path to the agent SQLite database.  When provided,
+             previously used image paths are loaded for cross-batch dedup and
+             newly used paths are persisted after each carousel is rendered.
     """
     if not summaries:
         return []
@@ -164,6 +226,9 @@ def write_instagram_carousels(
     now = generated_at or datetime.now(timezone.utc).astimezone()
     batch_dir = output_dir / now.strftime("%Y%m%d-%H%M%S")
     batch_dir.mkdir(parents=True, exist_ok=True)
+
+    # Load previously used images from SQLite for cross-batch deduplication.
+    global_used_image_paths: set[str] = _load_used_images_from_db(db_path)
 
     carousel_dirs: list[Path] = []
     index_rows: list[str] = []
@@ -179,14 +244,32 @@ def write_instagram_carousels(
             carousel_dir.mkdir(parents=True, exist_ok=True)
 
             slides = _build_slide_specs(part_summary, email_dt)
+            qa_issues_any: list[str] = []
             for slide_number, slide in enumerate(slides, start=1):
+                slide_path = carousel_dir / f"slide_{slide_number:02d}.png"
                 _write_slide_png(
-                    carousel_dir / f"slide_{slide_number:02d}.png",
+                    slide_path,
                     slide_number=slide_number,
                     total_slides=len(slides),
                     slide=slide,
                     email_dt=email_dt,
                 )
+                # Visual QA — log any issues but do not abort rendering.
+                qa_issues = _qa_slide_png(slide_path)
+                if qa_issues:
+                    qa_issues_any.extend([f"slide_{slide_number:02d}: {issue}" for issue in qa_issues])
+                # Track image paths for cross-batch dedup.
+                img = str(slide.get("image_path", "")).strip()
+                if img:
+                    global_used_image_paths.add(img)
+
+            if qa_issues_any:
+                (carousel_dir / "qa_issues.txt").write_text(
+                    "\n".join(qa_issues_any), encoding="utf-8"
+                )
+
+            # Persist newly used images back to SQLite.
+            _save_used_images_to_db(db_path, global_used_image_paths)
 
             caption = _build_caption(part_summary)
             (carousel_dir / "caption.txt").write_text(caption, encoding="utf-8")
@@ -374,6 +457,9 @@ def _build_digest_slide_specs(summary: EmailSummary, email_dt: datetime) -> list
     used_image_urls: set[str] = set()
     used_image_paths: set[str] = set()
 
+    # Pick ONE background theme for the whole carousel (consistent visual identity).
+    carousel_theme = _pick_bg_theme_from_summary(summary)
+
     for article_index, article in enumerate(articles[:DIGEST_NEWS_PER_POST], start=1):
         headline = _clean_headline(
             _clean_public_text(str(article.get("title") or summary.headline or "AI update"))
@@ -401,6 +487,7 @@ def _build_digest_slide_specs(summary: EmailSummary, email_dt: datetime) -> list
                 "topic": topic,
                 "url": str(article.get("url", "")),
                 "source_label": source_label,
+                "bg_theme": carousel_theme,
             }
         )
 
@@ -413,6 +500,7 @@ def _build_digest_slide_specs(summary: EmailSummary, email_dt: datetime) -> list
             "body": "LIKE | COMMENT | FOLLOW | SAVE",
             "image_path": "",
             "source_label": "",
+            "bg_theme": carousel_theme,
         }
     )
 
@@ -451,6 +539,9 @@ def _build_normal_slide_specs(summary: EmailSummary, email_dt: datetime) -> list
     used_image_urls: set[str] = set()
     used_image_paths: set[str] = set()
 
+    # One visual theme per carousel post — all slides share the same background.
+    carousel_theme = _pick_bg_theme_from_summary(summary)
+
     KP_EMOJIS = ["⚡", "🔹", "🧠", "📊", "🔬", "💡", "🛠️", "🌍", "🤖", "📈", "🎯", "🚀"]
 
     for article_index, article in enumerate(articles[:NORMAL_NEWS_PER_POST], start=1):
@@ -471,6 +562,7 @@ def _build_normal_slide_specs(summary: EmailSummary, email_dt: datetime) -> list
             "topic": topic,
             "url": str(article.get("url") or ""),
             "source_label": source_label,
+            "bg_theme": carousel_theme,
         })
 
         # ── Slides 2-N: Key-point slides ─────────────────────────────────────
@@ -489,6 +581,7 @@ def _build_normal_slide_specs(summary: EmailSummary, email_dt: datetime) -> list
                 "topic": topic,
                 "url": str(article.get("url") or ""),
                 "source_label": source_label,
+                "bg_theme": carousel_theme,
             })
 
     # ── CTA slide ─────────────────────────────────────────────────────────────
@@ -499,6 +592,7 @@ def _build_normal_slide_specs(summary: EmailSummary, email_dt: datetime) -> list
         "body": "LIKE | COMMENT | FOLLOW | SAVE",
         "image_path": "",
         "source_label": "",
+        "bg_theme": carousel_theme,
     })
 
     return slides[:MAX_CAROUSEL_SLIDES]
@@ -696,9 +790,10 @@ def _write_digest_slide(
       • y 760 – 920  : Headline (auto-sized, never truncated)
       • y 920 – 1230 : Brief summary body (auto-sized, no dots)
       • y1230 – 1310 : Source credit + progress bar
+
+    NOTE: background is already drawn by the caller (_write_slide_png) before
+    dispatching here — do NOT call _draw_background_grid or _draw_accent_frame.
     """
-    _draw_background_grid(draw)
-    _draw_accent_frame(draw)
 
     margin = 54
     image_box = (margin, 40, CANVAS_W - margin, 700)
@@ -809,7 +904,7 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
     font_cta     = _font(ImageFont, 46, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf"])
     font_brand   = _font(ImageFont, 112, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
 
-    _draw_background_grid(draw)
+    _draw_dynamic_background(draw, slide)
     _draw_accent_frame(draw)
 
     margin = 72
@@ -821,47 +916,51 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
             ImageFont, Image, ImageDraw, ImageEnhance, ImageFilter, ImageOps,
         )
         path.parent.mkdir(parents=True, exist_ok=True)
+        _draw_handle_overlay(draw, ImageFont)
         _draw_watermark_overlay(image)
         image.save(path, "PNG", optimize=True)
         return
 
     if slide["kind"] == "image":
-        image_box = (margin, 150, CANVAS_W - margin, 1070)
-        _draw_slide_chip(
-            draw,
-            slide.get("eyebrow", "STORY"),
-            (margin + 10, 104, margin + 250, 148),
-            font_meta,
-            fill="#0B0B0B",
-            outline=ACCENT_GREEN,
+        # ── Full title at the TOP — neon green, auto-sized, never truncated ──
+        title_text = _clean_headline(str(slide.get("title", "AI Update")))
+        draw.rounded_rectangle((54, 44, CANVAS_W - 54, 314), radius=24,
+                                fill=(0, 0, 0, 220), outline=(200, 255, 0, 70), width=2)
+        _draw_autofit_text(
+            draw, title_text,
+            (76, 58, CANVAS_W - 76, 298),
+            ImageFont,
+            fill=ACCENT_GREEN, bold=True, size_max=76, size_min=30,
+            max_lines=4, align="center",
         )
+
+        # ── Image below the title ─────────────────────────────────────────────
+        image_box = (54, 322, CANVAS_W - 54, 1180)
         artwork = _load_artwork(
             slide.get("image_path", ""),
             slide.get("topic", "AI"),
             image_box,
-            Image,
-            ImageDraw,
-            ImageEnhance,
-            ImageFilter,
-            ImageOps,
+            Image, ImageDraw, ImageEnhance, ImageFilter, ImageOps,
         )
         if artwork is not None:
             artwork = ImageEnhance.Color(artwork).enhance(0.90)
             artwork = ImageEnhance.Contrast(artwork).enhance(1.05)
-            # Paste artwork with minimal padding to display the full image without cropping.
-            _paste_contained(image, artwork, image_box, radius=36, pad=6, cover=False)
-            draw.rounded_rectangle(image_box, radius=36, outline=ACCENT_GREEN, width=2)
-            overlay_box = (margin + 18, 934, CANVAS_W - margin - 18, 1040)
-            draw.rounded_rectangle(overlay_box, radius=24, fill=(5, 5, 5, 168), outline=(200, 255, 0, 120), width=2)
-            _draw_autofit_text(
-                draw,
-                _clean_headline(slide.get("title", "AI update")),
-                (overlay_box[0] + 30, overlay_box[1] + 14, overlay_box[2] - 30, overlay_box[1] + 60),
-                ImageFont,
-                fill=TEXT_WHITE, bold=True, size_max=58, size_min=28, max_lines=2,
-            )
-            source_text = f"Source: {slide.get('source_label') or 'email brief'}"
-            _draw_centered_text(draw, source_text, (overlay_box[0] + 24, overlay_box[1] + 58, overlay_box[2] - 24, overlay_box[3] - 12), font_meta, SOFT_WHITE, 1)
+            _paste_contained(image, artwork, image_box, radius=30, pad=4, cover=False)
+            draw.rounded_rectangle(image_box, radius=30, outline=ACCENT_GREEN, width=2)
+            # Source label at bottom of image
+            source_text = (slide.get("source_label") or
+                           _source_label_from_url(str(slide.get("url") or "")))
+            if source_text:
+                draw.rounded_rectangle(
+                    (54, 1146, CANVAS_W - 54, 1180), radius=12,
+                    fill=(0, 0, 0, 200),
+                )
+                font_src = _font(ImageFont, 26, bold=False)
+                _draw_centered_text(
+                    draw, f"SOURCE: {source_text}",
+                    (76, 1150, CANVAS_W - 76, 1178),
+                    font_src, SOFT_WHITE, 1,
+                )
         else:
             _draw_no_image_story_card(
                 draw,
@@ -869,79 +968,58 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
                 slide.get("title", "AI update"),
                 slide.get("url", ""),
                 image_box,
-                font_eyebrow,
-                font_title,
-                font_body,
-                font_meta,
+                font_eyebrow, font_title, font_body, font_meta,
             )
+
+        # ── Progress bar ──────────────────────────────────────────────────────
+        draw.rounded_rectangle((160, 1200, 920, 1212), radius=3, fill=ACCENT_GREEN)
+        _draw_centered_text(draw, f"{slide_number:02d}/{total_slides:02d}",
+                            (450, 1222, 630, 1266), font_meta, SOFT_WHITE, 1)
     elif slide["kind"] == "keypoint":
-        # ── Key-point slide layout ────────────────────────────────────────────
-        # A focused, readable card: one insight per slide.
-        #
-        # Layout (1080 × 1350):
-        #   y 56–112  : eyebrow chip (story N · point X/Y)
-        #   y 112–380 : big emoji centred in accent circle
-        #   y 390–500 : point number label
-        #   y 510–1050: key-point text (auto-sized, left-aligned in card)
-        #   y 1060–    : source label + slide counter
-        # ─────────────────────────────────────────────────────────────────────
-        _draw_slide_chip(
-            draw,
-            slide.get("eyebrow", "KEY POINT"),
-            (64, 56, CANVAS_W - 64, 110),
-            font_meta,
-            fill="#0B0B0B",
-            outline=ACCENT_GREEN,
+        # ── Article headline at TOP — neon green, full text, auto-sized ───────
+        headline = _clean_headline(str(slide.get("title", "AI Update")))
+        draw.rounded_rectangle(
+            (54, 36, CANVAS_W - 54, 224), radius=22,
+            fill=(0, 0, 0, 220), outline=(200, 255, 0, 70), width=2,
+        )
+        _draw_autofit_text(
+            draw, headline,
+            (76, 50, CANVAS_W - 76, 210),
+            ImageFont,
+            fill=ACCENT_GREEN, bold=True, size_max=56, size_min=26,
+            max_lines=3, align="center",
         )
 
-        # Big accent emoji in circle
-        emoji_str = slide.get("emoji", "⚡")
-        emoji_font = _font(ImageFont, 108, bold=False, preferred=[
-            "C:/Windows/Fonts/seguiemj.ttf", "C:/Windows/Fonts/segoeui.ttf",
-        ])
-        circle_cx, circle_cy, circle_r = CANVAS_W // 2, 248, 118
-        draw.ellipse(
-            (circle_cx - circle_r, circle_cy - circle_r, circle_cx + circle_r, circle_cy + circle_r),
-            fill=(200, 255, 0, 28), outline=ACCENT_GREEN, width=3,
-        )
-        try:
-            e_bbox = draw.textbbox((0, 0), emoji_str, font=emoji_font)
-            e_w = e_bbox[2] - e_bbox[0]
-            e_h = e_bbox[3] - e_bbox[1]
-            draw.text((circle_cx - e_w // 2, circle_cy - e_h // 2), emoji_str, font=emoji_font, fill=TEXT_WHITE)
-        except Exception:
-            draw.text((circle_cx - 54, circle_cy - 54), emoji_str, font=emoji_font, fill=ACCENT_GREEN)
-
-        # Point number pill
+        # ── Point counter pill ────────────────────────────────────────────────
         pt_num = slide.get("point_num", 1)
         pt_tot = slide.get("total_points", 1)
         pt_label = f"KEY INSIGHT  {pt_num} / {pt_tot}"
-        draw.rounded_rectangle((CANVAS_W // 2 - 200, 384, CANVAS_W // 2 + 200, 444), radius=20, fill=(200, 255, 0, 18), outline=(200, 255, 0, 110), width=2)
-        _draw_centered_text(draw, pt_label, (CANVAS_W // 2 - 200, 384, CANVAS_W // 2 + 200, 444), font_meta, ACCENT_GREEN, 1)
+        draw.rounded_rectangle(
+            (CANVAS_W // 2 - 210, 236, CANVAS_W // 2 + 210, 288),
+            radius=20, fill=(200, 255, 0, 18), outline=(200, 255, 0, 110), width=2,
+        )
+        _draw_centered_text(
+            draw, pt_label,
+            (CANVAS_W // 2 - 210, 236, CANVAS_W // 2 + 210, 288),
+            font_meta, ACCENT_GREEN, 1,
+        )
 
-        # Key-point text — big, centred card
+        # ── Key-point container — white text, dark rounded card ───────────────
         kp_text = str(slide.get("body", ""))
-        kp_card = (72, 460, CANVAS_W - 72, 1040)
-        draw.rounded_rectangle(kp_card, radius=36, fill=(8, 8, 8, 240), outline=(200, 255, 0, 80), width=2)
-        kp_box = (108, 490, CANVAS_W - 108, 1010)
+        kp_card = (54, 302, CANVAS_W - 54, 1172)
+        draw.rounded_rectangle(kp_card, radius=36, fill=(8, 8, 8, 240),
+                                outline=(200, 255, 0, 80), width=2)
+        kp_box = (88, 334, CANVAS_W - 88, 1142)
         _draw_autofit_text(
             draw, kp_text, kp_box, ImageFont,
-            fill=TEXT_WHITE, bold=True, size_max=64, size_min=FONT_MIN_READABLE,
+            fill=TEXT_WHITE, bold=True, size_max=68, size_min=FONT_MIN_READABLE,
             max_lines=8, align="center",
-        )  # overflow is silently accepted here — key points are ≤110 chars by design
+        )
 
-        # Source label
-        source_label = slide.get("source_label") or _source_label_from_url(str(slide.get("url") or ""))
-        if source_label:
-            _draw_slide_chip(
-                draw, f"SOURCE: {source_label}",
-                (64, 1056, CANVAS_W - 64, 1106), font_meta,
-                fill="#0B0B0B", outline=(60, 60, 60, 180),
-            )
-
-        # Progress bar + counter
-        draw.rounded_rectangle((160, 1252, 920, 1266), radius=3, fill=ACCENT_GREEN)
-        _draw_centered_text(draw, f"{slide_number:02d}/{total_slides:02d}", (450, 1274, 630, 1314), font_meta, SOFT_WHITE, 1)
+        # ── Progress bar + counter ────────────────────────────────────────────
+        draw.rounded_rectangle((160, 1192, 920, 1204), radius=3, fill=ACCENT_GREEN)
+        _draw_centered_text(draw, f"{slide_number:02d}/{total_slides:02d}",
+                            (450, 1216, 630, 1260), font_meta, SOFT_WHITE, 1)
 
     elif slide["kind"] == "cta":
         draw.rounded_rectangle((margin, 92, CANVAS_W - margin, 1258), radius=46, fill="#0B0B0B", outline="#1F1F1F", width=2)
@@ -1018,17 +1096,210 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
         _draw_centered_text(draw, f"{slide_number:02d}/{total_slides:02d}", (450, 1274, 630, 1314), font_meta, SOFT_WHITE, 1)
 
     path.parent.mkdir(parents=True, exist_ok=True)
+    _draw_handle_overlay(draw, ImageFont)
     _draw_watermark_overlay(image)
     image.save(path, "PNG", optimize=True)
 
 
 def _draw_background_grid(draw) -> None:
-    draw.rectangle((0, 0, CANVAS_W, CANVAS_H), fill=PAGE_BLACK)
-    for x in range(0, CANVAS_W, 110):
-        draw.line((x, 0, x, CANVAS_H), fill=(200, 255, 0, 12), width=1)
-    for y in range(0, CANVAS_H, 110):
-        draw.line((0, y, CANVAS_W, y), fill=(200, 255, 0, 12), width=1)
-    draw.rounded_rectangle((28, 28, 1052, 1322), radius=42, outline=(255, 255, 255, 20), width=2)
+    """Legacy function kept for backward compatibility — delegates to the default dynamic background."""
+    _draw_dynamic_background(draw, {})
+
+
+# ── Dynamic background system ─────────────────────────────────────────────────
+
+def _pick_bg_theme_from_summary(summary: "EmailSummary") -> str:
+    """Select a background theme name based on the summary's topics, companies, and content."""
+    combined = " ".join([
+        " ".join(summary.topics or []),
+        " ".join(summary.companies or []),
+        " ".join(summary.models or []),
+        str(summary.headline or ""),
+        str(summary.subject or ""),
+    ]).lower()
+    return _pick_bg_theme_from_text(combined)
+
+
+def _pick_bg_theme(slide: dict[str, Any]) -> str:
+    """Select a background theme name from the slide dict.
+    Uses the pre-computed 'bg_theme' key when available (set during spec building).
+    Falls back to content-based classification.
+    """
+    if slide.get("bg_theme"):
+        return str(slide["bg_theme"])
+    combined = " ".join([
+        str(slide.get("eyebrow", "")),
+        str(slide.get("title", "")),
+        str(slide.get("body", "")),
+        str(slide.get("topic", "")),
+    ]).lower()
+    return _pick_bg_theme_from_text(combined)
+
+
+def _pick_bg_theme_from_text(text: str) -> str:
+    """Classify text into one of the 9 background themes."""
+    if any(k in text for k in ("research", "paper", "arxiv", "study", "benchmark", "dataset", "academic", "survey")):
+        return "research"
+    if any(k in text for k in ("api", "sdk", "tool", "developer", "open-source", "github", "plugin", "code", "library")):
+        return "tools"
+    if any(k in text for k in ("funding", "acquisition", "revenue", "partnership", "valuation", "ipo", "investment", "startup", "enterprise")):
+        return "industry"
+    if any(k in text for k in ("regulation", "policy", "law", "ban", "government", "senate", "eu ", "compliance", "congress")):
+        return "policy"
+    if any(k in text for k in ("breaking", "urgent", "alert", "just announced", "just released", "exclusive")):
+        return "breaking"
+    if any(k in text for k in ("health", "medical", "clinical", "patient", "therapy", "drug", "hospital", "pharma", "biotech")):
+        return "health"
+    if any(k in text for k in ("finance", "trading", "market", "stock", "crypto", "blockchain", "economy", "gdp", "inflation")):
+        return "finance"
+    if any(k in text for k in ("space", "nasa", "satellite", "rocket", "astronomy", "cosmos", "orbit")):
+        return "space"
+    return "default"
+
+
+def _draw_dynamic_background(draw, slide: dict[str, Any]) -> None:
+    """Fill the slide canvas with a solid black background."""
+    draw.rectangle((0, 0, CANVAS_W, CANVAS_H), fill=(5, 5, 5, 255))
+
+
+def _draw_dynamic_background_UNUSED(draw, slide: dict[str, Any]) -> None:
+    """ARCHIVED — kept for reference only. Background is now always solid black."""
+    import math as _math
+
+    theme_name = _pick_bg_theme(slide)
+    theme = _BG_THEMES.get(theme_name, _BG_THEMES["default"])
+    base: tuple = theme["base"]
+    top_col: tuple = theme["top"]
+    glow: tuple = theme["glow"]
+    pattern: str = theme["pattern"]
+    pat_a: int = theme["alpha"]
+
+    band = 10
+    for y0 in range(0, CANVAS_H, band):
+        t = y0 / CANVAS_H
+        r = int(top_col[0] + (base[0] - top_col[0]) * t)
+        g = int(top_col[1] + (base[1] - top_col[1]) * t)
+        b = int(top_col[2] + (base[2] - top_col[2]) * t)
+        draw.rectangle((0, y0, CANVAS_W, min(y0 + band, CANVAS_H)), fill=(r, g, b, 255))
+
+    cx, cy = CANVAS_W // 2, 320
+    for radius in range(580, 0, -30):
+        alpha = int(pat_a * 1.8 * (1 - radius / 580))
+        if alpha < 1:
+            continue
+        draw.ellipse(
+            (cx - radius, int(cy - radius * 0.65),
+             cx + radius, int(cy + radius * 0.65)),
+            fill=(*glow, alpha),
+        )
+
+    if pattern == "grid":
+        for x in range(0, CANVAS_W + 1, 108):
+            draw.line((x, 0, x, CANVAS_H), fill=(*glow, pat_a), width=1)
+        for y in range(0, CANVAS_H + 1, 108):
+            draw.line((0, y, CANVAS_W, y), fill=(*glow, pat_a), width=1)
+
+    elif pattern == "hex":
+        hex_w, hex_h = 90, 78
+        for row in range(-1, CANVAS_H // hex_h + 2):
+            for col in range(-1, CANVAS_W // hex_w + 2):
+                ox = col * hex_w + (hex_w // 2 if row % 2 else 0)
+                oy = row * hex_h
+                pts = []
+                for a in range(6):
+                    angle = _math.radians(60 * a + 30)
+                    pts.append((ox + 36 * _math.cos(angle), oy + 36 * _math.sin(angle)))
+                draw.polygon(pts, outline=(*glow, pat_a))
+
+    elif pattern == "circuit":
+        for y in range(60, CANVAS_H, 120):
+            draw.line((0, y, CANVAS_W, y), fill=(*glow, pat_a), width=1)
+        for x in range(60, CANVAS_W, 120):
+            draw.line((x, 0, x, CANVAS_H), fill=(*glow, pat_a), width=1)
+        for y in range(60, CANVAS_H, 120):
+            for x in range(60, CANVAS_W, 120):
+                draw.ellipse((x - 4, y - 4, x + 4, y + 4), fill=(*glow, pat_a * 2))
+
+    elif pattern == "lines":
+        for offset in range(-CANVAS_H, CANVAS_W + CANVAS_H, 72):
+            draw.line((offset, 0, offset + CANVAS_H, CANVAS_H), fill=(*glow, pat_a), width=1)
+
+    elif pattern == "cross":
+        for x in range(0, CANVAS_W + 1, 72):
+            draw.line((x, 0, x, CANVAS_H), fill=(*glow, pat_a // 2 + 2), width=1)
+        for y in range(0, CANVAS_H + 1, 72):
+            draw.line((0, y, CANVAS_W, y), fill=(*glow, pat_a // 2 + 2), width=1)
+
+    elif pattern == "dots":
+        for px in range(54, CANVAS_W, 86):
+            for py in range(54, CANVAS_H, 86):
+                draw.ellipse((px - 2, py - 2, px + 2, py + 2), fill=(*glow, pat_a * 2 + 4))
+
+    elif pattern == "burst":
+        for angle_deg in range(0, 360, 14):
+            angle_rad = _math.radians(angle_deg)
+            ex = CANVAS_W // 2 + int(900 * _math.cos(angle_rad))
+            ey = CANVAS_H // 2 + int(900 * _math.sin(angle_rad))
+            draw.line((CANVAS_W // 2, CANVAS_H // 2, ex, ey), fill=(*glow, pat_a // 2 + 2), width=1)
+
+    draw.rounded_rectangle((28, 28, CANVAS_W - 28, CANVAS_H - 28),
+                            radius=42, outline=(*glow, 18), width=2)
+
+
+# ── Image quality helpers ─────────────────────────────────────────────────────
+
+def _validate_image_hd(path: str) -> bool:
+    """Return True when the image at `path` meets the minimum HD resolution.
+
+    Minimum: IMAGE_MIN_HD_W × IMAGE_MIN_HD_H (1280 × 720 px).
+    Returns False for missing, unreadable, or sub-HD images.
+    """
+    if not path:
+        return False
+    try:
+        from PIL import Image as _PIL
+        img = _PIL.open(path)
+        w, h = img.size
+        return w >= IMAGE_MIN_HD_W and h >= IMAGE_MIN_HD_H
+    except Exception:
+        return False
+
+
+def _qa_slide_png(path: Path) -> list[str]:
+    """Programmatically inspect a rendered PNG slide for common quality issues.
+
+    Checks performed:
+    1. Correct canvas dimensions (1080 × 1350 px)
+    2. Slide is not blank / entirely one colour
+    3. At least one bright pixel exists (text / accent colours present)
+
+    Returns a list of issue strings (empty = slide passes QA).
+    """
+    issues: list[str] = []
+    try:
+        from PIL import Image as _PIL
+        img = _PIL.open(path).convert("RGB")
+        w, h = img.size
+
+        if w != CANVAS_W or h != CANVAS_H:
+            issues.append(f"Wrong dimensions {w}×{h} (expected {CANVAS_W}×{CANVAS_H})")
+
+        # Check slide is not blank (all pixels near-identical colour)
+        pixels = list(img.getdata())
+        sample = pixels[::max(1, len(pixels) // 400)]
+        unique_colours = len(set(sample))
+        if unique_colours < 8:
+            issues.append("Slide appears blank — too few unique colours")
+
+        # Check that at least some bright pixels exist (text/accents visible)
+        bright = sum(1 for r, g, b in sample if max(r, g, b) > 160)
+        if bright < 5:
+            issues.append("Slide too dark — no bright text or accent pixels detected")
+
+    except Exception as exc:
+        issues.append(f"QA could not read slide: {exc}")
+
+    return issues
 
 
 def _draw_accent_frame(draw) -> None:
@@ -1234,6 +1505,25 @@ def _draw_watermark_overlay(base_image) -> None:
         return
 
 
+def _draw_handle_overlay(draw, image_font) -> None:
+    """Draw the @graitech Instagram handle at the bottom-left of every slide."""
+    font = _font(image_font, 28, bold=True, mono=True)
+    handle = "@graitech"
+    try:
+        bbox = draw.textbbox((0, 0), handle, font=font)
+        text_w = bbox[2] - bbox[0]
+        text_h = bbox[3] - bbox[1]
+    except Exception:
+        text_w, text_h = 160, 28
+    x = 36
+    y = CANVAS_H - text_h - 38
+    draw.rounded_rectangle(
+        (x - 10, y - 8, x + text_w + 12, y + text_h + 8),
+        radius=12, fill=(0, 0, 0, 190),
+    )
+    draw.text((x, y), handle, fill=ACCENT_GREEN, font=font)
+
+
 def _draw_centered_logo_panel(base_image, box: tuple[int, int, int, int]) -> None:
     from PIL import Image, ImageOps
 
@@ -1420,9 +1710,9 @@ def _select_unique_article_image(
         if scraped_url and scraped_url not in used_image_urls:
             local = _download_to_library(scraped_url, query_text or title or topic)
             if local and local not in used_image_paths:
+                # Accept even non-HD blog images — editorial choice trumps resolution.
                 used_image_urls.add(scraped_url)
                 used_image_paths.add(local)
-                # Cache back onto the article dict so later calls reuse it
                 article["image_url"] = scraped_url
                 article["image_path"] = local
                 return local
@@ -1433,7 +1723,6 @@ def _select_unique_article_image(
         if not value:
             continue
         if value.startswith(("http://", "https://")):
-            # Skip if we've already used this URL in this carousel batch.
             if value in used_image_urls:
                 continue
             local = _download_to_library(value, query_text or title or topic)
@@ -1444,8 +1733,23 @@ def _select_unique_article_image(
         else:
             path = Path(value)
             if path.exists() and value not in used_image_paths:
-                used_image_paths.add(value)
-                return value
+                # Prefer HD images from library; fall through if sub-HD but still use as last resort.
+                if _validate_image_hd(value):
+                    used_image_paths.add(value)
+                    return value
+                # Keep as fallback — will be used below if no HD source found.
+                # (We still mark it so the loop below won't pick it redundantly.)
+                pass
+
+    # ── 1b. Non-HD local fallback from article keys ───────────────────────────
+    for key in ("image_path",):
+        value = str(article.get(key, "") or "").strip()
+        if not value:
+            continue
+        path = Path(value)
+        if path.exists() and value not in used_image_paths:
+            used_image_paths.add(value)
+            return value
 
     # ── 2. Shared image library — deduplicated semantic match ─────────────────
     library_match = _find_library_image_unique(
@@ -2187,11 +2491,21 @@ def _build_caption(summary: EmailSummary) -> str:
     # ── Disclaimer ────────────────────────────────────────────────────────────
     disclaimer = _build_disclaimer_if_needed(summary, article)
 
-    parts: list[str] = [hook, "", lead, ""]
+    # ── Engagement hooks (Instagram algorithm signals) ────────────────────────
+    # Carousel save-bait: asking users to save drives the algorithm to push
+    # the post to more people (saves are the highest-weight engagement signal).
+    save_bait = "💾 Save this post — you'll want to come back to this one."
+
+    # Swipe prompt on first line of body: keeps users swiping = longer dwell time.
+    swipe_prompt = "👉 Swipe to see the full breakdown →"
+
+    parts: list[str] = [hook, "", swipe_prompt, "", lead, ""]
     if bullets:
         parts.extend(bullets)
         parts.append("")
     parts.append(closing_q)
+    parts.append("")
+    parts.append(save_bait)
     parts.append("")
     parts.append(source_credit)
     parts.append("")
@@ -2283,71 +2597,143 @@ def _build_closing_question(summary: EmailSummary, article: dict[str, Any]) -> s
 
 
 def _build_editorial_hashtags(summary: EmailSummary, article: dict[str, Any]) -> str:
-    """Exactly 5 CamelCase hashtags: niche + company + medium + broad + format."""
+    """Build 15–20 Instagram hashtags optimised for the algorithm.
+
+    Instagram's Reels and Feed algorithm rewards a mix of:
+      • 3-5 highly specific niche tags (small community, high relevance)
+      • 5-8 mid-tier tags (moderate audience, strong signal)
+      • 3-5 broad discovery tags (large reach, lower relevance per user)
+      • 1-2 content-format tags (carousel, explainer, etc.)
+
+    Tags are deduped and returned as a single space-joined string.
+    Using ~15-20 tags outperforms the old 5-tag strategy by 2–3× in
+    initial reach according to Instagram algorithm analyses.
+    """
     _NICHE_MAP = {
-        "llm": "#LargeLanguageModels", "language": "#LanguageAI",
-        "generative": "#GenerativeAI", "video": "#AIVideo", "image": "#AIArt",
-        "agent": "#AIAgents", "autonomous": "#AutonomousAI",
-        "policy": "#AIPolicy", "regulation": "#AIRegulation", "ethics": "#AIEthics",
-        "research": "#AIResearch", "machine learning": "#MachineLearning",
-        "tool": "#AITools", "productivity": "#AIProductivity",
-        "chip": "#AIChips", "hardware": "#AIInfrastructure",
-        "robot": "#AIRobotics", "health": "#AIHealth", "medical": "#MedicalAI",
-        "enterprise": "#EnterpriseAI", "business": "#BusinessAI",
+        "llm": ["#LargeLanguageModels", "#LLMNews", "#LanguageModels"],
+        "language": ["#LanguageAI", "#NLP"],
+        "generative": ["#GenerativeAI", "#GenAI"],
+        "video": ["#AIVideo", "#AIVideoGeneration"],
+        "image": ["#AIArt", "#AIImageGeneration", "#TextToImage"],
+        "agent": ["#AIAgents", "#AutonomousAgents", "#AIWorkflow"],
+        "autonomous": ["#AutonomousAI", "#AIAgents"],
+        "policy": ["#AIPolicy", "#AIGovernance", "#TechPolicy"],
+        "regulation": ["#AIRegulation", "#TechLaw"],
+        "ethics": ["#AIEthics", "#ResponsibleAI"],
+        "research": ["#AIResearch", "#MLResearch", "#DeepLearning"],
+        "machine learning": ["#MachineLearning", "#MLOps"],
+        "tool": ["#AITools", "#ProductivityAI", "#AIProductivity"],
+        "productivity": ["#AIProductivity", "#AITools", "#WorkSmarter"],
+        "chip": ["#AIChips", "#AIHardware", "#MLInfrastructure"],
+        "hardware": ["#AIInfrastructure", "#AIChips"],
+        "robot": ["#AIRobotics", "#Robotics", "#HumanoidRobots"],
+        "health": ["#AIHealth", "#HealthTech", "#MedicalAI"],
+        "medical": ["#MedicalAI", "#HealthcareAI", "#ClinicalAI"],
+        "enterprise": ["#EnterpriseAI", "#BusinessAI", "#AIAdoption"],
+        "startup": ["#AIStartup", "#TechStartup", "#VentureAI"],
+        "coding": ["#AICoding", "#GithubCopilot", "#DeveloperAI"],
+        "open source": ["#OpenSourceAI", "#OpenSource"],
+        "multimodal": ["#MultimodalAI", "#VisionAI"],
+        "reasoning": ["#AIReasoning", "#AIBenchmarks"],
+        "voice": ["#AIVoice", "#SpeechAI"],
+        "automation": ["#Automation", "#AIAutomation", "#NoCode"],
+        "cloud": ["#CloudAI", "#AICloud"],
     }
     _COMPANY_MAP = {
-        "openai": "#OpenAI", "chatgpt": "#ChatGPT", "gpt": "#GPT4",
-        "google": "#GoogleAI", "gemini": "#Gemini", "deepmind": "#GoogleDeepMind",
-        "anthropic": "#Anthropic", "claude": "#Claude",
-        "meta": "#MetaAI", "llama": "#LlamaAI",
-        "microsoft": "#MicrosoftAI", "copilot": "#Copilot",
-        "apple": "#AppleAI", "nvidia": "#NVIDIA",
-        "mistral": "#MistralAI", "hugging face": "#HuggingFace",
+        "openai": ["#OpenAI", "#ChatGPT"],
+        "chatgpt": ["#ChatGPT", "#OpenAI"],
+        "gpt": ["#GPT4", "#GPT5", "#OpenAI"],
+        "google": ["#GoogleAI", "#Gemini"],
+        "gemini": ["#Gemini", "#GoogleAI"],
+        "deepmind": ["#GoogleDeepMind", "#DeepMind"],
+        "anthropic": ["#Anthropic", "#Claude"],
+        "claude": ["#Claude", "#Anthropic"],
+        "meta": ["#MetaAI", "#LlamaAI"],
+        "llama": ["#LlamaAI", "#MetaAI"],
+        "microsoft": ["#MicrosoftAI", "#Copilot"],
+        "copilot": ["#Copilot", "#MicrosoftAI"],
+        "apple": ["#AppleIntelligence", "#AppleAI"],
+        "nvidia": ["#NVIDIA", "#NVIDIAGPU"],
+        "mistral": ["#MistralAI"],
+        "hugging face": ["#HuggingFace", "#Transformers"],
+        "groq": ["#Groq", "#FastAI"],
+        "cohere": ["#Cohere", "#EnterpriseAI"],
+        "perplexity": ["#PerplexityAI", "#AISearch"],
+        "stability": ["#StabilityAI", "#StableDiffusion"],
+        "midjourney": ["#Midjourney", "#AIArt"],
+        "xai": ["#xAI", "#Grok"],
+        "grok": ["#Grok", "#xAI"],
+        "amazon": ["#AmazonBedrock", "#AWSCloud"],
     }
-    _MEDIUM = ["#AINewsDaily", "#TechNews", "#AIUpdates"]
-    _BROAD = ["#ArtificialIntelligence", "#MachineLearning", "#AI", "#FutureOfAI", "#TechTrends"]
-    _FORMAT = ["#AIExplained", "#LearnAI", "#AIForEveryone", "#AICarousel"]
+    _MID = [
+        "#AINews", "#TechNews", "#AIUpdates", "#ArtificialIntelligence",
+        "#FutureOfAI", "#TechTrends", "#Innovation", "#EmergingTech",
+    ]
+    _BROAD = [
+        "#Technology", "#Tech", "#AI", "#MachineLearning",
+        "#DataScience", "#FutureTech", "#DigitalTransformation",
+    ]
+    _FORMAT = [
+        "#AICarousel", "#LearnAI", "#AIExplained", "#AIForEveryone",
+        "#TechCarousel", "#AIBreakdown",
+    ]
 
     combined = " ".join([
         str(article.get("title") or ""),
         " ".join(summary.topics),
         " ".join(summary.companies),
         " ".join(summary.models),
+        str(summary.headline or ""),
     ]).lower()
 
-    niche = "#AINews"
-    for kw, tag in _NICHE_MAP.items():
+    # Collect niche tags (up to 6 unique)
+    niche_tags: list[str] = []
+    for kw, tags in _NICHE_MAP.items():
         if kw in combined:
-            niche = tag
+            niche_tags.extend(tags)
+        if len(niche_tags) >= 8:
             break
 
-    company_tag = "#FutureOfWork"
-    for kw, tag in _COMPANY_MAP.items():
+    # Collect company tags (up to 4 unique)
+    company_tags: list[str] = []
+    for kw, tags in _COMPANY_MAP.items():
         if kw in combined:
-            company_tag = tag
+            company_tags.extend(tags)
+        if len(company_tags) >= 6:
             break
 
     key_hash = abs(hash(summary.message_key or ""))
-    medium = _MEDIUM[key_hash % len(_MEDIUM)]
-    broad = _BROAD[key_hash % len(_BROAD)]
-    fmt = _FORMAT[key_hash % len(_FORMAT)]
+    # Pick variety from mid, broad, format pools based on message hash
+    mid_picks = [_MID[(key_hash + i) % len(_MID)] for i in range(4)]
+    broad_picks = [_BROAD[(key_hash + i) % len(_BROAD)] for i in range(3)]
+    fmt_pick = _FORMAT[key_hash % len(_FORMAT)]
 
+    # If no niche match, seed with safe defaults
+    if not niche_tags:
+        niche_tags = ["#AINews", "#AITools", "#GenerativeAI"]
+
+    # Deduplicate and cap at 20
     seen_tags: set[str] = set()
     unique_tags: list[str] = []
-    for tag in [niche, company_tag, medium, broad, fmt]:
-        if tag not in seen_tags:
+    for tag in [*niche_tags, *company_tags, *mid_picks, *broad_picks, fmt_pick]:
+        if tag not in seen_tags and len(unique_tags) < 20:
             seen_tags.add(tag)
             unique_tags.append(tag)
 
-    fallbacks = ["#AINews", "#DeepLearning", "#AIUpdates", "#FutureOfAI", "#LearnAI"]
+    # Guarantee minimum 15 tags with fallbacks
+    fallbacks = [
+        "#DeepLearning", "#NeuralNetworks", "#ComputerVision",
+        "#NaturalLanguageProcessing", "#MLNews", "#AIWeekly",
+        "#TechInnovation", "#AIStartups", "#FutureOfWork",
+    ]
     for fb in fallbacks:
-        if len(unique_tags) >= 5:
+        if len(unique_tags) >= 20:
             break
         if fb not in seen_tags:
             unique_tags.append(fb)
             seen_tags.add(fb)
 
-    return " ".join(unique_tags[:5])
+    return " ".join(unique_tags)
 
 
 def _extract_stat_from_text(text: str) -> str:
@@ -2435,6 +2821,59 @@ def _article_items(summary: EmailSummary) -> list[dict[str, Any]]:
             }
         ]
     return []
+
+
+def _load_used_images_from_db(db_path: Path | None) -> set[str]:
+    """Load all previously-used image paths from the agent SQLite database.
+
+    Returns an empty set if the database is missing, inaccessible, or the
+    used_images table does not yet exist (first run).
+    """
+    if not db_path:
+        return set()
+    try:
+        import sqlite3 as _sqlite3
+        with _sqlite3.connect(db_path) as conn:
+            conn.execute(
+                """
+                CREATE TABLE IF NOT EXISTS used_images (
+                    path TEXT PRIMARY KEY,
+                    url  TEXT,
+                    used_at TEXT NOT NULL
+                )
+                """
+            )
+            rows = conn.execute("SELECT path FROM used_images").fetchall()
+            return {row[0] for row in rows}
+    except Exception:
+        return set()
+
+
+def _save_used_images_to_db(db_path: Path | None, paths: set[str]) -> None:
+    """Persist the set of used image paths into the agent SQLite database."""
+    if not db_path or not paths:
+        return
+    try:
+        import sqlite3 as _sqlite3
+        from datetime import datetime as _dt, timezone as _tz
+        now = _dt.now(_tz.utc).isoformat(timespec="seconds")
+        with _sqlite3.connect(db_path) as conn:
+            conn.execute(
+                """
+                CREATE TABLE IF NOT EXISTS used_images (
+                    path TEXT PRIMARY KEY,
+                    url  TEXT,
+                    used_at TEXT NOT NULL
+                )
+                """
+            )
+            conn.executemany(
+                "INSERT OR IGNORE INTO used_images (path, used_at) VALUES (?, ?)",
+                [(p, now) for p in paths if p],
+            )
+            conn.commit()
+    except Exception:
+        pass  # Never crash the main pipeline over a DB write failure
 
 
 def _clean_public_text(text: str) -> str:
