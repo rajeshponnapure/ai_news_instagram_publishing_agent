@@ -9,10 +9,17 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-131612/01_20260522-1130_mega-ipos-could-signal-market-top-say-analysts-as-spacex-and-openai-prep/slide_03.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-131612/01_20260522-1130_mega-ipos-could-signal-market-top-say-analysts-as-spacex-and-openai-prep/slide_04.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-131612/01_20260522-1130_mega-ipos-could-signal-market-top-say-analysts-as-spacex-and-openai-prep/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-131612/01_20260522-1130_mega-ipos-could-signal-market-top-say-analysts-as-spacex-and-openai-prep/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-131612/01_20260522-1130_mega-ipos-could-signal-market-top-say-analysts-as-spacex-and-openai-prep/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-131612/01_20260522-1130_mega-ipos-could-signal-market-top-say-analysts-as-spacex-and-openai-prep/slide_04.png"
+      ],
+      "status": "publish_failed_retryable",
       "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 7 concrete signal(s), 1 source link(s)"
+      "story_selected_reason": "article image available, source URL available, 7 concrete signal(s), 1 source link(s)",
+      "creation_id": "18043981079577438",
+      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"ARtHqJ2rMKzRF8xNO2_OZUB\"}}"
     }
   ]
 }
