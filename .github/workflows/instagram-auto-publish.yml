@@ -228,4 +228,16 @@ jobs:
           python -m pip install -r requirements.txt
 
       - name: Publish latest carousel to Instagram
-        r
+        run: python scripts/publish_latest_instagram.py
+
+      - name: Commit publish manifest status
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          [ -d reports/instagram_posts ] && git add -f reports/instagram_posts/
+          if git diff --cached --quiet; then
+            echo "No publish status changes."
+          else
+            git commit -m 'Update Instagram publish status [skip ci]'
+            git push
+          fi
