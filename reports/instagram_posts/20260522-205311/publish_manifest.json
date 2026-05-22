@@ -16,10 +16,10 @@
       "story_selected_reason": "source URL available, 40 concrete signal(s), 1 source link(s)",
       "creation_id": "18044026550577438",
       "published_at": "2026-05-22T20:54:11+00:00",
-      "story_published": true,
-      "story_published_at": "2026-05-22T20:54:33+00:00",
       "facebook_status": "publish_failed",
-      "facebook_error": "Facebook photo upload failed because the token is missing required permissions. You need a Page Access Token (not a User token) with 'pages_manage_posts' and 'pages_read_engagement' permissions. The old 'publish_actions' permission is deprecated and must not be used. Original error: Facebook Graph API request failed for 1154443704417851/photos: 403 Forbidden. Response: {\"error\":{\"message\":\"(#200) The permission(s) pages_manage_posts are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AlkqrMq--tCV8QmkZW7uKki\"}}"
+      "facebook_error": "Facebook photo upload failed because the token is missing required permissions. You need a Page Access Token (not a User token) with 'pages_manage_posts' and 'pages_read_engagement' permissions. The old 'publish_actions' permission is deprecated and must not be used. Original error: Facebook Graph API request failed for 1154443704417851/photos: 403 Forbidden. Response: {\"error\":{\"message\":\"(#200) The permission(s) pages_manage_posts are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AlkqrMq--tCV8QmkZW7uKki\"}}",
+      "story_published": true,
+      "story_published_at": "2026-05-22T20:54:33+00:00"
     }
   ]
 }
