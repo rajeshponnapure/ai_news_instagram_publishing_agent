@@ -13,10 +13,21 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/01_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-1/slide_07.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/01_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-1/slide_08.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/01_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-1/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/01_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-1/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/01_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-1/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/01_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-1/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/01_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-1/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/01_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-1/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/01_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-1/slide_07.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/01_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-1/slide_08.png"
+      ],
+      "status": "publish_failed_retryable",
       "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 13 concrete signal(s), 2 source link(s)"
+      "story_selected_reason": "article image available, source URL available, 13 concrete signal(s), 2 source link(s)",
+      "creation_id": "18043958939577438",
+      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"AUgxXX-sc_N9rFWr9X7JmlN\"}}"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/02_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-2",
@@ -30,10 +41,20 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/02_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-2/slide_06.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/02_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-2/slide_07.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/02_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-2/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/02_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-2/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/02_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-2/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/02_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-2/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/02_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-2/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/02_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-2/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/02_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-2/slide_07.png"
+      ],
+      "status": "publish_failed_retryable",
       "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 16 concrete signal(s), 2 source link(s)"
+      "story_selected_reason": "article image available, source URL available, 16 concrete signal(s), 2 source link(s)",
+      "creation_id": "18043959803577438",
+      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"Au-y2_8EmkosDqTySdVObws\"}}"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/03_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-3",
@@ -49,10 +70,21 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/03_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-3/slide_08.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/03_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-3/slide_09.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/03_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-3/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/03_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-3/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/03_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-3/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/03_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-3/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/03_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-3/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/03_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-3/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/03_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-3/slide_07.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/03_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-3/slide_08.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/03_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-3/slide_09.png"
+      ],
+      "status": "publish_failed_retryable",
       "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 21 concrete signal(s), 2 source link(s)"
+      "story_selected_reason": "article image available, source URL available, 21 concrete signal(s), 2 source link(s)",
+      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"AfJ-ndqERx0dNOy0IDowJKK\"}}"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/04_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-4",
@@ -68,10 +100,21 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/04_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-4/slide_08.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/04_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-4/slide_09.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/04_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-4/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/04_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-4/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/04_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-4/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/04_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-4/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/04_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-4/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/04_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-4/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/04_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-4/slide_07.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/04_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-4/slide_08.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/04_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-4/slide_09.png"
+      ],
+      "status": "publish_failed_retryable",
       "story_score": 1.0,
-      "story_selected_reason": "source URL available, 9 concrete signal(s), 2 source link(s)"
+      "story_selected_reason": "source URL available, 9 concrete signal(s), 2 source link(s)",
+      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"Alb3DWCVtsqjfYVCj8OyjDb\"}}"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/05_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-5",
@@ -86,10 +129,20 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/05_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-5/slide_07.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/05_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-5/slide_08.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/05_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-5/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/05_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-5/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/05_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-5/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/05_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-5/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/05_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-5/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/05_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-5/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/05_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-5/slide_07.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/05_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-5/slide_08.png"
+      ],
+      "status": "publish_failed_retryable",
       "story_score": 1.0,
-      "story_selected_reason": "source URL available, 9 concrete signal(s), 2 source link(s)"
+      "story_selected_reason": "source URL available, 9 concrete signal(s), 2 source link(s)",
+      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"A0dayy0vdofRiU6Hq8hhhJd\"}}"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/06_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-6",
@@ -105,10 +158,21 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/06_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-6/slide_08.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/06_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-6/slide_09.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/06_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-6/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/06_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-6/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/06_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-6/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/06_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-6/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/06_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-6/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/06_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-6/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/06_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-6/slide_07.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/06_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-6/slide_08.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/06_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-6/slide_09.png"
+      ],
+      "status": "publish_failed_retryable",
       "story_score": 1.0,
-      "story_selected_reason": "source URL available, 14 concrete signal(s), 2 source link(s)"
+      "story_selected_reason": "source URL available, 14 concrete signal(s), 2 source link(s)",
+      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"AGeqkeLbgEpFNRY_pB2jcr8\"}}"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/07_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-7",
@@ -122,10 +186,19 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/07_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-7/slide_06.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/07_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-7/slide_07.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/07_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-7/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/07_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-7/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/07_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-7/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/07_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-7/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/07_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-7/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/07_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-7/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/07_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-7/slide_07.png"
+      ],
+      "status": "publish_failed_retryable",
       "story_score": 1.0,
-      "story_selected_reason": "source URL available, 12 concrete signal(s), 2 source link(s)"
+      "story_selected_reason": "source URL available, 12 concrete signal(s), 2 source link(s)",
+      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"Al454Vs7_wxH8KbJTqa8RyX\"}}"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/08_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-8",
@@ -141,10 +214,21 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/08_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-8/slide_08.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/08_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-8/slide_09.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/08_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-8/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/08_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-8/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/08_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-8/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/08_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-8/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/08_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-8/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/08_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-8/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/08_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-8/slide_07.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/08_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-8/slide_08.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/08_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-8/slide_09.png"
+      ],
+      "status": "publish_failed_retryable",
       "story_score": 1.0,
-      "story_selected_reason": "source URL available, 8 concrete signal(s), 2 source link(s)"
+      "story_selected_reason": "source URL available, 8 concrete signal(s), 2 source link(s)",
+      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"AMjA_Z2xnBLd9ZVkSJa_cdE\"}}"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/09_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-9",
@@ -159,10 +243,20 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/09_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-9/slide_07.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/09_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-9/slide_08.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/09_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-9/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/09_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-9/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/09_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-9/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/09_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-9/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/09_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-9/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/09_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-9/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/09_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-9/slide_07.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/09_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-9/slide_08.png"
+      ],
+      "status": "publish_failed_retryable",
       "story_score": 1.0,
-      "story_selected_reason": "source URL available, 8 concrete signal(s), 2 source link(s)"
+      "story_selected_reason": "source URL available, 8 concrete signal(s), 2 source link(s)",
+      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"Ak7p8IL_k-6r2pazpEp4mVA\"}}"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/10_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-10",
@@ -176,10 +270,19 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/10_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-10/slide_06.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/10_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-10/slide_07.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/10_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-10/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/10_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-10/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/10_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-10/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/10_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-10/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/10_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-10/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/10_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-10/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/10_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-10/slide_07.png"
+      ],
+      "status": "publish_failed_retryable",
       "story_score": 1.0,
-      "story_selected_reason": "source URL available, 30 concrete signal(s), 2 source link(s)"
+      "story_selected_reason": "source URL available, 30 concrete signal(s), 2 source link(s)",
+      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"ABVu7FkeC74NkMBWBZDO45g\"}}"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/11_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-11",
@@ -191,10 +294,17 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/11_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-11/slide_04.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/11_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-11/slide_05.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/11_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-11/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/11_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-11/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/11_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-11/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/11_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-11/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/11_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-11/slide_05.png"
+      ],
+      "status": "publish_failed_retryable",
       "story_score": 1.0,
-      "story_selected_reason": "source URL available, 12 concrete signal(s), 1 source link(s)"
+      "story_selected_reason": "source URL available, 12 concrete signal(s), 1 source link(s)",
+      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"A29ba6T-TQW5dg5Uwvf2zvl\"}}"
     }
   ]
 }
