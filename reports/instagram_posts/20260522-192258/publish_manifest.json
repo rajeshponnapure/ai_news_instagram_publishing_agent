@@ -16,14 +16,8 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-192258/01_20260522-1814_you-can-no-longer-google-the-word-disregard-techcrunch/slide_04.png"
       ],
       "status": "published",
-      "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 9 concrete signal(s), 1 source link(s)",
       "creation_id": "18044021678577438",
-      "published_at": "2026-05-22T19:24:22+00:00",
-      "story_published": true,
-      "story_published_at": "2026-05-22T19:24:43+00:00",
-      "facebook_status": "publish_failed",
-      "facebook_error": "Facebook photo upload failed because the token is missing required permissions. You need a Page Access Token (not a User token) with 'pages_manage_posts' and 'pages_read_engagement' permissions. The old 'publish_actions' permission is deprecated and must not be used. Original error: Facebook Graph API request failed for 1154443704417851/photos: 403 Forbidden. Response: {\"error\":{\"message\":\"(#200) The permission(s) pages_manage_posts are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AVdHbVcyLz7_f0ur7ChzOjh\"}}"
+      "published_at": "2026-05-22T19:24:22+00:00"
     }
   ]
 }
