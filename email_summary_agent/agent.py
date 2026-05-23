@@ -14,7 +14,7 @@ from .digest import parse_news_items
 from .email_client import ImapEmailClient
 from .instagram import write_instagram_carousels
 from .models import EmailItem, EmailSummary
-from .publisher import publish_ready_carousels, publish_ready_facebook_posts, write_publish_manifest
+from .publisher import publish_ready_carousels, write_publish_manifest
 from .report import write_report
 from .summarizer import SummaryProvider
 
@@ -224,9 +224,6 @@ def process_items(
             ollama_url=settings.ollama_url,
             ollama_model=settings.ollama_model,
         )
-        if settings.auto_publish_facebook:
-            settings.validate_facebook_publish()
-        
         # Filter out everything we have already processed.
         fresh_emails = emails if reprocess else [email for email in emails if not store.is_processed(email.message_key)]
 
@@ -298,8 +295,6 @@ def process_items(
                     # AUTO_PUBLISH_INSTAGRAM=false (generate job).
                     # It is active in publish_latest_instagram.py.
                     published_count = publish_ready_carousels(settings, manifest_path)
-                    if settings.auto_publish_facebook:
-                        publish_ready_facebook_posts(settings, manifest_path)
 
             for email, summary in summaries:
                 store.mark_processed(email, summary, report_path)

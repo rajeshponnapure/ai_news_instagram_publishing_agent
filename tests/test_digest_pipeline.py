@@ -16,10 +16,8 @@ from email_summary_agent.digest import parse_news_items
 from email_summary_agent.email_client import extract_body
 from email_summary_agent.instagram import _build_slide_specs, _find_library_image, _split_summary_for_carousels
 from email_summary_agent.models import EmailItem, EmailSummary
-from email_summary_agent.publisher import _preflight_facebook_publish, _score_story_candidate
 from email_summary_agent.summarizer import _article_item_for_instagram, _format_prompt_body, SummaryProvider
 from email_summary_agent.article_enricher import ArticleData
-from scripts.publish_latest_instagram import _facebook_publish_enabled
 
 
 class DigestPipelineTests(unittest.TestCase):
@@ -146,86 +144,6 @@ class DigestPipelineTests(unittest.TestCase):
             self.assertTrue(_email_scan_due(store, key, 50))
             store.close()
 
-    def test_facebook_publish_reports_missing_page_token(self) -> None:
-        settings = _settings(auto_publish_facebook=True, fb_page_id="1154443704417851", fb_page_access_token="")
-
-        with patch("builtins.print") as mocked_print:
-            enabled = _facebook_publish_enabled(settings)
-
-        self.assertFalse(enabled)
-        self.assertIn("FB_PAGE_ACCESS_TOKEN", mocked_print.call_args.args[0])
-
-    def test_facebook_preflight_accepts_valid_page_token(self) -> None:
-        settings = _settings(
-            auto_publish_facebook=True,
-            fb_page_id="1154443704417851",
-            fb_page_access_token="page-token",
-            fb_app_id="123456789",
-            fb_app_secret="app-secret",
-        )
-
-        class DummyResponse:
-            def __init__(self, payload: dict[str, object]) -> None:
-                self._payload = payload
-
-            def __enter__(self):
-                return self
-
-            def __exit__(self, exc_type, exc, tb):
-                return False
-
-            def read(self) -> bytes:
-                import json
-
-                return json.dumps(self._payload).encode("utf-8")
-
-        payload = {
-            "data": {
-                "is_valid": True,
-                "type": "PAGE",
-                "scopes": ["pages_manage_posts", "pages_read_engagement"],
-            }
-        }
-
-        with patch("email_summary_agent.publisher.urllib.request.urlopen", return_value=DummyResponse(payload)):
-            _preflight_facebook_publish(settings)
-
-    def test_facebook_preflight_rejects_wrong_token_scope(self) -> None:
-        settings = _settings(
-            auto_publish_facebook=True,
-            fb_page_id="1154443704417851",
-            fb_page_access_token="page-token",
-            fb_app_id="123456789",
-            fb_app_secret="app-secret",
-        )
-
-        class DummyResponse:
-            def __init__(self, payload: dict[str, object]) -> None:
-                self._payload = payload
-
-            def __enter__(self):
-                return self
-
-            def __exit__(self, exc_type, exc, tb):
-                return False
-
-            def read(self) -> bytes:
-                import json
-
-                return json.dumps(self._payload).encode("utf-8")
-
-        payload = {
-            "data": {
-                "is_valid": True,
-                "type": "USER",
-                "scopes": ["pages_read_engagement"],
-            }
-        }
-
-        with patch("email_summary_agent.publisher.urllib.request.urlopen", return_value=DummyResponse(payload)):
-            with self.assertRaises(RuntimeError):
-                _preflight_facebook_publish(settings)
-
     def test_image_library_rejects_unrelated_cached_image(self) -> None:
         with TemporaryDirectory() as tmp:
             image_dir = Path(tmp)
@@ -239,22 +157,6 @@ class DigestPipelineTests(unittest.TestCase):
             ):
                 self.assertIsNone(_find_library_image("AWS voice inference deployment"))
                 self.assertEqual(_find_library_image("OpenAI GPT developer model"), str(image_dir / "abc123.jpg"))
-
-    def test_story_candidate_scoring_rewards_image_source_and_facts(self) -> None:
-        with TemporaryDirectory() as tmp:
-            carousel = Path(tmp)
-            (carousel / "metadata.json").write_text(
-                '{"article_url":"https://example.com/openai","article_items":[{"image_path":"data/images/openai.jpg","url":"https://example.com/openai"}]}',
-                encoding="utf-8",
-            )
-            score, reason = _score_story_candidate(
-                carousel,
-                "OpenAI shipped GPT-5 API updates in 2026 for developers.",
-                5,
-            )
-
-        self.assertGreater(score, 0.7)
-        self.assertIn("article image", reason)
 
     def test_rag_retrieves_creator_rules_for_ai_launch(self) -> None:
         context = retrieve_context("OpenAI released a new developer API and model launch", limit=2)
@@ -370,11 +272,6 @@ def _settings(**overrides) -> Settings:
         ig_user_id="17841447323115790",
         ig_access_token="ig-token",
         ig_api_version="v24.0",
-        auto_publish_facebook=False,
-        fb_page_id="",
-        fb_page_access_token="",
-        fb_app_id="",
-        fb_app_secret="",
     )
     values.update(overrides)
     return Settings(**values)

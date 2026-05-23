@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import json
 import sys
-from dataclasses import replace
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -12,8 +11,6 @@ if str(ROOT) not in sys.path:
 from email_summary_agent.config import Settings
 from email_summary_agent.publisher import (
     publish_ready_carousels,
-    publish_ready_facebook_posts,
-    publish_instagram_story,
     write_publish_manifest,
 )
 
@@ -22,16 +19,6 @@ def main() -> int:
     settings = Settings.from_env()
     settings.validate_instagram_publish()
 
-    # Facebook validation is optional — skip gracefully if not configured
-    fb_enabled = _facebook_publish_enabled(settings)
-    if fb_enabled:
-        try:
-            settings.validate_facebook_publish()
-        except ValueError as exc:
-            print(f"WARNING: Facebook publishing disabled — {exc}")
-            fb_enabled = False
-
-    carousel_settings = replace(settings, auto_publish_facebook=False)
     settings.instagram_dir.mkdir(parents=True, exist_ok=True)
     batches = (
         [path for path in settings.instagram_dir.iterdir() if path.is_dir()]
@@ -48,21 +35,7 @@ def main() -> int:
         return 0
     batch_dir, manifest_path = selected
 
-    # ── Instagram carousels ───────────────────────────────────────────────────
-    published = publish_ready_carousels(carousel_settings, manifest_path)
-
-    # ── Instagram Story — DISABLED ────────────────────────────────────────────
-    # is_story='true' on Graph API v24+ posts to main feed instead of Stories.
-    # Story publishing is disabled until the correct API flow is confirmed.
-    story_published = 0
-
-    # ── Facebook page posts ───────────────────────────────────────────────────
-    facebook_published = 0
-    if fb_enabled:
-        try:
-            facebook_published = publish_ready_facebook_posts(settings, manifest_path)
-        except RuntimeError as fb_exc:
-            print(f"WARNING: Facebook publishing failed: {fb_exc}")
+    published = publish_ready_carousels(settings, manifest_path)
 
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     statuses: dict[str, int] = {}
@@ -71,28 +44,11 @@ def main() -> int:
         statuses[status] = statuses.get(status, 0) + 1
 
     print(
-        f"Published {published} Instagram carousel(s), "
-        f"{story_published} Story, "
-        f"{facebook_published} Facebook post(s) "
+        f"Published {published} Instagram carousel(s) "
         f"from {batch_dir}. Statuses: {statuses}"
     )
     failed = statuses.get("publish_failed", 0)
     return 1 if failed else 0
-
-
-def _facebook_publish_enabled(settings: Settings) -> bool:
-    if not settings.auto_publish_facebook:
-        print("Facebook publishing disabled: AUTO_PUBLISH_FACEBOOK is false.")
-        return False
-    missing = []
-    if not settings.fb_page_id:
-        missing.append("FB_PAGE_ID")
-    if not settings.fb_page_access_token:
-        missing.append("FB_PAGE_ACCESS_TOKEN")
-    if missing:
-        print(f"Facebook publishing disabled: missing {', '.join(missing)}.")
-        return False
-    return True
 
 
 def _find_latest_publishable_batch(

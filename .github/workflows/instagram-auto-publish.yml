@@ -79,7 +79,6 @@ jobs:
       CREATE_INSTAGRAM_POSTS: 'true'
       # DO NOT publish here - images must be deployed to GitHub Pages first.
       AUTO_PUBLISH_INSTAGRAM: 'false'
-      AUTO_PUBLISH_FACEBOOK: 'false'
       # Instagram carousel maximum is 20 slides per post.
       MAX_CAROUSEL_SLIDES: '20'
       PYTHONUTF8: '1'
@@ -220,18 +219,15 @@ jobs:
 
   # ── 3. PUBLISH TO INSTAGRAM ───────────────────────────────────────────────────
   publish:
-    name: Publish to Instagram (+ Story + Facebook)
+    name: Publish to Instagram
     needs: deploy-pages
     runs-on: ubuntu-latest
     timeout-minutes: 40
 
     env:
       AUTO_PUBLISH_INSTAGRAM: 'true'
-      AUTO_PUBLISH_FACEBOOK: 'true'
       IG_USER_ID: ${{ secrets.IG_USER_ID }}
       IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-      FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
-      FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
       IG_API_VERSION: v24.0
       # GitHub Pages URL - slides are publicly reachable here before Instagram fetches them.
       PUBLIC_MEDIA_BASE_URL: ${{ needs.deploy-pages.outputs.page_url }}instagram_posts
@@ -258,7 +254,7 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
 
-      - name: Publish latest carousel to Instagram (+ Story + Facebook)
+      - name: Publish latest carousel to Instagram
         run: python scripts/publish_latest_instagram.py
 
       - name: Commit publish manifest status

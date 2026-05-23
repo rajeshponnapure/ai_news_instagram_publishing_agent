@@ -71,12 +71,6 @@ class Settings:
     ig_user_id: str
     ig_access_token: str
     ig_api_version: str
-    auto_publish_facebook: bool
-    fb_page_id: str
-    fb_page_access_token: str
-    fb_app_id: str
-    fb_app_secret: str
-
     @classmethod
     def from_env(cls) -> "Settings":
         load_env_file()
@@ -110,11 +104,6 @@ class Settings:
             ig_user_id=os.environ.get("IG_USER_ID", ""),
             ig_access_token=os.environ.get("IG_ACCESS_TOKEN", ""),
             ig_api_version=os.environ.get("IG_API_VERSION", "v24.0"),
-            auto_publish_facebook=_bool_env("AUTO_PUBLISH_FACEBOOK", False),
-            fb_page_id=os.environ.get("FB_PAGE_ID", ""),
-            fb_page_access_token=os.environ.get("FB_PAGE_ACCESS_TOKEN", os.environ.get("IG_ACCESS_TOKEN", "")),
-            fb_app_id=os.environ.get("FB_APP_ID", ""),
-            fb_app_secret=os.environ.get("FB_APP_SECRET", ""),
         )
 
     def validate_email_access(self) -> None:
@@ -153,23 +142,6 @@ class Settings:
             raise ValueError(
                 f"Instagram auto-publishing is enabled but these values are missing or invalid: {joined}."
             )
-
-    def validate_facebook_publish(self) -> None:
-        if not self.auto_publish_facebook:
-            return
-        missing = []
-        if not self.public_media_base_url:
-            missing.append("PUBLIC_MEDIA_BASE_URL")
-        if not self.fb_page_id or not self.fb_page_id.isdigit():
-            missing.append("FB_PAGE_ID")
-        if not self.fb_page_access_token:
-            missing.append("FB_PAGE_ACCESS_TOKEN")
-        if missing:
-            joined = ", ".join(missing)
-            raise ValueError(
-                f"Facebook auto-publishing is enabled but these values are missing or invalid: {joined}."
-            )
-
 
 def _bool_env(name: str, default: bool) -> bool:
     raw = os.environ.get(name)
