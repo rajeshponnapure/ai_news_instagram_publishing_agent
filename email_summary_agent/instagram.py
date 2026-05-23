@@ -980,16 +980,15 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
             font_meta, ACCENT_GREEN, 1,
         )
 
-        # ── Key-point container — white text, dark rounded card ───────────────
+        # ── Key-point container — highlighted keywords in bold neon green ────
         kp_text = str(slide.get("body", ""))
         kp_card = (54, 302, CANVAS_W - 54, 1172)
         draw.rounded_rectangle(kp_card, radius=36, fill=(8, 8, 8, 240),
                                 outline=(200, 255, 0, 80), width=2)
         kp_box = (88, 334, CANVAS_W - 88, 1142)
-        _draw_autofit_text(
+        _draw_keypoint_body_with_highlights(
             draw, kp_text, kp_box, ImageFont,
-            fill=TEXT_WHITE, bold=True, size_max=68, size_min=FONT_MIN_READABLE,
-            max_lines=8, align="center",
+            size_max=68, size_min=FONT_MIN_READABLE, max_lines=8, align="center",
         )
 
 
@@ -2085,6 +2084,134 @@ def _brand_tokens(text: str) -> set[str]:
     }
 
 
+# ── Highlight keyword system for keypoint slides ──────────────────────────────
+# Words matching these patterns are rendered in bold neon green to draw the eye.
+
+_HIGHLIGHT_MODELS = frozenset({
+    "GPT", "GPT-4", "GPT-5", "GPT4", "GPT5", "GPT-4o", "GPT-4.5",
+    "Claude", "Claude 3", "Claude 3.5", "Claude 4",
+    "Gemini", "Gemini 2", "Gemini 2.0", "Gemini 1.5",
+    "Llama", "Llama 2", "Llama 3", "Llama 4",
+    "Mistral", "Mistral Large", "Mistral Medium",
+    "Grok", "Grok 2", "Grok 3",
+    "Sora", "Veo", "Veo 2", "DALL-E", "DALL-E 3",
+    "Copilot", "ChatGPT", "Gemini", "Midjourney",
+    "Stable Diffusion", "SD3", "Flux",
+    "o1", "o3", "o4", "R1", "Sonnet", "Haiku", "Opus",
+})
+
+_HIGHLIGHT_VERBS = frozenset({
+    "launches", "releases", "achieves", "beats", "surpasses", "reveals",
+    "breaks", "builds", "cuts", "doubles", "enables", "expands",
+    "introduces", "joins", "reaches", "replaces", "sets", "ships",
+    "shows", "trains", "upgrades", "unveils", "announces", "partners",
+    "acquires", "raises", "deploys", "integrates",
+    "launched", "released", "achieved", "surpassed", "introduced",
+    "announced", "unveiled", "partnered", "acquired", "raised",
+    "crushes", "shatters", "hits", "tops", "explodes",
+})
+
+_HIGHLIGHT_ACRONYMS = frozenset({
+    "AI", "API", "GPU", "CPU", "LLM", "ML", "NLP", "SDK", "RAG",
+    "RLHF", "AGI", "HPC", "TPU", "ASIC", "FPGA", "SaaS", "MCP",
+})
+
+
+def _token_is_highlight_worthy(token: str) -> bool:
+    word = token.strip().strip(".,;:!?\"'()[]{}")
+    if not word or len(word) <= 1:
+        return False
+    # Numbers (digits, percentages, monetary values, etc.)
+    if re.match(r"^[\$€£]?\d+[\d,.]*(?:[BMTKbmtk]|bn|mn|%|x|×|th)?$", word):
+        return True
+    # Acronyms
+    if word in _HIGHLIGHT_ACRONYMS:
+        return True
+    # Company names (case-insensitive against REFERENCE_BRANDS)
+    if word in REFERENCE_BRANDS or word.lower() in {b.lower() for b in REFERENCE_BRANDS}:
+        return True
+    # Model names
+    if word in _HIGHLIGHT_MODELS or word.lower() in {m.lower() for m in _HIGHLIGHT_MODELS}:
+        return True
+    # Power verbs
+    if word.lower() in _HIGHLIGHT_VERBS:
+        return True
+    return False
+
+
+def _draw_keypoint_body_with_highlights(
+    draw, text, box, image_font,
+    size_max=68, size_min=26, max_lines=8, align="center",
+):
+    """Draw keypoint body with highlight-worthy words in bold neon green.
+
+    Instead of one uniform colour block, this function renders each word
+    individually. Words that match _token_is_highlight_worthy() are drawn in
+    bold ACCENT_GREEN; everything else stays white.  The font is still auto-
+    sized to fit the entire box so no layout overflows.
+    """
+    x1, y1, x2, y2 = box
+    width = x2 - x1
+    height = y2 - y1
+    if not text:
+        return y1
+
+    font = _auto_fit_font(
+        image_font, text, width, height,
+        bold=True, size_max=size_max, size_min=size_min, max_lines=max_lines,
+    )
+    bold_font = _font(image_font, font.size, bold=True)
+
+    tokens = re.findall(r"\S+\s*", text)
+    lines: list[list[str]] = []
+    current_line: list[str] = []
+    current_w = 0.0
+    for tok in tokens:
+        tw = draw.textlength(tok, font=font)
+        if current_line and current_w + tw > width:
+            lines.append(current_line)
+            current_line = [tok]
+            current_w = tw
+            if len(lines) >= max_lines:
+                current_line = []
+                break
+        else:
+            current_line.append(tok)
+            current_w += tw
+    if current_line and len(lines) < max_lines:
+        lines.append(current_line)
+
+    line_heights = []
+    for line_tokens in lines:
+        mh = 0
+        for tok in line_tokens:
+            bb = draw.textbbox((0, 0), tok, font=font)
+            mh = max(mh, bb[3] - bb[1])
+        line_heights.append(mh)
+
+    gap = 10
+    block_h = sum(line_heights) + max(0, len(lines) - 1) * gap
+    y = y1 + max(0, (height - block_h) // 2)
+
+    for li, line_tokens in enumerate(lines):
+        lw = sum(draw.textlength(t, font=font) for t in line_tokens)
+        if align == "center":
+            x = x1 + max(0, (width - lw) // 2)
+        elif align == "left":
+            x = x1
+        else:
+            x = x1 + max(0, width - lw)
+
+        for tok in line_tokens:
+            is_hl = _token_is_highlight_worthy(tok)
+            cf = bold_font if is_hl else font
+            draw.text((x, y), tok, fill=ACCENT_GREEN if is_hl else TEXT_WHITE, font=cf)
+            x += draw.textlength(tok, font=cf)
+
+        y += line_heights[li] + gap
+    return y
+
+
 def _extract_instagram_key_points(
     article: dict[str, Any],
     summary: "EmailSummary",
@@ -2108,10 +2235,13 @@ def _extract_instagram_key_points(
     NOISE_PATTERNS = [
         r"BREAKING AI UPDATE\s*[-–—]\s*",
         r"\[(?:HIGH|MEDIUM|LOW|CRITICAL)\]\s*",
+        r"\bImpact\s*:\s*(?:Low|Medium|High|Critical)\b",
+        r"\bRead\s*time\s*:\s*\d+\s*(?:min|mins|minutes?)\b",
         r"={3,}",
         r"Company\s*:\s*",
         r"AI Summary\s*:\s*",
         r"Link\s*:\s*https?://\S+",
+        r"\bLink\s*:\s*\d+\.?\s*",
         r"#{1,6}\s+(?:Bug Fixes|Features?|Performance|Breaking Changes?|Refactoring?|Chores?|Docs?).*",
         r"\*\*([^*]+):\*\*\s*",
     ]
@@ -2963,10 +3093,13 @@ def _clean_public_text(text: str) -> str:
     # ── Strip grdevelopers.co email digest noise ──────────────────────────────
     text = re.sub(r"BREAKING AI UPDATE\s*[-–—]\s*", "", text or "", flags=re.I)
     text = re.sub(r"\[(?:HIGH|MEDIUM|LOW|CRITICAL)\]\s*", "", text, flags=re.I)
+    text = re.sub(r"\bImpact\s*:\s*(?:Low|Medium|High|Critical)\b", "", text, flags=re.I)
+    text = re.sub(r"\bRead\s*time\s*:\s*\d+\s*(?:min|mins|minutes?)\b", "", text, flags=re.I)
     text = re.sub(r"={3,}", "", text)
     text = re.sub(r"Company\s*:\s*[^\n]*(\n|$)", "", text, flags=re.I)
     text = re.sub(r"AI Summary\s*:\s*", "", text, flags=re.I)
     text = re.sub(r"Link\s*:\s*https?://\S+", "", text, flags=re.I)
+    text = re.sub(r"\bLink\s*:\s*\d+\.?\s*", "", text, flags=re.I)
     # Strip GitHub markdown changelog headings
     text = re.sub(
         r"#{1,6}\s+(?:Bug Fixes|Features?|Performance|Breaking Changes?|Refactoring?|Chores?|Docs?).*",
