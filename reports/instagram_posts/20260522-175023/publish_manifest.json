@@ -14,10 +14,20 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-175023/01_20260522-1626_github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterpri/slide_08.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-175023/01_20260522-1626_github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterpri/slide_09.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
-      "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 8 concrete signal(s), 1 source link(s)"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-175023/01_20260522-1626_github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterpri/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-175023/01_20260522-1626_github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterpri/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-175023/01_20260522-1626_github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterpri/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-175023/01_20260522-1626_github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterpri/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-175023/01_20260522-1626_github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterpri/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-175023/01_20260522-1626_github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterpri/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-175023/01_20260522-1626_github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterpri/slide_07.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-175023/01_20260522-1626_github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterpri/slide_08.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-175023/01_20260522-1626_github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterpri/slide_09.png"
+      ],
+      "status": "published",
+      "creation_id": "18044116490577438",
+      "published_at": "2026-05-23T15:21:31+00:00"
     }
   ]
 }
