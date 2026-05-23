@@ -468,8 +468,9 @@ def _build_digest_slide_specs(summary: EmailSummary, email_dt: datetime) -> list
         topic = ", ".join(summary.topics[:2]) or headline
         source_label = _source_label_from_url(str(article.get("url") or ""))
 
-        # Build a brief, complete summary for this slide (2–3 sentences, no dots).
-        brief = _build_digest_slide_brief(summary, article)
+        # Use numbered key points for storytelling; fall back to prose brief.
+        key_points = _extract_instagram_key_points(article, summary, max_points=4)
+        brief = "\n".join(key_points) if key_points else _build_digest_slide_brief(summary, article)
 
         # Select a unique image for this article.
         image_path = _select_unique_article_image(
@@ -847,13 +848,17 @@ def _write_digest_slide(
     # ── Separator line ────────────────────────────────────────────────────────
     draw.line([(margin, 938), (CANVAS_W - margin, 938)], fill=ACCENT_GREEN, width=2)
 
-    # ── Body summary — auto-sized, no dots, complete sentences, centre aligned ─
+    # ── Key points / body — numbered items left-aligned, fallback prose centred ─
     body_text = str(slide.get("body", "")).strip()
     if body_text:
         body_box = (margin, 950, CANVAS_W - margin, 1220)
+        # Numbered key points (contain emoji digits) rendered left-aligned;
+        # plain prose falls back to centred alignment.
+        is_key_points = bool(re.search(r"[1-6]⃣", body_text))
+        body_align = "left" if is_key_points else "center"
         _draw_autofit_text(
             draw, body_text, body_box, image_font,
-            fill=SOFT_WHITE, bold=False, size_max=36, size_min=FONT_MIN_READABLE, max_lines=8, align="center",
+            fill=SOFT_WHITE, bold=False, size_max=34, size_min=FONT_MIN_READABLE, max_lines=8, align=body_align,
         )
 
     # ── Source credit — plain text, no container ──────────────────────────────
@@ -867,13 +872,6 @@ def _write_digest_slide(
             font=font_source,
         )
 
-    # ── Progress bar ─────────────────────────────────────────────────────────
-    bar_x1, bar_y = margin, 1290
-    bar_total = CANVAS_W - margin * 2
-    draw.rounded_rectangle((bar_x1, bar_y, bar_x1 + bar_total, bar_y + 6), radius=3, fill=(40, 40, 40))
-    filled = int(bar_total * slide_number / total_slides)
-    if filled > 0:
-        draw.rounded_rectangle((bar_x1, bar_y, bar_x1 + filled, bar_y + 6), radius=3, fill=ACCENT_GREEN)
 
 
 def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: dict[str, Any], email_dt: datetime) -> None:
@@ -953,10 +951,6 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
                 font_eyebrow, font_title, font_body, font_meta,
             )
 
-        # ── Progress bar ──────────────────────────────────────────────────────
-        draw.rounded_rectangle((160, 1200, 920, 1212), radius=3, fill=ACCENT_GREEN)
-        _draw_centered_text(draw, f"{slide_number:02d}/{total_slides:02d}",
-                            (450, 1222, 630, 1266), font_meta, SOFT_WHITE, 1)
     elif slide["kind"] == "keypoint":
         # ── Article headline at TOP — neon green, full text, auto-sized ───────
         headline = _clean_headline(str(slide.get("title", "AI Update")))
@@ -998,10 +992,6 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
             max_lines=8, align="center",
         )
 
-        # ── Progress bar + counter ────────────────────────────────────────────
-        draw.rounded_rectangle((160, 1192, 920, 1204), radius=3, fill=ACCENT_GREEN)
-        _draw_centered_text(draw, f"{slide_number:02d}/{total_slides:02d}",
-                            (450, 1216, 630, 1260), font_meta, SOFT_WHITE, 1)
 
     elif slide["kind"] == "cta":
         _draw_centered_text(draw, "GRAITECH", (140, 150, 940, 240), font_brand, ACCENT_GREEN, 1)
@@ -1062,9 +1052,6 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
                 max_lines=5,
             )
 
-        # ── Slide counter ─────────────────────────────────────────────────────
-        draw.rounded_rectangle((160, 1252, 920, 1266), radius=3, fill=ACCENT_GREEN)
-        _draw_centered_text(draw, f"{slide_number:02d}/{total_slides:02d}", (450, 1274, 630, 1314), font_meta, SOFT_WHITE, 1)
 
     path.parent.mkdir(parents=True, exist_ok=True)
     _draw_handle_overlay(draw, ImageFont)
@@ -1734,7 +1721,81 @@ def _select_unique_article_image(
         used_image_paths.add(web_image)
         return web_image
 
+    # ── 4. PIL fallback — generate a branded text-art image ─────────────────────────
+    fallback = _generate_branded_fallback_image(title or topic or "AI Update", topic)
+    if fallback and fallback not in used_image_paths:
+        used_image_paths.add(fallback)
+        return fallback
+
     return ""
+
+
+def _generate_branded_fallback_image(title: str, topic: str) -> str:
+    """Generate a branded text-art PNG when no real image is available.
+
+    Creates a 1080x1080 black-background image with the article headline
+    rendered in large neon-green text.  No external APIs required — pure PIL.
+    Returns the local file path on success, empty string on failure.
+    """
+    try:
+        from PIL import Image, ImageDraw, ImageFont
+        import hashlib
+        import textwrap
+
+        slug = hashlib.md5((title + topic).encode()).hexdigest()[:12]
+        out_dir = IMAGE_LIBRARY_DIR / "fallback"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        out_path = out_dir / f"fallback_{slug}.png"
+        if out_path.exists():
+            return str(out_path)
+
+        W, H = 1080, 1080
+        img = Image.new("RGB", (W, H), (5, 5, 5))
+        draw = ImageDraw.Draw(img)
+
+        # Subtle grid lines for depth
+        for gx in range(0, W, 108):
+            draw.line([(gx, 0), (gx, H)], fill=(20, 20, 20), width=1)
+        for gy in range(0, H, 108):
+            draw.line([(0, gy), (W, gy)], fill=(20, 20, 20), width=1)
+
+        # Corner accent marks
+        accent = (200, 255, 0)
+        for cx, cy, dx, dy in [(0, 0, 1, 1), (W, 0, -1, 1), (0, H, 1, -1), (W, H, -1, -1)]:
+            draw.line([(cx, cy), (cx + dx * 80, cy)], fill=accent, width=3)
+            draw.line([(cx, cy), (cx, cy + dy * 80)], fill=accent, width=3)
+
+        # Topic eyebrow
+        font_eyebrow = _font(ImageFont, 30, bold=True, mono=True)
+        eyebrow = (topic or "AI NEWS").upper()[:30]
+        draw.text((60, 80), eyebrow, fill=accent, font=font_eyebrow)
+
+        # Main title — auto-wrapped, large neon green
+        font_title = _font(ImageFont, 68, bold=True)
+        clean_title = re.sub(r"\s+", " ", title).strip()
+        lines_wrapped = textwrap.wrap(clean_title, width=22)[:5]
+        y = 200
+        for line in lines_wrapped:
+            draw.text((60, y), line, fill=accent, font=font_title)
+            try:
+                lh = draw.textbbox((0, 0), line, font=font_title)[3]
+            except Exception:
+                lh = 76
+            y += lh + 12
+
+        # Horizontal separator
+        draw.line([(60, y + 20), (W - 60, y + 20)], fill=accent, width=2)
+
+        # Brand handle at bottom
+        font_handle = _font(ImageFont, 36, bold=True, mono=True)
+        draw.text((60, H - 100), "@graitech", fill=accent, font=font_handle)
+        draw.text((60, H - 56), "AI NEWS", fill=(160, 160, 160), font=_font(ImageFont, 28, bold=False))
+
+        img.save(str(out_path), "PNG", optimize=True)
+        return str(out_path)
+    except Exception as exc:
+        print(f"WARNING: Could not generate fallback image: {exc}")
+        return ""
 
 
 def _find_library_image_unique(query: str, exclude_paths: set[str]) -> str | None:

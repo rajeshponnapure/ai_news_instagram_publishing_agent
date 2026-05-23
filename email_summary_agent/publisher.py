@@ -123,6 +123,11 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     published = 0
     for post in manifest.get("posts", []):
+        # Hard guard: never republish a post that already has a published_at timestamp,
+        # regardless of what status the manifest carries.  This prevents duplicates
+        # when write_publish_manifest() is called multiple times across runs.
+        if post.get("published_at"):
+            continue
         if post.get("status") not in {"ready_for_publish", "ready_for_upload", "container_created", "publish_failed_retryable"}:
             continue
         urls = [url for url in post.get("public_slide_urls", []) if url]

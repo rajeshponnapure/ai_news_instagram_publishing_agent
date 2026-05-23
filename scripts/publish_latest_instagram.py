@@ -51,15 +51,10 @@ def main() -> int:
     # ── Instagram carousels ───────────────────────────────────────────────────
     published = publish_ready_carousels(carousel_settings, manifest_path)
 
-    # ── Instagram Story — post the cover slide of the best carousel ───────────
+    # ── Instagram Story — DISABLED ────────────────────────────────────────────
+    # is_story='true' on Graph API v24+ posts to main feed instead of Stories.
+    # Story publishing is disabled until the correct API flow is confirmed.
     story_published = 0
-    if published > 0 and settings.auto_publish_instagram:
-        try:
-            story_published = publish_instagram_story(settings, manifest_path)
-            if story_published:
-                print(f"Published {story_published} Instagram Story.")
-        except Exception as story_exc:
-            print(f"WARNING: Instagram Story publish failed (carousels were published): {story_exc}")
 
     # ── Facebook page posts ───────────────────────────────────────────────────
     facebook_published = 0
