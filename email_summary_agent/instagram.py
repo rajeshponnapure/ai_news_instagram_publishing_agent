@@ -934,6 +934,8 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
     _gt_draw_chrome(image, draw, ImageFont, slide_number, total_slides)
 
     path.parent.mkdir(parents=True, exist_ok=True)
+    if image.mode == "RGBA":
+        image = image.convert("RGB")
     image.save(path, "PNG", optimize=True)
 
 
