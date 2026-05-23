@@ -11,10 +11,10 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-103703/01_20260522-0841_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_01.png",
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-103703/01_20260522-0841_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_02.png"
       ],
-      "status": "publish_failed_retryable",
-      "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 21 concrete signal(s), 1 source link(s)",
-      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"AqdERZe61QfLIqw-hMRcCJU\"}}"
+      "status": "published",
+      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"AqdERZe61QfLIqw-hMRcCJU\"}}",
+      "creation_id": "18044142683577438",
+      "published_at": "2026-05-23T19:50:33+00:00"
     }
   ]
 }
