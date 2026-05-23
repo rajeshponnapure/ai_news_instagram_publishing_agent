@@ -120,6 +120,9 @@ jobs:
             python -m email_summary_agent --poll-once
           fi
 
+      - name: Set git remote with token
+        run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+
       - name: Commit generated reports and state
         id: commit
         run: |
@@ -256,6 +259,9 @@ jobs:
 
       - name: Publish latest carousel to Instagram
         run: python scripts/publish_latest_instagram.py
+
+      - name: Set git remote with token
+        run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
 
       - name: Commit publish manifest status
         run: |
