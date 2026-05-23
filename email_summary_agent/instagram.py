@@ -33,6 +33,10 @@ NORMAL_NEWS_PER_POST = 2
 FONT_MIN_READABLE = 26
 POSTING_SLOTS = ("08:00", "14:00", "18:00", "22:00")
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+# graitech Design System assets bundled with the package
+ASSETS_DIR = Path(__file__).resolve().parent / "assets"
+FONTS_DIR = ASSETS_DIR / "fonts"
+GRAITECH_LOGO_PATH = ASSETS_DIR / "graitech-logo.png"
 WATERMARK_CANDIDATES = [PROJECT_ROOT / "GR watermark.png", PROJECT_ROOT / "GR Watermark.png", PROJECT_ROOT / "GR watermark.svg"]
 FINAL_LOGO_CANDIDATES = [PROJECT_ROOT / "GR INSTA LOGO.png", PROJECT_ROOT / "GRInstaLogo.png", PROJECT_ROOT / "GR INSTA LOGO.svg"]
 ARTICLE_ASSET_DIR = PROJECT_ROOT / "data" / "article_assets"
@@ -58,10 +62,15 @@ REFERENCE_BRANDS = (
     "Cohere",
     "Salesforce",
 )
-ACCENT_GREEN = "#C8FF00"
-PAGE_BLACK = "#050505"
-TEXT_WHITE = "#FFFFFF"
-SOFT_WHITE = "#D7D7D7"
+# ── graitech Design System color tokens ────────────────────────────────────
+ACCENT_GREEN = "#39FF14"    # neon green primary accent
+NEON_RGB = (57, 255, 20)    # ACCENT_GREEN as RGB tuple
+PAGE_BLACK = "#000000"      # true black canvas
+TEXT_WHITE = "#FFFFFF"      # body text
+SOFT_WHITE = "#E8E8E8"      # chalk — secondary text
+ASH_GRAY = "#A8A8A8"        # ash — meta/tertiary text
+GT_IRON = "#1E1E1E"         # hairline / divider
+GT_CEMENT_2 = "#3A3A3A"     # concrete highlight (corner ticks)
 
 # ── Dynamic background theme palette ─────────────────────────────────────────
 # Each theme is keyed by content category and defines a dark gradient pair,
@@ -470,7 +479,7 @@ def _build_digest_slide_specs(summary: EmailSummary, email_dt: datetime) -> list
         source_label = _source_label_from_url(str(article.get("url") or ""))
 
         # Use numbered key points for storytelling; fall back to prose brief.
-        key_points = _extract_instagram_key_points(article, summary, max_points=4)
+        key_points = _extract_instagram_key_points(article, summary, max_points=10)
         brief = "\n".join(key_points) if key_points else _build_digest_slide_brief(summary, article)
 
         # Select a unique image for this article.
@@ -512,18 +521,17 @@ def _build_digest_slide_specs(summary: EmailSummary, email_dt: datetime) -> list
 def _build_normal_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[str, Any]]:
     """Build the carousel for a regular (non-digest) email.
 
-    Structure per post:
+    Structure per post (graitech Design System):
     • Up to NORMAL_NEWS_PER_POST (2) news articles per carousel post.
     • Per article:
-        - Slide 1: image + headline  (kind="image")
-        - Slides 2-N: one key point per slide  (kind="keypoint")
-          N depends on how many key points the extractor produces (3–6).
-    • Final slide: CTA  (kind="cta")
-
-    If the email contains more than NORMAL_NEWS_PER_POST articles, this
-    function is called once per group of NORMAL_NEWS_PER_POST articles via
-    _split_summary_for_carousels().
+        - Slide 1: Title slide (kind="title")  — eyebrow + neon rule + big headline + subtitle
+        - Slides 2-4: List slides (kind="list") — 4 bullet-point insights each (12 total)
+    • Final slide: CTA (kind="cta")
+    Total: 2 × 4 + 1 = 9 slides (well within Instagram's 10-slide limit per carousel)
     """
+    POINTS_PER_LIST_SLIDE = 4  # bullet points per list slide
+    LIST_SLIDES_PER_ARTICLE = 3  # list slides per article = ceil(12/4)
+
     articles = _article_items(summary)
     if not articles:
         articles = [
@@ -540,48 +548,63 @@ def _build_normal_slide_specs(summary: EmailSummary, email_dt: datetime) -> list
     slides: list[dict[str, Any]] = []
     used_image_urls: set[str] = set()
     used_image_paths: set[str] = set()
-
-    # One visual theme per carousel post — all slides share the same background.
     carousel_theme = _pick_bg_theme_from_summary(summary)
-
-    KP_EMOJIS = ["⚡", "🔹", "🧠", "📊", "🔬", "💡", "🛠️", "🌍", "🤖", "📈", "🎯", "🚀"]
+    date_eyebrow = email_dt.strftime("%b %Y").upper()
 
     for article_index, article in enumerate(articles[:NORMAL_NEWS_PER_POST], start=1):
         headline = _clean_headline(
             _clean_public_text(str(article.get("title") or summary.headline or summary.subject or "AI update"))
-        ) or "AI Update"
+        ) or "AI UPDATE"
         topic = ", ".join(summary.topics[:2]) or headline
         source_label = _source_label_from_url(str(article.get("url") or ""))
 
-        # ── Slide 1: Image + headline ─────────────────────────────────────────
+        # Enrich article with scraped content if URL is available
+        url = str(article.get("url") or "")
+        if url and not article.get("scraped_content"):
+            scraped = _scrape_article_text(url)
+            if scraped:
+                article = dict(article)
+                article["scraped_content"] = scraped
+
+        # Build subtitle from description/excerpt for the title slide
+        subtitle = _clean_public_text(str(
+            article.get("description") or article.get("excerpt") or
+            article.get("scraped_content", "")[:300] or ""
+        ))
+        subtitle = _trim_no_dots(subtitle, 160) if subtitle else ""
+
+        # ── Slide 1: Title slide ──────────────────────────────────────────────
         image_path = _select_unique_article_image(article, topic, used_image_urls, used_image_paths)
         slides.append({
-            "kind": "image",
-            "eyebrow": f"STORY {article_index:02d}",
+            "kind": "title",
+            "article_num": article_index,
+            "eyebrow": f"FIELD NOTES — {date_eyebrow}",
             "title": headline,
-            "body": "",
+            "body": subtitle,
             "image_path": image_path,
             "topic": topic,
-            "url": str(article.get("url") or ""),
+            "url": url,
             "source_label": source_label,
             "bg_theme": carousel_theme,
         })
 
-        # ── Slides 2-N: Key-point slides ─────────────────────────────────────
-        key_points = _extract_instagram_key_points(article, summary, max_points=6)
-        for kp_idx, kp_text in enumerate(key_points):
-            emoji = KP_EMOJIS[kp_idx % len(KP_EMOJIS)]
+        # ── Slides 2-4: List slides with bullet-point insights ────────────────
+        key_points = _extract_instagram_key_points(article, summary, max_points=12)
+        # Pad if fewer than 12 to fill the slides
+        for chunk_idx in range(LIST_SLIDES_PER_ARTICLE):
+            start = chunk_idx * POINTS_PER_LIST_SLIDE
+            chunk = key_points[start:start + POINTS_PER_LIST_SLIDE]
+            if not chunk:
+                break
             slides.append({
-                "kind": "keypoint",
-                "eyebrow": f"STORY {article_index:02d} · POINT {kp_idx + 1}/{len(key_points)}",
+                "kind": "list",
+                "article_num": article_index,
+                "eyebrow": f"STORY {article_index:02d} · INSIGHTS",
                 "title": headline,
-                "body": kp_text,
-                "emoji": emoji,
-                "point_num": kp_idx + 1,
-                "total_points": len(key_points),
+                "body": "\n".join(chunk),
                 "image_path": "",
                 "topic": topic,
-                "url": str(article.get("url") or ""),
+                "url": url,
                 "source_label": source_label,
                 "bg_theme": carousel_theme,
             })
@@ -589,9 +612,9 @@ def _build_normal_slide_specs(summary: EmailSummary, email_dt: datetime) -> list
     # ── CTA slide ─────────────────────────────────────────────────────────────
     slides.append({
         "kind": "cta",
-        "eyebrow": "GRAITECH",
-        "title": "Follow for the next AI briefing",
-        "body": "LIKE | COMMENT | FOLLOW | SAVE",
+        "eyebrow": "END / DISPATCH",
+        "title": "Save this.\nSteal this.\nShare it.",
+        "body": "Follow @graitech for the next AI briefing.",
         "image_path": "",
         "source_label": "",
         "bg_theme": carousel_theme,
@@ -687,6 +710,7 @@ def _auto_fit_font(
     size_min: int = 28,
     step: int = 2,
     max_lines: int = 10,
+    display: bool = False,
 ) -> Any:
     """Return the largest font that fits `text` inside box_width × box_height.
 
@@ -703,7 +727,7 @@ def _auto_fit_font(
     _draw = _PIL_Draw.Draw(_probe)
 
     for size in range(size_max, effective_min - 1, -step):
-        font = _font(image_font, size, bold=bold)
+        font = _font(image_font, size, bold=bold, display=display)
         lines = _wrap_to_width(_draw, text, font, box_width, max_lines)
         total_h = 0
         for line in lines:
@@ -725,6 +749,7 @@ def _draw_autofit_text(
     size_min: int = 28,
     max_lines: int = 10,
     align: str = "center",
+    display: bool = False,
 ) -> tuple[int, str]:
     """Draw text auto-sized to fit inside `box`.
 
@@ -742,6 +767,7 @@ def _draw_autofit_text(
     font = _auto_fit_font(
         image_font, text, width, height,
         bold=bold, size_max=size_max, size_min=size_min, max_lines=max_lines,
+        display=display,
     )
     lines, overflow_text = _wrap_to_width_overflow(draw, text, font, width, max_lines)
 
@@ -808,232 +834,665 @@ def _write_digest_slide(
         image_cls, draw_cls, enhance_cls, filter_cls, ops_cls,
         fallback_text=slide.get("title", "") + " " + slide.get("body", ""),
     )
-    artwork = enhance_cls.Contrast(artwork).enhance(1.02) if artwork else artwork
     if artwork is not None:
-        _paste_contained(image, artwork, image_box, radius=32, pad=4, cover=True)
-        draw.rounded_rectangle(image_box, radius=32, outline=ACCENT_GREEN, width=2)
+        _paste_contained(image, artwork, image_box, radius=16, pad=0, cover=True)
+        draw.rounded_rectangle(image_box, radius=16, outline=(57, 255, 20, 80), width=1)
 
-    # ── Eyebrow + slide counter row — plain text, no pill containers ──────────
-    font_meta = _font(image_font, 26, bold=True, mono=True)
-    eyebrow = str(slide.get("eyebrow", "🤖 AI NEWS"))
-    draw.text((margin, 722), eyebrow, fill=ACCENT_GREEN, font=font_meta)
-    counter_text = f"{slide_number:02d} / {total_slides:02d}"
-    try:
-        cw = draw.textlength(counter_text, font=font_meta)
-    except Exception:
-        cw = len(counter_text) * 14
-    draw.text((CANVAS_W - margin - int(cw), 722), counter_text, fill=SOFT_WHITE, font=font_meta)
+    # ── Eyebrow (neon green mono) — no slide counter in content area ─────────
+    font_eyebrow = _font(image_font, 20, bold=True, mono=True)
+    eyebrow = str(slide.get("eyebrow", "AI NEWS")).upper()
+    # Remove emoji from eyebrow for brand consistency
+    eyebrow_clean = re.sub(r"[^\x00-\x7F]+", "", eyebrow).strip()
+    if not eyebrow_clean:
+        eyebrow_clean = "AI NEWS"
+    draw.text((margin, 718), eyebrow_clean, fill=ACCENT_GREEN, font=font_eyebrow)
 
-    # ── Headline — auto-sized, full text, no truncation, centre aligned ───────
-    headline = _clean_headline(str(slide.get("title", "AI Update")))
-    headline_box = (margin, 762, CANVAS_W - margin, 900)
+    # Neon rule below eyebrow
+    _gt_draw_rule(draw, margin, 746)
+
+    # ── Headline — Anton SC, auto-sized, white, no truncation ────────────────
+    headline = _clean_headline(str(slide.get("title", "AI Update"))).upper()
+    headline_box = (margin, 770, CANVAS_W - margin, 950)
     _draw_autofit_text(
         draw, headline, headline_box, image_font,
-        fill=TEXT_WHITE, bold=True, size_max=68, size_min=32, max_lines=3, align="center",
+        fill=TEXT_WHITE, bold=False, size_max=72, size_min=32, max_lines=3, align="left",
+        display=True,
     )
 
-    # ── Separator line ────────────────────────────────────────────────────────
-    draw.line([(margin, 910), (CANVAS_W - margin, 910)], fill=ACCENT_GREEN, width=2)
-
-    # ── Key points / body — numbered items left-aligned, fallback prose centred ─
+    # ── Key points / body — bullet points left-aligned ───────────────────────
     body_text = str(slide.get("body", "")).strip()
     if body_text:
-        body_box = (margin, 920, CANVAS_W - margin, 1220)
-        # Numbered key points (contain emoji digits) rendered left-aligned;
-        # plain prose falls back to centred alignment.
-        is_key_points = bool(re.search(r"[1-6]⃣", body_text))
-        body_align = "left" if is_key_points else "center"
-        _draw_autofit_text(
-            draw, body_text, body_box, image_font,
-            fill=SOFT_WHITE, bold=False, size_max=34, size_min=FONT_MIN_READABLE, max_lines=8, align=body_align,
-        )
+        body_box = (margin, 958, CANVAS_W - margin, 1195)
+        # Check if body contains bullet points (• prefix)
+        is_bullets = body_text.startswith("•") or "\n•" in body_text
+        body_align = "left"
+        if is_bullets:
+            # Render bullet list directly
+            _gt_render_list_slide_bullets_only(draw, image_font, body_text, margin, 958, CANVAS_W - margin, 1195)
+        else:
+            _draw_autofit_text(
+                draw, body_text, body_box, image_font,
+                fill=SOFT_WHITE, bold=False, size_max=30, size_min=FONT_MIN_READABLE, max_lines=7, align="left",
+            )
 
-    # ── Source credit — plain text, no container ──────────────────────────────
+    # ── Source credit — bottom, mono, muted ──────────────────────────────────
     source = str(slide.get("source_label", "")).strip()
     if source:
-        font_source = _font(image_font, 24, bold=False)
+        font_source = _font(image_font, 18, mono=True)
         draw.text(
-            (margin, 1238),
-            f"Source: {source}",
-            fill=SOFT_WHITE,
+            (margin, 1210),
+            f"SOURCE: {source.upper()}",
+            fill=(106, 106, 106, 255),
             font=font_source,
         )
 
 
 
 def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: dict[str, Any], email_dt: datetime) -> None:
+    """Render a single carousel slide using the graitech Design System.
+
+    All slides share the same chrome:
+      - True black concrete-textured background with crosshatch grid
+      - graitech logo  top-right  (56px, 56px), 130×130 px
+      - @graitech handle  bottom-left  (56px from edge) with neon dot
+      - Page indicator  bottom-center  — NN / TT —
+
+    Content safe area: top 220px · left 80px · right 1000px · bottom 1190px
+
+    Slide kinds:
+      "title"   — eyebrow + neon rule + big Anton SC headline + subtitle text
+      "list"    — eyebrow + neon rule + section title + bullet points
+      "cta"     — stamp + eyebrow + neon rule + Anton SC CTA + follow text
+      "digest"  — full-bleed image top + key points body (unchanged legacy layout)
+    """
     from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 
-    image = Image.new("RGBA", (CANVAS_W, CANVAS_H), PAGE_BLACK)
+    image = Image.new("RGBA", (CANVAS_W, CANVAS_H), (0, 0, 0, 255))
     draw = ImageDraw.Draw(image, "RGBA")
-    # Font sizes tuned for a 1080×1350 canvas — body text is large enough to
-    # fill the slide and be readable on a phone screen without zooming.
-    font_eyebrow = _font(ImageFont, 36, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
-    font_title   = _font(ImageFont, 62, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/arialbd.ttf"])
-    font_body    = _font(ImageFont, 38, bold=False, preferred=["C:/Windows/Fonts/seguisb.ttf", "C:/Windows/Fonts/segoeui.ttf", "C:/Windows/Fonts/arial.ttf"])
-    font_meta    = _font(ImageFont, 26, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
-    font_cta     = _font(ImageFont, 46, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf"])
-    font_brand   = _font(ImageFont, 112, bold=True, mono=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/consolab.ttf"])
 
-    _draw_dynamic_background(draw, slide)
-    _draw_accent_frame(draw)
+    # ── 1. Background ─────────────────────────────────────────────────────────
+    _gt_draw_background(image, draw)
 
-    margin = 72
-
-    # ── Digest slide — each news item gets its own visual card ────────────────
-    if slide["kind"] == "digest":
+    # ── 2. Content per slide kind ─────────────────────────────────────────────
+    kind = slide.get("kind", "")
+    if kind == "digest":
         _write_digest_slide(
             image, draw, slide_number, total_slides, slide,
             ImageFont, Image, ImageDraw, ImageEnhance, ImageFilter, ImageOps,
         )
-        path.parent.mkdir(parents=True, exist_ok=True)
-        _draw_handle_overlay(draw, ImageFont)
-        _draw_watermark_overlay(image)
-        image.save(path, "PNG", optimize=True)
-        return
-
-    if slide["kind"] == "image":
-        # ── Full title at the TOP — neon green, auto-sized, never truncated ──
-        title_text = _clean_headline(str(slide.get("title", "AI Update")))
-        draw.rounded_rectangle((54, 44, CANVAS_W - 54, 314), radius=24,
-                                fill=(0, 0, 0, 220), outline=(200, 255, 0, 70), width=2)
-        _draw_autofit_text(
-            draw, title_text,
-            (76, 58, CANVAS_W - 76, 298),
-            ImageFont,
-            fill=ACCENT_GREEN, bold=True, size_max=76, size_min=30,
-            max_lines=4, align="center",
-        )
-
-        # ── Image below the title — AI-generated if no source found ────────────
-        image_box = (54, 322, CANVAS_W - 54, 1180)
-        artwork = _load_artwork(
-            slide.get("image_path", ""),
-            slide.get("topic", "AI"),
-            image_box,
-            Image, ImageDraw, ImageEnhance, ImageFilter, ImageOps,
-            fallback_text=slide.get("title", "") + " " + slide.get("body", ""),
-        )
-        artwork = ImageEnhance.Contrast(artwork).enhance(1.02) if artwork else artwork
-        if artwork is not None:
-            _paste_contained(image, artwork, image_box, radius=30, pad=4, cover=False)
-            draw.rounded_rectangle(image_box, radius=30, outline=ACCENT_GREEN, width=2)
-            # Source label at bottom of image
-            source_text = (slide.get("source_label") or
-                           _source_label_from_url(str(slide.get("url") or "")))
-            if source_text:
-                font_src = _font(ImageFont, 26, bold=False)
-                _draw_centered_text(
-                    draw, f"SOURCE: {source_text}",
-                    (76, 1150, CANVAS_W - 76, 1178),
-                    font_src, SOFT_WHITE, 1,
-                )
-
-    elif slide["kind"] == "keypoint":
-        # ── Article headline at TOP — neon green, full text, auto-sized ───────
-        headline = _clean_headline(str(slide.get("title", "AI Update")))
-        draw.rounded_rectangle(
-            (54, 36, CANVAS_W - 54, 224), radius=22,
-            fill=(0, 0, 0, 220), outline=(200, 255, 0, 70), width=2,
-        )
-        _draw_autofit_text(
-            draw, headline,
-            (76, 50, CANVAS_W - 76, 210),
-            ImageFont,
-            fill=ACCENT_GREEN, bold=True, size_max=56, size_min=26,
-            max_lines=3, align="center",
-        )
-
-        # ── Point counter pill ────────────────────────────────────────────────
-        pt_num = slide.get("point_num", 1)
-        pt_tot = slide.get("total_points", 1)
-        pt_label = f"KEY INSIGHT  {pt_num} / {pt_tot}"
-        draw.rounded_rectangle(
-            (CANVAS_W // 2 - 210, 236, CANVAS_W // 2 + 210, 288),
-            radius=20, fill=(200, 255, 0, 18), outline=(200, 255, 0, 110), width=2,
-        )
-        _draw_centered_text(
-            draw, pt_label,
-            (CANVAS_W // 2 - 210, 236, CANVAS_W // 2 + 210, 288),
-            font_meta, ACCENT_GREEN, 1,
-        )
-
-        # ── Key-point container — highlighted keywords in bold neon green ────
-        kp_text = str(slide.get("body", ""))
-        kp_card = (54, 302, CANVAS_W - 54, 1172)
-        draw.rounded_rectangle(kp_card, radius=36, fill=(8, 8, 8, 240),
-                                outline=(200, 255, 0, 80), width=2)
-        kp_box = (88, 334, CANVAS_W - 88, 1142)
-        _draw_keypoint_body_with_highlights(
-            draw, kp_text, kp_box, ImageFont,
-            size_max=68, size_min=FONT_MIN_READABLE, max_lines=8, align="center",
-        )
-
-
-    elif slide["kind"] == "cta":
-        _draw_centered_text(draw, "GRAITECH", (140, 150, 940, 240), font_brand, ACCENT_GREEN, 1)
-        _draw_centered_text(draw, "Instagram-ready AI news", (140, 278, 940, 365), font_title, TEXT_WHITE, 1)
-        _draw_social_icons(draw, (140, 410, 940, 540), font_meta)
-        _draw_centered_logo_panel(image, (240, 575, 840, 945))
-        _draw_centered_text(draw, "Save this post for your next AI briefing.", (130, 1000, 950, 1080), font_body, TEXT_WHITE, 1)
-        _draw_centered_text(draw, f"{slide_number:02d}/{total_slides:02d}", (450, 1120, 630, 1170), font_meta, ACCENT_GREEN, 1)
-        _draw_cta_pills(draw, font_meta)
+    elif kind == "title":
+        _gt_render_title_slide(image, draw, ImageFont, Image, ImageDraw, ImageEnhance, ImageFilter, ImageOps, slide)
+    elif kind == "list":
+        _gt_render_list_slide(draw, ImageFont, slide)
+    elif kind == "cta":
+        _gt_render_cta_slide(image, draw, ImageFont, slide)
     else:
-        # ── Eyebrow label — plain text, no pill container ─────────────────────
-        draw.text((64, 72), str(slide.get("eyebrow", "🤖 AI NEWS")), fill=ACCENT_GREEN, font=font_meta)
-        source_label = slide.get("source_label") or _source_label_from_url(str(slide.get("url") or ""))
-        if source_label:
-            src_text = f"SOURCE: {source_label}"
-            try:
-                src_w = int(draw.textlength(src_text, font=font_meta))
-            except Exception:
-                src_w = len(src_text) * 14
-            draw.text((CANVAS_W - 64 - src_w, 72), src_text, fill=SOFT_WHITE, font=font_meta)
+        # Legacy fallback for any old "image" / "keypoint" slide kinds
+        _gt_render_legacy_slide(image, draw, ImageFont, Image, ImageDraw, ImageEnhance, ImageFilter, ImageOps, slide)
 
-        # ── Title — auto-sized, complete text, never truncated ───────────────
-        title_box = (84, 150, CANVAS_W - 84, 340)
-        draw.rounded_rectangle((72, 142, CANVAS_W - 72, 360), radius=30, fill=(8, 8, 8, 228), outline=(200, 255, 0, 120), width=2)
-        _draw_autofit_text(
-            draw, _clean_headline(slide.get("title", "")), title_box, ImageFont,
-            fill=TEXT_WHITE, bold=True, size_max=62, size_min=FONT_MIN_READABLE, max_lines=3, align="center",
-        )
-        draw.line((104, 352, CANVAS_W - 104, 352), fill=ACCENT_GREEN, width=3)
-
-        # ── Body container — same dark rounded style as supporting box ─────────
-        body_container = (64, 364, CANVAS_W - 64, 902)
-        draw.rounded_rectangle(body_container, radius=30, fill=(8, 8, 8, 235), outline=(40, 40, 40, 180), width=1)
-        draw.rounded_rectangle((84, 384, 316, 436), radius=18, fill=(200, 255, 0, 18), outline=(200, 255, 0, 110), width=2)
-        _draw_centered_text(draw, "WHAT HAPPENED", (92, 392, 308, 430), font_meta, ACCENT_GREEN, 1)
-
-        # Body text — auto-sized so the full summary always fits, no dots
-        body_box = (96, 432, CANVAS_W - 96, 890)
-        _draw_autofit_text(
-            draw, str(slide["body"]), body_box, ImageFont,
-            fill=SOFT_WHITE, bold=False, size_max=38, size_min=FONT_MIN_READABLE, max_lines=12, align="center",
-        )
-
-        # ── Supporting note box ───────────────────────────────────────────────
-        supporting = str(slide.get("supporting", "")).strip()
-        if supporting:
-            support_box = (64, 912, CANVAS_W - 64, 1210)
-            draw.rounded_rectangle(support_box, radius=28, outline=ACCENT_GREEN, width=2, fill=(10, 10, 10, 245))
-            draw.line((108, 956, 972, 956), fill=(200, 255, 0, 60), width=2)
-            font_support = _font(ImageFont, 34, bold=True, preferred=["C:/Windows/Fonts/bahnschrift.ttf", "C:/Windows/Fonts/segoeuib.ttf"])
-            _draw_centered_text_block(
-                draw,
-                supporting,
-                box=(96, 940, CANVAS_W - 96, 1182),
-                font=font_support,
-                fill=TEXT_WHITE,
-                line_gap=14,
-                max_lines=5,
-            )
-
+    # ── 3. Chrome (logo, handle, page indicator) ──────────────────────────────
+    _gt_draw_chrome(image, draw, ImageFont, slide_number, total_slides)
 
     path.parent.mkdir(parents=True, exist_ok=True)
-    _draw_handle_overlay(draw, ImageFont)
-    _draw_watermark_overlay(image)
     image.save(path, "PNG", optimize=True)
+
+
+# ── graitech background renderer ─────────────────────────────────────────────
+
+def _gt_draw_background(image, draw) -> None:
+    """Render the graitech concrete-textured black background with crosshatch grid."""
+    import random as _rng
+    # Solid black canvas
+    draw.rectangle((0, 0, CANVAS_W, CANVAS_H), fill=(0, 0, 0, 255))
+    # Concrete texture: micro-speckle noise (deterministic seed for reproducibility)
+    rng = _rng.Random(7331)
+    for y in range(0, CANVAS_H, 3):
+        for x in range(0, CANVAS_W, 3):
+            if rng.random() < 0.065:
+                a = rng.randint(4, 8)
+                draw.point((x, y), fill=(255, 255, 255, a))
+    for y in range(0, CANVAS_H, 7):
+        for x in range(0, CANVAS_W, 7):
+            if rng.random() < 0.04:
+                a = rng.randint(3, 6)
+                draw.point((x, y), fill=(255, 255, 255, a))
+    # Crosshatch grid — 90px spacing, very subtle (masked centre by using alpha 6)
+    GRID_A = 6
+    for x in range(0, CANVAS_W + 1, 90):
+        draw.line((x, 0, x, CANVAS_H), fill=(255, 255, 255, GRID_A), width=1)
+    for y in range(0, CANVAS_H + 1, 90):
+        draw.line((0, y, CANVAS_W, y), fill=(255, 255, 255, GRID_A), width=1)
+
+
+# ── graitech chrome (logo + handle + page indicator) ─────────────────────────
+
+def _gt_draw_chrome(image, draw, ImageFont, slide_number: int, total_slides: int) -> None:
+    """Draw fixed chrome elements on every slide."""
+    # Corner L-bracket ticks (content safe-area boundary markers)
+    TICK = 20
+    TICK_C = (58, 58, 58, 200)  # --gt-cement-2 with alpha
+    # Top-left tick
+    draw.line((75, 215, 75 + TICK, 215), fill=TICK_C, width=2)
+    draw.line((75, 215, 75, 215 + TICK), fill=TICK_C, width=2)
+    # Top-right tick
+    draw.line((1005 - TICK, 215, 1005, 215), fill=TICK_C, width=2)
+    draw.line((1005, 215, 1005, 215 + TICK), fill=TICK_C, width=2)
+    # Bottom-left tick
+    draw.line((75, 1195 - TICK, 75, 1195), fill=TICK_C, width=2)
+    draw.line((75, 1195, 75 + TICK, 1195), fill=TICK_C, width=2)
+    # Bottom-right tick
+    draw.line((1005, 1195 - TICK, 1005, 1195), fill=TICK_C, width=2)
+    draw.line((1005 - TICK, 1195, 1005, 1195), fill=TICK_C, width=2)
+
+    # Logo top-right (56px from each edge, 130×130)
+    _gt_draw_logo(image, right=56, top=56, size=130)
+
+    # @graitech handle bottom-left (56px from each edge)
+    font_handle = _font(ImageFont, 24, bold=True, mono=True)
+    dot_x, dot_y = 56, CANVAS_H - 56 - 24
+    # Neon dot
+    draw.ellipse((dot_x, dot_y + 6, dot_x + 10, dot_y + 16), fill=NEON_RGB + (255,))
+    # Handle text
+    draw.text((dot_x + 18, dot_y), "@graitech", fill=TEXT_WHITE, font=font_handle)
+
+    # Page indicator bottom-center — 01 / 05 — with hairline bars
+    page_text = f"{slide_number:02d} / {total_slides:02d}"
+    font_page = _font(ImageFont, 18, bold=False, mono=True)
+    try:
+        bbox = draw.textbbox((0, 0), page_text, font=font_page)
+        tw = bbox[2] - bbox[0]
+        th = bbox[3] - bbox[1]
+    except Exception:
+        tw, th = 80, 18
+    px = (CANVAS_W - tw) // 2
+    py = CANVAS_H - 56 - th
+    BAR_W = 28
+    BAR_Y = py + th // 2
+    BAR_C = (58, 58, 58, 200)
+    draw.line((px - BAR_W - 8, BAR_Y, px - 8, BAR_Y), fill=BAR_C, width=1)
+    draw.line((px + tw + 8, BAR_Y, px + tw + BAR_W + 8, BAR_Y), fill=BAR_C, width=1)
+    # Page number with neon-green current page
+    num_parts = page_text.split(" / ")
+    if len(num_parts) == 2:
+        font_num = _font(ImageFont, 18, bold=True, mono=True)
+        try:
+            n1_bbox = draw.textbbox((0, 0), num_parts[0], font=font_num)
+            n1_w = n1_bbox[2] - n1_bbox[0]
+        except Exception:
+            n1_w = tw // 2
+        draw.text((px, py), num_parts[0], fill=ACCENT_GREEN, font=font_num)
+        draw.text((px + n1_w, py), " / " + num_parts[1], fill=(106, 106, 106, 255), font=font_page)
+    else:
+        draw.text((px, py), page_text, fill=(106, 106, 106, 255), font=font_page)
+
+
+def _gt_draw_logo(image, right: int, top: int, size: int) -> None:
+    """Paste the graitech logo at a fixed position with a neon glow."""
+    from PIL import Image as _Img, ImageOps
+    path = GRAITECH_LOGO_PATH
+    if not path.exists():
+        # Fall back to old logo candidates
+        path = next((c for c in WATERMARK_CANDIDATES if c.exists()), None)
+        if not path:
+            return
+    try:
+        logo = _Img.open(path).convert("RGBA")
+        logo = logo.resize((size, size), _Img.Resampling.LANCZOS)
+        x = CANVAS_W - right - size
+        y = top
+        image.paste(logo, (x, y), logo)
+    except Exception:
+        pass
+
+
+# ── graitech neon rule helper ─────────────────────────────────────────────────
+
+def _gt_draw_rule(draw, x: int, y: int) -> int:
+    """Draw a 96×3px neon rule with soft glow. Returns y after rule."""
+    RULE_W = 96
+    RULE_H = 3
+    # Soft glow halos (widening outward with decreasing alpha)
+    for offset in range(6, 0, -1):
+        a = max(0, 50 - offset * 8)
+        draw.rectangle(
+            (x - offset, y - 1, x + RULE_W + offset, y + RULE_H + 1),
+            fill=(57, 255, 20, a)
+        )
+    # Solid rule
+    draw.rectangle((x, y, x + RULE_W, y + RULE_H), fill=(57, 255, 20, 255))
+    return y + RULE_H
+
+
+# ── graitech eyebrow helper ───────────────────────────────────────────────────
+
+def _gt_draw_eyebrow(draw, ImageFont, text: str, x: int, y: int) -> int:
+    """Draw eyebrow text in neon green Space Mono Bold. Returns y after eyebrow."""
+    font = _font(ImageFont, 20, bold=True, mono=True)
+    draw.text((x, y), text.upper(), fill=ACCENT_GREEN, font=font)
+    try:
+        bh = draw.textbbox((0, 0), text, font=font)[3]
+    except Exception:
+        bh = 22
+    return y + bh
+
+
+# ── Title slide renderer ──────────────────────────────────────────────────────
+
+def _gt_render_list_slide_bullets_only(
+    draw, image_font, body_text: str,
+    x1: int, y1: int, x2: int, y2: int,
+) -> None:
+    """Render bullet-point list text into a bounding box.
+    Used by digest slide renderer to draw bullet lists.
+    """
+    bullets = [b.strip() for b in body_text.split("\n") if b.strip()]
+    if not bullets:
+        return
+    content_w = x2 - x1 - 22  # 22px for bullet prefix
+    avail_h = y2 - y1
+    chosen_size = 26
+    for fsz in (30, 28, 26, 24, 22):
+        font_bp = _font(image_font, fsz, mono=True)
+        total = 0
+        for bp in bullets:
+            text = bp.lstrip("• ").strip()
+            lines = _wrap_to_width(draw, text, font_bp, content_w, max_lines=4)
+            try:
+                lh = draw.textbbox((0, 0), "Ag", font=font_bp)[3]
+            except Exception:
+                lh = fsz
+            total += len(lines) * (lh + 6) + 22
+        if total <= avail_h:
+            chosen_size = fsz
+            break
+    font_bp = _font(image_font, chosen_size, mono=True)
+    y = y1
+    for bullet in bullets:
+        text = bullet.lstrip("• ").strip()
+        if not text or y >= y2 - 30:
+            break
+        bp_lines = _wrap_to_width(draw, text, font_bp, content_w, max_lines=4)
+        try:
+            lh = draw.textbbox((0, 0), "Ag", font=font_bp)[3]
+        except Exception:
+            lh = chosen_size
+        dot_cy = y + lh // 2
+        draw.ellipse((x1, dot_cy - 4, x1 + 8, dot_cy + 4), fill=(57, 255, 20, 255))
+        tx = x1 + 18
+        for line in bp_lines:
+            if y >= y2 - 10:
+                break
+            draw.text((tx, y), line, fill=SOFT_WHITE, font=font_bp)
+            y += lh + 6
+        y += 18
+
+
+def _gt_render_title_slide(image, draw, ImageFont, Image, ImageDraw, ImageEnhance, ImageFilter, ImageOps, slide: dict) -> None:
+    """Render a graitech title slide (kind="title").
+
+    Layout inside safe area (80, 220) → (1000, 1190):
+      Row 1: eyebrow (neon mono)
+      Row 2: neon rule
+      Row 3: big Anton SC headline (neon green)
+      Row 4: subtitle/body (Space Mono white)
+      Row 5: article image (if available) below text block
+    """
+    SAFE_L, SAFE_T = 80, 235
+    SAFE_R = CANVAS_W - 80  # 1000
+
+    y = SAFE_T
+
+    # Eyebrow
+    y = _gt_draw_eyebrow(draw, ImageFont, slide.get("eyebrow", "FIELD NOTES"), SAFE_L, y)
+    y += 16
+
+    # Rule
+    y = _gt_draw_rule(draw, SAFE_L, y) + 24
+
+    # Headline in Anton SC (display font) — auto-sized, neon green, UPPERCASE
+    headline = (slide.get("title") or "AI UPDATE").upper()
+    content_w = SAFE_R - SAFE_L
+    font_display = _font(ImageFont, 120, display=True)
+    # Auto-size headline to fit within ~500px height
+    for font_size in range(140, 40, -4):
+        font_display = _font(ImageFont, font_size, display=True)
+        lines = _wrap_to_width(draw, headline, font_display, content_w, max_lines=5)
+        try:
+            sample_h = draw.textbbox((0, 0), "Ag", font=font_display)[3]
+        except Exception:
+            sample_h = font_size
+        total_h = len(lines) * (sample_h + 8)
+        if total_h <= 480:
+            break
+    lines = _wrap_to_width(draw, headline, font_display, content_w, max_lines=5)
+    for line in lines:
+        try:
+            lh = draw.textbbox((0, 0), line, font=font_display)[3]
+        except Exception:
+            lh = font_size
+        draw.text((SAFE_L, y), line, fill=ACCENT_GREEN, font=font_display)
+        y += lh + 6
+    y += 24
+
+    # Subtitle body text (Space Mono, white)
+    subtitle = (slide.get("body") or "").strip()
+    if subtitle and y < 920:
+        remaining_h = min(920, 1190) - y
+        font_body = _font(ImageFont, 30, bold=False, mono=True)
+        sub_lines = _wrap_to_width(draw, subtitle, font_body, content_w, max_lines=4)
+        for sline in sub_lines:
+            if y + 36 > 950:
+                break
+            draw.text((SAFE_L, y), sline, fill=SOFT_WHITE, font=font_body)
+            y += 36
+
+    # Article image (lower portion of safe area, if available)
+    image_path = slide.get("image_path", "")
+    img_y_start = max(y + 24, 880)
+    if img_y_start + 200 < 1190:
+        img_box = (SAFE_L, img_y_start, SAFE_R, 1185)
+        artwork = _load_artwork(
+            image_path,
+            slide.get("topic", "AI"),
+            img_box,
+            Image, ImageDraw, ImageEnhance, ImageFilter, ImageOps,
+            fallback_text=slide.get("title", ""),
+        )
+        if artwork is not None:
+            _paste_contained(image, artwork, img_box, radius=16, pad=0, cover=True)
+            # Hairline neon border
+            draw.rounded_rectangle(img_box, radius=16, outline=(57, 255, 20, 100), width=1)
+
+    # Source label
+    source = (slide.get("source_label") or "").strip()
+    if source:
+        font_src = _font(ImageFont, 18, mono=True)
+        draw.text((SAFE_L, 1160), f"SOURCE: {source.upper()}", fill=(106, 106, 106, 255), font=font_src)
+
+
+# ── List slide renderer ───────────────────────────────────────────────────────
+
+def _gt_render_list_slide(draw, ImageFont, slide: dict) -> None:
+    """Render a graitech list slide (kind="list").
+
+    Layout inside safe area:
+      Row 1: eyebrow (neon)
+      Row 2: neon rule
+      Row 3: section title (smaller Anton SC, white)
+      Row 4+: bullet-point list (Space Mono, 4 bullets max)
+
+    Each bullet point line: "•  Point text here" on its own line.
+    Bullet dot is drawn in neon green; text in white.
+    """
+    SAFE_L, SAFE_T = 80, 235
+    SAFE_R = CANVAS_W - 80
+
+    y = SAFE_T
+
+    # Eyebrow
+    y = _gt_draw_eyebrow(draw, ImageFont, slide.get("eyebrow", "INSIGHTS"), SAFE_L, y)
+    y += 16
+
+    # Rule
+    y = _gt_draw_rule(draw, SAFE_L, y) + 24
+
+    # Section title (smaller Anton SC)
+    headline = (slide.get("title") or "").upper()
+    if headline:
+        font_sec = _font(ImageFont, 52, display=True)
+        # Auto-size to fit on 2 lines max
+        for fsz in range(60, 28, -4):
+            font_sec = _font(ImageFont, fsz, display=True)
+            lines = _wrap_to_width(draw, headline, font_sec, SAFE_R - SAFE_L, max_lines=2)
+            try:
+                lh = draw.textbbox((0, 0), "A", font=font_sec)[3]
+            except Exception:
+                lh = fsz
+            if len(lines) * (lh + 4) <= 140:
+                break
+        sec_lines = _wrap_to_width(draw, headline, font_sec, SAFE_R - SAFE_L, max_lines=2)
+        for sline in sec_lines:
+            try:
+                lh = draw.textbbox((0, 0), sline, font=font_sec)[3]
+            except Exception:
+                lh = 52
+            draw.text((SAFE_L, y), sline, fill=TEXT_WHITE, font=font_sec)
+            y += lh + 4
+        y += 28
+
+    # Bullet points
+    body_raw = (slide.get("body") or "").strip()
+    bullets = [b.strip() for b in body_raw.split("\n") if b.strip()]
+
+    if not bullets:
+        return
+
+    # Choose font size based on number of bullets and available height
+    avail_h = 1185 - y
+    font_sizes_to_try = [34, 30, 28, 26]
+    BULLET_GAP = 28  # pixels between bullet items
+    LINE_GAP = 8     # pixels between wrapped lines within one bullet
+    content_w = SAFE_R - SAFE_L - 30  # 30px for bullet prefix
+
+    chosen_size = 28
+    for fsz in font_sizes_to_try:
+        font_bp = _font(ImageFont, fsz, mono=True)
+        font_bp_bold = _font(ImageFont, fsz, bold=True, mono=True)
+        total_estimated = 0
+        for bp in bullets:
+            text = bp.lstrip("• ").strip()
+            lines = _wrap_to_width(draw, text, font_bp, content_w, max_lines=4)
+            try:
+                lh = draw.textbbox((0, 0), "Ag", font=font_bp)[3]
+            except Exception:
+                lh = fsz
+            total_estimated += len(lines) * (lh + LINE_GAP) + BULLET_GAP
+        if total_estimated <= avail_h:
+            chosen_size = fsz
+            break
+
+    font_bp = _font(ImageFont, chosen_size, mono=True)
+    font_bullet = _font(ImageFont, chosen_size, bold=True, mono=True)
+
+    for bullet in bullets:
+        text = bullet.lstrip("• ").strip()
+        if not text:
+            continue
+        if y >= 1170:
+            break
+
+        bp_lines = _wrap_to_width(draw, text, font_bp, content_w, max_lines=4)
+        try:
+            lh = draw.textbbox((0, 0), "Ag", font=font_bp)[3]
+        except Exception:
+            lh = chosen_size
+
+        # Neon bullet dot
+        dot_cy = y + lh // 2
+        draw.ellipse((SAFE_L, dot_cy - 5, SAFE_L + 10, dot_cy + 5),
+                     fill=(57, 255, 20, 255))
+
+        text_x = SAFE_L + 22
+        for line in bp_lines:
+            if y >= 1170:
+                break
+            draw.text((text_x, y), line, fill=SOFT_WHITE, font=font_bp)
+            y += lh + LINE_GAP
+        y += BULLET_GAP
+
+
+# ── CTA slide renderer ────────────────────────────────────────────────────────
+
+def _gt_render_cta_slide(image, draw, ImageFont, slide: dict) -> None:
+    """Render a graitech CTA slide (kind="cta").
+
+    Matches the slide-05-cta.html template:
+      Stamp / eyebrow at top
+      Big Anton SC "Save this. Steal this. Share it." in neon
+      Follow text + graitech.io stamp
+    """
+    SAFE_L, SAFE_T = 80, 235
+    SAFE_R = CANVAS_W - 80
+
+    # Stamp (top)
+    font_stamp = _font(ImageFont, 18, bold=True, mono=True)
+    stamp_text = "END / DISPATCH"
+    # Pill stamp
+    try:
+        stamp_bbox = draw.textbbox((0, 0), stamp_text, font=font_stamp)
+        sw = stamp_bbox[2] - stamp_bbox[0] + 32
+        sh = stamp_bbox[3] - stamp_bbox[1] + 20
+    except Exception:
+        sw, sh = 200, 36
+    draw.rounded_rectangle(
+        (SAFE_L, SAFE_T, SAFE_L + sw, SAFE_T + sh),
+        radius=999, outline=(57, 255, 20, 255), width=2, fill=(0, 0, 0, 0)
+    )
+    # Neon dot inside stamp
+    draw.ellipse((SAFE_L + 14, SAFE_T + sh // 2 - 5, SAFE_L + 24, SAFE_T + sh // 2 + 5),
+                 fill=(57, 255, 20, 255))
+    draw.text((SAFE_L + 30, SAFE_T + (sh - 18) // 2), stamp_text,
+              fill=ACCENT_GREEN, font=font_stamp)
+
+    y = SAFE_T + sh + 32
+
+    # Eyebrow
+    y = _gt_draw_eyebrow(draw, ImageFont, "TAKE IT WITH YOU", SAFE_L, y)
+    y += 16
+
+    # Rule
+    y = _gt_draw_rule(draw, SAFE_L, y) + 28
+
+    # Big headline in Anton SC
+    cta_lines = ["SAVE THIS.", "STEAL THIS.", "SHARE IT."]
+    font_cta_big = _font(ImageFont, 160, display=True)
+    # Auto-size to fit
+    for fsz in range(180, 60, -6):
+        font_cta_big = _font(ImageFont, fsz, display=True)
+        try:
+            lh = draw.textbbox((0, 0), "A", font=font_cta_big)[3]
+        except Exception:
+            lh = fsz
+        if len(cta_lines) * (lh + 6) <= 640:
+            break
+    try:
+        lh_cta = draw.textbbox((0, 0), "A", font=font_cta_big)[3]
+    except Exception:
+        lh_cta = 140
+    for cline in cta_lines:
+        if y + lh_cta > 1100:
+            break
+        draw.text((SAFE_L, y), cline, fill=ACCENT_GREEN, font=font_cta_big)
+        y += lh_cta + 6
+
+    y += 24
+
+    # Body follow text
+    body = (slide.get("body") or "Follow @graitech for the next AI briefing.").strip()
+    font_body = _font(ImageFont, 28, mono=True)
+    body_lines = _wrap_to_width(draw, body, font_body, SAFE_R - SAFE_L, max_lines=2)
+    for bline in body_lines:
+        if y > 1150:
+            break
+        draw.text((SAFE_L, y), bline, fill=SOFT_WHITE, font=font_body)
+        try:
+            y += draw.textbbox((0, 0), bline, font=font_body)[3] + 8
+        except Exception:
+            y += 36
+
+    y += 16
+
+    # graitech.io stamp + "Follow for more" meta
+    if y < 1165:
+        font_meta_sm = _font(ImageFont, 18, mono=True)
+        font_meta_bold = _font(ImageFont, 18, bold=True, mono=True)
+        draw.text((SAFE_L, y), "graitech.io", fill=ACCENT_GREEN, font=font_meta_bold)
+        try:
+            gw = draw.textbbox((0, 0), "graitech.io", font=font_meta_bold)[2]
+        except Exception:
+            gw = 120
+        draw.text((SAFE_L + gw + 28, y), "FOLLOW FOR MORE",
+                  fill=(106, 106, 106, 255), font=font_meta_sm)
+
+
+# ── Legacy slide renderer (for "image" / "keypoint" kinds) ───────────────────
+
+def _gt_render_legacy_slide(image, draw, ImageFont, Image, ImageDraw, ImageEnhance, ImageFilter, ImageOps, slide: dict) -> None:
+    """Render old-format slides using the graitech visual language as a base."""
+    SAFE_L, SAFE_T = 80, 235
+    SAFE_R = CANVAS_W - 80
+    content_w = SAFE_R - SAFE_L
+
+    y = SAFE_T
+    kind = slide.get("kind", "")
+
+    if kind == "image":
+        # eyebrow + rule + title + image
+        y = _gt_draw_eyebrow(draw, ImageFont, slide.get("eyebrow", "AI NEWS"), SAFE_L, y) + 16
+        y = _gt_draw_rule(draw, SAFE_L, y) + 24
+        headline = (slide.get("title") or "AI UPDATE").upper()
+        font_h = _font(ImageFont, 80, display=True)
+        for fsz in range(90, 32, -4):
+            font_h = _font(ImageFont, fsz, display=True)
+            hl = _wrap_to_width(draw, headline, font_h, content_w, max_lines=3)
+            try:
+                lh = draw.textbbox((0, 0), "A", font=font_h)[3]
+            except Exception:
+                lh = fsz
+            if len(hl) * (lh + 8) <= 300:
+                break
+        hl = _wrap_to_width(draw, headline, font_h, content_w, max_lines=3)
+        for hline in hl:
+            try:
+                lh = draw.textbbox((0, 0), hline, font=font_h)[3]
+            except Exception:
+                lh = 80
+            draw.text((SAFE_L, y), hline, fill=ACCENT_GREEN, font=font_h)
+            y += lh + 6
+        y += 20
+        img_box = (SAFE_L, y, SAFE_R, 1185)
+        art = _load_artwork(slide.get("image_path", ""), slide.get("topic", "AI"), img_box,
+                            Image, ImageDraw, ImageEnhance, ImageFilter, ImageOps,
+                            fallback_text=slide.get("title", ""))
+        if art is not None:
+            _paste_contained(image, art, img_box, radius=16, pad=0, cover=True)
+            draw.rounded_rectangle(img_box, radius=16, outline=(57, 255, 20, 80), width=1)
+
+    elif kind == "keypoint":
+        # Treat as list slide
+        kp_text = str(slide.get("body", ""))
+        bullet_slide = dict(slide, kind="list",
+                            body="\n".join(f"•  {kp_text}".split("\n")))
+        _gt_render_list_slide(draw, ImageFont, bullet_slide)
+
+    else:
+        # Generic fallback
+        y = _gt_draw_eyebrow(draw, ImageFont, slide.get("eyebrow", "AI NEWS"), SAFE_L, y) + 16
+        y = _gt_draw_rule(draw, SAFE_L, y) + 24
+        title = (slide.get("title") or "").upper()
+        if title:
+            font_t = _font(ImageFont, 60, display=True)
+            tl = _wrap_to_width(draw, title, font_t, content_w, max_lines=3)
+            for tline in tl:
+                try:
+                    lh = draw.textbbox((0, 0), tline, font=font_t)[3]
+                except Exception:
+                    lh = 60
+                draw.text((SAFE_L, y), tline, fill=ACCENT_GREEN, font=font_t)
+                y += lh + 6
+            y += 20
+        body = (slide.get("body") or "").strip()
+        if body:
+            body_lines = (slide.get("body") or "").split("\n")
+            font_b = _font(ImageFont, 30, mono=True)
+            for bline in body_lines:
+                if y > 1170:
+                    break
+                draw.text((SAFE_L, y), bline, fill=SOFT_WHITE, font=font_b)
+                try:
+                    y += draw.textbbox((0, 0), bline, font=font_b)[3] + 10
+                except Exception:
+                    y += 38
 
 
 def _draw_background_grid(draw) -> None:
@@ -1238,10 +1697,8 @@ def _qa_slide_png(path: Path) -> list[str]:
 
 
 def _draw_accent_frame(draw) -> None:
-    draw.line((86, 94, 318, 94), fill=ACCENT_GREEN, width=4)
-    draw.line((762, 94, 994, 94), fill=ACCENT_GREEN, width=4)
-    draw.line((92, 124, 92, 214), fill=(200, 255, 0, 70), width=3)
-    draw.line((988, 124, 988, 214), fill=(200, 255, 0, 70), width=3)
+    """Legacy accent frame — retained for backward compatibility (no-op in new design)."""
+    pass  # graitech design uses corner ticks via _gt_draw_chrome instead
 
 
 def _draw_slide_chip(draw, text: str, box: tuple[int, int, int, int], font, fill: str, outline: tuple[int, int, int] | str) -> None:
@@ -1566,36 +2023,26 @@ def _draw_save_icon(draw, cx: int, cy: int) -> None:
 
 
 def _draw_watermark_overlay(base_image) -> None:
-    from PIL import Image, ImageOps
-
-    watermark_path = next((candidate for candidate in WATERMARK_CANDIDATES if candidate.exists()), None)
-    if not watermark_path:
-        return
-    try:
-        watermark = Image.open(watermark_path).convert("RGBA")
-        watermark = ImageOps.contain(watermark, (92, 92), method=Image.Resampling.LANCZOS)
-        watermark = _remove_logo_background(watermark)
-        alpha = watermark.getchannel("A")
-        alpha = alpha.point(lambda value: int(value * 0.88))
-        watermark.putalpha(alpha)
-        base_image.paste(watermark, (CANVAS_W - watermark.width - 28, 24), watermark)
-    except Exception:
-        return
+    """Legacy watermark — no-op in the graitech design (logo is in fixed chrome)."""
+    pass  # New design draws the graitech logo via _gt_draw_chrome
 
 
 def _draw_handle_overlay(draw, image_font) -> None:
-    """Draw the @graitech Instagram handle at the bottom-left of every slide."""
-    font = _font(image_font, 28, bold=True, mono=True)
+    """Draw the @graitech handle at bottom-left — graitech Design System style.
+    (Used by legacy digest slide renderer — new slides use _gt_draw_chrome.)
+    """
+    font = _font(image_font, 24, bold=True, mono=True)
     handle = "@graitech"
     try:
         bbox = draw.textbbox((0, 0), handle, font=font)
-        text_w = bbox[2] - bbox[0]
-        text_h = bbox[3] - bbox[1]
+        th = bbox[3] - bbox[1]
     except Exception:
-        text_w, text_h = 160, 28
-    x = 36
-    y = CANVAS_H - text_h - 38
-    draw.text((x, y), handle, fill=ACCENT_GREEN, font=font)
+        th = 24
+    x, y = 56, CANVAS_H - 56 - th
+    # Neon dot
+    draw.ellipse((x, y + th // 2 - 5, x + 10, y + th // 2 + 5),
+                 fill=(57, 255, 20, 255))
+    draw.text((x + 18, y), handle, fill=TEXT_WHITE, font=font)
 
 
 def _draw_centered_logo_panel(base_image, box: tuple[int, int, int, int]) -> None:
@@ -1634,52 +2081,67 @@ def _remove_logo_background(logo) -> Any:
     return cleaned
 
 
-def _font(image_font, size: int, bold: bool = False, mono: bool = False, preferred: list[str] | None = None):
-    # Try bundled fonts first
-    bundled_dir = Path(__file__).resolve().parent / "fonts"
-    bundled_candidates = []
-    if mono:
-        bundled_candidates.append(bundled_dir / "RobotoMono-Regular.ttf")
+def _font(image_font, size: int, bold: bool = False, mono: bool = False,
+          preferred: list[str] | None = None, display: bool = False):
+    """Load a font from the graitech Design System.
+
+    Font roles (matching graitech brand spec):
+    - display=True  → Anton SC  (tall condensed all-caps headlines)
+    - mono/body     → Space Mono (body, eyebrows, meta, labels)
+    Falls back to system/bundled fonts when the graitech assets aren't present.
+    """
+    # ── 1. graitech Design System fonts (bundled in assets/fonts/) ────────────
+    gt_candidates: list[Path] = []
+    if display:
+        gt_candidates.append(FONTS_DIR / "AntonSC-Regular.ttf")
+    if bold and mono:
+        gt_candidates.append(FONTS_DIR / "SpaceMono-Bold.ttf")
+    elif mono:
+        gt_candidates.append(FONTS_DIR / "SpaceMono-Regular.ttf")
     elif bold:
-        bundled_candidates.append(bundled_dir / "Roboto-Bold.ttf")
+        gt_candidates += [FONTS_DIR / "SpaceMono-Bold.ttf", FONTS_DIR / "AntonSC-Regular.ttf"]
     else:
-        bundled_candidates.append(bundled_dir / "Roboto-Regular.ttf")
-    
-    # Fallback to other styles just in case
-    bundled_candidates.extend([
-        bundled_dir / "Roboto-Bold.ttf",
-        bundled_dir / "Roboto-Regular.ttf",
-        bundled_dir / "RobotoMono-Regular.ttf"
-    ])
-    
-    for cand in bundled_candidates:
+        gt_candidates.append(FONTS_DIR / "SpaceMono-Regular.ttf")
+    # Always include both Space Mono variants as fallbacks
+    gt_candidates += [
+        FONTS_DIR / "SpaceMono-Bold.ttf",
+        FONTS_DIR / "SpaceMono-Regular.ttf",
+        FONTS_DIR / "AntonSC-Regular.ttf",
+    ]
+    for cand in gt_candidates:
         if cand.exists():
             try:
                 return image_font.truetype(str(cand), size=size)
             except OSError:
                 pass
 
-    # Fallback to system fonts
-    candidates = []
+    # ── 2. Caller-preferred paths ─────────────────────────────────────────────
     if preferred:
-        candidates.extend(preferred)
+        for p in preferred:
+            try:
+                return image_font.truetype(p, size=size)
+            except OSError:
+                pass
+
+    # ── 3. System + Linux fallbacks ───────────────────────────────────────────
+    candidates: list[str] = []
     if mono:
-        candidates.extend(["C:/Windows/Fonts/consolab.ttf", "C:/Windows/Fonts/consola.ttf"])
+        candidates.extend([
+            "C:/Windows/Fonts/consolab.ttf", "C:/Windows/Fonts/consola.ttf",
+        ])
     if bold:
-        candidates.extend(["C:/Windows/Fonts/arialbd.ttf", "C:/Windows/Fonts/segoeuib.ttf"])
-    candidates.extend(["C:/Windows/Fonts/arial.ttf", "C:/Windows/Fonts/segoeui.ttf"])
-    
-    # Add Linux standard font paths for extra safety
-    linux_paths = [
-        "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
-        "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+        candidates.extend([
+            "C:/Windows/Fonts/arialbd.ttf", "C:/Windows/Fonts/segoeuib.ttf",
+        ])
+    candidates.extend([
+        "C:/Windows/Fonts/arial.ttf", "C:/Windows/Fonts/segoeui.ttf",
         "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
         "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
         "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
-        "/usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf"
-    ]
-    candidates.extend(linux_paths)
-    
+        "/usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf",
+    ])
     for candidate in candidates:
         try:
             return image_font.truetype(candidate, size=size)
@@ -2363,7 +2825,9 @@ def _extract_instagram_key_points(
         "introduces", "joins", "reaches", "replaces", "sets", "ships",
         "shows", "trains", "upgrades",
     )
-    NUMBER_EMOJIS = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣"]
+    # No emojis — graitech brand uses no emoji in brand surfaces.
+    # Use a clean bullet point so each point stands on its own line.
+    BULLET = "•"
 
     def _strip_noise(text: str) -> str:
         for pattern in NOISE_PATTERNS:
@@ -2427,13 +2891,11 @@ def _extract_instagram_key_points(
 
     deduped.sort(key=_point_score, reverse=True)
 
-    # Trim and prefix with numbered emojis for storytelling impact
-    trimmed = [_trim_no_dots(pt, 100) for pt in deduped[:max_points]]
-    final = [
-        f"{NUMBER_EMOJIS[i]} {pt}" if i < len(NUMBER_EMOJIS) else pt
-        for i, pt in enumerate(trimmed)
-    ]
-    return final if final else [_trim_no_dots(summary.headline or summary.subject or "AI update", 110)]
+    # Trim and prefix with bullet point for clean visual display
+    # Each point will render on its own line in the list slide renderer.
+    trimmed = [_trim_no_dots(pt, 120) for pt in deduped[:max_points]]
+    final = [f"{BULLET}  {pt}" for pt in trimmed]
+    return final if final else [f"{BULLET}  {_trim_no_dots(summary.headline or summary.subject or 'AI update', 120)}"]
 
 
 def _compose_article_narrative(summary: EmailSummary, article: dict[str, Any]) -> str:
@@ -3269,6 +3731,59 @@ def _strip_decorative_symbols(text: str) -> str:
             continue
         cleaned.append(char)
     return re.sub(r"\s+", " ", "".join(cleaned)).strip()
+
+
+def _scrape_article_text(url: str, timeout: int = 8, max_chars: int = 4000) -> str:
+    """Fetch and extract readable text from an article URL.
+
+    Used to enrich articles with full content for better key-point extraction.
+    Returns empty string on any failure (network error, paywalled, blocked, etc.).
+    The result is truncated to max_chars to keep processing fast.
+    """
+    if not url or not url.startswith("http"):
+        return ""
+    try:
+        req = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (compatible; GraitechNewsBot/1.0)",
+                "Accept": "text/html,application/xhtml+xml",
+            },
+        )
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            if resp.status != 200:
+                return ""
+            content_type = resp.headers.get("Content-Type", "")
+            if "html" not in content_type.lower():
+                return ""
+            raw = resp.read(max_chars * 6).decode("utf-8", errors="replace")
+    except Exception:
+        return ""
+
+    # Strip HTML tags and extract meaningful text
+    # Remove script/style blocks
+    raw = re.sub(r"<(script|style|nav|header|footer|aside)[^>]*>.*?</\1>", " ", raw, flags=re.S | re.I)
+    # Remove all HTML tags
+    text = re.sub(r"<[^>]+>", " ", raw)
+    # Collapse whitespace
+    text = re.sub(r"[ \t]+", " ", text)
+    # Collapse blank lines
+    text = re.sub(r"\n\s*\n+", "\n", text)
+    # Remove lines that look like cookie/privacy notices
+    lines = []
+    for line in text.splitlines():
+        line = line.strip()
+        if len(line) < 20:
+            continue
+        line_l = line.lower()
+        if any(bad in line_l for bad in (
+            "cookie", "privacy policy", "terms of service", "subscribe",
+            "sign up", "newsletter", "advertisement", "skip to content",
+        )):
+            continue
+        lines.append(line)
+    cleaned = " ".join(lines)
+    return cleaned[:max_chars]
 
 
 def _source_label_from_url(url: str) -> str:
