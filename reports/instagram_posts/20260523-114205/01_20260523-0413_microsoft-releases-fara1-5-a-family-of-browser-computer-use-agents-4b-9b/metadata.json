@@ -1,0 +1,745 @@
+{
+  "email_received_at": "2026-05-23T04:13+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Microsoft Releases Fara1.5: A Family of Browser Computer-Use Agents (4B/9B/27B) That Outperform OpenAI \u2014 Part 1 of 3",
+  "subject": "\ud83d\ude80 AI Digest \u2014 23 May 2026 | 50 updates \u00b7 50 launches",
+  "source_date": "Fri, 22 May 2026 21:13:35 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "AWS"
+  ],
+  "models": [
+    "GPT-5.4",
+    "GPT-5",
+    "GPT-4o-mini",
+    "GPT-5.5",
+    "GPT-5.4-Cyber",
+    "GPT-5.1-Codex-Max",
+    "GPT-5.1",
+    "GPT-5-Codex"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.marktechpost.com/2026/05/22/microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b-27b-that-outperform-openai-operator-and-gemini-2-5-computer-use-on-online-mind2web/",
+  "article_title": "Microsoft Releases Fara1.5: A Family of Browser Computer-Use Agents (4B/9B/27B) That Outperform OpenAI Operator and Gemini 2.5 Computer Use on Online-Mind2Web",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4fe15d2ccb21dcc4.png",
+  "article_image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-41-218x150.png",
+  "article_items": [
+    {
+      "url": "https://www.marktechpost.com/2026/05/22/microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b-27b-that-outperform-openai-operator-and-gemini-2-5-computer-use-on-online-mind2web/",
+      "title": "Microsoft Releases Fara1.5: A Family of Browser Computer-Use Agents (4B/9B/27B) That Outperform OpenAI Operator and Gemini 2.5 Computer Use on Online-Mind2Web",
+      "description": "Microsoft Research released Fara1.5, an open family of browser computer-use agents (4B, 9B, 27B) scoring 72% on Online-Mind2Web.",
+      "excerpt": "Microsoft Research released Fara1.5, an open family of browser computer-use agents (4B, 9B, 27B) scoring 72% on Online-Mind2Web.",
+      "summary": "Connect with us Nous Research Releases Contrastive Neuron Attribution (CNA): Sparse MLP Circuit Steering Without SAE Training or Weight Modification Perplexity Open-Sources Bumblebee: A Read-Only Supply-Chain Scanner for Developer Endpoints Build Recurrent-Depth Transformers with OpenMythos for MLA, GQA, Sparse MoE, and Loop-Scaled Reasoning How CopilotKit Is Redefining the Agentic AI Stack in 2026 Qwen Introduces Qwen3.7-Max: A Reasoning Agent Model With a 1M-Token Context Window Cohere Releases Command A+: A... The practical impact: Critical points and safety Fara1.5 is trained to stop and ask the user in three situations. The sandboxed browser also acts as a security boundary between the agent and the user\u2019s machine. Watch next: GPT-5.4 scores 79.6% process and 57.4% outcome on the same benchmark. The release ships three sizes: Fara1.5-4B, Fara1.5-9B, and Fara1.5-27B.",
+      "what_happened": "Connect with us Nous Research Releases Contrastive Neuron Attribution (CNA): Sparse MLP Circuit Steering Without SAE Training or Weight Modification Perplexity Open-Sources Bumblebee: A Read-Only Supply-Chain Scanner for Developer Endpoints Build Recurrent-Depth Transformers with OpenMythos for MLA, GQA, Sparse MoE, and Loop-Scaled Reasoning How CopilotKit Is Redefining the Agentic AI Stack in 2026 Qwen Introduces Qwen3.7-Max: A Reasoning Agent Model With a 1M-Token Context Window Cohere Releases Command A+: A...",
+      "why_matters": "The practical impact: Critical points and safety Fara1.5 is trained to stop and ask the user in three situations. The sandboxed browser also acts as a security boundary between the agent and the user\u2019s machine.",
+      "what_to_watch": "Watch next: GPT-5.4 scores 79.6% process and 57.4% outcome on the same benchmark. The release ships three sizes: Fara1.5-4B, Fara1.5-9B, and Fara1.5-27B.",
+      "key_points": [
+        "Connect with us Nous Research Releases Contrastive Neuron Attribution (CNA): Sparse MLP Circuit Steering Without SAE Training or Weight Modification Perplexity Open-Sources Bumblebee: A Read-Only Supply-Chain Scanner...",
+        "Build Recurrent-Depth Transformers with OpenMythos for MLA, GQA, Sparse MoE, and Loop-Scaled Reasoning How CopilotKit Is Redefining the Agentic AI Stack in 2026 Qwen Introduces Qwen3.7-Max: A Reasoning Agent Model...",
+        "The release ships three sizes: Fara1.5-4B, Fara1.5-9B, and Fara1.5-27B.",
+        "Microsoft Research released Fara1.5, a family of browser computer-use agents in 4B, 9B, and 27B sizes built on Qwen3.5.",
+        "One Model, Three Modalities: ByteDance Releases Lance for Image and Video Understanding, Generation, and...",
+        "Microsoft Releases Fara1.5: A Family of Browser Computer-Use Agents (4B/9B/27B) That Outperform OpenAI Operator and Gemini 2.5 Computer Use on Online-Mind2Web Microsoft Research\u2019s AI Frontiers lab released Fara1.5.",
+        "FaraGen1.5: the synthetic data pipeline FaraGen1.5 is the synthetic pipeline that produced the training trajectories.",
+        "Architecture and agent loop The models use Qwen3.5 base checkpoints in their 4B, 9B, and 27B variants.",
+        "On WebVoyager, Fara1.5-27B scores 88.6%, the 9B reaches 86.6%, and the 4B hits 80.8%.",
+        "Microsoft Research released Fara1.5, an open family of browser computer-use agents (4B, 9B, 27B) scoring 72% on Online-Mind2Web."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4fe15d2ccb21dcc4.png",
+      "image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-41-218x150.png"
+    },
+    {
+      "url": "https://cryptobriefing.com/google-flow-global-expansion-gemini-omni/",
+      "title": "Google Flow expands globally, introduces Gemini Omni and new music features",
+      "description": "Google Flow and Flow Music expand globally with Gemini Omni Flash model, AI agents, and music editing tools under a new $100/month Ultra subscription plan.",
+      "excerpt": "Google Flow and Flow Music expand globally with Gemini Omni Flash model, AI agents, and music editing tools under a new $100/month Ultra subscription plan.",
+      "summary": "AI agents and the new workflow Beyond the generation model, Google introduced new AI agents within Flow that assist with creative workflows using natural language. The company expanded Google Flow and Google Flow Music to users worldwide on May 19, integrating the new Gemini Omni Flash model and a suite of AI agents designed to handle everything from brainstorming to batch content generation. The practical impact: These agents handle brainstorming, batch generation, and what Google calls \u201ctask reasoning,\u201d which essentially means the AI can help plan multi-step creative projects rather than just executing single prompts. Google Flow expands globally, introduces Gemini Omni and new music features Google's AI creative suite gets multimodal generation, intelligent agents, and music editing tools under a revamped... Watch next: The plans range from a Plus tier up to the newly introduced AI Ultra plan at $100 per month. Google Flow expands globally, introduces Gemini Omni and new music features Google's AI creative suite gets multimodal generation, intelligent agents, and music editing tools under a revamped subscription model.",
+      "what_happened": "AI agents and the new workflow Beyond the generation model, Google introduced new AI agents within Flow that assist with creative workflows using natural language. The company expanded Google Flow and Google Flow Music to users worldwide on May 19, integrating the new Gemini Omni Flash model and a suite of AI agents designed to handle everything from brainstorming to batch content generation.",
+      "why_matters": "The practical impact: These agents handle brainstorming, batch generation, and what Google calls \u201ctask reasoning,\u201d which essentially means the AI can help plan multi-step creative projects rather than just executing single prompts. Google Flow expands globally, introduces Gemini Omni and new music features Google's AI creative suite gets multimodal generation, intelligent agents, and music editing tools under a revamped...",
+      "what_to_watch": "Watch next: The plans range from a Plus tier up to the newly introduced AI Ultra plan at $100 per month. Google Flow expands globally, introduces Gemini Omni and new music features Google's AI creative suite gets multimodal generation, intelligent agents, and music editing tools under a revamped subscription model.",
+      "key_points": [
+        "AI agents and the new workflow Beyond the generation model, Google introduced new AI agents within Flow that assist with creative workflows using natural language.",
+        "The company expanded Google Flow and Google Flow Music to users worldwide on May 19, integrating the new Gemini Omni Flash model and a suite of AI agents designed to handle everything from brainstorming to batch...",
+        "Google Flow expands globally, introduces Gemini Omni and new music features Google's AI creative suite gets multimodal generation, intelligent agents, and music editing tools under a revamped subscription model.",
+        "What Gemini Omni Flash actually does The centerpiece of the update is the Gemini Omni Flash model, which Google describes as an \u201cany-to-any\u201d multimodal generation system.",
+        "The plans range from a Plus tier up to the newly introduced AI Ultra plan at $100 per month.",
+        "Google Flow and Flow Music expand globally with Gemini Omni Flash model, AI agents, and music editing tools under a new $100/month Ultra subscription plan.",
+        "These agents handle brainstorming, batch generation, and what Google calls \u201ctask reasoning,\u201d which essentially means the AI can help plan multi-step creative projects rather than just executing single prompts.",
+        "The catch: accessing the full feature set requires a subscription, with the new AI Ultra tier running $100 per month.",
+        "The model also integrates real-world content with AI-generated material, allowing users to mix footage they\u2019ve actually shot with synthetic elements.",
+        "Users can rewrite lyrics for specific sections without regenerating the entire song, and the platform now offers customizable music video generation tied to the audio output."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0ada3f5ca43a5e68.jpg",
+      "image_url": "https://static.cryptobriefing.com/wp-content/uploads/2026/05/22193245/google-flow-gets-a-major-upgrade-ai-agents-music-videos-and--1-800x420.jpeg"
+    },
+    {
+      "url": "https://siliconangle.com/2026/05/21/hark-raises-700m-build-personalized-intelligence-devices/",
+      "title": "Hark raises $700M+ to build \u2018personalized intelligence\u2019 devices - SiliconANGLE",
+      "description": "Hark raises $700M+ to build \u2018personalized intelligence\u2019 devices - SiliconANGLE",
+      "excerpt": "Hark raises $700M+ to build \u2018personalized intelligence\u2019 devices - SiliconANGLE",
+      "summary": "Hark raises $700M+ to build \u2018personalized intelligence\u2019 devices - SiliconANGLE Hark raises $700M+ to build \u2018personalized intelligence\u2019 devices Hark Inc., a startup developing artificial intelligence devices for the consumer market, today announced that it has raised more than $700 million in funding. The practical impact: The company is developing a line of custom AI models that it says will provide \u201cadvanced personalized intelligence.\u201d The algorithms will feature a multimodal architecture and persistent memory that will enable them to save user preferences. The company is now worth $6 billion. Watch next: IPO amid growing crypto listings Mega AI IPOs incoming, Google's agentic blitz and Nvidia's next big business California to explore possible subsidies for companies that don't replace workers with AI Hark raises $700M+ to build \u2018personalized intelligence\u2019 devices Serverless AI infrastructure startup...",
+      "what_happened": "Hark raises $700M+ to build \u2018personalized intelligence\u2019 devices - SiliconANGLE Hark raises $700M+ to build \u2018personalized intelligence\u2019 devices Hark Inc., a startup developing artificial intelligence devices for the consumer market, today announced that it has raised more than $700 million in funding.",
+      "why_matters": "The practical impact: The company is developing a line of custom AI models that it says will provide \u201cadvanced personalized intelligence.\u201d The algorithms will feature a multimodal architecture and persistent memory that will enable them to save user preferences. The company is now worth $6 billion.",
+      "what_to_watch": "Watch next: IPO amid growing crypto listings Mega AI IPOs incoming, Google's agentic blitz and Nvidia's next big business California to explore possible subsidies for companies that don't replace workers with AI Hark raises $700M+ to build \u2018personalized intelligence\u2019 devices Serverless AI infrastructure startup...",
+      "key_points": [
+        "Hark raises $700M+ to build \u2018personalized intelligence\u2019 devices - SiliconANGLE Hark raises $700M+ to build \u2018personalized intelligence\u2019 devices Hark Inc., a startup developing artificial intelligence devices for the...",
+        "Hark plans to ship its models with a line of AI-optimized devices.",
+        "The company is developing a line of custom AI models that it says will provide \u201cadvanced personalized intelligence.\u201d The algorithms will feature a multimodal architecture and persistent memory that will enable them...",
+        "Hark previously raised $100 million from founder and Chief Executive Officer Brett Adcock.",
+        "Its consumer devices will launch at an unspecified later date.",
+        "Last year, Google LLC released a multimodal model optimized for devices with limited processing capacity.",
+        "EXTRACT THE SIGNAL FROM THE NOISE",
+        "The company is now worth $6 billion.",
+        "Companies often run frontier multimodal models in the cloud.",
+        "A module called MatFormer enables developers to disable parts of the models that aren\u2019t needed for an app."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4c3d86587969eb9c.jpg",
+      "image_url": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2022/02/trading-gedfb50ce8_1280-300x200.jpg"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/microsoft-and-black-tech-street-launch-greenwood-cyber--ai-lab-in-tulsa-302779672.html",
+      "title": "Microsoft and Black Tech Street Launch Greenwood Cyber + AI Lab in Tulsa",
+      "description": "/PRNewswire/ -- Microsoft and Black Tech Street today announce the opening of the Greenwood Cyber + AI Lab, a collaborative technology hub focused on advancing...",
+      "excerpt": "/PRNewswire/ -- Microsoft and Black Tech Street today announce the opening of the Greenwood Cyber + AI Lab, a collaborative technology hub focused on advancing...",
+      "summary": "We are proud to work alongside Black Tech Street, Tulsa Innovation Labs, and an exceptional group of partners to help build a model for how communities can harness emerging technologies to empower people and organizations to achieve more.\" Michael Salazar, General Manager, Greenwood Cyber + AI Lab, Microsoft As part of the lab's launch, we are also announcing initial collaboration plans with Lumen Technologies focused on exploring applied artificial intelligence, cybersecurity, infrastructure resilience, and... The practical impact: Designed and operated by Black Tech Street in partnership with Microsoft and SeedAI, the Greenwood AI Center of Excellence combines workforce development, education, and applied technology innovation to help organizations and communities better understand, adopt, and build with artificial intelligence technologies. Tulsa's Tech Hubs coalition, led by Tulsa Innovation Labs, received $51 million in... Watch next: A longstanding Microsoft partner and major technology and communications employer in the Tulsa region, Lumen Technologies represents an early example of the collaborative ecosystem the lab is designed to support as engagement expands across...",
+      "what_happened": "We are proud to work alongside Black Tech Street, Tulsa Innovation Labs, and an exceptional group of partners to help build a model for how communities can harness emerging technologies to empower people and organizations to achieve more.\" Michael Salazar, General Manager, Greenwood Cyber + AI Lab, Microsoft As part of the lab's launch, we are also announcing initial collaboration plans with Lumen Technologies focused on exploring applied artificial intelligence, cybersecurity, infrastructure resilience, and...",
+      "why_matters": "The practical impact: Designed and operated by Black Tech Street in partnership with Microsoft and SeedAI, the Greenwood AI Center of Excellence combines workforce development, education, and applied technology innovation to help organizations and communities better understand, adopt, and build with artificial intelligence technologies. Tulsa's Tech Hubs coalition, led by Tulsa Innovation Labs, received $51 million in...",
+      "what_to_watch": "Watch next: A longstanding Microsoft partner and major technology and communications employer in the Tulsa region, Lumen Technologies represents an early example of the collaborative ecosystem the lab is designed to support as engagement expands across startups, research institutions, public-sector organizations...",
+      "key_points": [
+        ", May 21, 2026 /PRNewswire/ -- Microsoft and Black Tech Street today announce the opening of the Greenwood Cyber + AI Lab, a collaborative technology hub focused on advancing artificial intelligence, cybersecurity...",
+        "We are proud to work alongside Black Tech Street, Tulsa Innovation Labs, and an exceptional group of partners to help build a model for how communities can harness emerging technologies to empower people and...",
+        "Within that investment, $10.6 million was allocated to the Greenwood AI Center of Excellence, which anchors the artificial intelligence component of Tulsa's Tech Hub strategy.",
+        "ASPIRE (AI Societal Program for Innovation, Research, and Education) - focused on expanding AI fluency, workforce development, and technology education.",
+        "Designed and operated by Black Tech Street in partnership with Microsoft and SeedAI, the Greenwood AI Center of Excellence combines workforce development, education, and applied technology innovation to help...",
+        "As the lead organization for Tulsa's Tech Hub coalition, Tulsa Innovation Labs views the Greenwood Cyber + AI Lab as an important milestone in advancing the region's strategy to become a national center for...",
+        "Tulsa's Tech Hubs coalition, led by Tulsa Innovation Labs, received $51 million in federal funding to help establish the region as a national center for advanced autonomy technologies, including drones, robotics, and...",
+        "The Greenwood Cyber + AI Lab is part of the broader Greenwood AI Center of Excellence, an initiative supported through the U.S.",
+        "The Greenwood Cyber + AI Lab hosts Microsoft engineers and researchers and provides access to advanced Microsoft AI and cybersecurity technologies.",
+        "A longstanding Microsoft partner and major technology and communications employer in the Tulsa region, Lumen Technologies represents an early example of the collaborative ecosystem the lab is designed to support as..."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c4019c6ccb36678b.img",
+      "image_url": "https://www.prnewswire.com/content/dam/prnewswire/homepage/LIGHT_PRNewswire_By-Cision_Stacked.svg"
+    },
+    {
+      "url": "https://siliconangle.com/2026/05/21/new-anthropic-blackstone-backed-ai-services-firm-acquires-fractional-ai/",
+      "title": "New Anthropic-, Blackstone-backed AI services firm acquires Fractional AI - SiliconANGLE",
+      "description": "New Anthropic-, Blackstone-backed AI services firm acquires Fractional AI - SiliconANGLE",
+      "excerpt": "New Anthropic-, Blackstone-backed AI services firm acquires Fractional AI - SiliconANGLE",
+      "summary": "Serverless AI infrastructure startup Modal Labs seals $355M funding round Zscaler acquires Symmetry Systems to extend its AI agent security capabilities New Anthropic-, Blackstone-backed AI services firm acquires Fractional AI Mega AI IPOs incoming, Google's agentic blitz and Nvidia's next big business California to explore possible subsidies for companies that don't replace workers with AI Hark raises $700M+ to build \u2018personalized intelligence\u2019 devices Serverless AI infrastructure startup Modal Labs seals... The practical impact: Blackstone and its co-investors expect to use their own portfolio companies, spanning healthcare, manufacturing, financial services, retail and real estate, as the initial customer base before expanding more broadly into the midmarket. committed a combined $1.5 billion to build a services company focused on helping mid-sized businesses deploy Claude across their core operations. Watch next: 15M+ viewers of theCUBE videos , powering conversations across AI, cloud, cybersecurity and more 11.4k+ theCUBE alumni - Connect with more than 11,400 tech and business leaders shaping the future through a unique trusted-based network. The venture itself was...",
+      "what_happened": "Serverless AI infrastructure startup Modal Labs seals $355M funding round Zscaler acquires Symmetry Systems to extend its AI agent security capabilities New Anthropic-, Blackstone-backed AI services firm acquires Fractional AI Mega AI IPOs incoming, Google's agentic blitz and Nvidia's next big business California to explore possible subsidies for companies that don't replace workers with AI Hark raises $700M+ to build \u2018personalized intelligence\u2019 devices Serverless AI infrastructure startup Modal Labs seals...",
+      "why_matters": "The practical impact: Blackstone and its co-investors expect to use their own portfolio companies, spanning healthcare, manufacturing, financial services, retail and real estate, as the initial customer base before expanding more broadly into the midmarket. committed a combined $1.5 billion to build a services company focused on helping mid-sized businesses deploy Claude across their core operations.",
+      "what_to_watch": "Watch next: 15M+ viewers of theCUBE videos , powering conversations across AI, cloud, cybersecurity and more 11.4k+ theCUBE alumni - Connect with more than 11,400 tech and business leaders shaping the future through a unique trusted-based network. The venture itself was unveiled on May 4 , when Anthropic...",
+      "key_points": [
+        "Serverless AI infrastructure startup Modal Labs seals $355M funding round Zscaler acquires Symmetry Systems to extend its AI agent security capabilities New Anthropic-, Blackstone-backed AI services firm acquires...",
+        "signed a global alliance with Anthropic on May 19 , embedding Claude across its 276,000-person workforce and being named Anthropic\u2019s preferred partner for private equity, a direct adjacency to the Blackstone, Hellman...",
+        "The venture itself was unveiled on May 4 , when Anthropic, Blackstone, Hellman & Friedman and Goldman Sachs Group Inc.",
+        "New Anthropic-, Blackstone-backed AI services firm acquires Fractional AI - SiliconANGLE New Anthropic-, Blackstone-backed AI services firm acquires Fractional AI The recently announced artificial intelligence-native...",
+        "and Hellman & Friedman LLC has acquired Fractional AI Inc.",
+        "PricewaterhouseCoopers LLP expanded its own Anthropic alliance earlier in May with a commitment to train 30,000 staff on Claude, and Deloitte Touche Tohmatsu Ltd.",
+        "EXTRACT THE SIGNAL FROM THE NOISE",
+        "Blackstone and its co-investors expect to use their own portfolio companies, spanning healthcare, manufacturing, financial services, retail and real estate, as the initial customer base before expanding more broadly...",
+        "committed a combined $1.5 billion to build a services company focused on helping mid-sized businesses deploy Claude across their core operations.",
+        "The company has built a reputation as a destination for applied AI engineers and an end-to-end implementation partner for companies trying to move generative AI from pilot to production."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/67cc7350a4cc869e.png",
+      "image_url": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/05/fractionalai.png"
+    },
+    {
+      "url": "https://sites.libsyn.com/18678/fcc-github-minishai-hulud-stated-of-supply-chain-itron-cra-nis2-and-more-psw-927",
+      "title": "Security Weekly Podcast Network (Audio): FCC, Github, MiniShai-hulud, Stated of Supply Chain, Itron, CRA, NIS2, and more!! - PSW #927",
+      "description": "In the security news this week: FCC router bans and the hidden firmware update problem Why extending support timelines actually improves security Github supply chain concerns and the evolving SBOM ecosystem CRA and NIS2 compliance deadlines are getting very real The EU Cyber Resilience Act\u2019s 24-hour vulnerability disclosure requirement Security regulation: vertical vs horizontal compliance models Vehicle-to-load EV systems powering homes during outages Solar, batteries, AI farms, and the future economics of electricity Data centers consuming regional power grids BitLocker \u201cYellow Key\u201d fallout and large-scale remediation challenges AI-generated PowerShell fixes and the rise of vibe scripting Linux kernel exploits, module jail, and default deny strategies Medical biometric data theft and why fingerprints are terrible passwords Interpol cybercrime operations across the MENA region OT security, connected vehicles, and accepting real-world risk The crew also discusses threat intelligence obligations under the CRA, the operational realities of patching at enterprise scale, the economics of secure-by-default systems, and why making security cheaper than insecurity might finally move the industry forward. Visit for all the latest episodes! Show Notes:",
+      "excerpt": "In the security news this week: FCC router bans and the hidden firmware update problem Why extending support timelines actually improves security Github supply chain concerns and the evolving SBOM ecosystem CRA and NIS2 compliance deadlines are getting very real The EU Cyber Resilience Act\u2019s 24-hour vulnerability disclosure requirement Security regulation: vertical vs horizontal compliance models Vehicle-to-load EV systems powering homes during outages Solar, batteries, AI farms, and the future economics of electricity Data centers consuming regional power grids BitLocker \u201cYellow Key\u201d fallout and large-scale remediation challenges AI-generated PowerShell fixes and the rise of vibe...",
+      "summary": "In the security news this week: FCC router bans and the hidden firmware update problem Why extending support timelines actually improves security Github supply chain concerns and the evolving SBOM ecosystem CRA and NIS2 compliance deadlines are getting very real The EU Cyber Resilience Act\u2019s 24-hour vulnerability disclosure requirement Security regulation: vertical vs horizontal compliance models Vehicle-to-load EV systems powering homes during outages Solar, batteries, AI farms, and the future economics of... The practical impact: Show Notes: 3rd Party Risk,Active Directory,Application Isolation,Application Security,Asset Management,Attack Simulation,Attack Surface Mgm 3rd Party Risk,Active Directory,Application Security,Attack Surface Mgmt,Deception,Endpoint Security,ICS Security,Identity and A 3rd Party Risk,Active Directory,Application Security,Cloud Security,Compliance,Container Security,Deception,Email Security,Patch 3rd... Watch next: PSW #927 Github supply chain concerns and the evolving SBOM ecosystem The EU Cyber Resilience Act\u2019s 24-hour vulnerability disclosure requirement Security regulation: vertical vs horizontal compliance models Solar, batteries, AI farms, and...",
+      "what_happened": "In the security news this week: FCC router bans and the hidden firmware update problem Why extending support timelines actually improves security Github supply chain concerns and the evolving SBOM ecosystem CRA and NIS2 compliance deadlines are getting very real The EU Cyber Resilience Act\u2019s 24-hour vulnerability disclosure requirement Security regulation: vertical vs horizontal compliance models Vehicle-to-load EV systems powering homes during outages Solar, batteries, AI farms, and the future economics of...",
+      "why_matters": "The practical impact: Show Notes: 3rd Party Risk,Active Directory,Application Isolation,Application Security,Asset Management,Attack Simulation,Attack Surface Mgm 3rd Party Risk,Active Directory,Application Security,Attack Surface Mgmt,Deception,Endpoint Security,ICS Security,Identity and A 3rd Party Risk,Active Directory,Application Security,Cloud Security,Compliance,Container Security,Deception,Email Security,Patch 3rd...",
+      "what_to_watch": "Watch next: PSW #927 Github supply chain concerns and the evolving SBOM ecosystem The EU Cyber Resilience Act\u2019s 24-hour vulnerability disclosure requirement Security regulation: vertical vs horizontal compliance models Solar, batteries, AI farms, and the future economics of electricity BitLocker \u201cYellow Key\u201d...",
+      "key_points": [
+        "Show Notes: 3rd Party Risk,Active Directory,Application Isolation,Application Security,Asset Management,Attack Simulation,Attack Surface Mgm 3rd Party Risk,Active Directory,Application Security,Attack Surface...",
+        "In the security news this week: FCC router bans and the hidden firmware update problem Why extending support timelines actually improves security Github supply chain concerns and the evolving SBOM ecosystem CRA and...",
+        "PSW #927 Github supply chain concerns and the evolving SBOM ecosystem The EU Cyber Resilience Act\u2019s 24-hour vulnerability disclosure requirement Security regulation: vertical vs horizontal compliance models Solar...",
+        "This feed features a diverse lineup of shows, including Application Security Weekly, Business Security Weekly, Paul's Security Weekly, Enterprise Security Weekly, and Security Weekly News.",
+        "PSW #927 FCC, Github, MiniShai-hulud, Stated of Supply Chain, Itron, CRA, NIS2, and more!!",
+        "Welcome to the Security Weekly Podcast Network, your all-in-one source for the latest in cybersecurity!",
+        "Stay informed and secure with the most trusted voices in cybersecurity!",
+        "Tune in for in-depth panel discussions, expert guest interviews, and breaking news on the latest hacking techniques, vulnerabilities, and industry trends.",
+        "Visit for all the latest episodes!",
+        "Whether you're a cybersecurity professional, business leader, or tech enthusiast, we cover all angles of the cybersecurity landscape."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/78f6b0b71047031d.png",
+      "image_url": "https://ssl-static.libsyn.com/p/assets/platform/websuite/stitcher.png"
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-04-28-nemotron-omni",
+      "title": "Run Highly Efficient Multimodal Agentic AI with NVIDIA Nemotron 3 Nano Omni Using vLLM",
+      "description": "We are excited to support the newly released NVIDIA Nemotron 3 Nano Omni model on vLLM.",
+      "excerpt": "We are excited to support the newly released NVIDIA Nemotron 3 Nano Omni model on vLLM.",
+      "summary": "Nemotron 3 Nano's hybrid MoE architecture activates only 3B of 30B parameters per forward pass, delivers high throughput, and lowers compute for video reasoning via temporal-aware perception and efficient video sampling, enabling always-on agents to operate without prohibitive cost. Efficient Video Sampling (EVS) enables longer video processing at the same compute budget, delivering lower compute for video reasoning via temporal-aware perception. The practical impact: In a system of agents, Nemotron 3 Nano Omni functions as the multimodal perception and context sub-agent, giving agents eyes and ears across screens, documents, audio streams, and video, while feeding structured understanding into orchestration and execution agents downstream. Run Highly Efficient Multimodal Agentic AI with NVIDIA Nemotron 3 Nano Omni Using vLLM Highest Efficiency with Leading... Watch next: On the MediaPerf benchmark, Nemotron 3 Nano Omni achieved the highest throughput across every task and the lowest inference cost for video-level tagging. In a system of agents, Nemotron 3 Nano Omni functions as the multimodal perception and context sub-agent, giving agents eyes and ears across screens...",
+      "what_happened": "Nemotron 3 Nano's hybrid MoE architecture activates only 3B of 30B parameters per forward pass, delivers high throughput, and lowers compute for video reasoning via temporal-aware perception and efficient video sampling, enabling always-on agents to operate without prohibitive cost. Efficient Video Sampling (EVS) enables longer video processing at the same compute budget, delivering lower compute for video reasoning via temporal-aware perception.",
+      "why_matters": "The practical impact: In a system of agents, Nemotron 3 Nano Omni functions as the multimodal perception and context sub-agent, giving agents eyes and ears across screens, documents, audio streams, and video, while feeding structured understanding into orchestration and execution agents downstream. Run Highly Efficient Multimodal Agentic AI with NVIDIA Nemotron 3 Nano Omni Using vLLM Highest Efficiency with Leading...",
+      "what_to_watch": "Watch next: On the MediaPerf benchmark, Nemotron 3 Nano Omni achieved the highest throughput across every task and the lowest inference cost for video-level tagging. In a system of agents, Nemotron 3 Nano Omni functions as the multimodal perception and context sub-agent, giving agents eyes and ears across screens...",
+      "key_points": [
+        "Nemotron 3 Nano's hybrid MoE architecture activates only 3B of 30B parameters per forward pass, delivers high throughput, and lowers compute for video reasoning via temporal-aware perception and efficient video...",
+        "Efficient Video Sampling (EVS) enables longer video processing at the same compute budget, delivering lower compute for video reasoning via temporal-aware perception.",
+        "In a system of agents, Nemotron 3 Nano Omni functions as the multimodal perception and context sub-agent, giving agents eyes and ears across screens, documents, audio streams, and video, while feeding structured...",
+        "Run Highly Efficient Multimodal Agentic AI with NVIDIA Nemotron 3 Nano Omni Using vLLM Highest Efficiency with Leading Accuracy for Multimodal Agentic Applications We are excited to support the newly released NVIDIA...",
+        "Highest Efficiency with Leading Accuracy for Multimodal Agentic Applications Nemotron 3 Nano Omni is optimized for hardware\u2011efficient inference and integrates directly with modern inference stacks such as vLLM.",
+        "Nemotron 3 Nano Omni collapses this into a single multimodal reasoning loop - one model that understands screens, documents, audio, and video simultaneously, simplifying agent workflow design and reducing...",
+        "Supported GPUs: NVIDIA B200, H100, H200, A100, L40S, DGX Spark, and RTX 6000 Download model weights from Hugging Face - BF16 , FP8 , NVFP4 Run with vLLM for inference using the cookbook and through Brev launchable...",
+        "Nemotron 3 Nano Omni , part of the Nemotron 3 family of open models, is the highest efficiency, open multimodal model with leading accuracy, built to power sub-agents that perceive and reason across vision, audio...",
+        "Multi-Document and Video Efficiency As shown in Figure 2, Nemotron 3 Nano Omni has seen ongoing model improvements, delivering higher multimodal accuracy across vision, video, OCR, and audio benchmarks compared to...",
+        "Nemotron 3 Nano Omni addresses two major challenges this fragmentation creates: Fragmented Models: Running separate vision, audio, and language models in sequence increases latency through repeated inference passes..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/bf7250cd7d4146a8.png",
+      "image_url": "https://vllm.ai/blog-assets/figures/2026-04-28-nemotron-omni/figure2.png"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.22273",
+      "title": "Self-Correction as Feedback Control: Error Dynamics, Stability Thresholds, and Prompt Interventions in LLMs",
+      "description": "Iterative self-correction is increasingly deployed in agentic LLM systems, yet whether repeated refinement improves or degrades performance remains inconsistent across models. We recast self-correction as a closed-loop feedback-control problem in which the same model is both controller and plant, and analyze its error dynamics via a two-state Markov model over {Correct, Incorrect}, parameterized by the Error Introduction Rate (EIR) and Error Correction Rate (ECR). The model yields a directly measurable stability threshold -- iterate only when ECR/EIR > Acc/(1-Acc) -- in which EIR acts as a stability margin and prompting becomes lightweight controller design. Empirically, across 7 models and 3 datasets (GSM8K, MATH, StrategyQA), a sharp near-zero EIR boundary (< 0.5%) cleanly separates beneficial from harmful self-correction: only o3-mini (+3.4 pp), Claude Opus 4.6 (+0.6 pp), and o4-mini (+/-0 pp) stay non-degrading, while GPT-5 and four others lose accuracy. A verify-first prompt intervention then provides causal evidence: it drives GPT-4o-mini's EIR from 2% to 0% and converts a -6.2 pp degradation into +0.2 pp (paired McNemar, p<10 {-4}), with negligible change on already-sub-threshold models -- exactly as the diagnostic predicts. A complementary analysis of adaptive self-consistency (ASC) shows it halts harmful refinement at a 3.8 pp confidence-elicitation cost, exposing a two-tier capability structure: prompt-level EIR suppression prevents degradation, whereas ECR enhancement -- plausibly training-level -- is required for genuine gains. Self-correction should thus be treated not as a default behavior but as a control decision governed by measurable error dynamics.",
+      "excerpt": "Iterative self-correction is increasingly deployed in agentic LLM systems, yet whether repeated refinement improves or degrades performance remains inconsistent across models. We recast self-correction as a closed-loop feedback-control problem in which the same model is both controller and plant, and analyze its error dynamics via a two-state Markov model over {Correct, Incorrect}, parameterized by the Error Introduction Rate (EIR) and Error Correction Rate (ECR). The model yields a directly measurable stability threshold -- iterate only when ECR/EIR > Acc/(1-Acc) -- in which EIR acts as a stability margin and prompting becomes lightweight controller design. Empirically, across 7 models...",
+      "summary": "Computer Science > Artificial Intelligence Title: Self-Correction as Feedback Control: Error Dynamics, Stability Thresholds, and Prompt Interventions in LLMs Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our... The practical impact: A verify-first prompt intervention then provides causal evidence: it drives GPT-4o-mini's EIR from 2% to 0% and converts a -6.2 pp degradation into +0.2 pp (paired McNemar, p<10 {-4}), with negligible change on already-sub-threshold models -- exactly as the diagnostic predicts. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community... Watch next: We recast self-correction as a closed-loop feedback-control problem in which the same model is both controller and plant, and analyze its error dynamics via a two-state Markov model over {Correct, Incorrect}, parameterized by the Error...",
+      "what_happened": "Computer Science > Artificial Intelligence Title: Self-Correction as Feedback Control: Error Dynamics, Stability Thresholds, and Prompt Interventions in LLMs Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our...",
+      "why_matters": "The practical impact: A verify-first prompt intervention then provides causal evidence: it drives GPT-4o-mini's EIR from 2% to 0% and converts a -6.2 pp degradation into +0.2 pp (paired McNemar, p<10 {-4}), with negligible change on already-sub-threshold models -- exactly as the diagnostic predicts. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community...",
+      "what_to_watch": "Watch next: We recast self-correction as a closed-loop feedback-control problem in which the same model is both controller and plant, and analyze its error dynamics via a two-state Markov model over {Correct, Incorrect}, parameterized by the Error Introduction Rate (EIR) and Error Correction Rate (ECR).",
+      "key_points": [
+        "Computer Science > Artificial Intelligence Title: Self-Correction as Feedback Control: Error Dynamics, Stability Thresholds, and Prompt Interventions in LLMs Current browse context: References & Citations BibTeX...",
+        "Iterative self-correction is increasingly deployed in agentic LLM systems, yet whether repeated refinement improves or degrades performance remains inconsistent across models.",
+        "Empirically, across 7 models and 3 datasets (GSM8K, MATH, StrategyQA), a sharp near-zero EIR boundary (< 0.5%) cleanly separates beneficial from harmful self-correction: only o3-mini (+3.4 pp), Claude Opus 4.6 (+0.6...",
+        "We recast self-correction as a closed-loop feedback-control problem in which the same model is both controller and plant, and analyze its error dynamics via a two-state Markov model over {Correct, Incorrect}...",
+        "The model yields a directly measurable stability threshold -- iterate only when ECR/EIR > Acc/(1-Acc) -- in which EIR acts as a stability margin and prompting becomes lightweight controller design.",
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "A verify-first prompt intervention then provides causal evidence: it drives GPT-4o-mini's EIR from 2% to 0% and converts a -6.2 pp degradation into +0.2 pp (paired McNemar, p<10 {-4}), with negligible change on...",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "A complementary analysis of adaptive self-consistency (ASC) shows it halts harmful refinement at a 3.8 pp confidence-elicitation cost, exposing a two-tier capability structure: prompt-level EIR suppression prevents...",
+        "Self-correction should thus be treated not as a default behavior but as a control decision governed by measurable error dynamics."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "",
+      "image_url": ""
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.22748",
+      "title": "Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond",
+      "description": "As AI systems move from generating text to accomplishing goals through sustained interaction, the ability to model environment dynamics becomes a central bottleneck. Agents that manipulate objects, navigate software, coordinate with others, or design experiments require predictive environment models, yet the term world model carries different meanings across research communities. We introduce a \"levels x laws\" taxonomy organized along two axes. The first defines three capability levels: L1 Predictor, which learns one-step local transition operators; L2 Simulator, which composes them into multi-step, action-conditioned rollouts that respect domain laws; and L3 Evolver, which autonomously revises its own model when predictions fail against new evidence. The second identifies four governing-law regimes: physical, digital, social, and scientific. These regimes determine what constraints a world model must satisfy and where it is most likely to fail. Using this framework, we synthesize over 400 works and summarize more than 100 representative systems spanning model-based reinforcement learning, video generation, web and GUI agents, multi-agent social simulation, and AI-driven scientific discovery. We analyze methods, failure modes, and evaluation practices across level-regime pairs, propose decision-centric evaluation principles and a minimal reproducible evaluation package, and outline architectural guidance, open problems, and governance challenges. The resulting roadmap connects previously isolated communities and charts a path from passive next-step prediction toward world models that can simulate, and ultimately reshape, the environments in which agents operate.",
+      "excerpt": "As AI systems move from generating text to accomplishing goals through sustained interaction, the ability to model environment dynamics becomes a central bottleneck. Agents that manipulate objects, navigate software, coordinate with others, or design experiments require predictive environment models, yet the term world model carries different meanings across research communities. We introduce a \"levels x laws\" taxonomy organized along two axes. The first defines three capability levels: L1 Predictor, which learns one-step local transition operators; L2 Simulator, which composes them into multi-step, action-conditioned rollouts that respect domain laws; and L3 Evolver, which autonomously...",
+      "summary": "Computer Science > Artificial Intelligence Title: Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. arXiv is committed to these values... The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. Agents that manipulate objects, navigate software, coordinate with others, or design experiments require predictive environment models, yet the term world model carries different meanings across research communities. Watch next: The resulting roadmap connects previously isolated communities and charts a path from passive next-step prediction toward world models that can simulate, and ultimately reshape, the environments in which agents operate. Agents that manipulate objects, navigate...",
+      "what_happened": "Computer Science > Artificial Intelligence Title: Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. arXiv is committed to these values...",
+      "why_matters": "The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. Agents that manipulate objects, navigate software, coordinate with others, or design experiments require predictive environment models, yet the term world model carries different meanings across research communities.",
+      "what_to_watch": "Watch next: The resulting roadmap connects previously isolated communities and charts a path from passive next-step prediction toward world models that can simulate, and ultimately reshape, the environments in which agents operate. Agents that manipulate objects, navigate software, coordinate with others, or design...",
+      "key_points": [
+        "Using this framework, we synthesize over 400 works and summarize more than 100 representative systems spanning model-based reinforcement learning, video generation, web and GUI agents, multi-agent social simulation...",
+        "Computer Science > Artificial Intelligence Title: Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond Current browse context: References & Citations BibTeX formatted citation Bibliographic and...",
+        "Agents that manipulate objects, navigate software, coordinate with others, or design experiments require predictive environment models, yet the term world model carries different meanings across research communities.",
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "The resulting roadmap connects previously isolated communities and charts a path from passive next-step prediction toward world models that can simulate, and ultimately reshape, the environments in which agents operate.",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "These regimes determine what constraints a world model must satisfy and where it is most likely to fail.",
+        "We analyze methods, failure modes, and evaluation practices across level-regime pairs, propose decision-centric evaluation principles and a minimal reproducible evaluation package, and outline architectural guidance...",
+        "The first defines three capability levels: L1 Predictor, which learns one-step local transition operators; L2 Simulator, which composes them into multi-step, action-conditioned rollouts that respect domain laws; and...",
+        "The second identifies four governing-law regimes: physical, digital, social, and scientific."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": ""
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.21989",
+      "title": "Model Predictive Control of Hybrid Dynamical Systems",
+      "description": "The problem of controlling hybrid dynamical systems using model predictive control (MPC) is formulated and sufficient conditions for asymptotic stability of a set are provided. Hybrid dynamical systems are modeled in terms of hybrid equations, involving a differential equation and a difference equation with inputs and constraints. The proposed hybrid MPC algorithm uses a suitable prediction and control horizon construction inspired by hybrid time domains. Structural properties of the hybrid optimization problem, its feasible set, and its value function are provided. Checkable conditions to guarantee asymptotic stability of a set are provided. These conditions are given in terms of properties on the stage cost, terminal cost, and the existence of static state-feedback laws, related through a control Lyapunov function condition. Examples illustrate the results throughout the paper.",
+      "excerpt": "The problem of controlling hybrid dynamical systems using model predictive control (MPC) is formulated and sufficient conditions for asymptotic stability of a set are provided. Hybrid dynamical systems are modeled in terms of hybrid equations, involving a differential equation and a difference equation with inputs and constraints. The proposed hybrid MPC algorithm uses a suitable prediction and control horizon construction inspired by hybrid time domains. Structural properties of the hybrid optimization problem, its feasible set, and its value function are provided. Checkable conditions to guarantee asymptotic stability of a set are provided. These conditions are given in terms of...",
+      "summary": "Mathematics > Optimization and Control Title: Model Predictive Control of Hybrid Dynamical Systems Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. arXiv is committed to these values and only works... The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. The problem of controlling hybrid dynamical systems using model predictive control (MPC) is formulated and sufficient conditions for asymptotic stability of a set are provided. Watch next: The problem of controlling hybrid dynamical systems using model predictive control (MPC) is formulated and sufficient conditions for asymptotic stability of a set are provided.",
+      "what_happened": "Mathematics > Optimization and Control Title: Model Predictive Control of Hybrid Dynamical Systems Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. arXiv is committed to these values and only works...",
+      "why_matters": "The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. The problem of controlling hybrid dynamical systems using model predictive control (MPC) is formulated and sufficient conditions for asymptotic stability of a set are provided.",
+      "what_to_watch": "Watch next: The problem of controlling hybrid dynamical systems using model predictive control (MPC) is formulated and sufficient conditions for asymptotic stability of a set are provided.",
+      "key_points": [
+        "Mathematics > Optimization and Control Title: Model Predictive Control of Hybrid Dynamical Systems Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data...",
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "The problem of controlling hybrid dynamical systems using model predictive control (MPC) is formulated and sufficient conditions for asymptotic stability of a set are provided.",
+        "Hybrid dynamical systems are modeled in terms of hybrid equations, involving a differential equation and a difference equation with inputs and constraints.",
+        "Structural properties of the hybrid optimization problem, its feasible set, and its value function are provided.",
+        "The proposed hybrid MPC algorithm uses a suitable prediction and control horizon construction inspired by hybrid time domains.",
+        "These conditions are given in terms of properties on the stage cost, terminal cost, and the existence of static state-feedback laws, related through a control Lyapunov function condition.",
+        "Examples illustrate the results throughout the paper.",
+        "Checkable conditions to guarantee asymptotic stability of a set are provided."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "",
+      "image_url": ""
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.22031",
+      "title": "Mochi: Aligning Pre-training and Inference for Efficient Graph Foundation Models via Meta-Learning",
+      "description": "We propose Mochi, a Graph Foundation Model that addresses task unification and training efficiency by adopting a meta-learning based training framework. Prior models pre-train with reconstruction-based objectives such as link prediction, and assume that the resulting representations can be aligned with downstream tasks through a separate unification step such as class prototypes. We demonstrate through synthetic and real-world experiments that this procedure, while simple and intuitive, has limitations that directly affect downstream task performance. To address these limitations, Mochi pre-trains on few-shot episodes that mirror the downstream evaluation protocol, aligning the training objective with inference rather than relying on a post-hoc unification step. We show that Mochi, along with its more powerful variant Mochi++, achieves competitive or superior performance compared to existing Graph Foundation Models across 25 real-world graph datasets spanning node classification, link prediction, and graph classification, while requiring 8$\\sim$27 times less training time than the strongest baseline.",
+      "excerpt": "We propose Mochi, a Graph Foundation Model that addresses task unification and training efficiency by adopting a meta-learning based training framework. Prior models pre-train with reconstruction-based objectives such as link prediction, and assume that the resulting representations can be aligned with downstream tasks through a separate unification step such as class prototypes. We demonstrate through synthetic and real-world experiments that this procedure, while simple and intuitive, has limitations that directly affect downstream task performance. To address these limitations, Mochi pre-trains on few-shot episodes that mirror the downstream evaluation protocol, aligning the training...",
+      "summary": "Computer Science > Machine Learning Title: Mochi: Aligning Pre-training and Inference for Efficient Graph Foundation Models via Meta-Learning Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. arXiv is... The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. We propose Mochi, a Graph Foundation Model that addresses task unification and training efficiency by adopting a meta-learning based training framework. Watch next: We propose Mochi, a Graph Foundation Model that addresses task unification and training efficiency by adopting a meta-learning based training framework.",
+      "what_happened": "Computer Science > Machine Learning Title: Mochi: Aligning Pre-training and Inference for Efficient Graph Foundation Models via Meta-Learning Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. arXiv is...",
+      "why_matters": "The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. We propose Mochi, a Graph Foundation Model that addresses task unification and training efficiency by adopting a meta-learning based training framework.",
+      "what_to_watch": "Watch next: We propose Mochi, a Graph Foundation Model that addresses task unification and training efficiency by adopting a meta-learning based training framework.",
+      "key_points": [
+        "Computer Science > Machine Learning Title: Mochi: Aligning Pre-training and Inference for Efficient Graph Foundation Models via Meta-Learning Current browse context: References & Citations BibTeX formatted citation...",
+        "We propose Mochi, a Graph Foundation Model that addresses task unification and training efficiency by adopting a meta-learning based training framework.",
+        "We show that Mochi, along with its more powerful variant Mochi++, achieves competitive or superior performance compared to existing Graph Foundation Models across 25 real-world graph datasets spanning node...",
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "To address these limitations, Mochi pre-trains on few-shot episodes that mirror the downstream evaluation protocol, aligning the training objective with inference rather than relying on a post-hoc unification step.",
+        "Prior models pre-train with reconstruction-based objectives such as link prediction, and assume that the resulting representations can be aligned with downstream tasks through a separate unification step such as...",
+        "We demonstrate through synthetic and real-world experiments that this procedure, while simple and intuitive, has limitations that directly affect downstream task performance."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": ""
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.22089",
+      "title": "Ethics Testing: Proactive Identification of Generative AI System Harms",
+      "description": "Generative Artificial Intelligence (GAI) systems that can automatically generate content in the form of source code or other contents (e.g., images) has seen increasing popularity due to the emergence of tools such as ChatGPT which rely on Large Language Models (LLMs). Misuse of the automatically generated content can incur serious consequences due to potential harms in the generated content. Despite the importance of ensuring the quality of automatically generated content, there is little to no approach that can systematically generate tests for identifying software harms in the content generated by these GAI systems. In this article, we introduce the novel concept of ethics testing which aims to systematically generate tests for identifying software harms. Different from existing testing methodologies (e.g., fairness testing that aims to identifying software discrimination), ethics testing aims to systematically detect software harms that could be induced due to unethical behavior (e.g., harmful behavior or behavior that violates intellectual property rights) in automatically generated content. We introduced the concept of ethics testing, discussed the challenges therewithin, and conducted five case studies to show how ethics testing can be performed for generative AI systems.",
+      "excerpt": "Generative Artificial Intelligence (GAI) systems that can automatically generate content in the form of source code or other contents (e.g., images) has seen increasing popularity due to the emergence of tools such as ChatGPT which rely on Large Language Models (LLMs). Misuse of the automatically generated content can incur serious consequences due to potential harms in the generated content. Despite the importance of ensuring the quality of automatically generated content, there is little to no approach that can systematically generate tests for identifying software harms in the content generated by these GAI systems. In this article, we introduce the novel concept of ethics testing...",
+      "summary": "We introduced the concept of ethics testing, discussed the challenges therewithin, and conducted five case studies to show how ethics testing can be performed for generative AI systems. Computer Science > Software Engineering Title: Ethics Testing: Proactive Identification of Generative AI System Harms Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental... The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. Generative Artificial Intelligence (GAI) systems that can automatically generate content in the form of source code or other contents (e.g., images) has seen increasing popularity due to the emergence of tools such as ChatGPT which rely on Large... Watch next: Generative Artificial Intelligence (GAI) systems that can automatically generate content in the form of source code or other contents (e.g., images) has seen increasing popularity due to the emergence of tools such as ChatGPT which rely on...",
+      "what_happened": "We introduced the concept of ethics testing, discussed the challenges therewithin, and conducted five case studies to show how ethics testing can be performed for generative AI systems. Computer Science > Software Engineering Title: Ethics Testing: Proactive Identification of Generative AI System Harms Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental...",
+      "why_matters": "The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. Generative Artificial Intelligence (GAI) systems that can automatically generate content in the form of source code or other contents (e.g., images) has seen increasing popularity due to the emergence of tools such as ChatGPT which rely on Large...",
+      "what_to_watch": "Watch next: Generative Artificial Intelligence (GAI) systems that can automatically generate content in the form of source code or other contents (e.g., images) has seen increasing popularity due to the emergence of tools such as ChatGPT which rely on Large Language Models (LLMs).",
+      "key_points": [
+        "Generative Artificial Intelligence (GAI) systems that can automatically generate content in the form of source code or other contents (e.g., images) has seen increasing popularity due to the emergence of tools such...",
+        "We introduced the concept of ethics testing, discussed the challenges therewithin, and conducted five case studies to show how ethics testing can be performed for generative AI systems.",
+        "Misuse of the automatically generated content can incur serious consequences due to potential harms in the generated content.",
+        "Despite the importance of ensuring the quality of automatically generated content, there is little to no approach that can systematically generate tests for identifying software harms in the content generated by...",
+        "In this article, we introduce the novel concept of ethics testing which aims to systematically generate tests for identifying software harms.",
+        "Computer Science > Software Engineering Title: Ethics Testing: Proactive Identification of Generative AI System Harms Current browse context: References & Citations BibTeX formatted citation Bibliographic and...",
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "Different from existing testing methodologies (e.g., fairness testing that aims to identifying software discrimination), ethics testing aims to systematically detect software harms that could be induced due to..."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "",
+      "image_url": ""
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.22227",
+      "title": "A Co-Evolutionary Theory of Human-AI Coexistence: Mutualism, Governance, and Dynamics in Complex Societies",
+      "description": "Classical robot ethics is often framed around obedience, including Asimov's laws. This framing is insufficient for contemporary AI systems, which are increasingly adaptive, generative, embodied, and embedded in physical, psychological, and social environments. This paper proposes conditional mutualism under governance as a framework for human-AI coexistence: a co-evolutionary relationship in which humans and AI systems develop, specialize, and coordinate under institutional conditions that preserve reciprocity, reversibility, psychological safety, and social legitimacy. We synthesize concepts from computability, machine learning, foundation models, embodied AI, alignment, human-robot interaction, ecological mutualism, coevolution, and polycentric governance. We then formalize coexistence as a multiplex dynamical system across physical, psychological, and social layers, with reciprocal supply-demand coupling, conflict penalties, developmental freedom, and governance regularization. The model gives conditions for existence, uniqueness, and global asymptotic stability of equilibria. We complement the analytical results with deterministic ODE simulations, basin sweeps, sensitivity analyses, governance-regime comparisons, shock tests, and local stability checks. The simulations indicate that governed mutualism reaches a high coexistence index with negligible domination, whereas insufficient or excessive governance can produce domination, weak-benefit lock-in, or suppressed developmental freedom. The results suggest that human-AI coexistence should be designed as a co-evolutionary governance problem rather than as a static obedience problem.",
+      "excerpt": "Classical robot ethics is often framed around obedience, including Asimov's laws. This framing is insufficient for contemporary AI systems, which are increasingly adaptive, generative, embodied, and embedded in physical, psychological, and social environments. This paper proposes conditional mutualism under governance as a framework for human-AI coexistence: a co-evolutionary relationship in which humans and AI systems develop, specialize, and coordinate under institutional conditions that preserve reciprocity, reversibility, psychological safety, and social legitimacy. We synthesize concepts from computability, machine learning, foundation models, embodied AI, alignment, human-robot...",
+      "summary": "arXiv is committed to these values and only works with partners that adhere to them. Computer Science > Computers and Society Title: A Co-Evolutionary Theory of Human-AI Coexistence: Mutualism, Governance, and Dynamics in Complex Societies Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework... The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. The simulations indicate that governed mutualism reaches a high coexistence index with negligible domination, whereas insufficient or excessive governance can produce domination, weak-benefit lock-in, or suppressed developmental freedom. Watch next: We synthesize concepts from computability, machine learning, foundation models, embodied AI, alignment, human-robot interaction, ecological mutualism, coevolution, and polycentric governance.",
+      "what_happened": "arXiv is committed to these values and only works with partners that adhere to them. Computer Science > Computers and Society Title: A Co-Evolutionary Theory of Human-AI Coexistence: Mutualism, Governance, and Dynamics in Complex Societies Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework...",
+      "why_matters": "The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. The simulations indicate that governed mutualism reaches a high coexistence index with negligible domination, whereas insufficient or excessive governance can produce domination, weak-benefit lock-in, or suppressed developmental freedom.",
+      "what_to_watch": "Watch next: We synthesize concepts from computability, machine learning, foundation models, embodied AI, alignment, human-robot interaction, ecological mutualism, coevolution, and polycentric governance.",
+      "key_points": [
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "Computer Science > Computers and Society Title: A Co-Evolutionary Theory of Human-AI Coexistence: Mutualism, Governance, and Dynamics in Complex Societies Current browse context: References & Citations BibTeX...",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "We synthesize concepts from computability, machine learning, foundation models, embodied AI, alignment, human-robot interaction, ecological mutualism, coevolution, and polycentric governance.",
+        "This paper proposes conditional mutualism under governance as a framework for human-AI coexistence: a co-evolutionary relationship in which humans and AI systems develop, specialize, and coordinate under...",
+        "The model gives conditions for existence, uniqueness, and global asymptotic stability of equilibria.",
+        "This framing is insufficient for contemporary AI systems, which are increasingly adaptive, generative, embodied, and embedded in physical, psychological, and social environments.",
+        "We then formalize coexistence as a multiplex dynamical system across physical, psychological, and social layers, with reciprocal supply-demand coupling, conflict penalties, developmental freedom, and governance...",
+        "The results suggest that human-AI coexistence should be designed as a co-evolutionary governance problem rather than as a static obedience problem.",
+        "We complement the analytical results with deterministic ODE simulations, basin sweeps, sensitivity analyses, governance-regime comparisons, shock tests, and local stability checks."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "",
+      "image_url": ""
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.22292",
+      "title": "ReLeVAnT: Relevance Lexical Vectors for Accurate Legal Text Classification",
+      "description": "The classification of legal documents from an unstructured data corpus has several crucial applications in downstream tasks. Documents relevant to court filings are key in use cases such as drafting motions, memos, and outlines, as well as in tasks like docket summarisation, retrieval systems, and training data curation. Current methods classify based on provided metadata, LLM-extracted metadata, or multimodal methods. These methods depend on structured data, metadata, and extensive computational power. This task is approached from a perspective of leveraging discriminative features in the documents between classes. The authors propose ReLeVAnT, a framework for legal document binary classification. ReLeVAnT utilises n-gram processing, contrastive score matching, and a shallow neural network as the primary drivers for discriminative classification. It leverages one-time keyword extraction per corpus, followed by a shallow classifier to swiftly and reliably classify documents with 99.3% accuracy and 98.7% F1 score on the LexGLUE dataset.",
+      "excerpt": "The classification of legal documents from an unstructured data corpus has several crucial applications in downstream tasks. Documents relevant to court filings are key in use cases such as drafting motions, memos, and outlines, as well as in tasks like docket summarisation, retrieval systems, and training data curation. Current methods classify based on provided metadata, LLM-extracted metadata, or multimodal methods. These methods depend on structured data, metadata, and extensive computational power. This task is approached from a perspective of leveraging discriminative features in the documents between classes. The authors propose ReLeVAnT, a framework for legal document binary...",
+      "summary": "Computer Science > Computation and Language Title: ReLeVAnT: Relevance Lexical Vectors for Accurate Legal Text Classification Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. arXiv is committed to... The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. Documents relevant to court filings are key in use cases such as drafting motions, memos, and outlines, as well as in tasks like docket summarisation, retrieval systems, and training data curation. Watch next: Documents relevant to court filings are key in use cases such as drafting motions, memos, and outlines, as well as in tasks like docket summarisation, retrieval systems, and training data curation.",
+      "what_happened": "Computer Science > Computation and Language Title: ReLeVAnT: Relevance Lexical Vectors for Accurate Legal Text Classification Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. arXiv is committed to...",
+      "why_matters": "The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. Documents relevant to court filings are key in use cases such as drafting motions, memos, and outlines, as well as in tasks like docket summarisation, retrieval systems, and training data curation.",
+      "what_to_watch": "Watch next: Documents relevant to court filings are key in use cases such as drafting motions, memos, and outlines, as well as in tasks like docket summarisation, retrieval systems, and training data curation.",
+      "key_points": [
+        "Computer Science > Computation and Language Title: ReLeVAnT: Relevance Lexical Vectors for Accurate Legal Text Classification Current browse context: References & Citations BibTeX formatted citation Bibliographic and...",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "Documents relevant to court filings are key in use cases such as drafting motions, memos, and outlines, as well as in tasks like docket summarisation, retrieval systems, and training data curation.",
+        "It leverages one-time keyword extraction per corpus, followed by a shallow classifier to swiftly and reliably classify documents with 99.3% accuracy and 98.7% F1 score on the LexGLUE dataset.",
+        "These methods depend on structured data, metadata, and extensive computational power.",
+        "The classification of legal documents from an unstructured data corpus has several crucial applications in downstream tasks.",
+        "Current methods classify based on provided metadata, LLM-extracted metadata, or multimodal methods.",
+        "ReLeVAnT utilises n-gram processing, contrastive score matching, and a shallow neural network as the primary drivers for discriminative classification.",
+        "The authors propose ReLeVAnT, a framework for legal document binary classification."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "",
+      "image_url": ""
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.22722",
+      "title": "Aligning Dense Retrievers with LLM Utility via DistillationAligning Dense Retrievers with LLM Utility via Distillation",
+      "description": "Dense vector retrieval is the practical backbone of Retrieval- Augmented Generation (RAG), but similarity search can suffer from precision limitations. Conversely, utility-based approaches leveraging LLM re-ranking often achieve superior performance but are computationally prohibitive and prone to noise inherent in perplexity estimation. We propose Utility-Aligned Embeddings (UAE), a framework designed to merge these advantages into a practical, high-performance retrieval method. We formulate retrieval as a distribution matching problem, training a bi-encoder to imitate a utility distribution derived from perplexity reduction using a Utility-Modulated InfoNCE objective. This approach injects graded utility signals directly into the embedding space without requiring test-time LLM inference. On the QASPER benchmark, UAE improves retrieval Recall@1 by 30.59%, MAP by 30.16% and Token F1 by 17.3% over the strong semantic baseline BGE-Base. Crucially, UAE is over 180x faster than the efficient LLM re-ranking methods preserving competitive performance, demonstrating that aligning retrieval with generative utility yields reliable contexts at scale.",
+      "excerpt": "Dense vector retrieval is the practical backbone of Retrieval- Augmented Generation (RAG), but similarity search can suffer from precision limitations. Conversely, utility-based approaches leveraging LLM re-ranking often achieve superior performance but are computationally prohibitive and prone to noise inherent in perplexity estimation. We propose Utility-Aligned Embeddings (UAE), a framework designed to merge these advantages into a practical, high-performance retrieval method. We formulate retrieval as a distribution matching problem, training a bi-encoder to imitate a utility distribution derived from perplexity reduction using a Utility-Modulated InfoNCE objective. This approach...",
+      "summary": "Computer Science > Information Retrieval Title: Aligning Dense Retrievers with LLM Utility via DistillationAligning Dense Retrievers with LLM Utility via Distillation Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly... The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. This approach injects graded utility signals directly into the embedding space without requiring test-time LLM inference. Watch next: This approach injects graded utility signals directly into the embedding space without requiring test-time LLM inference.",
+      "what_happened": "Computer Science > Information Retrieval Title: Aligning Dense Retrievers with LLM Utility via DistillationAligning Dense Retrievers with LLM Utility via Distillation Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly...",
+      "why_matters": "The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. This approach injects graded utility signals directly into the embedding space without requiring test-time LLM inference.",
+      "what_to_watch": "Watch next: This approach injects graded utility signals directly into the embedding space without requiring test-time LLM inference.",
+      "key_points": [
+        "Computer Science > Information Retrieval Title: Aligning Dense Retrievers with LLM Utility via DistillationAligning Dense Retrievers with LLM Utility via Distillation Current browse context: References & Citations...",
+        "On the QASPER benchmark, UAE improves retrieval Recall@1 by 30.59%, MAP by 30.16% and Token F1 by 17.3% over the strong semantic baseline BGE-Base.",
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "This approach injects graded utility signals directly into the embedding space without requiring test-time LLM inference.",
+        "Crucially, UAE is over 180x faster than the efficient LLM re-ranking methods preserving competitive performance, demonstrating that aligning retrieval with generative utility yields reliable contexts at scale.",
+        "Conversely, utility-based approaches leveraging LLM re-ranking often achieve superior performance but are computationally prohibitive and prone to noise inherent in perplexity estimation.",
+        "Dense vector retrieval is the practical backbone of Retrieval- Augmented Generation (RAG), but similarity search can suffer from precision limitations.",
+        "We formulate retrieval as a distribution matching problem, training a bi-encoder to imitate a utility distribution derived from perplexity reduction using a Utility-Modulated InfoNCE objective.",
+        "We propose Utility-Aligned Embeddings (UAE), a framework designed to merge these advantages into a practical, high-performance retrieval method."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": ""
+    },
+    {
+      "url": "https://arxiv.org/abs/2508.03963",
+      "title": "Can Large Language Models Adequately Perform Symbolic Reasoning Over Time Series?",
+      "description": "Uncovering hidden symbolic laws from time series data, as an aspiration dating back to Kepler's discovery of planetary motion, remains a core challenge in scientific discovery and artificial intelligence. While Large Language Models show promise in structured reasoning tasks, their ability to infer interpretable, context-aligned symbolic structures from time series data is still underexplored. To systematically evaluate this capability, we introduce SymbolBench, a comprehensive benchmark designed to assess symbolic reasoning over real-world time series across three tasks: multivariate symbolic regression, Boolean network inference, and causal discovery. Unlike prior efforts limited to simple algebraic equations, SymbolBench spans a diverse set of symbolic forms with varying complexity. We further propose a unified framework that integrates LLMs with genetic programming to form a closed-loop symbolic reasoning system, where LLMs act both as predictors and evaluators. Our empirical results reveal key strengths and limitations of current models, highlighting the importance of combining domain knowledge, context alignment, and reasoning structure to improve LLMs in automated scientific discovery.",
+      "excerpt": "Uncovering hidden symbolic laws from time series data, as an aspiration dating back to Kepler's discovery of planetary motion, remains a core challenge in scientific discovery and artificial intelligence. While Large Language Models show promise in structured reasoning tasks, their ability to infer interpretable, context-aligned symbolic structures from time series data is still underexplored. To systematically evaluate this capability, we introduce SymbolBench, a comprehensive benchmark designed to assess symbolic reasoning over real-world time series across three tasks: multivariate symbolic regression, Boolean network inference, and causal discovery. Unlike prior efforts limited to...",
+      "summary": "We further propose a unified framework that integrates LLMs with genetic programming to form a closed-loop symbolic reasoning system, where LLMs act both as predictors and evaluators. arXiv is committed to these values and only works with partners that adhere to them. The practical impact: Our empirical results reveal key strengths and limitations of current models, highlighting the importance of combining domain knowledge, context alignment, and reasoning structure to improve LLMs in automated scientific discovery. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. Watch next: To systematically evaluate this capability, we introduce SymbolBench, a comprehensive benchmark designed to assess symbolic reasoning over real-world time series across three tasks: multivariate symbolic regression, Boolean network inference, and causal discovery. Computer Science > Artificial...",
+      "what_happened": "We further propose a unified framework that integrates LLMs with genetic programming to form a closed-loop symbolic reasoning system, where LLMs act both as predictors and evaluators. arXiv is committed to these values and only works with partners that adhere to them.",
+      "why_matters": "The practical impact: Our empirical results reveal key strengths and limitations of current models, highlighting the importance of combining domain knowledge, context alignment, and reasoning structure to improve LLMs in automated scientific discovery. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+      "what_to_watch": "Watch next: To systematically evaluate this capability, we introduce SymbolBench, a comprehensive benchmark designed to assess symbolic reasoning over real-world time series across three tasks: multivariate symbolic regression, Boolean network inference, and causal discovery. Computer Science > Artificial...",
+      "key_points": [
+        "Computer Science > Artificial Intelligence Title: Can Large Language Models Adequately Perform Symbolic Reasoning Over Time Series?",
+        "While Large Language Models show promise in structured reasoning tasks, their ability to infer interpretable, context-aligned symbolic structures from time series data is still underexplored.",
+        "Uncovering hidden symbolic laws from time series data, as an aspiration dating back to Kepler's discovery of planetary motion, remains a core challenge in scientific discovery and artificial intelligence.",
+        "To systematically evaluate this capability, we introduce SymbolBench, a comprehensive benchmark designed to assess symbolic reasoning over real-world time series across three tasks: multivariate symbolic regression...",
+        "We further propose a unified framework that integrates LLMs with genetic programming to form a closed-loop symbolic reasoning system, where LLMs act both as predictors and evaluators.",
+        "Our empirical results reveal key strengths and limitations of current models, highlighting the importance of combining domain knowledge, context alignment, and reasoning structure to improve LLMs in automated...",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental...",
+        "Unlike prior efforts limited to simple algebraic equations, SymbolBench spans a diverse set of symbolic forms with varying complexity."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": ""
+    },
+    {
+      "url": "https://arxiv.org/abs/2507.15753",
+      "title": "Algebraic Language Models for Inverse Design of Metamaterials via Diffusion Transformers",
+      "description": "Generative machine learning models have revolutionized material discovery by capturing complex structure-property relationships, yet extending these approaches to the inverse design of three-dimensional metamaterials remains limited by computational complexity and underexplored design spaces due to the lack of expressive representations. Here we present DiffuMeta, a generative framework integrating diffusion transformers with an algebraic language representation, encoding three-dimensional geometries as mathematical sentences. This compact, unified parameterization spans diverse topologies, enabling the direct application of transformers to structural design. DiffuMeta leverages diffusion models to generate new shell structures with precisely targeted stress-strain responses under large deformations, accounting for buckling and contact while addressing the inherent one-to-many mapping by producing diverse solutions. Uniquely, our approach enables simultaneous control over multiple mechanical objectives, including linear and nonlinear responses beyond training domains. Experimental validation of fabricated structures further confirms the efficacy of our approach for accelerated design of metamaterials and structures with tailored properties.",
+      "excerpt": "Generative machine learning models have revolutionized material discovery by capturing complex structure-property relationships, yet extending these approaches to the inverse design of three-dimensional metamaterials remains limited by computational complexity and underexplored design spaces due to the lack of expressive representations. Here we present DiffuMeta, a generative framework integrating diffusion transformers with an algebraic language representation, encoding three-dimensional geometries as mathematical sentences. This compact, unified parameterization spans diverse topologies, enabling the direct application of transformers to structural design. DiffuMeta leverages...",
+      "summary": "Computer Science > Computational Engineering, Finance, and Science Title: Algebraic Language Models for Inverse Design of Metamaterials via Diffusion Transformers Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on... The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. Here we present DiffuMeta, a generative framework integrating diffusion transformers with an algebraic language representation, encoding three-dimensional geometries as mathematical sentences. Watch next: Here we present DiffuMeta, a generative framework integrating diffusion transformers with an algebraic language representation, encoding three-dimensional geometries as mathematical sentences.",
+      "what_happened": "Computer Science > Computational Engineering, Finance, and Science Title: Algebraic Language Models for Inverse Design of Metamaterials via Diffusion Transformers Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on...",
+      "why_matters": "The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. Here we present DiffuMeta, a generative framework integrating diffusion transformers with an algebraic language representation, encoding three-dimensional geometries as mathematical sentences.",
+      "what_to_watch": "Watch next: Here we present DiffuMeta, a generative framework integrating diffusion transformers with an algebraic language representation, encoding three-dimensional geometries as mathematical sentences.",
+      "key_points": [
+        "Computer Science > Computational Engineering, Finance, and Science Title: Algebraic Language Models for Inverse Design of Metamaterials via Diffusion Transformers Current browse context: References & Citations BibTeX...",
+        "Uniquely, our approach enables simultaneous control over multiple mechanical objectives, including linear and nonlinear responses beyond training domains.",
+        "Here we present DiffuMeta, a generative framework integrating diffusion transformers with an algebraic language representation, encoding three-dimensional geometries as mathematical sentences.",
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "Generative machine learning models have revolutionized material discovery by capturing complex structure-property relationships, yet extending these approaches to the inverse design of three-dimensional metamaterials...",
+        "This compact, unified parameterization spans diverse topologies, enabling the direct application of transformers to structural design.",
+        "DiffuMeta leverages diffusion models to generate new shell structures with precisely targeted stress-strain responses under large deformations, accounting for buckling and contact while addressing the inherent...",
+        "Experimental validation of fabricated structures further confirms the efficacy of our approach for accelerated design of metamaterials and structures with tailored properties."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "",
+      "image_url": ""
+    },
+    {
+      "url": "https://arxiv.org/abs/2511.14135",
+      "title": "AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning",
+      "description": "Fair workload enforcement in heterogeneous multi-agent systems that pursue shared objectives remains challenging. Fixed fairness penalties often introduce inefficiencies, training instability, and conflicting agent incentives. Reward-shaping approaches in fair Multi-Agent Reinforcement Learning (MARL) typically incorporate fairness through heuristic penalties or scalar reward modifications and often rely on post-hoc evaluation. However, these methods do not guarantee that a desired fairness level will be satisfied. To address this limitation, we propose the Adaptive Fairness Multi-Agent Reinforcement Learning (AdaFair-MARL) framework, which formulates workload fairness as an explicit constraint so that agents maintain balanced contributions while optimizing team performance. We present AdaFair-MARL, a constrained cooperative MARL framework whose core algorithmic component is a primal-dual update that enforces workload fairness via adaptive Lagrange multiplier updates. Grounding the framework in a cooperative Markov game, we derive the fairness constraint from Jain's Fairness Index (JFI) geometry and show that the resulting feasible set admits a second-order cone representation, enabling principled Lagrangian dual-ascent updates without manual penalty tuning. Experiments in a simulated hospital coordination environment (MARLHospital) demonstrate the effectiveness of AdaFair-MARL compared to reward-shaping and fixed-penalty fairness methods, improving workload balance while maintaining team performance. We found that AdaFair-MARL achieves nearly perfect constraint satisfaction (0.99-1.00) while significantly improving workload fairness compared to fixed-penalty baselines.",
+      "excerpt": "Fair workload enforcement in heterogeneous multi-agent systems that pursue shared objectives remains challenging. Fixed fairness penalties often introduce inefficiencies, training instability, and conflicting agent incentives. Reward-shaping approaches in fair Multi-Agent Reinforcement Learning (MARL) typically incorporate fairness through heuristic penalties or scalar reward modifications and often rely on post-hoc evaluation. However, these methods do not guarantee that a desired fairness level will be satisfied. To address this limitation, we propose the Adaptive Fairness Multi-Agent Reinforcement Learning (AdaFair-MARL) framework, which formulates workload fairness as an explicit...",
+      "summary": "Computer Science > Machine Learning Title: AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Grounding the... The practical impact: To address this limitation, we propose the Adaptive Fairness Multi-Agent Reinforcement Learning (AdaFair-MARL) framework, which formulates workload fairness as an explicit constraint so that agents maintain balanced contributions while optimizing team performance. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and... Watch next: Fixed fairness penalties often introduce inefficiencies, training instability, and conflicting agent incentives.",
+      "what_happened": "Computer Science > Machine Learning Title: AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Grounding the...",
+      "why_matters": "The practical impact: To address this limitation, we propose the Adaptive Fairness Multi-Agent Reinforcement Learning (AdaFair-MARL) framework, which formulates workload fairness as an explicit constraint so that agents maintain balanced contributions while optimizing team performance. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and...",
+      "what_to_watch": "Watch next: Fixed fairness penalties often introduce inefficiencies, training instability, and conflicting agent incentives.",
+      "key_points": [
+        "Computer Science > Machine Learning Title: AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning Current browse context: References & Citations BibTeX formatted citation...",
+        "To address this limitation, we propose the Adaptive Fairness Multi-Agent Reinforcement Learning (AdaFair-MARL) framework, which formulates workload fairness as an explicit constraint so that agents maintain balanced...",
+        "Fixed fairness penalties often introduce inefficiencies, training instability, and conflicting agent incentives.",
+        "Grounding the framework in a cooperative Markov game, we derive the fairness constraint from Jain's Fairness Index (JFI) geometry and show that the resulting feasible set admits a second-order cone representation...",
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "We present AdaFair-MARL, a constrained cooperative MARL framework whose core algorithmic component is a primal-dual update that enforces workload fairness via adaptive Lagrange multiplier updates.",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "We found that AdaFair-MARL achieves nearly perfect constraint satisfaction (0.99-1.00) while significantly improving workload fairness compared to fixed-penalty baselines.",
+        "Reward-shaping approaches in fair Multi-Agent Reinforcement Learning (MARL) typically incorporate fairness through heuristic penalties or scalar reward modifications and often rely on post-hoc evaluation.",
+        "Experiments in a simulated hospital coordination environment (MARLHospital) demonstrate the effectiveness of AdaFair-MARL compared to reward-shaping and fixed-penalty fairness methods, improving workload balance..."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "",
+      "image_url": ""
+    },
+    {
+      "url": "https://arxiv.org/abs/2601.19674",
+      "title": "Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters",
+      "description": "Ambitious decarbonisation targets are rapidly increasing the commission of new offshore wind farms. For these newly commissioned plants to run, accurate power forecasts are needed from the onset. These allow grid stability, good reserve management and efficient energy trading. Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have. To overcome this data scarcity, we propose a novel transfer learning framework that clusters power output according to covariate meteorological features. Rather than training a single, general-purpose model, we thus forecast with an ensemble of expert models, each trained on a cluster. As these pre-trained models each specialise in a distinct weather pattern, they adapt efficiently to new sites and capture transferable, climate-dependent dynamics. Our contributions are two-fold - we propose this novel framework and comprehensively evaluate it on eight offshore wind farms, achieving accurate cross-domain forecasting with under five months of site-specific data. Our experiments achieve a MAE of 3.52\\%, providing empirical verification that reliable forecasts do not require a full annual cycle. Beyond power forecasting, this climate-aware transfer learning method opens new opportunities for offshore wind applications such as early-stage wind resource assessment, where reducing data requirements can significantly accelerate project development whilst effectively mitigating its inherent risks.",
+      "excerpt": "Ambitious decarbonisation targets are rapidly increasing the commission of new offshore wind farms. For these newly commissioned plants to run, accurate power forecasts are needed from the onset. These allow grid stability, good reserve management and efficient energy trading. Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have. To overcome this data scarcity, we propose a novel transfer learning framework that clusters power output according to covariate meteorological features. Rather than training a single, general-purpose model, we thus forecast with an ensemble of expert models, each...",
+      "summary": "Computer Science > Machine Learning Title: Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. arXiv is... The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. These allow grid stability, good reserve management and efficient energy trading. Watch next: Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have.",
+      "what_happened": "Computer Science > Machine Learning Title: Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. arXiv is...",
+      "why_matters": "The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. These allow grid stability, good reserve management and efficient energy trading.",
+      "what_to_watch": "Watch next: Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have.",
+      "key_points": [
+        "Computer Science > Machine Learning Title: Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters Current browse context: References & Citations BibTeX formatted citation...",
+        "Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have.",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "To overcome this data scarcity, we propose a novel transfer learning framework that clusters power output according to covariate meteorological features.",
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "Rather than training a single, general-purpose model, we thus forecast with an ensemble of expert models, each trained on a cluster.",
+        "Beyond power forecasting, this climate-aware transfer learning method opens new opportunities for offshore wind applications such as early-stage wind resource assessment, where reducing data requirements can...",
+        "These allow grid stability, good reserve management and efficient energy trading.",
+        "Our contributions are two-fold - we propose this novel framework and comprehensively evaluate it on eight offshore wind farms, achieving accurate cross-domain forecasting with under five months of site-specific data.",
+        "As these pre-trained models each specialise in a distinct weather pattern, they adapt efficiently to new sites and capture transferable, climate-dependent dynamics."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": ""
+    }
+  ],
+  "carousel_part": 1,
+  "carousel_total_parts": 3,
+  "slides": [
+    "Microsoft Releases Fara1.5: A Family of Browser Computer-Use Agents (4B/9B/27B) That Outperform OpenAI Operator and Gemini 2.5 Computer Use on Online-Mind2Web",
+    "Google Flow expands globally, introduces Gemini Omni and new music features",
+    "Hark raises $700M+ to build \u2018personalized intelligence\u2019 devices - SiliconANGLE",
+    "Microsoft and Black Tech Street Launch Greenwood Cyber + AI Lab in Tulsa",
+    "New Anthropic-, Blackstone-backed AI services firm acquires Fractional AI - SiliconANGLE",
+    "Security Weekly Podcast Network (Audio): FCC, Github, MiniShai-hulud, Stated of Supply Chain, Itron, CRA, NIS2, and more!! - PSW #927",
+    "Run Highly Efficient Multimodal Agentic AI with NVIDIA Nemotron 3 Nano Omni Using vLLM",
+    "Self-Correction as Feedback Control: Error Dynamics, Stability Thresholds, and Prompt Interventions in LLMs",
+    "Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond",
+    "Model Predictive Control of Hybrid Dynamical Systems",
+    "Mochi: Aligning Pre-training and Inference for Efficient Graph Foundation Models via Meta-Learning",
+    "Ethics Testing: Proactive Identification of Generative AI System Harms",
+    "A Co-Evolutionary Theory of Human-AI Coexistence: Mutualism, Governance, and Dynamics in Complex Societies",
+    "ReLeVAnT: Relevance Lexical Vectors for Accurate Legal Text Classification",
+    "Aligning Dense Retrievers with LLM Utility via DistillationAligning Dense Retrievers with LLM Utility via Distillation",
+    "Can Large Language Models Adequately Perform Symbolic Reasoning Over Time Series?",
+    "Algebraic Language Models for Inverse Design of Metamaterials via Diffusion Transformers",
+    "AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning",
+    "Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters",
+    "Follow for the next AI briefing"
+  ]
+}
