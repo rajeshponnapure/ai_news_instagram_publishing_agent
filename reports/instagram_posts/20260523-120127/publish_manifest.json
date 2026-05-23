@@ -7,10 +7,13 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260523-120127/01_20260523-1050_nous-research-releases-contrastive-neuron-attribution-cna-sparse-mlp-cir/slide_01.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260523-120127/01_20260523-1050_nous-research-releases-contrastive-neuron-attribution-cna-sparse-mlp-cir/slide_02.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
-      "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 13 concrete signal(s), 1 source link(s)"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-120127/01_20260523-1050_nous-research-releases-contrastive-neuron-attribution-cna-sparse-mlp-cir/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-120127/01_20260523-1050_nous-research-releases-contrastive-neuron-attribution-cna-sparse-mlp-cir/slide_02.png"
+      ],
+      "status": "published",
+      "creation_id": "18044095139577438",
+      "published_at": "2026-05-23T12:02:53+00:00"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260523-120127/02_20260523-1150_s-detected",
@@ -19,10 +22,13 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260523-120127/02_20260523-1150_s-detected/slide_01.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260523-120127/02_20260523-1150_s-detected/slide_02.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
-      "story_score": 0.88,
-      "story_selected_reason": "source URL available, 3 concrete signal(s), 1 source link(s)"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-120127/02_20260523-1150_s-detected/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-120127/02_20260523-1150_s-detected/slide_02.png"
+      ],
+      "status": "published",
+      "creation_id": "18044095214577438",
+      "published_at": "2026-05-23T12:03:50+00:00"
     }
   ]
 }
