@@ -15,10 +15,25 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260523-114205/01_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_09.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260523-114205/01_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_10.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/01_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/01_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/01_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/01_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/01_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/01_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/01_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_07.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/01_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_08.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/01_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_09.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/01_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_10.png"
+      ],
+      "status": "published",
       "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 30 concrete signal(s), 5 source link(s)"
+      "story_selected_reason": "article image available, source URL available, 30 concrete signal(s), 5 source link(s)",
+      "creation_id": "18044093093577438",
+      "published_at": "2026-05-23T11:44:35+00:00",
+      "facebook_status": "publish_failed",
+      "facebook_error": "Facebook photo upload failed because the token is missing required permissions. You need a Page Access Token (not a User token) with 'pages_manage_posts' and 'pages_read_engagement' permissions. The old 'publish_actions' permission is deprecated and must not be used. Original error: Facebook Graph API request failed for 1154443704417851/photos: 403 Forbidden. Response: {\"error\":{\"message\":\"(#200) The permission(s) pages_manage_posts are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AtIoVYefAHm3Y1scVSvw1vv\"}}"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260523-114205/02_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b",
@@ -35,10 +50,23 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260523-114205/02_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_09.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260523-114205/02_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_10.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/02_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/02_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/02_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/02_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/02_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/02_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/02_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_07.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/02_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_08.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/02_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_09.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/02_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_10.png"
+      ],
+      "status": "published",
       "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 11 concrete signal(s), 5 source link(s)"
+      "story_selected_reason": "article image available, source URL available, 11 concrete signal(s), 5 source link(s)",
+      "creation_id": "18044093378577438",
+      "published_at": "2026-05-23T11:46:03+00:00"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260523-114205/03_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b",
@@ -52,10 +80,20 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260523-114205/03_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_06.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260523-114205/03_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_07.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/03_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/03_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/03_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/03_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/03_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/03_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/03_20260523-0413_microsoft-releases-fara1-5-a-family-of-browser-computer-use-agents-4b-9b/slide_07.png"
+      ],
+      "status": "published",
       "story_score": 1.0,
-      "story_selected_reason": "source URL available, 20 concrete signal(s), 5 source link(s)"
+      "story_selected_reason": "source URL available, 20 concrete signal(s), 5 source link(s)",
+      "creation_id": "18044093504577438",
+      "published_at": "2026-05-23T11:47:20+00:00"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260523-114205/04_20260523-0924_perplexity-open-sources-bumblebee-a-read-only-supply-chain-scanner-for-d",
@@ -64,10 +102,15 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260523-114205/04_20260523-0924_perplexity-open-sources-bumblebee-a-read-only-supply-chain-scanner-for-d/slide_01.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260523-114205/04_20260523-0924_perplexity-open-sources-bumblebee-a-read-only-supply-chain-scanner-for-d/slide_02.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/04_20260523-0924_perplexity-open-sources-bumblebee-a-read-only-supply-chain-scanner-for-d/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/04_20260523-0924_perplexity-open-sources-bumblebee-a-read-only-supply-chain-scanner-for-d/slide_02.png"
+      ],
+      "status": "published",
       "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 12 concrete signal(s), 1 source link(s)"
+      "story_selected_reason": "article image available, source URL available, 12 concrete signal(s), 1 source link(s)",
+      "creation_id": "18044093582577438",
+      "published_at": "2026-05-23T11:48:19+00:00"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260523-114205/05_20260523-1050_s-detected",
@@ -76,10 +119,15 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260523-114205/05_20260523-1050_s-detected/slide_01.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260523-114205/05_20260523-1050_s-detected/slide_02.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/05_20260523-1050_s-detected/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-114205/05_20260523-1050_s-detected/slide_02.png"
+      ],
+      "status": "published",
       "story_score": 0.88,
-      "story_selected_reason": "source URL available, 3 concrete signal(s), 1 source link(s)"
+      "story_selected_reason": "source URL available, 3 concrete signal(s), 1 source link(s)",
+      "creation_id": "18044093645577438",
+      "published_at": "2026-05-23T11:49:20+00:00"
     }
   ]
 }
