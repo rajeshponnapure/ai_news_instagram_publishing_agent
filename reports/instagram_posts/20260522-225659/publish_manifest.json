@@ -7,10 +7,13 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-225659/01_20260522-2237_breaking-ai-update-23-may-2026-04-07-am-ist/slide_01.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-225659/01_20260522-2237_breaking-ai-update-23-may-2026-04-07-am-ist/slide_02.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
-      "story_score": 0.93,
-      "story_selected_reason": "source URL available, 26 concrete signal(s), 1 source link(s)"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-225659/01_20260522-2237_breaking-ai-update-23-may-2026-04-07-am-ist/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-225659/01_20260522-2237_breaking-ai-update-23-may-2026-04-07-am-ist/slide_02.png"
+      ],
+      "status": "published",
+      "creation_id": "18044099837577438",
+      "published_at": "2026-05-23T12:42:52+00:00"
     }
   ]
 }

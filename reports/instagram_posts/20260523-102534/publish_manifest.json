@@ -28,14 +28,8 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-102534/01_20260523-0413_hark-raises-700m-to-build-personalized-intelligence-devices-siliconangle/slide_10.png"
       ],
       "status": "published",
-      "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 21 concrete signal(s), 5 source link(s)",
       "creation_id": "18044086145577438",
-      "published_at": "2026-05-23T10:28:48+00:00",
-      "story_published": true,
-      "story_published_at": "2026-05-23T10:32:57+00:00",
-      "facebook_status": "publish_failed",
-      "facebook_error": "Facebook photo upload failed because the token is missing required permissions. You need a Page Access Token (not a User token) with 'pages_manage_posts' and 'pages_read_engagement' permissions. The old 'publish_actions' permission is deprecated and must not be used. Original error: Facebook Graph API request failed for 1154443704417851/photos: 403 Forbidden. Response: {\"error\":{\"message\":\"(#200) The permission(s) pages_manage_posts are not available. It could because either they are deprecated or need to be approved by App Review.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AQa6pW57qPrlB4aDZvDwqre\"}}"
+      "published_at": "2026-05-23T10:28:48+00:00"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260523-102534/02_20260523-0413_hark-raises-700m-to-build-personalized-intelligence-devices-siliconangle",
@@ -65,8 +59,6 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-102534/02_20260523-0413_hark-raises-700m-to-build-personalized-intelligence-devices-siliconangle/slide_10.png"
       ],
       "status": "published",
-      "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 20 concrete signal(s), 5 source link(s)",
       "creation_id": "18044086343577438",
       "published_at": "2026-05-23T10:30:22+00:00"
     },
@@ -92,8 +84,6 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-102534/03_20260523-0413_hark-raises-700m-to-build-personalized-intelligence-devices-siliconangle/slide_07.png"
       ],
       "status": "published",
-      "story_score": 1.0,
-      "story_selected_reason": "source URL available, 30 concrete signal(s), 5 source link(s)",
       "creation_id": "18044086592577438",
       "published_at": "2026-05-23T10:31:47+00:00"
     },
@@ -109,8 +99,6 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260523-102534/04_20260523-0924_perplexity-open-sources-bumblebee-a-read-only-supply-chain-scanner-for-d/slide_02.png"
       ],
       "status": "published",
-      "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 16 concrete signal(s), 1 source link(s)",
       "creation_id": "18044086685577438",
       "published_at": "2026-05-23T10:32:34+00:00"
     }
