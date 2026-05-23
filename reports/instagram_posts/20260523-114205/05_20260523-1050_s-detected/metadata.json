@@ -1,0 +1,54 @@
+{
+  "email_received_at": "2026-05-23T10:50+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "(s) detected",
+  "subject": "\ud83d\udea8 AI Alert: 1 new launch \u2014 MarkTechPost AI",
+  "source_date": "Sat, 23 May 2026 03:50:12 -0700",
+  "companies": [
+    "Nous Research"
+  ],
+  "models": [],
+  "topics": [
+    "model release",
+    "hardware and compute"
+  ],
+  "article_url": "https://www.marktechpost.com/2026/05/23/nous-research-releases-contrastive-neuron-attribution-cna-sparse-mlp-circuit-steering-without-sae-training-or-weight-modification/",
+  "article_title": "(s) detected",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.marktechpost.com/2026/05/23/nous-research-releases-contrastive-neuron-attribution-cna-sparse-mlp-circuit-steering-without-sae-training-or-weight-modification/",
+      "title": "(s) detected",
+      "description": "(s) detected ================================================== [MEDIUM] Nous Research Releases Contrastive Neuron Attribution (CNA): Sparse MLP Circuit Steering Without SAE Training or Weight Modification Company : MarkTechPost AI Summary : Nous Research releases Contrastive Neuron Attribution (CNA), a method that identifies and ablates sparse MLP neuron circuits to steer LLM behavior - no sparse autoencoder training, no weight modificat Link :",
+      "excerpt": "(s) detected ================================================== [MEDIUM] Nous Research Releases Contrastive Neuron Attribution (CNA): Sparse MLP Circuit Steering Without SAE Training or Weight Modification Company : MarkTechPost AI Summary : Nous Research releases Contrastive Neuron Attribution (CNA), a method that identifies and ablates sparse MLP neuron circuits to steer LLM behavior - no sparse autoencoder training, no weight modificat Link :",
+      "summary": "(s) detected ================================================== [MEDIUM] Nous Research Releases Contrastive Neuron Attribution (CNA): Sparse MLP Circuit Steering Without SAE Training or Weight Modification Company : MarkTechPost AI Summary : Nous Research releases Contrastive Neuron Attribution (CNA), a method that identifies and ablates sparse MLP neuron circuits to steer LLM behavior - no sparse autoencoder training, no weight modificat Link : (s) detected ==================================================...",
+      "what_happened": "(s) detected ================================================== [MEDIUM] Nous Research Releases Contrastive Neuron Attribution (CNA): Sparse MLP Circuit Steering Without SAE Training or Weight Modification Company : MarkTechPost AI Summary : Nous Research releases Contrastive Neuron Attribution (CNA), a method that identifies and ablates sparse MLP neuron circuits to steer LLM behavior - no sparse autoencoder training, no weight modificat Link : (s) detected ==================================================...",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "(s) detected ================================================== [MEDIUM] Nous Research Releases Contrastive Neuron Attribution (CNA): Sparse MLP Circuit Steering Without SAE Training or Weight Modification Company ..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "",
+      "image_url": ""
+    }
+  ],
+  "carousel_part": 1,
+  "carousel_total_parts": 1,
+  "slides": [
+    "(s) detected",
+    "Follow for the next AI briefing"
+  ]
+}
