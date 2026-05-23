@@ -3,6 +3,7 @@ from __future__ import annotations
 import html
 import hashlib
 import json
+import random
 import re
 import shutil
 import tempfile
@@ -799,32 +800,18 @@ def _write_digest_slide(
     margin = 54
     image_box = (margin, 40, CANVAS_W - margin, 700)
 
-    # ── Article image (top half) ──────────────────────────────────────────────
+    # ── Article image (top half) — AI-generated if no source found ────────────
     artwork = _load_artwork(
         slide.get("image_path", ""),
         slide.get("topic", "AI"),
         image_box,
         image_cls, draw_cls, enhance_cls, filter_cls, ops_cls,
+        fallback_text=slide.get("title", "") + " " + slide.get("body", ""),
     )
+    artwork = enhance_cls.Contrast(artwork).enhance(1.02) if artwork else artwork
     if artwork is not None:
-        artwork = enhance_cls.Color(artwork).enhance(0.88)
-        artwork = enhance_cls.Contrast(artwork).enhance(1.08)
         _paste_contained(image, artwork, image_box, radius=32, pad=4, cover=True)
         draw.rounded_rectangle(image_box, radius=32, outline=ACCENT_GREEN, width=2)
-        # Subtle gradient overlay on bottom of image for readability
-        for gy in range(580, 700):
-            alpha = int(180 * (gy - 580) / 120)
-            draw.line([(margin, gy), (CANVAS_W - margin, gy)], fill=(5, 5, 5, alpha))
-    else:
-        # No image — draw a branded placeholder
-        draw.rounded_rectangle(image_box, radius=32, fill="#0A0A0A", outline=ACCENT_GREEN, width=2)
-        draw.rounded_rectangle((margin + 30, 260, CANVAS_W - margin - 30, 440), radius=20, fill="#111111", outline=(200, 255, 0, 60))
-        draw.text(
-            (CANVAS_W // 2 - 40, 320),
-            "🤖",
-            fill=ACCENT_GREEN,
-            font=_font(image_font, 72, bold=True),
-        )
 
     # ── Eyebrow + slide counter row — plain text, no pill containers ──────────
     font_meta = _font(image_font, 26, bold=True, mono=True)
@@ -839,19 +826,19 @@ def _write_digest_slide(
 
     # ── Headline — auto-sized, full text, no truncation, centre aligned ───────
     headline = _clean_headline(str(slide.get("title", "AI Update")))
-    headline_box = (margin, 762, CANVAS_W - margin, 930)
+    headline_box = (margin, 762, CANVAS_W - margin, 900)
     _draw_autofit_text(
         draw, headline, headline_box, image_font,
         fill=TEXT_WHITE, bold=True, size_max=68, size_min=32, max_lines=3, align="center",
     )
 
     # ── Separator line ────────────────────────────────────────────────────────
-    draw.line([(margin, 938), (CANVAS_W - margin, 938)], fill=ACCENT_GREEN, width=2)
+    draw.line([(margin, 910), (CANVAS_W - margin, 910)], fill=ACCENT_GREEN, width=2)
 
     # ── Key points / body — numbered items left-aligned, fallback prose centred ─
     body_text = str(slide.get("body", "")).strip()
     if body_text:
-        body_box = (margin, 950, CANVAS_W - margin, 1220)
+        body_box = (margin, 920, CANVAS_W - margin, 1220)
         # Numbered key points (contain emoji digits) rendered left-aligned;
         # plain prose falls back to centred alignment.
         is_key_points = bool(re.search(r"[1-6]⃣", body_text))
@@ -918,17 +905,17 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
             max_lines=4, align="center",
         )
 
-        # ── Image below the title ─────────────────────────────────────────────
+        # ── Image below the title — AI-generated if no source found ────────────
         image_box = (54, 322, CANVAS_W - 54, 1180)
         artwork = _load_artwork(
             slide.get("image_path", ""),
             slide.get("topic", "AI"),
             image_box,
             Image, ImageDraw, ImageEnhance, ImageFilter, ImageOps,
+            fallback_text=slide.get("title", "") + " " + slide.get("body", ""),
         )
+        artwork = ImageEnhance.Contrast(artwork).enhance(1.02) if artwork else artwork
         if artwork is not None:
-            artwork = ImageEnhance.Color(artwork).enhance(0.90)
-            artwork = ImageEnhance.Contrast(artwork).enhance(1.05)
             _paste_contained(image, artwork, image_box, radius=30, pad=4, cover=False)
             draw.rounded_rectangle(image_box, radius=30, outline=ACCENT_GREEN, width=2)
             # Source label at bottom of image
@@ -941,15 +928,6 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
                     (76, 1150, CANVAS_W - 76, 1178),
                     font_src, SOFT_WHITE, 1,
                 )
-        else:
-            _draw_no_image_story_card(
-                draw,
-                slide.get("eyebrow", "STORY"),
-                slide.get("title", "AI update"),
-                slide.get("url", ""),
-                image_box,
-                font_eyebrow, font_title, font_body, font_meta,
-            )
 
     elif slide["kind"] == "keypoint":
         # ── Article headline at TOP — neon green, full text, auto-sized ───────
@@ -1262,8 +1240,6 @@ def _qa_slide_png(path: Path) -> list[str]:
 def _draw_accent_frame(draw) -> None:
     draw.line((86, 94, 318, 94), fill=ACCENT_GREEN, width=4)
     draw.line((762, 94, 994, 94), fill=ACCENT_GREEN, width=4)
-    draw.line((86, 1256, 318, 1256), fill=ACCENT_GREEN, width=4)
-    draw.line((762, 1256, 994, 1256), fill=ACCENT_GREEN, width=4)
     draw.line((92, 124, 92, 214), fill=(200, 255, 0, 70), width=3)
     draw.line((988, 124, 988, 214), fill=(200, 255, 0, 70), width=3)
 
@@ -1353,17 +1329,162 @@ def _wrap_to_width_overflow(draw, text: str, font, width: int, max_lines: int) -
     return (lines or [""]), overflow_text
 
 
-def _load_artwork(image_path: str, topic: str, box: tuple[int, int, int, int], image_cls, draw_cls, enhance_cls, filter_cls, ops_cls):
+def _load_artwork(image_path: str, topic: str, box: tuple[int, int, int, int], image_cls, draw_cls, enhance_cls, filter_cls, ops_cls, fallback_text=""):
     path = _resolve_image_source(image_path)
     if path and path.exists():
         try:
             art = image_cls.open(path).convert("RGB")
-            art = enhance_cls.Color(art).enhance(0.88)
-            art = enhance_cls.Contrast(art).enhance(1.08)
-            return art.filter(filter_cls.UnsharpMask(radius=2, percent=110))
+            art = enhance_cls.Contrast(art).enhance(1.02)
+            return art.filter(filter_cls.UnsharpMask(radius=1, percent=80))
         except Exception:
             pass
-    return None
+    try:
+        return _generate_ai_image(fallback_text or topic, topic, box, image_cls, draw_cls)
+    except Exception:
+        pass
+    x1, y1, x2, y2 = box
+    img = image_cls.new("RGB", (max(1, x2 - x1), max(1, y2 - y1)), (5, 5, 15))
+    return img
+
+
+def _generate_ai_image(
+    text: str,
+    topic: str,
+    box: tuple[int, int, int, int],
+    image_cls,
+    draw_cls,
+):
+    """Generate a self-contained abstract illustration with heading text overlay.
+
+    Uses the heading text to select a colour palette via keyword matching,
+    renders a modern abstract composition, and overlays the heading in neon
+    accent colour.  Zero external dependencies — pure Pillow, works in
+    GitHub Actions without any local model or API.
+    """
+    from PIL import ImageFont
+
+    x1, y1, x2, y2 = box
+    w, h = x2 - x1, y2 - y1
+    if w <= 0 or h <= 0:
+        return None
+    if w > 2000 or h > 2000:
+        w, h = min(w, 2000), min(h, 2000)
+
+    heading = (text or topic or "AI").strip()[:200]
+
+    # ── Colour palette from heading keywords ─────────────────────────────
+    hl = heading.lower()
+    if any(w in hl for w in ("launch", "release", "introduc", "debut", "unveil", "new")):
+        base, a1, a2, glow = (4, 12, 28), (0, 140, 230), (0, 220, 255), (0, 80, 180)
+    elif any(w in hl for w in ("record", "beat", "surpass", "achieve", "milestone", "break", "crush")):
+        base, a1, a2, glow = (22, 8, 4), (210, 80, 20), (255, 200, 50), (180, 60, 10)
+    elif any(w in hl for w in ("security", "risk", "threat", "attack", "breach", "vulnerability", "safety")):
+        base, a1, a2, glow = (22, 4, 4), (200, 40, 20), (255, 100, 50), (160, 30, 10)
+    elif any(w in hl for w in ("ai", "model", "neural", "gpt", "claude", "gemini", "llama", "deep", "learn", "intelligence")):
+        base, a1, a2, glow = (10, 5, 28), (100, 40, 210), (200, 255, 0), (70, 25, 160)
+    elif any(w in hl for w in ("fund", "billion", "million", "raise", "invest", "acquire", "deal", "valuation")):
+        base, a1, a2, glow = (4, 18, 10), (0, 180, 90), (200, 255, 0), (0, 120, 70)
+    elif any(w in hl for w in ("robot", "automation", "agent", "autonomous", "self-driving")):
+        base, a1, a2, glow = (4, 8, 28), (40, 80, 220), (100, 200, 255), (20, 50, 180)
+    elif any(w in hl for w in ("open", "source", "code", "developer", "api", "sdk")):
+        base, a1, a2, glow = (5, 18, 22), (0, 160, 180), (100, 220, 255), (0, 100, 150)
+    else:
+        palettes = {
+            "research": ((10, 5, 25), (90, 50, 200), (200, 255, 0), (60, 30, 160)),
+            "tools": ((4, 12, 28), (0, 130, 210), (0, 200, 255), (0, 80, 180)),
+            "product": ((4, 18, 12), (0, 160, 90), (200, 255, 0), (0, 120, 70)),
+            "funding": ((22, 8, 4), (200, 100, 20), (255, 200, 50), (160, 60, 10)),
+            "policy": ((10, 4, 20), (130, 40, 200), (200, 180, 255), (90, 20, 160)),
+        }
+        t = topic.lower() if topic else ""
+        if t in palettes:
+            base, a1, a2, glow = palettes[t]
+        else:
+            base, a1, a2, glow = (5, 5, 18), (60, 80, 130), (200, 255, 0), (40, 50, 110)
+
+    # ── Render abstract background ───────────────────────────────────────
+    img = image_cls.new("RGBA", (w, h), base + (255,))
+    draw = draw_cls.Draw(img, "RGBA")
+    rng = random.Random(heading)
+
+    for y in range(h):
+        t = y / h
+        r = int(base[0] * (1 - t) + glow[0] * t * 0.35)
+        g = int(base[1] * (1 - t) + glow[1] * t * 0.35)
+        b = int(base[2] * (1 - t) + glow[2] * t * 0.35)
+        draw.line([(0, y), (w, y)], fill=(r, g, b, 255))
+
+    cx, cy = w // 2, int(h * 0.45)
+    mr = max(w, h) // 3
+    for r in range(mr, 0, -6):
+        a = max(0, min(50, (mr - r) // 3))
+        draw.ellipse([(cx - r, cy - r), (cx + r, cy + r)], fill=glow + (a,))
+
+    for _ in range(rng.randint(4, 9)):
+        rx, ry, rr = rng.randint(0, w), rng.randint(0, h), rng.randint(18, min(w, h) // 5)
+        c = a1 if rng.random() < 0.5 else a2
+        draw.ellipse([(rx - rr, ry - rr), (rx + rr, ry + rr)], outline=c + (rng.randint(8, 35),), width=rng.randint(1, 3))
+
+    pts = [(rng.randint(0, w), rng.randint(0, h)) for _ in range(rng.randint(10, 18))]
+    for i, (px, py) in enumerate(pts):
+        for j, (qx, qy) in enumerate(pts[i + 1:], i + 1):
+            d = ((px - qx) ** 2 + (py - qy) ** 2) ** 0.5
+            if d < max(w, h) * 0.45:
+                a = max(8, int(55 * (1 - d / (max(w, h) * 0.45))))
+                draw.line([(px, py), (qx, qy)], fill=a1 + (a,), width=1)
+
+    for px, py in pts:
+        draw.ellipse([(px - 3, py - 3), (px + 3, py + 3)], fill=a2 + (180,))
+
+    sp = rng.choice((40, 50, 60, 80))
+    for gx in range(0, w, sp):
+        draw.line([(gx, 0), (gx, h)], fill=(255, 255, 255, 5), width=1)
+    for gy in range(0, h, sp):
+        draw.line([(0, gy), (w, gy)], fill=(255, 255, 255, 5), width=1)
+
+    s = min(w, h) // 7
+    for gx, gy, dx, dy in ((0, 0, 1, 1), (w, 0, -1, 1), (0, h, 1, -1), (w, h, -1, -1)):
+        draw.line([(gx + 8, gy + 8), (gx + dx * s + 8, gy + 8)], fill=a2 + (120,), width=3)
+        draw.line([(gx + 8, gy + 8), (gx + 8, gy + dy * s + 8)], fill=a2 + (120,), width=3)
+
+    # ── Overlay heading text on a dark pill at the bottom ────────────────
+    try:
+        fs = max(24, min(w, h) // 14)
+        font = _font(ImageFont, fs, bold=True)
+        mw = w - 80
+        words = heading.split()
+        lines, cur = [], ""
+        for word in words:
+            t = (cur + " " + word).strip()
+            if draw.textlength(t, font=font) > mw and cur:
+                lines.append(cur)
+                cur = word
+            else:
+                cur = t
+        if cur:
+            lines.append(cur)
+        lines = lines[:3]
+        lh_list = []
+        for line in lines:
+            bb = draw.textbbox((0, 0), line, font=font)
+            lh_list.append(bb[3] - bb[1])
+        th = sum(lh_list) + max(0, len(lines) - 1) * 6
+        ty = h - th - 40
+        if ty < 10:
+            ty = max(10, (h - th) // 2)
+        pad = 24
+        draw.rounded_rectangle(
+            (24, ty - pad, w - 24, ty + th + pad),
+            radius=14, fill=(0, 0, 0, 200),
+        )
+        for line, lh in zip(lines, lh_list):
+            lw = int(draw.textlength(line, font=font))
+            draw.text(((w - lw) // 2, ty), line, fill=a2, font=font)
+            ty += lh + 6
+    except Exception:
+        pass
+
+    return img.convert("RGB")
 
 
 def _draw_no_image_story_card(
@@ -1646,7 +1767,7 @@ def _select_unique_article_image(
     1. Article's own featured/hero image (from blog — highest relevance)
     2. Shared image library — best semantic match that has NOT been used yet
     3. Wikimedia Commons web search — unique image downloaded fresh
-    4. Return empty string (slide will render text-only fallback)
+    4. Return empty string (slide layer will generate an AI illustration)
 
     Deduplication uses both the remote URL and the local file path so that
     the same physical file is never shown on two different slides in one batch.
@@ -1686,12 +1807,9 @@ def _select_unique_article_image(
         else:
             path = Path(value)
             if path.exists() and value not in used_image_paths:
-                # Prefer HD images from library; fall through if sub-HD but still use as last resort.
                 if _validate_image_hd(value):
                     used_image_paths.add(value)
                     return value
-                # Keep as fallback — will be used below if no HD source found.
-                # (We still mark it so the loop below won't pick it redundantly.)
                 pass
 
     # ── 1b. Non-HD local fallback from article keys ───────────────────────────
@@ -1719,12 +1837,6 @@ def _select_unique_article_image(
     if web_image:
         used_image_paths.add(web_image)
         return web_image
-
-    # ── 4. PIL fallback — generate a branded text-art image ─────────────────────────
-    fallback = _generate_branded_fallback_image(title or topic or "AI Update", topic)
-    if fallback and fallback not in used_image_paths:
-        used_image_paths.add(fallback)
-        return fallback
 
     return ""
 

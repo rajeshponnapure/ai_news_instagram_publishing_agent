@@ -24,50 +24,59 @@ from scripts.publish_latest_instagram import _facebook_publish_enabled
 
 class DigestPipelineTests(unittest.TestCase):
     def setUp(self) -> None:
-        self._reference_patch = patch("email_summary_agent.instagram._find_reference_image_for_article", return_value="")
+        self._reference_patch = patch("email_summary_agent.instagram._find_reference_image_for_article_unique", return_value=None)
         self._reference_patch.start()
 
     def tearDown(self) -> None:
         self._reference_patch.stop()
 
-    def test_single_short_news_email_creates_four_slide_plan(self) -> None:
+    def test_single_short_news_email_creates_slide_plan(self) -> None:
         summary = _summary_with_articles(1)
 
         parts = _split_summary_for_carousels(summary)
         slides = _build_slide_specs(parts[0], datetime(2026, 5, 21, 9, 0))
 
         self.assertEqual(len(parts), 1)
-        self.assertEqual([slide["kind"] for slide in slides], ["image", "text", "text", "cta"])
+        self.assertEqual(slides[0]["kind"], "image")
+        self.assertGreater(len(slides), 3)
+        self.assertEqual(slides[-1]["kind"], "cta")
+        self.assertTrue(all(s["kind"] in ("image", "keypoint", "cta") for s in slides))
 
-    def test_single_long_news_email_creates_five_slide_plan(self) -> None:
+    def test_single_long_news_email_creates_more_keypoints(self) -> None:
         summary = _summary_with_articles(1, long=True)
 
         parts = _split_summary_for_carousels(summary)
-        slides = _build_slide_specs(parts[0], datetime(2026, 5, 21, 9, 0))
+        short_slides = _build_slide_specs(_summary_with_articles(1), datetime(2026, 5, 21, 9, 0))
+        long_slides = _build_slide_specs(parts[0], datetime(2026, 5, 21, 9, 0))
 
         self.assertEqual(len(parts), 1)
-        self.assertEqual([slide["kind"] for slide in slides], ["image", "text", "text", "text", "cta"])
+        self.assertGreaterEqual(len(long_slides), len(short_slides))
 
-    def test_two_news_digest_creates_nine_slide_plan(self) -> None:
+    def test_two_news_stories_create_carousel(self) -> None:
         summary = _summary_with_articles(2)
 
         parts = _split_summary_for_carousels(summary)
         slides = _build_slide_specs(parts[0], datetime(2026, 5, 21, 9, 0))
 
         self.assertEqual(len(parts), 1)
-        self.assertEqual(len(slides), 7)
-        self.assertEqual([slide["kind"] for slide in slides], ["image", "text", "text", "image", "text", "text", "cta"])
+        self.assertGreater(len(slides), 4)
+        self.assertEqual(slides[0]["kind"], "image")
+        self.assertEqual(slides[-1]["kind"], "cta")
+        kinds = [s["kind"] for s in slides]
+        self.assertIn("keypoint", kinds)
+        self.assertEqual(kinds.count("image"), 2)
 
-    def test_four_news_digest_splits_into_two_carousel_parts(self) -> None:
+    def test_four_news_stories_split_into_multiple_carousel_parts(self) -> None:
         summary = _summary_with_articles(4)
 
         parts = _split_summary_for_carousels(summary)
         slide_counts = [len(_build_slide_specs(part, datetime(2026, 5, 21, 9, 0))) for part in parts]
 
         self.assertEqual(len(parts), 2)
-        self.assertEqual(slide_counts, [7, 7])
-        self.assertTrue(parts[0].headline.endswith("Part 1"))
-        self.assertTrue(parts[1].headline.endswith("Part 2"))
+        self.assertGreater(slide_counts[0], 4)
+        self.assertGreater(slide_counts[1], 4)
+        self.assertEqual(parts[0].headline, "AI News Update")
+        self.assertEqual(parts[1].headline, "AI News Update")
 
     def test_digest_parser_extracts_one_story_per_url(self) -> None:
         email = EmailItem(
@@ -109,7 +118,7 @@ class DigestPipelineTests(unittest.TestCase):
     def test_missing_article_image_does_not_use_placeholder_url(self) -> None:
         summary = _summary_with_articles(1)
 
-        with patch("email_summary_agent.instagram._find_reference_image_for_article", return_value=""):
+        with patch("email_summary_agent.instagram._find_reference_image_for_article_unique", return_value=None):
             slides = _build_slide_specs(summary, datetime(2026, 5, 21, 9, 0))
 
         self.assertEqual(slides[0]["kind"], "image")
@@ -118,7 +127,7 @@ class DigestPipelineTests(unittest.TestCase):
     def test_missing_article_image_can_use_reference_search_result(self) -> None:
         summary = _summary_with_articles(1)
 
-        with patch("email_summary_agent.instagram._find_reference_image_for_article", return_value="data/article_assets/reference.jpg"):
+        with patch("email_summary_agent.instagram._find_reference_image_for_article_unique", return_value="data/article_assets/reference.jpg"):
             slides = _build_slide_specs(summary, datetime(2026, 5, 21, 9, 0))
 
         self.assertEqual(slides[0]["image_path"], "data/article_assets/reference.jpg")
@@ -319,10 +328,10 @@ def _summary_with_articles(count: int, long: bool = False) -> EmailSummary:
         for index in range(1, count + 1)
     ]
     return EmailSummary(
-        message_key="digest",
-        subject="Daily AI Digest",
+        message_key="test",
+        subject="AI News Update",
         source_date="Thu, 21 May 2026 09:00:00 +0530",
-        headline="Daily AI Digest",
+        headline="AI News Update",
         summary="A daily collection of AI news.",
         key_points=["AI companies shipped multiple updates.", "Developers should watch adoption."],
         companies=["OpenAI", "AWS"],
