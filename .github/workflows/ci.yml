@@ -44,16 +44,17 @@ jobs:
           export PYTHONPATH='.'
           pytest -q
 
-      - name: Run sample stepwise zero-budget pass
+      - name: Run sample end-to-end pass (no network, no publish)
         env:
-          # Make sure CI run uses zero-publish to avoid accidental network publish
+          # Disable all publish paths — CI must never post to Instagram/Facebook
           CREATE_INSTAGRAM_POSTS: 'false'
+          AUTO_PUBLISH_INSTAGRAM: 'false'
           AUTO_PUBLISH_FACEBOOK: 'false'
           OLLAMA_URL: ''
           OLLAMA_MODEL: ''
         run: |
           export PYTHONPATH='.'
-          python -m email_summary_agent.agent --sample --once --stepwise --zero-budget
+          python -m email_summary_agent.agent --sample
 
       - name: Upload reports (if any)
         if: always()

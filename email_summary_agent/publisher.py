@@ -129,6 +129,14 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
         if len(urls) < 2:
             continue
         try:
+            # Instagram enforces a minimum gap between consecutive posts.
+            # Wait 30 seconds before every post after the first so the API
+            # does not reject the second and subsequent carousels with a
+            # rate-limit error when a single run processes multiple emails.
+            if published > 0:
+                print(f"Waiting 30 s before next carousel to respect Instagram rate limits …")
+                time.sleep(30)
+
             creation_id = post.get("creation_id") or _create_carousel_container(settings, urls[:10], post.get("caption", ""))
             post["creation_id"] = creation_id
             post["status"] = "container_created"
@@ -137,6 +145,7 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
             _publish_container_with_retry(settings, creation_id)
             post["status"] = "published"
             post["published_at"] = datetime.now().astimezone().isoformat(timespec="seconds")
+            print(f"Published carousel {published + 1}: {post.get('folder', '')}")
             if settings.auto_publish_facebook:
                 try:
                     _publish_facebook_post(settings, post)

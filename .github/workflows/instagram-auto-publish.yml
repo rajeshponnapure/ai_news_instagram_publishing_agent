@@ -1,12 +1,32 @@
 name: Instagram Auto Publish
 
+# ─────────────────────────────────────────────────────────────────────────────
+# Architecture
+# ─────────────────────────────────────────────────────────────────────────────
+#
+#  generate  ──►  deploy-pages  ──►  publish
+#
+#  generate     Polls Gmail every 15 minutes for new AI-news emails, summarises
+#               them, renders carousel slides as PNGs, commits to the repo.
+#               AUTO_PUBLISH_INSTAGRAM is OFF — images must be on GitHub Pages
+#               before Instagram can download them.
+#
+#  deploy-pages Deploys the reports/ folder to GitHub Pages so all slide PNGs
+#               are reachable at a public HTTPS URL.
+#
+#  publish      Reads the manifest, calls Instagram Graph API with the GitHub
+#               Pages URLs, and commits the publish status back.
+#
+# The repo MUST be public and GitHub Pages must be enabled (Settings → Pages
+# → Source: GitHub Actions).
+# ─────────────────────────────────────────────────────────────────────────────
+
 on:
   schedule:
     # Runs every 15 minutes. Always polls for new emails only.
     - cron: '*/15 * * * *'
   workflow_dispatch:
     # Manual trigger - only for maintenance/recovery operations.
-    # Automatic runs never use this path.
     inputs:
       run_mode:
         description: 'Maintenance mode - what to process'
@@ -29,7 +49,9 @@ permissions:
   id-token: write
 
 jobs:
+  # ── 1. GENERATE ──────────────────────────────────────────────────────────────
   generate:
+    name: Generate carousel slides
     runs-on: ubuntu-latest
     # Digest emails with 50 news items produce up to ~150 slides across posts.
     # Allow extra time for image downloads and slide rendering.
@@ -48,16 +70,17 @@ jobs:
       SUMMARY_PROVIDER: local
       PROCESS_ALL_MATCHING: 'false'
       LOOKBACK_HOURS: '48'
-      EMAIL_CHECK_INTERVAL_MINUTES: '50'
+      # Slightly under 15 min so back-to-back runs always scan for new mail.
+      EMAIL_CHECK_INTERVAL_MINUTES: '12'
       MAX_EMAILS_PER_RUN: '5'
-      # Digest emails can have 15–50 news items — set the ceiling high enough
-      # to capture every story in one pass.  Each item becomes one carousel slide.
+      # Digest emails can have 15-50 news items - capture every story in one pass.
       MAX_ARTICLE_LINKS_PER_EMAIL: '50'
       ENRICH_ARTICLES: 'true'
       CREATE_INSTAGRAM_POSTS: 'true'
+      # DO NOT publish here - images must be deployed to GitHub Pages first.
       AUTO_PUBLISH_INSTAGRAM: 'false'
-      # Instagram carousel maximum is 20 slides per post.  The agent splits
-      # digest posts automatically when they exceed this cap.
+      AUTO_PUBLISH_FACEBOOK: 'false'
+      # Instagram carousel maximum is 20 slides per post.
       MAX_CAROUSEL_SLIDES: '20'
       PYTHONUTF8: '1'
 
@@ -67,18 +90,18 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up Python
+      - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: pip
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
 
-      - name: Install Playwright browser
+      - name: Install Playwright Chromium (for article image scraping)
         run: python -m playwright install chromium
 
       - name: Log trigger
@@ -86,7 +109,7 @@ jobs:
           echo "Workflow event: ${{ github.event_name }}"
           echo "Email check interval: ${EMAIL_CHECK_INTERVAL_MINUTES} minutes"
 
-      - name: Process AI news email
+      - name: Process AI news emails
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.run_mode }}" = "rebuild_all" ]; then
             python -m email_summary_agent --once --all --reprocess
@@ -161,6 +184,7 @@ jobs:
             echo "has_batch=false" >> "$GITHUB_OUTPUT"
             echo "All carousels are already published or failed. Skipping deploy and publish."
           fi
+
       - name: Explain skipped publish
         if: steps.detect.outputs.has_batch != 'true'
         run: |
@@ -174,7 +198,9 @@ jobs:
         with:
           path: reports
 
+  # ── 2. DEPLOY TO GITHUB PAGES ────────────────────────────────────────────────
   deploy-pages:
+    name: Deploy reports to GitHub Pages
     needs: generate
     if: needs.generate.outputs.has_batch == 'true'
     runs-on: ubuntu-latest
@@ -191,7 +217,9 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
+  # ── 3. PUBLISH TO INSTAGRAM ───────────────────────────────────────────────────
   publish:
+    name: Publish to Instagram (+ Story + Facebook)
     needs: deploy-pages
     runs-on: ubuntu-latest
     timeout-minutes: 40
@@ -204,6 +232,7 @@ jobs:
       FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
       FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
       IG_API_VERSION: v24.0
+      # GitHub Pages URL - slides are publicly reachable here before Instagram fetches them.
       PUBLIC_MEDIA_BASE_URL: ${{ needs.deploy-pages.outputs.page_url }}instagram_posts
       PYTHONUTF8: '1'
 
@@ -213,27 +242,28 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Pull generated commit
+      - name: Pull generated commit (fetches slides committed by generate)
         run: git pull --ff-only
 
-      - name: Set up Python
+      - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: pip
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
 
-      - name: Publish latest carousel to Instagram
+      - name: Publish latest carousel to Instagram (+ Story + Facebook)
         run: python scripts/publish_latest_instagram.py
 
       - name: Commit publish manifest status
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
           [ -d reports/instagram_posts ] && git add -f reports/instagram_posts/
           if git diff --cached --quiet; then
             echo "No publish status changes."

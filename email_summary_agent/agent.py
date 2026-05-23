@@ -238,10 +238,12 @@ def process_items(
                 _safe_print(f"Found {len(fresh_emails)} new emails. Processing the oldest {chunk_size} this round; {deferred_count} left for later.")
                 fresh_emails = fresh_emails[:chunk_size]
 
-        # Strict stepwise processing: fully complete one email end-to-end before next
+        # Stepwise processing: fully summarise every email before generating slides.
+        # Carousel generation happens once as a batch AFTER the loop so we create
+        # a single clean batch directory instead of one per email.
         summaries: list[tuple[EmailItem, EmailSummary]] = []
         for email in fresh_emails:
-            _safe_print(f"Stepwise processing: {email.subject}")
+            _safe_print(f"Summarising: {email.subject}")
             enriched_email = email
             story_limit = _story_limit(settings, email)
             seed_items = parse_news_items(email, max_links=story_limit)
@@ -257,24 +259,6 @@ def process_items(
 
             # Summarize with full-extract (no truncation)
             summary = provider.summarize(enriched_email, articles=articles, full_extract=True)
-
-            # Create a per-email report and Instagram post immediately
-            report_path = write_report([summary], settings.reports_dir, source_label=source_label)
-            carousel_dirs = []
-            if settings.create_instagram_posts:
-                try:
-                    settings.validate_instagram_publish()
-                    carousel_dirs = write_instagram_carousels([summary], settings.instagram_dir, clear_existing=False)
-                    if carousel_dirs:
-                        manifest_path = write_publish_manifest(carousel_dirs, settings.public_media_base_url)
-                        if manifest_path:
-                            publish_ready_carousels(settings, manifest_path)
-                            if settings.auto_publish_facebook:
-                                publish_ready_facebook_posts(settings, manifest_path)
-                except Exception:
-                    # Do not abort the whole run; mark this email as deferred if rendering/publishing fails
-                    _safe_print(f"Warning: failed to render/publish carousel for {email.subject}")
-
             summaries.append((email, summary))
 
         report_path = None
@@ -282,11 +266,18 @@ def process_items(
         published_count = 0
         if summaries:
             summary_items = [summary for _email, summary in summaries]
+
+            # Write the combined markdown report for all emails in this run.
             report_path = write_report(
                 summary_items,
                 settings.reports_dir,
                 source_label=source_label,
             )
+
+            # Generate all carousel slides in a single batch directory.
+            # This runs AFTER all summaries are ready so we produce one clean
+            # batch (not N per-email batches) and the manifest gets accurate
+            # public URLs from the start.
             if settings.create_instagram_posts:
                 settings.validate_instagram_publish()
                 carousel_dirs = write_instagram_carousels(
@@ -295,11 +286,21 @@ def process_items(
                     clear_existing=clear_existing_posts,
                 )
                 instagram_count = len(carousel_dirs)
-                manifest_path = write_publish_manifest(carousel_dirs, settings.public_media_base_url)
+                _safe_print(
+                    f"Generated {instagram_count} carousel(s) for "
+                    f"{len(summaries)} email(s)."
+                )
+                manifest_path = write_publish_manifest(
+                    carousel_dirs, settings.public_media_base_url
+                )
                 if manifest_path:
+                    # publish_ready_carousels() is a no-op when
+                    # AUTO_PUBLISH_INSTAGRAM=false (generate job).
+                    # It is active in publish_latest_instagram.py.
                     published_count = publish_ready_carousels(settings, manifest_path)
                     if settings.auto_publish_facebook:
                         publish_ready_facebook_posts(settings, manifest_path)
+
             for email, summary in summaries:
                 store.mark_processed(email, summary, report_path)
 
@@ -432,6 +433,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--sample", action="store_true", help="Generate a report from sample emails")
     parser.add_argument("--all", action="store_true", help="Fetch every matching email from the configured sender")
     parser.add_argument("--reprocess", action="store_true", help="Summarize matching emails again even if they were already processed")
+    # Legacy/no-op flags kept for backwards-compatibility with older CI scripts
+    parser.add_argument("--stepwise", action="store_true", help="(no-op, kept for compatibility)")
+    parser.add_argument("--zero-budget", action="store_true", help="(no-op, kept for compatibility)")
     # NOTE: CLI runs are restricted to GitHub Actions. This binary will early-exit locally.
     args = parser.parse_args(argv)
 

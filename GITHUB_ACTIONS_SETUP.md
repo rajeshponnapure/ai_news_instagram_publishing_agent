@@ -1,8 +1,131 @@
-# ⚙️ GitHub Actions Setup Guide
+# GitHub Actions Setup Guide
 
-## 🎯 Overview
+> **Last updated**: Workflow redesigned — GitHub Pages removed, raw GitHub URLs used instead. Schedule changed to hourly.
 
-Your repository now has 3 automated GitHub Actions workflows:
+## Architecture
+
+```
+[Gmail inbox]
+      │  new email from grdevelopers.co@gmail.com
+      ▼
+┌─────────────────────────────────────────────────────┐
+│  JOB 1 — generate  (runs every hour, ~50 min)       │
+│                                                     │
+│  1. Poll Gmail for new AI-news emails               │
+│  2. Scrape article images (Playwright + Chromium)   │
+│  3. Summarise → extract key points                  │
+│  4. Render Instagram carousel PNGs (black bg,       │
+│     neon-green headings, @graitech handle)          │
+│  5. Write manifest with raw GitHub content URLs     │
+│  6. Commit slides + manifest to repo                │
+└───────────────────┬─────────────────────────────────┘
+                    │  only runs when new slides were committed
+                    ▼
+┌─────────────────────────────────────────────────────┐
+│  JOB 2 — publish  (runs ~5-10 min after generate)   │
+│                                                     │
+│  1. Pull the committed slides                       │
+│  2. Wait 15 s for GitHub CDN propagation            │
+│  3. POST to Instagram Graph API (carousel + Story)  │
+│  4. POST to Facebook Page (if configured)           │
+│  5. Commit publish status back to repo              │
+└─────────────────────────────────────────────────────┘
+```
+
+Images are served from `raw.githubusercontent.com` — **no GitHub Pages required**.
+The repository **must be public** for Instagram to reach the image URLs.
+
+---
+
+## One-Time Setup
+
+### 1. Make the repository public
+**Settings → Danger Zone → Change visibility → Public**
+
+If the repo must stay private, you need an external image host (Cloudinary, S3, etc.).
+
+### 2. Add GitHub Secrets
+**Settings → Secrets and variables → Actions → New repository secret**
+
+| Secret | Value | Required |
+|---|---|---|
+| `IMAP_USERNAME` | Your Gmail address | ✅ |
+| `IMAP_PASSWORD` | Gmail **App Password** (not your login password) | ✅ |
+| `EMAIL_SENDER_FILTER` | Sender to watch (e.g. `grdevelopers.co@gmail.com`) | ✅ |
+| `IG_USER_ID` | Numeric Instagram Business/Creator user ID | ✅ |
+| `IG_ACCESS_TOKEN` | Long-lived Instagram Graph API access token | ✅ |
+| `FB_PAGE_ID` | Facebook Page numeric ID | ⬜ optional |
+| `FB_PAGE_ACCESS_TOKEN` | Facebook Page access token | ⬜ optional |
+
+**Gmail App Password**: myaccount.google.com → Security → App Passwords → Mail
+
+**Instagram token**: Create a Meta Developer app, add Instagram Graph API, connect your Business/Creator account, generate a long-lived token with `instagram_basic` + `instagram_content_publish` permissions.
+
+### 3. Enable workflow write permissions
+**Settings → Actions → General → Workflow permissions → Read and write** ✅
+
+---
+
+## Schedule
+
+Runs **every hour on the hour** (`0 * * * *`). Each run checks whether enough time has passed since the last email scan (`EMAIL_CHECK_INTERVAL_MINUTES=55`). If no new email, exits in seconds.
+
+**Manual trigger**: Actions → Instagram Auto Publish → Run workflow
+
+| Mode | What it does |
+|---|---|
+| `normal` | Same as scheduled — new mail only |
+| `backfill_24h` | Reprocesses recent sender mail |
+| `rebuild_all` | Reprocesses every matching inbox email |
+
+---
+
+## Instagram Caption Structure
+
+Every post caption contains:
+1. Hook line (punchy, <125 chars)
+2. Swipe prompt (drives carousel engagement)
+3. Lead paragraph (2–3 sentence summary)
+4. Key-point bullets (3–5 takeaways with emojis)
+5. Closing question (drives comments)
+6. Save-bait line (boosts algorithm reach)
+7. **ALL source article URLs** (from the original email)
+8. 15–20 hashtags (niche + company + broad mix)
+9. Disclaimer + attribution (always shown, with topic-specific warnings)
+
+---
+
+## Troubleshooting
+
+| Symptom | Fix |
+|---|---|
+| "No new content" every run | Check `IMAP_USERNAME`, `IMAP_PASSWORD`, `EMAIL_SENDER_FILTER` secrets |
+| Instagram returns 404 for images | Repo must be **public** |
+| "IG_ACCESS_TOKEN invalid/expired" | Refresh token — Instagram tokens expire every 60 days |
+| Workflow takes >50 min | Reduce `MAX_ARTICLE_LINKS_PER_EMAIL` to 20 |
+| CI tests fail | CI runs with `--sample` (no real email/Instagram calls needed) |
+
+---
+
+## Output File Layout
+
+```
+reports/instagram_posts/
+  20260522-140000/               ← batch (one per hourly run)
+    01_20260522-1400_ai-news/    ← carousel (one per email)
+      slide_01.png               ← cover: full title + article image
+      slide_02.png               ← key-point slide
+      ...
+      caption.txt                ← full caption with ALL source links
+      metadata.json
+    publish_manifest.json        ← publish status
+
+data/agent.sqlite3               ← processed emails + used images
+```
+
+---
+
+## Previous Overview (original content below)
 
 1. **Process AI News Emails** (`process-emails-scheduled.yml`) - Runs every 15 minutes
 2. **CI Code Quality** (`ci-tests.yml`) - Validates code on push/PR
