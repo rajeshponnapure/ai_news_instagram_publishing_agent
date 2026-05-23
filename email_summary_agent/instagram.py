@@ -825,57 +825,43 @@ def _write_digest_slide(
             font=_font(image_font, 72, bold=True),
         )
 
-    # ── Eyebrow + slide counter row ───────────────────────────────────────────
+    # ── Eyebrow + slide counter row — plain text, no pill containers ──────────
     font_meta = _font(image_font, 26, bold=True, mono=True)
     eyebrow = str(slide.get("eyebrow", "🤖 AI NEWS"))
-    _draw_slide_chip(
-        draw,
-        eyebrow,
-        (margin, 714, margin + 280, 756),
-        font_meta,
-        fill="#0B0B0B",
-        outline=ACCENT_GREEN,
-    )
+    draw.text((margin, 722), eyebrow, fill=ACCENT_GREEN, font=font_meta)
     counter_text = f"{slide_number:02d} / {total_slides:02d}"
-    _draw_slide_chip(
-        draw,
-        counter_text,
-        (CANVAS_W - margin - 160, 714, CANVAS_W - margin, 756),
-        font_meta,
-        fill="#0B0B0B",
-        outline=(60, 60, 60, 200),
-    )
+    try:
+        cw = draw.textlength(counter_text, font=font_meta)
+    except Exception:
+        cw = len(counter_text) * 14
+    draw.text((CANVAS_W - margin - int(cw), 722), counter_text, fill=SOFT_WHITE, font=font_meta)
 
-    # ── Headline — auto-sized, full text, no truncation ───────────────────────
+    # ── Headline — auto-sized, full text, no truncation, centre aligned ───────
     headline = _clean_headline(str(slide.get("title", "AI Update")))
-    headline_box = (margin, 768, CANVAS_W - margin, 930)
+    headline_box = (margin, 762, CANVAS_W - margin, 930)
     _draw_autofit_text(
         draw, headline, headline_box, image_font,
-        fill=TEXT_WHITE, bold=True, size_max=68, size_min=32, max_lines=3, align="left",
+        fill=TEXT_WHITE, bold=True, size_max=68, size_min=32, max_lines=3, align="center",
     )
 
     # ── Separator line ────────────────────────────────────────────────────────
     draw.line([(margin, 938), (CANVAS_W - margin, 938)], fill=ACCENT_GREEN, width=2)
 
-    # ── Body summary — auto-sized, no dots, complete sentences ───────────────
+    # ── Body summary — auto-sized, no dots, complete sentences, centre aligned ─
     body_text = str(slide.get("body", "")).strip()
     if body_text:
         body_box = (margin, 950, CANVAS_W - margin, 1220)
         _draw_autofit_text(
             draw, body_text, body_box, image_font,
-            fill=SOFT_WHITE, bold=False, size_max=36, size_min=FONT_MIN_READABLE, max_lines=8, align="left",
+            fill=SOFT_WHITE, bold=False, size_max=36, size_min=FONT_MIN_READABLE, max_lines=8, align="center",
         )
 
-    # ── Source credit ─────────────────────────────────────────────────────────
+    # ── Source credit — plain text, no container ──────────────────────────────
     source = str(slide.get("source_label", "")).strip()
     if source:
-        draw.rounded_rectangle(
-            (margin, 1232, CANVAS_W - margin, 1270),
-            radius=10, fill=(12, 12, 12, 200), outline=(80, 80, 80, 100),
-        )
         font_source = _font(image_font, 24, bold=False)
         draw.text(
-            (margin + 16, 1242),
+            (margin, 1238),
             f"Source: {source}",
             fill=SOFT_WHITE,
             font=font_source,
@@ -951,10 +937,6 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
             source_text = (slide.get("source_label") or
                            _source_label_from_url(str(slide.get("url") or "")))
             if source_text:
-                draw.rounded_rectangle(
-                    (54, 1146, CANVAS_W - 54, 1180), radius=12,
-                    fill=(0, 0, 0, 200),
-                )
                 font_src = _font(ImageFont, 26, bold=False)
                 _draw_centered_text(
                     draw, f"SOURCE: {source_text}",
@@ -1022,8 +1004,6 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
                             (450, 1216, 630, 1260), font_meta, SOFT_WHITE, 1)
 
     elif slide["kind"] == "cta":
-        draw.rounded_rectangle((margin, 92, CANVAS_W - margin, 1258), radius=46, fill="#0B0B0B", outline="#1F1F1F", width=2)
-        draw.rounded_rectangle((92, 126, 988, 184), radius=18, fill=(200, 255, 0, 20), outline=(200, 255, 0, 130), width=2)
         _draw_centered_text(draw, "GRAITECH", (140, 150, 940, 240), font_brand, ACCENT_GREEN, 1)
         _draw_centered_text(draw, "Instagram-ready AI news", (140, 278, 940, 365), font_title, TEXT_WHITE, 1)
         _draw_social_icons(draw, (140, 410, 940, 540), font_meta)
@@ -1032,25 +1012,16 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
         _draw_centered_text(draw, f"{slide_number:02d}/{total_slides:02d}", (450, 1120, 630, 1170), font_meta, ACCENT_GREEN, 1)
         _draw_cta_pills(draw, font_meta)
     else:
-        # ── Eyebrow label ─────────────────────────────────────────────────────
-        _draw_slide_chip(
-            draw,
-            slide["eyebrow"],
-            (64, 60, 420, 116),
-            font_meta,
-            fill="#0B0B0B",
-            outline=ACCENT_GREEN,
-        )
+        # ── Eyebrow label — plain text, no pill container ─────────────────────
+        draw.text((64, 72), str(slide.get("eyebrow", "🤖 AI NEWS")), fill=ACCENT_GREEN, font=font_meta)
         source_label = slide.get("source_label") or _source_label_from_url(str(slide.get("url") or ""))
         if source_label:
-            _draw_slide_chip(
-                draw,
-                f"SOURCE: {source_label}",
-                (648, 60, 1016, 116),
-                font_meta,
-                fill="#0B0B0B",
-                outline=(80, 80, 80, 180),
-            )
+            src_text = f"SOURCE: {source_label}"
+            try:
+                src_w = int(draw.textlength(src_text, font=font_meta))
+            except Exception:
+                src_w = len(src_text) * 14
+            draw.text((CANVAS_W - 64 - src_w, 72), src_text, fill=SOFT_WHITE, font=font_meta)
 
         # ── Title — auto-sized, complete text, never truncated ───────────────
         title_box = (84, 150, CANVAS_W - 84, 340)
@@ -1517,10 +1488,6 @@ def _draw_handle_overlay(draw, image_font) -> None:
         text_w, text_h = 160, 28
     x = 36
     y = CANVAS_H - text_h - 38
-    draw.rounded_rectangle(
-        (x - 10, y - 8, x + text_w + 12, y + text_h + 8),
-        radius=12, fill=(0, 0, 0, 190),
-    )
     draw.text((x, y), handle, fill=ACCENT_GREEN, font=font)
 
 
@@ -2064,36 +2031,53 @@ def _extract_instagram_key_points(
 ) -> list[str]:
     """Extract punchy, attention-grabbing key points for Instagram slides.
 
-    Writes like a professional content creator:
-    - Short and impactful (≤ 90 chars each)
-    - Starts with a verb, stat, or striking claim when possible
-    - Avoids fluff words and filler phrases
-    - Each point must add new information (no repeats)
-    - Returns 3–6 points ordered by impact (most striking first)
+    Storytelling rules (inspired by viral AI news accounts):
+    - Each point starts with a numbered emoji (1️⃣ 2️⃣ 3️⃣ …)
+    - Strong hook: verb, stat, or striking claim first
+    - Plain language — "This means..." framing where relevant
+    - ≤ 110 chars per point, no trailing dots
+    - 3–5 points ordered by impact (most striking first)
     """
     STOP_PREFIXES = (
         "this article", "in this post", "the article", "we discuss",
         "this piece", "this blog", "you will learn", "click here",
         "read more", "find out", "learn how", "sign up",
+        "grdevelopers", "graitech",
     )
+    NOISE_PATTERNS = [
+        r"BREAKING AI UPDATE\s*[-–—]\s*",
+        r"\[(?:HIGH|MEDIUM|LOW|CRITICAL)\]\s*",
+        r"={3,}",
+        r"Company\s*:\s*",
+        r"AI Summary\s*:\s*",
+        r"Link\s*:\s*https?://\S+",
+        r"#{1,6}\s+(?:Bug Fixes|Features?|Performance|Breaking Changes?|Refactoring?|Chores?|Docs?).*",
+        r"\*\*([^*]+):\*\*\s*",
+    ]
     POWER_VERBS = (
         "launches", "releases", "achieves", "beats", "surpasses", "reveals",
         "breaks", "builds", "cuts", "doubles", "enables", "expands",
         "introduces", "joins", "reaches", "replaces", "sets", "ships",
         "shows", "trains", "upgrades",
     )
+    NUMBER_EMOJIS = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣"]
+
+    def _strip_noise(text: str) -> str:
+        for pattern in NOISE_PATTERNS:
+            text = re.sub(pattern, "", text, flags=re.I)
+        return re.sub(r"\s+", " ", text).strip()
 
     raw: list[str] = []
 
-    # 1. Use pre-structured key_points from article (highest quality)
+    # 1. Pre-structured key_points from article (highest quality)
     for p in article.get("key_points", []):
-        cleaned = _clean_public_text(str(p)).strip()
+        cleaned = _strip_noise(_clean_public_text(str(p))).strip()
         if len(cleaned) > 12 and not any(cleaned.lower().startswith(pfx) for pfx in STOP_PREFIXES):
             raw.append(cleaned)
 
-    # 2. Also pull from summary-level key_points
+    # 2. Summary-level key_points
     for p in (summary.key_points or []):
-        cleaned = _clean_public_text(str(p)).strip()
+        cleaned = _strip_noise(_clean_public_text(str(p))).strip()
         if cleaned and cleaned not in raw and len(cleaned) > 12:
             if not any(cleaned.lower().startswith(pfx) for pfx in STOP_PREFIXES):
                 raw.append(cleaned)
@@ -2101,12 +2085,16 @@ def _extract_instagram_key_points(
     # 3. Fallback — mine structured fields for insight sentences
     if len(raw) < 3:
         for field in ("what_happened", "why_matters", "what_to_watch", "description", "excerpt"):
-            text = _clean_public_text(str(article.get(field) or ""))
+            text = _strip_noise(_clean_public_text(str(article.get(field) or "")))
             if not text:
                 continue
             for sent in re.split(r"(?<=[.!?])\s+", text):
                 sent = sent.strip()
-                if len(sent) > 30 and sent not in raw:
+                if (
+                    len(sent) > 30
+                    and sent not in raw
+                    and not any(sent.lower().startswith(pfx) for pfx in STOP_PREFIXES)
+                ):
                     raw.append(sent)
                 if len(raw) >= max_points * 2:
                     break
@@ -2122,7 +2110,7 @@ def _extract_instagram_key_points(
             seen.add(key)
             deduped.append(p)
 
-    # Score: prefer shorter + starts with power verb / stat
+    # Score: prefer stats, power verbs, short
     def _point_score(pt: str) -> float:
         score = 0.0
         pt_l = pt.lower()
@@ -2136,8 +2124,12 @@ def _extract_instagram_key_points(
 
     deduped.sort(key=_point_score, reverse=True)
 
-    # Trim each point to a readable length without dots
-    final = [_trim_no_dots(pt, 110) for pt in deduped[:max_points]]
+    # Trim and prefix with numbered emojis for storytelling impact
+    trimmed = [_trim_no_dots(pt, 100) for pt in deduped[:max_points]]
+    final = [
+        f"{NUMBER_EMOJIS[i]} {pt}" if i < len(NUMBER_EMOJIS) else pt
+        for i, pt in enumerate(trimmed)
+    ]
     return final if final else [_trim_no_dots(summary.headline or summary.subject or "AI update", 110)]
 
 
@@ -2456,7 +2448,6 @@ def _build_caption(summary: EmailSummary) -> str:
 
     headline = _clean_headline(summary.headline or summary.subject or "AI update")
     article_url = str(article.get("url") or summary.article_url or "")
-    source_domain = _source_label_from_url(article_url)
 
     # ── Hook line ─────────────────────────────────────────────────────────────
     hook = _build_caption_hook(summary, article, headline)
@@ -2477,11 +2468,32 @@ def _build_caption(summary: EmailSummary) -> str:
     # ── Closing question ──────────────────────────────────────────────────────
     closing_q = _build_closing_question(summary, article)
 
-    # ── Source credit ─────────────────────────────────────────────────────────
-    if source_domain and article_url:
-        source_credit = f"📰 Source: {source_domain}\n🔗 {article_url}"
-    elif article_url:
-        source_credit = f"🔗 {article_url}"
+    # ── Source credit — include ALL article URLs from this summary ────────────
+    # Collect every unique article URL in order (max 5 to fit within Instagram's
+    # 2,200-character caption limit while leaving room for hashtags/disclaimer).
+    _seen_urls: set[str] = set()
+    _all_url_pairs: list[tuple[str, str]] = []  # (url, domain)
+    for _art in articles:
+        _u = str(_art.get("url") or "").strip()
+        if _u and _u.startswith("http") and _u not in _seen_urls:
+            _all_url_pairs.append((_u, _source_label_from_url(_u) or "Source"))
+            _seen_urls.add(_u)
+    # Fall back to the summary-level URL if no article URLs were found
+    if not _all_url_pairs and summary.article_url:
+        _u = summary.article_url.strip()
+        if _u.startswith("http"):
+            _all_url_pairs.append((_u, _source_label_from_url(_u) or "Source"))
+
+    if len(_all_url_pairs) == 1:
+        _url, _domain = _all_url_pairs[0]
+        source_credit = (
+            f"📰 Source: {_domain}\n🔗 {_url}"
+            if _domain else
+            f"🔗 {_url}"
+        )
+    elif len(_all_url_pairs) > 1:
+        _link_lines = [f"🔗 {_u}" for _u, _ in _all_url_pairs[:5]]
+        source_credit = "📰 Read the full stories:\n" + "\n".join(_link_lines)
     else:
         source_credit = "📰 Curated by Graitech AI News"
 
@@ -2754,7 +2766,11 @@ def _extract_stat_from_text(text: str) -> str:
 
 
 def _build_disclaimer_if_needed(summary: EmailSummary, article: dict[str, Any]) -> str:
-    """Return a short disclaimer when article content warrants one."""
+    """Return a short disclaimer when article content warrants one.
+
+    Always appended with an attribution line so readers know this content
+    comes from the original news sources, not from Graitech.
+    """
     text = " ".join([
         str(article.get("title") or ""),
         str(article.get("description") or ""),
@@ -2762,17 +2778,23 @@ def _build_disclaimer_if_needed(summary: EmailSummary, article: dict[str, Any]) 
         " ".join(summary.topics),
     ]).lower()
 
+    warning = ""
     if any(kw in text for kw in ("benchmark", "performance score", "eval")):
-        return "─\n⚠️ Benchmarks reflect results at publication time and may change as models are updated.\n─"
-    if any(kw in text for kw in ("price", "pricing", "$", "cost per")):
-        return "─\n⚠️ Pricing information is subject to change — verify directly with the provider.\n─"
-    if any(kw in text for kw in ("medical", "health", "diagnosis", "clinical")):
-        return "─\n⚠️ This is not medical advice. AI health tools do not replace professional care.\n─"
-    if any(kw in text for kw in ("invest", "financial", "stock", "trading")):
-        return "─\n⚠️ This is not financial advice. AI investment tools carry significant risks.\n─"
-    if any(kw in text for kw in ("regulation", "law", "legal", "compliance", "gdpr")):
-        return "─\n⚠️ This is not legal advice. Consult a qualified professional for guidance.\n─"
-    return ""
+        warning = "⚠️ Benchmarks reflect results at publication time and may change as models are updated."
+    elif any(kw in text for kw in ("price", "pricing", "$", "cost per")):
+        warning = "⚠️ Pricing information is subject to change — verify directly with the provider."
+    elif any(kw in text for kw in ("medical", "health", "diagnosis", "clinical")):
+        warning = "⚠️ This is not medical advice. AI health tools do not replace professional care."
+    elif any(kw in text for kw in ("invest", "financial", "stock", "trading")):
+        warning = "⚠️ This is not financial advice. AI investment tools carry significant risks."
+    elif any(kw in text for kw in ("regulation", "law", "legal", "compliance", "gdpr")):
+        warning = "⚠️ This is not legal advice. Consult a qualified professional for guidance."
+
+    attribution = "ℹ️ Content curated & summarised by Graitech from the sources listed above. All rights remain with the original publishers."
+
+    if warning:
+        return f"─\n{warning}\n{attribution}\n─"
+    return f"─\n{attribution}\n─"
 
 def _render_index(rows: list[str]) -> str:
     items = "\n".join(rows)
@@ -2877,7 +2899,21 @@ def _save_used_images_to_db(db_path: Path | None, paths: set[str]) -> None:
 
 
 def _clean_public_text(text: str) -> str:
-    text = re.sub(r"\s+", " ", text or "").strip()
+    # ── Strip grdevelopers.co email digest noise ──────────────────────────────
+    text = re.sub(r"BREAKING AI UPDATE\s*[-–—]\s*", "", text or "", flags=re.I)
+    text = re.sub(r"\[(?:HIGH|MEDIUM|LOW|CRITICAL)\]\s*", "", text, flags=re.I)
+    text = re.sub(r"={3,}", "", text)
+    text = re.sub(r"Company\s*:\s*[^\n]*(\n|$)", "", text, flags=re.I)
+    text = re.sub(r"AI Summary\s*:\s*", "", text, flags=re.I)
+    text = re.sub(r"Link\s*:\s*https?://\S+", "", text, flags=re.I)
+    # Strip GitHub markdown changelog headings
+    text = re.sub(
+        r"#{1,6}\s+(?:Bug Fixes|Features?|Performance|Breaking Changes?|Refactoring?|Chores?|Docs?).*",
+        "", text, flags=re.I,
+    )
+    text = re.sub(r"\*\*([^*]+):\*\*\s*", r"\1: ", text)
+    # ─────────────────────────────────────────────────────────────────────────
+    text = re.sub(r"\s+", " ", text).strip()
     text = _strip_decorative_symbols(text)
     # Strip cookie consent blocks that appear mid-text (e.g. from AWS/blog scrapers)
     text = re.sub(
