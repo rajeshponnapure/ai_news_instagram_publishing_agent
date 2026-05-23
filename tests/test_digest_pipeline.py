@@ -35,10 +35,10 @@ class DigestPipelineTests(unittest.TestCase):
         slides = _build_slide_specs(parts[0], datetime(2026, 5, 21, 9, 0))
 
         self.assertEqual(len(parts), 1)
-        self.assertEqual(slides[0]["kind"], "image")
+        self.assertEqual(slides[0]["kind"], "title")
         self.assertGreater(len(slides), 3)
         self.assertEqual(slides[-1]["kind"], "cta")
-        self.assertTrue(all(s["kind"] in ("image", "keypoint", "cta") for s in slides))
+        self.assertTrue(all(s["kind"] in ("title", "list", "cta") for s in slides))
 
     def test_single_long_news_email_creates_more_keypoints(self) -> None:
         summary = _summary_with_articles(1, long=True)
@@ -58,11 +58,11 @@ class DigestPipelineTests(unittest.TestCase):
 
         self.assertEqual(len(parts), 1)
         self.assertGreater(len(slides), 4)
-        self.assertEqual(slides[0]["kind"], "image")
+        self.assertEqual(slides[0]["kind"], "title")
         self.assertEqual(slides[-1]["kind"], "cta")
         kinds = [s["kind"] for s in slides]
-        self.assertIn("keypoint", kinds)
-        self.assertEqual(kinds.count("image"), 2)
+        self.assertIn("list", kinds)
+        self.assertEqual(kinds.count("title"), 2)
 
     def test_four_news_stories_split_into_multiple_carousel_parts(self) -> None:
         summary = _summary_with_articles(4)
@@ -119,7 +119,7 @@ class DigestPipelineTests(unittest.TestCase):
         with patch("email_summary_agent.instagram._find_reference_image_for_article_unique", return_value=None):
             slides = _build_slide_specs(summary, datetime(2026, 5, 21, 9, 0))
 
-        self.assertEqual(slides[0]["kind"], "image")
+        self.assertEqual(slides[0]["kind"], "title")
         self.assertEqual(slides[0]["image_path"], "")
 
     def test_missing_article_image_can_use_reference_search_result(self) -> None:
