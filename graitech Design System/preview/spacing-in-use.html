@@ -1,0 +1,29 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; background: var(--gt-bg); color: var(--gt-white); }
+  body { padding: 24px; font-family: var(--gt-font-mono); }
+  .demo {
+    height: 100px; background: var(--gt-graphite); border: 1px solid var(--gt-iron);
+    border-radius: var(--gt-r-md); padding: 16px;
+    display: flex; align-items: center; gap: 16px;
+  }
+  .box {
+    background: var(--gt-cement);
+    color: var(--gt-neon);
+    font-size: 10px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    display: flex; align-items: center; justify-content: center;
+    height: 44px;
+  }
+  .lab { font-size: 10px; color: var(--gt-smoke); text-transform: uppercase; letter-spacing: 0.18em; margin-bottom: 10px; }
+</style></head>
+<body>
+  <div class="lab">Spacing in use — gap: --gt-s-5 (24) · padding: --gt-s-4 (16)</div>
+  <div class="demo">
+    <div class="box" style="flex:1">block</div>
+    <div class="box" style="flex:1">block</div>
+    <div class="box" style="flex:1">block</div>
+  </div>
+</body></html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; background: var(--gt-bg); color: var(--gt-white); }
+  body { padding: 22px 24px; font-family: var(--gt-font-mono); display: flex; gap: 16px; align-items: flex-end; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .chip { width: 78px; height: 60px; background: var(--gt-cement); border: 1px solid var(--gt-cement-2); }
+  .chip.r-pill { width: 110px; }
+  .tok { font-size: 10px; color: var(--gt-neon); letter-spacing: 0.04em; }
+  .px { font-size: 10px; color: var(--gt-smoke); }
+</style></head>
+<body>
+  <div class="item"><div class="chip" style="border-radius:0"></div><span class="tok">--gt-r-none</span><span class="px">0</span></div>
+  <div class="item"><div class="chip" style="border-radius:2px"></div><span class="tok">--gt-r-xs</span><span class="px">2</span></div>
+  <div class="item"><div class="chip" style="border-radius:4px"></div><span class="tok">--gt-r-sm</span><span class="px">4</span></div>
+  <div class="item"><div class="chip" style="border-radius:8px"></div><span class="tok">--gt-r-md</span><span class="px">8</span></div>
+  <div class="item"><div class="chip" style="border-radius:14px"></div><span class="tok">--gt-r-lg</span><span class="px">14</span></div>
+  <div class="item"><div class="chip r-pill" style="border-radius:999px"></div><span class="tok">--gt-r-pill</span><span class="px">999</span></div>
+</body></html>

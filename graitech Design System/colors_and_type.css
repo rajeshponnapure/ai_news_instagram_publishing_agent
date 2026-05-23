@@ -1,0 +1,248 @@
+/* ============================================================
+   graitech — Foundations
+   Type + color + spacing tokens for the brand system.
+   Aesthetic: dark, modern, neon-accented, concrete-textured.
+   ============================================================ */
+
+/* Local brand fonts — shipped with this system */
+@font-face {
+  font-family: 'Fontdiner Swanky';
+  src: url('fonts/FontdinerSwanky-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Anton SC';
+  src: url('fonts/AntonSC-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Space Mono';
+  src: url('fonts/SpaceMono-Regular.ttf') format('truetype');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Space Mono';
+  src: url('fonts/SpaceMono-Italic.ttf') format('truetype');
+  font-weight: 400; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: 'Space Mono';
+  src: url('fonts/SpaceMono-Bold.ttf') format('truetype');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Space Mono';
+  src: url('fonts/SpaceMono-BoldItalic.ttf') format('truetype');
+  font-weight: 700; font-style: italic; font-display: swap;
+}
+
+/* Remaining family pulled from Google Fonts — replace with @font-face blocks
+   if/when the licensed Bungee files are added to fonts/. */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+:root {
+  /* ---------- COLOR — Brand ---------- */
+  --gt-neon:           #39FF14;   /* primary neon-green accent */
+  --gt-neon-soft:      #5AFF3A;   /* softened neon for hover/inline */
+  --gt-neon-deep:      #1FCC00;   /* pressed / darker neon */
+  --gt-neon-glow:      rgba(57, 255, 20, 0.45);
+
+  /* ---------- COLOR — Surfaces ---------- */
+  --gt-black:          #000000;   /* canvas */
+  --gt-ink:            #0A0A0A;   /* card / panel surface */
+  --gt-graphite:       #141414;   /* elevated surface */
+  --gt-iron:           #1E1E1E;   /* hairline / divider base */
+  --gt-cement:         #2A2A2A;   /* concrete mid-tone */
+  --gt-cement-2:       #3A3A3A;   /* concrete highlight */
+
+  /* ---------- COLOR — Foreground ---------- */
+  --gt-white:          #FFFFFF;   /* body */
+  --gt-chalk:          #E8E8E8;   /* secondary */
+  --gt-ash:            #A8A8A8;   /* tertiary / meta */
+  --gt-smoke:          #6B6B6B;   /* quaternary / placeholder */
+
+  /* ---------- COLOR — Semantic ---------- */
+  --gt-fg-1:           var(--gt-white);
+  --gt-fg-2:           var(--gt-chalk);
+  --gt-fg-3:           var(--gt-ash);
+  --gt-fg-muted:       var(--gt-smoke);
+  --gt-accent:         var(--gt-neon);
+  --gt-bg:             var(--gt-black);
+  --gt-surface:        var(--gt-ink);
+  --gt-surface-2:      var(--gt-graphite);
+  --gt-border:         var(--gt-iron);
+  --gt-border-strong:  var(--gt-cement);
+
+  /* ---------- COLOR — Status (used sparingly) ---------- */
+  --gt-warn:           #FFB800;
+  --gt-danger:         #FF3355;
+  --gt-info:           #18C0FF;
+
+  /* ---------- TYPE — Families ---------- */
+  --gt-font-display:   'Anton SC', 'Bebas Neue', 'Impact', sans-serif;          /* tall condensed all-caps */
+  --gt-font-block:     'Bungee', 'Anton', 'Impact', sans-serif;                  /* chunky urban headlines */
+  --gt-font-mono:      'Space Mono', 'JetBrains Mono', ui-monospace, monospace;  /* body / data / meta */
+  --gt-font-kitsch:    'Fontdiner Swanky', 'Lobster', 'Pacifico', cursive;       /* retro wildcard accent */
+  --gt-font-body:      var(--gt-font-mono);
+
+  /* ---------- TYPE — Scale (rem-ish in px) ---------- */
+  --gt-fs-xs:    11px;
+  --gt-fs-sm:    13px;
+  --gt-fs-base:  15px;
+  --gt-fs-md:    18px;
+  --gt-fs-lg:    24px;
+  --gt-fs-xl:    32px;
+  --gt-fs-2xl:   48px;
+  --gt-fs-3xl:   72px;
+  --gt-fs-4xl:   112px;
+  --gt-fs-5xl:   160px;
+
+  /* ---------- TYPE — Tracking ---------- */
+  --gt-track-tight:  -0.01em;
+  --gt-track-normal: 0;
+  --gt-track-wide:   0.08em;
+  --gt-track-wider:  0.18em;
+  --gt-track-mega:   0.32em;
+
+  /* ---------- SPACING ---------- */
+  --gt-s-1: 4px;
+  --gt-s-2: 8px;
+  --gt-s-3: 12px;
+  --gt-s-4: 16px;
+  --gt-s-5: 24px;
+  --gt-s-6: 32px;
+  --gt-s-7: 48px;
+  --gt-s-8: 64px;
+  --gt-s-9: 96px;
+  --gt-s-10: 128px;
+
+  /* ---------- RADII ---------- */
+  --gt-r-none: 0;
+  --gt-r-xs:   2px;
+  --gt-r-sm:   4px;
+  --gt-r-md:   8px;
+  --gt-r-lg:   14px;
+  --gt-r-pill: 999px;
+
+  /* ---------- ELEVATION ---------- */
+  --gt-shadow-flat:  none;
+  --gt-shadow-soft:  0 1px 0 rgba(255,255,255,0.04) inset, 0 8px 24px rgba(0,0,0,0.6);
+  --gt-shadow-glow:  0 0 0 1px var(--gt-neon), 0 0 24px var(--gt-neon-glow);
+  --gt-shadow-glow-soft: 0 0 18px rgba(57,255,20,0.22);
+  --gt-ring-focus:   0 0 0 2px var(--gt-black), 0 0 0 4px var(--gt-neon);
+
+  /* ---------- MOTION ---------- */
+  --gt-ease-out:   cubic-bezier(0.2, 0.7, 0.1, 1);
+  --gt-ease-in:    cubic-bezier(0.6, 0, 0.8, 0.3);
+  --gt-dur-fast:   120ms;
+  --gt-dur-base:   200ms;
+  --gt-dur-slow:   360ms;
+}
+
+/* ============================================================
+   SEMANTIC TYPE — apply to bare HTML for instant brand alignment
+   ============================================================ */
+
+body {
+  background: var(--gt-bg);
+  color: var(--gt-fg-1);
+  font-family: var(--gt-font-body);
+  font-size: var(--gt-fs-base);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, .gt-h1 {
+  font-family: var(--gt-font-block);
+  font-size: var(--gt-fs-4xl);
+  line-height: 0.92;
+  letter-spacing: var(--gt-track-tight);
+  color: var(--gt-neon);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2, .gt-h2 {
+  font-family: var(--gt-font-display);
+  font-size: var(--gt-fs-3xl);
+  line-height: 0.95;
+  letter-spacing: var(--gt-track-wide);
+  color: var(--gt-neon);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h3, .gt-h3 {
+  font-family: var(--gt-font-display);
+  font-size: var(--gt-fs-2xl);
+  line-height: 1;
+  letter-spacing: var(--gt-track-wide);
+  color: var(--gt-fg-1);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h4, .gt-h4 {
+  font-family: var(--gt-font-mono);
+  font-weight: 700;
+  font-size: var(--gt-fs-lg);
+  line-height: 1.2;
+  letter-spacing: var(--gt-track-wide);
+  color: var(--gt-fg-1);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+p, .gt-p {
+  font-family: var(--gt-font-mono);
+  font-size: var(--gt-fs-base);
+  line-height: 1.6;
+  color: var(--gt-fg-2);
+  margin: 0;
+}
+
+small, .gt-small {
+  font-family: var(--gt-font-mono);
+  font-size: var(--gt-fs-sm);
+  color: var(--gt-fg-3);
+}
+
+.gt-eyebrow {
+  font-family: var(--gt-font-mono);
+  font-size: var(--gt-fs-xs);
+  font-weight: 700;
+  letter-spacing: var(--gt-track-mega);
+  text-transform: uppercase;
+  color: var(--gt-neon);
+}
+
+code, .gt-code {
+  font-family: var(--gt-font-mono);
+  font-size: 0.92em;
+  background: var(--gt-graphite);
+  color: var(--gt-neon-soft);
+  padding: 2px 6px;
+  border-radius: var(--gt-r-xs);
+  border: 1px solid var(--gt-border);
+}
+
+/* ============================================================
+   CONCRETE TEXTURE — reusable background utility
+   ============================================================ */
+.gt-bg-concrete {
+  background-color: var(--gt-black);
+  background-image:
+    /* subtle cement grain via layered radial speckles */
+    radial-gradient(rgba(255,255,255,0.025) 1px, transparent 1.5px),
+    radial-gradient(rgba(255,255,255,0.018) 1px, transparent 1.5px),
+    /* large soft cement blotches */
+    radial-gradient(ellipse 60% 40% at 20% 30%, rgba(255,255,255,0.025), transparent 60%),
+    radial-gradient(ellipse 50% 50% at 80% 70%, rgba(255,255,255,0.020), transparent 65%);
+  background-size: 3px 3px, 7px 7px, 100% 100%, 100% 100%;
+  background-position: 0 0, 1px 2px, 0 0, 0 0;
+}

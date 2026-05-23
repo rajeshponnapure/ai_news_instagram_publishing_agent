@@ -1,0 +1,22 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; background: var(--gt-bg); color: var(--gt-white); }
+  body { padding: 28px 24px; font-family: var(--gt-font-mono); display: flex; gap: 28px; align-items: center; justify-content: center; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  .chip { width: 110px; height: 76px; background: var(--gt-graphite);
+          border-radius: var(--gt-r-md); border: 1px solid var(--gt-iron); }
+  .chip.flat   { box-shadow: none; }
+  .chip.soft   { box-shadow: 0 1px 0 rgba(255,255,255,0.04) inset, 0 8px 24px rgba(0,0,0,0.6); }
+  .chip.glow   { background: #000; box-shadow: 0 0 0 1px #39FF14, 0 0 24px rgba(57,255,20,0.45); }
+  .chip.glow-s { background: #000; box-shadow: 0 0 18px rgba(57,255,20,0.22); border-color: #2A2A2A; }
+  .tok { font-size: 10px; color: var(--gt-neon); letter-spacing: 0.04em; text-align: center; }
+  .lab { font-size: 10px; color: var(--gt-smoke); text-transform: uppercase; letter-spacing: 0.18em; }
+</style></head>
+<body>
+  <div class="item"><div class="chip flat"></div><span class="tok">--gt-shadow-flat</span><span class="lab">Flat</span></div>
+  <div class="item"><div class="chip soft"></div><span class="tok">--gt-shadow-soft</span><span class="lab">Soft drop</span></div>
+  <div class="item"><div class="chip glow-s"></div><span class="tok">--gt-shadow-glow-soft</span><span class="lab">Ambient glow</span></div>
+  <div class="item"><div class="chip glow"></div><span class="tok">--gt-shadow-glow</span><span class="lab">Neon ring</span></div>
+</body></html>
