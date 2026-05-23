@@ -1,0 +1,74 @@
+{
+  "email_received_at": "2026-05-23T09:24+00:00",
+  "recommended_post_time": "22:00",
+  "headline": "Perplexity Open-Sources Bumblebee: A Read-Only Supply-Chain Scanner for Developer Endpoints",
+  "subject": "\ud83d\udea8 AI Alert: 1 new launch \u2014 MarkTechPost AI",
+  "source_date": "Sat, 23 May 2026 02:24:44 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Intel",
+    "Perplexity",
+    "Hugging Face",
+    "Cohere"
+  ],
+  "models": [
+    "gemini",
+    "Gemini 2.5"
+  ],
+  "topics": [
+    "model release",
+    "developer tools",
+    "media generation"
+  ],
+  "article_url": "https://www.marktechpost.com/2026/05/23/perplexity-open-sources-bumblebee-a-read-only-supply-chain-scanner-for-developer-endpoints/",
+  "article_title": "Perplexity Open-Sources Bumblebee: A Read-Only Supply-Chain Scanner for Developer Endpoints",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4e0d8e59a1887798.png",
+  "article_image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-38-218x150.png",
+  "article_items": [
+    {
+      "url": "https://www.marktechpost.com/2026/05/23/perplexity-open-sources-bumblebee-a-read-only-supply-chain-scanner-for-developer-endpoints/",
+      "title": "Perplexity Open-Sources Bumblebee: A Read-Only Supply-Chain Scanner for Developer Endpoints",
+      "description": "Perplexity open-sources Bumblebee, a read-only Go-based scanner that checks developer endpoints for supply-chain package exposure",
+      "excerpt": "Perplexity open-sources Bumblebee, a read-only Go-based scanner that checks developer endpoints for supply-chain package exposure",
+      "summary": "Connect with us Microsoft Releases Fara1.5: A Family of Browser Computer-Use Agents (4B/9B/27B) That Outperform OpenAI Operator and Gemini 2.5 Computer Use on Online-Mind2Web Build Recurrent-Depth Transformers with OpenMythos for MLA, GQA, Sparse MoE, and Loop-Scaled Reasoning How CopilotKit Is Redefining the Agentic AI Stack in 2026 Qwen Introduces Qwen3.7-Max: A Reasoning Agent Model With a 1M-Token Context Window Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs on as Few as... The practical impact: Bumblebee then runs on endpoints with the updated catalog, and findings are shared with the security team. Bumblebee is Perplexity\u2019s open-sourced, read-only developer endpoint scanner for supply-chain exposure checks. Watch next: One Model, Three Modalities: ByteDance Releases Lance for Image and Video Understanding, Generation, and...",
+      "what_happened": "Connect with us Microsoft Releases Fara1.5: A Family of Browser Computer-Use Agents (4B/9B/27B) That Outperform OpenAI Operator and Gemini 2.5 Computer Use on Online-Mind2Web Build Recurrent-Depth Transformers with OpenMythos for MLA, GQA, Sparse MoE, and Loop-Scaled Reasoning How CopilotKit Is Redefining the Agentic AI Stack in 2026 Qwen Introduces Qwen3.7-Max: A Reasoning Agent Model With a 1M-Token Context Window Cohere Releases Command A+: A 218B Sparse MoE Model for Agentic Workflows That Runs on as Few as...",
+      "why_matters": "The practical impact: Bumblebee then runs on endpoints with the updated catalog, and findings are shared with the security team. Bumblebee is Perplexity\u2019s open-sourced, read-only developer endpoint scanner for supply-chain exposure checks.",
+      "what_to_watch": "Watch next: One Model, Three Modalities: ByteDance Releases Lance for Image and Video Understanding, Generation, and...",
+      "key_points": [
+        "Connect with us Microsoft Releases Fara1.5: A Family of Browser Computer-Use Agents (4B/9B/27B) That Outperform OpenAI Operator and Gemini 2.5 Computer Use on Online-Mind2Web Build Recurrent-Depth Transformers with...",
+        "Build Recurrent-Depth Transformers with OpenMythos for MLA, GQA, Sparse MoE, and Loop-Scaled Reasoning How CopilotKit Is Redefining the Agentic AI Stack in 2026 Qwen Introduces Qwen3.7-Max: A Reasoning Agent Model...",
+        "One Model, Three Modalities: ByteDance Releases Lance for Image and Video Understanding, Generation, and...",
+        "The current release is v0.1.1.",
+        "Microsoft Releases Fara1.5: A Family of Browser Computer-Use Agents (4B/9B/27B) That Outperform OpenAI Operator...",
+        "Bumblebee then runs on endpoints with the updated catalog, and findings are shared with the security team.",
+        "What is a Forward Deployed Engineer: The AI Role OpenAI, Anthropic, and Google Are...",
+        "Perplexity released Bumblebee on GitHub .",
+        "Bumblebee is Perplexity\u2019s open-sourced, read-only developer endpoint scanner for supply-chain exposure checks.",
+        "The baseline profile scans common global and user package roots, language toolchains, editor extensions, browser extensions, and MCP configs."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4e0d8e59a1887798.png",
+      "image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-38-218x150.png"
+    }
+  ],
+  "carousel_part": 1,
+  "carousel_total_parts": 1,
+  "slides": [
+    "Perplexity Open-Sources Bumblebee: A Read-Only Supply-Chain Scanner for Developer Endpoints",
+    "Follow for the next AI briefing"
+  ]
+}
