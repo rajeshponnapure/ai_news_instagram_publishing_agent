@@ -73,7 +73,13 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
                 print(f"Waiting 30 s before next carousel to respect Instagram rate limits …")
                 time.sleep(30)
 
-            creation_id = post.get("creation_id") or _create_carousel_container(settings, urls[:10], post.get("caption", ""))
+            creation_id = post.get("creation_id")
+            if creation_id:
+                # Check whether the previously-stored container is still usable.
+                status = _container_status(settings, creation_id)
+                if status.get("status_code") in {"ERROR", "EXPIRED"}:
+                    creation_id = None
+            creation_id = creation_id or _create_carousel_container(settings, urls[:10], post.get("caption", ""))
             post["creation_id"] = creation_id
             post["status"] = "container_created"
             manifest_path.write_text(json.dumps(manifest, ensure_ascii=True, indent=2), encoding="utf-8")
