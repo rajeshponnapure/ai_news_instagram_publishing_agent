@@ -112,13 +112,13 @@ def _list_body(slide):
                for ln in str(slide["body"]).splitlines() if ln.strip()]
     pts_html = "".join(
         f'      <div class="row"><div><p>{_e(str(pt))}</p></div></div>\n'
-        for pt in raw[:6]
+        for pt in raw[:3]
     )
-    return f"""  <div class="ig__content" style="gap: 40px;">
+    return f"""  <div class="ig__content" style="gap: 32px;">
     <div class="heading-stack" style="gap: 14px;">
       <div class="eyebrow">{eyebrow}</div>
       <div class="rule"></div>
-      <h2 class="display-tall" style="font-size:88px;">{section}</h2>
+      <h2 class="display-tall" style="font-size:72px;">{section}</h2>
     </div>
     <div class="ol">
 {pts_html}    </div>
@@ -140,11 +140,15 @@ def _digest_body(slide):
     pts_html = "".join(
         f'<div class="kp-row"><span class="kp-num">{i:02d}</span>'
         f'<span class="kp-text">{_e(str(pt))}</span></div>\n'
-        for i, pt in enumerate(raw[:7], 1)
+        for i, pt in enumerate(raw[:5], 1)
     )
     img_val = _image_css(slide.get("image_path") or "")
-    return f"""  <div class="digest-image" style="background-image:{img_val}; background-size:cover; background-position:center;"></div>
-  <div class="digest-body">
+    has_image = bool(slide.get("image_path")) and Path(slide["image_path"]).exists()
+    # If no real image, shrink the image area and give more room to text
+    img_height = "510px" if has_image else "280px"
+    body_top = "510px" if has_image else "280px"
+    return f"""  <div class="digest-image" style="background-image:{img_val}; background-size:cover; background-position:center; height:{img_height};"></div>
+  <div class="digest-body" style="top:{body_top};">
     <div class="eyebrow">{eyebrow}</div>
     <div class="rule" style="margin:10px 0 18px;"></div>
     <div class="digest-headline">{headline}</div>
@@ -210,20 +214,20 @@ html,body{{margin:0;padding:0;background:#000;}}
 .ig__page{{position:absolute;bottom:56px;left:50%;transform:translateX(-50%);z-index:10;font-family:var(--gt-font-mono);font-size:20px;letter-spacing:0.32em;color:var(--gt-fg-3);display:flex;align-items:center;gap:14px;}}
 .ig__page .num{{color:var(--gt-neon);font-weight:700;}}
 .ig__page .bar{{width:28px;height:1px;background:var(--gt-cement-2);}}
-.ig__content{{position:absolute;top:220px;left:80px;right:80px;bottom:160px;z-index:5;display:flex;flex-direction:column;}}
+.ig__content{{position:absolute;top:220px;left:80px;right:80px;bottom:160px;z-index:5;display:flex;flex-direction:column;overflow:hidden;}}
 .eyebrow{{font-family:var(--gt-font-mono);font-size:26px;font-weight:700;letter-spacing:0.32em;text-transform:uppercase;color:var(--gt-neon);}}
-.display-block{{font-family:var(--gt-font-display);font-size:160px;line-height:0.92;letter-spacing:-0.01em;text-transform:uppercase;color:var(--gt-neon);text-shadow:0 0 28px rgba(57,255,20,0.35);margin:0;}}
-.display-tall{{font-family:var(--gt-font-display);font-size:120px;line-height:0.92;letter-spacing:-0.01em;text-transform:uppercase;color:var(--gt-neon);text-shadow:0 0 22px rgba(57,255,20,0.30);margin:0;}}
-.body{{font-family:var(--gt-font-mono);font-size:32px;line-height:1.55;color:var(--gt-white);max-width:860px;}}
+.display-block{{font-family:var(--gt-font-display);font-size:min(160px, 12vw);line-height:0.92;letter-spacing:-0.01em;text-transform:uppercase;color:var(--gt-neon);text-shadow:0 0 28px rgba(57,255,20,0.35);margin:0;overflow-wrap:break-word;word-break:break-word;}}
+.display-tall{{font-family:var(--gt-font-display);font-size:min(120px, 10vw);line-height:0.92;letter-spacing:-0.01em;text-transform:uppercase;color:var(--gt-neon);text-shadow:0 0 22px rgba(57,255,20,0.30);margin:0;overflow-wrap:break-word;word-break:break-word;}}
+.body{{font-family:var(--gt-font-mono);font-size:32px;line-height:1.55;color:var(--gt-white);max-width:860px;overflow:hidden;}}
 .meta{{font-family:var(--gt-font-mono);font-size:20px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gt-fg-3);}}
 .rule{{width:96px;height:3px;background:var(--gt-neon);box-shadow:0 0 12px var(--gt-neon-glow);}}
 .kicker-row{{display:flex;align-items:center;gap:18px;}}
 .stamp{{display:inline-flex;align-items:center;gap:10px;padding:10px 22px;border:1.5px solid var(--gt-neon);color:var(--gt-neon);font-family:var(--gt-font-mono);font-size:20px;font-weight:700;letter-spacing:0.24em;text-transform:uppercase;border-radius:999px;}}
 .stamp::before{{content:"";width:8px;height:8px;border-radius:50%;background:var(--gt-neon);box-shadow:0 0 10px var(--gt-neon);}}
-.ol{{display:flex;flex-direction:column;gap:28px;counter-reset:g;}}
-.ol .row{{display:grid;grid-template-columns:90px 1fr;gap:20px;align-items:start;counter-increment:g;}}
-.ol .row::before{{content:counter(g,decimal-leading-zero);font-family:var(--gt-font-display);color:var(--gt-neon);font-size:72px;line-height:0.9;text-shadow:0 0 18px rgba(57,255,20,0.35);}}
-.ol .row p{{font-family:var(--gt-font-mono);font-size:28px;line-height:1.5;color:var(--gt-fg-2);margin:0;}}
+.ol{{display:flex;flex-direction:column;gap:24px;counter-reset:g;flex:1;overflow:hidden;}}
+.ol .row{{display:grid;grid-template-columns:70px 1fr;gap:16px;align-items:start;counter-increment:g;}}
+.ol .row::before{{content:counter(g,decimal-leading-zero);font-family:var(--gt-font-display);color:var(--gt-neon);font-size:56px;line-height:0.9;text-shadow:0 0 18px rgba(57,255,20,0.35);}}
+.ol .row p{{font-family:var(--gt-font-mono);font-size:24px;line-height:1.45;color:var(--gt-fg-2);margin:0;overflow:hidden;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;}}
 .heading-stack{{display:flex;flex-direction:column;gap:28px;}}
 .swipe-row{{display:flex;align-items:center;gap:20px;font-family:var(--gt-font-mono);font-size:26px;font-weight:700;color:var(--gt-neon);letter-spacing:0.24em;text-transform:uppercase;}}
 .swipe-row .arrow{{width:64px;height:2px;background:var(--gt-neon);position:relative;box-shadow:0 0 10px var(--gt-neon-glow);}}
@@ -239,11 +243,11 @@ html,body{{margin:0;padding:0;background:#000;}}
 .digest-image{{position:absolute;top:0;left:0;right:0;height:510px;z-index:3;}}
 .digest-image::after{{content:"";position:absolute;bottom:0;left:0;right:0;height:200px;background:linear-gradient(transparent,#000);}}
 .digest-body{{position:absolute;top:510px;left:72px;right:72px;bottom:140px;z-index:5;display:flex;flex-direction:column;overflow:hidden;}}
-.digest-headline{{font-family:var(--gt-font-display);font-size:68px;line-height:0.95;color:var(--gt-neon);text-shadow:0 0 22px rgba(57,255,20,0.30);text-transform:uppercase;margin-bottom:18px;letter-spacing:-0.01em;}}
-.kp-list{{display:flex;flex-direction:column;gap:14px;flex:1;overflow:hidden;}}
-.kp-row{{display:flex;gap:14px;align-items:flex-start;}}
-.kp-num{{font-family:var(--gt-font-display);font-size:38px;line-height:1;color:var(--gt-neon);text-shadow:0 0 14px rgba(57,255,20,0.40);min-width:50px;flex-shrink:0;}}
-.kp-text{{font-family:var(--gt-font-mono);font-size:25px;line-height:1.45;color:var(--gt-chalk);flex:1;}}
+.digest-headline{{font-family:var(--gt-font-display);font-size:52px;line-height:0.95;color:var(--gt-neon);text-shadow:0 0 22px rgba(57,255,20,0.30);text-transform:uppercase;margin-bottom:14px;letter-spacing:-0.01em;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;}}
+.kp-list{{display:flex;flex-direction:column;gap:10px;flex:1;overflow:hidden;}}
+.kp-row{{display:flex;gap:12px;align-items:flex-start;}}
+.kp-num{{font-family:var(--gt-font-display);font-size:32px;line-height:1;color:var(--gt-neon);text-shadow:0 0 14px rgba(57,255,20,0.40);min-width:42px;flex-shrink:0;}}
+.kp-text{{font-family:var(--gt-font-mono);font-size:21px;line-height:1.4;color:var(--gt-chalk);flex:1;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;}}
 """
 
 

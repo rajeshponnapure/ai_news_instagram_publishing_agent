@@ -23,8 +23,10 @@ name: Instagram Auto Publish
 
 on:
   schedule:
-    # Runs every 15 minutes. Always polls for new emails only.
-    - cron: '*/15 * * * *'
+    # Runs every 30 minutes. The full workflow (generate + deploy + publish)
+    # can take 15–25 minutes, so 15-minute cron was causing new runs to
+    # cancel the publish step mid-flight.
+    - cron: '*/30 * * * *'
   workflow_dispatch:
     # Manual trigger - only for maintenance/recovery operations.
     inputs:
@@ -40,10 +42,6 @@ on:
 concurrency:
   group: instagram-auto-publish
   cancel-in-progress: false
-  # Queue runs instead of canceling — cancel-in-progress was killing runs
-  # mid-checkout when cron fired while a previous run was still going.
-  # Duplicate-post safety is guaranteed by the published_at guard in
-  # publisher.py — not by serialising runs.
 
 permissions:
   contents: write
@@ -55,9 +53,9 @@ jobs:
   generate:
     name: Generate carousel slides
     runs-on: ubuntu-latest
-    # Digest emails with 50 news items produce up to ~150 slides across posts.
-    # Allow extra time for image downloads and slide rendering.
-    timeout-minutes: 55
+    # With 10-slide cap and 30-min cron, keep under 20 min so the full
+    # workflow (generate + deploy + publish) finishes before the next cron.
+    timeout-minutes: 20
     outputs:
       changed: ${{ steps.commit.outputs.changed }}
       has_batch: ${{ steps.detect.outputs.has_batch }}
@@ -247,7 +245,7 @@ jobs:
     name: Publish to Instagram
     needs: deploy-pages
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 15
 
     env:
       AUTO_PUBLISH_INSTAGRAM: 'true'

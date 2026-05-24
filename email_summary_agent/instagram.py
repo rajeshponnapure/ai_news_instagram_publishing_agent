@@ -485,7 +485,13 @@ def _build_digest_slide_specs(
     # Pick ONE background theme for the whole carousel (consistent visual identity).
     carousel_theme = _pick_bg_theme_from_summary(summary)
 
+    # Reserve 1 slot for the CTA slide so it never gets cut off.
+    max_content_slides = MAX_CAROUSEL_SLIDES - 1
+
     for article_index, article in enumerate(articles[:DIGEST_NEWS_PER_POST], start=1):
+        if len(slides) >= max_content_slides:
+            break
+
         headline = _clean_headline(
             _clean_public_text(str(article.get("title") or summary.headline or "AI update"))
         ) or "AI Update"
@@ -493,16 +499,19 @@ def _build_digest_slide_specs(
         topic = ", ".join(summary.topics[:2]) or headline
         source_label = _source_label_from_url(str(article.get("url") or ""))
 
-        # Use numbered key points for storytelling; fall back to prose brief.
-        key_points = _extract_instagram_key_points(article, summary, max_points=10)
+        # Cap key points to 5 to prevent text overflow on the slide.
+        key_points = _extract_instagram_key_points(article, summary, max_points=5)
         brief = "\n".join(key_points) if key_points else _build_digest_slide_brief(summary, article)
 
-        # Select a unique image for this article — guaranteed: fallback if none found.
+        # Select a unique image for this article — ALWAYS generate a fallback
+        # so the image area is never an empty grey gradient.
         image_path = _select_unique_article_image(
             article, topic, used_image_urls, used_image_paths
         )
         if not image_path:
             image_path = _generate_unique_fallback_image(headline, topic, used_image_paths)
+        if not image_path:
+            image_path = _generate_branded_fallback_image(headline, topic)
 
         slides.append(
             {
@@ -519,7 +528,7 @@ def _build_digest_slide_specs(
             }
         )
 
-    # CTA slide
+    # CTA slide — always appended, never cut off (slot was reserved above).
     slides.append(
         {
             "kind": "cta",
@@ -532,7 +541,7 @@ def _build_digest_slide_specs(
         }
     )
 
-    return slides[:MAX_CAROUSEL_SLIDES]
+    return slides
 
 
 def _build_normal_slide_specs(
@@ -575,7 +584,13 @@ def _build_normal_slide_specs(
     carousel_theme = _pick_bg_theme_from_summary(summary)
     date_eyebrow = email_dt.strftime("%b %Y").upper()
 
+    # Reserve 1 slot for the CTA slide so it never gets cut off.
+    max_content_slides = MAX_CAROUSEL_SLIDES - 1
+
     for article_index, article in enumerate(articles[:NORMAL_NEWS_PER_POST], start=1):
+        if len(slides) >= max_content_slides:
+            break
+
         headline = _clean_headline(
             _clean_public_text(str(article.get("title") or summary.headline or summary.subject or "AI update"))
         ) or "AI UPDATE"
@@ -597,10 +612,12 @@ def _build_normal_slide_specs(
         ))
         subtitle = _trim_no_dots(subtitle, 160) if subtitle else ""
 
-        # ── Slide 1: Title slide — guaranteed to have an image ───────────────
+        # ── Slide 1: Title slide — ALWAYS has an image ──────────────────────
         image_path = _select_unique_article_image(article, topic, used_image_urls, used_image_paths)
         if not image_path:
             image_path = _generate_unique_fallback_image(headline, topic, used_image_paths)
+        if not image_path:
+            image_path = _generate_branded_fallback_image(headline, topic)
         slides.append({
             "kind": "title",
             "article_num": article_index,
@@ -614,16 +631,14 @@ def _build_normal_slide_specs(
             "bg_theme": carousel_theme,
         })
 
-        # ── Slides 2-4: List slides with bullet-point insights ────────────────
-        key_points = _extract_instagram_key_points(article, summary, max_points=12)
-        # Extra images sourced from the article page (up to 3 for slides 2-4)
-        extra_images = [
-            p for p in (article.get("extra_image_paths") or [])
-            if p and Path(p).exists()
-        ]
-        for chunk_idx in range(LIST_SLIDES_PER_ARTICLE):
-            start = chunk_idx * POINTS_PER_LIST_SLIDE
-            chunk = key_points[start:start + POINTS_PER_LIST_SLIDE]
+        # ── List slides: 3 key points per slide to prevent overflow ──────────
+        POINTS_PER_SLIDE = 3
+        key_points = _extract_instagram_key_points(article, summary, max_points=9)
+        for chunk_idx in range(3):
+            if len(slides) >= max_content_slides:
+                break
+            start = chunk_idx * POINTS_PER_SLIDE
+            chunk = key_points[start:start + POINTS_PER_SLIDE]
             if not chunk:
                 break
             slides.append({
@@ -632,14 +647,14 @@ def _build_normal_slide_specs(
                 "eyebrow": f"STORY {article_index:02d} · INSIGHTS",
                 "title": headline,
                 "body": "\n".join(chunk),
-                "image_path": extra_images[chunk_idx] if chunk_idx < len(extra_images) else "",
+                "image_path": "",
                 "topic": topic,
                 "url": url,
                 "source_label": source_label,
                 "bg_theme": carousel_theme,
             })
 
-    # ── CTA slide ─────────────────────────────────────────────────────────────
+    # ── CTA slide — always appended, slot was reserved above ─────────────────
     slides.append({
         "kind": "cta",
         "eyebrow": "END / DISPATCH",
@@ -650,7 +665,7 @@ def _build_normal_slide_specs(
         "bg_theme": carousel_theme,
     })
 
-    return slides[:MAX_CAROUSEL_SLIDES]
+    return slides
 
 
 def _build_digest_slide_brief(summary: EmailSummary, article: dict[str, Any]) -> str:
@@ -3041,11 +3056,10 @@ def _extract_instagram_key_points(
 
     deduped.sort(key=_point_score, reverse=True)
 
-    # Trim and prefix with bullet point for clean visual display
-    # Each point will render on its own line in the list slide renderer.
-    trimmed = [_trim_no_dots(pt, 120) for pt in deduped[:max_points]]
+    # Trim each point to 95 chars so it fits on ~2 lines at 24px font.
+    trimmed = [_trim_no_dots(pt, 95) for pt in deduped[:max_points]]
     final = [f"{BULLET}  {pt}" for pt in trimmed]
-    return final if final else [f"{BULLET}  {_trim_no_dots(summary.headline or summary.subject or 'AI update', 120)}"]
+    return final if final else [f"{BULLET}  {_trim_no_dots(summary.headline or summary.subject or 'AI update', 95)}"]
 
 
 def _compose_article_narrative(summary: EmailSummary, article: dict[str, Any]) -> str:

@@ -24,14 +24,9 @@ class DigestPipelineTests(unittest.TestCase):
     def setUp(self) -> None:
         self._reference_patch = patch("email_summary_agent.instagram._find_reference_image_for_article_unique", return_value=None)
         self._reference_patch.start()
-        # Prevent actual file generation during tests — fallback images are an
-        # integration concern, not a unit-test concern.
-        self._fallback_patch = patch("email_summary_agent.instagram._generate_unique_fallback_image", return_value="")
-        self._fallback_patch.start()
 
     def tearDown(self) -> None:
         self._reference_patch.stop()
-        self._fallback_patch.stop()
 
     def test_single_short_news_email_creates_slide_plan(self) -> None:
         summary = _summary_with_articles(1)
@@ -118,14 +113,14 @@ class DigestPipelineTests(unittest.TestCase):
 
         self.assertIn("https://example.com/langchain-launch", urls)
 
-    def test_missing_article_image_does_not_use_placeholder_url(self) -> None:
+    def test_missing_article_image_generates_branded_fallback(self) -> None:
         summary = _summary_with_articles(1)
 
         with patch("email_summary_agent.instagram._find_reference_image_for_article_unique", return_value=None):
             slides = _build_slide_specs(summary, datetime(2026, 5, 21, 9, 0))
 
         self.assertEqual(slides[0]["kind"], "title")
-        self.assertEqual(slides[0]["image_path"], "")
+        self.assertTrue(slides[0]["image_path"], "Title slide must always have an image (branded fallback)")
 
     def test_missing_article_image_can_use_reference_search_result(self) -> None:
         summary = _summary_with_articles(1)
