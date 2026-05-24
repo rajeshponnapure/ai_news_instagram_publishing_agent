@@ -21,11 +21,10 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-000012/01_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_06.png",
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-000012/01_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_07.png"
       ],
-      "status": "publish_failed_retryable",
-      "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 5 concrete signal(s)",
-      "creation_id": "18043915574577438",
-      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"AaHYnDgOT3i-Og6mM3Et8fP\"}}"
+      "status": "published",
+      "creation_id": "18044164220577438",
+      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"AaHYnDgOT3i-Og6mM3Et8fP\"}}",
+      "published_at": "2026-05-24T01:36:29+00:00"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-000012/02_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-",
@@ -50,11 +49,10 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-000012/02_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_07.png",
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-000012/02_20260521-2332_cohere-releases-command-a-a-218b-sparse-moe-model-for-agentic-workflows-/slide_08.png"
       ],
-      "status": "publish_failed_retryable",
-      "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 7 concrete signal(s)",
-      "creation_id": "18043915943577438",
-      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"AgOOrdy7GH5PtogzXBUF0W6\"}}"
+      "status": "published",
+      "creation_id": "18044164472577438",
+      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"AgOOrdy7GH5PtogzXBUF0W6\"}}",
+      "published_at": "2026-05-24T01:37:48+00:00"
     }
   ]
 }
