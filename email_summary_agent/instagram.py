@@ -616,7 +616,11 @@ def _build_normal_slide_specs(
 
         # ── Slides 2-4: List slides with bullet-point insights ────────────────
         key_points = _extract_instagram_key_points(article, summary, max_points=12)
-        # Pad if fewer than 12 to fill the slides
+        # Extra images sourced from the article page (up to 3 for slides 2-4)
+        extra_images = [
+            p for p in (article.get("extra_image_paths") or [])
+            if p and Path(p).exists()
+        ]
         for chunk_idx in range(LIST_SLIDES_PER_ARTICLE):
             start = chunk_idx * POINTS_PER_LIST_SLIDE
             chunk = key_points[start:start + POINTS_PER_LIST_SLIDE]
@@ -628,7 +632,7 @@ def _build_normal_slide_specs(
                 "eyebrow": f"STORY {article_index:02d} · INSIGHTS",
                 "title": headline,
                 "body": "\n".join(chunk),
-                "image_path": "",
+                "image_path": extra_images[chunk_idx] if chunk_idx < len(extra_images) else "",
                 "topic": topic,
                 "url": url,
                 "source_label": source_label,
@@ -730,6 +734,14 @@ def _trim_no_dots(text: str, limit: int) -> str:
     if truncated and truncated[-1] not in ".!?":
         truncated = truncated + "."
     return truncated
+
+
+def _slugify(text: str) -> str:
+    """Convert text into a filesystem-safe ASCII slug."""
+    text = unicodedata.normalize("NFKD", text or "").encode("ascii", "ignore").decode()
+    text = re.sub(r"[^\w\s-]", "", text.lower())
+    text = re.sub(r"[\s_-]+", "-", text).strip("-")
+    return text[:60] or "post"
 
 
 # ── Adaptive typography helpers ───────────────────────────────────────────────
@@ -3262,6 +3274,25 @@ def _query_looks_like_company(query: str) -> bool:
     return any(company.lower() in lowered for company in ("openai", "google", "microsoft", "meta", "amazon", "aws", "nvidia", "anthropic"))
 
 
+def _email_datetime(source_date: str) -> datetime | None:
+    """Parse an email date string (RFC 2822 or ISO) into a timezone-aware datetime."""
+    if not source_date:
+        return None
+    try:
+        return parsedate_to_datetime(source_date)
+    except Exception:
+        pass
+    for fmt in ("%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%S", "%Y-%m-%d"):
+        try:
+            dt = datetime.strptime(source_date, fmt)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            return dt
+        except ValueError:
+            continue
+    return None
+
+
 def _cleanup_existing_outputs(output_dir: Path) -> None:
     try:
         if not output_dir.exists():
@@ -3904,6 +3935,33 @@ def _clean_public_points(points: list[str], headline: str, summary_text: str) ->
         seen.add(normalized)
         cleaned.append(cleaned_point)
     return cleaned
+
+
+def _dedupe_lead_text(lead: str, headline: str) -> str:
+    """Remove headline repetition from the start of the lead paragraph."""
+    if not lead or not headline:
+        return lead
+    # Strip the headline (case-insensitive) if it appears verbatim at the start
+    stripped = lead.strip()
+    headline_clean = re.sub(r"\s+", " ", headline.strip().lower())
+    lead_start = re.sub(r"\s+", " ", stripped[:len(headline) + 10].lower())
+    if lead_start.startswith(headline_clean):
+        remainder = stripped[len(headline):].lstrip(" .,;:-—")
+        return remainder if len(remainder) >= 30 else lead
+    return lead
+
+
+def _clean_entity_list(entities: list[str]) -> list[str]:
+    """Deduplicate and strip a list of entity names, preserving order."""
+    seen: set[str] = set()
+    result: list[str] = []
+    for item in entities or []:
+        cleaned = item.strip()
+        key = cleaned.lower()
+        if cleaned and key not in seen:
+            seen.add(key)
+            result.append(cleaned)
+    return result
 
 
 def _fallback_summary_text(summary: EmailSummary, headline: str) -> str:

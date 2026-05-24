@@ -820,6 +820,8 @@ def _article_item_for_instagram(article: ArticleData) -> dict[str, Any]:
         "rag_rules": rag.rules[:4],
         "image_path": article.image_path,
         "image_url": article.image_url,
+        "extra_image_paths": list(article.extra_image_paths),
+        "extra_image_urls": list(article.extra_image_urls),
     }
 
 

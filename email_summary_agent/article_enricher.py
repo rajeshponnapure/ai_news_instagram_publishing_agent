@@ -25,6 +25,8 @@ class ArticleData:
     text: str = ""
     image_url: str = ""
     image_path: str = ""
+    extra_image_urls: tuple[str, ...] = ()
+    extra_image_paths: tuple[str, ...] = ()
 
     @property
     def excerpt(self) -> str:
@@ -186,7 +188,7 @@ _SKIP_PATH_FRAGMENTS = (
     "unsubscribe", "privacy", "terms", "optout", "opt-out",
     "manage-preferences", "email-preferences", "account/settings",
     "help/", "support/", "about/", "contact/",
-    "track/click", "click?", "/click/", "redirect?",
+    "track/click", "/click/",
     "facebook.com/help", "twitter.com/intent",
 )
 
@@ -246,9 +248,8 @@ def fetch_article(url: str, assets_dir: Path) -> ArticleData | None:
         or parser.meta.get("description")
     )
     text = _clean_text(" ".join(parser.paragraphs))  # keep the full article body for downstream chunking
-    image_url = _select_best_image(parser, final_url, title, description, text)
-    image_url = urllib.parse.urljoin(final_url, image_url) if image_url else ""
-    image_path = _download_image(image_url, assets_dir, final_url) if image_url else ""
+    raw_image_urls = _select_best_images(parser, final_url, title, description, text, n=4)
+    raw_image_urls = [urllib.parse.urljoin(final_url, u) for u in raw_image_urls]
     # If the basic fetch didn't yield useful paragraphs, try a rendered fetch using Playwright
     if not parser.paragraphs and not (parser.meta or parser.title) and not used_playwright:
         try:
@@ -268,15 +269,22 @@ def fetch_article(url: str, assets_dir: Path) -> ArticleData | None:
                     or parser2.meta.get("twitter:description")
                     or parser2.meta.get("description")
                 )
-                if not image_url:
+                if not raw_image_urls:
                     text2 = _clean_text(" ".join(parser2.paragraphs))
-                    image_url = _select_best_image(parser2, final_url2, title, description, text2)
-                    image_url = urllib.parse.urljoin(final_url2, image_url) if image_url else ""
-                    image_path = _download_image(image_url, assets_dir, final_url2) if image_url else image_path
+                    raw_image_urls = [
+                        urllib.parse.urljoin(final_url2, u)
+                        for u in _select_best_images(parser2, final_url2, title, description, text2, n=4)
+                    ]
                 text = text or _clean_text(" ".join(parser2.paragraphs))
                 final_url = final_url2 or final_url
         except Exception:
             pass
+    # Download up to 4 images; first is the primary, rest go in extra_*
+    image_paths = [_download_image(u, assets_dir, final_url) for u in raw_image_urls]
+    image_url = raw_image_urls[0] if raw_image_urls else ""
+    image_path = image_paths[0] if image_paths else ""
+    extra_image_urls = tuple(u for u in raw_image_urls[1:4])
+    extra_image_paths = tuple(p for p in image_paths[1:4] if p)
     return ArticleData(
         url=final_url,
         title=title,
@@ -284,6 +292,8 @@ def fetch_article(url: str, assets_dir: Path) -> ArticleData | None:
         text=text,
         image_url=image_url,
         image_path=image_path,
+        extra_image_urls=extra_image_urls,
+        extra_image_paths=extra_image_paths,
     )
 
 
@@ -436,8 +446,16 @@ def _tighten(text: str, limit: int) -> str:
     return text[: limit - 3].rsplit(" ", 1)[0].rstrip(".,;:") + "..."
 
 
-def _select_best_image(parser: _ArticleParser, final_url: str, title: str, description: str, text: str) -> str:
-    candidates = []
+def _select_best_images(
+    parser: _ArticleParser,
+    final_url: str,
+    title: str,
+    description: str,
+    text: str,
+    n: int = 4,
+) -> list[str]:
+    """Return up to `n` best image URLs from the parsed article, ranked by relevance."""
+    candidates: list[dict[str, str]] = []
     meta_image = parser.meta.get("og:image") or parser.meta.get("twitter:image")
     if meta_image:
         candidates.append({"src": meta_image, "source": "meta"})
@@ -445,20 +463,26 @@ def _select_best_image(parser: _ArticleParser, final_url: str, title: str, descr
         candidates.extend(parser.image_candidates or [{"src": src, "source": "img"} for src in parser.images])
 
     if not candidates:
-        return ""
+        return []
 
-    best_src = ""
-    best_score = 0.0
     context = " ".join(part for part in [title, description, text] if part)
+    scored: list[tuple[float, str]] = []
+    seen: set[str] = set()
     for candidate in candidates:
         src = str(candidate.get("src") or "").strip()
-        if not src or _is_low_value_image(src):
+        if not src or _is_low_value_image(src) or src in seen:
             continue
+        seen.add(src)
         score = _score_image_candidate(candidate, context, final_url)
-        if score > best_score:
-            best_score = score
-            best_src = src
-    return best_src
+        scored.append((score, src))
+
+    scored.sort(reverse=True)
+    return [src for _, src in scored[:n]]
+
+
+def _select_best_image(parser: _ArticleParser, final_url: str, title: str, description: str, text: str) -> str:
+    results = _select_best_images(parser, final_url, title, description, text, n=1)
+    return results[0] if results else ""
 
 
 def _score_image_candidate(candidate: dict[str, str], context: str, final_url: str) -> float:
@@ -479,12 +503,32 @@ def _score_image_candidate(candidate: dict[str, str], context: str, final_url: s
         score += 0.08
     if any(term in src for term in ("hero", "cover", "article", "feature")):
         score += 0.08
+    # HTML-declared dimensions (unreliable but useful when present)
     width = _safe_int(candidate.get("width", ""))
     height = _safe_int(candidate.get("height", ""))
-    if width >= 1280 and height >= 720:
-        score += 0.10
+    if width >= 3840 or height >= 2160:
+        score += 0.30  # 4K / UHD
+    elif width >= 1920 or height >= 1080:
+        score += 0.22  # Full HD
+    elif width >= 1280 and height >= 720:
+        score += 0.15  # HD
     elif width and height:
-        score += 0.04
+        if width < 400 or height < 300:
+            score -= 0.20  # penalise confirmed thumbnails
+        else:
+            score += 0.04
+    # URL-level resolution hints (CDN params, path tokens, quality keywords)
+    url_dim = _url_size_hint(src)
+    if url_dim >= 3840:
+        score += 0.35  # 4K URL hint
+    elif url_dim >= 1920:
+        score += 0.28  # Full HD URL hint
+    elif url_dim >= 1280:
+        score += 0.18  # HD URL hint
+    elif url_dim >= 800:
+        score += 0.06
+    elif 0 < url_dim < 400:
+        score -= 0.22  # confirmed small image
     if any(term in src for term in ("logo", "avatar", "icon", "sprite", "pixel", "tracking")):
         score -= 0.40
     if candidate.get("loading", "").lower() == "lazy":
@@ -492,6 +536,42 @@ def _score_image_candidate(candidate: dict[str, str], context: str, final_url: s
     if re.search(r"\b(openai|google|microsoft|meta|amazon|aws|nvidia|anthropic|open source|launch|model|api)\b", context, re.I):
         score += 0.06 if any(term in src for term in ("model", "launch", "api", "product", "news", "blog")) else 0.0
     return score
+
+
+def _url_size_hint(url: str) -> int:
+    """Extract the largest pixel dimension hinted in a CDN image URL.
+
+    Returns the inferred width (or largest dimension) in pixels, or 0 if unknown.
+    Checks explicit query params first (most reliable), then path segments, then
+    quality keywords.
+    """
+    lowered = url.lower()
+    # 1. Explicit query parameters: ?w=1920, ?width=2560, ?size=1920x1080
+    for m in re.finditer(r"[?&](?:w|width|size|maxwidth|max_width|imgwidth)=(\d+)", lowered):
+        val = int(m.group(1))
+        if val >= 100:
+            return val
+    # 2. Size embedded in path: -1920x1080, _1920w, /1920/, -2048-, @2x
+    for m in re.finditer(r"[-_/](\d{3,4})(?:x\d+|w\b|px\b)?", lowered):
+        val = int(m.group(1))
+        if 200 <= val <= 9999:
+            return val
+    # 3. Quality/size keywords in URL
+    if any(k in lowered for k in ("4k", "2160p", "uhd", "qhd", "2560")):
+        return 3840
+    if any(k in lowered for k in ("1080p", "1920", "fhd", "fullhd")):
+        return 1920
+    if any(k in lowered for k in ("720p", "1280", "hd")):
+        return 1280
+    if any(k in lowered for k in ("original", "full-size", "fullsize", "xlarge", "x-large", "max")):
+        return 1600
+    if any(k in lowered for k in ("large",)):
+        return 1024
+    if any(k in lowered for k in ("medium",)):
+        return 800
+    if any(k in lowered for k in ("small", "thumbnail", "thumb", "tiny")):
+        return 200
+    return 0
 
 
 def _important_tokens(text: str) -> set[str]:
