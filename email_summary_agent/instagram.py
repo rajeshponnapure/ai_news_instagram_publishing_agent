@@ -736,6 +736,56 @@ def _trim_no_dots(text: str, limit: int) -> str:
     return truncated
 
 
+def _source_label_from_url(url: str) -> str:
+    """Extract a readable domain label from a URL (e.g. 'techcrunch.com')."""
+    match = re.search(r"https?://(?:www\.)?([^/]+)", url or "")
+    return match.group(1) if match else ""
+
+
+def _scrape_article_text(url: str) -> str:
+    """Best-effort fetch of article body text from a URL for slide content enrichment."""
+    if not url or not url.startswith(("http://", "https://")):
+        return ""
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (compatible; AIInstagramAgent/1.0)",
+            "Accept": "text/html",
+        }
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            raw = resp.read(500_000).decode("utf-8", errors="replace")
+        paragraphs = re.findall(r"<p[^>]*>(.*?)</p>", raw, re.I | re.S)
+        text = " ".join(
+            re.sub(r"<[^>]+>", " ", p).strip()
+            for p in paragraphs
+            if len(re.sub(r"<[^>]+>", "", p).strip()) > 40
+        )
+        return re.sub(r"\s+", " ", text).strip()[:5000]
+    except Exception:
+        return ""
+
+
+def _fallback_summary_text(summary: "EmailSummary", headline: str) -> str:
+    """Build a fallback summary string when article-level data is too short."""
+    parts = [
+        summary.summary,
+        " ".join(summary.key_points[:3]),
+        headline,
+    ]
+    combined = " ".join(p for p in parts if p and len(p) > 10)
+    return re.sub(r"\s+", " ", combined).strip() or headline
+
+
+def _dedupe_lead_text(lead: str, headline: str) -> str:
+    """Remove the headline sentence from the lead text to avoid redundancy in captions."""
+    if not lead or not headline:
+        return lead
+    hl_lower = headline.lower().rstrip(".")
+    sentences = re.split(r"(?<=[.!?])\s+", lead)
+    kept = [s for s in sentences if s.lower().rstrip(".") != hl_lower]
+    return " ".join(kept).strip() or lead
+
+
 def _slugify(text: str) -> str:
     """Convert text into a filesystem-safe ASCII slug."""
     text = unicodedata.normalize("NFKD", text or "").encode("ascii", "ignore").decode()

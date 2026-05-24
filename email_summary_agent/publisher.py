@@ -234,6 +234,15 @@ def _public_url(base_url: str, batch_dir: Path, local_path: Path) -> str:
     return base_url.rstrip("/") + "/" + urllib.parse.quote(batch_dir.name) + "/" + urllib.parse.quote(relative)
 
 
+def _carry_publish_fields(existing: dict) -> dict:
+    """Return fields from an existing post entry that should survive a manifest rewrite."""
+    carried = {}
+    for key in ("creation_id", "published_at", "error"):
+        if key in existing:
+            carried[key] = existing[key]
+    return carried
+
+
 def _existing_manifest_posts(manifest_path: Path) -> dict[str, dict]:
     if not manifest_path.exists():
         return {}
