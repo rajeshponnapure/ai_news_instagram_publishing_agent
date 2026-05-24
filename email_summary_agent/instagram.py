@@ -706,6 +706,14 @@ def _pick_digest_eyebrow(article: dict[str, Any], summary: EmailSummary) -> str:
     return "🤖 AI NEWS"
 
 
+def _tighten(text: str, limit: int) -> str:
+    """Trim text to a word boundary, appending '...' if truncated."""
+    text = re.sub(r"\s+", " ", text or "").strip()
+    if len(text) <= limit:
+        return text
+    return text[: limit - 3].rsplit(" ", 1)[0].rstrip(".,;:") + "..."
+
+
 def _trim_no_dots(text: str, limit: int) -> str:
     """Trim text to a word boundary without adding trailing dots.
 
