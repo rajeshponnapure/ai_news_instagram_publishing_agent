@@ -1,0 +1,24 @@
+gates, outperforming KDA and Mamba-3 at 1.3B. — and that changes everything you knew about OpenAI.
+
+👉 Swipe to see the full breakdown →
+
+Connect with us Microsoft Research Releases Webwright: A Terminal-Native Web Agent Framework That Scores 60.1% on Odysseys, Up from Base GPT-5.4’s 33.5% Tencent Open-Sources TencentDB Agent Memory: A 4-Tier Local Memory Pipeline for AI Agents Build a SuperClaude Framework Workflow with Commands, Agents, Modes, and Session Memory Nous Research Releases Contrastive Neuron Attribution (CNA): Sparse MLP Circuit Steering.
+
+🔹 Connect with us Microsoft Research Releases Webwright: A Terminal-Native Web Agent Framework That Scores 60.1% on Odysseys, Up from Base.
+⚡ Tencent Open-Sources TencentDB Agent Memory: A 4-Tier Local Memory Pipeline for AI Agents Build a SuperClaude Framework Workflow with.
+🧠 Build Recurrent-Depth Transformers with OpenMythos for MLA, GQA, Sparse MoE, and Loop-Scaled Reasoning How CopilotKit Is Redefining the.
+📊 The recurrent model averages 53.11 across LAMBADA and the reasoning suite.
+🔬 Clone the repo and build the environment The official PyTorch implementation ships with a Dockerfile, training scripts, and the lit_gpt.
+
+Which industry do you think will feel the impact of this first?
+
+💾 Save this post — you'll want to come back to this one.
+
+📰 Source: marktechpost.com
+🔗 https://www.marktechpost.com/2026/05/24/nvidia-ai-releases-gated-deltanet-2-a-linear-attention-layer-that-decouples-erase-and-write-in-the-delta-rule/
+
+#AIResearch #MLResearch #DeepLearning #AITools #ProductivityAI #AIProductivity #AIInfrastructure #AIChips #OpenAI #ChatGPT #GPT4 #GPT5 #Gemini #GoogleAI #TechNews #AIUpdates #ArtificialIntelligence #FutureOfAI #DigitalTransformation #Technology
+
+─
+ℹ️ Content curated & summarised by Graitech from the sources listed above. All rights remain with the original publishers.
+─
