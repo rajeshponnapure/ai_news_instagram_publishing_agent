@@ -18,7 +18,7 @@ from email_summary_agent.publisher import (
 # Only consider batches generated within the last N days.
 # Older batches are never re-published — this is the primary guard against
 # duplicate posts when old batch directories accumulate.
-MAX_BATCH_AGE_DAYS = 3
+MAX_BATCH_AGE_DAYS = 1
 
 
 def main() -> int:
@@ -81,7 +81,12 @@ def _batch_is_recent(batch_dir: Path) -> bool:
 
 
 def _batch_is_fully_published(manifest_path: Path) -> bool:
-    """Return True when every post in the manifest has a published_at timestamp."""
+    """Return True when every post in the manifest is in a terminal published state.
+
+    A post is considered fully published if it has a published_at timestamp OR
+    its status is "published" (backwards-compatible with old manifests that were
+    written before published_at was introduced).
+    """
     if not manifest_path.exists():
         return False
     try:
@@ -91,7 +96,10 @@ def _batch_is_fully_published(manifest_path: Path) -> bool:
     posts = manifest.get("posts", [])
     if not posts:
         return False
-    return all(post.get("published_at") for post in posts)
+    return all(
+        post.get("published_at") or post.get("status") == "published"
+        for post in posts
+    )
 
 
 def _find_latest_publishable_batch(
@@ -129,7 +137,6 @@ def _find_latest_publishable_batch(
         )
         if has_pending:
             return batch_dir, manifest_path
-
     return None
 
 

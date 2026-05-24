@@ -225,34 +225,52 @@ def process_items(
             ollama_model=settings.ollama_model,
         )
         # Filter out everything we have already processed.
-        fresh_emails = emails if reprocess else [email for email in emails if not store.is_processed(email.message_key)]
+        if reprocess:
+            fresh_emails = emails
+        else:
+            fresh_emails = []
+            for email in emails:
+                if store.is_processed(email.message_key):
+                    _safe_print(f"Skipping already-processed email: {email.subject!r} (key={email.message_key})")
+                else:
+                    fresh_emails.append(email)
 
         deferred_count = 0
         chunk_size = 0 if process_all else settings.max_emails_per_run
         if len(fresh_emails) > chunk_size:
             if chunk_size > 0:
                 deferred_count = len(fresh_emails) - chunk_size
-                _safe_print(f"Found {len(fresh_emails)} new emails. Processing the oldest {chunk_size} this round; {deferred_count} left for later.")
+                _safe_print(
+                    f"Chunk limit hit: {len(fresh_emails)} new emails found but MAX_EMAILS_PER_RUN={chunk_size}. "
+                    f"Processing oldest {chunk_size}; deferring {deferred_count} to next run."
+                )
+                for deferred in fresh_emails[chunk_size:]:
+                    _safe_print(f"  DEFERRED (will process next run): {deferred.subject!r}")
                 fresh_emails = fresh_emails[:chunk_size]
 
         # Stepwise processing: fully summarise every email before generating slides.
         # Carousel generation happens once as a batch AFTER the loop so we create
         # a single clean batch directory instead of one per email.
         summaries: list[tuple[EmailItem, EmailSummary]] = []
-        for email in fresh_emails:
-            _safe_print(f"Summarising: {email.subject}")
+        for email_idx, email in enumerate(fresh_emails, 1):
+            _safe_print(
+                f"[{email_idx}/{len(fresh_emails)}] Summarising: {email.subject!r}"
+            )
             enriched_email = email
             story_limit = _story_limit(settings, email)
             seed_items = parse_news_items(email, max_links=story_limit)
+            _safe_print(f"  Found {len(seed_items)} article link(s) in email body (limit={story_limit})")
             if settings.enrich_articles:
                 enriched_email, articles = enrich_email_with_articles(
                     email,
                     settings.article_assets_dir,
                     max_links=story_limit,
                 )
+                _safe_print(f"  Enriched to {len(articles)} article(s) after URL filtering")
             else:
                 articles = []
             articles = _merge_article_fallbacks(articles, seed_items)
+            _safe_print(f"  Total articles after fallback merge: {len(articles)}")
 
             # Summarize with full-extract (no truncation)
             summary = provider.summarize(enriched_email, articles=articles, full_extract=True)

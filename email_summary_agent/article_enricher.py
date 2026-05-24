@@ -168,6 +168,28 @@ def enrich_email_with_articles(
     return enriched, articles
 
 
+# Domains that are tracking/redirect wrappers — never real article pages
+_TRACKING_DOMAINS = (
+    "mailchimp.com", "list-manage.com", "mailerlite.com",
+    "sendgrid.net", "sendgrid.com", "constantcontact.com",
+    "klaviyo.com", "marketo.net", "hubspotemail.net",
+    "click.convertkit", "app.convertkit.com",
+    "beehiiv.com/subscribe", "substack.com/subscribe",
+    "emailoctopus.com", "tinyletter.com",
+    "go.pardot.com", "mkt.", "email.mg.",
+    "t.co/", "bit.ly/", "ow.ly/", "tinyurl.com/",
+    "buff.ly/", "dlvr.it/",
+)
+
+# Path fragments that indicate non-article pages in newsletters
+_SKIP_PATH_FRAGMENTS = (
+    "unsubscribe", "privacy", "terms", "optout", "opt-out",
+    "manage-preferences", "email-preferences", "account/settings",
+    "help/", "support/", "about/", "contact/",
+    "track/click", "click?", "/click/", "redirect?",
+    "facebook.com/help", "twitter.com/intent",
+)
+
 def extract_article_urls(text: str) -> list[str]:
     candidates = re.findall(r"https?://[^\s<>\")']+", html.unescape(text or ""))
     urls: list[str] = []
@@ -175,9 +197,18 @@ def extract_article_urls(text: str) -> list[str]:
     for raw in candidates:
         url = raw.rstrip(".,;:!?)]}")
         lowered = url.lower()
-        if any(blocked in lowered for blocked in ("unsubscribe", "privacy", "mailto:", "facebook.com/help")):
+        # Skip image files
+        if any(ext in lowered for ext in (".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg", ".ico")):
             continue
-        if any(ext in lowered for ext in (".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg")):
+        # Skip known tracking/redirect domains
+        if any(td in lowered for td in _TRACKING_DOMAINS):
+            continue
+        # Skip non-article path patterns
+        if any(frag in lowered for frag in _SKIP_PATH_FRAGMENTS):
+            continue
+        # Skip bare domain-only URLs (no path = not an article)
+        path_part = url.split("//", 1)[-1].split("/", 1)
+        if len(path_part) < 2 or not path_part[1].strip("/"):
             continue
         if url not in seen:
             seen.add(url)
@@ -270,7 +301,7 @@ def _read_url(url: str, timeout: int) -> tuple[bytes, str]:
         content_type = response.headers.get("Content-Type", "")
         if "text/html" not in content_type and "application/xhtml" not in content_type:
             raise ValueError(f"Not an HTML page: {content_type}")
-        return response.read(4_000_000), response.geturl()  # 4MB — enough for any long-form article
+        return response.read(8_000_000), response.geturl()  # 8MB — captures full long-form articles
 
 
 def _render_with_playwright(url: str, timeout: int) -> Tuple[bytes, str]:
@@ -306,7 +337,7 @@ def _download_image(image_url: str, assets_dir: Path, source_url: str) -> str:
                 "image/png": ".png",
                 "image/webp": ".webp",
             }.get(content_type.split(";", 1)[0], ".img")
-            data = response.read(4_000_000)
+            data = response.read(8_000_000)
     except (urllib.error.URLError, TimeoutError, OSError, ValueError):
         return ""
     digest = hashlib.sha1(image_url.encode("utf-8")).hexdigest()[:16]
@@ -450,7 +481,7 @@ def _score_image_candidate(candidate: dict[str, str], context: str, final_url: s
         score += 0.08
     width = _safe_int(candidate.get("width", ""))
     height = _safe_int(candidate.get("height", ""))
-    if width >= 900 and height >= 500:
+    if width >= 1280 and height >= 720:
         score += 0.10
     elif width and height:
         score += 0.04

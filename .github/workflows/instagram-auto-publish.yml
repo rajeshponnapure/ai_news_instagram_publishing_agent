@@ -151,14 +151,34 @@ jobs:
           fi
 
           UNPUBLISHED=$(python3 <<'PY'
-          import json
+          import json, re
+          from datetime import datetime, timezone, timedelta
           from pathlib import Path
 
           root = Path("reports/instagram_posts")
+          # Only consider batches generated within last 24 hours (same guard as publish script)
+          MAX_AGE_DAYS = 1
           terminal = {"published", "publish_failed"}
           pending = 0
+          now = datetime.now(timezone.utc)
+
+          def batch_is_recent(batch_dir):
+              try:
+                  dt = datetime.strptime(batch_dir.name[:15], "%Y%m%d-%H%M%S").replace(tzinfo=timezone.utc)
+                  return (now - dt) <= timedelta(days=MAX_AGE_DAYS)
+              except ValueError:
+                  pass
+              try:
+                  return (now.timestamp() - batch_dir.stat().st_mtime) <= MAX_AGE_DAYS * 86400
+              except OSError:
+                  return False
+
+          def post_is_published(post):
+              return bool(post.get("published_at")) or post.get("status") == "published"
 
           for batch in sorted([p for p in root.iterdir() if p.is_dir()]):
+              if not batch_is_recent(batch):
+                  continue
               carousels = [p for p in batch.iterdir() if p.is_dir()]
               if not carousels:
                   continue
@@ -173,7 +193,7 @@ jobs:
                   continue
               pending += sum(
                   1 for post in data.get("posts", [])
-                  if post.get("status") not in terminal
+                  if not post_is_published(post) and post.get("status") not in terminal
               )
 
           print(pending)

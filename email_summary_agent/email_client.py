@@ -41,6 +41,9 @@ class _HTMLTextExtractor(HTMLParser):
 def _clean_text(text: str) -> str:
     text = _repair_mojibake(text)
     text = unescape(text)
+    # Strip e-mail quoted-reply markers ("> " prefix) so URLs in forwarded /
+    # quoted newsletter sections are preserved and extracted correctly.
+    text = re.sub(r"^>+\s?", "", text, flags=re.MULTILINE)
     text = re.sub(r"[ \t\r\f\v]+", " ", text)
     text = re.sub(r"\s*\n\s*", "\n", text)
     text = re.sub(r"\n{3,}", "\n\n", text)

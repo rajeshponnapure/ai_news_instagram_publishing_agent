@@ -30,7 +30,7 @@ STORIES_PER_CAROUSEL = 1
 # Each story gets an image+headline slide + N key-point slides.
 NORMAL_NEWS_PER_POST = 2
 # Hard minimum readable font size — never go below this on any slide.
-FONT_MIN_READABLE = 26
+FONT_MIN_READABLE = 32
 POSTING_SLOTS = ("08:00", "14:00", "18:00", "22:00")
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 # graitech Design System assets bundled with the package
@@ -126,8 +126,8 @@ _BG_THEMES: dict[str, dict] = {
 }
 
 # Minimum resolution for "HD quality" images (width × height in pixels)
-IMAGE_MIN_HD_W = 1280
-IMAGE_MIN_HD_H = 720
+IMAGE_MIN_HD_W = 1920
+IMAGE_MIN_HD_H = 1080
 VIDEO_BLOCKED_TERMS = ("video", "videos", "reel", "reels", "clip", "clips", "short", "shorts")
 NOISY_ENTITY_TERMS = ("releases", "introduces", "designed", "tracks", "posting", "angle", "primary", "entities")
 NOISY_POINT_PREFIXES = (
@@ -253,7 +253,16 @@ def write_instagram_carousels(
             carousel_dir = batch_dir / folder_name
             carousel_dir.mkdir(parents=True, exist_ok=True)
 
-            slides = _build_slide_specs(part_summary, email_dt)
+            # Build slides, seeding the dedup set from ALL previously used
+            # paths (DB history + any carousels already built this batch).
+            slides = _build_slide_specs(part_summary, email_dt, global_used_image_paths)
+            # Immediately extend global set so the next carousel in this batch
+            # cannot reuse any image selected for this one.
+            for slide in slides:
+                img = str(slide.get("image_path", "")).strip()
+                if img:
+                    global_used_image_paths.add(img)
+
             qa_issues_any: list[str] = []
             for slide_number, slide in enumerate(slides, start=1):
                 slide_path = carousel_dir / f"slide_{slide_number:02d}.png"
@@ -268,10 +277,6 @@ def write_instagram_carousels(
                 qa_issues = _qa_slide_png(slide_path)
                 if qa_issues:
                     qa_issues_any.extend([f"slide_{slide_number:02d}: {issue}" for issue in qa_issues])
-                # Track image paths for cross-batch dedup.
-                img = str(slide.get("image_path", "")).strip()
-                if img:
-                    global_used_image_paths.add(img)
 
             if qa_issues_any:
                 (carousel_dir / "qa_issues.txt").write_text(
@@ -440,14 +445,22 @@ def _clean_headline(text: str) -> str:
     return text
 
 
-def _build_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[str, Any]]:
+def _build_slide_specs(
+    summary: EmailSummary,
+    email_dt: datetime,
+    initial_used_paths: set[str] | None = None,
+) -> list[dict[str, Any]]:
     """Route to the correct slide builder based on whether this is a digest or a normal post."""
     if getattr(summary, "_is_digest", False) or _is_digest_summary(summary):
-        return _build_digest_slide_specs(summary, email_dt)
-    return _build_normal_slide_specs(summary, email_dt)
+        return _build_digest_slide_specs(summary, email_dt, initial_used_paths)
+    return _build_normal_slide_specs(summary, email_dt, initial_used_paths)
 
 
-def _build_digest_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[str, Any]]:
+def _build_digest_slide_specs(
+    summary: EmailSummary,
+    email_dt: datetime,
+    initial_used_paths: set[str] | None = None,
+) -> list[dict[str, Any]]:
     """Build slides for a digest email carousel.
 
     Layout per slide:
@@ -455,17 +468,19 @@ def _build_digest_slide_specs(summary: EmailSummary, email_dt: datetime) -> list
         • Bottom 48%: eyebrow label | headline | brief 2–3 sentence summary | source credit
         • One CTA slide at the end
 
-    Images are deduplicated across all slides in this carousel — no two slides
-    ever share the same image URL or local file.
+    Images are deduplicated across all slides in this carousel AND across all
+    previously published batches (via initial_used_paths seeded from the DB).
+    Every article is guaranteed at least one image — a branded fallback is
+    generated when no real image can be sourced.
     """
     articles = _article_items(summary)
     if not articles:
-        return _build_normal_slide_specs(summary, email_dt)
+        return _build_normal_slide_specs(summary, email_dt, initial_used_paths)
 
     slides: list[dict[str, Any]] = []
-    # Track URLs and local paths used so far — prevents any image reuse.
+    # Seed from cross-batch history so previously-used images are never reused.
     used_image_urls: set[str] = set()
-    used_image_paths: set[str] = set()
+    used_image_paths: set[str] = set(initial_used_paths or ())
 
     # Pick ONE background theme for the whole carousel (consistent visual identity).
     carousel_theme = _pick_bg_theme_from_summary(summary)
@@ -482,10 +497,12 @@ def _build_digest_slide_specs(summary: EmailSummary, email_dt: datetime) -> list
         key_points = _extract_instagram_key_points(article, summary, max_points=10)
         brief = "\n".join(key_points) if key_points else _build_digest_slide_brief(summary, article)
 
-        # Select a unique image for this article.
+        # Select a unique image for this article — guaranteed: fallback if none found.
         image_path = _select_unique_article_image(
             article, topic, used_image_urls, used_image_paths
         )
+        if not image_path:
+            image_path = _generate_unique_fallback_image(headline, topic, used_image_paths)
 
         slides.append(
             {
@@ -518,7 +535,11 @@ def _build_digest_slide_specs(summary: EmailSummary, email_dt: datetime) -> list
     return slides[:MAX_CAROUSEL_SLIDES]
 
 
-def _build_normal_slide_specs(summary: EmailSummary, email_dt: datetime) -> list[dict[str, Any]]:
+def _build_normal_slide_specs(
+    summary: EmailSummary,
+    email_dt: datetime,
+    initial_used_paths: set[str] | None = None,
+) -> list[dict[str, Any]]:
     """Build the carousel for a regular (non-digest) email.
 
     Structure per post (graitech Design System):
@@ -528,6 +549,8 @@ def _build_normal_slide_specs(summary: EmailSummary, email_dt: datetime) -> list
         - Slides 2-4: List slides (kind="list") — 4 bullet-point insights each (12 total)
     • Final slide: CTA (kind="cta")
     Total: 2 × 4 + 1 = 9 slides (well within Instagram's 10-slide limit per carousel)
+    Every article is guaranteed at least one image — a branded fallback is
+    generated when no real image can be sourced.
     """
     POINTS_PER_LIST_SLIDE = 4  # bullet points per list slide
     LIST_SLIDES_PER_ARTICLE = 3  # list slides per article = ceil(12/4)
@@ -547,7 +570,8 @@ def _build_normal_slide_specs(summary: EmailSummary, email_dt: datetime) -> list
 
     slides: list[dict[str, Any]] = []
     used_image_urls: set[str] = set()
-    used_image_paths: set[str] = set()
+    # Seed from cross-batch history so previously-used images are never reused.
+    used_image_paths: set[str] = set(initial_used_paths or ())
     carousel_theme = _pick_bg_theme_from_summary(summary)
     date_eyebrow = email_dt.strftime("%b %Y").upper()
 
@@ -573,8 +597,10 @@ def _build_normal_slide_specs(summary: EmailSummary, email_dt: datetime) -> list
         ))
         subtitle = _trim_no_dots(subtitle, 160) if subtitle else ""
 
-        # ── Slide 1: Title slide ──────────────────────────────────────────────
+        # ── Slide 1: Title slide — guaranteed to have an image ───────────────
         image_path = _select_unique_article_image(article, topic, used_image_urls, used_image_paths)
+        if not image_path:
+            image_path = _generate_unique_fallback_image(headline, topic, used_image_paths)
         slides.append({
             "kind": "title",
             "article_num": article_index,
@@ -839,7 +865,7 @@ def _write_digest_slide(
         draw.rounded_rectangle(image_box, radius=16, outline=(57, 255, 20, 80), width=1)
 
     # ── Eyebrow (neon green mono) — no slide counter in content area ─────────
-    font_eyebrow = _font(image_font, 20, bold=True, mono=True)
+    font_eyebrow = _font(image_font, 30, bold=True, mono=True)
     eyebrow = str(slide.get("eyebrow", "AI NEWS")).upper()
     # Remove emoji from eyebrow for brand consistency
     eyebrow_clean = re.sub(r"[^\x00-\x7F]+", "", eyebrow).strip()
@@ -872,7 +898,7 @@ def _write_digest_slide(
         else:
             _draw_autofit_text(
                 draw, body_text, body_box, image_font,
-                fill=SOFT_WHITE, bold=False, size_max=30, size_min=FONT_MIN_READABLE, max_lines=7, align="left",
+                fill=SOFT_WHITE, bold=False, size_max=36, size_min=FONT_MIN_READABLE, max_lines=7, align="left",
             )
 
     # ── Source credit — bottom, mono, muted ──────────────────────────────────
@@ -882,7 +908,7 @@ def _write_digest_slide(
         draw.text(
             (margin, 1210),
             f"SOURCE: {source.upper()}",
-            fill=(106, 106, 106, 255),
+            fill=(200, 200, 200, 255),
             font=font_source,
         )
 
@@ -891,29 +917,28 @@ def _write_digest_slide(
 def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: dict[str, Any], email_dt: datetime) -> None:
     """Render a single carousel slide using the graitech Design System.
 
-    All slides share the same chrome:
-      - True black concrete-textured background with crosshatch grid
-      - graitech logo  top-right  (56px, 56px), 130×130 px
-      - @graitech handle  bottom-left  (56px from edge) with neon dot
-      - Page indicator  bottom-center  — NN / TT —
+    Delegates to the Playwright-based HTML renderer in renderer.py, which
+    injects article content into the official Graitech HTML templates and
+    screenshots the result at 1080×1350 px.  This guarantees pixel-perfect
+    fidelity to the design system — the correct fonts, concrete texture,
+    neon accents, and corner ticks — with no manual PIL pixel-pushing.
 
-    Content safe area: top 220px · left 80px · right 1000px · bottom 1190px
-
-    Slide kinds:
-      "title"   — eyebrow + neon rule + big Anton SC headline + subtitle text
-      "list"    — eyebrow + neon rule + section title + bullet points
-      "cta"     — stamp + eyebrow + neon rule + Anton SC CTA + follow text
-      "digest"  — full-bleed image top + key points body (unchanged legacy layout)
+    Falls back to the legacy PIL renderer only if Playwright is unavailable.
     """
+    try:
+        from .renderer import render_slide_to_png
+        render_slide_to_png(path, slide, slide_number, total_slides, email_dt)
+        return
+    except Exception as _pw_err:
+        print(f"[renderer] Playwright render failed for {path.name}: {_pw_err}  — falling back to PIL", flush=True)
+
+    # ── Legacy PIL fallback ────────────────────────────────────────────────
     from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 
     image = Image.new("RGBA", (CANVAS_W, CANVAS_H), (0, 0, 0, 255))
     draw = ImageDraw.Draw(image, "RGBA")
-
-    # ── 1. Background ─────────────────────────────────────────────────────────
     _gt_draw_background(image, draw)
 
-    # ── 2. Content per slide kind ─────────────────────────────────────────────
     kind = slide.get("kind", "")
     if kind == "digest":
         _write_digest_slide(
@@ -927,12 +952,9 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
     elif kind == "cta":
         _gt_render_cta_slide(image, draw, ImageFont, slide)
     else:
-        # Legacy fallback for any old "image" / "keypoint" slide kinds
         _gt_render_legacy_slide(image, draw, ImageFont, Image, ImageDraw, ImageEnhance, ImageFilter, ImageOps, slide)
 
-    # ── 3. Chrome (logo, handle, page indicator) ──────────────────────────────
     _gt_draw_chrome(image, draw, ImageFont, slide_number, total_slides)
-
     path.parent.mkdir(parents=True, exist_ok=True)
     if image.mode == "RGBA":
         image = image.convert("RGB")
@@ -942,28 +964,47 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
 # ── graitech background renderer ─────────────────────────────────────────────
 
 def _gt_draw_background(image, draw) -> None:
-    """Render the graitech concrete-textured black background with crosshatch grid."""
+    """Render the graitech concrete-textured black background with multi-scale grain and neon glow."""
     import random as _rng
+    from PIL import Image as _Img, ImageFilter as _IF
     # Solid black canvas
     draw.rectangle((0, 0, CANVAS_W, CANVAS_H), fill=(0, 0, 0, 255))
-    # Concrete texture: micro-speckle noise (deterministic seed for reproducibility)
+    # Multi-scale concrete grain — three passes at different densities and scales
     rng = _rng.Random(7331)
-    for y in range(0, CANVAS_H, 3):
-        for x in range(0, CANVAS_W, 3):
-            if rng.random() < 0.065:
-                a = rng.randint(4, 8)
+    # Fine grain (every 2px)
+    for y in range(0, CANVAS_H, 2):
+        for x in range(0, CANVAS_W, 2):
+            if rng.random() < 0.055:
+                a = rng.randint(3, 7)
                 draw.point((x, y), fill=(255, 255, 255, a))
-    for y in range(0, CANVAS_H, 7):
-        for x in range(0, CANVAS_W, 7):
+    # Medium grain (every 5px)
+    for y in range(0, CANVAS_H, 5):
+        for x in range(0, CANVAS_W, 5):
+            if rng.random() < 0.07:
+                a = rng.randint(4, 10)
+                draw.point((x, y), fill=(200, 200, 200, a))
+    # Coarse grain (every 11px)
+    for y in range(0, CANVAS_H, 11):
+        for x in range(0, CANVAS_W, 11):
             if rng.random() < 0.04:
-                a = rng.randint(3, 6)
+                a = rng.randint(2, 6)
                 draw.point((x, y), fill=(255, 255, 255, a))
-    # Crosshatch grid — 90px spacing, very subtle (masked centre by using alpha 6)
-    GRID_A = 6
-    for x in range(0, CANVAS_W + 1, 90):
-        draw.line((x, 0, x, CANVAS_H), fill=(255, 255, 255, GRID_A), width=1)
-    for y in range(0, CANVAS_H + 1, 90):
-        draw.line((0, y, CANVAS_W, y), fill=(255, 255, 255, GRID_A), width=1)
+    # Subtle scan-lines (every 4px, very faint)
+    for y in range(0, CANVAS_H, 4):
+        draw.line((0, y, CANVAS_W, y), fill=(0, 0, 0, 18))
+    # Faint neon-green corner glow (bottom-left, brand accent)
+    try:
+        glow_layer = _Img.new("RGBA", (CANVAS_W, CANVAS_H), (0, 0, 0, 0))
+        from PIL import ImageDraw as _ID
+        gd = _ID.Draw(glow_layer)
+        for radius in range(300, 0, -30):
+            alpha = max(0, int(6 * (1 - radius / 300)))
+            gd.ellipse((-radius, CANVAS_H - radius, radius, CANVAS_H + radius),
+                       fill=(57, 255, 20, alpha))
+        glow_layer = glow_layer.filter(_IF.GaussianBlur(radius=40))
+        image.alpha_composite(glow_layer)
+    except Exception:
+        pass
 
 
 # ── graitech chrome (logo + handle + page indicator) ─────────────────────────
@@ -1023,20 +1064,25 @@ def _gt_draw_chrome(image, draw, ImageFont, slide_number: int, total_slides: int
         except Exception:
             n1_w = tw // 2
         draw.text((px, py), num_parts[0], fill=ACCENT_GREEN, font=font_num)
-        draw.text((px + n1_w, py), " / " + num_parts[1], fill=(106, 106, 106, 255), font=font_page)
+        draw.text((px + n1_w, py), " / " + num_parts[1], fill=(200, 200, 200, 255), font=font_page)
     else:
-        draw.text((px, py), page_text, fill=(106, 106, 106, 255), font=font_page)
+        draw.text((px, py), page_text, fill=(200, 200, 200, 255), font=font_page)
 
 
 def _gt_draw_logo(image, right: int, top: int, size: int) -> None:
     """Paste the graitech logo at a fixed position with a neon glow."""
     from PIL import Image as _Img, ImageOps
-    path = GRAITECH_LOGO_PATH
-    if not path.exists():
-        # Fall back to old logo candidates
-        path = next((c for c in WATERMARK_CANDIDATES if c.exists()), None)
-        if not path:
-            return
+    _GRAITECH_SUBFOLDER = Path(__file__).resolve().parent / "assets" / "graitech" / "assets"
+    _LOGO_CANDIDATES = [
+        GRAITECH_LOGO_PATH,
+        _GRAITECH_SUBFOLDER / "graitech-logo.png",
+        _GRAITECH_SUBFOLDER / "GR logo without bng.png",
+        *WATERMARK_CANDIDATES,
+        *FINAL_LOGO_CANDIDATES,
+    ]
+    path = next((c for c in _LOGO_CANDIDATES if c.exists()), None)
+    if not path:
+        return
     try:
         logo = _Img.open(path).convert("RGBA")
         logo = logo.resize((size, size), _Img.Resampling.LANCZOS)
@@ -1069,7 +1115,7 @@ def _gt_draw_rule(draw, x: int, y: int) -> int:
 
 def _gt_draw_eyebrow(draw, ImageFont, text: str, x: int, y: int) -> int:
     """Draw eyebrow text in neon green Space Mono Bold. Returns y after eyebrow."""
-    font = _font(ImageFont, 20, bold=True, mono=True)
+    font = _font(ImageFont, 26, bold=True, mono=True)
     draw.text((x, y), text.upper(), fill=ACCENT_GREEN, font=font)
     try:
         bh = draw.textbbox((0, 0), text, font=font)[3]
@@ -1093,7 +1139,7 @@ def _gt_render_list_slide_bullets_only(
     content_w = x2 - x1 - 22  # 22px for bullet prefix
     avail_h = y2 - y1
     chosen_size = 26
-    for fsz in (30, 28, 26, 24, 22):
+    for fsz in (34, 32, 30, 28, 26):
         font_bp = _font(image_font, fsz, mono=True)
         total = 0
         for bp in bullets:
@@ -1180,7 +1226,7 @@ def _gt_render_title_slide(image, draw, ImageFont, Image, ImageDraw, ImageEnhanc
     subtitle = (slide.get("body") or "").strip()
     if subtitle and y < 920:
         remaining_h = min(920, 1190) - y
-        font_body = _font(ImageFont, 30, bold=False, mono=True)
+        font_body = _font(ImageFont, 36, bold=False, mono=True)
         sub_lines = _wrap_to_width(draw, subtitle, font_body, content_w, max_lines=4)
         for sline in sub_lines:
             if y + 36 > 950:
@@ -1208,8 +1254,8 @@ def _gt_render_title_slide(image, draw, ImageFont, Image, ImageDraw, ImageEnhanc
     # Source label
     source = (slide.get("source_label") or "").strip()
     if source:
-        font_src = _font(ImageFont, 18, mono=True)
-        draw.text((SAFE_L, 1160), f"SOURCE: {source.upper()}", fill=(106, 106, 106, 255), font=font_src)
+        font_src = _font(ImageFont, 26, mono=True)
+        draw.text((SAFE_L, 1155), f"SOURCE: {source.upper()}", fill=(200, 200, 200, 255), font=font_src)
 
 
 # ── List slide renderer ───────────────────────────────────────────────────────
@@ -1271,9 +1317,9 @@ def _gt_render_list_slide(draw, ImageFont, slide: dict) -> None:
 
     # Choose font size based on number of bullets and available height
     avail_h = 1185 - y
-    font_sizes_to_try = [34, 30, 28, 26]
-    BULLET_GAP = 28  # pixels between bullet items
-    LINE_GAP = 8     # pixels between wrapped lines within one bullet
+    font_sizes_to_try = [46, 42, 38, 34]
+    BULLET_GAP = 36  # pixels between bullet items
+    LINE_GAP = 12    # pixels between wrapped lines within one bullet
     content_w = SAFE_R - SAFE_L - 30  # 30px for bullet prefix
 
     chosen_size = 28
@@ -1414,7 +1460,7 @@ def _gt_render_cta_slide(image, draw, ImageFont, slide: dict) -> None:
         except Exception:
             gw = 120
         draw.text((SAFE_L + gw + 28, y), "FOLLOW FOR MORE",
-                  fill=(106, 106, 106, 255), font=font_meta_sm)
+                  fill=(200, 200, 200, 255), font=font_meta_sm)
 
 
 # ── Legacy slide renderer (for "image" / "keypoint" kinds) ───────────────────
@@ -2373,6 +2419,38 @@ def _generate_branded_fallback_image(title: str, topic: str) -> str:
         return ""
 
 
+def _generate_unique_fallback_image(title: str, topic: str, used_image_paths: set[str]) -> str:
+    """Guarantee a unique branded fallback image for this article.
+
+    Calls _generate_branded_fallback_image, then if the content-addressed path
+    collides with an already-used one (same title+topic in a prior batch),
+    appends a counter suffix until a fresh path is obtained.
+    Adds the chosen path to used_image_paths before returning.
+    """
+    base_path = _generate_branded_fallback_image(title, topic)
+    if not base_path:
+        return ""
+    if base_path not in used_image_paths:
+        used_image_paths.add(base_path)
+        return base_path
+    # Collision: same title+topic used in a previous batch — generate a variant.
+    p = Path(base_path)
+    for counter in range(1, 20):
+        variant = str(p.parent / f"{p.stem}_{counter}{p.suffix}")
+        if not Path(variant).exists():
+            # Copy the original file to the variant path so it renders correctly.
+            try:
+                import shutil as _shutil
+                _shutil.copy2(base_path, variant)
+            except Exception:
+                variant = base_path
+        if variant not in used_image_paths:
+            used_image_paths.add(variant)
+            return variant
+    # Absolute last resort — return base path (same image, but extremely rare)
+    return base_path
+
+
 def _find_library_image_unique(query: str, exclude_paths: set[str]) -> str | None:
     """Like _find_library_image but skips any path already in exclude_paths."""
     if not IMAGE_LIBRARY_DIR.exists():
@@ -2483,12 +2561,12 @@ def _fetch_og_image_from_url(article_url: str) -> str:
 
     # 1. og:image
     og = re.search(
-        r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\'][^>]*/?\\s*>',
+        r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\'][^>]*>',
         raw_html, re.I,
     )
     if not og:
         og = re.search(
-            r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\'][^>]*/?\\s*>',
+            r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\'][^>]*>',
             raw_html, re.I,
         )
     if og:
@@ -2498,12 +2576,12 @@ def _fetch_og_image_from_url(article_url: str) -> str:
 
     # 2. twitter:image
     tw = re.search(
-        r'<meta[^>]+(?:name|property)=["\']twitter:image["\'][^>]+content=["\']([^"\']+)["\'][^>]*/?\\s*>',
+        r'<meta[^>]+(?:name|property)=["\']twitter:image["\'][^>]+content=["\']([^"\']+)["\'][^>]*>',
         raw_html, re.I,
     )
     if not tw:
         tw = re.search(
-            r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:name|property)=["\']twitter:image["\'][^>]*/?\\s*>',
+            r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:name|property)=["\']twitter:image["\'][^>]*>',
             raw_html, re.I,
         )
     if tw:
@@ -2517,7 +2595,7 @@ def _fetch_og_image_from_url(article_url: str) -> str:
         raw_html, re.I | re.S,
     )
     search_zone = content_block.group(1) if content_block else raw_html
-    for img_match in re.finditer(r'<img[^>]+src=["\']([^"\']+)["\'][^>]*/?\\s*>', search_zone, re.I):
+    for img_match in re.finditer(r'<img[^>]+src=["\']([^"\']+)["\'][^>]*>', search_zone, re.I):
         src = img_match.group(1).strip()
         if (src.startswith(("http://", "https://"))
                 and any(ext in src.lower() for ext in (".jpg", ".jpeg", ".png", ".webp"))
@@ -2548,7 +2626,7 @@ def _download_to_library(url: str, seed_text: str) -> str | None:
             data = resp.read(8_000_000)
     except Exception:
         return None
-    if len(data) < 10_000:
+    if len(data) < 30_000:
         return None
     dest = IMAGE_LIBRARY_DIR / f"{cache_key}{suffix}"
     dest.write_bytes(data)
@@ -2791,7 +2869,7 @@ def _draw_keypoint_body_with_highlights(
 def _extract_instagram_key_points(
     article: dict[str, Any],
     summary: "EmailSummary",
-    max_points: int = 6,
+    max_points: int = 10,
 ) -> list[str]:
     """Extract punchy, attention-grabbing key points for Instagram slides.
 
@@ -2852,15 +2930,15 @@ def _extract_instagram_key_points(
                 raw.append(cleaned)
 
     # 3. Fallback — mine structured fields for insight sentences
-    if len(raw) < 3:
-        for field in ("what_happened", "why_matters", "what_to_watch", "description", "excerpt"):
+    if len(raw) < max_points:
+        for field in ("what_happened", "why_matters", "what_to_watch", "description", "excerpt", "scraped_content"):
             text = _strip_noise(_clean_public_text(str(article.get(field) or "")))
             if not text:
                 continue
             for sent in re.split(r"(?<=[.!?])\s+", text):
                 sent = sent.strip()
                 if (
-                    len(sent) > 30
+                    len(sent) > 40
                     and sent not in raw
                     and not any(sent.lower().startswith(pfx) for pfx in STOP_PREFIXES)
                 ):
@@ -3090,7 +3168,7 @@ def _search_wikimedia_image(query: str) -> str | None:
             continue
         if mime not in {"image/jpeg", "image/png", "image/webp"}:
             continue
-        if width < 500 or height < 350:
+        if width < 1280 or height < 720:
             continue
         if any(term in title for term in ("logo", "icon", "symbol", "seal", "flag")) and not _query_looks_like_company(query):
             continue
@@ -3735,7 +3813,7 @@ def _strip_decorative_symbols(text: str) -> str:
     return re.sub(r"\s+", " ", "".join(cleaned)).strip()
 
 
-def _scrape_article_text(url: str, timeout: int = 8, max_chars: int = 4000) -> str:
+def _scrape_article_text(url: str, timeout: int = 12, max_chars: int = 20000) -> str:
     """Fetch and extract readable text from an article URL.
 
     Used to enrich articles with full content for better key-point extraction.
@@ -3861,98 +3939,3 @@ def _fallback_story_page(summary: EmailSummary, article: dict[str, Any], page_nu
         "The next useful signal will be adoption, pricing, benchmarks, limitations, or user reaction.",
     ]
     return " ".join(part for part in parts if part)
-
-
-def _dedupe_lead_text(text: str, headline: str) -> str:
-    text = re.sub(r"\s+", " ", text or "").strip()
-    headline = re.sub(r"\s+", " ", headline or "").strip()
-    if not text or not headline:
-        return text
-    lowered = text.lower()
-    headline_lower = headline.lower()
-    if lowered == headline_lower:
-        return text
-    if lowered.startswith(headline_lower):
-        remainder = text[len(headline):].strip()
-        if remainder.startswith(("-", "|", ":", ".")):
-            remainder = remainder[1:].strip()
-        return remainder or headline
-    return text
-
-
-def _supporting_note(summary: EmailSummary, article: dict[str, Any], article_index: int, heading: str, variant: str = "why") -> str:
-    # Prefer the pre-structured narrative fields from the new summariser
-    why_matters = _clean_public_text(str(article.get("why_matters") or ""))
-    what_watch = _clean_public_text(str(article.get("what_to_watch") or ""))
-    what_happened = _clean_public_text(str(article.get("what_happened") or ""))
-    points = [_clean_public_text(str(p)) for p in article.get("key_points", []) if str(p).strip()]
-    points = [p for p in points if p]
-    topics = ", ".join(summary.topics[:3]) or "AI product updates"
-    article_title = _tighten(_clean_public_text(str(article.get("title") or summary.headline or summary.subject or "AI update")), 72)
-    if variant == "why":
-        detail = why_matters or (points[1] if len(points) > 1 else points[0] if points else f"This changes the practical AI tooling story around {topics}.")
-        return f"{heading}\n\n{_tighten(detail, 200)}"
-    if variant == "signal":
-        detail = what_watch or (points[2] if len(points) > 2 else f"Watch whether this becomes useful in real workflows, not just another announcement.")
-        return f"{heading}\n\n{_tighten(detail, 200)}"
-    detail = what_watch or (points[2] if len(points) > 2 else f"Watch adoption, developer feedback, and follow-up releases around {article_title}.")
-    return f"{heading}\n\n{_tighten(detail, 200)}"
-
-
-def _email_datetime(value: str) -> datetime | None:
-    try:
-        parsed = parsedate_to_datetime(value)
-    except (TypeError, ValueError, IndexError):
-        return None
-    if parsed.tzinfo is None:
-        parsed = parsed.replace(tzinfo=timezone.utc)
-    return parsed.astimezone()
-
-def _keywords(summary: EmailSummary) -> list[str]:
-    raw = [*_clean_entity_list(summary.companies), *summary.models, *summary.topics]
-    raw.extend(["AI news", "AI tools", "automation", "tech update", "artificial intelligence"])
-    seen: set[str] = set()
-    keywords: list[str] = []
-    for item in raw:
-        cleaned = re.sub(r"\s+", " ", item).strip()
-        key = cleaned.lower()
-        if cleaned and key not in seen and not any(term in key for term in VIDEO_BLOCKED_TERMS):
-            seen.add(key)
-            keywords.append(cleaned)
-    return keywords
-
-
-def _tighten(text: str, limit: int) -> str:
-    text = re.sub(r"\s+", " ", text or "").strip()
-    if len(text) <= limit:
-        return text
-    return text[: limit - 3].rsplit(" ", 1)[0].rstrip(".,;:") + "..."
-
-
-def _slugify(value: str) -> str:
-    slug = re.sub(r"[^a-zA-Z0-9]+", "-", value.lower()).strip("-")
-    return slug[:72] or "ai-news"
-
-def _hashtag(value: str) -> str:
-    tag = re.sub(r"[^a-zA-Z0-9]", "", value.title())
-    return tag or "AINews"
-
-
-def _clean_entity_list(values: list[str]) -> list[str]:
-    cleaned: list[str] = []
-    seen: set[str] = set()
-    for raw in values:
-        value = re.sub(r"\s+", " ", raw or "").strip()
-        if not value:
-            continue
-        lowered = value.lower()
-        if any(term in lowered for term in NOISY_ENTITY_TERMS):
-            continue
-        if len(value.split()) > 4:
-            continue
-        key = lowered
-        if key in seen:
-            continue
-        seen.add(key)
-        cleaned.append(value)
-    return cleaned

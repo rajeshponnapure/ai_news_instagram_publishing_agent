@@ -20,7 +20,7 @@ def write_publish_manifest(carousel_dirs: list[Path], public_media_base_url: str
     existing_posts = _existing_manifest_posts(manifest_path)
     posts = []
     for index, carousel_dir in enumerate(carousel_dirs):
-        slides = sorted(carousel_dir.glob("slide_*.png"))[:10]
+        slides = sorted(carousel_dir.glob("slide_*.png"))[:20]
         caption_path = carousel_dir / "caption.txt"
         caption = caption_path.read_text(encoding="utf-8") if caption_path.exists() else ""
         existing = existing_posts.get(str(carousel_dir), {})
@@ -53,16 +53,33 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
         raise ValueError("IG_USER_ID and IG_ACCESS_TOKEN are required for Instagram auto-publishing.")
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     published = 0
-    for post in manifest.get("posts", []):
+    posts = manifest.get("posts", [])
+    print(f"publish_ready_carousels: manifest has {len(posts)} post(s)")
+    for post_idx, post in enumerate(posts, 1):
+        folder = post.get("folder", f"post-{post_idx}")
+        status = post.get("status", "unknown")
         # Hard guard: never republish a post that already has a published_at timestamp,
         # regardless of what status the manifest carries.  This prevents duplicates
         # when write_publish_manifest() is called multiple times across runs.
         if post.get("published_at"):
+            print(f"  [{post_idx}] SKIP (already published at {post['published_at']}): {folder}")
             continue
         if post.get("status") not in {"ready_for_publish", "ready_for_upload", "container_created", "publish_failed_retryable"}:
+            print(f"  [{post_idx}] SKIP (status={status!r} not publishable): {folder}")
             continue
         urls = [url for url in post.get("public_slide_urls", []) if url]
         if len(urls) < 2:
+            folder = post.get("folder", "unknown")
+            print(
+                f"SKIPPING carousel '{folder}': only {len(urls)} public URL(s) found "
+                f"(Instagram requires ≥2). Check that PUBLIC_MEDIA_BASE_URL is set "
+                f"and the batch was deployed to GitHub Pages before publishing."
+            )
+            post["status"] = "publish_failed"
+            post["error"] = f"Only {len(urls)} public slide URL(s); Instagram requires at least 2."
+            manifest_path.write_text(
+                __import__("json").dumps(manifest, ensure_ascii=True, indent=2), encoding="utf-8"
+            )
             continue
         try:
             # Instagram enforces a minimum gap between consecutive posts.
@@ -79,7 +96,7 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
                 status = _container_status(settings, creation_id)
                 if status.get("status_code") in {"ERROR", "EXPIRED"}:
                     creation_id = None
-            creation_id = creation_id or _create_carousel_container(settings, urls[:10], post.get("caption", ""))
+            creation_id = creation_id or _create_carousel_container(settings, urls[:20], post.get("caption", ""))
             post["creation_id"] = creation_id
             post["status"] = "container_created"
             manifest_path.write_text(json.dumps(manifest, ensure_ascii=True, indent=2), encoding="utf-8")
@@ -226,19 +243,4 @@ def _existing_manifest_posts(manifest_path: Path) -> dict[str, dict]:
         return {}
     posts = {}
     for post in manifest.get("posts", []):
-        folder = str(post.get("folder", ""))
-        if folder:
-            posts[folder] = post
-    return posts
-
-
-def _carry_publish_fields(existing: dict) -> dict:
-    carried = {}
-    for key in (
-        "creation_id",
-        "published_at",
-        "error",
-    ):
-        if existing.get(key):
-            carried[key] = existing[key]
-    return carried
+        folder = str(post.get("folder", 
