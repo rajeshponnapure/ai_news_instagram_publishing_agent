@@ -9,10 +9,15 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-131607/01_20260522-1130_mega-ipos-could-signal-market-top-say-analysts-as-spacex-and-openai-prep/slide_03.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-131607/01_20260522-1130_mega-ipos-could-signal-market-top-say-analysts-as-spacex-and-openai-prep/slide_04.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload",
-      "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 7 concrete signal(s), 1 source link(s)"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-131607/01_20260522-1130_mega-ipos-could-signal-market-top-say-analysts-as-spacex-and-openai-prep/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-131607/01_20260522-1130_mega-ipos-could-signal-market-top-say-analysts-as-spacex-and-openai-prep/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-131607/01_20260522-1130_mega-ipos-could-signal-market-top-say-analysts-as-spacex-and-openai-prep/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-131607/01_20260522-1130_mega-ipos-could-signal-market-top-say-analysts-as-spacex-and-openai-prep/slide_04.png"
+      ],
+      "status": "published",
+      "creation_id": "18044137715577438",
+      "published_at": "2026-05-23T18:43:11+00:00"
     }
   ]
 }

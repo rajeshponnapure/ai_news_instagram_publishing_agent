@@ -23,11 +23,10 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/01_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-1/slide_07.png",
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/01_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-1/slide_08.png"
       ],
-      "status": "publish_failed_retryable",
-      "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 13 concrete signal(s), 2 source link(s)",
-      "creation_id": "18043958939577438",
-      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"AUgxXX-sc_N9rFWr9X7JmlN\"}}"
+      "status": "published",
+      "creation_id": "18044152583577438",
+      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"AUgxXX-sc_N9rFWr9X7JmlN\"}}",
+      "published_at": "2026-05-23T22:36:23+00:00"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/02_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-2",
@@ -50,11 +49,10 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/02_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-2/slide_06.png",
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/02_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-2/slide_07.png"
       ],
-      "status": "publish_failed_retryable",
-      "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 16 concrete signal(s), 2 source link(s)",
-      "creation_id": "18043959803577438",
-      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"Au-y2_8EmkosDqTySdVObws\"}}"
+      "status": "published",
+      "creation_id": "18044152904577438",
+      "error": "Graph API request failed for 17841447323115790/media_publish: 400 Bad Request. Response: {\"error\":{\"message\":\"Fatal\",\"type\":\"OAuthException\",\"code\":-1,\"error_subcode\":2207085,\"is_transient\":false,\"error_user_title\":\"Generic Internal Error\",\"error_user_msg\":\"An internal server error occurred. Please try again later.\",\"fbtrace_id\":\"Au-y2_8EmkosDqTySdVObws\"}}",
+      "published_at": "2026-05-23T22:37:28+00:00"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/03_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-3",
@@ -81,10 +79,10 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/03_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-3/slide_08.png",
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/03_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-3/slide_09.png"
       ],
-      "status": "publish_failed_retryable",
-      "story_score": 1.0,
-      "story_selected_reason": "article image available, source URL available, 21 concrete signal(s), 2 source link(s)",
-      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"AfJ-ndqERx0dNOy0IDowJKK\"}}"
+      "status": "published",
+      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"AfJ-ndqERx0dNOy0IDowJKK\"}}",
+      "creation_id": "18044153120577438",
+      "published_at": "2026-05-23T22:38:44+00:00"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/04_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-4",
@@ -111,10 +109,10 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/04_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-4/slide_08.png",
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/04_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-4/slide_09.png"
       ],
-      "status": "publish_failed_retryable",
-      "story_score": 1.0,
-      "story_selected_reason": "source URL available, 9 concrete signal(s), 2 source link(s)",
-      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"Alb3DWCVtsqjfYVCj8OyjDb\"}}"
+      "status": "published",
+      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"Alb3DWCVtsqjfYVCj8OyjDb\"}}",
+      "creation_id": "18044153384577438",
+      "published_at": "2026-05-23T22:40:17+00:00"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/05_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-5",
@@ -139,10 +137,10 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/05_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-5/slide_07.png",
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/05_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-5/slide_08.png"
       ],
-      "status": "publish_failed_retryable",
-      "story_score": 1.0,
-      "story_selected_reason": "source URL available, 9 concrete signal(s), 2 source link(s)",
-      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"A0dayy0vdofRiU6Hq8hhhJd\"}}"
+      "status": "published",
+      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"A0dayy0vdofRiU6Hq8hhhJd\"}}",
+      "creation_id": "18044153510577438",
+      "published_at": "2026-05-23T22:41:30+00:00"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/06_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-6",
@@ -169,10 +167,10 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/06_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-6/slide_08.png",
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/06_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-6/slide_09.png"
       ],
-      "status": "publish_failed_retryable",
-      "story_score": 1.0,
-      "story_selected_reason": "source URL available, 14 concrete signal(s), 2 source link(s)",
-      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"AGeqkeLbgEpFNRY_pB2jcr8\"}}"
+      "status": "published",
+      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"AGeqkeLbgEpFNRY_pB2jcr8\"}}",
+      "creation_id": "18044153651577438",
+      "published_at": "2026-05-23T22:43:04+00:00"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/07_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-7",
@@ -195,10 +193,10 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/07_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-7/slide_06.png",
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/07_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-7/slide_07.png"
       ],
-      "status": "publish_failed_retryable",
-      "story_score": 1.0,
-      "story_selected_reason": "source URL available, 12 concrete signal(s), 2 source link(s)",
-      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"Al454Vs7_wxH8KbJTqa8RyX\"}}"
+      "status": "published",
+      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"Al454Vs7_wxH8KbJTqa8RyX\"}}",
+      "creation_id": "18044153777577438",
+      "published_at": "2026-05-23T22:44:28+00:00"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/08_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-8",
@@ -225,10 +223,10 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/08_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-8/slide_08.png",
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/08_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-8/slide_09.png"
       ],
-      "status": "publish_failed_retryable",
-      "story_score": 1.0,
-      "story_selected_reason": "source URL available, 8 concrete signal(s), 2 source link(s)",
-      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"AMjA_Z2xnBLd9ZVkSJa_cdE\"}}"
+      "status": "published",
+      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"AMjA_Z2xnBLd9ZVkSJa_cdE\"}}",
+      "creation_id": "18044153948577438",
+      "published_at": "2026-05-23T22:45:54+00:00"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/09_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-9",
@@ -253,10 +251,10 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/09_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-9/slide_07.png",
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/09_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-9/slide_08.png"
       ],
-      "status": "publish_failed_retryable",
-      "story_score": 1.0,
-      "story_selected_reason": "source URL available, 8 concrete signal(s), 2 source link(s)",
-      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"Ak7p8IL_k-6r2pazpEp4mVA\"}}"
+      "status": "published",
+      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"Ak7p8IL_k-6r2pazpEp4mVA\"}}",
+      "creation_id": "18044154116577438",
+      "published_at": "2026-05-23T22:47:24+00:00"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/10_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-10",
@@ -279,10 +277,10 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/10_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-10/slide_06.png",
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/10_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-10/slide_07.png"
       ],
-      "status": "publish_failed_retryable",
-      "story_score": 1.0,
-      "story_selected_reason": "source URL available, 30 concrete signal(s), 2 source link(s)",
-      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"ABVu7FkeC74NkMBWBZDO45g\"}}"
+      "status": "published",
+      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"ABVu7FkeC74NkMBWBZDO45g\"}}",
+      "creation_id": "18044154287577438",
+      "published_at": "2026-05-23T22:48:51+00:00"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260522-073800/11_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-11",
@@ -301,10 +299,10 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/11_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-11/slide_04.png",
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260522-073800/11_20260522-0442_openai-gives-chatgpt-ads-a-visual-upgrade-part-11/slide_05.png"
       ],
-      "status": "publish_failed_retryable",
-      "story_score": 1.0,
-      "story_selected_reason": "source URL available, 12 concrete signal(s), 1 source link(s)",
-      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"A29ba6T-TQW5dg5Uwvf2zvl\"}}"
+      "status": "published",
+      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207069,\"error_user_title\":\"Media Creation Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be created by Content Publishing API. For more context, please check instagram graph api - content publishing developer doc.\",\"fbtrace_id\":\"A29ba6T-TQW5dg5Uwvf2zvl\"}}",
+      "creation_id": "18044154506577438",
+      "published_at": "2026-05-23T22:50:06+00:00"
     }
   ]
 }
