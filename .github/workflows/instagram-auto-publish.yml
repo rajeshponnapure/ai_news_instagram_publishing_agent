@@ -39,9 +39,11 @@ on:
 
 concurrency:
   group: instagram-auto-publish
-  cancel-in-progress: false
-  # Only one run at a time. If a new trigger fires while a run is in progress,
-  # it waits rather than running in parallel - this prevents duplicate posts.
+  cancel-in-progress: true
+  # Cancel any in-progress run when a new cron fires. This prevents the
+  # concurrency slot from becoming permanently blocked by a stuck run.
+  # Duplicate-post safety is guaranteed by the published_at guard in
+  # publisher.py — not by serialising runs.
 
 permissions:
   contents: write
