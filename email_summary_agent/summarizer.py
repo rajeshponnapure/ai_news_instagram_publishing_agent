@@ -407,7 +407,7 @@ def _extract_narrative_sections(article: ArticleData, title: str, full_extract: 
         desc = _clean_text(article.description or article.excerpt or title)
         return desc, "", ""
     ranked = _rank_sentences(sentences)
-    top_sentences = [sentences[i] for i, _ in ranked[:24]] if full_extract else [sentences[i] for i, _ in ranked[:10]]
+    top_sentences = [sentences[i] for i, _ in ranked[:50]] if full_extract else [sentences[i] for i, _ in ranked[:20]]
     # What happened: action sentences with concrete details
     action_sentences = [s for s in top_sentences if _ACTION_RE.search(s)]
     detail_sentences = [s for s in top_sentences if re.search(r"\b\d+\b", s)]
@@ -469,7 +469,7 @@ def _extract_key_points(article: ArticleData, title: str, full_extract: bool = T
     if not sentences:
         return [_trim(article.description or title, 220)] if (article.description or title) else []
     ranked = _rank_sentences(sentences)
-    candidates = [sentences[i] for i, _ in ranked[:24]] if full_extract else [sentences[i] for i, _ in ranked[:12]]
+    candidates = [sentences[i] for i, _ in ranked[:50]] if full_extract else [sentences[i] for i, _ in ranked[:20]]
     points: list[str] = []
     seen: set[str] = set()
     for s in candidates:
@@ -478,7 +478,7 @@ def _extract_key_points(article: ArticleData, title: str, full_extract: bool = T
             continue
         seen.add(key)
         points.append(_trim(s, 220))
-        if len(points) >= (10 if full_extract else 6):
+        if len(points) >= (12 if full_extract else 8):
             break
     return points
 
@@ -720,7 +720,10 @@ def _fallback_headline(email: EmailItem) -> str:
 
 
 def _is_digest_subject(subject: str) -> bool:
-    return bool(re.search(r"\bAI\s+(Alert|Digest|Updates)\b", subject, flags=re.I))
+    return bool(re.search(
+        r"\b(AI\s+Alert|AI\s+Digest|AI\s+Updates|daily\s+digest|news\s+digest|morning\s+brief|evening\s+brief|weekly\s+digest|ai\s+roundup|tech\s+digest)\b",
+        subject, flags=re.I,
+    ))
 
 
 def _extract_subject_sources(subject: str) -> list[str]:
