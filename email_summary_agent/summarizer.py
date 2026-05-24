@@ -210,13 +210,16 @@ class SummaryProvider:
     def _can_use_ollama(self) -> bool:
         if self.provider == "local":
             return False
+        if not self.ollama_url or not self.ollama_url.startswith(("http://", "https://")):
+            self._ollama_available = False
+            return False
         if self._ollama_available is not None:
             return self._ollama_available
         try:
             req = urllib.request.Request(f"{self.ollama_url}/api/tags", method="GET")
             with urllib.request.urlopen(req, timeout=1.5) as resp:
                 self._ollama_available = resp.status == 200
-        except (urllib.error.URLError, TimeoutError, OSError):
+        except (urllib.error.URLError, TimeoutError, OSError, ValueError):
             self._ollama_available = False
         return self._ollama_available
 
