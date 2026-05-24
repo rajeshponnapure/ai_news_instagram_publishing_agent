@@ -243,4 +243,16 @@ def _existing_manifest_posts(manifest_path: Path) -> dict[str, dict]:
         return {}
     posts = {}
     for post in manifest.get("posts", []):
-        folder = str(post.get("folder", 
+        folder = str(post.get("folder", ""))
+        if folder:
+            posts[folder] = post
+    return posts
+
+
+def _carry_publish_fields(existing: dict) -> dict:
+    """Carry over publish-state fields from an existing manifest entry."""
+    fields = {}
+    for key in ("creation_id", "published_at", "error"):
+        if key in existing:
+            fields[key] = existing[key]
+    return fields
