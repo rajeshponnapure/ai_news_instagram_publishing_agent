@@ -292,14 +292,14 @@ def _svg_b64(path):
 
 
 def _image_css(img_path):
+    _FALLBACK = "linear-gradient(135deg,#0a0a0a 0%,#1a1a1a 50%,#0d0d0d 100%)"
     if not img_path:
-        return "linear-gradient(135deg,#0a0a0a 0%,#1a1a1a 50%,#0d0d0d 100%)"
+        return _FALLBACK
     p = Path(img_path)
     if not p.exists():
-        return "linear-gradient(135deg,#0a0a0a 0%,#1a1a1a 50%,#0d0d0d 100%)"
-    mime = {".jpg":"image/jpeg",".jpeg":"image/jpeg",".png":"image/png",
-            ".webp":"image/webp"}.get(p.suffix.lower(), "image/jpeg")
-    return f"url('data:{mime};base64,{base64.b64encode(p.read_bytes()).decode('ascii')}')"
+        return _FALLBACK
+    file_url = p.absolute().as_uri()
+    return f"url('{file_url}')"
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -312,10 +312,14 @@ def _screenshot_html(html_src, out_path):
     tmp.write_text(html_src, encoding="utf-8")
     try:
         with sync_playwright() as p:
-            browser = p.chromium.launch(args=["--no-sandbox", "--disable-gpu"])
+            browser = p.chromium.launch(args=[
+                "--no-sandbox",
+                "--disable-gpu",
+                "--disable-dev-shm-usage",
+            ])
             page = browser.new_page(viewport={"width": CANVAS_W, "height": CANVAS_H})
-            page.goto(f"file://{tmp.absolute()}", wait_until="networkidle")
-            page.wait_for_timeout(300)
+            page.goto(tmp.absolute().as_uri(), wait_until="load", timeout=15000)
+            page.wait_for_timeout(200)
             out_path.parent.mkdir(parents=True, exist_ok=True)
             page.screenshot(path=str(out_path), full_page=False, type="png")
             browser.close()

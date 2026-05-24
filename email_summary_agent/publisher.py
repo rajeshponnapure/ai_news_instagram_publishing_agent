@@ -20,7 +20,7 @@ def write_publish_manifest(carousel_dirs: list[Path], public_media_base_url: str
     existing_posts = _existing_manifest_posts(manifest_path)
     posts = []
     for index, carousel_dir in enumerate(carousel_dirs):
-        slides = sorted(carousel_dir.glob("slide_*.png"))[:20]
+        slides = sorted(carousel_dir.glob("slide_*.png"))[:10]
         caption_path = carousel_dir / "caption.txt"
         caption = caption_path.read_text(encoding="utf-8") if caption_path.exists() else ""
         existing = existing_posts.get(str(carousel_dir), {})
@@ -82,19 +82,17 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
             )
             continue
         try:
-            # Instagram enforces a minimum gap between consecutive posts.
-            # Wait 30 seconds before every post after the first so the API
-            # does not reject the second and subsequent carousels with a
-            # rate-limit error when a single run processes multiple emails.
             if published > 0:
                 print(f"Waiting 30 s before next carousel to respect Instagram rate limits …")
                 time.sleep(30)
 
+            print(f"  [{post_idx}] Publishing {folder} ({len(urls)} slides)…")
             creation_id = post.get("creation_id")
             if creation_id:
-                # Check whether the previously-stored container is still usable.
                 status = _container_status(settings, creation_id)
-                if status.get("status_code") in {"ERROR", "EXPIRED"}:
+                code = status.get("status_code", "")
+                if code in {"ERROR", "EXPIRED"}:
+                    print(f"  [{post_idx}] Previous container {creation_id} is {code}, creating new one")
                     creation_id = None
             creation_id = creation_id or _create_carousel_container(settings, urls[:10], post.get("caption", ""))
             post["creation_id"] = creation_id
@@ -104,21 +102,25 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
             _publish_container_with_retry(settings, creation_id)
             post["status"] = "published"
             post["published_at"] = datetime.now().astimezone().isoformat(timespec="seconds")
-            print(f"Published carousel {published + 1}: {post.get('folder', '')}")
+            print(f"  [{post_idx}] Published successfully: {folder}")
             published += 1
         except RuntimeError as exc:
-            post["status"] = "publish_failed_retryable" if _is_retryable_publish_error(str(exc)) else "publish_failed"
+            is_retryable = _is_retryable_publish_error(str(exc))
+            post["status"] = "publish_failed_retryable" if is_retryable else "publish_failed"
             post["error"] = str(exc)
             manifest_path.write_text(json.dumps(manifest, ensure_ascii=True, indent=2), encoding="utf-8")
-            if post["status"] == "publish_failed":
-                raise
+            print(f"  [{post_idx}] FAILED ({post['status']}): {exc}")
+            if not is_retryable:
+                continue
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=True, indent=2), encoding="utf-8")
     return published
 
 
 def _create_carousel_container(settings: Settings, image_urls: list[str], caption: str) -> str:
+    print(f"    Creating carousel: {len(image_urls)} slides")
     child_ids = []
-    for image_url in image_urls:
+    for idx, image_url in enumerate(image_urls, 1):
+        print(f"    Uploading slide {idx}/{len(image_urls)}: {image_url[:120]}")
         child = _graph_post(
             settings,
             f"{settings.ig_user_id}/media",
@@ -137,6 +139,7 @@ def _create_carousel_container(settings: Settings, image_urls: list[str], captio
             "caption": caption[:2200],
         },
     )
+    print(f"    Carousel container created: {parent['id']}")
     return parent["id"]
 
 

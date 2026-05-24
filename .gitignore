@@ -1,6 +1,7 @@
 # Secrets and environment files
 .env
 .env.*
+
 !.env.example
 
 # Python bytecode and caches

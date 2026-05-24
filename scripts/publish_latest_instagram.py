@@ -41,7 +41,11 @@ def main() -> int:
         return 0
     batch_dir, manifest_path = selected
 
-    published = publish_ready_carousels(settings, manifest_path)
+    try:
+        published = publish_ready_carousels(settings, manifest_path)
+    except Exception as exc:
+        print(f"ERROR during publish: {exc}")
+        published = 0
 
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     statuses: dict[str, int] = {}
@@ -53,8 +57,12 @@ def main() -> int:
         f"Published {published} Instagram carousel(s) "
         f"from {batch_dir}. Statuses: {statuses}"
     )
-    failed = statuses.get("publish_failed", 0)
-    return 1 if failed else 0
+    permanently_failed = statuses.get("publish_failed", 0)
+    retryable = statuses.get("publish_failed_retryable", 0)
+    if retryable and not permanently_failed:
+        print(f"{retryable} post(s) failed with retryable errors — will retry next run.")
+        return 0
+    return 1 if permanently_failed else 0
 
 
 def _batch_is_recent(batch_dir: Path) -> bool:

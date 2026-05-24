@@ -53,9 +53,9 @@ jobs:
   generate:
     name: Generate carousel slides
     runs-on: ubuntu-latest
-    # With 10-slide cap and 30-min cron, keep under 20 min so the full
-    # workflow (generate + deploy + publish) finishes before the next cron.
-    timeout-minutes: 20
+    # 3 emails × 15 articles × 12s = ~9 min enrichment + rendering overhead.
+    # 25 min gives ample headroom within the 30-min cron interval.
+    timeout-minutes: 25
     outputs:
       changed: ${{ steps.commit.outputs.changed }}
       has_batch: ${{ steps.detect.outputs.has_batch }}
@@ -70,17 +70,12 @@ jobs:
       SUMMARY_PROVIDER: local
       PROCESS_ALL_MATCHING: 'false'
       LOOKBACK_HOURS: '48'
-      # Slightly under 15 min so back-to-back runs always scan for new mail.
-      EMAIL_CHECK_INTERVAL_MINUTES: '12'
-      MAX_EMAILS_PER_RUN: '5'
-      # Digest emails can have 15-50 news items - capture every story in one pass.
-      MAX_ARTICLE_LINKS_PER_EMAIL: '50'
+      EMAIL_CHECK_INTERVAL_MINUTES: '25'
+      MAX_EMAILS_PER_RUN: '3'
+      MAX_ARTICLE_LINKS_PER_EMAIL: '15'
       ENRICH_ARTICLES: 'true'
       CREATE_INSTAGRAM_POSTS: 'true'
-      # DO NOT publish here - images must be deployed to GitHub Pages first.
       AUTO_PUBLISH_INSTAGRAM: 'false'
-      # Instagram carousel maximum is 20 slides per post.
-      MAX_CAROUSEL_SLIDES: '20'
       PYTHONUTF8: '1'
 
     steps:
@@ -121,9 +116,11 @@ jobs:
           fi
 
       - name: Set git remote with token
+        if: always()
         run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
 
       - name: Commit generated reports and state
+        if: always()
         id: commit
         run: |
           git config user.name 'github-actions[bot]'
@@ -142,6 +139,7 @@ jobs:
           fi
 
       - name: Detect unpublished batches
+        if: always()
         id: detect
         run: |
           if [ ! -d reports/instagram_posts ]; then
