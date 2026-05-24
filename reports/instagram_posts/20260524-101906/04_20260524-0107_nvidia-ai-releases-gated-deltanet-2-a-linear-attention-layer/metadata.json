@@ -1,0 +1,76 @@
+{
+  "email_received_at": "2026-05-24T01:07-07:00",
+  "recommended_post_time": "22:00",
+  "headline": "NVIDIA AI Releases Gated DeltaNet-2: A Linear Attention Layer That Decouples Erase and Write in the Delta Rule",
+  "subject": "\ud83d\udea8 AI Alert: 1 new launch \u2014 MarkTechPost AI",
+  "source_date": "Sun, 24 May 2026 01:07:37 -0700",
+  "companies": [
+    "OpenAI",
+    "Microsoft",
+    "NVIDIA",
+    "Perplexity",
+    "Hugging Face",
+    "Online-Mind2Web Microsoft Research"
+  ],
+  "models": [
+    "GPT-5.4",
+    "Gemini 2.5"
+  ],
+  "topics": [
+    "model release",
+    "developer tools",
+    "hardware and compute"
+  ],
+  "article_url": "https://www.marktechpost.com/2026/05/24/nvidia-ai-releases-gated-deltanet-2-a-linear-attention-layer-that-decouples-erase-and-write-in-the-delta-rule/",
+  "article_title": "NVIDIA AI Releases Gated DeltaNet-2: A Linear Attention Layer That Decouples Erase and Write in the Delta Rule",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e88c90b2a3c28e4a.png",
+  "article_image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-44-1024x731.png",
+  "article_items": [
+    {
+      "url": "https://www.marktechpost.com/2026/05/24/nvidia-ai-releases-gated-deltanet-2-a-linear-attention-layer-that-decouples-erase-and-write-in-the-delta-rule/",
+      "title": "NVIDIA AI Releases Gated DeltaNet-2: A Linear Attention Layer That Decouples Erase and Write in the Delta Rule",
+      "description": "NVIDIA releases Gated DeltaNet-2: linear attention with channel-wise erase and write gates, outperforming KDA and Mamba-3 at 1.3B.",
+      "excerpt": "NVIDIA releases Gated DeltaNet-2: linear attention with channel-wise erase and write gates, outperforming KDA and Mamba-3 at 1.3B.",
+      "summary": "Connect with us Microsoft Research Releases Webwright: A Terminal-Native Web Agent Framework That Scores 60.1% on Odysseys, Up from Base GPT-5.4\u2019s 33.5% Tencent Open-Sources TencentDB Agent Memory: A 4-Tier Local Memory Pipeline for AI Agents Build a SuperClaude Framework Workflow with Commands, Agents, Modes, and Session Memory Nous Research Releases Contrastive Neuron Attribution (CNA): Sparse MLP Circuit Steering Without SAE Training or Weight Modification Perplexity Open-Sources Bumblebee: A Read-Only... The practical impact: Perplexity Open-Sources Bumblebee: A Read-Only Supply-Chain Scanner for Developer Endpoints A Step-by-Step Coding Tutorial to Implement GBrain: The Self-Wiring Memory Layer Built by Y... Build Recurrent-Depth Transformers with OpenMythos for MLA, GQA, Sparse MoE, and Loop-Scaled Reasoning How CopilotKit Is Redefining the Agentic AI Stack in 2026 Qwen Introduces Qwen3.7-Max: A Reasoning Agent Model... Watch next: It outperforms Mamba-2, Gated DeltaNet, KDA, and Mamba-3 across the researchs benchmark suite. Build Recurrent-Depth Transformers with OpenMythos for MLA, GQA, Sparse MoE, and Loop-Scaled Reasoning How CopilotKit Is Redefining the Agentic AI...",
+      "what_happened": "Connect with us Microsoft Research Releases Webwright: A Terminal-Native Web Agent Framework That Scores 60.1% on Odysseys, Up from Base GPT-5.4\u2019s 33.5% Tencent Open-Sources TencentDB Agent Memory: A 4-Tier Local Memory Pipeline for AI Agents Build a SuperClaude Framework Workflow with Commands, Agents, Modes, and Session Memory Nous Research Releases Contrastive Neuron Attribution (CNA): Sparse MLP Circuit Steering Without SAE Training or Weight Modification Perplexity Open-Sources Bumblebee: A Read-Only...",
+      "why_matters": "The practical impact: Perplexity Open-Sources Bumblebee: A Read-Only Supply-Chain Scanner for Developer Endpoints A Step-by-Step Coding Tutorial to Implement GBrain: The Self-Wiring Memory Layer Built by Y... Build Recurrent-Depth Transformers with OpenMythos for MLA, GQA, Sparse MoE, and Loop-Scaled Reasoning How CopilotKit Is Redefining the Agentic AI Stack in 2026 Qwen Introduces Qwen3.7-Max: A Reasoning Agent Model...",
+      "what_to_watch": "Watch next: It outperforms Mamba-2, Gated DeltaNet, KDA, and Mamba-3 across the researchs benchmark suite. Build Recurrent-Depth Transformers with OpenMythos for MLA, GQA, Sparse MoE, and Loop-Scaled Reasoning How CopilotKit Is Redefining the Agentic AI Stack in 2026 Qwen Introduces Qwen3.7-Max: A Reasoning Agent...",
+      "key_points": [
+        "Connect with us Microsoft Research Releases Webwright: A Terminal-Native Web Agent Framework That Scores 60.1% on Odysseys, Up from Base GPT-5.4\u2019s 33.5% Tencent Open-Sources TencentDB Agent Memory: A 4-Tier Local...",
+        "Tencent Open-Sources TencentDB Agent Memory: A 4-Tier Local Memory Pipeline for AI Agents Build a SuperClaude Framework Workflow with Commands, Agents, Modes, and Session Memory Nous Research Releases Contrastive...",
+        "Build Recurrent-Depth Transformers with OpenMythos for MLA, GQA, Sparse MoE, and Loop-Scaled Reasoning How CopilotKit Is Redefining the Agentic AI Stack in 2026 Qwen Introduces Qwen3.7-Max: A Reasoning Agent Model...",
+        "The recurrent model averages 53.11 across LAMBADA and the reasoning suite.",
+        "Clone the repo and build the environment The official PyTorch implementation ships with a Dockerfile, training scripts, and the lit_gpt model definitions.",
+        "The recurrent average is 29.88 and the hybrid average is 42.28.",
+        "It introduces a channel-wise erase gate bt \u2208 [0,1]dk on the key axis.",
+        "It also introduces a channel-wise write gate wt \u2208 [0,1]dv on the value axis.",
+        "On language modeling and commonsense reasoning, Gated DeltaNet-2 has the best average in both settings.",
+        "NVIDIA AI Releases Gated DeltaNet-2: A Linear Attention Layer That Decouples Erase and Write in the Delta Rule Linear attention replaces the unbounded KV cache of softmax attention with a fixed-size recurrent state.",
+        "NVIDIA releases Gated DeltaNet-2: linear attention with channel-wise erase and write gates, outperforming KDA and Mamba-3 at 1.3B.",
+        "It outperforms Mamba-2, Gated DeltaNet, KDA, and Mamba-3 across the researchs benchmark suite."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e88c90b2a3c28e4a.png",
+      "image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-44-1024x731.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 1,
+  "carousel_total_parts": 1,
+  "slides": [
+    "NVIDIA AI Releases Gated DeltaNet-2: A Linear Attention Layer That Decouples Erase and Write in the Delta Rule",
+    "Follow for the next AI briefing"
+  ]
+}
