@@ -279,12 +279,24 @@ def fetch_article(url: str, assets_dir: Path) -> ArticleData | None:
                 final_url = final_url2 or final_url
         except Exception:
             pass
-    # Download up to 4 images; first is the primary, rest go in extra_*
+    # Download up to 4 candidates, then filter to HD-minimum and sort by resolution
+    _HD_MIN_PX = 1280 * 720  # 921,600 pixels (HD 720p)
     image_paths = [_download_image(u, assets_dir, final_url) for u in raw_image_urls]
-    image_url = raw_image_urls[0] if raw_image_urls else ""
-    image_path = image_paths[0] if image_paths else ""
-    extra_image_urls = tuple(u for u in raw_image_urls[1:4])
-    extra_image_paths = tuple(p for p in image_paths[1:4] if p)
+    # Measure actual pixel dimensions of each downloaded image
+    sized: list[tuple[int, str, str]] = []  # (pixel_count, local_path, remote_url)
+    for url_i, path_i in zip(raw_image_urls, image_paths):
+        if not path_i:
+            continue
+        w, h = _measure_image_file(path_i)
+        sized.append((w * h, path_i, url_i))
+    # Sort largest-first; prefer HD+ images; fall back to best available if none are HD
+    sized.sort(reverse=True)
+    hd = [(px, p, u) for px, p, u in sized if px >= _HD_MIN_PX]
+    final = hd if hd else sized[:1]
+    image_url = final[0][2] if final else ""
+    image_path = final[0][1] if final else ""
+    extra_image_urls = tuple(u for _, _, u in final[1:4])
+    extra_image_paths = tuple(p for _, p, _ in final[1:4])
     return ArticleData(
         url=final_url,
         title=title,
@@ -368,6 +380,18 @@ def _download_image(image_url: str, assets_dir: Path, source_url: str) -> str:
             encoding="utf-8",
         )
     return str(path)
+
+
+def _measure_image_file(path: str) -> tuple[int, int]:
+    """Return (width, height) of a local image file using PIL, or (0, 0) on failure."""
+    if not path:
+        return (0, 0)
+    try:
+        from PIL import Image as _PIL
+        with _PIL.open(path) as img:
+            return img.size  # type: ignore[return-value]
+    except Exception:
+        return (0, 0)
 
 
 def _detect_charset(data: bytes) -> str:
