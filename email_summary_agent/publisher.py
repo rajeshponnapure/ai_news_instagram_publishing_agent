@@ -67,7 +67,7 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
         if post.get("status") not in {"ready_for_publish", "ready_for_upload", "container_created", "publish_failed_retryable"}:
             print(f"  [{post_idx}] SKIP (status={status!r} not publishable): {folder}")
             continue
-        urls = [url for url in post.get("public_slide_urls", []) if url]
+        urls = [url for url in post.get("public_slide_urls", []) if url][:10]
         if len(urls) < 2:
             folder = post.get("folder", "unknown")
             print(
@@ -96,7 +96,7 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
                 status = _container_status(settings, creation_id)
                 if status.get("status_code") in {"ERROR", "EXPIRED"}:
                     creation_id = None
-            creation_id = creation_id or _create_carousel_container(settings, urls[:20], post.get("caption", ""))
+            creation_id = creation_id or _create_carousel_container(settings, urls[:10], post.get("caption", ""))
             post["creation_id"] = creation_id
             post["status"] = "container_created"
             manifest_path.write_text(json.dumps(manifest, ensure_ascii=True, indent=2), encoding="utf-8")

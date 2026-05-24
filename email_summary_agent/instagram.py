@@ -20,10 +20,10 @@ from .models import EmailSummary
 
 CANVAS_W = 1080
 CANVAS_H = 1350
-# Instagram allows up to 20 slides per carousel post — use the full limit.
-MAX_CAROUSEL_SLIDES = 20
-# For digest posts: pack up to 19 news-story slides + 1 CTA = 20 slides per post.
-DIGEST_NEWS_PER_POST = 19
+# Instagram API allows 2–10 children per carousel post.
+MAX_CAROUSEL_SLIDES = 10
+# For digest posts: pack up to 9 news-story slides + 1 CTA = 10 slides per post.
+DIGEST_NEWS_PER_POST = 9
 # For regular single-article posts: one article tells its full story across slides.
 STORIES_PER_CAROUSEL = 1
 # For normal (non-digest) emails: pack up to 2 news stories per carousel post.
