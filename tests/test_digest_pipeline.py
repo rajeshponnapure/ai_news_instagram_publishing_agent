@@ -24,9 +24,14 @@ class DigestPipelineTests(unittest.TestCase):
     def setUp(self) -> None:
         self._reference_patch = patch("email_summary_agent.instagram._find_reference_image_for_article_unique", return_value=None)
         self._reference_patch.start()
+        # Prevent actual file generation during tests — fallback images are an
+        # integration concern, not a unit-test concern.
+        self._fallback_patch = patch("email_summary_agent.instagram._generate_unique_fallback_image", return_value="")
+        self._fallback_patch.start()
 
     def tearDown(self) -> None:
         self._reference_patch.stop()
+        self._fallback_patch.stop()
 
     def test_single_short_news_email_creates_slide_plan(self) -> None:
         summary = _summary_with_articles(1)
