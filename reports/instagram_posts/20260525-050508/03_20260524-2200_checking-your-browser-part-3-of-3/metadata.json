@@ -1,0 +1,152 @@
+{
+  "email_received_at": "2026-05-24T22:00-07:00",
+  "recommended_post_time": "18:00",
+  "headline": "Checking your browser \u2014 Part 3 of 3",
+  "subject": "\ud83d\ude80 AI Digest \u2014 25 May 2026 | 50 updates \u00b7 50 launches",
+  "source_date": "Sun, 24 May 2026 22:00:06 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "NVIDIA",
+    "Perplexity",
+    "Hugging Face"
+  ],
+  "models": [
+    "GPT-5",
+    "GPT-4o-mini",
+    "Claude",
+    "Llama"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.technologyreview.com/2026/04/21/1135645/llm-large-language-models-ai/",
+  "article_title": "LLMs+",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d05ede45d0a1eddd.jpg",
+  "article_image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/04/llm-plusC.jpg",
+  "article_items": [
+    {
+      "url": "https://www.technologyreview.com/2026/04/21/1135645/llm-large-language-models-ai/",
+      "title": "LLMs+",
+      "description": "LLMs are evolving. The next generation of the world\u2019s hottest technology will be cheaper, more efficient, and able to solve bigger problems without going off the rails.",
+      "excerpt": "LLMs are evolving. The next generation of the world\u2019s hottest technology will be cheaper, more efficient, and able to solve bigger problems without going off the rails.",
+      "summary": "When OpenAI launched ChatGPT as an experimental prototype in late 2022, it chatbot became an everyday everything app for hundreds of millions of people. These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. The practical impact: Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI\u2019s models Musk kept his cool, and OpenAI\u2019s lawyer bulldozed him with piercing questions about his motivations for suing the company. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance. Watch next: The next generation of the world\u2019s hottest technology will be cheaper, more efficient, and able to solve bigger problems without going off the rails. But the bigger the context window and the longer the task, the more likely models are to go off the rails or forget what they were doing.",
+      "what_happened": "When OpenAI launched ChatGPT as an experimental prototype in late 2022, it chatbot became an everyday everything app for hundreds of millions of people. These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+      "why_matters": "The practical impact: Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI\u2019s models Musk kept his cool, and OpenAI\u2019s lawyer bulldozed him with piercing questions about his motivations for suing the company. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.",
+      "what_to_watch": "Watch next: The next generation of the world\u2019s hottest technology will be cheaper, more efficient, and able to solve bigger problems without going off the rails. But the bigger the context window and the longer the task, the more likely models are to go off the rails or forget what they were doing.",
+      "key_points": [
+        "But the bigger the context window and the longer the task, the more likely models are to go off the rails or forget what they were doing.",
+        "When OpenAI launched ChatGPT as an experimental prototype in late 2022, it chatbot became an everyday everything app for hundreds of millions of people.",
+        "Another way to make LLMs more efficient could be to ditch transformers - the type of neural network underpinning almost all of them today - in favor of diffusion models, an alternative type of neural network more...",
+        "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+        "The next generation of the world\u2019s hottest technology will be cheaper, more efficient, and able to solve bigger problems without going off the rails.",
+        "The result is an LLM, but not as we know it.",
+        "Get the latest updates from MIT Technology Review Discover special offers, top stories, upcoming events, and more.",
+        "Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI\u2019s models Musk kept his cool, and OpenAI\u2019s lawyer bulldozed him with piercing questions about his motivations...",
+        "Michelle Kim Inside the stealthy startup that pitched brainless human clones Antonio Regalado Artificial intelligence Want to understand the current state of AI?",
+        "This is the amount of text (or video) that a model can take in at once, equivalent to its working memory.",
+        "If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.",
+        "Try refreshing this page and updating them one more time."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d05ede45d0a1eddd.jpg",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/04/llm-plusC.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.thehindubusinessline.com/info-tech/meta-microsoft-have-joined-tech-layoff-tsunami-but-is-ai-really-to-blame/article70907843.ece",
+      "title": "y via Distillation",
+      "description": "y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters arXiv ML | [HIGH] Meta, Microsoft have joined tech layoff tsunami \u2013 but is AI really to blame? BusinessLine | [HIGH] Meta and Microsoft have joined the tech layoff tsunami \u2013 but is AI really to blame? Khabarhub.com | [HIGH] Meta is firing 8,000 people. Microsoft is paying 8,750 to leave. Both are spending the savings on AI. The Next Web | [HIGH] Apr 24, 2026AnnouncementsAnthropic and NEC collaborate to build Japan\u2019s largest AI...",
+      "excerpt": "y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters arXiv ML | [HIGH] Meta, Microsoft have joined tech layoff tsunami \u2013 but is AI really to blame? BusinessLine | [HIGH] Meta and Microsoft have joined the tech layoff tsunami \u2013 but is AI really to blame? Khabarhub.com | [HIGH] Meta is firing 8,000 people. Microsoft is paying 8,750 to leave. Both are spending the...",
+      "summary": "Khabarhub.com | [HIGH] Meta is firing 8,000 people. y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters arXiv ML | [HIGH] Meta, Microsoft have joined tech layoff tsunami \u2013 but is AI really to blame? The practical impact: y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters arXiv ML | [HIGH] Meta, Microsoft have joined tech layoff tsunami \u2013 but is AI really to blame? Watch next: The Next Web | [HIGH] Apr 24, 2026AnnouncementsAnthropic and NEC collaborate to build Japan\u2019s largest AI... y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting...",
+      "what_happened": "Khabarhub.com | [HIGH] Meta is firing 8,000 people. y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters arXiv ML | [HIGH] Meta, Microsoft have joined tech layoff tsunami \u2013 but is AI really to blame?",
+      "why_matters": "The practical impact: y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters arXiv ML | [HIGH] Meta, Microsoft have joined tech layoff tsunami \u2013 but is AI really to blame?",
+      "what_to_watch": "Watch next: The Next Web | [HIGH] Apr 24, 2026AnnouncementsAnthropic and NEC collaborate to build Japan\u2019s largest AI... y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting...",
+      "key_points": [
+        "y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through...",
+        "Khabarhub.com | [HIGH] Meta is firing 8,000 people.",
+        "BusinessLine | [HIGH] Meta and Microsoft have joined the tech layoff tsunami \u2013 but is AI really to blame?",
+        "Microsoft is paying 8,750 to leave.",
+        "The Next Web | [HIGH] Apr 24, 2026AnnouncementsAnthropic and NEC collaborate to build Japan\u2019s largest AI...",
+        "Both are spending the savings on AI."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://thenextweb.com/news/meta-microsoft-layoffs-23000-ai-spending/",
+      "title": "really to blame?",
+      "description": "really to blame? BusinessLine | [HIGH] Meta and Microsoft have joined the tech layoff tsunami \u2013 but is AI really to blame? Khabarhub.com | [HIGH] Meta is firing 8,000 people. Microsoft is paying 8,750 to leave. Both are spending the savings on AI. The Next Web | [HIGH] Apr 24, 2026AnnouncementsAnthropic and NEC collaborate to build Japan\u2019s largest AI engineering workforce Anthropic | [HIGH] LLMs+ MIT Tech Review AI | [HIGH] Supercharged scams MIT Tech Review AI | [HIGH] From...",
+      "excerpt": "really to blame? BusinessLine | [HIGH] Meta and Microsoft have joined the tech layoff tsunami \u2013 but is AI really to blame? Khabarhub.com | [HIGH] Meta is firing 8,000 people. Microsoft is paying 8,750 to leave. Both are spending the savings on AI. The Next Web | [HIGH] Apr 24, 2026AnnouncementsAnthropic and NEC collaborate to build Japan\u2019s largest AI engineering workforce Anthropic | [HIGH] LLMs+ MIT Tech Review AI |...",
+      "summary": "The Next Web | [HIGH] Apr 24, 2026AnnouncementsAnthropic and NEC collaborate to build Japan\u2019s largest AI engineering workforce Anthropic | [HIGH] LLMs+ MIT Tech Review AI | [HIGH] Supercharged scams MIT Tech Review AI | [HIGH] From... The practical impact: Khabarhub.com | [HIGH] Meta is firing 8,000 people. Watch next: Khabarhub.com | [HIGH] Meta is firing 8,000 people.",
+      "what_happened": "The Next Web | [HIGH] Apr 24, 2026AnnouncementsAnthropic and NEC collaborate to build Japan\u2019s largest AI engineering workforce Anthropic | [HIGH] LLMs+ MIT Tech Review AI | [HIGH] Supercharged scams MIT Tech Review AI | [HIGH] From...",
+      "why_matters": "The practical impact: Khabarhub.com | [HIGH] Meta is firing 8,000 people.",
+      "what_to_watch": "Watch next: Khabarhub.com | [HIGH] Meta is firing 8,000 people.",
+      "key_points": [
+        "The Next Web | [HIGH] Apr 24, 2026AnnouncementsAnthropic and NEC collaborate to build Japan\u2019s largest AI engineering workforce Anthropic | [HIGH] LLMs+ MIT Tech Review AI | [HIGH] Supercharged scams MIT Tech Review...",
+        "Khabarhub.com | [HIGH] Meta is firing 8,000 people.",
+        "Microsoft is paying 8,750 to leave.",
+        "BusinessLine | [HIGH] Meta and Microsoft have joined the tech layoff tsunami \u2013 but is AI really to blame?",
+        "Both are spending the savings on AI."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/images/644fee9188578a51.jpg",
+      "image_url": "https://media.thenextweb.com/2026/04/meta-microsoft-layoffs-23000-ai-spending.avif",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 3,
+  "carousel_total_parts": 3,
+  "slides": [
+    "LLMs+",
+    "y via Distillation",
+    "really to blame?",
+    "Follow for the next AI briefing"
+  ]
+}

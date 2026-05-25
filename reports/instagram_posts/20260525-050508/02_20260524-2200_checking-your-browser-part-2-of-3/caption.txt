@@ -1,0 +1,29 @@
+Nemotron 3 Nano's hybrid MoE architecture activates only 3B of 30B parameters per forward pass, delivers high — and that.
+
+👉 Swipe to see the full breakdown →
+
+Computer Science > Information Retrieval Title: Aligning Dense Retrievers with LLM Utility via DistillationAligning Dense Retrievers with LLM Utility via Distillation Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators.
+
+🔹 Computer Science > Information Retrieval Title: Aligning Dense Retrievers with LLM Utility via DistillationAligning Dense Retrievers with.
+⚡ On the QASPER benchmark, UAE improves retrieval Recall@1 by 30.59%, MAP by 30.16% and Token F1 by 17.3% over the strong semantic baseline.
+🧠 arXiv is committed to these values and only works with partners that adhere to them.
+📊 Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and.
+🔬 This approach injects graded utility signals directly into the embedding space without requiring test-time LLM inference.
+
+Do you think OpenAI's move here is exciting or a risk? Drop your take below.
+
+💾 Save this post — you'll want to come back to this one.
+
+📰 Read the full stories:
+🔗 https://arxiv.org/abs/2604.22722
+🔗 https://arxiv.org/abs/2508.03963
+🔗 https://arxiv.org/abs/2507.15753
+🔗 https://arxiv.org/abs/2511.14135
+🔗 https://arxiv.org/abs/2601.19674
+
+#LargeLanguageModels #LLMNews #LanguageModels #AIRegulation #TechLaw #AITools #ProductivityAI #AIProductivity #OpenAI #ChatGPT #GPT4 #GPT5 #GoogleAI #Gemini #ArtificialIntelligence #FutureOfAI #TechTrends #Innovation #AI #MachineLearning
+
+─
+⚠️ Benchmarks reflect results at publication time and may change as models are updated.
+ℹ️ Content curated & summarised by Graitech from the sources listed above. All rights remain with the original publishers.
+─

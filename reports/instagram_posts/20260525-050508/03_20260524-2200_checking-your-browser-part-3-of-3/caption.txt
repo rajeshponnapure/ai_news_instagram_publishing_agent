@@ -1,0 +1,27 @@
+Nemotron 3 Nano's hybrid MoE architecture activates only 3B of 30B parameters per forward pass, delivers high — and that.
+
+👉 Swipe to see the full breakdown →
+
+When OpenAI launched ChatGPT as an experimental prototype in late 2022, it chatbot became an everyday everything app for hundreds of millions of people.
+
+🔹 But the bigger the context window and the longer the task, the more likely models are to go off the rails or forget what they were doing.
+⚡ Another way to make LLMs more efficient could be to ditch transformers - the type of neural network underpinning almost all of them today .
+🧠 The next generation of the world’s hottest technology will be cheaper, more efficient, and able to solve bigger problems without going off.
+📊 The result is an LLM, but not as we know it.
+🔬 Get the latest updates from MIT Technology Review Discover special offers, top stories, upcoming events, and more.
+
+What's the one thing about this that surprised you most?
+
+💾 Save this post — you'll want to come back to this one.
+
+📰 Read the full stories:
+🔗 https://www.technologyreview.com/2026/04/21/1135645/llm-large-language-models-ai/
+🔗 https://www.thehindubusinessline.com/info-tech/meta-microsoft-have-joined-tech-layoff-tsunami-but-is-ai-really-to-blame/article70907843.ece
+🔗 https://thenextweb.com/news/meta-microsoft-layoffs-23000-ai-spending/
+
+#LargeLanguageModels #LLMNews #LanguageModels #AIRegulation #TechLaw #AITools #ProductivityAI #AIProductivity #OpenAI #ChatGPT #GPT4 #GPT5 #GoogleAI #Gemini #TechTrends #Innovation #EmergingTech #AINews #Tech #AI
+
+─
+⚠️ This is not legal advice. Consult a qualified professional for guidance.
+ℹ️ Content curated & summarised by Graitech from the sources listed above. All rights remain with the original publishers.
+─
