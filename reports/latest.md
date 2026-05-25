@@ -1,39 +1,39 @@
 # AI News Summary Report
 
-Generated: 2026-05-25T12:52:03+00:00
+Generated: 2026-05-25T15:52:23+00:00
 Source: grdevelopers.co@gmail.com
 Emails summarized: 1
 
 ## Executive Brief
 
-- This page requires cookies to be enabled in your browser settings.
-- Please check this setting and enable cookies (if disabled)
-- He noted that the average time between an initial breach and the handoff to the next stage of an attack has dropped from eight hours to 22 seconds, and that the attack surface has expanded well beyond the traditional...
-- But agents roaming your enterprise will find those data assets and will expose the data on them.” The answer, in his view, is to meet machine speed with machine speed.
-- You have data pipelines used to train the models.
-- The Register has published a series of reports over the past several weeks documenting a wave of Google Cloud developers hit with five-figure bills following unauthorized API calls to Gemini models - services many of...
+- Michal Sutter Google Launches Antigravity 2.0 at I/O 2026: A Standalone Agent-First Platform with CLI, SDK, Managed Execution, and Enterprise Support Michal Sutter Vercel Labs Introduces Zero, a Systems Programming...
+- How a Local First Agent Stack Turns Chats into Real Automations Michal Sutter GitHub Releases Copilot-SDK to Embed Its Agentic Runtime in Any App Michal Sutter Salesforce AI Introduces FOFPred: A Language-Driven...
+- Michal Sutter Comparing the Top 6 Inference Runtimes for LLM Serving in 2025 Michal Sutter OpenAI Introduces IndQA: A Culture Aware Benchmark For Indian Languages Michal Sutter Comparing the Top 7 Large Language...
+- A Technical Deep Dive and Top 9 AI Inference Providers (2025 Edition) Michal Sutter Hugging Face Unveils AI Sheets: A Free, Open-Source No-Code Toolkit for LLM-Powered Datasets Michal Sutter From Deployment to Scale...
+- Michal Sutter Google AI Introduces Gemini 2.5 ‘Computer Use’ (Preview): A Browser-Control Model to Power AI Agents to Interact with User Interfaces Michal Sutter OpenAI Debuts Agent Builder and AgentKit: A...
+- A Technical Risk Audit Based on Real-World Use Cases Michal Sutter 9 Open Source Cursor Alternatives You Should Use in 2025 Michal Sutter Microsoft Edge Launches Copilot Mode to Redefine Web Browsing for the AI Era...
 
 ## Most Mentioned Companies
 
-Google (1), Apple (1), Amazon (1), NVIDIA (1), Nature AI (1), Google Cloud (1), Shanghai-based AI (1), The AI (1)
+OpenAI (1), Google (1), DeepMind (1), Anthropic (1), Microsoft (1), Meta (1), Apple (1), Amazon (1)
 
 ## Most Mentioned Models
 
-Claude (1), Gemini (1)
+GPT-5.5 (1), GPT-5.4-Cyber (1), GPT-5.1-Codex-Max (1), GPT-5.1 (1), GPT-5 (1), GPT-5-Codex (1), GPT-5.4 (1), Claude (1)
 
 ## Main Topics
 
-model release (1), regulation or safety (1), developer tools (1), media generation (1)
+model release (1), funding or business (1), regulation or safety (1), developer tools (1), hardware and compute (1), media generation (1)
 
 ## Voice Script Hooks
 
-- Google just made a move in model release: Client Challenge
+- OpenAI just made a move in model release: Client Challenge
 
 ## Per-Email Summaries
 
 ### 1. Client Challenge
 
-Source date: Mon, 25 May 2026 03:52:51 -0700
+Source date: Mon, 25 May 2026 06:54:24 -0700
 Confidence: 0.82
 Article: https://www.nature.com/articles/s42256-026-01234-8
 Article title: Client Challenge
@@ -41,12 +41,12 @@ Article title: Client Challenge
 Client Challenge Client Challenge
 
 Key points:
-- This page requires cookies to be enabled in your browser settings.
-- Please check this setting and enable cookies (if disabled)
-- He noted that the average time between an initial breach and the handoff to the next stage of an attack has dropped from eight hours to 22 seconds, and that the attack surface has expanded well beyond the traditional...
-- But agents roaming your enterprise will find those data assets and will expose the data on them.” The answer, in his view, is to meet machine speed with machine speed.
-- You have data pipelines used to train the models.
-- The Register has published a series of reports over the past several weeks documenting a wave of Google Cloud developers hit with five-figure bills following unauthorized API calls to Gemini models - services many of...
-Companies: Google, Apple, Amazon, NVIDIA, Nature AI, Google Cloud, Shanghai-based AI, The AI
-Models: Claude, Gemini
-Topics: model release, regulation or safety, developer tools, media generation
+- Michal Sutter Google Launches Antigravity 2.0 at I/O 2026: A Standalone Agent-First Platform with CLI, SDK, Managed Execution, and Enterprise Support Michal Sutter Vercel Labs Introduces Zero, a Systems Programming...
+- How a Local First Agent Stack Turns Chats into Real Automations Michal Sutter GitHub Releases Copilot-SDK to Embed Its Agentic Runtime in Any App Michal Sutter Salesforce AI Introduces FOFPred: A Language-Driven...
+- Michal Sutter Comparing the Top 6 Inference Runtimes for LLM Serving in 2025 Michal Sutter OpenAI Introduces IndQA: A Culture Aware Benchmark For Indian Languages Michal Sutter Comparing the Top 7 Large Language...
+- A Technical Deep Dive and Top 9 AI Inference Providers (2025 Edition) Michal Sutter Hugging Face Unveils AI Sheets: A Free, Open-Source No-Code Toolkit for LLM-Powered Datasets Michal Sutter From Deployment to Scale...
+- Michal Sutter Google AI Introduces Gemini 2.5 ‘Computer Use’ (Preview): A Browser-Control Model to Power AI Agents to Interact with User Interfaces Michal Sutter OpenAI Debuts Agent Builder and AgentKit: A...
+- A Technical Risk Audit Based on Real-World Use Cases Michal Sutter 9 Open Source Cursor Alternatives You Should Use in 2025 Michal Sutter Microsoft Edge Launches Copilot Mode to Redefine Web Browsing for the AI Era...
+Companies: OpenAI, Google, DeepMind, Anthropic, Microsoft, Meta, Apple, Amazon
+Models: GPT-5.5, GPT-5.4-Cyber, GPT-5.1-Codex-Max, GPT-5.1, GPT-5, GPT-5-Codex, GPT-5.4, Claude
+Topics: model release, funding or business, regulation or safety, developer tools, hardware and compute, media generation
