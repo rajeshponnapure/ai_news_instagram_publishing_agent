@@ -440,10 +440,49 @@ def _split_summary_for_carousels(summary: EmailSummary) -> list[EmailSummary]:
 
 
 def _clean_headline(text: str) -> str:
-    """Remove trailing dots/ellipsis from a headline and tighten whitespace."""
+    """Sanitise a headline string for use as a slide title.
+
+    Steps applied (in order):
+    1. Collapse whitespace.
+    2. Strip trailing dots / ellipsis.
+    3. Strip leading punctuation garbage  (': ', '– ', '— ', etc.)
+    4. Remove publication pipe suffix  (' | Publication Name').
+    5. Reject URL-path slugs (strings that look like /word-word-word paths).
+    6. Trim at the last *sentence boundary* that fits within MAX_TITLE_CHARS
+       so we never cut mid-word or mid-sentence.
+    """
+    MAX_TITLE_CHARS = 90          # hard cap before sentence-boundary trimming
+
     text = re.sub(r"\s+", " ", text or "").strip()
     text = re.sub(r"[.…]+$", "", text).strip()
-    return text
+
+    # Strip leading punctuation garbage: ': ', '– ', '— ', '| ', etc.
+    text = re.sub(r"^[\s:–—|]+", "", text).strip()
+
+    # Strip publication pipe suffix: "Headline | TechCrunch" → "Headline"
+    text = re.sub(r"\s*\|[^|]{1,40}$", "", text).strip()
+
+    # Reject URL slugs — a title that's mostly lowercase-hyphenated words
+    # starting with '/' or looking like a URL path fragment.
+    if re.match(r"^/[\w/-]{10,}$", text):
+        return ""
+    # Also reject titles that are purely a URL slug pattern (no spaces, mostly hyphens)
+    if re.match(r"^[\w][\w-]{10,}$", text) and text.count("-") > text.count(" ") * 2 + 2:
+        return ""
+
+    # Trim at sentence boundary within limit
+    if len(text) <= MAX_TITLE_CHARS:
+        return text
+
+    # Walk back to the nearest sentence end within limit
+    region = text[:MAX_TITLE_CHARS]
+    for terminator in (".", "!", "?"):
+        pos = region.rfind(terminator)
+        if pos > MAX_TITLE_CHARS // 2:       # must be at least halfway in
+            return text[:pos + 1].strip()
+
+    # No sentence boundary — trim at last word boundary, don't add dots
+    return region.rsplit(" ", 1)[0].rstrip(".,;:—-").strip()
 
 
 def _build_slide_specs(
@@ -630,6 +669,7 @@ def _build_normal_slide_specs(
 
         # ── List slides: 3 key points per slide to prevent overflow ──────────
         POINTS_PER_SLIDE = 3
+        MIN_BULLETS_PER_SLIDE = 2   # never emit a near-empty slide
         key_points = _extract_instagram_key_points(article, summary, max_points=9, used_fingerprints=used_key_fingerprints)
         for chunk_idx in range(3):
             if len(slides) >= max_content_slides:
@@ -637,6 +677,10 @@ def _build_normal_slide_specs(
             start = chunk_idx * POINTS_PER_SLIDE
             chunk = key_points[start:start + POINTS_PER_SLIDE]
             if not chunk:
+                break
+            # Skip slides with fewer than MIN_BULLETS_PER_SLIDE — they look
+            # sparse and often contain only leftover/low-quality bullets.
+            if len(chunk) < MIN_BULLETS_PER_SLIDE:
                 break
             slides.append({
                 "kind": "list",
@@ -2881,13 +2925,24 @@ def _extract_instagram_key_points(
         # digest-email boilerplate like "The model connects via Link : 1."
         # The greedy [^.!?]* on both sides ensures the whole clause is gone.
         r"[^.!?]*\bLink\s*:\s*\d+[^.!?]*[.!?]?\s*",
-        # Remove orphaned "Link:" / "Link :" fragments without URL or number.
+        # Remove orphaned "Link:" / "Link :" fragments (no URL or digit follows).
         r"\bLink\s*:\s*",
+        # Remove "Link ." / "Link." trailing punctuation fragments left after
+        # the number was stripped by the pattern above.
+        r"\bLink\s*[.,]?\s*$",
         # Remove "\d+ event(s) detected" digest header lines (sometimes rendered
         # as "I event(s) detected" when "1" and "I" are confused in encoding).
         r"\b(?:\d+|I)\s+event\(s\)\s+detected\b[^\n]*",
         r"#{1,6}\s+(?:Bug Fixes|Features?|Performance|Breaking Changes?|Refactoring?|Chores?|Docs?).*",
         r"\*\*([^*]+):\*\*\s*",
+        # Remove "v <Article Title>" link-reference fragments that appear when a
+        # digest email embeds article titles as inline citations.
+        # Pattern matches a lone "v " or "via " followed by a capitalised phrase.
+        r"\bv(?:ia)?\s+[A-Z][^\n.!?]{5,80}",
+        # Remove "More from <Publication>" navigation bleed.
+        r"\bMore from\s+\S+[^\n.!?]*",
+        # Strip publication pipe suffix inside bullets (e.g. "… | TechCrunch")
+        r"\s*\|\s*[A-Z][A-Za-z0-9 &]{1,30}$",
     ]
     POWER_VERBS = (
         "launches", "releases", "achieves", "beats", "surpasses", "reveals",
@@ -2906,18 +2961,29 @@ def _extract_instagram_key_points(
 
     raw: list[str] = []
 
+    def _is_valid_bullet(text: str) -> bool:
+        """Return True only if this text is a usable, well-formed bullet point."""
+        if not text or len(text) < 15:
+            return False
+        # Must start with uppercase letter or a digit — never a mid-sentence fragment
+        if not (text[0].isupper() or text[0].isdigit()):
+            return False
+        # Must not start with a blocked prefix
+        if any(text.lower().startswith(pfx) for pfx in STOP_PREFIXES):
+            return False
+        return True
+
     # 1. Pre-structured key_points from article (highest quality)
     for p in article.get("key_points", []):
         cleaned = _strip_noise(_clean_public_text(str(p))).strip()
-        if len(cleaned) > 12 and not any(cleaned.lower().startswith(pfx) for pfx in STOP_PREFIXES):
+        if _is_valid_bullet(cleaned):
             raw.append(cleaned)
 
     # 2. Summary-level key_points
     for p in (summary.key_points or []):
         cleaned = _strip_noise(_clean_public_text(str(p))).strip()
-        if cleaned and cleaned not in raw and len(cleaned) > 12:
-            if not any(cleaned.lower().startswith(pfx) for pfx in STOP_PREFIXES):
-                raw.append(cleaned)
+        if cleaned not in raw and _is_valid_bullet(cleaned):
+            raw.append(cleaned)
 
     # 3. Fallback — mine structured fields for insight sentences
     if len(raw) < max_points:
@@ -2927,13 +2993,7 @@ def _extract_instagram_key_points(
                 continue
             for sent in re.split(r"(?<=[.!?])\s+", text):
                 sent = sent.strip()
-                if (
-                    len(sent) > 40
-                    and sent not in raw
-                    and not any(sent.lower().startswith(pfx) for pfx in STOP_PREFIXES)
-                    # Skip fragments that don't start with uppercase/digit
-                    and sent[0].isupper() or sent[0].isdigit()
-                ):
+                if sent not in raw and _is_valid_bullet(sent) and len(sent) > 40:
                     raw.append(sent)
                 if len(raw) >= max_points * 2:
                     break
@@ -2967,9 +3027,18 @@ def _extract_instagram_key_points(
 
     # Trim each point so it fits on the slide but keeps meaning intact.
     trimmed = [_trim_no_dots(pt, 140) for pt in deduped[:max_points]]
-    final = [f"{BULLET}  {pt}" for pt in trimmed]
+    final = [f"{BULLET}  {pt}" for pt in trimmed if pt and len(pt) > 10]
     if not final:
         return [f"{BULLET}  {_trim_no_dots(summary.headline or summary.subject or 'AI update', 95)}"]
+    # Never emit a single-bullet slide — always return at least 2 bullets so
+    # the rendered slide doesn't look embarrassingly sparse.  If only one point
+    # survived deduplication, pad with the article title as a secondary bullet.
+    if len(final) == 1:
+        title_pt = _trim_no_dots(
+            _clean_public_text(str(article.get("title") or summary.headline or summary.subject or "")), 120
+        )
+        if title_pt and title_pt not in final[0]:
+            final.append(f"{BULLET}  {title_pt}")
     # Record fingerprints of selected points back into caller's set.
     if used_fingerprints is not None:
         for pt in deduped[:max_points]:
@@ -3808,6 +3877,10 @@ def _clean_public_text(text: str) -> str:
         "", text, flags=re.I,
     )
     text = re.sub(r"\*\*([^*]+):\*\*\s*", r"\1: ", text)
+    # Strip "More from <Publication>" navigation scrape text (e.g. "More from TechCrunch")
+    text = re.sub(r"\bMore from\s+\S+[^\n.!?]*", "", text, flags=re.I)
+    # Strip publication pipe suffix from any inline headline references
+    text = re.sub(r"\s*\|[^|.\n]{1,40}(?=\s|$)", "", text)
     # ─────────────────────────────────────────────────────────────────────────
     text = re.sub(r"\s+", " ", text).strip()
     text = _strip_decorative_symbols(text)

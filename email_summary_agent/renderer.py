@@ -55,18 +55,25 @@ def _build_slide_html(slide, slide_number, total_slides, email_dt):
         body = _digest_body(slide)
     else:
         body = _list_body(slide)   # safe fallback
-    return _wrap_in_shell(body, slide_number, total_slides)
+    return _wrap_in_shell(body, slide_number, total_slides, kind)
 
 
-def _wrap_in_shell(body, slide_number, total_slides):
+def _wrap_in_shell(body, slide_number, total_slides, slide_kind=""):
     css  = _inline_css()
     logo = _data_uri(_IMG / "graitech-logo.png", "image/png")
+    # For digest slides the article image occupies y 0–510px.  Placing the logo
+    # at top:56px (the default) puts it right on top of that image.  Move it to
+    # just below the image zone so it never obscures editorial photography.
+    if slide_kind == "digest":
+        logo_style = "top:528px; right:56px;"
+    else:
+        logo_style = "top:56px; right:56px;"
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <style>{css}</style></head><body>
 <article class="ig">
   <div class="ticks"><i></i></div>
-  <div class="ig__logo"><img src="{logo}" alt="graitech"></div>
+  <div class="ig__logo" style="{logo_style}"><img src="{logo}" alt="graitech"></div>
 {body}
   <div class="ig__handle"><span class="dot"></span>@graitech</div>
   <div class="ig__page">
@@ -89,7 +96,16 @@ def _title_body(slide, email_dt):
     source   = _e(slide.get("source_label") or "")
     src_html = f'<div class="source-label">{source}</div>' if source else ""
     lines    = _wrap_headline(headline, 13)
-    return f"""  <div class="ig__content" style="justify-content: space-between;">
+
+    # Article image: render in the lower third of the slide so the headline
+    # occupies the visually dominant upper area.  Use a fade-to-black gradient
+    # overlay so the image blends into the dark background without clashing
+    # with the bottom chrome (handle / page indicator).
+    img_css  = _image_css(slide.get("image_path") or "")
+    img_html = f"""  <div class="title-image" style="background-image:{img_css};"></div>""" if img_css != _FALLBACK_GRADIENT else ""
+
+    return f"""{img_html}
+  <div class="ig__content" style="justify-content: space-between;">
     <div class="kicker-row"><span class="stamp">AI Dispatch</span></div>
     <div class="heading-stack">
       <div class="eyebrow">{eyebrow}</div>
@@ -143,12 +159,11 @@ def _digest_body(slide):
         for i, pt in enumerate(raw[:5], 1)
     )
     img_val = _image_css(slide.get("image_path") or "")
-    has_image = bool(slide.get("image_path")) and Path(slide["image_path"]).exists()
-    # If no real image, shrink the image area and give more room to text
-    img_height = "510px" if has_image else "280px"
-    body_top = "510px" if has_image else "280px"
-    return f"""  <div class="digest-image" style="background-image:{img_val}; background-size:cover; background-position:center; height:{img_height};"></div>
-  <div class="digest-body" style="top:{body_top};">
+    # Always keep the image zone at exactly 510px so the body layout never
+    # shifts.  When no real image is available _image_css returns a dark
+    # gradient fallback that still fills the zone cleanly.
+    return f"""  <div class="digest-image" style="background-image:{img_val}; background-size:cover; background-position:center;"></div>
+  <div class="digest-body">
     <div class="eyebrow">{eyebrow}</div>
     <div class="rule" style="margin:10px 0 18px;"></div>
     <div class="digest-headline">{headline}</div>
@@ -248,6 +263,8 @@ html,body{{margin:0;padding:0;background:#000;}}
 .kp-row{{display:flex;gap:12px;align-items:flex-start;}}
 .kp-num{{font-family:var(--gt-font-display);font-size:32px;line-height:1;color:var(--gt-neon);text-shadow:0 0 14px rgba(57,255,20,0.40);min-width:42px;flex-shrink:0;}}
 .kp-text{{font-family:var(--gt-font-mono);font-size:21px;line-height:1.4;color:var(--gt-chalk);flex:1;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;}}
+.title-image{{position:absolute;bottom:140px;left:0;right:0;height:380px;z-index:2;background-size:cover;background-position:center top;}}
+.title-image::before{{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.55) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 60%,rgba(0,0,0,0.85) 100%);z-index:1;}}
 """
 
 
@@ -291,37 +308,17 @@ def _svg_b64(path):
     return base64.b64encode(path.read_bytes()).decode("ascii")
 
 
+_FALLBACK_GRADIENT = "linear-gradient(135deg,#0a0a0a 0%,#1a1a1a 50%,#0d0d0d 100%)"
+
+
 def _image_css(img_path):
-    _FALLBACK = "linear-gradient(135deg,#0a0a0a 0%,#1a1a1a 50%,#0d0d0d 100%)"
     if not img_path:
-        return _FALLBACK
+        return _FALLBACK_GRADIENT
     p = Path(img_path)
     if not p.exists():
-        return _FALLBACK
+        return _FALLBACK_GRADIENT
     file_url = p.absolute().as_uri()
     return f"url('{file_url}')"
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Playwright screenshot
-# ─────────────────────────────────────────────────────────────────────────────
-
-def _screenshot_html(html_src, out_path):
-    from playwright.sync_api import sync_playwright
-    tmp = out_path.with_suffix(".tmp.html")
-    tmp.write_text(html_src, encoding="utf-8")
-    try:
-        with sync_playwright() as p:
-            browser = p.chromium.launch(args=[
-                "--no-sandbox",
-                "--disable-gpu",
-                "--disable-dev-shm-usage",
-            ])
-            page = browser.new_page(viewport={"width": CANVAS_W, "height": CANVAS_H})
-            page.goto(tmp.absolute().as_uri(), wait_until="load", timeout=15000)
-            page.wait_for_timeout(200)
-            out_path.parent.mkdir(parents=True, exist_ok=True)
-            page.screenshot(path=str(out_path), full_page=False, type="png")
-            browser.close()
-    finally:
-        tmp.unlink(missing_ok=True)
+# ────────────────────────────────────────────────────�
