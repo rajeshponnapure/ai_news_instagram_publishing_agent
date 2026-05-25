@@ -1,0 +1,339 @@
+{
+  "email_received_at": "2026-05-25T09:16-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Client Challenge \u2014 Part 1 of 2",
+  "subject": "\ud83d\udea8 AI Alert: 15 new launches \u2014 The Verge AI, Nature AI, Hugging Face",
+  "source_date": "Mon, 25 May 2026 09:16:11 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Microsoft",
+    "Apple",
+    "Amazon",
+    "NVIDIA",
+    "Hugging Face",
+    "Oracle"
+  ],
+  "models": [
+    "Claude",
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.nature.com/articles/s42256-026-01234-8",
+  "article_title": "Client Challenge",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.nature.com/articles/s42256-026-01234-8",
+      "title": "Client Challenge",
+      "description": "",
+      "excerpt": "",
+      "summary": "Client Challenge",
+      "what_happened": "Client Challenge",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Client Challenge"
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/events/techcrunch-disrupt/",
+      "title": "TechCrunch Disrupt 2026 - Overview",
+      "description": "TechCrunch Disrupt 2026 is the startup epicenter for tech and VC leaders. Taking place at Moscone West in San Francisco from October 13-15, 2026.",
+      "excerpt": "TechCrunch Disrupt 2026 is the startup epicenter for tech and VC leaders. Taking place at Moscone West in San Francisco from October 13-15, 2026.",
+      "summary": "Before founding Wiz, Assaf was the founder and CEO of the security company Adallom, which was acquired by Microsoft for $320 million in 2015. The practical impact: He became CFO in 2001 and led the company through both its IPO in early 2002 and the subsequent acquisition by eBay. In 2022, he became a New York Times bestselling author for his acclaimed children\u2019s picture book, \u201cI Color Myself Different.\u201d He will release his next children\u2019s book, \u201cWe Are Free, You and Me\u201d in October 2024, co-authored with his wife Nessa and published in partnership with Scholastic. Watch next: In 2022, he became a New York Times bestselling author for his acclaimed children\u2019s picture book, \u201cI Color Myself Different.\u201d He will release his next children\u2019s book, \u201cWe Are Free, You and Me\u201d in October 2024, co-authored with his wife Nessa and published in partnership with Scholastic.",
+      "what_happened": "Before founding Wiz, Assaf was the founder and CEO of the security company Adallom, which was acquired by Microsoft for $320 million in 2015.",
+      "why_matters": "The practical impact: He became CFO in 2001 and led the company through both its IPO in early 2002 and the subsequent acquisition by eBay. In 2022, he became a New York Times bestselling author for his acclaimed children\u2019s picture book, \u201cI Color Myself Different.\u201d He will release his next children\u2019s book, \u201cWe Are Free, You and Me\u201d in October 2024, co-authored with his wife Nessa and published in partnership with Scholastic.",
+      "what_to_watch": "Watch next: In 2022, he became a New York Times bestselling author for his acclaimed children\u2019s picture book, \u201cI Color Myself Different.\u201d He will release his next children\u2019s book, \u201cWe Are Free, You and Me\u201d in October 2024, co-authored with his wife Nessa and published in partnership with Scholastic.",
+      "key_points": [
+        "Before founding Wiz, Assaf was the founder and CEO of the security company Adallom, which was acquired by Microsoft for $320 million in 2015.",
+        "In 2022, he became a New York Times bestselling author for his acclaimed children\u2019s picture book, \u201cI Color Myself Different.\u201d He will release his next children\u2019s book, \u201cWe Are Free, You and Me\u201d in October 2024...",
+        "Wiz serves over 40% of the Fortune 100 and has raised over $1.9 billion at a $12 billion valuation in just four years, with investors including Andreessen Horowitz, Index Ventures, Sequoia Capital, Cyberstarts...",
+        "He became CFO in 2001 and led the company through both its IPO in early 2002 and the subsequent acquisition by eBay.",
+        "TechCrunch Disrupt 2026 is the startup epicenter for tech and VC leaders.",
+        "In these roles, Barra and her teams were responsible for the design, engineering, and quality of GM vehicle launches worldwide.",
+        "Roelof is Managing Partner and Steward of Sequoia Capital.",
+        "She was elected chair of the GM Board of Directors in 2016 and has served as CEO of GM since 2014.",
+        "In 2017, he assumed leadership of Sequoia Capital\u2019s US/Europe business and became a Steward of the Sequoia Partnership.",
+        "She is a member of the Ad Council Board of Directors, a passionate mentor to future women leaders and top talent, and the executive sponsor for ALSForce, a Salesforce equality group focused on raising awareness about...",
+        "In 2021, Colin released Colin in Black & White, a six-episode limited series on Netflix exploring his high school years, which won two NAACP Image Awards.",
+        "Since 2016, he has founded and helped to fund three organizations - Know Your Rights Camp, Kaepernick Media, and Kaepernick Publishing - that together advance the liberation of Black and Brown people through..."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d327bb58ada0fe25.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2024/05/lockup_GoogleCloud_FullColor_rgb_2900x512px.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/20b6e4217a9a8f5b.png"
+      ],
+      "extra_image_urls": [
+        "https://techcrunch.com/wp-content/uploads/2024/05/trinet_2c_rgb_lg_digital.png"
+      ]
+    },
+    {
+      "url": "https://techcrunch.com/2026/05/25/startup-battlefield-200-applications-close-in-days-apply-before-may-27/",
+      "title": "Startup Battlefield 200 applications close before May 27 | TechCrunch",
+      "description": "The deadline to apply or nominate for Startup Battlefield 200 is May 27. Get VC access, global visibility, TechCrunch coverage, and $100,000. Apply now.",
+      "excerpt": "The deadline to apply or nominate for Startup Battlefield 200 is May 27. Get VC access, global visibility, TechCrunch coverage, and $100,000. Apply now.",
+      "summary": "The network runs so deep that alumni have even acquired each other: Dropbox acquired fellow Battlefield 200 alum DocSend in 2021. The companies that define categories rarely start polished Some of the most consequential companies in tech history didn\u2019t launch with splashy fundraising announcements. The practical impact: You don\u2019t need to make the top 20 for this experience to change your trajectory. This is your opportunity to gain investor exposure, receive direct VC feedback, and prove your company belongs among the next generation of category-defining startups. Watch next: Startup Battlefield 200 has never been a competition for the most polished companies. The deadline to apply or nominate for Startup Battlefield 200 is May 27.",
+      "what_happened": "The network runs so deep that alumni have even acquired each other: Dropbox acquired fellow Battlefield 200 alum DocSend in 2021. The companies that define categories rarely start polished Some of the most consequential companies in tech history didn\u2019t launch with splashy fundraising announcements.",
+      "why_matters": "The practical impact: You don\u2019t need to make the top 20 for this experience to change your trajectory. This is your opportunity to gain investor exposure, receive direct VC feedback, and prove your company belongs among the next generation of category-defining startups.",
+      "what_to_watch": "Watch next: Startup Battlefield 200 has never been a competition for the most polished companies. The deadline to apply or nominate for Startup Battlefield 200 is May 27.",
+      "key_points": [
+        "The network runs so deep that alumni have even acquired each other: Dropbox acquired fellow Battlefield 200 alum DocSend in 2021.",
+        "The deadline to apply or nominate for Startup Battlefield 200 is May 27.",
+        "Apply today for the opportunity to take the TechCrunch Disrupt Stage alongside 200 of the world\u2019s most promising early-stage startups.",
+        "The companies that define categories rarely start polished Some of the most consequential companies in tech history didn\u2019t launch with splashy fundraising announcements.",
+        "They all passed through the same crucible: Startup Battlefield 200.",
+        "Together, they\u2019ve raised over $32 billion and generated more than 250 exits, including acquisitions by Microsoft, Google, Salesforce, Uber, and Amazon.",
+        "Startup Battlefield 200 has never been a competition for the most polished companies.",
+        "The Startup Battlefield 200 track record speaks for itself More than 1,700 companies have competed in Startup Battlefield 200.",
+        "One startup takes the crown and wins $100,000 in equity-free funding.",
+        "More from TechCrunch Startup Battlefield 200 applications close in days: Apply before May 27 The deadline to apply or nominate for Startup Battlefield 200 is Friday, May 27.",
+        "Just 20 finalists pitch live on the Disrupt Stage.",
+        "If you\u2019re building something category-defining - or know a startup that deserves the spotlight - submit your nomination and complete your application before Friday, May 27."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c22cdd822f846d16.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/11/54889393608_2493644601_o-2.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://huggingface.co/blog/agent-glossary",
+      "title": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
+      "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "excerpt": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "summary": "These four are specific to training, where the agent runs through tasks, gets scored, and its model's weights get updated. In the LLM world, the term has expanded. The practical impact: @Vtrivedy10: The Anatomy of an Agent Harness : detailed breakdown of harness components and why each exists Agent Harness Engineering : convergent framing on Agent = Model + Harness, with coding agent examples Harness Engineering: leveraging Codex in an agent-first world : real-world account of building a product entirely with Codex agents, covering scaffolding, feedback loops, and context management... Watch next: A rollout is one full agent run from start to finish: what the agent saw, what it did, and what reward it got at each step. @Vtrivedy10: The Anatomy of an Agent Harness : detailed breakdown of harness components and why each exists Agent Harness Engineering : convergent framing on Agent = Model +...",
+      "what_happened": "These four are specific to training, where the agent runs through tasks, gets scored, and its model's weights get updated. In the LLM world, the term has expanded.",
+      "why_matters": "The practical impact: @Vtrivedy10: The Anatomy of an Agent Harness : detailed breakdown of harness components and why each exists Agent Harness Engineering : convergent framing on Agent = Model + Harness, with coding agent examples Harness Engineering: leveraging Codex in an agent-first world : real-world account of building a product entirely with Codex agents, covering scaffolding, feedback loops, and context management...",
+      "what_to_watch": "Watch next: A rollout is one full agent run from start to finish: what the agent saw, what it did, and what reward it got at each step. @Vtrivedy10: The Anatomy of an Agent Harness : detailed breakdown of harness components and why each exists Agent Harness Engineering : convergent framing on Agent = Model +...",
+      "key_points": [
+        "@Vtrivedy10: The Anatomy of an Agent Harness : detailed breakdown of harness components and why each exists Agent Harness Engineering : convergent framing on Agent = Model + Harness, with coding agent examples...",
+        "These four are specific to training, where the agent runs through tasks, gets scored, and its model's weights get updated.",
+        "In the LLM world, the term has expanded.",
+        "The trainer is what makes the agent better: it runs many agent episodes, scores the results and uses them to update the inner model's weights.",
+        "At evaluation time, the same pattern shows up as an eval harness : instead of collecting training data, it runs a fixed set of scenarios at a model checkpoint and records metrics rather than updating weights.",
+        "If you're not the model, you're the harness.",
+        "It shapes how the model sees the world and acts in it, whether during training or at inference.",
+        "The score that tells the training algorithm whether the model is getting better.",
+        "The harness is what makes the agent run.",
+        "The model, the harness, and the product are three different things.",
+        "Wrap a checkpoint in scaffolding and a harness and deploy it, and you get an agent whose behavior is the policy.",
+        "At training time, the harness also runs many of these loops in parallel and feeds the results back to update the model."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3b0a4554372c75e6.png",
+      "image_url": "https://huggingface.co/blog/assets/liberate-your-openclaw/thumbnail.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/051beae944a53beb.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/992d3b4e497575d8.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2257013168c41887.png"
+      ],
+      "extra_image_urls": [
+        "https://huggingface.co/blog/assets/openenv-turing/thumbnail.png",
+        "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/agent-glossary/agent-diagram.png",
+        "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/agent-glossary/rl-pipeline.png"
+      ]
+    },
+    {
+      "url": "https://www.nature.com/natmachintell/research-articles",
+      "title": "Client Challenge",
+      "description": "",
+      "excerpt": "",
+      "summary": "Client Challenge",
+      "what_happened": "Client Challenge",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Client Challenge"
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/",
+      "title": "Everyone is navigating AI security in real time -- even Google | TechCrunch",
+      "description": "We're in the transition period -- all of us.",
+      "excerpt": "We're in the transition period -- all of us.",
+      "summary": "He noted that the average time between an initial breach and the handoff to the next stage of an attack has dropped from eight hours to 22 seconds, and that the attack surface has expanded well beyond the traditional network perimeter. The Register has published a series of reports over the past several weeks documenting a wave of Google Cloud developers hit with five-figure bills following unauthorized API calls to Gemini models - services many of them had never used or intentionally enabled. The practical impact: It\u2019s not just a security team\u2019s issue.\u201d But even as AI takes on more of the defensive workload, the people qualified to oversee it are in short supply - and the vulnerabilities that AI itself is introducing are multiplying faster than security teams can address them. The cases followed a familiar pattern: API keys originally deployed for Google Maps, placed publicly per Google\u2019s own instructions, had... Watch next: \u201cWe\u2019re going to need people to deal with the bug-pocalypse,\u201d LinkedIn\u2019s chief information security officer Lea Kissner told the New York Times this week, adding that she doesn\u2019t expect the industry to understand AI security in any sustainable long-term way...",
+      "what_happened": "He noted that the average time between an initial breach and the handoff to the next stage of an attack has dropped from eight hours to 22 seconds, and that the attack surface has expanded well beyond the traditional network perimeter. The Register has published a series of reports over the past several weeks documenting a wave of Google Cloud developers hit with five-figure bills following unauthorized API calls to Gemini models - services many of them had never used or intentionally enabled.",
+      "why_matters": "The practical impact: It\u2019s not just a security team\u2019s issue.\u201d But even as AI takes on more of the defensive workload, the people qualified to oversee it are in short supply - and the vulnerabilities that AI itself is introducing are multiplying faster than security teams can address them. The cases followed a familiar pattern: API keys originally deployed for Google Maps, placed publicly per Google\u2019s own instructions, had...",
+      "what_to_watch": "Watch next: \u201cWe\u2019re going to need people to deal with the bug-pocalypse,\u201d LinkedIn\u2019s chief information security officer Lea Kissner told the New York Times this week, adding that she doesn\u2019t expect the industry to understand AI security in any sustainable long-term way for at least several years. But agents roaming...",
+      "key_points": [
+        "He noted that the average time between an initial breach and the handoff to the next stage of an attack has dropped from eight hours to 22 seconds, and that the attack surface has expanded well beyond the traditional...",
+        "But agents roaming your enterprise will find those data assets and will expose the data on them.\u201d The answer, in his view, is to meet machine speed with machine speed.",
+        "You have data pipelines used to train the models.",
+        "The Register has published a series of reports over the past several weeks documenting a wave of Google Cloud developers hit with five-figure bills following unauthorized API calls to Gemini models - services many of...",
+        "Aikido researcher Joseph Leon told The Register that during that window, success rates are unpredictable - in some minutes over 90% of requests still authenticated - and attackers can use the time to exfiltrate files...",
+        "It\u2019s not just a security team\u2019s issue.\u201d But even as AI takes on more of the defensive workload, the people qualified to oversee it are in short supply - and the vulnerabilities that AI itself is introducing are...",
+        "What neither knew was that Google\u2019s automated systems had upgraded their billing tiers based on account history, raising their effective ceilings to as high as $100,000 without explicit consent.",
+        "\u201cIt\u2019s important for companies to have a security posture that is consistent across clouds, across models.\u201d He also made the case that the threat landscape has changed so fundamentally that old defensive models are...",
+        "The cases followed a familiar pattern: API keys originally deployed for Google Maps, placed publicly per Google\u2019s own instructions, had quietly become capable of accessing Gemini after Google expanded their scope...",
+        "We're in the transition period -- all of us.",
+        "\u201cBoth suggest this is technically solvable for Google API keys, too.\u201d In short, according to Leon, the 23-minute window isn\u2019t an engineering constraint but a matter of priorities for the company.",
+        "Six search engines worth trying now that Google isn\u2019t really Google anymore Jensen Huang says he\u2019s found a \u2018brand new\u2019 $200B market for Nvidia Sam Altman makes \u2018mic drop\u2019 offer to every Y Combinator startup Google..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4d3fe686a09b3c87.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2266466589.jpg?w=1024",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theverge.com/news/936945/pope-leo-letter-encyclical-ai-anthropic-labor-warfare",
+      "title": "\u26a1 BREAKING AI UPDATE \u2014 25 May 2026, 09:46 PM IST",
+      "description": "BREAKING AI UPDATE - 25 May 2026, 09:46 PM IST 15 new AI event(s) detected ================================================== [HIGH] Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI Company : The Verge AI Summary : Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] A large-scale unified deep learning model for peptide mass spectrum interpretation trained on multimodal data Company : Nature AI Summary : pUniFind is a large-scale deep learning model for proteomics that unifies peptide\u2013spectrum scoring and open de novo sequencing. Trained on over 100 million spectra, it substantially improves peptide i Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging...",
+      "excerpt": "BREAKING AI UPDATE - 25 May 2026, 09:46 PM IST 15 new AI event(s) detected ================================================== [HIGH] Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI Company : The Verge AI Summary : Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] A large-scale unified deep learning model for peptide mass spectrum interpretation trained on multimodal data Company : Nature AI Summary : pUniFind is a large-scale deep learning model for proteomics that unifies peptide\u2013spectrum scoring and open de...",
+      "summary": "BREAKING AI UPDATE - 25 May 2026, 09:46 PM IST 15 new AI event(s) detected ================================================== [HIGH] Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI Company : The Verge AI Summary : Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] A large-scale unified deep learning model for peptide mass spectrum... The practical impact: Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] A large-scale unified deep learning model for peptide mass spectrum interpretation trained on multimodal data Company : Nature AI Summary : pUniFind is a large-scale deep learning model for proteomics that unifies peptide\u2013spectrum scoring and open de novo sequencing.",
+      "what_happened": "BREAKING AI UPDATE - 25 May 2026, 09:46 PM IST 15 new AI event(s) detected ================================================== [HIGH] Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI Company : The Verge AI Summary : Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] A large-scale unified deep learning model for peptide mass spectrum...",
+      "why_matters": "The practical impact: Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] A large-scale unified deep learning model for peptide mass spectrum interpretation trained on multimodal data Company : Nature AI Summary : pUniFind is a large-scale deep learning model for proteomics that unifies peptide\u2013spectrum scoring and open de novo sequencing.",
+      "what_to_watch": "",
+      "key_points": [
+        "Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] A large-scale unified deep learning model for peptide mass spectrum interpretation trained on multimodal data Company : Nature AI...",
+        "BREAKING AI UPDATE - 25 May 2026, 09:46 PM IST 15 new AI event(s) detected ================================================== [HIGH] Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI Company : The Verge AI...",
+        "Trained on over 100 million spectra, it substantially improves peptide i Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://github.com/huggingface/trl/releases/tag/v1.5.0",
+      "title": "peptide\u2013spectrum scoring and open de novo sequencing. Trained on over 100 million spectra, it substantially improves peptide i",
+      "description": "peptide\u2013spectrum scoring and open de novo sequencing. Trained on over 100 million spectra, it substantially improves peptide i Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals Company : ZDNet AI Summary : Retailers like Amazon and Best Buy are offering steep discounts on high-capacity SSDs for Memorial Day. Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for...",
+      "excerpt": "peptide\u2013spectrum scoring and open de novo sequencing. Trained on over 100 million spectra, it substantially improves peptide i Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals Company : ZDNet AI Summary : Retailers like Amazon and Best Buy are offering steep discounts on high-capacity SSDs for Memorial Day. Link ...",
+      "summary": "Trained on over 100 million spectra, it substantially improves peptide i Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals Company : ZDNet AI Summary : Retailers like Amazon and Best Buy are offering steep... The practical impact: Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for... Watch next: peptide\u2013spectrum scoring and open de novo sequencing.",
+      "what_happened": "Trained on over 100 million spectra, it substantially improves peptide i Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals Company : ZDNet AI Summary : Retailers like Amazon and Best Buy are offering steep...",
+      "why_matters": "The practical impact: Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for...",
+      "what_to_watch": "Watch next: peptide\u2013spectrum scoring and open de novo sequencing.",
+      "key_points": [
+        "Trained on over 100 million spectra, it substantially improves peptide i Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model...",
+        "Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for...",
+        "peptide\u2013spectrum scoring and open de novo sequencing."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 1,
+  "carousel_total_parts": 2,
+  "slides": [
+    "Client Challenge",
+    "Client Challenge",
+    "TechCrunch Disrupt 2026 - Overview",
+    "TechCrunch Disrupt 2026 - Overview",
+    "Startup Battlefield 200 applications close before May 27",
+    "Startup Battlefield 200 applications close before May 27",
+    "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
+    "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
+    "Client Challenge",
+    "Follow for the next AI briefing"
+  ]
+}
