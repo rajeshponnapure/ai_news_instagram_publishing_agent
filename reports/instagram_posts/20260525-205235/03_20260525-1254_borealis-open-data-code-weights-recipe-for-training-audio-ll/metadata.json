@@ -1,0 +1,138 @@
+{
+  "email_received_at": "2026-05-25T12:54-07:00",
+  "recommended_post_time": "18:00",
+  "headline": "Borealis - open data, code, weights recipe for training Audio LLM \u2014 Part 3 of 3",
+  "subject": "\ud83d\udea8 AI Alert: 22 new launches \u2014 Hugging Face, The Verge AI, OpenAI Blog",
+  "source_date": "Mon, 25 May 2026 12:54:17 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Amazon",
+    "NVIDIA",
+    "Hugging Face",
+    "Salesforce"
+  ],
+  "models": [
+    "Claude",
+    "Gemini 2.5",
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.wired.com/story/the-ai-era-is-creating-a-bug-hunting-arms-race/",
+  "article_title": "production workflows, authentication has become the most critical infrastructure decision teams face. This guide ranks the eight",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.wired.com/story/the-ai-era-is-creating-a-bug-hunting-arms-race/",
+      "title": "production workflows, authentication has become the most critical infrastructure decision teams face. This guide ranks the eight",
+      "description": "production workflows, authentication has become the most critical infrastructure decision teams face. This guide ranks the eight Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly. Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link ...",
+      "excerpt": "production workflows, authentication has become the most critical infrastructure decision teams face. This guide ranks the eight Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly. Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. auth.md proposes a fix: a Markdown...",
+      "summary": "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. The practical impact: This guide ranks the eight Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link ... Watch next: auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link ...",
+      "what_happened": "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register.",
+      "why_matters": "The practical impact: This guide ranks the eight Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link ...",
+      "what_to_watch": "Watch next: auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link ...",
+      "key_points": [
+        "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register.",
+        "auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link ...",
+        "This guide ranks the eight Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is...",
+        "production workflows, authentication has become the most critical infrastructure decision teams face."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.marktechpost.com/2026/05/25/workos-releases-auth-md-an-open-agent-registration-protocol-built-on-oauth-standards/",
+      "title": "lities is changing rapidly.",
+      "description": "lities is changing rapidly. Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link : [MEDIUM] TechCrunch Events Company : TechCrunch Robotics Link ...",
+      "excerpt": "lities is changing rapidly. Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link ...",
+      "summary": "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company ... The practical impact: lities is changing rapidly. Watch next: lities is changing rapidly.",
+      "what_happened": "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company ...",
+      "why_matters": "The practical impact: lities is changing rapidly.",
+      "what_to_watch": "Watch next: lities is changing rapidly.",
+      "key_points": [
+        "auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup...",
+        "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register.",
+        "lities is changing rapidly."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/events/techcrunch-disrupt/",
+      "title": "Company : MarkTechPost AI",
+      "description": "Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link : [MEDIUM] TechCrunch Events Company : TechCrunch Robotics Link : [MEDIUM] 5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase Company ...",
+      "excerpt": "Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link : [MEDIUM] TechCrunch...",
+      "summary": "auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link : [MEDIUM] TechCrunch Events Company : TechCrunch Robotics Link : [MEDIUM] 5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase Company ... The practical impact: Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register.",
+      "what_happened": "auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link : [MEDIUM] TechCrunch Events Company : TechCrunch Robotics Link : [MEDIUM] 5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase Company ...",
+      "why_matters": "The practical impact: Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register.",
+      "what_to_watch": "",
+      "key_points": [
+        "auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup...",
+        "Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 3,
+  "carousel_total_parts": 3,
+  "slides": [
+    "production workflows, authentication has become the most critical infrastructure decision",
+    "production workflows, authentication has become the most critical infrastructure decision",
+    "lities is changing rapidly",
+    "AI Update",
+    "Follow for the next AI briefing"
+  ]
+}

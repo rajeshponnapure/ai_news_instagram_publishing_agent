@@ -1,0 +1,305 @@
+{
+  "email_received_at": "2026-05-25T12:54-07:00",
+  "recommended_post_time": "14:00",
+  "headline": "Borealis - open data, code, weights recipe for training Audio LLM \u2014 Part 2 of 3",
+  "subject": "\ud83d\udea8 AI Alert: 22 new launches \u2014 Hugging Face, The Verge AI, OpenAI Blog",
+  "source_date": "Mon, 25 May 2026 12:54:17 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Amazon",
+    "NVIDIA",
+    "Hugging Face",
+    "Salesforce"
+  ],
+  "models": [
+    "Claude",
+    "Gemini 2.5",
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://techcrunch.com/2026/05/25/startup-battlefield-200-applications-close-in-days-apply-before-may-27/",
+  "article_title": "Startup Battlefield 200 applications close before May 27 | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c22cdd822f846d16.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2025/11/54889393608_2493644601_o-2.jpg?resize=1200,800",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/05/25/startup-battlefield-200-applications-close-in-days-apply-before-may-27/",
+      "title": "Startup Battlefield 200 applications close before May 27 | TechCrunch",
+      "description": "The deadline to apply or nominate for Startup Battlefield 200 is May 27. Get VC access, global visibility, TechCrunch coverage, and $100,000. Apply now.",
+      "excerpt": "The deadline to apply or nominate for Startup Battlefield 200 is May 27. Get VC access, global visibility, TechCrunch coverage, and $100,000. Apply now.",
+      "summary": "The network runs so deep that alumni have even acquired each other: Dropbox acquired fellow Battlefield 200 alum DocSend in 2021. The companies that define categories rarely start polished Some of the most consequential companies in tech history didn\u2019t launch with splashy fundraising announcements. The practical impact: You don\u2019t need to make the top 20 for this experience to change your trajectory. This is your opportunity to gain investor exposure, receive direct VC feedback, and prove your company belongs among the next generation of category-defining startups. Watch next: Startup Battlefield 200 has never been a competition for the most polished companies. The deadline to apply or nominate for Startup Battlefield 200 is May 27.",
+      "what_happened": "The network runs so deep that alumni have even acquired each other: Dropbox acquired fellow Battlefield 200 alum DocSend in 2021. The companies that define categories rarely start polished Some of the most consequential companies in tech history didn\u2019t launch with splashy fundraising announcements.",
+      "why_matters": "The practical impact: You don\u2019t need to make the top 20 for this experience to change your trajectory. This is your opportunity to gain investor exposure, receive direct VC feedback, and prove your company belongs among the next generation of category-defining startups.",
+      "what_to_watch": "Watch next: Startup Battlefield 200 has never been a competition for the most polished companies. The deadline to apply or nominate for Startup Battlefield 200 is May 27.",
+      "key_points": [
+        "The network runs so deep that alumni have even acquired each other: Dropbox acquired fellow Battlefield 200 alum DocSend in 2021.",
+        "The deadline to apply or nominate for Startup Battlefield 200 is May 27.",
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "Apply today for the opportunity to take the TechCrunch Disrupt Stage alongside 200 of the world\u2019s most promising early-stage startups.",
+        "The companies that define categories rarely start polished Some of the most consequential companies in tech history didn\u2019t launch with splashy fundraising announcements.",
+        "Together, they\u2019ve raised over $32 billion and generated more than 250 exits, including acquisitions by Microsoft, Google, Salesforce, Uber, and Amazon.",
+        "They all passed through the same crucible: Startup Battlefield 200.",
+        "Startup Battlefield 200 has never been a competition for the most polished companies.",
+        "The Startup Battlefield 200 track record speaks for itself More than 1,700 companies have competed in Startup Battlefield 200.",
+        "One startup takes the crown and wins $100,000 in equity-free funding.",
+        "More from TechCrunch Startup Battlefield 200 applications close in days: Apply before May 27 The deadline to apply or nominate for Startup Battlefield 200 is Friday, May 27.",
+        "Just 20 finalists pitch live on the Disrupt Stage."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c22cdd822f846d16.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/11/54889393608_2493644601_o-2.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theverge.com/news/936945/pope-leo-letter-encyclical-ai-anthropic-labor-warfare",
+      "title": "recipe for training Audio LLMAlexWortega\u2022about 2 hours ago\u20227",
+      "description": "recipe for training Audio LLMAlexWortega\u2022about 2 hours ago\u20227 Company : Hugging Face Link : [HIGH] Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI Company : The Verge AI Summary : Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership Company : OpenAI Blog Summary : OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency. Link : [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical...",
+      "excerpt": "recipe for training Audio LLMAlexWortega\u2022about 2 hours ago\u20227 Company : Hugging Face Link : [HIGH] Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI Company : The Verge AI Summary : Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership Company : OpenAI Blog Summary : OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with...",
+      "summary": "recipe for training Audio LLMAlexWortega\u2022about 2 hours ago\u20227 Company : Hugging Face Link : [HIGH] Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI Company : The Verge AI Summary : Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday. The practical impact: Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership Company : OpenAI Blog Summary : OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency. Watch next: Link : [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical...",
+      "what_happened": "recipe for training Audio LLMAlexWortega\u2022about 2 hours ago\u20227 Company : Hugging Face Link : [HIGH] Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI Company : The Verge AI Summary : Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday.",
+      "why_matters": "The practical impact: Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership Company : OpenAI Blog Summary : OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency.",
+      "what_to_watch": "Watch next: Link : [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical...",
+      "key_points": [
+        "recipe for training Audio LLMAlexWortega\u2022about 2 hours ago\u20227 Company : Hugging Face Link : [HIGH] Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI Company : The Verge AI Summary : Pope Leo XIV warned of...",
+        "Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership Company : OpenAI Blog Summary : OpenAI partners with Grupo...",
+        "Link : [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical..."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://openai.com/index/grupo-folha-grupo-uol-partnership",
+      "title": "nday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma",
+      "description": "nday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership Company : OpenAI Blog Summary : OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency. Link : [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" Company : Anthropic Link : [HIGH] A large-scale unified deep learning model for peptide mass spectrum interpretation trained on multimodal data Company : Nature AI Summary : pUniFind is a large-scale deep learning model for proteomics that unifies...",
+      "excerpt": "nday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership Company : OpenAI Blog Summary : OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency. Link : [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" Company : Anthropic Link : [HIGH] A large-scale unified...",
+      "summary": "Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership Company : OpenAI Blog Summary : OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency. Link : [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" Company : Anthropic Link : [HIGH] A...",
+      "what_happened": "Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership Company : OpenAI Blog Summary : OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency. Link : [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" Company : Anthropic Link : [HIGH] A...",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Link : [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" Company : Anthropic Link : [HIGH] A large-scale unified deep learning model for...",
+        "Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership Company : OpenAI Blog Summary : OpenAI partners with Grupo..."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.marktechpost.com/2026/05/24/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension/",
+      "title": "es peptide i",
+      "description": "es peptide i Link : [HIGH] StepFun Releases StepAudio 2.5 Realtime: An End-to-End Voice Model with Roleplay-Specific RLHF and Paralinguistic Comprehension Company : MarkTechPost AI Summary : StepFun, the Shanghai-based AI lab, released StepAudio 2.5 Realtime in May 2026 - an end-to-end real-time speech large language model with fully customizable persona capabilities. The model connects v Link : [MEDIUM] Cox Media fined after bragging it spied on users through their phones Company : The Verge AI Summary : An exceptionally weird controversy has come back to haunt Cox Media and a pair of marketing firms, which claimed they were secretly listening to users via phones and smart devices - despite little evi Link : [MEDIUM] What ClickUp\u2019s mass...",
+      "excerpt": "es peptide i Link : [HIGH] StepFun Releases StepAudio 2.5 Realtime: An End-to-End Voice Model with Roleplay-Specific RLHF and Paralinguistic Comprehension Company : MarkTechPost AI Summary : StepFun, the Shanghai-based AI lab, released StepAudio 2.5 Realtime in May 2026 - an end-to-end real-time speech large language model with fully customizable persona capabilities. The model connects v Link : [MEDIUM] Cox Media fined after bragging it spied on users through their phones Company : The Verge AI Summary : An exceptionally weird controversy has come back to haunt Cox Media and a pair of marketing firms, which claimed they were secretly...",
+      "summary": "es peptide i Link : [HIGH] StepFun Releases StepAudio 2.5 Realtime: An End-to-End Voice Model with Roleplay-Specific RLHF and Paralinguistic Comprehension Company : MarkTechPost AI Summary : StepFun, the Shanghai-based AI lab, released StepAudio 2.5 Realtime in May 2026 - an end-to-end real-time speech large language model with fully customizable persona capabilities. The practical impact: The model connects v Link : [MEDIUM] Cox Media fined after bragging it spied on users through their phones Company : The Verge AI Summary : An exceptionally weird controversy has come back to haunt Cox Media and a pair of marketing firms, which claimed they were secretly listening to users via phones and smart devices - despite little evi Link : [MEDIUM] What ClickUp\u2019s mass...",
+      "what_happened": "es peptide i Link : [HIGH] StepFun Releases StepAudio 2.5 Realtime: An End-to-End Voice Model with Roleplay-Specific RLHF and Paralinguistic Comprehension Company : MarkTechPost AI Summary : StepFun, the Shanghai-based AI lab, released StepAudio 2.5 Realtime in May 2026 - an end-to-end real-time speech large language model with fully customizable persona capabilities.",
+      "why_matters": "The practical impact: The model connects v Link : [MEDIUM] Cox Media fined after bragging it spied on users through their phones Company : The Verge AI Summary : An exceptionally weird controversy has come back to haunt Cox Media and a pair of marketing firms, which claimed they were secretly listening to users via phones and smart devices - despite little evi Link : [MEDIUM] What ClickUp\u2019s mass...",
+      "what_to_watch": "",
+      "key_points": [
+        "es peptide i Link : [HIGH] StepFun Releases StepAudio 2.5 Realtime: An End-to-End Voice Model with Roleplay-Specific RLHF and Paralinguistic Comprehension Company : MarkTechPost AI Summary : StepFun, the...",
+        "The model connects v Link : [MEDIUM] Cox Media fined after bragging it spied on users through their phones Company : The Verge AI Summary : An exceptionally weird controversy has come back to haunt Cox Media and a..."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theverge.com/policy/937027/cox-media-marketing-ai-powered-phone-spying-ads-ftc-fine",
+      "title": "4/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension/",
+      "description": "4/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension/ [MEDIUM] Cox Media fined after bragging it spied on users through their phones Company : The Verge AI Summary : An exceptionally weird controversy has come back to haunt Cox Media and a pair of marketing firms, which claimed they were secretly listening to users via phones and smart devices - despite little evi Link : [MEDIUM] What ClickUp\u2019s mass layoff tells us about the future of work Company : TechCrunch AI Summary : The nine-year-old startup is replacing hundreds of employees with thousands of AI agents. Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain...",
+      "excerpt": "4/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension/ [MEDIUM] Cox Media fined after bragging it spied on users through their phones Company : The Verge AI Summary : An exceptionally weird controversy has come back to haunt Cox Media and a pair of marketing firms, which claimed they were secretly listening to users via phones and smart devices - despite little evi Link : [MEDIUM] What ClickUp\u2019s mass layoff tells us about the future of work Company : TechCrunch AI Summary : The nine-year-old startup is replacing hundreds of employees with thousands of AI agents. Link ...",
+      "summary": "4/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension/ [MEDIUM] Cox Media fined after bragging it spied on users through their phones Company : The Verge AI Summary : An exceptionally weird controversy has come back to haunt Cox Media and a pair of marketing firms, which claimed they were secretly listening to users via phones and smart devices - despite little evi Link : [MEDIUM] What ClickUp\u2019s mass layoff tells us about the future of...",
+      "what_happened": "4/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension/ [MEDIUM] Cox Media fined after bragging it spied on users through their phones Company : The Verge AI Summary : An exceptionally weird controversy has come back to haunt Cox Media and a pair of marketing firms, which claimed they were secretly listening to users via phones and smart devices - despite little evi Link : [MEDIUM] What ClickUp\u2019s mass layoff tells us about the future of...",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain...",
+        "4/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension/ [MEDIUM] Cox Media fined after bragging it spied on users through their phones Company..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://github.com/huggingface/trl/releases/tag/v1.5.0",
+      "title": "e-year-old startup is replacing hundreds of employees with thousands of AI agents.",
+      "description": "e-year-old startup is replacing hundreds of employees with thousands of AI agents. Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals Company : ZDNet AI Summary : Retailers like Amazon and Best Buy are offering steep discounts on high-capacity SSDs for Memorial Day. Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK...",
+      "excerpt": "e-year-old startup is replacing hundreds of employees with thousands of AI agents. Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals Company : ZDNet AI Summary : Retailers like Amazon and Best Buy are offering steep discounts on high-capacity SSDs for Memorial Day. Link ...",
+      "summary": "Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK... The practical impact: Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals Company : ZDNet AI Summary : Retailers like... Watch next: e-year-old startup is replacing hundreds of employees with thousands of AI agents.",
+      "what_happened": "Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK...",
+      "why_matters": "The practical impact: Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals Company : ZDNet AI Summary : Retailers like...",
+      "what_to_watch": "Watch next: e-year-old startup is replacing hundreds of employees with thousands of AI agents.",
+      "key_points": [
+        "Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK...",
+        "Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers...",
+        "e-year-old startup is replacing hundreds of employees with thousands of AI agents."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.zdnet.com/article/best-memorial-day-2026-ssd-deals/",
+      "title": "hat templates",
+      "description": "hat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals Company : ZDNet AI Summary : Retailers like Amazon and Best Buy are offering steep discounts on high-capacity SSDs for Memorial Day. Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK downloads and AI agents move into production workflows, authentication has become the most critical infrastructure decision teams face. This guide ranks the eight Link : [MEDIUM] The AI...",
+      "excerpt": "hat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals Company : ZDNet AI Summary : Retailers like Amazon and Best Buy are offering steep discounts on high-capacity SSDs for Memorial Day. Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK downloads and AI agents move into production workflows, authentication has become the most...",
+      "summary": "Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK downloads and AI agents move into production workflows, authentication has become the most critical infrastructure decision teams face. The practical impact: hat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals Company : ZDNet AI Summary : Retailers like Amazon and Best Buy are offering steep discounts on high-capacity SSDs for Memorial Day. This guide ranks the... Watch next: This guide ranks the eight Link : [MEDIUM] The AI...",
+      "what_happened": "Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK downloads and AI agents move into production workflows, authentication has become the most critical infrastructure decision teams face.",
+      "why_matters": "The practical impact: hat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals Company : ZDNet AI Summary : Retailers like Amazon and Best Buy are offering steep discounts on high-capacity SSDs for Memorial Day. This guide ranks the...",
+      "what_to_watch": "Watch next: This guide ranks the eight Link : [MEDIUM] The AI...",
+      "key_points": [
+        "Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK downloads and AI agents move into production workflows...",
+        "This guide ranks the eight Link : [MEDIUM] The AI...",
+        "hat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs..."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.marktechpost.com/2026/05/25/best-authentication-platforms-for-ai-agents-and-mcp-servers-in-2026/",
+      "title": "g steep discounts on high-capacity SSDs for Memorial Day.",
+      "description": "g steep discounts on high-capacity SSDs for Memorial Day. Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK downloads and AI agents move into production workflows, authentication has become the most critical infrastructure decision teams face. This guide ranks the eight Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly. Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no...",
+      "excerpt": "g steep discounts on high-capacity SSDs for Memorial Day. Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK downloads and AI agents move into production workflows, authentication has become the most critical infrastructure decision teams face. This guide ranks the eight Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly. Link ...",
+      "summary": "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no... Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK downloads and AI agents move into production workflows, authentication has become the most critical infrastructure decision teams face. The practical impact: This guide ranks the eight Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly. Watch next: g steep discounts on high-capacity SSDs for Memorial Day.",
+      "what_happened": "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no... Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK downloads and AI agents move into production workflows, authentication has become the most critical infrastructure decision teams face.",
+      "why_matters": "The practical impact: This guide ranks the eight Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly.",
+      "what_to_watch": "Watch next: g steep discounts on high-capacity SSDs for Memorial Day.",
+      "key_points": [
+        "Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK downloads and AI agents move into production workflows...",
+        "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no...",
+        "This guide ranks the eight Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is...",
+        "g steep discounts on high-capacity SSDs for Memorial Day."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 2,
+  "carousel_total_parts": 3,
+  "slides": [
+    "Startup Battlefield 200 applications close before May 27",
+    "Startup Battlefield 200 applications close before May 27",
+    "recipe for training Audio LLMAlexWortega\u2022about 2 hours ago\u20227",
+    "recipe for training Audio LLMAlexWortega\u2022about 2 hours ago\u20227",
+    "nday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma",
+    "es peptide i",
+    "4/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific",
+    "e-year-old startup is replacing hundreds of employees with thousands of AI agents",
+    "hat templates",
+    "Follow for the next AI briefing"
+  ]
+}
