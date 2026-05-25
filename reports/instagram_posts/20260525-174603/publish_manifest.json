@@ -15,8 +15,21 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260525-174603/01_20260525-0916_client-challenge-part-1-of-2/slide_09.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260525-174603/01_20260525-0916_client-challenge-part-1-of-2/slide_10.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-174603/01_20260525-0916_client-challenge-part-1-of-2/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-174603/01_20260525-0916_client-challenge-part-1-of-2/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-174603/01_20260525-0916_client-challenge-part-1-of-2/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-174603/01_20260525-0916_client-challenge-part-1-of-2/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-174603/01_20260525-0916_client-challenge-part-1-of-2/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-174603/01_20260525-0916_client-challenge-part-1-of-2/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-174603/01_20260525-0916_client-challenge-part-1-of-2/slide_07.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-174603/01_20260525-0916_client-challenge-part-1-of-2/slide_08.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-174603/01_20260525-0916_client-challenge-part-1-of-2/slide_09.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-174603/01_20260525-0916_client-challenge-part-1-of-2/slide_10.png"
+      ],
+      "status": "published",
+      "creation_id": "18044374991577438",
+      "published_at": "2026-05-25T17:48:50+00:00"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260525-174603/02_20260525-0916_client-challenge-part-2-of-2",
@@ -32,8 +45,20 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260525-174603/02_20260525-0916_client-challenge-part-2-of-2/slide_08.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260525-174603/02_20260525-0916_client-challenge-part-2-of-2/slide_09.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-174603/02_20260525-0916_client-challenge-part-2-of-2/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-174603/02_20260525-0916_client-challenge-part-2-of-2/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-174603/02_20260525-0916_client-challenge-part-2-of-2/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-174603/02_20260525-0916_client-challenge-part-2-of-2/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-174603/02_20260525-0916_client-challenge-part-2-of-2/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-174603/02_20260525-0916_client-challenge-part-2-of-2/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-174603/02_20260525-0916_client-challenge-part-2-of-2/slide_07.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-174603/02_20260525-0916_client-challenge-part-2-of-2/slide_08.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-174603/02_20260525-0916_client-challenge-part-2-of-2/slide_09.png"
+      ],
+      "status": "published",
+      "creation_id": "18044375255577438",
+      "published_at": "2026-05-25T17:50:25+00:00"
     }
   ]
 }
