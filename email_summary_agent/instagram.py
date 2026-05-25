@@ -2980,7 +2980,13 @@ def _extract_instagram_key_points(
         r"Company\s*:\s*",
         r"AI Summary\s*:\s*",
         r"Link\s*:\s*https?://\S+",
-        r"\bLink\s*:\s*\d+\.?\s*",
+        # Remove the entire sentence containing "Link : <number>" — a common
+        # digest-email boilerplate like "The model connects via Link : 1."
+        # The greedy [^.!?]* on both sides ensures the whole clause is gone.
+        r"[^.!?]*\bLink\s*:\s*\d+[^.!?]*[.!?]?\s*",
+        # Remove "\d+ event(s) detected" digest header lines (sometimes rendered
+        # as "I event(s) detected" when "1" and "I" are confused in encoding).
+        r"\b(?:\d+|I)\s+event\(s\)\s+detected\b[^\n]*",
         r"#{1,6}\s+(?:Bug Fixes|Features?|Performance|Breaking Changes?|Refactoring?|Chores?|Docs?).*",
         r"\*\*([^*]+):\*\*\s*",
     ]
@@ -3697,20 +3703,45 @@ def _build_editorial_hashtags(summary: EmailSummary, article: dict[str, Any]) ->
 
 
 def _extract_stat_from_text(text: str) -> str:
-    """Extract a concrete statistic from text for use in a hook line."""
+    """Extract a concrete statistic from text for use in a hook line.
+
+    Always starts at a sentence boundary so the hook never begins mid-word.
+    Returns "" if no clean sentence boundary can be found before the number.
+    """
     match = re.search(
         r"\b(\d[\d,]*(?:\.\d+)?(?:B|M|K|bn|mn|%|\s+(?:billion|million|thousand|percent|times|x)))\b",
         text, re.I,
     )
     if not match:
         return ""
-    start = max(0, match.start() - 40)
-    end = min(len(text), match.end() + 60)
-    snippet = re.sub(r"\s+", " ", text[start:end]).strip()
-    period_pos = snippet.find(".", match.end() - start)
+
+    # Walk backwards to find the nearest sentence boundary before the number.
+    search_region = text[:match.start()]
+    sent_start = 0
+    for m in re.finditer(r"[.!?]\s+", search_region):
+        sent_start = m.end()
+
+    # If there's no sentence boundary and the text doesn't start with a capital
+    # or digit, the snippet would begin mid-sentence — skip it entirely.
+    if sent_start == 0:
+        first_word = text[:match.start()].strip().split()
+        if first_word and not (first_word[0][0].isupper() or first_word[0][0].isdigit()):
+            return ""
+
+    end = min(len(text), match.end() + 80)
+    snippet = re.sub(r"\s+", " ", text[sent_start:end]).strip()
+
+    # Trim at the first sentence-ending period after the number.
+    offset_in_snippet = match.end() - sent_start
+    period_pos = snippet.find(".", max(0, offset_in_snippet))
     if period_pos > 0:
         snippet = snippet[:period_pos + 1]
-    return _trim_no_dots(snippet, 100) if len(snippet) > 10 else ""
+
+    # Final safety: reject snippets that don't start with a capital letter or digit.
+    if not snippet or not (snippet[0].isupper() or snippet[0].isdigit()):
+        return ""
+
+    return snippet[:110] if len(snippet) > 10 else ""
 
 
 def _build_disclaimer_if_needed(summary: EmailSummary, article: dict[str, Any]) -> str:
@@ -3856,7 +3887,10 @@ def _clean_public_text(text: str) -> str:
     text = re.sub(r"Company\s*:\s*[^\n]*(\n|$)", "", text, flags=re.I)
     text = re.sub(r"AI Summary\s*:\s*", "", text, flags=re.I)
     text = re.sub(r"Link\s*:\s*https?://\S+", "", text, flags=re.I)
-    text = re.sub(r"\bLink\s*:\s*\d+\.?\s*", "", text, flags=re.I)
+    # Remove the entire sentence containing "Link : <number>" boilerplate.
+    text = re.sub(r"[^.!?]*\bLink\s*:\s*\d+[^.!?]*[.!?]?\s*", "", text, flags=re.I)
+    # Remove "N event(s) detected" digest header lines.
+    text = re.sub(r"\b(?:\d+|I)\s+event\(s\)\s+detected\b[^\n]*", "", text, flags=re.I)
     # Strip GitHub markdown changelog headings
     text = re.sub(
         r"#{1,6}\s+(?:Bug Fixes|Features?|Performance|Breaking Changes?|Refactoring?|Chores?|Docs?).*",
@@ -3874,43 +3908,4 @@ def _clean_public_text(text: str) -> str:
         flags=re.I | re.S,
     )
     text = re.sub(
-        r"(?:Select your cookie preferences|Customize cookie preferences|Essential cookies are necessary"
-        r"|You may review and change your choices|Cookie Notice|Cookie preferences"
-        r"|Accept all cookies|Reject all cookies|We use essential cookies"
-        r"|We and our advertising partners|Cookie settings).*?(?=(?:\s+[A-Z][a-z]|\s*$))",
-        " ",
-        text,
-        flags=re.I | re.S,
-    )
-    text = re.sub(r"\s+", " ", text).strip()
-    if not text:
-        return ""
-    sentences = re.split(r"(?<=[\.!?])\s+", text)
-    kept: list[str] = []
-    for sentence in sentences:
-        lowered = sentence.lower()
-        if any(term in lowered for term in VIDEO_BLOCKED_TERMS):
-            continue
-        if sentence.startswith(("Article ", "Article 1 Title:", "Article title:")):
-            continue
-        if any(phrase in lowered for phrase in PUBLIC_BLOCKED_PHRASES):
-            continue
-        # Drop sentences that are mostly cookie/legal noise even if not exact match
-        if re.search(r"\bcookies?\b|\bGDPR\b|\bCCPA\b|\bopt.out\b|\bunsubscribe\b", sentence, re.I):
-            continue
-        # Drop newsletter metadata lines like "Impact: HIGH", "Source: X", "Link: 3"
-        if re.fullmatch(r"\s*(impact|source|link|read time)\s*:\s*(low|medium|high|\d+.*)?", sentence, re.I):
-            continue
-        kept.append(sentence.strip())
-    result = " ".join(part for part in kept if part)
-    return result
-
-
-def _strip_decorative_symbols(text: str) -> str:
-    cleaned: list[str] = []
-    for char in text or "":
-        category = unicodedata.category(char)
-        if category == "So":
-            continue
-        cleaned.append(char)
-    return re.sub(r"\s+", " ", "".join(cleaned)).strip()
+        r"(?:Select your cookie preferences|Customize co
