@@ -15,8 +15,21 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260525-091307/01_20260524-2317_robot-challenge-screen-part-1-of-2/slide_09.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260525-091307/01_20260524-2317_robot-challenge-screen-part-1-of-2/slide_10.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-091307/01_20260524-2317_robot-challenge-screen-part-1-of-2/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-091307/01_20260524-2317_robot-challenge-screen-part-1-of-2/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-091307/01_20260524-2317_robot-challenge-screen-part-1-of-2/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-091307/01_20260524-2317_robot-challenge-screen-part-1-of-2/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-091307/01_20260524-2317_robot-challenge-screen-part-1-of-2/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-091307/01_20260524-2317_robot-challenge-screen-part-1-of-2/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-091307/01_20260524-2317_robot-challenge-screen-part-1-of-2/slide_07.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-091307/01_20260524-2317_robot-challenge-screen-part-1-of-2/slide_08.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-091307/01_20260524-2317_robot-challenge-screen-part-1-of-2/slide_09.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-091307/01_20260524-2317_robot-challenge-screen-part-1-of-2/slide_10.png"
+      ],
+      "status": "published",
+      "creation_id": "18044324735577438",
+      "published_at": "2026-05-25T09:15:22+00:00"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260525-091307/02_20260524-2317_robot-challenge-screen-part-2-of-2",
@@ -26,8 +39,14 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260525-091307/02_20260524-2317_robot-challenge-screen-part-2-of-2/slide_02.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260525-091307/02_20260524-2317_robot-challenge-screen-part-2-of-2/slide_03.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-091307/02_20260524-2317_robot-challenge-screen-part-2-of-2/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-091307/02_20260524-2317_robot-challenge-screen-part-2-of-2/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-091307/02_20260524-2317_robot-challenge-screen-part-2-of-2/slide_03.png"
+      ],
+      "status": "published",
+      "creation_id": "18044324801577438",
+      "published_at": "2026-05-25T09:16:28+00:00"
     }
   ]
 }
