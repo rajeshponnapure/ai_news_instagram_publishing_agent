@@ -1,6 +1,6 @@
 # AI News Summary Report
 
-Generated: 2026-05-25T20:52:35+00:00
+Generated: 2026-05-25T22:11:06+00:00
 Source: grdevelopers.co@gmail.com
 Emails summarized: 1
 
@@ -15,11 +15,11 @@ Emails summarized: 1
 
 ## Most Mentioned Companies
 
-OpenAI (1), Google (1), Anthropic (1), Microsoft (1), Amazon (1), NVIDIA (1), Hugging Face (1), Salesforce (1)
+OpenAI (1), Google (1), DeepMind (1), Anthropic (1), Microsoft (1), Meta (1), Amazon (1), AWS (1)
 
 ## Most Mentioned Models
 
-Claude (1), Gemini 2.5 (1), Gemini (1)
+GPT-5.5 (1), GPT-5.4-Cyber (1), GPT-5.1-Codex-Max (1), GPT-5.1 (1), GPT-5 (1), GPT-5-Codex (1), GPT-5.4 (1), Claude (1)
 
 ## Main Topics
 
@@ -33,7 +33,7 @@ model release (1), funding or business (1), regulation or safety (1), developer 
 
 ### 1. Borealis - open data, code, weights recipe for training Audio LLM
 
-Source date: Mon, 25 May 2026 12:54:17 -0700
+Source date: Mon, 25 May 2026 13:58:04 -0700
 Confidence: 0.82
 Article: https://huggingface.co/blog/AlexWortega/borealis
 Article title: Borealis — open data, code, weights recipe for training Audio LLM
@@ -49,6 +49,6 @@ Key points:
 - vLLM ships a closed set of multimodal architectures out of the box ( Qwen2-Audio , LLaVA , Phi-4-MM , a couple more).
 - Under the hood - serving and integrating with transformers Serving multimodal models isn't a new topic.
 - When the user writes a prompt with one <|AUDIO|> , the processor expands it into <|start_of_audio|> + 375× <|AUDIO|> + <|start_of_audio|> , and marks each of those 375 tokens as "embedding will be supplied...
-Companies: OpenAI, Google, Anthropic, Microsoft, Amazon, NVIDIA, Hugging Face, Salesforce
-Models: Claude, Gemini 2.5, Gemini
+Companies: OpenAI, Google, DeepMind, Anthropic, Microsoft, Meta, Amazon, AWS
+Models: GPT-5.5, GPT-5.4-Cyber, GPT-5.1-Codex-Max, GPT-5.1, GPT-5, GPT-5-Codex, GPT-5.4, Claude
 Topics: model release, funding or business, regulation or safety, developer tools, hardware and compute, media generation

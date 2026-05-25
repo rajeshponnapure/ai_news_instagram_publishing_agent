@@ -1,0 +1,271 @@
+{
+  "email_received_at": "2026-05-25T13:58-07:00",
+  "recommended_post_time": "14:00",
+  "headline": "Borealis - open data, code, weights recipe for training Audio LLM \u2014 Part 2 of 2",
+  "subject": "\ud83d\udea8 AI Alert: 22 new launches \u2014 Hugging Face, The Verge AI, OpenAI Blog",
+  "source_date": "Mon, 25 May 2026 13:58:04 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "AWS"
+  ],
+  "models": [
+    "GPT-5.5",
+    "GPT-5.4-Cyber",
+    "GPT-5.1-Codex-Max",
+    "GPT-5.1",
+    "GPT-5",
+    "GPT-5-Codex",
+    "GPT-5.4",
+    "Claude"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.theverge.com/policy/937027/cox-media-marketing-ai-powered-phone-spying-ads-ftc-fine",
+  "article_title": "4/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension/",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.theverge.com/policy/937027/cox-media-marketing-ai-powered-phone-spying-ads-ftc-fine",
+      "title": "4/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension/",
+      "description": "4/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension/ [MEDIUM] Cox Media fined after bragging it spied on users through their phones Company : The Verge AI Summary : An exceptionally weird controversy has come back to haunt Cox Media and a pair of marketing firms, which claimed they were secretly listening to users via phones and smart devices - despite little evi Link : [MEDIUM] What ClickUp\u2019s mass layoff tells us about the future of work Company : TechCrunch AI Summary : The nine-year-old startup is replacing hundreds of employees with thousands of AI agents. Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain...",
+      "excerpt": "4/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension/ [MEDIUM] Cox Media fined after bragging it spied on users through their phones Company : The Verge AI Summary : An exceptionally weird controversy has come back to haunt Cox Media and a pair of marketing firms, which claimed they were secretly listening to users via phones and smart devices - despite little evi Link : [MEDIUM] What ClickUp\u2019s mass layoff tells us about the future of work Company : TechCrunch AI Summary : The nine-year-old startup is replacing hundreds of employees with thousands of AI agents. Link ...",
+      "summary": "4/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension/ [MEDIUM] Cox Media fined after bragging it spied on users through their phones Company : The Verge AI Summary : An exceptionally weird controversy has come back to haunt Cox Media and a pair of marketing firms, which claimed they were secretly listening to users via phones and smart devices - despite little evi Link : [MEDIUM] What ClickUp\u2019s mass layoff tells us about the future of...",
+      "what_happened": "4/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension/ [MEDIUM] Cox Media fined after bragging it spied on users through their phones Company : The Verge AI Summary : An exceptionally weird controversy has come back to haunt Cox Media and a pair of marketing firms, which claimed they were secretly listening to users via phones and smart devices - despite little evi Link : [MEDIUM] What ClickUp\u2019s mass layoff tells us about the future of...",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain...",
+        "4/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension/ [MEDIUM] Cox Media fined after bragging it spied on users through their phones Company..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://github.com/huggingface/trl/releases/tag/v1.5.0",
+      "title": "e-year-old startup is replacing hundreds of employees with thousands of AI agents.",
+      "description": "e-year-old startup is replacing hundreds of employees with thousands of AI agents. Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals Company : ZDNet AI Summary : Retailers like Amazon and Best Buy are offering steep discounts on high-capacity SSDs for Memorial Day. Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK...",
+      "excerpt": "e-year-old startup is replacing hundreds of employees with thousands of AI agents. Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals Company : ZDNet AI Summary : Retailers like Amazon and Best Buy are offering steep discounts on high-capacity SSDs for Memorial Day. Link ...",
+      "summary": "Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK... The practical impact: Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals Company : ZDNet AI Summary : Retailers like... Watch next: e-year-old startup is replacing hundreds of employees with thousands of AI agents.",
+      "what_happened": "Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK...",
+      "why_matters": "The practical impact: Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals Company : ZDNet AI Summary : Retailers like...",
+      "what_to_watch": "Watch next: e-year-old startup is replacing hundreds of employees with thousands of AI agents.",
+      "key_points": [
+        "Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK...",
+        "Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers...",
+        "e-year-old startup is replacing hundreds of employees with thousands of AI agents."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.zdnet.com/article/best-memorial-day-2026-ssd-deals/",
+      "title": "hat templates",
+      "description": "hat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals Company : ZDNet AI Summary : Retailers like Amazon and Best Buy are offering steep discounts on high-capacity SSDs for Memorial Day. Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK downloads and AI agents move into production workflows, authentication has become the most critical infrastructure decision teams face. This guide ranks the eight Link : [MEDIUM] The AI...",
+      "excerpt": "hat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals Company : ZDNet AI Summary : Retailers like Amazon and Best Buy are offering steep discounts on high-capacity SSDs for Memorial Day. Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK downloads and AI agents move into production workflows, authentication has become the most...",
+      "summary": "Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK downloads and AI agents move into production workflows, authentication has become the most critical infrastructure decision teams face. The practical impact: hat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals Company : ZDNet AI Summary : Retailers like Amazon and Best Buy are offering steep discounts on high-capacity SSDs for Memorial Day. This guide ranks the... Watch next: This guide ranks the eight Link : [MEDIUM] The AI...",
+      "what_happened": "Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK downloads and AI agents move into production workflows, authentication has become the most critical infrastructure decision teams face.",
+      "why_matters": "The practical impact: hat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals Company : ZDNet AI Summary : Retailers like Amazon and Best Buy are offering steep discounts on high-capacity SSDs for Memorial Day. This guide ranks the...",
+      "what_to_watch": "Watch next: This guide ranks the eight Link : [MEDIUM] The AI...",
+      "key_points": [
+        "Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK downloads and AI agents move into production workflows...",
+        "This guide ranks the eight Link : [MEDIUM] The AI...",
+        "hat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] Best Buy and Amazon has dropped major SSDs..."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.marktechpost.com/2026/05/25/best-authentication-platforms-for-ai-agents-and-mcp-servers-in-2026/",
+      "title": "g steep discounts on high-capacity SSDs for Memorial Day.",
+      "description": "g steep discounts on high-capacity SSDs for Memorial Day. Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK downloads and AI agents move into production workflows, authentication has become the most critical infrastructure decision teams face. This guide ranks the eight Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly. Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no...",
+      "excerpt": "g steep discounts on high-capacity SSDs for Memorial Day. Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK downloads and AI agents move into production workflows, authentication has become the most critical infrastructure decision teams face. This guide ranks the eight Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly. Link ...",
+      "summary": "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no... Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK downloads and AI agents move into production workflows, authentication has become the most critical infrastructure decision teams face. The practical impact: This guide ranks the eight Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly. Watch next: g steep discounts on high-capacity SSDs for Memorial Day.",
+      "what_happened": "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no... Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK downloads and AI agents move into production workflows, authentication has become the most critical infrastructure decision teams face.",
+      "why_matters": "The practical impact: This guide ranks the eight Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly.",
+      "what_to_watch": "Watch next: g steep discounts on high-capacity SSDs for Memorial Day.",
+      "key_points": [
+        "Link : [MEDIUM] Best Authentication Platforms for AI Agents and MCP Servers in 2026 Company : MarkTechPost AI Summary : As MCP crosses 97 million monthly SDK downloads and AI agents move into production workflows...",
+        "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no...",
+        "This guide ranks the eight Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is...",
+        "g steep discounts on high-capacity SSDs for Memorial Day."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.wired.com/story/the-ai-era-is-creating-a-bug-hunting-arms-race/",
+      "title": "production workflows, authentication has become the most critical infrastructure decision teams face. This guide ranks the eight",
+      "description": "production workflows, authentication has become the most critical infrastructure decision teams face. This guide ranks the eight Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly. Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link ...",
+      "excerpt": "production workflows, authentication has become the most critical infrastructure decision teams face. This guide ranks the eight Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly. Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. auth.md proposes a fix: a Markdown...",
+      "summary": "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. The practical impact: This guide ranks the eight Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link ... Watch next: auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link ...",
+      "what_happened": "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register.",
+      "why_matters": "The practical impact: This guide ranks the eight Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link ...",
+      "what_to_watch": "Watch next: auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link ...",
+      "key_points": [
+        "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register.",
+        "auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link ...",
+        "This guide ranks the eight Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is...",
+        "production workflows, authentication has become the most critical infrastructure decision teams face."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.marktechpost.com/2026/05/25/workos-releases-auth-md-an-open-agent-registration-protocol-built-on-oauth-standards/",
+      "title": "lities is changing rapidly.",
+      "description": "lities is changing rapidly. Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link : [MEDIUM] TechCrunch Events Company : TechCrunch Robotics Link ...",
+      "excerpt": "lities is changing rapidly. Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link ...",
+      "summary": "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company ... The practical impact: lities is changing rapidly. Watch next: lities is changing rapidly.",
+      "what_happened": "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company ...",
+      "why_matters": "The practical impact: lities is changing rapidly.",
+      "what_to_watch": "Watch next: lities is changing rapidly.",
+      "key_points": [
+        "auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup...",
+        "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register.",
+        "lities is changing rapidly."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/events/techcrunch-disrupt/",
+      "title": "Company : MarkTechPost AI",
+      "description": "Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link : [MEDIUM] TechCrunch Events Company : TechCrunch Robotics Link : [MEDIUM] 5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase Company ...",
+      "excerpt": "Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link : [MEDIUM] TechCrunch...",
+      "summary": "auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link : [MEDIUM] TechCrunch Events Company : TechCrunch Robotics Link : [MEDIUM] 5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase Company ... The practical impact: Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register.",
+      "what_happened": "auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link : [MEDIUM] TechCrunch Events Company : TechCrunch Robotics Link : [MEDIUM] 5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase Company ...",
+      "why_matters": "The practical impact: Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register.",
+      "what_to_watch": "",
+      "key_points": [
+        "auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup...",
+        "Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 2,
+  "carousel_total_parts": 2,
+  "slides": [
+    "4/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific",
+    "4/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific",
+    "e-year-old startup is replacing hundreds of employees with thousands of AI agents",
+    "hat templates",
+    "g steep discounts on high-capacity SSDs for Memorial Day",
+    "production workflows, authentication has become the most critical infrastructure decision",
+    "lities is changing rapidly",
+    "AI Update",
+    "Follow for the next AI briefing"
+  ]
+}
