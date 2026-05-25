@@ -1,0 +1,103 @@
+{
+  "email_received_at": "2026-05-24T23:17-07:00",
+  "recommended_post_time": "14:00",
+  "headline": "Robot Challenge Screen \u2014 Part 2 of 2",
+  "subject": "\ud83d\udea8 AI Alert: 8 new launches \u2014 MarkTechPost AI",
+  "source_date": "Sun, 24 May 2026 23:17:53 -0700",
+  "companies": [
+    "Google",
+    "Microsoft",
+    "Apple",
+    "Amazon",
+    "NVIDIA",
+    "Shanghai-based AI",
+    "Microsoft Research",
+    "The Verge AI"
+  ],
+  "models": [
+    "GPT-5.4",
+    "gpt-5-",
+    "Claude",
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "media generation"
+  ],
+  "article_url": "https://www.cnet.com/tech/mobile/google-data-harvesting-settlement-what-to-know-how-to-claim-135-million/",
+  "article_title": "o pick one up, as you can currently bu",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.cnet.com/tech/mobile/google-data-harvesting-settlement-what-to-know-how-to-claim-135-million/",
+      "title": "o pick one up, as you can currently bu",
+      "description": "o pick one up, as you can currently bu Link : [MEDIUM] Do You Own an Android Phone? Claim a Part of Google's $135M Data Harvesting Settlement Soon Company : CNET AI Summary : Google's settlement with Android users would resolve the lawsuit and alter how the company manages its",
+      "excerpt": "o pick one up, as you can currently bu Link : [MEDIUM] Do You Own an Android Phone? Claim a Part of Google's $135M Data Harvesting Settlement Soon Company : CNET AI Summary : Google's settlement with Android users would resolve the lawsuit and alter how the company manages its",
+      "summary": "Claim a Part of Google's $135M Data Harvesting Settlement Soon Company : CNET AI Summary : Google's settlement with Android users would resolve the lawsuit and alter how the company manages its o pick one up, as you can currently bu Link : [MEDIUM] Do You Own an Android Phone?",
+      "what_happened": "Claim a Part of Google's $135M Data Harvesting Settlement Soon Company : CNET AI Summary : Google's settlement with Android users would resolve the lawsuit and alter how the company manages its o pick one up, as you can currently bu Link : [MEDIUM] Do You Own an Android Phone?",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Claim a Part of Google's $135M Data Harvesting Settlement Soon Company : CNET AI Summary : Google's settlement with Android users would resolve the lawsuit and alter how the company manages its",
+        "o pick one up, as you can currently bu Link : [MEDIUM] Do You Own an Android Phone?"
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.cnet.com/tech/services-and-software/google-search-is-becoming-something-fundamentally-different-heres-what-that-looks-like/",
+      "title": "f service, though not all users will receive financial compensation.",
+      "description": "f service, though not all users will receive financial compensation. Link : [MEDIUM] Google Search Is Becoming Something Fundamentally Different. Here's What That Looks Like Company : CNET AI Summary : From a reimagined search box to AI agents that hunt for apartments on your behalf, Google Search is being rebuilt with AI at its core. Link :",
+      "excerpt": "f service, though not all users will receive financial compensation. Link : [MEDIUM] Google Search Is Becoming Something Fundamentally Different. Here's What That Looks Like Company : CNET AI Summary : From a reimagined search box to AI agents that hunt for apartments on your behalf, Google Search is being rebuilt with AI at its core. Link :",
+      "summary": "Here's What That Looks Like Company : CNET AI Summary : From a reimagined search box to AI agents that hunt for apartments on your behalf, Google Search is being rebuilt with AI at its core. The practical impact: Link : [MEDIUM] Google Search Is Becoming Something Fundamentally Different. Watch next: Link : [MEDIUM] Google Search Is Becoming Something Fundamentally Different.",
+      "what_happened": "Here's What That Looks Like Company : CNET AI Summary : From a reimagined search box to AI agents that hunt for apartments on your behalf, Google Search is being rebuilt with AI at its core.",
+      "why_matters": "The practical impact: Link : [MEDIUM] Google Search Is Becoming Something Fundamentally Different.",
+      "what_to_watch": "Watch next: Link : [MEDIUM] Google Search Is Becoming Something Fundamentally Different.",
+      "key_points": [
+        "Here's What That Looks Like Company : CNET AI Summary : From a reimagined search box to AI agents that hunt for apartments on your behalf, Google Search is being rebuilt with AI at its core.",
+        "Link : [MEDIUM] Google Search Is Becoming Something Fundamentally Different.",
+        "Link : f service, though not all users will receive financial compensation.",
+        "f service, though not all users will receive financial compensation."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 2,
+  "carousel_total_parts": 2,
+  "slides": [
+    "o pick one up, as you can currently bu",
+    "f service, though not all users will receive financial compensation",
+    "Follow for the next AI briefing"
+  ]
+}
