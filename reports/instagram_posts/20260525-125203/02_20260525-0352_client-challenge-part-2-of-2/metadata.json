@@ -1,0 +1,229 @@
+{
+  "email_received_at": "2026-05-25T03:52-07:00",
+  "recommended_post_time": "14:00",
+  "headline": "Client Challenge \u2014 Part 2 of 2",
+  "subject": "\ud83d\udea8 AI Alert: 14 new launches \u2014 Nature AI, MarkTechPost AI",
+  "source_date": "Mon, 25 May 2026 03:52:51 -0700",
+  "companies": [
+    "Google",
+    "Apple",
+    "Amazon",
+    "NVIDIA",
+    "Nature AI",
+    "Google Cloud",
+    "Shanghai-based AI",
+    "The AI"
+  ],
+  "models": [
+    "Claude",
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "developer tools",
+    "media generation"
+  ],
+  "article_url": "https://www.marktechpost.com/2026/05/25/workos-releases-auth-md-an-open-agent-registration-protocol-built-on-oauth-standards/",
+  "article_title": "face, map design, Gemini features, and more.",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.marktechpost.com/2026/05/25/workos-releases-auth-md-an-open-agent-registration-protocol-built-on-oauth-standards/",
+      "title": "face, map design, Gemini features, and more.",
+      "description": "face, map design, Gemini features, and more. Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link : [MEDIUM] Latest Research articles Company : Nature AI Summary : pUniFind is...",
+      "excerpt": "face, map design, Gemini features, and more. Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary ...",
+      "summary": "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register. The practical impact: auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link ... Watch next: face, map design, Gemini features, and more.",
+      "what_happened": "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register.",
+      "why_matters": "The practical impact: auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link ...",
+      "what_to_watch": "Watch next: face, map design, Gemini features, and more.",
+      "key_points": [
+        "Link : [MEDIUM] WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Company : MarkTechPost AI Summary : Most web applications still have no structured way for an AI agent to register.",
+        "auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file...",
+        "face, map design, Gemini features, and more."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.producthunt.com/products/mashupack",
+      "title": "[MEDIUM] MashuPack",
+      "description": "s still have no structured way for an AI agent to register. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link : [MEDIUM] Latest Research articles Company : Nature AI Summary : pUniFind is a large-scale deep learning model for proteomics that unifies peptide\u2013spectrum scoring and open de novo sequencing. Trained on over 100 million spectra, it substantially improves...",
+      "excerpt": "s still have no structured way for an AI agent to register. auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link : [MEDIUM] Latest Research articles Company : Nature AI...",
+      "summary": "Trained on over 100 million spectra, it substantially improves... auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link : [MEDIUM] Latest Research articles Company : Nature AI... The practical impact: auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link ... Watch next: s still have no structured way for an AI agent to register.",
+      "what_happened": "Trained on over 100 million spectra, it substantially improves... auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link : [MEDIUM] Latest Research articles Company : Nature AI...",
+      "why_matters": "The practical impact: auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link ...",
+      "what_to_watch": "Watch next: s still have no structured way for an AI agent to register.",
+      "key_points": [
+        "auth.md proposes a fix: a Markdown file apps publish at their domain that tells agents which registration flows are supp Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file...",
+        "s still have no structured way for an AI agent to register.",
+        "Trained on over 100 million spectra, it substantially improves..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/images/4d2fc95a51ba0547.png",
+      "image_url": "https://ph-files.imgix.net/1a3b6f73-2b64-4aea-b0eb-51b86e58d3d7.png?auto=format&amp;fit=crop&amp;frame=1&amp;h=512&amp;w=1024",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.producthunt.com/products/pi-coding-agent-3",
+      "title": "[MEDIUM] MashuPack",
+      "description": "Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link : [MEDIUM] Latest Research articles Company : Nature AI Summary : pUniFind is a large-scale deep learning model for proteomics that unifies peptide\u2013spectrum scoring and open de novo sequencing. Trained on over 100 million spectra, it substantially improves peptide i Link : [MEDIUM] Everyone is navigating AI security in real time - even Google Company : TechCrunch AI Summary : We're in the...",
+      "excerpt": "Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link : [MEDIUM] Latest Research articles Company : Nature AI Summary : pUniFind is a large-scale deep learning model for proteomics that unifies peptide\u2013spectrum scoring and open de novo sequencing. Trained on over 100 million spectra, it substantially...",
+      "summary": "Trained on over 100 million spectra, it substantially improves peptide i Link : [MEDIUM] Everyone is navigating AI security in real time - even Google Company : TechCrunch AI Summary : We're in the... Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link : [MEDIUM] Latest Research articles... The practical impact: Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link : [MEDIUM] Latest Research articles Company : Nature AI Summary : pUniFind is a large-scale deep learning model for proteomics...",
+      "what_happened": "Trained on over 100 million spectra, it substantially improves peptide i Link : [MEDIUM] Everyone is navigating AI security in real time - even Google Company : TechCrunch AI Summary : We're in the... Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link : [MEDIUM] Latest Research articles...",
+      "why_matters": "The practical impact: Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link : [MEDIUM] Latest Research articles Company : Nature AI Summary : pUniFind is a large-scale deep learning model for proteomics...",
+      "what_to_watch": "",
+      "key_points": [
+        "Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The...",
+        "Trained on over 100 million spectra, it substantially improves peptide i Link : [MEDIUM] Everyone is navigating AI security in real time - even Google Company : TechCrunch AI Summary : We're in the..."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/images/496a611c505072aa.png",
+      "image_url": "https://ph-files.imgix.net/132e30a5-12b3-4688-88d9-19f7f387e776.png?auto=format&amp;fit=crop&amp;frame=1&amp;h=512&amp;w=1024",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theverge.com/gadgets/936610/apple-macbook-air-m5-memorial-day-2026-deal-sale",
+      "title": "[MEDIUM] Apple\u2019s latest MacBook Air is $200 off in both sizes for Memorial Day",
+      "description": "cy anxiety. Link : [MEDIUM] Apple\u2019s latest MacBook Air is $200 off in both sizes for Memorial Day Company : The Verge AI Summary : If you\u2019re looking for a laptop that\u2019ll still perform well several years from now, Apple\u2019s latest MacBook Air is hard to beat. Now, in particular, is a good time to pick one up, as you can currently bu Link : [MEDIUM] Do You Own an Android Phone? Claim a Part of Google's $135M Data Harvesting Settlement Soon Company : CNET AI Summary : Google's settlement with Android users would resolve the lawsuit and alter how the company manages its",
+      "excerpt": "cy anxiety. Link : [MEDIUM] Apple\u2019s latest MacBook Air is $200 off in both sizes for Memorial Day Company : The Verge AI Summary : If you\u2019re looking for a laptop that\u2019ll still perform well several years from now, Apple\u2019s latest MacBook Air is hard to beat. Now, in particular, is a good time to pick one up, as you can currently bu Link : [MEDIUM] Do You Own an Android Phone? Claim a Part of Google's $135M Data Harvesting Settlement Soon Company : CNET AI Summary : Google's settlement with Android users would resolve the lawsuit and alter how the company manages its terms of...",
+      "summary": "Link : [MEDIUM] Apple\u2019s latest MacBook Air is $200 off in both sizes for Memorial Day Company : The Verge AI Summary : If you\u2019re looking for a laptop that\u2019ll still perform well several years from now, Apple\u2019s latest MacBook Air is hard to beat. Claim a Part of Google's $135M Data Harvesting Settlement Soon Company : CNET AI Summary : Google's settlement with Android users would resolve the lawsuit and alter how the company manages its The practical impact: Claim a Part of Google's $135M Data Harvesting Settlement Soon Company : CNET AI Summary : Google's settlement with Android users would resolve the lawsuit and alter how the company manages its Now, in particular, is a good time to pick one up, as you can currently bu Link : [MEDIUM] Do You Own an Android Phone? Watch next: Now, in particular, is a good time to pick one up, as you can currently bu Link : [MEDIUM] Do You Own an Android Phone?",
+      "what_happened": "Link : [MEDIUM] Apple\u2019s latest MacBook Air is $200 off in both sizes for Memorial Day Company : The Verge AI Summary : If you\u2019re looking for a laptop that\u2019ll still perform well several years from now, Apple\u2019s latest MacBook Air is hard to beat. Claim a Part of Google's $135M Data Harvesting Settlement Soon Company : CNET AI Summary : Google's settlement with Android users would resolve the lawsuit and alter how the company manages its",
+      "why_matters": "The practical impact: Claim a Part of Google's $135M Data Harvesting Settlement Soon Company : CNET AI Summary : Google's settlement with Android users would resolve the lawsuit and alter how the company manages its Now, in particular, is a good time to pick one up, as you can currently bu Link : [MEDIUM] Do You Own an Android Phone?",
+      "what_to_watch": "Watch next: Now, in particular, is a good time to pick one up, as you can currently bu Link : [MEDIUM] Do You Own an Android Phone?",
+      "key_points": [
+        "Link : [MEDIUM] Apple\u2019s latest MacBook Air is $200 off in both sizes for Memorial Day Company : The Verge AI Summary : If you\u2019re looking for a laptop that\u2019ll still perform well several years from now, Apple\u2019s latest...",
+        "Claim a Part of Google's $135M Data Harvesting Settlement Soon Company : CNET AI Summary : Google's settlement with Android users would resolve the lawsuit and alter how the company manages its",
+        "Now, in particular, is a good time to pick one up, as you can currently bu Link : [MEDIUM] Do You Own an Android Phone?"
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/images/e9c9cb407e49cacc.jpg",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/268408_Apple_MacBook_Air_15_M5_laptop_ADiBenedetto_0026.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.cnet.com/tech/mobile/google-data-harvesting-settlement-what-to-know-how-to-claim-135-million/",
+      "title": "o pick one up, as you can currently bu",
+      "description": "o pick one up, as you can currently bu Link : [MEDIUM] Do You Own an Android Phone? Claim a Part of Google's $135M Data Harvesting Settlement Soon Company : CNET AI Summary : Google's settlement with Android users would resolve the lawsuit and alter how the company manages its",
+      "excerpt": "o pick one up, as you can currently bu Link : [MEDIUM] Do You Own an Android Phone? Claim a Part of Google's $135M Data Harvesting Settlement Soon Company : CNET AI Summary : Google's settlement with Android users would resolve the lawsuit and alter how the company manages its",
+      "summary": "Claim a Part of Google's $135M Data Harvesting Settlement Soon Company : CNET AI Summary : Google's settlement with Android users would resolve the lawsuit and alter how the company manages its o pick one up, as you can currently bu Link : [MEDIUM] Do You Own an Android Phone?",
+      "what_happened": "Claim a Part of Google's $135M Data Harvesting Settlement Soon Company : CNET AI Summary : Google's settlement with Android users would resolve the lawsuit and alter how the company manages its o pick one up, as you can currently bu Link : [MEDIUM] Do You Own an Android Phone?",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Claim a Part of Google's $135M Data Harvesting Settlement Soon Company : CNET AI Summary : Google's settlement with Android users would resolve the lawsuit and alter how the company manages its",
+        "o pick one up, as you can currently bu Link : [MEDIUM] Do You Own an Android Phone?"
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.cnet.com/tech/services-and-software/google-search-is-becoming-something-fundamentally-different-heres-what-that-looks-like/",
+      "title": "f service, though not all users will receive financial compensation.",
+      "description": "f service, though not all users will receive financial compensation. Link : [MEDIUM] Google Search Is Becoming Something Fundamentally Different. Here's What That Looks Like Company : CNET AI Summary : From a reimagined search box to AI agents that hunt for apartments on your behalf, Google Search is being rebuilt with AI at its core. Link :",
+      "excerpt": "f service, though not all users will receive financial compensation. Link : [MEDIUM] Google Search Is Becoming Something Fundamentally Different. Here's What That Looks Like Company : CNET AI Summary : From a reimagined search box to AI agents that hunt for apartments on your behalf, Google Search is being rebuilt with AI at its core. Link :",
+      "summary": "Here's What That Looks Like Company : CNET AI Summary : From a reimagined search box to AI agents that hunt for apartments on your behalf, Google Search is being rebuilt with AI at its core. The practical impact: Link : [MEDIUM] Google Search Is Becoming Something Fundamentally Different. Watch next: Link : [MEDIUM] Google Search Is Becoming Something Fundamentally Different.",
+      "what_happened": "Here's What That Looks Like Company : CNET AI Summary : From a reimagined search box to AI agents that hunt for apartments on your behalf, Google Search is being rebuilt with AI at its core.",
+      "why_matters": "The practical impact: Link : [MEDIUM] Google Search Is Becoming Something Fundamentally Different.",
+      "what_to_watch": "Watch next: Link : [MEDIUM] Google Search Is Becoming Something Fundamentally Different.",
+      "key_points": [
+        "Here's What That Looks Like Company : CNET AI Summary : From a reimagined search box to AI agents that hunt for apartments on your behalf, Google Search is being rebuilt with AI at its core.",
+        "Link : [MEDIUM] Google Search Is Becoming Something Fundamentally Different.",
+        "Link : f service, though not all users will receive financial compensation.",
+        "f service, though not all users will receive financial compensation."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 2,
+  "carousel_total_parts": 2,
+  "slides": [
+    "face, map design, Gemini features, and more",
+    "MashuPack",
+    "MashuPack",
+    "Apple\u2019s latest MacBook Air is $200 off in both sizes for Memorial Day",
+    "o pick one up, as you can currently bu",
+    "f service, though not all users will receive financial compensation",
+    "Follow for the next AI briefing"
+  ]
+}
