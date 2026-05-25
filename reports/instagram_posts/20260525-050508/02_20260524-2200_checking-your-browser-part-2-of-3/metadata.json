@@ -1,0 +1,392 @@
+{
+  "email_received_at": "2026-05-24T22:00-07:00",
+  "recommended_post_time": "14:00",
+  "headline": "Checking your browser \u2014 Part 2 of 3",
+  "subject": "\ud83d\ude80 AI Digest \u2014 25 May 2026 | 50 updates \u00b7 50 launches",
+  "source_date": "Sun, 24 May 2026 22:00:06 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "NVIDIA",
+    "Perplexity",
+    "Hugging Face"
+  ],
+  "models": [
+    "GPT-5",
+    "GPT-4o-mini",
+    "Claude",
+    "Llama"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://arxiv.org/abs/2604.22722",
+  "article_title": "Aligning Dense Retrievers with LLM Utility via DistillationAligning Dense Retrievers with LLM Utility via Distillation",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://arxiv.org/abs/2604.22722",
+      "title": "Aligning Dense Retrievers with LLM Utility via DistillationAligning Dense Retrievers with LLM Utility via Distillation",
+      "description": "Dense vector retrieval is the practical backbone of Retrieval- Augmented Generation (RAG), but similarity search can suffer from precision limitations. Conversely, utility-based approaches leveraging LLM re-ranking often achieve superior performance but are computationally prohibitive and prone to noise inherent in perplexity estimation. We propose Utility-Aligned Embeddings (UAE), a framework designed to merge these advantages into a practical, high-performance retrieval method. We formulate retrieval as a distribution matching problem, training a bi-encoder to imitate a utility distribution derived from perplexity reduction using a Utility-Modulated InfoNCE objective. This approach injects graded utility signals directly into the embedding space without requiring test-time LLM inference. On the QASPER benchmark, UAE improves retrieval Recall@1 by 30.59%, MAP by 30.16% and Token F1 by 17.3% over the strong semantic baseline BGE-Base. Crucially, UAE is over 180x faster than the efficient LLM re-ranking methods preserving competitive performance, demonstrating that aligning retrieval with generative utility yields reliable contexts at scale.",
+      "excerpt": "Dense vector retrieval is the practical backbone of Retrieval- Augmented Generation (RAG), but similarity search can suffer from precision limitations. Conversely, utility-based approaches leveraging LLM re-ranking often achieve superior performance but are computationally prohibitive and prone to noise inherent in perplexity estimation. We propose Utility-Aligned Embeddings (UAE), a framework designed to merge these advantages into a practical, high-performance retrieval method. We formulate retrieval as a distribution matching problem, training a bi-encoder to imitate a utility distribution derived from perplexity reduction using a Utility-Modulated InfoNCE objective. This approach...",
+      "summary": "Computer Science > Information Retrieval Title: Aligning Dense Retrievers with LLM Utility via DistillationAligning Dense Retrievers with LLM Utility via Distillation Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly... The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. This approach injects graded utility signals directly into the embedding space without requiring test-time LLM inference. Watch next: This approach injects graded utility signals directly into the embedding space without requiring test-time LLM inference.",
+      "what_happened": "Computer Science > Information Retrieval Title: Aligning Dense Retrievers with LLM Utility via DistillationAligning Dense Retrievers with LLM Utility via Distillation Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly...",
+      "why_matters": "The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. This approach injects graded utility signals directly into the embedding space without requiring test-time LLM inference.",
+      "what_to_watch": "Watch next: This approach injects graded utility signals directly into the embedding space without requiring test-time LLM inference.",
+      "key_points": [
+        "Computer Science > Information Retrieval Title: Aligning Dense Retrievers with LLM Utility via DistillationAligning Dense Retrievers with LLM Utility via Distillation Current browse context: References & Citations...",
+        "On the QASPER benchmark, UAE improves retrieval Recall@1 by 30.59%, MAP by 30.16% and Token F1 by 17.3% over the strong semantic baseline BGE-Base.",
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "This approach injects graded utility signals directly into the embedding space without requiring test-time LLM inference.",
+        "Crucially, UAE is over 180x faster than the efficient LLM re-ranking methods preserving competitive performance, demonstrating that aligning retrieval with generative utility yields reliable contexts at scale.",
+        "Conversely, utility-based approaches leveraging LLM re-ranking often achieve superior performance but are computationally prohibitive and prone to noise inherent in perplexity estimation.",
+        "Dense vector retrieval is the practical backbone of Retrieval- Augmented Generation (RAG), but similarity search can suffer from precision limitations.",
+        "We formulate retrieval as a distribution matching problem, training a bi-encoder to imitate a utility distribution derived from perplexity reduction using a Utility-Modulated InfoNCE objective.",
+        "We propose Utility-Aligned Embeddings (UAE), a framework designed to merge these advantages into a practical, high-performance retrieval method."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://arxiv.org/abs/2508.03963",
+      "title": "Can Large Language Models Adequately Perform Symbolic Reasoning Over Time Series?",
+      "description": "Uncovering hidden symbolic laws from time series data, as an aspiration dating back to Kepler's discovery of planetary motion, remains a core challenge in scientific discovery and artificial intelligence. While Large Language Models show promise in structured reasoning tasks, their ability to infer interpretable, context-aligned symbolic structures from time series data is still underexplored. To systematically evaluate this capability, we introduce SymbolBench, a comprehensive benchmark designed to assess symbolic reasoning over real-world time series across three tasks: multivariate symbolic regression, Boolean network inference, and causal discovery. Unlike prior efforts limited to simple algebraic equations, SymbolBench spans a diverse set of symbolic forms with varying complexity. We further propose a unified framework that integrates LLMs with genetic programming to form a closed-loop symbolic reasoning system, where LLMs act both as predictors and evaluators. Our empirical results reveal key strengths and limitations of current models, highlighting the importance of combining domain knowledge, context alignment, and reasoning structure to improve LLMs in automated scientific discovery.",
+      "excerpt": "Uncovering hidden symbolic laws from time series data, as an aspiration dating back to Kepler's discovery of planetary motion, remains a core challenge in scientific discovery and artificial intelligence. While Large Language Models show promise in structured reasoning tasks, their ability to infer interpretable, context-aligned symbolic structures from time series data is still underexplored. To systematically evaluate this capability, we introduce SymbolBench, a comprehensive benchmark designed to assess symbolic reasoning over real-world time series across three tasks: multivariate symbolic regression, Boolean network inference, and causal discovery. Unlike prior efforts limited to...",
+      "summary": "We further propose a unified framework that integrates LLMs with genetic programming to form a closed-loop symbolic reasoning system, where LLMs act both as predictors and evaluators. arXiv is committed to these values and only works with partners that adhere to them. The practical impact: Our empirical results reveal key strengths and limitations of current models, highlighting the importance of combining domain knowledge, context alignment, and reasoning structure to improve LLMs in automated scientific discovery. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. Watch next: To systematically evaluate this capability, we introduce SymbolBench, a comprehensive benchmark designed to assess symbolic reasoning over real-world time series across three tasks: multivariate symbolic regression, Boolean network inference, and causal discovery. Computer Science > Artificial...",
+      "what_happened": "We further propose a unified framework that integrates LLMs with genetic programming to form a closed-loop symbolic reasoning system, where LLMs act both as predictors and evaluators. arXiv is committed to these values and only works with partners that adhere to them.",
+      "why_matters": "The practical impact: Our empirical results reveal key strengths and limitations of current models, highlighting the importance of combining domain knowledge, context alignment, and reasoning structure to improve LLMs in automated scientific discovery. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+      "what_to_watch": "Watch next: To systematically evaluate this capability, we introduce SymbolBench, a comprehensive benchmark designed to assess symbolic reasoning over real-world time series across three tasks: multivariate symbolic regression, Boolean network inference, and causal discovery. Computer Science > Artificial...",
+      "key_points": [
+        "Computer Science > Artificial Intelligence Title: Can Large Language Models Adequately Perform Symbolic Reasoning Over Time Series?",
+        "While Large Language Models show promise in structured reasoning tasks, their ability to infer interpretable, context-aligned symbolic structures from time series data is still underexplored.",
+        "Uncovering hidden symbolic laws from time series data, as an aspiration dating back to Kepler's discovery of planetary motion, remains a core challenge in scientific discovery and artificial intelligence.",
+        "To systematically evaluate this capability, we introduce SymbolBench, a comprehensive benchmark designed to assess symbolic reasoning over real-world time series across three tasks: multivariate symbolic regression...",
+        "We further propose a unified framework that integrates LLMs with genetic programming to form a closed-loop symbolic reasoning system, where LLMs act both as predictors and evaluators.",
+        "Our empirical results reveal key strengths and limitations of current models, highlighting the importance of combining domain knowledge, context alignment, and reasoning structure to improve LLMs in automated...",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental...",
+        "Unlike prior efforts limited to simple algebraic equations, SymbolBench spans a diverse set of symbolic forms with varying complexity."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://arxiv.org/abs/2507.15753",
+      "title": "Algebraic Language Models for Inverse Design of Metamaterials via Diffusion Transformers",
+      "description": "Generative machine learning models have revolutionized material discovery by capturing complex structure-property relationships, yet extending these approaches to the inverse design of three-dimensional metamaterials remains limited by computational complexity and underexplored design spaces due to the lack of expressive representations. Here we present DiffuMeta, a generative framework integrating diffusion transformers with an algebraic language representation, encoding three-dimensional geometries as mathematical sentences. This compact, unified parameterization spans diverse topologies, enabling the direct application of transformers to structural design. DiffuMeta leverages diffusion models to generate new shell structures with precisely targeted stress-strain responses under large deformations, accounting for buckling and contact while addressing the inherent one-to-many mapping by producing diverse solutions. Uniquely, our approach enables simultaneous control over multiple mechanical objectives, including linear and nonlinear responses beyond training domains. Experimental validation of fabricated structures further confirms the efficacy of our approach for accelerated design of metamaterials and structures with tailored properties.",
+      "excerpt": "Generative machine learning models have revolutionized material discovery by capturing complex structure-property relationships, yet extending these approaches to the inverse design of three-dimensional metamaterials remains limited by computational complexity and underexplored design spaces due to the lack of expressive representations. Here we present DiffuMeta, a generative framework integrating diffusion transformers with an algebraic language representation, encoding three-dimensional geometries as mathematical sentences. This compact, unified parameterization spans diverse topologies, enabling the direct application of transformers to structural design. DiffuMeta leverages...",
+      "summary": "Computer Science > Computational Engineering, Finance, and Science Title: Algebraic Language Models for Inverse Design of Metamaterials via Diffusion Transformers Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on... The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. Here we present DiffuMeta, a generative framework integrating diffusion transformers with an algebraic language representation, encoding three-dimensional geometries as mathematical sentences. Watch next: Here we present DiffuMeta, a generative framework integrating diffusion transformers with an algebraic language representation, encoding three-dimensional geometries as mathematical sentences.",
+      "what_happened": "Computer Science > Computational Engineering, Finance, and Science Title: Algebraic Language Models for Inverse Design of Metamaterials via Diffusion Transformers Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on...",
+      "why_matters": "The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. Here we present DiffuMeta, a generative framework integrating diffusion transformers with an algebraic language representation, encoding three-dimensional geometries as mathematical sentences.",
+      "what_to_watch": "Watch next: Here we present DiffuMeta, a generative framework integrating diffusion transformers with an algebraic language representation, encoding three-dimensional geometries as mathematical sentences.",
+      "key_points": [
+        "Computer Science > Computational Engineering, Finance, and Science Title: Algebraic Language Models for Inverse Design of Metamaterials via Diffusion Transformers Current browse context: References & Citations BibTeX...",
+        "Uniquely, our approach enables simultaneous control over multiple mechanical objectives, including linear and nonlinear responses beyond training domains.",
+        "Here we present DiffuMeta, a generative framework integrating diffusion transformers with an algebraic language representation, encoding three-dimensional geometries as mathematical sentences.",
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "Generative machine learning models have revolutionized material discovery by capturing complex structure-property relationships, yet extending these approaches to the inverse design of three-dimensional metamaterials...",
+        "This compact, unified parameterization spans diverse topologies, enabling the direct application of transformers to structural design.",
+        "DiffuMeta leverages diffusion models to generate new shell structures with precisely targeted stress-strain responses under large deformations, accounting for buckling and contact while addressing the inherent...",
+        "Experimental validation of fabricated structures further confirms the efficacy of our approach for accelerated design of metamaterials and structures with tailored properties."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://arxiv.org/abs/2511.14135",
+      "title": "AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning",
+      "description": "Fair workload enforcement in heterogeneous multi-agent systems that pursue shared objectives remains challenging. Fixed fairness penalties often introduce inefficiencies, training instability, and conflicting agent incentives. Reward-shaping approaches in fair Multi-Agent Reinforcement Learning (MARL) typically incorporate fairness through heuristic penalties or scalar reward modifications and often rely on post-hoc evaluation. However, these methods do not guarantee that a desired fairness level will be satisfied. To address this limitation, we propose the Adaptive Fairness Multi-Agent Reinforcement Learning (AdaFair-MARL) framework, which formulates workload fairness as an explicit constraint so that agents maintain balanced contributions while optimizing team performance. We present AdaFair-MARL, a constrained cooperative MARL framework whose core algorithmic component is a primal-dual update that enforces workload fairness via adaptive Lagrange multiplier updates. Grounding the framework in a cooperative Markov game, we derive the fairness constraint from Jain's Fairness Index (JFI) geometry and show that the resulting feasible set admits a second-order cone representation, enabling principled Lagrangian dual-ascent updates without manual penalty tuning. Experiments in a simulated hospital coordination environment (MARLHospital) demonstrate the effectiveness of AdaFair-MARL compared to reward-shaping and fixed-penalty fairness methods, improving workload balance while maintaining team performance. We found that AdaFair-MARL achieves nearly perfect constraint satisfaction (0.99-1.00) while significantly improving workload fairness compared to fixed-penalty baselines.",
+      "excerpt": "Fair workload enforcement in heterogeneous multi-agent systems that pursue shared objectives remains challenging. Fixed fairness penalties often introduce inefficiencies, training instability, and conflicting agent incentives. Reward-shaping approaches in fair Multi-Agent Reinforcement Learning (MARL) typically incorporate fairness through heuristic penalties or scalar reward modifications and often rely on post-hoc evaluation. However, these methods do not guarantee that a desired fairness level will be satisfied. To address this limitation, we propose the Adaptive Fairness Multi-Agent Reinforcement Learning (AdaFair-MARL) framework, which formulates workload fairness as an explicit...",
+      "summary": "Computer Science > Machine Learning Title: AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Grounding the... The practical impact: To address this limitation, we propose the Adaptive Fairness Multi-Agent Reinforcement Learning (AdaFair-MARL) framework, which formulates workload fairness as an explicit constraint so that agents maintain balanced contributions while optimizing team performance. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and... Watch next: Fixed fairness penalties often introduce inefficiencies, training instability, and conflicting agent incentives.",
+      "what_happened": "Computer Science > Machine Learning Title: AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Grounding the...",
+      "why_matters": "The practical impact: To address this limitation, we propose the Adaptive Fairness Multi-Agent Reinforcement Learning (AdaFair-MARL) framework, which formulates workload fairness as an explicit constraint so that agents maintain balanced contributions while optimizing team performance. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and...",
+      "what_to_watch": "Watch next: Fixed fairness penalties often introduce inefficiencies, training instability, and conflicting agent incentives.",
+      "key_points": [
+        "Computer Science > Machine Learning Title: AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning Current browse context: References & Citations BibTeX formatted citation...",
+        "To address this limitation, we propose the Adaptive Fairness Multi-Agent Reinforcement Learning (AdaFair-MARL) framework, which formulates workload fairness as an explicit constraint so that agents maintain balanced...",
+        "Fixed fairness penalties often introduce inefficiencies, training instability, and conflicting agent incentives.",
+        "Grounding the framework in a cooperative Markov game, we derive the fairness constraint from Jain's Fairness Index (JFI) geometry and show that the resulting feasible set admits a second-order cone representation...",
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "We present AdaFair-MARL, a constrained cooperative MARL framework whose core algorithmic component is a primal-dual update that enforces workload fairness via adaptive Lagrange multiplier updates.",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "We found that AdaFair-MARL achieves nearly perfect constraint satisfaction (0.99-1.00) while significantly improving workload fairness compared to fixed-penalty baselines.",
+        "Reward-shaping approaches in fair Multi-Agent Reinforcement Learning (MARL) typically incorporate fairness through heuristic penalties or scalar reward modifications and often rely on post-hoc evaluation.",
+        "Experiments in a simulated hospital coordination environment (MARLHospital) demonstrate the effectiveness of AdaFair-MARL compared to reward-shaping and fixed-penalty fairness methods, improving workload balance...",
+        "However, these methods do not guarantee that a desired fairness level will be satisfied.",
+        "Fair workload enforcement in heterogeneous multi-agent systems that pursue shared objectives remains challenging."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://arxiv.org/abs/2601.19674",
+      "title": "Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters",
+      "description": "Ambitious decarbonisation targets are rapidly increasing the commission of new offshore wind farms. For these newly commissioned plants to run, accurate power forecasts are needed from the onset. These allow grid stability, good reserve management and efficient energy trading. Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have. To overcome this data scarcity, we propose a novel transfer learning framework that clusters power output according to covariate meteorological features. Rather than training a single, general-purpose model, we thus forecast with an ensemble of expert models, each trained on a cluster. As these pre-trained models each specialise in a distinct weather pattern, they adapt efficiently to new sites and capture transferable, climate-dependent dynamics. Our contributions are two-fold - we propose this novel framework and comprehensively evaluate it on eight offshore wind farms, achieving accurate cross-domain forecasting with under five months of site-specific data. Our experiments achieve a MAE of 3.52\\%, providing empirical verification that reliable forecasts do not require a full annual cycle. Beyond power forecasting, this climate-aware transfer learning method opens new opportunities for offshore wind applications such as early-stage wind resource assessment, where reducing data requirements can significantly accelerate project development whilst effectively mitigating its inherent risks.",
+      "excerpt": "Ambitious decarbonisation targets are rapidly increasing the commission of new offshore wind farms. For these newly commissioned plants to run, accurate power forecasts are needed from the onset. These allow grid stability, good reserve management and efficient energy trading. Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have. To overcome this data scarcity, we propose a novel transfer learning framework that clusters power output according to covariate meteorological features. Rather than training a single, general-purpose model, we thus forecast with an ensemble of expert models, each...",
+      "summary": "Computer Science > Machine Learning Title: Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. arXiv is... The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. These allow grid stability, good reserve management and efficient energy trading. Watch next: Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have.",
+      "what_happened": "Computer Science > Machine Learning Title: Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. arXiv is...",
+      "why_matters": "The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. These allow grid stability, good reserve management and efficient energy trading.",
+      "what_to_watch": "Watch next: Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have.",
+      "key_points": [
+        "Computer Science > Machine Learning Title: Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters Current browse context: References & Citations BibTeX formatted citation...",
+        "Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have.",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "To overcome this data scarcity, we propose a novel transfer learning framework that clusters power output according to covariate meteorological features.",
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "Rather than training a single, general-purpose model, we thus forecast with an ensemble of expert models, each trained on a cluster.",
+        "Beyond power forecasting, this climate-aware transfer learning method opens new opportunities for offshore wind applications such as early-stage wind resource assessment, where reducing data requirements can...",
+        "These allow grid stability, good reserve management and efficient energy trading.",
+        "Our contributions are two-fold - we propose this novel framework and comprehensively evaluate it on eight offshore wind farms, achieving accurate cross-domain forecasting with under five months of site-specific data.",
+        "As these pre-trained models each specialise in a distinct weather pattern, they adapt efficiently to new sites and capture transferable, climate-dependent dynamics.",
+        "Our experiments achieve a MAE of 3.52\\%, providing empirical verification that reliable forecasts do not require a full annual cycle.",
+        "Ambitious decarbonisation targets are rapidly increasing the commission of new offshore wind farms."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.22629",
+      "title": "Detecting Concept Drift in Evolving Malware Families Using Rule-Based Classifier Representations",
+      "description": "This work proposes a structural approach to concept drift detection in malware classification using decision tree rulesets. Classifiers are trained across temporal windows on the EMBER2024 dataset, and drift is quantified by comparing extracted rule representations using feature importance, prediction agreement, activation stability, and coverage metrics. These metrics are correlated with both accuracy degradation and data distribution shift as complementary drift indicators. The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines. Results show that fixed two-month windowing with feature-level Pearson correlation is the most reliable configuration, being the only one where all family pairs produce positive drift-accuracy correlations. The methods are complementary - no single approach dominates across all pairs.",
+      "excerpt": "This work proposes a structural approach to concept drift detection in malware classification using decision tree rulesets. Classifiers are trained across temporal windows on the EMBER2024 dataset, and drift is quantified by comparing extracted rule representations using feature importance, prediction agreement, activation stability, and coverage metrics. These metrics are correlated with both accuracy degradation and data distribution shift as complementary drift indicators. The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines...",
+      "summary": "arXiv is committed to these values and only works with partners that adhere to them. Computer Science > Cryptography and Security Title: Detecting Concept Drift in Evolving Malware Families Using Rule-Based Classifier Representations Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that... The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines. Watch next: The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines.",
+      "what_happened": "arXiv is committed to these values and only works with partners that adhere to them. Computer Science > Cryptography and Security Title: Detecting Concept Drift in Evolving Malware Families Using Rule-Based Classifier Representations Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that...",
+      "why_matters": "The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines.",
+      "what_to_watch": "Watch next: The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines.",
+      "key_points": [
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "Computer Science > Cryptography and Security Title: Detecting Concept Drift in Evolving Malware Families Using Rule-Based Classifier Representations Current browse context: References & Citations BibTeX formatted...",
+        "The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines.",
+        "These metrics are correlated with both accuracy degradation and data distribution shift as complementary drift indicators.",
+        "Classifiers are trained across temporal windows on the EMBER2024 dataset, and drift is quantified by comparing extracted rule representations using feature importance, prediction agreement, activation stability, and...",
+        "The methods are complementary - no single approach dominates across all pairs.",
+        "This work proposes a structural approach to concept drift detection in malware classification using decision tree rulesets.",
+        "Results show that fixed two-month windowing with feature-level Pearson correlation is the most reliable configuration, being the only one where all family pairs produce positive drift-accuracy correlations."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://english.khabarhub.com/2026/25/545711/",
+      "title": "Meta and Microsoft have joined the tech layoff tsunami \u2013 but is AI really to blame?",
+      "description": "Meta and Microsoft are the latest software companies to announce big cuts to their global workforce. Both companies are also making big investments in artificial intelligence (AI). The link seems obvious. Meta\u2019s chief people officer, Janelle Gale, said the job cuts \u2013 about 10% of staff or almost 8,000 workers \u2013 serve to \u201coffset the",
+      "excerpt": "Meta and Microsoft are the latest software companies to announce big cuts to their global workforce. Both companies are also making big investments in artificial intelligence (AI). The link seems obvious. Meta\u2019s chief people officer, Janelle Gale, said the job cuts \u2013 about 10% of staff or almost 8,000 workers \u2013 serve to \u201coffset the",
+      "summary": "Meta\u2019s chief people officer, Janelle Gale, said the job cuts \u2013 about 10% of staff or almost 8,000 workers \u2013 serve to \u201coffset the Both companies are also making big investments in artificial intelligence (AI). The practical impact: Both companies are also making big investments in artificial intelligence (AI). Meta and Microsoft are the latest software companies to announce big cuts to their global workforce. Watch next: Both companies are also making big investments in artificial intelligence (AI).",
+      "what_happened": "Meta\u2019s chief people officer, Janelle Gale, said the job cuts \u2013 about 10% of staff or almost 8,000 workers \u2013 serve to \u201coffset the Both companies are also making big investments in artificial intelligence (AI).",
+      "why_matters": "The practical impact: Both companies are also making big investments in artificial intelligence (AI). Meta and Microsoft are the latest software companies to announce big cuts to their global workforce.",
+      "what_to_watch": "Watch next: Both companies are also making big investments in artificial intelligence (AI).",
+      "key_points": [
+        "Both companies are also making big investments in artificial intelligence (AI).",
+        "Meta\u2019s chief people officer, Janelle Gale, said the job cuts \u2013 about 10% of staff or almost 8,000 workers \u2013 serve to \u201coffset the",
+        "Meta and Microsoft are the latest software companies to announce big cuts to their global workforce."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/85afb65ad0b7afbf.jpg",
+      "image_url": "https://english.khabarhub.com/wp-content/uploads/2026/04/IT-Computer--scaled.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://thenextweb.com/news/meta-microsoft-layoffs-23000-ai-spending",
+      "title": "Meta cuts 8,000 jobs and Microsoft offers first-ever buyouts as Big Tech converts payroll into AI capital expenditure",
+      "description": "Meta and Microsoft eliminated up to 23,000 positions on the same day. Both reported record revenues. Both are redirecting the savings into AI infrastructure worth hundreds of billions.",
+      "excerpt": "Meta and Microsoft eliminated up to 23,000 positions on the same day. Both reported record revenues. Both are redirecting the savings into AI infrastructure worth hundreds of billions.",
+      "summary": "Meta and Microsoft announced workforce reductions on the same day, April 23, for what appears to be the same reason. Summary: Meta and Microsoft announced workforce reductions on the same day, April 23, affecting up to 23,000 positions combined. The practical impact: Meta\u2019s chief people officer, Janelle Gale, wrote in an internal memo leaked before the company intended to release it that the layoffs were \u201cpart of our continued effort to run the company more efficiently and to allow us to offset the other investments we\u2019re making.\u201d The investments she was referring to are considerable. They are in the wrong part of the company. Watch next: Economists quoted by CNBC described the situation as an AI-driven labour crisis that \u201cis here, not coming in the future.\u201d A poll found that 57% of Americans think AI is advancing too fast, and 79% are concerned the government has no plan to protect workers from AI job losses. They are the ones making...",
+      "what_happened": "Meta and Microsoft announced workforce reductions on the same day, April 23, for what appears to be the same reason. Summary: Meta and Microsoft announced workforce reductions on the same day, April 23, affecting up to 23,000 positions combined.",
+      "why_matters": "The practical impact: Meta\u2019s chief people officer, Janelle Gale, wrote in an internal memo leaked before the company intended to release it that the layoffs were \u201cpart of our continued effort to run the company more efficiently and to allow us to offset the other investments we\u2019re making.\u201d The investments she was referring to are considerable. They are in the wrong part of the company.",
+      "what_to_watch": "Watch next: Economists quoted by CNBC described the situation as an AI-driven labour crisis that \u201cis here, not coming in the future.\u201d A poll found that 57% of Americans think AI is advancing too fast, and 79% are concerned the government has no plan to protect workers from AI job losses. They are the ones making...",
+      "key_points": [
+        "Meta and Microsoft announced workforce reductions on the same day, April 23, for what appears to be the same reason.",
+        "They are the ones making the most.",
+        "Meta has guided capital expenditure of $115 billion to $135 billion for 2026, nearly double the $72 billion it spent in 2025, directed almost entirely at data centres, Nvidia GPUs, custom silicon, and the...",
+        "Summary: Meta and Microsoft announced workforce reductions on the same day, April 23, affecting up to 23,000 positions combined.",
+        "The buyout is the softer instrument.",
+        "The language shifted from the January 2025 round, when Zuckerberg framed the cuts as removing \u201clow performers,\u201d to April 2026, when the framing became \u201ccontribution\u201d and \u201cefficiency,\u201d an acknowledgment that the...",
+        "The first wave, in 2022 and 2023, was attributed to the unwinding of pandemic-era hiring.",
+        "Meta\u2019s chief people officer, Janelle Gale, wrote in an internal memo leaked before the company intended to release it that the layoffs were \u201cpart of our continued effort to run the company more efficiently and to...",
+        "They are in the wrong part of the company.",
+        "The term \u201cAI-washing\u201d has emerged to describe this pattern: a company announces layoffs, cites its AI strategy in the same breath, and lets investors draw the inference that machines are replacing humans even when...",
+        "Meta\u2019s stock fell 2.3% on the layoff news.",
+        "Meta and Microsoft eliminated up to 23,000 positions on the same day."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a60fe3c1dfac6559.img",
+      "image_url": "https://media.thenextweb.com/2026/05/Meta-Incognito-Chat-on-WhatsApp.avif",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.anthropic.com/news/anthropic-nec",
+      "title": "Anthropic and NEC partner to build AI-native engineering at scale in Japan",
+      "description": "NEC will deploy Claude to 30,000 employees and become Anthropic's first Japan-based global partner, co-developing AI products for finance, manufacturing, and government",
+      "excerpt": "NEC will deploy Claude to 30,000 employees and become Anthropic's first Japan-based global partner, co-developing AI products for finance, manufacturing, and government",
+      "summary": "Claude, including Claude Opus 4.7, and Claude Code will be incorporated into NEC BluStellar Scenario , a program that provides consulting, AI tools, security, and digital infrastructure to businesses, starting with its offerings for data-driven management and customer experience, and gradually expanding to others. Widening the conversation on frontier AI KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance KPMG and Anthropic announce a global alliance, with... The practical impact: In addition, NEC is already integrating Claude into its Security Operations Center services to help defend customers against increasingly sophisticated cybersecurity threats. As part of its long-running Client Zero initiative, in which NEC serves as its own first customer before offering its technology to clients, NEC will also expand its use of Claude Cowork across its internal business operations. Watch next: Claude will also be integrated into the next-generation cybersecurity service NEC is currently providing. How NEC will use Claude internally Internally, NEC will establish a Center of Excellence to develop a highly skilled, AI-enabled...",
+      "what_happened": "Claude, including Claude Opus 4.7, and Claude Code will be incorporated into NEC BluStellar Scenario , a program that provides consulting, AI tools, security, and digital infrastructure to businesses, starting with its offerings for data-driven management and customer experience, and gradually expanding to others. Widening the conversation on frontier AI KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance KPMG and Anthropic announce a global alliance, with...",
+      "why_matters": "The practical impact: In addition, NEC is already integrating Claude into its Security Operations Center services to help defend customers against increasingly sophisticated cybersecurity threats. As part of its long-running Client Zero initiative, in which NEC serves as its own first customer before offering its technology to clients, NEC will also expand its use of Claude Cowork across its internal business operations.",
+      "what_to_watch": "Watch next: Claude will also be integrated into the next-generation cybersecurity service NEC is currently providing. How NEC will use Claude internally Internally, NEC will establish a Center of Excellence to develop a highly skilled, AI-enabled engineering organization, supported by technical enablement and...",
+      "key_points": [
+        "Claude, including Claude Opus 4.7, and Claude Code will be incorporated into NEC BluStellar Scenario , a program that provides consulting, AI tools, security, and digital infrastructure to businesses, starting with...",
+        "Widening the conversation on frontier AI KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance KPMG and Anthropic announce a global alliance, with Claude integrated...",
+        "How NEC will use Claude internally Internally, NEC will establish a Center of Excellence to develop a highly skilled, AI-enabled engineering organization, supported by technical enablement and training from Anthropic.",
+        "Claude, Claude Code, and Claude Cowork are Anthropic products.",
+        "NEC will deploy Claude to 30,000 employees and become Anthropic's first Japan-based global partner, co-developing AI products for finance, manufacturing, and government Anthropic and NEC collaborate to build Japan\u2019s...",
+        "NEC BluStellar is an offering from NEC Corporation.",
+        "Claude will also be integrated into the next-generation cybersecurity service NEC is currently providing.",
+        "As part of this strategic collaboration, NEC will become Anthropic\u2019s first Japan-based global partner.",
+        "\u201cThis long-term partnership with Anthropic enables NEC to maximize the potential of AI in the Japanese market,\u201d said Toshifumi Yoshizaki, Executive Officer and COO of NEC Corporation.",
+        "Anthropic acquires Stainless Anthropic is acquiring Stainless, a leader in SDKs and MCP server tooling.",
+        "\u201cTogether, we aim to create solutions that meet the high safety, reliability, and quality standards demanded by companies and public administration in Japan.\u201d Claude for NEC\u2019s customers NEC and Anthropic will jointly...",
+        "In addition, NEC is already integrating Claude into its Security Operations Center services to help defend customers against increasingly sophisticated cybersecurity threats."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ce2ee46cc3fe0598.png",
+      "image_url": "https://www.anthropic.com/api/opengraph-illustration?name=Hand%20NodeGlobe&backgroundColor=heather",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 2,
+  "carousel_total_parts": 3,
+  "slides": [
+    "Aligning Dense Retrievers with LLM Utility via DistillationAligning Dense Retrievers with LLM Utility via Distillation",
+    "Can Large Language Models Adequately Perform Symbolic Reasoning Over Time Series?",
+    "Algebraic Language Models for Inverse Design of Metamaterials via Diffusion Transformers",
+    "AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning",
+    "Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters",
+    "Detecting Concept Drift in Evolving Malware Families Using Rule-Based Classifier Representations",
+    "Meta and Microsoft have joined the tech layoff tsunami \u2013 but is AI really to blame?",
+    "Meta cuts 8,000 jobs and Microsoft offers first-ever buyouts as Big Tech converts payroll into AI capital expenditure",
+    "Anthropic and NEC partner to build AI-native engineering at scale in Japan",
+    "Follow for the next AI briefing"
+  ]
+}
