@@ -3908,4 +3908,43 @@ def _clean_public_text(text: str) -> str:
         flags=re.I | re.S,
     )
     text = re.sub(
-        r"(?:Select your cookie preferences|Customize co
+        r"(?:Select your cookie preferences|Customize cookie preferences|Essential cookies are necessary"
+        r"|You may review and change your choices|Cookie Notice|Cookie preferences"
+        r"|Accept all cookies|Reject all cookies|We use essential cookies"
+        r"|We and our advertising partners|Cookie settings).*?(?=(?:\s+[A-Z][a-z]|\s*$))",
+        " ",
+        text,
+        flags=re.I | re.S,
+    )
+    text = re.sub(r"\s+", " ", text).strip()
+    if not text:
+        return ""
+    sentences = re.split(r"(?<=[\.!?])\s+", text)
+    kept: list[str] = []
+    for sentence in sentences:
+        lowered = sentence.lower()
+        if any(term in lowered for term in VIDEO_BLOCKED_TERMS):
+            continue
+        if sentence.startswith(("Article ", "Article 1 Title:", "Article title:")):
+            continue
+        if any(phrase in lowered for phrase in PUBLIC_BLOCKED_PHRASES):
+            continue
+        # Drop sentences that are mostly cookie/legal noise even if not exact match
+        if re.search(r"\bcookies?\b|\bGDPR\b|\bCCPA\b|\bopt.out\b|\bunsubscribe\b", sentence, re.I):
+            continue
+        # Drop newsletter metadata lines like "Impact: HIGH", "Source: X", "Link: 3"
+        if re.fullmatch(r"\s*(impact|source|link|read time)\s*:\s*(low|medium|high|\d+.*)?", sentence, re.I):
+            continue
+        kept.append(sentence.strip())
+    result = " ".join(part for part in kept if part)
+    return result
+
+
+def _strip_decorative_symbols(text: str) -> str:
+    cleaned: list[str] = []
+    for char in text or "":
+        category = unicodedata.category(char)
+        if category == "So":
+            continue
+        cleaned.append(char)
+    return re.sub(r"\s+", " ", "".join(cleaned)).strip()
