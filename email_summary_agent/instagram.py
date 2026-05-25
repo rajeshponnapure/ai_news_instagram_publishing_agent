@@ -7,6 +7,7 @@ import random
 import re
 import shutil
 import tempfile
+import time
 import unicodedata
 import urllib.request
 import urllib.parse
@@ -488,30 +489,27 @@ def _build_digest_slide_specs(
     # Reserve 1 slot for the CTA slide so it never gets cut off.
     max_content_slides = MAX_CAROUSEL_SLIDES - 1
 
+    # Cross-article dedup set so the same key point never appears on two slides.
+    used_key_fingerprints: set[str] = set()
+
     for article_index, article in enumerate(articles[:DIGEST_NEWS_PER_POST], start=1):
         if len(slides) >= max_content_slides:
             break
 
         headline = _clean_headline(
-            _clean_public_text(str(article.get("title") or summary.headline or "AI update"))
+            _clean_public_text(str(article.get("title") or summary.headline or summary.subject or "AI update"))
         ) or "AI Update"
 
         topic = ", ".join(summary.topics[:2]) or headline
         source_label = _source_label_from_url(str(article.get("url") or ""))
 
         # Cap key points to 5 to prevent text overflow on the slide.
-        key_points = _extract_instagram_key_points(article, summary, max_points=5)
+        key_points = _extract_instagram_key_points(article, summary, max_points=5, used_fingerprints=used_key_fingerprints)
         brief = "\n".join(key_points) if key_points else _build_digest_slide_brief(summary, article)
 
-        # Select a unique image for this article — ALWAYS generate a fallback
-        # so the image area is never an empty grey gradient.
         image_path = _select_unique_article_image(
             article, topic, used_image_urls, used_image_paths
         )
-        if not image_path:
-            image_path = _generate_unique_fallback_image(headline, topic, used_image_paths)
-        if not image_path:
-            image_path = _generate_branded_fallback_image(headline, topic)
 
         slides.append(
             {
@@ -587,6 +585,9 @@ def _build_normal_slide_specs(
     # Reserve 1 slot for the CTA slide so it never gets cut off.
     max_content_slides = MAX_CAROUSEL_SLIDES - 1
 
+    # Cross-article dedup set so the same key point never appears on two slides.
+    used_key_fingerprints: set[str] = set()
+
     for article_index, article in enumerate(articles[:NORMAL_NEWS_PER_POST], start=1):
         if len(slides) >= max_content_slides:
             break
@@ -614,10 +615,6 @@ def _build_normal_slide_specs(
 
         # ── Slide 1: Title slide — ALWAYS has an image ──────────────────────
         image_path = _select_unique_article_image(article, topic, used_image_urls, used_image_paths)
-        if not image_path:
-            image_path = _generate_unique_fallback_image(headline, topic, used_image_paths)
-        if not image_path:
-            image_path = _generate_branded_fallback_image(headline, topic)
         slides.append({
             "kind": "title",
             "article_num": article_index,
@@ -633,7 +630,7 @@ def _build_normal_slide_specs(
 
         # ── List slides: 3 key points per slide to prevent overflow ──────────
         POINTS_PER_SLIDE = 3
-        key_points = _extract_instagram_key_points(article, summary, max_points=9)
+        key_points = _extract_instagram_key_points(article, summary, max_points=9, used_fingerprints=used_key_fingerprints)
         for chunk_idx in range(3):
             if len(slides) >= max_content_slides:
                 break
@@ -1039,7 +1036,7 @@ def _write_slide_png(path: Path, slide_number: int, total_slides: int, slide: di
     else:
         _gt_render_legacy_slide(image, draw, ImageFont, Image, ImageDraw, ImageEnhance, ImageFilter, ImageOps, slide)
 
-    _gt_draw_chrome(image, draw, ImageFont, slide_number, total_slides)
+    _gt_draw_chrome(image, draw, ImageFont, slide_number, total_slides, slide_kind=kind)
     path.parent.mkdir(parents=True, exist_ok=True)
     if image.mode == "RGBA":
         image = image.convert("RGB")
@@ -1094,7 +1091,7 @@ def _gt_draw_background(image, draw) -> None:
 
 # ── graitech chrome (logo + handle + page indicator) ─────────────────────────
 
-def _gt_draw_chrome(image, draw, ImageFont, slide_number: int, total_slides: int) -> None:
+def _gt_draw_chrome(image, draw, ImageFont, slide_number: int, total_slides: int, slide_kind: str = "") -> None:
     """Draw fixed chrome elements on every slide."""
     # Corner L-bracket ticks (content safe-area boundary markers)
     TICK = 20
@@ -1112,8 +1109,26 @@ def _gt_draw_chrome(image, draw, ImageFont, slide_number: int, total_slides: int
     draw.line((1005, 1195 - TICK, 1005, 1195), fill=TICK_C, width=2)
     draw.line((1005 - TICK, 1195, 1005, 1195), fill=TICK_C, width=2)
 
-    # Logo top-right (56px from each edge, 130×130)
-    _gt_draw_logo(image, right=56, top=56, size=130)
+    # Logo — positioned to never overlap article image content.
+    # Digest slides have a full-width image at y=40-700; place logo
+    # at the bottom-right corner of that zone.  All other slides have
+    # images only at y≥880, so the default top-right position is safe.
+    logo_size = 100
+    if slide_kind == "digest":
+        logo_right = 64
+        logo_top = 700 - logo_size - 16
+    else:
+        logo_right = 56
+        logo_top = 56
+    # Dark pill behind logo so it's readable on any background
+    pill_pad = 10
+    lx = CANVAS_W - logo_right - logo_size
+    ly = logo_top
+    draw.rounded_rectangle(
+        (lx - pill_pad, ly - pill_pad, lx + logo_size + pill_pad, ly + logo_size + pill_pad),
+        radius=14, fill=(0, 0, 0, 200),
+    )
+    _gt_draw_logo(image, right=logo_right, top=logo_top, size=logo_size)
 
     # @graitech handle bottom-left (56px from each edge)
     font_handle = _font(ImageFont, 24, bold=True, mono=True)
@@ -1929,7 +1944,8 @@ def _load_artwork(image_path: str, topic: str, box: tuple[int, int, int, int], i
         except Exception:
             pass
     try:
-        return _generate_ai_image(fallback_text or topic, topic, box, image_cls, draw_cls)
+        heading = _clean_public_text(fallback_text or topic)
+        return _generate_ai_image(heading, topic, box, image_cls, draw_cls)
     except Exception:
         pass
     x1, y1, x2, y2 = box
@@ -2075,44 +2091,6 @@ def _generate_ai_image(
         pass
 
     return img.convert("RGB")
-
-
-def _draw_no_image_story_card(
-    draw,
-    eyebrow: str,
-    title: str,
-    url: str,
-    box: tuple[int, int, int, int],
-    font_eyebrow,
-    font_title,
-    font_body,
-    font_meta,
-) -> None:
-    x1, y1, x2, y2 = box
-    draw.rounded_rectangle(box, radius=36, fill="#080808", outline=ACCENT_GREEN, width=2)
-    draw.rectangle((x1 + 36, y1 + 36, x2 - 36, y1 + 44), fill=ACCENT_GREEN)
-    _draw_centered_text(draw, _strip_decorative_symbols(eyebrow).upper(), (x1 + 70, y1 + 96, x2 - 70, y1 + 142), font_eyebrow, ACCENT_GREEN, 1)
-    _draw_centered_text_block(
-        draw,
-        _strip_decorative_symbols(title),
-        (x1 + 86, y1 + 220, x2 - 86, y1 + 520),
-        font_title,
-        TEXT_WHITE,
-        line_gap=14,
-        max_lines=4,
-    )
-    source = _source_label_from_url(url)
-    footer = f"Source: {source}" if source else "Source: email brief"
-    _draw_centered_text_block(
-        draw,
-        footer,
-        (x1 + 110, y2 - 210, x2 - 110, y2 - 120),
-        font_body,
-        SOFT_WHITE,
-        line_gap=10,
-        max_lines=2,
-    )
-    _draw_centered_text(draw, "SOURCE BRIEF", (x1 + 160, y2 - 96, x2 - 160, y2 - 52), font_meta, ACCENT_GREEN, 1)
 
 
 def _draw_social_icons(draw, box: tuple[int, int, int, int], font_meta) -> None:
@@ -2436,106 +2414,6 @@ def _select_unique_article_image(
     return ""
 
 
-def _generate_branded_fallback_image(title: str, topic: str) -> str:
-    """Generate a branded text-art PNG when no real image is available.
-
-    Creates a 1080x1080 black-background image with the article headline
-    rendered in large neon-green text.  No external APIs required — pure PIL.
-    Returns the local file path on success, empty string on failure.
-    """
-    try:
-        from PIL import Image, ImageDraw, ImageFont
-        import hashlib
-        import textwrap
-
-        slug = hashlib.md5((title + topic).encode()).hexdigest()[:12]
-        out_dir = IMAGE_LIBRARY_DIR / "fallback"
-        out_dir.mkdir(parents=True, exist_ok=True)
-        out_path = out_dir / f"fallback_{slug}.png"
-        if out_path.exists():
-            return str(out_path)
-
-        W, H = 1080, 1080
-        img = Image.new("RGB", (W, H), (5, 5, 5))
-        draw = ImageDraw.Draw(img)
-
-        # Subtle grid lines for depth
-        for gx in range(0, W, 108):
-            draw.line([(gx, 0), (gx, H)], fill=(20, 20, 20), width=1)
-        for gy in range(0, H, 108):
-            draw.line([(0, gy), (W, gy)], fill=(20, 20, 20), width=1)
-
-        # Corner accent marks
-        accent = (200, 255, 0)
-        for cx, cy, dx, dy in [(0, 0, 1, 1), (W, 0, -1, 1), (0, H, 1, -1), (W, H, -1, -1)]:
-            draw.line([(cx, cy), (cx + dx * 80, cy)], fill=accent, width=3)
-            draw.line([(cx, cy), (cx, cy + dy * 80)], fill=accent, width=3)
-
-        # Topic eyebrow
-        font_eyebrow = _font(ImageFont, 30, bold=True, mono=True)
-        eyebrow = (topic or "AI NEWS").upper()[:30]
-        draw.text((60, 80), eyebrow, fill=accent, font=font_eyebrow)
-
-        # Main title — auto-wrapped, large neon green
-        font_title = _font(ImageFont, 68, bold=True)
-        clean_title = re.sub(r"\s+", " ", title).strip()
-        lines_wrapped = textwrap.wrap(clean_title, width=22)[:5]
-        y = 200
-        for line in lines_wrapped:
-            draw.text((60, y), line, fill=accent, font=font_title)
-            try:
-                lh = draw.textbbox((0, 0), line, font=font_title)[3]
-            except Exception:
-                lh = 76
-            y += lh + 12
-
-        # Horizontal separator
-        draw.line([(60, y + 20), (W - 60, y + 20)], fill=accent, width=2)
-
-        # Brand handle at bottom
-        font_handle = _font(ImageFont, 36, bold=True, mono=True)
-        draw.text((60, H - 100), "@graitech", fill=accent, font=font_handle)
-        draw.text((60, H - 56), "AI NEWS", fill=(160, 160, 160), font=_font(ImageFont, 28, bold=False))
-
-        img.save(str(out_path), "PNG", optimize=True)
-        return str(out_path)
-    except Exception as exc:
-        print(f"WARNING: Could not generate fallback image: {exc}")
-        return ""
-
-
-def _generate_unique_fallback_image(title: str, topic: str, used_image_paths: set[str]) -> str:
-    """Guarantee a unique branded fallback image for this article.
-
-    Calls _generate_branded_fallback_image, then if the content-addressed path
-    collides with an already-used one (same title+topic in a prior batch),
-    appends a counter suffix until a fresh path is obtained.
-    Adds the chosen path to used_image_paths before returning.
-    """
-    base_path = _generate_branded_fallback_image(title, topic)
-    if not base_path:
-        return ""
-    if base_path not in used_image_paths:
-        used_image_paths.add(base_path)
-        return base_path
-    # Collision: same title+topic used in a previous batch — generate a variant.
-    p = Path(base_path)
-    for counter in range(1, 20):
-        variant = str(p.parent / f"{p.stem}_{counter}{p.suffix}")
-        if not Path(variant).exists():
-            # Copy the original file to the variant path so it renders correctly.
-            try:
-                import shutil as _shutil
-                _shutil.copy2(base_path, variant)
-            except Exception:
-                variant = base_path
-        if variant not in used_image_paths:
-            used_image_paths.add(variant)
-            return variant
-    # Absolute last resort — return base path (same image, but extremely rare)
-    return base_path
-
-
 def _find_library_image_unique(query: str, exclude_paths: set[str]) -> str | None:
     """Like _find_library_image but skips any path already in exclude_paths."""
     if not IMAGE_LIBRARY_DIR.exists():
@@ -2632,16 +2510,25 @@ def _fetch_og_image_from_url(article_url: str) -> str:
     """
     if not article_url or not article_url.startswith(("http://", "https://")):
         return ""
-    try:
-        headers = {
-            "User-Agent": "Mozilla/5.0 (compatible; AIInstagramAgent/1.0; +https://graitech.ai)",
-            "Accept": "text/html,application/xhtml+xml",
-            "Accept-Language": "en-US,en;q=0.9",
-        }
-        req = urllib.request.Request(article_url, headers=headers)
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            raw_html = resp.read(300_000).decode("utf-8", errors="replace")
-    except Exception:
+    headers = {
+        "User-Agent": "Mozilla/5.0 (compatible; AIInstagramAgent/1.0; +https://graitech.ai)",
+        "Accept": "text/html,application/xhtml+xml,image/webp,image/jpeg,image/png,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+    }
+    raw_html = ""
+    for attempt in range(2):
+        try:
+            req = urllib.request.Request(article_url, headers=headers)
+            with urllib.request.urlopen(req, timeout=25) as resp:
+                raw_html = resp.read(500_000).decode("utf-8", errors="replace")
+            break
+        except Exception as exc:
+            if attempt == 0:
+                time.sleep(3)
+                continue
+            print(f"  [img] _fetch_og_image_from_url failed for {article_url[:80]}: {exc}")
+
+    if not raw_html:
         return ""
 
     # 1. og:image
@@ -2657,6 +2544,7 @@ def _fetch_og_image_from_url(article_url: str) -> str:
     if og:
         img_url = og.group(1).strip()
         if img_url.startswith(("http://", "https://")):
+            print(f"  [img] Found og:image for {article_url[:60]}: ...{img_url[-50:]}")
             return img_url
 
     # 2. twitter:image
@@ -2672,6 +2560,7 @@ def _fetch_og_image_from_url(article_url: str) -> str:
     if tw:
         img_url = tw.group(1).strip()
         if img_url.startswith(("http://", "https://")):
+            print(f"  [img] Found twitter:image for {article_url[:60]}: ...{img_url[-50:]}")
             return img_url
 
     # 3. First substantive <img> in article/main content area
@@ -2685,8 +2574,10 @@ def _fetch_og_image_from_url(article_url: str) -> str:
         if (src.startswith(("http://", "https://"))
                 and any(ext in src.lower() for ext in (".jpg", ".jpeg", ".png", ".webp"))
                 and not any(skip in src.lower() for skip in ("logo", "icon", "avatar", "pixel", "tracking", "badge", "1x1", "spacer"))):
+            print(f"  [img] Found <img> tag in article body for {article_url[:60]}: ...{src[-50:]}")
             return src
 
+    print(f"  [img] No image found in {article_url[:60]}")
     return ""
 
 
@@ -2711,7 +2602,7 @@ def _download_to_library(url: str, seed_text: str) -> str | None:
             data = resp.read(8_000_000)
     except Exception:
         return None
-    if len(data) < 30_000:
+    if len(data) < 8_000:
         return None
     dest = IMAGE_LIBRARY_DIR / f"{cache_key}{suffix}"
     dest.write_bytes(data)
@@ -2955,6 +2846,7 @@ def _extract_instagram_key_points(
     article: dict[str, Any],
     summary: "EmailSummary",
     max_points: int = 10,
+    used_fingerprints: set[str] | None = None,
 ) -> list[str]:
     """Extract punchy, attention-grabbing key points for Instagram slides.
 
@@ -2964,6 +2856,11 @@ def _extract_instagram_key_points(
     - Plain language — "This means..." framing where relevant
     - ≤ 110 chars per point, no trailing dots
     - 3–5 points ordered by impact (most striking first)
+
+    When *used_fingerprints* is provided, points whose lowercase-60-char
+    fingerprint already appears in the set are skipped *and* the fingerprints
+    of selected points are added back so callers can avoid duplicates across
+    multiple calls (e.g. across articles in one carousel).
     """
     STOP_PREFIXES = (
         "this article", "in this post", "the article", "we discuss",
@@ -2984,6 +2881,8 @@ def _extract_instagram_key_points(
         # digest-email boilerplate like "The model connects via Link : 1."
         # The greedy [^.!?]* on both sides ensures the whole clause is gone.
         r"[^.!?]*\bLink\s*:\s*\d+[^.!?]*[.!?]?\s*",
+        # Remove orphaned "Link:" / "Link :" fragments without URL or number.
+        r"\bLink\s*:\s*",
         # Remove "\d+ event(s) detected" digest header lines (sometimes rendered
         # as "I event(s) detected" when "1" and "I" are confused in encoding).
         r"\b(?:\d+|I)\s+event\(s\)\s+detected\b[^\n]*",
@@ -3032,6 +2931,8 @@ def _extract_instagram_key_points(
                     len(sent) > 40
                     and sent not in raw
                     and not any(sent.lower().startswith(pfx) for pfx in STOP_PREFIXES)
+                    # Skip fragments that don't start with uppercase/digit
+                    and sent[0].isupper() or sent[0].isdigit()
                 ):
                     raw.append(sent)
                 if len(raw) >= max_points * 2:
@@ -3041,6 +2942,8 @@ def _extract_instagram_key_points(
 
     # Deduplicate by first-60-chars fingerprint
     seen: set[str] = set()
+    if used_fingerprints is not None:
+        seen.update(used_fingerprints)
     deduped: list[str] = []
     for p in raw:
         key = re.sub(r"\s+", " ", p).lower()[:60]
@@ -3062,10 +2965,17 @@ def _extract_instagram_key_points(
 
     deduped.sort(key=_point_score, reverse=True)
 
-    # Trim each point to 95 chars so it fits on ~2 lines at 24px font.
-    trimmed = [_trim_no_dots(pt, 95) for pt in deduped[:max_points]]
+    # Trim each point so it fits on the slide but keeps meaning intact.
+    trimmed = [_trim_no_dots(pt, 140) for pt in deduped[:max_points]]
     final = [f"{BULLET}  {pt}" for pt in trimmed]
-    return final if final else [f"{BULLET}  {_trim_no_dots(summary.headline or summary.subject or 'AI update', 95)}"]
+    if not final:
+        return [f"{BULLET}  {_trim_no_dots(summary.headline or summary.subject or 'AI update', 95)}"]
+    # Record fingerprints of selected points back into caller's set.
+    if used_fingerprints is not None:
+        for pt in deduped[:max_points]:
+            fp = re.sub(r"\s+", " ", pt).lower()[:60]
+            used_fingerprints.add(fp)
+    return final
 
 
 def _compose_article_narrative(summary: EmailSummary, article: dict[str, Any]) -> str:
@@ -3889,6 +3799,7 @@ def _clean_public_text(text: str) -> str:
     text = re.sub(r"Link\s*:\s*https?://\S+", "", text, flags=re.I)
     # Remove the entire sentence containing "Link : <number>" boilerplate.
     text = re.sub(r"[^.!?]*\bLink\s*:\s*\d+[^.!?]*[.!?]?\s*", "", text, flags=re.I)
+    text = re.sub(r"\bLink\s*:\s*", "", text, flags=re.I)
     # Remove "N event(s) detected" digest header lines.
     text = re.sub(r"\b(?:\d+|I)\s+event\(s\)\s+detected\b[^\n]*", "", text, flags=re.I)
     # Strip GitHub markdown changelog headings

@@ -113,14 +113,14 @@ class DigestPipelineTests(unittest.TestCase):
 
         self.assertIn("https://example.com/langchain-launch", urls)
 
-    def test_missing_article_image_generates_branded_fallback(self) -> None:
+    def test_missing_article_image_returns_empty_path(self) -> None:
         summary = _summary_with_articles(1)
 
         with patch("email_summary_agent.instagram._find_reference_image_for_article_unique", return_value=None):
             slides = _build_slide_specs(summary, datetime(2026, 5, 21, 9, 0))
 
         self.assertEqual(slides[0]["kind"], "title")
-        self.assertTrue(slides[0]["image_path"], "Title slide must always have an image (branded fallback)")
+        self.assertEqual(slides[0]["image_path"], "")
 
     def test_missing_article_image_can_use_reference_search_result(self) -> None:
         summary = _summary_with_articles(1)
