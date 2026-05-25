@@ -23,13 +23,17 @@ CANVAS_W = 1080
 CANVAS_H = 1350
 # Instagram API allows 2–10 children per carousel post.
 MAX_CAROUSEL_SLIDES = 10
-# For digest posts: pack up to 9 news-story slides + 1 CTA = 10 slides per post.
-DIGEST_NEWS_PER_POST = 9
+# Articles per carousel post for both digest and normal emails.
+# 8 articles + 1 CTA = 9 slides minimum; overflow slides (same image, extra
+# key points) may push the total to the 10-slide Instagram cap.
+DIGEST_NEWS_PER_POST = 8
 # For regular single-article posts: one article tells its full story across slides.
 STORIES_PER_CAROUSEL = 1
-# For normal (non-digest) emails: pack up to 2 news stories per carousel post.
-# Each story gets an image+headline slide + N key-point slides.
-NORMAL_NEWS_PER_POST = 2
+# Normal emails now use the same 8-articles-per-post layout as digest emails.
+NORMAL_NEWS_PER_POST = 8
+# Maximum key points shown on a single article slide before overflow.
+# 4 points fit cleanly in the body zone below the article image.
+MAX_KP_PER_SLIDE = 4
 # Hard minimum readable font size — never go below this on any slide.
 FONT_MIN_READABLE = 32
 POSTING_SLOTS = ("08:00", "14:00", "18:00", "22:00")
@@ -357,12 +361,12 @@ def _split_summary_for_carousels(summary: EmailSummary) -> list[EmailSummary]:
         If the digest has more items than fit in one post, extra posts are created.
 
     NORMAL emails (< 8 article_items, no digest subject):
-        Articles are grouped in pairs (NORMAL_NEWS_PER_POST = 2 per carousel).
-        Each pair becomes one post with image+headline + keypoint slides.
+        Articles are grouped in batches of NORMAL_NEWS_PER_POST (8) per carousel.
+        Each batch becomes one post using the same unified layout as digest posts.
     """
     articles = _article_items(summary)
 
-    # ── Normal email — group articles in pairs (NORMAL_NEWS_PER_POST per post) ─
+    # ── Normal email — group articles in batches of NORMAL_NEWS_PER_POST per post ─
     if not _is_digest_summary(summary):
         articles = _article_items(summary)
         if len(articles) <= NORMAL_NEWS_PER_POST:
@@ -496,26 +500,103 @@ def _build_slide_specs(
     return _build_normal_slide_specs(summary, email_dt, initial_used_paths)
 
 
+def _build_fallback_single_slide(
+    summary: EmailSummary,
+    email_dt: datetime,
+    initial_used_paths: set[str] | None = None,
+) -> list[dict[str, Any]]:
+    """Return a minimal 2-slide carousel (1 digest + 1 CTA) when no article_items exist.
+
+    Used as the safety net inside _build_digest_slide_specs when the summary
+    has no structured article list but still carries a headline / summary text.
+    """
+    used_image_urls: set[str] = set()
+    used_image_paths: set[str] = set(initial_used_paths or ())
+    carousel_theme = _pick_bg_theme_from_summary(summary)
+
+    # Treat the whole summary as one anonymous article.
+    headline = _clean_headline(
+        _clean_public_text(str(summary.headline or summary.subject or "AI Update"))
+    ) or "AI Update"
+    url = str(summary.article_url or "")
+    topic = ", ".join(summary.topics[:2]) or headline
+    source_label = _source_label_from_url(url) if url else ""
+
+    synthetic_article: dict[str, Any] = {
+        "title": headline,
+        "url": url,
+        "description": summary.article_excerpt or summary.summary or "",
+        "image_path": getattr(summary, "article_image_path", None) or "",
+        "image_url": getattr(summary, "article_image_url", None) or "",
+    }
+
+    # Attempt og:image fetch if we have a URL.
+    if url and not synthetic_article["image_url"]:
+        og = _fetch_og_image_from_url(url)
+        if og:
+            synthetic_article["image_url"] = og
+
+    image_path = _select_unique_article_image(
+        synthetic_article, topic, used_image_urls, used_image_paths
+    )
+    key_points = _extract_instagram_key_points(synthetic_article, summary, max_points=4)
+    body_text = "\n".join(key_points) if key_points else _clean_public_text(summary.summary or "")[:300]
+
+    slides: list[dict[str, Any]] = [
+        {
+            "kind": "digest",
+            "slide_index": 1,
+            "eyebrow": _pick_digest_eyebrow(synthetic_article, summary),
+            "title": headline,
+            "body": body_text,
+            "image_path": image_path,
+            "topic": topic,
+            "url": url,
+            "source_label": source_label,
+            "bg_theme": carousel_theme,
+        },
+        {
+            "kind": "cta",
+            "eyebrow": "GRAITECH",
+            "title": "Follow for the next AI briefing",
+            "body": "LIKE | COMMENT | FOLLOW | SAVE",
+            "image_path": "",
+            "source_label": "",
+            "bg_theme": carousel_theme,
+        },
+    ]
+    return slides
+
+
 def _build_digest_slide_specs(
     summary: EmailSummary,
     email_dt: datetime,
     initial_used_paths: set[str] | None = None,
 ) -> list[dict[str, Any]]:
-    """Build slides for a digest email carousel.
+    """Build slides for a digest (or unified normal) email carousel.
 
-    Layout per slide:
-        • Top 52%: unique article image (from blog; web fallback if missing)
-        • Bottom 48%: eyebrow label | headline | brief 2–3 sentence summary | source credit
-        • One CTA slide at the end
+    Layout per article slide:
+        • Top ~38%  : article's own image (fetched from og:image / scraped)
+        • Bottom ~62%: eyebrow | headline | 3–4 key points | source credit
+        • Overflow slide: if an article has more than MAX_KP_PER_SLIDE points,
+          a second slide is created with the SAME image and remaining points.
+        • Final slide: CTA
+
+    Processing per article (mandatory):
+        1. Follow the article URL and read the full text.
+        2. Fetch the og:image (or twitter:image / first <img>) for that article.
+        3. Summarise the full text and generate 3–5 key points.
+
+    Total slides: up to 8 article slides (+ possible overflow slides)
+                  + 1 CTA ≤ 10 (Instagram carousel cap).
 
     Images are deduplicated across all slides in this carousel AND across all
     previously published batches (via initial_used_paths seeded from the DB).
-    Every article is guaranteed at least one image — a branded fallback is
-    generated when no real image can be sourced.
     """
     articles = _article_items(summary)
     if not articles:
-        return _build_normal_slide_specs(summary, email_dt, initial_used_paths)
+        # No articles at all — build a minimal single-slide summary post.
+        return _build_fallback_single_slide(summary, email_dt, initial_used_paths)
 
     slides: list[dict[str, Any]] = []
     # Seed from cross-batch history so previously-used images are never reused.
@@ -535,48 +616,80 @@ def _build_digest_slide_specs(
         if len(slides) >= max_content_slides:
             break
 
+        # ── Step 1: Mandatory full-article scrape ────────────────────────────
+        url = str(article.get("url") or "")
+        article = dict(article)   # work on a copy so we don't mutate the source
+        if url and not article.get("scraped_content"):
+            scraped = _scrape_article_text(url)
+            if scraped:
+                article["scraped_content"] = scraped
+
+        # ── Step 2: Mandatory og:image fetch (overrides pre-populated values) ─
+        if url and not article.get("image_url") and not article.get("image_path"):
+            og_url = _fetch_og_image_from_url(url)
+            if og_url:
+                article["image_url"] = og_url
+
         headline = _clean_headline(
             _clean_public_text(str(article.get("title") or summary.headline or summary.subject or "AI update"))
         ) or "AI Update"
 
         topic = ", ".join(summary.topics[:2]) or headline
-        source_label = _source_label_from_url(str(article.get("url") or ""))
+        source_label = _source_label_from_url(url)
 
-        # Cap key points to 5 to prevent text overflow on the slide.
-        key_points = _extract_instagram_key_points(article, summary, max_points=5, used_fingerprints=used_key_fingerprints)
-        brief = "\n".join(key_points) if key_points else _build_digest_slide_brief(summary, article)
-
+        # ── Step 3: Fetch the article image for this slide ───────────────────
         image_path = _select_unique_article_image(
             article, topic, used_image_urls, used_image_paths
         )
 
-        slides.append(
-            {
-                "kind": "digest",
-                "slide_index": article_index,
-                "eyebrow": _pick_digest_eyebrow(article, summary),
-                "title": headline,
-                "body": brief,
-                "image_path": image_path,
-                "topic": topic,
-                "url": str(article.get("url", "")),
-                "source_label": source_label,
-                "bg_theme": carousel_theme,
-            }
+        # ── Step 4: Generate 3–5 key points from the full article content ────
+        all_key_points = _extract_instagram_key_points(
+            article, summary, max_points=5, used_fingerprints=used_key_fingerprints
         )
 
-    # CTA slide — always appended, never cut off (slot was reserved above).
-    slides.append(
-        {
-            "kind": "cta",
-            "eyebrow": "GRAITECH",
-            "title": "Follow for the next AI briefing",
-            "body": "LIKE | COMMENT | FOLLOW | SAVE",
-            "image_path": "",
-            "source_label": "",
+        # ── Step 5: Build primary slide (up to MAX_KP_PER_SLIDE points) ──────
+        primary_points = all_key_points[:MAX_KP_PER_SLIDE]
+        overflow_points = all_key_points[MAX_KP_PER_SLIDE:]
+
+        slides.append({
+            "kind": "digest",
+            "slide_index": article_index,
+            "eyebrow": _pick_digest_eyebrow(article, summary),
+            "title": headline,
+            "body": "\n".join(primary_points),
+            "image_path": image_path,
+            "topic": topic,
+            "url": url,
+            "source_label": source_label,
             "bg_theme": carousel_theme,
-        }
-    )
+        })
+
+        # ── Step 6: Overflow slide — same image, remaining key points ─────────
+        # Only created if there are leftover points AND a free slot exists.
+        if overflow_points and len(slides) < max_content_slides:
+            slides.append({
+                "kind": "digest",
+                "slide_index": article_index,        # same article index
+                "eyebrow": _pick_digest_eyebrow(article, summary),
+                "title": headline,                   # same headline
+                "body": "\n".join(overflow_points),
+                "image_path": image_path,            # same image — spec requirement
+                "topic": topic,
+                "url": url,
+                "source_label": source_label,
+                "bg_theme": carousel_theme,
+            })
+
+    # CTA slide — always appended, slot was reserved above.
+    slides.append({
+        "kind": "cta",
+        "eyebrow": "GRAITECH",
+        "title": "Follow for the next AI briefing",
+        "body": "LIKE | COMMENT | FOLLOW | SAVE",
+        "image_path": "",
+        "source_label": "",
+        "bg_theme": carousel_theme,
+    })
 
     return slides
 
@@ -588,125 +701,31 @@ def _build_normal_slide_specs(
 ) -> list[dict[str, Any]]:
     """Build the carousel for a regular (non-digest) email.
 
-    Structure per post (graitech Design System):
-    • Up to NORMAL_NEWS_PER_POST (2) news articles per carousel post.
-    • Per article:
-        - Slide 1: Title slide (kind="title")  — eyebrow + neon rule + big headline + subtitle
-        - Slides 2-4: List slides (kind="list") — 4 bullet-point insights each (12 total)
-    • Final slide: CTA (kind="cta")
-    Total: 2 × 4 + 1 = 9 slides (well within Instagram's 10-slide limit per carousel)
-    Every article is guaranteed at least one image — a branded fallback is
-    generated when no real image can be sourced.
+    Normal emails now use the same unified 1-slide-per-article layout as digest
+    emails: image + key points per article, 8 articles per post, CTA at end.
+    This function delegates directly to _build_digest_slide_specs which
+    implements the full shared pipeline (mandatory scraping, og:image fetch,
+    overflow slides, cross-article dedup).
     """
-    POINTS_PER_LIST_SLIDE = 4  # bullet points per list slide
-    LIST_SLIDES_PER_ARTICLE = 3  # list slides per article = ceil(12/4)
-
-    articles = _article_items(summary)
-    if not articles:
-        articles = [
-            {
-                "url": summary.article_url,
-                "title": summary.article_title or summary.headline or summary.subject or "AI update",
-                "description": summary.article_excerpt or summary.summary,
-                "excerpt": summary.article_excerpt,
-                "image_path": summary.article_image_path,
-                "image_url": summary.article_image_url,
-            }
-        ]
-
-    slides: list[dict[str, Any]] = []
-    used_image_urls: set[str] = set()
-    # Seed from cross-batch history so previously-used images are never reused.
-    used_image_paths: set[str] = set(initial_used_paths or ())
-    carousel_theme = _pick_bg_theme_from_summary(summary)
-    date_eyebrow = email_dt.strftime("%b %Y").upper()
-
-    # Reserve 1 slot for the CTA slide so it never gets cut off.
-    max_content_slides = MAX_CAROUSEL_SLIDES - 1
-
-    # Cross-article dedup set so the same key point never appears on two slides.
-    used_key_fingerprints: set[str] = set()
-
-    for article_index, article in enumerate(articles[:NORMAL_NEWS_PER_POST], start=1):
-        if len(slides) >= max_content_slides:
-            break
-
-        headline = _clean_headline(
-            _clean_public_text(str(article.get("title") or summary.headline or summary.subject or "AI update"))
-        ) or "AI UPDATE"
-        topic = ", ".join(summary.topics[:2]) or headline
-        source_label = _source_label_from_url(str(article.get("url") or ""))
-
-        # Enrich article with scraped content if URL is available
-        url = str(article.get("url") or "")
-        if url and not article.get("scraped_content"):
-            scraped = _scrape_article_text(url)
-            if scraped:
-                article = dict(article)
-                article["scraped_content"] = scraped
-
-        # Build subtitle from description/excerpt for the title slide
-        subtitle = _clean_public_text(str(
-            article.get("description") or article.get("excerpt") or
-            article.get("scraped_content", "")[:300] or ""
-        ))
-        subtitle = _trim_no_dots(subtitle, 160) if subtitle else ""
-
-        # ── Slide 1: Title slide — ALWAYS has an image ──────────────────────
-        image_path = _select_unique_article_image(article, topic, used_image_urls, used_image_paths)
-        slides.append({
-            "kind": "title",
-            "article_num": article_index,
-            "eyebrow": f"FIELD NOTES — {date_eyebrow}",
-            "title": headline,
-            "body": subtitle,
-            "image_path": image_path,
-            "topic": topic,
-            "url": url,
-            "source_label": source_label,
-            "bg_theme": carousel_theme,
-        })
-
-        # ── List slides: 3 key points per slide to prevent overflow ──────────
-        POINTS_PER_SLIDE = 3
-        MIN_BULLETS_PER_SLIDE = 2   # never emit a near-empty slide
-        key_points = _extract_instagram_key_points(article, summary, max_points=9, used_fingerprints=used_key_fingerprints)
-        for chunk_idx in range(3):
-            if len(slides) >= max_content_slides:
-                break
-            start = chunk_idx * POINTS_PER_SLIDE
-            chunk = key_points[start:start + POINTS_PER_SLIDE]
-            if not chunk:
-                break
-            # Skip slides with fewer than MIN_BULLETS_PER_SLIDE — they look
-            # sparse and often contain only leftover/low-quality bullets.
-            if len(chunk) < MIN_BULLETS_PER_SLIDE:
-                break
-            slides.append({
-                "kind": "list",
-                "article_num": article_index,
-                "eyebrow": f"STORY {article_index:02d} · INSIGHTS",
-                "title": headline,
-                "body": "\n".join(chunk),
-                "image_path": "",
-                "topic": topic,
-                "url": url,
-                "source_label": source_label,
-                "bg_theme": carousel_theme,
-            })
-
-    # ── CTA slide — always appended, slot was reserved above ─────────────────
-    slides.append({
-        "kind": "cta",
-        "eyebrow": "END / DISPATCH",
-        "title": "Save this.\nSteal this.\nShare it.",
-        "body": "Follow @graitech for the next AI briefing.",
-        "image_path": "",
-        "source_label": "",
-        "bg_theme": carousel_theme,
-    })
-
-    return slides
+    # Ensure the summary has article_items so the digest builder can process it.
+    if not (summary.article_items) and (
+        summary.article_url or summary.article_title
+    ):
+        object.__setattr__(
+            summary,
+            "article_items",
+            [
+                {
+                    "url": summary.article_url,
+                    "title": summary.article_title or summary.headline or summary.subject or "AI update",
+                    "description": summary.article_excerpt or summary.summary,
+                    "excerpt": summary.article_excerpt,
+                    "image_path": summary.article_image_path,
+                    "image_url": summary.article_image_url,
+                }
+            ],
+        )
+    return _build_digest_slide_specs(summary, email_dt, initial_used_paths)
 
 
 def _build_digest_slide_brief(summary: EmailSummary, article: dict[str, Any]) -> str:
@@ -3917,7 +3936,7 @@ def _clean_public_text(text: str) -> str:
         if re.search(r"\bcookies?\b|\bGDPR\b|\bCCPA\b|\bopt.out\b|\bunsubscribe\b", sentence, re.I):
             continue
         # Drop newsletter metadata lines like "Impact: HIGH", "Source: X", "Link: 3"
-        if re.fullmatch(r"\s*(impact|source|link|read time)\s*:\s*(low|medium|high|\d+.*)?", sentence, re.I):
+        if re.fullmatch(r"\s*(impact|source|link|read time)\s*:\s*(low|medium|high|\d+.*)?\s*", sentence, re.I):
             continue
         kept.append(sentence.strip())
     result = " ".join(part for part in kept if part)
