@@ -8,8 +8,14 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260525-000737/01_20260524-1643_robot-challenge-screen/slide_02.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260525-000737/01_20260524-1643_robot-challenge-screen/slide_03.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-000737/01_20260524-1643_robot-challenge-screen/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-000737/01_20260524-1643_robot-challenge-screen/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260525-000737/01_20260524-1643_robot-challenge-screen/slide_03.png"
+      ],
+      "status": "published",
+      "creation_id": "18044284514577438",
+      "published_at": "2026-05-25T00:09:08+00:00"
     }
   ]
 }
