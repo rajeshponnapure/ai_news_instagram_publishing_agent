@@ -1,0 +1,353 @@
+{
+  "email_received_at": "2026-05-25T15:09-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Borealis - open data, code, weights recipe for training Audio LLM \u2014 Part 1 of 2",
+  "subject": "\ud83d\udea8 AI Alert: 19 new launches \u2014 Hugging Face, The Verge AI, OpenAI Blog",
+  "source_date": "Mon, 25 May 2026 15:09:54 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Amazon",
+    "NVIDIA",
+    "Hugging Face",
+    "Salesforce"
+  ],
+  "models": [
+    "Claude",
+    "Gemini 2.5",
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://huggingface.co/blog/AlexWortega/borealis",
+  "article_title": "Borealis \u2014 open data, code, weights recipe for training Audio LLM",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c79dbd2ecf800717.png",
+  "article_image_url": "https://huggingface.co/spaces/AlexWortega/borealis-blog/resolve/main/twitter_article/images_en/09_chart_avg_wer.png",
+  "article_items": [
+    {
+      "url": "https://huggingface.co/blog/AlexWortega/borealis",
+      "title": "Borealis \u2014 open data, code, weights recipe for training Audio LLM",
+      "description": "A Blog post by Wortega on Hugging Face",
+      "excerpt": "A Blog post by Wortega on Hugging Face",
+      "summary": "The mix is what the model sees at training time with noise augmentation enabled. vLLM ships a closed set of multimodal architectures out of the box ( Qwen2-Audio , LLaVA , Phi-4-MM , a couple more). The practical impact: When the user writes a prompt with one <|AUDIO|> , the processor expands it into <|start_of_audio|> + 375\u00d7 <|AUDIO|> + <|start_of_audio|> , and marks each of those 375 tokens as \"embedding will be supplied externally\" via PromptUpdateDetails.select_token_id(..., embed_token_id=audio_token_id) . Where the 2.1\u00d7 comes from. Watch next: The plugin ( vllm_borealis ) sits next to the weights in the HF model repo. Where the 2.1\u00d7 comes from.",
+      "what_happened": "The mix is what the model sees at training time with noise augmentation enabled. vLLM ships a closed set of multimodal architectures out of the box ( Qwen2-Audio , LLaVA , Phi-4-MM , a couple more).",
+      "why_matters": "The practical impact: When the user writes a prompt with one <|AUDIO|> , the processor expands it into <|start_of_audio|> + 375\u00d7 <|AUDIO|> + <|start_of_audio|> , and marks each of those 375 tokens as \"embedding will be supplied externally\" via PromptUpdateDetails.select_token_id(..., embed_token_id=audio_token_id) . Where the 2.1\u00d7 comes from.",
+      "what_to_watch": "Watch next: The plugin ( vllm_borealis ) sits next to the weights in the HF model repo. Where the 2.1\u00d7 comes from.",
+      "key_points": [
+        "Don't dilute target-language data \"for diversity.\" 02 Adding plain-text instructions At 25%, the model starts forgetting the audio task - the LLM drifts into text-to-text mode and stops fitting the audio embeddings...",
+        "The mix is what the model sees at training time with noise augmentation enabled.",
+        "Where the 2.1\u00d7 comes from.",
+        "vLLM ships a closed set of multimodal architectures out of the box ( Qwen2-Audio , LLaVA , Phi-4-MM , a couple more).",
+        "Under the hood - serving and integrating with transformers Serving multimodal models isn't a new topic.",
+        "When the user writes a prompt with one <|AUDIO|> , the processor expands it into <|start_of_audio|> + 375\u00d7 <|AUDIO|> + <|start_of_audio|> , and marks each of those 375 tokens as \"embedding will be supplied...",
+        "The plugin ( vllm_borealis ) sits next to the weights in the HF model repo.",
+        "vLLM sometimes ships mel as [N, 1, 128, 3000] because it packs multimodal fields into its own table.",
+        "The 375 \"real\" audio tokens get adapter embeddings via embed_token_id ; everything else flows through the normal LLM embedding table.",
+        "Fast part (encoder) + slow part (LLM): run the encoder asynchronously, accumulate the logits, hand them off to the LLM.",
+        "BorealisForConditionalGeneration - the model itself.",
+        "Registers the model with vllm.ModelRegistry ."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c79dbd2ecf800717.png",
+      "image_url": "https://huggingface.co/spaces/AlexWortega/borealis-blog/resolve/main/twitter_article/images_en/09_chart_avg_wer.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/20adae5a0d5f8a5d.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7e6715f03f3026ba.png"
+      ],
+      "extra_image_urls": [
+        "https://huggingface.co/spaces/AlexWortega/borealis-blog/resolve/main/twitter_article/images_en/08_summary.png",
+        "https://huggingface.co/spaces/AlexWortega/borealis-blog/resolve/main/twitter_article/images_en/10_heatmap.png"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/grupo-folha-grupo-uol-partnership/",
+      "title": "OpenAI, Grupo Folha, and Grupo UOL announce strategic content partnership",
+      "description": "OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency.",
+      "excerpt": "OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency.",
+      "summary": "OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency. By partnering with OpenAI, we are putting Folha at the forefront of this transformation and creating new ways to expand the reach, relevance, and impact of trusted journalism,\u201d says Carlos Ponce de Leon, Folha de S.Paulo's Co-CEO. The practical impact: By partnering with publishers across multiple markets, including in the United States, UK, France, Germany and now Brazil, OpenAI aims to integrate trusted reporting into AI-powered experiences and help bring journalism into ChatGPT in ways that emphasize attribution, transparency, and links back to original sources. Paulo and UOL to reach new global audiences and will also help users discover... Watch next: According to S\u00e9rgio D\u00e1vila, Editor-in-Chief of Folha de S.Paulo, \u201cThe interest of an artificial intelligence giant like OpenAI in displaying content produced by Folha de S.Paulo and UOL only reinforces the importance of professional journalism.\u201d \u201cFolha de S.Paulo and UOL are among Brazil's most relevant...",
+      "what_happened": "OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency. By partnering with OpenAI, we are putting Folha at the forefront of this transformation and creating new ways to expand the reach, relevance, and impact of trusted journalism,\u201d says Carlos Ponce de Leon, Folha de S.Paulo's Co-CEO.",
+      "why_matters": "The practical impact: By partnering with publishers across multiple markets, including in the United States, UK, France, Germany and now Brazil, OpenAI aims to integrate trusted reporting into AI-powered experiences and help bring journalism into ChatGPT in ways that emphasize attribution, transparency, and links back to original sources. Paulo and UOL to reach new global audiences and will also help users discover...",
+      "what_to_watch": "Watch next: According to S\u00e9rgio D\u00e1vila, Editor-in-Chief of Folha de S.Paulo, \u201cThe interest of an artificial intelligence giant like OpenAI in displaying content produced by Folha de S.Paulo and UOL only reinforces the importance of professional journalism.\u201d \u201cFolha de S.Paulo and UOL are among Brazil's most relevant...",
+      "key_points": [
+        "OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency.",
+        "According to S\u00e9rgio D\u00e1vila, Editor-in-Chief of Folha de S.Paulo, \u201cThe interest of an artificial intelligence giant like OpenAI in displaying content produced by Folha de S.Paulo and UOL only reinforces the importance...",
+        "By partnering with OpenAI, we are putting Folha at the forefront of this transformation and creating new ways to expand the reach, relevance, and impact of trusted journalism,\u201d says Carlos Ponce de Leon, Folha de...",
+        "Starting today, more than 900 million weekly active ChatGPT users around the world will be able to access high-quality journalism and see summaries based on Folha de S.Paulo and UOL's reporting.",
+        "By partnering with publishers across multiple markets, including in the United States, UK, France, Germany and now Brazil, OpenAI aims to integrate trusted reporting into AI-powered experiences and help bring...",
+        "OpenAI, Grupo Folha, and Grupo UOL announce strategic content partnership OpenAI's first media partnership in Brazil will bring Folha de S.Paulo and UOL's journalism to ChatGPT.",
+        "It is only natural that they partner with the creators of high-quality content for that,\u201d says Paulo Samia, CEO of UOL.",
+        "For Murilo Garavello, UOL Content Director, \u201cWe want our journalism in every environment Brazilians use - and that truthful information can be disseminated as widely as possible.\u201d Brazil is currently one of the...",
+        "Paulo and UOL to reach new global audiences and will also help users discover credible information on ChatGPT.",
+        "Through this partnership, Grupo Folha and Grupo UOL will also gain access to Codex, ChatGPT Enterprise, and API to explore new ways AI can support their journalism, develop innovative products and features for...",
+        "\u201cAI will define the next era of the news industry and Folha wants to help shape that future.",
+        "This is OpenAI\u2019s first media partnership in Brazil and grounded in a broader effort to work collaboratively with news organizations around the world."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e9a12fc39a98825b.webp",
+      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/640ky2MygwV3jpGjE153fQ/a98bc57773bf3518328afb5f5ffafaad/Art_Card__6_.png?w=3840&q=90&fm=webp",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4280c27bca54ca0d.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1a12dc31a9fd1f57.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4347211b2ebb9dc9.png"
+      ],
+      "extra_image_urls": [
+        "https://images.ctfassets.net/kftzwdyauwt9/5JFad06WGFRNSvmwt2IEYt/fc85c02c580da98144575675105dc647/release-cover-frame.png?w=3840&q=90&fm=webp",
+        "https://images.ctfassets.net/kftzwdyauwt9/D3j1QLEUWCW6QvlwihC2v/2e1f92d8dd5d4aa1b656849aba4531f8/Art_Card2.png?w=3840&q=90&fm=webp",
+        "https://images.ctfassets.net/kftzwdyauwt9/5r2QUTvY5Zjg2vjOFVqbFA/63060b11739247750d8eabb3d029e7ae/Grup-SEO-Image.png?w=1600&h=900&fit=fill"
+      ]
+    },
+    {
+      "url": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
+      "title": "Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\"",
+      "description": "The full text of Chris Olah's remarks on the Pope's encyclical on AI",
+      "excerpt": "The full text of Chris Olah's remarks on the Pope's encyclical on AI",
+      "summary": "The full text of Chris Olah's remarks on the Pope's encyclical on AI Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" On Monday May 25, 2026, Pope Leo XIV released an encyclical on the topic of AI: \"Magnifica humanitas: On safeguarding the human person in the time of artificial Intelligence.\" Anthropic co-founder Chris Olah was invited to speak at the presentation of the encyclical in the Vatican City, doing so as part of Anthropic\u2019s initiative to widen the... The practical impact: Widening the conversation on frontier AI KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance KPMG and Anthropic announce a global alliance, with Claude integrated into KPMG's Digital Gateway platform and available to all 276,000+ employees. I lead a research team that studies the internal structure of these models - what is actually happening inside... Watch next: Today, parents are already worried about their children\u2019s minds; individuals about the future of their work. The third is the need for discernment on the nature of AI models.",
+      "what_happened": "The full text of Chris Olah's remarks on the Pope's encyclical on AI Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" On Monday May 25, 2026, Pope Leo XIV released an encyclical on the topic of AI: \"Magnifica humanitas: On safeguarding the human person in the time of artificial Intelligence.\" Anthropic co-founder Chris Olah was invited to speak at the presentation of the encyclical in the Vatican City, doing so as part of Anthropic\u2019s initiative to widen the...",
+      "why_matters": "The practical impact: Widening the conversation on frontier AI KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance KPMG and Anthropic announce a global alliance, with Claude integrated into KPMG's Digital Gateway platform and available to all 276,000+ employees. I lead a research team that studies the internal structure of these models - what is actually happening inside...",
+      "what_to_watch": "Watch next: Today, parents are already worried about their children\u2019s minds; individuals about the future of their work. The third is the need for discernment on the nature of AI models.",
+      "key_points": [
+        "The full text of Chris Olah's remarks on the Pope's encyclical on AI Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" On Monday May 25, 2026, Pope Leo XIV released an...",
+        "The third is the need for discernment on the nature of AI models.",
+        "They are mistaken: the questions raised by AI are bigger than the AI research community, not just in their implications, but also in their nature.",
+        "Widening the conversation on frontier AI KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance KPMG and Anthropic announce a global alliance, with Claude integrated...",
+        "The pressure to stay commercially viable and to stay at the research frontier.",
+        "The first is our duty to the global poor.",
+        "The machinery that makes this possible is the work of math and programming and science.",
+        "And the older, plainer pressures of pride and ambition.",
+        "If AI models are going to be widespread, what does it look like for humans, families, and the world to flourish?",
+        "I lead a research team that studies the internal structure of these models - what is actually happening inside them.",
+        "The second is the need for moral imagination and ambition regarding human flourishing.",
+        "It is an unsolved problem, and it is the kind of problem the Church has historically refused to let the world ignore."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d8e99e1463326094.png",
+      "image_url": "https://www.anthropic.com/api/opengraph-illustration?name=Hand%20Quill&backgroundColor=heather",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.nature.com/articles/s42256-026-01234-8",
+      "title": "Client Challenge",
+      "description": "",
+      "excerpt": "",
+      "summary": "Client Challenge",
+      "what_happened": "Client Challenge",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Client Challenge"
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/",
+      "title": "What ClickUp's mass layoff tells us about the future of work | TechCrunch",
+      "description": "The nine-year-old startup is replacing hundreds of employees with thousands of AI agents.",
+      "excerpt": "The nine-year-old startup is replacing hundreds of employees with thousands of AI agents.",
+      "summary": "Last Thursday, Evans announced on X that the company, which was last valued in 2021 at $4 billion , had laid off 22% of its workforce yet characterized that reduction as not a cost-cutting measure, but rather a radical embrace of AI that will propel the company to the next level. ClickUp recently introduced roughly 3,000 internal AI agents to handle a wide range of complex tasks on behalf of its employees, according to a Fortune article published several days ago. The practical impact: Instead of performing the work themselves, staff members are now expected to direct these agents and ultimately review the output to ensure it meets the company\u2019s standards. \u201cMost savings from this change will flow directly back into the people who stay. Watch next: More from TechCrunch What ClickUp\u2019s mass layoff tells us about the future of work AI\u2019s biggest champions have argued for some time that the technology will usher in an era of unprecedented productivity gains, richly rewarding workers who harness it while displacing those who don\u2019t. The first StrictlyVC...",
+      "what_happened": "Last Thursday, Evans announced on X that the company, which was last valued in 2021 at $4 billion , had laid off 22% of its workforce yet characterized that reduction as not a cost-cutting measure, but rather a radical embrace of AI that will propel the company to the next level. ClickUp recently introduced roughly 3,000 internal AI agents to handle a wide range of complex tasks on behalf of its employees, according to a Fortune article published several days ago.",
+      "why_matters": "The practical impact: Instead of performing the work themselves, staff members are now expected to direct these agents and ultimately review the output to ensure it meets the company\u2019s standards. \u201cMost savings from this change will flow directly back into the people who stay.",
+      "what_to_watch": "Watch next: More from TechCrunch What ClickUp\u2019s mass layoff tells us about the future of work AI\u2019s biggest champions have argued for some time that the technology will usher in an era of unprecedented productivity gains, richly rewarding workers who harness it while displacing those who don\u2019t. The first StrictlyVC...",
+      "key_points": [
+        "Last Thursday, Evans announced on X that the company, which was last valued in 2021 at $4 billion , had laid off 22% of its workforce yet characterized that reduction as not a cost-cutting measure, but rather a...",
+        "ClickUp recently introduced roughly 3,000 internal AI agents to handle a wide range of complex tasks on behalf of its employees, according to a Fortune article published several days ago.",
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "That efficiency is apparently paying off: Polsia just raised $30 million at a $250 million valuation.",
+        "Evans told TechCrunch via email that the startup is indeed seeing productivity gains from AI agents.",
+        "The nine-year-old startup is replacing hundreds of employees with thousands of AI agents.",
+        "Instead of performing the work themselves, staff members are now expected to direct these agents and ultimately review the output to ensure it meets the company\u2019s standards.",
+        "Six search engines worth trying now that Google isn\u2019t really Google anymore Jensen Huang says he\u2019s found a \u2018brand new\u2019 $200B market for Nvidia Sam Altman makes \u2018mic drop\u2019 offer to every Y Combinator startup Google...",
+        "One extreme example of a high-profile startup using AI automation to the max already exists.",
+        "Evans\u2019s goal, according to his X post, is for AI to turbocharge ClickUp into a \u201c100x org.\u201d ClickUp is not alone in its hope that AI agents will provide massive productivity gains.",
+        "Zeb Evans, CEO of the collaboration software startup ClickUp, claims that this shift is imminent.",
+        "You can contact or verify outreach from Marina by emailing marina.temkin@techcrunch.com or via encrypted message at +1 347-683-3909 on Signal."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/01a1d6449a18a5ec.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2023/07/GettyImages-1247853635.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/05/25/startup-battlefield-200-applications-close-in-days-apply-before-may-27/",
+      "title": "Startup Battlefield 200 applications close before May 27 | TechCrunch",
+      "description": "The deadline to apply or nominate for Startup Battlefield 200 is May 27. Get VC access, global visibility, TechCrunch coverage, and $100,000. Apply now.",
+      "excerpt": "The deadline to apply or nominate for Startup Battlefield 200 is May 27. Get VC access, global visibility, TechCrunch coverage, and $100,000. Apply now.",
+      "summary": "The network runs so deep that alumni have even acquired each other: Dropbox acquired fellow Battlefield 200 alum DocSend in 2021. The companies that define categories rarely start polished Some of the most consequential companies in tech history didn\u2019t launch with splashy fundraising announcements. The practical impact: You don\u2019t need to make the top 20 for this experience to change your trajectory. This is your opportunity to gain investor exposure, receive direct VC feedback, and prove your company belongs among the next generation of category-defining startups. Watch next: Startup Battlefield 200 has never been a competition for the most polished companies. The deadline to apply or nominate for Startup Battlefield 200 is May 27.",
+      "what_happened": "The network runs so deep that alumni have even acquired each other: Dropbox acquired fellow Battlefield 200 alum DocSend in 2021. The companies that define categories rarely start polished Some of the most consequential companies in tech history didn\u2019t launch with splashy fundraising announcements.",
+      "why_matters": "The practical impact: You don\u2019t need to make the top 20 for this experience to change your trajectory. This is your opportunity to gain investor exposure, receive direct VC feedback, and prove your company belongs among the next generation of category-defining startups.",
+      "what_to_watch": "Watch next: Startup Battlefield 200 has never been a competition for the most polished companies. The deadline to apply or nominate for Startup Battlefield 200 is May 27.",
+      "key_points": [
+        "The network runs so deep that alumni have even acquired each other: Dropbox acquired fellow Battlefield 200 alum DocSend in 2021.",
+        "The deadline to apply or nominate for Startup Battlefield 200 is May 27.",
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "Apply today for the opportunity to take the TechCrunch Disrupt Stage alongside 200 of the world\u2019s most promising early-stage startups.",
+        "The companies that define categories rarely start polished Some of the most consequential companies in tech history didn\u2019t launch with splashy fundraising announcements.",
+        "Together, they\u2019ve raised over $32 billion and generated more than 250 exits, including acquisitions by Microsoft, Google, Salesforce, Uber, and Amazon.",
+        "They all passed through the same crucible: Startup Battlefield 200.",
+        "Startup Battlefield 200 has never been a competition for the most polished companies.",
+        "The Startup Battlefield 200 track record speaks for itself More than 1,700 companies have competed in Startup Battlefield 200.",
+        "One startup takes the crown and wins $100,000 in equity-free funding.",
+        "More from TechCrunch Startup Battlefield 200 applications close in days: Apply before May 27 The deadline to apply or nominate for Startup Battlefield 200 is Friday, May 27.",
+        "Just 20 finalists pitch live on the Disrupt Stage."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c22cdd822f846d16.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/11/54889393608_2493644601_o-2.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theverge.com/news/936945/pope-leo-letter-encyclical-ai-anthropic-labor-warfare",
+      "title": "recipe for training Audio LLMAlexWortega\u2022about 5 hours ago\u20228",
+      "description": "recipe for training Audio LLMAlexWortega\u2022about 5 hours ago\u20228 Company : Hugging Face Link : [HIGH] Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI Company : The Verge AI Summary : Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership Company : OpenAI Blog Summary : OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency. Link : [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical...",
+      "excerpt": "recipe for training Audio LLMAlexWortega\u2022about 5 hours ago\u20228 Company : Hugging Face Link : [HIGH] Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI Company : The Verge AI Summary : Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership Company : OpenAI Blog Summary : OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with...",
+      "summary": "recipe for training Audio LLMAlexWortega\u2022about 5 hours ago\u20228 Company : Hugging Face Link : [HIGH] Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI Company : The Verge AI Summary : Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday. The practical impact: Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership Company : OpenAI Blog Summary : OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency. Watch next: Link : [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical...",
+      "what_happened": "recipe for training Audio LLMAlexWortega\u2022about 5 hours ago\u20228 Company : Hugging Face Link : [HIGH] Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI Company : The Verge AI Summary : Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday.",
+      "why_matters": "The practical impact: Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership Company : OpenAI Blog Summary : OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency.",
+      "what_to_watch": "Watch next: Link : [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical...",
+      "key_points": [
+        "recipe for training Audio LLMAlexWortega\u2022about 5 hours ago\u20228 Company : Hugging Face Link : [HIGH] Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI Company : The Verge AI Summary : Pope Leo XIV warned of...",
+        "Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership Company : OpenAI Blog Summary : OpenAI partners with Grupo...",
+        "Link : [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical..."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://openai.com/index/grupo-folha-grupo-uol-partnership",
+      "title": "nday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma",
+      "description": "nday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership Company : OpenAI Blog Summary : OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency. Link : [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" Company : Anthropic Link : [HIGH] A large-scale unified deep learning model for peptide mass spectrum interpretation trained on multimodal data Company : Nature AI Summary : pUniFind is a large-scale deep learning model for proteomics that unifies...",
+      "excerpt": "nday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership Company : OpenAI Blog Summary : OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency. Link : [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" Company : Anthropic Link : [HIGH] A large-scale unified...",
+      "summary": "Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership Company : OpenAI Blog Summary : OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency. Link : [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" Company : Anthropic Link : [HIGH] A...",
+      "what_happened": "Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership Company : OpenAI Blog Summary : OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency. Link : [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" Company : Anthropic Link : [HIGH] A...",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Link : [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" Company : Anthropic Link : [HIGH] A large-scale unified deep learning model for...",
+        "Magnifica Humanitas is the pope's manifesto on \"safeguarding the huma Link : [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership Company : OpenAI Blog Summary : OpenAI partners with Grupo..."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 1,
+  "carousel_total_parts": 2,
+  "slides": [
+    "Borealis \u2014 open data, code, weights recipe for training Audio LLM",
+    "Borealis \u2014 open data, code, weights recipe for training Audio LLM",
+    "OpenAI, Grupo Folha, and Grupo UOL announce strategic content partnership",
+    "OpenAI, Grupo Folha, and Grupo UOL announce strategic content partnership",
+    "Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica",
+    "Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica",
+    "Client Challenge",
+    "What ClickUp's mass layoff tells us about the future of work",
+    "What ClickUp's mass layoff tells us about the future of work",
+    "Follow for the next AI briefing"
+  ]
+}
