@@ -22,11 +22,27 @@ from email_summary_agent.article_enricher import ArticleData
 
 class DigestPipelineTests(unittest.TestCase):
     def setUp(self) -> None:
-        self._reference_patch = patch("email_summary_agent.instagram._find_reference_image_for_article_unique", return_value=None)
+        self._reference_patch = patch(
+            "email_summary_agent.instagram._find_reference_image_for_article_unique",
+            return_value=None,
+        )
         self._reference_patch.start()
+        # Suppress live network calls so the test suite runs offline and fast.
+        self._og_patch = patch(
+            "email_summary_agent.instagram._fetch_og_image_from_url",
+            return_value=None,
+        )
+        self._og_patch.start()
+        self._scrape_patch = patch(
+            "email_summary_agent.instagram._scrape_article_text",
+            return_value=None,
+        )
+        self._scrape_patch.start()
 
     def tearDown(self) -> None:
         self._reference_patch.stop()
+        self._og_patch.stop()
+        self._scrape_patch.stop()
 
     def test_single_short_news_email_creates_slide_plan(self) -> None:
         summary = _summary_with_articles(1)
@@ -35,10 +51,11 @@ class DigestPipelineTests(unittest.TestCase):
         slides = _build_slide_specs(parts[0], datetime(2026, 5, 21, 9, 0))
 
         self.assertEqual(len(parts), 1)
-        self.assertEqual(slides[0]["kind"], "title")
-        self.assertGreater(len(slides), 3)
+        # Unified layout: every article slide is kind="digest", no "title"/"list" slides
+        self.assertEqual(slides[0]["kind"], "digest")
+        self.assertGreaterEqual(len(slides), 2)   # at least 1 digest + 1 CTA
         self.assertEqual(slides[-1]["kind"], "cta")
-        self.assertTrue(all(s["kind"] in ("title", "list", "cta") for s in slides))
+        self.assertTrue(all(s["kind"] in ("digest", "cta") for s in slides))
 
     def test_single_long_news_email_creates_more_keypoints(self) -> None:
         summary = _summary_with_articles(1, long=True)
@@ -57,12 +74,15 @@ class DigestPipelineTests(unittest.TestCase):
         slides = _build_slide_specs(parts[0], datetime(2026, 5, 21, 9, 0))
 
         self.assertEqual(len(parts), 1)
-        self.assertGreater(len(slides), 4)
-        self.assertEqual(slides[0]["kind"], "title")
+        # 2 articles × 1 digest slide each + 1 CTA = at least 3 slides
+        # (overflow slides may push higher if an article generates 5 key points)
+        self.assertGreaterEqual(len(slides), 3)
+        self.assertEqual(slides[0]["kind"], "digest")
         self.assertEqual(slides[-1]["kind"], "cta")
         kinds = [s["kind"] for s in slides]
-        self.assertIn("list", kinds)
-        self.assertEqual(kinds.count("title"), 2)
+        # Unified layout: only "digest" and "cta" kinds — no "title" or "list"
+        self.assertTrue(all(k in ("digest", "cta") for k in kinds))
+        self.assertEqual(kinds.count("digest"), len(slides) - 1)  # all but the last
 
     def test_four_news_stories_split_into_multiple_carousel_parts(self) -> None:
         summary = _summary_with_articles(4)
@@ -70,11 +90,11 @@ class DigestPipelineTests(unittest.TestCase):
         parts = _split_summary_for_carousels(summary)
         slide_counts = [len(_build_slide_specs(part, datetime(2026, 5, 21, 9, 0))) for part in parts]
 
-        self.assertEqual(len(parts), 2)
-        self.assertGreater(slide_counts[0], 4)
-        self.assertGreater(slide_counts[1], 4)
+        # NORMAL_NEWS_PER_POST = 8: 4 articles all fit in a single carousel post
+        self.assertEqual(len(parts), 1)
+        # 4 digest slides + 1 CTA = at least 5 slides
+        self.assertGreaterEqual(slide_counts[0], 5)
         self.assertEqual(parts[0].headline, "AI News Update")
-        self.assertEqual(parts[1].headline, "AI News Update")
 
     def test_digest_parser_extracts_one_story_per_url(self) -> None:
         email = EmailItem(
@@ -119,7 +139,8 @@ class DigestPipelineTests(unittest.TestCase):
         with patch("email_summary_agent.instagram._find_reference_image_for_article_unique", return_value=None):
             slides = _build_slide_specs(summary, datetime(2026, 5, 21, 9, 0))
 
-        self.assertEqual(slides[0]["kind"], "title")
+        # Unified layout: first slide is always kind="digest"
+        self.assertEqual(slides[0]["kind"], "digest")
         self.assertEqual(slides[0]["image_path"], "")
 
     def test_missing_article_image_can_use_reference_search_result(self) -> None:
