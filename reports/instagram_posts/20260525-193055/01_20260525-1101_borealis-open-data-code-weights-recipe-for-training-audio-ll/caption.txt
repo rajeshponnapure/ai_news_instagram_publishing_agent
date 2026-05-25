@@ -1,0 +1,29 @@
+Borealis - open data, code, weights recipe for training Audio LLM — Part 1 of 2.
+
+👉 Swipe to see the full breakdown →
+
+The mix is what the model sees at training time with noise augmentation enabled. vLLM ships a closed set of multimodal architectures out of the box ( Qwen2-Audio , LLaVA , Phi-4-MM , a couple more).
+
+🔹 Don't dilute target-language data "for diversity." 02 Adding plain-text instructions At 25%, the model starts forgetting the audio task .
+⚡ Where the 2.1× comes from.
+🧠 Under the hood - serving and integrating with transformers Serving multimodal models isn't a new topic.
+📊 When the user writes a prompt with one <|AUDIO <|start_of_audio <|AUDIO <|start_of_audio as "embedding will be supplied.
+🔬 The plugin ( vllm_borealis ) sits next to the weights in the HF model repo.
+
+What's the one thing about this that surprised you most?
+
+💾 Save this post — you'll want to come back to this one.
+
+📰 Read the full stories:
+🔗 https://huggingface.co/blog/AlexWortega/borealis
+🔗 https://www.nature.com/articles/s42256-026-01234-8
+🔗 https://www.marktechpost.com/2026/05/24/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension/
+🔗 https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/
+🔗 https://www.marktechpost.com/2026/05/25/workos-releases-auth-md-an-open-agent-registration-protocol-built-on-oauth-standards/
+
+#LargeLanguageModels #LLMNews #LanguageModels #AIRegulation #TechLaw #AITools #ProductivityAI #AIProductivity #OpenAI #ChatGPT #GPT4 #GPT5 #GoogleAI #Gemini #TechNews #AIUpdates #ArtificialIntelligence #FutureOfAI #Tech #AI
+
+─
+⚠️ This is not legal advice. Consult a qualified professional for guidance.
+ℹ️ Content curated & summarised by Graitech from the sources listed above. All rights remain with the original publishers.
+─
