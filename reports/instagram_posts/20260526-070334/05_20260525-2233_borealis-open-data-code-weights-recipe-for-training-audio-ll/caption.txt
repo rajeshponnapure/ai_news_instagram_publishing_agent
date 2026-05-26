@@ -1,0 +1,27 @@
+Borealis - open data, code, weights recipe for training Audio LLM — Part 2 of 2.
+
+👉 Swipe to see the full breakdown →
+
+The mix is what the model sees at training time with noise augmentation enabled. vLLM ships a closed set of multimodal architectures out of the box ( Qwen2-Audio , LLaVA , Phi-4-MM , a couple more). The practical impact: When the user writes a prompt with one <|AUDIO|> , the processor expands it into <|start_of_audio|> + 375× <|AUDIO|> + <|start_of_audio|> , and marks each of those 375 tokens as "embedding will be.
+
+🔹 nk : The AI Era Is Creating a Bug Hunting Arms Race.
+⚡ Don't dilute target-language data "for diversity." 02 Adding plain-text instructions At 25%, the model starts forgetting the audio task .
+🧠 Where the 2.1× comes from.
+📊 Under the hood - serving and integrating with transformers Serving multimodal models isn't a new topic.
+🔬 When the user writes a prompt with one <|AUDIO <|start_of_audio <|AUDIO <|start_of_audio as "embedding will be supplied.
+
+Is Google moving too fast, or not fast enough? Let's hear it.
+
+💾 Save this post — you'll want to come back to this one.
+
+📰 Read the full stories:
+🔗 https://techcrunch.com/events/techcrunch-disrupt/
+🔗 https://techcrunch.com/2026/05/25/startup-battlefield-200-applications-close-in-days-apply-before-may-27/
+🔗 https://www.producthunt.com/products/mashupack
+
+#LargeLanguageModels #LLMNews #LanguageModels #AIInfrastructure #AIChips #GoogleAI #Gemini #Claude #Anthropic #AIUpdates #ArtificialIntelligence #FutureOfAI #TechTrends #AI #MachineLearning #DataScience #AICarousel #DeepLearning #NeuralNetworks #ComputerVision
+
+─
+⚠️ Pricing information is subject to change — verify directly with the provider.
+ℹ️ Content curated & summarised by Graitech from the sources listed above. All rights remain with the original publishers.
+─

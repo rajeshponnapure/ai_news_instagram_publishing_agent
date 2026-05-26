@@ -1,0 +1,29 @@
+Borealis - open data, code, weights recipe for training Audio LLM — Part 3 of 3.
+
+👉 Swipe to see the full breakdown →
+
+arXiv is committed to these values and only works with partners that adhere to them. Computer Science > Cryptography and Security Title: Detecting Concept Drift in Evolving Malware Families Using Rule-Based Classifier Representations Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools.
+
+🔹 Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and.
+⚡ Computer Science > Cryptography and Security Title: Detecting Concept Drift in Evolving Malware Families Using Rule-Based Classifier.
+🧠 The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and.
+📊 These metrics are correlated with both accuracy degradation and data distribution shift as complementary drift indicators.
+🔬 Classifiers are trained across temporal windows on the EMBER2024 dataset, and drift is quantified by comparing extracted rule.
+
+Which industry do you think will feel the impact of this first?
+
+💾 Save this post — you'll want to come back to this one.
+
+📰 Read the full stories:
+🔗 https://arxiv.org/abs/2604.22629
+🔗 https://english.khabarhub.com/2026/25/545711/
+🔗 https://thenextweb.com/news/meta-microsoft-layoffs-23000-ai-spending
+🔗 https://openai.com/index/grupo-folha-grupo-uol-partnership
+🔗 https://www.thehindubusinessline.com/info-tech/meta-microsoft-have-joined-tech-layoff-tsunami-but-is-ai-really-to-blame/article70907843.ece
+
+#LargeLanguageModels #LLMNews #LanguageModels #AIRegulation #TechLaw #AITools #ProductivityAI #AIProductivity #OpenAI #ChatGPT #GPT4 #GPT5 #GoogleAI #Gemini #FutureOfAI #TechTrends #Innovation #EmergingTech #Technology #Tech
+
+─
+⚠️ Benchmarks reflect results at publication time and may change as models are updated.
+ℹ️ Content curated & summarised by Graitech from the sources listed above. All rights remain with the original publishers.
+─
