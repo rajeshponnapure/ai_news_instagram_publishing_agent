@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import base64
 import html as _html
+import re
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -63,11 +64,8 @@ def _wrap_in_shell(body, slide_number, total_slides, slide_kind=""):
     logo = _data_uri(_IMG / "graitech-logo.png", "image/png")
     # For digest slides the article image occupies y 0–510px.  Placing the logo
     # at top:56px (the default) puts it right on top of that image.  Move it to
-    # just below the image zone so it never obscures editorial photography.
-    if slide_kind == "digest":
-        logo_style = "top:528px; right:56px;"
-    else:
-        logo_style = "top:56px; right:56px;"
+    # Logo always anchored to top-right corner on every slide kind.
+    logo_style = "top:56px; right:56px;"
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <style>{css}</style></head><body>
@@ -155,7 +153,7 @@ def _digest_body(slide):
         raw = [ln.lstrip("•–—- ").strip() for ln in str(body).splitlines() if ln.strip()]
     pts_html = "".join(
         f'<div class="kp-row"><span class="kp-num">{i:02d}</span>'
-        f'<span class="kp-text">{_e(str(pt))}</span></div>\n'
+        f'<span class="kp-text">{_highlight_keywords_html(str(pt))}</span></div>\n'
         for i, pt in enumerate(raw[:5], 1)
     )
     img_val = _image_css(slide.get("image_path") or "")
@@ -262,7 +260,8 @@ html,body{{margin:0;padding:0;background:#000;}}
 .kp-list{{display:flex;flex-direction:column;gap:10px;flex:1;overflow:hidden;}}
 .kp-row{{display:flex;gap:12px;align-items:flex-start;}}
 .kp-num{{font-family:var(--gt-font-display);font-size:32px;line-height:1;color:var(--gt-neon);text-shadow:0 0 14px rgba(57,255,20,0.40);min-width:42px;flex-shrink:0;}}
-.kp-text{{font-family:var(--gt-font-mono);font-size:21px;line-height:1.4;color:var(--gt-chalk);flex:1;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;}}
+.kp-text{{font-family:var(--gt-font-mono);font-size:24px;line-height:1.45;color:var(--gt-chalk);flex:1;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}}
+.kp-text strong{{color:var(--gt-neon);font-weight:700;}}
 .title-image{{position:absolute;bottom:140px;left:0;right:0;height:380px;z-index:2;background-size:cover;background-position:center top;}}
 .title-image::before{{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.55) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 60%,rgba(0,0,0,0.85) 100%);z-index:1;}}
 """
@@ -274,6 +273,38 @@ html,body{{margin:0;padding:0;background:#000;}}
 
 def _e(text):
     return _html.escape(str(text or "").strip())
+
+
+_CAPS_STOPWORDS = frozenset({
+    "IS", "OF", "TO", "IN", "AT", "BY", "NO", "SO", "AS", "AN", "OR",
+    "BE", "DO", "WE", "IT", "ON", "IF", "UP", "US", "VS", "VIA", "THE",
+    "AND", "BUT", "FOR", "HAS", "HAD", "NOT", "ARE", "WAS", "ITS", "ALL",
+    "NEW", "ITS", "HOW", "CAN", "ONE", "TWO", "NOW", "OUT", "USE", "GET",
+})
+
+
+def _highlight_keywords_html(text: str) -> str:
+    """Return HTML-escaped text with key terms bolded via <strong>.
+
+    Bolds:
+    - Numbers with units (50%, $1.2B, 2x, 3bn, etc.)
+    - ALL-CAPS acronyms 2-6 chars (AI, ML, LLM, API, GPT, etc.) excluding stopwords
+    """
+    escaped = _html.escape(str(text or "").strip())
+    # Bold numbers with optional units/symbols (e.g. 50%, $1.2B, 2x, 100bn)
+    escaped = re.sub(
+        r'(\$?\d[\d,]*(?:\.\d+)?(?:B|M|K|bn|mn|%|x)?)',
+        r'<strong>\1</strong>',
+        escaped,
+        flags=re.IGNORECASE,
+    )
+    # Bold ALL-CAPS acronyms, skipping common English stop-words
+    def _bold_acronym(m: re.Match) -> str:
+        word = m.group(0)
+        return word if word in _CAPS_STOPWORDS else f"<strong>{word}</strong>"
+    escaped = re.sub(r'\b[A-Z]{2,6}\b', _bold_acronym, escaped)
+    return escaped
+
 
 
 def _wrap_headline(text, chars=13):

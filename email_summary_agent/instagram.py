@@ -473,6 +473,26 @@ def _clean_headline(text: str) -> str:
     # Also reject titles that are purely a URL slug pattern (no spaces, mostly hyphens)
     if re.match(r"^[\w][\w-]{10,}$", text) and text.count("-") > text.count(" ") * 2 + 2:
         return ""
+    # Reject all-uppercase hyphenated slugs (e.g. "ERA-IS-CREATING-A-BUG-HUNTING-ARMS-RAC")
+    if re.match(r"^[A-Z][A-Z0-9-]{10,}$", text) and "-" in text:
+        return ""
+
+    # Reject single-character first-word fragments (e.g. "S PRICES - I FOUND...")
+    # These occur when email rendering truncates a word at the boundary.
+    words = text.split()
+    if words and len(words[0]) == 1 and not words[0].isdigit() and words[0] not in ("A", "I"):
+        return ""
+
+    # Reject very short titles that look like section headers / UI labels
+    # (e.g. "Client Challenge", "Hat Templates") rather than real article titles.
+    if len(text) < 10:
+        return ""
+
+    # Strip author-name prefix: "Firstname Lastname: Article Title" or
+    # "Firstname Lastname Article Title" where the first two words look like a name.
+    name_match = re.match(r"^([A-Z][a-z]+ [A-Z][a-z]+)[:\s]\s*(.+)$", text)
+    if name_match and len(name_match.group(2)) > 20:
+        text = name_match.group(2).strip()
 
     # Trim at sentence boundary within limit
     if len(text) <= MAX_TITLE_CHARS:
@@ -2992,46 +3012,62 @@ def _extract_instagram_key_points(
             return False
         return True
 
-    # 1. Pre-structured key_points from article (highest quality)
+    # ---- Phase 1: Collect candidates from THIS article's own fields (no cross-article dedup) ----
+    article_candidates = []
+
+    # 1a. Pre-structured key_points from article (highest quality)
     for p in article.get("key_points", []):
         cleaned = _strip_noise(_clean_public_text(str(p))).strip()
         if _is_valid_bullet(cleaned):
-            raw.append(cleaned)
+            article_candidates.append(cleaned)
 
-    # 2. Summary-level key_points
-    for p in (summary.key_points or []):
-        cleaned = _strip_noise(_clean_public_text(str(p))).strip()
-        if cleaned not in raw and _is_valid_bullet(cleaned):
-            raw.append(cleaned)
+    # 1b. Mine article text fields for sentence-level insights
+    for field in ("what_happened", "why_matters", "what_to_watch", "description", "excerpt", "scraped_content"):
+        text = _strip_noise(_clean_public_text(str(article.get(field) or "")))
+        if not text:
+            continue
+        for sent in re.split(r"(?<=[.!?])\s+", text):
+            sent = sent.strip()
+            if _is_valid_bullet(sent) and len(sent) > 35:
+                article_candidates.append(sent)
+        if len(article_candidates) >= max_points * 3:
+            break
 
-    # 3. Fallback — mine structured fields for insight sentences
-    if len(raw) < max_points:
-        for field in ("what_happened", "why_matters", "what_to_watch", "description", "excerpt", "scraped_content"):
-            text = _strip_noise(_clean_public_text(str(article.get(field) or "")))
-            if not text:
-                continue
-            for sent in re.split(r"(?<=[.!?])\s+", text):
-                sent = sent.strip()
-                if sent not in raw and _is_valid_bullet(sent) and len(sent) > 40:
-                    raw.append(sent)
-                if len(raw) >= max_points * 2:
-                    break
-            if len(raw) >= max_points * 2:
-                break
-
-    # Deduplicate by first-60-chars fingerprint
-    seen: set[str] = set()
-    if used_fingerprints is not None:
-        seen.update(used_fingerprints)
-    deduped: list[str] = []
-    for p in raw:
+    # Deduplicate article_candidates among themselves only
+    seen_local = set()
+    deduped_local = []
+    for p in article_candidates:
         key = re.sub(r"\s+", " ", p).lower()[:60]
-        if key not in seen:
-            seen.add(key)
-            deduped.append(p)
+        if key not in seen_local:
+            seen_local.add(key)
+            deduped_local.append(p)
 
-    # Score: prefer stats, power verbs, short
-    def _point_score(pt: str) -> float:
+    # ---- Phase 2: Apply cross-article dedup to find novel points ----
+    novel = []
+    novel_fingerprints = []
+    for p in deduped_local:
+        key = re.sub(r"\s+", " ", p).lower()[:60]
+        if used_fingerprints is None or key not in used_fingerprints:
+            novel.append(p)
+            novel_fingerprints.append(key)
+
+    # ---- Phase 3: Relax dedup when too aggressive (fewer than 3 novel points) ----
+    # Rather than showing a near-empty slide, allow some content repetition.
+    if len(novel) < 3:
+        for p in deduped_local:
+            if p not in novel:
+                novel.append(p)
+                novel_fingerprints.append(re.sub(r"\s+", " ", p).lower()[:60])
+        # Still short? Pull from shared summary key_points as last resort.
+        if len(novel) < 3:
+            for p in (summary.key_points or []):
+                cleaned = _strip_noise(_clean_public_text(str(p))).strip()
+                if cleaned and _is_valid_bullet(cleaned) and cleaned not in novel:
+                    novel.append(cleaned)
+                    novel_fingerprints.append(re.sub(r"\s+", " ", cleaned).lower()[:60])
+
+    # ---- Phase 4: Score and sort ----
+    def _point_score(pt):
         score = 0.0
         pt_l = pt.lower()
         if any(pt_l.startswith(v) for v in POWER_VERBS):
@@ -3042,26 +3078,47 @@ def _extract_instagram_key_points(
             score += 0.25
         return score
 
-    deduped.sort(key=_point_score, reverse=True)
+    novel.sort(key=_point_score, reverse=True)
 
-    # Trim each point so it fits on the slide but keeps meaning intact.
-    trimmed = [_trim_no_dots(pt, 140) for pt in deduped[:max_points]]
+    # ---- Phase 5: Guarantee minimum 4 points by synthesising from article title/desc ----
+    if len(novel) < 4:
+        title_str = _clean_public_text(str(article.get("title") or summary.headline or summary.subject or ""))
+        desc_str = _clean_public_text(str(article.get("description") or article.get("excerpt") or ""))
+        # Use article title if not already represented
+        if title_str and len(title_str) > 15 and not any(title_str[:40].lower() in p.lower() for p in novel):
+            novel.append(title_str)
+        # Split description on natural boundaries for extra points
+        if desc_str and len(novel) < 4:
+            for chunk in re.split(r"[;,]\s+|(?<=[.!?])\s+", desc_str):
+                chunk = chunk.strip()
+                if len(chunk) > 35 and _is_valid_bullet(chunk) and chunk not in novel:
+                    novel.append(chunk)
+                if len(novel) >= 4:
+                    break
+
+    # Format and trim
+    trimmed = [_trim_no_dots(pt, 140) for pt in novel[:max_points]]
     final = [f"{BULLET}  {pt}" for pt in trimmed if pt and len(pt) > 10]
+
     if not final:
-        return [f"{BULLET}  {_trim_no_dots(summary.headline or summary.subject or 'AI update', 95)}"]
-    # Never emit a single-bullet slide — always return at least 2 bullets so
-    # the rendered slide doesn't look embarrassingly sparse.  If only one point
-    # survived deduplication, pad with the article title as a secondary bullet.
+        # Absolute last resort: use THIS article's title, not the shared summary
+        # headline (which would create identical fallback text on every slide).
+        title_fb = _trim_no_dots(
+            _clean_public_text(str(article.get("title") or article.get("url") or summary.subject or "AI update")), 95
+        )
+        return [f"{BULLET}  {title_fb}"]
+
+    # Pad to at least 2 bullets if only 1 survived
     if len(final) == 1:
         title_pt = _trim_no_dots(
             _clean_public_text(str(article.get("title") or summary.headline or summary.subject or "")), 120
         )
         if title_pt and title_pt not in final[0]:
             final.append(f"{BULLET}  {title_pt}")
-    # Record fingerprints of selected points back into caller's set.
+
+    # ---- Phase 6: Register selected fingerprints for cross-article dedup ----
     if used_fingerprints is not None:
-        for pt in deduped[:max_points]:
-            fp = re.sub(r"\s+", " ", pt).lower()[:60]
+        for fp in novel_fingerprints[:max_points]:
             used_fingerprints.add(fp)
     return final
 
