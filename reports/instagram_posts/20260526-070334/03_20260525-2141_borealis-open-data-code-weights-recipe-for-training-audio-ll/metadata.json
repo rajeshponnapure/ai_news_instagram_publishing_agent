@@ -1,0 +1,256 @@
+{
+  "email_received_at": "2026-05-25T21:41-07:00",
+  "recommended_post_time": "18:00",
+  "headline": "Borealis - open data, code, weights recipe for training Audio LLM \u2014 Part 3 of 3",
+  "subject": "\ud83d\ude80 AI Digest \u2014 26 May 2026 | 50 updates \u00b7 50 launches",
+  "source_date": "Mon, 25 May 2026 21:41:05 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "NVIDIA",
+    "Perplexity"
+  ],
+  "models": [
+    "GPT-5",
+    "GPT-4o-mini",
+    "Claude",
+    "Gemini 2.5",
+    "Llama"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://arxiv.org/abs/2604.22629",
+  "article_title": "Detecting Concept Drift in Evolving Malware Families Using Rule-Based Classifier Representations",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://arxiv.org/abs/2604.22629",
+      "title": "Detecting Concept Drift in Evolving Malware Families Using Rule-Based Classifier Representations",
+      "description": "This work proposes a structural approach to concept drift detection in malware classification using decision tree rulesets. Classifiers are trained across temporal windows on the EMBER2024 dataset, and drift is quantified by comparing extracted rule representations using feature importance, prediction agreement, activation stability, and coverage metrics. These metrics are correlated with both accuracy degradation and data distribution shift as complementary drift indicators. The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines. Results show that fixed two-month windowing with feature-level Pearson correlation is the most reliable configuration, being the only one where all family pairs produce positive drift-accuracy correlations. The methods are complementary - no single approach dominates across all pairs.",
+      "excerpt": "This work proposes a structural approach to concept drift detection in malware classification using decision tree rulesets. Classifiers are trained across temporal windows on the EMBER2024 dataset, and drift is quantified by comparing extracted rule representations using feature importance, prediction agreement, activation stability, and coverage metrics. These metrics are correlated with both accuracy degradation and data distribution shift as complementary drift indicators. The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines...",
+      "summary": "arXiv is committed to these values and only works with partners that adhere to them. Computer Science > Cryptography and Security Title: Detecting Concept Drift in Evolving Malware Families Using Rule-Based Classifier Representations Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that... The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines. Watch next: The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines.",
+      "what_happened": "arXiv is committed to these values and only works with partners that adhere to them. Computer Science > Cryptography and Security Title: Detecting Concept Drift in Evolving Malware Families Using Rule-Based Classifier Representations Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that...",
+      "why_matters": "The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines.",
+      "what_to_watch": "Watch next: The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines.",
+      "key_points": [
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "Computer Science > Cryptography and Security Title: Detecting Concept Drift in Evolving Malware Families Using Rule-Based Classifier Representations Current browse context: References & Citations BibTeX formatted...",
+        "The approach is evaluated across six malware families using fixed-interval and clustering-based windowing in family-vs-benign and family-vs-family settings, and compared against RIPPER and Transcendent baselines.",
+        "These metrics are correlated with both accuracy degradation and data distribution shift as complementary drift indicators.",
+        "Classifiers are trained across temporal windows on the EMBER2024 dataset, and drift is quantified by comparing extracted rule representations using feature importance, prediction agreement, activation stability, and...",
+        "The methods are complementary - no single approach dominates across all pairs.",
+        "This work proposes a structural approach to concept drift detection in malware classification using decision tree rulesets.",
+        "Results show that fixed two-month windowing with feature-level Pearson correlation is the most reliable configuration, being the only one where all family pairs produce positive drift-accuracy correlations."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://english.khabarhub.com/2026/25/545711/",
+      "title": "Meta and Microsoft have joined the tech layoff tsunami \u2013 but is AI really to blame?",
+      "description": "Meta and Microsoft are the latest software companies to announce big cuts to their global workforce. Both companies are also making big investments in artificial intelligence (AI). The link seems obvious. Meta\u2019s chief people officer, Janelle Gale, said the job cuts \u2013 about 10% of staff or almost 8,000 workers \u2013 serve to \u201coffset the",
+      "excerpt": "Meta and Microsoft are the latest software companies to announce big cuts to their global workforce. Both companies are also making big investments in artificial intelligence (AI). The link seems obvious. Meta\u2019s chief people officer, Janelle Gale, said the job cuts \u2013 about 10% of staff or almost 8,000 workers \u2013 serve to \u201coffset the",
+      "summary": "Meta\u2019s chief people officer, Janelle Gale, said the job cuts \u2013 about 10% of staff or almost 8,000 workers \u2013 serve to \u201coffset the Both companies are also making big investments in artificial intelligence (AI). The practical impact: Both companies are also making big investments in artificial intelligence (AI). Meta and Microsoft are the latest software companies to announce big cuts to their global workforce. Watch next: Both companies are also making big investments in artificial intelligence (AI).",
+      "what_happened": "Meta\u2019s chief people officer, Janelle Gale, said the job cuts \u2013 about 10% of staff or almost 8,000 workers \u2013 serve to \u201coffset the Both companies are also making big investments in artificial intelligence (AI).",
+      "why_matters": "The practical impact: Both companies are also making big investments in artificial intelligence (AI). Meta and Microsoft are the latest software companies to announce big cuts to their global workforce.",
+      "what_to_watch": "Watch next: Both companies are also making big investments in artificial intelligence (AI).",
+      "key_points": [
+        "Both companies are also making big investments in artificial intelligence (AI).",
+        "Meta\u2019s chief people officer, Janelle Gale, said the job cuts \u2013 about 10% of staff or almost 8,000 workers \u2013 serve to \u201coffset the",
+        "Meta and Microsoft are the latest software companies to announce big cuts to their global workforce."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/85afb65ad0b7afbf.jpg",
+      "image_url": "https://english.khabarhub.com/wp-content/uploads/2026/04/IT-Computer--scaled.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://thenextweb.com/news/meta-microsoft-layoffs-23000-ai-spending",
+      "title": "Meta cuts 8,000 jobs and Microsoft offers first-ever buyouts as Big Tech converts payroll into AI capital expenditure",
+      "description": "Meta and Microsoft eliminated up to 23,000 positions on the same day. Both reported record revenues. Both are redirecting the savings into AI infrastructure worth hundreds of billions.",
+      "excerpt": "Meta and Microsoft eliminated up to 23,000 positions on the same day. Both reported record revenues. Both are redirecting the savings into AI infrastructure worth hundreds of billions.",
+      "summary": "Meta and Microsoft announced workforce reductions on the same day, April 23, for what appears to be the same reason. Summary: Meta and Microsoft announced workforce reductions on the same day, April 23, affecting up to 23,000 positions combined. The practical impact: Meta\u2019s chief people officer, Janelle Gale, wrote in an internal memo leaked before the company intended to release it that the layoffs were \u201cpart of our continued effort to run the company more efficiently and to allow us to offset the other investments we\u2019re making.\u201d The investments she was referring to are considerable. They are in the wrong part of the company. Watch next: Economists quoted by CNBC described the situation as an AI-driven labour crisis that \u201cis here, not coming in the future.\u201d A poll found that 57% of Americans think AI is advancing too fast, and 79% are concerned the government has no plan to protect workers from AI job losses. They are the ones making...",
+      "what_happened": "Meta and Microsoft announced workforce reductions on the same day, April 23, for what appears to be the same reason. Summary: Meta and Microsoft announced workforce reductions on the same day, April 23, affecting up to 23,000 positions combined.",
+      "why_matters": "The practical impact: Meta\u2019s chief people officer, Janelle Gale, wrote in an internal memo leaked before the company intended to release it that the layoffs were \u201cpart of our continued effort to run the company more efficiently and to allow us to offset the other investments we\u2019re making.\u201d The investments she was referring to are considerable. They are in the wrong part of the company.",
+      "what_to_watch": "Watch next: Economists quoted by CNBC described the situation as an AI-driven labour crisis that \u201cis here, not coming in the future.\u201d A poll found that 57% of Americans think AI is advancing too fast, and 79% are concerned the government has no plan to protect workers from AI job losses. They are the ones making...",
+      "key_points": [
+        "Meta and Microsoft announced workforce reductions on the same day, April 23, for what appears to be the same reason.",
+        "They are the ones making the most.",
+        "Meta has guided capital expenditure of $115 billion to $135 billion for 2026, nearly double the $72 billion it spent in 2025, directed almost entirely at data centres, Nvidia GPUs, custom silicon, and the...",
+        "Summary: Meta and Microsoft announced workforce reductions on the same day, April 23, affecting up to 23,000 positions combined.",
+        "The buyout is the softer instrument.",
+        "The language shifted from the January 2025 round, when Zuckerberg framed the cuts as removing \u201clow performers,\u201d to April 2026, when the framing became \u201ccontribution\u201d and \u201cefficiency,\u201d an acknowledgment that the...",
+        "The first wave, in 2022 and 2023, was attributed to the unwinding of pandemic-era hiring.",
+        "Meta\u2019s chief people officer, Janelle Gale, wrote in an internal memo leaked before the company intended to release it that the layoffs were \u201cpart of our continued effort to run the company more efficiently and to...",
+        "They are in the wrong part of the company.",
+        "The term \u201cAI-washing\u201d has emerged to describe this pattern: a company announces layoffs, cites its AI strategy in the same breath, and lets investors draw the inference that machines are replacing humans even when...",
+        "Meta\u2019s stock fell 2.3% on the layoff news.",
+        "Meta and Microsoft eliminated up to 23,000 positions on the same day."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a60fe3c1dfac6559.img",
+      "image_url": "https://media.thenextweb.com/2026/05/Meta-Incognito-Chat-on-WhatsApp.avif",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://openai.com/index/grupo-folha-grupo-uol-partnership",
+      "title": "AI Update Digest \u2014 26 May 2026",
+      "description": "AI Update Digest - 26 May 2026 Total: 50 updates ================================================== AI LAUNCHES & RELEASES ---------------------------------------- [HIGH] Borealis - open data, code, weights recipe for training Audio LLMAlexWortega\u2022about 11 hours ago\u20228 Hugging Face | [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership OpenAI Blog | [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" Anthropic | [HIGH] Run Highly Efficient Multimodal Agentic AI with NVIDIA Nemotron 3 Nano Omni Using vLLMApr 28, 2026 7min readWe are excited to support the newly released NVIDIA Nemotron 3 Nano Omni model on vLLM. vLLM | [LOW] When...",
+      "excerpt": "AI Update Digest - 26 May 2026 Total: 50 updates ================================================== AI LAUNCHES & RELEASES ---------------------------------------- [HIGH] Borealis - open data, code, weights recipe for training Audio LLMAlexWortega\u2022about 11 hours ago\u20228 Hugging Face | [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership OpenAI Blog | [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" Anthropic | [HIGH] Run Highly Efficient Multimodal Agentic AI with NVIDIA...",
+      "summary": "AI Update Digest - 26 May 2026 Total: 50 updates ================================================== AI LAUNCHES & RELEASES ---------------------------------------- [HIGH] Borealis - open data, code, weights recipe for training Audio LLMAlexWortega\u2022about 11 hours ago\u20228 Hugging Face | [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership OpenAI Blog | [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" Anthropic |...",
+      "what_happened": "AI Update Digest - 26 May 2026 Total: 50 updates ================================================== AI LAUNCHES & RELEASES ---------------------------------------- [HIGH] Borealis - open data, code, weights recipe for training Audio LLMAlexWortega\u2022about 11 hours ago\u20228 Hugging Face | [HIGH] OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership OpenAI Blog | [HIGH] May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" Anthropic |...",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "AI Update Digest - 26 May 2026 Total: 50 updates ================================================== AI LAUNCHES & RELEASES ---------------------------------------- [HIGH] Borealis - open data, code, weights recipe..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.thehindubusinessline.com/info-tech/meta-microsoft-have-joined-tech-layoff-tsunami-but-is-ai-really-to-blame/article70907843.ece",
+      "title": "y via Distillation",
+      "description": "y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters arXiv ML | [HIGH] Meta, Microsoft have joined tech layoff tsunami \u2013 but is AI really to blame? BusinessLine | [HIGH] Meta and Microsoft have joined the tech layoff tsunami \u2013 but is AI really to blame? Khabarhub.com | [HIGH] Meta is firing 8,000 people. Microsoft is paying 8,750 to leave. Both are spending the savings on AI. The Next Web | [HIGH] Apr 24, 2026AnnouncementsAnthropic and NEC collaborate to build Japan\u2019s largest AI...",
+      "excerpt": "y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters arXiv ML | [HIGH] Meta, Microsoft have joined tech layoff tsunami \u2013 but is AI really to blame? BusinessLine | [HIGH] Meta and Microsoft have joined the tech layoff tsunami \u2013 but is AI really to blame? Khabarhub.com | [HIGH] Meta is firing 8,000 people. Microsoft is paying 8,750 to leave. Both are spending the...",
+      "summary": "Khabarhub.com | [HIGH] Meta is firing 8,000 people. y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters arXiv ML | [HIGH] Meta, Microsoft have joined tech layoff tsunami \u2013 but is AI really to blame? The practical impact: y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters arXiv ML | [HIGH] Meta, Microsoft have joined tech layoff tsunami \u2013 but is AI really to blame? Watch next: The Next Web | [HIGH] Apr 24, 2026AnnouncementsAnthropic and NEC collaborate to build Japan\u2019s largest AI... y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting...",
+      "what_happened": "Khabarhub.com | [HIGH] Meta is firing 8,000 people. y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters arXiv ML | [HIGH] Meta, Microsoft have joined tech layoff tsunami \u2013 but is AI really to blame?",
+      "why_matters": "The practical impact: y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters arXiv ML | [HIGH] Meta, Microsoft have joined tech layoff tsunami \u2013 but is AI really to blame?",
+      "what_to_watch": "Watch next: The Next Web | [HIGH] Apr 24, 2026AnnouncementsAnthropic and NEC collaborate to build Japan\u2019s largest AI... y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting...",
+      "key_points": [
+        "y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through...",
+        "Khabarhub.com | [HIGH] Meta is firing 8,000 people.",
+        "BusinessLine | [HIGH] Meta and Microsoft have joined the tech layoff tsunami \u2013 but is AI really to blame?",
+        "Microsoft is paying 8,750 to leave.",
+        "The Next Web | [HIGH] Apr 24, 2026AnnouncementsAnthropic and NEC collaborate to build Japan\u2019s largest AI...",
+        "Both are spending the savings on AI."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://thenextweb.com/news/meta-microsoft-layoffs-23000-ai-spending/",
+      "title": "really to blame?",
+      "description": "really to blame? BusinessLine | [HIGH] Meta and Microsoft have joined the tech layoff tsunami \u2013 but is AI really to blame? Khabarhub.com | [HIGH] Meta is firing 8,000 people. Microsoft is paying 8,750 to leave. Both are spending the savings on AI. The Next Web | [HIGH] Apr 24, 2026AnnouncementsAnthropic and NEC collaborate to build Japan\u2019s largest AI engineering workforce Anthropic | [HIGH] LLMs+ MIT Tech Review AI | [HIGH] Supercharged scams MIT Tech Review AI | [HIGH] From...",
+      "excerpt": "really to blame? BusinessLine | [HIGH] Meta and Microsoft have joined the tech layoff tsunami \u2013 but is AI really to blame? Khabarhub.com | [HIGH] Meta is firing 8,000 people. Microsoft is paying 8,750 to leave. Both are spending the savings on AI. The Next Web | [HIGH] Apr 24, 2026AnnouncementsAnthropic and NEC collaborate to build Japan\u2019s largest AI engineering workforce Anthropic | [HIGH] LLMs+ MIT Tech Review AI |...",
+      "summary": "The Next Web | [HIGH] Apr 24, 2026AnnouncementsAnthropic and NEC collaborate to build Japan\u2019s largest AI engineering workforce Anthropic | [HIGH] LLMs+ MIT Tech Review AI | [HIGH] Supercharged scams MIT Tech Review AI | [HIGH] From... The practical impact: Khabarhub.com | [HIGH] Meta is firing 8,000 people. Watch next: Khabarhub.com | [HIGH] Meta is firing 8,000 people.",
+      "what_happened": "The Next Web | [HIGH] Apr 24, 2026AnnouncementsAnthropic and NEC collaborate to build Japan\u2019s largest AI engineering workforce Anthropic | [HIGH] LLMs+ MIT Tech Review AI | [HIGH] Supercharged scams MIT Tech Review AI | [HIGH] From...",
+      "why_matters": "The practical impact: Khabarhub.com | [HIGH] Meta is firing 8,000 people.",
+      "what_to_watch": "Watch next: Khabarhub.com | [HIGH] Meta is firing 8,000 people.",
+      "key_points": [
+        "The Next Web | [HIGH] Apr 24, 2026AnnouncementsAnthropic and NEC collaborate to build Japan\u2019s largest AI engineering workforce Anthropic | [HIGH] LLMs+ MIT Tech Review AI | [HIGH] Supercharged scams MIT Tech Review...",
+        "Khabarhub.com | [HIGH] Meta is firing 8,000 people.",
+        "Microsoft is paying 8,750 to leave.",
+        "BusinessLine | [HIGH] Meta and Microsoft have joined the tech layoff tsunami \u2013 but is AI really to blame?",
+        "Both are spending the savings on AI."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 3,
+  "carousel_total_parts": 3,
+  "slides": [
+    "Drift in Evolving Malware Families Using Rule-Based Classifier Representations",
+    "Drift in Evolving Malware Families Using Rule-Based Classifier Representations",
+    "Meta and Microsoft have joined the tech layoff tsunami \u2013 but is AI really to blame?",
+    "Meta and Microsoft have joined the tech layoff tsunami \u2013 but is AI really to blame?",
+    "Meta cuts 8,000 jobs and Microsoft offers first-ever buyouts as Big Tech converts payroll",
+    "Meta cuts 8,000 jobs and Microsoft offers first-ever buyouts as Big Tech converts payroll",
+    "AI Update Digest \u2014 26 May 2026",
+    "AI Update Digest \u2014 26 May 2026",
+    "AI Update",
+    "Follow for the next AI briefing"
+  ]
+}

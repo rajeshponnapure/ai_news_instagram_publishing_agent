@@ -1,0 +1,29 @@
+Borealis - open data, code, weights recipe for training Audio LLM — Part 2 of 3.
+
+👉 Swipe to see the full breakdown →
+
+We introduced the concept of ethics testing, discussed the challenges therewithin, and conducted five case studies to show how ethics testing can be performed for generative AI systems. Computer Science > Software Engineering Title: Ethics Testing: Proactive Identification of Generative AI System Harms Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code.
+
+🔹 Generative Artificial Intelligence (GAI) systems that can automatically generate content in the form of source code or other contents.
+⚡ Misuse of the automatically generated content can incur serious consequences due to potential harms in the generated content.
+🧠 Despite the importance of ensuring the quality of automatically generated content, there is little to no approach that can systematically.
+📊 In this article, we introduce the novel concept of ethics testing which aims to systematically generate tests for identifying software harms.
+🔬 Computer Science > Software Engineering Title: Ethics Testing: Proactive Identification of Generative AI System Harms Current browse.
+
+Do you think OpenAI's move here is exciting or a risk? Drop your take below.
+
+💾 Save this post — you'll want to come back to this one.
+
+📰 Read the full stories:
+🔗 https://arxiv.org/abs/2604.22089
+🔗 https://arxiv.org/abs/2604.22227
+🔗 https://arxiv.org/abs/2604.22292
+🔗 https://arxiv.org/abs/2604.22722
+🔗 https://arxiv.org/abs/2508.03963
+
+#LargeLanguageModels #LLMNews #LanguageModels #GenerativeAI #GenAI #AIRegulation #TechLaw #AIEthics #ResponsibleAI #OpenAI #ChatGPT #GPT4 #GPT5 #GoogleAI #Gemini #AINews #TechNews #AIUpdates #ArtificialIntelligence #FutureTech
+
+─
+⚠️ This is not legal advice. Consult a qualified professional for guidance.
+ℹ️ Content curated & summarised by Graitech from the sources listed above. All rights remain with the original publishers.
+─
