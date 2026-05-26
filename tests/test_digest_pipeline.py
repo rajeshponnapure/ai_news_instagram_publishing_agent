@@ -22,27 +22,46 @@ from email_summary_agent.article_enricher import ArticleData
 
 class DigestPipelineTests(unittest.TestCase):
     def setUp(self) -> None:
+        # _find_reference_image_for_article_unique lives in ig_image and is
+        # called internally by _select_unique_article_image there.
         self._reference_patch = patch(
-            "email_summary_agent.instagram._find_reference_image_for_article_unique",
+            "email_summary_agent.ig_image._find_reference_image_for_article_unique",
             return_value=None,
         )
         self._reference_patch.start()
         # Suppress live network calls so the test suite runs offline and fast.
+        # _fetch_og_image_from_url is called from two places after the refactor:
+        # once inside ig_image (internal calls) and once via ig_slide_builder's
+        # imported name -- patch both namespaces to suppress all network traffic.
         self._og_patch = patch(
-            "email_summary_agent.instagram._fetch_og_image_from_url",
+            "email_summary_agent.ig_image._fetch_og_image_from_url",
             return_value=None,
         )
         self._og_patch.start()
+        self._og_patch2 = patch(
+            "email_summary_agent.ig_slide_builder._fetch_og_image_from_url",
+            return_value=None,
+        )
+        self._og_patch2.start()
+        # _scrape_article_text is imported into ig_slide_builder from ig_utils.
         self._scrape_patch = patch(
-            "email_summary_agent.instagram._scrape_article_text",
+            "email_summary_agent.ig_slide_builder._scrape_article_text",
             return_value=None,
         )
         self._scrape_patch.start()
+        # Also patch the library image lookup to avoid hitting cached images.
+        self._lib_patch = patch(
+            "email_summary_agent.ig_image._find_library_image_unique",
+            return_value=None,
+        )
+        self._lib_patch.start()
 
     def tearDown(self) -> None:
         self._reference_patch.stop()
         self._og_patch.stop()
+        self._og_patch2.stop()
         self._scrape_patch.stop()
+        self._lib_patch.stop()
 
     def test_single_short_news_email_creates_slide_plan(self) -> None:
         summary = _summary_with_articles(1)
@@ -74,13 +93,13 @@ class DigestPipelineTests(unittest.TestCase):
         slides = _build_slide_specs(parts[0], datetime(2026, 5, 21, 9, 0))
 
         self.assertEqual(len(parts), 1)
-        # 2 articles × 1 digest slide each + 1 CTA = at least 3 slides
+        # 2 articles x 1 digest slide each + 1 CTA = at least 3 slides
         # (overflow slides may push higher if an article generates 5 key points)
         self.assertGreaterEqual(len(slides), 3)
         self.assertEqual(slides[0]["kind"], "digest")
         self.assertEqual(slides[-1]["kind"], "cta")
         kinds = [s["kind"] for s in slides]
-        # Unified layout: only "digest" and "cta" kinds — no "title" or "list"
+        # Unified layout: only "digest" and "cta" kinds -- no "title" or "list"
         self.assertTrue(all(k in ("digest", "cta") for k in kinds))
         self.assertEqual(kinds.count("digest"), len(slides) - 1)  # all but the last
 
@@ -136,7 +155,7 @@ class DigestPipelineTests(unittest.TestCase):
     def test_missing_article_image_returns_empty_path(self) -> None:
         summary = _summary_with_articles(1)
 
-        with patch("email_summary_agent.instagram._find_reference_image_for_article_unique", return_value=None):
+        with patch("email_summary_agent.ig_image._find_reference_image_for_article_unique", return_value=None):
             slides = _build_slide_specs(summary, datetime(2026, 5, 21, 9, 0))
 
         # Unified layout: first slide is always kind="digest"
@@ -146,7 +165,7 @@ class DigestPipelineTests(unittest.TestCase):
     def test_missing_article_image_can_use_reference_search_result(self) -> None:
         summary = _summary_with_articles(1)
 
-        with patch("email_summary_agent.instagram._find_reference_image_for_article_unique", return_value="data/article_assets/reference.jpg"):
+        with patch("email_summary_agent.ig_image._find_reference_image_for_article_unique", return_value="data/article_assets/reference.jpg"):
             slides = _build_slide_specs(summary, datetime(2026, 5, 21, 9, 0))
 
         self.assertEqual(slides[0]["image_path"], "data/article_assets/reference.jpg")
@@ -173,8 +192,8 @@ class DigestPipelineTests(unittest.TestCase):
                 '{"images":[{"id":"abc123","path":"' + str(image_dir / "abc123.jpg").replace("\\", "\\\\") + '","seed":"OpenAI GPT model launch","tokens":["openai","model"]}]}',
                 encoding="utf-8",
             )
-            with patch("email_summary_agent.instagram.IMAGE_LIBRARY_DIR", image_dir), patch(
-                "email_summary_agent.instagram.IMAGE_INDEX_PATH", image_dir / "index.json"
+            with patch("email_summary_agent.ig_image.IMAGE_LIBRARY_DIR", image_dir), patch(
+                "email_summary_agent.ig_image.IMAGE_INDEX_PATH", image_dir / "index.json"
             ):
                 self.assertIsNone(_find_library_image("AWS voice inference deployment"))
                 self.assertEqual(_find_library_image("OpenAI GPT developer model"), str(image_dir / "abc123.jpg"))
