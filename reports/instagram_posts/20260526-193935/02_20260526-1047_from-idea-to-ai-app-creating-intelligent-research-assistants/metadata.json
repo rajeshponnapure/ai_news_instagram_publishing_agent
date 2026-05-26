@@ -1,0 +1,282 @@
+{
+  "email_received_at": "2026-05-26T10:47-07:00",
+  "recommended_post_time": "14:00",
+  "headline": "From idea to AI app: Creating intelligent research assistants with Strands \u2014 Part 2 of 2",
+  "subject": "\ud83d\udea8 AI Alert: 33 new launches \u2014 AWS Machine Learning, AI Business, TechCrunch AI",
+  "source_date": "Tue, 26 May 2026 10:47:07 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Apple",
+    "Amazon",
+    "AWS",
+    "NVIDIA"
+  ],
+  "models": [
+    "Claude",
+    "Mistral"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute"
+  ],
+  "article_url": "https://aws.amazon.com/blogs/machine-learning/build-an-enterprise-observability-solution-for-amazon-quick/",
+  "article_title": "Build an enterprise observability solution for Amazon Quick | Amazon Web Services",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/87d115bd6f70a58c.png",
+  "article_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/18/ML-20929-image-5.png",
+  "article_items": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-an-enterprise-observability-solution-for-amazon-quick/",
+      "title": "Build an enterprise observability solution for Amazon Quick | Amazon Web Services",
+      "description": "When hundreds to thousands of users are onboarded to an enterprise AI platform, business leaders and platform owners need visibility into who is using the platform, whether users are satisfied with the answers they receive, and which capabilities are driving the most engagement. Without a centralized observability solution, this data is scattered across multiple AWS",
+      "excerpt": "When hundreds to thousands of users are onboarded to an enterprise AI platform, business leaders and platform owners need visibility into who is using the platform, whether users are satisfied with the answers they receive, and which capabilities are driving the most engagement. Without a centralized observability solution, this data is scattered across multiple AWS",
+      "summary": "When hundreds to thousands of users are onboarded to an enterprise AI platform, business leaders and platform owners need visibility into who is using the platform, whether users are satisfied with the answers they receive, and which capabilities are driving the most engagement. Without a centralized observability solution, this data is scattered across multiple AWS",
+      "what_happened": "When hundreds to thousands of users are onboarded to an enterprise AI platform, business leaders and platform owners need visibility into who is using the platform, whether users are satisfied with the answers they receive, and which capabilities are driving the most engagement. Without a centralized observability solution, this data is scattered across multiple AWS",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "When hundreds to thousands of users are onboarded to an enterprise AI platform, business leaders and platform owners need visibility into who is using the platform, whether users are satisfied with the answers they...",
+        "Without a centralized observability solution, this data is scattered across multiple AWS"
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/87d115bd6f70a58c.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/18/ML-20929-image-5.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/df945714aea980d4.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4112b7f93cc96fac.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/24b768d3c3ea8815.png"
+      ],
+      "extra_image_urls": [
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/18/ML-20929-image-4.png",
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/18/ML-20929-image-8.png",
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/18/ML-20929-image-7.png"
+      ]
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/transforming-professional-work-how-amazon-quick-turns-document-creation-from-hours-into-minutes/",
+      "title": "Transforming professional work: How Amazon Quick turns document creation from hours into minutes | Amazon Web Services",
+      "description": "In this post, we explore how the Amazon Quick document and visualization creation capabilities work, what you can build with them, and how professionals across roles are using them to reclaim hours of their workweek. From technical execution to strategic judgment Most professional roles carry an unspoken assumption that a significant portion of your time",
+      "excerpt": "In this post, we explore how the Amazon Quick document and visualization creation capabilities work, what you can build with them, and how professionals across roles are using them to reclaim hours of their workweek. From technical execution to strategic judgment Most professional roles carry an unspoken assumption that a significant portion of your time",
+      "summary": "In this post, we explore how the Amazon Quick document and visualization creation capabilities work, what you can build with them, and how professionals across roles are using them to reclaim hours of their workweek. From technical execution to strategic judgment Most professional roles carry an unspoken assumption that a significant portion of your time",
+      "what_happened": "In this post, we explore how the Amazon Quick document and visualization creation capabilities work, what you can build with them, and how professionals across roles are using them to reclaim hours of their workweek. From technical execution to strategic judgment Most professional roles carry an unspoken assumption that a significant portion of your time",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "In this post, we explore how the Amazon Quick document and visualization creation capabilities work, what you can build with them, and how professionals across roles are using them to reclaim hours of their workweek.",
+        "From technical execution to strategic judgment Most professional roles carry an unspoken assumption that a significant portion of your time"
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7b4633ce73bbe35b.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/19/ML-20925-1.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.amazon.science/blog/diverse-reasoning-traces-teach-llms-to-make-better-decisions",
+      "title": "Diverse reasoning traces teach LLMs to make better decisions",
+      "description": "How to train language models to generate diverse, accurate reasoning paths using tokens that control distinct reasoning strategies.",
+      "excerpt": "How to train language models to generate diverse, accurate reasoning paths using tokens that control distinct reasoning strategies.",
+      "summary": "Related publications Training large language models to reason in parallel with global forking tokens Customized Amazon Nova models improve molecular-property prediction in drug discovery Krishnateja Killamsetty , Andy Lapastora , Karthick Prasad Gunasekaran April 15, 2026 A single, optimized LLM unifies what previously required multiple models and can serve as a reasoning partner for medical chemists. Global forking tokens are used to elicit distinct reasoning modes, enabling the model to produce diverse... The practical impact: Together, SSFT and GFPO enable models to both learn diverse reasoning strategies and select the right one at inference time. These tokens enable the model to generate diverse, high-quality reasoning paths for the same problem. Watch next: To prompt a single LLM to adopt different reasoning strategies, we introduce a set of global forking tokens (such as <think1> through <think6> in the figure below) in the post-training phase, each intended to elicit a distinct reasoning mode. Related publications Training large language models to reason...",
+      "what_happened": "Related publications Training large language models to reason in parallel with global forking tokens Customized Amazon Nova models improve molecular-property prediction in drug discovery Krishnateja Killamsetty , Andy Lapastora , Karthick Prasad Gunasekaran April 15, 2026 A single, optimized LLM unifies what previously required multiple models and can serve as a reasoning partner for medical chemists. Global forking tokens are used to elicit distinct reasoning modes, enabling the model to produce diverse...",
+      "why_matters": "The practical impact: Together, SSFT and GFPO enable models to both learn diverse reasoning strategies and select the right one at inference time. These tokens enable the model to generate diverse, high-quality reasoning paths for the same problem.",
+      "what_to_watch": "Watch next: To prompt a single LLM to adopt different reasoning strategies, we introduce a set of global forking tokens (such as <think1> through <think6> in the figure below) in the post-training phase, each intended to elicit a distinct reasoning mode. Related publications Training large language models to reason...",
+      "key_points": [
+        "Related publications Training large language models to reason in parallel with global forking tokens Customized Amazon Nova models improve molecular-property prediction in drug discovery Krishnateja Killamsetty ...",
+        "Global forking tokens are used to elicit distinct reasoning modes, enabling the model to produce diverse, high-quality reasoning paths.",
+        "Diverse reasoning traces teach LLMs to make better decisions How to train language models to generate diverse, accurate reasoning paths using tokens that control distinct reasoning strategies.",
+        "Given the usefulness of parallel reasoning for evaluation, the question naturally arises, Can we expand the limits of LLMs\u2019 reasoning capacities by training them on diverse reasoning traces for each question?",
+        "Machine learning Customizing multiturn AI agents with reinforcement learning Shreyas Subramanian , Panpan Xu , Yawei Wang January 13, 2026 Leveraging existing environment simulators and reward functions based on...",
+        "How to train language models to generate diverse, accurate reasoning paths using tokens that control distinct reasoning strategies.",
+        "To address this, we propose set-supervised fine tuning (SSFT) - a simple and principled training approach that enables models to learn multiple distinct reasoning strategies from diverse supervision.",
+        "While supervised training encourages the model to learn diverse reasoning strategies, it does not explicitly teach the model which strategy to use for a given question.",
+        "Parallel reasoning - in which multiple, diverse reasoning paths are generated and compared for the same problem - is emerging as a key tool for understanding the limits of LLMs\u2019 reasoning capability.",
+        "SSFT models reasoning as a set of complete solution paths, while GFPO selects the most effective reasoning mode for each input.",
+        "In practice, multiple reasoning traces for the same question can be obtained by prompting multiple teacher models, sampling alternative reasoning paths from a single model, or aggregating solutions from heterogeneous...",
+        "We evaluate SSFT+GFPO on both reasoning and coding benchmarks along two axes: (i) accuracy and (ii) diversity of reasoning."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/16b8cc685fa94b2c.png",
+      "image_url": "https://cdn.amazon.science/dims4/default/e359eed/2147483647/strip/true/crop/1028x540+0+23/resize/1200x630!/quality/90/?url=https%3A%2F%2Famzn-science-production-science.s3.us-east-1.amazonaws.com%2Fscience%2Fe7%2F0d%2F42ef541d438086a89e069c916e6c%2Fmultiple-distinct-solution-strategies-for-the-same-problem-each-induced-by-a-different-global-forking-token.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theverge.com/tech/936176/google-ai-overviews-search-disregard",
+      "title": "Summary : The generative AI vendor is expanding into the legal industry in a move reminiscent of Anthropic\u2019s legal AI deals.",
+      "description": "AI Business Summary : The generative AI vendor is expanding into the legal industry in a move reminiscent of Anthropic\u2019s legal AI deals. Link : [HIGH] isn\u2019t showing an AI Overview when you search \u201cdisregard.\u201d Company : The Verge AI Summary : By the way, Googlestillisn\u2019t showing an AI Overview when you search \u201cdisregard.\u201dAI Overviews are going just great! Link : [HIGH] Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Company : MarkTechPost AI Summary : OmniVoice Studio runs voice cloning, video dubbing, real-time dictation, and speaker diarization entirely on your own hardware. No API keys, no cloud account, and no subscription required. The project Link : [HIGH] Together...",
+      "excerpt": "AI Business Summary : The generative AI vendor is expanding into the legal industry in a move reminiscent of Anthropic\u2019s legal AI deals. Link : [HIGH] isn\u2019t showing an AI Overview when you search \u201cdisregard.\u201d Company : The Verge AI Summary : By the way, Googlestillisn\u2019t showing an AI Overview when you search \u201cdisregard.\u201dAI Overviews are going just great! Link : [HIGH] Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Company : MarkTechPost AI Summary : OmniVoice Studio runs voice cloning, video dubbing, real-time dictation, and speaker diarization entirely on your own hardware. No API...",
+      "summary": "AI Business Summary : The generative AI vendor is expanding into the legal industry in a move reminiscent of Anthropic\u2019s legal AI deals. Link : [HIGH] Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Company : MarkTechPost AI Summary : OmniVoice Studio runs voice cloning, video dubbing, real-time dictation, and speaker diarization entirely on your own hardware. The practical impact: Link : [HIGH] Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Company : MarkTechPost AI Summary : OmniVoice Studio runs voice cloning, video dubbing, real-time dictation, and speaker diarization entirely on your own hardware. Watch next: The project Link : [HIGH] Together...",
+      "what_happened": "AI Business Summary : The generative AI vendor is expanding into the legal industry in a move reminiscent of Anthropic\u2019s legal AI deals. Link : [HIGH] Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Company : MarkTechPost AI Summary : OmniVoice Studio runs voice cloning, video dubbing, real-time dictation, and speaker diarization entirely on your own hardware.",
+      "why_matters": "The practical impact: Link : [HIGH] Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Company : MarkTechPost AI Summary : OmniVoice Studio runs voice cloning, video dubbing, real-time dictation, and speaker diarization entirely on your own hardware.",
+      "what_to_watch": "Watch next: The project Link : [HIGH] Together...",
+      "key_points": [
+        "Link : [HIGH] Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Company : MarkTechPost AI Summary : OmniVoice Studio runs voice cloning, video dubbing, real-time dictation, and speaker diarization...",
+        "AI Business Summary : The generative AI vendor is expanding into the legal industry in a move reminiscent of Anthropic\u2019s legal AI deals.",
+        "The project Link : [HIGH] Together...",
+        "Link : [HIGH] isn\u2019t showing an AI Overview when you search \u201cdisregard.\u201d Company : The Verge AI Summary : By the way, Googlestillisn\u2019t showing an AI Overview when you search \u201cdisregard.\u201dAI Overviews are going just great!",
+        "No API keys, no cloud account, and no subscription required."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theverge.com/transportation/937439/american-airlines-starlink-wifi-speed",
+      "title": "form, whether users are satisfied with th",
+      "description": "form, whether users are satisfied with th Link : [MEDIUM] American Airlines is getting Starlink Wi-Fi Company : The Verge AI Summary : American Airlines is planning to install SpaceX's Starlink Wi-Fi in hundreds of its airplanes, the airline announced today. American says the deployment will start in the first quarter of 2027, and wi Link : [MEDIUM] I quit ChatGPT for a free, private, and local AI called Ollama - here's why Company : ZDNet AI Summary : Save your money, your privacy, and the planet. This installable AI offers several benefits you won't find with more traditional models like ChatGPT. Link : [MEDIUM] Transforming professional work: How Amazon Quick turns document creation from hours into...",
+      "excerpt": "form, whether users are satisfied with th Link : [MEDIUM] American Airlines is getting Starlink Wi-Fi Company : The Verge AI Summary : American Airlines is planning to install SpaceX's Starlink Wi-Fi in hundreds of its airplanes, the airline announced today. American says the deployment will start in the first quarter of 2027, and wi Link : [MEDIUM] I quit ChatGPT for a free, private, and local AI called Ollama - here's why Company : ZDNet AI Summary : Save your money, your privacy, and the planet. This installable AI offers several benefits you won't find with more traditional...",
+      "summary": "form, whether users are satisfied with th Link : [MEDIUM] American Airlines is getting Starlink Wi-Fi Company : The Verge AI Summary : American Airlines is planning to install SpaceX's Starlink Wi-Fi in hundreds of its airplanes, the airline announced today. American says the deployment will start in the first quarter of 2027, and wi Link : [MEDIUM] I quit ChatGPT for a free, private, and local AI called Ollama - here's why Company : ZDNet AI Summary : Save your money, your privacy, and the planet. The practical impact: This installable AI offers several benefits you won't find with more traditional models like ChatGPT. Watch next: This installable AI offers several benefits you won't find with more traditional models like ChatGPT.",
+      "what_happened": "form, whether users are satisfied with th Link : [MEDIUM] American Airlines is getting Starlink Wi-Fi Company : The Verge AI Summary : American Airlines is planning to install SpaceX's Starlink Wi-Fi in hundreds of its airplanes, the airline announced today. American says the deployment will start in the first quarter of 2027, and wi Link : [MEDIUM] I quit ChatGPT for a free, private, and local AI called Ollama - here's why Company : ZDNet AI Summary : Save your money, your privacy, and the planet.",
+      "why_matters": "The practical impact: This installable AI offers several benefits you won't find with more traditional models like ChatGPT.",
+      "what_to_watch": "Watch next: This installable AI offers several benefits you won't find with more traditional models like ChatGPT.",
+      "key_points": [
+        "form, whether users are satisfied with th Link : [MEDIUM] American Airlines is getting Starlink Wi-Fi Company : The Verge AI Summary : American Airlines is planning to install SpaceX's Starlink Wi-Fi in hundreds of...",
+        "American says the deployment will start in the first quarter of 2027, and wi Link : [MEDIUM] I quit ChatGPT for a free, private, and local AI called Ollama - here's why Company : ZDNet AI Summary : Save your money...",
+        "This installable AI offers several benefits you won't find with more traditional models like ChatGPT.",
+        "Link : [MEDIUM] Transforming professional work: How Amazon Quick turns document creation from hours into..."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.zdnet.com/article/reasons-to-use-ollama-instead-of-chatgpt/",
+      "title": "ced today. American says the deployment will start in the first quarter of 2027, and wi",
+      "description": "ced today. American says the deployment will start in the first quarter of 2027, and wi Link : [MEDIUM] I quit ChatGPT for a free, private, and local AI called Ollama - here's why Company : ZDNet AI Summary : Save your money, your privacy, and the planet. This installable AI offers several benefits you won't find with more traditional models like ChatGPT. Link : [MEDIUM] Transforming professional work: How Amazon Quick turns document creation from hours into minutes Company : AWS Machine Learning Summary : In this post, we explore how the Amazon Quick document and visualization creation capabilities work, what you can build with them, and how professionals across roles are using them to reclaim hours of Link ...",
+      "excerpt": "ced today. American says the deployment will start in the first quarter of 2027, and wi Link : [MEDIUM] I quit ChatGPT for a free, private, and local AI called Ollama - here's why Company : ZDNet AI Summary : Save your money, your privacy, and the planet. This installable AI offers several benefits you won't find with more traditional models like ChatGPT. Link : [MEDIUM] Transforming professional work: How Amazon Quick turns document creation from hours into minutes Company : AWS Machine Learning Summary : In this post, we explore how the Amazon Quick document and visualization creation capabilities...",
+      "summary": "American says the deployment will start in the first quarter of 2027, and wi Link : [MEDIUM] I quit ChatGPT for a free, private, and local AI called Ollama - here's why Company : ZDNet AI Summary : Save your money, your privacy, and the planet. The practical impact: Link : [MEDIUM] Transforming professional work: How Amazon Quick turns document creation from hours into minutes Company : AWS Machine Learning Summary : In this post, we explore how the Amazon Quick document and visualization creation capabilities work, what you can build with them, and how professionals across roles are using them to reclaim hours of Link ... Watch next: This installable AI offers several benefits you won't find with more traditional models like ChatGPT.",
+      "what_happened": "American says the deployment will start in the first quarter of 2027, and wi Link : [MEDIUM] I quit ChatGPT for a free, private, and local AI called Ollama - here's why Company : ZDNet AI Summary : Save your money, your privacy, and the planet.",
+      "why_matters": "The practical impact: Link : [MEDIUM] Transforming professional work: How Amazon Quick turns document creation from hours into minutes Company : AWS Machine Learning Summary : In this post, we explore how the Amazon Quick document and visualization creation capabilities work, what you can build with them, and how professionals across roles are using them to reclaim hours of Link ...",
+      "what_to_watch": "Watch next: This installable AI offers several benefits you won't find with more traditional models like ChatGPT.",
+      "key_points": [
+        "American says the deployment will start in the first quarter of 2027, and wi Link : [MEDIUM] I quit ChatGPT for a free, private, and local AI called Ollama - here's why Company : ZDNet AI Summary : Save your money...",
+        "Link : [MEDIUM] Transforming professional work: How Amazon Quick turns document creation from hours into minutes Company : AWS Machine Learning Summary : In this post, we explore how the Amazon Quick document and...",
+        "This installable AI offers several benefits you won't find with more traditional models like ChatGPT."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.zdnet.com/article/best-apple-deals-memorial-day-2026/",
+      "title": "to generate diverse, accurate reasoning paths using tokens that control distinct reasoning strategies.",
+      "description": "to generate diverse, accurate reasoning paths using tokens that control distinct reasoning strategies. Link : [MEDIUM] I found the best Memorial Day Apple deals still available: Save on iPad, Apple Watch, and more Company : ZDNet AI Summary : Summer is almost here, and you can find deals on all things Apple with these lingering Memorial Day sales. Link : [MEDIUM] Rethinking organizational design in the age of agentic AI Company : MIT Tech Review AI Summary : Amid rapidly growing adoption of enterprise-level AI agents, there\u2019s a disconnect emerging between ambition and execution. Although 85% of organizations say they want to be agentic within the ne Link : [MEDIUM] Sundar Pichai on...",
+      "excerpt": "to generate diverse, accurate reasoning paths using tokens that control distinct reasoning strategies. Link : [MEDIUM] I found the best Memorial Day Apple deals still available: Save on iPad, Apple Watch, and more Company : ZDNet AI Summary : Summer is almost here, and you can find deals on all things Apple with these lingering Memorial Day sales. Link : [MEDIUM] Rethinking organizational design in the age of agentic AI Company : MIT Tech Review AI Summary : Amid rapidly growing adoption of enterprise-level AI agents, there\u2019s a disconnect emerging between ambition and execution. Although 85% of...",
+      "summary": "Although 85% of organizations say they want to be agentic within the ne Link : [MEDIUM] Sundar Pichai on... The practical impact: Link : [MEDIUM] I found the best Memorial Day Apple deals still available: Save on iPad, Apple Watch, and more Company : ZDNet AI Summary : Summer is almost here, and you can find deals on all things Apple with these lingering Memorial Day sales. Watch next: to generate diverse, accurate reasoning paths using tokens that control distinct reasoning strategies.",
+      "what_happened": "Although 85% of organizations say they want to be agentic within the ne Link : [MEDIUM] Sundar Pichai on...",
+      "why_matters": "The practical impact: Link : [MEDIUM] I found the best Memorial Day Apple deals still available: Save on iPad, Apple Watch, and more Company : ZDNet AI Summary : Summer is almost here, and you can find deals on all things Apple with these lingering Memorial Day sales.",
+      "what_to_watch": "Watch next: to generate diverse, accurate reasoning paths using tokens that control distinct reasoning strategies.",
+      "key_points": [
+        "Although 85% of organizations say they want to be agentic within the ne Link : [MEDIUM] Sundar Pichai on...",
+        "Link : [MEDIUM] I found the best Memorial Day Apple deals still available: Save on iPad, Apple Watch, and more Company : ZDNet AI Summary : Summer is almost here, and you can find deals on all things Apple with these...",
+        "Link : [MEDIUM] Rethinking organizational design in the age of agentic AI Company : MIT Tech Review AI Summary : Amid rapidly growing adoption of enterprise-level AI agents, there\u2019s a disconnect emerging between...",
+        "to generate diverse, accurate reasoning paths using tokens that control distinct reasoning strategies."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 2,
+  "carousel_total_parts": 2,
+  "slides": [
+    "Build an enterprise observability solution for Amazon Quick",
+    "Transforming professional work: How Amazon Quick turns document creation from hours into",
+    "Diverse reasoning traces teach LLMs to make better decisions",
+    "Summary : The generative AI vendor is expanding into the legal industry in a move",
+    "form, whether users are satisfied with th",
+    "ced today. American says the deployment will start in the first quarter of 2027, and wi",
+    "to generate diverse, accurate reasoning paths using tokens that control distinct",
+    "Follow for the next AI briefing"
+  ]
+}

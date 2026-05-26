@@ -1,0 +1,372 @@
+{
+  "email_received_at": "2026-05-26T10:47-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "From idea to AI app: Creating intelligent research assistants with Strands \u2014 Part 1 of 2",
+  "subject": "\ud83d\udea8 AI Alert: 33 new launches \u2014 AWS Machine Learning, AI Business, TechCrunch AI",
+  "source_date": "Tue, 26 May 2026 10:47:07 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Apple",
+    "Amazon",
+    "AWS",
+    "NVIDIA"
+  ],
+  "models": [
+    "Claude",
+    "Mistral"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute"
+  ],
+  "article_url": "https://aws.amazon.com/blogs/machine-learning/from-idea-to-ai-app-creating-intelligent-research-assistants-with-strands/",
+  "article_title": "From idea to AI app: Creating intelligent research assistants with Strands | Amazon Web Services",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8e32cbb3a7cd5919.png",
+  "article_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/14/image-ML-196843.png",
+  "article_items": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/from-idea-to-ai-app-creating-intelligent-research-assistants-with-strands/",
+      "title": "From idea to AI app: Creating intelligent research assistants with Strands | Amazon Web Services",
+      "description": "Building an AI app shouldn\u2019t require a PhD in machine learning (ML) or months of wrestling with complex architectures. Yet that\u2019s exactly what happens when you try to orchestrate multiple API calls, manage conversation state, and create agents that can reason on their own. I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand",
+      "excerpt": "Building an AI app shouldn\u2019t require a PhD in machine learning (ML) or months of wrestling with complex architectures. Yet that\u2019s exactly what happens when you try to orchestrate multiple API calls, manage conversation state, and create agents that can reason on their own. I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand",
+      "summary": "Building an AI app shouldn\u2019t require a PhD in machine learning (ML) or months of wrestling with complex architectures. Yet that\u2019s exactly what happens when you try to orchestrate multiple API calls, manage conversation state, and create agents that can reason on their own. The practical impact: I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand Watch next: I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand",
+      "what_happened": "Building an AI app shouldn\u2019t require a PhD in machine learning (ML) or months of wrestling with complex architectures. Yet that\u2019s exactly what happens when you try to orchestrate multiple API calls, manage conversation state, and create agents that can reason on their own.",
+      "why_matters": "The practical impact: I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand",
+      "what_to_watch": "Watch next: I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand",
+      "key_points": [
+        "Building an AI app shouldn\u2019t require a PhD in machine learning (ML) or months of wrestling with complex architectures.",
+        "Yet that\u2019s exactly what happens when you try to orchestrate multiple API calls, manage conversation state, and create agents that can reason on their own.",
+        "I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand"
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8e32cbb3a7cd5919.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/14/image-ML-196843.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/09f5cf878327ff72.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e1355c83f829fd32.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fa712697804eeaaa.png"
+      ],
+      "extra_image_urls": [
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/14/image-ML-196845.png",
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/14/image-ML-1968413.png",
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/14/image-ML-196848.png"
+      ]
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/anthropic-update-underscores-power-ai-flaw-finder-mythos",
+      "title": "Anthropic Update Underscores Power of AI Flaw Finder Mythos",
+      "description": "Anthropic Update Underscores Power of AI Flaw Finder Mythos",
+      "excerpt": "Anthropic Update Underscores Power of AI Flaw Finder Mythos",
+      "summary": "Arguably, the most eye-catching are figures that illustrate its success rate -- but also highlight the alarming number of weaknesses prevalent in software that the company said in its May 22 update is \u201cfundamental to the functioning of the internet and other essential infrastructure.\u201d Related: Mistral AI Taps Legal Sector With Harvey Partnership Among the developments from partners and external testers were Cloudflare finding 2,000 bugs (400 of which were critical); Mozilla unearthing 271 vulnerabilities in... The practical impact: The vendor introduced Glasswing a few weeks after it emerged that the company had developed Claude Mythos , a powerful new model so adept at finding security vulnerabilities in code that Anthropic decided not to release it, for fear of misuse in the wrong hands. The AI Summit London is the flagship AI event of London Tech Week, bringing together enterprise leaders, technical buyers and innovators to... Watch next: Anthropic has provided an advisory on Project Glasswing, the AI initiative the vendor launched last month that aims to protect critical software from attack by malicious AI models.",
+      "what_happened": "Arguably, the most eye-catching are figures that illustrate its success rate -- but also highlight the alarming number of weaknesses prevalent in software that the company said in its May 22 update is \u201cfundamental to the functioning of the internet and other essential infrastructure.\u201d Related: Mistral AI Taps Legal Sector With Harvey Partnership Among the developments from partners and external testers were Cloudflare finding 2,000 bugs (400 of which were critical); Mozilla unearthing 271 vulnerabilities in...",
+      "why_matters": "The practical impact: The vendor introduced Glasswing a few weeks after it emerged that the company had developed Claude Mythos , a powerful new model so adept at finding security vulnerabilities in code that Anthropic decided not to release it, for fear of misuse in the wrong hands. The AI Summit London is the flagship AI event of London Tech Week, bringing together enterprise leaders, technical buyers and innovators to...",
+      "what_to_watch": "Watch next: Anthropic has provided an advisory on Project Glasswing, the AI initiative the vendor launched last month that aims to protect critical software from attack by malicious AI models.",
+      "key_points": [
+        "Arguably, the most eye-catching are figures that illustrate its success rate -- but also highlight the alarming number of weaknesses prevalent in software that the company said in its May 22 update is \u201cfundamental to...",
+        "Anthropic Update Underscores Power of AI Flaw Finder Mythos The cybersecurity model is not yet ready for widespread release.",
+        "The vendor introduced Glasswing a few weeks after it emerged that the company had developed Claude Mythos , a powerful new model so adept at finding security vulnerabilities in code that Anthropic decided not to...",
+        "Anthropic has provided an advisory on Project Glasswing, the AI initiative the vendor launched last month that aims to protect critical software from attack by malicious AI models.",
+        "Among 23,019 vulnerabilities, 6,202 were estimated to be of high or critical severity, with the most concerning being a flaw in wolfSSL , a cryptography library, which would have allowed attackers to forge...",
+        "Instead, Anthropic opted to share it with about 50 key partners, including some of tech\u2019s biggest names, including AWS, Apple, Google, Microsoft, CrowdStrike, Nvidia, Broadcom, Cisco and Palo Alto Networks.",
+        "Another major finding is that Mythos is still not ready for public release.",
+        "However, Anthropic said the Glasswing initiative, which is restricted to select partners, could be expanded.",
+        "Anthropic also revealed that it had used the Mythos preview version to scan more than 1,000 open source projects over the past few months, and again, the numbers provided cause for concern.",
+        "While this has now been patched, it\u2019s in the minority: only 75 of the 530 high- or critical-severity bugs reported to maintainers to date have been resolved, prompting Anthropic to highlight another takeaway: the...",
+        "There is a clear need for a larger effort across the software industry to manage the volume of findings that these models will generate.\u201d Failure to swiftly produce patches will \u201copen a significant window for...",
+        "for 26 years, including spells as editor of leading consumer news website and weekly Auto Express and respected buying guide CarBuyer."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3ace86458a6a892e.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt68f5cd25dcabce66/68fbc4a1df1e043d350b2692/Google_Anthropic.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/817633997c821501.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7951e5138d285103.jpg"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt76562ed4368ef0c4/6a0f3eaabd84f5ec7d259af9/SpaceX2.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt50e37f43a250e73b/6a15c19d6efe00536584950f/Mistral_AI.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ]
+    },
+    {
+      "url": "https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/",
+      "title": "This startup is betting India's gig economy can train the world's robots | TechCrunch",
+      "description": "Human Archive, a startup founded by UC Berkeley and Stanford researchers, is paying gig workers in India to wear camera-equipped caps and sensor devices to collect the real-world physical training data that AI and robotics labs are racing to acquire.",
+      "excerpt": "Human Archive, a startup founded by UC Berkeley and Stanford researchers, is paying gig workers in India to wear camera-equipped caps and sensor devices to collect the real-world physical training data that AI and robotics labs are racing to acquire.",
+      "summary": "Without naming specific partners, the startup said it is working with companies in the home services, hotel, and restaurant sectors to collect egocentric data, and it says it has more than 1,000 active headsets deployed across multiple locations. It already has more than 50 different devices deployed to collect different data points. The practical impact: The company\u2019s rejection by major players became public fodder last weekend, when Indian outlet Entrackr reported that Pronto is actively seeking partnerships to collect worker data for robotics training and that Snabbit had held early discussions with Human Archive before the project fell apart. The company pays workers a base rate of $1 per hour for participating in egocentric data collection. Watch next: He is based out of India and has previously worked at publications including Huffington Post and The Next Web. They\u2019ve been doing internal model training on this data, and every major lab and university is interested in running experiments on it due to the novelty of the sensors and the scale of the new...",
+      "what_happened": "Without naming specific partners, the startup said it is working with companies in the home services, hotel, and restaurant sectors to collect egocentric data, and it says it has more than 1,000 active headsets deployed across multiple locations. It already has more than 50 different devices deployed to collect different data points.",
+      "why_matters": "The practical impact: The company\u2019s rejection by major players became public fodder last weekend, when Indian outlet Entrackr reported that Pronto is actively seeking partnerships to collect worker data for robotics training and that Snabbit had held early discussions with Human Archive before the project fell apart. The company pays workers a base rate of $1 per hour for participating in egocentric data collection.",
+      "what_to_watch": "Watch next: He is based out of India and has previously worked at publications including Huffington Post and The Next Web. They\u2019ve been doing internal model training on this data, and every major lab and university is interested in running experiments on it due to the novelty of the sensors and the scale of the new...",
+      "key_points": [
+        "Without naming specific partners, the startup said it is working with companies in the home services, hotel, and restaurant sectors to collect egocentric data, and it says it has more than 1,000 active headsets...",
+        "They\u2019ve been doing internal model training on this data, and every major lab and university is interested in running experiments on it due to the novelty of the sensors and the scale of the new dataset they are...",
+        "It already has more than 50 different devices deployed to collect different data points.",
+        "While Human Archive largely collects data in India, it has started expanding into Southeast Asia and the U.S.",
+        "Human Archive, a startup founded by UC Berkeley and Stanford researchers, is paying gig workers in India to wear camera-equipped caps and sensor devices to collect the real-world physical training data that AI and...",
+        "By doing this, the startup can demonstrate the quality of its data to potential customers and post-train internal models.",
+        "The startup believes that video data alone is not sufficient but that pairing it with other sensor data makes it much more valuable.",
+        "On the back of that traction, Human Archive said Tuesday it has raised $8.2 million in funding from Wing Venture Capital, NVP Capital, Y Combinator, and angels from OpenAI, Nvidia, Google, Mercor, AfterQuery, BAIR...",
+        "Zach DeWitt, a partner at Wing VC, said the startup has a unique advantage in collecting data from multiple sensors.",
+        "Silicon Valley-based startup Human Archive is tapping into this trend, partnering with these companies to have workers wear special caps with cameras to collect egocentric (first-person point of view) video data of...",
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "(Raj Patel is CEO.) All four have research backgrounds spanning robotics, hardware, and tactile data."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/629a31cf7285b7bc.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/Main-YC-Headshot-all-4-of-us.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/mistral-ai-taps-legal-sector-harvey-partnership",
+      "title": "Mistral AI Taps Legal Sector With Harvey Partnership",
+      "description": "Mistral AI Taps Legal Sector With Harvey Partnership",
+      "excerpt": "Mistral AI Taps Legal Sector With Harvey Partnership",
+      "summary": "Mistral AI Taps Legal Sector With Harvey Partnership The generative AI vendor is expanding into the legal industry in a move reminiscent of Anthropic\u2019s legal AI deals. \u201c[This makes] them especially relevant for legal teams working across large document sets, jurisdictions, and languages.\u201d The launch follows the opening of Harvey\u2019s Paris office, as part of its expansion across Europe that includes offices in Dublin, London, Madrid, and Munich. The practical impact: Partnering with Mistral, the San Francisco-based vendor, said, will enable it to better serve local customers by adhering to local requirements and model preferences. Under the agreement, revealed on Tuesday, Mistral\u2019s models will be added to Harvey \u2019s platform, which provides legal teams with a range of AI models to assist across areas such as compliance, litigation and contract analysis. Watch next: Rival AI firms have already been building dedicated legal capabilities, particularly Anthropic, which has released a slew of industry-specific plug-ins for its Claude Cowork model, highlighted by its legal plugin , and also recently agreed to deals with several legal information providers , including...",
+      "what_happened": "Mistral AI Taps Legal Sector With Harvey Partnership The generative AI vendor is expanding into the legal industry in a move reminiscent of Anthropic\u2019s legal AI deals. \u201c[This makes] them especially relevant for legal teams working across large document sets, jurisdictions, and languages.\u201d The launch follows the opening of Harvey\u2019s Paris office, as part of its expansion across Europe that includes offices in Dublin, London, Madrid, and Munich.",
+      "why_matters": "The practical impact: Partnering with Mistral, the San Francisco-based vendor, said, will enable it to better serve local customers by adhering to local requirements and model preferences. Under the agreement, revealed on Tuesday, Mistral\u2019s models will be added to Harvey \u2019s platform, which provides legal teams with a range of AI models to assist across areas such as compliance, litigation and contract analysis.",
+      "what_to_watch": "Watch next: Rival AI firms have already been building dedicated legal capabilities, particularly Anthropic, which has released a slew of industry-specific plug-ins for its Claude Cowork model, highlighted by its legal plugin , and also recently agreed to deals with several legal information providers , including...",
+      "key_points": [
+        "Mistral AI Taps Legal Sector With Harvey Partnership The generative AI vendor is expanding into the legal industry in a move reminiscent of Anthropic\u2019s legal AI deals.",
+        "\u201c[This makes] them especially relevant for legal teams working across large document sets, jurisdictions, and languages.\u201d The launch follows the opening of Harvey\u2019s Paris office, as part of its expansion across...",
+        "Partnering with Mistral, the San Francisco-based vendor, said, will enable it to better serve local customers by adhering to local requirements and model preferences.",
+        "Rival AI firms have already been building dedicated legal capabilities, particularly Anthropic, which has released a slew of industry-specific plug-ins for its Claude Cowork model, highlighted by its legal plugin ...",
+        "Under the agreement, revealed on Tuesday, Mistral\u2019s models will be added to Harvey \u2019s platform, which provides legal teams with a range of AI models to assist across areas such as compliance, litigation and contract...",
+        "Mistral joins Harvey\u2019s roster of AI providers, which includes OpenAI, Anthropic and Google, and gives it access to Harvey\u2019s customer base of more than 1,500 organizations in more than 60 countries.",
+        "Mistral models will first be available to customers in the EU, followed by general availability in the U.S.",
+        "TechTarget and Informa TechTarget and Informa Tech\u2019s Digital Business Combine.",
+        "Harvey\u2019s platform is multi-model, meaning it identifies the best model for the task at hand and directs requests accordingly.",
+        "Mistral AI Taps Legal Sector With Harvey Partnership TechTarget and Informa Tech\u2019s Digital Business Combine.",
+        "Paris-based Mistral is pushing further into enterprise AI through a new partnership with legal technology startup Harvey AI, bringing its models to legal teams worldwide.",
+        "Scarlett also has a background in the mining and resources sector, with experience at Mine Australia, Mine Technology and Power Technology."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/41caabaea6e5ee3f.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt92c8f8836ec4af83/6a0ba309e999dbd4b84018c9/Musk.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.marktechpost.com/2026/05/26/meet-omnivoice-studio-a-local-open-source-alternative-to-elevenlabs/",
+      "title": "Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs",
+      "description": "OmniVoice Studio is an open-source desktop app for local voice cloning, dubbing, and dictation with no API keys.",
+      "excerpt": "OmniVoice Studio is an open-source desktop app for local voice cloning, dubbing, and dictation with no API keys.",
+      "summary": "Michal Sutter Google Launches Antigravity 2.0 at I/O 2026: A Standalone Agent-First Platform with CLI, SDK, Managed Execution, and Enterprise Support Michal Sutter Vercel Labs Introduces Zero, a Systems Programming Language Designed So AI Agents Can Read, Repair, and Ship Native Programs Michal Sutter Enterprise AI Governance in 2026: Why the Tools Employees Use Are Ahead of the Policies That Cover Them Michal Sutter Google DeepMind Introduces an AI-Enabled Mouse Pointer Powered by Gemini That Captures Visual... The practical impact: Michal Sutter Comparing the Top 6 Inference Runtimes for LLM Serving in 2025 Michal Sutter OpenAI Introduces IndQA: A Culture Aware Benchmark For Indian Languages Michal Sutter Comparing the Top 7 Large Language Models LLMs/Systems for Coding in 2025 Michal Sutter Anyscale and NovaSky Team Releases SkyRL tx v0.1.0: Bringing Tinker Compatible Reinforcement Learning RL Engine To Local GPU Clusters... Watch next: A Technical Risk Audit Based on Real-World Use Cases Michal Sutter 9 Open Source Cursor Alternatives You Should Use in 2025 Michal Sutter Microsoft Edge Launches Copilot Mode to Redefine Web Browsing for the AI Era Michal Sutter Key Factors...",
+      "what_happened": "Michal Sutter Google Launches Antigravity 2.0 at I/O 2026: A Standalone Agent-First Platform with CLI, SDK, Managed Execution, and Enterprise Support Michal Sutter Vercel Labs Introduces Zero, a Systems Programming Language Designed So AI Agents Can Read, Repair, and Ship Native Programs Michal Sutter Enterprise AI Governance in 2026: Why the Tools Employees Use Are Ahead of the Policies That Cover Them Michal Sutter Google DeepMind Introduces an AI-Enabled Mouse Pointer Powered by Gemini That Captures Visual...",
+      "why_matters": "The practical impact: Michal Sutter Comparing the Top 6 Inference Runtimes for LLM Serving in 2025 Michal Sutter OpenAI Introduces IndQA: A Culture Aware Benchmark For Indian Languages Michal Sutter Comparing the Top 7 Large Language Models LLMs/Systems for Coding in 2025 Michal Sutter Anyscale and NovaSky Team Releases SkyRL tx v0.1.0: Bringing Tinker Compatible Reinforcement Learning RL Engine To Local GPU Clusters...",
+      "what_to_watch": "Watch next: A Technical Risk Audit Based on Real-World Use Cases Michal Sutter 9 Open Source Cursor Alternatives You Should Use in 2025 Michal Sutter Microsoft Edge Launches Copilot Mode to Redefine Web Browsing for the AI Era Michal Sutter Key Factors That Drive Successful MCP Implementation and Adoption Michal...",
+      "key_points": [
+        "Michal Sutter Google Launches Antigravity 2.0 at I/O 2026: A Standalone Agent-First Platform with CLI, SDK, Managed Execution, and Enterprise Support Michal Sutter Vercel Labs Introduces Zero, a Systems Programming...",
+        "How a Local First Agent Stack Turns Chats into Real Automations Michal Sutter GitHub Releases Copilot-SDK to Embed Its Agentic Runtime in Any App Michal Sutter Salesforce AI Introduces FOFPred: A Language-Driven...",
+        "Michal Sutter Comparing the Top 6 Inference Runtimes for LLM Serving in 2025 Michal Sutter OpenAI Introduces IndQA: A Culture Aware Benchmark For Indian Languages Michal Sutter Comparing the Top 7 Large Language...",
+        "A Technical Deep Dive and Top 9 AI Inference Providers (2025 Edition) Michal Sutter Hugging Face Unveils AI Sheets: A Free, Open-Source No-Code Toolkit for LLM-Powered Datasets Michal Sutter From Deployment to Scale...",
+        "Michal Sutter Google AI Introduces Gemini 2.5 \u2018Computer Use\u2019 (Preview): A Browser-Control Model to Power AI Agents to Interact with User Interfaces Michal Sutter OpenAI Debuts Agent Builder and AgentKit: A...",
+        "A Technical Risk Audit Based on Real-World Use Cases Michal Sutter 9 Open Source Cursor Alternatives You Should Use in 2025 Michal Sutter Microsoft Edge Launches Copilot Mode to Redefine Web Browsing for the AI Era...",
+        "Top Open-Source OCR Models Michal Sutter OpenAI Adds Full MCP Tool Support in ChatGPT Developer Mode: Enabling Write Actions, Workflow Automation, and Enterprise Integrations Michal Sutter Top 7 Model Context...",
+        "Michal Sutter Top Computer Vision CV Blogs & News Websites (2025) Michal Sutter Physical AI: Bridging Robotics, Material Science, and Artificial Intelligence for Next-Gen Embodied Systems Michal Sutter MIT\u2019s LEGO: A...",
+        "Google\u2019s Gemini 3 Deep Think Shatters Humanity\u2019s Last Exam And Hits 84.6% On ARC-AGI-2 Performance Today Michal Sutter Meet OAT: The New Action Tokenizer Bringing LLM-Style Scaling and Flexible, Anytime Inference to...",
+        "Michal Sutter A Coding Guide to Instrumenting, Tracing, and Evaluating LLM Applications Using TruLens and OpenAI Models Michal Sutter How to Build Transparent AI Agents: Traceable Decision-Making with Audit Trails...",
+        "Michal Sutter StepFun Releases StepAudio 2.5 Realtime: An End-to-End Voice Model with Roleplay-Specific RLHF and Paralinguistic Comprehension Michal Sutter Tencent Open-Sources TencentDB Agent Memory: A 4-Tier Local...",
+        "GPT-OSS 20B Michal Sutter Google DeepMind Introduces Genie 3: A General Purpose World Model that can Generate an Unprecedented Diversity of Interactive Environments Michal Sutter Model Context Protocol (MCP) FAQs..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/dd0be8ce4ff96fce.png",
+      "image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-51-1024x731.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.marktechpost.com/2026/05/25/together-ai-open-sources-oscar-an-attention-aware-2-bit-kv-cache-quantization-system-for-long-context-llm-serving/",
+      "title": "Together AI Open-Sources OSCAR: An Attention-Aware 2-Bit KV Cache Quantization System for Long-Context LLM Serving",
+      "description": "Together AI's OSCAR quantizes LLM KV caches to 2-bit precision with 8\u00d7 memory reduction and near-BF16 accuracy.",
+      "excerpt": "Together AI's OSCAR quantizes LLM KV caches to 2-bit precision with 8\u00d7 memory reduction and near-BF16 accuracy.",
+      "summary": "Connect with us Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Design a Complete Multimodal RLVR Pipeline with Open-MM-RL, Vision-Language Prompting, Reward Scoring, and GRPO Export Step by Step Guide to Build and Compare FedAvg and FedProx Federated Learning on Non-IID CIFAR-10 with NVIDIA FLARE Best Authentication Platforms for AI Agents and MCP Servers in 2026 WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Build a Complete Langfuse Observability... The practical impact: The research team defines the score-weighted value covariance CS = (1/N) V \u22a4 S \u22a4 SV . The research team evaluated OSCAR on four model configurations: Qwen3-4B-Thinking-2507, Qwen3-8B, Qwen3-32B, and GLM-4.7-FP8 (358B parameters). Watch next: Best Authentication Platforms for AI Agents and MCP Servers in 2026 WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Build a Complete Langfuse Observability and Evaluation Pipeline for Tracing, Prompt Management, Scoring, and...",
+      "what_happened": "Connect with us Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Design a Complete Multimodal RLVR Pipeline with Open-MM-RL, Vision-Language Prompting, Reward Scoring, and GRPO Export Step by Step Guide to Build and Compare FedAvg and FedProx Federated Learning on Non-IID CIFAR-10 with NVIDIA FLARE Best Authentication Platforms for AI Agents and MCP Servers in 2026 WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Build a Complete Langfuse Observability...",
+      "why_matters": "The practical impact: The research team defines the score-weighted value covariance CS = (1/N) V \u22a4 S \u22a4 SV . The research team evaluated OSCAR on four model configurations: Qwen3-4B-Thinking-2507, Qwen3-8B, Qwen3-32B, and GLM-4.7-FP8 (358B parameters).",
+      "what_to_watch": "Watch next: Best Authentication Platforms for AI Agents and MCP Servers in 2026 WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Build a Complete Langfuse Observability and Evaluation Pipeline for Tracing, Prompt Management, Scoring, and...",
+      "key_points": [
+        "Connect with us Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Design a Complete Multimodal RLVR Pipeline with Open-MM-RL, Vision-Language Prompting, Reward Scoring, and GRPO Export Step by...",
+        "Together AI Open-Sources OSCAR: An Attention-Aware 2-Bit KV Cache Quantization System for Long-Context LLM Serving Long-context inference makes the KV cache one of the main costs of serving LLMs.",
+        "Best Authentication Platforms for AI Agents and MCP Servers in 2026 WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Build a Complete Langfuse Observability and Evaluation...",
+        "StepFun Releases StepAudio 2.5 Realtime: An End-to-End Voice Model with Roleplay-Specific RLHF and Paralinguistic...",
+        "Tencent Open-Sources TencentDB Agent Memory: A 4-Tier Local Memory Pipeline for AI Agents",
+        "The research team defines the score-weighted value covariance CS = (1/N) V \u22a4 S \u22a4 SV .",
+        "Microsoft Research Releases Webwright: A Terminal-Native Web Agent Framework That Scores 60.1% on Odysseys,...",
+        "02 SGLang installed: OSCAR is integrated into the SGLang serving framework.",
+        "The research team evaluated OSCAR on four model configurations: Qwen3-4B-Thinking-2507, Qwen3-8B, Qwen3-32B, and GLM-4.7-FP8 (358B parameters).",
+        "OSCAR integrates directly into SGLang with full paged KV-cache and prefix cache compatibility, requiring no changes to the inference client.",
+        "The research team also compared against channel-wise methods on AIME25 (Table 1).",
+        "OSCAR estimates the empirical query covariance CQ = (1/N) \u03a3 qn \u22a4 qn from a calibration set, eigen-decomposes it, and uses the eigenvectors UQ as the key rotation basis."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/90ae31c1f9d7313b.png",
+      "image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-49.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-highly-scalable-serverless-langgraph-multi-agent-systems-in-aws-with-amazon-bedrock-agentcore/",
+      "title": "Build highly scalable serverless LangGraph multi-agent systems in AWS with Amazon Bedrock AgentCore | Amazon Web Services",
+      "description": "In this post, we provide a solution to build highly scalable, serverless multi-agent generative AI systems on AWS using LangGraph Agents as orchestrators integrated with Amazon Bedrock AgentCore Memory and Amazon Bedrock AgentCore Observability.",
+      "excerpt": "In this post, we provide a solution to build highly scalable, serverless multi-agent generative AI systems on AWS using LangGraph Agents as orchestrators integrated with Amazon Bedrock AgentCore Memory and Amazon Bedrock AgentCore Observability.",
+      "summary": "Integrated AgentCore Memory and Observability address two of the most common challenges in real-world agent deployments - state management and visibility - by providing shared, durable context across agent runs and deep insight into agent behavior, performance, and cost. Our Agent implementation uses AgentCore Observability to provide detailed visualizations of each step in the agent workflow, enabling developers to inspect execution paths, audit intermediate outputs, and debug performance bottlenecks. The practical impact: Integrated memory services from AgentCore Memory enable agents to maintain short-term conversational context and long-term knowledge across sessions. Our serverless LangGraph and AgentCore based multi-agent orchestration system solution is a generative AI-powered multi-agent campaign review system that orchestrates human reviews using diverse personas that enable marketing campaigns to resonate... Watch next: Building high-performance AI agents today requires more than powerful models and demands an implementation that can deliver consistent performance, preserve context across interactions, and provide deep observability into how agents reason and behave in...",
+      "what_happened": "Integrated AgentCore Memory and Observability address two of the most common challenges in real-world agent deployments - state management and visibility - by providing shared, durable context across agent runs and deep insight into agent behavior, performance, and cost. Our Agent implementation uses AgentCore Observability to provide detailed visualizations of each step in the agent workflow, enabling developers to inspect execution paths, audit intermediate outputs, and debug performance bottlenecks.",
+      "why_matters": "The practical impact: Integrated memory services from AgentCore Memory enable agents to maintain short-term conversational context and long-term knowledge across sessions. Our serverless LangGraph and AgentCore based multi-agent orchestration system solution is a generative AI-powered multi-agent campaign review system that orchestrates human reviews using diverse personas that enable marketing campaigns to resonate...",
+      "what_to_watch": "Watch next: Building high-performance AI agents today requires more than powerful models and demands an implementation that can deliver consistent performance, preserve context across interactions, and provide deep observability into how agents reason and behave in production.",
+      "key_points": [
+        "Integrated AgentCore Memory and Observability address two of the most common challenges in real-world agent deployments - state management and visibility - by providing shared, durable context across agent runs and...",
+        "Building high-performance AI agents today requires more than powerful models and demands an implementation that can deliver consistent performance, preserve context across interactions, and provide deep observability...",
+        "Our Agent implementation uses AgentCore Observability to provide detailed visualizations of each step in the agent workflow, enabling developers to inspect execution paths, audit intermediate outputs, and debug...",
+        "LangGraph\u2019s explicit graph-based execution model enables deterministic coordination, parallelism, and conditional routing between agents, making complex multi-agent workflows more straightforward to reason and debug.",
+        "Use the following step-by-step guidance also outlined exactly in the README of the GitHub repo to deploy and access the solution in your AWS environment: Step 2: Configure AWS credentials Step 3: Set up an Amazon...",
+        "Whether you\u2019re implementing campaign review systems, digital assistants, or other multi-agent reasoning workflows, this approach allows you to decouple orchestration from execution, scale elastically with demand, and...",
+        "In this post, we provide a solution to build highly scalable, serverless multi-agent generative AI systems on AWS using LangGraph Agents as orchestrators integrated with Amazon Bedrock AgentCore Memory and Amazon...",
+        "Integrated memory services from AgentCore Memory enable agents to maintain short-term conversational context and long-term knowledge across sessions.",
+        "Step 6: Get deployment outputs aws cloudformation describe-stacks --stack-name < your stack name > --query 'Stacks[0].Outputs' --output table Step 8: Configure front-end environment API_URL = $( aws cloudformation...",
+        "The orchestrator is implemented as the supervising graph that routes execution, triggers parallel branches for specialized agents, and collects their outputs for final aggregation.The LangGraph orchestrator and...",
+        "We use AgentCore Memory for two key use cases within our Agent implementation specifically for multi-agent shared memory to provide both context and shared memory across independent agent runs and to provide support...",
+        "It consists of three specialized AI agents that analyze the marketing campaign in parallel \u2013 a persona reviewer agent reviews content from diverse demographic perspectives and provides resonance scoring, a validator..."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8f6f99ff44e06b2a.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/02/image-ml-201651.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/agentwatch-proactive-aws-monitoring-with-ambient-agents/",
+      "title": "AgentWatch: Proactive AWS monitoring with ambient agents | Amazon Web Services",
+      "description": "In this post, we demonstrate the capabilities of AgentWatch through practical implementation. You will see how the solution performs infrastructure checks every 15 minutes, summarizing CloudWatch metrics, logs, and alarms across multiple AWS accounts. The agent delivers actionable reports directly to Slack and responds to natural language queries about your infrastructure state. Throughout, we explore three human-in-the-loop patterns that maintain appropriate oversight while maximizing automation.",
+      "excerpt": "In this post, we demonstrate the capabilities of AgentWatch through practical implementation. You will see how the solution performs infrastructure checks every 15 minutes, summarizing CloudWatch metrics, logs, and alarms across multiple AWS accounts. The agent delivers actionable reports directly to Slack and responds to natural language queries about your infrastructure state. Throughout, we explore three human-in-the-loop patterns that maintain appropriate oversight while maximizing automation.",
+      "summary": "Introducing AgentWatch We built AgentWatch as an ambient AWS monitoring agent on Amazon Bedrock\u2019s large language model (LLM) and deploy it using Amazon Bedrock AgentCore Runtime - a secure, serverless hosting environment purpose-built for running AI agents at scale. Configure Identity Provider python idp_setup/setup_cognito.py Bash Deploy Agent to AgentCore Runtime # Install the latest AgentCore CLI npm install -g @aws/agentcore # Create an AgentCore project and bring your existing agent code agentcore create... The practical impact: For this solution, we use Slack as the end-user interface where the ambient agent posts messages and where you interact with the agent on demand. Artificial Intelligence AgentWatch: Proactive AWS monitoring with ambient agents AgentWatch delivers ambient AWS resource monitoring for your DevOps team, moving beyond the reactive cycle of managing Amazon CloudWatch alarms across multiple accounts. Watch next: Deploy the agent on AgentCore Runtime, provides a secure, serverless, and purpose-built hosting environment for running AI agents at scale.",
+      "what_happened": "Introducing AgentWatch We built AgentWatch as an ambient AWS monitoring agent on Amazon Bedrock\u2019s large language model (LLM) and deploy it using Amazon Bedrock AgentCore Runtime - a secure, serverless hosting environment purpose-built for running AI agents at scale. Configure Identity Provider python idp_setup/setup_cognito.py Bash Deploy Agent to AgentCore Runtime # Install the latest AgentCore CLI npm install -g @aws/agentcore # Create an AgentCore project and bring your existing agent code agentcore create...",
+      "why_matters": "The practical impact: For this solution, we use Slack as the end-user interface where the ambient agent posts messages and where you interact with the agent on demand. Artificial Intelligence AgentWatch: Proactive AWS monitoring with ambient agents AgentWatch delivers ambient AWS resource monitoring for your DevOps team, moving beyond the reactive cycle of managing Amazon CloudWatch alarms across multiple accounts.",
+      "what_to_watch": "Watch next: Deploy the agent on AgentCore Runtime, provides a secure, serverless, and purpose-built hosting environment for running AI agents at scale.",
+      "key_points": [
+        "Introducing AgentWatch We built AgentWatch as an ambient AWS monitoring agent on Amazon Bedrock\u2019s large language model (LLM) and deploy it using Amazon Bedrock AgentCore Runtime - a secure, serverless hosting...",
+        "Configure Identity Provider python idp_setup/setup_cognito.py Bash Deploy Agent to AgentCore Runtime # Install the latest AgentCore CLI npm install -g @aws/agentcore # Create an AgentCore project and bring your...",
+        "Deploy the agent on AgentCore Runtime, provides a secure, serverless, and purpose-built hosting environment for running AI agents at scale.",
+        "It configures your identity provider (Cognito), deploys the agent to AgentCore Runtime, and sets up the Lambda function, EventBridge rule, and API Gateway.",
+        "After data collection completes, the LangChain agent sends the aggregated CloudWatch data to Amazon Bedrock\u2019s Claude Sonnet model , which processes and transforms raw monitoring information into contextual...",
+        "The agent uses the Amazon Bedrock Claude model for natural language understanding and can analyze CloudWatch dashboards, fetch logs, examine alarms, and perform cross-account monitoring.",
+        "\\ --entrypoint ambient_agent.py \\ --language Python # Deploy to AgentCore Runtime agentcore deploy Code Configure Slack Integration \u2013 Update your Slack app with the API Gateway endpoint from deployment output.",
+        "The architecture follows a hybrid ambient model with both scheduled monitoring and on-demand interaction capabilities.Using the LLM\u2019s natural language understanding, AgentWatch analyzes complex AWS monitoring scenarios.",
+        "Architecture and implementation AgentWatch implements a scheduled monitoring system that autonomously collects and summarizes AWS infrastructure data every 15 minutes.",
+        "For this solution, we use Slack as the end-user interface where the ambient agent posts messages and where you interact with the agent on demand.",
+        "Artificial Intelligence AgentWatch: Proactive AWS monitoring with ambient agents AgentWatch delivers ambient AWS resource monitoring for your DevOps team, moving beyond the reactive cycle of managing Amazon...",
+        "After you deploy the agent, it becomes available as an HTTP endpoint that you can call programmatically."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/16eb823c8e1d929e.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/15/ML-20132-image-1-1.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 1,
+  "carousel_total_parts": 2,
+  "slides": [
+    "From idea to AI app: Creating intelligent research assistants with Strands",
+    "Underscores Power of AI Flaw Finder Mythos",
+    "This startup is betting India's gig economy can train the world's robots",
+    "Mistral AI Taps Legal Sector With Harvey Partnership",
+    "Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs",
+    "Together AI Open-Sources OSCAR: An Attention-Aware 2-Bit KV Cache Quantization System for",
+    "Build highly scalable serverless LangGraph multi-agent systems in AWS with Amazon Bedrock",
+    "AgentWatch: Proactive AWS monitoring with ambient agents",
+    "Follow for the next AI briefing"
+  ]
+}
