@@ -1,0 +1,374 @@
+{
+  "email_received_at": "2026-05-26T14:22-07:00",
+  "recommended_post_time": "18:00",
+  "headline": "Technical deep dive: AgentCore payments and innovation in agentic commerce \u2014 Part 1 of 2",
+  "subject": "\ud83d\udea8 AI Alert: 43 new launches \u2014 The Verge AI, AWS Machine Learning",
+  "source_date": "Tue, 26 May 2026 14:22:44 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Apple",
+    "Amazon",
+    "AWS"
+  ],
+  "models": [
+    "Claude",
+    "Gemini",
+    "Llama",
+    "Mistral"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute"
+  ],
+  "article_url": "https://aws.amazon.com/blogs/machine-learning/technical-deep-dive-agentcore-payments-and-innovation-in-agentic-commerce/",
+  "article_title": "Technical deep dive: AgentCore payments and innovation in agentic commerce | Amazon Web Services",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/87ce657389de3ad6.png",
+  "article_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/21/ML-21056-3.png",
+  "article_items": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/technical-deep-dive-agentcore-payments-and-innovation-in-agentic-commerce/",
+      "title": "Technical deep dive: AgentCore payments and innovation in agentic commerce | Amazon Web Services",
+      "description": "Amazon Bedrock AgentCore payments is now available in preview, it provides instant payments to paid external services with no manual billing setup per provider, stablecoin support for cost-effective microtransactions that make sub-cent transactions economically viable, and configurable spending guardrails that give you fine-grained control over agent budgets and transaction limits. In this post, we walk you through a technical deep dive of AgentCore payments.",
+      "excerpt": "Amazon Bedrock AgentCore payments is now available in preview, it provides instant payments to paid external services with no manual billing setup per provider, stablecoin support for cost-effective microtransactions that make sub-cent transactions economically viable, and configurable spending guardrails that give you fine-grained control over agent budgets and transaction limits. In this post, we walk you through a technical deep dive of AgentCore payments.",
+      "summary": "To build a payment capability that works for agent developers, the team mapped out the key challenges and questions developers face when enabling their agent to pay for paid APIs, MCPs, and content. AgentCore Runtime \u2013 Deploy the agent using agentcore deploy . The practical impact: The first critical hurdle for a developer is figuring out how to fund the agent that powers their agent\u2019s transactions. To support this shift, Amazon Bedrock AgentCore provides a modular, fully managed platform that helps developers build, deploy, and operate generative AI agents at scale. Watch next: The application backend creates a session with a USD $10.00 budget and passes the session ID and instrument ID to the agent.",
+      "what_happened": "To build a payment capability that works for agent developers, the team mapped out the key challenges and questions developers face when enabling their agent to pay for paid APIs, MCPs, and content. AgentCore Runtime \u2013 Deploy the agent using agentcore deploy .",
+      "why_matters": "The practical impact: The first critical hurdle for a developer is figuring out how to fund the agent that powers their agent\u2019s transactions. To support this shift, Amazon Bedrock AgentCore provides a modular, fully managed platform that helps developers build, deploy, and operate generative AI agents at scale.",
+      "what_to_watch": "Watch next: The application backend creates a session with a USD $10.00 budget and passes the session ID and instrument ID to the agent.",
+      "key_points": [
+        "Deep dive: AI-powered research assistant A financial analyst asks their AI agent: \u201cAnalyze Amazon\u2019s stock and compare it to industry benchmarks.\u201d The agent needs three paid sources: a financial data API (USD $0.50...",
+        "The application backend creates a session with a USD $10.00 budget and passes the session ID and instrument ID to the agent.",
+        "To build a payment capability that works for agent developers, the team mapped out the key challenges and questions developers face when enabling their agent to pay for paid APIs, MCPs, and content.",
+        "The agent retries with the proof and receives the paid content.",
+        "AgentCore Runtime \u2013 Deploy the agent using agentcore deploy .",
+        "With the payment infrastructure managed, you can focus on improving the agent itself: adding new data sources, refining synthesis logic, and expanding to new domains.",
+        "She is a speaker at AI conferences such as AWS re:Invent, NVIDIA GTC, and AI Summit, where she specializes in multi-agent systems, agent observability, large language models (LLMs), partner network, and...",
+        "AgentCore payments understands the x402 payment protocol, including both x402 version 1 and version 2, and knows exactly how to generate the payment proof an agent needs to unlock the service.",
+        "The agent calls ProcessPayment , passing in the session ID, instrument ID, and the x402 payment payload.",
+        "Artificial Intelligence Technical deep dive: AgentCore payments and innovation in agentic commerce The industry is entering a world where billions of generative AI agents operate autonomously, acting on behalf of...",
+        "Then the payment is processed through the provider.",
+        "Those paid endpoints respond with a 402 Payment Required status to the agent."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/87ce657389de3ad6.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/21/ML-21056-3.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/from-idea-to-ai-app-creating-intelligent-research-assistants-with-strands/",
+      "title": "From idea to AI app: Creating intelligent research assistants with Strands | Amazon Web Services",
+      "description": "Building an AI app shouldn\u2019t require a PhD in machine learning (ML) or months of wrestling with complex architectures. Yet that\u2019s exactly what happens when you try to orchestrate multiple API calls, manage conversation state, and create agents that can reason on their own. I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand",
+      "excerpt": "Building an AI app shouldn\u2019t require a PhD in machine learning (ML) or months of wrestling with complex architectures. Yet that\u2019s exactly what happens when you try to orchestrate multiple API calls, manage conversation state, and create agents that can reason on their own. I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand",
+      "summary": "Building an AI app shouldn\u2019t require a PhD in machine learning (ML) or months of wrestling with complex architectures. Yet that\u2019s exactly what happens when you try to orchestrate multiple API calls, manage conversation state, and create agents that can reason on their own. The practical impact: I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand Watch next: I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand",
+      "what_happened": "Building an AI app shouldn\u2019t require a PhD in machine learning (ML) or months of wrestling with complex architectures. Yet that\u2019s exactly what happens when you try to orchestrate multiple API calls, manage conversation state, and create agents that can reason on their own.",
+      "why_matters": "The practical impact: I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand",
+      "what_to_watch": "Watch next: I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand",
+      "key_points": [
+        "Building an AI app shouldn\u2019t require a PhD in machine learning (ML) or months of wrestling with complex architectures.",
+        "Yet that\u2019s exactly what happens when you try to orchestrate multiple API calls, manage conversation state, and create agents that can reason on their own.",
+        "I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand"
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8e32cbb3a7cd5919.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/14/image-ML-196843.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/09f5cf878327ff72.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e1355c83f829fd32.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fa712697804eeaaa.png"
+      ],
+      "extra_image_urls": [
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/14/image-ML-196845.png",
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/14/image-ML-1968413.png",
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/14/image-ML-196848.png"
+      ]
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/anthropic-update-underscores-power-ai-flaw-finder-mythos",
+      "title": "Anthropic Update Underscores Power of AI Flaw Finder Mythos",
+      "description": "Anthropic Update Underscores Power of AI Flaw Finder Mythos",
+      "excerpt": "Anthropic Update Underscores Power of AI Flaw Finder Mythos",
+      "summary": "Arguably, the most eye-catching are figures that illustrate its success rate -- but also highlight the alarming number of weaknesses prevalent in software that the company said in its May 22 update is \u201cfundamental to the functioning of the internet and other essential infrastructure.\u201d Related: Mistral AI Taps Legal Sector With Harvey Partnership Among the developments from partners and external testers were Cloudflare finding 2,000 bugs (400 of which were critical); Mozilla unearthing 271 vulnerabilities in... The practical impact: The vendor introduced Glasswing a few weeks after it emerged that the company had developed Claude Mythos , a powerful new model so adept at finding security vulnerabilities in code that Anthropic decided not to release it, for fear of misuse in the wrong hands. The AI Summit London is the flagship AI event of London Tech Week, bringing together enterprise leaders, technical buyers and innovators to... Watch next: Anthropic has provided an advisory on Project Glasswing, the AI initiative the vendor launched last month that aims to protect critical software from attack by malicious AI models.",
+      "what_happened": "Arguably, the most eye-catching are figures that illustrate its success rate -- but also highlight the alarming number of weaknesses prevalent in software that the company said in its May 22 update is \u201cfundamental to the functioning of the internet and other essential infrastructure.\u201d Related: Mistral AI Taps Legal Sector With Harvey Partnership Among the developments from partners and external testers were Cloudflare finding 2,000 bugs (400 of which were critical); Mozilla unearthing 271 vulnerabilities in...",
+      "why_matters": "The practical impact: The vendor introduced Glasswing a few weeks after it emerged that the company had developed Claude Mythos , a powerful new model so adept at finding security vulnerabilities in code that Anthropic decided not to release it, for fear of misuse in the wrong hands. The AI Summit London is the flagship AI event of London Tech Week, bringing together enterprise leaders, technical buyers and innovators to...",
+      "what_to_watch": "Watch next: Anthropic has provided an advisory on Project Glasswing, the AI initiative the vendor launched last month that aims to protect critical software from attack by malicious AI models.",
+      "key_points": [
+        "Arguably, the most eye-catching are figures that illustrate its success rate -- but also highlight the alarming number of weaknesses prevalent in software that the company said in its May 22 update is \u201cfundamental to...",
+        "Anthropic Update Underscores Power of AI Flaw Finder Mythos The cybersecurity model is not yet ready for widespread release.",
+        "The vendor introduced Glasswing a few weeks after it emerged that the company had developed Claude Mythos , a powerful new model so adept at finding security vulnerabilities in code that Anthropic decided not to...",
+        "Anthropic has provided an advisory on Project Glasswing, the AI initiative the vendor launched last month that aims to protect critical software from attack by malicious AI models.",
+        "Among 23,019 vulnerabilities, 6,202 were estimated to be of high or critical severity, with the most concerning being a flaw in wolfSSL , a cryptography library, which would have allowed attackers to forge...",
+        "Instead, Anthropic opted to share it with about 50 key partners, including some of tech\u2019s biggest names, including AWS, Apple, Google, Microsoft, CrowdStrike, Nvidia, Broadcom, Cisco and Palo Alto Networks.",
+        "Another major finding is that Mythos is still not ready for public release.",
+        "However, Anthropic said the Glasswing initiative, which is restricted to select partners, could be expanded.",
+        "Anthropic also revealed that it had used the Mythos preview version to scan more than 1,000 open source projects over the past few months, and again, the numbers provided cause for concern.",
+        "While this has now been patched, it\u2019s in the minority: only 75 of the 530 high- or critical-severity bugs reported to maintainers to date have been resolved, prompting Anthropic to highlight another takeaway: the...",
+        "There is a clear need for a larger effort across the software industry to manage the volume of findings that these models will generate.\u201d Failure to swiftly produce patches will \u201copen a significant window for...",
+        "for 26 years, including spells as editor of leading consumer news website and weekly Auto Express and respected buying guide CarBuyer."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3ace86458a6a892e.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt68f5cd25dcabce66/68fbc4a1df1e043d350b2692/Google_Anthropic.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/817633997c821501.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7951e5138d285103.jpg"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt76562ed4368ef0c4/6a0f3eaabd84f5ec7d259af9/SpaceX2.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt50e37f43a250e73b/6a15c19d6efe00536584950f/Mistral_AI.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ]
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/mistral-ai-taps-legal-sector-harvey-partnership",
+      "title": "Mistral AI Taps Legal Sector With Harvey Partnership",
+      "description": "Mistral AI Taps Legal Sector With Harvey Partnership",
+      "excerpt": "Mistral AI Taps Legal Sector With Harvey Partnership",
+      "summary": "Mistral AI Taps Legal Sector With Harvey Partnership The generative AI vendor is expanding into the legal industry in a move reminiscent of Anthropic\u2019s legal AI deals. \u201c[This makes] them especially relevant for legal teams working across large document sets, jurisdictions, and languages.\u201d The launch follows the opening of Harvey\u2019s Paris office, as part of its expansion across Europe that includes offices in Dublin, London, Madrid, and Munich. The practical impact: Partnering with Mistral, the San Francisco-based vendor, said, will enable it to better serve local customers by adhering to local requirements and model preferences. Under the agreement, revealed on Tuesday, Mistral\u2019s models will be added to Harvey \u2019s platform, which provides legal teams with a range of AI models to assist across areas such as compliance, litigation and contract analysis. Watch next: Rival AI firms have already been building dedicated legal capabilities, particularly Anthropic, which has released a slew of industry-specific plug-ins for its Claude Cowork model, highlighted by its legal plugin , and also recently agreed to deals with several legal information providers , including...",
+      "what_happened": "Mistral AI Taps Legal Sector With Harvey Partnership The generative AI vendor is expanding into the legal industry in a move reminiscent of Anthropic\u2019s legal AI deals. \u201c[This makes] them especially relevant for legal teams working across large document sets, jurisdictions, and languages.\u201d The launch follows the opening of Harvey\u2019s Paris office, as part of its expansion across Europe that includes offices in Dublin, London, Madrid, and Munich.",
+      "why_matters": "The practical impact: Partnering with Mistral, the San Francisco-based vendor, said, will enable it to better serve local customers by adhering to local requirements and model preferences. Under the agreement, revealed on Tuesday, Mistral\u2019s models will be added to Harvey \u2019s platform, which provides legal teams with a range of AI models to assist across areas such as compliance, litigation and contract analysis.",
+      "what_to_watch": "Watch next: Rival AI firms have already been building dedicated legal capabilities, particularly Anthropic, which has released a slew of industry-specific plug-ins for its Claude Cowork model, highlighted by its legal plugin , and also recently agreed to deals with several legal information providers , including...",
+      "key_points": [
+        "Mistral AI Taps Legal Sector With Harvey Partnership The generative AI vendor is expanding into the legal industry in a move reminiscent of Anthropic\u2019s legal AI deals.",
+        "\u201c[This makes] them especially relevant for legal teams working across large document sets, jurisdictions, and languages.\u201d The launch follows the opening of Harvey\u2019s Paris office, as part of its expansion across...",
+        "Partnering with Mistral, the San Francisco-based vendor, said, will enable it to better serve local customers by adhering to local requirements and model preferences.",
+        "Rival AI firms have already been building dedicated legal capabilities, particularly Anthropic, which has released a slew of industry-specific plug-ins for its Claude Cowork model, highlighted by its legal plugin ...",
+        "Under the agreement, revealed on Tuesday, Mistral\u2019s models will be added to Harvey \u2019s platform, which provides legal teams with a range of AI models to assist across areas such as compliance, litigation and contract...",
+        "Mistral joins Harvey\u2019s roster of AI providers, which includes OpenAI, Anthropic and Google, and gives it access to Harvey\u2019s customer base of more than 1,500 organizations in more than 60 countries.",
+        "Mistral models will first be available to customers in the EU, followed by general availability in the U.S.",
+        "TechTarget and Informa TechTarget and Informa Tech\u2019s Digital Business Combine.",
+        "Harvey\u2019s platform is multi-model, meaning it identifies the best model for the task at hand and directs requests accordingly.",
+        "Mistral AI Taps Legal Sector With Harvey Partnership TechTarget and Informa Tech\u2019s Digital Business Combine.",
+        "Paris-based Mistral is pushing further into enterprise AI through a new partnership with legal technology startup Harvey AI, bringing its models to legal teams worldwide.",
+        "Scarlett also has a background in the mining and resources sector, with experience at Mine Australia, Mine Technology and Power Technology."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/41caabaea6e5ee3f.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt92c8f8836ec4af83/6a0ba309e999dbd4b84018c9/Musk.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.marktechpost.com/2026/05/25/together-ai-open-sources-oscar-an-attention-aware-2-bit-kv-cache-quantization-system-for-long-context-llm-serving/",
+      "title": "Together AI Open-Sources OSCAR: An Attention-Aware 2-Bit KV Cache Quantization System for Long-Context LLM Serving",
+      "description": "Together AI's OSCAR quantizes LLM KV caches to 2-bit precision with 8\u00d7 memory reduction and near-BF16 accuracy.",
+      "excerpt": "Together AI's OSCAR quantizes LLM KV caches to 2-bit precision with 8\u00d7 memory reduction and near-BF16 accuracy.",
+      "summary": "Connect with us Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Design a Complete Multimodal RLVR Pipeline with Open-MM-RL, Vision-Language Prompting, Reward Scoring, and GRPO Export Step by Step Guide to Build and Compare FedAvg and FedProx Federated Learning on Non-IID CIFAR-10 with NVIDIA FLARE Best Authentication Platforms for AI Agents and MCP Servers in 2026 WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Build a Complete Langfuse Observability... The practical impact: The research team defines the score-weighted value covariance CS = (1/N) V \u22a4 S \u22a4 SV . The research team evaluated OSCAR on four model configurations: Qwen3-4B-Thinking-2507, Qwen3-8B, Qwen3-32B, and GLM-4.7-FP8 (358B parameters). Watch next: Best Authentication Platforms for AI Agents and MCP Servers in 2026 WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Build a Complete Langfuse Observability and Evaluation Pipeline for Tracing, Prompt Management, Scoring, and...",
+      "what_happened": "Connect with us Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Design a Complete Multimodal RLVR Pipeline with Open-MM-RL, Vision-Language Prompting, Reward Scoring, and GRPO Export Step by Step Guide to Build and Compare FedAvg and FedProx Federated Learning on Non-IID CIFAR-10 with NVIDIA FLARE Best Authentication Platforms for AI Agents and MCP Servers in 2026 WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Build a Complete Langfuse Observability...",
+      "why_matters": "The practical impact: The research team defines the score-weighted value covariance CS = (1/N) V \u22a4 S \u22a4 SV . The research team evaluated OSCAR on four model configurations: Qwen3-4B-Thinking-2507, Qwen3-8B, Qwen3-32B, and GLM-4.7-FP8 (358B parameters).",
+      "what_to_watch": "Watch next: Best Authentication Platforms for AI Agents and MCP Servers in 2026 WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Build a Complete Langfuse Observability and Evaluation Pipeline for Tracing, Prompt Management, Scoring, and...",
+      "key_points": [
+        "Connect with us Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Design a Complete Multimodal RLVR Pipeline with Open-MM-RL, Vision-Language Prompting, Reward Scoring, and GRPO Export Step by...",
+        "Together AI Open-Sources OSCAR: An Attention-Aware 2-Bit KV Cache Quantization System for Long-Context LLM Serving Long-context inference makes the KV cache one of the main costs of serving LLMs.",
+        "Best Authentication Platforms for AI Agents and MCP Servers in 2026 WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Build a Complete Langfuse Observability and Evaluation...",
+        "StepFun Releases StepAudio 2.5 Realtime: An End-to-End Voice Model with Roleplay-Specific RLHF and Paralinguistic...",
+        "Tencent Open-Sources TencentDB Agent Memory: A 4-Tier Local Memory Pipeline for AI Agents",
+        "The research team defines the score-weighted value covariance CS = (1/N) V \u22a4 S \u22a4 SV .",
+        "Microsoft Research Releases Webwright: A Terminal-Native Web Agent Framework That Scores 60.1% on Odysseys,...",
+        "02 SGLang installed: OSCAR is integrated into the SGLang serving framework.",
+        "The research team evaluated OSCAR on four model configurations: Qwen3-4B-Thinking-2507, Qwen3-8B, Qwen3-32B, and GLM-4.7-FP8 (358B parameters).",
+        "OSCAR integrates directly into SGLang with full paged KV-cache and prefix cache compatibility, requiring no changes to the inference client.",
+        "The research team also compared against channel-wise methods on AIME25 (Table 1).",
+        "OSCAR estimates the empirical query covariance CQ = (1/N) \u03a3 qn \u22a4 qn from a calibration set, eigen-decomposes it, and uses the eigenvectors UQ as the key rotation basis."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/90ae31c1f9d7313b.png",
+      "image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-49.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.therobotreport.com/how-humanoids-learn-to-read-the-room-2/",
+      "title": "How humanoids learn to read the room - The Robot Report",
+      "description": "Sponsored by Analog Devices Inc. Designing for a humanoid robot is one of the most complicated applications in robotics today. All on its own, a humanoid",
+      "excerpt": "Sponsored by Analog Devices Inc. Designing for a humanoid robot is one of the most complicated applications in robotics today. All on its own, a humanoid",
+      "summary": "In humanoid robots, this enables redundancy and fast, local processing of visual data, which enables these systems to identify and understand what the visual data means about their surroundings using physical AI to process visual data locally in the robot, rather than sending it to the cloud. Cameras and visual sensors are unlikely to be located near the central computer, which means all that visual data has to travel through the robot over long cables, introducing latency. The practical impact: \u201cBeing able to speak in natural language and having a conversational user interface is a very powerful way to communicate with a robot,\u201d says Ostrem. \u201cThis allows you to look deeply into what is happening in the chemistry of the battery,\u201d Ostrem explains. Watch next: Ostrem believes the future lies in better AI at the edge - both in terms of improved accuracy in object classification, and optimized low-power edge processing. \u201cThis allows you to look deeply into what is happening in the chemistry of the battery,\u201d Ostrem explains.",
+      "what_happened": "In humanoid robots, this enables redundancy and fast, local processing of visual data, which enables these systems to identify and understand what the visual data means about their surroundings using physical AI to process visual data locally in the robot, rather than sending it to the cloud. Cameras and visual sensors are unlikely to be located near the central computer, which means all that visual data has to travel through the robot over long cables, introducing latency.",
+      "why_matters": "The practical impact: \u201cBeing able to speak in natural language and having a conversational user interface is a very powerful way to communicate with a robot,\u201d says Ostrem. \u201cThis allows you to look deeply into what is happening in the chemistry of the battery,\u201d Ostrem explains.",
+      "what_to_watch": "Watch next: Ostrem believes the future lies in better AI at the edge - both in terms of improved accuracy in object classification, and optimized low-power edge processing. \u201cThis allows you to look deeply into what is happening in the chemistry of the battery,\u201d Ostrem explains.",
+      "key_points": [
+        "In humanoid robots, this enables redundancy and fast, local processing of visual data, which enables these systems to identify and understand what the visual data means about their surroundings using physical AI to...",
+        "Cameras and visual sensors are unlikely to be located near the central computer, which means all that visual data has to travel through the robot over long cables, introducing latency.",
+        "\u201cThis allows you to look deeply into what is happening in the chemistry of the battery,\u201d Ostrem explains.",
+        "\u201cNow you\u2019re talking about beamforming and the acoustic field, and it requires that you know the relative delays between the different microphones.\u201d \u201cThis is something that ADI\u2019s A2B audio bus does superbly, because...",
+        "Designing for a humanoid robot is one of the most complicated applications in robotics today.",
+        "All on its own, a humanoid How humanoids learn to read the room Designing for a humanoid robot is one of the most complicated applications in robotics today.",
+        "GMSL and the growing ecosystem around robotic vision systems GMSL and the growing ecosystem around robotic vision systems Search The Robot Report",
+        "Most humanoid robots run on lithium-ion cells in the range of 48, 60 or 72 volts - smaller than those used in automotive, but carrying many of the same risks such as overheating or thermal runaway.",
+        "\u201cIf you look at a robot, the amount of wiring needed for all the sensors is one of the biggest problems,\u201d says Ostrem.",
+        "In a humanoid robot, a main processor serves as the brain, with vision sensors in the head or torso connected directly to the central computer.",
+        "\u201cA2B allows you to put in advanced audio functionality with very few wires.\u201d All of these sensors, processors and computing needs power to operate.",
+        "Already in wide use throughout the automotive industry, ADI\u2019s Gigabit Multimedia Serial Link (GMSL) technology transports video data in real time, in a single stream capable of carrying many gigabits per second."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/91751e926cf48c93.jpg",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/05/humanoidrobo-02-1024x499.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.therobotreport.com/gmsl-and-the-growing-ecosystem-around-robotic-vision-systems-2/",
+      "title": "GMSL and the growing ecosystem around robotic vision systems - The Robot Report",
+      "description": "Sponsored by Analog Devices Inc. Just a few years ago, many site owners were satisfied if a robot could move from point A to point B. That\u2019s not quite",
+      "excerpt": "Sponsored by Analog Devices Inc. Just a few years ago, many site owners were satisfied if a robot could move from point A to point B. That\u2019s not quite",
+      "summary": "Advantech is enabling customers\u2019 GMSL cameras across platforms from Intel and Qualcomm to NVIDIA, where the nuances vary from one system to another. GMSL and the growing ecosystem around robotic vision systems GMSL and the growing ecosystem around robotic vision systems Search The Robot Report The practical impact: \u201cThe biggest challenge is no longer just the image quality itself,\u201d says Stephen Liu, robotics lead at embedded systems developer Advantech. GMSL and the growing ecosystem around robotic vision systems GMSL and the growing ecosystem around robotic vision systems Search The Robot Report Watch next: \u201cAt the end of the day, the customers expect somebody to provide a working system, a ready-to-use solution consisting of both the computer and the camera.\u201d Tell Us What You Think! GMSL and the growing ecosystem around robotic vision systems GMSL and the growing ecosystem around robotic vision systems...",
+      "what_happened": "Advantech is enabling customers\u2019 GMSL cameras across platforms from Intel and Qualcomm to NVIDIA, where the nuances vary from one system to another. GMSL and the growing ecosystem around robotic vision systems GMSL and the growing ecosystem around robotic vision systems Search The Robot Report",
+      "why_matters": "The practical impact: \u201cThe biggest challenge is no longer just the image quality itself,\u201d says Stephen Liu, robotics lead at embedded systems developer Advantech. GMSL and the growing ecosystem around robotic vision systems GMSL and the growing ecosystem around robotic vision systems Search The Robot Report",
+      "what_to_watch": "Watch next: \u201cAt the end of the day, the customers expect somebody to provide a working system, a ready-to-use solution consisting of both the computer and the camera.\u201d Tell Us What You Think! GMSL and the growing ecosystem around robotic vision systems GMSL and the growing ecosystem around robotic vision systems...",
+      "key_points": [
+        "GMSL and the growing ecosystem around robotic vision systems GMSL and the growing ecosystem around robotic vision systems Search The Robot Report",
+        "As the GMSL ecosystem has matured, the design approaches have moved into robotics.",
+        "Advantech is enabling customers\u2019 GMSL cameras across platforms from Intel and Qualcomm to NVIDIA, where the nuances vary from one system to another.",
+        "As sensor counts grow, robotic OEMs have to manage bandwidth, latency, synchronization, and compute all at the same time.\u201d These systems move large amounts of data in real time, and if interfaces cannot sustain...",
+        "Compute is part of the challenge.",
+        "\u201cRobotics teams can focus on what really differentiates them - AI models, autonomy, application logic, deployment and so on - rather than reinventing sensing infrastructure,\u201d says Liu.",
+        "This configuration work requires expertise in both the cameras and the computing platforms.",
+        "For startups, incubators, and innovators, speed and agility are often the most important factors.",
+        "Often, lower-level configuration and coding are required, along with different AI SDKs and development tools to optimize performance.",
+        "\u201cYou can carry high-resolution video, control signals, and synchronization over a single lightweight cable, reliably and with very low latency.",
+        "\u201cIt requires a lot of coordination between the GPU, MPUs, and real-time operating system to deliver this deterministic performance.\u201d In harsh environments, the demands become even harder to manage.",
+        "\u201cThe biggest challenge is no longer just the image quality itself,\u201d says Stephen Liu, robotics lead at embedded systems developer Advantech."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/208b2b4065a23b7a.jpg",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/05/gmsl-robo-03-844x1024.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/",
+      "title": "OpenRouter more than doubles valuation to $1.3B in a year | TechCrunch",
+      "description": "OpenRouter has raised a $113 million Series B led by CapitalG. Its 5x growth in usage over six months indicates the multi-AI-model future is here.",
+      "excerpt": "OpenRouter has raised a $113 million Series B led by CapitalG. Its 5x growth in usage over six months indicates the multi-AI-model future is here.",
+      "summary": "OpenRouter has raised a $113 million Series B led by CapitalG. More from TechCrunch OpenRouter more than doubles valuation to $1.3B in a year Popular AI gateway maker OpenRouter , founded in 2023, has raised a hefty $113 million Series B led by CapitalG, the growth venture fund of Google parent company Alphabet. The practical impact: This is a hefty increase from the estimated $547 million post-money valuation it hit a year ago, per PitchBook, after raising $40 million in Series A funding in June 2025. The first StrictlyVC of 2026 hits SF on April 30. Watch next: Rather than a future where startups or enterprises standardize on a model of choice - perhaps creating a single all-powerful model maker in the process - the growth of OpenRouter indicates something else. This is a hefty increase from the estimated $547 million post-money valuation it hit a year ago...",
+      "what_happened": "OpenRouter has raised a $113 million Series B led by CapitalG. More from TechCrunch OpenRouter more than doubles valuation to $1.3B in a year Popular AI gateway maker OpenRouter , founded in 2023, has raised a hefty $113 million Series B led by CapitalG, the growth venture fund of Google parent company Alphabet.",
+      "why_matters": "The practical impact: This is a hefty increase from the estimated $547 million post-money valuation it hit a year ago, per PitchBook, after raising $40 million in Series A funding in June 2025. The first StrictlyVC of 2026 hits SF on April 30.",
+      "what_to_watch": "Watch next: Rather than a future where startups or enterprises standardize on a model of choice - perhaps creating a single all-powerful model maker in the process - the growth of OpenRouter indicates something else. This is a hefty increase from the estimated $547 million post-money valuation it hit a year ago...",
+      "key_points": [
+        "OpenRouter has raised a $113 million Series B led by CapitalG.",
+        "More from TechCrunch OpenRouter more than doubles valuation to $1.3B in a year Popular AI gateway maker OpenRouter , founded in 2023, has raised a hefty $113 million Series B led by CapitalG, the growth venture fund...",
+        "This is a hefty increase from the estimated $547 million post-money valuation it hit a year ago, per PitchBook, after raising $40 million in Series A funding in June 2025.",
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "OpenRouter more than doubles valuation to $1.3B in a year TechCrunch Disrupt 2026 Early Bird ticket rates end May 29 Amazon fulfillment competitor Stord raises $250M at $3B valuation",
+        "The gateway helps enterprises and other AI users select different models for different jobs to control costs or increase reasoning and accuracy for the task at hand.",
+        "Rather than a future where startups or enterprises standardize on a model of choice - perhaps creating a single all-powerful model maker in the process - the growth of OpenRouter indicates something else.",
+        "OpenRouter provides access to over 400 models, including Anthropic, Google, OpenAI, xAI, and DeepSeek, it says.",
+        "While the startup didn\u2019t disclose its new valuation, The New York Times reports that it landed at about $1.3 billion post-money.",
+        "That\u2019s a 5x increase from the 5 trillion tokens it was processing per week just six months ago.",
+        "Since then, AI work has shifted from training to inference to, now, agents.",
+        "It claims 8 million global users and 100 trillion tokens processed per month, or about 25 trillion per week."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a97a872df260cc92.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-157503102.jpg?resize=1200,776",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 1,
+  "carousel_total_parts": 2,
+  "slides": [
+    "Technical deep dive: AgentCore payments and innovation in agentic commerce",
+    "From idea to AI app: Creating intelligent research assistants with Strands",
+    "Underscores Power of AI Flaw Finder Mythos",
+    "Mistral AI Taps Legal Sector With Harvey Partnership",
+    "Together AI Open-Sources OSCAR: An Attention-Aware 2-Bit KV Cache Quantization System for",
+    "How humanoids learn to read the room - The Robot Report",
+    "GMSL and the growing ecosystem around robotic vision systems - The Robot Report",
+    "OpenRouter more than doubles valuation to $1.3B in a year",
+    "Follow for the next AI briefing"
+  ]
+}
