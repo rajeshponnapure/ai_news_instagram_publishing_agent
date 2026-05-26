@@ -1,0 +1,28 @@
+Borealis - open data, code, weights recipe for training Audio LLM — Part 2 of 2.
+
+👉 Swipe to see the full breakdown →
+
+The mix is what the model sees at training time with noise augmentation enabled. vLLM ships a closed set of multimodal architectures out of the box ( Qwen2-Audio , LLaVA , Phi-4-MM , a couple more). The practical impact: When the user writes a prompt with one <|AUDIO|> , the processor expands it into <|start_of_audio|> + 375× <|AUDIO|> + <|start_of_audio|> , and marks each of those 375 tokens as "embedding will be.
+
+🔹 e-year-old startup is replacing hundreds of employees with thousands of AI agents.
+⚡ Don't dilute target-language data "for diversity." 02 Adding plain-text instructions At 25%, the model starts forgetting the audio task .
+🧠 Where the 2.1× comes from.
+📊 Under the hood - serving and integrating with transformers Serving multimodal models isn't a new topic.
+🔬 When the user writes a prompt with one <|AUDIO <|start_of_audio <|AUDIO <|start_of_audio as "embedding will be supplied.
+
+What's the one thing about this that surprised you most?
+
+💾 Save this post — you'll want to come back to this one.
+
+📰 Read the full stories:
+🔗 https://github.com/huggingface/trl/releases/tag/v1.5.0
+🔗 https://www.wired.com/story/the-ai-era-is-creating-a-bug-hunting-arms-race/
+🔗 https://techcrunch.com/events/techcrunch-disrupt/
+🔗 https://www.producthunt.com/products/mashupack
+🔗 https://www.producthunt.com/products/pi-coding-agent-3
+
+#LargeLanguageModels #LLMNews #LanguageModels #AIAgents #AutonomousAgents #AIWorkflow #AITools #ProductivityAI #AIProductivity #GoogleAI #Gemini #Claude #Anthropic #AINews #TechNews #AIUpdates #ArtificialIntelligence #FutureTech #DigitalTransformation #Technology
+
+─
+ℹ️ Content curated & summarised by Graitech from the sources listed above. All rights remain with the original publishers.
+─
