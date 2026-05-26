@@ -1,0 +1,257 @@
+{
+  "email_received_at": "2026-05-25T18:24-07:00",
+  "recommended_post_time": "14:00",
+  "headline": "Borealis - open data, code, weights recipe for training Audio LLM \u2014 Part 2 of 2",
+  "subject": "\ud83d\udea8 AI Alert: 13 new launches \u2014 Hugging Face, The Verge AI, ZDNet AI",
+  "source_date": "Mon, 25 May 2026 18:24:11 -0700",
+  "companies": [
+    "Google",
+    "Microsoft",
+    "Amazon",
+    "NVIDIA",
+    "Hugging Face",
+    "Salesforce",
+    "The Verge AI",
+    "Product Hunt AI"
+  ],
+  "models": [
+    "Claude",
+    "Gemini 2.5"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://github.com/huggingface/trl/releases/tag/v1.5.0",
+  "article_title": "e-year-old startup is replacing hundreds of employees with thousands of AI agents.",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://github.com/huggingface/trl/releases/tag/v1.5.0",
+      "title": "e-year-old startup is replacing hundreds of employees with thousands of AI agents.",
+      "description": "e-year-old startup is replacing hundreds of employees with thousands of AI agents. Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly. Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications...",
+      "excerpt": "e-year-old startup is replacing hundreds of employees with thousands of AI agents. Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly. Link ...",
+      "summary": "Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications... The practical impact: Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development... Watch next: e-year-old startup is replacing hundreds of employees with thousands of AI agents.",
+      "what_happened": "Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications...",
+      "why_matters": "The practical impact: Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development...",
+      "what_to_watch": "Watch next: e-year-old startup is replacing hundreds of employees with thousands of AI agents.",
+      "key_points": [
+        "Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications...",
+        "Link : [MEDIUM] huggingface/trl: v1.5.0 Company : Hugging Face Summary : ## Features ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers...",
+        "e-year-old startup is replacing hundreds of employees with thousands of AI agents."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.wired.com/story/the-ai-era-is-creating-a-bug-hunting-arms-race/",
+      "title": "Even more training chat templates",
+      "description": "res ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly. Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link : [MEDIUM] TechCrunch Events Company : TechCrunch Robotics Link ...",
+      "excerpt": "res ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly. Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link ...",
+      "summary": "Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link : [MEDIUM] TechCrunch Events Company : TechCrunch Robotics Link ... The practical impact: res ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly.",
+      "what_happened": "Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link : [MEDIUM] TechCrunch Events Company : TechCrunch Robotics Link ...",
+      "why_matters": "The practical impact: res ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly.",
+      "what_to_watch": "",
+      "key_points": [
+        "Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link : [MEDIUM] TechCrunch...",
+        "res ### Even more training chat templates Three more model families gain training-compatible templates with {% generation %} markers (so assistant_only_loss=True just works): - ** Link : [MEDIUM] The AI Era Is..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/events/techcrunch-disrupt/",
+      "title": "ant_only_loss=True` just works):",
+      "description": "ant_only_loss=True just works): - ** Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly. Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link : [MEDIUM] TechCrunch Events Company : TechCrunch Robotics Link : [MEDIUM] 5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase Company ...",
+      "excerpt": "ant_only_loss=True just works): - ** Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly. Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link : [MEDIUM] TechCrunch...",
+      "summary": "Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link : [MEDIUM] TechCrunch Events Company : TechCrunch Robotics Link : [MEDIUM] 5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase Company ... The practical impact: ant_only_loss=True just works): - ** Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly.",
+      "what_happened": "Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link : [MEDIUM] TechCrunch Events Company : TechCrunch Robotics Link : [MEDIUM] 5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase Company ...",
+      "why_matters": "The practical impact: ant_only_loss=True just works): - ** Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly.",
+      "what_to_watch": "",
+      "key_points": [
+        "Link : [MEDIUM] TechCrunch Disrupt 2026 Company : TechCrunch Robotics Link : [MEDIUM] Startup Battlefield 200 applications close in days: Apply before May 27 Company : TechCrunch Robotics Link : [MEDIUM] TechCrunch...",
+        "ant_only_loss=True just works): - ** Link : [MEDIUM] The AI Era Is Creating a Bug Hunting Arms Race Company : Wired AI Summary : As attackers ramp up their AI exploit development, the search for software..."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.producthunt.com/products/mashupack",
+      "title": "[MEDIUM] 5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase",
+      "description": "botics Link : [MEDIUM] 5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase Company : TechCrunch Robotics Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link :",
+      "excerpt": "botics Link : [MEDIUM] 5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase Company : TechCrunch Robotics Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link :",
+      "summary": "botics Link : [MEDIUM] 5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase Company : TechCrunch Robotics Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link : botics Link : [MEDIUM] 5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices...",
+      "what_happened": "botics Link : [MEDIUM] 5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase Company : TechCrunch Robotics Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link : botics Link : [MEDIUM] 5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices...",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "botics Link : [MEDIUM] 5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase Company : TechCrunch Robotics Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases..."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.producthunt.com/products/pi-coding-agent-3",
+      "title": "[MEDIUM] MashuPack",
+      "description": "obotics Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link :",
+      "excerpt": "obotics Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link :",
+      "summary": "obotics Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link : obotics Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent...",
+      "what_happened": "obotics Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent harness you can make your own Discussion | Link Link : obotics Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The coding-agent...",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "obotics Link : [MEDIUM] MashuPack Company : Product Hunt AI Summary : Turn codebases into a clean file for Claude and ChatGPT Discussion | Link Link : [MEDIUM] Pi Coding Agent Company : Product Hunt AI Summary : The..."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://github.com/huggingface/trl/pull/5746",
+      "title": "\u26a1 BREAKING AI UPDATE",
+      "description": "BREAKING AI UPDATE 13 New AI Events Detected 26 May 2026, 06:54 AM IST Major AI events just happened. Here's what you need to know: NEW LAUNCH HIGH AI LAUNCHES & RELEASES Borealis - open data, code, weights recipe for training Audio LLMAlexWortega\u2022about 8 hours ago\u20228 Hugging Face \u2192 Read full story NEW LAUNCH HIGH AI LAUNCHES & RELEASES Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI The Verge AI Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the human person in the time of artificial intelligence,\" in which he discusses the dangers of AI-powered warfare, the effects of AI on labor, and",
+      "excerpt": "BREAKING AI UPDATE 13 New AI Events Detected 26 May 2026, 06:54 AM IST Major AI events just happened. Here's what you need to know: NEW LAUNCH HIGH AI LAUNCHES & RELEASES Borealis - open data, code, weights recipe for training Audio LLMAlexWortega\u2022about 8 hours ago\u20228 Hugging Face \u2192 Read full story NEW LAUNCH HIGH AI LAUNCHES & RELEASES Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI The Verge AI Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the human person in the...",
+      "summary": "Here's what you need to know: NEW LAUNCH HIGH AI LAUNCHES & RELEASES Borealis - open data, code, weights recipe for training Audio LLMAlexWortega\u2022about 8 hours ago\u20228 Hugging Face \u2192 Read full story NEW LAUNCH HIGH AI LAUNCHES & RELEASES Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI The Verge AI Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday. The practical impact: Magnifica Humanitas is the pope's manifesto on \"safeguarding the human person in the time of artificial intelligence,\" in which he discusses the dangers of AI-powered warfare, the effects of AI on labor, and BREAKING AI UPDATE 13 New AI Events Detected 26 May 2026, 06:54 AM IST Major AI events just happened. Watch next: Magnifica Humanitas is the pope's manifesto on \"safeguarding the human person in the time of artificial intelligence,\" in which he discusses the dangers of AI-powered warfare, the effects of AI on labor, and BREAKING AI UPDATE 13 New AI Events Detected 26 May 2026, 06:54 AM IST Major AI events just...",
+      "what_happened": "Here's what you need to know: NEW LAUNCH HIGH AI LAUNCHES & RELEASES Borealis - open data, code, weights recipe for training Audio LLMAlexWortega\u2022about 8 hours ago\u20228 Hugging Face \u2192 Read full story NEW LAUNCH HIGH AI LAUNCHES & RELEASES Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI The Verge AI Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday.",
+      "why_matters": "The practical impact: Magnifica Humanitas is the pope's manifesto on \"safeguarding the human person in the time of artificial intelligence,\" in which he discusses the dangers of AI-powered warfare, the effects of AI on labor, and BREAKING AI UPDATE 13 New AI Events Detected 26 May 2026, 06:54 AM IST Major AI events just happened.",
+      "what_to_watch": "Watch next: Magnifica Humanitas is the pope's manifesto on \"safeguarding the human person in the time of artificial intelligence,\" in which he discusses the dangers of AI-powered warfare, the effects of AI on labor, and BREAKING AI UPDATE 13 New AI Events Detected 26 May 2026, 06:54 AM IST Major AI events just...",
+      "key_points": [
+        "Here's what you need to know: NEW LAUNCH HIGH AI LAUNCHES & RELEASES Borealis - open data, code, weights recipe for training Audio LLMAlexWortega\u2022about 8 hours ago\u20228 Hugging Face \u2192 Read full story NEW LAUNCH HIGH AI...",
+        "Magnifica Humanitas is the pope's manifesto on \"safeguarding the human person in the time of artificial intelligence,\" in which he discusses the dangers of AI-powered warfare, the effects of AI on labor, and BREAKING...",
+        "BREAKING AI UPDATE 13 New AI Events Detected 26 May 2026, 06:54 AM IST Major AI events just happened."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://github.com/huggingface/trl/pull/5764",
+      "title": "\u26a1 BREAKING AI UPDATE",
+      "description": "BREAKING AI UPDATE 13 New AI Events Detected 26 May 2026, 06:54 AM IST Major AI events just happened. Here's what you need to know: NEW LAUNCH HIGH AI LAUNCHES & RELEASES Borealis - open data, code, weights recipe for training Audio LLMAlexWortega\u2022about 8 hours ago\u20228 Hugging Face \u2192 Read full story NEW LAUNCH HIGH AI LAUNCHES & RELEASES Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI The Verge AI Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the human person in the time of artificial intelligence,\" in which he discusses the dangers of AI-powered warfare, the effects of AI on labor, and",
+      "excerpt": "BREAKING AI UPDATE 13 New AI Events Detected 26 May 2026, 06:54 AM IST Major AI events just happened. Here's what you need to know: NEW LAUNCH HIGH AI LAUNCHES & RELEASES Borealis - open data, code, weights recipe for training Audio LLMAlexWortega\u2022about 8 hours ago\u20228 Hugging Face \u2192 Read full story NEW LAUNCH HIGH AI LAUNCHES & RELEASES Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI The Verge AI Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the human person in the...",
+      "summary": "Here's what you need to know: NEW LAUNCH HIGH AI LAUNCHES & RELEASES Borealis - open data, code, weights recipe for training Audio LLMAlexWortega\u2022about 8 hours ago\u20228 Hugging Face \u2192 Read full story NEW LAUNCH HIGH AI LAUNCHES & RELEASES Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI The Verge AI Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday. The practical impact: Magnifica Humanitas is the pope's manifesto on \"safeguarding the human person in the time of artificial intelligence,\" in which he discusses the dangers of AI-powered warfare, the effects of AI on labor, and BREAKING AI UPDATE 13 New AI Events Detected 26 May 2026, 06:54 AM IST Major AI events just happened. Watch next: Magnifica Humanitas is the pope's manifesto on \"safeguarding the human person in the time of artificial intelligence,\" in which he discusses the dangers of AI-powered warfare, the effects of AI on labor, and BREAKING AI UPDATE 13 New AI Events Detected 26 May 2026, 06:54 AM IST Major AI events just...",
+      "what_happened": "Here's what you need to know: NEW LAUNCH HIGH AI LAUNCHES & RELEASES Borealis - open data, code, weights recipe for training Audio LLMAlexWortega\u2022about 8 hours ago\u20228 Hugging Face \u2192 Read full story NEW LAUNCH HIGH AI LAUNCHES & RELEASES Pope Leo calls for being \u2018profoundly human\u2019 in the age of AI The Verge AI Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday.",
+      "why_matters": "The practical impact: Magnifica Humanitas is the pope's manifesto on \"safeguarding the human person in the time of artificial intelligence,\" in which he discusses the dangers of AI-powered warfare, the effects of AI on labor, and BREAKING AI UPDATE 13 New AI Events Detected 26 May 2026, 06:54 AM IST Major AI events just happened.",
+      "what_to_watch": "Watch next: Magnifica Humanitas is the pope's manifesto on \"safeguarding the human person in the time of artificial intelligence,\" in which he discusses the dangers of AI-powered warfare, the effects of AI on labor, and BREAKING AI UPDATE 13 New AI Events Detected 26 May 2026, 06:54 AM IST Major AI events just...",
+      "key_points": [
+        "Here's what you need to know: NEW LAUNCH HIGH AI LAUNCHES & RELEASES Borealis - open data, code, weights recipe for training Audio LLMAlexWortega\u2022about 8 hours ago\u20228 Hugging Face \u2192 Read full story NEW LAUNCH HIGH AI...",
+        "Magnifica Humanitas is the pope's manifesto on \"safeguarding the human person in the time of artificial intelligence,\" in which he discusses the dangers of AI-powered warfare, the effects of AI on labor, and BREAKING...",
+        "BREAKING AI UPDATE 13 New AI Events Detected 26 May 2026, 06:54 AM IST Major AI events just happened."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 2,
+  "carousel_total_parts": 2,
+  "slides": [
+    "e-year-old startup is replacing hundreds of employees with thousands of AI agents",
+    "e-year-old startup is replacing hundreds of employees with thousands of AI agents",
+    "Even more training chat templates",
+    "ant_only_loss=True` just works):",
+    "5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase",
+    "MashuPack",
+    "BREAKING AI UPDATE",
+    "BREAKING AI UPDATE",
+    "Follow for the next AI briefing"
+  ]
+}
