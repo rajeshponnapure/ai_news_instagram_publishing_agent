@@ -1,0 +1,173 @@
+{
+  "email_received_at": "2026-05-26T21:54-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Technical deep dive: AgentCore payments and innovation in agentic commerce - Part 3 of 3",
+  "subject": "\ud83d\ude80 AI Digest \u2014 27 May 2026 | 50 updates \u00b7 50 launches",
+  "source_date": "Tue, 26 May 2026 21:54:22 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Apple",
+    "Amazon",
+    "AWS"
+  ],
+  "models": [
+    "GPT-5",
+    "GPT-4o-mini",
+    "Claude",
+    "Gemini",
+    "Gemini 2.5",
+    "Llama"
+  ],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://arxiv.org/abs/2601.19674",
+  "article_title": "Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://arxiv.org/abs/2601.19674",
+      "title": "Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters",
+      "description": "Ambitious decarbonisation targets are rapidly increasing the commission of new offshore wind farms. For these newly commissioned plants to run, accurate power forecasts are needed from the onset. These allow grid stability, good reserve management and efficient energy trading. Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have. To overcome this data scarcity, we propose a novel transfer learning framework that clusters power output according to covariate meteorological features. Rather than training a single, general-purpose model, we thus forecast with an ensemble of expert models, each trained on a cluster. As these pre-trained models each specialise in a distinct weather pattern, they adapt efficiently to new sites and capture transferable, climate-dependent dynamics. Our contributions are two-fold - we propose this novel framework and comprehensively evaluate it on eight offshore wind farms, achieving accurate cross-domain forecasting with under five months of site-specific data. Our experiments achieve a MAE of 3.52\\%, providing empirical verification that reliable forecasts do not require a full annual cycle. Beyond power forecasting, this climate-aware transfer learning method opens new opportunities for offshore wind applications such as early-stage wind resource assessment, where reducing data requirements can significantly accelerate project development whilst effectively mitigating its inherent risks.",
+      "excerpt": "Ambitious decarbonisation targets are rapidly increasing the commission of new offshore wind farms. For these newly commissioned plants to run, accurate power forecasts are needed from the onset. These allow grid stability, good reserve management and efficient energy trading. Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have. To overcome this data scarcity, we propose a novel transfer learning framework that clusters power output according to covariate meteorological features. Rather than training a single, general-purpose model, we thus forecast with an ensemble of expert models, each...",
+      "summary": "Computer Science > Machine Learning Title: Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. arXiv is. The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. These allow grid stability, good reserve management and efficient energy trading. Watch next: Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have.",
+      "what_happened": "Computer Science > Machine Learning Title: Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. arXiv is.",
+      "why_matters": "The practical impact: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. These allow grid stability, good reserve management and efficient energy trading.",
+      "what_to_watch": "Watch next: Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have.",
+      "key_points": [
+        "Computer Science > Machine Learning Title: Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters Current browse context: References & Citations BibTeX formatted citation.",
+        "Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have.",
+        "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+        "To overcome this data scarcity, we propose a novel transfer learning framework that clusters power output according to covariate meteorological features.",
+        "arXiv is committed to these values and only works with partners that adhere to them.",
+        "Rather than training a single, general-purpose model, we thus forecast with an ensemble of expert models, each trained on a cluster.",
+        "Beyond power forecasting, this climate-aware transfer learning method opens new opportunities for offshore wind applications such as early-stage wind resource assessment, where reducing data requirements can.",
+        "These allow grid stability, good reserve management and efficient energy trading.",
+        "Our contributions are two-fold - we propose this novel framework and comprehensively evaluate it on eight offshore wind farms, achieving accurate cross-domain forecasting with under five months of site-specific data.",
+        "As these pre-trained models each specialise in a distinct weather pattern, they adapt efficiently to new sites and capture transferable, climate-dependent dynamics.",
+        "Our experiments achieve a MAE of 3.52\\%, providing empirical verification that reliable forecasts do not require a full annual cycle.",
+        "Ambitious decarbonisation targets are rapidly increasing the commission of new offshore wind farms."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.marktechpost.com/2026/05/26/stability-ai-releases-stable-audio-3-a-family-of-fast-latent-diffusion-models-for-audio-generation-and-editing/",
+      "title": "AI Update Digest \u2014 27 May 2026",
+      "description": "AI Update Digest - 27 May 2026 Total: 50 updates ================================================== AI LAUNCHES & RELEASES ---------------------------------------- [HIGH] Stability AI Releases Stable Audio 3: A Family of Fast Latent Diffusion Models for Audio Generation and Editing MarkTechPost AI | [HIGH] Google Health is here, but a lot of people want their Fitbit app back instead The Verge AI | [HIGH] Technical deep dive: AgentCore payments and innovation in agentic commerce AWS Machine Learning | [HIGH] Anthropic Update Underscores Power of AI Flaw Finder Mythos AI Business | [HIGH] May 26...",
+      "excerpt": "AI Update Digest - 27 May 2026 Total: 50 updates ================================================== AI LAUNCHES & RELEASES ---------------------------------------- [HIGH] Stability AI Releases Stable Audio 3: A Family of Fast Latent Diffusion Models for Audio Generation and Editing MarkTechPost AI | [HIGH] Google Health is here, but a lot of people want their Fitbit app back instead The Verge AI | [HIGH] Technical deep dive: AgentCore payments and innovation in agentic commerce AWS Machine Learning |",
+      "summary": "AI Update Digest - 27 May 2026 Total: 50 updates ================================================== AI LAUNCHES & RELEASES ---------------------------------------- [HIGH] Stability AI Releases Stable Audio 3: A Family of Fast Latent Diffusion Models for Audio Generation and Editing MarkTechPost AI | [HIGH] Google Health is here, but a lot of people want their Fitbit app back instead The Verge AI | [HIGH] Technical deep dive: AgentCore payments and innovation in agentic commerce AWS Machine Learning | [HIGH].",
+      "what_happened": "AI Update Digest - 27 May 2026 Total: 50 updates ================================================== AI LAUNCHES & RELEASES ---------------------------------------- [HIGH] Stability AI Releases Stable Audio 3: A Family of Fast Latent Diffusion Models for Audio Generation and Editing MarkTechPost AI | [HIGH] Google Health is here, but a lot of people want their Fitbit app back instead The Verge AI | [HIGH] Technical deep dive: AgentCore payments and innovation in agentic commerce AWS Machine Learning | [HIGH].",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "AI Update Digest - 27 May 2026 Total: 50 updates ================================================== AI LAUNCHES & RELEASES ---------------------------------------- [HIGH] Stability AI Releases Stable Audio 3: A Family."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theverge.com/gadgets/937534/google-health-fitbit-app-ai",
+      "title": "LAUNCHES & RELEASES",
+      "description": "LAUNCHES & RELEASES ---------------------------------------- [HIGH] Stability AI Releases Stable Audio 3: A Family of Fast Latent Diffusion Models for Audio Generation and Editing MarkTechPost AI | [HIGH] Google Health is here, but a lot of people want their Fitbit app back instead The Verge AI | [HIGH] Technical deep dive: AgentCore payments and innovation in agentic commerce AWS Machine Learning | [HIGH] Anthropic Update Underscores Power of AI Flaw Finder Mythos AI Business | [HIGH] May 26, 2026AnnouncementsAnthropic...",
+      "excerpt": "LAUNCHES & RELEASES ---------------------------------------- [HIGH] Stability AI Releases Stable Audio 3: A Family of Fast Latent Diffusion Models for Audio Generation and Editing MarkTechPost AI | [HIGH] Google Health is here, but a lot of people want their Fitbit app back instead The Verge AI | [HIGH] Technical deep dive: AgentCore payments and innovation in agentic commerce AWS Machine Learning | [HIGH] Anthropic...",
+      "summary": "LAUNCHES & RELEASES ---------------------------------------- [HIGH] Stability AI Releases Stable Audio 3: A Family of Fast Latent Diffusion Models for Audio Generation and Editing MarkTechPost AI | [HIGH] Google Health is here, but a lot of people want their Fitbit app back instead The Verge AI | [HIGH] Technical deep dive: AgentCore payments and innovation in agentic commerce AWS Machine Learning | [HIGH] Anthropic Update Underscores Power of AI Flaw Finder Mythos AI Business | [HIGH] May 26.",
+      "what_happened": "LAUNCHES & RELEASES ---------------------------------------- [HIGH] Stability AI Releases Stable Audio 3: A Family of Fast Latent Diffusion Models for Audio Generation and Editing MarkTechPost AI | [HIGH] Google Health is here, but a lot of people want their Fitbit app back instead The Verge AI | [HIGH] Technical deep dive: AgentCore payments and innovation in agentic commerce AWS Machine Learning | [HIGH] Anthropic Update Underscores Power of AI Flaw Finder Mythos AI Business | [HIGH] May 26.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "LAUNCHES & RELEASES ---------------------------------------- [HIGH] Stability AI Releases Stable Audio 3: A Family of Fast Latent Diffusion Models for Audio Generation and Editing MarkTechPost AI | [HIGH] Google Health."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/anthropic-update-underscores-power-ai-flaw-finder-mythos",
+      "title": "ere, but a lot of people want their Fitbit app back instead",
+      "description": "ere, but a lot of people want their Fitbit app back instead The Verge AI | [HIGH] Technical deep dive: AgentCore payments and innovation in agentic commerce AWS Machine Learning | [HIGH] Anthropic Update Underscores Power of AI Flaw Finder Mythos AI Business | [HIGH] May 26, 2026AnnouncementsAnthropic appoints KiYoung Choi as Representative Director of Korea ahead of Seoul office opening Anthropic | [HIGH] Borealis - open data, code, weights recipe for training Audio LLMAlexWortega\u20221 day ago\u202214 Hugging Face | [HIGH] Anthropic adds 28 security and compliance...",
+      "excerpt": "ere, but a lot of people want their Fitbit app back instead The Verge AI | [HIGH] Technical deep dive: AgentCore payments and innovation in agentic commerce AWS Machine Learning | [HIGH] Anthropic Update Underscores Power of AI Flaw Finder Mythos AI Business | [HIGH] May 26, 2026AnnouncementsAnthropic appoints KiYoung Choi as Representative Director of Korea ahead of Seoul office opening Anthropic | [HIGH] Borealis - ...",
+      "summary": "ere, but a lot of people want their Fitbit app back instead The Verge AI | [HIGH] Technical deep dive: AgentCore payments and innovation in agentic commerce AWS Machine Learning | [HIGH] Anthropic Update Underscores Power of AI Flaw Finder Mythos AI Business | [HIGH] May 26, 2026AnnouncementsAnthropic appoints KiYoung Choi as Representative Director of Korea ahead of Seoul office opening Anthropic | [HIGH] Borealis - open data, code, weights recipe for training Audio LLMAlexWortega\u20221 day ago\u202214 Hugging Face |.",
+      "what_happened": "ere, but a lot of people want their Fitbit app back instead The Verge AI | [HIGH] Technical deep dive: AgentCore payments and innovation in agentic commerce AWS Machine Learning | [HIGH] Anthropic Update Underscores Power of AI Flaw Finder Mythos AI Business | [HIGH] May 26, 2026AnnouncementsAnthropic appoints KiYoung Choi as Representative Director of Korea ahead of Seoul office opening Anthropic | [HIGH] Borealis - open data, code, weights recipe for training Audio LLMAlexWortega\u20221 day ago\u202214 Hugging Face |.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "ere, but a lot of people want their Fitbit app back instead The Verge AI | [HIGH] Technical deep dive: AgentCore payments and innovation in agentic commerce AWS Machine Learning | [HIGH] Anthropic Update Underscores."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 3,
+  "carousel_total_parts": 3,
+  "slides": [
+    "Cross-Domain Offshore Just Changed Cross-Domain Offshore Wind",
+    "AI Digest 27 May 2026",
+    "LAUNCHES RELEASES Changes Everything",
+    "Fitbit Just Changed Ere But Lot"
+  ]
+}

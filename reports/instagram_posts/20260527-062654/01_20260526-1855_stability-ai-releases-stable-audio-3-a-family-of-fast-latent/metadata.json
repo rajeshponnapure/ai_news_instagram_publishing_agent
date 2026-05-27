@@ -1,0 +1,333 @@
+{
+  "email_received_at": "2026-05-26T18:55-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Stability AI Releases Stable Audio 3: A Family of Fast Latent Diffusion Models for Audio - Part 1 of 2",
+  "subject": "\ud83d\udea8 AI Alert: 50 new launches \u2014 Wired AI, MarkTechPost AI, The Verge AI",
+  "source_date": "Tue, 26 May 2026 18:55:55 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Apple",
+    "Amazon"
+  ],
+  "models": [
+    "GPT-5.5",
+    "GPT-5.4-Cyber",
+    "GPT-5.1-Codex-Max",
+    "GPT-5.1",
+    "GPT-5",
+    "GPT-5-Codex",
+    "Claude",
+    "claude-code"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.marktechpost.com/2026/05/26/stability-ai-releases-stable-audio-3-a-family-of-fast-latent-diffusion-models-for-audio-generation-and-editing/",
+  "article_title": "Stability AI Releases Stable Audio 3: A Family of Fast Latent Diffusion Models for Audio Generation and Editing",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9dec6851f7f51994.png",
+  "article_image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-50-218x150.png",
+  "article_items": [
+    {
+      "url": "https://www.marktechpost.com/2026/05/26/stability-ai-releases-stable-audio-3-a-family-of-fast-latent-diffusion-models-for-audio-generation-and-editing/",
+      "title": "Stability AI Releases Stable Audio 3: A Family of Fast Latent Diffusion Models for Audio Generation and Editing",
+      "description": "Stability AI releases Stable Audio 3, open-weight latent diffusion models generating up to 6m 20s of stereo audio.",
+      "excerpt": "Stability AI releases Stable Audio 3, open-weight latent diffusion models generating up to 6m 20s of stereo audio.",
+      "summary": "Connect with us MEMO: A Modular Framework for Training a Dedicated Memory Model on New Knowledge Without Modifying LLM Parameters Design a High-Precision Retrieve-and-Rerank Pipeline with ZeroEntropy Zerank-2 Reranker Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Design a Complete Multimodal RLVR Pipeline with Open-MM-RL, Vision-Language Prompting, Reward Scoring, and GRPO Export Together AI Open-Sources OSCAR: An Attention-Aware 2-Bit KV Cache Quantization System for Long-Context LLM. The practical impact: Sound effects results follow a similar pattern; continuation shows higher FAD than inpainting in both domains, which the team attributes to the model having less surrounding audio context to anchor the generation. Stability AI releases Stable Audio 3, open-weight latent diffusion models generating up to 6m 20s of stereo audio. Watch next: The next-best open-weight baselines are Stable Audio Open Small (FAD 0.500 / CLAP 0.277) and Stable Audio Open (FAD 0.501 / CLAP 0.263). Stability AI releases Stable Audio 3, open-weight latent diffusion models generating up to 6m 20s of stereo audio.",
+      "what_happened": "Connect with us MEMO: A Modular Framework for Training a Dedicated Memory Model on New Knowledge Without Modifying LLM Parameters Design a High-Precision Retrieve-and-Rerank Pipeline with ZeroEntropy Zerank-2 Reranker Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Design a Complete Multimodal RLVR Pipeline with Open-MM-RL, Vision-Language Prompting, Reward Scoring, and GRPO Export Together AI Open-Sources OSCAR: An Attention-Aware 2-Bit KV Cache Quantization System for Long-Context LLM.",
+      "why_matters": "The practical impact: Sound effects results follow a similar pattern; continuation shows higher FAD than inpainting in both domains, which the team attributes to the model having less surrounding audio context to anchor the generation. Stability AI releases Stable Audio 3, open-weight latent diffusion models generating up to 6m 20s of stereo audio.",
+      "what_to_watch": "Watch next: The next-best open-weight baselines are Stable Audio Open Small (FAD 0.500 / CLAP 0.277) and Stable Audio Open (FAD 0.501 / CLAP 0.263). Stability AI releases Stable Audio 3, open-weight latent diffusion models generating up to 6m 20s of stereo audio.",
+      "key_points": [
+        "Connect with us MEMO: A Modular Framework for Training a Dedicated Memory Model on New Knowledge Without Modifying LLM Parameters Design a High-Precision Retrieve-and-Rerank Pipeline with ZeroEntropy Zerank-2 Reranker.",
+        "Stability AI Releases Stable Audio 3: A Family of Fast Latent Diffusion Models for Audio Generation and Editing Stability AI has released open weights for Stable Audio 3 along with a technical research paper .",
+        "Stability AI releases Stable Audio 3, open-weight latent diffusion models generating up to 6m 20s of stereo audio.",
+        "Best Authentication Platforms for AI Agents and MCP Servers in 2026 WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Build a Complete Langfuse Observability and Evaluation Pipeline.",
+        "Stable Audio 3 is a family of open-weight latent diffusion models (small, medium, large) for music and sound effects generation and editing.",
+        "StepFun Releases StepAudio 2.5 Realtime: An End-to-End Voice Model with Roleplay-Specific RLHF and Paralinguistic...",
+        "Inference time for 120s audio on an H200: 0.45s for small, 0.78s for medium, 0.81s for large.",
+        "Stable Audio 2.5 is an internal Stability AI model not publicly released; included as prior-generation internal baseline from the SA3 paper.",
+        "Stable Audio 2.5 takes 0.85s for the same length.",
+        "Three-stage training (flow matching \u2192 distillation warmup \u2192 adversarial post-training) enables 8-step inference without classifier-free guidance.",
+        "The adversarial setup allows the model to recover the perceptual sharpness that MSE distillation removes.",
+        "Stable Audio 3 is a family of three model scales: small, medium, and large."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9dec6851f7f51994.png",
+      "image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-50-218x150.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/technical-deep-dive-agentcore-payments-and-innovation-in-agentic-commerce/",
+      "title": "Technical deep dive: AgentCore payments and innovation in agentic commerce | Amazon Web Services",
+      "description": "Amazon Bedrock AgentCore payments is now available in preview, it provides instant payments to paid external services with no manual billing setup per provider, stablecoin support for cost-effective microtransactions that make sub-cent transactions economically viable, and configurable spending guardrails that give you fine-grained control over agent budgets and transaction limits. In this post, we walk you through a technical deep dive of AgentCore payments.",
+      "excerpt": "Amazon Bedrock AgentCore payments is now available in preview, it provides instant payments to paid external services with no manual billing setup per provider, stablecoin support for cost-effective microtransactions that make sub-cent transactions economically viable, and configurable spending guardrails that give you fine-grained control over agent budgets and transaction limits. In this post, we walk you through a technical deep dive of AgentCore payments.",
+      "summary": "To build a payment capability that works for agent developers, the team mapped out the key challenges and questions developers face when enabling their agent to pay for paid APIs, MCPs, and content. AgentCore Runtime \u2013 Deploy the agent using agentcore deploy . The practical impact: The first critical hurdle for a developer is figuring out how to fund the agent that powers their agent\u2019s transactions. To support this shift, Amazon Bedrock AgentCore provides a modular, fully managed platform that helps developers build, deploy, and operate generative AI agents at scale. Watch next: The application backend creates a session with a USD $10.00 budget and passes the session ID and instrument ID to the agent.",
+      "what_happened": "To build a payment capability that works for agent developers, the team mapped out the key challenges and questions developers face when enabling their agent to pay for paid APIs, MCPs, and content. AgentCore Runtime \u2013 Deploy the agent using agentcore deploy .",
+      "why_matters": "The practical impact: The first critical hurdle for a developer is figuring out how to fund the agent that powers their agent\u2019s transactions. To support this shift, Amazon Bedrock AgentCore provides a modular, fully managed platform that helps developers build, deploy, and operate generative AI agents at scale.",
+      "what_to_watch": "Watch next: The application backend creates a session with a USD $10.00 budget and passes the session ID and instrument ID to the agent.",
+      "key_points": [
+        "Deep dive: AI-powered research assistant A financial analyst asks their AI agent: \u201cAnalyze Amazon\u2019s stock and compare it to industry benchmarks.\u201d The agent needs three paid sources: a financial data API (USD $0.50 per.",
+        "The application backend creates a session with a USD $10.00 budget and passes the session ID and instrument ID to the agent.",
+        "To build a payment capability that works for agent developers, the team mapped out the key challenges and questions developers face when enabling their agent to pay for paid APIs, MCPs, and content.",
+        "The agent retries with the proof and receives the paid content.",
+        "AgentCore Runtime \u2013 Deploy the agent using agentcore deploy .",
+        "With the payment infrastructure managed, you can focus on improving the agent itself: adding new data sources, refining synthesis logic, and expanding to new domains.",
+        "She is a speaker at AI conferences such as AWS re:Invent, NVIDIA GTC, and AI Summit, where she specializes in multi-agent systems, agent observability, large language models (LLMs), partner network, and production-grade.",
+        "AgentCore payments understands the x402 payment protocol, including both x402 version 1 and version 2, and knows exactly how to generate the payment proof an agent needs to unlock the service.",
+        "The agent calls ProcessPayment , passing in the session ID, instrument ID, and the x402 payment payload.",
+        "Artificial Intelligence Technical deep dive: AgentCore payments and innovation in agentic commerce The industry is entering a world where billions of generative AI agents operate autonomously, acting on behalf of.",
+        "Then the payment is processed through the provider.",
+        "Those paid endpoints respond with a 402 Payment Required status to the agent."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/87ce657389de3ad6.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/21/ML-21056-3.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/from-idea-to-ai-app-creating-intelligent-research-assistants-with-strands/",
+      "title": "From idea to AI app: Creating intelligent research assistants with Strands | Amazon Web Services",
+      "description": "Building an AI app shouldn\u2019t require a PhD in machine learning (ML) or months of wrestling with complex architectures. Yet that\u2019s exactly what happens when you try to orchestrate multiple API calls, manage conversation state, and create agents that can reason on their own. I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand",
+      "excerpt": "Building an AI app shouldn\u2019t require a PhD in machine learning (ML) or months of wrestling with complex architectures. Yet that\u2019s exactly what happens when you try to orchestrate multiple API calls, manage conversation state, and create agents that can reason on their own. I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand",
+      "summary": "Building an AI app shouldn\u2019t require a PhD in machine learning (ML) or months of wrestling with complex architectures. Yet that\u2019s exactly what happens when you try to orchestrate multiple API calls, manage conversation state, and create agents that can reason on their own. The practical impact: I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand Watch next: I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand",
+      "what_happened": "Building an AI app shouldn\u2019t require a PhD in machine learning (ML) or months of wrestling with complex architectures. Yet that\u2019s exactly what happens when you try to orchestrate multiple API calls, manage conversation state, and create agents that can reason on their own.",
+      "why_matters": "The practical impact: I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand",
+      "what_to_watch": "Watch next: I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand",
+      "key_points": [
+        "Building an AI app shouldn\u2019t require a PhD in machine learning (ML) or months of wrestling with complex architectures.",
+        "Yet that\u2019s exactly what happens when you try to orchestrate multiple API calls, manage conversation state, and create agents that can reason on their own.",
+        "I\u2019ve seen straightforward AI ideas balloon into sprawling projects that demand"
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8e32cbb3a7cd5919.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/14/image-ML-196843.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/09f5cf878327ff72.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e1355c83f829fd32.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fa712697804eeaaa.png"
+      ],
+      "extra_image_urls": [
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/14/image-ML-196845.png",
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/14/image-ML-1968413.png",
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/14/image-ML-196848.png"
+      ]
+    },
+    {
+      "url": "https://www.marktechpost.com/2026/05/26/meet-omnivoice-studio-a-local-open-source-alternative-to-elevenlabs/",
+      "title": "Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs",
+      "description": "OmniVoice Studio is an open-source desktop app for local voice cloning, dubbing, and dictation with no API keys.",
+      "excerpt": "OmniVoice Studio is an open-source desktop app for local voice cloning, dubbing, and dictation with no API keys.",
+      "summary": "Michal Sutter Google Launches Antigravity 2.0 at I/O 2026: A Standalone Agent-First Platform with CLI, SDK, Managed Execution, and Enterprise Support Michal Sutter Vercel Labs Introduces Zero, a Systems Programming Language Designed So AI Agents Can Read, Repair, and Ship Native Programs Michal Sutter Enterprise AI Governance in 2026: Why the Tools Employees Use Are Ahead of the Policies That Cover Them Michal Sutter Google DeepMind Introduces an AI-Enabled Mouse Pointer Powered by Gemini That Captures Visual and. The practical impact: Michal Sutter Comparing the Top 6 Inference Runtimes for LLM Serving in 2025 Michal Sutter OpenAI Introduces IndQA: A Culture Aware Benchmark For Indian Languages Michal Sutter Comparing the Top 7 Large Language Models LLMs/Systems for Coding in 2025 Michal Sutter Anyscale and NovaSky Team Releases SkyRL tx v0.1.0: Bringing Tinker Compatible Reinforcement Learning RL Engine To Local GPU Clusters Michal. Watch next: A Technical Risk Audit Based on Real-World Use Cases Michal Sutter 9 Open Source Cursor Alternatives You Should Use in 2025 Michal Sutter Microsoft Edge Launches Copilot Mode to Redefine Web Browsing for the AI Era Michal Sutter Key.",
+      "what_happened": "Michal Sutter Google Launches Antigravity 2.0 at I/O 2026: A Standalone Agent-First Platform with CLI, SDK, Managed Execution, and Enterprise Support Michal Sutter Vercel Labs Introduces Zero, a Systems Programming Language Designed So AI Agents Can Read, Repair, and Ship Native Programs Michal Sutter Enterprise AI Governance in 2026: Why the Tools Employees Use Are Ahead of the Policies That Cover Them Michal Sutter Google DeepMind Introduces an AI-Enabled Mouse Pointer Powered by Gemini That Captures Visual and.",
+      "why_matters": "The practical impact: Michal Sutter Comparing the Top 6 Inference Runtimes for LLM Serving in 2025 Michal Sutter OpenAI Introduces IndQA: A Culture Aware Benchmark For Indian Languages Michal Sutter Comparing the Top 7 Large Language Models LLMs/Systems for Coding in 2025 Michal Sutter Anyscale and NovaSky Team Releases SkyRL tx v0.1.0: Bringing Tinker Compatible Reinforcement Learning RL Engine To Local GPU Clusters Michal.",
+      "what_to_watch": "Watch next: A Technical Risk Audit Based on Real-World Use Cases Michal Sutter 9 Open Source Cursor Alternatives You Should Use in 2025 Michal Sutter Microsoft Edge Launches Copilot Mode to Redefine Web Browsing for the AI Era Michal Sutter Key Factors That Drive Successful MCP Implementation and Adoption Michal.",
+      "key_points": [
+        "Michal Sutter Google Launches Antigravity 2.0 at I/O 2026: A Standalone Agent-First Platform with CLI, SDK, Managed Execution, and Enterprise Support Michal Sutter Vercel Labs Introduces Zero, a Systems Programming.",
+        "How a Local First Agent Stack Turns Chats into Real Automations Michal Sutter GitHub Releases Copilot-SDK to Embed Its Agentic Runtime in Any App Michal Sutter Salesforce AI Introduces FOFPred: A Language-Driven Future.",
+        "Michal Sutter Comparing the Top 6 Inference Runtimes for LLM Serving in 2025 Michal Sutter OpenAI Introduces IndQA: A Culture Aware Benchmark For Indian Languages Michal Sutter Comparing the Top 7 Large Language Models.",
+        "A Technical Deep Dive and Top 9 AI Inference Providers (2025 Edition) Michal Sutter Hugging Face Unveils AI Sheets: A Free, Open-Source No-Code Toolkit for LLM-Powered Datasets Michal Sutter From Deployment to Scale: 11.",
+        "A Technical Risk Audit Based on Real-World Use Cases Michal Sutter 9 Open Source Cursor Alternatives You Should Use in 2025 Michal Sutter Microsoft Edge Launches Copilot Mode to Redefine Web Browsing for the AI Era.",
+        "Michal Sutter Google AI Introduces Gemini 2.5 \u2018Computer Use\u2019 (Preview): A Browser-Control Model to Power AI Agents to Interact with User Interfaces Michal Sutter OpenAI Debuts Agent Builder and AgentKit: A Visual-First.",
+        "Top Open-Source OCR Models Michal Sutter OpenAI Adds Full MCP Tool Support in ChatGPT Developer Mode: Enabling Write Actions, Workflow Automation, and Enterprise Integrations Michal Sutter Top 7 Model Context Protocol.",
+        "Michal Sutter Top Computer Vision CV Blogs & News Websites (2025) Michal Sutter Physical AI: Bridging Robotics, Material Science, and Artificial Intelligence for Next-Gen Embodied Systems Michal Sutter MIT\u2019s LEGO: A.",
+        "Google\u2019s Gemini 3 Deep Think Shatters Humanity\u2019s Last Exam And Hits 84.6% On ARC-AGI-2 Performance Today Michal Sutter Meet OAT: The New Action Tokenizer Bringing LLM-Style Scaling and Flexible, Anytime Inference to the.",
+        "Michal Sutter A Coding Guide to Instrumenting, Tracing, and Evaluating LLM Applications Using TruLens and OpenAI Models Michal Sutter How to Build Transparent AI Agents: Traceable Decision-Making with Audit Trails and.",
+        "Michal Sutter StepFun Releases StepAudio 2.5 Realtime: An End-to-End Voice Model with Roleplay-Specific RLHF and Paralinguistic Comprehension Michal Sutter Tencent Open-Sources TencentDB Agent Memory: A 4-Tier Local.",
+        "GPT-OSS 20B Michal Sutter Google DeepMind Introduces Genie 3: A General Purpose World Model that can Generate an Unprecedented Diversity of Interactive Environments Michal Sutter Model Context Protocol (MCP) FAQs."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/dd0be8ce4ff96fce.png",
+      "image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-51-1024x731.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://nvidia.github.io/cuda-python/cuda-pathfinder/latest/release/1.5.5-notes.html",
+      "title": "cuda-pathfinder 1.5.5 Release notes \u2014 cuda.pathfinder",
+      "description": "",
+      "excerpt": "cuda-pathfinder 1.5.5 Release notes # Add support for the Windows CUDA 13.3 CUPTI DLL name cupti64_2026.2.0.dll so load_nvidia_dynamic_lib(\"cupti\") can recognize CTK 13.3 installations. ( PR #2139 ) On Windows, find cudadevrt in both CUDA 13 and CUDA 12 conda static-library layouts. This lets locate_static_lib(\"cudadevrt\") and find_static_lib(\"cudadevrt\") resolve CUDA 12 conda environments under Library/lib instead of falling through to CUDA_PATH and reporting a misleading missing-library error. ( PR #2015 )",
+      "summary": "cuda-pathfinder 1.5.5 Release notes # Add support for the Windows CUDA 13.3 CUPTI DLL name cupti64_2026.2.0.dll so load_nvidia_dynamic_lib(\"cupti\") can recognize CTK 13.3 installations. ( PR #2139 ) On Windows, find cudadevrt in both CUDA 13 and CUDA 12 conda static-library layouts. The practical impact: ( PR #2139 ) On Windows, find cudadevrt in both CUDA 13 and CUDA 12 conda static-library layouts. This lets locate_static_lib(\"cudadevrt\") and find_static_lib(\"cudadevrt\") resolve CUDA 12 conda environments under Library/lib instead of falling through to CUDA_PATH and reporting a misleading missing-library error. Watch next: ( PR #2139 ) On Windows, find cudadevrt in both CUDA 13 and CUDA 12 conda static-library layouts.",
+      "what_happened": "cuda-pathfinder 1.5.5 Release notes # Add support for the Windows CUDA 13.3 CUPTI DLL name cupti64_2026.2.0.dll so load_nvidia_dynamic_lib(\"cupti\") can recognize CTK 13.3 installations. ( PR #2139 ) On Windows, find cudadevrt in both CUDA 13 and CUDA 12 conda static-library layouts.",
+      "why_matters": "The practical impact: ( PR #2139 ) On Windows, find cudadevrt in both CUDA 13 and CUDA 12 conda static-library layouts. This lets locate_static_lib(\"cudadevrt\") and find_static_lib(\"cudadevrt\") resolve CUDA 12 conda environments under Library/lib instead of falling through to CUDA_PATH and reporting a misleading missing-library error.",
+      "what_to_watch": "Watch next: ( PR #2139 ) On Windows, find cudadevrt in both CUDA 13 and CUDA 12 conda static-library layouts.",
+      "key_points": [
+        "cuda-pathfinder 1.5.5 Release notes # Add support for the Windows CUDA 13.3 CUPTI DLL name cupti64_2026.2.0.dll so load_nvidia_dynamic_lib(\"cupti\") can recognize CTK 13.3 installations.",
+        "( PR #2139 ) On Windows, find cudadevrt in both CUDA 13 and CUDA 12 conda static-library layouts.",
+        "This lets locate_static_lib(\"cudadevrt\") and find_static_lib(\"cudadevrt\") resolve CUDA 12 conda environments under Library/lib instead of falling through to CUDA_PATH and reporting a misleading missing-library error."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://nvidia.github.io/cuda-python/cuda-pathfinder/1.5.5/",
+      "title": "cuda.pathfinder: Utilities for locating CUDA components \u2014 cuda.pathfinder",
+      "description": "",
+      "excerpt": "cuda.pathfinder : Utilities for locating CUDA components # Indices and tables #",
+      "summary": "cuda.pathfinder : Utilities for locating CUDA components # Indices and tables #",
+      "what_happened": "cuda.pathfinder : Utilities for locating CUDA components # Indices and tables #",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "cuda.pathfinder : Utilities for locating CUDA components # Indices and tables #"
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.wired.com/story/pope-leo-schooled-the-tech-bros-on-tolkien/",
+      "title": "\u26a1 BREAKING AI UPDATE \u2014 27 May 2026, 07:25 AM IST",
+      "description": "BREAKING AI UPDATE - 27 May 2026, 07:25 AM IST 50 new AI event(s) detected ================================================== [HIGH] Pope Leo Schooled the Tech Bros on Tolkien Company : Wired AI Summary : The Holy Father referenced The Lord of the Rings in his encyclical about AI - an expert (if unintentional) troll of tech billionaires who keep misinterpreting the series. Link : [HIGH] Stability AI Releases Stable Audio 3: A Family of Fast Latent Diffusion Models for Audio Generation and Editing Company : MarkTechPost AI Summary : Stability AI has released Stable Audio 3, a family of latent diffusion models for instrumental music and sound effects generation. The release includes open weights for the small and medium variants. Link :",
+      "excerpt": "BREAKING AI UPDATE - 27 May 2026, 07:25 AM IST 50 new AI event(s) detected ================================================== [HIGH] Pope Leo Schooled the Tech Bros on Tolkien Company : Wired AI Summary : The Holy Father referenced The Lord of the Rings in his encyclical about AI - an expert (if unintentional) troll of tech billionaires who keep misinterpreting the series. Link : [HIGH] Stability AI Releases Stable Audio 3: A Family of Fast Latent Diffusion Models for Audio Generation and Editing Company : MarkTechPost AI Summary : Stability AI has released Stable Audio 3, a family of latent diffusion models for instrumental music and sound effects generation. The release includes open...",
+      "summary": "Link : [HIGH] Stability AI Releases Stable Audio 3: A Family of Fast Latent Diffusion Models for Audio Generation and Editing Company : MarkTechPost AI Summary : Stability AI has released Stable Audio 3, a family of latent diffusion models for instrumental music and sound effects generation. The practical impact: BREAKING AI UPDATE - 27 May 2026, 07:25 AM IST 50 new AI event(s) detected ================================================== [HIGH] Pope Leo Schooled the Tech Bros on Tolkien Company : Wired AI Summary : The Holy Father referenced The Lord of the Rings in his encyclical about AI - an expert (if unintentional) troll of tech billionaires who keep misinterpreting the series. Link : BREAKING AI UPDATE - 27. Watch next: The release includes open weights for the small and medium variants.",
+      "what_happened": "Link : [HIGH] Stability AI Releases Stable Audio 3: A Family of Fast Latent Diffusion Models for Audio Generation and Editing Company : MarkTechPost AI Summary : Stability AI has released Stable Audio 3, a family of latent diffusion models for instrumental music and sound effects generation.",
+      "why_matters": "The practical impact: BREAKING AI UPDATE - 27 May 2026, 07:25 AM IST 50 new AI event(s) detected ================================================== [HIGH] Pope Leo Schooled the Tech Bros on Tolkien Company : Wired AI Summary : The Holy Father referenced The Lord of the Rings in his encyclical about AI - an expert (if unintentional) troll of tech billionaires who keep misinterpreting the series. Link : BREAKING AI UPDATE - 27.",
+      "what_to_watch": "Watch next: The release includes open weights for the small and medium variants.",
+      "key_points": [
+        "Link : [HIGH] Stability AI Releases Stable Audio 3: A Family of Fast Latent Diffusion Models for Audio Generation and Editing Company : MarkTechPost AI Summary : Stability AI has released Stable Audio 3, a family of.",
+        "The release includes open weights for the small and medium variants.",
+        "BREAKING AI UPDATE - 27 May 2026, 07:25 AM IST 50 new AI event(s) detected ================================================== [HIGH] Pope Leo Schooled the Tech Bros on Tolkien Company : Wired AI Summary : The Holy.",
+        "Link : BREAKING AI UPDATE - 27 May 2026, 07:25 AM IST 50 new AI event(s) detected ================================================== [HIGH] Pope Leo Schooled the Tech Bros on Tolkien Company : Wired AI Summary : The."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theverge.com/gadgets/937534/google-health-fitbit-app-ai",
+      "title": "/2026/05/26/stability-ai-releases-stable-audio-3-a-family-of-fast-latent-diffusion-models-for-audio-generation-and-editing/",
+      "description": "/2026/05/26/stability-ai-releases-stable-audio-3-a-family-of-fast-latent-diffusion-models-for-audio-generation-and-editing/ [HIGH] Google Health is here, but a lot of people want their Fitbit app back instead Company : The Verge AI Summary : The Fitbit app is no more. Along with the launch of the new Fitbit Air (which you can expect a full review of once we've spent more time with it), Google has officially replaced it with Google Health, Link : [HIGH] Technical deep dive: AgentCore payments and innovation in agentic commerce Company : AWS Machine Learning Summary : Amazon Bedrock AgentCore payments is now available in preview, it provides instant payments to paid external services with no manual billing setup per provider, stablecoin support for cost-effective m Link ...",
+      "excerpt": "/2026/05/26/stability-ai-releases-stable-audio-3-a-family-of-fast-latent-diffusion-models-for-audio-generation-and-editing/ [HIGH] Google Health is here, but a lot of people want their Fitbit app back instead Company : The Verge AI Summary : The Fitbit app is no more. Along with the launch of the new Fitbit Air (which you can expect a full review of once we've spent more time with it), Google has officially replaced it with Google Health, Link : [HIGH] Technical deep dive: AgentCore payments and innovation in agentic commerce Company : AWS Machine Learning Summary : Amazon Bedrock AgentCore payments is now available in preview, it provides instant payments to paid external services with...",
+      "summary": "/2026/05/26/stability-ai-releases-stable-audio-3-a-family-of-fast-latent-diffusion-models-for-audio-generation-and-editing/ [HIGH] Google Health is here, but a lot of people want their Fitbit app back instead Company : The Verge AI Summary : The Fitbit app is no more. The practical impact: Along with the launch of the new Fitbit Air (which you can expect a full review of once we've spent more time with it), Google has officially replaced it with Google Health, Link : [HIGH] Technical deep dive: AgentCore payments and innovation in agentic commerce Company : AWS Machine Learning Summary : Amazon Bedrock AgentCore payments is now available in preview, it provides instant payments to paid.",
+      "what_happened": "/2026/05/26/stability-ai-releases-stable-audio-3-a-family-of-fast-latent-diffusion-models-for-audio-generation-and-editing/ [HIGH] Google Health is here, but a lot of people want their Fitbit app back instead Company : The Verge AI Summary : The Fitbit app is no more.",
+      "why_matters": "The practical impact: Along with the launch of the new Fitbit Air (which you can expect a full review of once we've spent more time with it), Google has officially replaced it with Google Health, Link : [HIGH] Technical deep dive: AgentCore payments and innovation in agentic commerce Company : AWS Machine Learning Summary : Amazon Bedrock AgentCore payments is now available in preview, it provides instant payments to paid.",
+      "what_to_watch": "",
+      "key_points": [
+        "/2026/05/26/stability-ai-releases-stable-audio-3-a-family-of-fast-latent-diffusion-models-for-audio-generation-and-editing/ [HIGH] Google Health is here, but a lot of people want their Fitbit app back instead Company .",
+        "Along with the launch of the new Fitbit Air (which you can expect a full review of once we've spent more time with it), Google has officially replaced it with Google Health, Link : [HIGH] Technical deep dive: AgentCore."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 1,
+  "carousel_total_parts": 2,
+  "slides": [
+    "Stability AI Just Changed Stability AI Releases",
+    "Technical Just Changed Deep Dive AgentCore",
+    "From Just Changed Idea AI App",
+    "Meet OmniVoice Just Changed Meet OmniVoice Studio",
+    "Cuda-pathfinder 1.5.5 Release Notes Cuda.pathfinder",
+    "Cuda.pathfinder Utilities For Locating CUDA Components Cuda.pathfinder",
+    "27 May 2026 07 25 AM IST",
+    "Stability AI Just Changed Stability AI Releases"
+  ]
+}
