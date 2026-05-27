@@ -1,0 +1,282 @@
+{
+  "email_received_at": "2026-05-27T03:33-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Bloomberg - Are you a robot? - Part 1 of 2",
+  "subject": "\ud83d\udea8 AI Alert: 72 new launches \u2014 Bloomberg Tech, CNBC Technology",
+  "source_date": "Wed, 27 May 2026 03:33:05 -0700",
+  "companies": [
+    "Google",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "NVIDIA",
+    "Stability AI",
+    "Nvidia AI",
+    "Amazon.com Inc"
+  ],
+  "models": [],
+  "topics": [
+    "model release",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.bloomberg.com/news/videos/2026-05-27/taiwan-suspects-nvidia-chip-shipment-smuggled-to-china-video",
+  "article_title": "Bloomberg - Are you a robot?",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.bloomberg.com/news/videos/2026-05-27/taiwan-suspects-nvidia-chip-shipment-smuggled-to-china-video",
+      "title": "Bloomberg - Are you a robot?",
+      "description": "",
+      "excerpt": "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. Why did this happen? For inquiries related to this message please contact our support team and provide the reference ID below. Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+      "summary": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_happened": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+      "why_matters": "For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_to_watch": "",
+      "key_points": [
+        "Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+        "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+        "For inquiries related to this message please contact our support team and provide the reference ID below."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-05-27/china-to-invest-1-1-billion-in-serbia-in-ai-robots-and-cars",
+      "title": "Bloomberg - Are you a robot?",
+      "description": "",
+      "excerpt": "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. Why did this happen? For inquiries related to this message please contact our support team and provide the reference ID below. Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+      "summary": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_happened": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+      "why_matters": "For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_to_watch": "",
+      "key_points": [
+        "Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+        "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+        "For inquiries related to this message please contact our support team and provide the reference ID below."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-05-27/memory-chip-giant-cxmt-heads-for-china-s-biggest-ipo-since-2022",
+      "title": "Bloomberg - Are you a robot?",
+      "description": "",
+      "excerpt": "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. Why did this happen? For inquiries related to this message please contact our support team and provide the reference ID below. Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+      "summary": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_happened": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+      "why_matters": "For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_to_watch": "",
+      "key_points": [
+        "Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+        "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+        "For inquiries related to this message please contact our support team and provide the reference ID below."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-05-27/spacex-investor-powerlaw-to-debut-on-nasdaq-as-ipo-race-heats-up",
+      "title": "Bloomberg - Are you a robot?",
+      "description": "",
+      "excerpt": "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. Why did this happen? For inquiries related to this message please contact our support team and provide the reference ID below. Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+      "summary": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_happened": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+      "why_matters": "For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_to_watch": "",
+      "key_points": [
+        "Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+        "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+        "For inquiries related to this message please contact our support team and provide the reference ID below."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-05-27/bytedance-weighs-capex-of-as-much-as-70-billion-in-ai-push",
+      "title": "Bloomberg - Are you a robot?",
+      "description": "",
+      "excerpt": "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. Why did this happen? For inquiries related to this message please contact our support team and provide the reference ID below. Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+      "summary": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_happened": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+      "why_matters": "For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_to_watch": "",
+      "key_points": [
+        "Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+        "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+        "For inquiries related to this message please contact our support team and provide the reference ID below."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-05-27/what-to-know-about-huawei-s-new-ai-chipmaking-plan-logicfolding-tech",
+      "title": "Bloomberg - Are you a robot?",
+      "description": "",
+      "excerpt": "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. Why did this happen? For inquiries related to this message please contact our support team and provide the reference ID below. Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+      "summary": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_happened": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+      "why_matters": "For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_to_watch": "",
+      "key_points": [
+        "Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+        "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+        "For inquiries related to this message please contact our support team and provide the reference ID below."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-05-27/taiwan-said-to-suspect-nvidia-chips-smuggled-to-china-via-japan",
+      "title": "Bloomberg - Are you a robot?",
+      "description": "",
+      "excerpt": "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. Why did this happen? For inquiries related to this message please contact our support team and provide the reference ID below. Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+      "summary": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_happened": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+      "why_matters": "For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_to_watch": "",
+      "key_points": [
+        "Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+        "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+        "For inquiries related to this message please contact our support team and provide the reference ID below."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-05-27/byju-s-founder-sentenced-to-six-months-for-contempt-of-court",
+      "title": "Bloomberg - Are you a robot?",
+      "description": "",
+      "excerpt": "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. Why did this happen? For inquiries related to this message please contact our support team and provide the reference ID below. Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+      "summary": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_happened": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+      "why_matters": "For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_to_watch": "",
+      "key_points": [
+        "Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+        "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+        "For inquiries related to this message please contact our support team and provide the reference ID below."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 1,
+  "carousel_total_parts": 2,
+  "slides": [
+    "Bloomberg Are You A Robot",
+    "Bloomberg Are You A Robot",
+    "Bloomberg Are You A Robot",
+    "Bloomberg Are You A Robot",
+    "Bloomberg Are You A Robot",
+    "Bloomberg Are You A Robot",
+    "Bloomberg Are You A Robot",
+    "Bloomberg Are You A Robot",
+    "SAVE THIS."
+  ]
+}
