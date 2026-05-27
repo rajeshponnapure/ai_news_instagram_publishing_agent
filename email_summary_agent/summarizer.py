@@ -242,8 +242,11 @@ class SummaryProvider:
             "  creators, companies, or AI users. No hype without evidence.\n"
             "- what_to_watch: 1-2 sentences. Next signal: rollout, adoption, "
             "  pricing, competition, limitations, benchmarks, or user reaction.\n"
-            "- key_points: array of 4-6 short bullets derived from the article. "
-            "  Each bullet must be a complete, specific sentence. No generic labels.\n"
+            "- key_points: array of 4-6 creator-style bullets derived from the article. "
+            "  Each bullet must be 12-16 words, specific, emotionally engaging, and layout-safe. "
+            "  Use curiosity, tension, or action language naturally. No generic labels.\n"
+            "- Never end any field with an ellipsis. Never use 'In conclusion', 'Overall', "
+            "  'Furthermore', 'Additionally', or 'It is important to note'.\n"
             "- companies, models, topics: arrays of strings.\n"
             "- confidence: float 0-1.\n"
             "- Do NOT invent facts. If the article does not say it, omit it.\n"
@@ -834,8 +837,10 @@ def _trim(value: str, limit: int) -> str:
     value = re.sub(r"\s+", " ", value or "").strip(" -\t\r\n")
     if len(value) <= limit:
         return value
-    trimmed = value[:limit - 3].rsplit(" ", 1)[0].rstrip(".,;:")
-    return f"{trimmed}..."
+    trimmed = value[:limit].rsplit(" ", 1)[0].rstrip(".,;:")
+    if trimmed and trimmed[-1] not in ".!?":
+        trimmed += "."
+    return trimmed
 
 
 def _parse_json_object(text: str) -> dict[str, Any]:

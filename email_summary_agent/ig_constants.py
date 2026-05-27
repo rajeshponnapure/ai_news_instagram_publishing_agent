@@ -20,7 +20,7 @@ STORIES_PER_CAROUSEL = 1
 NORMAL_NEWS_PER_POST = 8
 
 # Maximum key points shown on a single article slide before overflow.
-MAX_KP_PER_SLIDE = 5
+MAX_KP_PER_SLIDE = 4
 
 # Hard minimum readable font size — never go below this on any slide.
 FONT_MIN_READABLE = 32

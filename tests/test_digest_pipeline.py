@@ -18,6 +18,7 @@ from email_summary_agent.instagram import _build_slide_specs, _find_library_imag
 from email_summary_agent.models import EmailItem, EmailSummary
 from email_summary_agent.summarizer import _article_item_for_instagram, _format_prompt_body, SummaryProvider
 from email_summary_agent.article_enricher import ArticleData
+from email_summary_agent.ig_copy import layout_safe_headline, layout_safe_points, trim_without_ellipsis
 
 
 class DigestPipelineTests(unittest.TestCase):
@@ -247,6 +248,26 @@ class DigestPipelineTests(unittest.TestCase):
 
         self.assertIn("Final part explains limitations", summary.summary)
         self.assertGreaterEqual(len(summary.key_points), 3)
+
+    def test_creator_copy_is_layout_safe(self) -> None:
+        headline = layout_safe_headline(
+            "Final answer in last AIMessage for TodoListMiddleware (#37643)"
+        )
+        points = layout_safe_points([
+            "Dismiss alert {{ message }} langchain-ai / langgraph Public Notifications You must be signed in to change.",
+            "Scientists found something shocking that could affect millions of AI users worldwide.",
+            "Developers can ship reliable agent workflows without stitching fragile scripts together.",
+        ])
+
+        self.assertLessEqual(len(headline.split()), 7)
+        self.assertTrue(points)
+        self.assertTrue(all("..." not in point for point in points))
+        self.assertTrue(all(len(point.split()) <= 16 for point in points))
+        self.assertFalse(any("dismiss alert" in point.lower() for point in points))
+        self.assertEqual(
+            trim_without_ellipsis("This sentence is intentionally much too long for a carousel text box", 32)[-1],
+            ".",
+        )
 
 
 def _summary_with_articles(count: int, long: bool = False) -> EmailSummary:

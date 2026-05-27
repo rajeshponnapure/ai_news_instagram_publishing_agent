@@ -6,6 +6,7 @@ from typing import TYPE_CHECKING, Any
 
 from .ig_constants import REFERENCE_BRANDS
 from .ig_utils import _clean_public_text, _tighten, _trim_no_dots, _fallback_summary_text
+from .ig_copy import clean_creator_text, is_public_safe_text, layout_safe_points
 
 if TYPE_CHECKING:
     from .models import EmailSummary
@@ -182,15 +183,16 @@ def _extract_instagram_key_points(
         "introduces", "joins", "reaches", "replaces", "sets", "ships",
         "shows", "trains", "upgrades",
     )
-    BULLET = "•"
-
     def _strip_noise(text: str) -> str:
+        text = clean_creator_text(text)
         for pattern in NOISE_PATTERNS:
             text = re.sub(pattern, "", text, flags=re.I)
         return re.sub(r"\s+", " ", text).strip()
 
     def _is_valid_bullet(text: str) -> bool:
         if not text or len(text) < 15:
+            return False
+        if not is_public_safe_text(text):
             return False
         if not (text[0].isupper() or text[0].isdigit()):
             return False
@@ -276,22 +278,21 @@ def _extract_instagram_key_points(
                 if len(novel) >= 4:
                     break
 
-    # Format and trim
-    trimmed = [_trim_no_dots(pt, 140) for pt in novel[:max_points]]
-    final = [f"{BULLET}  {pt}" for pt in trimmed if pt and len(pt) > 10]
+    # Format and trim for visual-safe carousel layout.
+    final = layout_safe_points([_trim_no_dots(pt, 150) for pt in novel], limit=max_points)
 
     if not final:
         title_fb = _trim_no_dots(
             _clean_public_text(str(article.get("title") or article.get("url") or summary.subject or "AI update")), 95
         )
-        return [f"{BULLET}  {title_fb}"]
+        return layout_safe_points([title_fb], limit=1)
 
     if len(final) == 1:
         title_pt = _trim_no_dots(
             _clean_public_text(str(article.get("title") or summary.headline or summary.subject or "")), 120
         )
         if title_pt and title_pt not in final[0]:
-            final.append(f"{BULLET}  {title_pt}")
+            final.extend(layout_safe_points([title_pt], limit=1))
 
     # ---- Phase 6: Register fingerprints ----
     if used_fingerprints is not None:

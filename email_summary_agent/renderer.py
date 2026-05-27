@@ -15,6 +15,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from .ig_copy import layout_safe_headline, layout_safe_points
+
 # ── asset paths ───────────────────────────────────────────────────────────────
 _ASSETS = Path(__file__).parent / "assets" / "graitech"
 _FONTS  = _ASSETS / "fonts"
@@ -62,7 +64,7 @@ def _build_slide_html(slide, slide_number, total_slides, email_dt):
 def _wrap_in_shell(body, slide_number, total_slides, slide_kind=""):
     css  = _inline_css()
     logo = _data_uri(_IMG / "graitech-logo.png", "image/png")
-    # For digest slides the article image occupies y 0–510px.  Placing the logo
+    # For digest slides the article image occupies y 110–470px.  Placing the logo
     # at top:56px (the default) puts it right on top of that image.  Move it to
     # Logo always anchored to top-right corner on every slide kind.
     logo_style = "top:56px; right:56px;"
@@ -118,15 +120,18 @@ def _title_body(slide, email_dt):
 
 def _list_body(slide):
     eyebrow  = _e(slide.get("eyebrow") or "Key Points")
-    section  = _e(slide.get("title") or slide.get("section") or "")
+    section  = _e(layout_safe_headline(slide.get("title") or slide.get("section") or "AI Update"))
     # Accept either a list or newline-joined string of points
     raw = slide.get("points") or slide.get("key_points") or []
     if not raw and slide.get("body"):
         raw = [ln.lstrip("•–—- ").strip()
                for ln in str(slide["body"]).splitlines() if ln.strip()]
+    safe_points = layout_safe_points([str(pt) for pt in raw], limit=3)
+    if not safe_points and section:
+        safe_points = layout_safe_points([section], limit=1)
     pts_html = "".join(
         f'      <div class="row"><div><p>{_e(str(pt))}</p></div></div>\n'
-        for pt in raw[:3]
+        for pt in safe_points
     )
     return f"""  <div class="ig__content" style="gap: 32px;">
     <div class="heading-stack" style="gap: 14px;">
@@ -141,7 +146,7 @@ def _list_body(slide):
 
 def _digest_body(slide):
     eyebrow  = _e(slide.get("eyebrow") or "AI Update")
-    headline = _e(slide.get("title") or "AI Update")
+    headline = _e(layout_safe_headline(slide.get("title") or "AI Update", fallback="AI Update"))
     source   = _e(slide.get("source_label") or "")
     src_html = f'<div class="source-label" style="margin-top:14px;">{source}</div>' if source else ""
     # Points from body string or list
@@ -151,10 +156,13 @@ def _digest_body(slide):
         raw = body
     elif body:
         raw = [ln.lstrip("•–—- ").strip() for ln in str(body).splitlines() if ln.strip()]
+    safe_points = layout_safe_points([str(pt) for pt in raw], limit=5)
+    if not safe_points and headline:
+        safe_points = layout_safe_points([headline], limit=1)
     pts_html = "".join(
         f'<div class="kp-row"><span class="kp-num">{i:02d}</span>'
         f'<span class="kp-text">{_highlight_keywords_html(str(pt))}</span></div>\n'
-        for i, pt in enumerate(raw[:5], 1)
+        for i, pt in enumerate(safe_points, 1)
     )
     img_val = _image_css(slide.get("image_path") or "")
     # Always keep the image zone at exactly 510px so the body layout never
@@ -220,7 +228,7 @@ html,body{{margin:0;padding:0;background:#000;}}
 .ig{{position:relative;width:{CANVAS_W}px;height:{CANVAS_H}px;background:#000;overflow:hidden;isolation:isolate;font-family:var(--gt-font-mono);color:var(--gt-white);}}
 .ig::before{{content:"";position:absolute;inset:0;background-image:url('data:image/svg+xml;base64,{tex}');background-size:cover;z-index:0;opacity:0.9;}}
 .ig::after{{content:"";position:absolute;inset:0;background-image:linear-gradient(to right,rgba(255,255,255,0.018) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,255,255,0.018) 1px,transparent 1px);background-size:90px 90px;pointer-events:none;z-index:1;mask-image:radial-gradient(ellipse 60% 60% at 50% 50%,transparent 20%,#000 95%);}}
-.ig__logo{{position:absolute;top:56px;right:56px;width:130px;height:130px;z-index:10;filter:drop-shadow(0 0 18px rgba(57,255,20,0.25));}}
+.ig__logo{{position:absolute;top:34px;right:44px;width:84px;height:84px;z-index:10;filter:drop-shadow(0 0 14px rgba(57,255,20,0.25));}}
 .ig__logo img{{width:100%;height:100%;display:block;}}
 .ig__handle{{position:absolute;bottom:56px;left:56px;z-index:10;display:flex;align-items:center;gap:12px;font-family:var(--gt-font-mono);font-size:26px;font-weight:700;color:var(--gt-white);letter-spacing:0.04em;}}
 .ig__handle .dot{{width:10px;height:10px;border-radius:50%;background:var(--gt-neon);box-shadow:0 0 14px var(--gt-neon);}}
@@ -253,14 +261,14 @@ html,body{{margin:0;padding:0;background:#000;}}
 .ticks>i::before{{bottom:0;left:0;border-bottom:1.5px solid;border-left:1.5px solid;top:auto;}}
 .ticks>i::after{{bottom:0;right:0;border-bottom:1.5px solid;border-right:1.5px solid;top:auto;}}
 .source-label{{font-family:var(--gt-font-mono);font-size:22px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gt-ash);margin-top:8px;}}
-.digest-image{{position:absolute;top:0;left:0;right:0;height:510px;z-index:3;}}
-.digest-image::after{{content:"";position:absolute;bottom:0;left:0;right:0;height:200px;background:linear-gradient(transparent,#000);}}
-.digest-body{{position:absolute;top:510px;left:72px;right:72px;bottom:140px;z-index:5;display:flex;flex-direction:column;overflow:hidden;}}
-.digest-headline{{font-family:var(--gt-font-display);font-size:52px;line-height:0.95;color:var(--gt-neon);text-shadow:0 0 22px rgba(57,255,20,0.30);text-transform:uppercase;margin-bottom:14px;letter-spacing:-0.01em;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;}}
-.kp-list{{display:flex;flex-direction:column;gap:10px;flex:1;overflow:hidden;}}
+.digest-image{{position:absolute;top:110px;left:54px;right:54px;height:360px;z-index:3;border-radius:14px;overflow:hidden;}}
+.digest-image::after{{content:"";position:absolute;bottom:0;left:0;right:0;height:150px;background:linear-gradient(transparent,#000);}}
+.digest-body{{position:absolute;top:500px;left:72px;right:72px;bottom:140px;z-index:5;display:flex;flex-direction:column;overflow:hidden;}}
+.digest-headline{{font-family:var(--gt-font-display);font-size:50px;line-height:0.95;color:var(--gt-neon);text-shadow:0 0 22px rgba(57,255,20,0.30);text-transform:uppercase;margin-bottom:14px;letter-spacing:0;overflow-wrap:break-word;word-break:normal;}}
+.kp-list{{display:flex;flex-direction:column;gap:9px;flex:1;overflow:hidden;}}
 .kp-row{{display:flex;gap:12px;align-items:flex-start;}}
 .kp-num{{font-family:var(--gt-font-display);font-size:32px;line-height:1;color:var(--gt-neon);text-shadow:0 0 14px rgba(57,255,20,0.40);min-width:42px;flex-shrink:0;}}
-.kp-text{{font-family:var(--gt-font-mono);font-size:24px;line-height:1.45;color:var(--gt-chalk);flex:1;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}}
+.kp-text{{font-family:var(--gt-font-mono);font-size:21px;line-height:1.3;color:var(--gt-chalk);flex:1;overflow:hidden;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow-wrap:break-word;word-break:normal;}}
 .kp-text strong{{color:var(--gt-neon);font-weight:700;}}
 .title-image{{position:absolute;bottom:140px;left:0;right:0;height:380px;z-index:2;background-size:cover;background-position:center top;}}
 .title-image::before{{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.55) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 60%,rgba(0,0,0,0.85) 100%);z-index:1;}}
@@ -303,6 +311,13 @@ def _highlight_keywords_html(text: str) -> str:
         word = m.group(0)
         return word if word in _CAPS_STOPWORDS else f"<strong>{word}</strong>"
     escaped = re.sub(r'\b[A-Z]{2,6}\b', _bold_acronym, escaped)
+    keyword_re = re.compile(
+        r"\b(hidden|shocking|critical|dangerous|proven|massive|unexpected|"
+        r"powerful|released|launches|ships|raises|hits|breaks|reveals|"
+        r"changes|unlocks|watch|signal|developers|agents|models|workflow|workflows)\b",
+        re.I,
+    )
+    escaped = keyword_re.sub(r"<strong>\1</strong>", escaped)
     return escaped
 
 

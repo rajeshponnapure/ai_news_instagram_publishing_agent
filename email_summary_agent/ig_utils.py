@@ -5,6 +5,7 @@ import re
 import shutil
 import unicodedata
 import urllib.request
+import html
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -32,6 +33,7 @@ def _strip_decorative_symbols(text: str) -> str:
 
 def _clean_public_text(text: str) -> str:
     """Remove digest noise, cookie consent boilerplate, and navigation cruft."""
+    text = html.unescape(text or "")
     text = re.sub(r"BREAKING AI UPDATE\s*[-–—]\s*", "", text or "", flags=re.I)
     text = re.sub(r"\[(?:HIGH|MEDIUM|LOW|CRITICAL)\]\s*", "", text, flags=re.I)
     text = re.sub(r"\bImpact\s*:\s*(?:Low|Medium|High|Critical)\b", "", text, flags=re.I)
@@ -50,6 +52,9 @@ def _clean_public_text(text: str) -> str:
     text = re.sub(r"\*\*([^*]+):\*\*\s*", r"\1: ", text)
     text = re.sub(r"\bMore from\s+\S+[^\n.!?]*", "", text, flags=re.I)
     text = re.sub(r"\s*\|[^|.\n]{1,40}(?=\s|$)", "", text)
+    text = re.sub(r"\b(?:Dismiss alert|Public Notifications|You must be signed in|You signed out|You switched accounts)\b[^.!?]*[.!?]?", "", text, flags=re.I)
+    text = re.sub(r"\b(?:Search code, repositories, users, issues, pull requests|Filter Loading|Sorry, something went wrong|Hamburger Navigation Button|Navigation Drawer)\b[^.!?]*[.!?]?", "", text, flags=re.I)
+    text = re.sub(r"\b(?:Desktop Logo|Mobile Logo|Latest Startups Venture|Events Podcasts)\b[^.!?]*[.!?]?", "", text, flags=re.I)
     text = re.sub(r"\s+", " ", text).strip()
     text = _strip_decorative_symbols(text)
     text = re.sub(
@@ -124,11 +129,14 @@ def _clean_headline(text: str) -> str:
 
 
 def _tighten(text: str, limit: int) -> str:
-    """Trim text to a word boundary, appending '...' if truncated."""
+    """Trim text to a word boundary without adding ellipsis."""
     text = re.sub(r"\s+", " ", text or "").strip()
     if len(text) <= limit:
         return text
-    return text[:limit - 3].rsplit(" ", 1)[0].rstrip(".,;:") + "..."
+    shortened = text[:limit].rsplit(" ", 1)[0].rstrip(".,;:â€”- ")
+    if shortened and shortened[-1] not in ".!?":
+        shortened += "."
+    return shortened
 
 
 def _trim_no_dots(text: str, limit: int) -> str:

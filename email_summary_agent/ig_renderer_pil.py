@@ -24,6 +24,7 @@ from .ig_constants import (
     GT_IRON,
     NEON_RGB,
     PAGE_BLACK,
+    REFERENCE_BRANDS,
     SOFT_WHITE,
     TEXT_WHITE,
     WATERMARK_CANDIDATES,
@@ -33,6 +34,7 @@ from .ig_constants import (
 )
 from .ig_utils import _clean_headline, _clean_public_text
 from .ig_image import _resolve_image_source
+from .ig_copy import layout_safe_headline, layout_safe_points
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -321,6 +323,22 @@ def _load_artwork(image_path: str, topic: str, box: tuple[int, int, int, int], i
             return art.filter(filter_cls.UnsharpMask(radius=1, percent=80))
         except Exception:
             pass
+    if not path:
+        x1, y1, x2, y2 = box
+        w, h = max(1, x2 - x1), max(1, y2 - y1)
+        img = image_cls.new("RGB", (w, h), (4, 8, 14))
+        d = draw_cls.Draw(img, "RGBA")
+        for y in range(h):
+            alpha = y / max(1, h - 1)
+            r = int(4 + 8 * alpha)
+            g = int(8 + 18 * alpha)
+            b = int(14 + 28 * alpha)
+            d.line((0, y, w, y), fill=(r, g, b, 255))
+        for gx in range(0, w, 90):
+            d.line((gx, 0, gx, h), fill=(57, 255, 20, 18))
+        for gy in range(0, h, 90):
+            d.line((0, gy, w, gy), fill=(255, 255, 255, 12))
+        return img
     try:
         heading = _clean_public_text(fallback_text or topic)
         return _generate_ai_image(heading, topic, box, image_cls, draw_cls)
@@ -530,19 +548,15 @@ def _gt_draw_chrome(image, draw, ImageFont, slide_number: int, total_slides: int
     draw.line((1005, 1195 - TICK, 1005, 1195), fill=TICK_C, width=2)
     draw.line((1005 - TICK, 1195, 1005, 1195), fill=TICK_C, width=2)
 
-    logo_size = 100
-    if slide_kind == "digest":
-        logo_right = 64
-        logo_top = 700 - logo_size - 16
-    else:
-        logo_right = 56
-        logo_top = 56
+    logo_size = 78
+    logo_right = 44
+    logo_top = 34
     pill_pad = 10
     lx = CANVAS_W - logo_right - logo_size
     ly = logo_top
     draw.rounded_rectangle(
         (lx - pill_pad, ly - pill_pad, lx + logo_size + pill_pad, ly + logo_size + pill_pad),
-        radius=14, fill=(0, 0, 0, 200),
+        radius=12, fill=(0, 0, 0, 190),
     )
     _gt_draw_logo(image, right=logo_right, top=logo_top, size=logo_size)
 
@@ -639,32 +653,35 @@ def _gt_render_list_slide_bullets_only(
 ) -> None:
     """Render bullet-point list text into a bounding box."""
     bullets = [b.strip() for b in body_text.split("\n") if b.strip()]
+    bullets = layout_safe_points(bullets, limit=5)
     if not bullets:
         return
-    content_w = x2 - x1 - 22
+    content_w = x2 - x1 - 24
     avail_h = y2 - y1
-    chosen_size = 26
-    for fsz in (34, 32, 30, 28, 26):
+    chosen_size = 25
+    for fsz in (31, 29, 27, 25):
         font_bp = _font(image_font, fsz, mono=True)
+        bold_bp = _font(image_font, fsz, bold=True, mono=True)
         total = 0
         for bp in bullets:
             text = bp.lstrip("• ").strip()
-            lines = _wrap_to_width(draw, text, font_bp, content_w, max_lines=4)
+            lines = _wrap_highlighted_lines(draw, text, font_bp, bold_bp, content_w, max_lines=4)
             try:
                 lh = draw.textbbox((0, 0), "Ag", font=font_bp)[3]
             except Exception:
                 lh = fsz
-            total += len(lines) * (lh + 6) + 22
+            total += len(lines) * (lh + 5) + 14
         if total <= avail_h:
             chosen_size = fsz
             break
     font_bp = _font(image_font, chosen_size, mono=True)
+    bold_bp = _font(image_font, chosen_size, bold=True, mono=True)
     y = y1
     for bullet in bullets:
         text = bullet.lstrip("• ").strip()
         if not text or y >= y2 - 30:
             break
-        bp_lines = _wrap_to_width(draw, text, font_bp, content_w, max_lines=4)
+        bp_lines = _wrap_highlighted_lines(draw, text, font_bp, bold_bp, content_w, max_lines=4)
         try:
             lh = draw.textbbox((0, 0), "Ag", font_bp)[3]
         except Exception:
@@ -672,12 +689,61 @@ def _gt_render_list_slide_bullets_only(
         dot_cy = y + lh // 2
         draw.ellipse((x1, dot_cy - 4, x1 + 8, dot_cy + 4), fill=(57, 255, 20, 255))
         tx = x1 + 18
-        for line in bp_lines:
+        for line_tokens in bp_lines:
             if y >= y2 - 10:
                 break
-            draw.text((tx, y), line, fill=SOFT_WHITE, font=font_bp)
+            _draw_highlighted_line(draw, line_tokens, tx, y, font_bp, bold_bp)
             y += lh + 6
-        y += 18
+        y += 14
+
+
+def _keyword_is_neon(token: str) -> bool:
+    word = token.strip().strip(".,;:!?\"'()[]{}")
+    if not word or len(word) <= 1:
+        return False
+    if re.match(r"^[\$]?\d[\d,.]*(?:B|M|K|bn|mn|%|x)?$", word, re.I):
+        return True
+    if word in {"AI", "API", "LLM", "ML", "GPU", "CPU", "SDK", "RAG", "GPT"}:
+        return True
+    if word in REFERENCE_BRANDS or word.lower() in {brand.lower() for brand in REFERENCE_BRANDS}:
+        return True
+    return word.lower() in {
+        "hidden", "shocking", "critical", "dangerous", "proven", "massive",
+        "unexpected", "powerful", "released", "launches", "ships", "raises",
+        "hits", "breaks", "reveals", "changes", "unlocks", "watch", "signal",
+        "developers", "agents", "models", "workflow", "workflows",
+    }
+
+
+def _wrap_highlighted_lines(draw, text: str, font, bold_font, width: int, max_lines: int) -> list[list[str]]:
+    tokens = re.findall(r"\S+\s*", re.sub(r"\s+", " ", text or "").strip())
+    lines: list[list[str]] = []
+    current: list[str] = []
+    current_w = 0.0
+    for token in tokens:
+        token_font = bold_font if _keyword_is_neon(token) else font
+        token_w = draw.textlength(token, font=token_font)
+        if current and current_w + token_w > width:
+            lines.append(current)
+            current = [token]
+            current_w = token_w
+            if len(lines) >= max_lines:
+                return lines
+        else:
+            current.append(token)
+            current_w += token_w
+    if current and len(lines) < max_lines:
+        lines.append(current)
+    return lines
+
+
+def _draw_highlighted_line(draw, tokens: list[str], x: int, y: int, font, bold_font) -> None:
+    cursor = x
+    for token in tokens:
+        is_neon = _keyword_is_neon(token)
+        token_font = bold_font if is_neon else font
+        draw.text((cursor, y), token, fill=ACCENT_GREEN if is_neon else SOFT_WHITE, font=token_font)
+        cursor += draw.textlength(token, font=token_font)
 
 
 def _write_digest_slide(
@@ -695,7 +761,7 @@ def _write_digest_slide(
 ) -> None:
     """Render a digest carousel slide (1080 × 1350 px)."""
     margin = 54
-    image_box = (margin, 40, CANVAS_W - margin, 700)
+    image_box = (margin, 112, CANVAS_W - margin, 560)
 
     artwork = _load_artwork(
         slide.get("image_path", ""),
@@ -713,12 +779,15 @@ def _write_digest_slide(
     eyebrow_clean = re.sub(r"[^\x00-\x7F]+", "", eyebrow).strip()
     if not eyebrow_clean:
         eyebrow_clean = "AI NEWS"
-    draw.text((margin, 718), eyebrow_clean, fill=ACCENT_GREEN, font=font_eyebrow)
+    draw.text((margin, 586), eyebrow_clean, fill=ACCENT_GREEN, font=font_eyebrow)
 
-    _gt_draw_rule(draw, margin, 746)
+    _gt_draw_rule(draw, margin, 614)
 
-    headline = _clean_headline(str(slide.get("title", "AI Update"))).upper()
-    headline_box = (margin, 770, CANVAS_W - margin, 950)
+    headline = layout_safe_headline(
+        _clean_headline(str(slide.get("title", "AI Update"))) or "AI Update",
+        fallback="AI Update",
+    ).upper()
+    headline_box = (margin, 640, CANVAS_W - margin, 808)
     _draw_autofit_text(
         draw, headline, headline_box, image_font,
         fill=TEXT_WHITE, bold=False, size_max=72, size_min=32, max_lines=3, align="left",
@@ -727,10 +796,10 @@ def _write_digest_slide(
 
     body_text = str(slide.get("body", "")).strip()
     if body_text:
-        body_box = (margin, 958, CANVAS_W - margin, 1195)
-        is_bullets = body_text.startswith("•") or "\n•" in body_text
+        body_box = (margin, 820, CANVAS_W - margin, 1238)
+        is_bullets = "\n" in body_text or body_text.startswith("•") or "\n•" in body_text
         if is_bullets:
-            _gt_render_list_slide_bullets_only(draw, image_font, body_text, margin, 958, CANVAS_W - margin, 1195)
+            _gt_render_list_slide_bullets_only(draw, image_font, body_text, margin, 820, CANVAS_W - margin, 1238)
         else:
             _draw_autofit_text(
                 draw, body_text, body_box, image_font,
@@ -741,7 +810,7 @@ def _write_digest_slide(
     if source:
         font_source = _font(image_font, 18, mono=True)
         draw.text(
-            (margin, 1210),
+            (margin, 1246),
             f"SOURCE: {source.upper()}",
             fill=(200, 200, 200, 255),
             font=font_source,

@@ -21,6 +21,7 @@ from .ig_utils import (
 )
 from .ig_image import _fetch_og_image_from_url, _select_unique_article_image
 from .ig_keypoints import _extract_instagram_key_points
+from .ig_copy import layout_safe_headline, layout_safe_points
 
 if TYPE_CHECKING:
     from .models import EmailSummary
@@ -225,9 +226,10 @@ def _build_fallback_single_slide(
     used_image_paths: set[str] = set(initial_used_paths or ())
     carousel_theme = _pick_bg_theme_from_summary(summary)
 
-    headline = _clean_headline(
+    headline_raw = _clean_headline(
         _clean_public_text(str(summary.headline or summary.subject or "AI Update"))
     ) or "AI Update"
+    headline = layout_safe_headline(headline_raw, fallback="AI Update")
     url = str(summary.article_url or "")
     topic = ", ".join(summary.topics[:2]) or headline
     source_label = _source_label_from_url(url) if url else ""
@@ -249,7 +251,9 @@ def _build_fallback_single_slide(
         synthetic_article, topic, used_image_urls, used_image_paths
     )
     key_points = _extract_instagram_key_points(synthetic_article, summary, max_points=4)
-    body_text = "\n".join(key_points) if key_points else _clean_public_text(summary.summary or "")[:300]
+    body_text = "\n".join(key_points) if key_points else "\n".join(
+        layout_safe_points([_clean_public_text(summary.summary or "")], limit=2)
+    )
 
     slides: list[dict[str, Any]] = [
         {
@@ -330,9 +334,10 @@ def _build_digest_slide_specs(
             if og_url:
                 article["image_url"] = og_url
 
-        headline = _clean_headline(
+        headline_raw = _clean_headline(
             _clean_public_text(str(article.get("title") or summary.headline or summary.subject or "AI update"))
         ) or "AI Update"
+        headline = layout_safe_headline(headline_raw, fallback=str(summary.headline or "AI Update"))
 
         topic = ", ".join(summary.topics[:2]) or headline
         source_label = _source_label_from_url(url)

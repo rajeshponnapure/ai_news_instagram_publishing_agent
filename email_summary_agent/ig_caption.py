@@ -13,6 +13,7 @@ from .ig_utils import (
     _source_label_from_url,
     _trim_no_dots,
 )
+from .ig_copy import clean_creator_text, layout_safe_headline, layout_safe_points, trim_without_ellipsis
 
 if TYPE_CHECKING:
     from .models import EmailSummary
@@ -57,7 +58,7 @@ def _build_caption(summary: "EmailSummary") -> str:
     lead_raw = _dedupe_lead_text(lead_raw, headline)
     if not lead_raw or len(lead_raw) < 60:
         lead_raw = _fallback_summary_text(summary, headline)
-    lead = _trim_no_dots(lead_raw, 420)
+    lead = trim_without_ellipsis(lead_raw, 360)
 
     # ── Takeaway bullets ──────────────────────────────────────────────────────
     bullets = _build_caption_bullets(summary, article, lead)
@@ -80,16 +81,12 @@ def _build_caption(summary: "EmailSummary") -> str:
 
     if len(_all_url_pairs) == 1:
         _url, _domain = _all_url_pairs[0]
-        source_credit = (
-            f"📰 Source: {_domain}\n🔗 {_url}"
-            if _domain else
-            f"🔗 {_url}"
-        )
+        source_credit = f"Source: {_domain}\n{_url}" if _domain else _url
     elif len(_all_url_pairs) > 1:
-        _link_lines = [f"🔗 {_u}" for _u, _ in _all_url_pairs[:5]]
-        source_credit = "📰 Read the full stories:\n" + "\n".join(_link_lines)
+        _link_lines = [f"- {_u}" for _u, _ in _all_url_pairs[:5]]
+        source_credit = "Sources:\n" + "\n".join(_link_lines)
     else:
-        source_credit = "📰 Curated by Graitech AI News"
+        source_credit = "Curated by Graitech AI News"
 
     # ── Hashtags ──────────────────────────────────────────────────────────────
     hashtags_line = _build_editorial_hashtags(summary, article)
@@ -97,8 +94,8 @@ def _build_caption(summary: "EmailSummary") -> str:
     # ── Disclaimer ────────────────────────────────────────────────────────────
     disclaimer = _build_disclaimer_if_needed(summary, article)
 
-    save_bait = "💾 Save this post — you'll want to come back to this one."
-    swipe_prompt = "👉 Swipe to see the full breakdown →"
+    save_bait = "Save this before it disappears from your feed."
+    swipe_prompt = "Swipe for the full breakdown."
 
     parts: list[str] = [hook, "", swipe_prompt, "", lead, ""]
     if bullets:
@@ -135,21 +132,21 @@ def _build_caption_hook(summary: "EmailSummary", article: dict[str, Any], headli
     stat = _extract_stat_from_text(text_pool)
 
     if stat:
-        hook = f"{stat} — and that changes everything you knew about {entity}."
+        hook = f"{stat} changes the whole {entity} story."
     elif len(headline) <= 110 and not headline.lower().startswith(("i ", "we ")):
-        hook = headline if headline.endswith(".") else headline + "."
+        hook = layout_safe_headline(headline, fallback=f"{entity} just changed everything")
+        hook = hook if hook.endswith(".") else hook + "."
     else:
-        hook = f"{entity} just did something no one expected. Here's what it actually means."
+        hook = f"{entity} just made a move most people missed."
 
     if len(hook) > 125:
-        hook = _trim_no_dots(hook, 125)
-    hook = re.sub(r"^#+\s*", "", hook).strip()
+        hook = trim_without_ellipsis(hook, 125)
+    hook = clean_creator_text(re.sub(r"^#+\s*", "", hook)).strip()
     return hook
 
 
 def _build_caption_bullets(summary: "EmailSummary", article: dict[str, Any], lead: str) -> list[str]:
     """3–5 emoji-prefixed bullet points, each adding new info not in the lead."""
-    EMOJIS = ["🔹", "⚡", "🧠", "📊", "🔬", "💡", "🛠️", "🌍", "🤖", "📈"]
     raw_points: list[str] = []
 
     for p in article.get("key_points", []):
@@ -169,16 +166,15 @@ def _build_caption_bullets(summary: "EmailSummary", article: dict[str, Any], lea
             seen.add(key)
             deduped.append(p)
 
-    bullets = [
-        f"{EMOJIS[i % len(EMOJIS)]} {_trim_no_dots(pt, 140)}"
-        for i, pt in enumerate(deduped[:5])
-    ]
+    bullets = [f"- {pt}" for pt in layout_safe_points(deduped, limit=5)]
 
     if not bullets:
         for field in ("what_happened", "why_matters", "what_to_watch"):
             text = _clean_public_text(str(article.get(field) or ""))
             if text and len(text) > 30:
-                bullets.append(f"🔹 {_trim_no_dots(text, 140)}")
+                safe = layout_safe_points([text], limit=1)
+                if safe:
+                    bullets.append(f"- {safe[0]}")
             if len(bullets) >= 3:
                 break
 
@@ -368,18 +364,18 @@ def _build_disclaimer_if_needed(summary: "EmailSummary", article: dict[str, Any]
 
     warning = ""
     if any(kw in text for kw in ("benchmark", "performance score", "eval")):
-        warning = "⚠️ Benchmarks reflect results at publication time and may change as models are updated."
+        warning = "Benchmarks reflect results at publication time and may change as models are updated."
     elif any(kw in text for kw in ("price", "pricing", "$", "cost per")):
-        warning = "⚠️ Pricing information is subject to change — verify directly with the provider."
+        warning = "Pricing information can change. Verify directly with the provider."
     elif any(kw in text for kw in ("medical", "health", "diagnosis", "clinical")):
-        warning = "⚠️ This is not medical advice. AI health tools do not replace professional care."
+        warning = "This is not medical advice. AI health tools do not replace professional care."
     elif any(kw in text for kw in ("invest", "financial", "stock", "trading")):
-        warning = "⚠️ This is not financial advice. AI investment tools carry significant risks."
+        warning = "This is not financial advice. AI investment tools carry significant risks."
     elif any(kw in text for kw in ("regulation", "law", "legal", "compliance", "gdpr")):
-        warning = "⚠️ This is not legal advice. Consult a qualified professional for guidance."
+        warning = "This is not legal advice. Consult a qualified professional for guidance."
 
-    attribution = "ℹ️ Content curated & summarised by Graitech from the sources listed above. All rights remain with the original publishers."
+    attribution = "AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers."
 
     if warning:
-        return f"─\n{warning}\n{attribution}\n─"
-    return f"─\n{attribution}\n─"
+        return f"-\n{warning}\n{attribution}\n-"
+    return f"-\n{attribution}\n-"
