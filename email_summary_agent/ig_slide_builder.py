@@ -12,6 +12,7 @@ from .ig_utils import (
     _article_items,
     _clean_headline,
     _clean_public_text,
+    _scrape_article_images,
     _scrape_article_text,
     _source_label_from_url,
 )
@@ -113,12 +114,13 @@ def _build_slide_specs(
     summary: "EmailSummary",
     email_dt: datetime,
     initial_used_paths: set[str] | None = None,
+    initial_used_urls: set[str] | None = None,
 ) -> list[dict[str, Any]]:
     """Build one image/key-point slide per article."""
     articles = _article_items(summary)
     if not articles:
         return _build_fallback_single_slide(summary, initial_used_paths)
-    return _build_article_slides(summary, articles[:MAX_CAROUSEL_SLIDES], initial_used_paths)
+    return _build_article_slides(summary, articles[:MAX_CAROUSEL_SLIDES], initial_used_paths, initial_used_urls)
 
 
 def _build_fallback_single_slide(
@@ -146,8 +148,9 @@ def _build_article_slides(
     summary: "EmailSummary",
     articles: list[dict[str, Any]],
     initial_used_paths: set[str] | None = None,
+    initial_used_urls: set[str] | None = None,
 ) -> list[dict[str, Any]]:
-    used_image_urls: set[str] = set()
+    used_image_urls: set[str] = set(initial_used_urls or ())
     used_image_paths: set[str] = set(initial_used_paths or ())
     used_key_fingerprints: set[str] = set()
     slides: list[dict[str, Any]] = []
@@ -160,9 +163,11 @@ def _build_article_slides(
             if scraped:
                 article["scraped_content"] = scraped
         if url and not article.get("image_url") and not article.get("image_path"):
-            og_url = _fetch_og_image_from_url(url)
-            if og_url:
-                article["image_url"] = og_url
+            img_url = _fetch_og_image_from_url(url)
+            if not img_url:
+                img_url = _scrape_article_images(url)
+            if img_url:
+                article["image_url"] = img_url
 
         points = _extract_instagram_key_points(
             article,

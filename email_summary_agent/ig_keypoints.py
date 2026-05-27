@@ -183,6 +183,10 @@ def _extract_instagram_key_points(
         "introduces", "joins", "reaches", "replaces", "sets", "ships",
         "shows", "trains", "upgrades",
     )
+
+    def _fingerprint(text: str) -> str:
+        return re.sub(r"\s+", " ", text).lower()[:60]
+
     def _strip_noise(text: str) -> str:
         text = clean_creator_text(text)
         for pattern in NOISE_PATTERNS:
@@ -202,11 +206,14 @@ def _extract_instagram_key_points(
 
     # ---- Phase 1: Collect candidates from THIS article ----
     article_candidates = []
+    seen_in_fields: set[str] = set()
 
     for p in article.get("key_points", []):
         cleaned = _strip_noise(_clean_public_text(str(p))).strip()
-        if _is_valid_bullet(cleaned):
+        fp = _fingerprint(cleaned)
+        if _is_valid_bullet(cleaned) and fp not in seen_in_fields:
             article_candidates.append(cleaned)
+            seen_in_fields.add(fp)
 
     for field in ("what_happened", "why_matters", "what_to_watch", "description", "excerpt", "scraped_content"):
         text = _strip_noise(_clean_public_text(str(article.get(field) or "")))
@@ -214,8 +221,10 @@ def _extract_instagram_key_points(
             continue
         for sent in re.split(r"(?<=[.!?])\s+", text):
             sent = sent.strip()
-            if _is_valid_bullet(sent) and len(sent) > 35:
+            fp = _fingerprint(sent)
+            if _is_valid_bullet(sent) and len(sent) > 35 and fp not in seen_in_fields:
                 article_candidates.append(sent)
+                seen_in_fields.add(fp)
         if len(article_candidates) >= max_points * 3:
             break
 
@@ -223,32 +232,38 @@ def _extract_instagram_key_points(
     seen_local: set[str] = set()
     deduped_local = []
     for p in article_candidates:
-        key = re.sub(r"\s+", " ", p).lower()[:60]
+        key = _fingerprint(p)
         if key not in seen_local:
             seen_local.add(key)
             deduped_local.append(p)
 
     # ---- Phase 2: Apply cross-article dedup ----
     novel = []
-    novel_fingerprints = []
     for p in deduped_local:
-        key = re.sub(r"\s+", " ", p).lower()[:60]
+        key = _fingerprint(p)
         if used_fingerprints is None or key not in used_fingerprints:
             novel.append(p)
-            novel_fingerprints.append(key)
 
     # ---- Phase 3: Relax dedup when too aggressive ----
     if len(novel) < 3:
         for p in deduped_local:
             if p not in novel:
                 novel.append(p)
-                novel_fingerprints.append(re.sub(r"\s+", " ", p).lower()[:60])
+        # Only use summary.key_points as last resort, and enforce strict dedup
         if len(novel) < 3:
             for p in (summary.key_points or []):
                 cleaned = _strip_noise(_clean_public_text(str(p))).strip()
-                if cleaned and _is_valid_bullet(cleaned) and cleaned not in novel:
-                    novel.append(cleaned)
-                    novel_fingerprints.append(re.sub(r"\s+", " ", cleaned).lower()[:60])
+                if not cleaned or not _is_valid_bullet(cleaned):
+                    continue
+                fp = _fingerprint(cleaned)
+                if fp in seen_local:
+                    continue
+                if any(fp == _fingerprint(n) for n in novel):
+                    continue
+                if used_fingerprints is not None and fp in used_fingerprints:
+                    continue
+                novel.append(cleaned)
+                seen_local.add(fp)
 
     # ---- Phase 4: Score and sort ----
     def _point_score(pt):
@@ -265,16 +280,26 @@ def _extract_instagram_key_points(
     novel.sort(key=_point_score, reverse=True)
 
     # ---- Phase 5: Guarantee minimum 4 points ----
+    phase5_additions = []
     if len(novel) < 4:
-        title_str = _clean_public_text(str(article.get("title") or summary.headline or summary.subject or ""))
+        title_str = _clean_public_text(str(article.get("title") or ""))
+        if not title_str or len(title_str) <= 15:
+            title_str = _clean_public_text(str(summary.headline or summary.subject or ""))
         desc_str = _clean_public_text(str(article.get("description") or article.get("excerpt") or ""))
-        if title_str and len(title_str) > 15 and not any(title_str[:40].lower() in p.lower() for p in novel):
-            novel.append(title_str)
+        if title_str and len(title_str) > 15:
+            fp_t = _fingerprint(title_str)
+            if fp_t not in seen_local and not any(fp_t == _fingerprint(p) for p in novel):
+                novel.append(title_str)
+                phase5_additions.append(title_str)
+                seen_local.add(fp_t)
         if desc_str and len(novel) < 4:
             for chunk in re.split(r"[;,]\s+|(?<=[.!?])\s+", desc_str):
                 chunk = chunk.strip()
-                if len(chunk) > 35 and _is_valid_bullet(chunk) and chunk not in novel:
+                fp_c = _fingerprint(chunk)
+                if len(chunk) > 35 and _is_valid_bullet(chunk) and fp_c not in seen_local and not any(fp_c == _fingerprint(p) for p in novel):
                     novel.append(chunk)
+                    phase5_additions.append(chunk)
+                    seen_local.add(fp_c)
                 if len(novel) >= 4:
                     break
 
@@ -294,10 +319,10 @@ def _extract_instagram_key_points(
         if title_pt and title_pt not in final[0]:
             final.extend(layout_safe_points([title_pt], limit=1))
 
-    # ---- Phase 6: Register fingerprints ----
+    # ---- Phase 6: Register fingerprints from ACTUALLY selected points ----
     if used_fingerprints is not None:
-        for fp in novel_fingerprints[:max_points]:
-            used_fingerprints.add(fp)
+        for pt in final:
+            used_fingerprints.add(_fingerprint(pt))
 
     return final
 

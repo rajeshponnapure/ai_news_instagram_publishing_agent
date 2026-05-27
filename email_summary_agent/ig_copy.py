@@ -59,19 +59,24 @@ POWER_WORDS = (
 )
 
 ACTION_VERBS = (
-    "launches",
-    "released",
-    "ships",
-    "raises",
-    "hits",
-    "breaks",
-    "reveals",
-    "exposes",
-    "changes",
-    "unlocks",
-    "warns",
-    "cuts",
-    "doubles",
+    "launches", "launched",
+    "releases", "released",
+    "ships", "shipped",
+    "raises", "raised",
+    "hits", "hit",
+    "breaks", "broke",
+    "reveals", "revealed",
+    "exposes", "exposed",
+    "changes", "changed",
+    "unlocks", "unlocked",
+    "warns", "warned",
+    "cuts", "cut",
+    "doubles", "doubled",
+    "deploys", "deployed",
+    "announces", "announced",
+    "introduces", "introduced",
+    "partners", "partnered",
+    "acquires", "acquired",
 )
 
 STOPWORDS = {
@@ -143,7 +148,7 @@ def layout_safe_headline(text: str, fallback: str = "AI Update") -> str:
 
 
 def layout_safe_point(text: str, index: int = 0) -> str:
-    """Return a 12-16 word max point with creator-style tension."""
+    """Return an 18-22 word max point in a professional human editor voice."""
     cleaned = clean_creator_text(text)
     cleaned = cleaned.lstrip("-*\u2022 ").strip()
     if not is_public_safe_text(cleaned):
@@ -151,23 +156,28 @@ def layout_safe_point(text: str, index: int = 0) -> str:
 
     sentence = _first_complete_sentence(cleaned)
     words = sentence.split()
-    if len(words) > 16:
-        sentence = " ".join(words[:16]).rstrip(".,;:-")
+    if len(words) > 22:
+        sentence = " ".join(words[:22]).rstrip(".,;:-")
 
     lower = sentence.lower()
-    if not any(word in lower for word in (*POWER_WORDS, *ACTION_VERBS, "why", "watch", "secret", "truth")):
+    # Never double-prefix — check if sentence already has a prefix-like opening
+    PREFIX_TOKENS = frozenset({"here is", "this is", "watch", "most people", "the real", "the critical", "the hidden"})
+    first_three = " ".join(lower.split()[:3])
+    already_has_prefix = any(t in first_three for t in PREFIX_TOKENS)
+
+    if not already_has_prefix and not any(word in lower for word in (*POWER_WORDS, *ACTION_VERBS, "why", "watch", "secret", "truth")):
         prefix = (
-            "Here is the hidden part:"
+            "Here is the key detail:"
             if index == 0 else
-            "This is the real shift:"
+            "The real shift here:"
             if index == 1 else
-            "Watch the critical signal:"
+            "Keep an eye on this:"
             if index == 2 else
-            "Most people miss this:"
+            "What this means:"
         )
         combined = f"{prefix} {sentence}"
         words = combined.split()
-        sentence = " ".join(words[:16]).rstrip(".,;:-")
+        sentence = " ".join(words[:22]).rstrip(".,;:-")
 
     if sentence and sentence[-1] not in ".!?":
         sentence += "."

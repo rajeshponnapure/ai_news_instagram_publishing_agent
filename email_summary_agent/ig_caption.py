@@ -147,24 +147,35 @@ def _build_caption_hook(summary: "EmailSummary", article: dict[str, Any], headli
 
 def _build_caption_bullets(summary: "EmailSummary", article: dict[str, Any], lead: str) -> list[str]:
     """3–5 emoji-prefixed bullet points, each adding new info not in the lead."""
-    raw_points: list[str] = []
+    seen_bullet: set[str] = set()
+    deduped: list[str] = []
+
+    lead_fp = re.sub(r"\s+", " ", lead.lower())[:120]
 
     for p in article.get("key_points", []):
         cleaned = _clean_public_text(str(p))
-        if len(cleaned) > 25 and cleaned.lower() not in lead.lower():
-            raw_points.append(cleaned)
+        fp = re.sub(r"\s+", " ", cleaned.lower())[:70]
+        if len(cleaned) > 25 and fp not in seen_bullet and fp not in lead_fp:
+            seen_bullet.add(fp)
+            deduped.append(cleaned)
+
     for p in summary.key_points:
         cleaned = _clean_public_text(str(p))
-        if len(cleaned) > 25 and cleaned.lower() not in lead.lower() and cleaned not in raw_points:
-            raw_points.append(cleaned)
+        fp = re.sub(r"\s+", " ", cleaned.lower())[:70]
+        if len(cleaned) > 25 and fp not in seen_bullet and fp not in lead_fp:
+            seen_bullet.add(fp)
+            deduped.append(cleaned)
 
-    seen: set[str] = set()
-    deduped: list[str] = []
-    for p in raw_points:
-        key = re.sub(r"\s+", " ", p).lower()[:70]
-        if key not in seen:
-            seen.add(key)
-            deduped.append(p)
+    for field in ("what_happened", "why_matters", "what_to_watch"):
+        text = _clean_public_text(str(article.get(field) or ""))
+        if not text:
+            continue
+        for sent in re.split(r"(?<=[.!?])\s+", text):
+            sent = sent.strip()
+            fp = re.sub(r"\s+", " ", sent.lower())[:70]
+            if len(sent) > 30 and fp not in seen_bullet and fp not in lead_fp:
+                seen_bullet.add(fp)
+                deduped.append(sent)
 
     bullets = [f"- {pt}" for pt in layout_safe_points(deduped, limit=5)]
 

@@ -37,6 +37,7 @@ def write_instagram_carousels(
     batch_dir.mkdir(parents=True, exist_ok=True)
 
     global_used_image_paths: set[str] = _load_used_images_from_db(db_path)
+    global_used_image_urls: set[str] = set()
 
     carousel_dirs: list[Path] = []
     index_rows: list[str] = []
@@ -51,7 +52,7 @@ def write_instagram_carousels(
             carousel_dir = batch_dir / folder_name
             carousel_dir.mkdir(parents=True, exist_ok=True)
 
-            slides = _build_slide_specs(part_summary, email_dt, global_used_image_paths)
+            slides = _build_slide_specs(part_summary, email_dt, global_used_image_paths, global_used_image_urls)
             for slide in slides:
                 img = str(slide.get("image_path", "")).strip()
                 if img:

@@ -242,9 +242,12 @@ class SummaryProvider:
             "  creators, companies, or AI users. No hype without evidence.\n"
             "- what_to_watch: 1-2 sentences. Next signal: rollout, adoption, "
             "  pricing, competition, limitations, benchmarks, or user reaction.\n"
-            "- key_points: array of 4-6 creator-style bullets derived from the article. "
-            "  Each bullet must be 12-16 words, specific, emotionally engaging, and layout-safe. "
-            "  Use curiosity, tension, or action language naturally. No generic labels.\n"
+            "- key_points: array of 4-6 key points derived from the article. "
+            "  Each key point must be 12-22 words, a complete standalone factual sentence. "
+            "  Include concrete numbers, names, dates, or comparisons in every point. "
+            "  Never start a key point with 'This means', 'This shows', 'What this means', "
+            "'The key detail', 'The real shift', or any meta-commentary. "
+            "  Just state the fact directly. No emoji, no questions, no clickbait.\n"
             "- Never end any field with an ellipsis. Never use 'In conclusion', 'Overall', "
             "  'Furthermore', 'Additionally', or 'It is important to note'.\n"
             "- companies, models, topics: arrays of strings.\n"
@@ -526,12 +529,12 @@ def _make_editorial_section(
 
     if section == "why":
         if source:
-            return _trim(f"The practical impact: {source}", 430)
-        return _trim(f"The practical impact is how {entity} changes {angle}.", 430)
+            return _trim(source, 430)
+        return _trim(f"This matters because how {entity} changes {angle}.", 430)
     if section == "watch":
         if source:
-            return _trim(f"Watch next: {source}", 320)
-        return _trim(f"Watch next for {angle} around {entity}.", 320)
+            return _trim(source, 320)
+        return _trim(f"Watch for {angle} around {entity}.", 320)
     return source
 
 

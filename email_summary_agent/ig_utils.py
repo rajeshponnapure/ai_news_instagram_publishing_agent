@@ -203,6 +203,64 @@ def _scrape_article_text(url: str) -> str:
         return ""
 
 
+def _scrape_article_images(url: str) -> str:
+    """Find the best real image URL from the article page HTML.
+
+    Scans ALL <img> tags (not just og:image/twitter:image), skips
+    low-value images (logo, icon, avatar, pixel, tracking, badge),
+    and prefers images inside <article>/<main> blocks.
+    Returns the best image URL or empty string.
+    """
+    if not url or not url.startswith(("http://", "https://")):
+        return ""
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (compatible; AIInstagramAgent/1.0)",
+            "Accept": "text/html,image/webp,image/jpeg,image/png,*/*;q=0.8",
+        }
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            raw = resp.read(500_000).decode("utf-8", errors="replace")
+    except Exception:
+        return ""
+
+    _skip = {"logo", "icon", "avatar", "pixel", "tracking", "badge", "1x1", "spacer", "sprite", "placeholder", "transparent"}
+    _img_exts = (".jpg", ".jpeg", ".png", ".webp")
+
+    # First pass — images inside <article> or <main>
+    content_block = re.search(r"<(?:article|main)[^>]*>(.*?)</(?:article|main)>", raw, re.I | re.S)
+    search_zone = content_block.group(1) if content_block else raw
+
+    candidates = []
+    for m in re.finditer(r'<img[^>]+src=["\']([^"\']+)["\'][^>]*>', search_zone, re.I):
+        src = m.group(1).strip()
+        if not src.startswith(("http://", "https://")):
+            continue
+        src_lower = src.lower()
+        if not any(ext in src_lower for ext in _img_exts):
+            continue
+        if any(skip in src_lower for skip in _skip):
+            continue
+        candidates.append(src)
+
+    if candidates:
+        return candidates[0]
+
+    # Second pass — entire page if nothing found in article/main
+    for m in re.finditer(r'<img[^>]+src=["\']([^"\']+)["\'][^>]*>', raw, re.I):
+        src = m.group(1).strip()
+        if not src.startswith(("http://", "https://")):
+            continue
+        src_lower = src.lower()
+        if not any(ext in src_lower for ext in _img_exts):
+            continue
+        if any(skip in src_lower for skip in _skip):
+            continue
+        candidates.append(src)
+
+    return candidates[0] if candidates else ""
+
+
 def _fallback_summary_text(summary: "EmailSummary", headline: str) -> str:
     """Build a fallback summary string when article-level data is too short."""
     parts = [

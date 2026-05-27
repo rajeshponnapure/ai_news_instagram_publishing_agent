@@ -60,7 +60,6 @@ def _select_unique_article_image(
     1. Article's own featured/hero image (og:image fetch — highest relevance)
     2. Shared image library — best semantic match not yet used
     3. Wikimedia Commons web search — unique fresh download
-    4. Return empty string (slide layer generates an AI illustration)
     """
     title = str(article.get("title") or "")
     query_text = _tighten(_image_query_text(article, topic), 1200)

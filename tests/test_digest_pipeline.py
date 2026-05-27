@@ -278,7 +278,7 @@ class DigestPipelineTests(unittest.TestCase):
         self.assertLessEqual(len(headline.split()), 7)
         self.assertTrue(points)
         self.assertTrue(all("..." not in point for point in points))
-        self.assertTrue(all(len(point.split()) <= 16 for point in points))
+        self.assertTrue(all(len(point.split()) <= 22 for point in points))
         self.assertFalse(any("dismiss alert" in point.lower() for point in points))
         self.assertEqual(
             trim_without_ellipsis("This sentence is intentionally much too long for a carousel text box", 32)[-1],
