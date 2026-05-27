@@ -20,7 +20,7 @@ def write_publish_manifest(carousel_dirs: list[Path], public_media_base_url: str
     existing_posts = _existing_manifest_posts(manifest_path)
     posts = []
     for index, carousel_dir in enumerate(carousel_dirs):
-        slides = sorted(carousel_dir.glob("slide_*.png"))[:10]
+        slides = sorted(carousel_dir.glob("slide_*.png"))[:8]
         caption_path = carousel_dir / "caption.txt"
         caption = caption_path.read_text(encoding="utf-8") if caption_path.exists() else ""
         existing = existing_posts.get(str(carousel_dir), {})
@@ -67,16 +67,16 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
         if post.get("status") not in {"ready_for_publish", "ready_for_upload", "container_created", "publish_failed_retryable"}:
             print(f"  [{post_idx}] SKIP (status={status!r} not publishable): {folder}")
             continue
-        urls = [url for url in post.get("public_slide_urls", []) if url][:10]
-        if len(urls) < 2:
+        urls = [url for url in post.get("public_slide_urls", []) if url][:8]
+        if len(urls) < 1:
             folder = post.get("folder", "unknown")
             print(
-                f"SKIPPING carousel '{folder}': only {len(urls)} public URL(s) found "
-                f"(Instagram requires ≥2). Check that PUBLIC_MEDIA_BASE_URL is set "
+                f"SKIPPING post '{folder}': no public slide URL found. "
+                f"Check that PUBLIC_MEDIA_BASE_URL is set "
                 f"and the batch was deployed to GitHub Pages before publishing."
             )
             post["status"] = "publish_failed"
-            post["error"] = f"Only {len(urls)} public slide URL(s); Instagram requires at least 2."
+            post["error"] = "No public slide URL found."
             manifest_path.write_text(
                 __import__("json").dumps(manifest, ensure_ascii=True, indent=2), encoding="utf-8"
             )
@@ -94,7 +94,11 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
                 if code in {"ERROR", "EXPIRED"}:
                     print(f"  [{post_idx}] Previous container {creation_id} is {code}, creating new one")
                     creation_id = None
-            creation_id = creation_id or _create_carousel_container(settings, urls[:10], post.get("caption", ""))
+            creation_id = creation_id or (
+                _create_single_image_container(settings, urls[0], post.get("caption", ""))
+                if len(urls) == 1 else
+                _create_carousel_container(settings, urls[:8], post.get("caption", ""))
+            )
             post["creation_id"] = creation_id
             post["status"] = "container_created"
             manifest_path.write_text(json.dumps(manifest, ensure_ascii=True, indent=2), encoding="utf-8")
@@ -141,6 +145,20 @@ def _create_carousel_container(settings: Settings, image_urls: list[str], captio
     )
     print(f"    Carousel container created: {parent['id']}")
     return parent["id"]
+
+
+def _create_single_image_container(settings: Settings, image_url: str, caption: str) -> str:
+    print(f"    Creating image post: {image_url[:120]}")
+    media = _graph_post(
+        settings,
+        f"{settings.ig_user_id}/media",
+        {
+            "image_url": image_url,
+            "caption": caption[:2200],
+        },
+    )
+    print(f"    Image container created: {media['id']}")
+    return media["id"]
 
 
 def _publish_container(settings: Settings, creation_id: str) -> dict:

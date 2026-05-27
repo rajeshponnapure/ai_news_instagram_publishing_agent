@@ -73,9 +73,8 @@ class DigestPipelineTests(unittest.TestCase):
         self.assertEqual(len(parts), 1)
         # Unified layout: every article slide is kind="digest", no "title"/"list" slides
         self.assertEqual(slides[0]["kind"], "digest")
-        self.assertGreaterEqual(len(slides), 2)   # at least 1 digest + 1 CTA
-        self.assertEqual(slides[-1]["kind"], "cta")
-        self.assertTrue(all(s["kind"] in ("digest", "cta") for s in slides))
+        self.assertEqual(len(slides), 1)
+        self.assertTrue(all(s["kind"] == "digest" for s in slides))
 
     def test_single_long_news_email_creates_more_keypoints(self) -> None:
         summary = _summary_with_articles(1, long=True)
@@ -94,15 +93,11 @@ class DigestPipelineTests(unittest.TestCase):
         slides = _build_slide_specs(parts[0], datetime(2026, 5, 21, 9, 0))
 
         self.assertEqual(len(parts), 1)
-        # 2 articles x 1 digest slide each + 1 CTA = at least 3 slides
-        # (overflow slides may push higher if an article generates 5 key points)
-        self.assertGreaterEqual(len(slides), 3)
+        # 2 articles x 1 digest slide each.
+        self.assertEqual(len(slides), 2)
         self.assertEqual(slides[0]["kind"], "digest")
-        self.assertEqual(slides[-1]["kind"], "cta")
         kinds = [s["kind"] for s in slides]
-        # Unified layout: only "digest" and "cta" kinds -- no "title" or "list"
-        self.assertTrue(all(k in ("digest", "cta") for k in kinds))
-        self.assertEqual(kinds.count("digest"), len(slides) - 1)  # all but the last
+        self.assertTrue(all(k == "digest" for k in kinds))
 
     def test_four_news_stories_split_into_multiple_carousel_parts(self) -> None:
         summary = _summary_with_articles(4)
@@ -110,11 +105,32 @@ class DigestPipelineTests(unittest.TestCase):
         parts = _split_summary_for_carousels(summary)
         slide_counts = [len(_build_slide_specs(part, datetime(2026, 5, 21, 9, 0))) for part in parts]
 
-        # NORMAL_NEWS_PER_POST = 8: 4 articles all fit in a single carousel post
+        # Unified batching: 4 articles all fit in a single carousel post
         self.assertEqual(len(parts), 1)
-        # 4 digest slides + 1 CTA = at least 5 slides
-        self.assertGreaterEqual(slide_counts[0], 5)
+        self.assertEqual(slide_counts[0], 4)
         self.assertEqual(parts[0].headline, "AI News Update")
+
+    def test_article_batches_are_fixed_groups_of_eight(self) -> None:
+        cases = {
+            1: [1],
+            5: [5],
+            8: [8],
+            9: [8, 1],
+            17: [8, 8, 1],
+            50: [8, 8, 8, 8, 8, 8, 2],
+        }
+
+        for article_count, expected_counts in cases.items():
+            with self.subTest(article_count=article_count):
+                parts = _split_summary_for_carousels(_summary_with_articles(article_count))
+                actual_counts = [len(part.article_items or []) for part in parts]
+                self.assertEqual(actual_counts, expected_counts)
+
+                slide_counts = [
+                    len(_build_slide_specs(part, datetime(2026, 5, 21, 9, 0)))
+                    for part in parts
+                ]
+                self.assertEqual(slide_counts, expected_counts)
 
     def test_digest_parser_extracts_one_story_per_url(self) -> None:
         email = EmailItem(

@@ -12,12 +12,11 @@ CANVAS_W = 1080
 CANVAS_H = 1350
 
 # Instagram API allows 2–10 children per carousel post.
-MAX_CAROUSEL_SLIDES = 10
+MAX_ARTICLES_PER_POST = 8
+MAX_CAROUSEL_SLIDES = MAX_ARTICLES_PER_POST
 
 # Articles per carousel post for both digest and normal emails.
-DIGEST_NEWS_PER_POST = 8
 STORIES_PER_CAROUSEL = 1
-NORMAL_NEWS_PER_POST = 8
 
 # Maximum key points shown on a single article slide before overflow.
 MAX_KP_PER_SLIDE = 4
