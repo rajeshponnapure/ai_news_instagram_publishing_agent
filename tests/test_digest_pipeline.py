@@ -71,10 +71,10 @@ class DigestPipelineTests(unittest.TestCase):
         slides = _build_slide_specs(parts[0], datetime(2026, 5, 21, 9, 0))
 
         self.assertEqual(len(parts), 1)
-        # Unified layout: every article slide is kind="digest", no "title"/"list" slides
+        # Unified layout: content slides are kind="digest", last is CTA
         self.assertEqual(slides[0]["kind"], "digest")
-        self.assertEqual(len(slides), 1)
-        self.assertTrue(all(s["kind"] == "digest" for s in slides))
+        self.assertEqual(len(slides), 2)
+        self.assertEqual(slides[-1]["kind"], "cta")
 
     def test_single_long_news_email_creates_more_keypoints(self) -> None:
         summary = _summary_with_articles(1, long=True)
@@ -93,11 +93,11 @@ class DigestPipelineTests(unittest.TestCase):
         slides = _build_slide_specs(parts[0], datetime(2026, 5, 21, 9, 0))
 
         self.assertEqual(len(parts), 1)
-        # 2 articles x 1 digest slide each.
-        self.assertEqual(len(slides), 2)
+        # 2 content slides + 1 CTA
+        self.assertEqual(len(slides), 3)
         self.assertEqual(slides[0]["kind"], "digest")
-        kinds = [s["kind"] for s in slides]
-        self.assertTrue(all(k == "digest" for k in kinds))
+        self.assertEqual(slides[1]["kind"], "digest")
+        self.assertEqual(slides[-1]["kind"], "cta")
 
     def test_four_news_stories_split_into_multiple_carousel_parts(self) -> None:
         summary = _summary_with_articles(4)
@@ -105,9 +105,9 @@ class DigestPipelineTests(unittest.TestCase):
         parts = _split_summary_for_carousels(summary)
         slide_counts = [len(_build_slide_specs(part, datetime(2026, 5, 21, 9, 0))) for part in parts]
 
-        # Unified batching: 4 articles all fit in a single carousel post
+        # Unified batching: 4 articles + 1 CTA all fit in a single carousel post
         self.assertEqual(len(parts), 1)
-        self.assertEqual(slide_counts[0], 4)
+        self.assertEqual(slide_counts[0], 5)
         self.assertEqual(parts[0].headline, "AI News Update")
 
     def test_article_batches_are_fixed_groups_of_eight(self) -> None:
@@ -118,6 +118,15 @@ class DigestPipelineTests(unittest.TestCase):
             9: [8, 1],
             17: [8, 8, 1],
             50: [8, 8, 8, 8, 8, 8, 2],
+        }
+        # Each batch gets 1 additional CTA slide appended
+        expected_slides = {
+            1: [2],
+            5: [6],
+            8: [9],
+            9: [9, 2],
+            17: [9, 9, 2],
+            50: [9, 9, 9, 9, 9, 9, 3],
         }
 
         for article_count, expected_counts in cases.items():
@@ -130,7 +139,7 @@ class DigestPipelineTests(unittest.TestCase):
                     len(_build_slide_specs(part, datetime(2026, 5, 21, 9, 0)))
                     for part in parts
                 ]
-                self.assertEqual(slide_counts, expected_counts)
+                self.assertEqual(slide_counts, expected_slides[article_count])
 
     def test_digest_parser_extracts_one_story_per_url(self) -> None:
         email = EmailItem(

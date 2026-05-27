@@ -116,11 +116,14 @@ def _build_slide_specs(
     initial_used_paths: set[str] | None = None,
     initial_used_urls: set[str] | None = None,
 ) -> list[dict[str, Any]]:
-    """Build one image/key-point slide per article."""
+    """Build one image/key-point slide per article, plus a final CTA slide."""
     articles = _article_items(summary)
     if not articles:
-        return _build_fallback_single_slide(summary, initial_used_paths)
-    return _build_article_slides(summary, articles[:MAX_CAROUSEL_SLIDES], initial_used_paths, initial_used_urls)
+        slides = _build_fallback_single_slide(summary, initial_used_paths)
+    else:
+        slides = _build_article_slides(summary, articles[:MAX_CAROUSEL_SLIDES], initial_used_paths, initial_used_urls)
+    slides.append(_make_cta_slide(len(slides) + 1))
+    return slides
 
 
 def _build_fallback_single_slide(
@@ -228,3 +231,18 @@ def _pick_article_eyebrow(article: dict[str, Any], summary: "EmailSummary") -> s
         if any(keyword in combined for keyword in keywords):
             return label
     return "AI NEWS"
+
+
+def _make_cta_slide(slide_index: int) -> dict[str, Any]:
+    """Create the final call-to-action slide appended to every carousel."""
+    return {
+        "kind": "cta",
+        "slide_index": slide_index,
+        "eyebrow": "TAKE IT WITH YOU",
+        "title": "SAVE THIS.",
+        "body": "Follow @graitech for the next AI briefing. Like · Comment · Share · Save",
+        "image_path": "",
+        "url": "",
+        "source_label": "graitech.io",
+        "bg_theme": "default",
+    }
