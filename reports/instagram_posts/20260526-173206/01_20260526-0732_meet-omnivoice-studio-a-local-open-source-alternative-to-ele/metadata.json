@@ -1,0 +1,343 @@
+{
+  "email_received_at": "2026-05-26T07:32-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs \u2014 Part 1 of 2",
+  "subject": "\ud83d\udea8 AI Alert: 25 new launches \u2014 The Verge AI, MarkTechPost AI",
+  "source_date": "Tue, 26 May 2026 07:32:48 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Apple",
+    "Amazon"
+  ],
+  "models": [
+    "GPT-5.5",
+    "GPT-5.4-Cyber",
+    "GPT-5.1-Codex-Max",
+    "GPT-5.1",
+    "GPT-5",
+    "GPT-5-Codex",
+    "Claude",
+    "Gemini 3.5"
+  ],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.marktechpost.com/2026/05/26/meet-omnivoice-studio-a-local-open-source-alternative-to-elevenlabs/",
+  "article_title": "Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/dd0be8ce4ff96fce.png",
+  "article_image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-51-1024x731.png",
+  "article_items": [
+    {
+      "url": "https://www.marktechpost.com/2026/05/26/meet-omnivoice-studio-a-local-open-source-alternative-to-elevenlabs/",
+      "title": "Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs",
+      "description": "OmniVoice Studio is an open-source desktop app for local voice cloning, dubbing, and dictation with no API keys.",
+      "excerpt": "OmniVoice Studio is an open-source desktop app for local voice cloning, dubbing, and dictation with no API keys.",
+      "summary": "Michal Sutter Google Launches Antigravity 2.0 at I/O 2026: A Standalone Agent-First Platform with CLI, SDK, Managed Execution, and Enterprise Support Michal Sutter Vercel Labs Introduces Zero, a Systems Programming Language Designed So AI Agents Can Read, Repair, and Ship Native Programs Michal Sutter Enterprise AI Governance in 2026: Why the Tools Employees Use Are Ahead of the Policies That Cover Them Michal Sutter Google DeepMind Introduces an AI-Enabled Mouse Pointer Powered by Gemini That Captures Visual... The practical impact: Michal Sutter Comparing the Top 6 Inference Runtimes for LLM Serving in 2025 Michal Sutter OpenAI Introduces IndQA: A Culture Aware Benchmark For Indian Languages Michal Sutter Comparing the Top 7 Large Language Models LLMs/Systems for Coding in 2025 Michal Sutter Anyscale and NovaSky Team Releases SkyRL tx v0.1.0: Bringing Tinker Compatible Reinforcement Learning RL Engine To Local GPU Clusters... Watch next: A Technical Risk Audit Based on Real-World Use Cases Michal Sutter 9 Open Source Cursor Alternatives You Should Use in 2025 Michal Sutter Microsoft Edge Launches Copilot Mode to Redefine Web Browsing for the AI Era Michal Sutter Key Factors...",
+      "what_happened": "Michal Sutter Google Launches Antigravity 2.0 at I/O 2026: A Standalone Agent-First Platform with CLI, SDK, Managed Execution, and Enterprise Support Michal Sutter Vercel Labs Introduces Zero, a Systems Programming Language Designed So AI Agents Can Read, Repair, and Ship Native Programs Michal Sutter Enterprise AI Governance in 2026: Why the Tools Employees Use Are Ahead of the Policies That Cover Them Michal Sutter Google DeepMind Introduces an AI-Enabled Mouse Pointer Powered by Gemini That Captures Visual...",
+      "why_matters": "The practical impact: Michal Sutter Comparing the Top 6 Inference Runtimes for LLM Serving in 2025 Michal Sutter OpenAI Introduces IndQA: A Culture Aware Benchmark For Indian Languages Michal Sutter Comparing the Top 7 Large Language Models LLMs/Systems for Coding in 2025 Michal Sutter Anyscale and NovaSky Team Releases SkyRL tx v0.1.0: Bringing Tinker Compatible Reinforcement Learning RL Engine To Local GPU Clusters...",
+      "what_to_watch": "Watch next: A Technical Risk Audit Based on Real-World Use Cases Michal Sutter 9 Open Source Cursor Alternatives You Should Use in 2025 Michal Sutter Microsoft Edge Launches Copilot Mode to Redefine Web Browsing for the AI Era Michal Sutter Key Factors That Drive Successful MCP Implementation and Adoption Michal...",
+      "key_points": [
+        "Michal Sutter Google Launches Antigravity 2.0 at I/O 2026: A Standalone Agent-First Platform with CLI, SDK, Managed Execution, and Enterprise Support Michal Sutter Vercel Labs Introduces Zero, a Systems Programming...",
+        "How a Local First Agent Stack Turns Chats into Real Automations Michal Sutter GitHub Releases Copilot-SDK to Embed Its Agentic Runtime in Any App Michal Sutter Salesforce AI Introduces FOFPred: A Language-Driven...",
+        "Michal Sutter Comparing the Top 6 Inference Runtimes for LLM Serving in 2025 Michal Sutter OpenAI Introduces IndQA: A Culture Aware Benchmark For Indian Languages Michal Sutter Comparing the Top 7 Large Language...",
+        "A Technical Deep Dive and Top 9 AI Inference Providers (2025 Edition) Michal Sutter Hugging Face Unveils AI Sheets: A Free, Open-Source No-Code Toolkit for LLM-Powered Datasets Michal Sutter From Deployment to Scale...",
+        "Michal Sutter Google AI Introduces Gemini 2.5 \u2018Computer Use\u2019 (Preview): A Browser-Control Model to Power AI Agents to Interact with User Interfaces Michal Sutter OpenAI Debuts Agent Builder and AgentKit: A...",
+        "A Technical Risk Audit Based on Real-World Use Cases Michal Sutter 9 Open Source Cursor Alternatives You Should Use in 2025 Michal Sutter Microsoft Edge Launches Copilot Mode to Redefine Web Browsing for the AI Era...",
+        "Top Open-Source OCR Models Michal Sutter OpenAI Adds Full MCP Tool Support in ChatGPT Developer Mode: Enabling Write Actions, Workflow Automation, and Enterprise Integrations Michal Sutter Top 7 Model Context...",
+        "Michal Sutter Top Computer Vision CV Blogs & News Websites (2025) Michal Sutter Physical AI: Bridging Robotics, Material Science, and Artificial Intelligence for Next-Gen Embodied Systems Michal Sutter MIT\u2019s LEGO: A...",
+        "Google\u2019s Gemini 3 Deep Think Shatters Humanity\u2019s Last Exam And Hits 84.6% On ARC-AGI-2 Performance Today Michal Sutter Meet OAT: The New Action Tokenizer Bringing LLM-Style Scaling and Flexible, Anytime Inference to...",
+        "Michal Sutter A Coding Guide to Instrumenting, Tracing, and Evaluating LLM Applications Using TruLens and OpenAI Models Michal Sutter How to Build Transparent AI Agents: Traceable Decision-Making with Audit Trails...",
+        "Michal Sutter StepFun Releases StepAudio 2.5 Realtime: An End-to-End Voice Model with Roleplay-Specific RLHF and Paralinguistic Comprehension Michal Sutter Tencent Open-Sources TencentDB Agent Memory: A 4-Tier Local...",
+        "GPT-OSS 20B Michal Sutter Google DeepMind Introduces Genie 3: A General Purpose World Model that can Generate an Unprecedented Diversity of Interactive Environments Michal Sutter Model Context Protocol (MCP) FAQs..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/dd0be8ce4ff96fce.png",
+      "image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-51-1024x731.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.marktechpost.com/2026/05/25/together-ai-open-sources-oscar-an-attention-aware-2-bit-kv-cache-quantization-system-for-long-context-llm-serving/",
+      "title": "Together AI Open-Sources OSCAR: An Attention-Aware 2-Bit KV Cache Quantization System for Long-Context LLM Serving",
+      "description": "Together AI's OSCAR quantizes LLM KV caches to 2-bit precision with 8\u00d7 memory reduction and near-BF16 accuracy.",
+      "excerpt": "Together AI's OSCAR quantizes LLM KV caches to 2-bit precision with 8\u00d7 memory reduction and near-BF16 accuracy.",
+      "summary": "Connect with us Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Design a Complete Multimodal RLVR Pipeline with Open-MM-RL, Vision-Language Prompting, Reward Scoring, and GRPO Export Step by Step Guide to Build and Compare FedAvg and FedProx Federated Learning on Non-IID CIFAR-10 with NVIDIA FLARE Best Authentication Platforms for AI Agents and MCP Servers in 2026 WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Build a Complete Langfuse Observability... The practical impact: The research team defines the score-weighted value covariance CS = (1/N) V \u22a4 S \u22a4 SV . The research team evaluated OSCAR on four model configurations: Qwen3-4B-Thinking-2507, Qwen3-8B, Qwen3-32B, and GLM-4.7-FP8 (358B parameters). Watch next: Best Authentication Platforms for AI Agents and MCP Servers in 2026 WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Build a Complete Langfuse Observability and Evaluation Pipeline for Tracing, Prompt Management, Scoring, and...",
+      "what_happened": "Connect with us Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Design a Complete Multimodal RLVR Pipeline with Open-MM-RL, Vision-Language Prompting, Reward Scoring, and GRPO Export Step by Step Guide to Build and Compare FedAvg and FedProx Federated Learning on Non-IID CIFAR-10 with NVIDIA FLARE Best Authentication Platforms for AI Agents and MCP Servers in 2026 WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Build a Complete Langfuse Observability...",
+      "why_matters": "The practical impact: The research team defines the score-weighted value covariance CS = (1/N) V \u22a4 S \u22a4 SV . The research team evaluated OSCAR on four model configurations: Qwen3-4B-Thinking-2507, Qwen3-8B, Qwen3-32B, and GLM-4.7-FP8 (358B parameters).",
+      "what_to_watch": "Watch next: Best Authentication Platforms for AI Agents and MCP Servers in 2026 WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Build a Complete Langfuse Observability and Evaluation Pipeline for Tracing, Prompt Management, Scoring, and...",
+      "key_points": [
+        "Connect with us Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Design a Complete Multimodal RLVR Pipeline with Open-MM-RL, Vision-Language Prompting, Reward Scoring, and GRPO Export Step by...",
+        "Together AI Open-Sources OSCAR: An Attention-Aware 2-Bit KV Cache Quantization System for Long-Context LLM Serving Long-context inference makes the KV cache one of the main costs of serving LLMs.",
+        "Best Authentication Platforms for AI Agents and MCP Servers in 2026 WorkOS Releases auth.md: An Open Agent Registration Protocol Built on OAuth Standards Build a Complete Langfuse Observability and Evaluation...",
+        "StepFun Releases StepAudio 2.5 Realtime: An End-to-End Voice Model with Roleplay-Specific RLHF and Paralinguistic...",
+        "Tencent Open-Sources TencentDB Agent Memory: A 4-Tier Local Memory Pipeline for AI Agents",
+        "The research team defines the score-weighted value covariance CS = (1/N) V \u22a4 S \u22a4 SV .",
+        "Microsoft Research Releases Webwright: A Terminal-Native Web Agent Framework That Scores 60.1% on Odysseys,...",
+        "02 SGLang installed: OSCAR is integrated into the SGLang serving framework.",
+        "The research team evaluated OSCAR on four model configurations: Qwen3-4B-Thinking-2507, Qwen3-8B, Qwen3-32B, and GLM-4.7-FP8 (358B parameters).",
+        "OSCAR integrates directly into SGLang with full paged KV-cache and prefix cache compatibility, requiring no changes to the inference client.",
+        "The research team also compared against channel-wise methods on AIME25 (Table 1).",
+        "OSCAR estimates the empirical query covariance CQ = (1/N) \u03a3 qn \u22a4 qn from a calibration set, eigen-decomposes it, and uses the eigenvectors UQ as the key rotation basis."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/90ae31c1f9d7313b.png",
+      "image_url": "https://www.marktechpost.com/wp-content/uploads/2026/05/blog11-49.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://huggingface.co/blog/AlexWortega/borealis",
+      "title": "Borealis \u2014 open data, code, weights recipe for training Audio LLM",
+      "description": "A Blog post by Wortega on Hugging Face",
+      "excerpt": "A Blog post by Wortega on Hugging Face",
+      "summary": "The mix is what the model sees at training time with noise augmentation enabled. vLLM ships a closed set of multimodal architectures out of the box ( Qwen2-Audio , LLaVA , Phi-4-MM , a couple more). The practical impact: When the user writes a prompt with one <|AUDIO|> , the processor expands it into <|start_of_audio|> + 375\u00d7 <|AUDIO|> + <|start_of_audio|> , and marks each of those 375 tokens as \"embedding will be supplied externally\" via PromptUpdateDetails.select_token_id(..., embed_token_id=audio_token_id) . Where the 2.1\u00d7 comes from. Watch next: The plugin ( vllm_borealis ) sits next to the weights in the HF model repo. Where the 2.1\u00d7 comes from.",
+      "what_happened": "The mix is what the model sees at training time with noise augmentation enabled. vLLM ships a closed set of multimodal architectures out of the box ( Qwen2-Audio , LLaVA , Phi-4-MM , a couple more).",
+      "why_matters": "The practical impact: When the user writes a prompt with one <|AUDIO|> , the processor expands it into <|start_of_audio|> + 375\u00d7 <|AUDIO|> + <|start_of_audio|> , and marks each of those 375 tokens as \"embedding will be supplied externally\" via PromptUpdateDetails.select_token_id(..., embed_token_id=audio_token_id) . Where the 2.1\u00d7 comes from.",
+      "what_to_watch": "Watch next: The plugin ( vllm_borealis ) sits next to the weights in the HF model repo. Where the 2.1\u00d7 comes from.",
+      "key_points": [
+        "Don't dilute target-language data \"for diversity.\" 02 Adding plain-text instructions At 25%, the model starts forgetting the audio task - the LLM drifts into text-to-text mode and stops fitting the audio embeddings...",
+        "The mix is what the model sees at training time with noise augmentation enabled.",
+        "Where the 2.1\u00d7 comes from.",
+        "vLLM ships a closed set of multimodal architectures out of the box ( Qwen2-Audio , LLaVA , Phi-4-MM , a couple more).",
+        "Under the hood - serving and integrating with transformers Serving multimodal models isn't a new topic.",
+        "When the user writes a prompt with one <|AUDIO|> , the processor expands it into <|start_of_audio|> + 375\u00d7 <|AUDIO|> + <|start_of_audio|> , and marks each of those 375 tokens as \"embedding will be supplied...",
+        "The plugin ( vllm_borealis ) sits next to the weights in the HF model repo.",
+        "vLLM sometimes ships mel as [N, 1, 128, 3000] because it packs multimodal fields into its own table.",
+        "The 375 \"real\" audio tokens get adapter embeddings via embed_token_id ; everything else flows through the normal LLM embedding table.",
+        "Fast part (encoder) + slow part (LLM): run the encoder asynchronously, accumulate the logits, hand them off to the LLM.",
+        "BorealisForConditionalGeneration - the model itself.",
+        "Registers the model with vllm.ModelRegistry ."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c79dbd2ecf800717.png",
+      "image_url": "https://huggingface.co/spaces/AlexWortega/borealis-blog/resolve/main/twitter_article/images_en/09_chart_avg_wer.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/20adae5a0d5f8a5d.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7e6715f03f3026ba.png"
+      ],
+      "extra_image_urls": [
+        "https://huggingface.co/spaces/AlexWortega/borealis-blog/resolve/main/twitter_article/images_en/08_summary.png",
+        "https://huggingface.co/spaces/AlexWortega/borealis-blog/resolve/main/twitter_article/images_en/10_heatmap.png"
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2026/05/25/us/politics/artificial-intelliegence-courts.html",
+      "title": "nytimes.com",
+      "description": "",
+      "excerpt": "",
+      "summary": "nytimes.com",
+      "what_happened": "nytimes.com",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "nytimes.com"
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.statnews.com/2026/05/26/ai-biotech-bighat-biosciences-ceo-on-ai-drug-development-hype/?utm_campaign=rss",
+      "title": "An AI biotech CEO sets the record straight on AI drug development hype",
+      "description": "CEO of BigHat Biosciences, which designs antibody therapies using machine-learning, on how AI can, and cannot, help in drug development.",
+      "excerpt": "CEO of BigHat Biosciences, which designs antibody therapies using machine-learning, on how AI can, and cannot, help in drug development.",
+      "summary": "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance. The practical impact: If you do not allow these cookies then some or all of these services may not function properly. They help us to know which pages are the most and least popular and see how visitors move around the site. Watch next: STAT Plus: Five biotech news updates to stay on top of today STAT Plus: How Kyle Diamantas defied expectations as he rose to lead the FDA STAT Plus: Eli Lilly says Verve\u2019s gene editor lowers cholesterol levels in early study STAT Plus: EU and US advisers split over AstraZeneca breast cancer drug STAT...",
+      "what_happened": "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.",
+      "why_matters": "The practical impact: If you do not allow these cookies then some or all of these services may not function properly. They help us to know which pages are the most and least popular and see how visitors move around the site.",
+      "what_to_watch": "Watch next: STAT Plus: Five biotech news updates to stay on top of today STAT Plus: How Kyle Diamantas defied expectations as he rose to lead the FDA STAT Plus: Eli Lilly says Verve\u2019s gene editor lowers cholesterol levels in early study STAT Plus: EU and US advisers split over AstraZeneca breast cancer drug STAT...",
+      "key_points": [
+        "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+        "If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.",
+        "You can reach Brittany on Signal at btrang.01.",
+        "If you do not allow these cookies then some or all of these services may not function properly.",
+        "STAT Plus: Five biotech news updates to stay on top of today STAT Plus: How Kyle Diamantas defied expectations as he rose to lead the FDA STAT Plus: Eli Lilly says Verve\u2019s gene editor lowers cholesterol levels in...",
+        "In fact, she can do it in 20 minutes.",
+        "They help us to know which pages are the most and least popular and see how visitors move around the site.",
+        "These cookies enable the website to provide enhanced functionality and personalisation.",
+        "'We\u2019re not crazy monsters\u2019 STAT Plus: Marc Tessier-Lavigne addresses new book\u2019s allegations about his conduct in Stanford misconduct case STAT Plus: This spine surgery usually costs $1,400.",
+        "$34,000 STAT Plus: Treatment for alcohol addiction is undergoing a seismic shift.",
+        "\u201cThat\u2019s where the hard work is, is making the actual drug.\u201d Brittany Trang, Ph.D., covers AI in health and medicine: Does it actually work?",
+        "You can set your browser to block or alert you about these cookies, but some parts of the site will not then work."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a26fdc06540440c8.jpg",
+      "image_url": "https://www.statnews.com/wp-content/uploads/2026/05/F0432320-Bispecific_T_cell_engager_protein_illustration-1024x576.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theverge.com/transportation/937116/uber-ai-investment-hard-to-justify",
+      "title": "\u26a1 BREAKING AI UPDATE \u2014 26 May 2026, 08:02 PM IST",
+      "description": "BREAKING AI UPDATE - 26 May 2026, 08:02 PM IST 25 new AI event(s) detected ================================================== [HIGH] Uber president says AI spending is getting \u2018harder to justify\u2019 Company : The Verge AI Summary : After reportedly exhausting its annual AI budget just four months into 2026, Uber is now questioning whether it's actually seeing meaningful returns on its investments. In an interview with Rapid Resp Link : [HIGH] Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Company : MarkTechPost AI Summary : OmniVoice Studio runs voice cloning, video dubbing, real-time dictation, and speaker diarization entirely on your own hardware. No API keys, no cloud account, and no subscription required. The project Link : [HIGH] Together AI...",
+      "excerpt": "BREAKING AI UPDATE - 26 May 2026, 08:02 PM IST 25 new AI event(s) detected ================================================== [HIGH] Uber president says AI spending is getting \u2018harder to justify\u2019 Company : The Verge AI Summary : After reportedly exhausting its annual AI budget just four months into 2026, Uber is now questioning whether it's actually seeing meaningful returns on its investments. In an interview with Rapid Resp Link : [HIGH] Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Company : MarkTechPost AI Summary : OmniVoice Studio runs voice cloning, video dubbing, real-time dictation, and speaker diarization entirely on your own hardware. No API keys, no...",
+      "summary": "BREAKING AI UPDATE - 26 May 2026, 08:02 PM IST 25 new AI event(s) detected ================================================== [HIGH] Uber president says AI spending is getting \u2018harder to justify\u2019 Company : The Verge AI Summary : After reportedly exhausting its annual AI budget just four months into 2026, Uber is now questioning whether it's actually seeing meaningful returns on its investments. In an interview with Rapid Resp Link : [HIGH] Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs... The practical impact: In an interview with Rapid Resp Link : [HIGH] Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Company : MarkTechPost AI Summary : OmniVoice Studio runs voice cloning, video dubbing, real-time dictation, and speaker diarization entirely on your own hardware. Watch next: The project Link : [HIGH] Together AI...",
+      "what_happened": "BREAKING AI UPDATE - 26 May 2026, 08:02 PM IST 25 new AI event(s) detected ================================================== [HIGH] Uber president says AI spending is getting \u2018harder to justify\u2019 Company : The Verge AI Summary : After reportedly exhausting its annual AI budget just four months into 2026, Uber is now questioning whether it's actually seeing meaningful returns on its investments. In an interview with Rapid Resp Link : [HIGH] Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs...",
+      "why_matters": "The practical impact: In an interview with Rapid Resp Link : [HIGH] Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Company : MarkTechPost AI Summary : OmniVoice Studio runs voice cloning, video dubbing, real-time dictation, and speaker diarization entirely on your own hardware.",
+      "what_to_watch": "Watch next: The project Link : [HIGH] Together AI...",
+      "key_points": [
+        "In an interview with Rapid Resp Link : [HIGH] Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs Company : MarkTechPost AI Summary : OmniVoice Studio runs voice cloning, video dubbing, real-time...",
+        "The project Link : [HIGH] Together AI...",
+        "BREAKING AI UPDATE - 26 May 2026, 08:02 PM IST 25 new AI event(s) detected ================================================== [HIGH] Uber president says AI spending is getting \u2018harder to justify\u2019 Company : The Verge...",
+        "No API keys, no cloud account, and no subscription required."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theverge.com/podcast/936445/sundar-pichai-ai-search-google-zero-youtube-web",
+      "title": "ng Audio LLMAlexWortega\u2022about 21 hours ago\u202212",
+      "description": "ng Audio LLMAlexWortega\u2022about 21 hours ago\u202212 Company : Hugging Face Link : [MEDIUM] Sundar Pichai on AI, the future of search, and what\u2019s happening to the web Company : The Verge AI Summary : Today, I\u2019m talking with Google and Alphabet CEO Sundar Pichai, in a conversation we recorded just after the Google I/O developer conference. This is the fifth year Sundar and I have sat down after I/O Link : [MEDIUM] Brockovich Data Center Reporting \u2013 U.S. AI Data Center Awareness & Issue Map Company : The Verge AI Summary : The environmental activist and former legal clerk who\u2019s life was made intoa movie in 2000is also logging local complaints about data center projects in their communities. Brockovich writes: Link : [MEDIUM] I wore Google's Fitbit Air for a week, and it gives the Whoop a serious run for its...",
+      "excerpt": "ng Audio LLMAlexWortega\u2022about 21 hours ago\u202212 Company : Hugging Face Link : [MEDIUM] Sundar Pichai on AI, the future of search, and what\u2019s happening to the web Company : The Verge AI Summary : Today, I\u2019m talking with Google and Alphabet CEO Sundar Pichai, in a conversation we recorded just after the Google I/O developer conference. This is the fifth year Sundar and I have sat down after I/O Link : [MEDIUM] Brockovich Data Center Reporting \u2013 U.S. AI Data Center Awareness & Issue Map Company : The Verge AI Summary : The environmental activist and former legal clerk who\u2019s life was made intoa movie in 2000is also logging local complaints about...",
+      "summary": "ng Audio LLMAlexWortega\u2022about 21 hours ago\u202212 Company : Hugging Face Link : [MEDIUM] Sundar Pichai on AI, the future of search, and what\u2019s happening to the web Company : The Verge AI Summary : Today, I\u2019m talking with Google and Alphabet CEO Sundar Pichai, in a conversation we recorded just after the Google I/O developer conference. The practical impact: AI Data Center Awareness & Issue Map Company : The Verge AI Summary : The environmental activist and former legal clerk who\u2019s life was made intoa movie in 2000is also logging local complaints about data center projects in their communities. This is the fifth year Sundar and I have sat down after I/O Link : [MEDIUM] Brockovich Data Center Reporting \u2013 U.S. Watch next: This is the fifth year Sundar and I have sat down after I/O Link : [MEDIUM] Brockovich Data Center Reporting \u2013 U.S.",
+      "what_happened": "ng Audio LLMAlexWortega\u2022about 21 hours ago\u202212 Company : Hugging Face Link : [MEDIUM] Sundar Pichai on AI, the future of search, and what\u2019s happening to the web Company : The Verge AI Summary : Today, I\u2019m talking with Google and Alphabet CEO Sundar Pichai, in a conversation we recorded just after the Google I/O developer conference.",
+      "why_matters": "The practical impact: AI Data Center Awareness & Issue Map Company : The Verge AI Summary : The environmental activist and former legal clerk who\u2019s life was made intoa movie in 2000is also logging local complaints about data center projects in their communities. This is the fifth year Sundar and I have sat down after I/O Link : [MEDIUM] Brockovich Data Center Reporting \u2013 U.S.",
+      "what_to_watch": "Watch next: This is the fifth year Sundar and I have sat down after I/O Link : [MEDIUM] Brockovich Data Center Reporting \u2013 U.S.",
+      "key_points": [
+        "ng Audio LLMAlexWortega\u2022about 21 hours ago\u202212 Company : Hugging Face Link : [MEDIUM] Sundar Pichai on AI, the future of search, and what\u2019s happening to the web Company : The Verge AI Summary : Today, I\u2019m talking with...",
+        "This is the fifth year Sundar and I have sat down after I/O Link : [MEDIUM] Brockovich Data Center Reporting \u2013 U.S.",
+        "AI Data Center Awareness & Issue Map Company : The Verge AI Summary : The environmental activist and former legal clerk who\u2019s life was made intoa movie in 2000is also logging local complaints about data center...",
+        "Brockovich writes: Link : [MEDIUM] I wore Google's Fitbit Air for a week, and it gives the Whoop a serious run for its..."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.zdnet.com/article/google-fitbit-air-review/",
+      "title": "[MEDIUM] I wore Google's Fitbit Air for a week, and it gives the Whoop a serious run for its money",
+      "description": "ary : The environmental activist and former legal clerk who\u2019s life was made intoa movie in 2000is also logging local complaints about data center projects in their communities. Brockovich writes: Link : [MEDIUM] I wore Google's Fitbit Air for a week, and it gives the Whoop a serious run for its money Company : ZDNet AI Summary : The hottest health-tracking device is hidden inside a slick fitness band. Link : [MEDIUM] IntBot and Certis Group partner to scale physical AI for enterprises across Singapore Company : Robotics Business Review Summary : Certis is collaborating with IntBot to add humanoids to its existing service robot offerings as the partners start to expand in Singapore. The post IntBot and Certis Group partner to scale physical AI Link ...",
+      "excerpt": "ary : The environmental activist and former legal clerk who\u2019s life was made intoa movie in 2000is also logging local complaints about data center projects in their communities. Brockovich writes: Link : [MEDIUM] I wore Google's Fitbit Air for a week, and it gives the Whoop a serious run for its money Company : ZDNet AI Summary : The hottest health-tracking device is hidden inside a slick fitness band. Link : [MEDIUM] IntBot and Certis Group partner to scale physical AI for enterprises across Singapore Company : Robotics Business Review Summary : Certis is collaborating with IntBot to add humanoids to its existing service robot offerings as the...",
+      "summary": "The post IntBot and Certis Group partner to scale physical AI Link ... The practical impact: Link : [MEDIUM] IntBot and Certis Group partner to scale physical AI for enterprises across Singapore Company : Robotics Business Review Summary : Certis is collaborating with IntBot to add humanoids to its existing service robot offerings as the partners start to expand in Singapore. Watch next: ary : The environmental activist and former legal clerk who\u2019s life was made intoa movie in 2000is also logging local complaints about data center projects in their communities.",
+      "what_happened": "The post IntBot and Certis Group partner to scale physical AI Link ...",
+      "why_matters": "The practical impact: Link : [MEDIUM] IntBot and Certis Group partner to scale physical AI for enterprises across Singapore Company : Robotics Business Review Summary : Certis is collaborating with IntBot to add humanoids to its existing service robot offerings as the partners start to expand in Singapore.",
+      "what_to_watch": "Watch next: ary : The environmental activist and former legal clerk who\u2019s life was made intoa movie in 2000is also logging local complaints about data center projects in their communities.",
+      "key_points": [
+        "The post IntBot and Certis Group partner to scale physical AI Link ...",
+        "Link : [MEDIUM] IntBot and Certis Group partner to scale physical AI for enterprises across Singapore Company : Robotics Business Review Summary : Certis is collaborating with IntBot to add humanoids to its existing...",
+        "ary : The environmental activist and former legal clerk who\u2019s life was made intoa movie in 2000is also logging local complaints about data center projects in their communities.",
+        "Brockovich writes: Link : [MEDIUM] I wore Google's Fitbit Air for a week, and it gives the Whoop a serious run for its money Company : ZDNet AI Summary : The hottest health-tracking device is hidden inside a slick..."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 1,
+  "carousel_total_parts": 2,
+  "slides": [
+    "Meet OmniVoice Studio: A Local, Open-Source Alternative to ElevenLabs",
+    "Together AI Open-Sources OSCAR: An Attention-Aware 2-Bit KV Cache Quantization System for",
+    "Borealis \u2014 open data, code, weights recipe for training Audio LLM",
+    "nytimes.com",
+    "An AI biotech CEO sets the record straight on AI drug development hype",
+    "26 May 2026, 08:02 PM IST",
+    "ng Audio LLMAlexWortega\u2022about 21 hours ago\u202212",
+    "I wore Google's Fitbit Air for a week, and it gives the Whoop a serious run for its money",
+    "Follow for the next AI briefing"
+  ]
+}

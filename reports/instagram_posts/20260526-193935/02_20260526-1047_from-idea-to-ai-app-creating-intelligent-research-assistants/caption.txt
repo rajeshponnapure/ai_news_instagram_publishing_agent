@@ -1,0 +1,29 @@
+From idea to AI app: Creating intelligent research assistants with Strands — Part 2 of 2.
+
+👉 Swipe to see the full breakdown →
+
+When hundreds to thousands of users are onboarded to an enterprise AI platform, business leaders and platform owners need visibility into who is using the platform, whether users are satisfied with the answers they receive, and which capabilities are driving the most engagement. Without a centralized observability solution, this data is scattered across multiple AWS.
+
+🔹 When hundreds to thousands of users are onboarded to an enterprise AI platform, business leaders and platform owners need visibility into.
+⚡ Building an AI app shouldn’t require a PhD in machine learning (ML) or months of wrestling with complex architectures.
+🧠 Yet that’s exactly what happens when you try to orchestrate multiple API calls, manage conversation state, and create agents that can.
+📊 I’ve seen straightforward AI ideas balloon into sprawling projects that demand.
+🔬 Arguably, the most eye-catching are figures that illustrate its success rate -- but also highlight the alarming number of weaknesses.
+
+Do you think OpenAI's move here is exciting or a risk? Drop your take below.
+
+💾 Save this post — you'll want to come back to this one.
+
+📰 Read the full stories:
+🔗 https://aws.amazon.com/blogs/machine-learning/build-an-enterprise-observability-solution-for-amazon-quick/
+🔗 https://aws.amazon.com/blogs/machine-learning/transforming-professional-work-how-amazon-quick-turns-document-creation-from-hours-into-minutes/
+🔗 https://www.amazon.science/blog/diverse-reasoning-traces-teach-llms-to-make-better-decisions
+🔗 https://www.theverge.com/tech/936176/google-ai-overviews-search-disregard
+🔗 https://www.theverge.com/transportation/937439/american-airlines-starlink-wifi-speed
+
+#AIRegulation #TechLaw #AIResearch #MLResearch #DeepLearning #AITools #ProductivityAI #AIProductivity #OpenAI #ChatGPT #GoogleAI #Gemini #Anthropic #Claude #Innovation #EmergingTech #AINews #TechNews #FutureTech #DigitalTransformation
+
+─
+⚠️ Benchmarks reflect results at publication time and may change as models are updated.
+ℹ️ Content curated & summarised by Graitech from the sources listed above. All rights remain with the original publishers.
+─

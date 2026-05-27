@@ -1,0 +1,75 @@
+{
+  "email_received_at": "2026-05-26T16:50-07:00",
+  "recommended_post_time": "18:00",
+  "headline": "Robot Challenge Screen \u2014 Part 3 of 3",
+  "subject": "\ud83d\udea8 AI Alert: 46 new launches \u2014 Wired AI, MarkTechPost AI, The Verge AI",
+  "source_date": "Tue, 26 May 2026 16:50:51 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Meta",
+    "Apple",
+    "Amazon",
+    "AWS",
+    "NVIDIA"
+  ],
+  "models": [
+    "Claude",
+    "Gemini",
+    "Llama",
+    "Mistral"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute"
+  ],
+  "article_url": "https://www.wired.com/story/anthropic-christopher-olah-pope-ai-encyclical/",
+  "article_title": "he iPhone maker's WWDC kicks off on June 8, offering Apple another chance to impress Wall Street on AI.",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.wired.com/story/anthropic-christopher-olah-pope-ai-encyclical/",
+      "title": "he iPhone maker's WWDC kicks off on June 8, offering Apple another chance to impress Wall Street on AI.",
+      "description": "he iPhone maker's WWDC kicks off on June 8, offering Apple another chance to impress Wall Street on AI. Link : [MEDIUM] Why the Vatican Invited Anthropic to the Pope\u2019s AI Encyclical Presentation Company : Wired AI Summary : Pope Leo\u2019s first encyclical marks an unprecedented alliance between the Church and Silicon Valley. Link : [MEDIUM] How humanoids learn to read the room Company : Robotics Business Review Summary : Sponsored by Analog Devices Inc. Designing for a humanoid robot is one of the most complicated applications in robotics today. All on its own, a humanoid system has to manage movement, balance, vision Link : [MEDIUM] GMSL and the growing ecosystem around robotic vision systems...",
+      "excerpt": "he iPhone maker's WWDC kicks off on June 8, offering Apple another chance to impress Wall Street on AI. Link : [MEDIUM] Why the Vatican Invited Anthropic to the Pope\u2019s AI Encyclical Presentation Company : Wired AI Summary : Pope Leo\u2019s first encyclical marks an unprecedented alliance between the Church and Silicon Valley. Link : [MEDIUM] How humanoids learn to read the room Company : Robotics Business Review Summary : Sponsored by Analog Devices Inc. Designing for a humanoid robot is one of the most complicated applications in robotics today. All on its own, a humanoid...",
+      "summary": "he iPhone maker's WWDC kicks off on June 8, offering Apple another chance to impress Wall Street on AI. Link : [MEDIUM] How humanoids learn to read the room Company : Robotics Business Review Summary : Sponsored by Analog Devices Inc. The practical impact: Link : [MEDIUM] How humanoids learn to read the room Company : Robotics Business Review Summary : Sponsored by Analog Devices Inc. Watch next: Designing for a humanoid robot is one of the most complicated applications in robotics today.",
+      "what_happened": "he iPhone maker's WWDC kicks off on June 8, offering Apple another chance to impress Wall Street on AI. Link : [MEDIUM] How humanoids learn to read the room Company : Robotics Business Review Summary : Sponsored by Analog Devices Inc.",
+      "why_matters": "The practical impact: Link : [MEDIUM] How humanoids learn to read the room Company : Robotics Business Review Summary : Sponsored by Analog Devices Inc.",
+      "what_to_watch": "Watch next: Designing for a humanoid robot is one of the most complicated applications in robotics today.",
+      "key_points": [
+        "Link : [MEDIUM] How humanoids learn to read the room Company : Robotics Business Review Summary : Sponsored by Analog Devices Inc.",
+        "Designing for a humanoid robot is one of the most complicated applications in robotics today.",
+        "Link : [MEDIUM] Why the Vatican Invited Anthropic to the Pope\u2019s AI Encyclical Presentation Company : Wired AI Summary : Pope Leo\u2019s first encyclical marks an unprecedented alliance between the Church and Silicon Valley.",
+        "he iPhone maker's WWDC kicks off on June 8, offering Apple another chance to impress Wall Street on AI.",
+        "All on its own, a humanoid system has to manage movement, balance, vision Link : [MEDIUM] GMSL and the growing ecosystem around robotic vision systems..."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 3,
+  "carousel_total_parts": 3,
+  "slides": [
+    "he iPhone maker's WWDC kicks off on June 8, offering Apple another chance to impress Wall",
+    "Follow for the next AI briefing"
+  ]
+}
