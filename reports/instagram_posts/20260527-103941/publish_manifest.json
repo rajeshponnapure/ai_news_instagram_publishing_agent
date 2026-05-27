@@ -14,8 +14,20 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260527-103941/01_20260527-0333_bloomberg-are-you-a-robot-part-1-of-2/slide_08.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260527-103941/01_20260527-0333_bloomberg-are-you-a-robot-part-1-of-2/slide_09.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260527-103941/01_20260527-0333_bloomberg-are-you-a-robot-part-1-of-2/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260527-103941/01_20260527-0333_bloomberg-are-you-a-robot-part-1-of-2/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260527-103941/01_20260527-0333_bloomberg-are-you-a-robot-part-1-of-2/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260527-103941/01_20260527-0333_bloomberg-are-you-a-robot-part-1-of-2/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260527-103941/01_20260527-0333_bloomberg-are-you-a-robot-part-1-of-2/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260527-103941/01_20260527-0333_bloomberg-are-you-a-robot-part-1-of-2/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260527-103941/01_20260527-0333_bloomberg-are-you-a-robot-part-1-of-2/slide_07.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260527-103941/01_20260527-0333_bloomberg-are-you-a-robot-part-1-of-2/slide_08.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260527-103941/01_20260527-0333_bloomberg-are-you-a-robot-part-1-of-2/slide_09.png"
+      ],
+      "status": "published",
+      "creation_id": "18044562974577438",
+      "published_at": "2026-05-27T10:44:05+00:00"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260527-103941/02_20260527-0333_bloomberg-are-you-a-robot-part-2-of-2",
@@ -30,8 +42,19 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260527-103941/02_20260527-0333_bloomberg-are-you-a-robot-part-2-of-2/slide_07.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260527-103941/02_20260527-0333_bloomberg-are-you-a-robot-part-2-of-2/slide_08.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260527-103941/02_20260527-0333_bloomberg-are-you-a-robot-part-2-of-2/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260527-103941/02_20260527-0333_bloomberg-are-you-a-robot-part-2-of-2/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260527-103941/02_20260527-0333_bloomberg-are-you-a-robot-part-2-of-2/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260527-103941/02_20260527-0333_bloomberg-are-you-a-robot-part-2-of-2/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260527-103941/02_20260527-0333_bloomberg-are-you-a-robot-part-2-of-2/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260527-103941/02_20260527-0333_bloomberg-are-you-a-robot-part-2-of-2/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260527-103941/02_20260527-0333_bloomberg-are-you-a-robot-part-2-of-2/slide_07.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260527-103941/02_20260527-0333_bloomberg-are-you-a-robot-part-2-of-2/slide_08.png"
+      ],
+      "status": "published",
+      "creation_id": "18044563145577438",
+      "published_at": "2026-05-27T10:45:32+00:00"
     }
   ]
 }
