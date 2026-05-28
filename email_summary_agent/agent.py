@@ -11,7 +11,6 @@ from .config import Settings
 from .article_assembler import assemble as assemble_articles
 from .article_enricher import ArticleData, enrich_email_with_articles
 from .db import AgentStore
-from .dedup_engine import deduplicate
 from .digest import parse_news_items
 from .email_client import ImapEmailClient
 from .instagram import write_instagram_carousels
@@ -287,7 +286,7 @@ def process_items(
                 articles = assemble_articles(list(articles))
                 _safe_print(f"  After page assembly: {len(articles)} article(s)")
 
-            # Step 3 — deduplicate (in-batch + cross-cycle memory)
+            # Step 3 — deduplicate + plan posts (in-batch + cross-cycle memory)
             if settings.enable_dedup and articles:
                 from .post_planner import plan_posts
                 article_dicts = []
@@ -300,12 +299,8 @@ def process_items(
                     if hasattr(a, "extra_image_paths"):
                         d["extra_image_paths"] = list(a.extra_image_paths)
                     article_dicts.append(d)
-                dedup_result = deduplicate(article_dicts, memory, consult_memory=True, record=False)
-                unique_dicts = dedup_result.unique
-                _safe_print(f"  After dedup: {len(unique_dicts)} unique (rejected {len(dedup_result.rejected)}, demoted {len(dedup_result.demoted)})")
-                posts, demoted = plan_posts(unique_dicts, memory, post_size=settings.post_size)
-                _safe_print(f"  Planned {len(posts)} post(s) from {len(unique_dicts)} unique articles")
-                # Reconstruct ArticleData from the selected unique dicts (first post only for now)
+                posts, demoted = plan_posts(article_dicts, memory, post_size=settings.post_size)
+                _safe_print(f"  Planned {len(posts)} post(s) from {len(article_dicts)} raw articles (demoted {len(demoted)})")
                 selected = posts[0] if posts else []
                 selected_articles = [
                     ArticleData(
