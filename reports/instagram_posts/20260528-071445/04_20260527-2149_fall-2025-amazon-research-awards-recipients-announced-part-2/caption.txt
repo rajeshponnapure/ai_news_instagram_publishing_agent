@@ -1,0 +1,29 @@
+Fall Announced 2025 Amazon Research Awards.
+
+Swipe for the full breakdown.
+
+Computer Science > Artificial Intelligence Title: Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond Current browse context: References & Citations BibTeX formatted citation Bibliographic and Citation Tools Code, Data and Media Associated with this Article Recommenders and Search Tools arXivLabs: experimental projects with community.
+
+- Here is the key detail: Agents that manipulate objects, navigate software, coordinate with others, or design experiments require predictive environment models, yet.
+- arXiv is committed to these values and only works with partners that adhere to them.
+- Keep an eye on this: The resulting roadmap connects previously isolated communities and charts a path from passive next-step prediction toward world.
+- What this means: Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and.
+- What this means: These regimes determine what constraints a world model must satisfy and where it is most likely to fail.
+
+Do you think OpenAI's move here is exciting or a risk? Drop your take below.
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://arxiv.org/abs/2604.22748
+- https://arxiv.org/abs/2604.21989
+- https://arxiv.org/abs/2604.22031
+- https://arxiv.org/abs/2604.22089
+- https://www.cnet.com/tech/services-and-software/duckduckgo-installs-increase-after-google-io/
+
+#AIAgents #AutonomousAgents #AIWorkflow #AIRegulation #TechLaw #AIResearch #MLResearch #DeepLearning #OpenAI #ChatGPT #GPT4 #GPT5 #GoogleAI #Gemini #TechTrends #Innovation #EmergingTech #AINews #Technology #Tech
+
+-
+Benchmarks reflect results at publication time and may change as models are updated.
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-

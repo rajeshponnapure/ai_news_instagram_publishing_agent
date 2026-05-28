@@ -1,0 +1,282 @@
+{
+  "email_received_at": "2026-05-27T12:37-07:00",
+  "recommended_post_time": "14:00",
+  "headline": "Google updates Gemini for Home with AI-powered camera automations - Engadget - Part 2 of 2",
+  "subject": "\ud83d\udea8 AI Alert: 79 new launches \u2014 Engadget, TechCrunch AI, Bloomberg Tech",
+  "source_date": "Wed, 27 May 2026 12:37:30 -0700",
+  "companies": [
+    "Google",
+    "Anthropic",
+    "Meta",
+    "Apple",
+    "Amazon",
+    "AWS",
+    "NVIDIA",
+    "AMD"
+  ],
+  "models": [
+    "GPT-5.5",
+    "Claude",
+    "Gemini",
+    "Gemini 3.1",
+    "Gemini 3.5"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://aibusiness.com/generative-ai/nvidia-signals-150b-spend-taiwan",
+  "article_title": "Nvidia Signals $150B Spend in Taiwan",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3ace86458a6a892e.webp",
+  "article_image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt68f5cd25dcabce66/68fbc4a1df1e043d350b2692/Google_Anthropic.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+  "article_items": [
+    {
+      "url": "https://aibusiness.com/generative-ai/nvidia-signals-150b-spend-taiwan",
+      "title": "Nvidia Signals $150B Spend in Taiwan",
+      "description": "Nvidia Signals $150B Spend in Taiwan",
+      "excerpt": "Nvidia Signals $150B Spend in Taiwan",
+      "summary": "Nvidia Signals $150B Spend in Taiwan Speaking at a launch event for Nvidia\u2019s upcoming Taiwan headquarters, CEO Jensen Huang deemed the country the \u201cepicenter\u201d of the AI revolution Nvidia CEO Jensen Huang said the AI chipmaker will spend up to $150 billion a year in Taiwan going forward. The company previously revealed plans for a $50 billion investment in AI in the U.S. The company previously revealed plans for a $50 billion investment in AI in the U.S. The AI Summit London is the flagship AI event of London Tech Week, bringing together enterprise leaders, technical buyers and innovators to turn AI breakthroughs into real business impact. Now, we're going to spend $100 billion, $150 billion in Taiwan each year.\u201d \u201cTaiwan is the epicenter of the AI revolution, this is where the chips come, packaging comes.",
+      "what_happened": "Nvidia Signals $150B Spend in Taiwan Speaking at a launch event for Nvidia\u2019s upcoming Taiwan headquarters, CEO Jensen Huang deemed the country the \u201cepicenter\u201d of the AI revolution Nvidia CEO Jensen Huang said the AI chipmaker will spend up to $150 billion a year in Taiwan going forward. The company previously revealed plans for a $50 billion investment in AI in the U.S.",
+      "why_matters": "The company previously revealed plans for a $50 billion investment in AI in the U.S. The AI Summit London is the flagship AI event of London Tech Week, bringing together enterprise leaders, technical buyers and innovators to turn AI breakthroughs into real business impact.",
+      "what_to_watch": "Now, we're going to spend $100 billion, $150 billion in Taiwan each year.\u201d \u201cTaiwan is the epicenter of the AI revolution, this is where the chips come, packaging comes.",
+      "key_points": [
+        "Nvidia Signals $150B Spend in Taiwan Speaking at a launch event for Nvidia\u2019s upcoming Taiwan headquarters, CEO Jensen Huang deemed the country the \u201cepicenter\u201d of the AI revolution Nvidia CEO Jensen Huang said the AI.",
+        "The company previously revealed plans for a $50 billion investment in AI in the U.S.",
+        "Now, we're going to spend $100 billion, $150 billion in Taiwan each year.\u201d \u201cTaiwan is the epicenter of the AI revolution, this is where the chips come, packaging comes.",
+        "The investment plans come as Taiwan takes an increased share of Nvidia\u2019s revenue, rising more than 50% year-over-year in the latest quarter.",
+        "The annual $150 billion spend would be one of Nvidia\u2019s largest financial commitments to date.",
+        "Dubbed Constellation, the site is anticipated to be open by 2030 and accommodate up to 4,000 employees.",
+        "Last week, AMD revealed a $10 billion investment in Taiwan\u2019s AI sector to support the development of advanced AI chips.",
+        "\u201cFour years, five years ago, Nvidia was spending about $105 billion a year in Taiwan.",
+        "Huang made his comments in Taipei at an event on May 26 to preview Nvidia\u2019s new Taiwan headquarters.",
+        "\u201c Taiwan is booming ,\u201d Huang said.",
+        "over a four-year period, $125 billion per year.",
+        "\u201cThis is where AI supercomputers were created.\u201d The vendor did not disclose details on the length of time Nvidia will invest in Taiwan."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3ace86458a6a892e.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt68f5cd25dcabce66/68fbc4a1df1e043d350b2692/Google_Anthropic.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/65b7f2c54427255a.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7951e5138d285103.jpg"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltfce27b0548064c84/6a15cc622027898e40c028c7/Cybersecurity.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt50e37f43a250e73b/6a15c19d6efe00536584950f/Mistral_AI.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ]
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-05-27/ai-coding-startup-cognition-raises-1-billion-at-26-billion-value",
+      "title": "Bloomberg - Are you a robot?",
+      "description": "",
+      "excerpt": "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. Why did this happen? For inquiries related to this message please contact our support team and provide the reference ID below. Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+      "summary": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_happened": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+      "why_matters": "For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_to_watch": "",
+      "key_points": [
+        "Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+        "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+        "For inquiries related to this message please contact our support team and provide the reference ID below."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.marktechpost.com/2026/05/27/nvidia-releases-polar-a-token-faithful-rollout-framework-for-grpo-training-across-codex-claude-code-and-qwen-code/",
+      "title": "ny : Hugging Face Blog",
+      "description": "ny : Hugging Face Blog Link : [HIGH] NVIDIA Releases Polar, a Token-Faithful Rollout Framework for GRPO Training Across Codex, Claude Code, and Qwen Code Company : MarkTechPost AI Summary : NVIDIA researchers have introduced Polar, a rollout framework that trains language agents using reinforcement learning without modifying their agent harnesses. Polar places a model API proxy between t Link : [HIGH] Introducing Music v2, our groundbreaking new music model Company : The Verge AI Summary : Its new Music v2 model can generate songs that can switch from opera to heavy metal mid-track, while handling faster rap delivery and non-musical sound effects, according to ElevenLabs. The new model Link : [HIGH] Motorola says affiliate hijacking of Amazon app was \u2018unintended\u2019 Company : The Verge AI...",
+      "excerpt": "ny : Hugging Face Blog Link : [HIGH] NVIDIA Releases Polar, a Token-Faithful Rollout Framework for GRPO Training Across Codex, Claude Code, and Qwen Code Company : MarkTechPost AI Summary : NVIDIA researchers have introduced Polar, a rollout framework that trains language agents using reinforcement learning without modifying their agent harnesses. Polar places a model API proxy between t Link : [HIGH] Introducing Music v2, our groundbreaking new music model Company : The Verge AI Summary : Its new Music v2 model can generate songs that can switch from opera to heavy metal mid-track, while handling faster rap delivery and non-musical...",
+      "summary": "ny : Hugging Face Blog Link : [HIGH] NVIDIA Releases Polar, a Token-Faithful Rollout Framework for GRPO Training Across Codex, Claude Code, and Qwen Code Company : MarkTechPost AI Summary : NVIDIA researchers have introduced Polar, a rollout framework that trains language agents using reinforcement learning without modifying their agent harnesses. Polar places a model API proxy between t Link : [HIGH] Introducing Music v2, our groundbreaking new music model Company : The Verge AI Summary : Its new Music v2 model can generate songs that can switch from opera to heavy metal mid-track, while handling faster rap delivery and non-musical sound effects, according to ElevenLabs.",
+      "what_happened": "ny : Hugging Face Blog Link : [HIGH] NVIDIA Releases Polar, a Token-Faithful Rollout Framework for GRPO Training Across Codex, Claude Code, and Qwen Code Company : MarkTechPost AI Summary : NVIDIA researchers have introduced Polar, a rollout framework that trains language agents using reinforcement learning without modifying their agent harnesses.",
+      "why_matters": "Polar places a model API proxy between t Link : [HIGH] Introducing Music v2, our groundbreaking new music model Company : The Verge AI Summary : Its new Music v2 model can generate songs that can switch from opera to heavy metal mid-track, while handling faster rap delivery and non-musical sound effects, according to ElevenLabs.",
+      "what_to_watch": "",
+      "key_points": [
+        "ny : Hugging Face Blog Link : [HIGH] NVIDIA Releases Polar, a Token-Faithful Rollout Framework for GRPO Training Across Codex, Claude Code, and Qwen Code Company : MarkTechPost AI Summary : NVIDIA researchers have.",
+        "Polar places a model API proxy between t Link : [HIGH] Introducing Music v2, our groundbreaking new music model Company : The Verge AI Summary : Its new Music v2 model can generate songs that can switch from opera to.",
+        "The new model Link : [HIGH] Motorola says affiliate hijacking of Amazon app was \u2018unintended\u2019 Company : The Verge AI..."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theverge.com/tech/938249/motorola-device-native-amazon-affiliate-hijack",
+      "title": "ap delivery and non-musical sound effects, according to ElevenLabs. The new model",
+      "description": "ap delivery and non-musical sound effects, according to ElevenLabs. The new model Link : [HIGH] Motorola says affiliate hijacking of Amazon app was \u2018unintended\u2019 Company : The Verge AI Summary : Motorola says that recently discovered behavior, which saw some of its phones sending users to an affiliate tracking website before opening the Amazon app, was \"unintended\" and has been \"promptly corr Link : [HIGH] Rural Ohio fights back against Ramaswamy\u2019s plan to expand AI data centers Company : The Verge AI Summary : AI data center projects are continuing to pop up across the US, with frequent opposition from locals concerned about their impact. Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in...",
+      "excerpt": "ap delivery and non-musical sound effects, according to ElevenLabs. The new model Link : [HIGH] Motorola says affiliate hijacking of Amazon app was \u2018unintended\u2019 Company : The Verge AI Summary : Motorola says that recently discovered behavior, which saw some of its phones sending users to an affiliate tracking website before opening the Amazon app, was \"unintended\" and has been \"promptly corr Link : [HIGH] Rural Ohio fights back against Ramaswamy\u2019s plan to expand AI data centers Company : The Verge AI Summary : AI data center projects are continuing to pop up across the US, with frequent opposition from locals concerned about their impact...",
+      "summary": "Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in... The new model Link : [HIGH] Motorola says affiliate hijacking of Amazon app was \u2018unintended\u2019 Company : The Verge AI Summary : Motorola says that recently discovered behavior, which saw some of its phones sending users to an affiliate tracking website before opening the Amazon app, was \"unintended\" and has been \"promptly corr Link : [HIGH] Rural Ohio fights back against Ramaswamy\u2019s plan to expand AI data centers Company : The. ap delivery and non-musical sound effects, according to ElevenLabs.",
+      "what_happened": "Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in...",
+      "why_matters": "The new model Link : [HIGH] Motorola says affiliate hijacking of Amazon app was \u2018unintended\u2019 Company : The Verge AI Summary : Motorola says that recently discovered behavior, which saw some of its phones sending users to an affiliate tracking website before opening the Amazon app, was \"unintended\" and has been \"promptly corr Link : [HIGH] Rural Ohio fights back against Ramaswamy\u2019s plan to expand AI data centers Company : The.",
+      "what_to_watch": "ap delivery and non-musical sound effects, according to ElevenLabs.",
+      "key_points": [
+        "Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in...",
+        "The new model Link : [HIGH] Motorola says affiliate hijacking of Amazon app was \u2018unintended\u2019 Company : The Verge AI Summary : Motorola says that recently discovered behavior, which saw some of its phones sending users.",
+        "ap delivery and non-musical sound effects, according to ElevenLabs."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://tiffinohio.net/posts/ramaswamys-data-center-push-faces-growing-ohio-backlash/",
+      "title": "mazon app, was \"unintended\" and has been \"promptly corr",
+      "description": "mazon app, was \"unintended\" and has been \"promptly corr Link : [HIGH] Rural Ohio fights back against Ramaswamy\u2019s plan to expand AI data centers Company : The Verge AI Summary : AI data center projects are continuing to pop up across the US, with frequent opposition from locals concerned about their impact. Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in Nvidia superchips to keep up Company : ZDNet AI Summary : The government is playing catch-up, but Nvidia has a lifeline. Link : [HIGH] Signos grows foothold in weight loss wave fueled by GLP-1s with its AI health data tracking Company : CNBC Technology Summary : Health tech startup Signos...",
+      "excerpt": "mazon app, was \"unintended\" and has been \"promptly corr Link : [HIGH] Rural Ohio fights back against Ramaswamy\u2019s plan to expand AI data centers Company : The Verge AI Summary : AI data center projects are continuing to pop up across the US, with frequent opposition from locals concerned about their impact. Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in Nvidia superchips to keep up Company : ZDNet AI Summary : The government is playing catch-up, but Nvidia has a lifeline. Link ...",
+      "summary": "Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in Nvidia superchips to keep up Company : ZDNet AI Summary : The government is playing catch-up, but Nvidia has a lifeline. mazon app, was \"unintended\" and has been \"promptly corr Link : [HIGH] Rural Ohio fights back against Ramaswamy\u2019s plan to expand AI data centers Company : The Verge AI Summary : AI data center projects are continuing to pop up across the US, with frequent opposition from locals concerned about their impact.",
+      "what_happened": "Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in Nvidia superchips to keep up Company : ZDNet AI Summary : The government is playing catch-up, but Nvidia has a lifeline.",
+      "why_matters": "mazon app, was \"unintended\" and has been \"promptly corr Link : [HIGH] Rural Ohio fights back against Ramaswamy\u2019s plan to expand AI data centers Company : The Verge AI Summary : AI data center projects are continuing to pop up across the US, with frequent opposition from locals concerned about their impact.",
+      "what_to_watch": "",
+      "key_points": [
+        "Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in Nvidia superchips to keep up Company : ZDNet AI Summary : The government is playing catch-up, but.",
+        "mazon app, was \"unintended\" and has been \"promptly corr Link : [HIGH] Rural Ohio fights back against Ramaswamy\u2019s plan to expand AI data centers Company : The Verge AI Summary : AI data center projects are continuing to.",
+        "Link : [HIGH] Signos grows foothold in weight loss wave fueled by GLP-1s with its AI health data tracking Company : CNBC Technology Summary : Health tech startup Signos..."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.zdnet.com/article/heres-why-the-government-wants-to-spend-9-billion-on-ai-superchips/",
+      "title": "[HIGH] AI is an arms race, and the US wants $9 billion in Nvidia superchips to keep up",
+      "description": "ter projects are continuing to pop up across the US, with frequent opposition from locals concerned about their impact. Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in Nvidia superchips to keep up Company : ZDNet AI Summary : The government is playing catch-up, but Nvidia has a lifeline. Link : [HIGH] Signos grows foothold in weight loss wave fueled by GLP-1s with its AI health data tracking Company : CNBC Technology Summary : Health tech startup Signos announced a $20 million funding round Wednesday, including an expanded partnership with medical device giant Dexcom. Link : [HIGH] Nvidia Signals $150B Spend in Taiwan Company : AI Business Summary : Speaking at a...",
+      "excerpt": "ter projects are continuing to pop up across the US, with frequent opposition from locals concerned about their impact. Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in Nvidia superchips to keep up Company : ZDNet AI Summary : The government is playing catch-up, but Nvidia has a lifeline. Link : [HIGH] Signos grows foothold in weight loss wave fueled by GLP-1s with its AI health data tracking Company : CNBC Technology Summary : Health tech startup Signos announced a $20 million funding round Wednesday, including an expanded partnership...",
+      "summary": "Link : [HIGH] Signos grows foothold in weight loss wave fueled by GLP-1s with its AI health data tracking Company : CNBC Technology Summary : Health tech startup Signos announced a $20 million funding round Wednesday, including an expanded partnership with medical device giant Dexcom. Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in Nvidia superchips to keep up Company : ZDNet AI Summary : The government is playing catch-up, but Nvidia has a lifeline.",
+      "what_happened": "Link : [HIGH] Signos grows foothold in weight loss wave fueled by GLP-1s with its AI health data tracking Company : CNBC Technology Summary : Health tech startup Signos announced a $20 million funding round Wednesday, including an expanded partnership with medical device giant Dexcom.",
+      "why_matters": "Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in Nvidia superchips to keep up Company : ZDNet AI Summary : The government is playing catch-up, but Nvidia has a lifeline.",
+      "what_to_watch": "",
+      "key_points": [
+        "Link : [HIGH] Signos grows foothold in weight loss wave fueled by GLP-1s with its AI health data tracking Company : CNBC Technology Summary : Health tech startup Signos announced a $20 million funding round Wednesday.",
+        "Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in Nvidia superchips to keep up Company : ZDNet AI Summary : The government is playing catch-up, but.",
+        "Link : [HIGH] Nvidia Signals $150B Spend in Taiwan Company : AI Business Summary : Speaking at a...",
+        "ter projects are continuing to pop up across the US, with frequent opposition from locals concerned about their impact."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.cnbc.com/2026/05/27/ai-health-tech-signos-dexcom.html",
+      "title": "government is playing catch-up, but Nvidia has a lifeline.",
+      "description": "government is playing catch-up, but Nvidia has a lifeline. Link : [HIGH] Signos grows foothold in weight loss wave fueled by GLP-1s with its AI health data tracking Company : CNBC Technology Summary : Health tech startup Signos announced a $20 million funding round Wednesday, including an expanded partnership with medical device giant Dexcom. Link : [HIGH] Nvidia Signals $150B Spend in Taiwan Company : AI Business Summary : Speaking at a launch event for Nvidia\u2019s upcoming Taiwan headquarters, CEO Jensen Huang deemed the country the \u201cepicenter\u201d of the AI revolution Link : [HIGH] AI Coding Startup Cognition Raises $1 Billion at $26 Billion Value Company : Bloomberg Tech Summary : Cognition AI Inc. has raised more than $1...",
+      "excerpt": "government is playing catch-up, but Nvidia has a lifeline. Link : [HIGH] Signos grows foothold in weight loss wave fueled by GLP-1s with its AI health data tracking Company : CNBC Technology Summary : Health tech startup Signos announced a $20 million funding round Wednesday, including an expanded partnership with medical device giant Dexcom. Link : [HIGH] Nvidia Signals $150B Spend in Taiwan Company : AI Business Summary : Speaking at a launch event for Nvidia\u2019s upcoming Taiwan headquarters, CEO Jensen Huang deemed the country the \u201cepicenter\u201d of the AI revolution Link ...",
+      "summary": "Link : [HIGH] Nvidia Signals $150B Spend in Taiwan Company : AI Business Summary : Speaking at a launch event for Nvidia\u2019s upcoming Taiwan headquarters, CEO Jensen Huang deemed the country the \u201cepicenter\u201d of the AI revolution Link : [HIGH] AI Coding Startup Cognition Raises $1 Billion at $26 Billion Value Company : Bloomberg Tech Summary : Cognition AI Inc. Link : [HIGH] Signos grows foothold in weight loss wave fueled by GLP-1s with its AI health data tracking Company : CNBC Technology Summary : Health tech startup Signos announced a $20 million funding round Wednesday, including an expanded partnership with medical device giant Dexcom. has raised more than $1...",
+      "what_happened": "Link : [HIGH] Nvidia Signals $150B Spend in Taiwan Company : AI Business Summary : Speaking at a launch event for Nvidia\u2019s upcoming Taiwan headquarters, CEO Jensen Huang deemed the country the \u201cepicenter\u201d of the AI revolution Link : [HIGH] AI Coding Startup Cognition Raises $1 Billion at $26 Billion Value Company : Bloomberg Tech Summary : Cognition AI Inc.",
+      "why_matters": "Link : [HIGH] Signos grows foothold in weight loss wave fueled by GLP-1s with its AI health data tracking Company : CNBC Technology Summary : Health tech startup Signos announced a $20 million funding round Wednesday, including an expanded partnership with medical device giant Dexcom.",
+      "what_to_watch": "has raised more than $1...",
+      "key_points": [
+        "Link : [HIGH] Nvidia Signals $150B Spend in Taiwan Company : AI Business Summary : Speaking at a launch event for Nvidia\u2019s upcoming Taiwan headquarters, CEO Jensen Huang deemed the country the \u201cepicenter\u201d of the AI.",
+        "Link : [HIGH] Signos grows foothold in weight loss wave fueled by GLP-1s with its AI health data tracking Company : CNBC Technology Summary : Health tech startup Signos announced a $20 million funding round Wednesday.",
+        "has raised more than $1...",
+        "government is playing catch-up, but Nvidia has a lifeline."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 2,
+  "carousel_total_parts": 2,
+  "slides": [
+    "$150B Spend In Taiwan",
+    "Bloomberg Are You A Robot",
+    "Ny Hugging Face Blog",
+    "ElevenLabs. The Just Changed Ap Delivery Non-musical",
+    "Mazon Just Changed App Was Unintended",
+    "AI Just Changed Arms Race US",
+    "Nvidia Just Changed Government Playing Catch-up",
+    "SAVE THIS."
+  ]
+}

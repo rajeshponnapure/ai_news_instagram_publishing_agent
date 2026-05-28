@@ -1,0 +1,351 @@
+{
+  "email_received_at": "2026-05-27T12:37-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Google updates Gemini for Home with AI-powered camera automations - Engadget - Part 1 of 2",
+  "subject": "\ud83d\udea8 AI Alert: 79 new launches \u2014 Engadget, TechCrunch AI, Bloomberg Tech",
+  "source_date": "Wed, 27 May 2026 12:37:30 -0700",
+  "companies": [
+    "Google",
+    "Anthropic",
+    "Meta",
+    "Apple",
+    "Amazon",
+    "AWS",
+    "NVIDIA",
+    "AMD"
+  ],
+  "models": [
+    "GPT-5.5",
+    "Claude",
+    "Gemini",
+    "Gemini 3.1",
+    "Gemini 3.5"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.engadget.com/2182342/google-updates-gemini-for-home-with-ai-powered-camera-automations/",
+  "article_title": "Google updates Gemini for Home with AI-powered camera automations - Engadget",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c5e2b42fe3ecff35.jpg",
+  "article_image_url": "https://img4.zergnet.com/8761499_300.jpg",
+  "article_items": [
+    {
+      "url": "https://www.engadget.com/2182342/google-updates-gemini-for-home-with-ai-powered-camera-automations/",
+      "title": "Google updates Gemini for Home with AI-powered camera automations - Engadget",
+      "description": "Gemini can trigger smart home routines based on what your cameras see.",
+      "excerpt": "Gemini can trigger smart home routines based on what your cameras see.",
+      "summary": "Gemini for Home launched in early access in October 2025, and has replaced Google Assistant on Google's smart home cameras, speakers, doorbells and displays. At I/O 2026, Google expanded its Google Home Gemini built-in program to make it easier for companies to make compatible cameras and speakers. That focus on cameras wasn't a coincidence; the biggest change the company is rolling out now is the ability to use Gemini to create automations triggered by what your cameras see. The big component still missing from Google's larger smart home plans is the updated Google Home Speaker . The big component still missing from Google's larger smart home plans is the updated Google Home Speaker .",
+      "what_happened": "Gemini for Home launched in early access in October 2025, and has replaced Google Assistant on Google's smart home cameras, speakers, doorbells and displays. At I/O 2026, Google expanded its Google Home Gemini built-in program to make it easier for companies to make compatible cameras and speakers.",
+      "why_matters": "That focus on cameras wasn't a coincidence; the biggest change the company is rolling out now is the ability to use Gemini to create automations triggered by what your cameras see. The big component still missing from Google's larger smart home plans is the updated Google Home Speaker .",
+      "what_to_watch": "The big component still missing from Google's larger smart home plans is the updated Google Home Speaker .",
+      "key_points": [
+        "Gemini for Home launched in early access in October 2025, and has replaced Google Assistant on Google's smart home cameras, speakers, doorbells and displays.",
+        "At I/O 2026, Google expanded its Google Home Gemini built-in program to make it easier for companies to make compatible cameras and speakers.",
+        "The big component still missing from Google's larger smart home plans is the updated Google Home Speaker .",
+        "\"By pairing the unbound flexibility of Gemini's visual intelligence with the devices in your Google Home ecosystem, anything your camera can see can now become the trigger that choreographs your entire home.\" As part of.",
+        "Google is updating Gemini for Home , the version of its AI assistant for smart homes, with new camera-based automations, reliability improvements and an updated version of the Google Home app.",
+        "Google updates Gemini for Home with AI-powered camera automations Gemini can trigger smart home routines based on what your cameras see.",
+        "The new smart speaker was announced in October 2025 and is supposed to ship in spring 2026, but Google has yet to make it available to order.",
+        "Gemini for Home should have an expanded ability to understand and execute multiple requests made at the same time, and accept more casual language when you make them.",
+        "Finally, Apple Music subscribers can once again use the streaming service on Google Home devices and the Google Home app has been updated to make adding Familiar Faces and submitting feedback easier.",
+        "Google says Gemini will also mistakenly claim it can't perform tasks less often and have a better understanding of the alarms and timers you have enabled.",
+        "\"To set these up, you just need to use simple, natural language prompts to describe the exact event you want to start an automation, and select which cameras should look for it,\" Google says.",
+        "Google says these new features are available to all existing users (unless they have an Enterprise or Family Link child account) in the 19 countries and languages that Gemini for Home has been rolled out in."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c5e2b42fe3ecff35.jpg",
+      "image_url": "https://img4.zergnet.com/8761499_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/05/27/meta-officially-launches-instagram-facebook-and-whatsapp-subscriptions-with-more-to-come-including-ai-plans/",
+      "title": "Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans | TechCrunch",
+      "description": "Meta is rolling out paid subscription plans for Instagram, Facebook, and WhatsApp worldwide, while also testing new AI, creator, and business-focused offerings under its broader \u201cMeta One\u201d subscription brand.",
+      "excerpt": "Meta is rolling out paid subscription plans for Instagram, Facebook, and WhatsApp worldwide, while also testing new AI, creator, and business-focused offerings under its broader \u201cMeta One\u201d subscription brand.",
+      "summary": "AI plans and more, including those for creators and businesses Alongside the launch, Meta says it will begin testing even more subscription plans, which is where things start to get confusing. On Wednesday, the social networking giant announced it\u2019s now rolling out its consumer subscription plans globally for its flagship apps, Instagram, Facebook, and WhatsApp, and beginning tests of new subscriptions for businesses, creators, and Meta AI users. It can also help creators and businesses drive people to their website or shop through links in Instagram posts, Instagram Reels, and through enhanced Facebook and Instagram profiles with their expanded linksheets. Meta is rolling out paid subscription plans for Instagram, Facebook, and WhatsApp worldwide, while also testing new AI, creator, and business-focused offerings under its broader \u201cMeta One\u201d subscription brand. The Meta One Essential plan ($14.99/mo) will offer the Verified badge, impersonation protection, and an enhanced linksheet where users can link out to their online presence across social channels and the web, similar to Meta Verified. More from TechCrunch Meta launches Instagram, Facebook, and WhatsApp subscriptions.",
+      "what_happened": "AI plans and more, including those for creators and businesses Alongside the launch, Meta says it will begin testing even more subscription plans, which is where things start to get confusing. On Wednesday, the social networking giant announced it\u2019s now rolling out its consumer subscription plans globally for its flagship apps, Instagram, Facebook, and WhatsApp, and beginning tests of new subscriptions for businesses, creators, and Meta AI users.",
+      "why_matters": "It can also help creators and businesses drive people to their website or shop through links in Instagram posts, Instagram Reels, and through enhanced Facebook and Instagram profiles with their expanded linksheets. Meta is rolling out paid subscription plans for Instagram, Facebook, and WhatsApp worldwide, while also testing new AI, creator, and business-focused offerings under its broader \u201cMeta One\u201d subscription brand.",
+      "what_to_watch": "The Meta One Essential plan ($14.99/mo) will offer the Verified badge, impersonation protection, and an enhanced linksheet where users can link out to their online presence across social channels and the web, similar to Meta Verified. More from TechCrunch Meta launches Instagram, Facebook, and WhatsApp subscriptions.",
+      "key_points": [
+        "For Meta AI users, it will test two plans - Meta One Plus ($7.99/mo) and Meta One Premium ($19.99/mo) with the same features, but the Premium plan unlocks more capacity on higher compute queries.",
+        "AI plans and more, including those for creators and businesses Alongside the launch, Meta says it will begin testing even more subscription plans, which is where things start to get confusing.",
+        "On Wednesday, the social networking giant announced it\u2019s now rolling out its consumer subscription plans globally for its flagship apps, Instagram, Facebook, and WhatsApp, and beginning tests of new subscriptions for.",
+        "More from TechCrunch Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans Meta is doubling down on its subscription offerings.",
+        "Gleit acknowledged that Meta is still experimenting with these AI and professional plans for the time being, but aims to bring them all together under Meta One, where they will then continue to be updated and expanded.",
+        "Meta AI will remain free for more casual users, but these plans follow the same path as those put forth by other AI model providers that charge for additional compute and heavier usage.",
+        "The Meta One Essential plan ($14.99/mo) will offer the Verified badge, impersonation protection, and an enhanced linksheet where users can link out to their online presence across social channels and the web, similar to.",
+        "It can also help creators and businesses drive people to their website or shop through links in Instagram posts, Instagram Reels, and through enhanced Facebook and Instagram profiles with their expanded linksheets.",
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "It would also offer move video and image generation capabilities across Meta\u2019s apps.",
+        "That means the Premium plan would offer deeper reasoning for complex tasks (i.e., more of \u201cthinking mode\u201d in the Meta AI app or on the web).",
+        "The more expensive Meta One Advanced plan ($49.99/mo) will include the Essential plan benefits, as well as the ability to be featured in the Facebook feed, appear higher in Facebook and Instagram search results, gain."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/20a3f08f06ac34cc.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/meta-apps-GettyImages-2164040793.jpg?w=1024",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-05-27/meta-to-sell-ai-chatbot-subscriptions-in-bid-to-offset-spending",
+      "title": "Bloomberg - Are you a robot?",
+      "description": "",
+      "excerpt": "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. Why did this happen? For inquiries related to this message please contact our support team and provide the reference ID below. Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+      "summary": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_happened": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+      "why_matters": "For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_to_watch": "",
+      "key_points": [
+        "Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+        "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+        "For inquiries related to this message please contact our support team and provide the reference ID below."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bloomberg.com/news/videos/2026-05-27/bloomberg-tech-5-27-2026-video",
+      "title": "Bloomberg - Are you a robot?",
+      "description": "",
+      "excerpt": "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. Why did this happen? For inquiries related to this message please contact our support team and provide the reference ID below. Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+      "summary": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_happened": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+      "why_matters": "For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_to_watch": "",
+      "key_points": [
+        "Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+        "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+        "For inquiries related to this message please contact our support team and provide the reference ID below."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bloomberg.com/news/videos/2026-05-27/ai-startup-cognition-raises-1b-at-26b-valuation-video",
+      "title": "Bloomberg - Are you a robot?",
+      "description": "",
+      "excerpt": "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. Why did this happen? For inquiries related to this message please contact our support team and provide the reference ID below. Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+      "summary": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_happened": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+      "why_matters": "For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_to_watch": "",
+      "key_points": [
+        "Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+        "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+        "For inquiries related to this message please contact our support team and provide the reference ID below."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.amazon.science/research-awards/latest-news/fall-2025-amazon-research-awards-recipients-announced",
+      "title": "Fall 2025 Amazon Research Awards recipients announced",
+      "description": "Awardees represent more than 49 universities in 11 countries. Recipients have access to Amazon public datasets, along with AWS AI/ML services and tools.",
+      "excerpt": "Awardees represent more than 49 universities in 11 countries. Recipients have access to Amazon public datasets, along with AWS AI/ML services and tools.",
+      "summary": "The tables below list, in alphabetical order by last name, fall 2025 cycle call-for-proposal recipients, sorted by research CortexCTI: A Unified Threat Intelligence Engine for Knowledge-Driven Cloud Threat Detection and Response New Benchmark and Defense on Prompt Injection in Agentic AI Systems Securing Agentic AI: From Local Detection to Global Assurance Exploit-driven AI Agents for vulnerability detection verification Securing Agentic AI: From Local Detection to Global Assurance SOLAR: Symbolic Learning for. This announcement includes awards funded under 6 calls for proposals during the fall 2025 cycle: AI for Information Security , Agentic AI , Automated Reasoning , AWS Cryptography , Cybersecurity and Anti-Abuse Technologies , and Sustainability Proposals were reviewed for the quality of their scientific content and their potential to impact both the research community and society. Since 2020, our team has funded security. Applicants are encouraged to visit our call for proposals page for more information or send an email to be notified of future open calls. Fall 2025 Amazon Research Awards recipients announced Awardees represent more than 49 universities in 11 countries.",
+      "what_happened": "The tables below list, in alphabetical order by last name, fall 2025 cycle call-for-proposal recipients, sorted by research CortexCTI: A Unified Threat Intelligence Engine for Knowledge-Driven Cloud Threat Detection and Response New Benchmark and Defense on Prompt Injection in Agentic AI Systems Securing Agentic AI: From Local Detection to Global Assurance Exploit-driven AI Agents for vulnerability detection verification Securing Agentic AI: From Local Detection to Global Assurance SOLAR: Symbolic Learning for.",
+      "why_matters": "This announcement includes awards funded under 6 calls for proposals during the fall 2025 cycle: AI for Information Security , Agentic AI , Automated Reasoning , AWS Cryptography , Cybersecurity and Anti-Abuse Technologies , and Sustainability Proposals were reviewed for the quality of their scientific content and their potential to impact both the research community and society. Since 2020, our team has funded security.",
+      "what_to_watch": "Applicants are encouraged to visit our call for proposals page for more information or send an email to be notified of future open calls. Fall 2025 Amazon Research Awards recipients announced Awardees represent more than 49 universities in 11 countries.",
+      "key_points": [
+        "The tables below list, in alphabetical order by last name, fall 2025 cycle call-for-proposal recipients, sorted by research CortexCTI: A Unified Threat Intelligence Engine for Knowledge-Driven Cloud Threat Detection and.",
+        "Additionally, Amazon encourages the publication of research results, presentations of research at Amazon offices worldwide, and the release of related code under open-source licenses.",
+        "Fall 2025 Amazon Research Awards recipients announced Awardees represent more than 49 universities in 11 countries.",
+        "This cycle, ARA received many excellent research proposals from across the world and today is publicly announcing 68 award recipients who represent 49 universities in 11 countries.",
+        "Publications Research from our scientists and collaborators.",
+        "This announcement includes awards funded under 6 calls for proposals during the fall 2025 cycle: AI for Information Security , Agentic AI , Automated Reasoning , AWS Cryptography , Cybersecurity and Anti-Abuse.",
+        "Since 2020, our team has funded security research that solves some of the biggest challenges for the industry.",
+        "Security, privacy, and abuse prevention Verifying and optimizing post-quantum cryptography at Amazon Hanno Becker , Rod Chapman , Dusan Kostic April 7, 2026 How automated reasoning reconciles the demands of security.",
+        "Recipients also are assigned an Amazon research contact who offers consultation and advice, along with opportunities to participate in Amazon events and training sessions.",
+        "Recipients have access to more than 700 Amazon public datasets and can utilize AWS AI/ML services and tools through their AWS Promotional Credits.",
+        "Automated reasoning Amazon.com | Conditions of Use | Privacy | 1996-2026 Amazon.com, Inc.",
+        "Amazon Research Awards (ARA) provides unrestricted funds and AWS Promotional Credits to academic researchers investigating various research topics in multiple disciplines."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0e443783b61864ec.png",
+      "image_url": "https://cdn.amazon.science/dims4/default/1655745/2147483647/strip/true/crop/1920x1080+0+0/resize/1440x810!/quality/90/?url=https%3A%2F%2Famzn-science-production-science.s3.us-east-1.amazonaws.com%2Fscience%2Fcb%2Fd4%2F902783f1420990235d45c3da03a6%2Fara-fall26-16x9.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+      "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks \u2014 by Artificial Analysis and IBM",
+      "description": "A Blog post by IBM Research on Hugging Face",
+      "excerpt": "A Blog post by IBM Research on Hugging Face",
+      "summary": "The harness (Stirrup) is held constant across all evaluated models, allowing an apples-to-apples comparison between models. A Blog post by IBM Research on Hugging Face ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks - by Artificial Analysis and IBM ITBench-AA is built in partnership with @IBM based on their ITBench benchmark. In one public SRE task, the agent sees user-facing failures in the frontend path. More turns do not mean better answers. ITBench-AA is built in partnership with @IBM based on their ITBench benchmark. Claude Opus 4.7 (Adaptive Reasoning, Max Effort) leads the leaderboard at 47% but is the most expensive at $5.38 per task.",
+      "what_happened": "The harness (Stirrup) is held constant across all evaluated models, allowing an apples-to-apples comparison between models. A Blog post by IBM Research on Hugging Face ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks - by Artificial Analysis and IBM ITBench-AA is built in partnership with @IBM based on their ITBench benchmark.",
+      "why_matters": "In one public SRE task, the agent sees user-facing failures in the frontend path. More turns do not mean better answers.",
+      "what_to_watch": "ITBench-AA is built in partnership with @IBM based on their ITBench benchmark. Claude Opus 4.7 (Adaptive Reasoning, Max Effort) leads the leaderboard at 47% but is the most expensive at $5.38 per task.",
+      "key_points": [
+        "A Blog post by IBM Research on Hugging Face ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks - by Artificial Analysis and IBM ITBench-AA is built in partnership with.",
+        "The harness (Stirrup) is held constant across all evaluated models, allowing an apples-to-apples comparison between models.",
+        "Claude Opus 4.7 (Adaptive Reasoning, Max Effort) leads the leaderboard at 47% but is the most expensive at $5.38 per task.",
+        "The headline score is the average across 59 tasks \u00d7 3 repeats.",
+        "This is why some models with long trajectories underperform terser ones: Gemini 3.1 Pro Preview averages 83 turns and scores 30%, while Gemma 4 31B (Reasoning) averages 58 turns and scores 37%.",
+        "DeepSeek V4 Pro (Reasoning, Max Effort) follows at 38%, with Gemma 4 31B (Reasoning) at 37%, ahead of Gemini 3.1 Pro Preview at 30%.",
+        "Gemma 4 31B (Reasoning) scores 37% at $0.14 per task, outperforming Gemini 3.1 Pro Preview ($2.23 per task, 30%) on both score and cost.",
+        "GLM-5.1 (Reasoning) leads open weights models at 40%, effectively tied with Gemini 3.5 Flash (high).",
+        "For more information see: ITBench paper on arXiv: ITBench-AA leaderboard: ITBench-AA HuggingFace repo: The Open Agent Leaderboard Inside VAKRA: Reasoning, Tool Use, and Failure Modes of Agents",
+        "All frontier models score below 50%, making ITBench-AA SRE one of the least saturated agentic benchmarks in our suite.",
+        "The model must identify the minimal set of independent root-cause Kubernetes entities responsible for the incident.",
+        "GLM-5.1 (Reasoning) scores 40% at $1.23 per task, matching Gemini 3.5 Flash (high) ($1.70) on score at lower cost."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/eb24deb29e0e9011.png",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/qMMLw1XAcBzl8Khl8eaJI.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/943d54e00fa74ddd.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/50ddeb0967730a44.png"
+      ],
+      "extra_image_urls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/guqjRHL0e8Xt1hmCq32aG.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/677629b4931b3b2eb8d5820a/aheSsLHG7bQqr_2b8A6cS.png"
+      ]
+    },
+    {
+      "url": "https://elevenlabs.io/blog/introducing-music-v2",
+      "title": "Introducing Music v2, our groundbreaking new music model",
+      "description": "Better vocals, instrumentation, and arrangement across every genre, improved multilingual support plus capabilities that weren't possible before.",
+      "excerpt": "Better vocals, instrumentation, and arrangement across every genre, improved multilingual support plus capabilities that weren't possible before.",
+      "summary": "Music v2 powers three ElevenLabs platforms, each built for a different use case: ElevenCreative - downloadable music for ads, branded content, and video Alongside this release, we've cut both Music v1 and Music v2 pricing by up to 50% for ElevenAPI and up to 40% for ElevenCreative self-serve customers. Introducing Eleven Multilingual v1: Our New Speech Synthesis Model This Voice Doesn't Exist - Generative Voice AI The first AI that can laugh Whether you're creating music, building a product, or making content at scale, there's a purpose-built platform for you. Reach out to our Sales team to enquire about early access. The model is trained only on licensed data and cleared for commercial use, so every track you generate is yours to use - no sync fees, no clearance delays, no restrictions on how you deploy it.",
+      "what_happened": "Music v2 powers three ElevenLabs platforms, each built for a different use case: ElevenCreative - downloadable music for ads, branded content, and video Alongside this release, we've cut both Music v1 and Music v2 pricing by up to 50% for ElevenAPI and up to 40% for ElevenCreative self-serve customers. Introducing Eleven Multilingual v1: Our New Speech Synthesis Model This Voice Doesn't Exist - Generative Voice AI The first AI that can laugh",
+      "why_matters": "Whether you're creating music, building a product, or making content at scale, there's a purpose-built platform for you. Reach out to our Sales team to enquire about early access.",
+      "what_to_watch": "The model is trained only on licensed data and cleared for commercial use, so every track you generate is yours to use - no sync fees, no clearance delays, no restrictions on how you deploy it.",
+      "key_points": [
+        "Music v2 powers three ElevenLabs platforms, each built for a different use case: ElevenCreative - downloadable music for ads, branded content, and video Alongside this release, we've cut both Music v1 and Music v2.",
+        "Introducing Eleven Multilingual v1: Our New Speech Synthesis Model This Voice Doesn't Exist - Generative Voice AI The first AI that can laugh",
+        "The model is trained only on licensed data and cleared for commercial use, so every track you generate is yours to use - no sync fees, no clearance delays, no restrictions on how you deploy it.",
+        "Music v2 introduces a new set of capabilities and improvements when compared to our previous model, from new ways to control and shape a track, to handling vocal and compositional complexity at a level that wasn't.",
+        "This release also builds on growing alignment across the music industry around licensed and rights-respecting AI music development, including recent licensing collaborations with Believe.",
+        "Introducing Music v2 Music v2 delivers better vocals, instrumentation, and arrangement across every genre, with improved multilingual support and a set of new capabilities.",
+        "Music v2 also gives you granular control for how you work with the model.",
+        "For brands and content teams, ElevenCreative Music handles licensed music at scale.",
+        "Music v2 is the engine underneath.",
+        "Built for musicians, developers, and brands Music v2 is the model powering products across three ElevenLabs platforms, each built for a different use case.",
+        "For developers, ElevenAPI gives you direct access to the model.",
+        "And across languages, lyrics, vocals, and arrangements now perform more reliably in the language you write in, with meaningful improvements across a growing list of supported languages."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f049337d6568211b.jpg",
+      "image_url": "https://elevenlabs.io/_next/image?url=https%3A%2F%2Feleven-public-cdn.elevenlabs.io%2Fmarketing_website%2F_next%2Fstatic%2Fmedia%2Fcore-2.c9e14996.jpg&w=3840&q=80",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/585066a7cdb39f12.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/416c73fbb7400aeb.jpg"
+      ],
+      "extra_image_urls": [
+        "https://elevenlabs.io/_next/image?url=https%3A%2F%2Feleven-public-cdn.elevenlabs.io%2Fmarketing_website%2F_next%2Fstatic%2Fmedia%2Fcore-3.1ebaba27.jpg&w=3840&q=80",
+        "https://elevenlabs.io/_next/image?url=https%3A%2F%2Feleven-public-cdn.elevenlabs.io%2Fmarketing_website%2F_next%2Fstatic%2Fmedia%2Fcore-5.019c6a3c.jpg&w=3840&q=80"
+      ]
+    }
+  ],
+  "carousel_part": 1,
+  "carousel_total_parts": 2,
+  "slides": [
+    "Google Just Changed Updates Gemini Home",
+    "Meta Launches Instagram Facebook WhatsApp",
+    "Bloomberg Are You A Robot",
+    "Bloomberg Are You A Robot",
+    "Bloomberg Are You A Robot",
+    "Fall 2025 Amazon Research Awards Recipients Announced",
+    "ITBench-AA Just Changed Frontier Models Score",
+    "V2 Our Groundbreaking New Music Model",
+    "SAVE THIS."
+  ]
+}

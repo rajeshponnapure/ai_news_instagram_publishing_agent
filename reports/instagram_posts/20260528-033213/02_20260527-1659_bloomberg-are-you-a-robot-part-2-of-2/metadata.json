@@ -1,0 +1,266 @@
+{
+  "email_received_at": "2026-05-27T16:59-07:00",
+  "recommended_post_time": "14:00",
+  "headline": "Bloomberg - Are you a robot? - Part 2 of 2",
+  "subject": "\ud83d\udea8 AI Alert: 87 new launches \u2014 CNBC Technology, CNET AI, Bloomberg Tech",
+  "source_date": "Wed, 27 May 2026 16:59:02 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "AWS",
+    "NVIDIA"
+  ],
+  "models": [
+    "GPT-5.5",
+    "Claude",
+    "Gemini 3.1",
+    "Gemini 3.5",
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.cnbc.com/2026/05/27/ai-health-tech-signos-dexcom.html",
+  "article_title": "\u26a1 BREAKING AI UPDATE \u2014 28 May 2026, 05:29 AM IST",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.cnbc.com/2026/05/27/ai-health-tech-signos-dexcom.html",
+      "title": "\u26a1 BREAKING AI UPDATE \u2014 28 May 2026, 05:29 AM IST",
+      "description": "BREAKING AI UPDATE - 28 May 2026, 05:29 AM IST 87 new AI event(s) detected ================================================== [HIGH] Signos grows foothold in weight loss wave fueled by GLP-1s with its AI health data tracking Company : CNBC Technology Summary : Health tech startup Signos announced a $20 million funding round Wednesday, including an expanded partnership with medical device giant Dexcom. Link : [HIGH] People Are Flocking to DuckDuckGo as Google Leans Heavily Into AI Company : CNET AI Summary : The privacy-focused search engine and browser had a surge in customers, coinciding with Google's announcement of planned changes. Link : [HIGH] Dell Wins $9.7 Billion Defense Deal to Streamline Software Buys Company : Bloomberg Tech Summary : A unit of Dell Technologies Inc. won a $9.7...",
+      "excerpt": "BREAKING AI UPDATE - 28 May 2026, 05:29 AM IST 87 new AI event(s) detected ================================================== [HIGH] Signos grows foothold in weight loss wave fueled by GLP-1s with its AI health data tracking Company : CNBC Technology Summary : Health tech startup Signos announced a $20 million funding round Wednesday, including an expanded partnership with medical device giant Dexcom. Link : [HIGH] People Are Flocking to DuckDuckGo as Google Leans Heavily Into AI Company : CNET AI Summary : The privacy-focused search engine and browser had a surge in customers, coinciding with Google's announcement of planned changes. Link ...",
+      "summary": "BREAKING AI UPDATE - 28 May 2026, 05:29 AM IST 87 new AI event(s) detected ================================================== [HIGH] Signos grows foothold in weight loss wave fueled by GLP-1s with its AI health data tracking Company : CNBC Technology Summary : Health tech startup Signos announced a $20 million funding round Wednesday, including an expanded partnership with medical device giant Dexcom. Link : [HIGH] Dell Wins $9.7 Billion Defense Deal to Streamline Software Buys Company : Bloomberg Tech Summary : A unit of Dell Technologies Inc.",
+      "what_happened": "BREAKING AI UPDATE - 28 May 2026, 05:29 AM IST 87 new AI event(s) detected ================================================== [HIGH] Signos grows foothold in weight loss wave fueled by GLP-1s with its AI health data tracking Company : CNBC Technology Summary : Health tech startup Signos announced a $20 million funding round Wednesday, including an expanded partnership with medical device giant Dexcom.",
+      "why_matters": "Link : [HIGH] Dell Wins $9.7 Billion Defense Deal to Streamline Software Buys Company : Bloomberg Tech Summary : A unit of Dell Technologies Inc.",
+      "what_to_watch": "",
+      "key_points": [
+        "BREAKING AI UPDATE - 28 May 2026, 05:29 AM IST 87 new AI event(s) detected ================================================== [HIGH] Signos grows foothold in weight loss wave fueled by GLP-1s with its AI health data.",
+        "Link : [HIGH] Dell Wins $9.7 Billion Defense Deal to Streamline Software Buys Company : Bloomberg Tech Summary : A unit of Dell Technologies Inc.",
+        "Link : [HIGH] People Are Flocking to DuckDuckGo as Google Leans Heavily Into AI Company : CNET AI Summary : The privacy-focused search engine and browser had a surge in customers, coinciding with Google's announcement."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.cnet.com/tech/services-and-software/duckduckgo-installs-increase-after-google-io/",
+      "title": "h tech startup Signos announced a $20 million funding round Wednesday, including an expanded partnership with medical device giant Dexcom.",
+      "description": "h tech startup Signos announced a $20 million funding round Wednesday, including an expanded partnership with medical device giant Dexcom. Link : [HIGH] People Are Flocking to DuckDuckGo as Google Leans Heavily Into AI Company : CNET AI Summary : The privacy-focused search engine and browser had a surge in customers, coinciding with Google's announcement of planned changes. Link : [HIGH] Dell Wins $9.7 Billion Defense Deal to Streamline Software Buys Company : Bloomberg Tech Summary : A unit of Dell Technologies Inc. won a $9.7 billion contract to help the US military handle its licenses for Microsoft Corp. software related to email, spreadsheets and other needs across classified a Link : [HIGH] Facebook...",
+      "excerpt": "h tech startup Signos announced a $20 million funding round Wednesday, including an expanded partnership with medical device giant Dexcom. Link : [HIGH] People Are Flocking to DuckDuckGo as Google Leans Heavily Into AI Company : CNET AI Summary : The privacy-focused search engine and browser had a surge in customers, coinciding with Google's announcement of planned changes. Link : [HIGH] Dell Wins $9.7 Billion Defense Deal to Streamline Software Buys Company : Bloomberg Tech Summary : A unit of Dell Technologies Inc. won a $9.7 billion contract to help the US military handle its licenses for Microsoft Corp. software...",
+      "summary": "h tech startup Signos announced a $20 million funding round Wednesday, including an expanded partnership with medical device giant Dexcom. Link : [HIGH] Dell Wins $9.7 Billion Defense Deal to Streamline Software Buys Company : Bloomberg Tech Summary : A unit of Dell Technologies Inc. won a $9.7 billion contract to help the US military handle its licenses for Microsoft Corp. software related to email, spreadsheets and other needs across classified a Link : [HIGH] Facebook...",
+      "what_happened": "h tech startup Signos announced a $20 million funding round Wednesday, including an expanded partnership with medical device giant Dexcom. Link : [HIGH] Dell Wins $9.7 Billion Defense Deal to Streamline Software Buys Company : Bloomberg Tech Summary : A unit of Dell Technologies Inc.",
+      "why_matters": "won a $9.7 billion contract to help the US military handle its licenses for Microsoft Corp.",
+      "what_to_watch": "software related to email, spreadsheets and other needs across classified a Link : [HIGH] Facebook...",
+      "key_points": [
+        "Link : [HIGH] Dell Wins $9.7 Billion Defense Deal to Streamline Software Buys Company : Bloomberg Tech Summary : A unit of Dell Technologies Inc.",
+        "h tech startup Signos announced a $20 million funding round Wednesday, including an expanded partnership with medical device giant Dexcom.",
+        "won a $9.7 billion contract to help the US military handle its licenses for Microsoft Corp.",
+        "software related to email, spreadsheets and other needs across classified a Link : [HIGH] Facebook...",
+        "Link : [HIGH] People Are Flocking to DuckDuckGo as Google Leans Heavily Into AI Company : CNET AI Summary : The privacy-focused search engine and browser had a surge in customers, coinciding with Google's announcement."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theverge.com/tech/938500/facebook-whatsapp-instagram-meta-ai-subscriptions",
+      "title": "[HIGH] Facebook launches a \u2018Plus\u2019 subscription that gives you extra features",
+      "description": "assified a Link : [HIGH] Facebook launches a \u2018Plus\u2019 subscription that gives you extra features Company : The Verge AI Summary : After announcing tests of premium subscriptions for Facebook, Instagram, WhatsApp earlier this year, TechCrunch and Bloomberg report that Meta is launching a global rollout over the next few weeks and Link : [HIGH] Google updates Gemini for Home with AI-powered camera automations Company : Engadget Summary : Gemini can trigger smart home routines based on what your cameras see. Link : [HIGH] Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans Company : TechCrunch AI Summary : Meta is rolling out paid...",
+      "excerpt": "assified a Link : [HIGH] Facebook launches a \u2018Plus\u2019 subscription that gives you extra features Company : The Verge AI Summary : After announcing tests of premium subscriptions for Facebook, Instagram, WhatsApp earlier this year, TechCrunch and Bloomberg report that Meta is launching a global rollout over the next few weeks and Link : [HIGH] Google updates Gemini for Home with AI-powered camera automations Company : Engadget Summary : Gemini can trigger smart home routines based on what your cameras see. Link ...",
+      "summary": "Link : [HIGH] Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans Company : TechCrunch AI Summary : Meta is rolling out paid... assified a Link : [HIGH] Facebook launches a \u2018Plus\u2019 subscription that gives you extra features Company : The Verge AI Summary : After announcing tests of premium subscriptions for Facebook, Instagram, WhatsApp earlier this year, TechCrunch and Bloomberg report that Meta is launching a global rollout over the next few weeks and Link : [HIGH] Google updates Gemini for Home with AI-powered camera automations Company : Engadget.",
+      "what_happened": "Link : [HIGH] Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans Company : TechCrunch AI Summary : Meta is rolling out paid...",
+      "why_matters": "assified a Link : [HIGH] Facebook launches a \u2018Plus\u2019 subscription that gives you extra features Company : The Verge AI Summary : After announcing tests of premium subscriptions for Facebook, Instagram, WhatsApp earlier this year, TechCrunch and Bloomberg report that Meta is launching a global rollout over the next few weeks and Link : [HIGH] Google updates Gemini for Home with AI-powered camera automations Company : Engadget.",
+      "what_to_watch": "",
+      "key_points": [
+        "Link : [HIGH] Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans Company : TechCrunch AI Summary : Meta is rolling out paid...",
+        "assified a Link : [HIGH] Facebook launches a \u2018Plus\u2019 subscription that gives you extra features Company : The Verge AI Summary : After announcing tests of premium subscriptions for Facebook, Instagram, WhatsApp earlier."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2182342/google-updates-gemini-for-home-with-ai-powered-camera-automations/",
+      "title": "[HIGH] Google updates Gemini for Home with AI-powered camera automations",
+      "description": "premium subscriptions for Facebook, Instagram, WhatsApp earlier this year, TechCrunch and Bloomberg report that Meta is launching a global rollout over the next few weeks and Link : [HIGH] Google updates Gemini for Home with AI-powered camera automations Company : Engadget Summary : Gemini can trigger smart home routines based on what your cameras see. Link : [HIGH] Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans Company : TechCrunch AI Summary : Meta is rolling out paid subscription plans for Instagram, Facebook, and WhatsApp worldwide, while also testing new AI, creator, and business-focused offerings under its broader \u201cMeta One\u201d subscriptio Link ...",
+      "excerpt": "premium subscriptions for Facebook, Instagram, WhatsApp earlier this year, TechCrunch and Bloomberg report that Meta is launching a global rollout over the next few weeks and Link : [HIGH] Google updates Gemini for Home with AI-powered camera automations Company : Engadget Summary : Gemini can trigger smart home routines based on what your cameras see. Link : [HIGH] Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans Company : TechCrunch AI Summary : Meta is rolling out paid subscription plans for Instagram, Facebook, and WhatsApp worldwide, while also...",
+      "summary": "Link : [HIGH] Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans Company : TechCrunch AI Summary : Meta is rolling out paid subscription plans for Instagram, Facebook, and WhatsApp worldwide, while also testing new AI, creator, and business-focused offerings under its broader \u201cMeta One\u201d subscriptio Link ... premium subscriptions for Facebook, Instagram, WhatsApp earlier this year, TechCrunch and Bloomberg report that Meta is launching a global rollout over the next few weeks and Link : [HIGH] Google updates Gemini for Home with AI-powered camera automations Company : Engadget Summary : Gemini can trigger smart home routines based on what your cameras see.",
+      "what_happened": "Link : [HIGH] Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans Company : TechCrunch AI Summary : Meta is rolling out paid subscription plans for Instagram, Facebook, and WhatsApp worldwide, while also testing new AI, creator, and business-focused offerings under its broader \u201cMeta One\u201d subscriptio Link ...",
+      "why_matters": "premium subscriptions for Facebook, Instagram, WhatsApp earlier this year, TechCrunch and Bloomberg report that Meta is launching a global rollout over the next few weeks and Link : [HIGH] Google updates Gemini for Home with AI-powered camera automations Company : Engadget Summary : Gemini can trigger smart home routines based on what your cameras see.",
+      "what_to_watch": "",
+      "key_points": [
+        "Link : [HIGH] Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans Company : TechCrunch AI Summary : Meta is rolling out paid subscription plans for Instagram, Facebook.",
+        "premium subscriptions for Facebook, Instagram, WhatsApp earlier this year, TechCrunch and Bloomberg report that Meta is launching a global rollout over the next few weeks and Link : [HIGH] Google updates Gemini for Home."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/05/27/meta-officially-launches-instagram-facebook-and-whatsapp-subscriptions-with-more-to-come-including-ai-plans/",
+      "title": "[HIGH] Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans",
+      "description": "[HIGH] Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans Company : TechCrunch AI Summary : Meta is rolling out paid subscription plans for Instagram, Facebook, and WhatsApp worldwide, while also testing new AI, creator, and business-focused offerings under its broader \u201cMeta One\u201d subscriptio Link : [HIGH] Meta to Sell AI Chatbot Subscriptions to Offset Spending Company : Bloomberg Tech Summary : Meta Platforms Inc. is selling consumer subscriptions to its Meta AI chatbot for the first time, a key step toward building a business that would help offset hundreds of billions of dollars in artific Link : [HIGH] SK Hynix, Micron...",
+      "excerpt": "[HIGH] Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans Company : TechCrunch AI Summary : Meta is rolling out paid subscription plans for Instagram, Facebook, and WhatsApp worldwide, while also testing new AI, creator, and business-focused offerings under its broader \u201cMeta One\u201d subscriptio Link : [HIGH] Meta to Sell AI Chatbot Subscriptions to Offset Spending Company : Bloomberg Tech Summary : Meta Platforms Inc. is selling consumer subscriptions to its Meta AI chatbot for the first time, a key step toward building a business that would...",
+      "summary": "[HIGH] Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans Company : TechCrunch AI Summary : Meta is rolling out paid subscription plans for Instagram, Facebook, and WhatsApp worldwide, while also testing new AI, creator, and business-focused offerings under its broader \u201cMeta One\u201d subscriptio Link : [HIGH] Meta to Sell AI Chatbot Subscriptions to Offset Spending Company : Bloomberg Tech Summary : Meta Platforms Inc. is selling consumer subscriptions to its Meta AI chatbot for the first time, a key step toward building a business that would help offset hundreds of billions of dollars in artific Link : [HIGH] SK Hynix, Micron...",
+      "what_happened": "[HIGH] Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans Company : TechCrunch AI Summary : Meta is rolling out paid subscription plans for Instagram, Facebook, and WhatsApp worldwide, while also testing new AI, creator, and business-focused offerings under its broader \u201cMeta One\u201d subscriptio Link : [HIGH] Meta to Sell AI Chatbot Subscriptions to Offset Spending Company : Bloomberg Tech Summary : Meta Platforms Inc.",
+      "why_matters": "is selling consumer subscriptions to its Meta AI chatbot for the first time, a key step toward building a business that would help offset hundreds of billions of dollars in artific Link : [HIGH] SK Hynix, Micron...",
+      "what_to_watch": "",
+      "key_points": [
+        "[HIGH] Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans Company : TechCrunch AI Summary : Meta is rolling out paid subscription plans for Instagram, Facebook, and.",
+        "is selling consumer subscriptions to its Meta AI chatbot for the first time, a key step toward building a business that would help offset hundreds of billions of dollars in artific Link : [HIGH] SK Hynix, Micron..."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theverge.com/tech/938249/motorola-device-native-amazon-affiliate-hijack",
+      "title": "ap delivery and non-musical sound effects, according to ElevenLabs. The new model",
+      "description": "ap delivery and non-musical sound effects, according to ElevenLabs. The new model Link : [HIGH] Motorola says affiliate hijacking of Amazon app was \u2018unintended\u2019 Company : The Verge AI Summary : Motorola says that recently discovered behavior, which saw some of its phones sending users to an affiliate tracking website before opening the Amazon app, was \"unintended\" and has been \"promptly corr Link : [HIGH] Rural Ohio fights back against Ramaswamy\u2019s plan to expand AI data centers Company : The Verge AI Summary : AI data center projects are continuing to pop up across the US, with frequent opposition from locals concerned about their impact. Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in...",
+      "excerpt": "ap delivery and non-musical sound effects, according to ElevenLabs. The new model Link : [HIGH] Motorola says affiliate hijacking of Amazon app was \u2018unintended\u2019 Company : The Verge AI Summary : Motorola says that recently discovered behavior, which saw some of its phones sending users to an affiliate tracking website before opening the Amazon app, was \"unintended\" and has been \"promptly corr Link : [HIGH] Rural Ohio fights back against Ramaswamy\u2019s plan to expand AI data centers Company : The Verge AI Summary : AI data center projects are continuing to pop up across the US, with frequent opposition from locals concerned about their impact...",
+      "summary": "Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in... The new model Link : [HIGH] Motorola says affiliate hijacking of Amazon app was \u2018unintended\u2019 Company : The Verge AI Summary : Motorola says that recently discovered behavior, which saw some of its phones sending users to an affiliate tracking website before opening the Amazon app, was \"unintended\" and has been \"promptly corr Link : [HIGH] Rural Ohio fights back against Ramaswamy\u2019s plan to expand AI data centers Company : The. ap delivery and non-musical sound effects, according to ElevenLabs.",
+      "what_happened": "Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in...",
+      "why_matters": "The new model Link : [HIGH] Motorola says affiliate hijacking of Amazon app was \u2018unintended\u2019 Company : The Verge AI Summary : Motorola says that recently discovered behavior, which saw some of its phones sending users to an affiliate tracking website before opening the Amazon app, was \"unintended\" and has been \"promptly corr Link : [HIGH] Rural Ohio fights back against Ramaswamy\u2019s plan to expand AI data centers Company : The.",
+      "what_to_watch": "ap delivery and non-musical sound effects, according to ElevenLabs.",
+      "key_points": [
+        "Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in...",
+        "The new model Link : [HIGH] Motorola says affiliate hijacking of Amazon app was \u2018unintended\u2019 Company : The Verge AI Summary : Motorola says that recently discovered behavior, which saw some of its phones sending users.",
+        "ap delivery and non-musical sound effects, according to ElevenLabs."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://tiffinohio.net/posts/ramaswamys-data-center-push-faces-growing-ohio-backlash/",
+      "title": "mazon app, was \"unintended\" and has been \"promptly corr",
+      "description": "mazon app, was \"unintended\" and has been \"promptly corr Link : [HIGH] Rural Ohio fights back against Ramaswamy\u2019s plan to expand AI data centers Company : The Verge AI Summary : AI data center projects are continuing to pop up across the US, with frequent opposition from locals concerned about their impact. Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in Nvidia superchips to keep up Company : ZDNet AI Summary : The government is playing catch-up, but Nvidia has a lifeline. Link : [HIGH] Nvidia Signals $150B Spend in Taiwan Company : AI Business Summary : Speaking at a launch event for Nvidia\u2019s upcoming Taiwan headquarters, CEO Jensen Huang...",
+      "excerpt": "mazon app, was \"unintended\" and has been \"promptly corr Link : [HIGH] Rural Ohio fights back against Ramaswamy\u2019s plan to expand AI data centers Company : The Verge AI Summary : AI data center projects are continuing to pop up across the US, with frequent opposition from locals concerned about their impact. Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in Nvidia superchips to keep up Company : ZDNet AI Summary : The government is playing catch-up, but Nvidia has a lifeline. Link ...",
+      "summary": "Link : [HIGH] Nvidia Signals $150B Spend in Taiwan Company : AI Business Summary : Speaking at a launch event for Nvidia\u2019s upcoming Taiwan headquarters, CEO Jensen Huang... Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in Nvidia superchips to keep up Company : ZDNet AI Summary : The government is playing catch-up, but Nvidia has a lifeline. mazon app, was \"unintended\" and has been \"promptly corr Link : [HIGH] Rural Ohio fights back against Ramaswamy\u2019s plan to expand AI data centers Company : The Verge AI Summary : AI data center projects are continuing to pop up across the US, with frequent opposition from locals concerned about their impact.",
+      "what_happened": "Link : [HIGH] Nvidia Signals $150B Spend in Taiwan Company : AI Business Summary : Speaking at a launch event for Nvidia\u2019s upcoming Taiwan headquarters, CEO Jensen Huang... Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in Nvidia superchips to keep up Company : ZDNet AI Summary : The government is playing catch-up, but Nvidia has a lifeline.",
+      "why_matters": "mazon app, was \"unintended\" and has been \"promptly corr Link : [HIGH] Rural Ohio fights back against Ramaswamy\u2019s plan to expand AI data centers Company : The Verge AI Summary : AI data center projects are continuing to pop up across the US, with frequent opposition from locals concerned about their impact.",
+      "what_to_watch": "",
+      "key_points": [
+        "Link : [HIGH] Nvidia Signals $150B Spend in Taiwan Company : AI Business Summary : Speaking at a launch event for Nvidia\u2019s upcoming Taiwan headquarters, CEO Jensen Huang...",
+        "Here are a few recent articles about the projects: Link : [HIGH] AI is an arms race, and the US wants $9 billion in Nvidia superchips to keep up Company : ZDNet AI Summary : The government is playing catch-up, but.",
+        "mazon app, was \"unintended\" and has been \"promptly corr Link : [HIGH] Rural Ohio fights back against Ramaswamy\u2019s plan to expand AI data centers Company : The Verge AI Summary : AI data center projects are continuing to."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 2,
+  "carousel_total_parts": 2,
+  "slides": [
+    "28 May 2026 05 29 AM IST",
+    "Bloomberg Just Changed Robot Part 2",
+    "Facebook Launches Plus' Subscription Gives",
+    "Google Just Changed Updates Gemini Home",
+    "Meta Launches Instagram Facebook WhatsApp",
+    "ElevenLabs. The Just Changed Ap Delivery Non-musical",
+    "Mazon Just Changed App Was Unintended",
+    "SAVE THIS."
+  ]
+}

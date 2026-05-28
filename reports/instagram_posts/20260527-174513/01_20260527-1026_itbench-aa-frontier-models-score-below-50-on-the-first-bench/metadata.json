@@ -1,0 +1,327 @@
+{
+  "email_received_at": "2026-05-27T10:26-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise - Part 1 of 2",
+  "subject": "\ud83d\udea8 AI Alert: 75 new launches \u2014 Hugging Face Blog, MarkTechPost AI, The Verge AI",
+  "source_date": "Wed, 27 May 2026 10:26:52 -0700",
+  "companies": [
+    "Google",
+    "Microsoft",
+    "Apple",
+    "Amazon",
+    "NVIDIA",
+    "Hugging Face",
+    "ElevenLabs",
+    "IBM"
+  ],
+  "models": [
+    "GPT-5.5",
+    "Claude",
+    "Gemini 3.1",
+    "Gemini 3.5"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+  "article_title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks \u2014 by Artificial Analysis and IBM",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/50ddeb0967730a44.png",
+  "article_image_url": "https://cdn-uploads.huggingface.co/production/uploads/677629b4931b3b2eb8d5820a/aheSsLHG7bQqr_2b8A6cS.png",
+  "article_items": [
+    {
+      "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+      "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks \u2014 by Artificial Analysis and IBM",
+      "description": "A Blog post by IBM Research on Hugging Face",
+      "excerpt": "A Blog post by IBM Research on Hugging Face",
+      "summary": "The harness (Stirrup) is held constant across all evaluated models, allowing an apples-to-apples comparison between models. A Blog post by IBM Research on Hugging Face ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks - by Artificial Analysis and IBM ITBench-AA is built in partnership with @IBMResearch based on their ITBench benchmark. In one public SRE task, the agent sees user-facing failures in the frontend path. More turns do not mean better answers. ITBench-AA is built in partnership with @IBMResearch based on their ITBench benchmark. Claude Opus 4.7 (Adaptive Reasoning, Max Effort) leads the leaderboard at 47% but is the most expensive at $5.38 per task.",
+      "what_happened": "The harness (Stirrup) is held constant across all evaluated models, allowing an apples-to-apples comparison between models. A Blog post by IBM Research on Hugging Face ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks - by Artificial Analysis and IBM ITBench-AA is built in partnership with @IBMResearch based on their ITBench benchmark.",
+      "why_matters": "In one public SRE task, the agent sees user-facing failures in the frontend path. More turns do not mean better answers.",
+      "what_to_watch": "ITBench-AA is built in partnership with @IBMResearch based on their ITBench benchmark. Claude Opus 4.7 (Adaptive Reasoning, Max Effort) leads the leaderboard at 47% but is the most expensive at $5.38 per task.",
+      "key_points": [
+        "A Blog post by IBM Research on Hugging Face ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks - by Artificial Analysis and IBM ITBench-AA is built in partnership with.",
+        "The harness (Stirrup) is held constant across all evaluated models, allowing an apples-to-apples comparison between models.",
+        "Claude Opus 4.7 (Adaptive Reasoning, Max Effort) leads the leaderboard at 47% but is the most expensive at $5.38 per task.",
+        "The headline score is the average across 59 tasks \u00d7 3 repeats.",
+        "This is why some models with long trajectories underperform terser ones: Gemini 3.1 Pro Preview averages 83 turns and scores 30%, while Gemma 4 31B (Reasoning) averages 58 turns and scores 37%.",
+        "DeepSeek V4 Pro (Reasoning, Max Effort) follows at 38%, with Gemma 4 31B (Reasoning) at 37%, ahead of Gemini 3.1 Pro Preview at 30%.",
+        "Gemma 4 31B (Reasoning) scores 37% at $0.14 per task, outperforming Gemini 3.1 Pro Preview ($2.23 per task, 30%) on both score and cost.",
+        "GLM-5.1 (Reasoning) leads open weights models at 40%, effectively tied with Gemini 3.5 Flash (high).",
+        "For more information see: ITBench paper on arXiv: ITBench-AA leaderboard: ITBench-AA HuggingFace repo: The Open Agent Leaderboard Inside VAKRA: Reasoning, Tool Use, and Failure Modes of Agents",
+        "All frontier models score below 50%, making ITBench-AA SRE one of the least saturated agentic benchmarks in our suite.",
+        "The model must identify the minimal set of independent root-cause Kubernetes entities responsible for the incident.",
+        "GLM-5.1 (Reasoning) scores 40% at $1.23 per task, matching Gemini 3.5 Flash (high) ($1.70) on score at lower cost."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/50ddeb0967730a44.png",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/677629b4931b3b2eb8d5820a/aheSsLHG7bQqr_2b8A6cS.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://elevenlabs.io/blog/introducing-music-v2",
+      "title": "Introducing Music v2, our groundbreaking new music model",
+      "description": "Better vocals, instrumentation, and arrangement across every genre, improved multilingual support plus capabilities that weren't possible before.",
+      "excerpt": "Better vocals, instrumentation, and arrangement across every genre, improved multilingual support plus capabilities that weren't possible before.",
+      "summary": "Music v2 powers three ElevenLabs platforms, each built for a different use case: ElevenCreative - downloadable music for ads, branded content, and video Alongside this release, we've cut both Music v1 and Music v2 pricing by up to 50% for ElevenAPI and up to 40% for ElevenCreative self-serve customers. Introducing Eleven Multilingual v1: Our New Speech Synthesis Model This Voice Doesn't Exist - Generative Voice AI The first AI that can laugh Whether you're creating music, building a product, or making content at scale, there's a purpose-built platform for you. Reach out to our Sales team to enquire about early access. The model is trained only on licensed data and cleared for commercial use, so every track you generate is yours to use - no sync fees, no clearance delays, no restrictions on how you deploy it.",
+      "what_happened": "Music v2 powers three ElevenLabs platforms, each built for a different use case: ElevenCreative - downloadable music for ads, branded content, and video Alongside this release, we've cut both Music v1 and Music v2 pricing by up to 50% for ElevenAPI and up to 40% for ElevenCreative self-serve customers. Introducing Eleven Multilingual v1: Our New Speech Synthesis Model This Voice Doesn't Exist - Generative Voice AI The first AI that can laugh",
+      "why_matters": "Whether you're creating music, building a product, or making content at scale, there's a purpose-built platform for you. Reach out to our Sales team to enquire about early access.",
+      "what_to_watch": "The model is trained only on licensed data and cleared for commercial use, so every track you generate is yours to use - no sync fees, no clearance delays, no restrictions on how you deploy it.",
+      "key_points": [
+        "Music v2 powers three ElevenLabs platforms, each built for a different use case: ElevenCreative - downloadable music for ads, branded content, and video Alongside this release, we've cut both Music v1 and Music v2.",
+        "Introducing Eleven Multilingual v1: Our New Speech Synthesis Model This Voice Doesn't Exist - Generative Voice AI The first AI that can laugh",
+        "The model is trained only on licensed data and cleared for commercial use, so every track you generate is yours to use - no sync fees, no clearance delays, no restrictions on how you deploy it.",
+        "Music v2 introduces a new set of capabilities and improvements when compared to our previous model, from new ways to control and shape a track, to handling vocal and compositional complexity at a level that wasn't.",
+        "This release also builds on growing alignment across the music industry around licensed and rights-respecting AI music development, including recent licensing collaborations with Believe.",
+        "Introducing Music v2 Music v2 delivers better vocals, instrumentation, and arrangement across every genre, with improved multilingual support and a set of new capabilities.",
+        "Music v2 also gives you granular control for how you work with the model.",
+        "For brands and content teams, ElevenCreative Music handles licensed music at scale.",
+        "Music v2 is the engine underneath.",
+        "Built for musicians, developers, and brands Music v2 is the model powering products across three ElevenLabs platforms, each built for a different use case.",
+        "For developers, ElevenAPI gives you direct access to the model.",
+        "And across languages, lyrics, vocals, and arrangements now perform more reliably in the language you write in, with meaningful improvements across a growing list of supported languages."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f049337d6568211b.jpg",
+      "image_url": "https://elevenlabs.io/_next/image?url=https%3A%2F%2Feleven-public-cdn.elevenlabs.io%2Fmarketing_website%2F_next%2Fstatic%2Fmedia%2Fcore-2.c9e14996.jpg&w=3840&q=80",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/585066a7cdb39f12.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/416c73fbb7400aeb.jpg"
+      ],
+      "extra_image_urls": [
+        "https://elevenlabs.io/_next/image?url=https%3A%2F%2Feleven-public-cdn.elevenlabs.io%2Fmarketing_website%2F_next%2Fstatic%2Fmedia%2Fcore-3.1ebaba27.jpg&w=3840&q=80",
+        "https://elevenlabs.io/_next/image?url=https%3A%2F%2Feleven-public-cdn.elevenlabs.io%2Fmarketing_website%2F_next%2Fstatic%2Fmedia%2Fcore-5.019c6a3c.jpg&w=3840&q=80"
+      ]
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-05-27/ai-coding-startup-cognition-raises-1-billion-at-26-billion-value",
+      "title": "Bloomberg - Are you a robot?",
+      "description": "",
+      "excerpt": "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. Why did this happen? For inquiries related to this message please contact our support team and provide the reference ID below. Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+      "summary": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_happened": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+      "why_matters": "For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_to_watch": "",
+      "key_points": [
+        "Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+        "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+        "For inquiries related to this message please contact our support team and provide the reference ID below."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/05/27/startup-battlefield-200-applications-close-today-nominate-a-founder-or-submit-your-startup/",
+      "title": "Startup Battlefield 200 applications close today | TechCrunch",
+      "description": "Today is the last day to apply or nominate a startup for Startup Battlefield 200. Compete for $100,000, get global visibility, investor access. Apply now.",
+      "excerpt": "Today is the last day to apply or nominate a startup for Startup Battlefield 200. Compete for $100,000, get global visibility, investor access. Apply now.",
+      "summary": "PT, the window closes on your chance to compete for $100,000 in equity-free funding, gain global visibility, connect directly with investors, and launch on the TechCrunch Disrupt stage . Together, they\u2019ve raised over $32 billion and produced more than 250 exits, including acquisitions by Microsoft, Google, Salesforce, Uber, and Amazon. Every selected company pitches live, whether on the Disrupt Stage or the Pitch Showcase Stage. You do not need to win the competition for this experience to change your company\u2019s trajectory. Founders gain direct investor access, live exposure, and the opportunity to prove they belong among the next generation of category-defining companies. The deadline is tonight at 11:59 p.m.",
+      "what_happened": "PT, the window closes on your chance to compete for $100,000 in equity-free funding, gain global visibility, connect directly with investors, and launch on the TechCrunch Disrupt stage . Together, they\u2019ve raised over $32 billion and produced more than 250 exits, including acquisitions by Microsoft, Google, Salesforce, Uber, and Amazon.",
+      "why_matters": "Every selected company pitches live, whether on the Disrupt Stage or the Pitch Showcase Stage. You do not need to win the competition for this experience to change your company\u2019s trajectory.",
+      "what_to_watch": "Founders gain direct investor access, live exposure, and the opportunity to prove they belong among the next generation of category-defining companies. The deadline is tonight at 11:59 p.m.",
+      "key_points": [
+        "PT, the window closes on your chance to compete for $100,000 in equity-free funding, gain global visibility, connect directly with investors, and launch on the TechCrunch Disrupt stage .",
+        "The deadline is tonight at 11:59 p.m.",
+        "The deadline closes tonight at 11:59 p.m.",
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "Once the clock strikes 11:59 p.m.",
+        "Today is the last day to apply or nominate a startup for Startup Battlefield 200.",
+        "The track record speaks for itself More than 1,700 startups have participated in Startup Battlefield over the years.",
+        "Apply now for the opportunity to join 200 of the world\u2019s most promising early-stage startups at TechCrunch Disrupt.",
+        "Together, they\u2019ve raised over $32 billion and produced more than 250 exits, including acquisitions by Microsoft, Google, Salesforce, Uber, and Amazon.",
+        "More from TechCrunch Startup Battlefield 200 applications close today: Nominate a founder or submit your startup Today is the final day to apply or nominate a startup for Startup Battlefield 200 .",
+        "That\u2019s because Startup Battlefield 200 has never been about rewarding the most polished companies.",
+        "Just 20 finalists pitch on the main Disrupt Stage."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b5d013dc7166096a.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2024/11/54105085427_2cae9d0502_o.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-05-27/natura-ai-partnership-aims-to-shake-up-brazil-s-beauty-routines",
+      "title": "Bloomberg - Are you a robot?",
+      "description": "",
+      "excerpt": "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. Why did this happen? For inquiries related to this message please contact our support team and provide the reference ID below. Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+      "summary": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_happened": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+      "why_matters": "For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_to_watch": "",
+      "key_points": [
+        "Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+        "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+        "For inquiries related to this message please contact our support team and provide the reference ID below."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-05-27/dwelly-in-talks-to-raise-200-million-for-ai-property-management",
+      "title": "Bloomberg - Are you a robot?",
+      "description": "",
+      "excerpt": "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. Why did this happen? For inquiries related to this message please contact our support team and provide the reference ID below. Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+      "summary": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_happened": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+      "why_matters": "For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_to_watch": "",
+      "key_points": [
+        "Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+        "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+        "For inquiries related to this message please contact our support team and provide the reference ID below."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-05-27/robinhood-launches-ai-stock-trading-purchases-on-credit-cards",
+      "title": "Bloomberg - Are you a robot?",
+      "description": "",
+      "excerpt": "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. Why did this happen? For inquiries related to this message please contact our support team and provide the reference ID below. Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+      "summary": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot. For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_happened": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription. We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+      "why_matters": "For inquiries related to this message please contact our support team and provide the reference ID below.",
+      "what_to_watch": "",
+      "key_points": [
+        "Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+        "We've detected unusual activity from your computer network To continue, please click the box below to let us know you're not a robot.",
+        "For inquiries related to this message please contact our support team and provide the reference ID below."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.marktechpost.com/2026/05/27/nvidia-releases-polar-a-token-faithful-rollout-framework-for-grpo-training-across-codex-claude-code-and-qwen-code/",
+      "title": "ny : Hugging Face Blog",
+      "description": "ny : Hugging Face Blog Link : [HIGH] NVIDIA Releases Polar, a Token-Faithful Rollout Framework for GRPO Training Across Codex, Claude Code, and Qwen Code Company : MarkTechPost AI Summary : NVIDIA researchers have introduced Polar, a rollout framework that trains language agents using reinforcement learning without modifying their agent harnesses. Polar places a model API proxy between t Link : [HIGH] Introducing Music v2, our groundbreaking new music model Company : The Verge AI Summary : Its new Music v2 model can generate songs that can switch from opera to heavy metal mid-track, while handling faster rap delivery and non-musical sound effects, according to ElevenLabs. The new model Link : [HIGH] Motorola says affiliate hijacking of Amazon app was \u2018unintended\u2019 Company : The Verge AI...",
+      "excerpt": "ny : Hugging Face Blog Link : [HIGH] NVIDIA Releases Polar, a Token-Faithful Rollout Framework for GRPO Training Across Codex, Claude Code, and Qwen Code Company : MarkTechPost AI Summary : NVIDIA researchers have introduced Polar, a rollout framework that trains language agents using reinforcement learning without modifying their agent harnesses. Polar places a model API proxy between t Link : [HIGH] Introducing Music v2, our groundbreaking new music model Company : The Verge AI Summary : Its new Music v2 model can generate songs that can switch from opera to heavy metal mid-track, while handling faster rap delivery and non-musical...",
+      "summary": "ny : Hugging Face Blog Link : [HIGH] NVIDIA Releases Polar, a Token-Faithful Rollout Framework for GRPO Training Across Codex, Claude Code, and Qwen Code Company : MarkTechPost AI Summary : NVIDIA researchers have introduced Polar, a rollout framework that trains language agents using reinforcement learning without modifying their agent harnesses. Polar places a model API proxy between t Link : [HIGH] Introducing Music v2, our groundbreaking new music model Company : The Verge AI Summary : Its new Music v2 model can generate songs that can switch from opera to heavy metal mid-track, while handling faster rap delivery and non-musical sound effects, according to ElevenLabs.",
+      "what_happened": "ny : Hugging Face Blog Link : [HIGH] NVIDIA Releases Polar, a Token-Faithful Rollout Framework for GRPO Training Across Codex, Claude Code, and Qwen Code Company : MarkTechPost AI Summary : NVIDIA researchers have introduced Polar, a rollout framework that trains language agents using reinforcement learning without modifying their agent harnesses.",
+      "why_matters": "Polar places a model API proxy between t Link : [HIGH] Introducing Music v2, our groundbreaking new music model Company : The Verge AI Summary : Its new Music v2 model can generate songs that can switch from opera to heavy metal mid-track, while handling faster rap delivery and non-musical sound effects, according to ElevenLabs.",
+      "what_to_watch": "",
+      "key_points": [
+        "ny : Hugging Face Blog Link : [HIGH] NVIDIA Releases Polar, a Token-Faithful Rollout Framework for GRPO Training Across Codex, Claude Code, and Qwen Code Company : MarkTechPost AI Summary : NVIDIA researchers have.",
+        "Polar places a model API proxy between t Link : [HIGH] Introducing Music v2, our groundbreaking new music model Company : The Verge AI Summary : Its new Music v2 model can generate songs that can switch from opera to.",
+        "The new model Link : [HIGH] Motorola says affiliate hijacking of Amazon app was \u2018unintended\u2019 Company : The Verge AI..."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": 1,
+  "carousel_total_parts": 2,
+  "slides": [
+    "ITBench-AA Just Changed Frontier Models Score",
+    "V2 Our Groundbreaking New Music Model",
+    "Bloomberg Are You A Robot",
+    "200 Applications Close Today",
+    "Bloomberg Are You A Robot",
+    "Bloomberg Are You A Robot",
+    "Bloomberg Are You A Robot",
+    "Ny Hugging Face Blog",
+    "SAVE THIS."
+  ]
+}
