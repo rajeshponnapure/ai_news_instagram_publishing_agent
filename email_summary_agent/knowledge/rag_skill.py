@@ -1,8 +1,8 @@
 """
 email_summary_agent/knowledge/rag_skill.py
-─────────────────────────────────────────────────────────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Instagram Editorial RAG Skill
-─────────────────────────────────────────────────────────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Purpose:
     Lightweight Retrieval-Augmented Generation layer that loads the
     instagram_editorial_rules.md knowledge base and returns the right
@@ -23,7 +23,7 @@ Usage:
     ctx = rag.get_context("philosophy")
     ctx = rag.get_context("all")            # full knowledge base
 
-    # For slide writing — build a complete content prompt:
+    # For slide writing â€” build a complete content prompt:
     prompt = rag.build_slide_prompt(article_data, slide_number, total_slides)
 
     # For caption writing:
@@ -32,7 +32,7 @@ Usage:
     # For validation against checklists:
     checklist = rag.get_checklist("slides")
     checklist = rag.get_checklist("caption")
-─────────────────────────────────────────────────────────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 """
 
 from __future__ import annotations
@@ -45,19 +45,19 @@ from typing import Optional
 
 logger = logging.getLogger(__name__)
 
-# ── Path to the knowledge base file ─────────────────────────────────────────
+# â”€â”€ Path to the knowledge base file â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 _KB_PATH = Path(__file__).parent / "instagram_editorial_rules.md"
 
-# ── Section tag → human label ────────────────────────────────────────────────
+# â”€â”€ Section tag â†’ human label â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 _SECTION_TAGS: dict[str, str] = {
-    "philosophy":      "PHILOSOPHY",
+    "philosophy": "PHILOSOPHY",
     "slide_structure": "SLIDE_STRUCTURE",
-    "caption":         "CAPTION",
-    "hashtags":        "HASHTAGS",
+    "caption": "CAPTION",
+    "hashtags": "HASHTAGS",
     "writing_quality": "WRITING_QUALITY",
-    "images":          "IMAGES",
-    "anti_patterns":   "ANTI_PATTERNS",
-    "checklists":      "CHECKLISTS",
+    "images": "IMAGES",
+    "anti_patterns": "ANTI_PATTERNS",
+    "checklists": "CHECKLISTS",
 }
 
 
@@ -78,7 +78,7 @@ class EditorialRAG:
             self._kb_path,
         )
 
-    # ── Loading ──────────────────────────────────────────────────────────────
+    # â”€â”€ Loading â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     def _load_kb(self) -> str:
         if not self._kb_path.exists():
@@ -91,7 +91,7 @@ class EditorialRAG:
 
     def _parse_sections(self, raw: str) -> dict[str, str]:
         """
-        Extract named sections delimited by # [SECTION_NAME] … # [/SECTION_NAME].
+        Extract named sections delimited by # [SECTION_NAME] â€¦ # [/SECTION_NAME].
         Returns a dict keyed by lowercase section name.
         """
         sections: dict[str, str] = {}
@@ -106,11 +106,11 @@ class EditorialRAG:
 
         if not sections:
             logger.warning(
-                "No sections found in knowledge base — check [TAG] / [/TAG] formatting."
+                "No sections found in knowledge base â€” check [TAG] / [/TAG] formatting."
             )
         return sections
 
-    # ── Public API ───────────────────────────────────────────────────────────
+    # â”€â”€ Public API â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     def get_context(self, section: str) -> str:
         """
@@ -145,7 +145,7 @@ class EditorialRAG:
         """Return a list of available section names."""
         return list(_SECTION_TAGS.keys())
 
-    # ── Prompt Builders ──────────────────────────────────────────────────────
+    # â”€â”€ Prompt Builders â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     def build_slide_prompt(
         self,
@@ -182,31 +182,31 @@ class EditorialRAG:
 
         if is_first:
             slide_role = (
-                "This is SLIDE 1 — the COVER SLIDE. "
-                "Write a complete, punchy headline (6–12 words, no truncation, no ellipsis). "
+                "This is SLIDE 1 â€” the COVER SLIDE. "
+                "Write a complete, punchy headline (6â€“12 words, no truncation, no ellipsis). "
                 "Also write a one-sentence subheadline that adds essential context. "
                 "Choose the correct eyebrow label category from the SLIDE_STRUCTURE rules."
             )
         elif is_last:
             slide_role = (
-                "This is the LAST SLIDE — the CTA / BRAND SLIDE. "
+                "This is the LAST SLIDE â€” the CTA / BRAND SLIDE. "
                 "Write one primary call-to-action from the CTA bank in the SLIDE_STRUCTURE rules. "
                 "Do NOT repeat a CTA used in a previous post if you know it. "
                 "Keep it short, punchy, and action-oriented."
             )
         elif is_penultimate:
             slide_role = (
-                "This is the PENULTIMATE SLIDE — 'What to watch'. "
-                "Write 3–4 bullet points of specific things the reader should monitor, "
+                "This is the PENULTIMATE SLIDE â€” 'What to watch'. "
+                "Write 3â€“4 bullet points of specific things the reader should monitor, "
                 "follow, or act on based on this article."
             )
         else:
             depth = "simple and accessible" if slide_number <= 3 else "progressively more detailed"
             slide_role = (
-                f"This is SLIDE {slide_number} of {total_slides} — a DEPTH SLIDE. "
+                f"This is SLIDE {slide_number} of {total_slides} â€” a DEPTH SLIDE. "
                 f"Section label: '{slide_label}'. "
-                f"Tone for this slide should be {depth} (follow the simple→technical progression rule). "
-                "Write 4–8 sentences in 1–2 paragraphs. Each slide is a COMPLETE thought — "
+                f"Tone for this slide should be {depth} (follow the simpleâ†’technical progression rule). "
+                "Write 4â€“8 sentences in 1â€“2 paragraphs. Each slide is a COMPLETE thought â€” "
                 "never end with an ellipsis or a sentence that continues on the next slide. "
                 "Do NOT repeat information from the previous slide."
             )
@@ -272,7 +272,7 @@ For all other slides: Return the body text directly, paragraphs separated by a b
         writing_rules = self.get_context("writing_quality")
         anti_patterns = self.get_context("anti_patterns")
 
-        source_line = f"{article_source} — {article_url}" if article_source else article_url
+        source_line = f"{article_source} â€” {article_url}" if article_source else article_url
 
         prompt = f"""You are writing an Instagram caption for an AI news carousel post.
 
@@ -287,7 +287,7 @@ ARTICLE SOURCE:
 
 YOUR TASK:
 Write a complete Instagram caption following EXACTLY the structure and rules below.
-The caption should feel like it was written by a professional tech content creator —
+The caption should feel like it was written by a professional tech content creator â€”
 confident, conversational, and genuinely interesting. Not robotic. Not generic.
 
 EDITORIAL PHILOSOPHY:
@@ -339,7 +339,7 @@ No preamble. No "Here is the caption:". No markdown code blocks.
             if target_slide_count > 0
             else (
                 "Choose the number of slides (between 4 and 15) based on article complexity. "
-                "Use as many slides as needed to cover the story fully — never truncate content."
+                "Use as many slides as needed to cover the story fully â€” never truncate content."
             )
         )
 
@@ -356,8 +356,8 @@ Analyse the full article above and produce a structured SLIDE PLAN for an Instag
 {slide_count_instruction}
 
 The slide plan must:
-1. Follow the simple→technical depth progression (slide 2 plain English, later slides more technical)
-2. Cover the ENTIRE story — no important detail should be left out
+1. Follow the simpleâ†’technical depth progression (slide 2 plain English, later slides more technical)
+2. Cover the ENTIRE story â€” no important detail should be left out
 3. Never split content mid-thought between slides
 4. Include a "What to watch" slide as the second-to-last slide
 5. Include a CTA slide as the final slide
@@ -368,7 +368,7 @@ EDITORIAL PHILOSOPHY:
 SLIDE STRUCTURE RULES:
 {slide_rules}
 
-OUTPUT FORMAT — return a JSON object ONLY, no preamble, no markdown code blocks:
+OUTPUT FORMAT â€” return a JSON object ONLY, no preamble, no markdown code blocks:
 {{
   "total_slides": <int>,
   "eyebrow_label": "<label>",
@@ -379,7 +379,7 @@ OUTPUT FORMAT — return a JSON object ONLY, no preamble, no markdown code block
       "slide_number": 1,
       "role": "cover",
       "section_label": null,
-      "key_content": "<what this slide covers in 1–2 sentences>"
+      "key_content": "<what this slide covers in 1â€“2 sentences>"
     }},
     {{
       "slide_number": 2,
@@ -391,7 +391,7 @@ OUTPUT FORMAT — return a JSON object ONLY, no preamble, no markdown code block
     {{
       "slide_number": <N-1>,
       "role": "what_to_watch",
-      "section_label": "What to watch 👀",
+      "section_label": "What to watch ðŸ‘€",
       "key_content": "<3-4 things to watch>"
     }},
     {{
@@ -409,7 +409,7 @@ OUTPUT FORMAT — return a JSON object ONLY, no preamble, no markdown code block
 """
         return prompt
 
-    # ── Validation Helpers ───────────────────────────────────────────────────
+    # â”€â”€ Validation Helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     def get_checklist(self, checklist_type: str) -> list[str]:
         """
@@ -472,10 +472,10 @@ OUTPUT FORMAT — return a JSON object ONLY, no preamble, no markdown code block
         """Return all hook line formulas from the CAPTION section."""
         raw = self.get_context("caption")
         formulas: dict[str, str] = {}
-        # Match "Type X — Label:" blocks
-        pattern = re.compile(r"Type ([A-Z]) — ([^\n]+):\n\s+(.+?)(?=\n\s+Type [A-Z]|HOOK RULES)", re.DOTALL)
+        # Match "Type X â€” Label:" blocks
+        pattern = re.compile(r"Type ([A-Z]) â€” ([^\n]+):\n\s+(.+?)(?=\n\s+Type [A-Z]|HOOK RULES)", re.DOTALL)
         for match in pattern.finditer(raw):
-            key = f"Type {match.group(1)} — {match.group(2).strip()}"
+            key = f"Type {match.group(1)} â€” {match.group(2).strip()}"
             template = match.group(3).strip().split("\n")[0].strip()
             formulas[key] = template
         return formulas
@@ -494,7 +494,7 @@ OUTPUT FORMAT — return a JSON object ONLY, no preamble, no markdown code block
             analogies[m.group(1).strip()] = m.group(2).strip()
         return analogies
 
-    # ── Diagnostics ──────────────────────────────────────────────────────────
+    # â”€â”€ Diagnostics â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     def diagnose_caption(self, caption_text: str) -> dict[str, list[str]]:
         """
@@ -521,10 +521,10 @@ OUTPUT FORMAT — return a JSON object ONLY, no preamble, no markdown code block
         # Check CamelCase hashtags
         for tag in hashtags:
             if tag != tag[0] + tag[1:] and tag.lower() == tag:
-                warnings.append(f"Hashtag {tag} is all lowercase — use CamelCase.")
+                warnings.append(f"Hashtag {tag} is all lowercase â€” use CamelCase.")
 
         # Check hook length (first non-empty line)
-        lines = [l.strip() for l in caption_text.split("\n") if l.strip()]
+        lines = [ln.strip() for ln in caption_text.split("\n") if ln.strip()]
         if lines:
             hook = lines[0]
             if len(hook) > 125:
@@ -534,7 +534,7 @@ OUTPUT FORMAT — return a JSON object ONLY, no preamble, no markdown code block
             if hook.startswith("#"):
                 errors.append("Hook line must not start with a hashtag.")
             if hook.lower().startswith("i ") or hook.lower().startswith("we "):
-                warnings.append("Hook line starts with 'I' or 'We' — try a different opening.")
+                warnings.append("Hook line starts with 'I' or 'We' â€” try a different opening.")
 
         # Check for forbidden phrases in slides
         for phrase in [
@@ -566,7 +566,7 @@ OUTPUT FORMAT — return a JSON object ONLY, no preamble, no markdown code block
 
         # Check for truncation
         if slide_text.rstrip().endswith("..."):
-            errors.append(f"Slide {slide_number} ends with ellipsis — content appears truncated.")
+            errors.append(f"Slide {slide_number} ends with ellipsis â€” content appears truncated.")
 
         # Check for forbidden phrases
         for phrase in self.get_forbidden_phrases():
@@ -577,25 +577,25 @@ OUTPUT FORMAT — return a JSON object ONLY, no preamble, no markdown code block
         word_count = len(slide_text.split())
         if word_count > 120:
             warnings.append(
-                f"Slide {slide_number} has ~{word_count} words — may be too long for a phone screen."
+                f"Slide {slide_number} has ~{word_count} words â€” may be too long for a phone screen."
             )
         if word_count < 20 and slide_number not in (1,):
             warnings.append(
-                f"Slide {slide_number} has only ~{word_count} words — may feel too sparse."
+                f"Slide {slide_number} has only ~{word_count} words â€” may feel too sparse."
             )
 
         # Check for continuation markers
-        for bad_pattern in ["continued...", "cont'd", "→ next slide", "(continued)"]:
+        for bad_pattern in ["continued...", "cont'd", "â†’ next slide", "(continued)"]:
             if bad_pattern.lower() in slide_text.lower():
                 errors.append(
-                    f"Slide {slide_number} contains continuation marker '{bad_pattern}' — "
+                    f"Slide {slide_number} contains continuation marker '{bad_pattern}' â€” "
                     "each slide must be a complete thought."
                 )
 
         return {"errors": errors, "warnings": warnings}
 
 
-# ── Module-level convenience functions ───────────────────────────────────────
+# â”€â”€ Module-level convenience functions â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 @lru_cache(maxsize=1)
 def get_rag() -> EditorialRAG:

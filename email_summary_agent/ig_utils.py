@@ -77,7 +77,9 @@ def _clean_public_text(text: str) -> str:
         lowered = sentence.lower()
         if any(term in lowered for term in VIDEO_BLOCKED_TERMS):
             continue
-        if sentence.startswith(("Article ", "Article 1 Title:", "Article title:")):
+        if re.match(r"\s*Article\s+\d+\s+(?:URL|title|summary source)\s*:", sentence, re.I):
+            continue
+        if re.match(r"\s*Article\s+title\s*:", sentence, re.I):
             continue
         if any(phrase in lowered for phrase in PUBLIC_BLOCKED_PHRASES):
             continue

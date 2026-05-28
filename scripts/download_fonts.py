@@ -4,13 +4,13 @@ from pathlib import Path
 def download_fonts():
     fonts_dir = Path(__file__).resolve().parents[1] / "email_summary_agent" / "fonts"
     fonts_dir.mkdir(parents=True, exist_ok=True)
-    
+
     font_urls = {
         "Roboto-Regular.ttf": "https://raw.githubusercontent.com/googlefonts/roboto/main/src/hinted/Roboto-Regular.ttf",
         "Roboto-Bold.ttf": "https://raw.githubusercontent.com/googlefonts/roboto/main/src/hinted/Roboto-Bold.ttf",
         "RobotoMono-Regular.ttf": "https://raw.githubusercontent.com/googlefonts/robotomono/main/fonts/ttf/RobotoMono-Regular.ttf"
     }
-    
+
     for filename, url in font_urls.items():
         dest = fonts_dir / filename
         if dest.exists():

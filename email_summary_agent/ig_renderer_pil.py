@@ -13,15 +13,12 @@ from typing import Any
 
 from .ig_constants import (
     ACCENT_GREEN,
-    ASH_GRAY,
     CANVAS_H,
     CANVAS_W,
     FINAL_LOGO_CANDIDATES,
     FONT_MIN_READABLE,
     FONTS_DIR,
     GRAITECH_LOGO_PATH,
-    GT_CEMENT_2,
-    GT_IRON,
     NEON_RGB,
     PAGE_BLACK,
     REFERENCE_BRANDS,
@@ -30,7 +27,6 @@ from .ig_constants import (
     WATERMARK_CANDIDATES,
     IMAGE_MIN_HD_W,
     IMAGE_MIN_HD_H,
-    _BG_THEMES,
 )
 from .ig_utils import _clean_headline, _clean_public_text
 from .ig_image import _resolve_image_source
@@ -596,7 +592,7 @@ def _gt_draw_chrome(image, draw, ImageFont, slide_number: int, total_slides: int
 
 def _gt_draw_logo(image, right: int, top: int, size: int) -> None:
     """Paste the graitech logo at a fixed position with a neon glow."""
-    from PIL import Image as _Img, ImageOps
+    from PIL import Image as _Img
     _GRAITECH_SUBFOLDER = Path(__file__).resolve().parent / "assets" / "graitech" / "assets"
     _LOGO_CANDIDATES = [
         GRAITECH_LOGO_PATH,
@@ -653,13 +649,13 @@ def _gt_render_list_slide_bullets_only(
 ) -> None:
     """Render bullet-point list text into a bounding box."""
     bullets = [b.strip() for b in body_text.split("\n") if b.strip()]
-    bullets = layout_safe_points(bullets, limit=5)
+    bullets = layout_safe_points(bullets, limit=4)
     if not bullets:
         return
     content_w = x2 - x1 - 24
     avail_h = y2 - y1
-    chosen_size = 25
-    for fsz in (31, 29, 27, 25):
+    chosen_size = 27
+    for fsz in (34, 32, 30, 28, 27):
         font_bp = _font(image_font, fsz, mono=True)
         bold_bp = _font(image_font, fsz, bold=True, mono=True)
         total = 0

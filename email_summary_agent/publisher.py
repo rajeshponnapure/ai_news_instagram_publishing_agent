@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import json
-import re
 import time
 import urllib.parse
 import urllib.request
@@ -10,6 +9,7 @@ from datetime import datetime
 from pathlib import Path
 
 from .config import Settings
+from .ig_constants import MAX_ARTICLES_PER_POST
 
 
 def write_publish_manifest(carousel_dirs: list[Path], public_media_base_url: str = "") -> Path | None:
@@ -20,7 +20,7 @@ def write_publish_manifest(carousel_dirs: list[Path], public_media_base_url: str
     existing_posts = _existing_manifest_posts(manifest_path)
     posts = []
     for index, carousel_dir in enumerate(carousel_dirs):
-        slides = sorted(carousel_dir.glob("slide_*.png"))[:9]
+        slides = sorted(carousel_dir.glob("slide_*.png"))[:MAX_ARTICLES_PER_POST]
         caption_path = carousel_dir / "caption.txt"
         caption = caption_path.read_text(encoding="utf-8") if caption_path.exists() else ""
         existing = existing_posts.get(str(carousel_dir), {})
@@ -67,7 +67,7 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
         if post.get("status") not in {"ready_for_publish", "ready_for_upload", "container_created", "publish_failed_retryable"}:
             print(f"  [{post_idx}] SKIP (status={status!r} not publishable): {folder}")
             continue
-        urls = [url for url in post.get("public_slide_urls", []) if url][:9]
+        urls = [url for url in post.get("public_slide_urls", []) if url][:MAX_ARTICLES_PER_POST]
         if len(urls) < 1:
             folder = post.get("folder", "unknown")
             print(
@@ -83,7 +83,7 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
             continue
         try:
             if published > 0:
-                print(f"Waiting 30 s before next carousel to respect Instagram rate limits …")
+                print("Waiting 30 s before next carousel to respect Instagram rate limits …")
                 time.sleep(30)
 
             print(f"  [{post_idx}] Publishing {folder} ({len(urls)} slides)…")
@@ -97,7 +97,7 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
             creation_id = creation_id or (
                 _create_single_image_container(settings, urls[0], post.get("caption", ""))
                 if len(urls) == 1 else
-                _create_carousel_container(settings, urls[:9], post.get("caption", ""))
+                _create_carousel_container(settings, urls[:MAX_ARTICLES_PER_POST], post.get("caption", ""))
             )
             post["creation_id"] = creation_id
             post["status"] = "container_created"

@@ -71,6 +71,15 @@ class Settings:
     ig_user_id: str
     ig_access_token: str
     ig_api_version: str
+    enable_memory: bool
+    enable_dedup: bool
+    enable_verification: bool
+    verification_confidence_threshold: float
+    max_verification_rounds: int
+    post_size: int
+    similarity_dup_threshold: float
+    similarity_cluster_threshold: float
+
     @classmethod
     def from_env(cls) -> "Settings":
         load_env_file()
@@ -97,13 +106,21 @@ class Settings:
             create_instagram_posts=_bool_env("CREATE_INSTAGRAM_POSTS", True),
             process_all_matching=_bool_env("PROCESS_ALL_MATCHING", False),
             enrich_articles=_bool_env("ENRICH_ARTICLES", True),
-            max_article_links_per_email=_int_env("MAX_ARTICLE_LINKS_PER_EMAIL", 5),
+            max_article_links_per_email=_int_env("MAX_ARTICLE_LINKS_PER_EMAIL", 0),
             article_assets_dir=_path_env("ARTICLE_ASSETS_DIR", "data/article_assets"),
             public_media_base_url=os.environ.get("PUBLIC_MEDIA_BASE_URL", ""),
             auto_publish_instagram=_bool_env("AUTO_PUBLISH_INSTAGRAM", False),
             ig_user_id=os.environ.get("IG_USER_ID", ""),
             ig_access_token=os.environ.get("IG_ACCESS_TOKEN", ""),
             ig_api_version=os.environ.get("IG_API_VERSION", "v24.0"),
+            enable_memory=_bool_env("ENABLE_MEMORY", True),
+            enable_dedup=_bool_env("ENABLE_DEDUP", True),
+            enable_verification=_bool_env("ENABLE_VERIFICATION", True),
+            verification_confidence_threshold=float(os.environ.get("VERIFICATION_CONFIDENCE_THRESHOLD", "0.85")),
+            max_verification_rounds=_int_env("MAX_VERIFICATION_ROUNDS", 2),
+            post_size=_int_env("POST_SIZE", 8),
+            similarity_dup_threshold=float(os.environ.get("SIMILARITY_DUP_THRESHOLD", "0.92")),
+            similarity_cluster_threshold=float(os.environ.get("SIMILARITY_CLUSTER_THRESHOLD", "0.82")),
         )
 
     def validate_email_access(self) -> None:

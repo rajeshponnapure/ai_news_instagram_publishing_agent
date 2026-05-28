@@ -171,6 +171,22 @@ PUBLIC_BLOCKED_PHRASES = (
     "you are receiving this",
     "sent to you because",
     "no longer wish to receive",
+    "are you a robot",
+    "prove you are human",
+    "detected unusual activity",
+    "unusual activity from your computer network",
+    "to continue, please click the box",
+    "please click the box below",
+    "global markets news at your fingertips",
+    "bloomberg.com subscription",
+    "for inquiries related to this message",
+    "contact our support team",
+    "support team and provide",
+    "please contact our support",
+    "enable javascript",
+    "access to this page has been denied",
+    "checking your browser",
+    "verify you are a human",
 )
 
 STOP_IMAGE_TOKENS = frozenset({

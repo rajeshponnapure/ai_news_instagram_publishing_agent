@@ -197,7 +197,7 @@ FB_PAGE_ACCESS_TOKEN=your_page_access_token
 | `LOOKBACK_HOURS` | 24 | How far back to search for new emails |
 | `MAX_EMAILS_PER_RUN` | 20 | Maximum emails to process per execution |
 | `POLL_INTERVAL_MINUTES` | 1 | Interval between watch mode checks |
-| `MAX_ARTICLE_LINKS_PER_EMAIL` | 5 | Limit article extraction per email |
+| `MAX_ARTICLE_LINKS_PER_EMAIL` | 0 | Article extraction limit per email; `0` means no cap |
 | `ENRICH_ARTICLES` | true | Fetch and parse full article content |
 | `AUTO_PUBLISH_INSTAGRAM` | false | Automatically post to Instagram |
 | `AUTO_PUBLISH_FACEBOOK` | false | Also publish generated slide images to a Facebook Page |

@@ -8,11 +8,14 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from .config import Settings
+from .article_assembler import assemble as assemble_articles
 from .article_enricher import ArticleData, enrich_email_with_articles
 from .db import AgentStore
+from .dedup_engine import deduplicate
 from .digest import parse_news_items
 from .email_client import ImapEmailClient
 from .instagram import write_instagram_carousels
+from .memory_store import MemoryStore
 from .models import EmailItem, EmailSummary
 from .publisher import publish_ready_carousels, write_publish_manifest
 from .report import write_report
@@ -217,6 +220,13 @@ def process_items(
         store = AgentStore(settings.db_path)
         store.initialize()
 
+    memory: MemoryStore | None = None
+    if settings.enable_memory:
+        try:
+            memory = MemoryStore(settings.db_path)
+        except Exception as exc:
+            _safe_print(f"  [memory] init failed: {exc}")
+
     try:
         # Always use configured summary provider (no local-only toggle)
         provider = SummaryProvider(
@@ -272,6 +282,46 @@ def process_items(
             articles = _merge_article_fallbacks(articles, seed_items)
             _safe_print(f"  Total articles after fallback merge: {len(articles)}")
 
+            # Step 2 — multi-page article reconstruction
+            if settings.enrich_articles and articles:
+                articles = assemble_articles(list(articles))
+                _safe_print(f"  After page assembly: {len(articles)} article(s)")
+
+            # Step 3 — deduplicate (in-batch + cross-cycle memory)
+            if settings.enable_dedup and articles:
+                from .post_planner import plan_posts
+                article_dicts = []
+                for a in articles:
+                    d = {"url": a.url, "title": a.title, "description": a.description,
+                         "text": a.text, "excerpt": a.excerpt,
+                         "image_url": a.image_url, "image_path": a.image_path}
+                    if hasattr(a, "extra_image_urls"):
+                        d["extra_image_urls"] = list(a.extra_image_urls)
+                    if hasattr(a, "extra_image_paths"):
+                        d["extra_image_paths"] = list(a.extra_image_paths)
+                    article_dicts.append(d)
+                dedup_result = deduplicate(article_dicts, memory, consult_memory=True, record=True)
+                unique_dicts = dedup_result.unique
+                _safe_print(f"  After dedup: {len(unique_dicts)} unique (rejected {len(dedup_result.rejected)}, demoted {len(dedup_result.demoted)})")
+                posts, demoted = plan_posts(unique_dicts, memory, post_size=settings.post_size)
+                _safe_print(f"  Planned {len(posts)} post(s) from {len(unique_dicts)} unique articles")
+                # Reconstruct ArticleData from the selected unique dicts (first post only for now)
+                selected = posts[0] if posts else []
+                selected_articles = [
+                    ArticleData(
+                        url=a.get("url", ""),
+                        title=a.get("title", ""),
+                        description=a.get("description", ""),
+                        text=a.get("text", ""),
+                        excerpt=a.get("excerpt", ""),
+                        image_url=a.get("image_url", ""),
+                        image_path=a.get("image_path", ""),
+                    )
+                    for a in selected
+                ]
+                articles = selected_articles if selected_articles else articles[:settings.post_size]
+                _safe_print(f"  Selected {len(articles)} articles for summarization")
+
             # Summarize with full-extract (no truncation)
             summary = provider.summarize(enriched_email, articles=articles, full_extract=True)
             summaries.append((email, summary))
@@ -299,6 +349,10 @@ def process_items(
                     summary_items,
                     settings.instagram_dir,
                     clear_existing=clear_existing_posts,
+                    db_path=settings.db_path,
+                    memory=memory,
+                    enable_verification=settings.enable_verification,
+                    max_verify_rounds=settings.max_verification_rounds,
                 )
                 instagram_count = len(carousel_dirs)
                 _safe_print(
@@ -306,7 +360,7 @@ def process_items(
                     f"{len(summaries)} email(s)."
                 )
                 manifest_path = write_publish_manifest(
-                    carousel_dirs, settings.public_media_base_url
+                    carousel_dirs, settings.public_media_base_url,
                 )
                 if manifest_path:
                     # publish_ready_carousels() is a no-op when
@@ -329,12 +383,15 @@ def process_items(
     finally:
         if owns_store:
             store.close()
+        if memory is not None:
+            try:
+                memory.prune()
+                memory.close()
+            except Exception:
+                pass
 
 
 def _story_limit(settings: Settings, email: EmailItem) -> int:
-    subject = email.subject.lower()
-    if "digest" in subject or "updates" in subject:
-        return max(settings.max_article_links_per_email, 20)
     return settings.max_article_links_per_email
 
 

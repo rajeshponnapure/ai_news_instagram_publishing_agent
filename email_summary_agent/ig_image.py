@@ -48,11 +48,45 @@ def _select_article_image(article: dict[str, Any], topic: str) -> str:
     return _select_unique_article_image(article, topic, set(), set())
 
 
+def _is_perceptual_dupe(path: str, used_image_hashes: list | None) -> bool:
+    """True when ``path`` is a perceptual duplicate of an already-used image."""
+    if not used_image_hashes or not path:
+        return False
+    try:
+        from . import perceptual_image as pi
+
+        ahash, dhash = pi.hashes_for(path)
+        return pi.is_duplicate(ahash, dhash, used_image_hashes)
+    except Exception:
+        return False
+
+
+def _register_hash(path: str, used_image_hashes: list | None) -> None:
+    if used_image_hashes is None or not path:
+        return
+    try:
+        from . import perceptual_image as pi
+
+        used_image_hashes.append(pi.hashes_for(path))
+    except Exception:
+        pass
+
+
+def _accept(path: str, used_image_paths: set[str], used_image_hashes: list | None) -> bool:
+    """Accept a resolved local path unless it perceptually duplicates a used one."""
+    if _is_perceptual_dupe(path, used_image_hashes):
+        return False
+    used_image_paths.add(path)
+    _register_hash(path, used_image_hashes)
+    return True
+
+
 def _select_unique_article_image(
     article: dict[str, Any],
     topic: str,
     used_image_urls: set[str],
     used_image_paths: set[str],
+    used_image_hashes: list | None = None,
 ) -> str:
     """Deduplicated image selection pipeline.
 
@@ -60,6 +94,10 @@ def _select_unique_article_image(
     1. Article's own featured/hero image (og:image fetch — highest relevance)
     2. Shared image library — best semantic match not yet used
     3. Wikimedia Commons web search — unique fresh download
+
+    When ``used_image_hashes`` is supplied, every resolved candidate is also
+    checked for *perceptual* duplication (aHash/dHash) so the same picture is
+    never reused even under a different URL/path.
     """
     title = str(article.get("title") or "")
     query_text = _tighten(_image_query_text(article, topic), 1200)
@@ -70,9 +108,8 @@ def _select_unique_article_image(
         scraped_url = _fetch_og_image_from_url(article_url)
         if scraped_url and scraped_url not in used_image_urls:
             local = _download_to_library(scraped_url, query_text or title or topic)
-            if local and local not in used_image_paths:
+            if local and local not in used_image_paths and _accept(local, used_image_paths, used_image_hashes):
                 used_image_urls.add(scraped_url)
-                used_image_paths.add(local)
                 article["image_url"] = scraped_url
                 article["image_path"] = local
                 return local
@@ -86,15 +123,13 @@ def _select_unique_article_image(
             if value in used_image_urls:
                 continue
             local = _download_to_library(value, query_text or title or topic)
-            if local and local not in used_image_paths:
+            if local and local not in used_image_paths and _accept(local, used_image_paths, used_image_hashes):
                 used_image_urls.add(value)
-                used_image_paths.add(local)
                 return local
         else:
             path = Path(value)
-            if path.exists() and value not in used_image_paths:
-                if _validate_image_hd(value):
-                    used_image_paths.add(value)
+            if path.exists() and value not in used_image_paths and _validate_image_hd(value):
+                if _accept(value, used_image_paths, used_image_hashes):
                     return value
 
     # ── 1b. Non-HD local fallback ─────────────────────────────────────────────
@@ -104,19 +139,17 @@ def _select_unique_article_image(
             continue
         path = Path(value)
         if path.exists() and value not in used_image_paths:
-            used_image_paths.add(value)
-            return value
+            if _accept(value, used_image_paths, used_image_hashes):
+                return value
 
     # ── 2. Shared image library — deduplicated semantic match ─────────────────
     library_match = _find_library_image_unique(query_text or title or topic, used_image_paths)
-    if library_match:
-        used_image_paths.add(library_match)
+    if library_match and _accept(library_match, used_image_paths, used_image_hashes):
         return library_match
 
     # ── 3. Web image search — fresh download ──────────────────────────────────
     web_image = _find_reference_image_for_article_unique(article, topic, used_image_paths)
-    if web_image:
-        used_image_paths.add(web_image)
+    if web_image and _accept(web_image, used_image_paths, used_image_hashes):
         return web_image
 
     return ""

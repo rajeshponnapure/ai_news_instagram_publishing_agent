@@ -6,7 +6,14 @@ from typing import TYPE_CHECKING, Any
 
 from .ig_constants import REFERENCE_BRANDS
 from .ig_utils import _clean_public_text, _tighten, _trim_no_dots, _fallback_summary_text
-from .ig_copy import clean_creator_text, is_public_safe_text, layout_safe_points
+from .ig_copy import (
+    clean_creator_text,
+    is_public_safe_text,
+    layout_safe_points,
+    looks_like_heading,
+    strip_leading_filler,
+)
+from .text_similarity import jaccard, normalize_text, simhash, simhash_similar
 
 if TYPE_CHECKING:
     from .models import EmailSummary
@@ -143,20 +150,30 @@ def _extract_instagram_key_points(
     max_points: int = 10,
     used_fingerprints: set[str] | None = None,
 ) -> list[str]:
-    """Extract punchy, attention-grabbing key points for Instagram slides.
+    """Build punchy, human-style key points for Instagram slides.
 
-    Phase 1: Collect candidates from THIS article's own fields (no cross-article dedup).
-    Phase 2: Apply cross-article dedup to find novel points.
-    Phase 3: Relax dedup when too aggressive (fewer than 3 novel points).
-    Phase 4: Score and sort.
-    Phase 5: Guarantee minimum 4 points by synthesising from article title/desc.
-    Phase 6: Register selected fingerprints for cross-article dedup.
+    The goal is a line a human content creator would write: a single fact-led
+    statement, no heading/meta label, no essay connectives, no copy-pasted
+    article prose. Pipeline:
+
+    Phase 1: Collect raw candidates from THIS article's own fields.
+    Phase 2: Reshape each into a human-style line and reject headings/low quality.
+    Phase 3: Drop near-duplicates of points already used on earlier slides
+             (semantic, via Jaccard/SimHash), relaxing only to avoid starving a slide.
+    Phase 4: Score and sort by concreteness.
+    Phase 5: Guarantee >=4 points by reshaping the title/description.
+    Phase 6: Register the selected points for cross-slide dedup.
     """
     STOP_PREFIXES = (
         "this article", "in this post", "the article", "we discuss",
         "this piece", "this blog", "you will learn", "click here",
         "read more", "find out", "learn how", "sign up",
         "grdevelopers", "graitech",
+    )
+    # Weak openers that produce vague, AI-sounding points instead of facts.
+    WEAK_OPENERS = (
+        "this ", "it ", "these ", "those ", "there ", "that ", "here ",
+        "they ", "we ", "such ",
     )
     NOISE_PATTERNS = [
         r"BREAKING AI UPDATE\s*[-–—]\s*",
@@ -178,14 +195,13 @@ def _extract_instagram_key_points(
         r"\s*\|\s*[A-Z][A-Za-z0-9 &]{1,30}$",
     ]
     POWER_VERBS = (
-        "launches", "releases", "achieves", "beats", "surpasses", "reveals",
-        "breaks", "builds", "cuts", "doubles", "enables", "expands",
-        "introduces", "joins", "reaches", "replaces", "sets", "ships",
-        "shows", "trains", "upgrades",
+        "launches", "launched", "releases", "released", "achieves", "beats",
+        "surpasses", "reveals", "breaks", "builds", "cuts", "doubles",
+        "enables", "expands", "introduces", "introduced", "joins", "reaches",
+        "replaces", "sets", "ships", "shipped", "shows", "trains", "upgrades",
+        "announces", "announced", "unveils", "raises", "raised", "acquires",
+        "partners", "hits", "tops", "adds", "brings", "opens",
     )
-
-    def _fingerprint(text: str) -> str:
-        return re.sub(r"\s+", " ", text).lower()[:60]
 
     def _strip_noise(text: str) -> str:
         text = clean_creator_text(text)
@@ -193,136 +209,153 @@ def _extract_instagram_key_points(
             text = re.sub(pattern, "", text, flags=re.I)
         return re.sub(r"\s+", " ", text).strip()
 
-    def _is_valid_bullet(text: str) -> bool:
+    def _humanize(text: str) -> str:
+        """Reshape a raw sentence into a single fact-led creator line."""
+        t = strip_leading_filler(_strip_noise(text))
+        # Keep only the first complete sentence — points are one idea each.
+        parts = re.split(r"(?<=[.!?])\s+", t)
+        if parts and parts[0].strip():
+            t = parts[0].strip()
+        # Drop trailing attribution clauses (", the company said", "— OpenAI says").
+        t = re.sub(
+            r"[,;:\-–—]\s*(?:the\s+\w+\s+)?(?:said|says|added|noted|wrote|"
+            r"according to|reported|explained)\b.*$",
+            "",
+            t,
+            flags=re.I,
+        ).strip()
+        words = t.split()
+        if len(words) > 16:
+            t = " ".join(words[:16])
+        t = t.strip(" -–—,;:·•")
+        if not t:
+            return ""
+        t = t[0].upper() + t[1:]
+        t = re.sub(r"[\s.,;:\-–—]+$", "", t)
+        if t and t[-1] not in "!?":
+            t += "."
+        return t
+
+    def _is_quality(text: str) -> bool:
         if not text or len(text) < 15:
             return False
         if not is_public_safe_text(text):
             return False
-        if not (text[0].isupper() or text[0].isdigit()):
+        if looks_like_heading(text):
             return False
-        if any(text.lower().startswith(pfx) for pfx in STOP_PREFIXES):
+        low = text.lower()
+        if any(low.startswith(pfx) for pfx in STOP_PREFIXES):
+            return False
+        if any(low.startswith(w) for w in WEAK_OPENERS):
+            return False
+        if not (text[0].isupper() or text[0].isdigit()):
             return False
         return True
 
-    # ---- Phase 1: Collect candidates from THIS article ----
-    article_candidates = []
-    seen_in_fields: set[str] = set()
+    def _semantic_dupe(text: str, used_texts) -> bool:
+        if not used_texts:
+            return False
+        sh = simhash(text)
+        for prior in used_texts:
+            if jaccard(text, prior) >= 0.82:
+                return True
+            if simhash_similar(sh, simhash(prior), max_hamming=3):
+                return True
+        return False
+
+    # ---- Phase 1+2: Collect, reshape, and quality-gate candidates ----
+    candidates: list[str] = []
+    seen_local_norm: set[str] = set()
+
+    def _consider(raw: str) -> None:
+        point = _humanize(raw)
+        if not _is_quality(point):
+            return
+        norm = normalize_text(point)
+        if not norm or norm in seen_local_norm:
+            return
+        if _semantic_dupe(point, [_recover(n) for n in seen_local_norm]):
+            return
+        seen_local_norm.add(norm)
+        _norm_to_text[norm] = point
+        candidates.append(point)
+
+    _norm_to_text: dict[str, str] = {}
+
+    def _recover(norm: str) -> str:
+        return _norm_to_text.get(norm, norm)
 
     for p in article.get("key_points", []):
-        cleaned = _strip_noise(_clean_public_text(str(p))).strip()
-        fp = _fingerprint(cleaned)
-        if _is_valid_bullet(cleaned) and fp not in seen_in_fields:
-            article_candidates.append(cleaned)
-            seen_in_fields.add(fp)
+        _consider(_clean_public_text(str(p)))
 
     for field in ("what_happened", "why_matters", "what_to_watch", "description", "excerpt", "scraped_content"):
         text = _strip_noise(_clean_public_text(str(article.get(field) or "")))
         if not text:
             continue
         for sent in re.split(r"(?<=[.!?])\s+", text):
-            sent = sent.strip()
-            fp = _fingerprint(sent)
-            if _is_valid_bullet(sent) and len(sent) > 35 and fp not in seen_in_fields:
-                article_candidates.append(sent)
-                seen_in_fields.add(fp)
-        if len(article_candidates) >= max_points * 3:
+            if len(sent.strip()) > 25:
+                _consider(sent)
+        if len(candidates) >= max_points * 3:
             break
 
-    # Deduplicate among themselves only
-    seen_local: set[str] = set()
-    deduped_local = []
-    for p in article_candidates:
-        key = _fingerprint(p)
-        if key not in seen_local:
-            seen_local.add(key)
-            deduped_local.append(p)
+    # ---- Phase 3: Cross-slide dedup (relaxed so a slide is never starved) ----
+    used_texts = list(used_fingerprints) if used_fingerprints else []
+    novel = [c for c in candidates if not _semantic_dupe(c, used_texts)]
+    if len(novel) < 4:
+        for c in candidates:
+            if c not in novel:
+                novel.append(c)
 
-    # ---- Phase 2: Apply cross-article dedup ----
-    novel = []
-    for p in deduped_local:
-        key = _fingerprint(p)
-        if used_fingerprints is None or key not in used_fingerprints:
-            novel.append(p)
-
-    # ---- Phase 3: Relax dedup when too aggressive ----
-    if len(novel) < 3:
-        for p in deduped_local:
-            if p not in novel:
-                novel.append(p)
-        # Only use summary.key_points as last resort, and enforce strict dedup
-        if len(novel) < 3:
-            for p in (summary.key_points or []):
-                cleaned = _strip_noise(_clean_public_text(str(p))).strip()
-                if not cleaned or not _is_valid_bullet(cleaned):
-                    continue
-                fp = _fingerprint(cleaned)
-                if fp in seen_local:
-                    continue
-                if any(fp == _fingerprint(n) for n in novel):
-                    continue
-                if used_fingerprints is not None and fp in used_fingerprints:
-                    continue
-                novel.append(cleaned)
-                seen_local.add(fp)
-
-    # ---- Phase 4: Score and sort ----
-    def _point_score(pt):
+    # ---- Phase 4: Score and sort by concreteness ----
+    def _point_score(pt: str) -> float:
         score = 0.0
-        pt_l = pt.lower()
-        if any(pt_l.startswith(v) for v in POWER_VERBS):
+        low = pt.lower()
+        words = pt.split()
+        if any(low.startswith(v) for v in POWER_VERBS) or any(f" {v} " in f" {low} " for v in POWER_VERBS):
             score += 0.4
-        if re.search(r"\b\d[\d,]*(?:\.\d+)?(?:B|M|K|bn|mn|%|x|\s+(?:billion|million|percent|times))", pt, re.I):
+        if re.search(r"\b\d[\d,]*(?:\.\d+)?\s*(?:%|x|B|M|K|bn|mn|billion|million|percent|times)\b", pt, re.I):
             score += 0.35
-        if len(pt) <= 80:
-            score += 0.25
+        # Concrete proper nouns / brands / models lift a point above generic prose.
+        if re.search(r"\b[A-Z][a-z]+(?:[A-Z][a-z]+)?\b", pt[1:]) or any(
+            b.lower() in low for b in REFERENCE_BRANDS
+        ):
+            score += 0.2
+        if 6 <= len(words) <= 14:
+            score += 0.2
         return score
 
     novel.sort(key=_point_score, reverse=True)
 
-    # ---- Phase 5: Guarantee minimum 4 points ----
-    phase5_additions = []
+    # ---- Phase 5: Guarantee >=4 points from title/description ----
     if len(novel) < 4:
-        title_str = _clean_public_text(str(article.get("title") or ""))
-        if not title_str or len(title_str) <= 15:
-            title_str = _clean_public_text(str(summary.headline or summary.subject or ""))
-        desc_str = _clean_public_text(str(article.get("description") or article.get("excerpt") or ""))
-        if title_str and len(title_str) > 15:
-            fp_t = _fingerprint(title_str)
-            if fp_t not in seen_local and not any(fp_t == _fingerprint(p) for p in novel):
-                novel.append(title_str)
-                phase5_additions.append(title_str)
-                seen_local.add(fp_t)
-        if desc_str and len(novel) < 4:
-            for chunk in re.split(r"[;,]\s+|(?<=[.!?])\s+", desc_str):
-                chunk = chunk.strip()
-                fp_c = _fingerprint(chunk)
-                if len(chunk) > 35 and _is_valid_bullet(chunk) and fp_c not in seen_local and not any(fp_c == _fingerprint(p) for p in novel):
-                    novel.append(chunk)
-                    phase5_additions.append(chunk)
-                    seen_local.add(fp_c)
+        for raw in (
+            str(article.get("title") or ""),
+            str(article.get("description") or article.get("excerpt") or ""),
+        ):
+            if len(novel) >= 4:
+                break
+            for chunk in re.split(r"(?<=[.!?])\s+|[;]\s+", _clean_public_text(raw)):
+                point = _humanize(chunk)
+                if not _is_quality(point):
+                    continue
+                norm = normalize_text(point)
+                if norm in seen_local_norm:
+                    continue
+                seen_local_norm.add(norm)
+                novel.append(point)
                 if len(novel) >= 4:
                     break
 
-    # Format and trim for visual-safe carousel layout.
     final = layout_safe_points([_trim_no_dots(pt, 150) for pt in novel], limit=max_points)
 
     if not final:
-        title_fb = _trim_no_dots(
-            _clean_public_text(str(article.get("title") or article.get("url") or summary.subject or "AI update")), 95
-        )
-        return layout_safe_points([title_fb], limit=1)
+        title_fb = _humanize(_clean_public_text(str(article.get("title") or "")))
+        return layout_safe_points([title_fb], limit=1) if _is_quality(title_fb) else []
 
-    if len(final) == 1:
-        title_pt = _trim_no_dots(
-            _clean_public_text(str(article.get("title") or summary.headline or summary.subject or "")), 120
-        )
-        if title_pt and title_pt not in final[0]:
-            final.extend(layout_safe_points([title_pt], limit=1))
-
-    # ---- Phase 6: Register fingerprints from ACTUALLY selected points ----
+    # ---- Phase 6: Register selected points for cross-slide dedup ----
     if used_fingerprints is not None:
         for pt in final:
-            used_fingerprints.add(_fingerprint(pt))
+            used_fingerprints.add(pt)
 
     return final
 

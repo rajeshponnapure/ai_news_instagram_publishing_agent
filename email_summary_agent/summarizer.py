@@ -53,6 +53,12 @@ _NOISE_PATTERNS = [
     r"\bCookie settings\b.*",
     r"\bPrivacy [Pp]olicy\b.*",
     r"\bTerms of [Ss]ervice\b.*",
+    r"\bAre you a robot\b.*",
+    r"\bDetected unusual activity\b.*",
+    r"\bTo continue, please click the box\b.*",
+    r"\bFor inquiries related to this message\b.*",
+    r"\bContact our support team\b.*",
+    r"\bEnable JavaScript\b.*",
     r"\bAll rights reserved\b.*",
     r"\bCopyright ©?\s*\d{4}\b.*",
     r"\[…\].*?(?=\s{2,}|\Z)",
@@ -75,6 +81,14 @@ _BOILERPLATE_PHRASES = frozenset([
     "you are receiving this", "sent to you because",
     "no longer wish to receive", "read more", "click here",
     "learn more", "find out more", "see more", "show more",
+    "are you a robot", "prove you are human",
+    "detected unusual activity", "unusual activity from your computer network",
+    "to continue, please click the box", "please click the box below",
+    "global markets news at your fingertips", "bloomberg.com subscription",
+    "for inquiries related to this message", "contact our support team",
+    "support team and provide", "please contact our support",
+    "enable javascript", "access to this page has been denied",
+    "checking your browser", "verify you are a human",
 ])
 
 STOP_WORDS = frozenset([
@@ -149,7 +163,12 @@ _BOILERPLATE_RE = re.compile(
     r"all rights reserved|copyright|read more|click here|learn more|"
     r"find out more|see more|show more|sign up|subscribe|view in browser|"
     r"manage subscriptions?|email preferences|sent to you because|"
-    r"no longer wish to receive|advertising partners|show you ads)\b",
+    r"no longer wish to receive|advertising partners|show you ads|"
+    r"are you a robot|prove you are human|detected unusual activity|"
+    r"unusual activity from your computer network|please click the box|"
+    r"global markets news at your fingertips|bloomberg\.com subscription|"
+    r"contact our support team|enable javascript|checking your browser|"
+    r"verify you are a human|access to this page has been denied)\b",
     re.I,
 )
 
@@ -197,8 +216,6 @@ class SummaryProvider:
                         raise
             return _with_article_fields(_summarize_article_list(pseudo_email, article_list, full_extract=full_extract), article_list)
 
-        if _is_digest_subject(email.subject):
-            return _with_article_fields(_summarize_digest_email(email), article_list)
         if self.provider in {"auto", "ollama"} and self._can_use_ollama():
             try:
                 return _with_article_fields(self._summarize_with_ollama(email, full_extract=full_extract), article_list)
@@ -348,8 +365,6 @@ def _chunk_text(text: str, max_chars: int = 7000) -> list[str]:
 def summarize_locally(email: EmailItem) -> EmailSummary:
     """Produce a structured summary from raw email text without an LLM."""
     text = _clean_text(f"{email.subject}. {email.body}")
-    if _is_digest_subject(email.subject):
-        return _summarize_digest_email(email)
     sentences = _good_sentences(text)
     if not sentences:
         sentences = [_trim(email.subject or "AI update", 220)]

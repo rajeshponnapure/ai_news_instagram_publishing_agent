@@ -28,15 +28,40 @@ FORBIDDEN_PHRASES = (
     "cookie preferences",
     "privacy policy",
     "terms of service",
+    "are you a robot",
+    "prove you are human",
+    "detected unusual activity",
+    "unusual activity from your computer network",
+    "to continue, please click the box",
+    "please click the box below",
+    "global markets news at your fingertips",
+    "bloomberg.com subscription",
+    "for inquiries related to this message",
+    "contact our support team",
+    "support team and provide",
+    "please contact our support",
+    "enable javascript",
+    "access to this page has been denied",
+    "checking your browser",
+    "verify you are a human",
 )
 
 ROBOTIC_PHRASES = (
     "in conclusion",
     "overall",
     "it is important to note",
+    "it is worth noting",
+    "it bears mentioning",
     "this highlights the significance",
     "furthermore",
     "additionally",
+    "this comes amid",
+    "this comes as",
+    "the landscape is shifting",
+    "this is a developing story",
+    "in related news",
+    "speaking of which",
+    "on that note",
     "the practical impact:",
     "watch next:",
     "this article discusses",
@@ -44,19 +69,26 @@ ROBOTIC_PHRASES = (
     "primary entities",
     "likely content themes",
     "best posting angle",
+    "here is the key detail:",
+    "the real shift here:",
+    "keep an eye on this:",
+    "what this means:",
 )
 
-POWER_WORDS = (
-    "hidden",
-    "surprising",
-    "critical",
-    "powerful",
-    "unexpected",
-    "massive",
-    "dangerous",
-    "proven",
-    "exposed",
+# Leading connective / filler tokens that make a key point read like an essay
+# instead of a punchy human-written line. Stripped from the START of a point.
+LEADING_FILLER = (
+    "furthermore", "additionally", "in addition", "moreover", "however",
+    "meanwhile", "notably", "importantly", "interestingly", "as a result",
+    "consequently", "therefore", "thus", "in fact", "indeed", "that said",
+    "on the other hand", "for instance", "for example", "in other words",
+    "ultimately", "in short", "in summary", "to sum up", "all in all",
+    "essentially", "basically", "simply put", "of course", "clearly",
+    "according to the company", "according to the report", "according to the post",
+    "the company said", "the company says", "in a blog post", "in a statement",
+    "in a press release", "reportedly", "apparently",
 )
+
 
 ACTION_VERBS = (
     "launches", "launched",
@@ -85,6 +117,132 @@ STOPWORDS = {
     "the", "this", "to", "with", "your", "you",
 }
 
+KEYPOINT_LABELS = (
+    "here is the key detail",
+    "here's the key detail",
+    "the key detail",
+    "the real shift here",
+    "the real shift is here",
+    "the real shift",
+    "the real story",
+    "keep an eye on this",
+    "keep an eye out",
+    "what this means",
+    "what it means",
+    "here's what this means",
+    "what this really means",
+    "watch next",
+    "what's next",
+    "what comes next",
+    "the practical impact",
+    "the real impact",
+    "why it matters",
+    "why this matters",
+    "here's why it matters",
+    "what happened",
+    "here's what happened",
+    "what to watch",
+    "what to watch next",
+    "the bottom line",
+    "bottom line",
+    "the big picture",
+    "the takeaway",
+    "key takeaway",
+    "key takeaways",
+    "the key takeaway",
+    "the upshot",
+    "the catch",
+    "the kicker",
+    "the gist",
+    "the context",
+    "make no mistake",
+    "let that sink in",
+    "zoom out",
+    "zoom in",
+    "tl;dr",
+    "in summary",
+    "to sum up",
+    "the key point",
+    "the main point",
+    "here's the thing",
+    "the thing is",
+    "the details",
+    "here are the details",
+    "here's the details",
+    "more details",
+    "for more details",
+    "the latest",
+    "here's the latest",
+    "the news",
+    "here's the news",
+    "what you need to know",
+    "here's what you need to know",
+    "everything you need to know",
+    "fast facts",
+    "key insights",
+    "the key insight",
+    "quick take",
+    "the quick take",
+    "for context",
+    "here's some context",
+    "some context",
+    "the backstory",
+    "the background",
+    "what's happening",
+    "here's what's happening",
+    "where things stand",
+    "the situation",
+    "the headline",
+    "why now",
+    "why this now",
+    "what changed",
+    "what's changed",
+    "the development",
+    "the announcement",
+    "what you should know",
+    "by the numbers",
+    "the full picture",
+    "the full story",
+    "the bigger story",
+    "a closer look",
+    "taking a closer look",
+    "looking ahead",
+    "the outlook",
+    "the verdict",
+    "the punchline",
+    "the breakdown",
+    "the update",
+    "here's the update",
+    "quick update",
+    "status update",
+    "setting the stage",
+    "the scene",
+    "the backstory",
+)
+
+# A point that, after cleaning, is *only* one of these (or matches the heading
+# regex) is rejected outright — it carries no fact, just a label.
+_HEADING_RE = re.compile(
+    r"^(?:the\s+|a\s+|an\s+)?"
+    r"(?:real\s+shift|key\s+(?:detail|point|takeaway|insight)|big\s+picture|bottom\s+line|"
+    r"practical\s+impact|takeaway|upshot|catch|kicker|gist|context|"
+    r"what\s+(?:this|it)\s+(?:means|really\s+means)|what\s+happened|"
+    r"what(?:'s|\s+to|\s+comes)\s+(?:next|watch|changed)|why\s+(?:it|this)\s+matters|"
+    r"why\s+now|keep\s+an\s+eye(?:\s+out|\s+on\s+this)?|watch\s+next|make\s+no\s+mistake|"
+    r"zoom\s+(?:in|out)|in\s+summary|to\s+sum\s+up|here'?s\s+(?:the\s+thing|what|why|"
+    r"the\s+(?:latest|news|details|update|verdict|punchline|breakdown|"
+    r"backstory|background|headline|scene|situation|outlook)|"
+    r"what\s+(?:you\s+need\s+to\s+know|you\s+should\s+know|we're\s+watching|"
+    r"we\s+know|changed|'s\s+happening)|"
+    r"(?:fast\s+facts|key\s+insights?|quick\s+take|(?:quick\s+)?(?:context|update)|"
+    r"more\s+details|for\s+(?:more\s+)?details|by\s+the\s+numbers|"
+    r"full\s+(?:picture|story)|bigger\s+story|a\s+closer\s+look|"
+    r"taking\s+a\s+closer\s+look|looking\s+ahead|setting\s+the\s+stage|"
+    r"where\s+things\s+stand|the\s+development|the\s+announcement)))"
+    r"\b[\s:.\-–—]*$",
+    re.I,
+)
+
 
 def clean_creator_text(text: str) -> str:
     """Decode, clean, and normalize public-facing carousel copy."""
@@ -99,7 +257,7 @@ def clean_creator_text(text: str) -> str:
     text = re.sub(r"\s+", " ", text).strip()
     for phrase in ROBOTIC_PHRASES:
         text = re.sub(re.escape(phrase), "", text, flags=re.I).strip(" -:;")
-    return text
+    return _strip_keypoint_heading(text)
 
 
 def is_public_safe_text(text: str) -> bool:
@@ -115,12 +273,25 @@ def is_public_safe_text(text: str) -> bool:
     return True
 
 
+# Headlines wrap onto multiple lines in the renderer, so we preserve the real
+# title up to this many words rather than truncating it. Only past this do we
+# trim — always on a word boundary, never mid-word, and never dropping the
+# leading entity (which caused "title cut off at the beginning").
+MAX_HEADLINE_WORDS = 12
+
+
 def layout_safe_headline(text: str, fallback: str = "AI Update") -> str:
-    """Return a 4-7 word creator-style headline that fits the slide."""
+    """Return the article's real title, cleaned and never cut mid-word.
+
+    The previous implementation rebuilt the headline from an extracted entity +
+    verb, which dropped the start/end of real titles. We now keep the cleaned
+    title as-is, only trimming overly long ones on a word boundary, and synthesize
+    a headline solely when the title is empty or unsafe.
+    """
     cleaned = clean_creator_text(text)
-    cleaned = re.sub(r"\([^)]{8,}\)", "", cleaned)
-    cleaned = re.sub(r"#\d{3,}", "", cleaned)
-    cleaned = re.sub(r"\b(?:new release|latest|update|changes since)\b", "", cleaned, flags=re.I)
+    cleaned = re.sub(r"\([^)]{8,}\)", "", cleaned)          # drop long parentheticals
+    cleaned = re.sub(r"#\d{3,}", "", cleaned)               # drop PR/issue numbers
+    cleaned = re.sub(r"\s*[\-|–—]\s*[A-Z][A-Za-z0-9 .]{1,24}$", "", cleaned)  # trailing " - SiteName"
     cleaned = re.sub(r"\s+", " ", cleaned).strip(" -:;,.")
     if not cleaned or not is_public_safe_text(cleaned):
         cleaned = clean_creator_text(fallback)
@@ -129,26 +300,20 @@ def layout_safe_headline(text: str, fallback: str = "AI Update") -> str:
     if not words:
         words = _meaningful_words(fallback) or ["AI", "Update"]
 
-    if 4 <= len(words) <= 7:
-        return _title_case(words)
+    if len(words) > MAX_HEADLINE_WORDS:
+        words = words[:MAX_HEADLINE_WORDS]
+        # Never end a headline on a dangling stopword/preposition.
+        while len(words) > 4 and words[-1].lower() in STOPWORDS:
+            words.pop()
 
-    entity = _entity_from_text(cleaned) or words[0]
-    verb = _verb_from_text(cleaned)
-    topic_words = [w for w in words if w.lower() not in STOPWORDS and w.lower() != entity.lower()]
-
-    if verb:
-        picked = [entity, verb, *topic_words[:4]]
-    else:
-        picked = [entity, "Just", "Changed", *topic_words[:3]]
-
-    picked = _dedupe_words(picked)[:7]
-    if len(picked) < 4:
-        picked = (picked + ["Changes", "Everything"])[:4]
-    return _title_case(picked)
+    headline = " ".join(words).strip()
+    if not headline:
+        return fallback
+    return headline[0].upper() + headline[1:]
 
 
 def layout_safe_point(text: str, index: int = 0) -> str:
-    """Return an 18-22 word max point in a professional human editor voice."""
+    """Return a direct, layout-safe key point without meta-label prefixes."""
     cleaned = clean_creator_text(text)
     cleaned = cleaned.lstrip("-*\u2022 ").strip()
     if not is_public_safe_text(cleaned):
@@ -156,28 +321,8 @@ def layout_safe_point(text: str, index: int = 0) -> str:
 
     sentence = _first_complete_sentence(cleaned)
     words = sentence.split()
-    if len(words) > 22:
-        sentence = " ".join(words[:22]).rstrip(".,;:-")
-
-    lower = sentence.lower()
-    # Never double-prefix — check if sentence already has a prefix-like opening
-    PREFIX_TOKENS = frozenset({"here is", "this is", "watch", "most people", "the real", "the critical", "the hidden"})
-    first_three = " ".join(lower.split()[:3])
-    already_has_prefix = any(t in first_three for t in PREFIX_TOKENS)
-
-    if not already_has_prefix and not any(word in lower for word in (*POWER_WORDS, *ACTION_VERBS, "why", "watch", "secret", "truth")):
-        prefix = (
-            "Here is the key detail:"
-            if index == 0 else
-            "The real shift here:"
-            if index == 1 else
-            "Keep an eye on this:"
-            if index == 2 else
-            "What this means:"
-        )
-        combined = f"{prefix} {sentence}"
-        words = combined.split()
-        sentence = " ".join(words[:22]).rstrip(".,;:-")
+    if len(words) > 16:
+        sentence = " ".join(words[:16]).rstrip(".,;:-")
 
     if sentence and sentence[-1] not in ".!?":
         sentence += "."
@@ -206,6 +351,77 @@ def trim_without_ellipsis(text: str, limit: int) -> str:
     return _ensure_sentence(truncated)
 
 
+def _strip_keypoint_heading(text: str) -> str:
+    """Remove heading/meta labels from the START of a point, with any separator.
+
+    Handles ``Label:``, ``Label -``, ``Label —``, ``Label.`` and bare ``Label``
+    when followed by sentence content. Loops so stacked labels are all removed.
+    """
+    cleaned = str(text or "").strip()
+    changed = True
+    while changed:
+        changed = False
+        cleaned = re.sub(r"^[\s\-:|/>#*•·]+", "", cleaned).strip()
+        for label in KEYPOINT_LABELS:
+            # Strip only when the label is followed by an explicit separator
+            # (:, -, —, .) and real content — the reliable "heading prefix" signal.
+            # Bare labels with no separator are rejected wholesale by
+            # ``looks_like_heading`` instead of being chopped mid-sentence.
+            updated = re.sub(
+                rf"^(?i:{re.escape(label)})\s*[:\-–—.]+\s*(?=\S)", "", cleaned
+            ).strip()
+            if updated != cleaned and updated:
+                cleaned = updated
+                changed = True
+                break
+    return cleaned
+
+
+def strip_leading_filler(text: str) -> str:
+    """Drop essay-style connectives/attribution from the START of a point."""
+    cleaned = str(text or "").strip()
+    changed = True
+    while changed:
+        changed = False
+        cleaned = re.sub(r"^[\s\-:,;]+", "", cleaned).strip()
+        for phrase in LEADING_FILLER:
+            updated = re.sub(
+                rf"^{re.escape(phrase)}\b[\s,:;.\-–—]*", "", cleaned, flags=re.I
+            ).strip()
+            if updated != cleaned and updated:
+                cleaned = updated
+                changed = True
+                break
+    return cleaned
+
+
+def _label_norm(text: str) -> str:
+    return re.sub(r"[^a-z0-9 ]", "", str(text or "").lower()).strip()
+
+
+_KEYPOINT_LABEL_NORMS = frozenset(_label_norm(label) for label in KEYPOINT_LABELS)
+
+
+def looks_like_heading(text: str) -> bool:
+    """True when ``text`` is essentially a label/heading carrying no real fact."""
+    cleaned = clean_creator_text(text)
+    # Exact match against the known heading bank (handles "The real shift is here").
+    if _label_norm(cleaned) in _KEYPOINT_LABEL_NORMS:
+        return True
+    stripped = _strip_keypoint_heading(cleaned).strip()
+    if not stripped:
+        return True
+    if _label_norm(stripped) in _KEYPOINT_LABEL_NORMS:
+        return True
+    if _HEADING_RE.match(stripped):
+        return True
+    # A 1–4 word fragment that is only stopwords/labels is a heading, not a fact.
+    words = re.findall(r"[A-Za-z0-9']+", stripped)
+    if len(words) <= 4 and all(w.lower() in STOPWORDS for w in words):
+        return True
+    return False
+
+
 def _first_complete_sentence(text: str) -> str:
     parts = [p.strip() for p in re.split(r"(?<=[.!?])\s+", text) if p.strip()]
     return parts[0] if parts else text
@@ -220,8 +436,7 @@ def _ensure_sentence(text: str) -> str:
 
 def _meaningful_words(text: str) -> list[str]:
     raw = re.findall(r"[A-Za-z0-9$][A-Za-z0-9$.'+-]*", text)
-    words = [w.strip(".,;:!?") for w in raw if w.strip(".,;:!?")]
-    return words
+    return [w.strip(".,;:!?") for w in raw if w.strip(".,;:!?")]
 
 
 def _entity_from_text(text: str) -> str:

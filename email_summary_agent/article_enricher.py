@@ -16,6 +16,25 @@ from .models import EmailItem
 
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
+_BLOCKED_PAGE_PHRASES = (
+    "are you a robot",
+    "prove you are human",
+    "detected unusual activity",
+    "unusual activity from your computer network",
+    "to continue, please click the box",
+    "please click the box below",
+    "global markets news at your fingertips",
+    "bloomberg.com subscription",
+    "for inquiries related to this message",
+    "contact our support team",
+    "support team and provide",
+    "please contact our support",
+    "enable javascript",
+    "access to this page has been denied",
+    "checking your browser",
+    "verify you are a human",
+)
+
 
 @dataclass(frozen=True)
 class ArticleData:
@@ -145,6 +164,10 @@ def enrich_email_with_articles(
             articles.append(article)
     if not articles:
         return email, []
+    # Reconstruct multi-page articles and strip sentences repeated across pages.
+    from .article_assembler import assemble
+
+    articles = assemble(articles)
     article_blocks = []
     for index, article in enumerate(articles, start=1):
         article_blocks.append(
@@ -279,6 +302,8 @@ def fetch_article(url: str, assets_dir: Path) -> ArticleData | None:
                 final_url = final_url2 or final_url
         except Exception:
             pass
+    if _is_blocked_page(title, description, text, page):
+        return None
     # Download up to 4 candidates, then filter to HD-minimum and sort by resolution
     _HD_MIN_PX = 1280 * 720  # 921,600 pixels (HD 720p)
     image_paths = [_download_image(u, assets_dir, final_url) for u in raw_image_urls]
@@ -441,8 +466,21 @@ def _is_boilerplate(text: str) -> bool:
             "learn more", "find out more",
             "impact: low", "impact: medium", "impact: high",
             "source:", "link:", "read time:",
+            *_BLOCKED_PAGE_PHRASES,
         )
     )
+
+
+def _is_blocked_page(title: str, description: str, text: str, page: str = "") -> bool:
+    combined = " ".join([title or "", description or "", text or ""]).lower()
+    if any(phrase in combined for phrase in _BLOCKED_PAGE_PHRASES):
+        return True
+    page_lower = (page or "").lower()
+    if "are you a robot" in page_lower and "detected unusual activity" in page_lower:
+        return True
+    if "please click the box below" in page_lower and "support team" in page_lower:
+        return True
+    return False
 
 
 def _is_low_value_image(src: str) -> bool:

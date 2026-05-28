@@ -14,11 +14,14 @@ from email_summary_agent.content_rag import retrieve_context
 from email_summary_agent.db import AgentStore
 from email_summary_agent.digest import parse_news_items
 from email_summary_agent.email_client import extract_body
-from email_summary_agent.instagram import _build_slide_specs, _find_library_image, _split_summary_for_carousels
+from email_summary_agent.instagram import _build_slide_specs
+from email_summary_agent.ig_image import _find_library_image
+from email_summary_agent.ig_slide_builder import _split_summary_for_carousels
 from email_summary_agent.models import EmailItem, EmailSummary
 from email_summary_agent.summarizer import _article_item_for_instagram, _format_prompt_body, SummaryProvider
 from email_summary_agent.article_enricher import ArticleData
 from email_summary_agent.ig_copy import layout_safe_headline, layout_safe_points, trim_without_ellipsis
+from email_summary_agent.ig_keypoints import _extract_instagram_key_points
 
 
 class DigestPipelineTests(unittest.TestCase):
@@ -71,10 +74,9 @@ class DigestPipelineTests(unittest.TestCase):
         slides = _build_slide_specs(parts[0], datetime(2026, 5, 21, 9, 0))
 
         self.assertEqual(len(parts), 1)
-        # Unified layout: content slides are kind="digest", last is CTA
+        # Unified layout: one article produces one slide.
         self.assertEqual(slides[0]["kind"], "digest")
-        self.assertEqual(len(slides), 2)
-        self.assertEqual(slides[-1]["kind"], "cta")
+        self.assertEqual(len(slides), 1)
 
     def test_single_long_news_email_creates_more_keypoints(self) -> None:
         summary = _summary_with_articles(1, long=True)
@@ -93,11 +95,9 @@ class DigestPipelineTests(unittest.TestCase):
         slides = _build_slide_specs(parts[0], datetime(2026, 5, 21, 9, 0))
 
         self.assertEqual(len(parts), 1)
-        # 2 content slides + 1 CTA
-        self.assertEqual(len(slides), 3)
+        self.assertEqual(len(slides), 2)
         self.assertEqual(slides[0]["kind"], "digest")
         self.assertEqual(slides[1]["kind"], "digest")
-        self.assertEqual(slides[-1]["kind"], "cta")
 
     def test_four_news_stories_split_into_multiple_carousel_parts(self) -> None:
         summary = _summary_with_articles(4)
@@ -105,9 +105,9 @@ class DigestPipelineTests(unittest.TestCase):
         parts = _split_summary_for_carousels(summary)
         slide_counts = [len(_build_slide_specs(part, datetime(2026, 5, 21, 9, 0))) for part in parts]
 
-        # Unified batching: 4 articles + 1 CTA all fit in a single carousel post
+        # Unified batching: 4 articles all fit in a single carousel post
         self.assertEqual(len(parts), 1)
-        self.assertEqual(slide_counts[0], 5)
+        self.assertEqual(slide_counts[0], 4)
         self.assertEqual(parts[0].headline, "AI News Update")
 
     def test_article_batches_are_fixed_groups_of_eight(self) -> None:
@@ -119,14 +119,13 @@ class DigestPipelineTests(unittest.TestCase):
             17: [8, 8, 1],
             50: [8, 8, 8, 8, 8, 8, 2],
         }
-        # Each batch gets 1 additional CTA slide appended
         expected_slides = {
-            1: [2],
-            5: [6],
-            8: [9],
-            9: [9, 2],
-            17: [9, 9, 2],
-            50: [9, 9, 9, 9, 9, 9, 3],
+            1: [1],
+            5: [5],
+            8: [8],
+            9: [8, 1],
+            17: [8, 8, 1],
+            50: [8, 8, 8, 8, 8, 8, 2],
         }
 
         for article_count, expected_counts in cases.items():
@@ -287,12 +286,62 @@ class DigestPipelineTests(unittest.TestCase):
         self.assertLessEqual(len(headline.split()), 7)
         self.assertTrue(points)
         self.assertTrue(all("..." not in point for point in points))
-        self.assertTrue(all(len(point.split()) <= 22 for point in points))
+        self.assertTrue(all(len(point.split()) <= 16 for point in points))
         self.assertFalse(any("dismiss alert" in point.lower() for point in points))
+        self.assertFalse(any("here is the key detail" in point.lower() for point in points))
         self.assertEqual(
             trim_without_ellipsis("This sentence is intentionally much too long for a carousel text box", 32)[-1],
             ".",
         )
+
+    def test_blocked_page_text_never_becomes_keypoints(self) -> None:
+        summary = _summary_with_articles(1)
+        article = {
+            "url": "https://www.bloomberg.com/example",
+            "title": "Bloomberg are you a robot",
+            "description": "Get the most important global markets news at your fingertips with a Bloomberg.com subscription.",
+            "scraped_content": (
+                "We've detected unusual activity from your computer network. "
+                "To continue, please click the box below. "
+                "For inquiries related to this message please contact our support team."
+            ),
+        }
+
+        points = _extract_instagram_key_points(article, summary, max_points=4)
+
+        joined = " ".join(points).lower()
+        self.assertNotIn("are you a robot", joined)
+        self.assertNotIn("unusual activity", joined)
+        self.assertNotIn("support team", joined)
+        self.assertNotIn("subscription", joined)
+
+    def test_article_slides_do_not_reuse_global_summary_points(self) -> None:
+        summary = _summary_with_articles(2)
+        summary.key_points[:] = [
+            "Global repeated fallback point that should not appear on every article slide.",
+            "Second repeated fallback point that should not appear on every article slide.",
+        ]
+
+        slides = _build_slide_specs(summary, datetime(2026, 5, 21, 9, 0))
+        bodies = [slide["body"] for slide in slides]
+
+        self.assertEqual(len(bodies), 2)
+        self.assertNotEqual(bodies[0], bodies[1])
+        self.assertFalse(any("global repeated fallback" in body.lower() for body in bodies))
+
+    def test_article_prefixed_titles_remain_publishable_content(self) -> None:
+        summary = _summary_with_articles(3)
+        for index, item in enumerate(summary.article_items or [], start=1):
+            item["title"] = f"Article {index} AI launch changes developer workflows"
+            item["description"] = (
+                f"Article {index} reveals a specific AI update with adoption signals, "
+                "numbers, and practical developer impact."
+            )
+
+        slides = _build_slide_specs(summary, datetime(2026, 5, 21, 9, 0))
+
+        self.assertEqual(len(slides), 3)
+        self.assertTrue(all("reveals a specific AI update" in slide["body"] for slide in slides))
 
 
 def _summary_with_articles(count: int, long: bool = False) -> EmailSummary:

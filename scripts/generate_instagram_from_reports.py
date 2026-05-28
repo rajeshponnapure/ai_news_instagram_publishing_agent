@@ -8,9 +8,9 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from email_summary_agent.config import Settings
-from email_summary_agent.instagram import write_instagram_carousels
-from email_summary_agent.models import EmailSummary
+from email_summary_agent.config import Settings  # noqa: E402
+from email_summary_agent.instagram import write_instagram_carousels  # noqa: E402
+from email_summary_agent.models import EmailSummary  # noqa: E402
 
 
 def parse_report(path: Path) -> list[EmailSummary]:

@@ -11,7 +11,6 @@ from .ig_utils import (
     _dedupe_lead_text,
     _fallback_summary_text,
     _source_label_from_url,
-    _trim_no_dots,
 )
 from .ig_copy import clean_creator_text, layout_safe_headline, layout_safe_points, trim_without_ellipsis
 
@@ -45,8 +44,6 @@ def _build_caption(summary: "EmailSummary") -> str:
     article = articles[0] if articles else {}
 
     headline = _clean_headline(summary.headline or summary.subject or "AI update")
-    article_url = str(article.get("url") or summary.article_url or "")
-
     # ── Hook line ─────────────────────────────────────────────────────────────
     hook = _build_caption_hook(summary, article, headline)
 

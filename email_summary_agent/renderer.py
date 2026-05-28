@@ -1,10 +1,10 @@
 """
-Graitech Design System — HTML-to-PNG slide renderer.
+Graitech Design System â€” HTML-to-PNG slide renderer.
 
-Renders Instagram carousel slides (1080×1350 px) by injecting article content
+Renders Instagram carousel slides (1080Ã—1350 px) by injecting article content
 into the official Graitech HTML templates and screenshotting them with
-Playwright Chromium. Guarantees pixel-perfect fidelity to the design system —
-fonts, concrete texture, neon accents, corner ticks — with no PIL pixel-pushing.
+Playwright Chromium. Guarantees pixel-perfect fidelity to the design system â€”
+fonts, concrete texture, neon accents, corner ticks â€” with no PIL pixel-pushing.
 """
 from __future__ import annotations
 
@@ -17,18 +17,18 @@ from typing import Any
 
 from .ig_copy import layout_safe_headline, layout_safe_points
 
-# ── asset paths ───────────────────────────────────────────────────────────────
+# â”€â”€ asset paths â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 _ASSETS = Path(__file__).parent / "assets" / "graitech"
-_FONTS  = _ASSETS / "fonts"
-_IMG    = _ASSETS / "assets"
+_FONTS = _ASSETS / "fonts"
+_IMG = _ASSETS / "assets"
 
 CANVAS_W = 1080
 CANVAS_H = 1350
 
 
-# ─────────────────────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Public API
-# ─────────────────────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 def render_slide_to_png(
     path: Path,
@@ -37,14 +37,14 @@ def render_slide_to_png(
     total_slides: int,
     email_dt: datetime,
 ) -> None:
-    """Render *slide* to a 1080×1350 PNG at *path* using Playwright."""
+    """Render *slide* to a 1080Ã—1350 PNG at *path* using Playwright."""
     html_src = _build_slide_html(slide, slide_number, total_slides, email_dt)
     _screenshot_html(html_src, path)
 
 
-# ─────────────────────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # HTML builder
-# ─────────────────────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 def _build_slide_html(slide, slide_number, total_slides, email_dt):
     kind = slide.get("kind", "")
@@ -62,9 +62,9 @@ def _build_slide_html(slide, slide_number, total_slides, email_dt):
 
 
 def _wrap_in_shell(body, slide_number, total_slides, slide_kind=""):
-    css  = _inline_css()
+    css = _inline_css()
     logo = _data_uri(_IMG / "graitech-logo.png", "image/png")
-    # For digest slides the article image occupies y 110–470px.  Placing the logo
+    # For digest slides the article image occupies y 110â€“470px.  Placing the logo
     # at top:56px (the default) puts it right on top of that image.  Move it to
     # Logo always anchored to top-right corner on every slide kind.
     logo_style = "top:56px; right:56px;"
@@ -85,23 +85,23 @@ def _wrap_in_shell(body, slide_number, total_slides, slide_kind=""):
 </body></html>"""
 
 
-# ─────────────────────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Slide kinds
-# ─────────────────────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 def _title_body(slide, email_dt):
-    eyebrow  = _e(slide.get("eyebrow") or email_dt.strftime("AI News — %b %Y"))
+    eyebrow = _e(slide.get("eyebrow") or email_dt.strftime("AI News â€” %b %Y"))
     headline = _e(slide.get("title") or "AI Update")
     subtitle = _e(slide.get("body") or slide.get("subtitle") or "")
-    source   = _e(slide.get("source_label") or "")
+    source = _e(slide.get("source_label") or "")
     src_html = f'<div class="source-label">{source}</div>' if source else ""
-    lines    = _wrap_headline(headline, 13)
+    lines = _wrap_headline(headline, 13)
 
     # Article image: render in the lower third of the slide so the headline
     # occupies the visually dominant upper area.  Use a fade-to-black gradient
     # overlay so the image blends into the dark background without clashing
     # with the bottom chrome (handle / page indicator).
-    img_css  = _image_css(slide.get("image_path") or "")
+    img_css = _image_css(slide.get("image_path") or "")
     img_html = f"""  <div class="title-image" style="background-image:{img_css};"></div>""" if img_css != _FALLBACK_GRADIENT else ""
 
     return f"""{img_html}
@@ -119,12 +119,12 @@ def _title_body(slide, email_dt):
 
 
 def _list_body(slide):
-    eyebrow  = _e(slide.get("eyebrow") or "Key Points")
-    section  = _e(layout_safe_headline(slide.get("title") or slide.get("section") or "AI Update"))
+    eyebrow = _e(slide.get("eyebrow") or "Key Points")
+    section = _e(layout_safe_headline(slide.get("title") or slide.get("section") or "AI Update"))
     # Accept either a list or newline-joined string of points
     raw = slide.get("points") or slide.get("key_points") or []
     if not raw and slide.get("body"):
-        raw = [ln.lstrip("•–—- ").strip()
+        raw = [ln.lstrip("â€¢â€“â€”- ").strip()
                for ln in str(slide["body"]).splitlines() if ln.strip()]
     safe_points = layout_safe_points([str(pt) for pt in raw], limit=3)
     if not safe_points and section:
@@ -145,9 +145,9 @@ def _list_body(slide):
 
 
 def _digest_body(slide):
-    eyebrow  = _e(slide.get("eyebrow") or "AI Update")
+    eyebrow = _e(slide.get("eyebrow") or "AI Update")
     headline = _e(layout_safe_headline(slide.get("title") or "AI Update", fallback="AI Update"))
-    source   = _e(slide.get("source_label") or "")
+    source = _e(slide.get("source_label") or "")
     src_html = f'<div class="source-label" style="margin-top:14px;">{source}</div>' if source else ""
     # Points from body string or list
     raw = []
@@ -155,8 +155,8 @@ def _digest_body(slide):
     if isinstance(body, list):
         raw = body
     elif body:
-        raw = [ln.lstrip("•–—- ").strip() for ln in str(body).splitlines() if ln.strip()]
-    safe_points = layout_safe_points([str(pt) for pt in raw], limit=5)
+        raw = [ln.lstrip("â€¢â€“â€”- ").strip() for ln in str(body).splitlines() if ln.strip()]
+    safe_points = layout_safe_points([str(pt) for pt in raw], limit=4)
     if not safe_points and headline:
         safe_points = layout_safe_points([headline], limit=1)
     pts_html = "".join(
@@ -180,8 +180,8 @@ def _digest_body(slide):
 
 def _cta_body(slide):
     eyebrow = _e(slide.get("eyebrow") or "GRAITECH")
-    title   = _e(slide.get("title") or "Follow for the next AI briefing")
-    body    = _e(slide.get("body") or "Like · Comment · Follow · Save")
+    title = _e(slide.get("title") or "Follow for the next AI briefing")
+    body = _e(slide.get("body") or "Like Â· Comment Â· Follow Â· Save")
     return f"""  <div class="ig__content" style="justify-content: space-between;">
     <div class="kicker-row"><span class="stamp">AI Dispatch</span></div>
     <div class="heading-stack">
@@ -197,17 +197,17 @@ def _cta_body(slide):
   </div>"""
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# CSS — fully self-contained, no external network calls
-# ─────────────────────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# CSS â€” fully self-contained, no external network calls
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 def _inline_css():
-    anton   = _font_b64("AntonSC-Regular.ttf")
-    mono_r  = _font_b64("SpaceMono-Regular.ttf")
-    mono_b  = _font_b64("SpaceMono-Bold.ttf")
+    anton = _font_b64("AntonSC-Regular.ttf")
+    mono_r = _font_b64("SpaceMono-Regular.ttf")
+    mono_b = _font_b64("SpaceMono-Bold.ttf")
     mono_bi = _font_b64("SpaceMono-BoldItalic.ttf")
-    mono_i  = _font_b64("SpaceMono-Italic.ttf")
-    tex     = _svg_b64(_IMG / "concrete-texture.svg")
+    mono_i = _font_b64("SpaceMono-Italic.ttf")
+    tex = _svg_b64(_IMG / "concrete-texture.svg")
 
     return f"""
 @font-face {{font-family:'Anton SC'; src:url('data:font/truetype;base64,{anton}') format('truetype'); font-weight:400; font-style:normal;}}
@@ -267,17 +267,17 @@ html,body{{margin:0;padding:0;background:#000;}}
 .digest-headline{{font-family:var(--gt-font-display);font-size:50px;line-height:0.95;color:var(--gt-neon);text-shadow:0 0 22px rgba(57,255,20,0.30);text-transform:uppercase;margin-bottom:14px;letter-spacing:0;overflow-wrap:break-word;word-break:normal;}}
 .kp-list{{display:flex;flex-direction:column;gap:9px;flex:1;overflow:hidden;}}
 .kp-row{{display:flex;gap:12px;align-items:flex-start;}}
-.kp-num{{font-family:var(--gt-font-display);font-size:32px;line-height:1;color:var(--gt-neon);text-shadow:0 0 14px rgba(57,255,20,0.40);min-width:42px;flex-shrink:0;}}
-.kp-text{{font-family:var(--gt-font-mono);font-size:21px;line-height:1.3;color:var(--gt-chalk);flex:1;overflow:hidden;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow-wrap:break-word;word-break:normal;}}
+.kp-num{{font-family:var(--gt-font-display);font-size:34px;line-height:1;color:var(--gt-neon);text-shadow:0 0 14px rgba(57,255,20,0.40);min-width:44px;flex-shrink:0;}}
+.kp-text{{font-family:var(--gt-font-mono);font-size:23px;line-height:1.28;color:var(--gt-chalk);flex:1;overflow:hidden;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow-wrap:break-word;word-break:normal;}}
 .kp-text strong{{color:var(--gt-neon);font-weight:700;}}
 .title-image{{position:absolute;bottom:140px;left:0;right:0;height:380px;z-index:2;background-size:cover;background-position:center top;}}
 .title-image::before{{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.55) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 60%,rgba(0,0,0,0.85) 100%);z-index:1;}}
 """
 
 
-# ─────────────────────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Utility helpers
-# ─────────────────────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 def _e(text):
     return _html.escape(str(text or "").strip())
@@ -307,6 +307,7 @@ def _highlight_keywords_html(text: str) -> str:
         flags=re.IGNORECASE,
     )
     # Bold ALL-CAPS acronyms, skipping common English stop-words
+
     def _bold_acronym(m: re.Match) -> str:
         word = m.group(0)
         return word if word in _CAPS_STOPWORDS else f"<strong>{word}</strong>"
@@ -367,9 +368,9 @@ def _image_css(img_path):
     return f"url('{file_url}')"
 
 
-# ─────────────────────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Playwright screenshot
-# ─────────────────────────────────────────────────────────────────────────────
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 def _screenshot_html(html_src, out_path):
     from playwright.sync_api import sync_playwright

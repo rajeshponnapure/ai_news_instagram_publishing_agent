@@ -5,7 +5,7 @@ from datetime import datetime
 from typing import TYPE_CHECKING, Any
 
 from .ig_constants import MAX_ARTICLES_PER_POST, MAX_CAROUSEL_SLIDES, MAX_KP_PER_SLIDE
-from .ig_copy import layout_safe_headline, layout_safe_points
+from .ig_copy import is_public_safe_text, layout_safe_headline, layout_safe_points
 from .ig_image import _fetch_og_image_from_url, _select_unique_article_image
 from .ig_keypoints import _extract_instagram_key_points
 from .ig_utils import (
@@ -64,50 +64,68 @@ def _pick_bg_theme(slide: dict[str, Any]) -> str:
     ]))
 
 
-def _split_summary_for_carousels(summary: "EmailSummary") -> list["EmailSummary"]:
-    """Split every email into sequential article batches of up to 8."""
+def build_part_summary(
+    template: "EmailSummary",
+    chunk: list[dict[str, Any]],
+    part_number: int,
+    total_parts: int,
+) -> "EmailSummary":
+    """Build one carousel-part EmailSummary from a group of article dicts.
+
+    Shared by ``_split_summary_for_carousels`` (legacy single-email split) and
+    ``post_planner`` (exactly-8 cross-email planning).
+    """
     from .models import EmailSummary as _EmailSummary
 
+    first = chunk[0]
+    base_headline = _clean_headline(template.headline or template.subject or "AI Update")
+    headline = (
+        f"{base_headline} - Part {part_number} of {total_parts}"
+        if total_parts > 1 else base_headline
+    )
+    part = _EmailSummary(
+        message_key=f"{template.message_key}:batch:{part_number}",
+        subject=template.subject,
+        source_date=template.source_date,
+        headline=headline,
+        summary=template.summary,
+        key_points=template.key_points,
+        companies=template.companies,
+        models=template.models,
+        topics=template.topics,
+        confidence=template.confidence,
+        article_url=str(first.get("url", "")),
+        article_title=str(first.get("title", "")),
+        article_image_path=str(first.get("image_path", "")),
+        article_image_url=str(first.get("image_url", "")),
+        article_excerpt=str(first.get("excerpt") or first.get("description") or ""),
+        article_items=chunk,
+    )
+    object.__setattr__(part, "_carousel_part", part_number)
+    object.__setattr__(part, "_carousel_total_parts", total_parts)
+    return part
+
+
+def _split_summary_for_carousels(summary: "EmailSummary") -> list["EmailSummary"]:
+    """Split a single email into sequential article batches of up to 8.
+
+    Legacy/standalone splitter. The production path uses ``post_planner`` which
+    enforces *exactly* 8 and carries remainders across runs. Kept for the
+    single-summary fallback and unit tests.
+    """
     articles = _article_items(summary)
     if not articles:
         return [summary]
 
     chunks = [
-        articles[index : index + MAX_ARTICLES_PER_POST]
+        articles[index: index + MAX_ARTICLES_PER_POST]
         for index in range(0, len(articles), MAX_ARTICLES_PER_POST)
     ]
     total_parts = len(chunks)
-    base_headline = _clean_headline(summary.headline or summary.subject or "AI Update")
-
-    parts: list[_EmailSummary] = []
-    for part_number, chunk in enumerate(chunks, start=1):
-        first = chunk[0]
-        headline = (
-            f"{base_headline} - Part {part_number} of {total_parts}"
-            if total_parts > 1 else base_headline
-        )
-        part = _EmailSummary(
-            message_key=f"{summary.message_key}:batch:{part_number}",
-            subject=summary.subject,
-            source_date=summary.source_date,
-            headline=headline,
-            summary=summary.summary,
-            key_points=summary.key_points,
-            companies=summary.companies,
-            models=summary.models,
-            topics=summary.topics,
-            confidence=summary.confidence,
-            article_url=str(first.get("url", "")),
-            article_title=str(first.get("title", "")),
-            article_image_path=str(first.get("image_path", "")),
-            article_image_url=str(first.get("image_url", "")),
-            article_excerpt=str(first.get("excerpt") or first.get("description") or ""),
-            article_items=chunk,
-        )
-        object.__setattr__(part, "_carousel_part", part_number)
-        object.__setattr__(part, "_carousel_total_parts", total_parts)
-        parts.append(part)
-    return parts
+    return [
+        build_part_summary(summary, chunk, part_number, total_parts)
+        for part_number, chunk in enumerate(chunks, start=1)
+    ]
 
 
 def _build_slide_specs(
@@ -116,13 +134,14 @@ def _build_slide_specs(
     initial_used_paths: set[str] | None = None,
     initial_used_urls: set[str] | None = None,
 ) -> list[dict[str, Any]]:
-    """Build one image/key-point slide per article, plus a final CTA slide."""
+    """Build one image/key-point slide per article."""
     articles = _article_items(summary)
     if not articles:
         slides = _build_fallback_single_slide(summary, initial_used_paths)
     else:
         slides = _build_article_slides(summary, articles[:MAX_CAROUSEL_SLIDES], initial_used_paths, initial_used_urls)
-    slides.append(_make_cta_slide(len(slides) + 1))
+        if not slides:
+            slides = _build_fallback_single_slide(summary, initial_used_paths)
     return slides
 
 
@@ -155,6 +174,7 @@ def _build_article_slides(
 ) -> list[dict[str, Any]]:
     used_image_urls: set[str] = set(initial_used_urls or ())
     used_image_paths: set[str] = set(initial_used_paths or ())
+    used_image_hashes: list = []
     used_key_fingerprints: set[str] = set()
     slides: list[dict[str, Any]] = []
 
@@ -178,7 +198,9 @@ def _build_article_slides(
             max_points=MAX_KP_PER_SLIDE,
             used_fingerprints=used_key_fingerprints,
         )
-        slides.append(_article_to_slide(summary, article, article_index, points, used_image_urls, used_image_paths))
+        if not points and not _article_has_publishable_seed(article):
+            continue
+        slides.append(_article_to_slide(summary, article, article_index, points, used_image_urls, used_image_paths, used_image_hashes))
     return slides
 
 
@@ -189,6 +211,7 @@ def _article_to_slide(
     points: list[str],
     used_image_urls: set[str],
     used_image_paths: set[str],
+    used_image_hashes: list | None = None,
 ) -> dict[str, Any]:
     headline_raw = _clean_headline(
         _clean_public_text(str(article.get("title") or summary.headline or summary.subject or "AI update"))
@@ -196,7 +219,7 @@ def _article_to_slide(
     headline = layout_safe_headline(headline_raw, fallback=str(summary.headline or "AI Update"))
     topic = ", ".join(summary.topics[:2]) or headline
     url = str(article.get("url") or "")
-    image_path = _select_unique_article_image(article, topic, used_image_urls, used_image_paths)
+    image_path = _select_unique_article_image(article, topic, used_image_urls, used_image_paths, used_image_hashes)
 
     return {
         "kind": "digest",
@@ -231,6 +254,17 @@ def _pick_article_eyebrow(article: dict[str, Any], summary: "EmailSummary") -> s
         if any(keyword in combined for keyword in keywords):
             return label
     return "AI NEWS"
+
+
+def _article_has_publishable_seed(article: dict[str, Any]) -> bool:
+    fields = (
+        str(article.get("title") or ""),
+        str(article.get("description") or ""),
+        str(article.get("excerpt") or ""),
+        str(article.get("summary") or ""),
+        str(article.get("what_happened") or ""),
+    )
+    return any(is_public_safe_text(_clean_public_text(field)) for field in fields)
 
 
 def _make_cta_slide(slide_index: int) -> dict[str, Any]:
