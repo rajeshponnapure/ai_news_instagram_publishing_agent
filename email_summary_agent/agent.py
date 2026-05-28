@@ -313,7 +313,6 @@ def process_items(
                         title=a.get("title", ""),
                         description=a.get("description", ""),
                         text=a.get("text", ""),
-                        excerpt=a.get("excerpt", ""),
                         image_url=a.get("image_url", ""),
                         image_path=a.get("image_path", ""),
                     )
