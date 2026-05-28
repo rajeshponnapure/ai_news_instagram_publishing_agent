@@ -137,6 +137,13 @@ def cosine(a: str, b: str) -> float:
 
 # ── high-level duplicate scoring ────────────────────────────────────────────────
 
+def fingerprint_text(article: dict) -> str:
+    """Return a stable text fingerprint for a story dict."""
+    title = str(article.get("title") or "")
+    body = str(article.get("text") or article.get("description") or article.get("excerpt") or "")
+    return f"{title} {body[:1500]}".strip()
+
+
 def duplicate_score(
     text_a: str,
     text_b: str,

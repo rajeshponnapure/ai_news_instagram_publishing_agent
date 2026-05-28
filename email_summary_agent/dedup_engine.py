@@ -89,12 +89,6 @@ def article_text(article: dict) -> str:
     ).strip()
 
 
-def fingerprint_text(article: dict) -> str:
-    title = str(article.get("title") or "")
-    body = str(article.get("text") or article.get("description") or article.get("excerpt") or "")
-    return f"{title} {body[:1500]}".strip()
-
-
 def _entities(article: dict) -> frozenset[str]:
     text = article_text(article).lower()
     found = {b.lower() for b in REFERENCE_BRANDS if b.lower() in text}
@@ -103,7 +97,7 @@ def _entities(article: dict) -> frozenset[str]:
 
 
 def _topic_signature(article: dict) -> str:
-    toks = ts.tokens(fingerprint_text(article))
+    toks = ts.tokens(ts.fingerprint_text(article))
     from collections import Counter
 
     common = [t for t, _ in Counter(toks).most_common(6)]
@@ -132,7 +126,7 @@ def deduplicate(articles: list[dict], memory=None, *, consult_memory: bool = Tru
     for raw in articles:
         article = dict(raw)
         canon = canonicalize_url(str(article.get("url") or ""))
-        fp = fingerprint_text(article)
+        fp = ts.fingerprint_text(article)
         if not fp:
             continue
         sha = ts.content_sha256(fp)

@@ -300,7 +300,7 @@ def process_items(
                     if hasattr(a, "extra_image_paths"):
                         d["extra_image_paths"] = list(a.extra_image_paths)
                     article_dicts.append(d)
-                dedup_result = deduplicate(article_dicts, memory, consult_memory=True, record=True)
+                dedup_result = deduplicate(article_dicts, memory, consult_memory=True, record=False)
                 unique_dicts = dedup_result.unique
                 _safe_print(f"  After dedup: {len(unique_dicts)} unique (rejected {len(dedup_result.rejected)}, demoted {len(dedup_result.demoted)})")
                 posts, demoted = plan_posts(unique_dicts, memory, post_size=settings.post_size)
