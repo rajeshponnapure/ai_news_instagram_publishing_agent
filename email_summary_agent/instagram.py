@@ -107,7 +107,6 @@ def write_instagram_carousels(
                 global_used_image_paths.add(img)
                 _remember_image(memory, used_image_hashes, img, str(slide.get("url", "")))
 
-        # CTA is already appended by _build_slide_specs.
         slides = content_slides
 
         qa_issues_any: list[str] = []
@@ -178,8 +177,7 @@ def _repair_failed_slides(slides: list[dict], report, memory) -> None:
     for slide in slides:
         if 4 in failed_ids:
             t = str(slide.get("title", ""))
-            if not t or t[0].islower() or len(t) < 8:
-                slide["title"] = layout_safe_headline(t, fallback="AI Update")
+            slide["title"] = layout_safe_headline(t, fallback="AI Update")
         if 1 in failed_ids or 8 in failed_ids:
             body = str(slide.get("body", ""))
             if body:

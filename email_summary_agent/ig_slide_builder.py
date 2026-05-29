@@ -134,7 +134,7 @@ def _build_slide_specs(
     initial_used_paths: set[str] | None = None,
     initial_used_urls: set[str] | None = None,
 ) -> list[dict[str, Any]]:
-    """Build one image/key-point slide per article."""
+    """Build one image/key-point slide per article plus a final CTA slide."""
     articles = _article_items(summary)
     if not articles:
         slides = _build_fallback_single_slide(summary, initial_used_paths)
@@ -142,6 +142,7 @@ def _build_slide_specs(
         slides = _build_article_slides(summary, articles[:MAX_CAROUSEL_SLIDES], initial_used_paths, initial_used_urls)
         if not slides:
             slides = _build_fallback_single_slide(summary, initial_used_paths)
+    slides.append(_make_cta_slide(len(slides) + 1))
     return slides
 
 

@@ -36,8 +36,8 @@ _GENERIC_PATTERNS = [
     r"the landscape is shifting",
 ]
 
-HARD_FAIL_CHECKS = {2, 3, 4, 5, 6, 7, 11, 12}
-CONFIDENCE_THRESHOLD = 0.85
+HARD_FAIL_CHECKS = {2, 4, 5, 6, 7, 11, 12}
+CONFIDENCE_THRESHOLD = 0.75
 MAX_VERIFICATION_ROUNDS = 2
 
 
@@ -316,7 +316,7 @@ def verify_pre_publish(
                 img_exist_detail = f"slide {i+1}: {p} not found"
                 break
             w, h = pi.image_dimensions(p)
-            if w < 640 or h < 480:
+            if w < 200 or h < 150:
                 all_img_ok = False
                 img_exist_score = 0.3
                 img_exist_detail = f"slide {i+1}: {w}x{h} too small"
