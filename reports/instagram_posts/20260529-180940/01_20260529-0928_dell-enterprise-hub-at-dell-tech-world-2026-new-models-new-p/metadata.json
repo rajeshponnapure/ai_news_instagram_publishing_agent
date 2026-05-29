@@ -1,0 +1,345 @@
+{
+  "email_received_at": "2026-05-29T09:28-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Dell Enterprise Hub at Dell Tech World 2026: new models, new platforms, faster to production",
+  "subject": "\ud83d\udea8 AI Alert: 97 new launches \u2014 ZDNet AI, NYT AI, CNBC Technology",
+  "source_date": "Fri, 29 May 2026 09:28:34 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "NVIDIA",
+    "AMD"
+  ],
+  "models": [
+    "Mistral"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://huggingface.co/blog/balaatdell/dell-enterprise-hub-at-dell-tech-world-2026",
+  "article_title": "Dell Enterprise Hub at Dell Tech World 2026: new models, new platforms, faster to production",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/958e4f5f2dda443c.jpg",
+  "article_image_url": "https://cdn-uploads.huggingface.co/production/uploads/662add9816435ebd17d9138a/_-n1Y6-ORSVQW-5M1Nigr.jpeg",
+  "article_items": [
+    {
+      "url": "https://huggingface.co/blog/balaatdell/dell-enterprise-hub-at-dell-tech-world-2026",
+      "title": "Dell Enterprise Hub at Dell Tech World 2026: new models, new platforms, faster to production",
+      "description": "A Blog post by Balachandran Rajendran on Hugging Face",
+      "excerpt": "A Blog post by Balachandran Rajendran on Hugging Face",
+      "summary": "Roughly twenty new model configurations have landed in recent months (DeepSeek V4, Kimi K2.6, GLM 5.1, MiniMax M2.7, the Nemotron 3 reasoning family, Gemma 4, Qwen 3.5 and more) optimized for Dell AI Servers and AI PCs, with tested, secured containers ready within hours of each public release. A Blog post by Balachandran Rajendran on Hugging Face Dell Enterprise Hub at Dell Tech World 2026: new models, new platforms, faster to production The dell-ai SDK: deployment-day verification, not just an API client Last. Latest open-source models, day one, on every Dell platform Dell Enterprise Hub is a multi-platform model catalog moving with the open-source frontier. This release narrows the gap with three things: benchmarked deployment configurations for each Dell platform (Goodput Scenarios, now extended to NVIDIA B300 and GB10), signed and scanned container images you can trace and verify, and new dell-ai SDK utilities that inspect a. Alongside the headline MoEs, the catalog also picked up Arcee Trinity Large Thinking (a ~398B sparse MoE with native long chain-of-thought), the rest of the Google Gemma 4 family (including the new MTP speculative decoding enabled versions), Mistral Small.",
+      "what_happened": "Roughly twenty new model configurations have landed in recent months (DeepSeek V4, Kimi K2.6, GLM 5.1, MiniMax M2.7, the Nemotron 3 reasoning family, Gemma 4, Qwen 3.5 and more) optimized for Dell AI Servers and AI PCs, with tested, secured containers ready within hours of each public release. A Blog post by Balachandran Rajendran on Hugging Face Dell Enterprise Hub at Dell Tech World 2026: new models, new platforms, faster to production The dell-ai SDK: deployment-day verification, not just an API client Last.",
+      "why_matters": "Latest open-source models, day one, on every Dell platform Dell Enterprise Hub is a multi-platform model catalog moving with the open-source frontier. This release narrows the gap with three things: benchmarked deployment configurations for each Dell platform (Goodput Scenarios, now extended to NVIDIA B300 and GB10), signed and scanned container images you can trace and verify, and new dell-ai SDK utilities that inspect a.",
+      "what_to_watch": "Alongside the headline MoEs, the catalog also picked up Arcee Trinity Large Thinking (a ~398B sparse MoE with native long chain-of-thought), the rest of the Google Gemma 4 family (including the new MTP speculative decoding enabled versions), Mistral Small 4 119B (and its NVFP4 sibling), Qwen3 Coder Next, and Cohere.",
+      "key_points": [
+        "Roughly twenty new model configurations have landed in recent months (DeepSeek V4, Kimi K2.6, GLM 5.1, MiniMax M2.7, the Nemotron 3 reasoning family, Gemma 4, Qwen 3.5 and more) optimized for Dell AI Servers and AI PCs.",
+        "A Blog post by Balachandran Rajendran on Hugging Face Dell Enterprise Hub at Dell Tech World 2026: new models, new platforms, faster to production The dell-ai SDK: deployment-day verification, not just an API client.",
+        "With the CLI, a day-one deployment experience would look like this: Together, we're just getting started With the new Dell PowerEdge XE9785 (AMD MI355X and NVIDIA B300) and Dell Pro Max with GB10 , a refreshed catalog.",
+        "Latest open-source models, day one, on every Dell platform Dell Enterprise Hub is a multi-platform model catalog moving with the open-source frontier.",
+        "Goodput Scenarios: from \"deployed\" to \"deployed at SLO\" A model running is not the same as a model running well.",
+        "This release narrows the gap with three things: benchmarked deployment configurations for each Dell platform (Goodput Scenarios, now extended to NVIDIA B300 and GB10), signed and scanned container images you can trace.",
+        "dell-ai models search now runs filters server-side, fans out detail fetches in parallel, and caches model metadata on disk for 24 hours.",
+        "Here is the concrete picture for Dell Tech World: what is new in the catalog, which Dell platform configurations it runs on, and where it ships with a tuned Goodput Scenario (marked ).",
+        "The two are co-designed: when DEH ships support for a new platform, the SDK can verify a customer's actual machine matches the reference before a single container is pulled.",
+        "That is what the dell-ai SDK is for.",
+        "Alongside the headline MoEs, the catalog also picked up Arcee Trinity Large Thinking (a ~398B sparse MoE with native long chain-of-thought), the rest of the Google Gemma 4 family (including the new MTP speculative.",
+        "New commands like dell-ai models compatible-platforms <model_id> and a --format table flag make the CLI results easy readable."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/958e4f5f2dda443c.jpg",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/662add9816435ebd17d9138a/_-n1Y6-ORSVQW-5M1Nigr.jpeg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/05/29/cognitions-scott-wu-says-ai-coding-agents-shouldnt-replace-humans/",
+      "title": "Cognition's Scott Wu says AI coding agents shouldn't replace humans | TechCrunch",
+      "description": "Cognition makes Devin, the first and arguably most successful AI coding agent. But famed coder Wu says it isn't designed to supplant human programmers.",
+      "excerpt": "Cognition makes Devin, the first and arguably most successful AI coding agent. But famed coder Wu says it isn't designed to supplant human programmers.",
+      "summary": "More from TechCrunch Cognition\u2019s Scott Wu says AI coding agents shouldn\u2019t replace humans Cognition CEO Scott Wu made headlines again this week when his two-year-old AI coding agent startup raised $1 billion at a $26 billion valuation . The company says that 89% of code committed by its engineers was committed by Devin, and the rest by local agents in Windsurf, the AI coding competitor it acquired last year. Yet, Cognition says that Devin\u2019s role in its own company is to ship nearly all the software. Wu explains that his agent\u2019s role is largely to do the kinds of long-tail maintenance tasks that many programmers don\u2019t like to do anyway: bringing old software up to date; moving applications off one platform and onto another. As a second-grader, Wu won a nationwide math competition for seventh-graders, which launched a childhood filled with math and programming tournaments. Cognition is the maker of Devin, one of the first and, arguably, most successful AI coding agents.",
+      "what_happened": "More from TechCrunch Cognition\u2019s Scott Wu says AI coding agents shouldn\u2019t replace humans Cognition CEO Scott Wu made headlines again this week when his two-year-old AI coding agent startup raised $1 billion at a $26 billion valuation . The company says that 89% of code committed by its engineers was committed by Devin, and the rest by local agents in Windsurf, the AI coding competitor it acquired last year.",
+      "why_matters": "Yet, Cognition says that Devin\u2019s role in its own company is to ship nearly all the software. Wu explains that his agent\u2019s role is largely to do the kinds of long-tail maintenance tasks that many programmers don\u2019t like to do anyway: bringing old software up to date; moving applications off one platform and onto another.",
+      "what_to_watch": "As a second-grader, Wu won a nationwide math competition for seventh-graders, which launched a childhood filled with math and programming tournaments. Cognition is the maker of Devin, one of the first and, arguably, most successful AI coding agents.",
+      "key_points": [
+        "More from TechCrunch Cognition\u2019s Scott Wu says AI coding agents shouldn\u2019t replace humans Cognition CEO Scott Wu made headlines again this week when his two-year-old AI coding agent startup raised $1 billion at a $26.",
+        "The company says that 89% of code committed by its engineers was committed by Devin, and the rest by local agents in Windsurf, the AI coding competitor it acquired last year.",
+        "Cognition is the maker of Devin, one of the first and, arguably, most successful AI coding agents.",
+        "Cognition makes Devin, the first and arguably most successful AI coding agent.",
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "It has never been our view.\u201d In this wild year of 2026 when every day another tech CEO announces layoffs in the name of supplanting workers with AI, Wu says he especially doesn\u2019t want coders to lose their jobs.",
+        "Yet, Cognition says that Devin\u2019s role in its own company is to ship nearly all the software.",
+        "Agents will free programmers \u201cfrom a lot of the toil, and so they can do much more of the creation side,\u201d he promises.",
+        "Devin, the CEO says, \u201cnaturally owns tasks end to end.\u201d In fact, in the blog post announcing that raise, Cognition laid out a vision where \u201cwe are shifting to a world of self-driving software development.\u201d So, could.",
+        "It also introduced him to other wunderkinds who went on to launch other AI tech startups, like Scale AI founder Alexandr Wang.",
+        "As for the concept of self-driving software, where the agent learns and improves itself so that one day it will work at higher levels ( \u201crecursive\u201d is the latest buzzword in AI these days ), Wu says.",
+        "He thinks of it as a physical symbol of the Devin AI coder \u201cThis is my buddy that helps you build more.\u201d Wu doesn\u2019t want AI agents to take the joy of programming away from people."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3cb50dd8069ed9c5.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/07/TC25_Disrupt-Color.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/05/29/final-24-hours-to-save-up-to-410-on-your-techcrunch-disrupt-2026-ticket/",
+      "title": "Final 24 hours to save up to $410 on your Disrupt 2026 ticket | TechCrunch",
+      "description": "You now have until tonight at 11:59 p.m. PT to lock in Early Bird savings of up to $410 for TechCrunch Disrupt 2026 before prices increase. Register now.",
+      "excerpt": "You now have until tonight at 11:59 p.m. PT to lock in Early Bird savings of up to $410 for TechCrunch Disrupt 2026 before prices increase. Register now.",
+      "summary": "Built for the people shaping what\u2019s next Disrupt is designed for founders raising capital, investors sourcing opportunities, operators scaling companies, and innovators looking for an edge. Blue Origin\u2019s New Glenn rocket explodes during testing in Florida Anthropic releases Opus 4.8 with new \u2018dynamic workflow\u2019 tool Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans DuckDuckGo installs are up 30% as users reject being \u2018force-fed\u2019 Google\u2019s AI Search I tried Amazon\u2019s. With 300+ exhibiting startups , Startup Battlefield 200 , curated networking experiences, and multiple stages of programming, Disrupt is built to help attendees make meaningful connections and real business progress. Once the deadline passes, so do the savings. Register now and join 10,000+ founders, investors, operators, and innovators at Moscone West in San Francisco from October 13\u201315 for three days packed with networking, startup discovery, and conversations shaping the future of tech. Once the deadline passes, so do the savings.",
+      "what_happened": "Built for the people shaping what\u2019s next Disrupt is designed for founders raising capital, investors sourcing opportunities, operators scaling companies, and innovators looking for an edge. Blue Origin\u2019s New Glenn rocket explodes during testing in Florida Anthropic releases Opus 4.8 with new \u2018dynamic workflow\u2019 tool Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans DuckDuckGo installs are up 30% as users reject being \u2018force-fed\u2019 Google\u2019s AI Search I tried Amazon\u2019s.",
+      "why_matters": "With 300+ exhibiting startups , Startup Battlefield 200 , curated networking experiences, and multiple stages of programming, Disrupt is built to help attendees make meaningful connections and real business progress. Once the deadline passes, so do the savings.",
+      "what_to_watch": "Register now and join 10,000+ founders, investors, operators, and innovators at Moscone West in San Francisco from October 13\u201315 for three days packed with networking, startup discovery, and conversations shaping the future of tech. Once the deadline passes, so do the savings.",
+      "key_points": [
+        "Once the deadline passes, so do the savings.",
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "This year will deliver the same high-caliber experience, with 200+ sessions across six industry-focused stages, plus roundtables and breakouts covering scaling, AI, fintech, infrastructure, robotics, and emerging.",
+        "Get Disrupt Early Bird savings of up to $410 by May 29, 11:59 p.m.",
+        "The countdown is almost over.",
+        "Built for the people shaping what\u2019s next Disrupt is designed for founders raising capital, investors sourcing opportunities, operators scaling companies, and innovators looking for an edge.",
+        "PT to lock in Early Bird savings of up to $410 for TechCrunch Disrupt 2026 before prices increase.",
+        "Register now to secure your TechCrunch Disrupt 2026 pass at a low rate before the deadline expires.",
+        "Register now and join 10,000+ founders, investors, operators, and innovators at Moscone West in San Francisco from October 13\u201315 for three days packed with networking, startup discovery, and conversations shaping the.",
+        "More from TechCrunch Final 24 hours to save up to $410 on your TechCrunch Disrupt 2026 ticket This is it.",
+        "PT Early Bird savings of up to $410 end tonight at 11:59 p.m.",
+        "You now have until tonight at 11:59 p.m."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3cb50dd8069ed9c5.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/07/TC25_Disrupt-Color.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/author/techcrunch-events/",
+      "title": "TechCrunch Events, Author at TechCrunch",
+      "description": "from TechCrunch Events at TechCrunch",
+      "excerpt": "from TechCrunch Events at TechCrunch",
+      "summary": "More from TechCrunch Latest from TechCrunch Events Today is the last day to apply to speak at TechCrunch Disrupt 2026 Final 24 hours to save up to $410 on your TechCrunch Disrupt 2026 ticket Why Paris may be the most important AI city outside Silicon Valley In just 3 weeks, StrictlyVC is coming to Los Angeles Startup Battlefield 200 application deadline extended to June 8 after overwhelming demand At TechCrunch Disrupt 2026: Databricks\u2019 co-founder on what kills enterprise AI deals 2 days left: Lock in ticket. Get Disrupt Early Bird savings of up to $410 by May 29, 11:59 p.m. You may still see interest-based ads if your information is sold or shared by other companies or was sold or shared previously. Get Disrupt Early Bird savings of up to $410 by May 29, 11:59 p.m.",
+      "what_happened": "More from TechCrunch Latest from TechCrunch Events Today is the last day to apply to speak at TechCrunch Disrupt 2026 Final 24 hours to save up to $410 on your TechCrunch Disrupt 2026 ticket Why Paris may be the most important AI city outside Silicon Valley In just 3 weeks, StrictlyVC is coming to Los Angeles Startup Battlefield 200 application deadline extended to June 8 after overwhelming demand At TechCrunch Disrupt 2026: Databricks\u2019 co-founder on what kills enterprise AI deals 2 days left: Lock in ticket.",
+      "why_matters": "Get Disrupt Early Bird savings of up to $410 by May 29, 11:59 p.m. You may still see interest-based ads if your information is sold or shared by other companies or was sold or shared previously.",
+      "what_to_watch": "Get Disrupt Early Bird savings of up to $410 by May 29, 11:59 p.m.",
+      "key_points": [
+        "from TechCrunch Events at TechCrunch The first StrictlyVC of 2026 hits SF on April 30.",
+        "More from TechCrunch Latest from TechCrunch Events Today is the last day to apply to speak at TechCrunch Disrupt 2026 Final 24 hours to save up to $410 on your TechCrunch Disrupt 2026 ticket Why Paris may be the most.",
+        "Get Disrupt Early Bird savings of up to $410 by May 29, 11:59 p.m.",
+        "You may still see interest-based ads if your information is sold or shared by other companies or was sold or shared previously."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ab825d44f042c923.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/11/54889167026_7a80a409c4_o.jpg?w=563",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bloomberg.com/news/videos/2026-05-29/gita-gopinath-on-why-interest-rates-are-surging-video",
+      "title": "Watch Gita Gopinath on Why Interest Rates Have Surged All Around the World | Odd Lots - Bloomberg",
+      "description": "There's been a massive selloff in the bond market and rates are rising globally. Japan, Korea, the UK... You name it. Gita Gopinath - Harvard economics professor and the former first deputy managing director of the IMF - has long warned that bond markets are \"in a fragile place.\" She sees a combo of demographics, high levels of public debt, and the intense capital needs of the AI boom creating inflationary pressure all around the world. Today we speak with Gopinath about the seeming disconnect between stocks and bonds and why investors may be wrong to assume that governments will have their back the next time there's a major shock.",
+      "excerpt": "There's been a massive selloff in the bond market and rates are rising globally. Japan, Korea, the UK... You name it. Gita Gopinath - Harvard economics professor and the former first deputy managing director of the IMF - has long warned that bond markets are \"in a fragile place.\" She sees a combo of demographics, high levels of public debt, and the intense capital needs of the AI boom creating inflationary pressure all around the world. Today we speak with Gopinath about the seeming disconnect between stocks and bonds and why investors may be wrong to assume that governments will have their back the next time there's a major shock.",
+      "summary": "Gita Gopinath on Why Interest Rates Have Surged All Around the World | Odd Lots US, Iran Agree to 60-Day Truce Pending Trump Approval | Balance of Power: Late Edition 5/28/2026 Stocks & Bonds Rise After US-Iran Deal Reports | The Close 5/28/2026 Bessent Briefs Press, Outlines Trump\u2019s Conditions for Iran | Bloomberg Businessweek Daily 5/28/2026 US, Iran Truce Awaits Trump Signoff | Balance of Power: Early Edition 5/28/2026 SpaceX Fever Accelerates Space ETFs, Weakness In Crypto ETF Flows | ETF IQ 5/28/2026. There's been a massive selloff in the bond market and rates are rising globally. Gita Gopinath - Harvard economics professor and the former first deputy managing director of the IMF - has long warned that bond markets are \"in a fragile place.\" She sees a combo of demographics, high levels of public debt, and the intense capital needs of the AI boom creating inflationary pressure all around the world. Today we speak with Gopinath about the seeming disconnect between stocks and bonds and why investors may be wrong to assume that governments will have their back the next time there's a major shock. There's been a massive selloff in the bond market and rates are rising globally.",
+      "what_happened": "Gita Gopinath on Why Interest Rates Have Surged All Around the World | Odd Lots US, Iran Agree to 60-Day Truce Pending Trump Approval | Balance of Power: Late Edition 5/28/2026 Stocks & Bonds Rise After US-Iran Deal Reports | The Close 5/28/2026 Bessent Briefs Press, Outlines Trump\u2019s Conditions for Iran | Bloomberg Businessweek Daily 5/28/2026 US, Iran Truce Awaits Trump Signoff | Balance of Power: Early Edition 5/28/2026 SpaceX Fever Accelerates Space ETFs, Weakness In Crypto ETF Flows | ETF IQ 5/28/2026.",
+      "why_matters": "There's been a massive selloff in the bond market and rates are rising globally. Gita Gopinath - Harvard economics professor and the former first deputy managing director of the IMF - has long warned that bond markets are \"in a fragile place.\" She sees a combo of demographics, high levels of public debt, and the intense capital needs of the AI boom creating inflationary pressure all around the world.",
+      "what_to_watch": "Today we speak with Gopinath about the seeming disconnect between stocks and bonds and why investors may be wrong to assume that governments will have their back the next time there's a major shock. There's been a massive selloff in the bond market and rates are rising globally.",
+      "key_points": [
+        "There's been a massive selloff in the bond market and rates are rising globally.",
+        "Gita Gopinath - Harvard economics professor and the former first deputy managing director of the IMF - has long warned that bond markets are \"in a fragile place.\" She sees a combo of demographics, high levels of public.",
+        "Today we speak with Gopinath about the seeming disconnect between stocks and bonds and why investors may be wrong to assume that governments will have their back the next time there's a major shock.",
+        "Gita Gopinath on Why Interest Rates Have Surged All Around the World | Odd Lots US, Iran Agree to 60-Day Truce Pending Trump Approval | Balance of Power: Late Edition 5/28/2026 Stocks & Bonds Rise After US-Iran Deal.",
+        "Connecting decision makers to a dynamic network of information, people and ideas, Bloomberg quickly and accurately delivers business and financial information, news and insight around the world Connecting decision."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/311888ac8e87323b.webp",
+      "image_url": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ixgi.zgp7faI/v3/400x-1.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bloomberg.com/news/videos/2026-05-29/autodesk-ceo-maintainx-deal-brings-exciting-opportunity-video",
+      "title": "Watch Autodesk CEO: MaintainX Acquisition Presents Exciting Opportunity - Bloomberg",
+      "description": "Autodesk President and CEO Andrew Anagnost details the company's $3.6 billion acquisition of MaintainX, emphasizing that the deal represents a strategic move to extend Autodesk's offerings from design and manufacturing into the operational phase of the built environment lifecycle. He speaks with Matt Miller on \"Bloomberg Open Interest.\"",
+      "excerpt": "Autodesk President and CEO Andrew Anagnost details the company's $3.6 billion acquisition of MaintainX, emphasizing that the deal represents a strategic move to extend Autodesk's offerings from design and manufacturing into the operational phase of the built environment lifecycle. He speaks with Matt Miller on \"Bloomberg Open Interest.\"",
+      "summary": "He speaks with Matt Miller on \"Bloomberg Open Interest.\" Autodesk CEO Says MaintainX Acquisition Presents Exciting Opportunity Investors Bet Big on Humanoid Robots US Denies Iran Report on Draft Deal to Re-Open Hormuz Gita Gopinath on Why Interest Rates Have Surged All Around the World | Odd Lots Blue Origin Rocket Explodes on Launchpad in Florida Ed Yardeni Says Dip-Buying Opportunities in This Market Are Wishful Thinking Philippines' Marcos on Building a Legacy of His Own Anthropic Candidates Pay $4,600 for. He speaks with Matt Miller on \"Bloomberg Open Interest.\" Connecting decision makers to a dynamic network of information, people and ideas, Bloomberg quickly and accurately delivers business and financial information, news and insight around the world Connecting decision makers to a dynamic network of information, people and ideas, Bloomberg quickly and accurately delivers business and financial information, news and insight.",
+      "what_happened": "He speaks with Matt Miller on \"Bloomberg Open Interest.\" Autodesk CEO Says MaintainX Acquisition Presents Exciting Opportunity Investors Bet Big on Humanoid Robots US Denies Iran Report on Draft Deal to Re-Open Hormuz Gita Gopinath on Why Interest Rates Have Surged All Around the World | Odd Lots Blue Origin Rocket Explodes on Launchpad in Florida Ed Yardeni Says Dip-Buying Opportunities in This Market Are Wishful Thinking Philippines' Marcos on Building a Legacy of His Own Anthropic Candidates Pay $4,600 for.",
+      "why_matters": "He speaks with Matt Miller on \"Bloomberg Open Interest.\" Connecting decision makers to a dynamic network of information, people and ideas, Bloomberg quickly and accurately delivers business and financial information, news and insight around the world Connecting decision makers to a dynamic network of information, people and ideas, Bloomberg quickly and accurately delivers business and financial information, news and insight.",
+      "what_to_watch": "",
+      "key_points": [
+        "Autodesk President and CEO Andrew Anagnost details the company's $3.6 billion acquisition of MaintainX, emphasizing that the deal represents a strategic move to extend Autodesk's offerings from design and manufacturing.",
+        "He speaks with Matt Miller on \"Bloomberg Open Interest.\" Autodesk CEO Says MaintainX Acquisition Presents Exciting Opportunity Investors Bet Big on Humanoid Robots US Denies Iran Report on Draft Deal to Re-Open Hormuz.",
+        "He speaks with Matt Miller on \"Bloomberg Open Interest.\" Connecting decision makers to a dynamic network of information, people and ideas, Bloomberg quickly and accurately delivers business and financial information."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/add17e80a382e6ff.webp",
+      "image_url": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/imEjOXc7EmVw/v3/400x-1.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aibusiness.com/data-centers/neocloud-vendor-coreweave-builds-up-software-stack",
+      "title": "Neocloud Vendor CoreWeave Builds Up Software Stack",
+      "description": "After a period of rapid growth, CoreWeave is now building the software foundation to support training and inference for powerful AI models and agents.",
+      "excerpt": "After a period of rapid growth, CoreWeave is now building the software foundation to support training and inference for powerful AI models and agents.",
+      "summary": "Neocloud Vendor CoreWeave Builds Up Software Stack With the launch of new agentic AI capabilities, the startup is using software acquisitions to develop an AI hardware-software stack for agent training and inference. We've continued to evolve the platform and work with customers and partners. It starts with our inference platform being able to deploy and run the models in either a serverless or dedicated way. In this Q&A, Corey Sanders, CoreWeave's senior vice president, product management, discusses the software release and how CoreWeave plans to use its new full-stack approach to help organizations build, deploy and safely run AI agents and other compute-intensive AI workloads. After a period of rapid growth, CoreWeave is now building the software foundation to support training and inference for powerful AI models and agents.",
+      "what_happened": "Neocloud Vendor CoreWeave Builds Up Software Stack With the launch of new agentic AI capabilities, the startup is using software acquisitions to develop an AI hardware-software stack for agent training and inference. We've continued to evolve the platform and work with customers and partners.",
+      "why_matters": "It starts with our inference platform being able to deploy and run the models in either a serverless or dedicated way. In this Q&A, Corey Sanders, CoreWeave's senior vice president, product management, discusses the software release and how CoreWeave plans to use its new full-stack approach to help organizations build, deploy and safely run AI agents and other compute-intensive AI workloads.",
+      "what_to_watch": "After a period of rapid growth, CoreWeave is now building the software foundation to support training and inference for powerful AI models and agents.",
+      "key_points": [
+        "Neocloud Vendor CoreWeave Builds Up Software Stack With the launch of new agentic AI capabilities, the startup is using software acquisitions to develop an AI hardware-software stack for agent training and inference.",
+        "The capabilities lean on CoreWeave\u2019s May 2025 acquisition of AI development platform vendor Weights & Biases, for $1.7 billion, and integrate serverless reinforcement learning , inference and observability to post-train.",
+        "After a period of rapid growth, CoreWeave is now building the software foundation to support training and inference for powerful AI models and agents.",
+        "We've continued to evolve the platform and work with customers and partners.",
+        "It starts with our inference platform being able to deploy and run the models in either a serverless or dedicated way.",
+        "In this Q&A, Corey Sanders, CoreWeave's senior vice president, product management, discusses the software release and how CoreWeave plans to use its new full-stack approach to help organizations build, deploy and safely.",
+        "When you started out, you didn't have the five companies that you acquired in 2025, including Weights & Biases.",
+        "As for the migration perspective, the inferencing platform for what we expose, we use OpenAI standard APIs, and this allows consistency.",
+        "Corey Sanders: You might think that would be a softball question, but the term I prefer, and I should use with customers and partners, is AI cloud.",
+        "On Thursday, the New Jersey-based vendor launched a set of unified agentic AI capabilities that help enterprises deploy autonomous AI agents in production and continuously improve them.",
+        "If you've deployed this elsewhere and want to deploy it on CoreWeave, the transition to our inferencing platform should be fairly seamless.",
+        "Meanwhile, the vertical integration of AI requirements continues to increase, and so certainly the first wave of customers looks to get the best observability, the best uptime, the best reliability, the best security."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0bf0921e514388d2.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blte0eb294f3b7f73a0/6a19d0c68bc1ea20504df86c/Waymo2.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/aws-rebuilds-opensearch-serverless-intros-agent-skills",
+      "title": "AWS Rebuilds OpenSearch Serverless, Intros Agent Skills",
+      "description": "AWS made architectural changes to OpenSearch Serverless to support the shift in search.",
+      "excerpt": "AWS made architectural changes to OpenSearch Serverless to support the shift in search.",
+      "summary": "Agent Skills enables AWS applications to connect natively to OpenSearch, meaning agents running on those applications are embedded in OpenSearch and can be monitored more effectively. AWS Rebuilds OpenSearch Serverless, Intros Agent Skills The update positions OpenSearch as foundational infrastructure for enterprises, enabling faster, scalable search. Also, a native AI platform integration is available on Vercel, a cloud platform for developers that developers use to build, deploy and host websites and applications, and as a Kiro Power -- a downloadable plugin for the Kiro environment that provides AI agents with technical knowledge, external tools and best practices. With this rebuild and a new open skills tool, AWS said it is providing enterprises with the infrastructure. AWS also introduced OpenSearch Agent skills, a set of composable skills that bring OpenSearch knowledge into tools such as Kiro, Cursor and Claude Code.",
+      "what_happened": "Agent Skills enables AWS applications to connect natively to OpenSearch, meaning agents running on those applications are embedded in OpenSearch and can be monitored more effectively. AWS Rebuilds OpenSearch Serverless, Intros Agent Skills The update positions OpenSearch as foundational infrastructure for enterprises, enabling faster, scalable search.",
+      "why_matters": "Also, a native AI platform integration is available on Vercel, a cloud platform for developers that developers use to build, deploy and host websites and applications, and as a Kiro Power -- a downloadable plugin for the Kiro environment that provides AI agents with technical knowledge, external tools and best practices. With this rebuild and a new open skills tool, AWS said it is providing enterprises with the infrastructure.",
+      "what_to_watch": "AWS also introduced OpenSearch Agent skills, a set of composable skills that bring OpenSearch knowledge into tools such as Kiro, Cursor and Claude Code.",
+      "key_points": [
+        "Agent Skills enables AWS applications to connect natively to OpenSearch, meaning agents running on those applications are embedded in OpenSearch and can be monitored more effectively.",
+        "AWS Rebuilds OpenSearch Serverless, Intros Agent Skills The update positions OpenSearch as foundational infrastructure for enterprises, enabling faster, scalable search.",
+        "AWS also introduced OpenSearch Agent skills, a set of composable skills that bring OpenSearch knowledge into tools such as Kiro, Cursor and Claude Code.",
+        "The cloud provider also committed to a roadmap to manage long-term memory agents and purpose-built search reasoning models later this year.",
+        "Also, a native AI platform integration is available on Vercel, a cloud platform for developers that developers use to build, deploy and host websites and applications, and as a Kiro Power -- a downloadable plugin for.",
+        "OpenSearch Serverless is Amazon\u2019s service for deploying OpenSearch Service, a distributed search and analytics suite that provides fast access to large volumes of data.",
+        "[AWS is] saying that it is changing, and I would agree with that.\u201d OpenSearch Serverless and Agent Skills AWS\u2019 rebuild of OpenSearch Serverless supports the shift in search by making key improvements.",
+        "When she's not diving deep into the world of AI, she spends her time on passion projects and raising her three daughters.",
+        "Instant autoscaling is a compute capability that enables agents to respond to a request in seconds instead of minutes.",
+        "\u201c So, they\u2019re making applications and their infrastructure a lot more open and a lot more native to agentic AI.\u201d Related: Anthropic Opus 4.8 Shows the AI Lab is Paying Attention to Customers The Challenge with Scaling.",
+        "AWS on Thursday revealed that it is rebuilding OpenSearch Serverless with architectural changes that support the new direction of search in the age of AI agents.",
+        "AWS made architectural changes to OpenSearch Serverless to support the shift in search."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0bf0921e514388d2.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blte0eb294f3b7f73a0/6a19d0c68bc1ea20504df86c/Waymo2.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 9,
+  "has_cta": true,
+  "slides": [
+    "Hub at Dell Tech World 2026 new models new platforms faster",
+    "Cognition's Scott Wu says AI coding agents shouldn't replace humans",
+    "Final 24 hours to save up to $410 on your Disrupt 2026",
+    "TechCrunch Events Author at TechCrunch",
+    "Gopinath on Why Interest Rates Have Surged All Around the World",
+    "CEO MaintainX Acquisition Presents Exciting Opportunity",
+    "CoreWeave Builds Up Software Stack",
+    "AWS Rebuilds OpenSearch Serverless Intros Agent Skills",
+    "SAVE THIS."
+  ]
+}
