@@ -26,8 +26,6 @@ def write_instagram_carousels(
     memory: Any | None = None,
     enable_verification: bool = True,
     max_verify_rounds: int = 2,
-    ollama_url: str | None = None,
-    ollama_model: str | None = None,
 ) -> list[Path]:
     """Create Instagram carousel batches.
 
@@ -70,8 +68,7 @@ def write_instagram_carousels(
         carousel_dir.mkdir(parents=True, exist_ok=True)
 
         content_slides = _build_slide_specs(
-            part_summary, email_dt, global_used_image_paths, global_used_image_urls,
-            ollama_url=ollama_url, ollama_model=ollama_model,
+            part_summary, email_dt, global_used_image_paths, global_used_image_urls
         )
 
         # ── Phase 2: Pre-publish verification ──────────────────────────────

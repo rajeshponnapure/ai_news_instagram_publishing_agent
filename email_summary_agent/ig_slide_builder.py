@@ -133,15 +133,13 @@ def _build_slide_specs(
     email_dt: datetime,
     initial_used_paths: set[str] | None = None,
     initial_used_urls: set[str] | None = None,
-    ollama_url: str | None = None,
-    ollama_model: str | None = None,
 ) -> list[dict[str, Any]]:
     """Build one image/key-point slide per article plus a final CTA slide."""
     articles = _article_items(summary)
     if not articles:
         slides = _build_fallback_single_slide(summary, initial_used_paths)
     else:
-        slides = _build_article_slides(summary, articles[:MAX_CAROUSEL_SLIDES], initial_used_paths, initial_used_urls, ollama_url, ollama_model)
+        slides = _build_article_slides(summary, articles[:MAX_CAROUSEL_SLIDES], initial_used_paths, initial_used_urls)
         if not slides:
             slides = _build_fallback_single_slide(summary, initial_used_paths)
     slides.append(_make_cta_slide(len(slides) + 1))
@@ -174,8 +172,6 @@ def _build_article_slides(
     articles: list[dict[str, Any]],
     initial_used_paths: set[str] | None = None,
     initial_used_urls: set[str] | None = None,
-    ollama_url: str | None = None,
-    ollama_model: str | None = None,
 ) -> list[dict[str, Any]]:
     used_image_urls: set[str] = set(initial_used_urls or ())
     used_image_paths: set[str] = set(initial_used_paths or ())
@@ -202,8 +198,6 @@ def _build_article_slides(
             summary,
             max_points=MAX_KP_PER_SLIDE,
             used_fingerprints=used_key_fingerprints,
-            ollama_url=ollama_url,
-            ollama_model=ollama_model,
         )
         if not points and not _article_has_publishable_seed(article):
             continue
