@@ -20,7 +20,13 @@ def write_publish_manifest(carousel_dirs: list[Path], public_media_base_url: str
     existing_posts = _existing_manifest_posts(manifest_path)
     posts = []
     for index, carousel_dir in enumerate(carousel_dirs):
+        if (carousel_dir / "VERIFY_FAILED").exists():
+            print(f"  Skipping {carousel_dir.name}: verification failed (VERIFY_FAILED marker)")
+            continue
         slides = sorted(carousel_dir.glob("slide_*.png"))[:MAX_ARTICLES_PER_POST]
+        if not slides:
+            print(f"  Skipping {carousel_dir.name}: no slide PNGs found")
+            continue
         caption_path = carousel_dir / "caption.txt"
         caption = caption_path.read_text(encoding="utf-8") if caption_path.exists() else ""
         existing = existing_posts.get(str(carousel_dir), {})
