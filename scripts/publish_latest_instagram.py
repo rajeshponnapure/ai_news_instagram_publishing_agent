@@ -25,6 +25,12 @@ def main() -> int:
     settings = Settings.from_env()
     settings.validate_instagram_publish()
 
+    if not settings.public_media_base_url:
+        print("PUBLIC_MEDIA_BASE_URL is not set. This must be set to the GitHub Pages URL")
+        print("where slides are publicly reachable. The workflow sets it from the")
+        print("deploy-pages job output. Ensure deploy-pages ran successfully.")
+        return 0
+
     settings.instagram_dir.mkdir(parents=True, exist_ok=True)
     batches = (
         [path for path in settings.instagram_dir.iterdir() if path.is_dir()]
