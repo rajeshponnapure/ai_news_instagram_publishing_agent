@@ -70,11 +70,12 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
         urls = [url for url in post.get("public_slide_urls", []) if url][:MAX_ARTICLES_PER_POST]
         if len(urls) < 1:
             folder = post.get("folder", "unknown")
-            print(
-                f"SKIPPING post '{folder}': no public slide URL found. "
-                f"Check that PUBLIC_MEDIA_BASE_URL is set "
-                f"and the batch was deployed to GitHub Pages before publishing."
-            )
+            print(f"SKIPPING post '{folder}': no public slide URL found.")
+            print(f"  public_slide_urls = {post.get('public_slide_urls', [])!r}")
+            print(f"  local_slides = {post.get('local_slides', [])!r}")
+            print(f"  status = {post.get('status', 'unknown')!r}")
+            print(f"  Check that PUBLIC_MEDIA_BASE_URL is set "
+                  f"and the batch was deployed to GitHub Pages before publishing.")
             post["status"] = "publish_failed"
             post["error"] = "No public slide URL found."
             manifest_path.write_text(

@@ -25,6 +25,7 @@ def main() -> int:
     settings = Settings.from_env()
     settings.validate_instagram_publish()
 
+    print(f"public_media_base_url = {settings.public_media_base_url!r}")
     if not settings.public_media_base_url:
         print("PUBLIC_MEDIA_BASE_URL is not set. This must be set to the GitHub Pages URL")
         print("where slides are publicly reachable. The workflow sets it from the")
