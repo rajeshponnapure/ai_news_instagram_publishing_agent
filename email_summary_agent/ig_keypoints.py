@@ -1,7 +1,9 @@
 """ig_keypoints.py — key point extraction and narrative composition for the Instagram pipeline."""
 from __future__ import annotations
 
+import json
 import re
+import urllib.request
 from typing import TYPE_CHECKING, Any
 
 from .ig_constants import REFERENCE_BRANDS
@@ -141,6 +143,88 @@ def _draw_keypoint_body_with_highlights(
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# Ollama-powered keypoint generation
+# ─────────────────────────────────────────────────────────────────────────────
+
+_KEYPOINT_GENERATION_PROMPT = """You are a professional Instagram content creator writing key points for a news carousel slide. Your key points must sound like a human wrote them — conversational, punchy, specific.
+
+RULES — never break these:
+1. Start each key point with a power word, specific number, or strong noun
+2. Include concrete details: names, numbers, comparisons, percentages
+3. Write ONE clear idea per point (8-18 words maximum)
+4. Conversational tone — like explaining a smart friend, NOT writing an essay
+5. Never start with: "This", "It", "There", "Here", "That", "These", "Those", "They", "We"
+6. No heading labels, no meta-commentary, no markdown, no emoji
+7. Every point must be independently useful — no "as mentioned above" or "as a result"
+8. Never use these AI-sounding words: "Moreover", "Furthermore", "In addition", "This means", "This shows", "The key takeaway", "The real shift", "What this means", "It is important to note", "In today's", "Additionally", "In conclusion"
+9. Every point must state a fact — no vague generalities
+10. End every point with a period
+
+WRITE exactly 4 key points. Each on its own line. No numbers, no dashes, no bullets — just the text.
+
+Article title: {title}
+
+Article text:
+{text}"""
+
+
+def _generate_keypoints_via_ollama(
+    article_text: str,
+    title: str,
+    ollama_url: str | None = None,
+    ollama_model: str | None = None,
+) -> list[str] | None:
+    """Generate 4 key points using the local Ollama LLM.
+
+    Returns a list of strings on success, or None if Ollama is unavailable/fails.
+    """
+    if not ollama_url or not ollama_model:
+        return None
+    if not ollama_url.startswith(("http://", "https://")):
+        return None
+    try:
+        req = urllib.request.Request(f"{ollama_url}/api/tags", method="GET")
+        with urllib.request.urlopen(req, timeout=5) as resp:
+            if resp.status != 200:
+                return None
+    except Exception:
+        return None
+
+    text_sample = article_text[:3000] if len(article_text) > 3000 else article_text
+    title_sample = title[:200] if len(title) > 200 else title
+    prompt = _KEYPOINT_GENERATION_PROMPT.format(title=title_sample, text=text_sample)
+
+    payload = {
+        "model": ollama_model,
+        "stream": False,
+        "messages": [
+            {
+                "role": "system",
+                "content": "You are an expert Instagram content creator. Write key points in a human, conversational style. Never use AI-sounding language.",
+            },
+            {"role": "user", "content": prompt},
+        ],
+    }
+    try:
+        req = urllib.request.Request(
+            f"{ollama_url}/api/chat",
+            data=json.dumps(payload).encode("utf-8"),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+        with urllib.request.urlopen(req, timeout=90) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+        content = data.get("message", {}).get("content", "")
+        lines = [l.strip() for l in content.split("\n") if l.strip()]
+        points = [l for l in lines if len(l) > 15 and not l.startswith(("#", "-", "*", "```"))]
+        if len(points) >= 3:
+            return points[:4]
+    except Exception:
+        pass
+    return None
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 # Key point extraction
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -149,13 +233,17 @@ def _extract_instagram_key_points(
     summary: "EmailSummary",
     max_points: int = 10,
     used_fingerprints: set[str] | None = None,
+    ollama_url: str | None = None,
+    ollama_model: str | None = None,
 ) -> list[str]:
     """Build punchy, human-style key points for Instagram slides.
 
+    Uses Ollama LLM when available, falls back to rule-based extraction.
     The goal is a line a human content creator would write: a single fact-led
     statement, no heading/meta label, no essay connectives, no copy-pasted
     article prose. Pipeline:
 
+    Phase 0: Try Ollama-powered keypoint generation (human-written style).
     Phase 1: Collect raw candidates from THIS article's own fields.
     Phase 2: Reshape each into a human-style line and reject headings/low quality.
     Phase 3: Drop near-duplicates of points already used on earlier slides
@@ -262,6 +350,26 @@ def _extract_instagram_key_points(
             if simhash_similar(sh, simhash(prior), max_hamming=3):
                 return True
         return False
+
+    # ---- Phase 0: Ollama-powered keypoint generation ----
+    if ollama_url and ollama_model:
+        article_text = str(article.get("scraped_content") or article.get("text") or article.get("description") or "")
+        article_title = str(article.get("title") or "")
+        ollama_points = _generate_keypoints_via_ollama(article_text, article_title, ollama_url, ollama_model)
+        if ollama_points and len(ollama_points) >= 3:
+            # Dedup against previously used fingerprints
+            used_texts = list(used_fingerprints) if used_fingerprints else []
+            novel = [p for p in ollama_points if not _semantic_dupe(p, used_texts)]
+            if len(novel) < 3:
+                for p in ollama_points:
+                    if p not in novel:
+                        novel.append(p)
+            final = layout_safe_points([_trim_no_dots(pt, 150) for pt in novel], limit=max_points)
+            if final and len(final) >= 3:
+                if used_fingerprints is not None:
+                    for pt in final:
+                        used_fingerprints.add(pt)
+                return final
 
     # ---- Phase 1+2: Collect, reshape, and quality-gate candidates ----
     candidates: list[str] = []

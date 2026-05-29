@@ -347,6 +347,8 @@ def process_items(
                     memory=memory,
                     enable_verification=settings.enable_verification,
                     max_verify_rounds=settings.max_verification_rounds,
+                    ollama_url=settings.ollama_url,
+                    ollama_model=settings.ollama_model,
                 )
                 instagram_count = len(carousel_dirs)
                 _safe_print(
