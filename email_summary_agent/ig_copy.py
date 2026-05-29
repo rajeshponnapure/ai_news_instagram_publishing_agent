@@ -355,7 +355,9 @@ def _strip_keypoint_heading(text: str) -> str:
     """Remove heading/meta labels from the START of a point, with any separator.
 
     Handles ``Label:``, ``Label -``, ``Label —``, ``Label.`` and bare ``Label``
-    when followed by sentence content. Loops so stacked labels are all removed.
+    when followed by sentence content. Also handles labels followed by whitespace
+    + capital letter (no separator — LLM sometimes omits it). Loops so stacked
+    labels are all removed.
     """
     cleaned = str(text or "").strip()
     changed = True
@@ -363,12 +365,9 @@ def _strip_keypoint_heading(text: str) -> str:
         changed = False
         cleaned = re.sub(r"^[\s\-:|/>#*•·]+", "", cleaned).strip()
         for label in KEYPOINT_LABELS:
-            # Strip only when the label is followed by an explicit separator
-            # (:, -, —, .) and real content — the reliable "heading prefix" signal.
-            # Bare labels with no separator are rejected wholesale by
-            # ``looks_like_heading`` instead of being chopped mid-sentence.
             updated = re.sub(
-                rf"^(?i:{re.escape(label)})\s*[:\-–—.]+\s*(?=\S)", "", cleaned
+                rf"^(?i:{re.escape(label)})\s*(?:[:\-–—.]+\s*(?=\S)|\s+(?=[A-Z]))",
+                "", cleaned,
             ).strip()
             if updated != cleaned and updated:
                 cleaned = updated
