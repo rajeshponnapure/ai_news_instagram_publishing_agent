@@ -20,6 +20,7 @@ from .ig_copy import layout_safe_headline, layout_safe_points
 # â”€â”€ asset paths â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 _ASSETS = Path(__file__).parent / "assets" / "graitech"
 _FONTS = _ASSETS / "fonts"
+_LOCAL_FONTS = Path(__file__).parent / "fonts"
 _IMG = _ASSETS / "assets"
 
 CANVAS_W = 1080
@@ -202,27 +203,24 @@ def _cta_body(slide):
 # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 def _inline_css():
-    anton = _font_b64("AntonSC-Regular.ttf")
-    mono_r = _font_b64("SpaceMono-Regular.ttf")
-    mono_b = _font_b64("SpaceMono-Bold.ttf")
-    mono_bi = _font_b64("SpaceMono-BoldItalic.ttf")
-    mono_i = _font_b64("SpaceMono-Italic.ttf")
+    roboto_r = _font_b64("Roboto-Regular.ttf")
+    roboto_b = _font_b64("Roboto-Bold.ttf")
+    mono_r = _font_b64("RobotoMono-Regular.ttf")
     tex = _svg_b64(_IMG / "concrete-texture.svg")
 
     return f"""
-@font-face {{font-family:'Anton SC'; src:url('data:font/truetype;base64,{anton}') format('truetype'); font-weight:400; font-style:normal;}}
-@font-face {{font-family:'Space Mono'; src:url('data:font/truetype;base64,{mono_r}') format('truetype'); font-weight:400; font-style:normal;}}
-@font-face {{font-family:'Space Mono'; src:url('data:font/truetype;base64,{mono_b}') format('truetype'); font-weight:700; font-style:normal;}}
-@font-face {{font-family:'Space Mono'; src:url('data:font/truetype;base64,{mono_bi}') format('truetype'); font-weight:700; font-style:italic;}}
-@font-face {{font-family:'Space Mono'; src:url('data:font/truetype;base64,{mono_i}') format('truetype'); font-weight:400; font-style:italic;}}
+@font-face {{font-family:'Roboto'; src:url('data:font/truetype;base64,{roboto_r}') format('truetype'); font-weight:400; font-style:normal;}}
+@font-face {{font-family:'Roboto'; src:url('data:font/truetype;base64,{roboto_b}') format('truetype'); font-weight:700; font-style:normal;}}
+@font-face {{font-family:'Roboto Mono'; src:url('data:font/truetype;base64,{mono_r}') format('truetype'); font-weight:400; font-style:normal;}}
 
 :root {{
   --gt-neon: #39FF14; --gt-neon-glow: rgba(57,255,20,0.45);
   --gt-black: #000; --gt-white: #fff; --gt-chalk: #E8E8E8;
   --gt-ash: #A8A8A8; --gt-cement-2: #3A3A3A;
   --gt-fg-2: #E8E8E8; --gt-fg-3: #A8A8A8;
-  --gt-font-display: 'Anton SC', Impact, sans-serif;
-  --gt-font-mono: 'Space Mono', monospace;
+  --gt-font-display: 'Roboto', Arial, sans-serif;
+  --gt-font-body: 'Roboto', Arial, sans-serif;
+  --gt-font-mono: 'Roboto Mono', monospace;
 }}
 html,body{{margin:0;padding:0;background:#000;}}
 .ig{{position:relative;width:{CANVAS_W}px;height:{CANVAS_H}px;background:#000;overflow:hidden;isolation:isolate;font-family:var(--gt-font-mono);color:var(--gt-white);}}
@@ -237,9 +235,9 @@ html,body{{margin:0;padding:0;background:#000;}}
 .ig__page .bar{{width:28px;height:1px;background:var(--gt-cement-2);}}
 .ig__content{{position:absolute;top:220px;left:80px;right:80px;bottom:160px;z-index:5;display:flex;flex-direction:column;overflow:hidden;}}
 .eyebrow{{font-family:var(--gt-font-mono);font-size:26px;font-weight:700;letter-spacing:0.32em;text-transform:uppercase;color:var(--gt-neon);}}
-.display-block{{font-family:var(--gt-font-display);font-size:min(160px, 12vw);line-height:0.92;letter-spacing:-0.01em;text-transform:uppercase;color:var(--gt-neon);text-shadow:0 0 28px rgba(57,255,20,0.35);margin:0;overflow-wrap:break-word;word-break:break-word;}}
-.display-tall{{font-family:var(--gt-font-display);font-size:min(120px, 10vw);line-height:0.92;letter-spacing:-0.01em;text-transform:uppercase;color:var(--gt-neon);text-shadow:0 0 22px rgba(57,255,20,0.30);margin:0;overflow-wrap:break-word;word-break:break-word;}}
-.body{{font-family:var(--gt-font-mono);font-size:32px;line-height:1.55;color:var(--gt-white);max-width:860px;overflow:hidden;}}
+.display-block{{font-family:var(--gt-font-display);font-size:min(136px, 12vw);line-height:1.02;letter-spacing:0;text-transform:none;color:var(--gt-neon);text-shadow:0 0 28px rgba(57,255,20,0.35);margin:0;overflow-wrap:break-word;word-break:break-word;}}
+.display-tall{{font-family:var(--gt-font-display);font-size:min(108px, 10vw);line-height:1.02;letter-spacing:0;text-transform:none;color:var(--gt-neon);text-shadow:0 0 22px rgba(57,255,20,0.30);margin:0;overflow-wrap:break-word;word-break:break-word;}}
+.body{{font-family:var(--gt-font-body);font-size:34px;line-height:1.48;color:var(--gt-white);max-width:860px;overflow:hidden;}}
 .meta{{font-family:var(--gt-font-mono);font-size:20px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gt-fg-3);}}
 .rule{{width:96px;height:3px;background:var(--gt-neon);box-shadow:0 0 12px var(--gt-neon-glow);}}
 .kicker-row{{display:flex;align-items:center;gap:18px;}}
@@ -247,8 +245,8 @@ html,body{{margin:0;padding:0;background:#000;}}
 .stamp::before{{content:"";width:8px;height:8px;border-radius:50%;background:var(--gt-neon);box-shadow:0 0 10px var(--gt-neon);}}
 .ol{{display:flex;flex-direction:column;gap:24px;counter-reset:g;flex:1;overflow:hidden;}}
 .ol .row{{display:grid;grid-template-columns:70px 1fr;gap:16px;align-items:start;counter-increment:g;}}
-.ol .row::before{{content:counter(g,decimal-leading-zero);font-family:var(--gt-font-display);color:var(--gt-neon);font-size:56px;line-height:0.9;text-shadow:0 0 18px rgba(57,255,20,0.35);}}
-.ol .row p{{font-family:var(--gt-font-mono);font-size:24px;line-height:1.45;color:var(--gt-fg-2);margin:0;overflow:hidden;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;}}
+.ol .row::before{{content:counter(g,decimal-leading-zero);font-family:var(--gt-font-mono);color:var(--gt-neon);font-size:46px;line-height:1;text-shadow:0 0 18px rgba(57,255,20,0.35);}}
+.ol .row p{{font-family:var(--gt-font-body);font-size:34px;line-height:1.35;color:var(--gt-fg-2);margin:0;overflow:hidden;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;}}
 .heading-stack{{display:flex;flex-direction:column;gap:28px;}}
 .swipe-row{{display:flex;align-items:center;gap:20px;font-family:var(--gt-font-mono);font-size:26px;font-weight:700;color:var(--gt-neon);letter-spacing:0.24em;text-transform:uppercase;}}
 .swipe-row .arrow{{width:64px;height:2px;background:var(--gt-neon);position:relative;box-shadow:0 0 10px var(--gt-neon-glow);}}
@@ -264,11 +262,11 @@ html,body{{margin:0;padding:0;background:#000;}}
 .digest-image{{position:absolute;top:110px;left:54px;right:54px;height:360px;z-index:3;border-radius:14px;overflow:hidden;}}
 .digest-image::after{{content:"";position:absolute;bottom:0;left:0;right:0;height:150px;background:linear-gradient(transparent,#000);}}
 .digest-body{{position:absolute;top:500px;left:72px;right:72px;bottom:140px;z-index:5;display:flex;flex-direction:column;overflow:hidden;}}
-.digest-headline{{font-family:var(--gt-font-display);font-size:50px;line-height:0.95;color:var(--gt-neon);text-shadow:0 0 22px rgba(57,255,20,0.30);text-transform:uppercase;margin-bottom:14px;letter-spacing:0;overflow-wrap:break-word;word-break:normal;}}
-.kp-list{{display:flex;flex-direction:column;gap:9px;flex:1;overflow:hidden;}}
-.kp-row{{display:flex;gap:12px;align-items:flex-start;}}
-.kp-num{{font-family:var(--gt-font-display);font-size:34px;line-height:1;color:var(--gt-neon);text-shadow:0 0 14px rgba(57,255,20,0.40);min-width:44px;flex-shrink:0;}}
-.kp-text{{font-family:var(--gt-font-mono);font-size:23px;line-height:1.28;color:var(--gt-chalk);flex:1;overflow:hidden;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow-wrap:break-word;word-break:normal;}}
+.digest-headline{{font-family:var(--gt-font-display);font-size:56px;line-height:1.06;color:var(--gt-neon);text-shadow:0 0 22px rgba(57,255,20,0.30);text-transform:none;margin-bottom:18px;letter-spacing:0;overflow-wrap:break-word;word-break:normal;}}
+.kp-list{{display:flex;flex-direction:column;gap:14px;flex:1;overflow:hidden;}}
+.kp-row{{display:flex;gap:14px;align-items:flex-start;}}
+.kp-num{{font-family:var(--gt-font-mono);font-size:28px;line-height:1.2;color:var(--gt-neon);text-shadow:0 0 14px rgba(57,255,20,0.40);min-width:46px;flex-shrink:0;}}
+.kp-text{{font-family:var(--gt-font-body);font-size:29px;line-height:1.34;color:var(--gt-chalk);flex:1;overflow:hidden;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow-wrap:break-word;word-break:normal;}}
 .kp-text strong{{color:var(--gt-neon);font-weight:700;}}
 .title-image{{position:absolute;bottom:140px;left:0;right:0;height:380px;z-index:2;background-size:cover;background-position:center top;}}
 .title-image::before{{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.55) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 60%,rgba(0,0,0,0.85) 100%);z-index:1;}}
@@ -339,7 +337,9 @@ def _wrap_headline(text, chars=13):
 
 
 def _font_b64(filename):
-    p = _FONTS / filename
+    p = _LOCAL_FONTS / filename
+    if not p.exists():
+        p = _FONTS / filename
     return base64.b64encode(p.read_bytes()).decode("ascii") if p.exists() else ""
 
 

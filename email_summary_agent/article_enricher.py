@@ -11,6 +11,7 @@ from dataclasses import dataclass
 from html.parser import HTMLParser
 from pathlib import Path
 
+from .http_utils import urlopen_with_cert_fallback
 from .models import EmailItem
 
 
@@ -33,6 +34,14 @@ _BLOCKED_PAGE_PHRASES = (
     "access to this page has been denied",
     "checking your browser",
     "verify you are a human",
+    "query met quiet",
+    "silence shaped the next question",
+    "ask with brighter care",
+    "only blank but well lit space",
+    "bring your best question",
+    "lost page, still warm light",
+    "soft signs lean toward the next path",
+    "step in, make it yours",
 )
 
 
@@ -344,7 +353,7 @@ def _read_url(url: str, timeout: int) -> tuple[bytes, str]:
         "Upgrade-Insecure-Requests": "1",
     }
     request = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(request, timeout=timeout) as response:
+    with urlopen_with_cert_fallback(request, timeout=timeout) as response:
         content_type = response.headers.get("Content-Type", "")
         if "text/html" not in content_type and "application/xhtml" not in content_type:
             raise ValueError(f"Not an HTML page: {content_type}")
@@ -375,7 +384,7 @@ def _render_with_playwright(url: str, timeout: int) -> Tuple[bytes, str]:
 def _download_image(image_url: str, assets_dir: Path, source_url: str) -> str:
     try:
         request = urllib.request.Request(image_url, headers={"User-Agent": USER_AGENT, "Referer": source_url})
-        with urllib.request.urlopen(request, timeout=12) as response:
+        with urlopen_with_cert_fallback(request, timeout=12) as response:
             content_type = response.headers.get("Content-Type", "").lower()
             if not content_type.startswith("image/"):
                 return ""

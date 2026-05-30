@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Any
 
 from .ig_constants import (
+    CHROME_USER_AGENT,
     IMAGE_LIBRARY_DIR,
     IMAGE_INDEX_PATH,
     IMAGE_MIN_HD_W,
@@ -19,6 +20,7 @@ from .ig_constants import (
     REFERENCE_BRANDS,
     STOP_IMAGE_TOKENS,
 )
+from .http_utils import urlopen_with_cert_fallback
 from .ig_utils import _source_label_from_url, _tighten
 
 
@@ -164,7 +166,7 @@ def _fetch_og_image_from_url(article_url: str) -> str:
     if not article_url or not article_url.startswith(("http://", "https://")):
         return ""
     headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; AIInstagramAgent/1.0; +https://graitech.ai)",
+        "User-Agent": CHROME_USER_AGENT,
         "Accept": "text/html,application/xhtml+xml,image/webp,image/jpeg,image/png,*/*;q=0.8",
         "Accept-Language": "en-US,en;q=0.9",
     }
@@ -172,7 +174,7 @@ def _fetch_og_image_from_url(article_url: str) -> str:
     for attempt in range(2):
         try:
             req = urllib.request.Request(article_url, headers=headers)
-            with urllib.request.urlopen(req, timeout=25) as resp:
+            with urlopen_with_cert_fallback(req, timeout=25) as resp:
                 raw_html = resp.read(500_000).decode("utf-8", errors="replace")
             break
         except Exception as exc:
@@ -248,11 +250,11 @@ def _download_to_library(url: str, seed_text: str) -> str | None:
             return str(cached)
     try:
         headers = {
-            "User-Agent": "Mozilla/5.0 (compatible; AIInstagramAgent/1.0)",
+            "User-Agent": CHROME_USER_AGENT,
             "Referer": url,
         }
         req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req, timeout=12) as resp:
+        with urlopen_with_cert_fallback(req, timeout=12) as resp:
             content_type = resp.headers.get("Content-Type", "").split(";")[0].lower().strip()
             suffix = {"image/jpeg": ".jpg", "image/png": ".png", "image/webp": ".webp"}.get(content_type, ".jpg")
             data = resp.read(8_000_000)
@@ -467,8 +469,8 @@ def _download_remote_image(url: str) -> Path | None:
 
 
 def _download_url(url: str, dest: Path) -> None:
-    request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(request, timeout=8) as response:
+    request = urllib.request.Request(url, headers={"User-Agent": CHROME_USER_AGENT})
+    with urlopen_with_cert_fallback(request, timeout=8) as response:
         dest.write_bytes(response.read())
 
 
@@ -562,8 +564,8 @@ def _search_wikimedia_image(query: str) -> str | None:
     }
     url = "https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode(params)
     try:
-        request = urllib.request.Request(url, headers={"User-Agent": "AIInstagramNewsAgent/1.0"})
-        with urllib.request.urlopen(request, timeout=10) as response:
+        request = urllib.request.Request(url, headers={"User-Agent": CHROME_USER_AGENT})
+        with urlopen_with_cert_fallback(request, timeout=10) as response:
             data = json.loads(response.read().decode("utf-8"))
     except Exception:
         return None
@@ -610,8 +612,8 @@ def _important_query_tokens(query: str) -> list[str]:
 
 def _download_reference_image(image_url: str, cache_key: str, seed_text: str = "") -> str | None:
     try:
-        request = urllib.request.Request(image_url, headers={"User-Agent": "AIInstagramNewsAgent/1.0"})
-        with urllib.request.urlopen(request, timeout=12) as response:
+        request = urllib.request.Request(image_url, headers={"User-Agent": CHROME_USER_AGENT})
+        with urlopen_with_cert_fallback(request, timeout=12) as response:
             content_type = response.headers.get("Content-Type", "").split(";", 1)[0].lower()
             suffix = {"image/jpeg": ".jpg", "image/png": ".png", "image/webp": ".webp"}.get(content_type)
             if not suffix:

@@ -183,6 +183,52 @@ _SENTENCE_START_NOISE = (
     "according to", "in addition", "in this", "in recent",
 )
 
+_CREATOR_LABEL_RULES: tuple[tuple[str, tuple[str, ...]], ...] = (
+    ("BY THE NUMBERS", ("%", "$", "billion", "million", "revenue", "valuation", "users", "x ", "times")),
+    ("DEV ANGLE", ("api", "sdk", "developer", "github", "code", "workflow", "agent", "tool")),
+    ("MODEL MOVE", ("gpt", "claude", "gemini", "llama", "mistral", "model", "reasoning", "inference")),
+    ("MARKET SIGNAL", ("funding", "raise", "acquisition", "partnership", "enterprise", "startup", "customer")),
+    ("ROLL OUT", ("launch", "release", "ship", "preview", "available", "beta", "access", "region")),
+    ("RISK CHECK", ("safety", "security", "privacy", "policy", "regulation", "lawsuit", "risk")),
+)
+
+_CREATOR_LABEL_FALLBACKS = (
+    "QUICK SHIFT",
+    "WHY IT MATTERS",
+    "WHAT CHANGED",
+    "WATCH NEXT",
+    "CREATOR NOTE",
+    "FIELD SIGNAL",
+)
+
+
+def _creator_label_for_point(point: str, used_labels: set[str]) -> str:
+    low = f" {point.lower()} "
+    for label, keywords in _CREATOR_LABEL_RULES:
+        if label in used_labels:
+            continue
+        if any(keyword in low for keyword in keywords):
+            return label
+    for label in _CREATOR_LABEL_FALLBACKS:
+        if label not in used_labels:
+            return label
+    return "FIELD SIGNAL"
+
+
+def _make_creator_style_point(point: str, used_labels: set[str] | None = None) -> str:
+    """Add one concise creator label without changing the factual point."""
+    used_labels = used_labels if used_labels is not None else set()
+    cleaned = re.sub(r"\s+", " ", clean_creator_text(point or "")).strip()
+    if not cleaned:
+        return ""
+    if re.match(r"^[A-Z][A-Z ]{2,24}:\s+", cleaned):
+        label = cleaned.split(":", 1)[0]
+        used_labels.add(label)
+        return cleaned
+    label = _creator_label_for_point(cleaned, used_labels)
+    used_labels.add(label)
+    return f"{label}: {cleaned}"
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Key point extraction
@@ -421,10 +467,15 @@ def _extract_instagram_key_points(
                     break
 
     final = layout_safe_points([_trim_no_dots(pt, 150) for pt in novel], limit=max_points)
+    labels_used: set[str] = set()
+    final = [
+        styled for styled in (_make_creator_style_point(pt, labels_used) for pt in final)
+        if styled
+    ]
 
     if not final:
         title_fb = _humanize(_clean_public_text(str(article.get("title") or "")))
-        return layout_safe_points([title_fb], limit=1) if _is_quality(title_fb) else []
+        return layout_safe_points([_make_creator_style_point(title_fb)], limit=1) if _is_quality(title_fb) else []
 
     # ---- Phase 6: Register selected points for cross-slide dedup ----
     if used_fingerprints is not None:

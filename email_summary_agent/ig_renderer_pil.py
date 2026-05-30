@@ -32,6 +32,8 @@ from .ig_utils import _clean_headline, _clean_public_text
 from .ig_image import _resolve_image_source
 from .ig_copy import layout_safe_headline, layout_safe_points
 
+LOCAL_FONTS_DIR = Path(__file__).resolve().parent / "fonts"
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Font loader
@@ -48,16 +50,19 @@ def _font(image_font, size: int, bold: bool = False, mono: bool = False,
     """
     gt_candidates: list[Path] = []
     if display:
-        gt_candidates.append(FONTS_DIR / "AntonSC-Regular.ttf")
+        gt_candidates.append(LOCAL_FONTS_DIR / "Roboto-Bold.ttf")
     if bold and mono:
-        gt_candidates.append(FONTS_DIR / "SpaceMono-Bold.ttf")
+        gt_candidates.append(LOCAL_FONTS_DIR / "RobotoMono-Regular.ttf")
     elif mono:
-        gt_candidates.append(FONTS_DIR / "SpaceMono-Regular.ttf")
+        gt_candidates.append(LOCAL_FONTS_DIR / "RobotoMono-Regular.ttf")
     elif bold:
-        gt_candidates += [FONTS_DIR / "SpaceMono-Bold.ttf", FONTS_DIR / "AntonSC-Regular.ttf"]
+        gt_candidates += [LOCAL_FONTS_DIR / "Roboto-Bold.ttf", FONTS_DIR / "SpaceMono-Bold.ttf"]
     else:
-        gt_candidates.append(FONTS_DIR / "SpaceMono-Regular.ttf")
+        gt_candidates.append(LOCAL_FONTS_DIR / "Roboto-Regular.ttf")
     gt_candidates += [
+        LOCAL_FONTS_DIR / "Roboto-Bold.ttf",
+        LOCAL_FONTS_DIR / "Roboto-Regular.ttf",
+        LOCAL_FONTS_DIR / "RobotoMono-Regular.ttf",
         FONTS_DIR / "SpaceMono-Bold.ttf",
         FONTS_DIR / "SpaceMono-Regular.ttf",
         FONTS_DIR / "AntonSC-Regular.ttf",
@@ -654,10 +659,10 @@ def _gt_render_list_slide_bullets_only(
         return
     content_w = x2 - x1 - 24
     avail_h = y2 - y1
-    chosen_size = 27
-    for fsz in (34, 32, 30, 28, 27):
-        font_bp = _font(image_font, fsz, mono=True)
-        bold_bp = _font(image_font, fsz, bold=True, mono=True)
+    chosen_size = 38
+    for fsz in (46, 44, 42, 40, 38):
+        font_bp = _font(image_font, fsz)
+        bold_bp = _font(image_font, fsz, bold=True)
         total = 0
         for bp in bullets:
             text = bp.lstrip("• ").strip()
@@ -670,8 +675,8 @@ def _gt_render_list_slide_bullets_only(
         if total <= avail_h:
             chosen_size = fsz
             break
-    font_bp = _font(image_font, chosen_size, mono=True)
-    bold_bp = _font(image_font, chosen_size, bold=True, mono=True)
+    font_bp = _font(image_font, chosen_size)
+    bold_bp = _font(image_font, chosen_size, bold=True)
     y = y1
     for bullet in bullets:
         text = bullet.lstrip("• ").strip()
@@ -782,7 +787,7 @@ def _write_digest_slide(
     headline = layout_safe_headline(
         _clean_headline(str(slide.get("title", "AI Update"))) or "AI Update",
         fallback="AI Update",
-    ).upper()
+    )
     headline_box = (margin, 640, CANVAS_W - margin, 808)
     _draw_autofit_text(
         draw, headline, headline_box, image_font,
@@ -805,12 +810,7 @@ def _write_digest_slide(
     source = str(slide.get("source_label", "")).strip()
     if source:
         font_source = _font(image_font, 18, mono=True)
-        draw.text(
-            (margin, 1246),
-            f"SOURCE: {source.upper()}",
-            fill=(200, 200, 200, 255),
-            font=font_source,
-        )
+        draw.text((margin, 1246), f"Source: {source}", fill=(200, 200, 200, 255), font=font_source)
 
 
 def _gt_render_title_slide(image, draw, ImageFont, Image, ImageDraw, ImageEnhance, ImageFilter, ImageOps, slide: dict) -> None:
@@ -823,7 +823,7 @@ def _gt_render_title_slide(image, draw, ImageFont, Image, ImageDraw, ImageEnhanc
     y += 16
     y = _gt_draw_rule(draw, SAFE_L, y) + 24
 
-    headline = (slide.get("title") or "AI UPDATE").upper()
+    headline = slide.get("title") or "AI Update"
     content_w = SAFE_R - SAFE_L
     font_display = _font(ImageFont, 120, display=True)
     for font_size in range(140, 40, -4):
@@ -874,7 +874,7 @@ def _gt_render_title_slide(image, draw, ImageFont, Image, ImageDraw, ImageEnhanc
     source = (slide.get("source_label") or "").strip()
     if source:
         font_src = _font(ImageFont, 26, mono=True)
-        draw.text((SAFE_L, 1155), f"SOURCE: {source.upper()}", fill=(200, 200, 200, 255), font=font_src)
+        draw.text((SAFE_L, 1155), f"Source: {source}", fill=(200, 200, 200, 255), font=font_src)
 
 
 def _gt_render_list_slide(draw, ImageFont, slide: dict) -> None:
@@ -887,7 +887,7 @@ def _gt_render_list_slide(draw, ImageFont, slide: dict) -> None:
     y += 16
     y = _gt_draw_rule(draw, SAFE_L, y) + 24
 
-    headline = (slide.get("title") or "").upper()
+    headline = slide.get("title") or ""
     if headline:
         font_sec = _font(ImageFont, 52, display=True)
         for fsz in range(60, 28, -4):

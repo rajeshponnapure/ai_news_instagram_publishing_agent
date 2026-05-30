@@ -172,7 +172,9 @@ Click **New repository secret** and add these:
 
 | Secret Name | Default | Description |
 |------------|---------|-------------|
-| `SUMMARY_PROVIDER` | `auto` | Use `auto`, `ollama`, or `builtin` |
+| `SUMMARY_PROVIDER` | `auto` | Use `auto`, `gemini`, `ollama`, or `local` |
+| `GEMINI_API_KEY` | empty | Optional Google AI Studio key for Gemini summaries |
+| `GEMINI_MODEL` | `gemini-2.5-flash` | Gemini model used when Gemini is enabled |
 | `CREATE_INSTAGRAM_POSTS` | `true` | Generate Instagram carousels |
 | `ENRICH_ARTICLES` | `true` | Fetch full article content |
 
@@ -206,6 +208,8 @@ EMAIL_FOLDER=INBOX
 LOOKBACK_HOURS=24
 POLL_INTERVAL_MINUTES=1
 SUMMARY_PROVIDER=auto
+GEMINI_API_KEY=
+GEMINI_MODEL=gemini-2.5-flash
 PROCESS_ALL_MATCHING=false
 MAX_EMAILS_PER_RUN=20
 CREATE_INSTAGRAM_POSTS=true

@@ -71,6 +71,8 @@ class Settings:
     ig_user_id: str
     ig_access_token: str
     ig_api_version: str
+    gemini_api_key: str
+    gemini_model: str
     enable_memory: bool
     enable_dedup: bool
     enable_verification: bool
@@ -113,6 +115,8 @@ class Settings:
             ig_user_id=os.environ.get("IG_USER_ID", ""),
             ig_access_token=os.environ.get("IG_ACCESS_TOKEN", ""),
             ig_api_version=os.environ.get("IG_API_VERSION", "v24.0"),
+            gemini_api_key=os.environ.get("GEMINI_API_KEY", ""),
+            gemini_model=os.environ.get("GEMINI_MODEL", "gemini-2.5-flash"),
             enable_memory=_bool_env("ENABLE_MEMORY", True),
             enable_dedup=_bool_env("ENABLE_DEDUP", True),
             enable_verification=_bool_env("ENABLE_VERIFICATION", True),

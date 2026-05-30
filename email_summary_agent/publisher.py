@@ -9,7 +9,7 @@ from datetime import datetime
 from pathlib import Path
 
 from .config import Settings
-from .ig_constants import MAX_ARTICLES_PER_POST
+from .ig_constants import MAX_INSTAGRAM_CAROUSEL_SLIDES
 
 
 def write_publish_manifest(carousel_dirs: list[Path], public_media_base_url: str = "") -> Path | None:
@@ -23,7 +23,7 @@ def write_publish_manifest(carousel_dirs: list[Path], public_media_base_url: str
         if (carousel_dir / "VERIFY_FAILED").exists():
             print(f"  Skipping {carousel_dir.name}: verification failed (VERIFY_FAILED marker)")
             continue
-        slides = sorted(carousel_dir.glob("slide_*.png"))[:MAX_ARTICLES_PER_POST]
+        slides = sorted(carousel_dir.glob("slide_*.png"), key=_slide_sort_key)[:MAX_INSTAGRAM_CAROUSEL_SLIDES]
         if not slides:
             print(f"  Skipping {carousel_dir.name}: no slide PNGs found")
             continue
@@ -73,7 +73,7 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
         if post.get("status") not in {"ready_for_publish", "ready_for_upload", "container_created", "publish_failed_retryable"}:
             print(f"  [{post_idx}] SKIP (status={status!r} not publishable): {folder}")
             continue
-        urls = [url for url in post.get("public_slide_urls", []) if url][:MAX_ARTICLES_PER_POST]
+        urls = [url for url in post.get("public_slide_urls", []) if url][:MAX_INSTAGRAM_CAROUSEL_SLIDES]
         if len(urls) < 1:
             folder = post.get("folder", "unknown")
             print(f"SKIPPING post '{folder}': no public slide URL found.")
@@ -104,7 +104,7 @@ def publish_ready_carousels(settings: Settings, manifest_path: Path) -> int:
             creation_id = creation_id or (
                 _create_single_image_container(settings, urls[0], post.get("caption", ""))
                 if len(urls) == 1 else
-                _create_carousel_container(settings, urls[:MAX_ARTICLES_PER_POST], post.get("caption", ""))
+                _create_carousel_container(settings, urls, post.get("caption", ""))
             )
             post["creation_id"] = creation_id
             post["status"] = "container_created"
@@ -284,3 +284,9 @@ def _existing_manifest_posts(manifest_path: Path) -> dict[str, dict]:
         if folder:
             posts[folder] = post
     return posts
+
+
+def _slide_sort_key(path: Path) -> tuple[int, str]:
+    import re
+    match = re.search(r"slide_(\d+)", path.stem)
+    return (int(match.group(1)) if match else 999, path.name)

@@ -11,6 +11,7 @@ import json
 import re
 import unicodedata
 import urllib.error
+import urllib.parse
 import urllib.request
 from collections import Counter
 from pathlib import Path
@@ -32,6 +33,15 @@ _NOISE_PATTERNS = [
     r"\bImpact:\s*(LOW|MEDIUM|HIGH)\b",
     r"\bSource:\s*[A-Z][A-Za-z0-9&.\- ]{1,40}",
     r"\bRead more\b",
+    r"\bFor more details,?\s+visit\b:?",
+    r"\bQuery met quiet\b.*?(?=\.|\n|\Z)",
+    r"\bSilence shaped the next question\b.*?(?=\.|\n|\Z)",
+    r"\bAsk with brighter care\b.*?(?=\.|\n|\Z)",
+    r"\bOnly blank but well lit space\b.*?(?=\.|\n|\Z)",
+    r"\bBring your best question\b.*?(?=\.|\n|\Z)",
+    r"\bLost page, still warm light\b.*?(?=\.|\n|\Z)",
+    r"\bSoft signs lean toward the next path\b.*?(?=\.|\n|\Z)",
+    r"\bStep in, make it yours\b.*?(?=\.|\n|\Z)",
     r"\bSubscribe\b",
     r"\bUnsubscribe\b",
     r"\bView in browser\b",
@@ -80,6 +90,11 @@ _BOILERPLATE_PHRASES = frozenset([
     "unsubscribe", "manage subscriptions", "email preferences",
     "you are receiving this", "sent to you because",
     "no longer wish to receive", "read more", "click here",
+    "for more details visit", "for more details, visit",
+    "query met quiet", "silence shaped the next question",
+    "ask with brighter care", "only blank but well lit space",
+    "bring your best question", "lost page, still warm light",
+    "soft signs lean toward the next path", "step in, make it yours",
     "learn more", "find out more", "see more", "show more",
     "are you a robot", "prove you are human",
     "detected unusual activity", "unusual activity from your computer network",
@@ -161,6 +176,9 @@ _ACTION_RE = re.compile(
 _BOILERPLATE_RE = re.compile(
     r"\b(cookie|gdpr|ccpa|unsubscribe|privacy policy|terms of service|"
     r"all rights reserved|copyright|read more|click here|learn more|"
+    r"for more details,?\s+visit|query met quiet|silence shaped the next question|"
+    r"ask with brighter care|only blank but well lit space|bring your best question|"
+    r"lost page, still warm light|soft signs lean toward the next path|step in, make it yours|"
     r"find out more|see more|show more|sign up|subscribe|view in browser|"
     r"manage subscriptions?|email preferences|sent to you because|"
     r"no longer wish to receive|advertising partners|show you ads|"
@@ -174,10 +192,19 @@ _BOILERPLATE_RE = re.compile(
 
 
 class SummaryProvider:
-    def __init__(self, provider: str, ollama_url: str, ollama_model: str) -> None:
+    def __init__(
+        self,
+        provider: str,
+        ollama_url: str,
+        ollama_model: str,
+        gemini_api_key: str = "",
+        gemini_model: str = "gemini-2.5-flash",
+    ) -> None:
         self.provider = provider
         self.ollama_url = ollama_url.rstrip("/")
         self.ollama_model = ollama_model
+        self.gemini_api_key = gemini_api_key
+        self.gemini_model = gemini_model or "gemini-2.5-flash"
         self._ollama_available: bool | None = None
 
     def summarize(
@@ -208,6 +235,13 @@ class SummaryProvider:
                 date=email.date,
                 body=combined_body,
             )
+            if self.provider in {"auto", "gemini"} and self.gemini_api_key:
+                try:
+                    return _with_article_fields(self._summarize_with_gemini(pseudo_email, full_extract=full_extract), article_list)
+                except Exception as exc:
+                    print(f"  [gemini] API failed: {exc}. Falling back...")
+                    if self.provider == "gemini":
+                        raise
             if self.provider in {"auto", "ollama"} and self._can_use_ollama():
                 try:
                     return _with_article_fields(self._summarize_with_ollama(pseudo_email, full_extract=full_extract), article_list)
@@ -216,6 +250,13 @@ class SummaryProvider:
                         raise
             return _with_article_fields(_summarize_article_list(pseudo_email, article_list, full_extract=full_extract), article_list)
 
+        if self.provider in {"auto", "gemini"} and self.gemini_api_key:
+            try:
+                return _with_article_fields(self._summarize_with_gemini(email, full_extract=full_extract), article_list)
+            except Exception as exc:
+                print(f"  [gemini] API failed: {exc}. Falling back...")
+                if self.provider == "gemini":
+                    raise
         if self.provider in {"auto", "ollama"} and self._can_use_ollama():
             try:
                 return _with_article_fields(self._summarize_with_ollama(email, full_extract=full_extract), article_list)
@@ -311,6 +352,112 @@ class SummaryProvider:
             models=_string_list(parsed.get("models"))[:8],
             topics=_string_list(parsed.get("topics"))[:8],
             confidence=_float(parsed.get("confidence"), 0.8),
+        )
+
+    def _summarize_with_gemini(self, email: EmailItem, full_extract: bool = True) -> EmailSummary:
+        if not self.gemini_api_key:
+            raise ValueError("GEMINI_API_KEY is not set.")
+        rag_context = format_context(f"{email.subject}\n{email.body}", limit=6)
+        prompt_body = _format_prompt_body(email.body, full_extract=full_extract)
+        
+        # Build a robust prompt targeting Content Creator key points & headlines
+        prompt = (
+            "You are a senior Instagram technology editor.\n"
+            "Analyze the following article/email content and return a professional JSON summary.\n\n"
+            "Guidelines to make it sound human-written and specific:\n"
+            "1. Do NOT sound robotic, academic, or like generic AI text. Avoid clichés ('This means', 'It is important to note', 'Landscape is shifting', 'In conclusion').\n"
+            "2. **headline**: Make it a clean Title Case or sentence-case hook, 6-10 words maximum. Avoid publication tags (like '| TechCrunch').\n"
+            "3. **what_happened**: 2 punchy, active-voice sentences stating the core announcement/event with concrete details (numbers, names, specs).\n"
+            "4. **why_it_matters**: 2 sentences explaining the practical impact for developers, creators, or companies. Focus on utility.\n"
+            "5. **what_to_watch**: 1-2 forward-looking sentences about rolling out, next steps, or market competition.\n"
+            "6. **key_points**: An array of EXACTLY 4 key points. Each key point must be 12-22 words, a complete standalone factual sentence. "
+            "Each point must include at least one concrete entity, number, product, model, feature, or consequence from the source. "
+            "Never use emojis, list formatting, hashtags, hype words, or generic phrases inside these strings.\n"
+            "7. **companies**, **models**, **topics**: arrays of strings.\n"
+            "8. **confidence**: float (0.8 to 1.0).\n\n"
+            f"Skill guide:\n{_load_summary_skill()}\n\n"
+            f"{rag_context}\n\n"
+            f"Subject: {email.subject}\n"
+            f"Content:\n{prompt_body}"
+        )
+        
+        payload = {
+            "contents": [{
+                "parts": [{
+                    "text": prompt
+                }]
+            }],
+            "generationConfig": {
+                "responseMimeType": "application/json",
+                "responseSchema": {
+                    "type": "OBJECT",
+                    "properties": {
+                        "headline": {"type": "STRING"},
+                        "what_happened": {"type": "STRING"},
+                        "why_it_matters": {"type": "STRING"},
+                        "what_to_watch": {"type": "STRING"},
+                        "key_points": {
+                            "type": "ARRAY",
+                            "items": {"type": "STRING"}
+                        },
+                        "companies": {
+                            "type": "ARRAY",
+                            "items": {"type": "STRING"}
+                        },
+                        "models": {
+                            "type": "ARRAY",
+                            "items": {"type": "STRING"}
+                        },
+                        "topics": {
+                            "type": "ARRAY",
+                            "items": {"type": "STRING"}
+                        },
+                        "confidence": {"type": "NUMBER"}
+                    },
+                    "required": [
+                        "headline", "what_happened", "why_it_matters", "what_to_watch",
+                        "key_points", "companies", "models", "topics", "confidence"
+                    ]
+                }
+            }
+        }
+        
+        model = urllib.parse.quote(self.gemini_model, safe="-_.")
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={self.gemini_api_key}"
+        req = urllib.request.Request(
+            url,
+            data=json.dumps(payload).encode("utf-8"),
+            headers={"Content-Type": "application/json"},
+            method="POST"
+        )
+        
+        with urllib.request.urlopen(req, timeout=45) as resp:
+            resp_data = json.loads(resp.read().decode("utf-8"))
+            
+        candidate_text = resp_data["candidates"][0]["content"]["parts"][0]["text"]
+        parsed = _parse_json_object(candidate_text)
+        
+        # Parse fields
+        headline = str(parsed.get("headline", "")).strip()
+        what_happened = str(parsed.get("what_happened", "")).strip()
+        why_matters = str(parsed.get("why_it_matters", "")).strip()
+        what_watch = str(parsed.get("what_to_watch", "")).strip()
+        summary_text = " ".join(p for p in [what_happened, why_matters, what_watch] if p)
+        key_points = _string_list(parsed.get("key_points"))[:6]
+        if not key_points:
+            key_points = [p for p in [what_happened, why_matters, what_watch] if p]
+        
+        return EmailSummary(
+            message_key=email.message_key,
+            subject=email.subject,
+            source_date=email.date,
+            headline=headline or _fallback_headline(email),
+            summary=summary_text or summarize_locally(email).summary,
+            key_points=key_points or summarize_locally(email).key_points,
+            companies=_string_list(parsed.get("companies"))[:8],
+            models=_string_list(parsed.get("models"))[:8],
+            topics=_string_list(parsed.get("topics"))[:8],
+            confidence=_float(parsed.get("confidence"), 0.90),
         )
 
 
@@ -613,6 +760,10 @@ def _clean_text(text: str) -> str:
     text = re.sub(r"\r\n?", "\n", text or "")
     text = _strip_decorative_symbols(text)
     text = _NOISE_RE.sub(" ", text)
+    text = re.sub(r"(?im)^\s*(key\s+highlights?|highlights?|summary)\s*:\s*", "", text)
+    text = re.sub(r"(?i)\bkey\s+highlights?\s*:\s*", ". ", text)
+    text = re.sub(r"\n\s*[-*]\s+", ". ", text)
+    text = re.sub(r"\s+-\s+", ". ", text)
     text = text.replace("\u2014", " - ").replace("\u00b7", " ")
     text = re.sub(r"\s+", " ", text)
     return text.strip()

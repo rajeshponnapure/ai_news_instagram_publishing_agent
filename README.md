@@ -171,7 +171,9 @@ MAX_EMAILS_PER_RUN=20
 # Processing
 POLL_INTERVAL_MINUTES=1
 PROCESS_ALL_MATCHING=false
-SUMMARY_PROVIDER=auto  # "auto" | "ollama" | "builtin"
+SUMMARY_PROVIDER=auto  # "auto" | "gemini" | "ollama" | "local"
+GEMINI_API_KEY=
+GEMINI_MODEL=gemini-2.5-flash
 
 # Ollama (Optional, for local LLM)
 OLLAMA_URL=http://localhost:11434
@@ -421,9 +423,9 @@ It runs every 15 minutes and:
 5. Deploys the generated files to GitHub Pages.
 6. Publishes the latest carousel using the GitHub Pages image URLs.
 
-## Local model option
+## Summary provider option
 
-The default `SUMMARY_PROVIDER=auto` tries Ollama first and falls back to the built-in summarizer.
+The default `SUMMARY_PROVIDER=auto` uses Gemini when `GEMINI_API_KEY` is present, then Ollama, then the built-in summarizer.
 
 To force the no-model local summarizer:
 
@@ -436,6 +438,14 @@ To require Ollama:
 ```env
 SUMMARY_PROVIDER=ollama
 OLLAMA_MODEL=llama3.2:3b
+```
+
+To require Gemini:
+
+```env
+SUMMARY_PROVIDER=gemini
+GEMINI_API_KEY=your_google_ai_studio_key
+GEMINI_MODEL=gemini-2.5-flash
 ```
 
 ## Next workflow stages

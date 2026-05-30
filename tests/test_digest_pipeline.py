@@ -165,6 +165,29 @@ class DigestPipelineTests(unittest.TestCase):
         self.assertEqual(items[0].title, "OpenAI launches a new coding model")
         self.assertIn("voice inference", items[1].title.lower())
 
+    def test_single_link_alert_ignores_for_more_details_label(self) -> None:
+        email = EmailItem(
+            uid="1",
+            message_id="<single@example.com>",
+            sender="grdevelopers.co@gmail.com",
+            subject="OpenAI releases new reasoning tools for developers",
+            date="Thu, 21 May 2026 09:00:00 +0530",
+            body=(
+                "OpenAI released reasoning tools for developers.\n\n"
+                "Key highlights:\n"
+                "- The o1 model improves complex problem solving.\n"
+                "- Developers can use stronger reasoning in API workflows.\n\n"
+                "For more details, visit: https://openai.com/research/reasoning"
+            ),
+        )
+
+        items = parse_news_items(email, max_links=0)
+
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0].title, "OpenAI released reasoning tools for developers.")
+        self.assertIn("o1 model improves complex problem solving", items[0].context)
+        self.assertNotEqual(items[0].context.lower(), "for more details, visit:")
+
     def test_html_email_preserves_link_hrefs(self) -> None:
         message = EmailMessage()
         message["Subject"] = "AI Alert"
@@ -412,6 +435,8 @@ def _settings(**overrides) -> Settings:
         ig_user_id="17841447323115790",
         ig_access_token="ig-token",
         ig_api_version="v24.0",
+        gemini_api_key="",
+        gemini_model="gemini-2.5-flash",
     )
     values.update(overrides)
     return Settings(**values)

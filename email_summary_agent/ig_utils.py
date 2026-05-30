@@ -11,7 +11,8 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import TYPE_CHECKING, Any
 
-from .ig_constants import PUBLIC_BLOCKED_PHRASES, VIDEO_BLOCKED_TERMS
+from .ig_constants import CHROME_USER_AGENT, PUBLIC_BLOCKED_PHRASES, VIDEO_BLOCKED_TERMS
+from .http_utils import urlopen_with_cert_fallback
 
 if TYPE_CHECKING:
     from .models import EmailSummary
@@ -188,11 +189,11 @@ def _scrape_article_text(url: str) -> str:
         return ""
     try:
         headers = {
-            "User-Agent": "Mozilla/5.0 (compatible; AIInstagramAgent/1.0)",
+            "User-Agent": CHROME_USER_AGENT,
             "Accept": "text/html",
         }
         req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req, timeout=10) as resp:
+        with urlopen_with_cert_fallback(req, timeout=10) as resp:
             raw = resp.read(500_000).decode("utf-8", errors="replace")
         paragraphs = re.findall(r"<p[^>]*>(.*?)</p>", raw, re.I | re.S)
         text = " ".join(
@@ -217,11 +218,11 @@ def _scrape_article_images(url: str) -> str:
         return ""
     try:
         headers = {
-            "User-Agent": "Mozilla/5.0 (compatible; AIInstagramAgent/1.0)",
+            "User-Agent": CHROME_USER_AGENT,
             "Accept": "text/html,image/webp,image/jpeg,image/png,*/*;q=0.8",
         }
         req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req, timeout=15) as resp:
+        with urlopen_with_cert_fallback(req, timeout=15) as resp:
             raw = resp.read(500_000).decode("utf-8", errors="replace")
     except Exception:
         return ""

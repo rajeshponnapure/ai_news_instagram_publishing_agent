@@ -11,7 +11,9 @@ from pathlib import Path
 CANVAS_W = 1080
 CANVAS_H = 1350
 
-# Instagram API allows 2–10 children per carousel post.
+# Instagram API allows 2-10 children per carousel post.
+CHROME_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+MAX_INSTAGRAM_CAROUSEL_SLIDES = 10
 MAX_ARTICLES_PER_POST = 8
 MAX_CAROUSEL_SLIDES = MAX_ARTICLES_PER_POST
 
@@ -187,6 +189,15 @@ PUBLIC_BLOCKED_PHRASES = (
     "access to this page has been denied",
     "checking your browser",
     "verify you are a human",
+    "for more details, visit",
+    "query met quiet",
+    "silence shaped the next question",
+    "ask with brighter care",
+    "only blank but well lit space",
+    "bring your best question",
+    "lost page, still warm light",
+    "soft signs lean toward the next path",
+    "step in, make it yours",
 )
 
 STOP_IMAGE_TOKENS = frozenset({

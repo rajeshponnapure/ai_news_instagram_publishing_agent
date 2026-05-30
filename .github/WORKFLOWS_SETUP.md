@@ -21,7 +21,9 @@ To enable the `process-emails-scheduled.yml` workflow to work, you must configur
 - `MAX_EMAILS_PER_RUN` - Max emails per run (default: `20`)
 
 ### Content Generation Options
-- `SUMMARY_PROVIDER` - Summarizer to use: `auto`, `ollama`, or `builtin` (default: `auto`)
+- `SUMMARY_PROVIDER` - Summarizer to use: `auto`, `gemini`, `ollama`, or `local` (default: `auto`)
+- `GEMINI_API_KEY` - Optional Google AI Studio key for Gemini summaries
+- `GEMINI_MODEL` - Optional Gemini model override (default: `gemini-2.5-flash`)
 - `CREATE_INSTAGRAM_POSTS` - Generate Instagram posts (default: `true`)
 - `ENRICH_ARTICLES` - Fetch full article content (default: `true`)
 
@@ -56,6 +58,8 @@ EMAIL_FOLDER=INBOX
 LOOKBACK_HOURS=24
 POLL_INTERVAL_MINUTES=1
 SUMMARY_PROVIDER=auto
+GEMINI_API_KEY=
+GEMINI_MODEL=gemini-2.5-flash
 PROCESS_ALL_MATCHING=false
 MAX_EMAILS_PER_RUN=20
 CREATE_INSTAGRAM_POSTS=true

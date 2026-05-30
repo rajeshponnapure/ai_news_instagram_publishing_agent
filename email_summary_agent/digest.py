@@ -44,14 +44,22 @@ def parse_news_items(email: EmailItem, max_links: int = 20) -> list[NewsItem]:
     items: list[NewsItem] = []
     for index, url in enumerate(urls, start=1):
         window = _context_window(text, url)
-        title = _title_from_context(window) or _title_from_url(url) or f"AI news {index}"
+        raw_context = _strip_url(window, url)
+        context = _tighten(raw_context, 900)
+        if len(urls) == 1 and _is_weak_link_context(context):
+            raw_context = _strip_url(text, url)
+            context = _tighten(raw_context, 1200)
+        title = _title_from_context(window) or _title_from_context(raw_context)
+        if _is_weak_link_context(title) and len(urls) == 1:
+            title = email.subject.strip()
+        title = title or _title_from_url(url) or f"AI news {index}"
         source = _source_from_subject(email.subject) or _source_from_url(url)
         items.append(
             NewsItem(
                 title=title,
                 url=url,
                 source=source,
-                context=_tighten(_strip_url(window, url), 900),
+                context=context,
             )
         )
     return items
@@ -82,13 +90,20 @@ def _title_from_context(context: str) -> str:
     for line in lines:
         if line.startswith(("http://", "https://")):
             continue
-        if re.search(r"\bunsubscribe|privacy|read more|view in browser\b", line, re.I):
+        if re.search(r"\bunsubscribe|privacy|read more|view in browser|for more details\b", line, re.I):
             continue
         line = re.sub(r"^\d+[\).:-]\s*", "", line)
         line = re.sub(r"\s*https?://\S+.*$", "", line).strip()
         if 12 <= len(line) <= 140:
             return line
     return ""
+
+
+def _is_weak_link_context(text: str) -> bool:
+    cleaned = re.sub(r"\s+", " ", text or "").strip(" :-")
+    if not cleaned:
+        return True
+    return bool(re.fullmatch(r"(?i)(for more details,?\s*)?(visit|read more|learn more|source)?", cleaned))
 
 
 def _source_from_subject(subject: str) -> str:

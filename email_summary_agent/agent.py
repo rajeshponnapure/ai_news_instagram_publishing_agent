@@ -232,6 +232,8 @@ def process_items(
             provider=settings.summary_provider,
             ollama_url=settings.ollama_url,
             ollama_model=settings.ollama_model,
+            gemini_api_key=settings.gemini_api_key,
+            gemini_model=settings.gemini_model,
         )
         # Filter out everything we have already processed.
         if reprocess:

@@ -13,7 +13,7 @@ from pathlib import Path
 
 from . import text_similarity as ts
 from . import perceptual_image as pi
-from .ig_constants import MAX_KP_PER_SLIDE
+from .ig_constants import MAX_CAROUSEL_SLIDES, MAX_INSTAGRAM_CAROUSEL_SLIDES, MAX_KP_PER_SLIDE
 from .memory_store import MemoryStore
 
 _BLOCKED_HEADLINES = frozenset({
@@ -295,12 +295,14 @@ def verify_pre_publish(
             break
     checks.append(CheckResult(4, "titles_complete", titles_ok, title_conf, title_detail))
 
-    # 5. Exactly 8 content slides
-    exact_8 = len(content_slides) == 8
+    # 5. Valid Instagram carousel size: 1-8 content slides plus required CTA.
+    valid_content_count = 1 <= len(content_slides) <= MAX_CAROUSEL_SLIDES
+    valid_total_count = len(slides) <= MAX_INSTAGRAM_CAROUSEL_SLIDES
+    valid_slide_count = valid_content_count and valid_total_count
     checks.append(CheckResult(
-        5, "exactly_8_content", exact_8,
-        1.0 if exact_8 else 0.0,
-        f"count={len(content_slides)}",
+        5, "valid_carousel_slide_count", valid_slide_count,
+        1.0 if valid_slide_count else 0.0,
+        f"content={len(content_slides)}, total={len(slides)}",
     ))
 
     # 6. All images exist and are HD
