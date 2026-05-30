@@ -1,0 +1,319 @@
+{
+  "email_received_at": "2026-05-29T15:45-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Does your CEO have AI psychosis? Aaron Levie thinks most of them do.",
+  "subject": "\ud83d\udea8 AI Alert: 89 new launches \u2014 Bloomberg Tech, AMD, Google AI Blog",
+  "source_date": "Fri, 29 May 2026 15:45:14 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "AWS",
+    "NVIDIA"
+  ],
+  "models": [
+    "GPT-5.5",
+    "Claude"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://techcrunch.com/podcast/does-your-ceo-have-ai-psychosis-aaron-levie-thinks-most-of-them-do/",
+  "article_title": "Does your CEO have AI psychosis? Aaron Levie thinks most of them do.",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3cb50dd8069ed9c5.png",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2025/07/TC25_Disrupt-Color.png",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/podcast/does-your-ceo-have-ai-psychosis-aaron-levie-thinks-most-of-them-do/",
+      "title": "Does your CEO have AI psychosis? Aaron Levie thinks most of them do.",
+      "description": "Equity breaks down rising AI layoffs, the AI agents reshaping hiring, and why Box CEO Aaron Levie thinks Silicon Valley may be suffering from \u201cAI psychosis.\u201d Plus, Waymo's new robotaxi and the week's biggest startup deals.",
+      "excerpt": "Equity breaks down rising AI layoffs, the AI agents reshaping hiring, and why Box CEO Aaron Levie thinks Silicon Valley may be suffering from \u201cAI psychosis.\u201d Plus, Waymo's new robotaxi and the week's biggest startup deals.",
+      "summary": "Kirsten\u2019s first look at Waymo\u2019s new Ojai robotaxi in Phoenix, and the crew\u2019s thoughts on the company\u2019s path to profitability Cloud data storage giant Snowflake\u2019s $6 billion five-year agreement with AWS Why Stord, the \u201canti-Amazon\u201d fulfillment startup , just raised $250 million at a $3 billion valuation What OpenRouter\u2019s $113 million raise says about the picks-and-shovels layer, and how long that interest lasts How the AI agent wave is actually reshaping hiring, not just headcount Anthony Ha is TechCrunch\u2019s weekend. The first StrictlyVC of 2026 hits SF on April 30. Before joining TechCrunch in 2022, she was one of 2 producers at a four-station conglomerate where she wrote, recorded, voiced and edited content, and engineered live performances and interviews from guests like lovelytheband. The first StrictlyVC of 2026 hits SF on April 30.",
+      "what_happened": "Kirsten\u2019s first look at Waymo\u2019s new Ojai robotaxi in Phoenix, and the crew\u2019s thoughts on the company\u2019s path to profitability Cloud data storage giant Snowflake\u2019s $6 billion five-year agreement with AWS Why Stord, the \u201canti-Amazon\u201d fulfillment startup , just raised $250 million at a $3 billion valuation What OpenRouter\u2019s $113 million raise says about the picks-and-shovels layer, and how long that interest lasts How the AI agent wave is actually reshaping hiring, not just headcount Anthony Ha is TechCrunch\u2019s weekend.",
+      "why_matters": "The first StrictlyVC of 2026 hits SF on April 30. Before joining TechCrunch in 2022, she was one of 2 producers at a four-station conglomerate where she wrote, recorded, voiced and edited content, and engineered live performances and interviews from guests like lovelytheband.",
+      "what_to_watch": "The first StrictlyVC of 2026 hits SF on April 30.",
+      "key_points": [
+        "Kirsten\u2019s first look at Waymo\u2019s new Ojai robotaxi in Phoenix, and the crew\u2019s thoughts on the company\u2019s path to profitability Cloud data storage giant Snowflake\u2019s $6 billion five-year agreement with AWS Why Stord, the.",
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "Elon Musk can\u2019t hear you over the sound of his $1.75 trillion IPO How Lucra raised $20M as an eSports play when every VC only wants AI",
+        "Before joining TechCrunch in 2022, she was one of 2 producers at a four-station conglomerate where she wrote, recorded, voiced and edited content, and engineered live performances and interviews from guests like.",
+        "Blue Origin\u2019s New Glenn rocket explodes during testing in Florida Anthropic releases Opus 4.8 with new \u2018dynamic workflow\u2019 tool Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including.",
+        "Equity breaks down rising AI layoffs, the AI agents reshaping hiring, and why Box CEO Aaron Levie thinks Silicon Valley may be suffering from \u201cAI psychosis.\u201d Plus, Waymo's new robotaxi and the week's biggest startup.",
+        "On this episode of TechCrunch\u2019s Equity podcast, Kirsten Korosec, Anthony Ha, and Sean O\u2019Kane dig into what happens when the AI-pilled and the AI-skeptical are both right at the same time, plus three deals worth knowing.",
+        "Sean O\u2019Kane is a reporter who has spent a decade covering the rapidly-evolving business and technology of the transportation industry, including Tesla and the many startups chasing Elon Musk.",
+        "You can contact or verify outreach from Sean by emailing sean.okane@techcrunch.com or via encrypted message at okane.01 on Signal.",
+        "Connect with 10,000+ tech leaders in unparalleled networking, 200+ hands-on sessions led by 250+ industry leaders, and discover 300+ showcasing startups.",
+        "The people deciding that AI can replace your job are also the ones least likely to understand what your job truly involves, according to Box founder Aaron Levie, who pointed to this as an example of \u201c AI psychosis .\u201d.",
+        "Get Disrupt Early Bird savings of up to $410 by May 29, 11:59 p.m."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3cb50dd8069ed9c5.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/07/TC25_Disrupt-Color.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.cnbc.com/2026/05/29/nvidia-photonics-investment-ai.html",
+      "title": "Nvidia is investing billions into this emerging technology that could change the AI industry",
+      "description": "Photonics is considered to be a more efficient alternative to the current process of transferring data using electricity, which could be crucial to the AI boom.",
+      "excerpt": "Photonics is considered to be a more efficient alternative to the current process of transferring data using electricity, which could be crucial to the AI boom.",
+      "summary": "Since the beginning of March, Nvidia has announced $2 billion investments into Lumentum , Coherent and Marvell , all of which are developing photonics tech. Chipmaker Advanced Micro Devices joined Nvidia in the Ayar Labs round as well as acquiring startup Enosemi in 2025, alongside making equity investments in Teramount and Celestial AI. The chip giant has already made some photonics tech available as part of its networking solutions offering, with the company announcing tools that it said will enable AI factories to connect millions of GPUs across sites while drastically reducing energy consumption and operational costs. \u201cSo we work with the supply chain to make sure we can help them build up the capacity in advance of that.\u201d Lumentum\u2019s stock has risen 134%. \u201cI would expect us to see large-scale adoption from 2028 onwards.\u201d Correction: This article has been updated to correct the spelling of Ayar Labs.",
+      "what_happened": "Since the beginning of March, Nvidia has announced $2 billion investments into Lumentum , Coherent and Marvell , all of which are developing photonics tech. Chipmaker Advanced Micro Devices joined Nvidia in the Ayar Labs round as well as acquiring startup Enosemi in 2025, alongside making equity investments in Teramount and Celestial AI.",
+      "why_matters": "The chip giant has already made some photonics tech available as part of its networking solutions offering, with the company announcing tools that it said will enable AI factories to connect millions of GPUs across sites while drastically reducing energy consumption and operational costs. \u201cSo we work with the supply chain to make sure we can help them build up the capacity in advance of that.\u201d Lumentum\u2019s stock has risen 134%.",
+      "what_to_watch": "\u201cI would expect us to see large-scale adoption from 2028 onwards.\u201d Correction: This article has been updated to correct the spelling of Ayar Labs.",
+      "key_points": [
+        "Nvidia has committed at least $6.5 billion into companies developing photonics technology in the past three months, as the company races to invest in solving one of the major bottlenecks to the rollout of artificial.",
+        "Since the beginning of March, Nvidia has announced $2 billion investments into Lumentum , Coherent and Marvell , all of which are developing photonics tech.",
+        "Chipmaker Advanced Micro Devices joined Nvidia in the Ayar Labs round as well as acquiring startup Enosemi in 2025, alongside making equity investments in Teramount and Celestial AI.",
+        "\u201cI would expect us to see large-scale adoption from 2028 onwards.\u201d Correction: This article has been updated to correct the spelling of Ayar Labs.",
+        "The chip giant has already made some photonics tech available as part of its networking solutions offering, with the company announcing tools that it said will enable AI factories to connect millions of GPUs across.",
+        "Photonics, the use of light to transmit data, is an emerging technology considered to be a more efficient alternative to the current process of transferring data using electricity.",
+        "Data is a real-time snapshot *Data is delayed at least 15 minutes.",
+        "We and our partners also use tools on this site to provide the services, personalize your experience, and for analytics, marketing, and advertising.",
+        "market under bill aimed at Chinese automaker ownership Trump ends Iran meeting without announcing \u2018final determination\u2019 on deal Roth IRA owners may need a second retirement account to claim the new Saver\u2019s Match Student.",
+        "\u201cSo we work with the supply chain to make sure we can help them build up the capacity in advance of that.\u201d Lumentum\u2019s stock has risen 134% since the start of the year, while Coherent is up 96%.",
+        "The chip giant also said it would invest $500 million into Corning to develop advanced optical connectivity solutions, and participated in optics startup Ayar Labs\u2019 $500 million Series E funding round.",
+        "Photonics is considered to be a more efficient alternative to the current process of transferring data using electricity, which could be crucial to the AI boom."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b88b9020aa581e79.jpg",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108279129-1773774466063-gettyimages-2266555824-NVIDIA_GTC.jpeg?v=1774007143&w=1920&h=1080",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bloomberg.com/news/videos/2026-05-29/spacex-said-to-lower-target-for-ipo-valuation-to-1-8t-video",
+      "title": "omberg's AI reporter Shir",
+      "description": "omberg's AI reporter Shir Link : [HIGH] SpaceX Said to Lower Target for IPO Valuation to $1.8 Trillion Company : Bloomberg Tech Summary : SpaceX is targeting a valuation of at least $1.8 trillion in its initial public offering, according to sources, after Bloomberg News reported in April that SpaceX was aiming for a valuation above $2 t Link : [HIGH] Anthropic Raises at $965 Billion Valuation, Eclipsing OpenAI Company : Bloomberg Tech Summary : Anthropic PBC raised $65 billion in a funding round that valued the artificial intelligence company at $965 billion including the new investment, eclipsing rival OpenAI\u2019s value for the first time. Th Link : [HIGH] Microsoft delays Fable...",
+      "excerpt": "omberg's AI reporter Shir Link : [HIGH] SpaceX Said to Lower Target for IPO Valuation to $1.8 Trillion Company : Bloomberg Tech Summary : SpaceX is targeting a valuation of at least $1.8 trillion in its initial public offering, according to sources, after Bloomberg News reported in April that SpaceX was aiming for a valuation above $2 t Link : [HIGH] Anthropic Raises at $965 Billion Valuation, Eclipsing OpenAI Company : Bloomberg Tech Summary : Anthropic PBC raised $65 billion in a funding round that valued the artificial intelligence company at $965 billion including the new...",
+      "summary": "omberg's AI reporter Shir Link : [HIGH] SpaceX Said to Lower Target for IPO Valuation to $1.8 Trillion Company : Bloomberg Tech Summary : SpaceX is targeting a valuation of at least $1.8 trillion in its initial public offering, according to sources, after Bloomberg News reported in April that SpaceX was aiming for a valuation above $2 t Link : [HIGH] Anthropic Raises at $965 Billion Valuation, Eclipsing OpenAI Company : Bloomberg Tech Summary : Anthropic PBC raised $65 billion in a funding round that valued the. Th Link : [HIGH] Microsoft delays Fable... Th Link : [HIGH] Microsoft delays Fable...",
+      "what_happened": "omberg's AI reporter Shir Link : [HIGH] SpaceX Said to Lower Target for IPO Valuation to $1.8 Trillion Company : Bloomberg Tech Summary : SpaceX is targeting a valuation of at least $1.8 trillion in its initial public offering, according to sources, after Bloomberg News reported in April that SpaceX was aiming for a valuation above $2 t Link : [HIGH] Anthropic Raises at $965 Billion Valuation, Eclipsing OpenAI Company : Bloomberg Tech Summary : Anthropic PBC raised $65 billion in a funding round that valued the.",
+      "why_matters": "Th Link : [HIGH] Microsoft delays Fable...",
+      "what_to_watch": "Th Link : [HIGH] Microsoft delays Fable...",
+      "key_points": [
+        "omberg's AI reporter Shir Link : [HIGH] SpaceX Said to Lower Target for IPO Valuation to $1.8 Trillion Company : Bloomberg Tech Summary : SpaceX is targeting a valuation of at least $1.8 trillion in its initial public.",
+        "Th Link : [HIGH] Microsoft delays Fable..."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.wired.com/story/the-vaticans-man-inside-anthropic/",
+      "title": "[MEDIUM] The Vatican\u2019s Man Inside Anthropic",
+      "description": "ty czar Tom Homan keeps threatening to \"flood\" New York City with ICE agents. But a new investigation shows that ICE has been quietly ramping up arrests in the New York area already - and Link : [MEDIUM] The Vatican\u2019s Man Inside Anthropic Company : Wired AI Summary : Pope Leo XIV may not be able to disarm AI, but he\u2019s got the attention of the industry. Link : [MEDIUM] NIST proposes a baseline performance benchmark for humanoid robots Company : Robotics Business Review Summary : NIST has proposed a standardized performance benchmark and testing procedures to help developers and evaluators of humanoids. The post NIST proposes a baseline performance benchmark for humanoid robot Link : [MEDIUM] Dan Ives...",
+      "excerpt": "ty czar Tom Homan keeps threatening to \"flood\" New York City with ICE agents. But a new investigation shows that ICE has been quietly ramping up arrests in the New York area already - and Link : [MEDIUM] The Vatican\u2019s Man Inside Anthropic Company : Wired AI Summary : Pope Leo XIV may not be able to disarm AI, but he\u2019s got the attention of the industry. Link : [MEDIUM] NIST proposes a baseline performance benchmark for humanoid robots Company : Robotics Business Review Summary : NIST has proposed a standardized performance benchmark and testing procedures to help developers and evaluators of humanoids...",
+      "summary": "Link : [MEDIUM] NIST proposes a baseline performance benchmark for humanoid robots Company : Robotics Business Review Summary : NIST has proposed a standardized performance benchmark and testing procedures to help developers and evaluators of humanoids. But a new investigation shows that ICE has been quietly ramping up arrests in the New York area already - and Link : [MEDIUM] The Vatican\u2019s Man Inside Anthropic Company : Wired AI Summary : Pope Leo XIV may not be able to disarm AI, but he\u2019s got the attention of the industry. The post NIST proposes a baseline performance benchmark for humanoid robot Link : [MEDIUM] Dan Ives... The post NIST proposes a baseline performance benchmark for humanoid robot Link : [MEDIUM] Dan Ives...",
+      "what_happened": "Link : [MEDIUM] NIST proposes a baseline performance benchmark for humanoid robots Company : Robotics Business Review Summary : NIST has proposed a standardized performance benchmark and testing procedures to help developers and evaluators of humanoids.",
+      "why_matters": "But a new investigation shows that ICE has been quietly ramping up arrests in the New York area already - and Link : [MEDIUM] The Vatican\u2019s Man Inside Anthropic Company : Wired AI Summary : Pope Leo XIV may not be able to disarm AI, but he\u2019s got the attention of the industry. The post NIST proposes a baseline performance benchmark for humanoid robot Link : [MEDIUM] Dan Ives...",
+      "what_to_watch": "The post NIST proposes a baseline performance benchmark for humanoid robot Link : [MEDIUM] Dan Ives...",
+      "key_points": [
+        "Link : [MEDIUM] NIST proposes a baseline performance benchmark for humanoid robots Company : Robotics Business Review Summary : NIST has proposed a standardized performance benchmark and testing procedures to help.",
+        "The post NIST proposes a baseline performance benchmark for humanoid robot Link : [MEDIUM] Dan Ives...",
+        "But a new investigation shows that ICE has been quietly ramping up arrests in the New York area already - and Link : [MEDIUM] The Vatican\u2019s Man Inside Anthropic Company : Wired AI Summary : Pope Leo XIV may not be able.",
+        "ty czar Tom Homan keeps threatening to \"flood\" New York City with ICE agents."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bloomberg.com/news/newsletters/2026-05-29/the-corporate-lexicon-on-ai-has-changed-from-generative-to-agentic",
+      "title": "ovation-and-ai/technology/ai/university-waterloo-labs/",
+      "description": "ovation-and-ai/technology/ai/university-waterloo-labs/ [MEDIUM] This AI startup will clean your home for free to train future robots Company : The Verge AI Link : [MEDIUM] AI Used to Be Generative. Now It\u2019s All About Agents Company : Bloomberg Tech Summary : Corporate speak has changed when it comes to describing the evolving technology Link : [MEDIUM] This Lenovo laptop I tested rivals the MacBook Air in ways Windows PCs once struggled in Company : ZDNet AI Summary : The Slim 7x (2026) has impressive performance improvements, but its target user - the modern professional - remains the same. Link : [MEDIUM] Workers need greater say over AI rollout, says TUC-backed report Company : The Guardian Tech Summary : Exclusive: IPPR...",
+      "excerpt": "ovation-and-ai/technology/ai/university-waterloo-labs/ [MEDIUM] This AI startup will clean your home for free to train future robots Company : The Verge AI Link : [MEDIUM] AI Used to Be Generative. Now It\u2019s All About Agents Company : Bloomberg Tech Summary : Corporate speak has changed when it comes to describing the evolving technology Link : [MEDIUM] This Lenovo laptop I tested rivals the MacBook Air in ways Windows PCs once struggled in Company : ZDNet AI Summary : The Slim 7x (2026) has impressive performance improvements, but its target user - the modern professional - remains the...",
+      "summary": "Now It\u2019s All About Agents Company : Bloomberg Tech Summary : Corporate speak has changed when it comes to describing the evolving technology Link : [MEDIUM] This Lenovo laptop I tested rivals the MacBook Air in ways Windows PCs once struggled in Company : ZDNet AI Summary : The Slim 7x (2026) has impressive performance improvements, but its target user - the modern professional - remains the same. Link : [MEDIUM] Workers need greater say over AI rollout, says TUC-backed report Company : The Guardian Tech Summary : Exclusive: IPPR...",
+      "what_happened": "Now It\u2019s All About Agents Company : Bloomberg Tech Summary : Corporate speak has changed when it comes to describing the evolving technology Link : [MEDIUM] This Lenovo laptop I tested rivals the MacBook Air in ways Windows PCs once struggled in Company : ZDNet AI Summary : The Slim 7x (2026) has impressive performance improvements, but its target user - the modern professional - remains the same.",
+      "why_matters": "Link : [MEDIUM] Workers need greater say over AI rollout, says TUC-backed report Company : The Guardian Tech Summary : Exclusive: IPPR...",
+      "what_to_watch": "",
+      "key_points": [
+        "Now It\u2019s All About Agents Company : Bloomberg Tech Summary : Corporate speak has changed when it comes to describing the evolving technology Link : [MEDIUM] This Lenovo laptop I tested rivals the MacBook Air in ways.",
+        "Link : [MEDIUM] Workers need greater say over AI rollout, says TUC-backed report Company : The Guardian Tech Summary : Exclusive: IPPR...",
+        "ovation-and-ai/technology/ai/university-waterloo-labs/ [MEDIUM] This AI startup will clean your home for free to train future robots Company : The Verge AI Link : [MEDIUM] AI Used to Be Generative."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes#:~:text=May%2028%2C%202026,models%20are%20sunset",
+      "title": "workflow capability internally named Autopilot\u201d into one place,Fortunereports. Sounds like a Microsoft vers",
+      "description": "workflow capability internally named Autopilot\u201d into one place,Fortunereports. Sounds like a Microsoft vers Link : [HIGH] ChatGPT - Release Notes Company : The Verge AI Summary : The feature, which let youedit code or text side-by-sidewith ChatGPT, will no longer be available with GPT-5.5 Instant or GPT-5.5 Thinking, according to OpenAI. ChatGPT subscribers can still access Ca Link : . [HIGH] SpaceX Lowers IPO Valuation Target | Bloomberg Tech 5/29/2026 Company : Bloomberg Tech Summary : Bloomberg\u2019s Tim Stenovec breaks down why SpaceX is coming back down to Earth with a slightly lower valuation in its IPO. Plus, Anthropic closes a funding round at a whopping $965 billion valuation, su Link : [HIGH] After Nvidia\u2019s $20B not-acqui-hire, AI chip...",
+      "excerpt": "workflow capability internally named Autopilot\u201d into one place,Fortunereports. Sounds like a Microsoft vers Link : [HIGH] ChatGPT - Release Notes Company : The Verge AI Summary : The feature, which let youedit code or text side-by-sidewith ChatGPT, will no longer be available with GPT-5.5 Instant or GPT-5.5 Thinking, according to OpenAI. ChatGPT subscribers can still access Ca Link : . [HIGH] SpaceX Lowers IPO Valuation Target | Bloomberg Tech 5/29/2026 Company : Bloomberg Tech Summary : Bloomberg\u2019s Tim Stenovec breaks down why SpaceX is coming back down to Earth with a slightly lower valuation in its IPO. Plus, Anthropic...",
+      "summary": "Sounds like a Microsoft vers Link : [HIGH] ChatGPT - Release Notes Company : The Verge AI Summary : The feature, which let youedit code or text side-by-sidewith ChatGPT, will no longer be available with GPT-5.5 Instant or GPT-5.5 Thinking, according to OpenAI. [HIGH] SpaceX Lowers IPO Valuation Target | Bloomberg Tech 5/29/2026 Company : Bloomberg Tech Summary : Bloomberg\u2019s Tim Stenovec breaks down why SpaceX is coming back down to Earth with a slightly lower valuation in its IPO. Plus, Anthropic closes a funding round at a whopping $965 billion valuation, su Link : [HIGH] After Nvidia\u2019s $20B not-acqui-hire, AI chip... Plus, Anthropic closes a funding round at a whopping $965 billion valuation, su Link : [HIGH] After Nvidia\u2019s $20B not-acqui-hire, AI chip...",
+      "what_happened": "Sounds like a Microsoft vers Link : [HIGH] ChatGPT - Release Notes Company : The Verge AI Summary : The feature, which let youedit code or text side-by-sidewith ChatGPT, will no longer be available with GPT-5.5 Instant or GPT-5.5 Thinking, according to OpenAI.",
+      "why_matters": "[HIGH] SpaceX Lowers IPO Valuation Target | Bloomberg Tech 5/29/2026 Company : Bloomberg Tech Summary : Bloomberg\u2019s Tim Stenovec breaks down why SpaceX is coming back down to Earth with a slightly lower valuation in its IPO. Plus, Anthropic closes a funding round at a whopping $965 billion valuation, su Link : [HIGH] After Nvidia\u2019s $20B not-acqui-hire, AI chip...",
+      "what_to_watch": "Plus, Anthropic closes a funding round at a whopping $965 billion valuation, su Link : [HIGH] After Nvidia\u2019s $20B not-acqui-hire, AI chip...",
+      "key_points": [
+        "Sounds like a Microsoft vers Link : [HIGH] ChatGPT - Release Notes Company : The Verge AI Summary : The feature, which let youedit code or text side-by-sidewith ChatGPT, will no longer be available with GPT-5.5 Instant.",
+        "Plus, Anthropic closes a funding round at a whopping $965 billion valuation, su Link : [HIGH] After Nvidia\u2019s $20B not-acqui-hire, AI chip...",
+        "[HIGH] SpaceX Lowers IPO Valuation Target | Bloomberg Tech 5/29/2026 Company : Bloomberg Tech Summary : Bloomberg\u2019s Tim Stenovec breaks down why SpaceX is coming back down to Earth with a slightly lower valuation in its.",
+        "ChatGPT subscribers can still access Ca Link : .",
+        "workflow capability internally named Autopilot\u201d into one place,Fortunereports."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://openai.com/index/braintrust",
+      "title": "earlier this year made headlines by ditching Treasuries as Donald Trump was threatening to seize Greenland now says it won\u2019t touch SpaceX.",
+      "description": "earlier this year made headlines by ditching Treasuries as Donald Trump was threatening to seize Greenland now says it won\u2019t touch SpaceX. Link : [HIGH] How Braintrust turns customer requests into code with Codex Company : OpenAI Blog Summary : How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster. Link : [HIGH] It\u2019s Summertime and AI Means Internships Aren\u2019t Easy Company : Bloomberg Tech Summary : With chatbots like Claude around, more companies are cutting back on internships. Link : [HIGH] Infighting, court battles could put long-hyped air taxi breakthrough in jeopardy Company : CNBC Technology Summary : Trump's eVTOL...",
+      "excerpt": "earlier this year made headlines by ditching Treasuries as Donald Trump was threatening to seize Greenland now says it won\u2019t touch SpaceX. Link : [HIGH] How Braintrust turns customer requests into code with Codex Company : OpenAI Blog Summary : How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster. Link : [HIGH] It\u2019s Summertime and AI Means Internships Aren\u2019t Easy Company : Bloomberg Tech Summary : With chatbots like Claude around, more companies are cutting back on internships. Link ...",
+      "summary": "Link : [HIGH] How Braintrust turns customer requests into code with Codex Company : OpenAI Blog Summary : How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster. Link : [HIGH] Infighting, court battles could put long-hyped air taxi breakthrough in jeopardy Company : CNBC Technology Summary : Trump's eVTOL... earlier this year made headlines by ditching Treasuries as Donald Trump was threatening to seize Greenland now says it won\u2019t touch SpaceX.",
+      "what_happened": "Link : [HIGH] How Braintrust turns customer requests into code with Codex Company : OpenAI Blog Summary : How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster.",
+      "why_matters": "Link : [HIGH] Infighting, court battles could put long-hyped air taxi breakthrough in jeopardy Company : CNBC Technology Summary : Trump's eVTOL...",
+      "what_to_watch": "earlier this year made headlines by ditching Treasuries as Donald Trump was threatening to seize Greenland now says it won\u2019t touch SpaceX.",
+      "key_points": [
+        "Link : [HIGH] How Braintrust turns customer requests into code with Codex Company : OpenAI Blog Summary : How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster.",
+        "Link : [HIGH] Infighting, court battles could put long-hyped air taxi breakthrough in jeopardy Company : CNBC Technology Summary : Trump's eVTOL...",
+        "Link : [HIGH] It\u2019s Summertime and AI Means Internships Aren\u2019t Easy Company : Bloomberg Tech Summary : With chatbots like Claude around, more companies are cutting back on internships.",
+        "earlier this year made headlines by ditching Treasuries as Donald Trump was threatening to seize Greenland now says it won\u2019t touch SpaceX."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bloomberg.com/news/videos/2026-05-29/boe-s-bailey-says-uk-banks-don-t-have-access-to-mythos-video",
+      "title": "rthday party and still didn\u2019t clock the person most important to me.",
+      "description": "rthday party and still didn\u2019t clock the person most important to me. Link : [MEDIUM] BOE's Bailey Says UK Banks Don't Have Access to Mythos Company : Bloomberg Tech Summary : Bank of England Governor Andrew Bailey says that British banks are still locked out of using Anthropic PBC\u2019s powerful new AI tool. Speaking with Bloomberg's Stephanie Flanders at a central banking con Link : [MEDIUM] What happens when companies become too AI-pilled? Company : TechCrunch AI Summary : The people deciding that AI can replace your job are also the ones least likely to understand what your job truly involves, according to Box founder Aaron Levie, who pointed to this as an example of & Link : [MEDIUM] BOE\u2019s Bailey Says UK Banks Still Lack Access to Mythos...",
+      "excerpt": "rthday party and still didn\u2019t clock the person most important to me. Link : [MEDIUM] BOE's Bailey Says UK Banks Don't Have Access to Mythos Company : Bloomberg Tech Summary : Bank of England Governor Andrew Bailey says that British banks are still locked out of using Anthropic PBC\u2019s powerful new AI tool. Speaking with Bloomberg's Stephanie Flanders at a central banking con Link : [MEDIUM] What happens when companies become too AI-pilled? Company : TechCrunch AI Summary : The people deciding that AI can replace your job are also the ones least likely to understand what your job truly involves, according to Box founder...",
+      "summary": "Link : [MEDIUM] BOE's Bailey Says UK Banks Don't Have Access to Mythos Company : Bloomberg Tech Summary : Bank of England Governor Andrew Bailey says that British banks are still locked out of using Anthropic PBC\u2019s powerful new AI tool. Company : TechCrunch AI Summary : The people deciding that AI can replace your job are also the ones least likely to understand what your job truly involves, according to Box founder Aaron Levie, who pointed to this as an example of & Link : [MEDIUM] BOE\u2019s Bailey Says UK Banks Still Lack Access to Mythos... rthday party and still didn\u2019t clock the person most important to me.",
+      "what_happened": "Link : [MEDIUM] BOE's Bailey Says UK Banks Don't Have Access to Mythos Company : Bloomberg Tech Summary : Bank of England Governor Andrew Bailey says that British banks are still locked out of using Anthropic PBC\u2019s powerful new AI tool.",
+      "why_matters": "Company : TechCrunch AI Summary : The people deciding that AI can replace your job are also the ones least likely to understand what your job truly involves, according to Box founder Aaron Levie, who pointed to this as an example of & Link : [MEDIUM] BOE\u2019s Bailey Says UK Banks Still Lack Access to Mythos...",
+      "what_to_watch": "rthday party and still didn\u2019t clock the person most important to me.",
+      "key_points": [
+        "Link : [MEDIUM] BOE's Bailey Says UK Banks Don't Have Access to Mythos Company : Bloomberg Tech Summary : Bank of England Governor Andrew Bailey says that British banks are still locked out of using Anthropic PBC\u2019s.",
+        "Company : TechCrunch AI Summary : The people deciding that AI can replace your job are also the ones least likely to understand what your job truly involves, according to Box founder Aaron Levie, who pointed to this as.",
+        "rthday party and still didn\u2019t clock the person most important to me.",
+        "Speaking with Bloomberg's Stephanie Flanders at a central banking con Link : [MEDIUM] What happens when companies become too AI-pilled?"
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 9,
+  "has_cta": true,
+  "slides": [
+    "Does your CEO have AI psychosis Aaron Levie thinks most of them",
+    "Nvidia is investing billions into this emerging technology that could change",
+    "Omberg's AI reporter Shir",
+    "The Vatican's Man Inside Anthropic",
+    "Ovation-and-ai technology ai university-waterloo-labs",
+    "Workflow capability internally named Autopilot into one place Fortunereports",
+    "Earlier this year made headlines by ditching Treasuries as Donald Trump was",
+    "Rthday party and still didn't clock the person most important to me",
+    "SAVE THIS."
+  ]
+}
