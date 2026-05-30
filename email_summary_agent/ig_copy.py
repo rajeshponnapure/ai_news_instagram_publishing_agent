@@ -44,6 +44,22 @@ FORBIDDEN_PHRASES = (
     "access to this page has been denied",
     "checking your browser",
     "verify you are a human",
+    "for more details",
+    "early bird",
+    "strictlyvc",
+    "disrupt",
+    "equitypod",
+    "all about agents",
+    "follow on x",
+    "threads",
+    "savings",
+    "covered live",
+    "query met quiet",
+    "lost page, still warm light",
+    "soft signs lean toward the next path",
+    "step in, make it yours",
+    "only blank but well lit space",
+    "bring your best question",
 )
 
 ROBOTIC_PHRASES = (

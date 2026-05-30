@@ -10,6 +10,7 @@ from pathlib import Path
 from .config import Settings
 from .article_assembler import assemble as assemble_articles
 from .article_enricher import ArticleData, enrich_email_with_articles
+from .article_quality import is_publishable_article
 from .db import AgentStore
 from .digest import parse_news_items
 from .email_client import ImapEmailClient
@@ -301,6 +302,10 @@ def process_items(
                     if hasattr(a, "extra_image_paths"):
                         d["extra_image_paths"] = list(a.extra_image_paths)
                     article_dicts.append(d)
+                raw_count = len(article_dicts)
+                article_dicts = [a for a in article_dicts if is_publishable_article(a)]
+                if len(article_dicts) != raw_count:
+                    _safe_print(f"  Dropped {raw_count - len(article_dicts)} non-publishable article fragment(s)")
                 posts, demoted = plan_posts(article_dicts, memory, post_size=settings.post_size)
                 _safe_print(f"  Planned {len(posts)} post(s) from {len(article_dicts)} raw articles (demoted {len(demoted)})")
                 selected = posts[0] if posts else []
@@ -312,10 +317,25 @@ def process_items(
                         text=a.get("text", ""),
                         image_url=a.get("image_url", ""),
                         image_path=a.get("image_path", ""),
+                        extra_image_urls=tuple(a.get("extra_image_urls", []) or ()),
+                        extra_image_paths=tuple(a.get("extra_image_paths", []) or ()),
                     )
                     for a in selected
                 ]
-                articles = selected_articles if selected_articles else articles[:settings.post_size]
+                fallback_selected = [
+                    ArticleData(
+                        url=a.get("url", ""),
+                        title=a.get("title", ""),
+                        description=a.get("description", ""),
+                        text=a.get("text", ""),
+                        image_url=a.get("image_url", ""),
+                        image_path=a.get("image_path", ""),
+                        extra_image_urls=tuple(a.get("extra_image_urls", []) or ()),
+                        extra_image_paths=tuple(a.get("extra_image_paths", []) or ()),
+                    )
+                    for a in article_dicts[:settings.post_size]
+                ]
+                articles = selected_articles if selected_articles else fallback_selected
                 _safe_print(f"  Selected {len(articles)} articles for summarization")
 
             # Summarize with full-extract (no truncation)

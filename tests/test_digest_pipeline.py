@@ -9,6 +9,7 @@ from unittest.mock import patch
 
 from email_summary_agent.article_enricher import extract_article_urls
 from email_summary_agent.agent import _email_scan_due
+from email_summary_agent.article_quality import is_publishable_article
 from email_summary_agent.config import Settings
 from email_summary_agent.content_rag import retrieve_context
 from email_summary_agent.db import AgentStore
@@ -22,6 +23,8 @@ from email_summary_agent.summarizer import _article_item_for_instagram, _format_
 from email_summary_agent.article_enricher import ArticleData
 from email_summary_agent.ig_copy import layout_safe_headline, layout_safe_points, trim_without_ellipsis
 from email_summary_agent.ig_keypoints import _extract_instagram_key_points
+from email_summary_agent.renderer import _build_slide_html
+from email_summary_agent.verifier import verify_pre_publish
 
 
 class DigestPipelineTests(unittest.TestCase):
@@ -188,6 +191,30 @@ class DigestPipelineTests(unittest.TestCase):
         self.assertIn("o1 model improves complex problem solving", items[0].context)
         self.assertNotEqual(items[0].context.lower(), "for more details, visit:")
 
+    def test_publishability_rejects_promo_noise_and_url_slug_titles(self) -> None:
+        promo = {
+            "url": "https://techcrunch.com/events/disrupt-early-bird",
+            "title": "Get Disrupt Early Bird savings",
+            "description": "Startups are the core of TechCrunch, so get our best coverage delivered weekly.",
+            "text": "Early Bird ticket savings of up to $410 end May 29 at 11:59 p.m.",
+        }
+        slug = {
+            "url": "https://www.bloomberg.com/news/articles/2026-05-30/ovation-and-ai-technology-ai-university-waterloo-labs",
+            "title": "Ovation-and-ai technology ai university-waterloo-labs",
+            "description": "This AI startup will clean your home for free to train future robots.",
+            "text": "The robotics company is using real-world household tasks to improve AI robot training.",
+        }
+        real_story = {
+            "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/url-and-domain-category-filtering-aws-network-firewall",
+            "title": "AWS adds URL and domain category filtering to Network Firewall",
+            "description": "AWS Network Firewall now lets teams manage URL and domain categories without manually curating every domain list.",
+            "text": "The policy update helps security teams keep application controls current as AI services, developer platforms, and new SaaS domains change.",
+        }
+
+        self.assertFalse(is_publishable_article(promo))
+        self.assertFalse(is_publishable_article(slug))
+        self.assertTrue(is_publishable_article(real_story))
+
     def test_html_email_preserves_link_hrefs(self) -> None:
         message = EmailMessage()
         message["Subject"] = "AI Alert"
@@ -212,13 +239,56 @@ class DigestPipelineTests(unittest.TestCase):
         self.assertEqual(slides[0]["kind"], "digest")
         self.assertEqual(slides[0]["image_path"], "")
 
-    def test_missing_article_image_can_use_reference_search_result(self) -> None:
-        summary = _summary_with_articles(1)
+    def test_renderer_omits_blank_image_panel_when_image_missing(self) -> None:
+        html = _build_slide_html(
+            {
+                "kind": "digest",
+                "eyebrow": "Industry",
+                "title": "Blue Origin&#x27;s New Glenn test fails during Florida run",
+                "body": "Blue Origin&#x27;s rocket test ended early during a controlled Florida trial.\nEngineers now have a cleaner failure window to inspect before the next attempt.",
+                "source_label": "example.com",
+                "image_path": "",
+                "url": "https://example.com/blue-origin-ai-test",
+            },
+            1,
+            2,
+            datetime(2026, 5, 21, 9, 0),
+        )
 
-        with patch("email_summary_agent.ig_image._find_reference_image_for_article_unique", return_value="data/article_assets/reference.jpg"):
+        self.assertNotIn('<div class="digest-image"', html)
+        self.assertIn("digest-body no-image", html)
+        self.assertNotIn("&amp;#x27;", html)
+        self.assertIn("Blue Origin&#x27;s New Glenn test fails during Florida run", html)
+
+    def test_article_slide_uses_only_same_article_image(self) -> None:
+        summary = _summary_with_articles(1)
+        with TemporaryDirectory() as tmp:
+            image_path = Path(tmp) / "article-image.jpg"
+            image_path.write_bytes(b"same article image")
+            summary.article_items[0]["image_path"] = str(image_path)
+
             slides = _build_slide_specs(summary, datetime(2026, 5, 21, 9, 0))
 
-        self.assertEqual(slides[0]["image_path"], "data/article_assets/reference.jpg")
+        self.assertEqual(slides[0]["image_path"], str(image_path))
+        self.assertEqual(slides[0]["image_source"], "article")
+
+    def test_verifier_blocks_digest_slide_without_article_image(self) -> None:
+        report = verify_pre_publish(
+            [
+                {
+                    "kind": "digest",
+                    "title": "AWS updates Network Firewall policy controls.",
+                    "body": "Security teams get stronger control over fast-changing domains.",
+                    "url": "https://example.com/aws-firewall",
+                    "image_path": "",
+                    "image_source": "",
+                },
+                {"kind": "cta", "title": "SAVE THIS.", "body": "", "image_path": ""},
+            ]
+        )
+
+        self.assertFalse(report.passed)
+        self.assertTrue(any(c.check_id == 6 and not c.passed for c in report.checks))
 
     def test_email_scan_gate_waits_for_configured_interval(self) -> None:
         with TemporaryDirectory() as tmp:
@@ -369,7 +439,31 @@ class DigestPipelineTests(unittest.TestCase):
         self.assertEqual(slides[-1]["kind"], "cta")
         digest = [s for s in slides if s.get("kind") == "digest"]
         self.assertEqual(len(digest), 3)
-        self.assertTrue(all("reveals a specific AI update" in slide["body"] for slide in digest))
+        self.assertTrue(all(len(slide.get("summary_lines", [])) >= 1 for slide in digest))
+        self.assertTrue(all(len(slide.get("key_points", [])) == 4 for slide in digest))
+        self.assertTrue(all("global repeated fallback" not in slide["body"].lower() for slide in digest))
+
+    def test_digest_slides_have_editorial_heading_summary_and_four_keypoints(self) -> None:
+        summary = _summary_with_articles(1)
+        item = summary.article_items[0]
+        item["title"] = "AWS adds URL and domain category filtering to Network Firewall"
+        item["description"] = (
+            "AWS Network Firewall now lets administrators use URL and domain categories "
+            "to keep security policies current. The update reduces manual domain-list "
+            "maintenance as AI services and SaaS endpoints change. Security teams can "
+            "align firewall controls with application categories instead of chasing every domain by hand."
+        )
+        item["excerpt"] = ""
+
+        slides = _build_slide_specs(summary, datetime(2026, 5, 21, 9, 0))
+        digest = slides[0]
+
+        self.assertEqual(digest["kind"], "digest")
+        self.assertTrue(digest["title"].endswith("."))
+        self.assertEqual(len(digest["summary_lines"]), 3)
+        self.assertEqual(len(digest["key_points"]), 4)
+        self.assertTrue(all(point.endswith(".") for point in digest["key_points"]))
+        self.assertFalse(any("story 1" in point.lower() for point in digest["key_points"]))
 
 
 def _summary_with_articles(count: int, long: bool = False) -> EmailSummary:

@@ -72,6 +72,13 @@ def write_instagram_carousels(
         )
 
         # ── Phase 2: Pre-publish verification ──────────────────────────────
+        missing_image_detail = _missing_article_image_detail(content_slides)
+        if missing_image_detail:
+            (carousel_dir / "VERIFY_FAILED").touch()
+            (carousel_dir / "image_validation_failed.txt").write_text(missing_image_detail, encoding="utf-8")
+            _safe_print(f"  IMAGE VALIDATION FAILED {carousel_dir.name} - {missing_image_detail}")
+            continue
+
         verification_ok = True
         if enable_verification:
             from .verifier import verify_pre_publish, write_verification_report
@@ -185,6 +192,20 @@ def _repair_failed_slides(slides: list[dict], report, memory) -> None:
                 from .ig_keypoints import _strip_noise
                 body = "\n".join(_strip_noise(line) for line in lines)
                 slide["body"] = body
+
+
+def _missing_article_image_detail(slides: list[dict]) -> str:
+    for index, slide in enumerate(slides, start=1):
+        if slide.get("kind") != "digest":
+            continue
+        image_path = str(slide.get("image_path", "") or "").strip()
+        if not image_path:
+            return f"slide {index}: missing same-article image"
+        if str(slide.get("image_source", "")) != "article":
+            return f"slide {index}: image is not article-sourced"
+        if not Path(image_path).exists():
+            return f"slide {index}: article image file not found"
+    return ""
 
 
 def _safe_print(message: str) -> None:

@@ -83,6 +83,13 @@ def _accept(path: str, used_image_paths: set[str], used_image_hashes: list | Non
     return True
 
 
+def _accept_article_image(path: str, used_image_paths: set[str], used_image_hashes: list | None) -> bool:
+    """Register a same-article image without replacing it with cross-article fallback."""
+    used_image_paths.add(path)
+    _register_hash(path, used_image_hashes)
+    return True
+
+
 def _select_unique_article_image(
     article: dict[str, Any],
     topic: str,
@@ -90,7 +97,7 @@ def _select_unique_article_image(
     used_image_paths: set[str],
     used_image_hashes: list | None = None,
 ) -> str:
-    """Deduplicated image selection pipeline.
+    """Select only an image extracted from the same article.
 
     Priority order:
     1. Article's own featured/hero image (og:image fetch — highest relevance)
@@ -103,6 +110,30 @@ def _select_unique_article_image(
     """
     title = str(article.get("title") or "")
     query_text = _tighten(_image_query_text(article, topic), 1200)
+
+    article_url = str(article.get("url") or "")
+    if article_url and not article.get("image_url") and not article.get("image_path"):
+        scraped_url = _fetch_og_image_from_url(article_url)
+        if scraped_url:
+            article["image_url"] = scraped_url
+
+    for kind, value in _same_article_image_candidates(article):
+        if kind == "url":
+            local = _download_to_library(value, query_text or title or topic)
+            if local and _accept_article_image(local, used_image_paths, used_image_hashes):
+                used_image_urls.add(value)
+                article["image_url"] = value
+                article["image_path"] = local
+                article["image_source"] = "article"
+                return local
+        else:
+            path = Path(value)
+            if path.exists() and _accept_article_image(value, used_image_paths, used_image_hashes):
+                article["image_path"] = value
+                article["image_source"] = "article"
+                return value
+
+    return ""
 
     # ── 0. Scrape og:image directly from the article URL ─────────────────────
     article_url = str(article.get("url") or "")
@@ -160,6 +191,37 @@ def _select_unique_article_image(
 # ─────────────────────────────────────────────────────────────────────────────
 # og:image scraping
 # ─────────────────────────────────────────────────────────────────────────────
+
+def _is_low_value_image_candidate(value: str) -> bool:
+    lowered = str(value or "").lower()
+    return any(
+        term in lowered
+        for term in (
+            "logo", "icon", "avatar", "pixel", "tracking", "badge",
+            "1x1", "spacer", "sprite", "placeholder", "transparent",
+        )
+    )
+
+
+def _same_article_image_candidates(article: dict[str, Any]) -> list[tuple[str, str]]:
+    candidates: list[tuple[str, str]] = []
+    seen: set[str] = set()
+
+    def add(kind: str, value: Any) -> None:
+        raw = str(value or "").strip()
+        if not raw or raw in seen or _is_low_value_image_candidate(raw):
+            return
+        seen.add(raw)
+        candidates.append((kind, raw))
+
+    add("path", article.get("image_path"))
+    add("url", article.get("image_url"))
+    for value in article.get("extra_image_paths") or []:
+        add("path", value)
+    for value in article.get("extra_image_urls") or []:
+        add("url", value)
+    return candidates
+
 
 def _fetch_og_image_from_url(article_url: str) -> str:
     """Scrape the article page and return the best image URL found."""

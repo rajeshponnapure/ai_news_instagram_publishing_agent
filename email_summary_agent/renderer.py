@@ -147,15 +147,21 @@ def _list_body(slide):
 
 def _digest_body(slide):
     eyebrow = _e(slide.get("eyebrow") or "AI Update")
-    headline = _e(layout_safe_headline(slide.get("title") or "AI Update", fallback="AI Update"))
+    headline = _e(slide.get("title") or layout_safe_headline("AI Update", fallback="AI Update"))
     source = _e(slide.get("source_label") or "")
     src_html = f'<div class="source-label" style="margin-top:14px;">{source}</div>' if source else ""
-    # Points from body string or list
-    raw = []
+    summary_raw = slide.get("summary_lines") or []
+    if isinstance(summary_raw, str):
+        summary_lines = [ln.strip() for ln in summary_raw.splitlines() if ln.strip()]
+    else:
+        summary_lines = [str(ln).strip() for ln in summary_raw if str(ln).strip()]
+    summary_html = "".join(f'<div class="summary-line">{_e(line)}</div>\n' for line in summary_lines[:3])
+
+    raw = slide.get("key_points") or []
     body = slide.get("body") or ""
-    if isinstance(body, list):
+    if not raw and isinstance(body, list):
         raw = body
-    elif body:
+    elif not raw and body:
         raw = [ln.lstrip("â€¢â€“â€”- ").strip() for ln in str(body).splitlines() if ln.strip()]
     safe_points = layout_safe_points([str(pt) for pt in raw], limit=4)
     if not safe_points and headline:
@@ -165,15 +171,21 @@ def _digest_body(slide):
         f'<span class="kp-text">{_highlight_keywords_html(str(pt))}</span></div>\n'
         for i, pt in enumerate(safe_points, 1)
     )
-    img_val = _image_css(slide.get("image_path") or "")
-    # Always keep the image zone at exactly 510px so the body layout never
-    # shifts.  When no real image is available _image_css returns a dark
-    # gradient fallback that still fills the zone cleanly.
-    return f"""  <div class="digest-image" style="background-image:{img_val}; background-size:cover; background-position:center;"></div>
-  <div class="digest-body">
+    image_path = str(slide.get("image_path") or "")
+    has_image = bool(image_path and Path(image_path).exists())
+    img_html = ""
+    body_class = "digest-body"
+    if has_image:
+        img_val = _image_css(image_path)
+        img_html = f"""  <div class="digest-image" style="background-image:{img_val}; background-size:cover; background-position:center;"></div>
+"""
+    else:
+        body_class += " no-image"
+    return f"""{img_html}  <div class="{body_class}">
     <div class="eyebrow">{eyebrow}</div>
     <div class="rule" style="margin:10px 0 18px;"></div>
     <div class="digest-headline">{headline}</div>
+    <div class="digest-summary">{summary_html}</div>
     <div class="kp-list">{pts_html}</div>
     {src_html}
   </div>"""
@@ -189,7 +201,7 @@ def _cta_body(slide):
       <div class="eyebrow">{eyebrow}</div>
       <div class="rule"></div>
       <h2 class="display-tall" style="font-size:150px; line-height:0.92;">{title}</h2>
-      <p class="body" style="color:var(--gt-neon); letter-spacing:0.28em; font-size:28px;">{body}</p>
+      <p class="body" style="color:var(--gt-neon); letter-spacing:0.08em; font-size:30px; line-height:1.35;">{body}</p>
     </div>
     <div style="display:flex; gap:32px; align-items:center;">
       <span class="stamp">graitech.io</span>
@@ -262,11 +274,18 @@ html,body{{margin:0;padding:0;background:#000;}}
 .digest-image{{position:absolute;top:110px;left:54px;right:54px;height:360px;z-index:3;border-radius:14px;overflow:hidden;}}
 .digest-image::after{{content:"";position:absolute;bottom:0;left:0;right:0;height:150px;background:linear-gradient(transparent,#000);}}
 .digest-body{{position:absolute;top:500px;left:72px;right:72px;bottom:140px;z-index:5;display:flex;flex-direction:column;overflow:hidden;}}
-.digest-headline{{font-family:var(--gt-font-display);font-size:56px;line-height:1.06;color:var(--gt-neon);text-shadow:0 0 22px rgba(57,255,20,0.30);text-transform:none;margin-bottom:18px;letter-spacing:0;overflow-wrap:break-word;word-break:normal;}}
-.kp-list{{display:flex;flex-direction:column;gap:14px;flex:1;overflow:hidden;}}
+.digest-body.no-image{{top:220px;}}
+.digest-body.no-image .digest-headline{{font-size:64px;line-height:1.04;margin-bottom:20px;}}
+.digest-body.no-image .kp-list{{gap:18px;}}
+.digest-body.no-image .kp-text{{font-size:32px;line-height:1.32;}}
+.digest-headline{{font-family:var(--gt-font-display);font-size:50px;line-height:1.05;color:var(--gt-neon);text-shadow:0 0 22px rgba(57,255,20,0.30);text-transform:none;margin-bottom:14px;letter-spacing:0;overflow-wrap:break-word;word-break:normal;}}
+.digest-summary{{display:flex;flex-direction:column;gap:8px;margin:0 0 16px 0;}}
+.summary-line{{font-family:var(--gt-font-body);font-size:23px;line-height:1.28;color:var(--gt-white);overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}}
+.summary-line::before{{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--gt-neon);box-shadow:0 0 10px var(--gt-neon);margin-right:10px;vertical-align:middle;}}
+.kp-list{{display:flex;flex-direction:column;gap:12px;flex:1;overflow:hidden;}}
 .kp-row{{display:flex;gap:14px;align-items:flex-start;}}
-.kp-num{{font-family:var(--gt-font-mono);font-size:28px;line-height:1.2;color:var(--gt-neon);text-shadow:0 0 14px rgba(57,255,20,0.40);min-width:46px;flex-shrink:0;}}
-.kp-text{{font-family:var(--gt-font-body);font-size:29px;line-height:1.34;color:var(--gt-chalk);flex:1;overflow:hidden;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow-wrap:break-word;word-break:normal;}}
+.kp-num{{font-family:var(--gt-font-mono);font-size:26px;line-height:1.2;color:var(--gt-neon);text-shadow:0 0 14px rgba(57,255,20,0.40);min-width:46px;flex-shrink:0;}}
+.kp-text{{font-family:var(--gt-font-body);font-size:26px;line-height:1.30;color:var(--gt-chalk);flex:1;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow-wrap:break-word;word-break:normal;}}
 .kp-text strong{{color:var(--gt-neon);font-weight:700;}}
 .title-image{{position:absolute;bottom:140px;left:0;right:0;height:380px;z-index:2;background-size:cover;background-position:center top;}}
 .title-image::before{{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.55) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 60%,rgba(0,0,0,0.85) 100%);z-index:1;}}
@@ -278,7 +297,7 @@ html,body{{margin:0;padding:0;background:#000;}}
 # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 def _e(text):
-    return _html.escape(str(text or "").strip())
+    return _html.escape(_html.unescape(str(text or "").strip()))
 
 
 _CAPS_STOPWORDS = frozenset({

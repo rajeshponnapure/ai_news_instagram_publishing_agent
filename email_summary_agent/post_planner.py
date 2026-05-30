@@ -6,6 +6,7 @@ A post is emitted only at exactly 8; short tails are never published.
 """
 from __future__ import annotations
 
+from .article_quality import is_publishable_article
 from .dedup_engine import deduplicate, DedupResult
 from .memory_store import MemoryStore
 
@@ -24,6 +25,8 @@ def _is_blocked_headline(text: str) -> bool:
 
 
 def _rank_article(article: dict) -> float:
+    if not is_publishable_article(article):
+        return -999.0
     text = str(article.get("text") or article.get("description") or "")
     score = min(len(text), 4000) / 4000 * 2.0
     if article.get("image_url") or article.get("image_path"):
@@ -52,15 +55,20 @@ def plan_posts(
     """
     # Stage 1: deduplicate the candidate pool.
     dedup: DedupResult = deduplicate(articles, memory, consult_memory=True, record=True)
-    pool = dedup.unique[:]
+    pool: list[dict] = []
     demoted = dedup.demoted[:]
+    for article in dedup.unique:
+        if is_publishable_article(article):
+            pool.append(article)
+        else:
+            demoted.append(article)
 
     # Stage 2: pull in carryover from memory.
     if memory is not None:
         carry = memory.pop_carryover(limit=post_size)
         for c in carry:
             existing = {a.get("_story_id") for a in pool if a.get("_story_id")}
-            if c.get("_carryover_story_id") not in existing:
+            if c.get("_carryover_story_id") not in existing and is_publishable_article(c):
                 pool.append(c)
 
     # Stage 3: rank and select.
@@ -115,7 +123,10 @@ def plan_summary_parts(
 
     # Deduplicate across all summaries
     dedup: DedupResult = deduplicate(all_items, memory, consult_memory=True, record=True)
-    pool = dedup.unique[:]
+    pool: list[dict] = []
+    for article in dedup.unique:
+        if is_publishable_article(article):
+            pool.append(article)
 
     # Sort by rank
     pool.sort(key=_rank_article, reverse=True)
@@ -181,11 +192,14 @@ def fill_missing_article(
 ) -> dict | None:
     """Replace a failed/generation-failed article with the next best from pool."""
     if backup_pool:
+        backup_pool[:] = [a for a in backup_pool if is_publishable_article(a)]
+    if backup_pool:
         best = max(backup_pool, key=_rank_article)
         backup_pool.remove(best)
         return best
     if memory is not None:
         carry = memory.pop_carryover(limit=1)
-        if carry:
-            return carry[0]
+        for article in carry:
+            if is_publishable_article(article):
+                return article
     return None

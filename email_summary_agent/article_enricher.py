@@ -222,6 +222,9 @@ _SKIP_PATH_FRAGMENTS = (
     "help/", "support/", "about/", "contact/",
     "track/click", "/click/",
     "facebook.com/help", "twitter.com/intent",
+    "/events/", "/event/", "strictlyvc", "disrupt", "early-bird",
+    "equitypod", "podcast", "newsletter", "/tag/", "/author/",
+    "x.com/", "twitter.com/", "threads.net/",
 )
 
 def extract_article_urls(text: str) -> list[str]:

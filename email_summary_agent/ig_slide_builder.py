@@ -5,6 +5,7 @@ from datetime import datetime
 from typing import TYPE_CHECKING, Any
 
 from .ig_constants import MAX_ARTICLES_PER_POST, MAX_CAROUSEL_SLIDES, MAX_KP_PER_SLIDE
+from .editorial_page import build_editorial_page_copy
 from .ig_copy import is_public_safe_text, layout_safe_headline, layout_safe_points
 from .ig_image import _fetch_og_image_from_url, _select_unique_article_image
 from .ig_keypoints import _extract_instagram_key_points
@@ -221,14 +222,20 @@ def _article_to_slide(
     topic = ", ".join(summary.topics[:2]) or headline
     url = str(article.get("url") or "")
     image_path = _select_unique_article_image(article, topic, used_image_urls, used_image_paths, used_image_hashes)
+    editorial = build_editorial_page_copy(article, summary, points)
+    key_points = [str(point) for point in editorial["key_points"]]
 
     return {
         "kind": "digest",
         "slide_index": article_index,
         "eyebrow": _pick_article_eyebrow(article, summary),
-        "title": headline,
-        "body": "\n".join(points[:MAX_KP_PER_SLIDE]),
+        "title": str(editorial["heading"] or headline),
+        "summary_lines": list(editorial["summary_lines"]),
+        "key_points": key_points,
+        "body": "\n".join(key_points[:MAX_KP_PER_SLIDE]),
         "image_path": image_path,
+        "image_source": "article" if image_path else "",
+        "article_image_url": str(article.get("image_url") or ""),
         "topic": topic,
         "url": url,
         "source_label": _source_label_from_url(url),

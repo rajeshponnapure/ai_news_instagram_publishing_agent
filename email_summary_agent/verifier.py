@@ -13,6 +13,7 @@ from pathlib import Path
 
 from . import text_similarity as ts
 from . import perceptual_image as pi
+from .article_quality import PROMO_OR_NON_ARTICLE_PATTERNS, clean_quality_text
 from .ig_constants import MAX_CAROUSEL_SLIDES, MAX_INSTAGRAM_CAROUSEL_SLIDES, MAX_KP_PER_SLIDE
 from .memory_store import MemoryStore
 
@@ -34,6 +35,16 @@ _GENERIC_PATTERNS = [
     r"(looking ahead|where things stand|setting the stage)",
     r"this (comes amid|comes as|is a developing story)",
     r"the landscape is shifting",
+    r"early bird",
+    r"strictlyvc",
+    r"disrupt",
+    r"equitypod",
+    r"all about agents",
+    r"follow on x",
+    r"threads",
+    r"for more details",
+    r"query met quiet",
+    r"lost page, still warm light",
 ]
 
 HARD_FAIL_CHECKS = {2, 4, 5, 6, 7, 11, 12}
@@ -76,7 +87,18 @@ class VerificationReport:
 
 def _any_generic(text: str) -> bool:
     import re
-    return bool(re.search("|".join(_GENERIC_PATTERNS), (text or "").lower()))
+    cleaned = clean_quality_text(text).lower()
+    return bool(re.search("|".join(_GENERIC_PATTERNS), cleaned))
+
+
+def _contains_non_article_noise(text: str) -> bool:
+    import re
+    cleaned = clean_quality_text(text).lower()
+    if "&#" in cleaned or "&amp;#" in cleaned:
+        return True
+    if re.search(r"\b[a-z0-9-]+/[a-z0-9-]+(?:/[a-z0-9-]+)+", cleaned):
+        return True
+    return any(re.search(pattern, cleaned, re.I) for pattern in PROMO_OR_NON_ARTICLE_PATTERNS)
 
 
 def _headline_cutoff(text: str) -> bool:
@@ -191,7 +213,7 @@ def verify_pre_generation(
     ))
 
     # 5. No generic filler
-    has_generic = _any_generic(title) or _any_generic(body)
+    has_generic = _any_generic(title) or _any_generic(body) or _contains_non_article_noise(title) or _contains_non_article_noise(body)
     checks.append(CheckResult(
         5, "no_generic_filler", not has_generic,
         0.0 if has_generic else 1.0, "",
@@ -305,24 +327,34 @@ def verify_pre_publish(
         f"content={len(content_slides)}, total={len(slides)}",
     ))
 
-    # 6. All images exist and are HD
+    # 6. Every article slide has a same-article image that exists.
     all_img_ok = True
     img_exist_score = 1.0
     img_exist_detail = ""
-    for i, p in enumerate(info["images"]):
-        if p:
-            path = Path(p)
-            if not path.exists():
-                all_img_ok = False
-                img_exist_score = 0.0
-                img_exist_detail = f"slide {i+1}: {p} not found"
-                break
-            w, h = pi.image_dimensions(p)
-            if w < 200 or h < 150:
-                all_img_ok = False
-                img_exist_score = 0.3
-                img_exist_detail = f"slide {i+1}: {w}x{h} too small"
-                break
+    for i, slide in enumerate(content_slides):
+        p = str(slide.get("image_path", "") or "").strip()
+        if not p:
+            all_img_ok = False
+            img_exist_score = 0.0
+            img_exist_detail = f"slide {i+1}: missing same-article image"
+            break
+        if str(slide.get("image_source", "")) != "article":
+            all_img_ok = False
+            img_exist_score = 0.0
+            img_exist_detail = f"slide {i+1}: image is not marked as article-sourced"
+            break
+        path = Path(p)
+        if not path.exists():
+            all_img_ok = False
+            img_exist_score = 0.0
+            img_exist_detail = f"slide {i+1}: {p} not found"
+            break
+        w, h = pi.image_dimensions(p)
+        if w < 200 or h < 150:
+            all_img_ok = False
+            img_exist_score = 0.3
+            img_exist_detail = f"slide {i+1}: {w}x{h} too small"
+            break
     checks.append(CheckResult(6, "images_exist_hd", all_img_ok, img_exist_score, img_exist_detail))
 
     # 7. CTA present as last slide
@@ -354,10 +386,10 @@ def verify_pre_publish(
     for i, s in enumerate(slides):
         body = str(s.get("body", ""))
         title = str(s.get("title", ""))
-        if _any_generic(title) or _any_generic(body):
+        if _any_generic(title) or _any_generic(body) or _contains_non_article_noise(title) or _contains_non_article_noise(body):
             no_filler = False
             filler_score = 0.0
-            filler_detail = f"slide {i+1} has generic filler"
+            filler_detail = f"slide {i+1} has generic filler or non-article noise"
             break
     checks.append(CheckResult(9, "no_generic_filler", no_filler, filler_score, filler_detail))
 
