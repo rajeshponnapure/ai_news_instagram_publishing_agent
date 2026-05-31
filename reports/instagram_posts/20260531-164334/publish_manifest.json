@@ -7,8 +7,13 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260531-164334/01_20260531-0914_why-robotic-arms-are-now-being-integrated-with-cnc-machines-/slide_01.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260531-164334/01_20260531-0914_why-robotic-arms-are-now-being-integrated-with-cnc-machines-/slide_02.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260531-164334/01_20260531-0914_why-robotic-arms-are-now-being-integrated-with-cnc-machines-/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260531-164334/01_20260531-0914_why-robotic-arms-are-now-being-integrated-with-cnc-machines-/slide_02.png"
+      ],
+      "status": "published",
+      "creation_id": "18045059165577438",
+      "published_at": "2026-05-31T16:44:51+00:00"
     }
   ]
 }
