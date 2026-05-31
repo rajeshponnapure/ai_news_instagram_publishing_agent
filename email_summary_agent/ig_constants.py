@@ -21,7 +21,7 @@ MAX_CAROUSEL_SLIDES = MAX_ARTICLES_PER_POST
 STORIES_PER_CAROUSEL = 1
 
 # Maximum key points shown on a single article slide before overflow.
-MAX_KP_PER_SLIDE = 4
+MAX_KP_PER_SLIDE = 5
 
 # Hard minimum readable font size — never go below this on any slide.
 FONT_MIN_READABLE = 32

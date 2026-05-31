@@ -13,9 +13,11 @@ from pathlib import Path
 
 from . import text_similarity as ts
 from . import perceptual_image as pi
-from .article_quality import PROMO_OR_NON_ARTICLE_PATTERNS, clean_quality_text
+from .article_quality import PROMO_OR_NON_ARTICLE_PATTERNS, clean_quality_text, contains_public_noise
 from .ig_constants import MAX_CAROUSEL_SLIDES, MAX_INSTAGRAM_CAROUSEL_SLIDES, MAX_KP_PER_SLIDE
 from .memory_store import MemoryStore
+
+MIN_KP_PER_SLIDE = 4
 
 _BLOCKED_HEADLINES = frozenset({
     "the real shift is here", "keep an eye on this", "what this means",
@@ -47,7 +49,7 @@ _GENERIC_PATTERNS = [
     r"lost page, still warm light",
 ]
 
-HARD_FAIL_CHECKS = {2, 4, 5, 6, 7, 11, 12}
+HARD_FAIL_CHECKS = {2, 4, 5, 6, 7, 9, 11, 12}
 CONFIDENCE_THRESHOLD = 0.75
 MAX_VERIFICATION_ROUNDS = 2
 
@@ -94,6 +96,8 @@ def _any_generic(text: str) -> bool:
 def _contains_non_article_noise(text: str) -> bool:
     import re
     cleaned = clean_quality_text(text).lower()
+    if contains_public_noise(cleaned):
+        return True
     if "&#" in cleaned or "&amp;#" in cleaned:
         return True
     if re.search(r"\b[a-z0-9-]+/[a-z0-9-]+(?:/[a-z0-9-]+)+", cleaned):
@@ -129,9 +133,15 @@ def _keypoint_quality(points: list[str]) -> tuple[float, list[str]]:
         if len(p) < 15 or len(p) > 180:
             s -= 0.2
             issues.append(f"length={len(p)}: {p[:50]}")
+        if _contains_non_article_noise(p):
+            s -= 0.6
+            issues.append(f"noise: {p[:50]}")
         if p[0].islower() if p else True:
             s -= 0.2
             issues.append(f"lowercase start: {p[:50]}")
+        if p and p[-1] not in ".!?":
+            s -= 0.2
+            issues.append(f"incomplete ending: {p[:50]}")
         if p.startswith(("why", "how", "what", "does", "will", "can", "is ", "are ")):
             s -= 0.3
             issues.append(f"question-like: {p[:50]}")
@@ -206,7 +216,7 @@ def verify_pre_generation(
 
     # 4. ≥ 4 valid keypoints
     quality, issues = _keypoint_quality(points)
-    kp_ok = len(points) >= MAX_KP_PER_SLIDE and quality >= 0.6
+    kp_ok = len(points) >= MIN_KP_PER_SLIDE and len(points) <= MAX_KP_PER_SLIDE and quality >= 0.6
     checks.append(CheckResult(
         4, "keypoint_quality", kp_ok, quality,
         "; ".join(issues[:3]),
@@ -371,7 +381,13 @@ def verify_pre_publish(
     kp_prof_detail = ""
     for i, s in enumerate(content_slides):
         body = str(s.get("body", ""))
-        quality, issues = _keypoint_quality(body.split("\n") if body else [])
+        points = [p for p in body.split("\n") if p.strip()] if body else []
+        quality, issues = _keypoint_quality(points)
+        if len(points) < MIN_KP_PER_SLIDE or len(points) > MAX_KP_PER_SLIDE:
+            kp_prof = False
+            kp_prof_score = 0.0
+            kp_prof_detail = f"slide {i+1}: keypoints={len(points)}"
+            break
         if quality < 0.5:
             kp_prof = False
             kp_prof_score = quality

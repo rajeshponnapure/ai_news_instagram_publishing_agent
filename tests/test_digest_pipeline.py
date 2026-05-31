@@ -256,15 +256,21 @@ class DigestPipelineTests(unittest.TestCase):
         )
 
         self.assertNotIn('<div class="digest-image"', html)
+        self.assertNotIn("digest-summary", html)
+        self.assertNotIn("summary-line", html)
         self.assertIn("digest-body no-image", html)
+        self.assertIn("font-family:'Anton SC'", html)
+        self.assertIn("font-family:'Space Mono'", html)
         self.assertNotIn("&amp;#x27;", html)
         self.assertIn("Blue Origin&#x27;s New Glenn test fails during Florida run", html)
 
     def test_article_slide_uses_only_same_article_image(self) -> None:
         summary = _summary_with_articles(1)
         with TemporaryDirectory() as tmp:
+            from PIL import Image
+
             image_path = Path(tmp) / "article-image.jpg"
-            image_path.write_bytes(b"same article image")
+            Image.new("RGB", (1920, 1080), "black").save(image_path)
             summary.article_items[0]["image_path"] = str(image_path)
 
             slides = _build_slide_specs(summary, datetime(2026, 5, 21, 9, 0))
@@ -381,7 +387,7 @@ class DigestPipelineTests(unittest.TestCase):
         self.assertLessEqual(len(headline.split()), 7)
         self.assertTrue(points)
         self.assertTrue(all("..." not in point for point in points))
-        self.assertTrue(all(len(point.split()) <= 16 for point in points))
+        self.assertTrue(all(len(point.split()) <= 22 for point in points))
         self.assertFalse(any("dismiss alert" in point.lower() for point in points))
         self.assertFalse(any("here is the key detail" in point.lower() for point in points))
         self.assertEqual(
@@ -412,6 +418,16 @@ class DigestPipelineTests(unittest.TestCase):
 
     def test_article_slides_do_not_reuse_global_summary_points(self) -> None:
         summary = _summary_with_articles(2)
+        summary.article_items[0]["title"] = "OpenAI updates agent workflow tools for developers"
+        summary.article_items[0]["description"] = (
+            "OpenAI updated agent workflow tools so developers can coordinate tasks with fewer manual handoffs. "
+            "The release matters for teams testing reliability, deployment controls, and production support."
+        )
+        summary.article_items[1]["title"] = "Google expands Gemini controls for enterprise teams"
+        summary.article_items[1]["description"] = (
+            "Google expanded Gemini controls so enterprise teams can manage data access and rollout policies. "
+            "The update matters for administrators balancing adoption, compliance, and daily workflow risk."
+        )
         summary.key_points[:] = [
             "Global repeated fallback point that should not appear on every article slide.",
             "Second repeated fallback point that should not appear on every article slide.",
@@ -439,11 +455,11 @@ class DigestPipelineTests(unittest.TestCase):
         self.assertEqual(slides[-1]["kind"], "cta")
         digest = [s for s in slides if s.get("kind") == "digest"]
         self.assertEqual(len(digest), 3)
-        self.assertTrue(all(len(slide.get("summary_lines", [])) >= 1 for slide in digest))
-        self.assertTrue(all(len(slide.get("key_points", [])) == 4 for slide in digest))
+        self.assertTrue(all(4 <= len(slide.get("key_points", [])) <= 5 for slide in digest))
+        self.assertTrue(all(slide["body"] == "\n".join(slide.get("key_points", [])) for slide in digest))
         self.assertTrue(all("global repeated fallback" not in slide["body"].lower() for slide in digest))
 
-    def test_digest_slides_have_editorial_heading_summary_and_four_keypoints(self) -> None:
+    def test_digest_slides_have_editorial_heading_and_story_keypoints_only(self) -> None:
         summary = _summary_with_articles(1)
         item = summary.article_items[0]
         item["title"] = "AWS adds URL and domain category filtering to Network Firewall"
@@ -460,9 +476,10 @@ class DigestPipelineTests(unittest.TestCase):
 
         self.assertEqual(digest["kind"], "digest")
         self.assertTrue(digest["title"].endswith("."))
-        self.assertEqual(len(digest["summary_lines"]), 3)
-        self.assertEqual(len(digest["key_points"]), 4)
+        self.assertTrue(4 <= len(digest["key_points"]) <= 5)
+        self.assertEqual(digest["body"], "\n".join(digest["key_points"]))
         self.assertTrue(all(point.endswith(".") for point in digest["key_points"]))
+        self.assertTrue(all(len(point.split()) >= 8 for point in digest["key_points"]))
         self.assertFalse(any("story 1" in point.lower() for point in digest["key_points"]))
 
 

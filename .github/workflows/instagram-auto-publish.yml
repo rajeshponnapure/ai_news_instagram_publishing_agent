@@ -119,6 +119,10 @@ jobs:
             python -m email_summary_agent --poll-once
           fi
 
+      - name: Rebuild safe backlog assets
+        if: github.event_name == 'workflow_dispatch'
+        run: python scripts/rebuild_instagram_backlog.py --since-hours 36
+
       - name: Set git remote with token
         if: always()
         run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
@@ -279,8 +283,8 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
 
-      - name: Publish latest carousel to Instagram
-        run: python scripts/publish_latest_instagram.py
+      - name: Publish pending carousels to Instagram
+        run: python scripts/publish_latest_instagram.py --all
 
       - name: Set git remote with token
         run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}

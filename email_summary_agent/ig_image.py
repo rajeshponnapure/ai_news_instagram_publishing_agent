@@ -85,6 +85,8 @@ def _accept(path: str, used_image_paths: set[str], used_image_hashes: list | Non
 
 def _accept_article_image(path: str, used_image_paths: set[str], used_image_hashes: list | None) -> bool:
     """Register a same-article image without replacing it with cross-article fallback."""
+    if _is_perceptual_dupe(path, used_image_hashes):
+        return False
     used_image_paths.add(path)
     _register_hash(path, used_image_hashes)
     return True

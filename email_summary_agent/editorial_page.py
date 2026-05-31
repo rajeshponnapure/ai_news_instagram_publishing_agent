@@ -4,6 +4,7 @@ from __future__ import annotations
 import re
 from typing import TYPE_CHECKING, Any
 
+from .article_quality import contains_public_noise
 from .ig_copy import clean_creator_text, is_public_safe_text, layout_safe_headline, layout_safe_points
 from .ig_utils import _clean_public_text
 
@@ -23,7 +24,10 @@ WEAK_HEADLINE_ENDINGS = {
 }
 
 SUMMARY_LINE_LIMIT = 3
-KEY_POINT_TARGET = 4
+KEY_POINT_MIN = 4
+KEY_POINT_TARGET = 5
+KEY_POINT_MAX_WORDS = 22
+KEY_POINT_MIN_WORDS = 8
 
 
 def build_editorial_page_copy(
@@ -51,12 +55,15 @@ def _build_heading(article: dict[str, Any], summary: "EmailSummary", summary_lin
     title = re.sub(r"\s*[\-|:]\s*(?:TechCrunch|Bloomberg|Reuters|The Verge|AWS|Amazon Web Services)\s*$", "", title, flags=re.I)
     title = layout_safe_headline(title, fallback="AI update")
     title = _sentence(title)
-    if _is_complete_heading(title):
+    if _is_complete_heading(title) and not _bad_heading_source(title):
         return _trim_words(title, 12)
 
     source = " ".join(summary_lines) or title
+    source_line = _summary_line(source)
+    if source_line and _is_complete_heading(source_line) and not _bad_heading_source(source_line):
+        return _trim_words(source_line, 12)
     entity = _primary_entity(source) or _primary_entity(title) or "The update"
-    verb = _primary_action(source) or "signals"
+    verb = _primary_action(source) or "updates"
     object_phrase = _compact_object_phrase(source, entity)
     heading = f"{entity} {verb} {object_phrase}"
     return _trim_words(_sentence(heading), 12)
@@ -103,6 +110,8 @@ def _build_key_points_from_summary(
     source_sentences = list(summary_lines)
     source_sentences.extend(_sentences(" ".join(raw_points)))
     source_sentences.extend(_sentences(article.get("description") or article.get("summary") or ""))
+    source_sentences.extend(_sentences(article.get("excerpt") or article.get("scraped_content") or article.get("text") or ""))
+    source_sentences.extend(_story_arc_seeds(summary_lines, article, heading))
 
     points: list[str] = []
     seen: set[str] = set()
@@ -128,6 +137,16 @@ def _build_key_points_from_summary(
             points.append(point)
             seen.add(key)
 
+    if len(points) < KEY_POINT_MIN:
+        for seed in _story_arc_seeds(summary_lines, article, heading):
+            point = _key_point(seed, heading, len(points))
+            key = _norm(point)[:72]
+            if point and key not in seen and not _near_duplicate(point, points):
+                points.append(point)
+                seen.add(key)
+            if len(points) >= KEY_POINT_MIN:
+                break
+
     return points[:KEY_POINT_TARGET]
 
 
@@ -145,25 +164,71 @@ def _key_point(text: str, heading: str, index: int = 0) -> str:
     cleaned = _clean_sentence(text)
     if not cleaned:
         return ""
-    insight = _insight_from_summary_line(cleaned, heading, index)
-    if insight:
-        return insight
     cleaned = re.sub(r"^(?:This|It|They|The update)\s+(?:means|shows|highlights|suggests|demonstrates)\s+that\s+", "", cleaned, flags=re.I)
     cleaned = re.sub(r"^(?:This|It|They)\s+", "", cleaned, flags=re.I)
-    words = cleaned.split()
-    if len(words) > 18:
-        cleaned = " ".join(words[:18]).rstrip(".,;:")
-    if len(cleaned.split()) < 6:
-        entity = _primary_entity(heading) or "The update"
-        cleaned = f"{entity} gives teams a clearer signal to track adoption, competition, and execution risk"
+    cleaned = _trim_sentence_words(cleaned, KEY_POINT_MAX_WORDS)
+    if len(cleaned.split()) < KEY_POINT_MIN_WORDS:
+        return ""
+    if not _complete_public_sentence(cleaned):
+        return ""
     return _sentence(cleaned)
+
+
+def _story_arc_seeds(summary_lines: list[str], article: dict[str, Any], heading: str) -> list[str]:
+    source = " ".join(summary_lines + _sentences(article.get("description") or article.get("summary") or ""))
+    entity = _primary_entity(source) or _primary_entity(heading) or "The update"
+    audience = _audience_phrase(source)
+    return [
+        f"{entity} turns the announcement into a practical decision point for teams planning rollout.",
+        f"{audience} should read the move through adoption, cost, reliability, and rollout pressure.",
+        "The practical value depends on cleaner execution, fewer manual decisions, and less policy drift over time.",
+        f"The risk is that unclear rollout details could limit near-term impact despite the bigger ambition.",
+        f"Next, watch pricing, customer uptake, technical reliability, and competitor response.",
+    ]
+
+
+def _audience_phrase(text: str) -> str:
+    low = (text or "").lower()
+    if any(term in low for term in ("developer", "sdk", "api", "workflow", "agent")):
+        return "Developers and product teams"
+    if any(term in low for term in ("security", "policy", "firewall", "compliance", "governance")):
+        return "Security and platform teams"
+    if any(term in low for term in ("valuation", "stock", "funding", "bank", "investor")):
+        return "Investors and operators"
+    if any(term in low for term in ("school", "lawsuit", "regulator", "policy", "government")):
+        return "Policy teams and leaders"
+    return "Teams tracking the story"
+
+
+def _trim_sentence_words(text: str, max_words: int) -> str:
+    words = text.rstrip(".!?").split()
+    if len(words) <= max_words:
+        return " ".join(words)
+    cut = words[:max_words]
+    while len(cut) > KEY_POINT_MIN_WORDS and cut[-1].lower().strip(".,;:") in WEAK_HEADLINE_ENDINGS:
+        cut.pop()
+    return " ".join(cut).rstrip(".,;:")
+
+
+def _complete_public_sentence(text: str) -> bool:
+    cleaned = (text or "").strip()
+    if not cleaned or contains_public_noise(cleaned):
+        return False
+    words = cleaned.split()
+    if len(words) < KEY_POINT_MIN_WORDS:
+        return False
+    if words[-1].lower().strip(".,;:!?") in WEAK_HEADLINE_ENDINGS:
+        return False
+    if re.search(r"(?:\(|\[|\{)[^)\]\}]*$", cleaned):
+        return False
+    return bool(re.search(r"\b(?:is|are|was|were|will|could|should|can|adds|backs|builds|changes|cuts|expands|funds|launches|opens|raises|releases|ships|strengthens|tightens|turns|unveils|upgrades|matters|depends|watch)\b", cleaned, re.I))
 
 
 def _insight_from_summary_line(line: str, heading: str, index: int) -> str:
     low = line.lower()
     entity = _primary_entity(line) or _primary_entity(heading) or "The update"
     if re.search(r"\$\d|\b\d[\d,.]*(?:%|x|b|m|bn|mn|billion|million)\b", line, re.I):
-        return _sentence(f"{entity} puts a concrete number behind the move, making the market signal easier to judge")
+        return _sentence(f"{entity} adds a concrete number readers can use to judge the size of the move")
     if "clearer signal to evaluate" in low:
         return _sentence("Readers get a practical decision frame for execution quality, reliability, and adoption")
     if re.search(r"\b(lets|allows|enables|gives)\b", low):
@@ -177,7 +242,7 @@ def _insight_from_summary_line(line: str, heading: str, index: int) -> str:
     if re.search(r"\b(model|inference|llm|agent|developer|workflow)\b", low):
         return _sentence("The developer angle matters where better tooling changes deployment choices, reliability, and day-to-day workflow speed")
     if index == 0:
-        return _sentence(f"{entity} gives readers the main signal to watch before reacting to the headline")
+        return ""
     return ""
 
 
@@ -201,7 +266,7 @@ def _clean_sentence(text: str) -> str:
     text = re.sub(r"\b(?:for more details|read more|learn more|click here)\b.*$", "", text, flags=re.I)
     text = re.sub(r"https?://\S+", "", text)
     text = re.sub(r"\s+", " ", text).strip(" -:;,.")
-    if not text or not is_public_safe_text(text):
+    if not text or contains_public_noise(text) or not is_public_safe_text(text):
         return ""
     if re.search(r"\bstory\s+\d+\s+excerpt\b", text, re.I):
         return ""
@@ -236,10 +301,11 @@ def _fallback_keypoint_seeds(summary_lines: list[str], article: dict[str, Any], 
     source = " ".join(summary_lines)
     entity = _primary_entity(source) or _primary_entity(heading) or "The story"
     return [
-        f"{entity} gives operators a clearer signal to evaluate execution, reliability, and adoption.",
+        f"{entity} matters most where it changes adoption, costs, rollout quality, or competitive pressure.",
         "The strongest angle is practical workflow impact, not broad hype around the announcement.",
-        "Teams should watch pricing, rollout quality, customer uptake, and competitive response before overreacting.",
-        "The story matters most where it changes infrastructure choices, governance decisions, or market positioning.",
+        "Teams should compare pricing, rollout quality, customer uptake, and competitor response before reacting.",
+        "The business impact depends on infrastructure choices, governance decisions, and market positioning.",
+        "Readers should watch whether the next update confirms real usage or only extends the announcement cycle.",
     ]
 
 
@@ -251,6 +317,18 @@ def _is_complete_heading(text: str) -> bool:
         return False
     low = text.lower()
     return any(re.search(rf"\b{re.escape(verb)}\b", low) for verb in ACTION_VERBS) or bool(re.search(r"\b(?:is|are|will|could|plans|moves|faces|gets|makes|lets)\b", low))
+
+
+def _bad_heading_source(text: str) -> bool:
+    low = (text or "").strip().lower()
+    if not low:
+        return True
+    if low.startswith(("which ", "what ", "how ", "why ", "and ", "or ", "but ", "speaking ", "according ")):
+        return True
+    first = low.split()[0].strip(".,;:'\"") if low.split() else ""
+    if first in {"nd", "th", "ustry", "omberg", "creates"}:
+        return True
+    return False
 
 
 def _primary_entity(text: str) -> str:
@@ -268,7 +346,7 @@ def _primary_action(text: str) -> str:
         if re.search(rf"\b{re.escape(verb)}\b", low):
             return verb
     if "funding" in low or "valuation" in low:
-        return "signals"
+        return "raises"
     if "policy" in low or "security" in low:
         return "tightens"
     if "model" in low or "inference" in low:

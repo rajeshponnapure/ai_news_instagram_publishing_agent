@@ -654,13 +654,13 @@ def _gt_render_list_slide_bullets_only(
 ) -> None:
     """Render bullet-point list text into a bounding box."""
     bullets = [b.strip() for b in body_text.split("\n") if b.strip()]
-    bullets = layout_safe_points(bullets, limit=4)
+    bullets = layout_safe_points(bullets, limit=5)
     if not bullets:
         return
     content_w = x2 - x1 - 24
     avail_h = y2 - y1
-    chosen_size = 38
-    for fsz in (46, 44, 42, 40, 38):
+    chosen_size = 40
+    for fsz in (50, 48, 46, 44, 42, 40):
         font_bp = _font(image_font, fsz)
         bold_bp = _font(image_font, fsz, bold=True)
         total = 0

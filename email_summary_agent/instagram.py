@@ -70,7 +70,6 @@ def write_instagram_carousels(
         content_slides = _build_slide_specs(
             part_summary, email_dt, global_used_image_paths, global_used_image_urls
         )
-
         # ── Phase 2: Pre-publish verification ──────────────────────────────
         missing_image_detail = _missing_article_image_detail(content_slides)
         if missing_image_detail:
@@ -181,17 +180,32 @@ def _repair_failed_slides(slides: list[dict], report, memory) -> None:
     """Attempt targeted recovery for verification failures."""
     from .ig_copy import layout_safe_headline
     failed_ids = {c.check_id for c in report.checks if not c.passed}
+    if 6 in failed_ids:
+        slides[:] = [slide for slide in slides if slide.get("kind") != "digest" or _slide_has_valid_image(slide)]
     for slide in slides:
         if 4 in failed_ids:
             t = str(slide.get("title", ""))
             slide["title"] = layout_safe_headline(t, fallback="AI Update")
-        if 1 in failed_ids or 8 in failed_ids:
+        if 1 in failed_ids or 8 in failed_ids or 9 in failed_ids:
             body = str(slide.get("body", ""))
             if body:
                 lines = [line for line in body.split("\n") if line.strip()]
-                from .ig_keypoints import _strip_noise
-                body = "\n".join(_strip_noise(line) for line in lines)
+                from .ig_copy import clean_creator_text
+                body = "\n".join(clean_creator_text(line) for line in lines)
                 slide["body"] = body
+
+
+def _slide_has_valid_image(slide: dict) -> bool:
+    from . import perceptual_image as pi
+
+    path = Path(str(slide.get("image_path", "") or ""))
+    if not path.exists():
+        return False
+    try:
+        w, h = pi.image_dimensions(str(path))
+    except Exception:
+        return False
+    return w >= 200 and h >= 150 and str(slide.get("image_source", "")) == "article"
 
 
 def _missing_article_image_detail(slides: list[dict]) -> str:

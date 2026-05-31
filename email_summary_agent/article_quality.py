@@ -44,15 +44,56 @@ NOISE_PHRASES = (
     "bring your best question",
     "are you a robot",
     "access to this page has been denied",
+    "json.stringify",
+    "__uspapi",
+    "cmpcall",
+    "escape will cancel and close the window",
+    "beginning of dialog window",
+    "connect with us",
+    "advertising partners",
+    "personalize your",
+)
+
+CODE_OR_MARKUP_PATTERNS = (
+    r"\bJSON\.(?:stringify|parse)\b",
+    r"\b__uspapi\b",
+    r"\b(?:cmpCall|gdprApplies|consentData|privacyManager)\b",
+    r"\btypeof\s+[_A-Za-z$][\w$]*\s*(?:==|===|!==|!=)",
+    r"\bcatch\s*\([^)]*\)\s*\{",
+    r"\bfunction\s*\(",
+    r"\b(?:push|splice|slice|map|forEach)\s*\(",
+    r"[{}]{2,}",
+    r"&#x?[0-9a-f]+;",
+    r"&amp;#x?[0-9a-f]+;",
+    r"\bLink\s*:\s*\[(?:HIGH|MEDIUM|LOW|CRITICAL)\]",
+    r"\bCompany\s*:\s*[A-Za-z0-9 .&-]+\s+Summary\s*:",
 )
 
 
 def clean_quality_text(text: str) -> str:
     cleaned = html.unescape(str(text or ""))
+    cleaned = html.unescape(cleaned)
     cleaned = cleaned.replace("\u2019", "'").replace("\u2018", "'")
     cleaned = cleaned.replace("\u201c", '"').replace("\u201d", '"')
+    cleaned = cleaned.replace("\u00a0", " ")
     cleaned = re.sub(r"\s+", " ", cleaned).strip()
     return cleaned
+
+
+def contains_public_noise(text: str) -> bool:
+    cleaned = clean_quality_text(text)
+    lowered = cleaned.lower()
+    if any(phrase in lowered for phrase in NOISE_PHRASES):
+        return True
+    if any(re.search(pattern, cleaned, re.I) for pattern in CODE_OR_MARKUP_PATTERNS):
+        return True
+    if len(re.findall(r"\bLink\s*:", cleaned, re.I)) >= 2:
+        return True
+    if len(re.findall(r"\[(?:HIGH|MEDIUM|LOW|CRITICAL)\]", cleaned, re.I)) >= 2:
+        return True
+    if len(re.findall(r"\b(?:Company|Summary)\s*:", cleaned, re.I)) >= 3:
+        return True
+    return False
 
 
 def is_publishable_article(article: dict) -> bool:
@@ -66,11 +107,13 @@ def is_publishable_article(article: dict) -> bool:
 
     if not url.startswith(("http://", "https://")):
         return False
-    if any(phrase in combined for phrase in NOISE_PHRASES):
+    if contains_public_noise(f"{title} {body}"):
         return False
     if any(re.search(pattern, combined, re.I) for pattern in PROMO_OR_NON_ARTICLE_PATTERNS):
         return False
     if _title_is_url_slug(title):
+        return False
+    if _title_is_truncated_fragment(title):
         return False
     if len(body) < 80 and len(title) < 25:
         return False
@@ -90,6 +133,24 @@ def _title_is_url_slug(title: str) -> bool:
     if len(words) <= 5 and hyphenated >= 2:
         return True
     if len(title) > 12 and title.count("-") >= max(3, title.count(" ") + 2):
+        return True
+    return False
+
+
+def _title_is_truncated_fragment(title: str) -> bool:
+    if not title:
+        return True
+    words = title.split()
+    if not words:
+        return True
+    first = words[0].strip("'\".,;:()[]{}")
+    lowered_first = first.lower()
+    allowed_lower = {"claude-code", "gpt", "openai", "xai", "iphone", "ios", "android"}
+    if first and first[0].islower() and lowered_first not in allowed_lower:
+        return True
+    if lowered_first in {"nd", "th", "ustry", "omberg", "which", "speaking", "creates"}:
+        return True
+    if re.match(r"^[A-Z]?[a-z]{1,2}$", first) and len(words) > 3:
         return True
     return False
 

@@ -150,20 +150,13 @@ def _digest_body(slide):
     headline = _e(slide.get("title") or layout_safe_headline("AI Update", fallback="AI Update"))
     source = _e(slide.get("source_label") or "")
     src_html = f'<div class="source-label" style="margin-top:14px;">{source}</div>' if source else ""
-    summary_raw = slide.get("summary_lines") or []
-    if isinstance(summary_raw, str):
-        summary_lines = [ln.strip() for ln in summary_raw.splitlines() if ln.strip()]
-    else:
-        summary_lines = [str(ln).strip() for ln in summary_raw if str(ln).strip()]
-    summary_html = "".join(f'<div class="summary-line">{_e(line)}</div>\n' for line in summary_lines[:3])
-
     raw = slide.get("key_points") or []
     body = slide.get("body") or ""
     if not raw and isinstance(body, list):
         raw = body
     elif not raw and body:
         raw = [ln.lstrip("â€¢â€“â€”- ").strip() for ln in str(body).splitlines() if ln.strip()]
-    safe_points = layout_safe_points([str(pt) for pt in raw], limit=4)
+    safe_points = layout_safe_points([str(pt) for pt in raw], limit=5)
     if not safe_points and headline:
         safe_points = layout_safe_points([headline], limit=1)
     pts_html = "".join(
@@ -185,7 +178,6 @@ def _digest_body(slide):
     <div class="eyebrow">{eyebrow}</div>
     <div class="rule" style="margin:10px 0 18px;"></div>
     <div class="digest-headline">{headline}</div>
-    <div class="digest-summary">{summary_html}</div>
     <div class="kp-list">{pts_html}</div>
     {src_html}
   </div>"""
@@ -215,24 +207,24 @@ def _cta_body(slide):
 # â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 def _inline_css():
-    roboto_r = _font_b64("Roboto-Regular.ttf")
-    roboto_b = _font_b64("Roboto-Bold.ttf")
-    mono_r = _font_b64("RobotoMono-Regular.ttf")
+    anton_r = _font_b64("AntonSC-Regular.ttf")
+    space_r = _font_b64("SpaceMono-Regular.ttf")
+    space_b = _font_b64("SpaceMono-Bold.ttf")
     tex = _svg_b64(_IMG / "concrete-texture.svg")
 
     return f"""
-@font-face {{font-family:'Roboto'; src:url('data:font/truetype;base64,{roboto_r}') format('truetype'); font-weight:400; font-style:normal;}}
-@font-face {{font-family:'Roboto'; src:url('data:font/truetype;base64,{roboto_b}') format('truetype'); font-weight:700; font-style:normal;}}
-@font-face {{font-family:'Roboto Mono'; src:url('data:font/truetype;base64,{mono_r}') format('truetype'); font-weight:400; font-style:normal;}}
+@font-face {{font-family:'Anton SC'; src:url('data:font/truetype;base64,{anton_r}') format('truetype'); font-weight:400; font-style:normal;}}
+@font-face {{font-family:'Space Mono'; src:url('data:font/truetype;base64,{space_r}') format('truetype'); font-weight:400; font-style:normal;}}
+@font-face {{font-family:'Space Mono'; src:url('data:font/truetype;base64,{space_b}') format('truetype'); font-weight:700; font-style:normal;}}
 
 :root {{
   --gt-neon: #39FF14; --gt-neon-glow: rgba(57,255,20,0.45);
   --gt-black: #000; --gt-white: #fff; --gt-chalk: #E8E8E8;
   --gt-ash: #A8A8A8; --gt-cement-2: #3A3A3A;
   --gt-fg-2: #E8E8E8; --gt-fg-3: #A8A8A8;
-  --gt-font-display: 'Roboto', Arial, sans-serif;
-  --gt-font-body: 'Roboto', Arial, sans-serif;
-  --gt-font-mono: 'Roboto Mono', monospace;
+  --gt-font-display: 'Anton SC', Impact, Arial Black, sans-serif;
+  --gt-font-body: 'Space Mono', monospace;
+  --gt-font-mono: 'Space Mono', monospace;
 }}
 html,body{{margin:0;padding:0;background:#000;}}
 .ig{{position:relative;width:{CANVAS_W}px;height:{CANVAS_H}px;background:#000;overflow:hidden;isolation:isolate;font-family:var(--gt-font-mono);color:var(--gt-white);}}
@@ -275,17 +267,14 @@ html,body{{margin:0;padding:0;background:#000;}}
 .digest-image::after{{content:"";position:absolute;bottom:0;left:0;right:0;height:150px;background:linear-gradient(transparent,#000);}}
 .digest-body{{position:absolute;top:500px;left:72px;right:72px;bottom:140px;z-index:5;display:flex;flex-direction:column;overflow:hidden;}}
 .digest-body.no-image{{top:220px;}}
-.digest-body.no-image .digest-headline{{font-size:64px;line-height:1.04;margin-bottom:20px;}}
-.digest-body.no-image .kp-list{{gap:18px;}}
-.digest-body.no-image .kp-text{{font-size:32px;line-height:1.32;}}
-.digest-headline{{font-family:var(--gt-font-display);font-size:50px;line-height:1.05;color:var(--gt-neon);text-shadow:0 0 22px rgba(57,255,20,0.30);text-transform:none;margin-bottom:14px;letter-spacing:0;overflow-wrap:break-word;word-break:normal;}}
-.digest-summary{{display:flex;flex-direction:column;gap:8px;margin:0 0 16px 0;}}
-.summary-line{{font-family:var(--gt-font-body);font-size:23px;line-height:1.28;color:var(--gt-white);overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}}
-.summary-line::before{{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--gt-neon);box-shadow:0 0 10px var(--gt-neon);margin-right:10px;vertical-align:middle;}}
-.kp-list{{display:flex;flex-direction:column;gap:12px;flex:1;overflow:hidden;}}
-.kp-row{{display:flex;gap:14px;align-items:flex-start;}}
-.kp-num{{font-family:var(--gt-font-mono);font-size:26px;line-height:1.2;color:var(--gt-neon);text-shadow:0 0 14px rgba(57,255,20,0.40);min-width:46px;flex-shrink:0;}}
-.kp-text{{font-family:var(--gt-font-body);font-size:26px;line-height:1.30;color:var(--gt-chalk);flex:1;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow-wrap:break-word;word-break:normal;}}
+.digest-body.no-image .digest-headline{{font-size:68px;line-height:1.04;margin-bottom:24px;}}
+.digest-body.no-image .kp-list{{gap:22px;}}
+.digest-body.no-image .kp-text{{font-size:33px;line-height:1.34;}}
+.digest-headline{{font-family:var(--gt-font-display);font-size:56px;line-height:1.05;color:var(--gt-neon);text-shadow:0 0 22px rgba(57,255,20,0.30);text-transform:none;margin-bottom:24px;letter-spacing:0;overflow-wrap:break-word;word-break:normal;}}
+.kp-list{{display:flex;flex-direction:column;gap:18px;flex:1;overflow:hidden;}}
+.kp-row{{display:flex;gap:18px;align-items:flex-start;}}
+.kp-num{{font-family:var(--gt-font-mono);font-size:31px;line-height:1.2;color:var(--gt-neon);text-shadow:0 0 14px rgba(57,255,20,0.40);min-width:54px;flex-shrink:0;font-weight:700;}}
+.kp-text{{font-family:var(--gt-font-body);font-size:30px;line-height:1.34;color:var(--gt-chalk);flex:1;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow-wrap:break-word;word-break:normal;}}
 .kp-text strong{{color:var(--gt-neon);font-weight:700;}}
 .title-image{{position:absolute;bottom:140px;left:0;right:0;height:380px;z-index:2;background-size:cover;background-position:center top;}}
 .title-image::before{{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.55) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 60%,rgba(0,0,0,0.85) 100%);z-index:1;}}

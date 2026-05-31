@@ -8,11 +8,10 @@ from .ig_utils import (
     _article_items,
     _clean_headline,
     _clean_public_text,
-    _dedupe_lead_text,
-    _fallback_summary_text,
     _source_label_from_url,
 )
-from .ig_copy import clean_creator_text, layout_safe_headline, layout_safe_points, trim_without_ellipsis
+from .article_quality import contains_public_noise
+from .ig_copy import clean_creator_text, is_public_safe_text, layout_safe_headline, layout_safe_points, trim_without_ellipsis
 
 if TYPE_CHECKING:
     from .models import EmailSummary
@@ -48,17 +47,8 @@ def _build_caption(summary: "EmailSummary") -> str:
     hook = _build_caption_hook(summary, article, headline)
 
     # ── Lead paragraph ────────────────────────────────────────────────────────
-    lead_raw = _clean_public_text(
-        str(article.get("what_happened") or article.get("description") or
-            article.get("excerpt") or summary.summary or "")
-    )
-    lead_raw = _dedupe_lead_text(lead_raw, headline)
-    if not lead_raw or len(lead_raw) < 60:
-        lead_raw = _fallback_summary_text(summary, headline)
-    lead = trim_without_ellipsis(lead_raw, 360)
-
     # ── Takeaway bullets ──────────────────────────────────────────────────────
-    bullets = _build_caption_bullets(summary, article, lead)
+    bullets = _build_caption_bullets(summary, article, "")
 
     # ── Closing question ──────────────────────────────────────────────────────
     closing_q = _build_closing_question(summary, article)
@@ -94,7 +84,7 @@ def _build_caption(summary: "EmailSummary") -> str:
     save_bait = "Save this before it disappears from your feed."
     swipe_prompt = "Swipe for the full breakdown."
 
-    parts: list[str] = [hook, "", swipe_prompt, "", lead, ""]
+    parts: list[str] = [hook, "", swipe_prompt, ""]
     if bullets:
         parts.extend(bullets)
         parts.append("")
@@ -116,6 +106,22 @@ def _build_caption(summary: "EmailSummary") -> str:
 # Caption sub-builders
 # ─────────────────────────────────────────────────────────────────────────────
 
+def _caption_safe_text(text: str) -> str:
+    cleaned = clean_creator_text(text)
+    if not cleaned:
+        return ""
+    sentences = re.split(r"(?<=[.!?])\s+|\n+", cleaned)
+    kept: list[str] = []
+    for sentence in sentences:
+        s = clean_creator_text(sentence).strip()
+        if not s or contains_public_noise(s):
+            continue
+        if not is_public_safe_text(s):
+            continue
+        kept.append(s)
+    return " ".join(kept)
+
+
 def _build_caption_hook(summary: "EmailSummary", article: dict[str, Any], headline: str) -> str:
     """Hook line: < 125 chars, never starts with hashtag or 'I/We'."""
     companies = summary.companies[:1]
@@ -129,7 +135,7 @@ def _build_caption_hook(summary: "EmailSummary", article: dict[str, Any], headli
     stat = _extract_stat_from_text(text_pool)
 
     if stat:
-        hook = f"{stat} changes the whole {entity} story."
+        hook = stat if stat.endswith(".") else f"{stat} matters."
     elif len(headline) <= 110 and not headline.lower().startswith(("i ", "we ")):
         hook = layout_safe_headline(headline, fallback=f"{entity} just changed everything")
         hook = hook if hook.endswith(".") else hook + "."
@@ -139,6 +145,9 @@ def _build_caption_hook(summary: "EmailSummary", article: dict[str, Any], headli
     if len(hook) > 125:
         hook = trim_without_ellipsis(hook, 125)
     hook = clean_creator_text(re.sub(r"^#+\s*", "", hook)).strip()
+    if not is_public_safe_text(hook):
+        hook = layout_safe_headline(headline, fallback=f"{entity} AI update")
+        hook = hook if hook.endswith(".") else hook + "."
     return hook
 
 
@@ -150,21 +159,21 @@ def _build_caption_bullets(summary: "EmailSummary", article: dict[str, Any], lea
     lead_fp = re.sub(r"\s+", " ", lead.lower())[:120]
 
     for p in article.get("key_points", []):
-        cleaned = _clean_public_text(str(p))
+        cleaned = _caption_safe_text(_clean_public_text(str(p)))
         fp = re.sub(r"\s+", " ", cleaned.lower())[:70]
         if len(cleaned) > 25 and fp not in seen_bullet and fp not in lead_fp:
             seen_bullet.add(fp)
             deduped.append(cleaned)
 
     for p in summary.key_points:
-        cleaned = _clean_public_text(str(p))
+        cleaned = _caption_safe_text(_clean_public_text(str(p)))
         fp = re.sub(r"\s+", " ", cleaned.lower())[:70]
         if len(cleaned) > 25 and fp not in seen_bullet and fp not in lead_fp:
             seen_bullet.add(fp)
             deduped.append(cleaned)
 
     for field in ("what_happened", "why_matters", "what_to_watch"):
-        text = _clean_public_text(str(article.get(field) or ""))
+        text = _caption_safe_text(_clean_public_text(str(article.get(field) or "")))
         if not text:
             continue
         for sent in re.split(r"(?<=[.!?])\s+", text):
@@ -178,7 +187,7 @@ def _build_caption_bullets(summary: "EmailSummary", article: dict[str, Any], lea
 
     if not bullets:
         for field in ("what_happened", "why_matters", "what_to_watch"):
-            text = _clean_public_text(str(article.get(field) or ""))
+            text = _caption_safe_text(_clean_public_text(str(article.get(field) or "")))
             if text and len(text) > 30:
                 safe = layout_safe_points([text], limit=1)
                 if safe:
@@ -330,6 +339,9 @@ def _build_editorial_hashtags(summary: "EmailSummary", article: dict[str, Any]) 
 
 def _extract_stat_from_text(text: str) -> str:
     """Extract a concrete statistic from text for use in a hook line."""
+    text = _caption_safe_text(text)
+    if not text:
+        return ""
     match = re.search(
         r"\b(\d[\d,]*(?:\.\d+)?(?:B|M|K|bn|mn|%|\s+(?:billion|million|thousand|percent|times|x)))\b",
         text, re.I,

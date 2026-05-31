@@ -4,6 +4,8 @@ from __future__ import annotations
 import html
 import re
 
+from .article_quality import contains_public_noise
+
 
 FORBIDDEN_PHRASES = (
     "dismiss alert",
@@ -60,6 +62,12 @@ FORBIDDEN_PHRASES = (
     "step in, make it yours",
     "only blank but well lit space",
     "bring your best question",
+    "escape will cancel and close the window",
+    "beginning of dialog window",
+    "end of dialog window",
+    "connect with us",
+    "advertising partners",
+    "personalize your",
 )
 
 ROBOTIC_PHRASES = (
@@ -263,10 +271,19 @@ _HEADING_RE = re.compile(
 def clean_creator_text(text: str) -> str:
     """Decode, clean, and normalize public-facing carousel copy."""
     text = html.unescape(str(text or ""))
+    text = html.unescape(text)
     text = text.replace("\u2026", ".").replace("...", ".")
     text = text.replace("\u2018", "'").replace("\u2019", "'")
     text = text.replace("\u201c", '"').replace("\u201d", '"')
     text = text.replace("\u2013", "-").replace("\u2014", "-")
+    text = re.sub(r"\bJSON\.(?:stringify|parse)\b[^.!?\n]{0,220}", "", text, flags=re.I)
+    text = re.sub(r"\b__uspapi\b[^.!?\n]{0,220}", "", text, flags=re.I)
+    text = re.sub(r"\btypeof\s+[_A-Za-z$][\w$]*[^.!?\n]{0,180}", "", text, flags=re.I)
+    text = re.sub(r"\bcatch\s*\([^)]*\)\s*\{[^.!?\n]{0,180}", "", text, flags=re.I)
+    text = re.sub(r"&(?:amp;)?#x?[0-9a-f]+;", "'", text, flags=re.I)
+    text = re.sub(r"\b(?:Link|Company|Summary)\s*:\s*", "", text, flags=re.I)
+    text = re.sub(r"\[(?:HIGH|MEDIUM|LOW|CRITICAL)\]\s*", "", text, flags=re.I)
+    text = re.sub(r"\b(?:Connect with us|Escape will cancel and close the window)\b[^.!?\n]*[.!?]?", "", text, flags=re.I)
     text = re.sub(r"[^\S\r\n]+", " ", text)
     text = re.sub(r"\s+([.,;:!?])", r"\1", text)
     text = re.sub(r"^[\s\-:|/>#*]+", "", text).strip()
@@ -277,8 +294,12 @@ def clean_creator_text(text: str) -> str:
 
 
 def is_public_safe_text(text: str) -> bool:
+    if contains_public_noise(str(text or "")):
+        return False
     cleaned = clean_creator_text(text).lower()
     if len(cleaned) < 15:
+        return False
+    if contains_public_noise(cleaned):
         return False
     if any(phrase in cleaned for phrase in FORBIDDEN_PHRASES):
         return False
@@ -337,8 +358,11 @@ def layout_safe_point(text: str, index: int = 0) -> str:
 
     sentence = _first_complete_sentence(cleaned)
     words = sentence.split()
-    if len(words) > 16:
-        sentence = " ".join(words[:16]).rstrip(".,;:-")
+    if len(words) > 22:
+        words = words[:22]
+        while len(words) > 8 and words[-1].lower().strip(".,;:-") in STOPWORDS:
+            words.pop()
+        sentence = " ".join(words).rstrip(".,;:-")
 
     if sentence and sentence[-1] not in ".!?":
         sentence += "."
