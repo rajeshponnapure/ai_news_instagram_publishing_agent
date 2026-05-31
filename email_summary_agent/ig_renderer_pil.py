@@ -915,7 +915,7 @@ def _gt_render_list_slide(draw, ImageFont, slide: dict) -> None:
         return
 
     avail_h = 1185 - y
-    font_sizes_to_try = [44, 40, 36, 32, 28]
+    font_sizes_to_try = [44, 40, 36, 32, 28, 26, 24]
     BULLET_GAP = 36
     LINE_GAP = 12
     content_w = SAFE_R - SAFE_L - 30

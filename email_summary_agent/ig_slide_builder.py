@@ -234,7 +234,7 @@ def _article_to_slide(
         "key_points": key_points,
         "body": "\n".join(key_points[:MAX_KP_PER_SLIDE]),
         "image_path": image_path,
-        "image_source": "article" if image_path else "",
+        "image_source": str(article.get("image_source", "")) if image_path else "",
         "article_image_url": str(article.get("image_url") or ""),
         "topic": topic,
         "url": url,

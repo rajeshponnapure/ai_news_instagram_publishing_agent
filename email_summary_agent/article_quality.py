@@ -96,7 +96,7 @@ def contains_public_noise(text: str) -> bool:
     return False
 
 
-def is_publishable_article(article: dict) -> bool:
+def is_publishable_article(article: dict, *, _debug_tag: str = "") -> bool:
     title = clean_quality_text(str(article.get("title") or ""))
     body = clean_quality_text(" ".join(
         str(article.get(key) or "")
@@ -104,20 +104,30 @@ def is_publishable_article(article: dict) -> bool:
     ))
     url = str(article.get("url") or "")
     combined = f"{title} {body} {url}".lower()
+    tag = f"  [quality:{_debug_tag}]" if _debug_tag else "  [quality]"
 
     if not url.startswith(("http://", "https://")):
+        print(f"{tag} REJECTED {title[:60]!r}: url={url[:40]!r} no http prefix")
         return False
     if contains_public_noise(f"{title} {body}"):
+        print(f"{tag} REJECTED {title[:60]!r}: contains_public_noise (title+body has noise patterns)")
         return False
     if any(re.search(pattern, combined, re.I) for pattern in PROMO_OR_NON_ARTICLE_PATTERNS):
+        print(f"{tag} REJECTED {title[:60]!r}: promo pattern matched")
         return False
     if _title_is_url_slug(title):
+        print(f"{tag} REJECTED {title[:60]!r}: title looks like URL slug")
         return False
     if _title_is_truncated_fragment(title):
+        print(f"{tag} REJECTED {title[:60]!r}: title looks like truncated fragment")
         return False
     if len(body) < 80 and len(title) < 25:
+        print(f"{tag} REJECTED {title[:60]!r}: body={len(body)}chars title={len(title)}chars (min 80 body OR 25 title)")
         return False
-    return _has_ai_relevance(combined)
+    if not _has_ai_relevance(combined):
+        print(f"{tag} REJECTED {title[:60]!r}: no AI relevance terms found")
+        return False
+    return True
 
 
 def _title_is_url_slug(title: str) -> bool:
@@ -138,20 +148,46 @@ def _title_is_url_slug(title: str) -> bool:
 
 
 def _title_is_truncated_fragment(title: str) -> bool:
+    """Return True only when the title is genuinely a truncated fragment.
+
+    This is intentionally permissive — most lowercase-starting titles from
+    digest emails are legitimate ("how to…", "the new…", "what happens when…").
+    We only reject titles with clear truncation signals.
+    """
     if not title:
         return True
-    words = title.split()
+    text = title.strip()
+    words = text.split()
     if not words:
         return True
-    first = words[0].strip("'\".,;:()[]{}")
-    lowered_first = first.lower()
-    allowed_lower = {"claude-code", "gpt", "openai", "xai", "iphone", "ios", "android"}
-    if first and first[0].islower() and lowered_first not in allowed_lower:
+    # Ends with trailing ellipsis or punctuation that suggests mid-sentence cut-off
+    if re.search(r"[a-z][)]?\.\.\.$", text):
         return True
-    if lowered_first in {"nd", "th", "ustry", "omberg", "which", "speaking", "creates"}:
+    # Ends mid-word with a dash (e.g. "launching new product fea-")
+    if re.search(r"[a-zA-Z]-$", text):
         return True
-    if re.match(r"^[A-Z]?[a-z]{1,2}$", first) and len(words) > 3:
-        return True
+    # Too short and doesn't look like a real title (1-2 words, all lowercase, no proper nouns)
+    if len(words) <= 2:
+        lowered = text.lower()
+        # Accept if it contains any uppercase letter (likely a proper noun in digest titles)
+        if any(c.isupper() for c in text):
+            return False
+        # Accept common 2-word lowercase starters that are legitimate titles
+        common_starters = {
+            "how to", "what is", "what are", "why is", "why are", "when is",
+            "the new", "the next", "the rise", "the end", "the future",
+            "inside the", "inside a",
+            "this is", "this new",
+            "meet the", "meet your",
+            "is your", "is the",
+            "can ai", "will ai",
+        }
+        if len(words) == 2 and " ".join(words).lower() in common_starters:
+            return False
+        # If 1-2 words, all lowercase, it's likely just a fragment — reject
+        if not lowered.startswith(("ai", "gpt", "llm")):
+            return True
+        return False
     return False
 
 

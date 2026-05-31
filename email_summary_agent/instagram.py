@@ -104,6 +104,18 @@ def write_instagram_carousels(
         if not verification_ok:
             (carousel_dir / "VERIFY_FAILED").touch()
             _safe_print(f"  VERIFY FAILED {carousel_dir.name} — skipping")
+            # Log which checks failed to help with debugging
+            failed_checks = [
+                f"#{c.check_id}({c.name}): {c.detail}"
+                for c in report.checks
+                if not c.passed
+            ]
+            if failed_checks:
+                _safe_print(f"    Failed checks: {'; '.join(failed_checks)}")
+            _safe_print(
+                f"    Confidence: {report.confidence:.2f} "
+                f"(threshold: 0.75)"
+            )
             continue
 
         # Record image usage (path + perceptual hash) so it is never reused.
@@ -201,11 +213,14 @@ def _slide_has_valid_image(slide: dict) -> bool:
     path = Path(str(slide.get("image_path", "") or ""))
     if not path.exists():
         return False
+    source = str(slide.get("image_source", "") or "")
+    if source not in ("article", "fallback"):
+        return False
     try:
         w, h = pi.image_dimensions(str(path))
     except Exception:
         return False
-    return w >= 200 and h >= 150 and str(slide.get("image_source", "")) == "article"
+    return w >= 200 and h >= 150
 
 
 def _missing_article_image_detail(slides: list[dict]) -> str:
@@ -214,11 +229,12 @@ def _missing_article_image_detail(slides: list[dict]) -> str:
             continue
         image_path = str(slide.get("image_path", "") or "").strip()
         if not image_path:
-            return f"slide {index}: missing same-article image"
-        if str(slide.get("image_source", "")) != "article":
-            return f"slide {index}: image is not article-sourced"
+            return f"slide {index}: missing image"
+        source = str(slide.get("image_source", "") or "")
+        if source not in ("article", "fallback"):
+            return f"slide {index}: image source not recognized ({source!r})"
         if not Path(image_path).exists():
-            return f"slide {index}: article image file not found"
+            return f"slide {index}: image file not found"
     return ""
 
 

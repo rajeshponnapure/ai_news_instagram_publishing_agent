@@ -135,59 +135,53 @@ def _select_unique_article_image(
                 article["image_source"] = "article"
                 return value
 
-    return ""
+    # ── Fallback 1: Shared image library (topic-matched, deduplicated) ──
+    library_path = _find_library_image_unique(query_text, used_image_paths)
+    if library_path:
+        path = Path(library_path)
+        if path.exists() and _accept_article_image(library_path, used_image_paths, used_image_hashes):
+            article["image_path"] = library_path
+            article["image_source"] = "fallback"
+            print(f"  [img] Library fallback for {title[:40]!r}: {path.name}")
+            return library_path
 
-    # ── 0. Scrape og:image directly from the article URL ─────────────────────
-    article_url = str(article.get("url") or "")
-    if article_url and not article.get("image_url") and not article.get("image_path"):
-        scraped_url = _fetch_og_image_from_url(article_url)
-        if scraped_url and scraped_url not in used_image_urls:
-            local = _download_to_library(scraped_url, query_text or title or topic)
-            if local and local not in used_image_paths and _accept(local, used_image_paths, used_image_hashes):
-                used_image_urls.add(scraped_url)
-                article["image_url"] = scraped_url
-                article["image_path"] = local
-                return local
+    # ── Fallback 2: Wikimedia Commons search for brand/query matches ──
+    ref_path = _find_reference_image_for_article_unique(article, topic, used_image_paths)
+    if ref_path:
+        article["image_path"] = ref_path
+        article["image_source"] = "fallback"
+        print(f"  [img] Wikimedia fallback for {title[:40]!r}: {Path(ref_path).name}")
+        return ref_path
 
-    # ── 1. Blog/article image (pre-populated by summariser) ──────────────────
-    for key in ("image_path", "image_url"):
-        value = str(article.get(key, "") or "").strip()
-        if not value:
-            continue
-        if value.startswith(("http://", "https://")):
-            if value in used_image_urls:
-                continue
-            local = _download_to_library(value, query_text or title or topic)
-            if local and local not in used_image_paths and _accept(local, used_image_paths, used_image_hashes):
-                used_image_urls.add(value)
-                return local
-        else:
-            path = Path(value)
-            if path.exists() and value not in used_image_paths and _validate_image_hd(value):
-                if _accept(value, used_image_paths, used_image_hashes):
-                    return value
+    # ── Fallback 3 (last resort): Best-effort library match, any score ──
+    last_resort = _find_library_image_unique(query_text, used_image_paths, min_score=0.0)
+    if last_resort:
+        path = Path(last_resort)
+        if path.exists() and _accept_article_image(last_resort, used_image_paths, used_image_hashes):
+            article["image_path"] = last_resort
+            article["image_source"] = "fallback"
+            print(f"  [img] BEST-EFFORT library fallback for {title[:40]!r}: {path.name}")
+            return last_resort
 
-    # ── 1b. Non-HD local fallback ─────────────────────────────────────────────
-    for key in ("image_path",):
-        value = str(article.get(key, "") or "").strip()
-        if not value:
-            continue
-        path = Path(value)
-        if path.exists() and value not in used_image_paths:
-            if _accept(value, used_image_paths, used_image_hashes):
-                return value
-
-    # ── 2. Shared image library — deduplicated semantic match ─────────────────
-    library_match = _find_library_image_unique(query_text or title or topic, used_image_paths)
-    if library_match and _accept(library_match, used_image_paths, used_image_hashes):
-        return library_match
-
-    # ── 3. Web image search — fresh download ──────────────────────────────────
-    web_image = _find_reference_image_for_article_unique(article, topic, used_image_paths)
-    if web_image and _accept(web_image, used_image_paths, used_image_hashes):
-        return web_image
+    # No article image found — log diagnostic info to help debug
+    _log_image_failure(article, title, topic)
 
     return ""
+
+
+def _log_image_failure(article: dict[str, Any], title: str, topic: str) -> None:
+    """Log diagnostic details when no article-sourced image can be resolved."""
+    article_url = str(article.get("url") or "")[:80]
+    has_og = bool(article.get("image_url"))
+    has_path = bool(article.get("image_path"))
+    has_extra_urls = bool(article.get("extra_image_urls"))
+    has_extra_paths = bool(article.get("extra_image_paths"))
+    print(
+        f"  [img] WARNING: No article-sourced image for "
+        f"title={title[:60]!r} url={article_url!r} "
+        f"og_url={has_og} path={has_path} "
+        f"extra_urls={has_extra_urls} extra_paths={has_extra_paths}"
+    )
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -374,8 +368,12 @@ def _find_library_image(query: str) -> str | None:
     return best_path if best_score >= 0.45 else None
 
 
-def _find_library_image_unique(query: str, exclude_paths: set[str]) -> str | None:
-    """Like _find_library_image but skips any path already in exclude_paths."""
+def _find_library_image_unique(query: str, exclude_paths: set[str], min_score: float = 0.45) -> str | None:
+    """Like _find_library_image but skips any path already in exclude_paths.
+
+    ``min_score`` controls the minimum similarity threshold.
+    Default 0.45 (high confidence). Pass 0.0 to accept any match as last resort.
+    """
     if not IMAGE_LIBRARY_DIR.exists():
         return None
     query_tokens = _important_image_tokens(query)
@@ -407,7 +405,7 @@ def _find_library_image_unique(query: str, exclude_paths: set[str]) -> str | Non
         if score > best_score:
             best_score = score
             best_path = candidate_str
-    return best_path if best_score >= 0.45 else None
+    return best_path if best_score >= min_score else None
 
 
 def _iter_image_metadata() -> list[tuple[str, dict[str, Any]]]:

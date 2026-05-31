@@ -68,6 +68,19 @@ FORBIDDEN_PHRASES = (
     "connect with us",
     "advertising partners",
     "personalize your",
+    "opens in a new tab",
+    "skip to main content",
+    "search code",
+    "search repositories",
+    "sign up for a curated",
+    "data is a real-time snapshot",
+    "data delayed at least",
+    "view all comments",
+    "powered by ai",
+    "would you like to",
+    "please enable javascript",
+    "your session has expired",
+    "we've updated our",
 )
 
 ROBOTIC_PHRASES = (

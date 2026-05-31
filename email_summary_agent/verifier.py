@@ -348,10 +348,11 @@ def verify_pre_publish(
             img_exist_score = 0.0
             img_exist_detail = f"slide {i+1}: missing same-article image"
             break
-        if str(slide.get("image_source", "")) != "article":
+        img_source = str(slide.get("image_source", "") or "")
+        if img_source not in ("article", "fallback"):
             all_img_ok = False
             img_exist_score = 0.0
-            img_exist_detail = f"slide {i+1}: image is not marked as article-sourced"
+            img_exist_detail = f"slide {i+1}: image source not recognized ({img_source!r})"
             break
         path = Path(p)
         if not path.exists():

@@ -24,6 +24,10 @@ MAX_BATCH_AGE_DAYS = int(os.environ.get("PUBLISH_MAX_BATCH_AGE_DAYS", "3"))
 def main() -> int:
     parser = argparse.ArgumentParser(description="Publish generated Instagram carousel batches.")
     parser.add_argument("--all", action="store_true", help="Publish every pending recent batch, oldest first.")
+    parser.add_argument(
+        "--cleanup-verify-failed", action="store_true",
+        help="Remove VERIFY_FAILED zombie carousel directories that will never be published."
+    )
     args = parser.parse_args()
 
     settings = Settings.from_env()
@@ -37,6 +41,11 @@ def main() -> int:
         return 0
 
     settings.instagram_dir.mkdir(parents=True, exist_ok=True)
+
+    if args.cleanup_verify_failed:
+        _cleanup_verify_failed_carousels(settings.instagram_dir)
+        return 0
+
     batches = (
         [path for path in settings.instagram_dir.iterdir() if path.is_dir()]
         if settings.instagram_dir.exists()
@@ -170,6 +179,36 @@ def _manifest_if_batch_has_pending(
         for post in manifest.get("posts", [])
     )
     return (batch_dir, manifest_path) if has_pending else None
+
+
+def _cleanup_verify_failed_carousels(instagram_dir: Path) -> None:
+    """Remove zombie carousel directories with VERIFY_FAILED markers.
+
+    These carousels failed verification during generation and will never be
+    published. They silently pollute the batch directory listing and confuse
+    debugging. This function finds and removes them.
+    """
+    if not instagram_dir.exists():
+        print("No instagram directory found.")
+        return
+
+    removed = 0
+    for batch_dir in sorted(instagram_dir.iterdir()):
+        if not batch_dir.is_dir():
+            continue
+        for carousel_dir in sorted(batch_dir.iterdir()):
+            if not carousel_dir.is_dir():
+                continue
+            if (carousel_dir / "VERIFY_FAILED").exists():
+                import shutil
+                shutil.rmtree(carousel_dir)
+                print(f"  Removed VERIFY_FAILED carousel: {batch_dir.name}/{carousel_dir.name}")
+                removed += 1
+
+    if removed:
+        print(f"Removed {removed} VERIFY_FAILED carousel(s).")
+    else:
+        print("No VERIFY_FAILED carousels found.")
 
 
 if __name__ == "__main__":

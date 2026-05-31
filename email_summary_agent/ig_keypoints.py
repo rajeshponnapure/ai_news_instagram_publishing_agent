@@ -215,6 +215,8 @@ _SENTENCE_START_NOISE = (
     "this is", "there is", "there are", "it is", "it has", "that is",
     "the company", "the article", "the post", "the report", "the study",
     "according to", "in addition", "in this", "in recent",
+    # Attribution frames that weaken the point — strip "the organization added that" etc
+    "the organization", "the group", "the team", "the firm", "the agency",
 )
 
 _CREATOR_LABEL_RULES: tuple[tuple[str, tuple[str, ...]], ...] = (
@@ -321,6 +323,14 @@ def _extract_instagram_key_points(
         # Numbered list prefixes: "01 ", "02 ", "03 " etc at start of a sentence
         r"^\d{2}\s+",
         r"(?:^|\s)\d{2}\s+Also:\s*",
+        # Webpage UI text leaks
+        r"\(opens in a new tab\)",
+        r"Data is a real.time snapshot\b.*?(?:delayed at least \d+ minutes|Data at least \d+ min)",
+        r"Learn how to describe the purpose of the image\b",
+        r"Skip to main content\b",
+        r"Menu\s*$",
+        r"Search\s*$",
+        r"Sign in\s*$",
     ]
     # Additional AI-sounding phrases to strip from extracted sentences
     _AI_FILLER_PATTERNS = [
@@ -355,6 +365,14 @@ def _extract_instagram_key_points(
         parts = re.split(r"(?<=[.!?])\s+", t)
         if parts and parts[0].strip():
             t = parts[0].strip()
+        # If sentence ends with a colon, it likely introduces a list —
+        # append the next non-empty segment so the point feels complete.
+        if t.endswith(":") and len(parts) > 1:
+            for seg in parts[1:]:
+                seg = seg.strip()
+                if seg and len(seg) > 10:
+                    t = t + " " + seg
+                    break
         # Drop trailing attribution clauses (", the company said", "— OpenAI says").
         t = re.sub(
             r"[,;:\-–—]\s*(?:the\s+\w+\s+)?(?:said|says|added|noted|wrote|"
@@ -453,40 +471,64 @@ def _extract_instagram_key_points(
             if c not in novel:
                 novel.append(c)
 
-    # ---- Phase 4: Score and sort by concreteness ----
+    # ---- Phase 4: Narrative role ordering ----
+    # Instead of sorting by concreteness alone, we classify each point by
+    # narrative role and sort: HOOK → CONTEXT → IMPACT (within each role,
+    # still score-sorted).
+    _NARRATIVE_HOOK_KEYWORDS = {
+        "launches", "launched", "releases", "released", "unveils", "reveals",
+        "announces", "announced", "surpasses", "beats", "breaks", "hits",
+        "shatters", "crushes", "achieves", "tops", "sets",
+    }
+
     def _point_score(pt: str) -> float:
         score = 0.0
         low = pt.lower()
         words = pt.split()
-        # Power verbs indicate action-oriented content
         if any(low.startswith(v) for v in POWER_VERBS) or any(f" {v} " in f" {low} " for v in POWER_VERBS):
             score += 0.4
-        # Specific numbers — concrete, not generic
         if re.search(r"\b\d[\d,]*(?:\.\d+)?\s*(?:%|x|B|M|K|bn|mn|billion|million|percent|times)\b", pt, re.I):
             score += 0.35
-        # Proper nouns / brands / models — specific entities beat generic prose
         if re.search(r"\b[A-Z][a-z]+(?:[A-Z][a-z]+)?\b", pt[1:]) or any(
             b.lower() in low for b in REFERENCE_BRANDS
         ):
             score += 0.2
-        # Company/org name at start — direct and grounded
         if any(pt.lower().startswith(opener) for opener in _STRONG_OPENERS):
             score += 0.25
-        # Good length: specific enough to be useful, short enough for Instagram
         if 6 <= len(words) <= 14:
             score += 0.2
-        # Starts with a number — very specific
         if words and re.match(r"^\d", words[0]):
             score += 0.15
-        # Penalize AI-sounding sentence starts
         if any(low.startswith(n) for n in _SENTENCE_START_NOISE):
             score -= 0.3
-        # Penalize vague claim patterns
         if any(re.search(p, low) for p in _VAGUE_CLAIM_PATTERNS):
             score -= 0.4
         return max(0.0, score)
 
-    novel.sort(key=_point_score, reverse=True)
+    def _narrative_role(pt: str) -> int:
+        """Classify point by narrative role: 0=hook, 1=context, 2=impact."""
+        low = pt.lower()
+        words = pt.split()
+        # Hook: starts with brand/company, strong verb, or number
+        has_strong_start = (
+            any(pt.lower().startswith(o) for o in _STRONG_OPENERS)
+            or (words and re.match(r"^\d", words[0]))
+            or any(low.startswith(v) for v in _NARRATIVE_HOOK_KEYWORDS)
+        )
+        # Impact: words about significance/future
+        has_impact_lang = any(kw in low for kw in [
+            "could", "will reshape", "will transform", "means for",
+            "impact", "future of", "implications", "signals a",
+            "marks a", "raises questions", "sets the stage",
+            "paves the way", "opens the door",
+        ])
+        if has_strong_start and not has_impact_lang:
+            return 0  # hook
+        elif has_impact_lang:
+            return 2  # impact
+        return 1  # context
+
+    novel.sort(key=lambda pt: (_narrative_role(pt), -_point_score(pt)))
 
     # ---- Phase 5: Guarantee >=4 points from title/description ----
     if len(novel) < 4:
