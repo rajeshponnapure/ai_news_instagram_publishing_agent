@@ -280,9 +280,9 @@ def _make_cta_slide(slide_index: int) -> dict[str, Any]:
     return {
         "kind": "cta",
         "slide_index": slide_index,
-        "eyebrow": "TAKE IT WITH YOU",
-        "title": "SAVE THIS.",
-        "body": "Follow @graitech for the next AI briefing. Like · Comment · Share · Save",
+        "eyebrow": "NEXT BRIEFING",
+        "title": "FOLLOW @graitech",
+        "body": "Save this carousel. Share it with your team. Get the next AI briefing delivered to your feed.",
         "image_path": "",
         "url": "",
         "source_label": "graitech.io",

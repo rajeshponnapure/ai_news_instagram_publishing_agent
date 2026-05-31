@@ -165,6 +165,40 @@ _AI_SOUNDING_PATTERNS = [
     r"\bthe landscape\s+(is shifting|is changing|evolves)\b",
     r"\bit remains to be seen\b",
     r"\bthis comes (amid|as|at a time)\b",
+    # Content-humanizer: overused filler words
+    r"\bdelve\s+(into|deeper)?\b",
+    r"\bleverage\b",
+    r"\bnavigate\s+(this|the|these|complex|challenge|shift)\b",
+    r"\brobust\b",
+    r"\bcomprehensive\b",
+    r"\bholistic\b",
+    r"\bfoster\b",
+    r"\bfacilitate\b",
+    r"\bcrucial\b",
+    r"\bvital\b",
+    r"\bpivotal\b",
+    r"\bensure\b",
+    # Content-humanizer: hedging chains
+    r"\bits? worth mentioning\b",
+    r"\bone might argue\b",
+    r"\bin many cases\b",
+    r"\bin most scenarios\b",
+    r"\bit goes without saying\b",
+    r"\bneedless to say\b",
+]
+
+# Content-humanizer: vague claim starters that lack specificity
+_VAGUE_CLAIM_PATTERNS = [
+    r"\bmany companies\b",
+    r"\bstudies show\b",
+    r"\bsignificantly improved\b",
+    r"\bleading brands\b",
+    r"\ba lot of\b",
+    r"\bmultiple organizations\b",
+    r"\bindustry experts\b",
+    r"\baccording to sources\b",
+    r"\bobservers say\b",
+    r"\banalysts believe\b",
 ]
 
 _STRONG_OPENERS = (
@@ -358,6 +392,8 @@ def _extract_instagram_key_points(
             return False
         if any(low.startswith(n) for n in _SENTENCE_START_NOISE):
             return False
+        if any(re.search(p, low) for p in _VAGUE_CLAIM_PATTERNS):
+            return False
         return True
 
     def _semantic_dupe(text: str, used_texts) -> bool:
@@ -442,6 +478,9 @@ def _extract_instagram_key_points(
         # Penalize AI-sounding sentence starts
         if any(low.startswith(n) for n in _SENTENCE_START_NOISE):
             score -= 0.3
+        # Penalize vague claim patterns
+        if any(re.search(p, low) for p in _VAGUE_CLAIM_PATTERNS):
+            score -= 0.4
         return max(0.0, score)
 
     novel.sort(key=_point_score, reverse=True)
