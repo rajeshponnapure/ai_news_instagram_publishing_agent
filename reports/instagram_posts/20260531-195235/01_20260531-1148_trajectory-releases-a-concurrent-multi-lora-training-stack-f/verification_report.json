@@ -1,0 +1,93 @@
+{
+  "phase": "pre_publish",
+  "round": 2,
+  "passed": false,
+  "confidence": 0.75,
+  "checks": [
+    {
+      "id": 1,
+      "name": "kp_unique_across_slides",
+      "passed": true,
+      "confidence": 1.0,
+      "detail": ""
+    },
+    {
+      "id": 2,
+      "name": "images_unique",
+      "passed": false,
+      "confidence": 0.5,
+      "detail": "dup images: cb030491157b26a5.jpg ~ cb030491157b26a5.jpg"
+    },
+    {
+      "id": 3,
+      "name": "semantic_unique",
+      "passed": false,
+      "confidence": 0.0,
+      "detail": "semantic dup slides 2~3 (cos=1.00)"
+    },
+    {
+      "id": 4,
+      "name": "titles_complete",
+      "passed": true,
+      "confidence": 1.0,
+      "detail": ""
+    },
+    {
+      "id": 5,
+      "name": "valid_carousel_slide_count",
+      "passed": true,
+      "confidence": 1.0,
+      "detail": "content=8, total=9"
+    },
+    {
+      "id": 6,
+      "name": "images_exist_hd",
+      "passed": true,
+      "confidence": 1.0,
+      "detail": ""
+    },
+    {
+      "id": 7,
+      "name": "cta_present",
+      "passed": true,
+      "confidence": 1.0,
+      "detail": ""
+    },
+    {
+      "id": 8,
+      "name": "keypoints_professional",
+      "passed": true,
+      "confidence": 1.0,
+      "detail": ""
+    },
+    {
+      "id": 9,
+      "name": "no_generic_filler",
+      "passed": true,
+      "confidence": 1.0,
+      "detail": ""
+    },
+    {
+      "id": 10,
+      "name": "no_repeated_info",
+      "passed": false,
+      "confidence": 0.0,
+      "detail": "title dup: Michal Sutter Google Launches Antigravity 2.0 at I ~ Michal Sutter Google Launches Antigravity 2.0 at I (cos=1.00)"
+    },
+    {
+      "id": 11,
+      "name": "summaries_unique",
+      "passed": true,
+      "confidence": 1.0,
+      "detail": ""
+    },
+    {
+      "id": 12,
+      "name": "image_article_mapping",
+      "passed": true,
+      "confidence": 1.0,
+      "detail": ""
+    }
+  ],
+  "summary": "FAIL (conf=0.75, hard_fail=True)"
+}
