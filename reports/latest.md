@@ -1,73 +1,48 @@
 # AI News Summary Report
 
-Generated: 2026-05-31T07:38:56+00:00
+Generated: 2026-05-31T08:29:13+00:00
 Source: grdevelopers.co@gmail.com
-Emails summarized: 2
+Emails summarized: 1
 
 ## Executive Brief
 
-- This page requires cookies to be enabled in your browser settings.
-- Please check this setting and enable cookies (if disabled)
-- Models mentioned in this article 4 AI and the Future of Cybersecurity: Why Openness Matters Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce Conversational Agents Models mentioned in this article 4
-- The V4-Pro numbers on SWE Verified, MCPAtlas, and the internal R&D benchmark put it at parity with frontier closed models on agent tasks.
-- In the paper's internal R&D coding benchmark, 30 curated tasks across PyTorch, CUDA, Rust, and C++, V4-Pro-Max hits 67% pass rate, versus 47% for Sonnet 4.5 and 70% for Opus 4.5.
-- Agent benchmark results The knowledge and reasoning numbers are competitive but not leading.
-- For multi-turn agentic workflows, where the user sends a follow-up after the agent has already chained several tool calls, the model lost its accumulated reasoning and had to reconstruct state.
+- Michal Sutter Google Launches Antigravity 2.0 at I/O 2026: A Standalone Agent-First Platform with CLI, SDK, Managed Execution, and Enterprise Support Michal Sutter Vercel Labs Introduces Zero, a Systems Programming.
+- How a Local First Agent Stack Turns Chats into Real Automations Michal Sutter GitHub Releases Copilot-SDK to Embed Its Agentic Runtime in Any App Michal Sutter Salesforce AI Introduces FOFPred: A Language-Driven Future.
+- Michal Sutter Comparing the Top 6 Inference Runtimes for LLM Serving in 2025 Michal Sutter OpenAI Introduces IndQA: A Culture Aware Benchmark For Indian Languages Michal Sutter Comparing the Top 7 Large Language Models.
+- A Technical Deep Dive and Top 9 AI Inference Providers (2025 Edition) Michal Sutter Hugging Face Unveils AI Sheets: A Free, Open-Source No-Code Toolkit for LLM-Powered Datasets Michal Sutter From Deployment to Scale: 11.
+- Michal Sutter Google AI Introduces Gemini 2.5 ‘Computer Use’ (Preview): A Browser-Control Model to Power AI Agents to Interact with User Interfaces Michal Sutter OpenAI Debuts Agent Builder and AgentKit: A Visual-First.
 
 ## Most Mentioned Companies
 
-MarkTechPost AI (1), TechCrunch AI (1), Anthropic (1), Microsoft (1), Perplexity (1), NEC Corporation (1)
+OpenAI (1), Google (1), DeepMind (1), Anthropic (1), Microsoft (1), Meta (1), Apple (1), Amazon (1)
 
 ## Most Mentioned Models
 
-GPT-5.4-xHigh (1), Claude (1), Gemini- (1)
+GPT-5.5 (1), GPT-5.4-Cyber (1), GPT-5.1-Codex-Max (1), GPT-5.1 (1), GPT-5 (1), GPT-5-Codex (1), gpt-4o-mini-tts (1), GPT-4o-mini (1)
 
 ## Main Topics
 
-general AI update (1), model release (1), funding or business (1), regulation or safety (1), developer tools (1), hardware and compute (1), media generation (1)
+model release (1), regulation or safety (1), developer tools (1), hardware and compute (1), media generation (1)
 
 ## Voice Script Hooks
 
-- MarkTechPost AI just made a move in general AI update: Robot Challenge Screen
-- Anthropic just made a move in model release: DeepSeek-V4: a million-token context that agents can actually use
+- OpenAI just made a move in model release: 🚨 AI Alert: 22 new launches — MarkTechPost AI, TechCrunch AI, Bloomberg Tech
 
 ## Per-Email Summaries
 
-### 1. Robot Challenge Screen
+### 1. 🚨 AI Alert: 22 new launches — MarkTechPost AI, TechCrunch AI, Bloomberg Tech
 
-Source date: Sat, 30 May 2026 21:55:28 -0700
-Confidence: 0.82
-Article: https://www.marktechpost.com/.well-known/sgcaptcha/?r=%2F2026%2F05%2F30%2Ftrajectory-releases-a-concurrent-multi-lora-training-stack-for-continual-learning-reporting-a-2-81x-experiment-throughput-gain%2F&y=ipc:48.214.53.67:1780212725.920
-Article title: Robot Challenge Screen
+Source date: Sun, 31 May 2026 01:10:47 -0700
+Confidence: 0.60
 
-Article excerpt: This page requires cookies to be enabled in your browser settings. Please check this setting and enable cookies (if disabled)
-
-This page requires cookies to be enabled in your browser settings. Please check this setting and enable cookies (if disabled) Please check this setting and enable cookies (if disabled) This page requires cookies to be enabled in your browser settings. Please check this setting and enable cookies (if disabled) This page requires cookies to be enabled in your browser settings. Please check this setting and enable cookies (if disabled)
+Michal Sutter Google Launches Antigravity 2.0 at I/O 2026: A Standalone Agent-First Platform with CLI, SDK, Managed Execution, and Enterprise Support Michal Sutter Vercel Labs Introduces Zero, a Systems Programming Language Designed So AI Agents Can Read, Repair, and Ship Native Programs Michal Sutter Enterprise AI Governance in 2026: Why the Tools Employees Use Are Ahead of the Policies That Cover Them Michal Sutter Google DeepMind Introduces an AI-Enabled Mouse Pointer Powered by Gemini That.
 
 Key points:
-- This page requires cookies to be enabled in your browser settings.
-- Please check this setting and enable cookies (if disabled)
-Companies: MarkTechPost AI, TechCrunch AI
-Topics: general AI update
-
-### 2. DeepSeek-V4: a million-token context that agents can actually use
-
-Source date: Sat, 30 May 2026 21:58:48 -0700
-Confidence: 0.82
-Article: https://huggingface.co/blog/deepseekv4
-Article title: DeepSeek-V4: a million-token context that agents can actually use
-
-Article excerpt: We’re on a journey to advance and democratize artificial intelligence through open source and open science.
-
-This allows a coherent, cumulative chain of thought over long-horizon agent tasks. Tool-call schema with dedicated tokens V4 introduces a |DSML| special token and an XML-based tool-call format. For multi-turn agentic workflows, where the user sends a follow-up after the agent has already chained several tool calls, the model lost its accumulated reasoning and had to reconstruct state. The model retains the complete reasoning history across all rounds, including across user turns. The V4-Pro numbers on SWE Verified, MCPAtlas, and the internal R&D benchmark put it at parity with frontier closed models on agent tasks. Models mentioned in this article 4 AI and the Future of Cybersecurity: Why Openness Matters Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce Conversational Agents Models mentioned in this article 4 The V4-Pro numbers on SWE Verified, MCPAtlas, and the internal R&D benchmark put it at parity with frontier closed models on agent tasks. In the paper's internal R&D coding benchmark, 30 curated tasks across PyTorch, CUDA, Rust, and C++, V4-Pro-Max hits 67% pass rate, versus 47% for Sonnet 4.5 and 70% for Opus 4.5. Agent benchmark results The knowledge and reasoning numbers are competitive but not leading. For multi-turn agentic workflows, where the user sends a follow-up after the agent has already chained several tool calls, the model lost its accumulated reasoning and had to reconstruct state. It also uses 10% of the KV cache memory. V4-Flash drops these numbers even further: 10% of the FLOPs and 7% of the KV cache. deepseek-ai/DeepSeek-V4-Pro (1.6T / 49B activated, instruct) deepseek-ai/DeepSeek-V4-Flash (284B / 13B activated, instruct) deepseek-ai/DeepSeek-V4-Pro-Base (1.6T / 49B activated, base). The agent numbers are where V4-Pro-Max separates from the field. The model retains the complete reasoning history across all rounds, including across user turns. These infrastructure decisions underpin the agent benchmark scores. These storage choices compound with the compression ratios to produce the 2% KV cache figure. We’re on a journey to advance and democratize artificial intelligence through open source and open science. DeepSeek-V4: a million-token context that agents can actually use Focusing on long running agentic workloads. Running a frontier open model as an agent today breaks in predictable ways. The trace blows past the context budget, or the KV cache fills the GPU, or tool-call round trips degrade halfway through a long task. V4 is built to fix these known failures , and point the way for the community to follow. This post covers three things: what the architecture does differently to make long-context inference cheap, the agent-specific post-training decisions that compound on top of it, and some takeaways from the paper that help reason about these changes. The KV cache problem for agents A 1M context window is just capacity, not performance. Whether you can use it depends on the cost of every forward pass at that depth. For an agent running a long tool-use trajectory (a SWE-bench task, a multi-step browse session, a terminal session with hundreds of commands), every tool result is appended to the context, and every subsequent token pays the full attention cost against everything that came before. Two numbers matter: single-token inference FLOPs and KV cache size. Both grow with sequence length. At 1M tokens, DeepSeek-V4-Pro requires 27% of single-token inference FLOPs compared with DeepSeek-V3.2, so it runs faster on the same hardware. It also uses 10% of the KV cache memory. V4-Flash drops these numbers even further: 10% of the FLOPs and 7% of the KV cache. If we compare the KV cache memory against a established architecture like grouped query attention with 8 heads, stored in the usual bfloat16 format, DeepSeek v4 requires roughly 2% the cache size. This makes it much easier to deploy for very large context handling. Figure 1: benchmark comparison (left), per-token FLOPs and accumulated KV cache against sequence length (right). Hybrid attention: CSA and HCA The efficiency gain comes from splitting attention into two mechanisms and interleaving them across layers. Compressed Sparse Attention (CSA) compresses KV entries by 4x along the sequence dimension using softmax-gated pooling with a learned positional bias. A lightning indexer (FP4, ReLU-scored multi-head dot product) picks the top-k compressed blocks per query. It inherits the sparse-selection idea from DeepSeek Sparse Attention in V3.2, but runs it over blocks that are already 4x shorter than the original sequence. The indexer's search space shrinks with it. The compressor collapses every 4 tokens into one compressed KV entry. The lightning indexer picks the top-k compressed blocks per query. A sliding-window branch handles the most recent uncompressed tokens. Heavily Compressed Attention (HCA) compresses KV entries by 128x and drops the sparse selection. Every query attends densely to every compressed block. The compressed sequence is short enough that dense attention is cheap. A heavier compressor (128x vs. 4x) followed by dense attention over the compressed stream, with the same sliding-window branch for recency. The layers alternate between CSA and HCA. Different layers carry different attention patterns, and forcing one mechanism across all of them wastes capacity. In V4-Pro's 61-layer stack, layers 0–1 are HCA, layers 2–60 alternate CSA and HCA, and the MTP block at the end runs sliding-window only. Both paths use FP8 storage for most KV entries and BF16 only for the RoPE dimensions. The lightning indexer inside CSA runs in FP4. These storage choices compound with the compression ratios to produce the 2% KV cache figure. Figure 2: overall architecture. Attention layers alternate between CSA and HCA. Feed-forward layers use DeepSeekMoE. Residual connections are replaced with manifold-constrained hyper-connections (mHC). What changes for agents Efficient long-context attention is necessary for agent workflows but not sufficient. The paper describes three post-training and infrastructure choices that target agent use cases directly. Interleaved thinking across tool calls V3.2 kept reasoning traces across tool-result rounds but discarded them whenever a new user message arrived. For an agent handling a single user turn, this was fine. For multi-turn agentic workflows, where the user sends a follow-up after the agent has already chained several tool calls, the model lost its accumulated reasoning and had to reconstruct state. V4 preserves reasoning content across user message boundaries when the conversation contains tool calls. The model retains the complete reasoning history across all rounds, including across user turns. This allows a coherent, cumulative chain of thought over long-horizon agent tasks. For conversational use without tools, the old behavior is preserved: reasoning is flushed on each turn to keep context concise. Figure 7: thinking with tools (top) preserves reasoning across all turns. Thinking without tools (bottom) discards reasoning at each new user message. Tool-call schema with dedicated tokens V4 introduces a |DSML| special token and an XML-based tool-call format. The XML format reduces escaping failures compared to JSON-in-string tool calls, a common failure mode when models emit nested quoted content. The schema separates string parameters (passed as-is with string="true" ) from structured parameters (passed as JSON with string="false" ). This removes a class of parsing errors around numbers and booleans that JSON tool-call formats routinely hit. DSec: a sandbox built for RL rollouts The agent behavior was trained with RL against real tool environments. The paper describes the sandbox infrastructure built for that purpose. DeepSeek Elastic Compute (DSec) is a Rust platform that exposes four execution substrates behind one Python SDK: function calls, containers, microVMs (Firecracker), and full VMs (QEMU). A single cluster runs hundreds of thousands of concurrent sandboxes. Three DSec features matter for agent training: fast image loading via layered 3FS storage (so RL rollouts do not wait on container startup), preemption-safe trajectory replay (so interrupted training steps resume without re-running tool calls), and a uniform API across substrates (so training harnesses target function calls or full VMs without rewriting). These infrastructure decisions underpin the agent benchmark scores. Agent benchmark results The knowledge and reasoning numbers are competitive but not leading. The agent numbers are where V4-Pro-Max separates from the field. Terminal Bench 2.0: V4-Pro-Max scores 67.9, ahead of GLM-5.1 (63.5) and K2.6 (66.7), behind GPT-5.4-xHigh (75.1) and Gemini-3.1-Pro (68.5). SWE Verified: 80.6 resolved, within a point of Opus-4.6-Max (80.8) and Gemini-3.1-Pro (80.6). Toolathlon: 51.8, ahead of K2.6 (50.0), GLM-5.1 (40.7), and Gemini-3.1-Pro (48.8). In the paper's internal R&D coding benchmark, 30 curated tasks across PyTorch, CUDA, Rust, and C++, V4-Pro-Max hits 67% pass rate, versus 47% for Sonnet 4.5 and 70% for Opus 4.5. In a survey of 85 DeepSeek developers using V4-Pro as their daily driver, 52% said it was ready to replace their current primary coding model and 39% leaned toward yes. The long-context retrieval numbers are in Figure 9. MRCR 8-needle accuracy stays above 0.82 through 256K tokens and holds at 0.59 at 1M. Figure 9: MRCR 8-needle retrieval. V4-Pro-Max stays above 0.82 through 256K and holds at 0.59 at 1M. Four checkpoints are on the Hub. The instruct models use FP4 for MoE expert weights and FP8 for everything else. The base models are FP8 throughout. deepseek-ai/DeepSeek-V4-Pro (1.6T / 49B activated, instruct) deepseek-ai/DeepSeek-V4-Flash (284B / 13B activated, instruct) deepseek-ai/DeepSeek-V4-Pro-Base (1.6T / 49B activated, base) deepseek-ai/DeepSeek-V4-Flash-Base (284B / 13B activated, base) Both instruct models support three reasoning modes: Non-think (fast, no chain of thought), Think High (explicit reasoning in <think> blocks), and Think Max (maximum reasoning effort with a dedicated system prompt). Think Max requires a context window of at least 384K tokens. The recommended sampling parameters across all modes are temperature=1.0, top_p=1.0 . The V4-Pro numbers on SWE Verified, MCPAtlas, and the internal R&D benchmark put it at parity with frontier closed models on agent tasks. The open question is how the community's tool harnesses adapt to the |DSML| schema and whether the interleaved thinking gains transfer to out-of-domain agent frameworks. Figures in this blog post are from the technical report at DeepSeek_V4.pdf . Models mentioned in this article 4 AI and the Future of Cybersecurity: Why Openness Matters Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce Conversational Agents Models mentioned in this article 4
-
-Key points:
-- Models mentioned in this article 4 AI and the Future of Cybersecurity: Why Openness Matters Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce Conversational Agents Models mentioned in this article 4
-- The V4-Pro numbers on SWE Verified, MCPAtlas, and the internal R&D benchmark put it at parity with frontier closed models on agent tasks.
-- In the paper's internal R&D coding benchmark, 30 curated tasks across PyTorch, CUDA, Rust, and C++, V4-Pro-Max hits 67% pass rate, versus 47% for Sonnet 4.5 and 70% for Opus 4.5.
-- Agent benchmark results The knowledge and reasoning numbers are competitive but not leading.
-- For multi-turn agentic workflows, where the user sends a follow-up after the agent has already chained several tool calls, the model lost its accumulated reasoning and had to reconstruct state.
-- It also uses 10% of the KV cache memory.
-Companies: Anthropic, Microsoft, Perplexity, NEC Corporation
-Models: GPT-5.4-xHigh, Claude, Gemini-
-Topics: model release, funding or business, regulation or safety, developer tools, hardware and compute, media generation
+- Michal Sutter Google Launches Antigravity 2.0 at I/O 2026: A Standalone Agent-First Platform with CLI, SDK, Managed Execution, and Enterprise Support Michal Sutter Vercel Labs Introduces Zero, a Systems Programming.
+- How a Local First Agent Stack Turns Chats into Real Automations Michal Sutter GitHub Releases Copilot-SDK to Embed Its Agentic Runtime in Any App Michal Sutter Salesforce AI Introduces FOFPred: A Language-Driven Future.
+- Michal Sutter Comparing the Top 6 Inference Runtimes for LLM Serving in 2025 Michal Sutter OpenAI Introduces IndQA: A Culture Aware Benchmark For Indian Languages Michal Sutter Comparing the Top 7 Large Language Models.
+- A Technical Deep Dive and Top 9 AI Inference Providers (2025 Edition) Michal Sutter Hugging Face Unveils AI Sheets: A Free, Open-Source No-Code Toolkit for LLM-Powered Datasets Michal Sutter From Deployment to Scale: 11.
+- Michal Sutter Google AI Introduces Gemini 2.5 ‘Computer Use’ (Preview): A Browser-Control Model to Power AI Agents to Interact with User Interfaces Michal Sutter OpenAI Debuts Agent Builder and AgentKit: A Visual-First.
+Companies: OpenAI, Google, DeepMind, Anthropic, Microsoft, Meta, Apple, Amazon
+Models: GPT-5.5, GPT-5.4-Cyber, GPT-5.1-Codex-Max, GPT-5.1, GPT-5, GPT-5-Codex, gpt-4o-mini-tts, GPT-4o-mini
+Topics: model release, regulation or safety, developer tools, hardware and compute, media generation
