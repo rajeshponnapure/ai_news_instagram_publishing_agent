@@ -287,6 +287,9 @@ def clean_creator_text(text: str) -> str:
     text = re.sub(r"[^\S\r\n]+", " ", text)
     text = re.sub(r"\s+([.,;:!?])", r"\1", text)
     text = re.sub(r"^[\s\-:|/>#*]+", "", text).strip()
+    # Fix " ' s" → "'s" from HTML entities split by scrapers
+    text = re.sub(r"' (\w)(?:\b|$)", r"'\1", text)
+    text = re.sub(r"\s+' (\w)(?:\b|$)", r" '\1", text)
     text = re.sub(r"\s+", " ", text).strip()
     for phrase in ROBOTIC_PHRASES:
         text = re.sub(re.escape(phrase), "", text, flags=re.I).strip(" -:;")
@@ -358,9 +361,9 @@ def layout_safe_point(text: str, index: int = 0) -> str:
 
     sentence = _first_complete_sentence(cleaned)
     words = sentence.split()
-    if len(words) > 22:
-        words = words[:22]
-        while len(words) > 8 and words[-1].lower().strip(".,;:-") in STOPWORDS:
+    if len(words) > 18:
+        words = words[:18]
+        while len(words) > 6 and words[-1].lower().strip(".,;:-") in STOPWORDS:
             words.pop()
         sentence = " ".join(words).rstrip(".,;:-")
 

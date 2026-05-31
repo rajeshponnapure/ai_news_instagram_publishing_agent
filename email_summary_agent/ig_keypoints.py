@@ -318,6 +318,9 @@ def _extract_instagram_key_points(
         r"\bv(?:ia)?\s+[A-Z][^\n.!?]{5,80}",
         r"\bMore from\s+\S+[^\n.!?]*",
         r"\s*\|\s*[A-Z][A-Za-z0-9 &]{1,30}$",
+        # Numbered list prefixes: "01 ", "02 ", "03 " etc at start of a sentence
+        r"^\d{2}\s+",
+        r"(?:^|\s)\d{2}\s+Also:\s*",
     ]
     # Additional AI-sounding phrases to strip from extracted sentences
     _AI_FILLER_PATTERNS = [
@@ -363,8 +366,8 @@ def _extract_instagram_key_points(
         # Remove trailing AI-sounding patterns
         t = re.sub(r"\s*[-–—]?\s*(?:and\s+)?(?:this (?:means|shows|highlights|demonstrates|suggests)\b.*)$", "", t, flags=re.I).strip()
         words = t.split()
-        if len(words) > 16:
-            t = " ".join(words[:16])
+        if len(words) > 14:
+            t = " ".join(words[:14])
         t = t.strip(" -–—,;:·•")
         if not t:
             return ""
