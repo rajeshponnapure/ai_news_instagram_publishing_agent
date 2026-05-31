@@ -1,1 +1,0 @@
-slide_01: Slide too dark — no bright text or accent pixels detected
