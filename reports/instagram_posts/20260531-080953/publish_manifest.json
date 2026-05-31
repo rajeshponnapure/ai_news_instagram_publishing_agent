@@ -14,8 +14,20 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260531-080953/04_20260531-0809_open-source-security-is-a-mess-ibm-and-red-hat-bet-5-billion/slide_08.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260531-080953/04_20260531-0809_open-source-security-is-a-mess-ibm-and-red-hat-bet-5-billion/slide_09.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260531-080953/04_20260531-0809_open-source-security-is-a-mess-ibm-and-red-hat-bet-5-billion/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260531-080953/04_20260531-0809_open-source-security-is-a-mess-ibm-and-red-hat-bet-5-billion/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260531-080953/04_20260531-0809_open-source-security-is-a-mess-ibm-and-red-hat-bet-5-billion/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260531-080953/04_20260531-0809_open-source-security-is-a-mess-ibm-and-red-hat-bet-5-billion/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260531-080953/04_20260531-0809_open-source-security-is-a-mess-ibm-and-red-hat-bet-5-billion/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260531-080953/04_20260531-0809_open-source-security-is-a-mess-ibm-and-red-hat-bet-5-billion/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260531-080953/04_20260531-0809_open-source-security-is-a-mess-ibm-and-red-hat-bet-5-billion/slide_07.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260531-080953/04_20260531-0809_open-source-security-is-a-mess-ibm-and-red-hat-bet-5-billion/slide_08.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260531-080953/04_20260531-0809_open-source-security-is-a-mess-ibm-and-red-hat-bet-5-billion/slide_09.png"
+      ],
+      "status": "published",
+      "creation_id": "18045012635577438",
+      "published_at": "2026-05-31T08:13:30+00:00"
     },
     {
       "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260531-080953/07_20260531-0809_bill-gates-releases-hundreds-of-millions-of-bacteria-infecte",
@@ -24,8 +36,13 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260531-080953/07_20260531-0809_bill-gates-releases-hundreds-of-millions-of-bacteria-infecte/slide_01.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260531-080953/07_20260531-0809_bill-gates-releases-hundreds-of-millions-of-bacteria-infecte/slide_02.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260531-080953/07_20260531-0809_bill-gates-releases-hundreds-of-millions-of-bacteria-infecte/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260531-080953/07_20260531-0809_bill-gates-releases-hundreds-of-millions-of-bacteria-infecte/slide_02.png"
+      ],
+      "status": "published",
+      "creation_id": "18045012674577438",
+      "published_at": "2026-05-31T08:14:31+00:00"
     }
   ]
 }
