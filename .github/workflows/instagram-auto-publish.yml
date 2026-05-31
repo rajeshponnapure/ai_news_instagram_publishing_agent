@@ -120,6 +120,10 @@ jobs:
             python -m email_summary_agent --once --all --reprocess
           elif [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.run_mode }}" = "backfill_24h" ]; then
             python -m email_summary_agent --recent-all
+          elif [ "${{ github.event_name }}" = "workflow_run" ]; then
+            # Triggered by CI completion after a push — run once immediately,
+            # bypassing the poll interval gate so new code is exercised right away.
+            python -m email_summary_agent --once
           else
             # Automatic schedule run - only check for new emails
             python -m email_summary_agent --poll-once
