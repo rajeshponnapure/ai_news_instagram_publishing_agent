@@ -1,112 +1,56 @@
 # AI News Summary Report
 
-<<<<<<< Updated upstream
-Generated: 2026-05-31T03:46:23+00:00
+Generated: 2026-05-31T07:38:56+00:00
 Source: grdevelopers.co@gmail.com
-Emails summarized: 1
-=======
-Generated: 2026-05-31T05:36:03+00:00
-Source: grdevelopers.co@gmail.com
-Emails summarized: 3
->>>>>>> Stashed changes
+Emails summarized: 2
 
 ## Executive Brief
 
-- plans to invest as much as €75 billion ($87 billion) to build 5 gigawatts of artificial intelligence data center capacity in France, saying the country is poised to become a top E Link : [HIGH] Genesis AI Releases Nyx.
-- Link : [HIGH] SoftBank Plans Up to €75 Billion Investment in French AI Centers Company : Bloomberg Tech Summary : SoftBank Group Corp.
-- The system achieves a Pearson correlation of 0.8996 Link ...
-- Link : [MEDIUM] anthropics/claude-code: v2.1.157 Company : Anthropic Summary : ## What's changed.
-- The company licensed the character for a new Amazon series.
-- Ad Link : [MEDIUM] SentinelOne stock drops 8% as cyber firm trims headcount to boost AI investments Company ...
-<<<<<<< Updated upstream
+- This page requires cookies to be enabled in your browser settings.
+- Please check this setting and enable cookies (if disabled)
+- Models mentioned in this article 4 AI and the Future of Cybersecurity: Why Openness Matters Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce Conversational Agents Models mentioned in this article 4
+- The V4-Pro numbers on SWE Verified, MCPAtlas, and the internal R&D benchmark put it at parity with frontier closed models on agent tasks.
+- In the paper's internal R&D coding benchmark, 30 curated tasks across PyTorch, CUDA, Rust, and C++, V4-Pro-Max hits 67% pass rate, versus 47% for Sonnet 4.5 and 70% for Opus 4.5.
+- Agent benchmark results The knowledge and reasoning numbers are competitive but not leading.
+- For multi-turn agentic workflows, where the user sends a follow-up after the agent has already chained several tool calls, the model lost its accumulated reasoning and had to reconstruct state.
 
 ## Most Mentioned Companies
 
-OpenAI (1), Anthropic (1), Microsoft (1), Amazon (1), NVIDIA (1), TechCrunch AI (1), SoftBank Group Corp (1), Genesis AI (1)
+MarkTechPost AI (1), TechCrunch AI (1), Anthropic (1), Microsoft (1), Perplexity (1), NEC Corporation (1)
 
 ## Most Mentioned Models
 
-claude-code (1), claude (1), Gemini (1), Llama- (1)
+GPT-5.4-xHigh (1), Claude (1), Gemini- (1)
 
 ## Main Topics
 
-model release (1), funding or business (1), developer tools (1), hardware and compute (1)
-=======
-- plans to invest as much as €75 billion ($87 billion) to build 5 gigawatts of artificial intelligence data center capacity in France, saying the country is poised to become a top E Link : [HIGH] Genesis AI...
-
-## Most Mentioned Companies
-
-OpenAI (3), Anthropic (3), NVIDIA (3), Microsoft (2), TechCrunch AI (2), SoftBank Group Corp (2), Genesis AI (2), Google (2)
-
-## Most Mentioned Models
-
-Gemini (2), claude-code (1), claude (1), Llama- (1), GPT-5.4-xHigh (1), Claude (1), Gemini- (1)
-
-## Main Topics
-
-model release (3), developer tools (3), hardware and compute (3), funding or business (2), regulation or safety (1), media generation (1)
->>>>>>> Stashed changes
+general AI update (1), model release (1), funding or business (1), regulation or safety (1), developer tools (1), hardware and compute (1), media generation (1)
 
 ## Voice Script Hooks
 
-- OpenAI just made a move in model release: center capacity.
-<<<<<<< Updated upstream
-=======
-- OpenAI just made a move in model release: to a dedicated LoRA adapter on an always-hot
-- OpenAI just made a move in model release: DeepSeek-V4: a million-token context that agents can actually use
->>>>>>> Stashed changes
+- MarkTechPost AI just made a move in general AI update: Robot Challenge Screen
+- Anthropic just made a move in model release: DeepSeek-V4: a million-token context that agents can actually use
 
 ## Per-Email Summaries
 
-### 1. center capacity.
-
-Source date: Sat, 30 May 2026 17:16:54 -0700
-Confidence: 0.82
-Article: https://www.bloomberg.com/news/articles/2026-05-30/softbank-to-invest-some-75-billion-in-ai-in-france-reports-say
-Article title: center capacity.
-
-Article excerpt: center capacity. Link : https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion-to-build-french-data-centers/ [HIGH] SoftBank Plans Up to €75 Billion Investment in French AI Centers Company : Bloomberg Tech Summary : SoftBank Group Corp. plans to invest as much as €75 billion ($87 billion) to build 5 gigawatts of artificial intelligence data center capacity in France, saying the country is poised to become a top E Link : [HIGH] Genesis AI Releases Nyx, Quadrants, and Genesis World 1.0 Physics Platform for Scalable Robotics Foundation Model Evaluation Company : MarkTechPost AI Summary : Genesis AI released Genesis World 1.0 on May 27, 2026 — a four-component...
-
-plans to invest as much as €75 billion ($87 billion) to build 5 gigawatts of artificial intelligence data center capacity in France, saying the country is poised to become a top E Link : [HIGH] Genesis AI Releases Nyx, Quadrants, and Genesis World 1.0 Physics Platform for Scalable Robotics Foundation Model Evaluation Company : MarkTechPost AI Summary : Genesis AI released Genesis World 1.0 on May 27, 2026 - a four-component simulation platform covering physics, rendering, compilation, and tooling. Link : [HIGH] SoftBank Plans Up to €75 Billion Investment in French AI Centers Company : Bloomberg Tech Summary : SoftBank Group Corp. The system achieves a Pearson correlation of 0.8996 Link ... plans to invest as much as €75 billion ($87 billion) to build 5 gigawatts of artificial intelligence data center capacity in France, saying the country is poised to become a top E Link : [HIGH] Genesis AI Releases Nyx. Link : [HIGH] SoftBank Plans Up to €75 Billion Investment in French AI Centers Company : Bloomberg Tech Summary : SoftBank Group Corp. The system achieves a Pearson correlation of 0.8996 Link ... Link : [HIGH] SoftBank Plans Up to €75 Billion Investment in French AI Centers Company : Bloomberg Tech Summary : SoftBank Group Corp. plans to invest as much as €75 billion ($87 billion) to build 5 gigawatts of artificial intelligence data center capacity in France, saying the country is poised to become a top E Link : [HIGH] Genesis AI Releases Nyx, Quadrants, and Genesis World 1.0 Physics Platform for Scalable Robotics Foundation Model Evaluation Company : MarkTechPost AI Summary : Genesis AI released Genesis World 1.0 on May 27, 2026 - a four-component simulation platform covering physics, rendering, compilation, and tooling. The system achieves a Pearson correlation of 0.8996 Link ...
-
-Key points:
-- plans to invest as much as €75 billion ($87 billion) to build 5 gigawatts of artificial intelligence data center capacity in France, saying the country is poised to become a top E Link : [HIGH] Genesis AI Releases Nyx.
-- Link : [HIGH] SoftBank Plans Up to €75 Billion Investment in French AI Centers Company : Bloomberg Tech Summary : SoftBank Group Corp.
-- The system achieves a Pearson correlation of 0.8996 Link ...
-- Link : [MEDIUM] anthropics/claude-code: v2.1.157 Company : Anthropic Summary : ## What's changed.
-- The company licensed the character for a new Amazon series.
-- Ad Link : [MEDIUM] SentinelOne stock drops 8% as cyber firm trims headcount to boost AI investments Company ...
-Companies: OpenAI, Anthropic, Microsoft, Amazon, NVIDIA, TechCrunch AI, SoftBank Group Corp, Genesis AI
-<<<<<<< Updated upstream
-Models: claude-code, claude, Gemini, Llama-
-Topics: model release, funding or business, developer tools, hardware and compute
-=======
-Models: claude-code, claude, Gemini
-Topics: model release, funding or business, developer tools, hardware and compute
-
-### 2. to a dedicated LoRA adapter on an always-hot
+### 1. Robot Challenge Screen
 
 Source date: Sat, 30 May 2026 21:55:28 -0700
 Confidence: 0.82
-Article: https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion-to-build-french-data-centers/
-Article title: to a dedicated LoRA adapter on an always-hot
+Article: https://www.marktechpost.com/.well-known/sgcaptcha/?r=%2F2026%2F05%2F30%2Ftrajectory-releases-a-concurrent-multi-lora-training-stack-for-continual-learning-reporting-a-2-81x-experiment-throughput-gain%2F&y=ipc:48.214.53.67:1780212725.920
+Article title: Robot Challenge Screen
 
-Article excerpt: to a dedicated LoRA adapter on an always-hot Link : https://www.marktechpost.com/2026/05/30/trajectory-releases-a-concurrent-multi-lora-training-stack-for-continual-learning-reporting-a-2-81x-experiment-throughput-gain/ [HIGH] SoftBank says it will invest up to €75 billion to build French data centers Company : TechCrunch AI Summary : The goal, the firm said, is to develop and operate up to 5 gigawatts of additional data center capacity. Link : [HIGH] SoftBank Plans Up to €75 Billion Investment in French AI Centers Company : Bloomberg Tech Summary : SoftBank Group Corp. plans to invest as much as €75 billion ($87 billion) to build 5 gigawatts of artificial intelligence data center...
+Article excerpt: This page requires cookies to be enabled in your browser settings. Please check this setting and enable cookies (if disabled)
 
-plans to invest as much as €75 billion ($87 billion) to build 5 gigawatts of artificial intelligence data center capacity in France, saying the country is poised to become a top E Link : [HIGH] Genesis AI... to a dedicated LoRA adapter on an always-hot Link : [HIGH] SoftBank says it will invest up to €75 billion to build French data centers Company : TechCrunch AI Summary : The goal, the firm said, is to develop and operate up to 5 gigawatts of additional data center capacity. plans to invest as much as €75 billion ($87 billion) to build 5 gigawatts of artificial intelligence data center capacity in France, saying the country is poised to become a top E Link : [HIGH] Genesis AI... to a dedicated LoRA adapter on an always-hot Link : [HIGH] SoftBank says it will invest up to €75 billion to build French data centers Company : TechCrunch AI Summary : The goal, the firm said, is to develop and operate. Link : [HIGH] SoftBank Plans Up to €75 Billion Investment in French AI Centers Company : Bloomberg Tech Summary : SoftBank Group Corp. to a dedicated LoRA adapter on an always-hot Link : [HIGH] SoftBank says it will invest up to €75 billion to build French data centers Company : TechCrunch AI Summary : The goal, the firm said, is to develop and operate up to 5 gigawatts of additional data center capacity. Link : [HIGH] SoftBank Plans Up to €75 Billion Investment in French AI Centers Company : Bloomberg Tech Summary : SoftBank Group Corp. plans to invest as much as €75 billion ($87 billion) to build 5 gigawatts of artificial intelligence data center capacity in France, saying the country is poised to become a top E Link : [HIGH] Genesis AI...
+This page requires cookies to be enabled in your browser settings. Please check this setting and enable cookies (if disabled) Please check this setting and enable cookies (if disabled) This page requires cookies to be enabled in your browser settings. Please check this setting and enable cookies (if disabled) This page requires cookies to be enabled in your browser settings. Please check this setting and enable cookies (if disabled)
 
 Key points:
-- plans to invest as much as €75 billion ($87 billion) to build 5 gigawatts of artificial intelligence data center capacity in France, saying the country is poised to become a top E Link : [HIGH] Genesis AI...
-- to a dedicated LoRA adapter on an always-hot Link : [HIGH] SoftBank says it will invest up to €75 billion to build French data centers Company : TechCrunch AI Summary : The goal, the firm said, is to develop and operate.
-- Link : [HIGH] SoftBank Plans Up to €75 Billion Investment in French AI Centers Company : Bloomberg Tech Summary : SoftBank Group Corp.
-- Link : [MEDIUM] Best Text-to-Speech TTS Models in 2026: A Benchmark-Based Comparison Company : MarkTechPost AI Summary : Text-to-speech changed fast in 2026.
-- This guide ranks the leading commercial and open-weight TTS models, comparing quality, latency, cost, language coverage, and licensing so engineers can match a mod Link : [MEDIUM]...
-- Link : [MEDIUM] SpaceX, OpenAI Windfall Fuels Bets on Next-Wave Asian AI Winners Company : Bloomberg Tech Summary : The hunt is on for companies that could benefit from the tailwinds of an unprecedented wave of stock.
-Companies: OpenAI, Google, Anthropic, NVIDIA, MarkTechPost AI, TechCrunch AI, SoftBank Group Corp, Genesis AI
-Models: Gemini, Llama-
-Topics: model release, developer tools, hardware and compute
+- This page requires cookies to be enabled in your browser settings.
+- Please check this setting and enable cookies (if disabled)
+Companies: MarkTechPost AI, TechCrunch AI
+Topics: general AI update
 
-### 3. DeepSeek-V4: a million-token context that agents can actually use
+### 2. DeepSeek-V4: a million-token context that agents can actually use
 
 Source date: Sat, 30 May 2026 21:58:48 -0700
 Confidence: 0.82
@@ -124,7 +68,6 @@ Key points:
 - Agent benchmark results The knowledge and reasoning numbers are competitive but not leading.
 - For multi-turn agentic workflows, where the user sends a follow-up after the agent has already chained several tool calls, the model lost its accumulated reasoning and had to reconstruct state.
 - It also uses 10% of the KV cache memory.
-Companies: OpenAI, Google, DeepMind, Anthropic, Microsoft, NVIDIA, Perplexity, NEC Corporation
+Companies: Anthropic, Microsoft, Perplexity, NEC Corporation
 Models: GPT-5.4-xHigh, Claude, Gemini-
 Topics: model release, funding or business, regulation or safety, developer tools, hardware and compute, media generation
->>>>>>> Stashed changes
