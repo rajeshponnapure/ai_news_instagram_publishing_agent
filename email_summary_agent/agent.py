@@ -30,6 +30,7 @@ class AgentResult:
     report_path: Path | None
     instagram_count: int
     published_count: int
+    recovered_count: int
 
 def run_once(
     settings: Settings,
@@ -65,7 +66,7 @@ def run_once(
     except ConnectionError as exc:
         _safe_print("Internet disconnected or offline. Sleeping until next cycle...")
         store.finish_run(run_id, "offline", str(exc))
-        return AgentResult(fetched_count=0, skipped_count=0, deferred_count=0, summarized_count=0, report_path=None, instagram_count=0, published_count=0)
+        return AgentResult(fetched_count=0, skipped_count=0, deferred_count=0, summarized_count=0, report_path=None, instagram_count=0, published_count=0, recovered_count=0)
     except Exception as exc:
         store.finish_run(run_id, "error", str(exc))
         raise
@@ -180,7 +181,7 @@ def poll_new_once(settings: Settings) -> AgentResult:
     except ConnectionError as exc:
         _safe_print("Internet disconnected or offline. Sleeping until next cycle...")
         store.finish_run(run_id, "offline", str(exc))
-        return AgentResult(fetched_count=0, skipped_count=0, deferred_count=0, summarized_count=0, report_path=None, instagram_count=0, published_count=0)
+        return AgentResult(fetched_count=0, skipped_count=0, deferred_count=0, summarized_count=0, report_path=None, instagram_count=0, published_count=0, recovered_count=0)
     except Exception as exc:
         store.finish_run(run_id, "error", str(exc))
         raise
@@ -228,13 +229,9 @@ def process_items(
             _safe_print(f"  [memory] init failed: {exc}")
 
     try:
-        # Always use configured summary provider (no local-only toggle)
+        # Always use the built-in local summarizer (no external LLM dependencies)
         provider = SummaryProvider(
-            provider=settings.summary_provider,
-            ollama_url=settings.ollama_url,
-            ollama_model=settings.ollama_model,
-            gemini_api_key=settings.gemini_api_key,
-            gemini_model=settings.gemini_model,
+            provider="local",
         )
         # Filter out everything we have already processed.
         if reprocess:
@@ -303,9 +300,23 @@ def process_items(
                         d["extra_image_paths"] = list(a.extra_image_paths)
                     article_dicts.append(d)
                 raw_count = len(article_dicts)
-                article_dicts = [a for a in article_dicts if is_publishable_article(a)]
-                if len(article_dicts) != raw_count:
-                    _safe_print(f"  Dropped {raw_count - len(article_dicts)} non-publishable article fragment(s)")
+                if memory:
+                    bad = [a for a in article_dicts if not is_publishable_article(a)]
+                    article_dicts = [a for a in article_dicts if is_publishable_article(a)]
+                    for a in bad:
+                        memory.save_rejected_article(
+                            url=str(a.get("url", "")),
+                            title=str(a.get("title", "")),
+                            article=a,
+                            reason="quality_filter",
+                            source_email_subject=str(email.subject or ""),
+                        )
+                    if bad:
+                        _safe_print(f"  Saved {len(bad)} rejected article(s) to rejected_articles table for retry")
+                else:
+                    article_dicts = [a for a in article_dicts if is_publishable_article(a)]
+                    if len(article_dicts) != raw_count:
+                        _safe_print(f"  Dropped {raw_count - len(article_dicts)} non-publishable article fragment(s)")
                 posts, demoted = plan_posts(article_dicts, memory, post_size=settings.post_size)
                 _safe_print(f"  Planned {len(posts)} post(s) from {len(article_dicts)} raw articles (demoted {len(demoted)})")
                 selected = posts[0] if posts else []
@@ -387,6 +398,9 @@ def process_items(
             for email, summary in summaries:
                 store.mark_processed(email, summary, report_path)
 
+        # Auto-retry previously rejected articles (24 h cooldown)
+        recovered_count = _retry_rejected_articles(settings, memory)
+
         return AgentResult(
             fetched_count=len(emails),
             skipped_count=len(emails) - len(fresh_emails) - deferred_count,
@@ -395,6 +409,7 @@ def process_items(
             report_path=report_path,
             instagram_count=instagram_count,
             published_count=published_count,
+            recovered_count=recovered_count,
         )
     finally:
         if owns_store:
@@ -486,9 +501,97 @@ def run_latest(settings: Settings) -> AgentResult:
     except ConnectionError as exc:
         _safe_print("Internet disconnected or offline. Sleeping until next cycle...")
         store.finish_run(run_id, "offline", str(exc))
-        return AgentResult(fetched_count=0, skipped_count=0, deferred_count=0, summarized_count=0, report_path=None, instagram_count=0, published_count=0)
+        return AgentResult(fetched_count=0, skipped_count=0, deferred_count=0, summarized_count=0, report_path=None, instagram_count=0, published_count=0, recovered_count=0)
     finally:
         store.close()
+
+def _retry_rejected_articles(settings: Settings, memory: MemoryStore | None) -> int:
+    """Auto-retry articles previously rejected by quality checks.
+
+    Pops articles whose 24 h cooldown has elapsed, re-scrapes the URL
+    for a fresh OG image, and if successful, enqueues them into the
+    Instagram carousel pipeline.
+    """
+    if memory is None:
+        return 0
+
+    articles = memory.pop_rejected_for_retry(min_retry_interval_hours=24, max_attempts=3, limit=10)
+    if not articles:
+        return 0
+
+    _safe_print(f"  [retry] Checking {len(articles)} previously rejected article(s) for recovery...")
+
+    from .ig_image import _fetch_og_image_from_url
+
+    rescued: list[dict] = []
+    for article in articles:
+        url = article.get("url") or article.get("_rejected_url", "")
+        title = article.get("title", "")
+        if not url:
+            continue
+
+        # Re-scrape URL for a fresh OG image
+        img_url = _fetch_og_image_from_url(url)
+        if img_url:
+            article["image_url"] = img_url
+            article["image_path"] = ""
+            rescued.append(article)
+            _safe_print(f"  [retry] RECOVERED: {title[:60]!r}")
+        else:
+            _safe_print(f"  [retry] Still no image for: {title[:60]!r}")
+            # pop_rejected_for_retry already incremented attempts + updated last_retried_at.
+            # If attempts >= max_attempts, it will stop being returned.
+
+    if not rescued:
+        _safe_print(f"  [retry] 0 of {len(articles)} recovered — all still missing OG images")
+        return 0
+
+    # Build a synthetic summary so the rescued articles flow through carousel generation
+    from .models import EmailSummary
+    from .instagram import write_instagram_carousels
+    from .publisher import write_publish_manifest, publish_ready_carousels
+
+    now_str = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S %z")
+    rescued_summary = EmailSummary(
+        message_key=f"rejected-retry-{datetime.now(timezone.utc).timestamp():.0f}",
+        subject="Recovered Articles",
+        source_date=now_str,
+        headline="Previously Rejected Articles Now Recovered",
+        summary="Articles recovered after re-scraping succeeded with fresh OG images.",
+        key_points=[a.get("title", "") for a in rescued],
+        companies=[],
+        models=[],
+        topics=[],
+        confidence=0.9,
+        article_items=rescued,
+    )
+
+    carousel_dirs = write_instagram_carousels(
+        [rescued_summary],
+        settings.instagram_dir,
+        clear_existing=False,
+        db_path=settings.db_path,
+        memory=memory,
+        enable_verification=settings.enable_verification,
+        max_verify_rounds=settings.max_verification_rounds,
+    )
+
+    if carousel_dirs:
+        manifest_path = write_publish_manifest(
+            carousel_dirs, settings.public_media_base_url,
+        )
+        if manifest_path:
+            publish_ready_carousels(settings, manifest_path)
+
+    # Mark rescued articles as recovered so they're excluded from future retries
+    for article in rescued:
+        url = article.get("url") or article.get("_rejected_url", "")
+        if url:
+            memory.resolve_rejected_article(url, "recovered")
+
+    _safe_print(f"  [retry] Recovered {len(rescued)} article(s) into {len(carousel_dirs)} carousel(s)")
+    return len(rescued)
+
 
 def _format_result(result: AgentResult) -> str:
     report = str(result.report_path) if result.report_path else "no new report"
@@ -496,7 +599,7 @@ def _format_result(result: AgentResult) -> str:
         f"Fetched: {result.fetched_count}, skipped: {result.skipped_count}, "
         f"deferred: {result.deferred_count}, summarized: {result.summarized_count}, "
         f"instagram carousels: {result.instagram_count}, published: {result.published_count}, "
-        f"report: {report}"
+        f"recovered: {result.recovered_count}, report: {report}"
     )
 
 

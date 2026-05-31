@@ -67,8 +67,6 @@ MAX_EMAILS_PER_RUN = 20
 CREATE_INSTAGRAM_POSTS = true
 ENRICH_ARTICLES = true
 AUTO_PUBLISH_INSTAGRAM = false
-OLLAMA_URL = http://localhost:11434
-OLLAMA_MODEL = mistral
 ```
 
 **⚠️ Important:**

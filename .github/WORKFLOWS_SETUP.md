@@ -21,15 +21,8 @@ To enable the `process-emails-scheduled.yml` workflow to work, you must configur
 - `MAX_EMAILS_PER_RUN` - Max emails per run (default: `20`)
 
 ### Content Generation Options
-- `SUMMARY_PROVIDER` - Summarizer to use: `auto`, `gemini`, `ollama`, or `local` (default: `auto`)
-- `GEMINI_API_KEY` - Optional Google AI Studio key for Gemini summaries
-- `GEMINI_MODEL` - Optional Gemini model override (default: `gemini-2.5-flash`)
 - `CREATE_INSTAGRAM_POSTS` - Generate Instagram posts (default: `true`)
 - `ENRICH_ARTICLES` - Fetch full article content (default: `true`)
-
-### Optional: Ollama Configuration
-- `OLLAMA_URL` - Ollama server URL (default: `http://localhost:11434`)
-- `OLLAMA_MODEL` - Model to use with Ollama (default: `mistral`)
 
 ### Optional: Instagram Auto-Publishing
 - `AUTO_PUBLISH_INSTAGRAM` - Enable auto-publishing (default: `false`)
@@ -57,16 +50,11 @@ EMAIL_SENDER_FILTER=grdevelopers.co@gmail.com
 EMAIL_FOLDER=INBOX
 LOOKBACK_HOURS=24
 POLL_INTERVAL_MINUTES=1
-SUMMARY_PROVIDER=auto
-GEMINI_API_KEY=
-GEMINI_MODEL=gemini-2.5-flash
 PROCESS_ALL_MATCHING=false
 MAX_EMAILS_PER_RUN=20
 CREATE_INSTAGRAM_POSTS=true
 ENRICH_ARTICLES=true
 AUTO_PUBLISH_INSTAGRAM=false
-OLLAMA_URL=http://localhost:11434
-OLLAMA_MODEL=mistral
 ```
 
 ## Workflow Descriptions

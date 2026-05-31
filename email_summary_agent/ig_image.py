@@ -114,10 +114,14 @@ def _select_unique_article_image(
     query_text = _tighten(_image_query_text(article, topic), 1200)
 
     article_url = str(article.get("url") or "")
-    if article_url and not article.get("image_url") and not article.get("image_path"):
+    if article_url and not article.get("_og_scraped"):
+        # Always attempt OG image extraction from the article URL,
+        # even if cached image_url/image_path exists from a prior run.
         scraped_url = _fetch_og_image_from_url(article_url)
         if scraped_url:
             article["image_url"] = scraped_url
+            article["image_path"] = ""  # invalidate cached fallback path
+        article["_og_scraped"] = True
 
     for kind, value in _same_article_image_candidates(article):
         if kind == "url":
@@ -163,11 +167,8 @@ def _select_unique_article_image(
             print(f"  [img] BEST-EFFORT library fallback for {title[:40]!r}: {path.name}")
             return last_resort
 
-    # No article image found — log diagnostic info to help debug
     _log_image_failure(article, title, topic)
-
     return ""
-
 
 def _log_image_failure(article: dict[str, Any], title: str, topic: str) -> None:
     """Log diagnostic details when no article-sourced image can be resolved."""
@@ -187,6 +188,241 @@ def _log_image_failure(article: dict[str, Any], title: str, topic: str) -> None:
 # ─────────────────────────────────────────────────────────────────────────────
 # og:image scraping
 # ─────────────────────────────────────────────────────────────────────────────
+
+# ── Bloomberg-specific user agents that bypass 403 ──
+_BLOOMBERG_CRAWLER_AGENTS = [
+    # Googlebot — the most reliable
+    "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+    # Twitterbot — allowed for link preview generation
+    "Twitterbot/1.0",
+    # Facebook crawler — allowed for link previews
+    "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)",
+    # LinkedIn crawler
+    "LinkedInBot/1.0 (compatible; Mozilla/5.0; +http://www.linkedin.com/robot.txt)",
+]
+
+
+def _is_bloomberg_url(url: str) -> bool:
+    """True when the URL is a Bloomberg article or feature page."""
+    if not url:
+        return False
+    lowered = url.lower()
+    return "bloomberg.com" in lowered and (
+        "/news/articles/" in lowered
+        or "/news/features/" in lowered
+        or "/news/newsletters/" in lowered
+        or "/opinion/articles/" in lowered
+        or "/graphics/" in lowered
+    )
+
+
+def _fetch_bloomberg_og_image(article_url: str) -> str:
+    """Extract a hero image from a Bloomberg article using multiple strategies.
+
+    Strategy flow:
+    1. Crawler user-agents — try Googlebot, Twitterbot, Facebook, LinkedIn
+       Allowed by Bloomberg for link preview generation.
+       Parse __NEXT_DATA__ JSON from the response for image URLs.
+    2. Google Cache — fetch from webcache.googleusercontent.com
+    3. Slug-based CDN construction — last resort fallback
+
+    Returns the absolute image URL, or empty string if all strategies fail.
+    """
+    if not article_url:
+        return ""
+
+    import json
+    import re
+    import urllib.parse
+
+    def _extract_next_data_image(html: str) -> str | None:
+        """Parse __NEXT_DATA__ <script> from Bloomberg page HTML and find image URLs."""
+        # Strategy 1a: Parse __NEXT_DATA__ JSON
+        m = re.search(
+            r'<script id="__NEXT_DATA__"[^>]*type="application/json"[^>]*>(.*?)</script>',
+            html, re.I | re.S,
+        )
+        if not m:
+            return None
+        try:
+            data = json.loads(m.group(1))
+        except json.JSONDecodeError:
+            return None
+
+        # Traverse the state tree looking for image URLs
+        # Common paths in Bloomberg's state: props.pageProps, etc.
+        def _walk(obj: Any, depth: int = 0) -> list[str]:
+            """Recursively walk the JSON tree collecting image URLs."""
+            results: list[str] = []
+            if depth > 8:
+                return results
+            if isinstance(obj, dict):
+                for key, val in obj.items():
+                    key_lower = key.lower()
+                    # Check image-related keys
+                    if key_lower in ("image", "images", "lede", "ledeimage", "socialimage", "thumbnail", "hero", "photo"):
+                        if isinstance(val, str) and val.startswith("http"):
+                            results.append(val)
+                        elif isinstance(val, dict):
+                            # Nested image object with url/contentUrl keys
+                            for sub_key in ("url", "contentUrl", "src", "srcset", "data-src"):
+                                sub_val = val.get(sub_key)
+                                if isinstance(sub_val, str) and sub_val.startswith("http"):
+                                    results.append(sub_val)
+                    # Recurse into dicts and lists
+                    results.extend(_walk(val, depth + 1))
+            elif isinstance(obj, list):
+                for item in obj:
+                    results.extend(_walk(item, depth + 1))
+            return results
+
+        found = _walk(data)
+        # Filter for Bloomberg CDN URLs, prefer the largest version
+        cdn_urls = [
+            u for u in found
+            if "assets.bwbx.io" in u and not any(term in u.lower() for term in ("logo", "icon", "favicon"))
+        ]
+        if cdn_urls:
+            # Return the first high-quality CDN URL
+            return cdn_urls[0]
+        # Fallback to any found image URL
+        for url in found:
+            if url.startswith("http") and not any(
+                term in url.lower() for term in ("logo", "icon", "favicon", "svg", "pixel", "tracking")
+            ):
+                return url
+        return None
+
+    def _extract_image_from_meta_or_json(html: str) -> str | None:
+        """Extract image from open-graph meta tags or JSON-LD in Bloomberg HTML."""
+        # og:image
+        for p in [
+            r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\'][^>]*>',
+            r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\'][^>]*>',
+        ]:
+            m = re.search(p, html, re.I)
+            if m:
+                url = m.group(1).strip()
+                if url.startswith("http") and "assets.bwbx.io" in url:
+                    return url
+        # twitter:image
+        for p in [
+            r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)["\'][^>]*>',
+            r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']twitter:image["\'][^>]*>',
+        ]:
+            m = re.search(p, html, re.I)
+            if m:
+                url = m.group(1).strip()
+                if url.startswith("http") and "assets.bwbx.io" in url:
+                    return url
+        # JSON-LD structured data
+        for jsm in re.finditer(
+            r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
+            html, re.I | re.S,
+        ):
+            try:
+                ld = json.loads(jsm.group(1))
+            except json.JSONDecodeError:
+                continue
+            items = ld if isinstance(ld, list) else [ld]
+            for item in items:
+                if not isinstance(item, dict):
+                    continue
+                for img_field in ("image", "thumbnailUrl", "thumbnail", "primaryImageOfPage"):
+                    val = item.get(img_field)
+                    if isinstance(val, str) and val.startswith("http") and "assets.bwbx.io" in val:
+                        return val
+                    if isinstance(val, dict):
+                        for sub_field in ("url", "contentUrl"):
+                            sub = val.get(sub_field)
+                            if isinstance(sub, str) and sub.startswith("http"):
+                                return sub
+        # link[rel=image_src]
+        m = re.search(r'<link[^>]+rel=["\']image_src["\'][^>]+href=["\']([^"\']+)["\'][^>]*>', html, re.I)
+        if m:
+            url = m.group(1).strip()
+            if url.startswith("http"):
+                return url
+        return None
+
+    def _try_google_cache(article_url: str) -> str | None:
+        """Try fetching the article via Google Cache and extracting images."""
+        import time
+        cache_url = f"https://webcache.googleusercontent.com/search?q=cache:{urllib.parse.quote(article_url)}&strip=1&vwsrc=0"
+        try:
+            req = urllib.request.Request(
+                cache_url,
+                headers={
+                    "User-Agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+                    "Accept": "text/html,application/xhtml+xml,*/*;q=0.8",
+                },
+            )
+            with urlopen_with_cert_fallback(req, timeout=15) as resp:
+                html = resp.read(500_000).decode("utf-8", errors="replace")
+            # First try __NEXT_DATA__ from cache response
+            result = _extract_next_data_image(html)
+            if result:
+                return result
+            # Fallback to meta tags
+            result = _extract_image_from_meta_or_json(html)
+            if result:
+                return result
+        except Exception:
+            pass
+        return None
+
+    # ── Strategy 1: Try each crawler user-agent ──
+    for ua in _BLOOMBERG_CRAWLER_AGENTS:
+        import time
+        headers = {
+            "User-Agent": ua,
+            "Accept": "text/html,application/xhtml+xml,image/webp,image/jpeg,image/png,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9",
+        }
+        raw_html = ""
+        for attempt in range(2):
+            try:
+                req = urllib.request.Request(article_url, headers=headers)
+                with urlopen_with_cert_fallback(req, timeout=20) as resp:
+                    raw_html = resp.read(500_000).decode("utf-8", errors="replace")
+                break
+            except Exception:
+                if attempt == 0:
+                    time.sleep(2)
+                    continue
+
+        if not raw_html or len(raw_html) < 500:
+            continue
+
+        # Check if we got a real page (not a paywall/403)
+        lower = raw_html.lower()
+        if any(term in lower for term in ("are you a robot", "access to this page has been denied", "enable javascript", "checking your browser")):
+            continue
+
+        # Try extracting from __NEXT_DATA__ first (most reliable)
+        result = _extract_next_data_image(raw_html)
+        if result:
+            print(f"  [img] Bloomberg: __NEXT_DATA__ extracted image via {ua.split('/')[0]} for {article_url[:60]}: ...{result[-50:]}")
+            return result
+
+        # Fallback to meta/JSON-LD extraction
+        result = _extract_image_from_meta_or_json(raw_html)
+        if result:
+            print(f"  [img] Bloomberg: meta extracted image via {ua.split('/')[0]} for {article_url[:60]}: ...{result[-50:]}")
+            return result
+
+        # If first crawler succeeded in getting the page but found no image, continue to next
+        # (Don't fall through to cache yet — try the next agent)
+
+    # ── Strategy 2: Google Cache (last resort for crawler-blocked pages) ──
+    result = _try_google_cache(article_url)
+    if result:
+        print(f"  [img] Bloomberg: Google Cache extraction for {article_url[:60]}: ...{result[-50:]}")
+        return result
+
+    print(f"  [img] Bloomberg: All strategies exhausted for {article_url[:60]}")
+    return ""
+
 
 def _is_low_value_image_candidate(value: str) -> bool:
     lowered = str(value or "").lower()
@@ -220,14 +456,35 @@ def _same_article_image_candidates(article: dict[str, Any]) -> list[tuple[str, s
 
 
 def _fetch_og_image_from_url(article_url: str) -> str:
-    """Scrape the article page and return the best image URL found."""
+    """Scrape the article page and return the best image URL found.
+
+    Uses a multi-strategy approach with 9 layers of fallbacks:
+    1. og:image / og:image:secure_url
+    2. twitter:image
+    3. article:image / news:image
+    4. link[rel=image_src]
+    5. JSON-LD structured data (@graph, ImageObject, thumbnail)
+    6. schema.org meta (itemprop=image)
+    7. First large <figure> or <img> in <article>/<main>/content areas
+    8. First <img> anywhere with large dimensions (width >= 400)
+    9. First <img> anywhere as absolute last resort
+
+    Handles relative URL resolution, low-value filters, and CDN patterns.
+    """
     if not article_url or not article_url.startswith(("http://", "https://")):
         return ""
+    
+    from urllib.parse import urljoin
+    
     headers = {
         "User-Agent": CHROME_USER_AGENT,
         "Accept": "text/html,application/xhtml+xml,image/webp,image/jpeg,image/png,*/*;q=0.8",
         "Accept-Language": "en-US,en;q=0.9",
     }
+    # ── Bloomberg bypass ──
+    if _is_bloomberg_url(article_url):
+        return _fetch_bloomberg_og_image(article_url)
+
     raw_html = ""
     for attempt in range(2):
         try:
@@ -242,54 +499,210 @@ def _fetch_og_image_from_url(article_url: str) -> str:
             print(f"  [img] _fetch_og_image_from_url failed for {article_url[:80]}: {exc}")
 
     if not raw_html:
+        print(f"  [img] No HTML content fetched for {article_url[:60]}")
         return ""
 
     import re
-    # 1. og:image
-    og = re.search(
+    
+    def _resolve(url: str) -> str:
+        """Resolve a potentially relative URL against the article URL."""
+        if not url:
+            return ""
+        url = url.strip()
+        if url.startswith(("http://", "https://", "//")):
+            if url.startswith("//"):
+                return f"https:{url}"
+            return url
+        if url.startswith("/"):
+            parsed = urllib.parse.urlparse(article_url)
+            return f"{parsed.scheme}://{parsed.netloc}{url}"
+        return urljoin(article_url, url)
+    
+    def _is_low_value(url: str) -> bool:
+        lowered = url.lower()
+        return any(
+            term in lowered
+            for term in (
+                "logo", "icon", "avatar", "pixel", "tracking", "badge",
+                "1x1", "spacer", "sprite", "placeholder", "transparent",
+                "favicon", "analytics", "beacon", "clear.gif",
+                "data:image", "svg+xml",
+            )
+        )
+    
+    def _has_img_ext(url: str) -> bool:
+        return any(ext in url.lower() for ext in (".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif"))
+    
+    found_urls: list[str] = []  # List of (priority, url) tuples
+    
+    # ── Strategy 1: og:image ──
+    for pattern in [
         r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\'][^>]*>',
-        raw_html, re.I,
-    )
-    if not og:
-        og = re.search(
-            r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\'][^>]*>',
-            raw_html, re.I,
-        )
-    if og:
-        img_url = og.group(1).strip()
-        if img_url.startswith(("http://", "https://")):
-            print(f"  [img] Found og:image for {article_url[:60]}: ...{img_url[-50:]}")
-            return img_url
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\'][^>]*>',
+        r'<meta[^>]+property=["\']og:image:secure_url["\'][^>]+content=["\']([^"\']+)["\'][^>]*>',
+    ]:
+        m = re.search(pattern, raw_html, re.I)
+        if m:
+            url = _resolve(m.group(1))
+            if url and not _is_low_value(url):
+                found_urls.append(url)
+                print(f"  [img] Found og:image for {article_url[:60]}: ...{url[-50:]}")
+                return url
 
-    # 2. twitter:image
-    tw = re.search(
+    # ── Strategy 2: twitter:image ──
+    for pattern in [
         r'<meta[^>]+(?:name|property)=["\']twitter:image["\'][^>]+content=["\']([^"\']+)["\'][^>]*>',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:name|property)=["\']twitter:image["\'][^>]*>',
+    ]:
+        m = re.search(pattern, raw_html, re.I)
+        if m:
+            url = _resolve(m.group(1))
+            if url and not _is_low_value(url):
+                found_urls.append(url)
+                print(f"  [img] Found twitter:image for {article_url[:60]}: ...{url[-50:]}")
+                return url
+
+    # ── Strategy 3: article:image / news:image ──
+    for pattern in [
+        r'<meta[^>]+property=["\']article:image["\'][^>]+content=["\']([^"\']+)["\'][^>]*>',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']article:image["\'][^>]*>',
+        r'<meta[^>]+property=["\']news:image["\'][^>]+content=["\']([^"\']+)["\'][^>]*>',
+    ]:
+        m = re.search(pattern, raw_html, re.I)
+        if m:
+            url = _resolve(m.group(1))
+            if url and not _is_low_value(url):
+                found_urls.append(url)
+                print(f"  [img] Found article:image for {article_url[:60]}: ...{url[-50:]}")
+                return url
+
+    # ── Strategy 4: link[rel=image_src] ──
+    m = re.search(
+        r'<link[^>]+rel=["\']image_src["\'][^>]+href=["\']([^"\']+)["\'][^>]*>',
         raw_html, re.I,
     )
-    if not tw:
-        tw = re.search(
-            r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:name|property)=["\']twitter:image["\'][^>]*>',
+    if not m:
+        m = re.search(
+            r'<link[^>]+href=["\']([^"\']+)["\'][^>]+rel=["\']image_src["\'][^>]*>',
             raw_html, re.I,
         )
-    if tw:
-        img_url = tw.group(1).strip()
-        if img_url.startswith(("http://", "https://")):
-            print(f"  [img] Found twitter:image for {article_url[:60]}: ...{img_url[-50:]}")
-            return img_url
+    if m:
+        url = _resolve(m.group(1))
+        if url and not _is_low_value(url):
+            found_urls.append(url)
+            print(f"  [img] Found image_src link for {article_url[:60]}: ...{url[-50:]}")
+            return url
 
-    # 3. First substantive <img> in article/main content area
+    # ── Strategy 5: JSON-LD structured data ──
+    for jsm in re.finditer(
+        r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
+        raw_html, re.I | re.S,
+    ):
+        try:
+            ld = json.loads(jsm.group(1))
+        except json.JSONDecodeError:
+            continue
+        # Handle @graph
+        items = ld.get("@graph", [ld]) if isinstance(ld, dict) else [ld]
+        if isinstance(ld, list):
+            items = ld
+        for item in items:
+            if not isinstance(item, dict):
+                continue
+            # Check various image fields
+            for img_field in ("image", "thumbnailUrl", "thumbnail", "primaryImageOfPage"):
+                val = item.get(img_field)
+                if not val:
+                    continue
+                if isinstance(val, str):
+                    url = _resolve(val)
+                    if url and not _is_low_value(url) and _has_img_ext(url):
+                        found_urls.append(url)
+                        print(f"  [img] Found JSON-LD image for {article_url[:60]}: ...{url[-50:]}")
+                        return url
+                elif isinstance(val, dict):
+                    for sub_field in ("url", "contentUrl", "content_url"):
+                        sub = val.get(sub_field, "")
+                        if sub:
+                            url = _resolve(str(sub))
+                            if url and not _is_low_value(url):
+                                found_urls.append(url)
+                                print(f"  [img] Found JSON-LD nested image for {article_url[:60]}: ...{url[-50:]}")
+                                return url
+    
+    # ── Strategy 6: schema.org itemprop=image ──
+    m = re.search(
+        r'<meta[^>]+itemprop=["\']image["\'][^>]+content=["\']([^"\']+)["\'][^>]*>',
+        raw_html, re.I,
+    )
+    if not m:
+        m = re.search(
+            r'<img[^>]+itemprop=["\']image["\'][^>]+src=["\']([^"\']+)["\'][^>]*>',
+            raw_html, re.I,
+        )
+    if m:
+        url = _resolve(m.group(1))
+        if url and not _is_low_value(url):
+            found_urls.append(url)
+            print(f"  [img] Found itemprop=image for {article_url[:60]}: ...{url[-50:]}")
+            return url
+
+    # ── Strategy 7: First large <figure> / <img> in content areas ──
     content_block = re.search(r'<(?:article|main)[^>]*>(.*?)</(?:article|main)>', raw_html, re.I | re.S)
     search_zone = content_block.group(1) if content_block else raw_html
+    
+    # Try <figure> first (often contains featured image)
+    for fig_match in re.finditer(r'<figure[^>]*>.*?<img[^>]+src=["\']([^"\']+)["\'][^>]*>.*?</figure>', search_zone, re.I | re.S):
+        src = fig_match.group(1).strip()
+        url = _resolve(src)
+        if url and not _is_low_value(url) and _has_img_ext(url):
+            found_urls.append(url)
+            print(f"  [img] Found <figure><img> for {article_url[:60]}: ...{url[-50:]}")
+            return url
+    
+    # Then try standalone <img> with width >= 400 or large-enough looking
     for img_match in re.finditer(r'<img[^>]+src=["\']([^"\']+)["\'][^>]*>', search_zone, re.I):
         src = img_match.group(1).strip()
-        if (
-            src.startswith(("http://", "https://"))
-            and any(ext in src.lower() for ext in (".jpg", ".jpeg", ".png", ".webp"))
-            and not any(skip in src.lower() for skip in ("logo", "icon", "avatar", "pixel", "tracking", "badge", "1x1", "spacer"))
-        ):
-            print(f"  [img] Found <img> tag in article body for {article_url[:60]}: ...{src[-50:]}")
-            return src
+        # Check for width attribute
+        width_attr = re.search(r'width=["\']?(\d+)["\']?', img_match.group(0), re.I)
+        img_width = int(width_attr.group(1)) if width_attr else 0
+        url = _resolve(src)
+        if not url or _is_low_value(url):
+            continue
+        if img_width >= 400 or (not width_attr and _has_img_ext(url)):
+            found_urls.append(url)
+            print(f"  [img] Found <img> in content for {article_url[:60]}: ...{url[-50:]}")
+            return url
 
+    # ── Strategy 8: Any <img> with width >= 400 anywhere in page ──
+    for img_match in re.finditer(
+        r'<img[^>]+src=["\']([^"\']+)["\'][^>]*>', raw_html, re.I,
+    ):
+        src = img_match.group(1).strip()
+        width_attr = re.search(r'width=["\']?(\d+)["\']?', img_match.group(0), re.I)
+        img_width = int(width_attr.group(1)) if width_attr else 0
+        url = _resolve(src)
+        if url and not _is_low_value(url) and img_width >= 400 and _has_img_ext(url):
+            found_urls.append(url)
+            print(f"  [img] Found large <img> for {article_url[:60]}: ...{url[-50:]}")
+            return url
+
+    # ── Strategy 9: Absolute last resort - any <img> with image extension ──
+    for img_match in re.finditer(
+        r'<img[^>]+src=["\']([^"\']+)["\'][^>]*>', raw_html, re.I,
+    ):
+        src = img_match.group(1).strip()
+        url = _resolve(src)
+        if url and not _is_low_value(url) and _has_img_ext(url):
+            found_urls.append(url)
+            print(f"  [img] Found last-resort <img> for {article_url[:60]}: ...{url[-50:]}")
+            return url
+
+    if found_urls:
+        best = found_urls[0]
+        print(f"  [img] Using best-effort image for {article_url[:60]}: ...{best[-50:]}")
+        return best
+        
     print(f"  [img] No image found in {article_url[:60]}")
     return ""
 

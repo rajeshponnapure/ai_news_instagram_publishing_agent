@@ -383,14 +383,83 @@ def _extract_instagram_key_points(
         ).strip()
         # Remove trailing AI-sounding patterns
         t = re.sub(r"\s*[-–—]?\s*(?:and\s+)?(?:this (?:means|shows|highlights|demonstrates|suggests)\b.*)$", "", t, flags=re.I).strip()
+        # Smart length management: keep keypoints punchy for Instagram layout.
+        # Target ~14-16 words with clean clause-boundary breaks.
+        # The display layer (layout_safe_points / _trim_no_dots) has its own
+        # character-based truncation, so we must NOT produce sentence fragments.
+        max_words = 16
         words = t.split()
-        if len(words) > 14:
-            t = " ".join(words[:14])
+        if len(words) > max_words:
+            truncated = " ".join(words[:max_words])
+            # Preferred: break at a sentence boundary inside the window.
+            # Use period+space to avoid matching decimal points ("99.2%").
+            did_break = False
+            for delim in (". ", "! ", "? "):
+                idx = truncated.rfind(delim)
+                if idx > 5:
+                    t = truncated[: idx + 1]
+                    did_break = True
+                    break
+            if not did_break:
+                # Edge case: trailing period. Check it's NOT preceded by a digit
+                # (which indicates a number like "99.2%" where the % fell out).
+                if truncated.endswith("."):
+                    # If the char before last period is NOT a digit, it's end-of-sentence
+                    before_period = truncated.rstrip(".")
+                    if before_period and not re.search(r"\d$", before_period.rstrip()[-6:]):
+                        t = truncated
+                        did_break = True
+                if not did_break:
+                    # Fallback 1: clause break (em-dash, semicolon)
+                    for delim in (" — ", " – ", ";"):
+                        idx = truncated.rfind(delim)
+                        if idx > 5:
+                            t = truncated[:idx] + "."
+                            did_break = True
+                            break
+                if not did_break:
+                    # Fallback 2: comma followed by participial/subordinating word
+                    CLAUSE_TRIGGERS = frozenset({
+                        "positioning", "making", "bringing", "creating",
+                        "marking", "which", "while", "with", "including",
+                        "featuring", "offering", "providing", "setting",
+                        "driving", "using", "following", "pushing",
+                        "giving", "enabling", "allowing", "turning",
+                        "keeping", "leading", "according",
+                    })
+                    for split_idx in range(max_words - 2, 5, -1):
+                        w = words[split_idx]
+                        if w.endswith(",") and split_idx + 1 < len(words):
+                            nxt = words[split_idx + 1].lower().strip(".,;:!?\"'()[]{}")
+                            if nxt in CLAUSE_TRIGGERS:
+                                t = " ".join(words[:split_idx + 1]).rstrip(" ,;") + "."
+                                did_break = True
+                                break
+                if not did_break:
+                    # Fallback 3: keep fewer words ending at a clean word
+                    CLEAN_ENDINGS = frozenset({
+                        "announced", "launched", "released", "unveiled",
+                        "shipped", "published", "introduced", "reported",
+                        "added", "today", "yesterday", "now", "available",
+                        "live", "users", "customers", "developers",
+                        "companies", "market", "research",
+                    })
+                    for n in range(max_words, 7, -1):
+                        last = words[n - 1].rstrip(".,;:!?\"'()[]{}").lower()
+                        if last in CLEAN_ENDINGS:
+                            t = " ".join(words[:n]).rstrip(" ,;:-–—") + "."
+                            did_break = True
+                            break
+                if not did_break:
+                    # Last resort — keep the full complete sentence.
+                    # A long complete thought is preferable to a fragment.
+                    pass
         t = t.strip(" -–—,;:·•")
         if not t:
             return ""
         t = t[0].upper() + t[1:]
-        t = re.sub(r"[\s.,;:\-–—]+$", "", t)
+        # Only strip trailing punctuation that isn't a sentence-ending period
+        t = re.sub(r"[\s,;:\-–—]+$", "", t)
         if t and t[-1] not in "!?":
             t += "."
         return t
@@ -550,7 +619,7 @@ def _extract_instagram_key_points(
                 if len(novel) >= 4:
                     break
 
-    final = layout_safe_points([_trim_no_dots(pt, 150) for pt in novel], limit=max_points)
+    final = layout_safe_points([_trim_no_dots(pt, 220) for pt in novel], limit=max_points)
     labels_used: set[str] = set()
     final = [
         styled for styled in (_make_creator_style_point(pt, labels_used) for pt in final)

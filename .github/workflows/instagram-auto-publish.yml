@@ -75,9 +75,7 @@ jobs:
       IMAP_PASSWORD: ${{ secrets.IMAP_PASSWORD }}
       EMAIL_SENDER_FILTER: ${{ secrets.EMAIL_SENDER_FILTER || 'grdevelopers.co@gmail.com' }}
       EMAIL_FOLDER: INBOX
-      SUMMARY_PROVIDER: auto
-      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      GEMINI_MODEL: ${{ secrets.GEMINI_MODEL || 'gemini-2.5-flash' }}
+      SUMMARY_PROVIDER: local
       PROCESS_ALL_MATCHING: 'false'
       LOOKBACK_HOURS: '48'
       EMAIL_CHECK_INTERVAL_MINUTES: '25'

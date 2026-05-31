@@ -172,18 +172,8 @@ Click **New repository secret** and add these:
 
 | Secret Name | Default | Description |
 |------------|---------|-------------|
-| `SUMMARY_PROVIDER` | `auto` | Use `auto`, `gemini`, `ollama`, or `local` |
-| `GEMINI_API_KEY` | empty | Optional Google AI Studio key for Gemini summaries |
-| `GEMINI_MODEL` | `gemini-2.5-flash` | Gemini model used when Gemini is enabled |
 | `CREATE_INSTAGRAM_POSTS` | `true` | Generate Instagram carousels |
 | `ENRICH_ARTICLES` | `true` | Fetch full article content |
-
-#### 🤖 Ollama (Optional - for better AI)
-
-| Secret Name | Default | Description |
-|------------|---------|-------------|
-| `OLLAMA_URL` | `http://localhost:11434` | Ollama server URL |
-| `OLLAMA_MODEL` | `mistral` | Model name |
 
 #### 📱 Instagram Auto-Publishing (Optional)
 
@@ -207,16 +197,12 @@ EMAIL_SENDER_FILTER=grdevelopers.co@gmail.com
 EMAIL_FOLDER=INBOX
 LOOKBACK_HOURS=24
 POLL_INTERVAL_MINUTES=1
-SUMMARY_PROVIDER=auto
-GEMINI_API_KEY=
-GEMINI_MODEL=gemini-2.5-flash
+SUMMARY_PROVIDER=local
 PROCESS_ALL_MATCHING=false
 MAX_EMAILS_PER_RUN=20
 CREATE_INSTAGRAM_POSTS=true
 ENRICH_ARTICLES=true
 AUTO_PUBLISH_INSTAGRAM=false
-OLLAMA_URL=http://localhost:11434
-OLLAMA_MODEL=mistral
 ```
 
 ---

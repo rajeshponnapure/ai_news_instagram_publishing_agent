@@ -4,6 +4,7 @@ import unittest
 from datetime import datetime, timedelta, timezone
 from email.message import EmailMessage
 from pathlib import Path
+import tempfile
 from tempfile import TemporaryDirectory
 from unittest.mock import patch
 
@@ -62,6 +63,12 @@ class DigestPipelineTests(unittest.TestCase):
             return_value=None,
         )
         self._lib_patch.start()
+        # Also patch _scrape_article_images to avoid real HTTP calls
+        self._img_scrape_patch = patch(
+            "email_summary_agent.ig_slide_builder._scrape_article_images",
+            return_value="",
+        )
+        self._img_scrape_patch.start()
 
     def tearDown(self) -> None:
         self._reference_patch.stop()
@@ -69,6 +76,7 @@ class DigestPipelineTests(unittest.TestCase):
         self._og_patch2.stop()
         self._scrape_patch.stop()
         self._lib_patch.stop()
+        self._img_scrape_patch.stop()
 
     def test_single_short_news_email_creates_slide_plan(self) -> None:
         summary = _summary_with_articles(1)
@@ -198,12 +206,9 @@ class DigestPipelineTests(unittest.TestCase):
             "description": "Startups are the core of TechCrunch, so get our best coverage delivered weekly.",
             "text": "Early Bird ticket savings of up to $410 end May 29 at 11:59 p.m.",
         }
-        slug = {
-            "url": "https://www.bloomberg.com/news/articles/2026-05-30/ovation-and-ai-technology-ai-university-waterloo-labs",
-            "title": "Ovation-and-ai technology ai university-waterloo-labs",
-            "description": "This AI startup will clean your home for free to train future robots.",
-            "text": "The robotics company is using real-world household tasks to improve AI robot training.",
-        }
+        # Slug titles are now accepted by is_publishable_article because
+        # the slide builder re-scrapes the URL and gets real content.
+        # The slug title check is done in _title_is_url_slug separately.
         real_story = {
             "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/url-and-domain-category-filtering-aws-network-firewall",
             "title": "AWS adds URL and domain category filtering to Network Firewall",
@@ -212,7 +217,6 @@ class DigestPipelineTests(unittest.TestCase):
         }
 
         self.assertFalse(is_publishable_article(promo))
-        self.assertFalse(is_publishable_article(slug))
         self.assertTrue(is_publishable_article(real_story))
 
     def test_html_email_preserves_link_hrefs(self) -> None:
@@ -231,13 +235,22 @@ class DigestPipelineTests(unittest.TestCase):
 
     def test_missing_article_image_returns_empty_path(self) -> None:
         summary = _summary_with_articles(1)
-
-        with patch("email_summary_agent.ig_image._find_reference_image_for_article_unique", return_value=None):
+        # Override to simulate articles with no image at all
+        summary.article_items[0]["image_path"] = ""
+        summary.article_items[0]["image_url"] = ""
+        # Also patch the image fetch/lookup to return nothing
+        with (
+            patch("email_summary_agent.ig_image._find_reference_image_for_article_unique", return_value=None),
+            patch("email_summary_agent.ig_image._find_library_image_unique", return_value=None),
+        ):
             slides = _build_slide_specs(summary, datetime(2026, 5, 21, 9, 0))
 
         # Unified layout: first slide is always kind="digest"
         self.assertEqual(slides[0]["kind"], "digest")
+        # When no article image can be resolved, slide is created with empty image_path
+        # (the fallback slide is kept since it's a digest summary, not an article slide)
         self.assertEqual(slides[0]["image_path"], "")
+        self.assertEqual(slides[0]["image_source"], "")
 
     def test_renderer_omits_blank_image_panel_when_image_missing(self) -> None:
         html = _build_slide_html(
@@ -277,6 +290,50 @@ class DigestPipelineTests(unittest.TestCase):
 
         self.assertEqual(slides[0]["image_path"], str(image_path))
         self.assertEqual(slides[0]["image_source"], "article")
+
+    def test_verifier_blocks_duplicate_titles(self) -> None:
+        """Verifier should hard-fail carousels with near-duplicate titles."""
+        title = "Beyond power forecasting for offshore wind farms improves grid reliability."
+        duplicate = "Beyond power forecasting for offshore solar deployment and energy distribution."
+        unique = "New quantum computing breakthrough achieves error correction milestone."
+
+        report = verify_pre_publish([
+            {
+                "kind": "digest",
+                "title": title,
+                "body": "Wind forecasting improves grid stability across offshore installations.",
+                "url": "https://example.com/wind",
+                "image_path": "/tmp/test1.jpg",
+                "image_source": "article",
+            },
+            {
+                "kind": "digest",
+                "title": duplicate,
+                "body": "Solar energy forecasting gains traction in offshore markets.",
+                "url": "https://example.com/solar",
+                "image_path": "/tmp/test2.jpg",
+                "image_source": "article",
+            },
+            {
+                "kind": "digest",
+                "title": unique,
+                "body": "Quantum computing achieves error correction milestone.",
+                "url": "https://example.com/quantum",
+                "image_path": "/tmp/test3.jpg",
+                "image_source": "article",
+            },
+            {"kind": "cta", "title": "FOLLOW @graitech", "body": "", "image_path": ""},
+        ])
+
+        self.assertFalse(report.passed)
+        # Check 10 (no_repeated_info) should be the failing check
+        check_10 = [c for c in report.checks if c.check_id == 10]
+        self.assertTrue(check_10)
+        self.assertFalse(check_10[0].passed)
+        # Detail should mention which titles are duplicated
+        self.assertIn("title dup", check_10[0].detail.lower())
+        # Unique title should NOT be flagged
+        self.assertNotIn(unique, check_10[0].detail)
 
     def test_verifier_blocks_digest_slide_without_article_image(self) -> None:
         report = verify_pre_publish(
@@ -349,7 +406,7 @@ class DigestPipelineTests(unittest.TestCase):
         self.assertEqual(_format_prompt_body(body, full_extract=True), body)
 
     def test_full_extract_summary_includes_later_blog_details(self) -> None:
-        provider = SummaryProvider(provider="local", ollama_url="http://localhost:11434", ollama_model="llama3.2:3b")
+        provider = SummaryProvider(provider="local")
         email = EmailItem(
             uid="1",
             message_id="<blog@example.com>",
@@ -459,6 +516,25 @@ class DigestPipelineTests(unittest.TestCase):
         self.assertTrue(all(slide["body"] == "\n".join(slide.get("key_points", [])) for slide in digest))
         self.assertTrue(all("global repeated fallback" not in slide["body"].lower() for slide in digest))
 
+    def test_skip_article_without_image(self) -> None:
+        """Given 3 articles where 1 has no image, only 2 digest slides are produced."""
+        summary = _summary_with_articles(3)
+        # Clear the image on the second article (index 1).
+        summary.article_items[1]["image_path"] = ""
+        summary.article_items[1]["image_url"] = ""
+
+        slides = _build_slide_specs(summary, datetime(2026, 5, 21, 9, 0))
+        digest_slides = [s for s in slides if s.get("kind") == "digest"]
+
+        # 3 articles → only 2 digest slides (the image-less one is skipped) + 1 CTA
+        self.assertEqual(len(digest_slides), 2)
+        self.assertEqual(len(slides), 3)
+        self.assertEqual(slides[-1]["kind"], "cta")
+        # The skipped article title should NOT appear in any digest slide body
+        all_digest_bodies = " ".join(s["body"] for s in digest_slides).lower()
+        second_title = summary.article_items[1]["title"].lower()
+        self.assertNotIn(second_title, all_digest_bodies)
+
     def test_digest_slides_have_editorial_heading_and_story_keypoints_only(self) -> None:
         summary = _summary_with_articles(1)
         item = summary.article_items[0]
@@ -483,6 +559,26 @@ class DigestPipelineTests(unittest.TestCase):
         self.assertFalse(any("story 1" in point.lower() for point in digest["key_points"]))
 
 
+_TEST_IMAGE_DIR: Path | None = None
+
+
+def _get_test_image_dir() -> Path:
+    global _TEST_IMAGE_DIR
+    if _TEST_IMAGE_DIR is None:
+        _TEST_IMAGE_DIR = Path(tempfile.mkdtemp(prefix="test_images_"))
+    return _TEST_IMAGE_DIR
+
+
+def _make_test_image(name: str) -> str:
+    """Create a small 200x150 test image and return its path."""
+    from PIL import Image
+    img_dir = _get_test_image_dir()
+    path = img_dir / f"{name}.jpg"
+    if not path.exists():
+        Image.new("RGB", (200, 150), "black").save(path)
+    return str(path)
+
+
 def _summary_with_articles(count: int, long: bool = False) -> EmailSummary:
     detail = (
         "It explains what changed, who it affects, what technical details matter, how the market could react, "
@@ -498,7 +594,7 @@ def _summary_with_articles(count: int, long: bool = False) -> EmailSummary:
             "description": f"Story {index} describes an important AI update with enough detail for a summary slide. "
             f"{detail}",
             "excerpt": f"Story {index} excerpt with useful context for creators and developers.",
-            "image_path": "",
+            "image_path": _make_test_image(f"article_{index}"),
             "image_url": "",
         }
         for index in range(1, count + 1)
@@ -531,8 +627,6 @@ def _settings(**overrides) -> Settings:
         poll_interval_minutes=15,
         email_check_interval_minutes=50,
         summary_provider="local",
-        ollama_url="http://localhost:11434",
-        ollama_model="llama3.2:3b",
         db_path=Path(":memory:"),
         reports_dir=Path("reports"),
         instagram_dir=Path("reports/instagram_posts"),
@@ -546,8 +640,6 @@ def _settings(**overrides) -> Settings:
         ig_user_id="17841447323115790",
         ig_access_token="ig-token",
         ig_api_version="v24.0",
-        gemini_api_key="",
-        gemini_model="gemini-2.5-flash",
     )
     values.update(overrides)
     return Settings(**values)

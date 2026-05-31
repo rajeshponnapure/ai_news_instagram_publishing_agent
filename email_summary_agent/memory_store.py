@@ -131,8 +131,27 @@ class MemoryStore:
                 report_json TEXT,
                 created_at TEXT
             );
+
+            CREATE TABLE IF NOT EXISTS rejected_articles (
+                url TEXT PRIMARY KEY,
+                title TEXT,
+                raw_json TEXT,
+                reason TEXT,
+                source_email_subject TEXT,
+                rejected_at TEXT,
+                attempts INTEGER DEFAULT 0,
+                last_retried_at TEXT,
+                resolution TEXT DEFAULT 'pending'
+            );
             """
         )
+        # Migrate existing DBs: add resolution column if missing
+        try:
+            self.conn.execute("ALTER TABLE rejected_articles ADD COLUMN resolution TEXT DEFAULT 'pending'")
+            self.conn.commit()
+        except sqlite3.OperationalError:
+            pass  # column already exists
+
         self.conn.commit()
 
     # ── stories ───────────────────────────────────────────────────────────────
@@ -362,6 +381,133 @@ class MemoryStore:
     def carryover_count(self) -> int:
         row = self.conn.execute("SELECT COUNT(*) AS n FROM carryover_articles").fetchone()
         return int(row["n"]) if row else 0
+
+    # ── rejected articles (catch-all for quality-filter drops) ──────────────────
+
+    def save_rejected_article(
+        self, *, url: str, title: str, article: dict, reason: str, source_email_subject: str = ""
+    ) -> None:
+        """Persist an article that failed quality checks for later re-evaluation."""
+        if not url.startswith(("http://", "https://")):
+            return  # URL is required for retry
+        # Use ON CONFLICT so attempts are preserved/incremented on re-rejection
+        # (INSERT OR REPLACE would reset attempts to 0).
+        self.conn.execute(
+            "INSERT INTO rejected_articles (url, title, raw_json, reason, "
+            "source_email_subject, rejected_at, attempts) VALUES (?, ?, ?, ?, ?, ?, 1) "
+            "ON CONFLICT(url) DO UPDATE SET "
+            "  raw_json = excluded.raw_json, reason = excluded.reason, "
+            "  source_email_subject = excluded.source_email_subject, "
+            "  rejected_at = excluded.rejected_at, "
+            "  attempts = attempts + 1",
+            (url, title, json.dumps(article, ensure_ascii=True), reason,
+             source_email_subject, _now()),
+        )
+        self.conn.commit()
+
+    def get_rejected_count(self) -> int:
+        """Return how many rejected articles are waiting for retry."""
+        row = self.conn.execute("SELECT COUNT(*) AS n FROM rejected_articles").fetchone()
+        return int(row["n"]) if row else 0
+
+    def resolve_rejected_article(self, url: str, resolution: str = 'recovered') -> None:
+        """Mark a rejected article as resolved (recovered or exhausted).
+
+        Resolved articles are excluded from future ``pop_rejected_for_retry`` calls.
+        """
+        self.conn.execute(
+            "UPDATE rejected_articles SET resolution = ?, last_retried_at = ? WHERE url = ?",
+            (resolution, _now(), url),
+        )
+        self.conn.commit()
+
+    def pop_rejected_for_retry(self, *, min_retry_interval_hours: int = 24, max_attempts: int = 3, limit: int = 20) -> list[dict]:
+        """Pop articles that are eligible for retry (cooldown elapsed, not exhausted).
+
+        Returns article dicts with '_rejected_url', '_rejected_reason', and
+        '_rejected_attempts' keys added so the recovery pipeline can report
+        on retry outcomes.
+        """
+        # Compute a cutoff in the past: "don't retry if retried less than N hours ago"
+        cutoff = (datetime.now(timezone.utc) - timedelta(hours=min_retry_interval_hours)).isoformat(timespec="seconds")
+        rows = self.conn.execute(
+            "SELECT url, title, raw_json, reason, attempts "
+            "FROM rejected_articles "
+            "WHERE attempts < ? "
+            "AND (resolution IS NULL OR resolution = 'pending') "
+            "AND (last_retried_at IS NULL OR last_retried_at < ?) "
+            "ORDER BY rejected_at ASC LIMIT ?",
+            (max_attempts, cutoff, limit),
+        ).fetchall()
+        result = []
+        for r in rows:
+            try:
+                article = json.loads(r["raw_json"])
+            except (TypeError, json.JSONDecodeError):
+                article = {"url": r["url"], "title": r["title"]}
+            article["_rejected_url"] = r["url"]
+            article["_rejected_reason"] = r["reason"]
+            article["_rejected_attempts"] = r["attempts"]
+            result.append(article)
+            self.conn.execute(
+                "UPDATE rejected_articles SET attempts = attempts + 1, last_retried_at = ? WHERE url = ?",
+                (_now(), r["url"]),
+            )
+        self.conn.commit()
+        return result
+
+    def clear_rejected(self) -> int:
+        """Remove all rejected articles (after successful recovery)."""
+        row = self.conn.execute("SELECT COUNT(*) AS n FROM rejected_articles").fetchone()
+        count = int(row["n"]) if row else 0
+        self.conn.execute("DELETE FROM rejected_articles")
+        self.conn.commit()
+        return count
+
+    def count_rejected_by_reason(self) -> dict[str, int]:
+        """Return breakdown of why articles were rejected (pending only)."""
+        by_reason: dict[str, int] = {}
+        for r in self.conn.execute(
+            "SELECT reason, COUNT(*) AS n FROM rejected_articles "
+            "WHERE resolution IS NULL OR resolution = 'pending' "
+            "GROUP BY reason ORDER BY n DESC"
+        ):
+            by_reason[str(r["reason"])] = int(r["n"])
+        return by_reason
+
+    def get_retry_summary(self, max_attempts: int = 3) -> dict[str, dict[str, int]]:
+        """Return counts by reason category broken down by resolution status.
+
+        Infers ``exhausted`` from ``attempts >= max_attempts`` when no
+        explicit resolution was set (e.g. for articles created before the
+        ``resolution`` column was added).
+
+        Returns nested dict::
+
+            {
+                'quality_filter': {'pending': 3, 'recovered': 2, 'exhausted': 1},
+                'promo_pattern':  {'pending': 1, 'recovered': 0, 'exhausted': 2},
+            }
+        """
+        by_reason: dict[str, dict[str, int]] = {}
+        for r in self.conn.execute(
+            "SELECT reason, "
+            "  CASE "
+            "    WHEN COALESCE(resolution, 'pending') = 'recovered' THEN 'recovered' "
+            "    WHEN COALESCE(resolution, 'pending') = 'exhausted' THEN 'exhausted' "
+            "    WHEN attempts >= ? THEN 'exhausted' "
+            "    ELSE 'pending' "
+            "  END AS res, "
+            "  COUNT(*) AS n "
+            "FROM rejected_articles GROUP BY reason, res ORDER BY reason, res",
+            (max_attempts,),
+        ):
+            reason = str(r["reason"])
+            res = str(r["res"])
+            if reason not in by_reason:
+                by_reason[reason] = {'pending': 0, 'recovered': 0, 'exhausted': 0}
+            by_reason[reason][res] = int(r["n"])
+        return by_reason
 
     # ── verification audit ───────────────────────────────────────────────────────
 

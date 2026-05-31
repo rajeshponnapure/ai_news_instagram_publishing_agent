@@ -48,8 +48,6 @@ jobs:
         env:
           CREATE_INSTAGRAM_POSTS: 'false'
           AUTO_PUBLISH_INSTAGRAM: 'false'
-          OLLAMA_URL: ''
-          OLLAMA_MODEL: ''
         run: |
           export PYTHONPATH='.'
           python -m email_summary_agent --sample

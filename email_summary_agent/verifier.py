@@ -49,7 +49,7 @@ _GENERIC_PATTERNS = [
     r"lost page, still warm light",
 ]
 
-HARD_FAIL_CHECKS = {2, 4, 5, 6, 7, 9, 11, 12}
+HARD_FAIL_CHECKS = {2, 4, 5, 6, 7, 9, 10, 11}
 CONFIDENCE_THRESHOLD = 0.75
 MAX_VERIFICATION_ROUNDS = 2
 
@@ -410,17 +410,48 @@ def verify_pre_publish(
             break
     checks.append(CheckResult(9, "no_generic_filler", no_filler, filler_score, filler_detail))
 
-    # 10. No repeated info across slides
+    # 10. No duplicate slide titles (content slides only)
+    #   Uses a two-pronged check:
+    #   (a) Full-title cosine similarity (catches near-identical titles)
+    #   (b) First-5-token prefix overlap (catches truncated-style duplicates
+    #       like "Beyond power forecasting for offshore wind..." vs
+    #       "Beyond power forecasting for offshore solar...")
     no_repeat = True
     repeat_score = 1.0
-    for i in range(len(info["titles"])):
-        for j in range(i + 1, len(info["titles"])):
-            if info["titles"][i] and info["titles"][j] and \
-               ts.cosine(info["titles"][i], info["titles"][j]) >= 0.85:
+    repeat_detail = ""
+    content_titles = [
+        t for t, k in zip(info["titles"], info["kinds"]) if k == "digest"
+    ]
+    for i in range(len(content_titles)):
+        for j in range(i + 1, len(content_titles)):
+            t_i = content_titles[i]
+            t_j = content_titles[j]
+            if not t_i or not t_j:
+                continue
+            # (a) Full-title cosine similarity
+            cos_sim = ts.cosine(t_i, t_j)
+            if cos_sim >= 0.75:
                 no_repeat = False
-                repeat_score = 0.0
+                repeat_score = max(0.0, 1.0 - cos_sim)
+                repeat_detail = f"title dup: {t_i[:50]} ~ {t_j[:50]} (cos={cos_sim:.2f})"
                 break
-    checks.append(CheckResult(10, "no_repeated_info", no_repeat, repeat_score, ""))
+            # (b) First-5-content-token prefix overlap — catches titles that
+            #     share a long prefix but diverge in their second half.
+            ti_tokens = ts.tokens(t_i, drop_stopwords=True)
+            tj_tokens = ts.tokens(t_j, drop_stopwords=True)
+            ti_prefix = set(ti_tokens[:5])
+            tj_prefix = set(tj_tokens[:5])
+            if ti_prefix and tj_prefix:
+                overlap = len(ti_prefix & tj_prefix)
+                prefix_max = max(len(ti_prefix), len(tj_prefix))
+                if overlap / prefix_max >= 0.6:
+                    no_repeat = False
+                    repeat_score = max(0.0, 1.0 - (overlap / prefix_max))
+                    repeat_detail = f"title dup: {t_i[:50]} ~ {t_j[:50]} (prefix overlap {overlap}/{prefix_max})"
+                    break
+        if not no_repeat:
+            break
+    checks.append(CheckResult(10, "no_repeated_info", no_repeat, repeat_score, repeat_detail))
 
     # 11. All summaries unique
     summaries = [str(s.get("body", "")) for s in content_slides if s.get("body")]

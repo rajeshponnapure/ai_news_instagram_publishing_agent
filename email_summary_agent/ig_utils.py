@@ -143,16 +143,29 @@ def _tighten(text: str, limit: int) -> str:
 
 
 def _trim_no_dots(text: str, limit: int) -> str:
-    """Trim text to a word boundary without adding trailing dots."""
+    """Trim text to a word boundary without producing sentence fragments.
+
+    Finds the last complete sentence within the limit, or falls back to the
+    last word boundary. Always ends with a period (never '...' or mid-word).
+    """
     text = re.sub(r"\s+", " ", text or "").strip().rstrip(".…")
     if len(text) <= limit:
         if text and text[-1] not in ".!?":
             text = text + "."
         return text
-    truncated = text[:limit].rsplit(" ", 1)[0].rstrip(".,;:—-")
-    if truncated and truncated[-1] not in ".!?":
-        truncated = truncated + "."
-    return truncated
+    window = text[:limit]
+    # Try to find the last complete sentence boundary within the window
+    for delim in (".", "!", "?"):
+        idx = window.rfind(delim)
+        if idx > limit // 2:
+            return window[: idx + 1].strip()
+    # Fallback: word boundary with clean ending
+    truncated = window.rsplit(" ", 1)[0].rstrip(".,;:—-")
+    if truncated:
+        if truncated[-1] not in ".!?":
+            truncated = truncated + "."
+        return truncated
+    return text[:limit].rstrip(".,;: ") + "."
 
 
 def _source_label_from_url(url: str) -> str:

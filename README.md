@@ -25,8 +25,7 @@ Transform AI news emails into beautifully formatted Instagram carousel posts. Th
 ### 🧠 Local AI Summarization
 - **Zero External APIs**: All summarization happens locally on your machine
 - **Dual-Engine Support**: 
-  - **Ollama Integration** (Optional): Use powerful local LLMs for intelligent summaries
-  - **Fallback NLP**: Built-in summarization engine requires no setup
+  - **Built-in NLP Summarization**: Zero-dependency local summarization engine requires no setup
 - **Article Extraction**: Automatically fetches and parses real article content
 - **Smart Enrichment**: Extracts key metadata, links, and insights from articles
 
@@ -56,7 +55,7 @@ Transform AI news emails into beautifully formatted Instagram carousel posts. Th
 ### Prerequisites
 - **Python 3.10+** (download from [python.org](https://www.python.org/downloads/))
 - **Gmail Account** with IMAP enabled
-- **Optional**: [Ollama](https://ollama.ai/) for local LLM summarization
+
 
 ### 1️⃣ Setup (.env Configuration)
 
@@ -171,13 +170,7 @@ MAX_EMAILS_PER_RUN=20
 # Processing
 POLL_INTERVAL_MINUTES=1
 PROCESS_ALL_MATCHING=false
-SUMMARY_PROVIDER=auto  # "auto" | "gemini" | "ollama" | "local"
-GEMINI_API_KEY=
-GEMINI_MODEL=gemini-2.5-flash
-
-# Ollama (Optional, for local LLM)
-OLLAMA_URL=http://localhost:11434
-OLLAMA_MODEL=mistral
+SUMMARY_PROVIDER=local
 
 # Output Generation
 CREATE_INSTAGRAM_POSTS=true
@@ -213,16 +206,6 @@ This project uses **only standard Python libraries** by default:
 - No paid API calls
 - No cloud storage fees
 - No LLM service subscriptions
-
-### Optional: Ollama for Local LLM
-For better AI summarization, install **[Ollama](https://ollama.ai/)**:
-```bash
-# Download and run Ollama (free, open-source)
-# Then pull a model:
-ollama pull mistral
-```
-
-The agent auto-detects Ollama and uses it if available. Without Ollama, it falls back to built-in NLP.
 
 ### Python Requirements
 - **Python 3.10+** (for modern language features)
@@ -266,7 +249,7 @@ Article Link Extraction
     ↓
 Web Scraping & Content Extraction
     ↓
-Local Summarization (Ollama or NLP)
+Local Summarization
     ↓
 Markdown Report Generation
     ↓
@@ -356,8 +339,7 @@ reports/
 - Review logs in `logs/` directory
 
 ### Issue: "Poor summary quality"
-- Install Ollama and pull a model for better summarization
-- Adjust `SUMMARY_PROVIDER` in `.env`
+
 - Check internet connection for article fetching
 
 ### Issue: "Instagram posting failed"
@@ -422,31 +404,6 @@ It runs every 15 minutes and:
 4. Writes reports and Instagram carousel PNGs.
 5. Deploys the generated files to GitHub Pages.
 6. Publishes the latest carousel using the GitHub Pages image URLs.
-
-## Summary provider option
-
-The default `SUMMARY_PROVIDER=auto` uses Gemini when `GEMINI_API_KEY` is present, then Ollama, then the built-in summarizer.
-
-To force the no-model local summarizer:
-
-```env
-SUMMARY_PROVIDER=local
-```
-
-To require Ollama:
-
-```env
-SUMMARY_PROVIDER=ollama
-OLLAMA_MODEL=llama3.2:3b
-```
-
-To require Gemini:
-
-```env
-SUMMARY_PROVIDER=gemini
-GEMINI_API_KEY=your_google_ai_studio_key
-GEMINI_MODEL=gemini-2.5-flash
-```
 
 ## Next workflow stages
 

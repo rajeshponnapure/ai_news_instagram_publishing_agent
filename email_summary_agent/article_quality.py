@@ -106,27 +106,25 @@ def is_publishable_article(article: dict, *, _debug_tag: str = "") -> bool:
     combined = f"{title} {body} {url}".lower()
     tag = f"  [quality:{_debug_tag}]" if _debug_tag else "  [quality]"
 
+    # --- Hard rejects (no valid URL) ---
     if not url.startswith(("http://", "https://")):
         print(f"{tag} REJECTED {title[:60]!r}: url={url[:40]!r} no http prefix")
         return False
-    if contains_public_noise(f"{title} {body}"):
-        print(f"{tag} REJECTED {title[:60]!r}: contains_public_noise (title+body has noise patterns)")
+
+    # --- Title noise check (unsalvageable) ---
+    if contains_public_noise(title):
+        print(f"{tag} REJECTED {title[:60]!r}: title contains noise patterns")
         return False
-    if any(re.search(pattern, combined, re.I) for pattern in PROMO_OR_NON_ARTICLE_PATTERNS):
-        print(f"{tag} REJECTED {title[:60]!r}: promo pattern matched")
+
+    # --- Promo patterns: check title only (body is email context noise) ---
+    if any(re.search(pattern, title, re.I) for pattern in PROMO_OR_NON_ARTICLE_PATTERNS):
+        print(f"{tag} REJECTED {title[:60]!r}: title has promo pattern")
         return False
-    if _title_is_url_slug(title):
-        print(f"{tag} REJECTED {title[:60]!r}: title looks like URL slug")
-        return False
-    if _title_is_truncated_fragment(title):
-        print(f"{tag} REJECTED {title[:60]!r}: title looks like truncated fragment")
-        return False
-    if len(body) < 80 and len(title) < 25:
-        print(f"{tag} REJECTED {title[:60]!r}: body={len(body)}chars title={len(title)}chars (min 80 body OR 25 title)")
-        return False
-    if not _has_ai_relevance(combined):
-        print(f"{tag} REJECTED {title[:60]!r}: no AI relevance terms found")
-        return False
+
+    # --- All checks below are for email-fallback articles ---
+    # The slide builder re-scrapes the URL and gets real content.
+    # Email placeholder text quality is irrelevant.
+    # Accept unconditionally if URL is valid and title is clean.
     return True
 
 

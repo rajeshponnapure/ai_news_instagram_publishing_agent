@@ -62,6 +62,13 @@ def plan_posts(
             pool.append(article)
         else:
             demoted.append(article)
+            if memory is not None:
+                memory.save_rejected_article(
+                    url=str(article.get("url", "")),
+                    title=str(article.get("title", "")),
+                    article=article,
+                    reason="quality_filter_post_planner",
+                )
 
     # Stage 2: pull in carryover from memory.
     if memory is not None:
@@ -127,6 +134,13 @@ def plan_summary_parts(
     for article in dedup.unique:
         if is_publishable_article(article):
             pool.append(article)
+        elif memory is not None:
+            memory.save_rejected_article(
+                url=str(article.get("url", "")),
+                title=str(article.get("title", "")),
+                article=article,
+                reason="quality_filter_plan_summary",
+            )
 
     # Sort by rank
     pool.sort(key=_rank_article, reverse=True)

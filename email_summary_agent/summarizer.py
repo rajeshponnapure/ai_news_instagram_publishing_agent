@@ -7,24 +7,14 @@ boilerplate, and newsletter noise are stripped before any content is used.
 """
 from __future__ import annotations
 
-import json
 import re
 import unicodedata
-import urllib.error
-import urllib.parse
-import urllib.request
 from collections import Counter
-from pathlib import Path
 from typing import Any
 
 from .models import EmailItem, EmailSummary
 from .article_enricher import ArticleData
-from .content_rag import format_context, retrieve_context
-
-
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-SUMMARY_SKILL_PATH = PROJECT_ROOT / "skills" / "instagram-ai-news-summary-v2.md"
-CREATOR_SKILL_PATH = PROJECT_ROOT / "skills" / "instagram-content-creator.md"
+from .content_rag import retrieve_context
 
 # ── Noise patterns stripped before any summarisation ─────────────────────────
 _NOISE_PATTERNS = [
@@ -195,17 +185,8 @@ class SummaryProvider:
     def __init__(
         self,
         provider: str,
-        ollama_url: str,
-        ollama_model: str,
-        gemini_api_key: str = "",
-        gemini_model: str = "gemini-2.5-flash",
     ) -> None:
         self.provider = provider
-        self.ollama_url = ollama_url.rstrip("/")
-        self.ollama_model = ollama_model
-        self.gemini_api_key = gemini_api_key
-        self.gemini_model = gemini_model or "gemini-2.5-flash"
-        self._ollama_available: bool | None = None
 
     def summarize(
         self,
@@ -235,248 +216,10 @@ class SummaryProvider:
                 date=email.date,
                 body=combined_body,
             )
-            if self.provider in {"auto", "gemini"} and self.gemini_api_key:
-                try:
-                    return _with_article_fields(self._summarize_with_gemini(pseudo_email, full_extract=full_extract), article_list)
-                except Exception as exc:
-                    print(f"  [gemini] API failed: {exc}. Falling back...")
-                    if self.provider == "gemini":
-                        raise
-            if self.provider in {"auto", "ollama"} and self._can_use_ollama():
-                try:
-                    return _with_article_fields(self._summarize_with_ollama(pseudo_email, full_extract=full_extract), article_list)
-                except Exception:
-                    if self.provider == "ollama":
-                        raise
             return _with_article_fields(_summarize_article_list(pseudo_email, article_list, full_extract=full_extract), article_list)
 
-        if self.provider in {"auto", "gemini"} and self.gemini_api_key:
-            try:
-                return _with_article_fields(self._summarize_with_gemini(email, full_extract=full_extract), article_list)
-            except Exception as exc:
-                print(f"  [gemini] API failed: {exc}. Falling back...")
-                if self.provider == "gemini":
-                    raise
-        if self.provider in {"auto", "ollama"} and self._can_use_ollama():
-            try:
-                return _with_article_fields(self._summarize_with_ollama(email, full_extract=full_extract), article_list)
-            except Exception:
-                if self.provider == "ollama":
-                    raise
         return _with_article_fields(summarize_locally(email), article_list)
 
-    def _can_use_ollama(self) -> bool:
-        if self.provider == "local":
-            return False
-        if not self.ollama_url or not self.ollama_url.startswith(("http://", "https://")):
-            self._ollama_available = False
-            return False
-        if self._ollama_available is not None:
-            return self._ollama_available
-        try:
-            req = urllib.request.Request(f"{self.ollama_url}/api/tags", method="GET")
-            with urllib.request.urlopen(req, timeout=1.5) as resp:
-                self._ollama_available = resp.status == 200
-        except (urllib.error.URLError, TimeoutError, OSError, ValueError):
-            self._ollama_available = False
-        return self._ollama_available
-
-    def _summarize_with_ollama(self, email: EmailItem, full_extract: bool = True) -> EmailSummary:
-        rag_context = format_context(f"{email.subject}\n{email.body}", limit=6)
-        prompt_body = _format_prompt_body(email.body, full_extract=full_extract)
-        prompt = (
-            "Return ONLY valid JSON with these exact keys: "
-            "headline, what_happened, why_it_matters, what_to_watch, "
-            "key_points, companies, models, topics, confidence.\n\n"
-            f"Skill guide:\n{_load_summary_skill()}\n\n"
-            f"{rag_context}\n\n"
-            "Rules:\n"
-            "- Extract every meaningful detail from the article body when full_extract is enabled.\n"
-            "- headline: one punchy sentence, max 100 chars, names the real event.\n"
-            "- what_happened: 2-3 sentences. What was announced/released/changed. "
-            "  Name the company, product, model, or person. Include concrete details "
-            "  (numbers, dates, API names, pricing, regions).\n"
-            "- why_it_matters: 2-3 sentences. Practical impact on developers, "
-            "  creators, companies, or AI users. No hype without evidence.\n"
-            "- what_to_watch: 1-2 sentences. Next signal: rollout, adoption, "
-            "  pricing, competition, limitations, benchmarks, or user reaction.\n"
-            "- key_points: array of EXACTLY 5 key points derived from the article. "
-            "  Each key point must be 12-22 words, a complete standalone factual sentence. "
-            "  Include concrete numbers, names, dates, or comparisons in every point. "
-            "  Use a story arc: what happened, why it matters, who it affects, what risk remains, what to watch next. "
-            "  Never start a key point with 'This means', 'This shows', 'What this means', "
-            "'The key detail', 'The real shift', or any meta-commentary. "
-            "  Just state the fact directly. No emoji, no questions, no clickbait.\n"
-            "- Never end any field with an ellipsis. Never use 'In conclusion', 'Overall', "
-            "  'Furthermore', 'Additionally', or 'It is important to note'.\n"
-            "- companies, models, topics: arrays of strings.\n"
-            "- confidence: float 0-1.\n"
-            "- Do NOT invent facts. If the article does not say it, omit it.\n"
-            "- Do NOT include cookie consent text, legal boilerplate, or newsletter noise.\n\n"
-            f"Subject: {email.subject}\nDate: {email.date}\nBody:\n{prompt_body}"
-        )
-        payload = {
-            "model": self.ollama_model,
-            "stream": False,
-            "format": "json",
-            "messages": [
-                {"role": "system", "content": "You are an expert AI news editor writing for Instagram."},
-                {"role": "user", "content": prompt},
-            ],
-        }
-        req = urllib.request.Request(
-            f"{self.ollama_url}/api/chat",
-            data=json.dumps(payload).encode("utf-8"),
-            headers={"Content-Type": "application/json"},
-            method="POST",
-        )
-        with urllib.request.urlopen(req, timeout=90) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-        content = data.get("message", {}).get("content", "")
-        parsed = _parse_json_object(content)
-        # Compose a rich summary from the structured fields
-        what_happened = _string(parsed.get("what_happened"))
-        why_matters = _string(parsed.get("why_it_matters"))
-        what_watch = _string(parsed.get("what_to_watch"))
-        summary_text = " ".join(p for p in [what_happened, why_matters, what_watch] if p)
-        key_points = _string_list(parsed.get("key_points"))[:12]
-        if not key_points:
-            key_points = [p for p in [what_happened, why_matters, what_watch] if p]
-        return EmailSummary(
-            message_key=email.message_key,
-            subject=email.subject,
-            source_date=email.date,
-            headline=_string(parsed.get("headline")) or _fallback_headline(email),
-            summary=summary_text or summarize_locally(email).summary,
-            key_points=key_points or summarize_locally(email).key_points,
-            companies=_string_list(parsed.get("companies"))[:8],
-            models=_string_list(parsed.get("models"))[:8],
-            topics=_string_list(parsed.get("topics"))[:8],
-            confidence=_float(parsed.get("confidence"), 0.8),
-        )
-
-    def _summarize_with_gemini(self, email: EmailItem, full_extract: bool = True) -> EmailSummary:
-        if not self.gemini_api_key:
-            raise ValueError("GEMINI_API_KEY is not set.")
-        rag_context = format_context(f"{email.subject}\n{email.body}", limit=6)
-        prompt_body = _format_prompt_body(email.body, full_extract=full_extract)
-        
-        # Build a robust prompt targeting Content Creator key points & headlines
-        prompt = (
-            "You are a senior Instagram technology editor.\n"
-            "Analyze the following article/email content and return a professional JSON summary.\n\n"
-            "Guidelines to make it sound human-written and specific:\n"
-            "1. Do NOT sound robotic, academic, or like generic AI text. Avoid clichés ('This means', 'It is important to note', 'Landscape is shifting', 'In conclusion').\n"
-            "2. **headline**: Make it a clean Title Case or sentence-case hook, 6-10 words maximum. Avoid publication tags (like '| TechCrunch').\n"
-            "3. **what_happened**: 2 punchy, active-voice sentences stating the core announcement/event with concrete details (numbers, names, specs).\n"
-            "4. **why_it_matters**: 2 sentences explaining the practical impact for developers, creators, or companies. Focus on utility.\n"
-            "5. **what_to_watch**: 1-2 forward-looking sentences about rolling out, next steps, or market competition.\n"
-            "6. **key_points**: An array of EXACTLY 5 key points. Each key point must be 12-22 words, a complete standalone factual sentence. "
-            "Each point must include at least one concrete entity, number, product, model, feature, or consequence from the source. "
-            "Use a story arc: what happened, why it matters, who it affects, what risk remains, what to watch next. "
-            "Never use emojis, list formatting, hashtags, hype words, or generic phrases inside these strings.\n"
-            "7. **companies**, **models**, **topics**: arrays of strings.\n"
-            "8. **confidence**: float (0.8 to 1.0).\n\n"
-            f"Skill guide:\n{_load_summary_skill()}\n\n"
-            f"{rag_context}\n\n"
-            f"Subject: {email.subject}\n"
-            f"Content:\n{prompt_body}"
-        )
-        
-        payload = {
-            "contents": [{
-                "parts": [{
-                    "text": prompt
-                }]
-            }],
-            "generationConfig": {
-                "responseMimeType": "application/json",
-                "responseSchema": {
-                    "type": "OBJECT",
-                    "properties": {
-                        "headline": {"type": "STRING"},
-                        "what_happened": {"type": "STRING"},
-                        "why_it_matters": {"type": "STRING"},
-                        "what_to_watch": {"type": "STRING"},
-                        "key_points": {
-                            "type": "ARRAY",
-                            "items": {"type": "STRING"}
-                        },
-                        "companies": {
-                            "type": "ARRAY",
-                            "items": {"type": "STRING"}
-                        },
-                        "models": {
-                            "type": "ARRAY",
-                            "items": {"type": "STRING"}
-                        },
-                        "topics": {
-                            "type": "ARRAY",
-                            "items": {"type": "STRING"}
-                        },
-                        "confidence": {"type": "NUMBER"}
-                    },
-                    "required": [
-                        "headline", "what_happened", "why_it_matters", "what_to_watch",
-                        "key_points", "companies", "models", "topics", "confidence"
-                    ]
-                }
-            }
-        }
-        
-        model = urllib.parse.quote(self.gemini_model, safe="-_.")
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={self.gemini_api_key}"
-        req = urllib.request.Request(
-            url,
-            data=json.dumps(payload).encode("utf-8"),
-            headers={"Content-Type": "application/json"},
-            method="POST"
-        )
-        
-        with urllib.request.urlopen(req, timeout=45) as resp:
-            resp_data = json.loads(resp.read().decode("utf-8"))
-            
-        candidate_text = resp_data["candidates"][0]["content"]["parts"][0]["text"]
-        parsed = _parse_json_object(candidate_text)
-        
-        # Parse fields
-        headline = str(parsed.get("headline", "")).strip()
-        what_happened = str(parsed.get("what_happened", "")).strip()
-        why_matters = str(parsed.get("why_it_matters", "")).strip()
-        what_watch = str(parsed.get("what_to_watch", "")).strip()
-        summary_text = " ".join(p for p in [what_happened, why_matters, what_watch] if p)
-        key_points = _string_list(parsed.get("key_points"))[:6]
-        if not key_points:
-            key_points = [p for p in [what_happened, why_matters, what_watch] if p]
-        
-        return EmailSummary(
-            message_key=email.message_key,
-            subject=email.subject,
-            source_date=email.date,
-            headline=headline or _fallback_headline(email),
-            summary=summary_text or summarize_locally(email).summary,
-            key_points=key_points or summarize_locally(email).key_points,
-            companies=_string_list(parsed.get("companies"))[:8],
-            models=_string_list(parsed.get("models"))[:8],
-            topics=_string_list(parsed.get("topics"))[:8],
-            confidence=_float(parsed.get("confidence"), 0.90),
-        )
-
-
-def _load_summary_skill() -> str:
-    """Load the combined skill guide for the LLM prompt."""
-    parts = []
-    for path in (SUMMARY_SKILL_PATH, CREATOR_SKILL_PATH):
-        try:
-            parts.append(path.read_text(encoding="utf-8"))
-        except OSError:
-            pass
-    return "\n\n".join(parts) if parts else (
-        "Summarize the linked article in a human AI-news editor voice. "
-        "Cover what happened, why it matters, and what to watch next. "
-        "Use concrete article details. Avoid generic category labels. "
-        "Never include cookie consent text, legal boilerplate, or newsletter noise."
-    )
 
 
 def _format_prompt_body(text: str, full_extract: bool = True) -> str:
@@ -1012,37 +755,6 @@ def _trim(value: str, limit: int) -> str:
     if trimmed and trimmed[-1] not in ".!?":
         trimmed += "."
     return trimmed
-
-
-def _parse_json_object(text: str) -> dict[str, Any]:
-    try:
-        return json.loads(text)
-    except json.JSONDecodeError:
-        match = re.search(r"\{.*\}", text, flags=re.S)
-        if not match:
-            return {}
-        try:
-            return json.loads(match.group(0))
-        except json.JSONDecodeError:
-            return {}
-
-
-def _string(value: Any) -> str:
-    return value.strip() if isinstance(value, str) else ""
-
-
-def _string_list(value: Any) -> list[str]:
-    if not isinstance(value, list):
-        return []
-    return [item.strip() for item in value if isinstance(item, str) and item.strip()]
-
-
-def _float(value: Any, default: float) -> float:
-    try:
-        number = float(value)
-    except (TypeError, ValueError):
-        return default
-    return max(0.0, min(1.0, number))
 
 
 # Keep backward-compat alias used by agent.py

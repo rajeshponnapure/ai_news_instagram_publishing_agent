@@ -179,6 +179,7 @@ def _build_article_slides(
     used_image_hashes: list = []
     used_key_fingerprints: set[str] = set()
     slides: list[dict[str, Any]] = []
+    skipped_no_img = 0
 
     for article_index, raw_article in enumerate(articles, start=1):
         article = dict(raw_article)
@@ -187,12 +188,17 @@ def _build_article_slides(
             scraped = _scrape_article_text(url)
             if scraped:
                 article["scraped_content"] = scraped
-        if url and not article.get("image_url") and not article.get("image_path"):
+        if url:
+            # Always attempt OG image extraction from the article URL,
+            # regardless of cached image_url/image_path from prior runs.
             img_url = _fetch_og_image_from_url(url)
             if not img_url:
                 img_url = _scrape_article_images(url)
             if img_url:
                 article["image_url"] = img_url
+                article["image_path"] = ""  # invalidate cached fallback path
+            # Prevent _select_unique_article_image from making a redundant HTTP request.
+            article["_og_scraped"] = True
 
         points = _extract_instagram_key_points(
             article,
@@ -202,8 +208,62 @@ def _build_article_slides(
         )
         if not points and not _article_has_publishable_seed(article):
             continue
-        slides.append(_article_to_slide(summary, article, article_index, points, used_image_urls, used_image_paths, used_image_hashes))
+
+        # Attempt to get the article image. If no image can be resolved,
+        # skip this slide rather than killing the entire carousel.
+        image_path = _select_unique_article_image(article, ", ".join(summary.topics[:2]) or "", used_image_urls, used_image_paths, used_image_hashes)
+        if not image_path:
+            skipped_no_img += 1
+            print(f"  [slides] SKIPPED article {article_index} ({article.get('title', '')[:50]}): no article image could be resolved")
+            continue
+
+        slide = _article_to_slide_with_image(
+            summary, article, article_index, points,
+            image_path, used_image_urls, used_image_paths, used_image_hashes,
+        )
+        slides.append(slide)
+
+    if skipped_no_img > 0:
+        print(f"  [slides] Skipped {skipped_no_img} article(s) with unresolvable images; {len(slides)} slide(s) built")
     return slides
+
+
+def _article_to_slide_with_image(
+    summary: "EmailSummary",
+    article: dict[str, Any],
+    article_index: int,
+    points: list[str],
+    image_path: str,
+    used_image_urls: set[str],
+    used_image_paths: set[str],
+    used_image_hashes: list | None = None,
+) -> dict[str, Any]:
+    """Build a slide dict from an article that already has a resolved image."""
+    headline_raw = _clean_headline(
+        _clean_public_text(str(article.get("title") or summary.headline or summary.subject or "AI update"))
+    ) or "AI Update"
+    headline = layout_safe_headline(headline_raw, fallback=str(summary.headline or "AI Update"))
+    topic = ", ".join(summary.topics[:2]) or headline
+    url = str(article.get("url") or "")
+    editorial = build_editorial_page_copy(article, summary, points)
+    key_points = [str(point) for point in editorial["key_points"]]
+
+    return {
+        "kind": "digest",
+        "slide_index": article_index,
+        "eyebrow": _pick_article_eyebrow(article, summary),
+        "title": str(editorial["heading"] or headline),
+        "summary_lines": list(editorial["summary_lines"]),
+        "key_points": key_points,
+        "body": "\n".join(key_points[:MAX_KP_PER_SLIDE]),
+        "image_path": image_path,
+        "image_source": str(article.get("image_source", "")) if image_path else "",
+        "article_image_url": str(article.get("image_url") or ""),
+        "topic": topic,
+        "url": url,
+        "source_label": _source_label_from_url(url),
+        "bg_theme": _pick_bg_theme_from_summary(summary),
+    }
 
 
 def _article_to_slide(
