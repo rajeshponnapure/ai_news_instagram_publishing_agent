@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; background: var(--gt-bg); color: var(--gt-white); }
+  body { padding: 28px 24px; display: flex; gap: 36px; align-items: center; flex-wrap: wrap; }
+  .wm {
+    font-family: var(--gt-font-block); /* Bungee */
+    font-size: 56px;
+    color: var(--gt-neon);
+    text-transform: lowercase;
+    letter-spacing: -0.02em;
+    text-shadow: 0 0 18px rgba(57,255,20,0.4);
+    line-height: 1;
+  }
+  .wm-alt {
+    font-family: var(--gt-font-display);
+    font-size: 56px;
+    color: var(--gt-neon);
+    letter-spacing: 0.06em;
+  }
+  .wm-mono {
+    font-family: var(--gt-font-mono);
+    font-size: 22px; font-weight: 700;
+    color: var(--gt-white);
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+  }
+  .wm-mono::before {
+    content: ""; display: inline-block;
+    width: 10px; height: 10px; background: var(--gt-neon);
+    box-shadow: 0 0 12px var(--gt-neon);
+    margin-right: 12px; vertical-align: middle;
+  }
+  .stack { display: flex; flex-direction: column; gap: 6px; }
+  .lab { font-family: var(--gt-font-mono); font-size: 9px; color: var(--gt-smoke);
+         letter-spacing: 0.18em; text-transform: uppercase; }
+</style></head>
+<body>
+  <div class="stack"><div class="wm">graitech</div><span class="lab">primary · Bungee</span></div>
+  <div class="stack"><div class="wm-alt">GRAITECH</div><span class="lab">display · Anton SC</span></div>
+  <div class="stack"><div class="wm-mono">graitech</div><span class="lab">utility · Space Mono</span></div>
+</body></html>

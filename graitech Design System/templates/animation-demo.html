@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>graitech — Post Animation Demo</title>
+  <link rel="stylesheet" href="../colors_and_type.css">
+  <link rel="stylesheet" href="instagram-post.css">
+  <style>
+    html, body { margin: 0; background: #060606; min-height: 100vh; }
+    .stage {
+      display: flex; gap: 56px; align-items: flex-start;
+      padding: 56px; justify-content: center; flex-wrap: wrap;
+      min-height: 100vh; box-sizing: border-box;
+    }
+
+    /* live post, scaled down to fit beside the panel */
+    .viewer { flex-shrink: 0; }
+    .scaler {
+      width: 540px; height: 675px;          /* 1080×1350 × 0.5 */
+      overflow: hidden; border: 1px solid var(--gt-iron);
+      box-shadow: 0 0 60px rgba(57,255,20,0.10);
+      position: relative;
+    }
+    .scaler .ig { transform: scale(0.5); transform-origin: top left; }
+    .viewer .cap {
+      font-family: var(--gt-font-mono); font-size: 12px; color: var(--gt-smoke);
+      letter-spacing: 0.18em; text-transform: uppercase; margin-top: 16px; text-align: center;
+    }
+
+    /* control panel */
+    .panel { width: 440px; flex-shrink: 0; }
+    .panel h1 {
+      font-family: var(--gt-font-block); font-size: 40px; color: var(--gt-neon);
+      text-transform: uppercase; letter-spacing: -0.01em; margin: 0 0 6px;
+      text-shadow: 0 0 22px rgba(57,255,20,0.35);
+    }
+    .panel .sub {
+      font-family: var(--gt-font-mono); font-size: 14px; color: var(--gt-ash);
+      line-height: 1.5; margin: 0 0 24px; max-width: 400px;
+    }
+    .panel .hint {
+      font-family: var(--gt-font-mono); font-size: 11px; color: var(--gt-neon);
+      letter-spacing: 0.18em; text-transform: uppercase; margin: 0 0 16px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .panel .hint::before { content: ""; width: 8px; height: 8px; border-radius: 50%;
+      background: var(--gt-neon); box-shadow: 0 0 10px var(--gt-neon); animation: gt-blink 2s infinite; }
+
+    .fx-item {
+      display: flex; align-items: flex-start; gap: 16px;
+      padding: 14px 16px; border: 1px solid var(--gt-iron); border-radius: 8px;
+      background: var(--gt-ink); margin-bottom: 10px;
+      cursor: pointer; transition: all 160ms cubic-bezier(0.2,0.7,0.1,1);
+      user-select: none;
+    }
+    .fx-item:hover { border-color: var(--gt-cement-2); background: var(--gt-graphite); }
+    .fx-item.off { opacity: 0.45; }
+    .fx-item .sw {
+      width: 44px; height: 26px; border-radius: 999px; flex-shrink: 0; margin-top: 2px;
+      background: var(--gt-neon); position: relative; box-shadow: 0 0 12px rgba(57,255,20,0.5);
+      transition: background 160ms;
+    }
+    .fx-item.off .sw { background: var(--gt-cement); box-shadow: none; }
+    .fx-item .sw::after {
+      content: ""; position: absolute; top: 3px; left: 21px; width: 20px; height: 20px;
+      border-radius: 50%; background: #000; transition: left 160ms cubic-bezier(0.2,0.7,0.1,1);
+    }
+    .fx-item.off .sw::after { left: 3px; background: #555; }
+    .fx-item .txt .t {
+      font-family: var(--gt-font-mono); font-size: 14px; font-weight: 700; color: var(--gt-white);
+      text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 3px;
+    }
+    .fx-item .txt .d {
+      font-family: var(--gt-font-mono); font-size: 12px; color: var(--gt-ash); line-height: 1.45;
+    }
+
+    .actions { display: flex; gap: 12px; margin-top: 18px; }
+    .btn {
+      font-family: var(--gt-font-mono); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase; padding: 12px 18px;
+      border-radius: 6px; cursor: pointer; border: 1.5px solid var(--gt-neon);
+      transition: all 160ms;
+    }
+    .btn.primary { background: var(--gt-neon); color: #000; box-shadow: 0 0 18px rgba(57,255,20,0.4); }
+    .btn.ghost { background: transparent; color: var(--gt-neon); }
+    .btn:active { transform: translateY(1px); }
+
+    /* ===== toggle classes: kill a specific animation on demand ===== */
+    .ig.no-drift::before  { animation: none !important; }
+    .ig.no-grid::after    { animation: none !important; }
+    .ig.no-aura .aura     { animation: none !important; opacity: 0 !important; }
+    .ig.no-scan .scan     { animation: none !important; opacity: 0 !important; }
+    .ig.no-motes .mote    { animation: none !important; opacity: 0 !important; }
+    .ig.no-stream .stream { animation: none !important; opacity: 0 !important; }
+    .ig.no-pulse .display-block,
+    .ig.no-pulse .display-tall,
+    .ig.no-pulse .version-tag { animation: none !important; }
+    .ig.no-shimmer .rule  { animation: none !important; }
+    .ig.no-nudge .swipe-row .arrow { animation: none !important; }
+    .ig.no-blink .ig__handle .dot  { animation: none !important; }
+
+    .version-tag {
+      font-family: var(--gt-font-block); font-size: 300px; line-height: 0.82;
+      color: var(--gt-neon); letter-spacing: -0.02em;
+      text-shadow: 0 0 40px rgba(57,255,20,0.45); margin: 0;
+      animation: gt-pulse 4.5s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+
+    <!-- LIVE POST -->
+    <div class="viewer">
+      <div class="scaler">
+        <article class="ig" id="post" data-screen-label="Demo">
+          <div class="ig__fx">
+            <div class="aura"></div>
+            <div class="scan"></div>
+            <span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span>
+            <div class="stream">01001 11010 00110 10011 01100 11001 00101 10110 01011 00111</div>
+          </div>
+          <div class="ticks"><i></i></div>
+          <div class="ig__logo"><img src="../assets/graitech-logo.png" alt="graitech"></div>
+
+          <div class="ig__content" style="justify-content: space-between;">
+            <div class="kicker-row"><span class="stamp">Release / Live</span></div>
+            <div class="heading-stack" style="gap: 20px;">
+              <div class="eyebrow">graitech cloud</div>
+              <div class="rule"></div>
+              <p class="version-tag">4.8</p>
+              <h2 class="display-tall" style="font-size: 116px; color: var(--gt-white);">is here.</h2>
+              <p class="body" style="margin-top: 8px;">Faster builds, edge regions, and a brand-new deploy pipeline.</p>
+            </div>
+            <div class="swipe-row">See what's new <span class="arrow"></span></div>
+          </div>
+
+          <div class="ig__handle"><span class="dot"></span>@graitech</div>
+          <div class="ig__page"><span class="bar"></span><span><span class="num">01</span> / 05</span><span class="bar"></span></div>
+        </article>
+      </div>
+      <div class="cap">Live preview · 1080 × 1350 @ 50%</div>
+    </div>
+
+    <!-- CONTROL PANEL -->
+    <div class="panel">
+      <h1>Dynamic FX</h1>
+      <p class="sub">Every motion layer baked into the graitech post system. Tap any switch to toggle it on the live post and see exactly what it adds.</p>
+      <p class="hint">Tap a switch to isolate it</p>
+
+      <div class="fx-item" data-fx="drift">
+        <div class="sw"></div>
+        <div class="txt"><div class="t">Texture drift</div><div class="d">The concrete background slowly parallaxes so the frame never feels static.</div></div>
+      </div>
+      <div class="fx-item" data-fx="grid">
+        <div class="sw"></div>
+        <div class="txt"><div class="t">Grid scroll</div><div class="d">The faint crosshatch grid creeps diagonally — a subtle "system online" pulse.</div></div>
+      </div>
+      <div class="fx-item" data-fx="aura">
+        <div class="sw"></div>
+        <div class="txt"><div class="t">Neon aura</div><div class="d">A soft green glow breathes behind the content, pulling the eye to center.</div></div>
+      </div>
+      <div class="fx-item" data-fx="scan">
+        <div class="sw"></div>
+        <div class="txt"><div class="t">Scanline sweep</div><div class="d">A neon band glides top-to-bottom every ~7s — the classic terminal tell.</div></div>
+      </div>
+      <div class="fx-item" data-fx="motes">
+        <div class="sw"></div>
+        <div class="txt"><div class="t">Floating motes</div><div class="d">Tiny neon particles drift upward through the lower margins.</div></div>
+      </div>
+      <div class="fx-item" data-fx="stream">
+        <div class="sw"></div>
+        <div class="txt"><div class="t">Data stream</div><div class="d">Faint binary scrolls down the right gutter for a techy texture.</div></div>
+      </div>
+      <div class="fx-item" data-fx="pulse">
+        <div class="sw"></div>
+        <div class="txt"><div class="t">Headline pulse</div><div class="d">The neon headline glow swells and settles on a slow loop.</div></div>
+      </div>
+      <div class="fx-item" data-fx="shimmer">
+        <div class="sw"></div>
+        <div class="txt"><div class="t">Rule shimmer</div><div class="d">The accent bar widens and brightens — the brand's connective spark.</div></div>
+      </div>
+      <div class="fx-item" data-fx="nudge">
+        <div class="sw"></div>
+        <div class="txt"><div class="t">Swipe nudge</div><div class="d">The CTA arrow nudges sideways to invite the swipe.</div></div>
+      </div>
+      <div class="fx-item" data-fx="blink">
+        <div class="sw"></div>
+        <div class="txt"><div class="t">Status blink</div><div class="d">The dot by @graitech blinks like a live indicator light.</div></div>
+      </div>
+
+      <div class="actions">
+        <button class="btn primary" id="allOn">All on</button>
+        <button class="btn ghost" id="allOff">All off</button>
+        <button class="btn ghost" id="replay">Replay ↻</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const post = document.getElementById('post');
+    const map = {
+      drift: 'no-drift', grid: 'no-grid', aura: 'no-aura', scan: 'no-scan',
+      motes: 'no-motes', stream: 'no-stream', pulse: 'no-pulse',
+      shimmer: 'no-shimmer', nudge: 'no-nudge', blink: 'no-blink'
+    };
+
+    document.querySelectorAll('.fx-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const fx = item.dataset.fx;
+        const isOff = item.classList.toggle('off');
+        post.classList.toggle(map[fx], isOff);
+      });
+    });
+
+    document.getElementById('allOn').addEventListener('click', () => {
+      document.querySelectorAll('.fx-item').forEach(i => i.classList.remove('off'));
+      Object.values(map).forEach(c => post.classList.remove(c));
+    });
+    document.getElementById('allOff').addEventListener('click', () => {
+      document.querySelectorAll('.fx-item').forEach(i => i.classList.add('off'));
+      Object.values(map).forEach(c => post.classList.add(c));
+    });
+    document.getElementById('replay').addEventListener('click', () => {
+      const clone = post.cloneNode(true);
+      post.replaceWith(clone);
+      // rebind id + restore any off-states
+      clone.id = 'post';
+      window.__post = clone;
+      location.hash = 'replay-' + Date.now();
+      // re-run binding by reloading listeners on the new node
+      bindReplayState(clone);
+    });
+
+    function bindReplayState(node) {
+      document.querySelectorAll('.fx-item').forEach(item => {
+        if (item.classList.contains('off')) node.classList.add(map[item.dataset.fx]);
+      });
+      // reassign global reference used by toggles
+      const fresh = document.getElementById('post');
+      document.querySelectorAll('.fx-item').forEach(item => {
+        const clean = item.cloneNode(true);
+        item.replaceWith(clean);
+        clean.addEventListener('click', () => {
+          const fx = clean.dataset.fx;
+          const isOff = clean.classList.toggle('off');
+          fresh.classList.toggle(map[fx], isOff);
+        });
+      });
+    }
+  </script>
+</body>
+</html>

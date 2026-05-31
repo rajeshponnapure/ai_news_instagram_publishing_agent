@@ -1,0 +1,40 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; background: var(--gt-bg); color: var(--gt-white); }
+  body { padding: 24px; font-family: var(--gt-font-mono); display: flex; flex-direction: column; gap: 14px; }
+  label { display: block; font-size: 9px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gt-neon); margin-bottom: 6px; }
+  .field {
+    width: 100%; padding: 12px 14px;
+    background: var(--gt-ink); border: 1px solid var(--gt-iron);
+    color: var(--gt-white); font-family: var(--gt-font-mono);
+    font-size: 13px; border-radius: var(--gt-r-sm);
+    box-sizing: border-box;
+    outline: none;
+  }
+  .field:focus { border-color: var(--gt-neon); box-shadow: 0 0 0 2px rgba(57,255,20,0.25); }
+  .field.placeholder { color: var(--gt-smoke); }
+  .row { display: flex; gap: 12px; }
+  .check {
+    width: 18px; height: 18px; border: 1.5px solid var(--gt-cement-2);
+    border-radius: 3px; background: var(--gt-ink); display: inline-flex; align-items: center; justify-content: center;
+  }
+  .check.on { background: var(--gt-neon); border-color: var(--gt-neon); box-shadow: 0 0 10px rgba(57,255,20,0.5); }
+  .check.on::after { content: ""; width: 5px; height: 9px; border: solid #000; border-width: 0 2px 2px 0; transform: rotate(45deg) translate(-1px,-1px); }
+  .opt { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--gt-chalk); }
+</style></head>
+<body>
+  <div>
+    <label>email</label>
+    <div class="field placeholder">you@graitech.io</div>
+  </div>
+  <div>
+    <label>focus state</label>
+    <div class="field" style="border-color:#39FF14; box-shadow:0 0 0 2px rgba(57,255,20,0.25);">cursor here_</div>
+  </div>
+  <div class="row">
+    <div class="opt"><span class="check on"></span>Subscribe</div>
+    <div class="opt"><span class="check"></span>Notify me</div>
+  </div>
+</body></html>

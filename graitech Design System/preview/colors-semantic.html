@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; background: var(--gt-bg); }
+  body { padding: 18px; display: flex; flex-direction: column; gap: 14px; }
+  .row { display: grid; grid-template-columns: 110px 1fr; align-items: center; gap: 16px; }
+  .label { font-family: var(--gt-font-mono); font-size: 11px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.12em; color: var(--gt-ash); }
+  .label b { color: var(--gt-white); display:block; font-size: 13px; letter-spacing: 0; text-transform: none; font-weight: 400; }
+  .swatch { height: 36px; border-radius: var(--gt-r-sm); border: 1px solid var(--gt-border); display: flex; align-items: center; padding: 0 12px; }
+  .swatch .hex { font-family: var(--gt-font-mono); font-size: 11px; }
+</style></head>
+<body>
+  <div class="row">
+    <div class="label"><b>--gt-accent</b>brand</div>
+    <div class="swatch" style="background:#39FF14;"><span class="hex" style="color:#000">#39FF14</span></div>
+  </div>
+  <div class="row">
+    <div class="label"><b>--gt-bg</b>canvas</div>
+    <div class="swatch" style="background:#000;"><span class="hex" style="color:#fff">#000000</span></div>
+  </div>
+  <div class="row">
+    <div class="label"><b>--gt-warn</b>warning</div>
+    <div class="swatch" style="background:#FFB800;"><span class="hex" style="color:#000">#FFB800</span></div>
+  </div>
+  <div class="row">
+    <div class="label"><b>--gt-danger</b>danger</div>
+    <div class="swatch" style="background:#FF3355;"><span class="hex" style="color:#000">#FF3355</span></div>
+  </div>
+  <div class="row">
+    <div class="label"><b>--gt-info</b>info</div>
+    <div class="swatch" style="background:#18C0FF;"><span class="hex" style="color:#000">#18C0FF</span></div>
+  </div>
+</body></html>

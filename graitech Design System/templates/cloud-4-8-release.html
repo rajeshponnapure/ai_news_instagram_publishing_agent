@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>graitech — Cloud 4.8 Release Post</title>
+  <link rel="stylesheet" href="../colors_and_type.css">
+  <link rel="stylesheet" href="instagram-post.css">
+  <style>
+    body {
+      display: flex; flex-wrap: wrap; gap: 48px; padding: 48px;
+      justify-content: center; align-items: flex-start;
+      background: #0a0a0a;
+    }
+    /* release-specific accents */
+    .version-tag {
+      font-family: var(--gt-font-block);
+      font-size: 300px; line-height: 0.82;
+      color: var(--gt-neon);
+      letter-spacing: -0.02em;
+      text-shadow: 0 0 40px rgba(57,255,20,0.45);
+      margin: 0;
+      animation: gt-pulse 4.5s ease-in-out infinite;
+    }
+    .feat {
+      display: grid; grid-template-columns: 88px 1fr; gap: 26px; align-items: start;
+    }
+    .feat .glyph {
+      width: 88px; height: 88px;
+      border: 1.5px solid var(--gt-neon);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 0 18px rgba(57,255,20,0.25), inset 0 0 18px rgba(57,255,20,0.08);
+      position: relative;
+    }
+    .feat .glyph svg { width: 44px; height: 44px; stroke: var(--gt-neon); stroke-width: 2; fill: none; }
+    .feat h4 {
+      font-family: var(--gt-font-mono); font-size: 30px; font-weight: 700;
+      color: var(--gt-white); text-transform: uppercase; letter-spacing: 0.04em; margin: 0 0 8px;
+    }
+    .feat p { font-family: var(--gt-font-mono); font-size: 22px; line-height: 1.5; color: var(--gt-fg-2); margin: 0; }
+    .feat-list { display: flex; flex-direction: column; gap: 40px; }
+
+    .badge-row { display: flex; gap: 14px; flex-wrap: wrap; }
+    .pill {
+      font-family: var(--gt-font-mono); font-size: 18px; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--gt-neon); border: 1.5px solid var(--gt-neon);
+      padding: 8px 16px; border-radius: 999px;
+    }
+    .checklist { display: flex; flex-direction: column; gap: 24px; }
+    .checklist .ck {
+      display: flex; align-items: center; gap: 20px;
+      font-family: var(--gt-font-mono); font-size: 28px; color: var(--gt-white);
+    }
+    .checklist .ck .mark {
+      width: 38px; height: 38px; border-radius: 8px;
+      background: var(--gt-neon); display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 0 14px rgba(57,255,20,0.5); flex-shrink: 0;
+    }
+    .checklist .ck .mark::after {
+      content: ""; width: 10px; height: 18px; border: solid #000; border-width: 0 3px 3px 0;
+      transform: rotate(45deg) translate(-1px,-2px);
+    }
+    .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px 48px; width: 100%; }
+    .stat-cell .n {
+      font-family: var(--gt-font-block); font-size: 150px; line-height: 0.86;
+      color: var(--gt-neon); text-shadow: 0 0 28px rgba(57,255,20,0.4);
+    }
+    .stat-cell .l {
+      font-family: var(--gt-font-mono); font-size: 22px; line-height: 1.4;
+      color: var(--gt-fg-2); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       SLIDE 01 — RELEASE HERO
+       ============================================================ -->
+  <article class="ig" data-screen-label="01 Hero">
+    <div class="ig__fx">
+      <div class="aura"></div>
+      <div class="scan"></div>
+      <span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span>
+      <div class="stream">01001 11010 00110 10011 01100 11001 00101 10110 01011 00111</div>
+    </div>
+    <div class="ticks"><i></i></div>
+    <div class="ig__logo"><img src="../assets/graitech-logo.png" alt="graitech"></div>
+
+    <div class="ig__content" style="justify-content: space-between;">
+      <div class="kicker-row"><span class="stamp">Release / Live</span></div>
+
+      <div class="heading-stack" style="gap: 20px;">
+        <div class="eyebrow">graitech cloud</div>
+        <div class="rule"></div>
+        <p class="version-tag">4.8</p>
+        <h2 class="display-tall" style="font-size: 116px; color: var(--gt-white);">is here.</h2>
+        <p class="body" style="margin-top: 8px;">Faster builds, edge regions, and a brand-new deploy pipeline. The biggest Cloud drop of the year.</p>
+      </div>
+
+      <div class="swipe-row">See what's new <span class="arrow"></span></div>
+    </div>
+
+    <div class="ig__handle"><span class="dot"></span>@graitech</div>
+    <div class="ig__page"><span class="bar"></span><span><span class="num">01</span> / 05</span><span class="bar"></span></div>
+  </article>
+
+
+  <!-- ============================================================
+       SLIDE 02 — HEADLINE FEATURES
+       ============================================================ -->
+  <article class="ig" data-screen-label="02 Features">
+    <div class="ig__fx">
+      <div class="aura"></div>
+      <div class="scan"></div>
+      <span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span>
+      <div class="stream">10110 00101 11001 01100 10011 00110 11010 01001 00111 01011</div>
+    </div>
+    <div class="ticks"><i></i></div>
+    <div class="ig__logo"><img src="../assets/graitech-logo.png" alt="graitech"></div>
+
+    <div class="ig__content" style="gap: 56px;">
+      <div class="heading-stack" style="gap: 18px;">
+        <div class="eyebrow">What's new</div>
+        <h2 class="display-tall" style="font-size: 124px;">Three big<br>upgrades.</h2>
+      </div>
+
+      <div class="feat-list">
+        <div class="feat">
+          <div class="glyph">
+            <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          </div>
+          <div>
+            <h4>2× faster builds</h4>
+            <p>Reworked the build cache — most projects now ship in under 30 seconds.</p>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="glyph">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20"></path></svg>
+          </div>
+          <div>
+            <h4>14 new edge regions</h4>
+            <p>Run closer to your users. Latency drops where it matters most.</p>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="glyph">
+            <svg viewBox="0 0 24 24"><path d="M4 17l6-6-6-6"></path><path d="M12 19h8"></path></svg>
+          </div>
+          <div>
+            <h4>Pipeline 2.0</h4>
+            <p>Visual deploy graph, instant rollbacks, and preview URLs on every commit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ig__handle"><span class="dot"></span>@graitech</div>
+    <div class="ig__page"><span class="bar"></span><span><span class="num">02</span> / 05</span><span class="bar"></span></div>
+  </article>
+
+
+  <!-- ============================================================
+       SLIDE 03 — BY THE NUMBERS
+       ============================================================ -->
+  <article class="ig" data-screen-label="03 Numbers">
+    <div class="ig__fx">
+      <div class="aura"></div>
+      <div class="scan"></div>
+      <span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span>
+      <div class="stream">00111 01011 10110 11001 00101 01100 10011 00110 11010 01001</div>
+    </div>
+    <div class="ticks"><i></i></div>
+    <div class="ig__logo"><img src="../assets/graitech-logo.png" alt="graitech"></div>
+
+    <div class="ig__content" style="gap: 64px;">
+      <div class="heading-stack" style="gap: 18px;">
+        <div class="eyebrow">By the numbers</div>
+        <h2 class="display-tall" style="font-size: 116px;">The receipts.</h2>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-cell"><div class="n">52%</div><div class="l">faster cold starts</div></div>
+        <div class="stat-cell"><div class="n">14</div><div class="l">new edge regions</div></div>
+        <div class="stat-cell"><div class="n">0ms</div><div class="l">downtime rollbacks</div></div>
+        <div class="stat-cell"><div class="n">99.99%</div><div class="l">platform uptime SLA</div></div>
+      </div>
+    </div>
+
+    <div class="ig__handle"><span class="dot"></span>@graitech</div>
+    <div class="ig__page"><span class="bar"></span><span><span class="num">03</span> / 05</span><span class="bar"></span></div>
+  </article>
+
+
+  <!-- ============================================================
+       SLIDE 04 — UPGRADE CHECKLIST
+       ============================================================ -->
+  <article class="ig" data-screen-label="04 Upgrade">
+    <div class="ig__fx">
+      <div class="aura"></div>
+      <div class="scan"></div>
+      <span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span>
+      <div class="stream">11010 00110 10011 01100 11001 00101 10110 01011 00111 01001</div>
+    </div>
+    <div class="ticks"><i></i></div>
+    <div class="ig__logo"><img src="../assets/graitech-logo.png" alt="graitech"></div>
+
+    <div class="ig__content" style="gap: 56px;">
+      <div class="heading-stack" style="gap: 18px;">
+        <div class="eyebrow">Upgrading</div>
+        <h2 class="display-tall" style="font-size: 116px;">One command.</h2>
+      </div>
+
+      <div style="background: var(--gt-graphite); border: 1px solid var(--gt-iron); border-radius: 8px; padding: 32px 36px; box-shadow: 0 0 18px rgba(57,255,20,0.12);">
+        <code style="font-family: var(--gt-font-mono); font-size: 34px; color: var(--gt-neon); background: none; border: none; padding: 0;">$ graitech upgrade --cloud 4.8</code>
+      </div>
+
+      <div class="checklist">
+        <div class="ck"><span class="mark"></span>Zero-config migration</div>
+        <div class="ck"><span class="mark"></span>Backwards compatible with 4.x</div>
+        <div class="ck"><span class="mark"></span>Auto-rollback if health checks fail</div>
+      </div>
+    </div>
+
+    <div class="ig__handle"><span class="dot"></span>@graitech</div>
+    <div class="ig__page"><span class="bar"></span><span><span class="num">04</span> / 05</span><span class="bar"></span></div>
+  </article>
+
+
+  <!-- ============================================================
+       SLIDE 05 — CTA
+       ============================================================ -->
+  <article class="ig" data-screen-label="05 CTA">
+    <div class="ig__fx">
+      <div class="aura"></div>
+      <div class="scan"></div>
+      <span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span><span class="mote"></span>
+      <div class="stream">01100 10011 00110 11010 01001 00111 01011 10110 11001 00101</div>
+    </div>
+    <div class="ticks"><i></i></div>
+    <div class="ig__logo"><img src="../assets/graitech-logo.png" alt="graitech"></div>
+
+    <div class="ig__content" style="justify-content: space-between;">
+      <div class="kicker-row"><span class="stamp">Cloud / 4.8</span></div>
+
+      <div class="heading-stack">
+        <div class="eyebrow">Ship it today</div>
+        <div class="rule"></div>
+        <h2 class="display-tall" style="font-size: 184px;">Update<br>&amp; deploy.</h2>
+        <p class="body">Full release notes and the migration guide are live. Link in bio.</p>
+      </div>
+
+      <div class="badge-row">
+        <span class="pill">graitech.io/cloud</span>
+        <span class="pill">Read the notes</span>
+      </div>
+    </div>
+
+    <div class="ig__handle"><span class="dot"></span>@graitech</div>
+    <div class="ig__page"><span class="bar"></span><span><span class="num">05</span> / 05</span><span class="bar"></span></div>
+  </article>
+
+</body>
+</html>
