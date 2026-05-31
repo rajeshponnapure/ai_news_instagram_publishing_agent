@@ -28,6 +28,12 @@ on:
     # cancel the publish step mid-flight.
     - cron: '*/30 * * * *'
   workflow_dispatch:
+  workflow_run:
+    # Also run after CI completes on main — catches cron delays by piggybacking
+    # on push-triggered CI runs.
+    workflows: [CI]
+    types:
+      - completed
     # Manual trigger - only for maintenance/recovery operations.
     inputs:
       run_mode:
