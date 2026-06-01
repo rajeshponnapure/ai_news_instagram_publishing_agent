@@ -1,0 +1,21 @@
+{
+  "posts": [
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260601-053211/01_20260601-0532_nvidia-levels-up-local-ai-agents-across-rtx-pcs-and-dgx-spar",
+      "caption": "NVIDIA Levels Up Local AI Agents Across RTX PCs and DGX Spark.\n\nSwipe for the full breakdown.\n\n- Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote NVIDIA Research Advances Robotics From Simulation to the Real World.\n- Announced at GTC Taipei at COMPUTEX, NVIDIA OpenShell brings secure agents to Windows with 2x inference performance.\n- Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research.\n- This coupled with other optimizations such as programmatic dependent launch delivers 2x performance on Qwen 3.6 and 3.5.\n- Today at NVIDIA GTC Taipei at COMPUTEX, NVIDIA unveiled NVIDIA RTX Spark - a new class of Windows.\n\nWould you use something like this in your daily work? Yes or no in the comments.\n\nSave this before it disappears from your feed.\n\nSources:\n- https://blogs.nvidia.com/blog/rtx-ai-garage-computex-spark-local-agents/\n- https://blogs.nvidia.com/blog/taiwan-ecosystem-ai-infrastructure/\n- https://blogs.nvidia.com/blog/factory-operations-fox-blueprint-ai-brain/\n- https://blogs.nvidia.com/blog/ai-cloud-ecosystem/\n- https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai\n\n#AIAgents #AutonomousAgents #AIWorkflow #NVIDIA #NVIDIAGPU #ArtificialIntelligence #FutureOfAI #TechTrends #Innovation #Tech #AI #MachineLearning #AIBreakdown #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing #MLNews #AIWeekly #TechInnovation\n\n-\nAI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.\n-\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260601-053211/01_20260601-0532_nvidia-levels-up-local-ai-agents-across-rtx-pcs-and-dgx-spar/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260601-053211/01_20260601-0532_nvidia-levels-up-local-ai-agents-across-rtx-pcs-and-dgx-spar/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260601-053211/01_20260601-0532_nvidia-levels-up-local-ai-agents-across-rtx-pcs-and-dgx-spar/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260601-053211/01_20260601-0532_nvidia-levels-up-local-ai-agents-across-rtx-pcs-and-dgx-spar/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260601-053211/01_20260601-0532_nvidia-levels-up-local-ai-agents-across-rtx-pcs-and-dgx-spar/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260601-053211/01_20260601-0532_nvidia-levels-up-local-ai-agents-across-rtx-pcs-and-dgx-spar/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260601-053211/01_20260601-0532_nvidia-levels-up-local-ai-agents-across-rtx-pcs-and-dgx-spar/slide_07.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260601-053211/01_20260601-0532_nvidia-levels-up-local-ai-agents-across-rtx-pcs-and-dgx-spar/slide_08.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260601-053211/01_20260601-0532_nvidia-levels-up-local-ai-agents-across-rtx-pcs-and-dgx-spar/slide_09.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload"
+    }
+  ]
+}
