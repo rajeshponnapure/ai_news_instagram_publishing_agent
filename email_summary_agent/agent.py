@@ -100,6 +100,7 @@ def poll_new_once(settings: Settings) -> AgentResult:
                 report_path=None,
                 instagram_count=0,
                 published_count=0,
+                recovered_count=0,
             )
             last_scan = store.get_state(scan_state_key)
             _safe_print(
@@ -128,6 +129,7 @@ def poll_new_once(settings: Settings) -> AgentResult:
                     report_path=None,
                     instagram_count=0,
                     published_count=0,
+                    recovered_count=0,
                 )
                 store.finish_run(
                     run_id,
@@ -149,6 +151,7 @@ def poll_new_once(settings: Settings) -> AgentResult:
                 report_path=None,
                 instagram_count=0,
                 published_count=0,
+                recovered_count=0,
             )
             store.finish_run(
                 run_id,
@@ -481,6 +484,7 @@ def run_latest(settings: Settings) -> AgentResult:
                 report_path=None,
                 instagram_count=0,
                 published_count=0,
+                recovered_count=0,
             )
         else:
             result = process_items(

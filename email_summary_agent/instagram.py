@@ -46,9 +46,13 @@ def write_instagram_carousels(
     batch_dir = output_dir / now.strftime("%Y%m%d-%H%M%S")
     batch_dir.mkdir(parents=True, exist_ok=True)
 
-    # Use passed memory or open one from db_path.
+    # Use passed memory or open one from db_path. We only close it ourselves
+    # if we opened it here; a memory handed in by the caller stays owned by the
+    # caller (closing it would break later calls like _retry_rejected_articles).
+    owns_memory = False
     if memory is None and db_path is not None:
         memory = _open_memory(db_path)
+        owns_memory = memory is not None
     effective_flush = flush_partial or memory is None
 
     global_used_image_paths: set[str] = _load_used_images_from_db(db_path)
@@ -182,7 +186,7 @@ def write_instagram_carousels(
         carousel_dirs.append(carousel_dir)
 
     (batch_dir / "index.html").write_text(_render_index(index_rows), encoding="utf-8")
-    if memory is not None:
+    if memory is not None and owns_memory:
         memory.prune()
         memory.close()
     return carousel_dirs
