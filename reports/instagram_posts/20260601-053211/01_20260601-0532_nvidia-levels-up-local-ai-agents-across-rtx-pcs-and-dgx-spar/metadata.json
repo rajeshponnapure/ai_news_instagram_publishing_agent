@@ -1,0 +1,354 @@
+{
+  "email_received_at": "2026-06-01T05:32+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "NVIDIA Levels Up Local AI Agents Across RTX PCs and DGX Spark",
+  "subject": "",
+  "source_date": "2026-06-01T05:32:12.523414",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://blogs.nvidia.com/blog/rtx-ai-garage-computex-spark-local-agents/",
+  "article_title": "NVIDIA Levels Up Local AI Agents Across RTX PCs and DGX Spark",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c024d55d9d84a5b4.png",
+  "article_image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/05/Multi-GPU-Creative-AI-Performance-on-ComfyUI-1680x865.png",
+  "article_items": [
+    {
+      "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-computex-spark-local-agents/",
+      "title": "NVIDIA Levels Up Local AI Agents Across RTX PCs and DGX Spark",
+      "description": "Announced at GTC Taipei at COMPUTEX, NVIDIA OpenShell brings secure agents to Windows with 2x inference performance on llama.cpp - plus, Adobe rebuilds its apps with performance and memory enhancements, and Blender adds NVIDIA DLSS 4.5 Ray Reconstruction for NVIDIA RTX Spark.",
+      "excerpt": "Announced at GTC Taipei at COMPUTEX, NVIDIA OpenShell brings secure agents to Windows with 2x inference performance on llama.cpp - plus, Adobe rebuilds its apps with performance and memory enhancements, and Blender adds NVIDIA DLSS 4.5 Ray Reconstruction for NVIDIA RTX Spark.",
+      "summary": "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA Research Advances Robotics From Simulation to the Real World The Name\u2019s Gaming \u2026 Cloud Gaming: \u2018007 First Light\u2019 Launches on GeForce NOW AI Factories: The New Infrastructure of Intelligence NVIDIA Vera CPU Is \u2018Packing a Heavy-Hitting Punch\u2019 Against Competition AI Factories: The New Infrastructure of Intelligence NVIDIA CEO Jensen Huang at Dell Technologies World: \u2018Demand Is Going Parabolic, Utterly Parabolic\u2019 Vera Arrives: NVIDIA\u2019s First CPU Built for. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff. Announced at GTC Taipei at COMPUTEX, NVIDIA OpenShell brings secure agents to Windows with 2x inference performance on llama.cpp - plus, Adobe rebuilds its apps with performance and memory enhancements, and Blender adds NVIDIA DLSS 4.5 Ray Reconstruction for NVIDIA.",
+      "what_happened": "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA Research Advances Robotics From Simulation to the Real World The Name\u2019s Gaming \u2026 Cloud Gaming: \u2018007 First Light\u2019 Launches on GeForce NOW AI Factories: The New Infrastructure of Intelligence NVIDIA Vera CPU Is \u2018Packing a Heavy-Hitting Punch\u2019 Against Competition AI Factories: The New Infrastructure of Intelligence NVIDIA CEO Jensen Huang at Dell Technologies World: \u2018Demand Is Going Parabolic, Utterly Parabolic\u2019 Vera Arrives: NVIDIA\u2019s First CPU Built for.",
+      "why_matters": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff.",
+      "what_to_watch": "Announced at GTC Taipei at COMPUTEX, NVIDIA OpenShell brings secure agents to Windows with 2x inference performance on llama.cpp - plus, Adobe rebuilds its apps with performance and memory enhancements, and Blender adds NVIDIA DLSS 4.5 Ray Reconstruction for NVIDIA RTX Spark.",
+      "key_points": [
+        "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA Research Advances Robotics From Simulation to the Real World The Name\u2019s Gaming \u2026 Cloud Gaming: \u2018007 First Light\u2019 Launches on GeForce NOW AI Factories: The New.",
+        "Adobe is rearchitecting its Photoshop and Premiere apps, Blender is adding NVIDIA DLSS 4.5 Ray Reconstruction, and NVIDIA unveiled RTX Video Frame Generation, which will be coming to ComfyUI.",
+        "Announced at GTC Taipei at COMPUTEX, NVIDIA OpenShell brings secure agents to Windows with 2x inference performance on llama.cpp - plus, Adobe rebuilds its apps with performance and memory enhancements, and Blender adds.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "This coupled with other optimizations such as programmatic dependent launch delivers 2x performance on Qwen 3.6 and 3.5 27B, and a 1.6x performance boost on Qwen 3.6 and 3.5 35B.",
+        "Also launching with RTX Spark, RTX Video Frame Generation is a new AI effect that doubles or quadruples video frame rate in real time - ideal for enhancing the 15-20 frames-per-second (fps) outputs that AI models.",
+        "Today at NVIDIA GTC Taipei at COMPUTEX , NVIDIA unveiled NVIDIA RTX Spark - a new class of Windows PCs purpose-built for personal agents - alongside a wave of updates that expand local agents across the broader NVIDIA.",
+        "Also introduced at the show was NVIDIA DGX Station for Windows , the ultimate AI deskside supercomputer for professionals, bringing a data-center-class GPU and CPU for inference in a desktop system equipped with Windows.",
+        "This month\u2019s DGX Spark OS release brings the most streamlined out-of-the-box experience with a streamlined NemoClaw installer, along with faster inference on the top agentic models.",
+        "#ICYMI: The Latest From RTX AI Garage Read the full NVIDIA RTX Spark announcement for details on the superchip, NVIDIA\u2019s work with Windows on agents, and partner laptop and small desktops.",
+        "Agent Optimizations for Linux For developers who need always-accessible local agents, NVIDIA DGX Spark is the most capable personal agent AI computer for developers who need a Linux environment - unifying large memory.",
+        "The NVIDIA NemoClaw blueprint is expanding across NVIDIA\u2019s full local AI lineup - GeForce RTX, RTX PRO, RTX and DGX Spark, and DGX Station - with new streamlined installers and support for Hermes Agent."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c024d55d9d84a5b4.png",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/05/Multi-GPU-Creative-AI-Performance-on-ComfyUI-1680x865.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/075884fbe64317cf.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/728d28e5af8776e8.png"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/05/Llama.cpp-Performance-1-1680x838.png",
+        "https://blogs.nvidia.com/wp-content/uploads/2026/05/Multi-GPU-LLM-Performance-with-Tensor-Parallelism-vs.-Pipeline-Parallelism-on-llama.cpp_-1680x785.png"
+      ],
+      "_story_id": "22e323103c41456db9b8ea55b248c52a"
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/taiwan-ecosystem-ai-infrastructure/",
+      "title": "Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA",
+      "description": "Semiconductor and electronics manufacturing leaders are using NVIDIA AI to speed manufacturing from fabs to factory floors as they ramp up the production of NVIDIA Vera Rubin NVL72 infrastructure for agentic AI factories.",
+      "excerpt": "Semiconductor and electronics manufacturing leaders are using NVIDIA AI to speed manufacturing from fabs to factory floors as they ramp up the production of NVIDIA Vera Rubin NVL72 infrastructure for agentic AI factories.",
+      "summary": "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain How Cosmos 3 Helps Physical AI Think Before It Acts NVIDIA Levels Up Local AI Agents Across RTX PCs and DGX Spark NVIDIA GTC Taipei at COMPUTEX: Live Updates on What\u2019s Next in AI Hermes Unlocks Self-Improving AI Agents, Powered by NVIDIA RTX PCs and DGX Spark NVIDIA and SAP Bring Trust to Specialized Agents NVIDIA and. QCT is also working with its subsidiary Techman Robot on a physical AI developer kit that uses QuantaGrid systems for data generation and model training. In notebook cosmetic inspection, internal validation produced more than 10,000 synthetic defect images and showed the potential to reduce real-world data collection and manual labeling by about 30%, shorten AI deployment time by about 25% and improve anomaly detection by. As NVIDIA Vera Rubin ramps into full production, Taiwan\u2019s manufacturing leaders are showing how AI infrastructure becomes part of its own manufacturing engine - using accelerated computing, simulation, agents and physical AI to build the next generation of.",
+      "what_happened": "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain How Cosmos 3 Helps Physical AI Think Before It Acts NVIDIA Levels Up Local AI Agents Across RTX PCs and DGX Spark NVIDIA GTC Taipei at COMPUTEX: Live Updates on What\u2019s Next in AI Hermes Unlocks Self-Improving AI Agents, Powered by NVIDIA RTX PCs and DGX Spark NVIDIA and SAP Bring Trust to Specialized Agents NVIDIA and.",
+      "why_matters": "QCT is also working with its subsidiary Techman Robot on a physical AI developer kit that uses QuantaGrid systems for data generation and model training. In notebook cosmetic inspection, internal validation produced more than 10,000 synthetic defect images and showed the potential to reduce real-world data collection and manual labeling by about 30%, shorten AI deployment time by about 25% and improve anomaly detection by.",
+      "what_to_watch": "As NVIDIA Vera Rubin ramps into full production, Taiwan\u2019s manufacturing leaders are showing how AI infrastructure becomes part of its own manufacturing engine - using accelerated computing, simulation, agents and physical AI to build the next generation of AI systems. Pegatron is also using NVIDIA\u2019s Defect Image.",
+      "key_points": [
+        "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain How Cosmos 3 Helps.",
+        "Pegatron is also using NVIDIA\u2019s Defect Image Generation physical AI agent skill with NVIDIA Cosmos world foundation models and Isaac Sim to generate synthetic defect data, reducing AI visual inspection deployment time.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "Taiwan is home to more than 500 NVIDIA ecosystem partners.",
+        "QCT is also working with its subsidiary Techman Robot on a physical AI developer kit that uses QuantaGrid systems for data generation and model training.",
+        "Foxconn is using the new NVIDIA Factory Operations Blueprint and NemoClaw blueprints to build MoMClaw, its manufacturing operations management agent, connecting sensor and machine signals with specialized agents that.",
+        "Inventec is using the Defect Image Generation agent skill in its Observation Agent to generate synthetic defect data for automated optical inspection.",
+        "As Vera Rubin ramps into full production to power agentic AI factories worldwide, that ecosystem spans the full supply chain - from key wafer and chip partners such as TSMC , SPIL , Kinsus , KYEC and UMTC , to.",
+        "Foxconn also uses DeepHow\u2019s SOP Verification vision AI system using NVIDIA Cosmos and the NVIDIA Metropolis Blueprint for video search and summarization (VSS) to gain greater visibility into complex manufacturing.",
+        "In notebook cosmetic inspection, internal validation produced more than 10,000 synthetic defect images and showed the potential to reduce real-world data collection and manual labeling by about 30%, shorten AI.",
+        "They\u2019re applying accelerated computing, simulation, AI agents and physical AI to their own operations, creating a model for how AI can make advanced manufacturing faster, more efficient and adaptive.",
+        "Running on Wistron\u2019s NVIDIA AI infrastructure with NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs, NVIDIA Omniverse and NVIDIA Metropolis libraries, these workflows speed layout analysis by as much as 70% and cut."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/78987a33bc515065.img",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/05/MomClaw_V03.gif",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d936040d126b7565.png"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/05/Pegatron-1680x938.png"
+      ],
+      "_story_id": "c01d71ec7d144fd283c5d50aa77a2a31"
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/factory-operations-fox-blueprint-ai-brain/",
+      "title": "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain",
+      "description": "The FOX blueprint, a reference design for building an autonomous factory manager agent, delivers total factory visibility for better, faster decision-making.",
+      "excerpt": "The FOX blueprint, a reference design for building an autonomous factory manager agent, delivers total factory visibility for better, faster decision-making.",
+      "summary": "Metropolis VSS blueprint 3 is now generally available, including skills that allow external agents - such as Claude Code, Codex, Hermes and NemoClaw - to access VSS components and rapidly build and operate video analytics AI agents. Connecting factory systems and agents : FOX integrates with industrial data sources, machines, applications and robot fleets, and can connect to specialized agents from leading software developers through standard application programming interfaces and agent skills. To monitor manufacturing operations, improve quality, verify standard operating procedures and improve worker safety, companies including DeepHow , Overview AI , Roboflow and Spingence are building specialized agents powered by NVIDIA AI and the NVIDIA VSS blueprint: DeepHow is using the Metropolis VSS Blueprint and Cosmos 3 to develop a standard operating procedure agent for Foxconn that supports assembly of Bianca boards. The toolkit generates synthetic defect data and deploys visual inspection AI models 12x faster, reducing time to first inference to under 30 minutes across more than 300 products.",
+      "what_happened": "Metropolis VSS blueprint 3 is now generally available, including skills that allow external agents - such as Claude Code, Codex, Hermes and NemoClaw - to access VSS components and rapidly build and operate video analytics AI agents. Connecting factory systems and agents : FOX integrates with industrial data sources, machines, applications and robot fleets, and can connect to specialized agents from leading software developers through standard application programming interfaces and agent skills.",
+      "why_matters": "To monitor manufacturing operations, improve quality, verify standard operating procedures and improve worker safety, companies including DeepHow , Overview AI , Roboflow and Spingence are building specialized agents powered by NVIDIA AI and the NVIDIA VSS blueprint: DeepHow is using the Metropolis VSS Blueprint and Cosmos 3 to develop a standard operating procedure agent for Foxconn that supports assembly of Bianca boards.",
+      "what_to_watch": "The toolkit generates synthetic defect data and deploys visual inspection AI models 12x faster, reducing time to first inference to under 30 minutes across more than 300 products.",
+      "key_points": [
+        "Metropolis VSS blueprint 3 is now generally available, including skills that allow external agents - such as Claude Code, Codex, Hermes and NemoClaw - to access VSS components and rapidly build and operate video.",
+        "Connecting factory systems and agents : FOX integrates with industrial data sources, machines, applications and robot fleets, and can connect to specialized agents from leading software developers through standard.",
+        "The toolkit generates synthetic defect data and deploys visual inspection AI models 12x faster, reducing time to first inference to under 30 minutes across more than 300 products.",
+        "Automating AI model training : Using NVIDIA TAO skills, factory manager agents can automate the full model-training lifecycle - identifying accuracy gaps, sourcing or synthetically generating training data, fine-tuning.",
+        "Advantech has deployed the factory manager agent in its own factories to autonomously manage energy across HVAC and lighting specialized agents and projects to cut energy consumption by 10%.",
+        "Today at GTC Taipei at COMPUTEX, NVIDIA announced the NVIDIA Factory Operations Blueprint (FOX) - a reference design for building an autonomous factory manager agent that continuously monitors and reasons across the.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "Wistron is adopting the FOX blueprint and using NVIDIA Cosmos , NVIDIA Nemotron open models and the NVIDIA Metropolis VSS blueprint to build surface-mount technology agents that analyze and orchestrate production-line.",
+        "Spingence is using the NVIDIA D efect I mage G eneration skill, NVIDIA Cosmos open vision language model and NVIDIA TAO Toolkit for fine-tuning to develop a factory manager agent for Cooler Master that connects.",
+        "Taiwan manufacturers Advantech , Foxconn , Pegatron and Wistron are the first to deploy autonomous factory manager agents using the NVIDIA FOX blueprint and NemoClaw.",
+        "Operating intelligent factory workflows : Visual inspection, process compliance and material transport agents can be managed with NVIDIA open models and blueprints, including the NVIDIA Metropolis Blueprint for video.",
+        "To monitor manufacturing operations, improve quality, verify standard operating procedures and improve worker safety, companies including DeepHow , Overview AI , Roboflow and Spingence are building specialized agents."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8c0ddf14d98a211b.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/05/FOX-diagram-1680x727.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "e88024fa92ec4d2c881949aacba0769c"
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/ai-cloud-ecosystem/",
+      "title": "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand",
+      "description": "Fast-growing ecosystem helps enterprises, startups, nations, AI labs and developers scale agentic AI applications.",
+      "excerpt": "Fast-growing ecosystem helps enterprises, startups, nations, AI labs and developers scale agentic AI applications.",
+      "summary": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff NVIDIA AI Cloud Ecosystem Expands. \u201cNVIDIA AI Clouds bring full-stack AI factories closer to the regions, industries and developers building the next generation of AI, from model training to real-time inference and AI agents that will transform how people and organizations work.\u201d Broad AI Cloud Ecosystem AI cloud providers, telcos, sovereign AI builders and vertically integrated infrastructure providers are building AI factories with NVIDIA to serve customers. An early adopter of NVIDIA Vera Rubin and the NVIDIA Vera CPU, CoreWeave is also among the first to adopt NVIDIA Spectrum-X Ethernet Photonics, helping provide the networking foundation for million-GPU AI factories. The workbench brings technologies.",
+      "what_happened": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff NVIDIA AI Cloud Ecosystem Expands.",
+      "why_matters": "\u201cNVIDIA AI Clouds bring full-stack AI factories closer to the regions, industries and developers building the next generation of AI, from model training to real-time inference and AI agents that will transform how people and organizations work.\u201d Broad AI Cloud Ecosystem AI cloud providers, telcos, sovereign AI builders and vertically integrated infrastructure providers are building AI factories with NVIDIA to serve customers.",
+      "what_to_watch": "An early adopter of NVIDIA Vera Rubin and the NVIDIA Vera CPU, CoreWeave is also among the first to adopt NVIDIA Spectrum-X Ethernet Photonics, helping provide the networking foundation for million-GPU AI factories. The workbench brings technologies including NVIDIA Cosmos 3, NVIDIA Isaac Sim and Isaac GR00T into.",
+      "key_points": [
+        "CoreWeave is extending its platform for robotics and physical AI workflows, including using NVIDIA Cosmos 3 , the latest frontier world foundation model , to help teams generate synthetic data, fine-tune models and.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "The workbench brings technologies including NVIDIA Cosmos 3, NVIDIA Isaac Sim and Isaac GR00T into composable workflows that can be assembled by AI agents, helping robotics and autonomous systems teams move faster from.",
+        "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA How Cosmos 3.",
+        "\u201cNVIDIA AI Clouds bring full-stack AI factories closer to the regions, industries and developers building the next generation of AI, from model training to real-time inference and AI agents that will transform how.",
+        "Engineered for AI Factory Economics As AI shifts from model development to reasoning and high-volume inference, the measure of infrastructure is no longer just capacity announced but also the economics of token output.",
+        "\u201cTogether with NVIDIA, CoreWeave is building the full-stack cloud infrastructure that gives AI labs, enterprises and developers the performance, scale and reliability they need to turn frontier models, AI agents and.",
+        "\u201cWith NVIDIA, Nebius is creating an AI cloud where AI agents can compose the tools, data and compute needed to accelerate AI workloads - from robotics and life sciences to the enterprise - from experimentation to.",
+        "They combine NVIDIA accelerated computing, networking and AI software to help partners support training, fine-tuning, inference, agentic AI, physical AI and sovereign AI deployments.",
+        "Partners including CoreWeave , Firmus , IREN and Nscale are expanding AI infrastructure to support frontier model development, enterprise AI, agentic applications and high-volume inference.",
+        "Firmus Expands AI Factory Footprint Across Australia and Asia-Pacific Firmus Technologies is expanding its AI factory footprint across South Australia and Southeast Asia, building energy-efficient infrastructure to.",
+        "DSX MaxLPS helps power-constrained AI factories maximize compute within a fixed power budget, enabling up to 40% more GPUs."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/09a4e1cdacd46763.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/05/partner-social-ncp-ai-factory-announcement-1920x1080-1.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/993c3b4fdbd9b5f1.jpg"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/05/partner-social-ncp-ai-factory-announcement-1920x1080-1-1280x720.jpg"
+      ],
+      "_story_id": "0a797fe43fe54d189aa957a1753ec6e5"
+    },
+    {
+      "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
+      "title": "Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action",
+      "description": "A Blog post by NVIDIA on Hugging Face",
+      "excerpt": "A Blog post by NVIDIA on Hugging Face",
+      "summary": "SECTION 4: Datasets for physical AI As part of the Cosmos 3 launch, NVIDIA is releasing a set of Synthetic Data Generation (SDG) datasets to help the physical AI community train and evaluate world foundation models. This release of Cosmos 3 includes two model sizes, optimized for different deployment scenarios: Cosmos 3 Nano. The biggest change in Cosmos 3 compared to previous Cosmos releases is that it's an omni-model, built on a Mixture-of-Transformers (MoT) architecture. These skills help validate requirements, and set up the environment with dependencies. Generate realistic and physically plausible video worlds from text, images, videos or action inputs Reason about physical properties like motion, causality, and spatial relationships Predict future video and action sequences based on the current state Cosmos 3 helps build physical AI systems capable of understanding.",
+      "what_happened": "SECTION 4: Datasets for physical AI As part of the Cosmos 3 launch, NVIDIA is releasing a set of Synthetic Data Generation (SDG) datasets to help the physical AI community train and evaluate world foundation models. This release of Cosmos 3 includes two model sizes, optimized for different deployment scenarios: Cosmos 3 Nano.",
+      "why_matters": "The biggest change in Cosmos 3 compared to previous Cosmos releases is that it's an omni-model, built on a Mixture-of-Transformers (MoT) architecture. These skills help validate requirements, and set up the environment with dependencies.",
+      "what_to_watch": "Generate realistic and physically plausible video worlds from text, images, videos or action inputs Reason about physical properties like motion, causality, and spatial relationships Predict future video and action sequences based on the current state Cosmos 3 helps build physical AI systems capable of understanding.",
+      "key_points": [
+        "SECTION 4: Datasets for physical AI As part of the Cosmos 3 launch, NVIDIA is releasing a set of Synthetic Data Generation (SDG) datasets to help the physical AI community train and evaluate world foundation models.",
+        "Models mentioned in this article 2 Collections mentioned in this article 1 Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for.",
+        "Cosmos 3 Super and Cosmos 3 Nano on Hugging Face with model cards and licensing Post-training scripts for training Cosmos 3 on your own data (on GitHub) Open synthetic data generation (SDG) datasets for physical AI.",
+        "If you're training a robot to fold laundry, building an autonomous driving simulation, or generating synthetic training data for warehouse safety scenarios, Cosmos 3 is the foundation model designed for exactly these.",
+        "SECTION 2: Cosmos 3 Capabilities Cosmos 3 supports multiple input and generation modalities through a single unified model: For video generation, we recommend using detailed prompts in the form of narrative paragraphs.",
+        "Let's see a Text-to-Image example for single frame generation using the Cosmos 3 Nano model: Here's the image generated by the Cosmos 3 Nano model and given prompt: The documentation also has examples on Text-to-Video.",
+        "This release of Cosmos 3 includes two model sizes, optimized for different deployment scenarios: Cosmos 3 Nano.",
+        "This is the 32B parameter model (32B reasoner and 32B generator) designed for large-scale synthetic data generation (SDG) and research, and runs on NVIDIA Hopper and Blackwell GPUs.",
+        "Image-to-video generation using Cosmos 3 for warehouse safety data.",
+        "Video generated by Cosmos 3 for robotics pick and place use-cases.",
+        "Previously, developers had to work with separate models for different capabilities like world generation (Cosmos Predict), controlled generation (Cosmos Transfer), scene understanding (Cosmos Reason) and policy.",
+        "A Blog post by NVIDIA on Hugging Face Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action Whether you're building for robotics, autonomous vehicles, or smart spaces, Cosmos 3 gives."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/08eeaa27e318b72a.png",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/6799309995f2227228bc38f3/g06bFosM9Br-cwgfmt7cl.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/96521280ddc0915d.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e93d103edb3eded1.png"
+      ],
+      "extra_image_urls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6799309995f2227228bc38f3/js_kXqJrfpYZd1hZvwPug.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/6799309995f2227228bc38f3/IBreD1akJz8T47xKva3_B.png"
+      ],
+      "_story_id": "73de680a0459462dae167713d0aea2b7"
+    },
+    {
+      "url": "https://www.theverge.com/tech/940572/apples-strategy-smart-glasses-smart-watches",
+      "title": "navigates RAMageddon. But for deskto",
+      "description": "navigates RAMageddon. But for deskto Link : [HIGH] Apple\u2019s strategy for smart glasses is the same as smart watches Company : The Verge AI Summary : Apple isn't just looking to take on Meta in the smart glasses market; it's looking to upend eyewear as a whole, according to Bloomberg's Mark Gurman. When the Apple Watch launched, it wasn't simply co Link : [HIGH] How to watch Nvidia\u2019s Computex keynote Company : The Verge AI Summary : NVIDIA's CEO Jensen Huang is set to take the stage for his GTC Taipei keynote at 8PM PT / 11PM ET. You can watch all the announcements here and embedded below. Rumors have been flying about what to ex Link : [HIGH] How Turkey Hacked the Hair Transplant Industry Company : Wired AI Summary ...",
+      "excerpt": "navigates RAMageddon. But for deskto Link : [HIGH] Apple\u2019s strategy for smart glasses is the same as smart watches Company : The Verge AI Summary : Apple isn't just looking to take on Meta in the smart glasses market; it's looking to upend eyewear as a whole, according to Bloomberg's Mark Gurman. When the Apple Watch launched, it wasn't simply co Link : [HIGH] How to watch Nvidia\u2019s Computex keynote Company : The Verge AI Summary : NVIDIA's CEO Jensen Huang is set to take the stage for his GTC Taipei keynote at 8PM PT / 11PM ET. You can watch all the announcements here and embedded below. Rumors...",
+      "summary": "When the Apple Watch launched, it wasn't simply co Link : [HIGH] How to watch Nvidia\u2019s Computex keynote Company : The Verge AI Summary : NVIDIA's CEO Jensen Huang is set to take the stage for his GTC Taipei keynote at 8PM PT / 11PM ET. But for deskto Link : [HIGH] Apple\u2019s strategy for smart glasses is the same as smart watches Company : The Verge AI Summary : Apple isn't just looking to take on Meta in the smart glasses market; it's looking to upend eyewear as a whole, according to Bloomberg's Mark Gurman. You can watch all the announcements here and embedded below.",
+      "what_happened": "When the Apple Watch launched, it wasn't simply co Link : [HIGH] How to watch Nvidia\u2019s Computex keynote Company : The Verge AI Summary : NVIDIA's CEO Jensen Huang is set to take the stage for his GTC Taipei keynote at 8PM PT / 11PM ET.",
+      "why_matters": "But for deskto Link : [HIGH] Apple\u2019s strategy for smart glasses is the same as smart watches Company : The Verge AI Summary : Apple isn't just looking to take on Meta in the smart glasses market; it's looking to upend eyewear as a whole, according to Bloomberg's Mark Gurman.",
+      "what_to_watch": "You can watch all the announcements here and embedded below.",
+      "key_points": [
+        "When the Apple Watch launched, it wasn't simply co Link : [HIGH] How to watch Nvidia\u2019s Computex keynote Company : The Verge AI Summary : NVIDIA's CEO Jensen Huang is set to take the stage for his GTC Taipei keynote at.",
+        "But for deskto Link : [HIGH] Apple\u2019s strategy for smart glasses is the same as smart watches Company : The Verge AI Summary : Apple isn't just looking to take on Meta in the smart glasses market; it's looking to upend.",
+        "Rumors have been flying about what to ex Link : [HIGH] How Turkey Hacked the Hair Transplant Industry Company : Wired AI Summary ...",
+        "You can watch all the announcements here and embedded below."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "50f27ec7216c48e7a5111234b2852731"
+    },
+    {
+      "url": "https://www.wired.com/story/how-turkey-hacked-the-hair-transplant-industry/",
+      "title": "ny : Engadget",
+      "description": "ny : Engadget Summary : These refreshed devices are waiting on the debut of the revamped Siri. Link : [HIGH] How Turkey Hacked the Hair Transplant Industry Company : Wired AI Summary : From specialized motors to the use of machine learning algorithms, Turkey\u2019s billion-dollar hair-transplant industry is the result of a constant process of innovation. Link : [HIGH] SoftBank says it will invest up to \u20ac75 billion to build French data centers Company : TechCrunch AI Summary : The goal, the firm said, is to develop and operate up to 5 gigawatts of additional data center capacity. Link : [MEDIUM] anthropics/claude-code: v2.1.159 Company : Anthropic Summary : ## What's changed. Internal...",
+      "excerpt": "ny : Engadget Summary : These refreshed devices are waiting on the debut of the revamped Siri. Link : [HIGH] How Turkey Hacked the Hair Transplant Industry Company : Wired AI Summary : From specialized motors to the use of machine learning algorithms, Turkey\u2019s billion-dollar hair-transplant industry is the result of a constant process of innovation. Link : [HIGH] SoftBank says it will invest up to \u20ac75 billion to build French data centers Company : TechCrunch AI Summary : The goal, the firm said, is to develop and operate up to 5 gigawatts of additional data center capacity. Link : [MEDIUM] anthropics/claude-code: v2.1.159 Company : Anthropic Summary : ## What's changed. Internal...",
+      "summary": "Link : [HIGH] SoftBank says it will invest up to \u20ac75 billion to build French data centers Company : TechCrunch AI Summary : The goal, the firm said, is to develop and operate up to 5 gigawatts of additional data center capacity. Link : [HIGH] How Turkey Hacked the Hair Transplant Industry Company : Wired AI Summary : From specialized motors to the use of machine learning algorithms, Turkey\u2019s billion-dollar hair-transplant industry is the result of a constant process of innovation. Link : [HIGH] How Turkey Hacked the Hair Transplant Industry Company : Wired AI Summary : From specialized motors to the use of machine learning algorithms, Turkey\u2019s billion-dollar hair-transplant industry is the result of a constant process of innovation. Link : [MEDIUM] anthropics/claude-code: v2.1.159 Company : Anthropic Summary : ## What's changed. ny : Engadget Summary : These refreshed devices are waiting on the debut of the revamped Siri.",
+      "what_happened": "Link : [HIGH] SoftBank says it will invest up to \u20ac75 billion to build French data centers Company : TechCrunch AI Summary : The goal, the firm said, is to develop and operate up to 5 gigawatts of additional data center capacity. Link : [HIGH] How Turkey Hacked the Hair Transplant Industry Company : Wired AI Summary : From specialized motors to the use of machine learning algorithms, Turkey\u2019s billion-dollar hair-transplant industry is the result of a constant process of innovation.",
+      "why_matters": "Link : [HIGH] How Turkey Hacked the Hair Transplant Industry Company : Wired AI Summary : From specialized motors to the use of machine learning algorithms, Turkey\u2019s billion-dollar hair-transplant industry is the result of a constant process of innovation. Link : [MEDIUM] anthropics/claude-code: v2.1.159 Company : Anthropic Summary : ## What's changed.",
+      "what_to_watch": "ny : Engadget Summary : These refreshed devices are waiting on the debut of the revamped Siri.",
+      "key_points": [
+        "Link : [HIGH] SoftBank says it will invest up to \u20ac75 billion to build French data centers Company : TechCrunch AI Summary : The goal, the firm said, is to develop and operate up to 5 gigawatts of additional data center.",
+        "Link : [HIGH] How Turkey Hacked the Hair Transplant Industry Company : Wired AI Summary : From specialized motors to the use of machine learning algorithms, Turkey\u2019s billion-dollar hair-transplant industry is the result.",
+        "Link : [MEDIUM] anthropics/claude-code: v2.1.159 Company : Anthropic Summary : ## What's changed.",
+        "ny : Engadget Summary : These refreshed devices are waiting on the debut of the revamped Siri."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "c45c09ee52674e79938125477bb2e3d6"
+    },
+    {
+      "url": "https://www.bloomberg.com/news/videos/2026-05-31/major-companies-reconsider-ai-costs-video",
+      "title": "[MEDIUM] Major Companies Reconsider AI Costs",
+      "description": "Link : [MEDIUM] Major Companies Reconsider AI Costs Company : Bloomberg Tech Summary : Chipmakers are by far the hottest stocks in the market, but their recent surge is lending urgency to the debate over whether investors are buying into an artificial-intelligence bubble that could be d Link : [MEDIUM] I've used Android Auto with Gemini for 2 months now. it's transformed my drives in 4 ways Company : ZDNet AI Summary : Gemini has made voice control in my car fun and useful, and I'm still discovering new ways to use it. Link : [MEDIUM] Why robotic arms are now being integrated with CNC machines Company : Robotics Business Review Summary : Robotic...",
+      "excerpt": "Link : [MEDIUM] Major Companies Reconsider AI Costs Company : Bloomberg Tech Summary : Chipmakers are by far the hottest stocks in the market, but their recent surge is lending urgency to the debate over whether investors are buying into an artificial-intelligence bubble that could be d Link : [MEDIUM] I've used Android Auto with Gemini for 2 months now. it's transformed my drives in 4 ways Company : ZDNet AI Summary : Gemini has made voice control in my car fun and useful, and I'm still discovering new ways to use it. Link : [MEDIUM] Why robotic arms are now being integrated with CNC machines Company : Robotics Business Review Summary : Robotic...",
+      "summary": "Link : [MEDIUM] Why robotic arms are now being integrated with CNC machines Company : Robotics Business Review Summary : Robotic... it's transformed my drives in 4 ways Company : ZDNet AI Summary : Gemini has made voice control in my car fun and useful, and I'm still discovering new ways to use it. Link : [MEDIUM] Major Companies Reconsider AI Costs Company : Bloomberg Tech Summary : Chipmakers are by far the hottest stocks in the market, but their recent surge is lending urgency to the debate over whether investors are buying into an artificial-intelligence bubble that could be d Link : [MEDIUM] I've used Android Auto with Gemini for 2 months now.",
+      "what_happened": "Link : [MEDIUM] Why robotic arms are now being integrated with CNC machines Company : Robotics Business Review Summary : Robotic... it's transformed my drives in 4 ways Company : ZDNet AI Summary : Gemini has made voice control in my car fun and useful, and I'm still discovering new ways to use it.",
+      "why_matters": "Link : [MEDIUM] Major Companies Reconsider AI Costs Company : Bloomberg Tech Summary : Chipmakers are by far the hottest stocks in the market, but their recent surge is lending urgency to the debate over whether investors are buying into an artificial-intelligence bubble that could be d Link : [MEDIUM] I've used Android Auto with Gemini for 2 months now.",
+      "what_to_watch": "",
+      "key_points": [
+        "Link : [MEDIUM] Why robotic arms are now being integrated with CNC machines Company : Robotics Business Review Summary : Robotic...",
+        "it's transformed my drives in 4 ways Company : ZDNet AI Summary : Gemini has made voice control in my car fun and useful, and I'm still discovering new ways to use it.",
+        "Link : [MEDIUM] Major Companies Reconsider AI Costs Company : Bloomberg Tech Summary : Chipmakers are by far the hottest stocks in the market, but their recent surge is lending urgency to the debate over whether."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "49926b2d945042bda766c41134c10948"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 9,
+  "has_cta": true,
+  "slides": [
+    "Announced adds at GTC Taipei at COMPUTEX NVIDIA OpenShell.",
+    "Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote NVIDIA AI Cloud Ecosystem.",
+    "Comments Share Share upgrades 0 Article As factories move isolated automation.",
+    "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand.",
+    "Cosmos releases biggest change in 3 compared to previous.",
+    "Similarly updates Apple's smart glasses will be positioned not.",
+    "SoftBank says it will invest up to \u20ac75 billion to build French.",
+    "ZDNet AI Gemini updates It's transformed my drives in 4 ways.",
+    "FOLLOW @graitech"
+  ]
+}

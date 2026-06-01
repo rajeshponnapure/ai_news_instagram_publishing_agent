@@ -1,0 +1,349 @@
+{
+  "email_received_at": "2026-06-01T09:41+00:00",
+  "recommended_post_time": "14:00",
+  "headline": "Nvidia jumps into PCs with new Arm-based chip debuting in laptops from Microsoft, Dell, HP",
+  "subject": "",
+  "source_date": "2026-06-01T09:41:03.341093",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://www.cnbc.com/2026/05/31/nvidias-new-chip-to-power-fresh-line-of-windows-laptops-by-dell-hp.html",
+  "article_title": "Nvidia jumps into PCs with new Arm-based chip debuting in laptops from Microsoft, Dell, HP",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a2f73de1609634dc.jpg",
+  "article_image_url": "https://image.cnbcfm.com/api/v1/image/108314325-1780289502127-gettyimages-2278510322-AFP_B4KP4D2.jpeg?v=1780289528&w=1920&h=1080",
+  "article_items": [
+    {
+      "url": "https://www.cnbc.com/2026/05/31/nvidias-new-chip-to-power-fresh-line-of-windows-laptops-by-dell-hp.html",
+      "title": "Nvidia jumps into PCs with new Arm-based chip debuting in laptops from Microsoft, Dell, HP",
+      "description": "Nvidia CEO Jensen Huang unveiled a long-awaited Arm-based PC chip, breaking into PCs for the first time on new laptops by Dell, Microsoft, HP, ASUS and others.",
+      "excerpt": "Nvidia CEO Jensen Huang unveiled a long-awaited Arm-based PC chip, breaking into PCs for the first time on new laptops by Dell, Microsoft, HP, ASUS and others.",
+      "summary": "\u201cThis is the first completely re-engineered, reinvented line of PCs that has happened in 40 years.\u201d Nvidia\u2019s initial plan is to release more than 30 laptops and 10 desktops with the new chip over time, a Nvidia spokesperson said. Buck said that Vera can produce tokens 1.8 times faster than x86 today, \u201cadvancing overall agent token performance, enabling smarter, longer-thinking agents and in the end, generating more data center token revenue.\u201d Trump hits out at \u2018chirping\u2019 critics as U.S. Reuters reported that the company was working on the PC chip in 2023, as part of a push by Microsoft to get companies to make Arm-based processors for its computers. Nvidia has emerged as the world\u2019s most valuable company by dominating the market for AI chips in the data center. The next month, Nvidia unveiled an entire rack filled with its Vera CPUs for data centers. While training large models requires mass amounts of parallel math - excellent work for a GPU - accessing that data and pushing it out to multiple agents requires more general compute offered by a CPU.",
+      "what_happened": "\u201cThis is the first completely re-engineered, reinvented line of PCs that has happened in 40 years.\u201d Nvidia\u2019s initial plan is to release more than 30 laptops and 10 desktops with the new chip over time, a Nvidia spokesperson said. Buck said that Vera can produce tokens 1.8 times faster than x86 today, \u201cadvancing overall agent token performance, enabling smarter, longer-thinking agents and in the end, generating more data center token revenue.\u201d Trump hits out at \u2018chirping\u2019 critics as U.S.",
+      "why_matters": "Reuters reported that the company was working on the PC chip in 2023, as part of a push by Microsoft to get companies to make Arm-based processors for its computers. Nvidia has emerged as the world\u2019s most valuable company by dominating the market for AI chips in the data center.",
+      "what_to_watch": "The next month, Nvidia unveiled an entire rack filled with its Vera CPUs for data centers. While training large models requires mass amounts of parallel math - excellent work for a GPU - accessing that data and pushing it out to multiple agents requires more general compute offered by a CPU.",
+      "key_points": [
+        "\u201cThis is the first completely re-engineered, reinvented line of PCs that has happened in 40 years.\u201d Nvidia\u2019s initial plan is to release more than 30 laptops and 10 desktops with the new chip over time, a Nvidia.",
+        "Buck said that Vera can produce tokens 1.8 times faster than x86 today, \u201cadvancing overall agent token performance, enabling smarter, longer-thinking agents and in the end, generating more data center token revenue.\u201d.",
+        "While training large models requires mass amounts of parallel math - excellent work for a GPU - accessing that data and pushing it out to multiple agents requires more general compute offered by a CPU.",
+        "While RTX Spark will eventually expand to different price points, Nvidia said it\u2019s currently targeted toward creators, AI developers and gamers, \u201clooking for very thin and light laptops, slim laptops, portable laptops.",
+        "The first laptops powered by Nvidia\u2019s new chip will be as thin as 14 millimeters, carrying a premium price tag, and will also debut in some small desktop models.",
+        "Intel unveiled its new Xeon 6+ data center CPUs at Computex in Taiwan on Monday.",
+        "Nvidia CEO Jensen Huang unveiled a long-awaited Arm-based PC chip, breaking into PCs for the first time on new laptops by Dell, Microsoft, HP, ASUS and others.",
+        "The next month, Nvidia unveiled an entire rack filled with its Vera CPUs for data centers.",
+        "and Iran launch fresh wave of strikes Eva Longoria says this quality is more important than an Ivy League education Fed\u2019s Powell warns Trump\u2019s political \u2018stress test\u2019 will wreck public trust in central bank Berkshire.",
+        "Reuters reported that the company was working on the PC chip in 2023, as part of a push by Microsoft to get companies to make Arm-based processors for its computers.",
+        "The Arm-based chip will debut on laptop models from Microsoft, Dell, HP, ASUS, Lenovo and MSI.",
+        "Nvidia has emerged as the world\u2019s most valuable company by dominating the market for AI chips in the data center."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a2f73de1609634dc.jpg",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108314325-1780289502127-gettyimages-2278510322-AFP_B4KP4D2.jpeg?v=1780289528&w=1920&h=1080",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b314ad29c87a8444.jpg"
+      ],
+      "extra_image_urls": [
+        "https://image.cnbcfm.com/api/v1/image/108314325-1780289502127-gettyimages-2278510322-AFP_B4KP4D2.jpeg?v=1780289528&w=1858&h=1045&vtcrop=y"
+      ],
+      "_story_id": "497c61f2f5144de0b80b36b426d8c8c2"
+    },
+    {
+      "url": "https://cryptobriefing.com/perplexity-comet-browser-coinbase-crypto/",
+      "title": "Perplexity launches AI-powered browser Comet, available via waitlist",
+      "description": "Perplexity AI launches Comet, a Chromium-based browser with built-in AI and a Coinbase partnership for real-time crypto data. Here's what it means for traders.",
+      "excerpt": "Perplexity AI launches Comet, a Chromium-based browser with built-in AI and a Coinbase partnership for real-time crypto data. Here's what it means for traders.",
+      "summary": "The invite-only launch is restricted to Perplexity Max subscribers, who pay $200 per month for the privilege of being early. Just one day later, on July 10, Perplexity announced a partnership with Coinbase to pipe real-time crypto market data directly into the browser. Perplexity launches AI-powered browser Comet, available via waitlist The AI search company's new Chromium-based browser ships with a Coinbase partnership for real-time crypto data baked in from day one. Every Comet user who checks a token price through the browser is engaging with Coinbase\u2019s data infrastructure, even if they never open the Coinbase app itself. The $200 monthly price tag for early access also raises questions about Comet\u2019s eventual business model.",
+      "what_happened": "The invite-only launch is restricted to Perplexity Max subscribers, who pay $200 per month for the privilege of being early. Just one day later, on July 10, Perplexity announced a partnership with Coinbase to pipe real-time crypto market data directly into the browser.",
+      "why_matters": "Perplexity launches AI-powered browser Comet, available via waitlist The AI search company's new Chromium-based browser ships with a Coinbase partnership for real-time crypto data baked in from day one. Every Comet user who checks a token price through the browser is engaging with Coinbase\u2019s data infrastructure, even if they never open the Coinbase app itself.",
+      "what_to_watch": "The $200 monthly price tag for early access also raises questions about Comet\u2019s eventual business model.",
+      "key_points": [
+        "The invite-only launch is restricted to Perplexity Max subscribers, who pay $200 per month for the privilege of being early.",
+        "Just one day later, on July 10, Perplexity announced a partnership with Coinbase to pipe real-time crypto market data directly into the browser.",
+        "The $200 monthly price tag for early access also raises questions about Comet\u2019s eventual business model.",
+        "Mobile versions are also in the pipeline, with an Android release slated for November 2025 and iOS following in March 2026.",
+        "Perplexity AI launches Comet, a Chromium-based browser with built-in AI and a Coinbase partnership for real-time crypto data.",
+        "Perplexity launches AI-powered browser Comet, available via waitlist The AI search company's new Chromium-based browser ships with a Coinbase partnership for real-time crypto data baked in from day one.",
+        "Perplexity plans to open Comet to the broader public on October 2, 2025, removing the paywall and making the browser freely available worldwide.",
+        "The difference is what sits on top: Perplexity\u2019s conversational AI is embedded as the default search engine, turning the browser into something closer to an interactive research assistant than a traditional window to.",
+        "What Comet actually does Comet is built on the Chromium framework, the same open-source foundation that powers Chrome, Brave, Edge, and most of the browsers you\u2019ve actually used.",
+        "Every Comet user who checks a token price through the browser is engaging with Coinbase\u2019s data infrastructure, even if they never open the Coinbase app itself.",
+        "For Coinbase, the partnership extends its data distribution footprint beyond its own app and website.",
+        "Perplexity AI rolled out its Comet browser on July 9, 2025, giving its highest-tier subscribers a first look at what the company hopes will become a serious challenger to Google Chrome."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4cf906d5bdd1042f.jpg",
+      "image_url": "https://static.cryptobriefing.com/wp-content/uploads/2026/05/30091200/perplexity-s-comet-ai-browser-now-free-for-all-mobile-app-co-800x420.jpeg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "1d7d2fcb1da3497aa064703d262b3f16"
+    },
+    {
+      "url": "https://www.geeky-gadgets.com/ios-27-leaked-images-siri-redesign/",
+      "title": "What the First iOS 27 Leaked Images Reveal About Your iPhone",
+      "description": "Leaked images of iOS 27 reveal a massive Siri redesign integrated into the Dynamic Island, alongside new AI-powered camera widgets and photo editing tools.",
+      "excerpt": "Leaked images of iOS 27 reveal a massive Siri redesign integrated into the Dynamic Island, alongside new AI-powered camera widgets and photo editing tools.",
+      "summary": "Redesigned Siri: Smarter, Faster and More Integrated One of the standout features of iOS 27 is the complete redesign of Siri , Apple\u2019s voice assistant. AI-Powered Features: Smarter Tools for Everyday Tasks Artificial intelligence takes center stage in iOS 27, introducing tools designed to simplify and enhance your daily interactions. Apple has addressed the bugs and performance issues that plagued iOS 26, making sure a smoother and more reliable user experience. Camera Customization: More Control at Your Fingertips The camera app in iOS 27 receives a significant overhaul, focusing on user control and customization . Apple Just Confirmed WWDC 26: What to Expect from Siri 2.0 and iOS 27 Apple Just Leaked iOS 27 Features Early: New Visual Intelligence Coming to iPhone iOS 27 Features Leaked - This Is the Biggest iPhone Update in a Decade Disclosure: Some of our articles include affiliate links. The video below from iDB gives us more.",
+      "what_happened": "Redesigned Siri: Smarter, Faster and More Integrated One of the standout features of iOS 27 is the complete redesign of Siri , Apple\u2019s voice assistant. AI-Powered Features: Smarter Tools for Everyday Tasks Artificial intelligence takes center stage in iOS 27, introducing tools designed to simplify and enhance your daily interactions.",
+      "why_matters": "Apple has addressed the bugs and performance issues that plagued iOS 26, making sure a smoother and more reliable user experience. Camera Customization: More Control at Your Fingertips The camera app in iOS 27 receives a significant overhaul, focusing on user control and customization .",
+      "what_to_watch": "Apple Just Confirmed WWDC 26: What to Expect from Siri 2.0 and iOS 27 Apple Just Leaked iOS 27 Features Early: New Visual Intelligence Coming to iPhone iOS 27 Features Leaked - This Is the Biggest iPhone Update in a Decade Disclosure: Some of our articles include affiliate links. The video below from iDB gives us more.",
+      "key_points": [
+        "Redesigned Siri: Smarter, Faster and More Integrated One of the standout features of iOS 27 is the complete redesign of Siri , Apple\u2019s voice assistant.",
+        "AI-Powered Features: Smarter Tools for Everyday Tasks Artificial intelligence takes center stage in iOS 27, introducing tools designed to simplify and enhance your daily interactions.",
+        "The video below from iDB gives us more details about the new iOS 27.",
+        "In the realm of photo editing, iOS 27 introduces advanced AI tools like \u201cExtend\u201d and \u201cReframe.\u201d The \u201cExtend\u201d feature allows you to expand the dimensions of your photos seamlessly, while \u201cReframe\u201d lets you adjust angles.",
+        "Leaked images of iOS 27 reveal a massive Siri redesign integrated into the Dynamic Island, alongside new AI-powered camera widgets and photo editing tools.",
+        "Additionally, iOS 27 introduces a dedicated Siri app , transforming the assistant into a chatbot-like tool.",
+        "Whether you\u2019re snapping quick photos or working on a detailed photography project, iOS 27 enables you to make the most of your device\u2019s camera capabilities.",
+        "Improved Stability and Performance While the new features are exciting, iOS 27 also focuses on improving system stability and performance .",
+        "Whether you\u2019re drawn to the advanced AI tools, the intuitive multitasking capabilities, or the streamlined performance, iOS 27 is designed to adapt seamlessly to your needs.",
+        "Whether you\u2019re a casual iPhone owner or a tech enthusiast, iOS 27 promises to address past performance concerns while introducing tools that redefine how you interact with your device.",
+        "Apple Just Confirmed WWDC 26: What to Expect from Siri 2.0 and iOS 27 Apple Just Leaked iOS 27 Features Early: New Visual Intelligence Coming to iPhone iOS 27 Features Leaked - This Is the Biggest iPhone Update in a.",
+        "What the First iOS 27 Leaked Images Reveal About Your iPhone The upcoming iOS 27 update is shaping up to be a significant milestone in Apple\u2019s software evolution."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ee2f0adc185b9460.webp",
+      "image_url": "https://www.geeky-gadgets.com/wp-content/uploads/2026/05/ios-27-7.webp",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e2cbf506a19260ca.jpg"
+      ],
+      "extra_image_urls": [
+        "https://www.geeky-gadgets.com/wp-content/uploads/2026/05/ios-27-7.jpg"
+      ],
+      "_story_id": "a373466154e74ae784ca1b33f42281f5"
+    },
+    {
+      "url": "https://cryptobriefing.com/asian-ai-investors-openai-spacex-funding/",
+      "title": "OpenAI, SpaceX funding fuels bets on next-wave Asian AI winners",
+      "description": "Wealthy Asian investors bet $24.3B on AI in 2025 as OpenAI's $122B round and SpaceX's IPO drive demand for Asian chipmakers and component suppliers.",
+      "excerpt": "Wealthy Asian investors bet $24.3B on AI in 2025 as OpenAI's $122B round and SpaceX's IPO drive demand for Asian chipmakers and component suppliers.",
+      "summary": "Wealthy Asian investors bet $24.3B on AI in 2025 as OpenAI's $122B round and SpaceX's IPO drive demand for Asian chipmakers and component suppliers. South Korean chipmakers Samsung and SK Hynix have reportedly secured supply agreements tied to OpenAI\u2019s Stargate project, the ambitious infrastructure buildout designed to power the next generation of AI models. OpenAI\u2019s latest round valued the company at $852 billion post-money, with backing from Amazon, NVIDIA, and SoftBank. South Korean chipmakers Samsung and SK Hynix have reportedly secured supply agreements tied to OpenAI\u2019s Stargate project, the ambitious infrastructure buildout designed to power the next generation of AI models. South Korean chipmakers Samsung and SK Hynix have reportedly secured supply agreements tied to OpenAI\u2019s Stargate project, the ambitious infrastructure buildout designed to power the next generation of AI models.",
+      "what_happened": "Wealthy Asian investors bet $24.3B on AI in 2025 as OpenAI's $122B round and SpaceX's IPO drive demand for Asian chipmakers and component suppliers. South Korean chipmakers Samsung and SK Hynix have reportedly secured supply agreements tied to OpenAI\u2019s Stargate project, the ambitious infrastructure buildout designed to power the next generation of AI models.",
+      "why_matters": "OpenAI\u2019s latest round valued the company at $852 billion post-money, with backing from Amazon, NVIDIA, and SoftBank. South Korean chipmakers Samsung and SK Hynix have reportedly secured supply agreements tied to OpenAI\u2019s Stargate project, the ambitious infrastructure buildout designed to power the next generation of AI models.",
+      "what_to_watch": "South Korean chipmakers Samsung and SK Hynix have reportedly secured supply agreements tied to OpenAI\u2019s Stargate project, the ambitious infrastructure buildout designed to power the next generation of AI models.",
+      "key_points": [
+        "Wealthy Asian investors bet $24.3B on AI in 2025 as OpenAI's $122B round and SpaceX's IPO drive demand for Asian chipmakers and component suppliers.",
+        "South Korean chipmakers Samsung and SK Hynix have reportedly secured supply agreements tied to OpenAI\u2019s Stargate project, the ambitious infrastructure buildout designed to power the next generation of AI models.",
+        "OpenAI\u2019s latest round valued the company at $852 billion post-money, with backing from Amazon, NVIDIA, and SoftBank.",
+        "When OpenAI closed its record $122 billion funding round on March 31, the biggest winners might not have been in San Francisco.",
+        "SpaceX has filed for what could become the largest IPO in history, targeting a valuation between $1.75 trillion and $2 trillion, with a listing anticipated around mid-June 2026.",
+        "The money trail from Silicon Valley to Asia In 2025, wealthy Asians poured $24.3 billion into global AI private funding rounds.",
+        "Asia\u2019s own AI ecosystem is heating up AI startup funding across Asia hit a record $11.2 billion in the first quarter of 2026 alone, heavily concentrated in Chinese companies.",
+        "Why this matters for investors The risk, of course, is concentration.",
+        "That\u2019s nearly triple what they invested the year before.",
+        "And the geopolitical overlay is impossible to ignore: trade tensions, export controls on advanced chips, and shifting alliances between the US and Asian manufacturing hubs add layers of uncertainty that pure financial.",
+        "OpenAI, SpaceX funding fuels bets on next-wave Asian AI winners Wealthy Asian investors are pouring billions into AI supply chain companies, betting that massive US fundraising rounds will lift the boats of Asian.",
+        "If AI spending plateaus or the Stargate project encounters delays, the same supply chain exposure that looks brilliant today could become a liability."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d237880e30382a73.jpg",
+      "image_url": "https://static.cryptobriefing.com/wp-content/uploads/2026/05/30203045/the-race-for-the-next-ai-success-story-is-not-where-you-thin-1-800x420.jpeg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "f4fac9b76a7546778ad5a3c57d531c2d"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/06/01/nvidia-unitree-humanoid-robotics-system-researchers.html",
+      "title": "Nvidia picks Unitree for humanoid robot platform as Chinese startup eyes IPO",
+      "description": "The U.S. chipmaker's first publicly available humanoid robotics system will use humanoids from Chinese startup Unitree.",
+      "excerpt": "The U.S. chipmaker's first publicly available humanoid robotics system will use humanoids from Chinese startup Unitree.",
+      "summary": "\u201cThis platform runs the new Thor, and our entire software stack, data generation stack, data simulation stack, the runtime, all integrated into a robot that is designed for everyone to use,\u201d he added. At least four research institutions already plan to use the H2 Plus humanoid, the press release said. \u201cWe built this for higher education and university researchers, because for them to build this is insanely hard to do.\u201d The new system also expands Nvidia presence in robotics software development, building on the chipmaker\u2019s edge in AI computing through its widely used CUDA software platform. chipmaker is selling to researchers from Stanford to ETH Zurich, the company announced Monday. He told investors last month he expects rapid growth in the robotics segment over the next five years. Nvidia\u2019s humanoid-focused AI models, known as Isaac GR00T, and simulation systems are part of the new robot testing package, according to a press release.",
+      "what_happened": "\u201cThis platform runs the new Thor, and our entire software stack, data generation stack, data simulation stack, the runtime, all integrated into a robot that is designed for everyone to use,\u201d he added. At least four research institutions already plan to use the H2 Plus humanoid, the press release said.",
+      "why_matters": "\u201cWe built this for higher education and university researchers, because for them to build this is insanely hard to do.\u201d The new system also expands Nvidia presence in robotics software development, building on the chipmaker\u2019s edge in AI computing through its widely used CUDA software platform. chipmaker is selling to researchers from Stanford to ETH Zurich, the company announced Monday.",
+      "what_to_watch": "He told investors last month he expects rapid growth in the robotics segment over the next five years. Nvidia\u2019s humanoid-focused AI models, known as Isaac GR00T, and simulation systems are part of the new robot testing package, according to a press release.",
+      "key_points": [
+        "\u201cThis platform runs the new Thor, and our entire software stack, data generation stack, data simulation stack, the runtime, all integrated into a robot that is designed for everyone to use,\u201d he added.",
+        "The system combines Unitree\u2019s nearly 6-foot-tall H2 humanoid robot with Nvidia\u2019s Jetson Thor hardware, which includes the company\u2019s advanced Blackwell GPU for on-device artificial intelligence capabilities.",
+        "At least four research institutions already plan to use the H2 Plus humanoid, the press release said.",
+        "Nvidia\u2019s humanoid-focused AI models, known as Isaac GR00T, and simulation systems are part of the new robot testing package, according to a press release.",
+        "We and our partners also use tools on this site to provide the services, personalize your experience, and for analytics, marketing, and advertising.",
+        "\u201cToday, we\u2019re announcing the Nvidia Isaac Root, a reference humanoid robot, all fully integrated, 25 degrees of freedom on that on each hand made by Sharpa, 31 degrees of freedom on the robot, six feet 150 pounds, just.",
+        "and Iran launch fresh wave of strikes Eva Longoria says this quality is more important than an Ivy League education Fed\u2019s Powell warns Trump\u2019s political \u2018stress test\u2019 will wreck public trust in central bank Berkshire.",
+        "Nvidia has selected Chinese humanoid robot maker Unitree for the first robotics system the U.S.",
+        "\u201cWe built this for higher education and university researchers, because for them to build this is insanely hard to do.\u201d The new system also expands Nvidia presence in robotics software development, building on the.",
+        "They include Seattle-based Ai2, ETH Zurich in Switzerland, the Stanford Robotics Center and UC San Diego\u2019s Advanced Robotics and Controls Laboratory.",
+        "Data is a real-time snapshot *Data is delayed at least 15 minutes.",
+        "The robot comes with Nvidia\u2019s Blackwell chip inside a Unitree humanoid body."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/dcc644f5a0c815fe.jpg",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108314332-1780291574864-gettyimages-2242179356-ECP_fc1300845.jpeg?v=1780291590&w=1920&h=1080",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/63194f05513aac8b.jpg"
+      ],
+      "extra_image_urls": [
+        "https://image.cnbcfm.com/api/v1/image/108314331-1780291415468-gettyimages-2278510108-TAIWAN_COMPUTEX.jpeg?v=1780291432&w=1858&h=1045&vtcrop=y"
+      ],
+      "_story_id": "1a6cc51ab8d54b179db00e87751dad55"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/06/01/nvidia-backed-runway-london-expansion.html",
+      "title": "Nvidia-backed $5 billion AI company tells CNBC of major London expansion",
+      "description": "Runway follows U.S. AI giants including Anthropic and OpenAI in announcing big London growth plans.",
+      "excerpt": "Runway follows U.S. AI giants including Anthropic and OpenAI in announcing big London growth plans.",
+      "summary": "We and our partners also use tools on this site to provide the services, personalize your experience, and for analytics, marketing, and advertising. The company most recently raised $315 million in a Series E, featuring General Atlantic, AMD Ventures and Nvidia , resulting in a $5.3 billion valuation. Nvidia-backed $5 billion AI company tells CNBC of major London expansion AI company Runway is planning a major expansion in London, the company exclusively told CNBC on Monday. \u201cLondon puts us close to many of our largest European customers already doing serious work with Runway, including BBC, Fremantle and WPP, and it builds on the research team we already have here,\u201d Anastasis Germanidis, cofounder and Co-CEO at Runway. \u201cWe expect to expand further across Europe in the near future.\u201d World models are AI systems that can learn from inputs such as audio, images, video and real-world data - in comparison to large language models (LLMs), which are primarily designed to understand and generate language rather than to model the physical.",
+      "what_happened": "We and our partners also use tools on this site to provide the services, personalize your experience, and for analytics, marketing, and advertising. The company most recently raised $315 million in a Series E, featuring General Atlantic, AMD Ventures and Nvidia , resulting in a $5.3 billion valuation.",
+      "why_matters": "Nvidia-backed $5 billion AI company tells CNBC of major London expansion AI company Runway is planning a major expansion in London, the company exclusively told CNBC on Monday. \u201cLondon puts us close to many of our largest European customers already doing serious work with Runway, including BBC, Fremantle and WPP, and it builds on the research team we already have here,\u201d Anastasis Germanidis, cofounder and Co-CEO at Runway.",
+      "what_to_watch": "\u201cWe expect to expand further across Europe in the near future.\u201d World models are AI systems that can learn from inputs such as audio, images, video and real-world data - in comparison to large language models (LLMs), which are primarily designed to understand and generate language rather than to model the physical.",
+      "key_points": [
+        "\u201cWe expect to expand further across Europe in the near future.\u201d World models are AI systems that can learn from inputs such as audio, images, video and real-world data - in comparison to large language models (LLMs).",
+        "\u201cRunway\u2019s new London hub will bring pioneering research into world models to the UK, helping power breakthroughs across industries from film and gaming to science and robotics,\u201d Kanishka Narayan, the U.K.\u2019s AI minister.",
+        "Runway, which is building world models, on Monday exclusively told CNBC that the company plans to make London its new European headquarters and will invest more than $200 million into the U.K.\u2019s AI ecosystem by the end.",
+        "We and our partners also use tools on this site to provide the services, personalize your experience, and for analytics, marketing, and advertising.",
+        "The company most recently raised $315 million in a Series E, featuring General Atlantic, AMD Ventures and Nvidia , resulting in a $5.3 billion valuation.",
+        "and Iran launch fresh wave of strikes Eva Longoria says this quality is more important than an Ivy League education Fed\u2019s Powell warns Trump\u2019s political \u2018stress test\u2019 will wreck public trust in central bank Berkshire.",
+        "Runway is building those models, alongside offering a suite of video generation and editing tools.",
+        "In April, Anthropic said it\u2019s expanding its presence in London with new office space for 800 people, days after rival OpenAI unveiled plans for its first permanent office in the U.K.",
+        "Global Business and Financial News, Stock Quotes, and Market Data and Analysis.",
+        "Runway is building world models, AI systems that can learn from a wider range of inputs compared to large language models (LLMs).",
+        "AI giants including Anthropic and OpenAI in announcing big London growth plans.",
+        "Data is a real-time snapshot *Data is delayed at least 15 minutes."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ee2c85d384f20014.jpg",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108313800-1780061746580-Anastasis_speaking_at_Runway_Summit.jpeg?v=1780061834&w=1920&h=1080",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "3b3b0e99b8164f9987639eb85f51ab68"
+    },
+    {
+      "url": "https://www.thehindubusinessline.com/info-tech/meta-microsoft-have-joined-tech-layoff-tsunami-but-is-ai-really-to-blame/article70907843.ece",
+      "title": "y via Distillation",
+      "description": "y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters arXiv ML | [HIGH] Meta, Microsoft have joined tech layoff tsunami \u2013 but is AI really to blame? BusinessLine | FINANCE & FINTECH AI ---------------------------------------- [HIGH] Apple\u2019s strategy for smart glasses is the same as smart watches The Verge AI | [HIGH] OpenAI, SpaceX funding fuels bets on next-wave Asian AI winners Crypto Briefing | [HIGH] Perplexity launches AI-powered browser Comet with...",
+      "excerpt": "y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters arXiv ML | [HIGH] Meta, Microsoft have joined tech layoff tsunami \u2013 but is AI really to blame? BusinessLine | FINANCE & FINTECH AI ---------------------------------------- [HIGH] Apple\u2019s strategy for smart glasses is the same as smart watches The Verge AI | [HIGH] OpenAI...",
+      "summary": "BusinessLine | FINANCE & FINTECH AI ---------------------------------------- [HIGH] Apple\u2019s strategy for smart glasses is the same as smart watches The Verge AI | [HIGH] OpenAI, SpaceX funding fuels bets on next-wave Asian AI winners Crypto Briefing | [HIGH] Perplexity launches AI-powered browser Comet with... y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer. y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters arXiv ML | [HIGH] Meta, Microsoft have joined tech layoff tsunami \u2013 but is AI really to blame? y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters arXiv ML | [HIGH] Meta, Microsoft have joined tech layoff tsunami \u2013 but is AI.",
+      "what_happened": "BusinessLine | FINANCE & FINTECH AI ---------------------------------------- [HIGH] Apple\u2019s strategy for smart glasses is the same as smart watches The Verge AI | [HIGH] OpenAI, SpaceX funding fuels bets on next-wave Asian AI winners Crypto Briefing | [HIGH] Perplexity launches AI-powered browser Comet with... y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer.",
+      "why_matters": "y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters arXiv ML | [HIGH] Meta, Microsoft have joined tech layoff tsunami \u2013 but is AI really to blame?",
+      "what_to_watch": "y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters arXiv ML | [HIGH] Meta, Microsoft have joined tech layoff tsunami \u2013 but is AI.",
+      "key_points": [
+        "y via Distillation arXiv ML | [LOW] AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning arXiv ML | [LOW] Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through.",
+        "BusinessLine | FINANCE & FINTECH AI ---------------------------------------- [HIGH] Apple\u2019s strategy for smart glasses is the same as smart watches The Verge AI | [HIGH] OpenAI, SpaceX funding fuels bets on next-wave."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "5b1b9219b60046178b3af6561dfaa552"
+    },
+    {
+      "url": "https://fortune.com/2026/05/30/matt-rogers-nest-apple-sherlocking-ai-founders-hyperscalers/",
+      "title": "ls-first-Nvidia-N1X-notebooks-and-high-prices.1311489.0.html",
+      "description": "ls-first-Nvidia-N1X-notebooks-and-high-prices.1311489.0.html [HIGH] OPPO brings ColorOS 16 to India with AI-powered productivity tools and cross-platform features Intomobile.com | [HIGH] I worked with Steve Jobs at Apple, where every OS update killed startups. AI founders are about to face the same thing Fortune | [HIGH] Dell Enterprise Hub at Dell Tech World 2026: new models, new platforms, faster to productionbalaatdell\u20223 days ago\u20229 Hugging Face | [HIGH] Borealis - open data, code, weights recipe for training Audio LLMAlexWortega\u20226 days ago\u202214 Hugging Face | [HIGH] Run Highly Efficient Multimodal Agentic AI with NVIDIA...",
+      "excerpt": "ls-first-Nvidia-N1X-notebooks-and-high-prices.1311489.0.html [HIGH] OPPO brings ColorOS 16 to India with AI-powered productivity tools and cross-platform features Intomobile.com | [HIGH] I worked with Steve Jobs at Apple, where every OS update killed startups. AI founders are about to face the same thing Fortune | [HIGH] Dell Enterprise Hub at Dell Tech World 2026: new models, new platforms, faster to productionbalaatdell\u20223 days ago\u20229 Hugging Face | [HIGH] Borealis - open...",
+      "summary": "AI founders are about to face the same thing Fortune | [HIGH] Dell Enterprise Hub at Dell Tech World 2026: new models, new platforms, faster to productionbalaatdell\u20223 days ago\u20229 Hugging Face | [HIGH] Borealis - open data, code, weights recipe for training Audio LLMAlexWortega\u20226 days ago\u202214 Hugging Face | [HIGH] Run Highly Efficient Multimodal Agentic AI with NVIDIA... ls-first-Nvidia-N1X-notebooks-and-high-prices.1311489.0.html [HIGH] OPPO brings ColorOS 16 to India with AI-powered productivity tools and cross-platform features Intomobile.com | [HIGH] I worked with Steve Jobs at Apple, where every OS update killed startups.",
+      "what_happened": "AI founders are about to face the same thing Fortune | [HIGH] Dell Enterprise Hub at Dell Tech World 2026: new models, new platforms, faster to productionbalaatdell\u20223 days ago\u20229 Hugging Face | [HIGH] Borealis - open data, code, weights recipe for training Audio LLMAlexWortega\u20226 days ago\u202214 Hugging Face | [HIGH] Run Highly Efficient Multimodal Agentic AI with NVIDIA...",
+      "why_matters": "ls-first-Nvidia-N1X-notebooks-and-high-prices.1311489.0.html [HIGH] OPPO brings ColorOS 16 to India with AI-powered productivity tools and cross-platform features Intomobile.com | [HIGH] I worked with Steve Jobs at Apple, where every OS update killed startups.",
+      "what_to_watch": "",
+      "key_points": [
+        "AI founders are about to face the same thing Fortune | [HIGH] Dell Enterprise Hub at Dell Tech World 2026: new models, new platforms, faster to productionbalaatdell\u20223 days ago\u20229 Hugging Face | [HIGH] Borealis - open.",
+        "ls-first-Nvidia-N1X-notebooks-and-high-prices.1311489.0.html [HIGH] OPPO brings ColorOS 16 to India with AI-powered productivity tools and cross-platform features Intomobile.com | [HIGH] I worked with Steve Jobs at."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "d742ab11fa3045e3a58c717a10206941"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 9,
+  "has_cta": true,
+  "slides": [
+    "\"This is the first completely re-engineered, reinvented line of PCs that has.",
+    "Perplexity launches AI-powered browser Comet available via waitlist.",
+    "Redesigned Siri: Smarter, Faster and More Integrated One of the standout features.",
+    "When OpenAI raises closed record $122 billion funding round on.",
+    "\"We built this for higher education and university researchers, because for them.",
+    "London updates puts us close to many of our.",
+    "BusinessLine ---------------------------------------- Apple's strategy for smart glasses is the same as smart.",
+    "AI founders are about to face the same thing Fortune 2026: new.",
+    "FOLLOW @graitech"
+  ]
+}

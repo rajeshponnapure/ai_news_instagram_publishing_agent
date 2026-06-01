@@ -1,0 +1,26 @@
+NVIDIA Levels Up Local AI Agents Across RTX PCs and DGX Spark.
+
+Swipe for the full breakdown.
+
+- Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote NVIDIA Research Advances Robotics From Simulation to the Real World.
+- Announced at GTC Taipei at COMPUTEX, NVIDIA OpenShell brings secure agents to Windows with 2x inference performance.
+- Artificial Intelligence Inference ﻿ Agentic AI ﻿ Open Source ﻿ Generative AI ﻿ AI for Good ﻿ Research.
+- This coupled with other optimizations such as programmatic dependent launch delivers 2x performance on Qwen 3.6 and 3.5.
+- Today at NVIDIA GTC Taipei at COMPUTEX, NVIDIA unveiled NVIDIA RTX Spark - a new class of Windows.
+
+Would you use something like this in your daily work? Yes or no in the comments.
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://blogs.nvidia.com/blog/rtx-ai-garage-computex-spark-local-agents/
+- https://blogs.nvidia.com/blog/taiwan-ecosystem-ai-infrastructure/
+- https://blogs.nvidia.com/blog/factory-operations-fox-blueprint-ai-brain/
+- https://blogs.nvidia.com/blog/ai-cloud-ecosystem/
+- https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai
+
+#AIAgents #AutonomousAgents #AIWorkflow #NVIDIA #NVIDIAGPU #ArtificialIntelligence #FutureOfAI #TechTrends #Innovation #Tech #AI #MachineLearning #AIBreakdown #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing #MLNews #AIWeekly #TechInnovation
+
+-
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-
