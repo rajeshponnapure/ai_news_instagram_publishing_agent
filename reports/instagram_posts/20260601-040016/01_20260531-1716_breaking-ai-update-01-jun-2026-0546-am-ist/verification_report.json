@@ -1,0 +1,93 @@
+{
+  "phase": "pre_publish",
+  "round": 2,
+  "passed": false,
+  "confidence": 0.9167,
+  "checks": [
+    {
+      "id": 1,
+      "name": "kp_unique_across_slides",
+      "passed": true,
+      "confidence": 1.0,
+      "detail": ""
+    },
+    {
+      "id": 2,
+      "name": "images_unique",
+      "passed": true,
+      "confidence": 1.0,
+      "detail": ""
+    },
+    {
+      "id": 3,
+      "name": "semantic_unique",
+      "passed": true,
+      "confidence": 1.0,
+      "detail": ""
+    },
+    {
+      "id": 4,
+      "name": "titles_complete",
+      "passed": true,
+      "confidence": 1.0,
+      "detail": ""
+    },
+    {
+      "id": 5,
+      "name": "valid_carousel_slide_count",
+      "passed": true,
+      "confidence": 1.0,
+      "detail": "content=8, total=9"
+    },
+    {
+      "id": 6,
+      "name": "images_exist_hd",
+      "passed": true,
+      "confidence": 1.0,
+      "detail": ""
+    },
+    {
+      "id": 7,
+      "name": "cta_present",
+      "passed": true,
+      "confidence": 1.0,
+      "detail": ""
+    },
+    {
+      "id": 8,
+      "name": "keypoints_professional",
+      "passed": true,
+      "confidence": 1.0,
+      "detail": ""
+    },
+    {
+      "id": 9,
+      "name": "no_generic_filler",
+      "passed": true,
+      "confidence": 1.0,
+      "detail": ""
+    },
+    {
+      "id": 10,
+      "name": "no_repeated_info",
+      "passed": false,
+      "confidence": 0.4,
+      "detail": "title dup: 01 Jun 2026, 05:46 AM IST 13 new AI event(s) detec ~ Jun updates 01 2026 04 45 AM IST 17. (prefix overlap 3/5)"
+    },
+    {
+      "id": 11,
+      "name": "summaries_unique",
+      "passed": true,
+      "confidence": 1.0,
+      "detail": ""
+    },
+    {
+      "id": 12,
+      "name": "image_article_mapping",
+      "passed": true,
+      "confidence": 1.0,
+      "detail": ""
+    }
+  ],
+  "summary": "FAIL (conf=0.92, hard_fail=True)"
+}
