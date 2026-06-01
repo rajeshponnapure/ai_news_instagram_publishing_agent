@@ -24,6 +24,7 @@ from email_summary_agent.summarizer import _article_item_for_instagram, _format_
 from email_summary_agent.article_enricher import ArticleData
 from email_summary_agent.ig_copy import layout_safe_headline, layout_safe_points, trim_without_ellipsis
 from email_summary_agent.ig_keypoints import _extract_instagram_key_points
+from email_summary_agent.post_planner import plan_posts
 from email_summary_agent.renderer import _build_slide_html
 from email_summary_agent.verifier import verify_pre_publish
 
@@ -219,6 +220,27 @@ class DigestPipelineTests(unittest.TestCase):
         self.assertFalse(is_publishable_article(promo))
         self.assertTrue(is_publishable_article(real_story))
 
+    def test_publishability_rejects_newsletter_fragments(self) -> None:
+        fragments = [
+            {
+                "url": "https://example.com/truncated",
+                "title": "eed is an Android phone and a car with Android Auto.",
+                "description": "Link : [MEDIUM] Major Companies Reconsider AI Costs Company : Bloomberg Tech Summary : Chipmakers are debating AI costs.",
+            },
+            {
+                "url": "https://example.com/alert",
+                "title": "BREAKING AI UPDATE - 31 May 2026, 09:44 PM IST",
+                "description": "13 new AI event(s) detected.",
+            },
+            {
+                "url": "https://example.com/capacity",
+                "title": "center capacity.",
+                "description": "Link : [HIGH] SoftBank Plans Investment Company : Bloomberg Tech Summary : SoftBank plans data centers.",
+            },
+        ]
+
+        self.assertTrue(all(not is_publishable_article(item) for item in fragments))
+
     def test_html_email_preserves_link_hrefs(self) -> None:
         message = EmailMessage()
         message["Subject"] = "AI Alert"
@@ -352,6 +374,25 @@ class DigestPipelineTests(unittest.TestCase):
 
         self.assertFalse(report.passed)
         self.assertTrue(any(c.check_id == 6 and not c.passed for c in report.checks))
+
+    def test_verifier_blocks_non_article_image_source(self) -> None:
+        image_path = _make_test_image("fallback_source")
+        report = verify_pre_publish(
+            [
+                {
+                    "kind": "digest",
+                    "title": "AWS updates Network Firewall policy controls.",
+                    "body": "Security teams get stronger control over fast-changing domains.",
+                    "url": "https://example.com/aws-firewall",
+                    "image_path": image_path,
+                    "image_source": "fallback",
+                },
+                {"kind": "cta", "title": "SAVE THIS.", "body": "", "image_path": ""},
+            ]
+        )
+
+        self.assertFalse(report.passed)
+        self.assertTrue(any(c.check_id == 6 and "not article" in c.detail for c in report.checks))
 
     def test_email_scan_gate_waits_for_configured_interval(self) -> None:
         with TemporaryDirectory() as tmp:
@@ -515,6 +556,35 @@ class DigestPipelineTests(unittest.TestCase):
         self.assertTrue(all(4 <= len(slide.get("key_points", [])) <= 5 for slide in digest))
         self.assertTrue(all(slide["body"] == "\n".join(slide.get("key_points", [])) for slide in digest))
         self.assertTrue(all("global repeated fallback" not in slide["body"].lower() for slide in digest))
+
+    def test_post_planner_demotes_duplicate_title_prefixes(self) -> None:
+        articles = [
+            {
+                "url": "https://example.com/softbank-france",
+                "title": "SoftBank says it will invest up to 75 billion to build French data centers",
+                "description": "SoftBank plans new AI data center investment in France.",
+                "image_path": _make_test_image("softbank_1"),
+            },
+            {
+                "url": "https://example.com/softbank-ai-france",
+                "title": "SoftBank says it will invest up to EUR75 billion to build French AI centers",
+                "description": "SoftBank plans AI infrastructure spending in France.",
+                "image_path": _make_test_image("softbank_2"),
+            },
+            {
+                "url": "https://example.com/google-agent-tools",
+                "title": "Google expands Gemini controls for enterprise AI teams",
+                "description": "Google adds Gemini management features for enterprise administrators.",
+                "image_path": _make_test_image("google_enterprise"),
+            },
+        ]
+
+        posts, demoted = plan_posts(articles, post_size=2)
+
+        self.assertEqual(len(posts), 1)
+        self.assertEqual(len(posts[0]), 2)
+        self.assertEqual(len(demoted), 1)
+        self.assertIn("SoftBank says it will invest", demoted[0]["title"])
 
     def test_skip_article_without_image(self) -> None:
         """Given 3 articles where 1 has no image, only 2 digest slides are produced."""

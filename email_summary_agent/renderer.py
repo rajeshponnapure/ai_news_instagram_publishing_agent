@@ -159,13 +159,51 @@ def _digest_body(slide):
     safe_points = layout_safe_points([str(pt) for pt in raw], limit=5)
     if not safe_points and headline:
         safe_points = layout_safe_points([headline], limit=1)
-    pts_html = "".join(
-        f'<div class="kp-row"><span class="kp-num">{i:02d}</span>'
-        f'<span class="kp-text">{_highlight_keywords_html(str(pt))}</span></div>\n'
-        for i, pt in enumerate(safe_points, 1)
-    )
+
     image_path = str(slide.get("image_path") or "")
     has_image = bool(image_path and Path(image_path).exists())
+
+    # â”€â”€ Dynamic keypoint sizing â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    # Estimate available height for the KP list based on slide type.
+    # Non-KP elements on every digest slide:
+    #   Eyebrow: 26px font + ~10px line-height overhead â‰ˆ 36px
+    #   Rule: 3px + 10+18 margins = 31px
+    #   Headline: 56px font + 24px margin â‰ˆ 80px (single line estimate)
+    #   Source label: 22px font + 14px margin â‰ˆ 36px
+    #   Total non-KP â‰ˆ 183px; round to 190 for safety margin
+    NON_KP_HEIGHT = 190
+
+    if has_image:
+        # .digest-body top=500px, bottom=140px â†’ 710px total
+        total_kp_area = CANVAS_H - 500 - 140 - NON_KP_HEIGHT
+    else:
+        # .digest-body.no-image top=220px, bottom=140px â†’ 990px total
+        total_kp_area = CANVAS_H - 220 - 140 - NON_KP_HEIGHT
+    total_kp_area = max(200, total_kp_area)
+
+    n = len(safe_points)
+    # Reduce vertical row gap when there are more keypoints to fit
+    row_gap = 18 if n <= 4 else (14 if n <= 5 else 10)
+    gaps_h = max(0, n - 1) * row_gap
+    avail_per_row = (total_kp_area - gaps_h) / max(n, 1)
+
+    # Target font size so text at 3 lines fits within avail_per_row
+    text_height_budget = avail_per_row
+    target_font = min(30, max(20, int(text_height_budget / (1.34 * 3))))
+
+    # Number font scales proportionally
+    target_num = min(31, max(20, target_font + 2))
+
+    pts_html = "".join(
+        f'<div class="kp-row">'
+        f'<span class="kp-num" style="font-size:{target_num}px;min-width:54px;">{i:02d}</span>'
+        f'<span class="kp-text" style="font-size:{target_font}px;">{_highlight_keywords_html(str(pt))}</span></div>\n'
+        for i, pt in enumerate(safe_points, 1)
+    )
+
+    # Apply dynamic row gap to the kp-list container
+    row_gap_css = f"gap:{row_gap}px;"
+
     img_html = ""
     body_class = "digest-body"
     if has_image:
@@ -178,7 +216,7 @@ def _digest_body(slide):
     <div class="eyebrow">{eyebrow}</div>
     <div class="rule" style="margin:10px 0 18px;"></div>
     <div class="digest-headline">{headline}</div>
-    <div class="kp-list">{pts_html}</div>
+    <div class="kp-list" style="{row_gap_css}">{pts_html}</div>
     {src_html}
   </div>"""
 

@@ -659,8 +659,8 @@ def _gt_render_list_slide_bullets_only(
         return
     content_w = x2 - x1 - 24
     avail_h = y2 - y1
-    chosen_size = 40
-    for fsz in (50, 48, 46, 44, 42, 40):
+    chosen_size = 24
+    for fsz in (50, 48, 46, 44, 42, 40, 38, 36, 34, 32, 30, 28, 26, 24):
         font_bp = _font(image_font, fsz)
         bold_bp = _font(image_font, fsz, bold=True)
         total = 0

@@ -6,7 +6,9 @@ A post is emitted only at exactly 8; short tails are never published.
 """
 from __future__ import annotations
 
-from .article_quality import is_publishable_article
+import re
+
+from .article_quality import clean_quality_text, is_publishable_article
 from .dedup_engine import deduplicate, DedupResult
 from .memory_store import MemoryStore
 
@@ -22,6 +24,29 @@ _BLOCKED_HEADLINES = frozenset({
 def _is_blocked_headline(text: str) -> bool:
     t = (text or "").strip().lower().rstrip(".:!?")
     return t in _BLOCKED_HEADLINES
+
+
+def _title_key(article: dict) -> str:
+    title = clean_quality_text(str(article.get("title") or ""))
+    title = re.sub(r"\b(?:eur|usd|gbp)\s?(\d+)", r"\1", title, flags=re.I)
+    tokens = re.findall(r"[a-z0-9]+", title.lower())
+    return " ".join(tokens[:8])
+
+
+def _keep_title_unique(articles: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Keep one article per near-identical title prefix."""
+    kept: list[dict] = []
+    demoted: list[dict] = []
+    seen: set[str] = set()
+    for article in articles:
+        key = _title_key(article)
+        if key and key in seen:
+            demoted.append(article)
+            continue
+        if key:
+            seen.add(key)
+        kept.append(article)
+    return kept, demoted
 
 
 def _rank_article(article: dict) -> float:
@@ -80,6 +105,8 @@ def plan_posts(
 
     # Stage 3: rank and select.
     pool.sort(key=_rank_article, reverse=True)
+    pool, title_demoted = _keep_title_unique(pool)
+    demoted.extend(title_demoted)
     posts: list[list[dict]] = []
     leftover: list[dict] = []
 
@@ -144,6 +171,15 @@ def plan_summary_parts(
 
     # Sort by rank
     pool.sort(key=_rank_article, reverse=True)
+    pool, title_demoted = _keep_title_unique(pool)
+    if memory is not None:
+        for article in title_demoted:
+            memory.save_rejected_article(
+                url=str(article.get("url", "")),
+                title=str(article.get("title", "")),
+                article=article,
+                reason="duplicate_title_plan_summary",
+            )
 
     # Build posts
     result_parts: list = []

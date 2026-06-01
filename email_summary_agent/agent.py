@@ -264,6 +264,7 @@ def process_items(
         # Carousel generation happens once as a batch AFTER the loop so we create
         # a single clean batch directory instead of one per email.
         summaries: list[tuple[EmailItem, EmailSummary]] = []
+        processed_without_carousel: list[tuple[EmailItem, EmailSummary]] = []
         for email_idx, email in enumerate(fresh_emails, 1):
             _safe_print(
                 f"[{email_idx}/{len(fresh_emails)}] Summarising: {email.subject!r}"
@@ -336,21 +337,12 @@ def process_items(
                     )
                     for a in selected
                 ]
-                fallback_selected = [
-                    ArticleData(
-                        url=a.get("url", ""),
-                        title=a.get("title", ""),
-                        description=a.get("description", ""),
-                        text=a.get("text", ""),
-                        image_url=a.get("image_url", ""),
-                        image_path=a.get("image_path", ""),
-                        extra_image_urls=tuple(a.get("extra_image_urls", []) or ()),
-                        extra_image_paths=tuple(a.get("extra_image_paths", []) or ()),
-                    )
-                    for a in article_dicts[:settings.post_size]
-                ]
-                articles = selected_articles if selected_articles else fallback_selected
+                articles = selected_articles
                 _safe_print(f"  Selected {len(articles)} articles for summarization")
+                if not articles:
+                    _safe_print("  No complete publishable article group; marking email processed without carousel")
+                    processed_without_carousel.append((email, provider.summarize(enriched_email, articles=[], full_extract=False)))
+                    continue
 
             # Summarize with full-extract (no truncation)
             summary = provider.summarize(enriched_email, articles=articles, full_extract=True)
@@ -400,6 +392,9 @@ def process_items(
 
             for email, summary in summaries:
                 store.mark_processed(email, summary, report_path)
+
+        for email, summary in processed_without_carousel:
+            store.mark_processed(email, summary, report_path)
 
         # Auto-retry previously rejected articles (24 h cooldown)
         recovered_count = _retry_rejected_articles(settings, memory)

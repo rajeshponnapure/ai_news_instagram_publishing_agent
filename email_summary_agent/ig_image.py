@@ -76,6 +76,8 @@ def _register_hash(path: str, used_image_hashes: list | None) -> None:
 
 def _accept(path: str, used_image_paths: set[str], used_image_hashes: list | None) -> bool:
     """Accept a resolved local path unless it perceptually duplicates a used one."""
+    if path in used_image_paths:
+        return False
     if _is_perceptual_dupe(path, used_image_hashes):
         return False
     used_image_paths.add(path)
@@ -85,6 +87,8 @@ def _accept(path: str, used_image_paths: set[str], used_image_hashes: list | Non
 
 def _accept_article_image(path: str, used_image_paths: set[str], used_image_hashes: list | None) -> bool:
     """Register a same-article image without replacing it with cross-article fallback."""
+    if path in used_image_paths:
+        return False
     if _is_perceptual_dupe(path, used_image_hashes):
         return False
     used_image_paths.add(path)
@@ -139,6 +143,9 @@ def _select_unique_article_image(
                 article["image_source"] = "article"
                 return value
 
+    _log_image_failure(article, title, topic)
+    return ""
+
     # ── Fallback 1: Shared image library (topic-matched, deduplicated) ──
     library_path = _find_library_image_unique(query_text, used_image_paths)
     if library_path:
@@ -178,7 +185,7 @@ def _log_image_failure(article: dict[str, Any], title: str, topic: str) -> None:
     has_extra_urls = bool(article.get("extra_image_urls"))
     has_extra_paths = bool(article.get("extra_image_paths"))
     print(
-        f"  [img] WARNING: No article-sourced image for "
+        f"  [img] No article-sourced image for "
         f"title={title[:60]!r} url={article_url!r} "
         f"og_url={has_og} path={has_path} "
         f"extra_urls={has_extra_urls} extra_paths={has_extra_paths}"

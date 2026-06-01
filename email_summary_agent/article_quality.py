@@ -52,6 +52,7 @@ NOISE_PHRASES = (
     "connect with us",
     "advertising partners",
     "personalize your",
+    "breaking ai update",
 )
 
 CODE_OR_MARKUP_PATTERNS = (
@@ -67,6 +68,9 @@ CODE_OR_MARKUP_PATTERNS = (
     r"&amp;#x?[0-9a-f]+;",
     r"\bLink\s*:\s*\[(?:HIGH|MEDIUM|LOW|CRITICAL)\]",
     r"\bCompany\s*:\s*[A-Za-z0-9 .&-]+\s+Summary\s*:",
+    r"^\s*\[(?:HIGH|MEDIUM|LOW|CRITICAL)\]\s+",
+    r"^\s*(?:HIGH|MEDIUM|LOW|CRITICAL)\s*:\s+",
+    r"^\s*[a-z]{1,3}\s*:\s*[A-Z][A-Za-z0-9 .&-]+",
 )
 
 
@@ -103,7 +107,6 @@ def is_publishable_article(article: dict, *, _debug_tag: str = "") -> bool:
         for key in ("description", "excerpt", "summary", "text", "scraped_content")
     ))
     url = str(article.get("url") or "")
-    combined = f"{title} {body} {url}".lower()
     tag = f"  [quality:{_debug_tag}]" if _debug_tag else "  [quality]"
 
     # --- Hard rejects (no valid URL) ---
@@ -115,10 +118,16 @@ def is_publishable_article(article: dict, *, _debug_tag: str = "") -> bool:
     if contains_public_noise(title):
         print(f"{tag} REJECTED {title[:60]!r}: title contains noise patterns")
         return False
+    if _title_is_truncated_fragment(title):
+        print(f"{tag} REJECTED {title[:60]!r}: title is a truncated fragment")
+        return False
 
     # --- Promo patterns: check title only (body is email context noise) ---
     if any(re.search(pattern, title, re.I) for pattern in PROMO_OR_NON_ARTICLE_PATTERNS):
         print(f"{tag} REJECTED {title[:60]!r}: title has promo pattern")
+        return False
+    if _body_has_digest_fragment_noise(body):
+        print(f"{tag} REJECTED {title[:60]!r}: body contains newsletter fragment noise")
         return False
 
     # --- All checks below are for email-fallback articles ---
@@ -126,6 +135,26 @@ def is_publishable_article(article: dict, *, _debug_tag: str = "") -> bool:
     # Email placeholder text quality is irrelevant.
     # Accept unconditionally if URL is valid and title is clean.
     return True
+
+
+def _body_has_digest_fragment_noise(body: str) -> bool:
+    """Reject newsletter rows that were parsed as articles.
+
+    A real article body can mention companies, summaries, pricing, or links.
+    The malformed rows from alert emails have dense ``Link : [HIGH]``,
+    ``Company :`` and ``Summary :`` markers in one short fragment; those are
+    not article text and consistently generate duplicate/noisy slides.
+    """
+    if not body:
+        return False
+    if contains_public_noise(body):
+        return True
+    markers = (
+        len(re.findall(r"\bLink\s*:", body, re.I))
+        + len(re.findall(r"\[(?:HIGH|MEDIUM|LOW|CRITICAL)\]", body, re.I))
+        + len(re.findall(r"\b(?:Company|Summary)\s*:", body, re.I))
+    )
+    return markers >= 2
 
 
 def _title_is_url_slug(title: str) -> bool:
@@ -186,6 +215,14 @@ def _title_is_truncated_fragment(title: str) -> bool:
         if not lowered.startswith(("ai", "gpt", "llm")):
             return True
         return False
+    if re.match(r"^[a-z]{1,4}\s*:", text):
+        return True
+    if re.match(r"^(?:e|eed|ill|ny|tion|ntelligence)\b", text, re.I):
+        return True
+    if re.search(r"\btop\s+[A-Z]\s*$", text):
+        return True
+    if re.search(r"\b(?:\w+ing|\w+ed|\w+ion|capacity)\.$", text) and text[:1].islower() and len(words) <= 8:
+        return True
     return False
 
 

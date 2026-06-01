@@ -235,10 +235,19 @@ def _missing_article_image_detail(slides: list[dict]) -> str:
         if not image_path:
             return f"slide {index}: missing image"
         source = str(slide.get("image_source", "") or "")
-        if source not in ("article", "fallback"):
-            return f"slide {index}: image source not recognized ({source!r})"
+        if source != "article":
+            return f"slide {index}: image source not article ({source!r})"
         if not Path(image_path).exists():
             return f"slide {index}: image file not found"
+        # Check minimum dimensions so we don't publish a tiny/broken image.
+        try:
+            from PIL import Image
+            img = Image.open(image_path)
+            w, h = img.size
+            if w < 200 or h < 150:
+                return f"slide {index}: image too small ({w}x{h})"
+        except Exception:
+            pass
     return ""
 
 

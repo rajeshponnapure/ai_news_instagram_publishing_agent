@@ -20,13 +20,20 @@ def _load_gray(path: str, size: tuple[int, int]):
         return img.convert("L").resize(size, Image.LANCZOS)
 
 
+def _image_pixels(image) -> list[int]:
+    getter = getattr(image, "get_flattened_data", None)
+    if getter is not None:
+        return list(getter())
+    return list(image.getdata())
+
+
 def average_hash(path: str) -> int | None:
     """64-bit average hash (8x8). Returns None if the image can't be read."""
     try:
         small = _load_gray(path, (8, 8))
     except Exception:
         return None
-    pixels = list(small.getdata())
+    pixels = _image_pixels(small)
     avg = sum(pixels) / len(pixels)
     bits = 0
     for i, px in enumerate(pixels):
@@ -41,7 +48,7 @@ def difference_hash(path: str) -> int | None:
         small = _load_gray(path, (9, 8))
     except Exception:
         return None
-    pixels = list(small.getdata())
+    pixels = _image_pixels(small)
     bits = 0
     idx = 0
     for row in range(8):
@@ -124,7 +131,7 @@ def looks_text_heavy(path: str, *, extreme_fraction: float = 0.82) -> bool:
         small = _load_gray(path, (32, 32))
     except Exception:
         return False
-    pixels = list(small.getdata())
+    pixels = _image_pixels(small)
     if not pixels:
         return False
     extreme = sum(1 for px in pixels if px < 24 or px > 232)

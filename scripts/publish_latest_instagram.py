@@ -45,6 +45,7 @@ def main() -> int:
     if args.cleanup_verify_failed:
         _cleanup_verify_failed_carousels(settings.instagram_dir)
         return 0
+    _cleanup_verify_failed_carousels(settings.instagram_dir)
 
     batches = (
         [path for path in settings.instagram_dir.iterdir() if path.is_dir()]
