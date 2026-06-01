@@ -1,6 +1,7 @@
 # AI News Summary Report
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Generated: 2026-06-01T04:00:16+00:00
 =======
 Generated: 2026-06-01T05:32:11+00:00
@@ -90,3 +91,104 @@ Key points:
 Companies: OpenAI, Anthropic, Microsoft, NVIDIA, AMD, Hugging Face, Adobe, CNBC Technology
 Models: Claude, llama
 Topics: model release, funding or business, regulation or safety, developer tools, hardware and compute, media generation
+=======
+Generated: 2026-06-01T05:42:07+00:00
+Source: grdevelopers.co@gmail.com
+Emails summarized: 3
+
+## Executive Brief
+
+- Results: DeepONet achieved the highest accuracy on real displacement fields (MSE = 0.0039, 90.0% accuracy) with the fastest inference (3.83 it/s) and fewest parameters (2.09M).
+- Objective: This study evaluates multimodal neural operator architectures for brain biomechanics.
+- Four models (FNO, Factorized FNO, Multi-Grid FNO, DeepONet) were evaluated on 249 in vivo MRE datasets across frequencies from 20 to 90 Hz.
+- MG-FNO performed best on imaginary fields (MSE = 0.0058, 88.3% accuracy) requiring the lowest GPU memory among FNO variants (7.12 GB).
+- Methods: We framed TBI modeling as a multimodal operator learning problem.
+- Background: Traumatic brain injury modeling requires integrating volumetric neuroimaging, demographic parameters, and acquisition metadata.
+- La giornalista di Mediaset vittima di una truffa deepfake: un video falso creato con l'AI usato per frodare il pubblico.
+
+## Most Mentioned Companies
+
+OpenAI (3), Google (3), Wired AI (3), Next-Wave Asian AI (3), Anthropic (2), Apple (2), SoftBank Group Corp (1), Microsoft (1)
+
+## Most Mentioned Models
+
+Gemini (3), claude-code (2), GPT5.2 (1)
+
+## Main Topics
+
+media generation (3), funding or business (2), hardware and compute (2), model release (1), regulation or safety (1)
+
+## Voice Script Hooks
+
+- OpenAI just made a move in funding or business: Multimodal Neural Operators for Real-Time Biomechanical Modelling of Traumatic Brain Injury
+- OpenAI just made a move in model release: "Siamo tutti in un mare di guai, noi e i nostri figli. Hanno rubato la mia immagine con l'AI per chiedere.
+- OpenAI just made a move in hardware and compute: to a dedicated LoRA adapter on an always-hot
+
+## Per-Email Summaries
+
+### 1. Multimodal Neural Operators for Real-Time Biomechanical Modelling of Traumatic Brain Injury
+
+Source date: Sun, 31 May 2026 11:48:16 -0700
+Confidence: 0.82
+Article: https://arxiv.org/abs/2510.03248
+Article title: Multimodal Neural Operators for Real-Time Biomechanical Modelling of Traumatic Brain Injury
+
+Article excerpt: Background: Traumatic brain injury modeling requires integrating volumetric neuroimaging, demographic parameters, and acquisition metadata. Finite element solvers are too computationally expensive for clinical settings. Neural operators offer much faster inference. Their ability to integrate volumetric imaging with scalar metadata remains underexplored for biomechanical predictions. Objective: This study evaluates multimodal neural operator architectures for brain biomechanics. We test strategies fusing volumetric anatomical imaging, demographic features, and acquisition parameters to predict full-field brain displacement from MRE data. Methods: We framed TBI modeling as a multimodal...
+
+Background: Traumatic brain injury modeling requires integrating volumetric neuroimaging, demographic parameters, and acquisition metadata. Results: DeepONet achieved the highest accuracy on real displacement fields (MSE = 0.0039, 90.0% accuracy) with the fastest inference (3.83 it/s) and fewest parameters (2.09M). Objective: This study evaluates multimodal neural operator architectures for brain biomechanics. Four models (FNO, Factorized FNO, Multi-Grid FNO, DeepONet) were evaluated on 249 in vivo MRE datasets across frequencies from 20 to 90 Hz. Objective: This study evaluates multimodal neural operator architectures for brain biomechanics. Results: DeepONet achieved the highest accuracy on real displacement fields (MSE = 0.0039, 90.0% accuracy) with the fastest inference (3.83 it/s) and fewest parameters (2.09M). Objective: This study evaluates multimodal neural operator architectures for brain biomechanics. Four models (FNO, Factorized FNO, Multi-Grid FNO, DeepONet) were evaluated on 249 in vivo MRE datasets across frequencies from 20 to 90 Hz. MG-FNO performed best on imaginary fields (MSE = 0.0058, 88.3% accuracy) requiring the lowest GPU memory among FNO variants (7.12 GB). Methods: We framed TBI modeling as a multimodal operator learning problem. Background: Traumatic brain injury modeling requires integrating volumetric neuroimaging, demographic parameters, and acquisition metadata. Branch decomposition was used for Deep Operator Networks (DeepONet). Neural operators offer much faster inference. Field projection was applied for Fourier Neural Operator (FNO) architectures. We test strategies fusing volumetric anatomical imaging, demographic features, and acquisition parameters to predict full-field brain displacement from MRE data. This comparison provides guidance for selecting operator learning approaches in biomedical settings. Conclusion: Neural operators augmented with multimodal fusion can accurately predict full-field brain displacement from heterogeneous inputs. Background: Traumatic brain injury modeling requires integrating volumetric neuroimaging, demographic parameters, and acquisition metadata. Finite element solvers are too computationally expensive for clinical settings. Neural operators offer much faster inference. Their ability to integrate volumetric imaging with scalar metadata remains underexplored for biomechanical predictions. Objective: This study evaluates multimodal neural operator architectures for brain biomechanics. We test strategies fusing volumetric anatomical imaging, demographic features, and acquisition parameters to predict full-field brain displacement from MRE data. Methods: We framed TBI modeling as a multimodal operator learning problem. Two fusion strategies were tested. Field projection was applied for Fourier Neural Operator (FNO) architectures. Branch decomposition was used for Deep Operator Networks (DeepONet). Four models (FNO, Factorized FNO, Multi-Grid FNO, DeepONet) were evaluated on 249 in vivo MRE datasets across frequencies from 20 to 90 Hz. Results: DeepONet achieved the highest accuracy on real displacement fields (MSE = 0.0039, 90.0% accuracy) with the fastest inference (3.83 it/s) and fewest parameters (2.09M). MG-FNO performed best on imaginary fields (MSE = 0.0058, 88.3% accuracy) requiring the lowest GPU memory among FNO variants (7.12 GB). No single architecture dominated all criteria. This reveals distinct trade-offs between accuracy, spatial fidelity, and computational cost. Conclusion: Neural operators augmented with multimodal fusion can accurately predict full-field brain displacement from heterogeneous inputs. They offer inference times orders of magnitude faster than finite element solvers. This comparison provides guidance for selecting operator learning approaches in biomedical settings.
+
+Key points:
+- Results: DeepONet achieved the highest accuracy on real displacement fields (MSE = 0.0039, 90.0% accuracy) with the fastest inference (3.83 it/s) and fewest parameters (2.09M).
+- Objective: This study evaluates multimodal neural operator architectures for brain biomechanics.
+- Four models (FNO, Factorized FNO, Multi-Grid FNO, DeepONet) were evaluated on 249 in vivo MRE datasets across frequencies from 20 to 90 Hz.
+- MG-FNO performed best on imaginary fields (MSE = 0.0058, 88.3% accuracy) requiring the lowest GPU memory among FNO variants (7.12 GB).
+- Methods: We framed TBI modeling as a multimodal operator learning problem.
+- Background: Traumatic brain injury modeling requires integrating volumetric neuroimaging, demographic parameters, and acquisition metadata.
+Companies: OpenAI, Google, Wired AI, SoftBank Group Corp, Next-Wave Asian AI
+Models: GPT5.2, Gemini
+Topics: funding or business, hardware and compute, media generation
+
+### 2. "Siamo tutti in un mare di guai, noi e i nostri figli. Hanno rubato la mia immagine con l'AI per chiedere.
+
+Source date: Sun, 31 May 2026 12:57:27 -0700
+Confidence: 0.82
+Article: https://www.ilfattoquotidiano.it/2026/05/31/siamo-tutti-in-un-mare-di-guai-noi-e-i-nostri-figli-hanno-rubato-la-mia-immagine-con-lai-per-chiedere-soldi-molte-persone-sono-cadute-nella-truffa-la-denuncia-di-safiria-leccese/8404552/
+Article title: "Siamo tutti in un mare di guai, noi e i nostri figli. Hanno rubato la mia immagine con l'AI per chiedere soldi, molte persone sono cadute nella truffa": la denuncia di Safiria Leccese - Il Fatto Quotidiano
+
+Article excerpt: La giornalista di Mediaset vittima di una truffa deepfake: un video falso creato con l'AI usato per frodare il pubblico.
+
+Uno dei volti al femminile più apprezzati di Mediaset è apparsa in un video diffuso in rete in cui all’interno del “suo” studio di Super partes – il programma di approfondimento politico di Canale 5 e Retequattro – proponeva un prestito personale “facile”. La giornalista di Mediaset vittima di una truffa deepfake: un video falso creato con l'AI usato per frodare il pubblico. La giornalista di Mediaset vittima di una truffa deepfake: un video falso creato con l'AI usato per frodare il pubblico. Hanno rubato la mia immagine con l’AI per chiedere soldi, molte persone sono cadute nella truffa”: la denuncia di Safiria Leccese La giornalista di Mediaset vittima di una truffa deepfake: un video falso creato con l'AI usato per frodare il pubblico Safiria Leccese fa ancora fatica ad accettare di essere. La giornalista di Mediaset vittima di una truffa deepfake: un video falso creato con l'AI usato per frodare il pubblico. La giornalista di Mediaset vittima di una truffa deepfake: un video falso creato con l'AI usato per frodare il pubblico. Uno dei volti al femminile più apprezzati di Mediaset è apparsa in un video diffuso in rete in cui all’interno del “suo” studio di Super partes – il programma di approfondimento politico di Canale 5 e Retequattro –. Hanno rubato la mia immagine con l’AI per chiedere soldi, molte persone sono cadute nella truffa”: la denuncia di Safiria Leccese La giornalista di Mediaset vittima di una truffa deepfake: un video falso creato con l'AI. Un video bloccato, un altro, apparso poi sui suoi social ufficiali, per spiegare la truffa. Hanno bloccato tutto, però purtroppo non sono ancora riusciti a risalire all’identità dei truffatori». Condividi questo articolo “Questi mangiabaguette mi hanno messo alle 12… a quell’ora i numeri uno vanno in piscina a prendere il sole, mica a giocare con le pippe!”: Fiorello imita Sinner ed è show “Non sapevo chi fosse. È necessario attenersi Termini e Condizioni di utilizzo del sito (in particolare punti 3 e 5) : evitare gli insulti, le accuse senza fondamento e mantenersi in tema con la discussione. Avevano rubato sia la mia immagine sia un frame della mia trasmissione, inventando un profilo che faceva falsamente capo a me per chiedere soldi con un sistema molto semplice. «La cosa assurda è che hanno scoperto altri due profili falsi che sfruttavano la mia immagine. Alle truffe di denaro c’è rimedio, ma a quelle che toccano la vita dei nostri ragazzi no». I commenti saranno pubblicati dopo essere stati letti e approvati, ad eccezione di quelli pubblicati dagli utenti in white list (vedere il punto 3 della nostra policy). Safiria ha spiegato che non era lei a parlare, ma una sua immagine creata dall’intelligenza artificiale , e che provava un profondo dolore perché tante persone erano già cadute nell’inganno creato con l’uso della. La giornalista di Mediaset vittima di una truffa deepfake: un video falso creato con l'AI usato per frodare il pubblico. “Siamo tutti in un mare di guai, noi e i nostri figli. Hanno rubato la mia immagine con l’AI per chiedere soldi, molte persone sono cadute nella truffa”: la denuncia di Safiria Leccese La giornalista di Mediaset vittima di una truffa deepfake: un video falso creato con l'AI usato per frodare il pubblico Safiria Leccese fa ancora fatica ad accettare di essere finita al centro di un raggiro. Uno dei volti al femminile più apprezzati di Mediaset è apparsa in un video diffuso in rete in cui all’interno del “suo” studio di Super partes – il programma di approfondimento politico di Canale 5 e Retequattro – proponeva un prestito personale “facile”. Un video bloccato, un altro, apparso poi sui suoi social ufficiali, per spiegare la truffa. Safiria ha spiegato che non era lei a parlare, ma una sua immagine creata dall’intelligenza artificiale , e che provava un profondo dolore perché tante persone erano già cadute nell’inganno creato con l’uso della tecnologia. « Siamo tutti in un mare di guai, noi e i nostri figli – ha confessato al settimanale Nuovo – se la politica e le multinazionali non si attivano; bisogna rendere obbligatoria la carta d’identità digitale per aprire qualsiasi tipo di account, costringendo a dichiarare la vera identità, si proteggerebbero i giovanissimi, tanti adulti e le categorie più fragili». Al settimanale di Cairo Editore la giornalista spiega che è riuscita a scoprirlo grazie alla segnalazione «di un parlamentare che viene spesso ospite nel programma. Seguendo l’account di Super partes, in automatico internet gli ha mostrato il profilo falso. Avevano rubato sia la mia immagine sia un frame della mia trasmissione, inventando un profilo che faceva falsamente capo a me per chiedere soldi con un sistema molto semplice. Purtroppo nel giro di un’ora già varie persone erano cadute nella truffa …». Racconta di essersi sentita mortificata e di essersi rivolta immediatamente alla polizia postale che han subito messo alcuni esperti a lavorare al suo caso. «La cosa assurda è che hanno scoperto altri due profili falsi che sfruttavano la mia immagine. Hanno bloccato tutto, però purtroppo non sono ancora riusciti a risalire all’identità dei truffatori». Ora a preoccuparla maggiormente sono i numeri dell’uso dell’AI. «Secondo certe ricerche, quasi la metà dei ragazzi tra i 15 e i 19 anni la usi come consulente emotivo. Non dimentichiamo che c’è chi si è tolto la vita perché gli era stato suggerito in chat. Alle truffe di denaro c’è rimedio, ma a quelle che toccano la vita dei nostri ragazzi no». Non a caso a Super partes «parliamo spesso dell’uso di social e intelligenza artificiale da parte dei giovani e delle proposte di legge sia sulla limitazione dell’età sia sui software collegati. E poi della situazione internazionale e del presidente Usa Donald Trump». Condividi questo articolo “Questi mangiabaguette mi hanno messo alle 12… a quell’ora i numeri uno vanno in piscina a prendere il sole, mica a giocare con le pippe!”: Fiorello imita Sinner ed è show “Non sapevo chi fosse Carlo Conti. Quando mi ha chiamato per Sanremo pensavo fosse un festival di cinema”: la confessione di Rocío Muñoz Morales “Il mio miglior amante? John Kennedy Jr.”: la confessione di Madonna e la regola dei “nomi dei morti” “Altro che toro, è diventato un bue. Adesso i turisti cosa schiacciano?”: spariscono i testi*oli dal mosaico in Galleria a Milano, il “caso” dopo il restauro Isabel Totti fa la Prima Comunione ma non c’è traccia di papà Francesco alla festa con Ilary Blasi: il “mistero”, poi la reunion con festeggiamenti doppi Allarme a corte per la principessa Mette-Marit: si aggrava la fibrosi polmonare, il principe Haakon rientra d’urgenza dal Giappone Gentile lettore, la pubblicazione dei commenti è sospesa dalle 20 alle 9, i commenti per ogni articolo saranno chiusi dopo 72 ore, il massimo di caratteri consentito per ogni messaggio è di 1.500 e ogni utente può postare al massimo 150 commenti alla settimana . Abbiamo deciso di impostare questi limiti per migliorare la qualità del dibattito. È necessario attenersi Termini e Condizioni di utilizzo del sito (in particolare punti 3 e 5) : evitare gli insulti, le accuse senza fondamento e mantenersi in tema con la discussione. I commenti saranno pubblicati dopo essere stati letti e approvati, ad eccezione di quelli pubblicati dagli utenti in white list (vedere il punto 3 della nostra policy). Infine non è consentito accedere al servizio tramite account multipli. Vi preghiamo di segnalare eventuali problemi tecnici al nostro supporto tecnico La Redazione Abbonati a Il Fatto Quotidiano . Facciamo un giornale con un solo padrone: i lettori. Incluso nell'abbonamento Accedere a tutti gli articoli del quotidiano tramite app e sito Accedere ad uno sconto dedicato a 4 corsi esclusivi della Scuola del Fatto Partecipare in diretta alla riunione di redazione ogni giovedì alle 16.00 Tesseramento alla Fondazione il Fatto Quotidiano a € 5,00 (anziché € 20,00) Card digitale con accesso ai vantaggi esclusivi delle Partnership Hai bisogno di ulteriori informazioni?
+
+Key points:
+- La giornalista di Mediaset vittima di una truffa deepfake: un video falso creato con l'AI usato per frodare il pubblico.
+- Uno dei volti al femminile più apprezzati di Mediaset è apparsa in un video diffuso in rete in cui all’interno del “suo” studio di Super partes – il programma di approfondimento politico di Canale 5 e Retequattro –.
+- Hanno rubato la mia immagine con l’AI per chiedere soldi, molte persone sono cadute nella truffa”: la denuncia di Safiria Leccese La giornalista di Mediaset vittima di una truffa deepfake: un video falso creato con l'AI.
+- Un video bloccato, un altro, apparso poi sui suoi social ufficiali, per spiegare la truffa.
+- Hanno bloccato tutto, però purtroppo non sono ancora riusciti a risalire all’identità dei truffatori».
+- Condividi questo articolo “Questi mangiabaguette mi hanno messo alle 12… a quell’ora i numeri uno vanno in piscina a prendere il sole, mica a giocare con le pippe!”: Fiorello imita Sinner ed è show “Non sapevo chi fosse.
+Companies: OpenAI, Google, Anthropic, Microsoft, Apple, Wired AI, HIGH OTHER AI, Next-Wave Asian AI
+Models: claude-code, Gemini
+Topics: model release, funding or business, regulation or safety, media generation
+
+### 3. to a dedicated LoRA adapter on an always-hot
+
+Source date: Sun, 31 May 2026 13:59:47 -0700
+Confidence: 0.82
+Article: https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion-to-build-french-data-centers/
+Article title: to a dedicated LoRA adapter on an always-hot
+
+Article excerpt: to a dedicated LoRA adapter on an always-hot Link : https://www.marktechpost.com/2026/05/30/trajectory-releases-a-concurrent-multi-lora-training-stack-for-continual-learning-reporting-a-2-81x-experiment-throughput-gain/ [HIGH] SoftBank says it will invest up to €75 billion to build French data centers Company : TechCrunch AI Summary : The goal, the firm said, is to develop and operate up to 5 gigawatts of additional data center capacity. Link : [MEDIUM] anthropics/claude-code: v2.1.159 Company : Anthropic Summary : ## What's changed - Internal infrastructure improvements (no user-facing changes) Link : https://github.com/anthropics/claude-code/releases/tag/v2.1.159 [MEDIUM] Samsung...
+
+to a dedicated LoRA adapter on an always-hot Link : [HIGH] SoftBank says it will invest up to €75 billion to build French data centers Company : TechCrunch AI Summary : The goal, the firm said, is to develop and operate up to 5 gigawatts of additional data center capacity. Link : [MEDIUM] anthropics/claude-code: v2.1.159 Company : Anthropic Summary : ## What's changed. to a dedicated LoRA adapter on an always-hot Link : [HIGH] SoftBank says it will invest up to €75 billion to build French data centers Company : TechCrunch AI Summary : The goal, the firm said, is to develop and operate. Link : [MEDIUM] anthropics/claude-code: v2.1.159 Company : Anthropic Summary : ## What's changed. Here's How to Save Everything First Company : CNET AI Summary : The transition from Samsung Messages to Google Messages is simple if you start now and a headache if you... Internal infrastructure improvements (no user-facing changes) Link : [MEDIUM] Samsung Messages Is Going Away for Good. to a dedicated LoRA adapter on an always-hot Link : [HIGH] SoftBank says it will invest up to €75 billion to build French data centers Company : TechCrunch AI Summary : The goal, the firm said, is to develop and operate up to 5 gigawatts of additional data center capacity. Link : [MEDIUM] anthropics/claude-code: v2.1.159 Company : Anthropic Summary : ## What's changed. Internal infrastructure improvements (no user-facing changes) Link : [MEDIUM] Samsung Messages Is Going Away for Good. Here's How to Save Everything First Company : CNET AI Summary : The transition from Samsung Messages to Google Messages is simple if you start now and a headache if you...
+
+Key points:
+- to a dedicated LoRA adapter on an always-hot Link : [HIGH] SoftBank says it will invest up to €75 billion to build French data centers Company : TechCrunch AI Summary : The goal, the firm said, is to develop and operate.
+- Link : [MEDIUM] anthropics/claude-code: v2.1.159 Company : Anthropic Summary : ## What's changed.
+- Here's How to Save Everything First Company : CNET AI Summary : The transition from Samsung Messages to Google Messages is simple if you start now and a headache if you...
+- Internal infrastructure improvements (no user-facing changes) Link : [MEDIUM] Samsung Messages Is Going Away for Good.
+- Link : [HIGH] Trajectory Releases a Concurrent Multi-LoRA Training Stack for Continual Learning, Reporting a 2.81× Experiment-Throughput Gain Company ...
+- BREAKING AI UPDATE. 01 Jun 2026, 02:29 AM IST 16 new AI event(s) detected ================================================== [HIGH] How to watch Nvidia’s Computex keynote Company : The Verge AI Summary : NVIDIA's CEO.
+Companies: OpenAI, Google, Anthropic, Apple, NVIDIA, The Verge AI, Wired AI, Next-Wave Asian AI
+Models: claude-code, Gemini
+Topics: hardware and compute, media generation
+>>>>>>> Stashed changes
