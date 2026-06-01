@@ -1,0 +1,359 @@
+{
+  "email_received_at": "2026-06-01T20:28+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "How Cosmos 3 Helps Physical AI Think Before It Acts",
+  "subject": "",
+  "source_date": "2026-06-01T20:28:22.857806",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://blogs.nvidia.com/blog/cosmos-3-physical-ai-open-world-foundation-model/",
+  "article_title": "How Cosmos 3 Helps Physical AI Think Before It Acts",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1b87804113149e10.png",
+  "article_image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/05/Featured-image.png",
+  "article_items": [
+    {
+      "url": "https://blogs.nvidia.com/blog/cosmos-3-physical-ai-open-world-foundation-model/",
+      "title": "How Cosmos 3 Helps Physical AI Think Before It Acts",
+      "description": "The new, open NVIDIA world foundation model brings vision reasoning, multimodal generation and action prediction together to help robots, autonomous vehicles and vision AI agents think before acting in the real world.",
+      "excerpt": "The new, open NVIDIA world foundation model brings vision reasoning, multimodal generation and action prediction together to help robots, autonomous vehicles and vision AI agents think before acting in the real world.",
+      "summary": "The new world foundation model - announced today at NVIDIA GTC Taipei at COMPUTEX - combines vision reasoning and multimodal generation across text, video, images, ambient sound and action in a single model to help developers create world data with physical context. Get Started With Cosmos 3 Developers can try Cosmos 3 on build.nvidia.com , download open models from Hugging Face , customize models and generate synthetic data with resources on GitHub , and deploy with NVIDIA NIM microservices. The NVIDIA GEAR team is using Cosmos 3 to develop video action models that help embodied agents learn how to reason, move and act across games, simulations and real-world robotics environments. The new, open NVIDIA world foundation model brings vision reasoning, multimodal generation and action prediction together to help robots, autonomous vehicles and vision AI agents think before acting in the real world. Reasoning Over Smart Cities and Spaces in Motion Cosmos 3 can reason across the scene and identify which objects are moving, where paths may intersect and what future state is likely to follow. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff.",
+      "what_happened": "The new world foundation model - announced today at NVIDIA GTC Taipei at COMPUTEX - combines vision reasoning and multimodal generation across text, video, images, ambient sound and action in a single model to help developers create world data with physical context. Get Started With Cosmos 3 Developers can try Cosmos 3 on build.nvidia.com , download open models from Hugging Face , customize models and generate synthetic data with resources on GitHub , and deploy with NVIDIA NIM microservices.",
+      "why_matters": "The NVIDIA GEAR team is using Cosmos 3 to develop video action models that help embodied agents learn how to reason, move and act across games, simulations and real-world robotics environments. The new, open NVIDIA world foundation model brings vision reasoning, multimodal generation and action prediction together to help robots, autonomous vehicles and vision AI agents think before acting in the real world.",
+      "what_to_watch": "Reasoning Over Smart Cities and Spaces in Motion Cosmos 3 can reason across the scene and identify which objects are moving, where paths may intersect and what future state is likely to follow. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI.",
+      "key_points": [
+        "The new world foundation model - announced today at NVIDIA GTC Taipei at COMPUTEX - combines vision reasoning and multimodal generation across text, video, images, ambient sound and action in a single model to help.",
+        "Get Started With Cosmos 3 Developers can try Cosmos 3 on build.nvidia.com , download open models from Hugging Face , customize models and generate synthetic data with resources on GitHub , and deploy with NVIDIA NIM.",
+        "The NVIDIA GEAR team is using Cosmos 3 to develop video action models that help embodied agents learn how to reason, move and act across games, simulations and real-world robotics environments.",
+        "The new, open NVIDIA world foundation model brings vision reasoning, multimodal generation and action prediction together to help robots, autonomous vehicles and vision AI agents think before acting in the real world.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "Cosmos 3 is the top-ranked open vision language model on VANTAGE-Bench that tests smart-infrastructure scene understanding and TAR challenge that tests traffic anomaly reasoning.",
+        "Generating Action Data for Real-World Robot Tasks Cosmos 3 is a generalist foundation model trained on diverse data that gives it a broad understanding of how scenes, motion and robotic actions relate.",
+        "Cosmos 3 can help generate physically plausible video sequences as a video foundation model to teach how the real world changes over time.",
+        "Cosmos 3 is also topping the Physics-IQ, R-Bench and PAI-Bench leaderboards, among other benchmarks for world generation.",
+        "Reasoning Over Smart Cities and Spaces in Motion Cosmos 3 can reason across the scene and identify which objects are moving, where paths may intersect and what future state is likely to follow.",
+        "With the OpenMDW 1.1 license from Linux Foundation, developers can use Cosmos model materials across physical AI workflows under a single, model-centric license.",
+        "The license makes it easier to train, modify, contribute, redistribute and deploy resources including weights, architecture, documentation, datasets, benchmarks and code."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1b87804113149e10.png",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/05/Featured-image.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "0e823bb3930a4484a93f9f7fbe4d0d77"
+    },
+    {
+      "url": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption",
+      "title": "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
+      "description": "A Blog post by IBM Research on Hugging Face",
+      "excerpt": "A Blog post by IBM Research on Hugging Face",
+      "summary": "This agent leverages deep static analysis across the application and stores a pre-indexed representation in a database schema that spans hundreds of interrelated tables with complex semantics, allowing the agent to retrieve precise, structured already available information; thereby improving answer accuracy, reducing token usage, and minimizing back-and-forth interactions with the language model (Mistral Medium 250B in this instance). Based on the latter and superior line, branch and method coverage benchmarks. [12] The above examples illustrate the impact of agent logic in reducing LLM context and guiding the LLM to traverse the core of the workflow in a highly performant and cost-effective manner. [4], [5] Aster is an IBM proprietary program analysis and data pre- and post-processing-based library utilized for agent-based generation of unit, integration, API and change-based tests; which from analysis of multiple developer. Domain Case Studies Case Study 1: Configurable Generalist Agent (CUGA) Healthcare benchmark. With Gemini 3 Flash the ReAct agent performance improves to within 17% lower than the I3 agent while consuming 1.6\u00d7 more tokens, We have extended this approach to.",
+      "what_happened": "This agent leverages deep static analysis across the application and stores a pre-indexed representation in a database schema that spans hundreds of interrelated tables with complex semantics, allowing the agent to retrieve precise, structured already available information; thereby improving answer accuracy, reducing token usage, and minimizing back-and-forth interactions with the language model (Mistral Medium 250B in this instance). Based on the latter and superior line, branch and method coverage benchmarks.",
+      "why_matters": "[12] The above examples illustrate the impact of agent logic in reducing LLM context and guiding the LLM to traverse the core of the workflow in a highly performant and cost-effective manner. [4], [5] Aster is an IBM proprietary program analysis and data pre- and post-processing-based library utilized for agent-based generation of unit, integration, API and change-based tests; which from analysis of multiple developer.",
+      "what_to_watch": "Domain Case Studies Case Study 1: Configurable Generalist Agent (CUGA) Healthcare benchmark. With Gemini 3 Flash the ReAct agent performance improves to within 17% lower than the I3 agent while consuming 1.6\u00d7 more tokens, We have extended this approach to source code with agents for code analysis (leveraging program.",
+      "key_points": [
+        "Rayfield, et al, AssetOpsBench: Benchmarking AI Agents for Task Automation in Industrial Asset Operations and Maintenance, Jun 4, 2025, [15] Fearghal O'Donncha, Nianjun Zhou, Natalia Martinez, et al.Evidence-Driven.",
+        "With Gemini 3 Flash the ReAct agent performance improves to within 17% lower than the I3 agent while consuming 1.6\u00d7 more tokens, We have extended this approach to source code with agents for code analysis (leveraging.",
+        "[12] The above examples illustrate the impact of agent logic in reducing LLM context and guiding the LLM to traverse the core of the workflow in a highly performant and cost-effective manner.",
+        "This agent leverages deep static analysis across the application and stores a pre-indexed representation in a database schema that spans hundreds of interrelated tables with complex semantics, allowing the agent to.",
+        "Based on the latter and superior line, branch and method coverage benchmarks compared with similar open-sourced tools (integration tests) and zero-shot LLMs and coding agents (unit tests), all tested on open-sourced.",
+        "With this approach, leveraging the equivalent Instana data model, we have seen the proprietary Instana \u201cI3\u201d (intelligent incident investigation [8]) agent achieve up to 4.0\u00d7 improvement over ReAct agent with GPT-5.1 as.",
+        "[4], [5] Aster is an IBM proprietary program analysis and data pre- and post-processing-based library utilized for agent-based generation of unit, integration, API and change-based tests; which from analysis of multiple.",
+        "Our recently launched Maximo Condition Insights [16] agent analyzes large-scale asset data across thousands of assets and locations (sensors, work orders, failure modes and events analysis), using structured evidence.",
+        "[6],[7] While LLM context for app-related use cases as described in 1 and 2 are \u201crestricted\u201d to the app source code, for runtime management of apps on deployed infra, the underlying IT full stack comes into play.",
+        "program analysis.[3] IBM watsonx Code assistant for Z (WCA4Z), used to accelerate mainframe application development and modernization with AI and automation, is equipped with an App Insights agent for application.",
+        "Agent logic is software primitives, such as knowledge graphs, algorithms, program analysis libraries, which operate at the agentic layer (within an agent harness) and can intentionally steer the LLM in the direction of.",
+        "Marreed, et al, From Benchmarks to Business Impact: Deploying IBM Generalist Agent in Enterprise Production, Dec 9, 2025, [14] D."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/dad7dc951338c1dc.png",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/65b12ed52be9660f0b7e5f72/mu_IH3lDD1qGRQZptFmPP.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e70a013dec4cd43a.png"
+      ],
+      "extra_image_urls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/5fc0292de45c5468456e022b/CpwVutMu5EiniBliQ9RXs.png"
+      ],
+      "_story_id": "7d06e7c6a6c04b8c966bf6c84fc153a9"
+    },
+    {
+      "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+      "title": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
+      "description": "A Blog post by JetBrains on Hugging Face",
+      "excerpt": "A Blog post by JetBrains on Hugging Face",
+      "summary": "A Blog post by JetBrains on Hugging Face Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains Mellum2 is a 12B-parameter Mixture-of-Experts model trained from scratch on natural language and code. Because Mellum2 is open and efficient to serve, it can be deployed in self-hosted environments involving proprietary code or internal data. Model architecture Mellum2 is a Mixture-of-Experts model: The MoE architecture keeps total model capacity high while activating only a subset of parameters for each token. With Mellum2, we extend that foundation to a broader set of natural language and software engineering tasks while keeping the model focused on efficient inference and deployability. Benchmark highlights In our technical report, we evaluate Mellum2 across code generation, reasoning, science, and math benchmarks. Model architecture Mellum2 is a Mixture-of-Experts model: The MoE architecture keeps total model capacity high while activating only a subset of parameters for each token.",
+      "what_happened": "A Blog post by JetBrains on Hugging Face Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains Mellum2 is a 12B-parameter Mixture-of-Experts model trained from scratch on natural language and code. Because Mellum2 is open and efficient to serve, it can be deployed in self-hosted environments involving proprietary code or internal data.",
+      "why_matters": "Model architecture Mellum2 is a Mixture-of-Experts model: The MoE architecture keeps total model capacity high while activating only a subset of parameters for each token. With Mellum2, we extend that foundation to a broader set of natural language and software engineering tasks while keeping the model focused on efficient inference and deployability.",
+      "what_to_watch": "Benchmark highlights In our technical report, we evaluate Mellum2 across code generation, reasoning, science, and math benchmarks. Model architecture Mellum2 is a Mixture-of-Experts model: The MoE architecture keeps total model capacity high while activating only a subset of parameters for each token.",
+      "key_points": [
+        "A Blog post by JetBrains on Hugging Face Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains Mellum2 is a 12B-parameter Mixture-of-Experts model trained from scratch on natural language and code.",
+        "Model architecture Mellum2 is a Mixture-of-Experts model: The MoE architecture keeps total model capacity high while activating only a subset of parameters for each token.",
+        "With Mellum2, we extend that foundation to a broader set of natural language and software engineering tasks while keeping the model focused on efficient inference and deployability.",
+        "The model activates only 2.5B parameters per token, making it efficient for high-throughput, low-latency inference.",
+        "Download the model on Hugging Face: For architecture details, training setup, benchmarks, and evaluation methodology, read the full technical report: Today we\u2019re releasing Mellum2, an open Mixture-of-Experts model.",
+        "Models mentioned in this article 1 Collections mentioned in this article 1 Models mentioned in this article 1 Collections mentioned in this article 1",
+        "A single frontier model can be powerful, but production systems often need several specialized components working together: retrievers, routers, code-aware models, validators, tool callers, and larger reasoning models.",
+        "We think of Mellum2 as a \u201cfocal\u201d model: a fast, well-scoped model optimized for high-frequency tasks inside larger AI systems.",
+        "This specialization keeps the model compact and efficient for software engineering workloads.",
+        "Because Mellum2 is open and efficient to serve, it can be deployed in self-hosted environments involving proprietary code or internal data.",
+        "Benchmark highlights In our technical report, we evaluate Mellum2 across code generation, reasoning, science, and math benchmarks.",
+        "The goal is not to replace every model in the stack."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/bbcce5b6c69f40ef.jpg",
+      "image_url": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/resolve/main/mellum_evals_grid_1700.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "8ccd43d0dce141c9aaceb0fbdd5a5b98"
+    },
+    {
+      "url": "https://huggingface.co/blog/OpenClaw/clawhub-security-signals",
+      "title": "ClawHub Security Signals: Large Corpus Multi-Scanner Dataset for Agent Skill Security Research",
+      "description": "A Blog post by OpenClaw on Hugging Face",
+      "excerpt": "A Blog post by OpenClaw on Hugging Face",
+      "summary": "The goal of this release is to support researchers working on agent supply-chain security, multi-signal triage, and the class of risks that show up when AI agents install reusable skills and plugins. The release redacts secrets and excludes private identifiers and runnable private artifacts, but no automated redaction process is perfect. We hope to enable the research community and would love to help enable the development of safe agentic systems. It does not mean the skill is confirmed harmful. SkillSpector Risk Categories The top SkillSpector advisory categories are MCP Least Privilege (9,641 rows), MCP Tool Poisoning (5,084), Data Exfiltration (2,192), Dangerous Code Execution (1,629), Rogue Agent (1,428), and Supply Chain (1,336).",
+      "what_happened": "The goal of this release is to support researchers working on agent supply-chain security, multi-signal triage, and the class of risks that show up when AI agents install reusable skills and plugins. The release redacts secrets and excludes private identifiers and runnable private artifacts, but no automated redaction process is perfect.",
+      "why_matters": "We hope to enable the research community and would love to help enable the development of safe agentic systems. It does not mean the skill is confirmed harmful.",
+      "what_to_watch": "SkillSpector Risk Categories The top SkillSpector advisory categories are MCP Least Privilege (9,641 rows), MCP Tool Poisoning (5,084), Data Exfiltration (2,192), Dangerous Code Execution (1,629), Rogue Agent (1,428), and Supply Chain (1,336).",
+      "key_points": [
+        "The goal of this release is to support researchers working on agent supply-chain security, multi-signal triage, and the class of risks that show up when AI agents install reusable skills and plugins.",
+        "A Blog post by OpenClaw on Hugging Face ClawHub Security Signals: Large Corpus Multi-Scanner Dataset for Agent Skill Security Research Research Publication: ClawHub Security Signals: When VirusTotal, Static Analysis.",
+        "SkillSpector Risk Categories The top SkillSpector advisory categories are MCP Least Privilege (9,641 rows), MCP Tool Poisoning (5,084), Data Exfiltration (2,192), Dangerous Code Execution (1,629), Rogue Agent (1,428).",
+        "The 433 static findings for suspicious.prompt_injection_instructions and the 5,084 SkillSpector MCP Tool Poisoning rows provide a starting signal for evaluating detectors on realistic agent instruction content.",
+        "The release redacts secrets and excludes private identifiers and runnable private artifacts, but no automated redaction process is perfect.",
+        "Among suspicious rows, VirusTotal is positive on 12.7%, static analysis on 12.0%, and SkillSpector on 75.3%.",
+        "The dataset reflects the public ClawHub catalog at the time of export (31 May 2026 at time of publication).",
+        "Among malicious rows, VirusTotal is positive on 72.8%, static analysis on 12.6%, and SkillSpector on 6.8%.",
+        "The eval_holdout split is reserved for model evaluation and should not be used for training.",
+        "The verdict-conditioned pattern shows why a single scanner is not enough: Among clean rows, VirusTotal is positive on 4.4%, static analysis on 3.2%, and SkillSpector on 32.7%.",
+        "Only 468 rows, 0.69% of the dataset, are positive on all three scanner families.",
+        "Of the 35,600 rows with at least one positive scanner signal, 26,527 are SkillSpector-only: skills that do not raise VirusTotal or static-analysis positives but do raise semantic-risk advisories around authority."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/564402a46cddd911.png",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/643bc6ea5ec6af9c331ad3f9/Ryr1Y-UFjnS_SWDrQZUQS.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "6f3a7f280b7e4dae82ead6b6e7c1cbf8"
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/category/enterprise/",
+      "title": "AI Infrastructure Archives",
+      "description": "",
+      "excerpt": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain As factories move from isolated automation to plant-wide intelligence, manufacturers need AI systems that can connect live machine signals...",
+      "summary": "Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA AI Factories: The New Infrastructure of Intelligence NVIDIA Vera CPU Is \u2018Packing a Heavy-Hitting Punch\u2019 Against Competition NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts NVIDIA Research Advances Robotics From Simulation to the Real World NVIDIA GTC Taipei at COMPUTEX: Live Updates on What\u2019s Next in AI NVIDIA AI Cloud Ecosystem Expands Worldwide to. Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA Levels Up Local AI Agents Across RTX PCs and DGX Spark The Name\u2019s Gaming \u2026 Cloud Gaming: \u2018007 First Light\u2019 Launches on GeForce NOW License to Stream: \u2018007 First Light\u2019 Coming to GeForce NOW With an Ultimate Bundle NVIDIA and Google Cloud Empower the Next Wave of AI Builders These cookies enable core functionality such as security, network management, and accessibility. Efficiency at Scale: NVIDIA, Energy Leaders Accelerating Power\u2011Flexible AI Factories to Fortify the Grid CERAWeek - dubbed the Davos of energy - is where policymakers, producers, technologists and financiers gather to discuss how the world powers.",
+      "what_happened": "Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA AI Factories: The New Infrastructure of Intelligence NVIDIA Vera CPU Is \u2018Packing a Heavy-Hitting Punch\u2019 Against Competition NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts NVIDIA Research Advances Robotics From Simulation to the Real World NVIDIA GTC Taipei at COMPUTEX: Live Updates on What\u2019s Next in AI NVIDIA AI Cloud Ecosystem Expands Worldwide to.",
+      "why_matters": "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA Levels Up Local AI Agents Across RTX PCs and DGX Spark The Name\u2019s Gaming \u2026 Cloud Gaming: \u2018007 First Light\u2019 Launches on GeForce NOW License to Stream: \u2018007 First Light\u2019 Coming to GeForce NOW With an Ultimate Bundle NVIDIA and Google Cloud Empower the Next Wave of AI Builders These cookies enable core functionality such as security, network management, and accessibility.",
+      "what_to_watch": "Efficiency at Scale: NVIDIA, Energy Leaders Accelerating Power\u2011Flexible AI Factories to Fortify the Grid CERAWeek - dubbed the Davos of energy - is where policymakers, producers, technologists and financiers gather to discuss how the world powers itself next. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open.",
+      "key_points": [
+        "Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA AI Factories: The New Infrastructure of Intelligence NVIDIA Vera CPU Is \u2018Packing a Heavy-Hitting Punch\u2019 Against Competition NVIDIA AI.",
+        "NVIDIA and Emerald AI unveiled at...",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA Levels Up Local AI Agents Across RTX PCs and DGX Spark The Name\u2019s Gaming \u2026 Cloud Gaming: \u2018007 First Light\u2019 Launches on GeForce NOW License to Stream: \u2018007 First.",
+        "NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge.",
+        "Agent sandboxes run 50% faster on NVIDIA Vera than traditional CPUs - while enterprise data queries...",
+        "OpenAI\u2019s New GPT-5.5 Powers Codex on NVIDIA Infrastructure - and NVIDIA Is Already Putting It to Work AI agents have revolutionized developer workflows, and their next frontier is knowledge work: processing information.",
+        "That\u2019s the focus of a new engineering-level collaboration between NVIDIA and Ineffable...",
+        "Blowing Off Steam: How Power-Flexible AI Factories Can Stabilize the Global Energy Grid At the half-time whistle of the UEFA EURO 2020 round of 16 football match between England and Germany, millions of viewers stepped.",
+        "Rethinking AI TCO: Why Cost per Token Is the Only Metric That Matters Traditional data centers only stored, retrieved and processed data.",
+        "Partners are expanding capacity to meet growing demand from enterprises, startups, nations, AI labs and developers...",
+        "In the generative and agentic AI era, these facilities have evolved into AI token factories."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "0ecd468a61954f6d86cab861d5958452"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/",
+      "title": "AgentOps: Operationalize agentic AI at scale with Amazon Bedrock AgentCore | Amazon Web Services",
+      "description": "When you build agentic AI solutions, you face unique operational challenges. Agents make unpredictable decisions, costs spiral unexpectedly, and debugging non-deterministic failures seems impossible. Agentic AI applications don't just execute predetermined workflows. They reason, adapt, and make autonomous decisions, and DevOps practices need to be adapted. That's where AgentOps comes in, the operational discipline for deploying, managing, and continuously improving AI agents in production.",
+      "excerpt": "When you build agentic AI solutions, you face unique operational challenges. Agents make unpredictable decisions, costs spiral unexpectedly, and debugging non-deterministic failures seems impossible. Agentic AI applications don't just execute predetermined workflows. They reason, adapt, and make autonomous decisions, and DevOps practices need to be adapted. That's where AgentOps comes in, the operational discipline for deploying, managing, and continuously improving AI agents in production.",
+      "summary": "The application verifies the user\u2019s identity, whether they are allowed to invoke the agent, and whether the agent can access the requested context, memory, and tools with the specific parameters. Her experience spans the entire AI lifecycle, from collaborating with organizations training cutting-edge Large Language Models (LLMs) to guiding enterprises in deploying and scaling agentic AI applications powered by these models. Pillar 2: Build & Operations Agents depend on infrastructure, resources, tools, and models that can change independently. It is AWS\u2019s Agentic AI platform for building, deploying, and operating effective agents securely at scale. The telemetry it produces feeds back into governance decisions, informs the next evaluation cycle, and shapes how you build and deploy in the next iteration. You need visibility across four distinct layers for your production agents: Agent & framework telemetry to audit what your agent decided and did, the reasoning.",
+      "what_happened": "The application verifies the user\u2019s identity, whether they are allowed to invoke the agent, and whether the agent can access the requested context, memory, and tools with the specific parameters. Her experience spans the entire AI lifecycle, from collaborating with organizations training cutting-edge Large Language Models (LLMs) to guiding enterprises in deploying and scaling agentic AI applications powered by these models.",
+      "why_matters": "Pillar 2: Build & Operations Agents depend on infrastructure, resources, tools, and models that can change independently. It is AWS\u2019s Agentic AI platform for building, deploying, and operating effective agents securely at scale.",
+      "what_to_watch": "The telemetry it produces feeds back into governance decisions, informs the next evaluation cycle, and shapes how you build and deploy in the next iteration. You need visibility across four distinct layers for your production agents: Agent & framework telemetry to audit what your agent decided and did, the reasoning.",
+      "key_points": [
+        "You need visibility across four distinct layers for your production agents: Agent & framework telemetry to audit what your agent decided and did, the reasoning steps, model calls, tool invocations, and responses.",
+        "The application verifies the user\u2019s identity, whether they are allowed to invoke the agent, and whether the agent can access the requested context, memory, and tools with the specific parameters.",
+        "For multimodal tools (audio-to-audio, image generation, video creation), evaluate modality-specific quality metrics (image fidelity, audio clarity, video coherence), cross-modal consistency (does generated content align.",
+        "Her experience spans the entire AI lifecycle, from collaborating with organizations training cutting-edge Large Language Models (LLMs) to guiding enterprises in deploying and scaling agentic AI applications powered by.",
+        "the agent code, including the shared modules, and the IaC templates to provision AgentCore resources for agents, 2.",
+        "The pipeline also registers or updates the agent\u2019s metadata as a structured record in AWS Agent Registry in AgentCore.",
+        "The CI/CD pipeline creates a release branch, deploys resources to pre-production including agent deployment to AgentCore Runtime via ECR, and triggers the evaluation pipeline.",
+        "On-demand and online evaluations In addition to the 4 levels, agentic evaluation runs in two modes that serve different needs: On-demand evaluation runs against specific spans, traces, or sessions during development and.",
+        "As they develop their application and agents, they modify: 1.",
+        "She has more than 16 years experience helping customers develop and deploy machine learning applications.",
+        "You containerize your agent implementation, store the container image in ECR, and deploy it to AgentCore Runtime connecting to AgentCore Identity, AgentCore Memory resources, and account-level and shared AgentCore.",
+        "You need strict governance around who can access the agents, what data and tools and APIs the agents can access, who can authorize these permissions, and what occurs when issues arise."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/60c58e9e3a349463.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/19/ml-19465-image-6.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/dabbc832f996831f.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/dd8853c73add6a28.png"
+      ],
+      "extra_image_urls": [
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/19/ml-19465-image-7.jpeg",
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/19/ml-19465-image-3.png"
+      ],
+      "_story_id": "a08e1f6fc7a84e1eae37dedc8512f94a"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-quick-integration-with-time-series-databases-for-market-intelligence-using-mcp/",
+      "title": "Amazon Quick integration with time-series databases for market intelligence using MCP | Amazon Web Services",
+      "description": "In this post, we walk through a practical implementation using KDB-X MCP server integration with Amazon Quick, demonstrating how traders and analysts can ask questions using conversational language and receive actionable insights from datasets. You can apply this same integration pattern across various domains, from financial market analysis to IoT sensor monitoring to DevOps performance dashboards, where you need to simplify access to time series insights.",
+      "excerpt": "In this post, we walk through a practical implementation using KDB-X MCP server integration with Amazon Quick, demonstrating how traders and analysts can ask questions using conversational language and receive actionable insights from datasets. You can apply this same integration pattern across various domains, from financial market analysis to IoT sensor monitoring to DevOps performance dashboards, where you need to simplify access to time series insights.",
+      "summary": "This installation enables the KDB-X service to run continuously and establishes the connection between the MCP server and KDB-X service for query execution. Create the necessary directories and configuration file: Verify your EC2 security group allows inbound traffic on Port 80 and 443. After the user reviews and approves the action submission, the agent executes the query against the KDB-X database and displays the aggregated trading volume results. This solution uses a Cognito user pool as the inbound authorization mechanism for the AgentCore Gateway: Under Targets , select MCP server as the Target type. Artificial Intelligence Amazon Quick integration with time-series databases for market intelligence using MCP Model Context Protocol (MCP) integration in Amazon Quick transforms how financial analysts access time-series market intelligence, removing the need for complex database queries.",
+      "what_happened": "This installation enables the KDB-X service to run continuously and establishes the connection between the MCP server and KDB-X service for query execution. Create the necessary directories and configuration file: Verify your EC2 security group allows inbound traffic on Port 80 and 443.",
+      "why_matters": "After the user reviews and approves the action submission, the agent executes the query against the KDB-X database and displays the aggregated trading volume results. This solution uses a Cognito user pool as the inbound authorization mechanism for the AgentCore Gateway: Under Targets , select MCP server as the Target type.",
+      "what_to_watch": "Artificial Intelligence Amazon Quick integration with time-series databases for market intelligence using MCP Model Context Protocol (MCP) integration in Amazon Quick transforms how financial analysts access time-series market intelligence, removing the need for complex database queries.",
+      "key_points": [
+        "Artificial Intelligence Amazon Quick integration with time-series databases for market intelligence using MCP Model Context Protocol (MCP) integration in Amazon Quick transforms how financial analysts access time-series.",
+        "Here are several example queries that demonstrate the agent\u2019s capabilities: Ask the agent to retrieve a sample of 10 stocks from the database.",
+        "The server extends the ability to query KDB-X data through natural language.",
+        "This installation enables the KDB-X service to run continuously and establishes the connection between the MCP server and KDB-X service for query execution.",
+        "The following screenshots demonstrate how the chat agent interprets the natural language query and frames the appropriate SQL statement.",
+        "Create the necessary directories and configuration file: Verify your EC2 security group allows inbound traffic on Port 80 and 443.",
+        "After the user reviews and approves the action submission, the agent executes the query against the KDB-X database and displays the aggregated trading volume results.",
+        "The service is enabled to auto-start after a reboot.",
+        "For production deployments, replace nip.io with a domain registered in Amazon Route 53 with DNSSEC enabled, use AWS Certificate Manager (ACM) to issue and manage TLS certificates, and front the EC2 with an internal.",
+        "In our architecture, we configure MCP servers as targets within the AgentCore Gateway, enabling communication with the MCP server running on Amazon EC2.",
+        "Verify that you meet the following prerequisites to deploy the solution in your own AWS account using the step-by-step instructions in this post.",
+        "Configure the KDB-X service to listen on port 5000."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b463e51074a0cdf9.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/19/ML-20251-8.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "993fb6099fdd4877bb19de6a4568bf09"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/accelerate-llm-model-loading-and-increase-context-windows-with-gpudirect-on-amazon-fsx-for-lustre-and-turboquant/",
+      "title": "Accelerate LLM model loading and increase context windows with GPUDirect on Amazon FSx for Lustre and TurboQuant | Amazon Web Services",
+      "description": "If you\u2019re iterating on deploying large language models (LLMs) on AWS GPU instances, you\u2019ve probably noticed the larger the model to be loaded into GPU High Bandwidth Memory (HBM), the longer the painful wait until the GPUs are ready for inference. As models grow to hundreds of billions of parameters and GPU environments grow ever",
+      "excerpt": "If you\u2019re iterating on deploying large language models (LLMs) on AWS GPU instances, you\u2019ve probably noticed the larger the model to be loaded into GPU High Bandwidth Memory (HBM), the longer the painful wait until the GPUs are ready for inference. As models grow to hundreds of billions of parameters and GPU environments grow ever",
+      "summary": "If you\u2019re iterating on deploying large language models (LLMs) on AWS GPU instances, you\u2019ve probably noticed the larger the model to be loaded into GPU High Bandwidth Memory (HBM), the longer the painful wait until the GPUs are ready for inference. As models grow to hundreds of billions of parameters and GPU environments grow ever As models grow to hundreds of billions of parameters and GPU environments grow ever As models grow to hundreds of billions of parameters and GPU environments grow ever",
+      "what_happened": "If you\u2019re iterating on deploying large language models (LLMs) on AWS GPU instances, you\u2019ve probably noticed the larger the model to be loaded into GPU High Bandwidth Memory (HBM), the longer the painful wait until the GPUs are ready for inference. As models grow to hundreds of billions of parameters and GPU environments grow ever",
+      "why_matters": "As models grow to hundreds of billions of parameters and GPU environments grow ever",
+      "what_to_watch": "As models grow to hundreds of billions of parameters and GPU environments grow ever",
+      "key_points": [
+        "If you\u2019re iterating on deploying large language models (LLMs) on AWS GPU instances, you\u2019ve probably noticed the larger the model to be loaded into GPU High Bandwidth Memory (HBM), the longer the painful wait until the.",
+        "As models grow to hundreds of billions of parameters and GPU environments grow ever"
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/92a8dbaefaf41f82.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/19/ML-209091.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "fd6360ac0a1b4086824dfecc9b6c6b13"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 9,
+  "has_cta": true,
+  "slides": [
+    "Get Started With changes It can then generate dense captions predicted.",
+    "Aster updates agent leverages deep static analysis across application.",
+    "A Blog post by JetBrains on Hugging Face Introducing Mellum2: A 12B.",
+    "ClawHub Security Signals Large Corpus Multi-Scanner Dataset for Agent Skill Security Research.",
+    "Taiwan upgrades s Industry Titans Turbocharge World's AI Infrastructure.",
+    "Pillar upgrades 2 Build Operations Agents depend on infrastructure.",
+    "Create tightens necessary directories configuration file Verify your EC2.",
+    "LLMs upgrades If you're iterating on deploying large language.",
+    "FOLLOW @graitech"
+  ]
+}

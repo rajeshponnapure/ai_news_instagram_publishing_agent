@@ -1,0 +1,26 @@
+3 Helps Physical AI Think Before It Acts.
+
+Swipe for the full breakdown.
+
+- Get Started With Cosmos 3 Developers can try Cosmos 3 on build.nvidia.com, download open models from Hugging Face.
+- The new, open NVIDIA world foundation model brings vision reasoning, multimodal generation and action prediction together to help.
+- Artificial Intelligence Inference ﻿ Agentic AI ﻿ Open Source ﻿ Generative AI ﻿ AI for Good ﻿ Research.
+- Cosmos 3 is the top-ranked open vision language model on VANTAGE-Bench that tests smart-infrastructure scene understanding and TAR.
+- Generating Action Data for Real-World Robot Tasks Cosmos 3 is a generalist foundation model trained on diverse data.
+
+Which industry do you think will feel the impact of this first?
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://blogs.nvidia.com/blog/cosmos-3-physical-ai-open-world-foundation-model/
+- https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption
+- https://huggingface.co/blog/JetBrains/mellum2-launch
+- https://huggingface.co/blog/OpenClaw/clawhub-security-signals
+- https://blogs.nvidia.com/blog/category/enterprise/
+
+#AINews #AITools #GenerativeAI #TechNews #AIUpdates #ArtificialIntelligence #FutureOfAI #Technology #Tech #AI #LearnAI #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing #MLNews #AIWeekly #TechInnovation #AIStartups #FutureOfWork
+
+-
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-
