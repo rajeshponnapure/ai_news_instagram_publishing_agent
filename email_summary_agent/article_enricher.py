@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import html
+import http.client
 import re
 import urllib.error
 import urllib.parse
@@ -257,7 +258,7 @@ def fetch_article(url: str, assets_dir: Path) -> ArticleData | None:
     used_playwright = False
     try:
         html_bytes, final_url = _read_url(url, timeout=12)
-    except (urllib.error.URLError, TimeoutError, OSError, ValueError):
+    except (urllib.error.URLError, TimeoutError, OSError, ValueError, http.client.HTTPException):
         # Try a headless browser render fallback (better for JS-heavy or blocked pages)
         try:
             html_bytes, final_url = _render_with_playwright(url, timeout=18)
@@ -385,6 +386,11 @@ def _render_with_playwright(url: str, timeout: int) -> Tuple[bytes, str]:
 
 
 def _download_image(image_url: str, assets_dir: Path, source_url: str) -> str:
+    # Tracking beacons / malformed srcs often carry raw spaces or control chars
+    # (e.g. "...&ec=Quality Visit – 30s+..."). urllib raises http.client.InvalidURL
+    # on those — skip them up front so one bad src can't abort the whole run.
+    if not image_url or re.search(r"[\x00-\x20\x7f]", image_url):
+        return ""
     try:
         request = urllib.request.Request(image_url, headers={"User-Agent": USER_AGENT, "Referer": source_url})
         with urlopen_with_cert_fallback(request, timeout=12) as response:
@@ -397,7 +403,7 @@ def _download_image(image_url: str, assets_dir: Path, source_url: str) -> str:
                 "image/webp": ".webp",
             }.get(content_type.split(";", 1)[0], ".img")
             data = response.read(8_000_000)
-    except (urllib.error.URLError, TimeoutError, OSError, ValueError):
+    except (urllib.error.URLError, TimeoutError, OSError, ValueError, http.client.HTTPException):
         return ""
     digest = hashlib.sha1(image_url.encode("utf-8")).hexdigest()[:16]
     assets_dir.mkdir(parents=True, exist_ok=True)
