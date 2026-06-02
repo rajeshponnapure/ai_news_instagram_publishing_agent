@@ -342,7 +342,12 @@ def _highlight_keywords_html(text: str) -> str:
     - Numbers with units (50%, $1.2B, 2x, 3bn, etc.)
     - ALL-CAPS acronyms 2-6 chars (AI, ML, LLM, API, GPT, etc.) excluding stopwords
     """
-    escaped = _html.escape(str(text or "").strip())
+    # Decode any entities the scraper left in (e.g. double-escaped &amp;#x27;) and
+    # escape with quote=False so apostrophes stay as "'" rather than "&#x27;".
+    # If left as "&#x27;", the number-bolding regex below matches the "27" inside
+    # the entity and injects <strong> tags, breaking the entity so the browser
+    # renders a literal "&#x27;" with a bold "27" on the slide.
+    escaped = _html.escape(_html.unescape(str(text or "").strip()), quote=False)
     # Bold numbers with optional units/symbols (e.g. 50%, $1.2B, 2x, 100bn)
     escaped = re.sub(
         r'(\$?\d[\d,]*(?:\.\d+)?(?:B|M|K|bn|mn|%|x)?)',
