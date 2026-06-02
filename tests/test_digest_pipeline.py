@@ -715,6 +715,39 @@ def _settings(**overrides) -> Settings:
     return Settings(**values)
 
 
+class UrlSanitizationTests(unittest.TestCase):
+    """A tracking-beacon URL with a raw space + en-dash must never abort the run."""
+
+    def test_sanitize_encodes_space_and_unicode_keeps_existing_pct(self) -> None:
+        from email_summary_agent.http_utils import _sanitize_url
+
+        out = _sanitize_url("https://x.test/a?ec=Quality Visit – 30s+&b=%E2%80%93")
+        self.assertNotIn(" ", out)
+        self.assertIn("%20", out)          # space encoded
+        self.assertIn("Quality%20Visit%20%E2%80%93", out)  # en-dash -> utf-8 bytes
+        self.assertIn("b=%E2%80%93", out)  # already-encoded left intact
+
+    def test_urlopen_wrapper_raises_catchable_urlerror_not_httpexception(self) -> None:
+        import http.client
+        import urllib.error
+        import urllib.request
+
+        from email_summary_agent.http_utils import urlopen_with_cert_fallback
+
+        bad = "https://nonexistent.invalid/action/0?ec=Quality Visit – 30s+"
+        for target in (bad, urllib.request.Request(bad, headers={"User-Agent": "x"})):
+            with self.assertRaises(urllib.error.URLError):
+                urlopen_with_cert_fallback(target, timeout=2)
+            # And specifically NOT the uncatchable bare HTTPException.
+            try:
+                urlopen_with_cert_fallback(target, timeout=2)
+            except http.client.HTTPException as exc:  # pragma: no cover
+                if not isinstance(exc, urllib.error.URLError):
+                    self.fail("leaked bare http.client.HTTPException")
+            except urllib.error.URLError:
+                pass
+
+
 class EditorialCopyQualityTests(unittest.TestCase):
     """Regression tests for slide heading + keypoint cleanup."""
 
