@@ -1,0 +1,369 @@
+{
+  "email_received_at": "2026-06-02T05:42+00:00",
+  "recommended_post_time": "18:00",
+  "headline": "Executives reveal tech initiatives at Summa Health, eight months after General Catalyst acquisition",
+  "subject": "",
+  "source_date": "2026-06-02T05:42:54.589295",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://www.statnews.com/2026/06/01/summa-health-tech-initiatives-after-general-catalyst-acquisition/?utm_campaign=rss",
+  "article_title": "Executives reveal tech initiatives at Summa Health, eight months after General Catalyst acquisition",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/cbf8ccb3d662bf65.jpg",
+  "article_image_url": "https://www.statnews.com/wp-content/uploads/2024/01/H-Tower-Hi-Res-1024x576.jpg",
+  "article_items": [
+    {
+      "url": "https://www.statnews.com/2026/06/01/summa-health-tech-initiatives-after-general-catalyst-acquisition/?utm_campaign=rss",
+      "title": "Executives reveal tech initiatives at Summa Health, eight months after General Catalyst acquisition",
+      "description": "Two years after General Catalyst said it was buying Ohio safety-net hospital Summa Health, executives shed light on how the \u201ctransformation\u201d is going.",
+      "excerpt": "Two years after General Catalyst said it was buying Ohio safety-net hospital Summa Health, executives shed light on how the \u201ctransformation\u201d is going.",
+      "summary": "For prostate cancer patients set on surgery, new hormone regimen may improve outcomes, study finds Revolution Medicines starts shipping experimental pancreatic cancer drug Ultra-low doses could bring costly cancer treatments to more patients in poorer countries Practice-changing results reported for Revolution Medicines pancreatic cancer drug Revolution Medicines starts shipping experimental pancreatic cancer drug Eli Lilly says Verve\u2019s gene editor lowers cholesterol levels in early study \u2018Are we just going to. In some of the first media interviews since its parent company bought the health system, Health Assurance Transformation Company executives shed light on how the holding company is approaching its \u201ctransformation\u201d of the hospital system and planning to share its innovations with more than two dozen of HATCo\u2019s partner health systems. If you do not allow these cookies we will not know when you have visited our site, and will. The Trump administration wants to cut even further STAT Plus: An ASCO preview: What to watch for at cancer research's big meeting STAT Plus: How Kyle Diamantas defied expectations as he rose to lead the FDA STAT Plus: 'Are we just going to give up and.",
+      "what_happened": "For prostate cancer patients set on surgery, new hormone regimen may improve outcomes, study finds Revolution Medicines starts shipping experimental pancreatic cancer drug Ultra-low doses could bring costly cancer treatments to more patients in poorer countries Practice-changing results reported for Revolution Medicines pancreatic cancer drug Revolution Medicines starts shipping experimental pancreatic cancer drug Eli Lilly says Verve\u2019s gene editor lowers cholesterol levels in early study \u2018Are we just going to.",
+      "why_matters": "In some of the first media interviews since its parent company bought the health system, Health Assurance Transformation Company executives shed light on how the holding company is approaching its \u201ctransformation\u201d of the hospital system and planning to share its innovations with more than two dozen of HATCo\u2019s partner health systems. If you do not allow these cookies we will not know when you have visited our site, and will.",
+      "what_to_watch": "The Trump administration wants to cut even further STAT Plus: An ASCO preview: What to watch for at cancer research's big meeting STAT Plus: How Kyle Diamantas defied expectations as he rose to lead the FDA STAT Plus: 'Are we just going to give up and die like every other generation?' STAT Plus: Blood pressure tech.",
+      "key_points": [
+        "For prostate cancer patients set on surgery, new hormone regimen may improve outcomes, study finds Revolution Medicines starts shipping experimental pancreatic cancer drug Ultra-low doses could bring costly cancer.",
+        "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+        "In some of the first media interviews since its parent company bought the health system, Health Assurance Transformation Company executives shed light on how the holding company is approaching its \u201ctransformation\u201d of.",
+        "If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.",
+        "If you do not allow these cookies then some or all of these services may not function properly.",
+        "They help us to know which pages are the most and least popular and see how visitors move around the site.",
+        "These cookies enable the website to provide enhanced functionality and personalisation.",
+        "The Trump administration wants to cut even further STAT Plus: An ASCO preview: What to watch for at cancer research's big meeting STAT Plus: How Kyle Diamantas defied expectations as he rose to lead the FDA STAT Plus.",
+        "A decade of reporting from the frontiers of health and medicine Privacy Preference Center Manage Consent Preferences These cookies are necessary for the website to function and cannot be switched off in our systems.",
+        "You can reach Brittany on Signal at btrang.01.",
+        "Tech is transforming health care and life sciences.",
+        "It\u2019s all part of the \u201ctransformation\u201d plan that venture capital firm General Catalyst is implementing at Summa Health, the Akron-based safety-net hospital it bought in October."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/cbf8ccb3d662bf65.jpg",
+      "image_url": "https://www.statnews.com/wp-content/uploads/2024/01/H-Tower-Hi-Res-1024x576.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "be7dc47db5b84c3385e07f1bf519a090"
+    },
+    {
+      "url": "https://www.langchain.com/blog/how-rippling-went-ai-native-across-every-product-in-6-months-with-deep-agents-and-langsmith",
+      "title": "How Rippling built production AI in 6 months with Deep Agents and LangSmith",
+      "description": "Rippling uses LangChain Deep Agents and LangSmith to run cross-domain AI across HR, IT, finance, payroll, and global operations.",
+      "excerpt": "Rippling uses LangChain Deep Agents and LangSmith to run cross-domain AI across HR, IT, finance, payroll, and global operations.",
+      "summary": "Rippling AI: Built On Deep Agents + LangSmith The speed by which Rippling integrated AI agents was possible because the team built with LangChain from the start, using composable agent primitives and a shared observability layer in LangSmith. When Deep Agents launched, they adopted it for Rippling AI's core reasoning loop. The team shipped it in roughly 6 months. For teams building AI on complex, permission-sensitive platforms, the Rippling team's advice is direct: Deep Agents is the reasoning framework behind Rippling AI. Rather than asking the LLM to manipulate data directly, Rippling\u2019s action agents use sandboxed code execution to normalize inputs (say, a CSV from a client) into the format Rippling's internal tools expect. Three types of specialized Deep Agents sit beneath a supervisor agent: Read agents query structured data across.",
+      "what_happened": "Rippling AI: Built On Deep Agents + LangSmith The speed by which Rippling integrated AI agents was possible because the team built with LangChain from the start, using composable agent primitives and a shared observability layer in LangSmith. When Deep Agents launched, they adopted it for Rippling AI's core reasoning loop.",
+      "why_matters": "The team shipped it in roughly 6 months. For teams building AI on complex, permission-sensitive platforms, the Rippling team's advice is direct: Deep Agents is the reasoning framework behind Rippling AI.",
+      "what_to_watch": "Rather than asking the LLM to manipulate data directly, Rippling\u2019s action agents use sandboxed code execution to normalize inputs (say, a CSV from a client) into the format Rippling's internal tools expect. Three types of specialized Deep Agents sit beneath a supervisor agent: Read agents query structured data across.",
+      "key_points": [
+        "Rippling AI: Built On Deep Agents + LangSmith The speed by which Rippling integrated AI agents was possible because the team built with LangChain from the start, using composable agent primitives and a shared.",
+        "Three types of specialized Deep Agents sit beneath a supervisor agent: Read agents query structured data across all of Rippling's product areas (HR, payroll, IT, finance) and connected platforms like Salesforce, Carta.",
+        "When Deep Agents launched, they adopted it for Rippling AI's core reasoning loop.",
+        "How Rippling Went AI-Native Across Every Product in 6 Months with Deep Agents and LangSmith Rippling needed AI that could reason across a massive ontology.",
+        "The team shipped it in roughly 6 months.",
+        "For teams building AI on complex, permission-sensitive platforms, the Rippling team's advice is direct: Deep Agents is the reasoning framework behind Rippling AI.",
+        "Rippling uses LangChain Deep Agents and LangSmith to run cross-domain AI across HR, IT, finance, payroll, and global operations.",
+        "See how it works | Read the docs S e e w h a t y o u r a g e n t i s r e a l l y d o i n g LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click.",
+        "The supervisor agent sits on top operating the primary reasoning loop that analyzes incoming queries and decides which specialized agent (or combination) to invoke.",
+        "Deep Agents power Rippling AI\u2019s multi-agent architecture.",
+        "Rippling AI , now in production across million of users globally , runs on LangChain Deep Agents and LangSmith.",
+        "Rather than asking the LLM to manipulate data directly, Rippling\u2019s action agents use sandboxed code execution to normalize inputs (say, a CSV from a client) into the format Rippling's internal tools expect."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f385f1eabde1f5c3.img",
+      "image_url": "https://cdn.prod.website-files.com/65b8cd72835ceeacd4449a53/6989c024926f877c1de6e728_updated.svg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "d20083ddcdc646daa858e02ffbb71b25"
+    },
+    {
+      "url": "https://www.zdnet.com/article/mx-linux-xfce-ahs-best-distribution-for-new-hardware/",
+      "title": "I tried the latest MX Linux version on my PC, and it made the system look and feel like new",
+      "description": "MX Linux has released a version that includes features and software, making it a brilliant option for the latest systems.",
+      "excerpt": "MX Linux has released a version that includes features and software, making it a brilliant option for the latest systems.",
+      "summary": "Based on the 6.12 kernel with the Advanced Hardware Support repositories enabled and defaults to the KDE Plasma desktop environment. Also keep in mind that the Liquorix 7.0.9-2 Liquorix kernel (the 7.07 kernel was immediately updated after the OS was installed) is a low-latency kernel, which means it has been designed to decrease the time it takes to respond to various events, such as audio, gaming, and industrial automation. Yes, you have to deal with a slightly less-than-modern desktop UI, but the speed you gain from using Xfce is worth feeling a bit out of date on the user interface side of things. Anker's new charger is one of the most unique I've ever seen How the metaverse will change the future of work and society Anker's new charger is one of the most unique I've ever seen How the metaverse will change the future of work and society I. An expert's sweet spot And with the Xfce desktop environment, newer hardware is going to perform exponentially better than you expect. Between the 7.09 Liquorix kernel, DKMS, and the updated Mesa stack, your hardware is most likely supported, and if you decide to install a more modern DE, you'll wind up with an.",
+      "what_happened": "Based on the 6.12 kernel with the Advanced Hardware Support repositories enabled and defaults to the KDE Plasma desktop environment. Also keep in mind that the Liquorix 7.0.9-2 Liquorix kernel (the 7.07 kernel was immediately updated after the OS was installed) is a low-latency kernel, which means it has been designed to decrease the time it takes to respond to various events, such as audio, gaming, and industrial automation.",
+      "why_matters": "Yes, you have to deal with a slightly less-than-modern desktop UI, but the speed you gain from using Xfce is worth feeling a bit out of date on the user interface side of things. Anker's new charger is one of the most unique I've ever seen How the metaverse will change the future of work and society Anker's new charger is one of the most unique I've ever seen How the metaverse will change the future of work and society I.",
+      "what_to_watch": "An expert's sweet spot And with the Xfce desktop environment, newer hardware is going to perform exponentially better than you expect. Between the 7.09 Liquorix kernel, DKMS, and the updated Mesa stack, your hardware is most likely supported, and if you decide to install a more modern DE, you'll wind up with an.",
+      "key_points": [
+        "Based on the 6.12 kernel with the Advanced Hardware Support repositories enabled and defaults to the KDE Plasma desktop environment.",
+        "Also keep in mind that the Liquorix 7.0.9-2 Liquorix kernel (the 7.07 kernel was immediately updated after the OS was installed) is a low-latency kernel, which means it has been designed to decrease the time it takes to.",
+        "Between the 7.09 Liquorix kernel, DKMS, and the updated Mesa stack, your hardware is most likely supported, and if you decide to install a more modern DE, you'll wind up with an elegant, powerful, and modern PC or.",
+        "The MX-25.2_Xfce_ahs_x64 version ships with a Liquorix kernel that is tuned for high-performance audio and video, which makes it an outstanding option for gaming.",
+        "The standard release that is based on Debian 6.12 with hardware support from Debian Stable and is suitable for PCs that are a few years old.",
+        "For kicks, I installed KDE Plasma desktop with: I wanted to see how the KDE Plasma desktop would perform on top of the MX Linux AHS release.",
+        "The combination of the kernel and Mesa stack offers HiDPI scaling via XFCE at 125% and 150%, while looking crisp, and you get the MX Nvidia installer to make it exponentially easier to install and get the proper GPU.",
+        "If you're worried about Wi-Fi, sound, or discrete graphics (stand-alone graphics processors that function separately from the CPU) working properly, the combination of the Liquorix kernel, the latest MESA release, and.",
+        "How AI has suddenly become much more useful to open-source developers Google's Gemma 4 model goes fully open-source and unlocks powerful local AI.",
+        "The only nit I could pick is that the OS didn't ship with Steam preinstalled.",
+        "There's also a version, MX-25.2_Xfce_ahs_x64, which includes the 7.07 kernel and includes new graphics drivers and firmware.",
+        "MX Linux has released a version that includes features and software, making it a brilliant option for the latest systems."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7455a09ebd7180ba.jpg",
+      "image_url": "https://www.zdnet.com/a/img/resize/3eb1da0a78eae5fefd720c02fa075635d0b5c190/2026/06/01/0e0e5829-bd34-40d6-b559-1d6790e51a48/mxlinuxlaptophero.jpg?auto=webp&width=1280",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "2a94ebc5755a4316a62500ccb033a9f9"
+    },
+    {
+      "url": "https://www.engadget.com/2184976/florida-sues-openai-and-sam-altman-over-alleged-exploitation-of-users/",
+      "title": "Florida sues OpenAI and Sam Altman over alleged 'exploitation of users' - Engadget",
+      "description": "Florida's lawsuit against OpenAI comes after a mass shooter at FSU reportedly consulted ChatGPT to plan the attack.",
+      "excerpt": "Florida's lawsuit against OpenAI comes after a mass shooter at FSU reportedly consulted ChatGPT to plan the attack.",
+      "summary": "The complaint says this practice \"leads to more use of the chatbot, more training data for its improvement and more market value for OpenAI.\" Do not sell or share my personal information. \"The rise of OpenAI is attributable to a web of deceit and the exploitation of users (including Floridians), leveraging their data and safety to boost OpenAI's market value at unacceptable costs,\" the complaint reads. The suit accuses the company of pushing a product it knew could harm users. The alleged shooter was also reportedly in regular contact with ChatGPT and the company actually flagged the account for \"gun violence activity and planning.\" OpenAI, however, didn't alert authorities and simply deactivated the account. Florida's lawsuit against OpenAI comes after a mass shooter at FSU reportedly consulted ChatGPT to plan the attack. These allegations suggest that the shooter was given advice on what guns to use and how to gain media attention from the chatbot.",
+      "what_happened": "The complaint says this practice \"leads to more use of the chatbot, more training data for its improvement and more market value for OpenAI.\" Do not sell or share my personal information. \"The rise of OpenAI is attributable to a web of deceit and the exploitation of users (including Floridians), leveraging their data and safety to boost OpenAI's market value at unacceptable costs,\" the complaint reads.",
+      "why_matters": "The suit accuses the company of pushing a product it knew could harm users. The alleged shooter was also reportedly in regular contact with ChatGPT and the company actually flagged the account for \"gun violence activity and planning.\" OpenAI, however, didn't alert authorities and simply deactivated the account.",
+      "what_to_watch": "Florida's lawsuit against OpenAI comes after a mass shooter at FSU reportedly consulted ChatGPT to plan the attack. These allegations suggest that the shooter was given advice on what guns to use and how to gain media attention from the chatbot.",
+      "key_points": [
+        "The complaint says this practice \"leads to more use of the chatbot, more training data for its improvement and more market value for OpenAI.\" Do not sell or share my personal information.",
+        "\"The rise of OpenAI is attributable to a web of deceit and the exploitation of users (including Floridians), leveraging their data and safety to boost OpenAI's market value at unacceptable costs,\" the complaint reads.",
+        "These allegations suggest that the shooter was given advice on what guns to use and how to gain media attention from the chatbot.",
+        "The alleged shooter was also reportedly in contact with ChatGPT during the planning stages.",
+        "The suit accuses the company of pushing a product it knew could harm users.",
+        "The alleged shooter was also reportedly in regular contact with ChatGPT and the company actually flagged the account for \"gun violence activity and planning.\" OpenAI, however, didn't alert authorities and simply.",
+        "The alleged shooter created a second profile and continued the conversation, according to another recent lawsuit.",
+        "Finally, the language criticizes ChatGPT's notorious propensity for sycophancy and alleges this is an overt tactic to increase user engagement.",
+        "OpenAI says it was \"not responsible for this terrible crime\" and that the chatbot simply \"provided factual responses to questions with information that could be found broadly across public sources on the internet.\".",
+        "A lawsuit filing suggests he received information on how to hide bodies from the chatbot.",
+        "The suit also claims that the company's systems present a \"great danger of addiction, cognitive decline, suicide, violence and related harms\" to users.",
+        "Florida's lawsuit against OpenAI comes after a mass shooter at FSU reportedly consulted ChatGPT to plan the attack."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/aaaeb8303b06317a.jpg",
+      "image_url": "https://img4.zergnet.com/8755679_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "9d2e794177ae4811b4f8684dc26994e3"
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/cm2p3j6lvn7o?at_medium=RSS&at_campaign=rss",
+      "title": "OpenAI offers rival AI to UK banks blocked from Claude Mythos",
+      "description": "Nine banks have been offered access to GPT 5.5 Cyber, as fierce rival Anthropic has blocked previews of its tool.",
+      "excerpt": "Nine banks have been offered access to GPT 5.5 Cyber, as fierce rival Anthropic has blocked previews of its tool.",
+      "summary": "Nvidia announces new AI chip for personal computers The technology giant's boss Jensen Huang called the move the \"reinvention of the computer\". Mythos caused a stir when it was announced in April, with Anthropic claiming it had found a weakness in one legacy system which had remained hidden for nearly 30 years. According to a company representative, Anthropic is urgently working to expand access to Mythos. Businesses and MP hit out at bank branch closure Bank boss sorry after describing workers as 'lower value human capital' Pharmacy post office marks one year in Immingham AI giant Anthropic says it plans to list on US stock market The AI company behind Claude is set to offer the public shares of stock sometime this year. AI will be used to estimate age of asylum seekers from next year The Home Office says the tool will make it easier to identify adult migrants \"attempting to game the system\". The AI Security Institute, which has tested both Anthropic's Mythos and OpenAI's GPT-5.5 Cyber, said in its report that they reached \"a similar.",
+      "what_happened": "Nvidia announces new AI chip for personal computers The technology giant's boss Jensen Huang called the move the \"reinvention of the computer\". Mythos caused a stir when it was announced in April, with Anthropic claiming it had found a weakness in one legacy system which had remained hidden for nearly 30 years.",
+      "why_matters": "According to a company representative, Anthropic is urgently working to expand access to Mythos. Businesses and MP hit out at bank branch closure Bank boss sorry after describing workers as 'lower value human capital' Pharmacy post office marks one year in Immingham AI giant Anthropic says it plans to list on US stock market The AI company behind Claude is set to offer the public shares of stock sometime this year.",
+      "what_to_watch": "AI will be used to estimate age of asylum seekers from next year The Home Office says the tool will make it easier to identify adult migrants \"attempting to game the system\". The AI Security Institute, which has tested both Anthropic's Mythos and OpenAI's GPT-5.5 Cyber, said in its report that they reached \"a similar.",
+      "key_points": [
+        "Nvidia announces new AI chip for personal computers The technology giant's boss Jensen Huang called the move the \"reinvention of the computer\".",
+        "OpenAI and UK sign deal to use AI in public services OpenAI has been more generous with access to Cyber 5.5, opening it up in the EU and also to banks in Japan and Canada, among others.",
+        "The AI Security Institute, which has tested both Anthropic's Mythos and OpenAI's GPT-5.5 Cyber, said in its report that they reached \"a similar level of performance\" in the tasks it set them.",
+        "Mythos caused a stir when it was announced in April, with Anthropic claiming it had found a weakness in one legacy system which had remained hidden for nearly 30 years.",
+        "\"The key things with these tools is that they need to be in the hands of the right people,\" he said.",
+        "\"We want to make sure that the forces that are establishing order in our democracies have these tools, and the forces that want to disrupt us or commit crime, do not.\" The UK banks which will now gain access to OpenAI's.",
+        "AI versions of Churchill, Kahlo and Gandhi on Question Time An unusual start to the programme, which this week debates concerns around artificial intelligence.",
+        "UK banks blocked from cyber AI tool Mythos get offer from rival OpenAI OpenAI has offered nine major UK banks access to its cyber security AI tool GPT-5.5 Cyber, as its fierce rival Anthropic has blocked them in.",
+        "The BBC is in multiple languages",
+        "Nine banks have been offered access to GPT 5.5 Cyber, as fierce rival Anthropic has blocked previews of its tool.",
+        "They believe that Mythos' capabilities sit in a tier above 5.5 Cyber and therefore more caution is required.",
+        "Some finance ministers, central bankers and financiers have since expressed serious concerns about it , fearing the model could undermine the security of all financial systems."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d2e018af05ad6e15.webp",
+      "image_url": "https://ichef.bbci.co.uk/news/480/cpsprodpb/92f7/live/51e59160-5dd6-11f1-b682-cf91850925ea.jpg.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "eeaf1c080b7e4ec1a417e72aa14f8351"
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/c74d1ydv01eo?at_medium=RSS&at_campaign=rss",
+      "title": "'Confused' AI strategy hurts firms and baffles staff",
+      "description": "Some firms are putting pressure on staff to use AI, but have not thought through their AI rollout.",
+      "excerpt": "Some firms are putting pressure on staff to use AI, but have not thought through their AI rollout.",
+      "summary": "Nvidia announces new AI chip for personal computers The technology giant's boss Jensen Huang called the move the \"reinvention of the computer\". That meant a process that was less accurate and much more expensive, but it also allowed the organisation to say they were embracing AI. However, research by the civil servant union, the FDA, shows that while civil servants were open to the idea of using AI to improve productivity, there's doubt that management can handle the transformation . The UK government is banking on AI to help \"rewire\" the state and boost efficiency across Whitehall. FDA general secretary Dave Penman said the rollout was \"inconsistent across departments which limits the productivity gains\". The BBC is in multiple languages",
+      "what_happened": "Nvidia announces new AI chip for personal computers The technology giant's boss Jensen Huang called the move the \"reinvention of the computer\". That meant a process that was less accurate and much more expensive, but it also allowed the organisation to say they were embracing AI.",
+      "why_matters": "However, research by the civil servant union, the FDA, shows that while civil servants were open to the idea of using AI to improve productivity, there's doubt that management can handle the transformation . The UK government is banking on AI to help \"rewire\" the state and boost efficiency across Whitehall.",
+      "what_to_watch": "FDA general secretary Dave Penman said the rollout was \"inconsistent across departments which limits the productivity gains\". The BBC is in multiple languages",
+      "key_points": [
+        "Nvidia announces new AI chip for personal computers The technology giant's boss Jensen Huang called the move the \"reinvention of the computer\".",
+        "That meant a process that was less accurate and much more expensive, but it also allowed the organisation to say they were embracing AI.",
+        "However, research by the civil servant union, the FDA, shows that while civil servants were open to the idea of using AI to improve productivity, there's doubt that management can handle the transformation .",
+        "The BBC is in multiple languages",
+        "Organisations needed to consider the people side of the equation, he continues.",
+        "The firm says that while nine out of 10 HR professionals expect to increase their use of generative AI, a third said \"say no one currently owns AI strategy at their companies\".",
+        "The UK government is banking on AI to help \"rewire\" the state and boost efficiency across Whitehall.",
+        "\"I was with an oil and gas company, and I sat with the C-suite, and I just went 'what's the reason for using AI?' And none of them could agree.\" The firm's CEO cited the need to keep up with competitors, Boyles.",
+        "A traditional machine learning model would have been much more appropriate, he argued, producing consistent, repeatable results.",
+        "And in May, rival firm KPMG said it had developed a dashboard to track whether its US employees' meet a 75% usage target for its AI tools.",
+        "How 'confused' AI rollout hurts firms and baffles staff When AI engineer Malcolm was working at a data analysis firm, executives wanted to use generative AI to categorise the customer database into a range of personas.",
+        "Ferrari wanted to take on Chinese EVs with the Luce."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d935c3ec2591399f.webp",
+      "image_url": "https://ichef.bbci.co.uk/news/480/cpsprodpb/eda2/live/10992360-5a49-11f1-a7f6-656c5ce9b72d.jpg.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "2f5e83bb9f8a4553963295541d528296"
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/softbank-commits-87-3b-france-ai-infrastructure-buildout",
+      "title": "SoftBank Commits $87.3B to France AI Infrastructure Buildout",
+      "description": "SoftBank Commits $87.3B to France AI Infrastructure Buildout",
+      "excerpt": "SoftBank Commits $87.3B to France AI Infrastructure Buildout",
+      "summary": "\u201cIt is designed to support the rapid growth of artificial intelligence by expanding access to high-performance compute capacity in France.\u201d Related: Anthropic\u2019s IPO Filing and How It Affects Its Responsible AI Stance SoftBank also said it will partner with French companies EDF for the Bouchain data center and Schneider Electric to help create a large-scale industrial production cluster at the Port of Dunkirk. SoftBank is also a major partner in Stargate , the large-scale AI infrastructure initiative with OpenAI. In February this year, the company invested $30 billion in OpenAI , bringing its total investment in the AI vendor to more than $40 billion. The AI Summit London is the flagship AI event of London Tech Week, bringing together enterprise leaders, technical buyers and innovators to turn AI breakthroughs into real business impact. The companies will pair SoftBank Group\u2019s robotics and automation capabilities with Schneider Electric\u2019s industrial expertise and local supply chain network to accelerate the rollout of next-generation AI data centers at scale.",
+      "what_happened": "\u201cIt is designed to support the rapid growth of artificial intelligence by expanding access to high-performance compute capacity in France.\u201d Related: Anthropic\u2019s IPO Filing and How It Affects Its Responsible AI Stance SoftBank also said it will partner with French companies EDF for the Bouchain data center and Schneider Electric to help create a large-scale industrial production cluster at the Port of Dunkirk. SoftBank is also a major partner in Stargate , the large-scale AI infrastructure initiative with OpenAI.",
+      "why_matters": "In February this year, the company invested $30 billion in OpenAI , bringing its total investment in the AI vendor to more than $40 billion. The AI Summit London is the flagship AI event of London Tech Week, bringing together enterprise leaders, technical buyers and innovators to turn AI breakthroughs into real business impact.",
+      "what_to_watch": "The companies will pair SoftBank Group\u2019s robotics and automation capabilities with Schneider Electric\u2019s industrial expertise and local supply chain network to accelerate the rollout of next-generation AI data centers at scale.",
+      "key_points": [
+        "\u201cIt is designed to support the rapid growth of artificial intelligence by expanding access to high-performance compute capacity in France.\u201d Related: Anthropic\u2019s IPO Filing and How It Affects Its Responsible AI Stance.",
+        "SoftBank is also a major partner in Stargate , the large-scale AI infrastructure initiative with OpenAI and other partners aimed at building hyperscale AI compute capacity in the U.S.",
+        "The Japan-based conglomerate said on May 31 that the investment will consist of an initial $53 billion over the next five years, delivering 3.1 gigawatts of AI data center capacity in the Hauts-de-France region by 2031.",
+        "The companies will pair SoftBank Group\u2019s robotics and automation capabilities with Schneider Electric\u2019s industrial expertise and local supply chain network to accelerate the rollout of next-generation AI data centers at.",
+        "SoftBank revealed plans to invest $87.3B in AI infrastructure in France, targeting the development of 5 gigawatts of data center capacity.",
+        "SoftBank Group will work with SB Energy and other strategic partners to develop the projects.",
+        "The funding is the latest in SoftBank\u2019s global AI investment push.",
+        "SoftBank Commits $87.3B to France AI Infrastructure Buildout SoftBank Commits $87.3B to France AI Infrastructure Buildout The funding marks SoftBank\u2019s largest AI infrastructure investment in Europe to date.",
+        "Full details on the investment are expected to be formally announced on Monday at the Choose France business conference.",
+        "In February this year, the company invested $30 billion in OpenAI , bringing its total investment in the AI vendor to more than $40 billion.",
+        "Beyond supporting AI infrastructure, the project is intended to strengthen Dunkirk\u2019s position as a center for robotics, advanced manufacturing and industrial innovation.",
+        "dominance in AI infrastructure \u201cAI is entering a new era, and the countries that build the infrastructure for this transformation will shape the future of technology, industry and society,\u201d SoftBank CEO Masayoshi Son."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4397673b92cfc4a3.jpg",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltd3dbe30bbd5acaaf/6a1db89b710e1711de21f2e0/humanoid_guide_Phantom_MK1_Foundation.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/be753ffbee22265b.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/074bdebe8268e6f4.webp"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltdb9fe516e837c101/6a1d8b5a479f3e38d05cf31a/SoftBank.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltd7a7b7e999f08e91/6a182945ebd0746ed016d980/Router.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ],
+      "_story_id": "5b1e0fb0ca3d4c248a49cdbc2fd1544a"
+    },
+    {
+      "url": "https://aibusiness.com/robotics/nvidia-taps-unitree-humanoid-robot-platform",
+      "title": "Nvidia Taps Unitree for Humanoid Robot Platform",
+      "description": "Nvidia Taps Unitree for Humanoid Robot Platform",
+      "excerpt": "Nvidia Taps Unitree for Humanoid Robot Platform",
+      "summary": "Unitree said the H2 Plus humanoid robot is set for release in late 2026, while Nvidia said GR00T workflows for the Unitree G1 will be available soon on GitHub and Hugging Face. Nvidia on Monday said it has selected Chinese robotics company Unitree as the hardware partner for its new robotics system for researchers -- the first of its kind sold by the chipmaker. \"The Nvidia Isaac GR00T Reference Humanoid Robot built on H2 Plus gives researchers a single, open platform to make breakthrough discoveries toward general-purpose physical intelligence.\" According to Nvidia, the robot includes 75 degrees of freedom across its body and hands, stereo vision sensors, wrist-mounted cameras, and onboard compute capable of real-time sensor processing and robot inference. The AI chipmaker said it. \"Humanoid robots will bring physical AI to the world's largest industries, opening a multitrillion-dollar economic opportunity,\" Huang said in a release .",
+      "what_happened": "Unitree said the H2 Plus humanoid robot is set for release in late 2026, while Nvidia said GR00T workflows for the Unitree G1 will be available soon on GitHub and Hugging Face. Nvidia on Monday said it has selected Chinese robotics company Unitree as the hardware partner for its new robotics system for researchers -- the first of its kind sold by the chipmaker.",
+      "why_matters": "\"The Nvidia Isaac GR00T Reference Humanoid Robot built on H2 Plus gives researchers a single, open platform to make breakthrough discoveries toward general-purpose physical intelligence.\" According to Nvidia, the robot includes 75 degrees of freedom across its body and hands, stereo vision sensors, wrist-mounted cameras, and onboard compute capable of real-time sensor processing and robot inference. The AI chipmaker said it.",
+      "what_to_watch": "\"Humanoid robots will bring physical AI to the world's largest industries, opening a multitrillion-dollar economic opportunity,\" Huang said in a release .",
+      "key_points": [
+        "Unitree said the H2 Plus humanoid robot is set for release in late 2026, while Nvidia said GR00T workflows for the Unitree G1 will be available soon on GitHub and Hugging Face.",
+        "Nvidia on Monday said it has selected Chinese robotics company Unitree as the hardware partner for its new robotics system for researchers -- the first of its kind sold by the chipmaker.",
+        "\"The Nvidia Isaac GR00T Reference Humanoid Robot built on H2 Plus gives researchers a single, open platform to make breakthrough discoveries toward general-purpose physical intelligence.\" According to Nvidia, the robot.",
+        "The AI chipmaker said it will combine its Jetson Thor onboard computing system and Isaac GR00T humanoid AI models with Unitree\u2019s humanoid robot, the H2 Plus , for the platform.",
+        "Nvidia said the platform is aimed at research institutions and robotics developers, including universities such as Stanford and ETH Zurich, providing a standardized foundation for developing humanoid capabilities.",
+        "By integrating hardware, simulation and AI software into a single design , the companies said they can help researchers accelerate humanoid development and real-world testing.",
+        "\"Humanoid robots will bring physical AI to the world's largest industries, opening a multitrillion-dollar economic opportunity,\" Huang said in a release .",
+        "Nvidia Taps Unitree for Humanoid Robot Platform Nvidia Taps Unitree for Humanoid Robot Platform Nvidia is combining Unitree\u2019s humanoid hardware with its own AI and simulation tools, in a new design aimed at researchers.",
+        "Nvidia\u2019s Isaac GR00T developer platform will also be used to support Unitree\u2019s G1 humanoid robot.",
+        "Scarlett also has a background in the mining and resources sector, with experience at Mine Australia, Mine Technology and Power Technology.",
+        "Scarlett Evans is a freelance writer with a focus on emerging technologies and the minerals industry.",
+        "Previously, she served as assistant editor at IoT World Today, where she specialized in robotics and smart city technologies."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4397673b92cfc4a3.jpg",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltd3dbe30bbd5acaaf/6a1db89b710e1711de21f2e0/humanoid_guide_Phantom_MK1_Foundation.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/be753ffbee22265b.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9bdbd63d5e2b9dc5.webp"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltdb9fe516e837c101/6a1d8b5a479f3e38d05cf31a/SoftBank.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltd6f723ec83a0ce72/688a84d0e8e28b7fb1ff9a52/Unitree_Humanoid_Robot_$5.9k.jpeg?width=1280&auto=webp&quality=80&disable=upscale"
+      ],
+      "_story_id": "b56c9e85535e4247b3832fb8f4b6f320"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 7,
+  "has_cta": true,
+  "slides": [
+    "The team shipped it in roughly 6 months. The architecture they landed.",
+    "Florida sues OpenAI and Sam Altman over alleged exploitation of users'.",
+    "OpenAI offers rival AI to UK banks blocked from Claude Mythos.",
+    "Confused' AI strategy hurts firms and baffles staff.",
+    "SoftBank Commits $87.3B to France AI Infrastructure Buildout.",
+    "Nvidia Taps Unitree for Humanoid Robot Platform.",
+    "FOLLOW @graitech"
+  ]
+}

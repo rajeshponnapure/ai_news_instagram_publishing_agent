@@ -1,0 +1,367 @@
+{
+  "email_received_at": "2026-06-02T05:42+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "This AI weather startup is out-forecasting government agencies | TechCrunch",
+  "subject": "",
+  "source_date": "2026-06-02T05:42:54.589266",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://techcrunch.com/2026/06/01/this-ai-weather-startup-is-out-forecasting-government-agencies/",
+  "article_title": "This AI weather startup is out-forecasting government agencies | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/25187490789ecfc9.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Pic-8.jpg?resize=1200,675",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/01/this-ai-weather-startup-is-out-forecasting-government-agencies/",
+      "title": "This AI weather startup is out-forecasting government agencies | TechCrunch",
+      "description": "WindBorne benefits from its unique combination of model-building and data collection. The company now has about 400 balloons in flight gathering sensor readings at any given time, launched from 15 sites around the globe. The advances in its current model come from improvements in how the data collected by the balloons is fed into the models.",
+      "excerpt": "WindBorne benefits from its unique combination of model-building and data collection. The company now has about 400 balloons in flight gathering sensor readings at any given time, launched from 15 sites around the globe. The advances in its current model come from improvements in how the data collected by the balloons is fed into the models.",
+      "summary": "Today marks the release of the sixth version of that model, WeatherMesh, which the company says is more accurate than traditional and AI forecasts produced by the European Centre for Medium-Range Weather Forecasts (ECMWF), the European intergovernmental organization seen by meteorologists as the leading provider of accurate weather prediction. WindBorne, which has raised $25 million in venture funding with a reported valuation of $85 million in 2024, sells its balloon data to NOAA, where it is used in the American. But WindBorne and other organizations are working to feed data directly into the models, and the company\u2019s head of AI, Joan Creus-Costa, says the direct ingestion of data from their balloons and other sources is the key reason for improvement in the new version of WeatherMesh. The company now has about 400 balloons in flight gathering sensor readings at any given time, launched from 15 sites around the globe. The advances in its current model come from improvements in how the data collected by the balloons is fed into the models.",
+      "what_happened": "Today marks the release of the sixth version of that model, WeatherMesh, which the company says is more accurate than traditional and AI forecasts produced by the European Centre for Medium-Range Weather Forecasts (ECMWF), the European intergovernmental organization seen by meteorologists as the leading provider of accurate weather prediction. WindBorne, which has raised $25 million in venture funding with a reported valuation of $85 million in 2024, sells its balloon data to NOAA, where it is used in the American.",
+      "why_matters": "But WindBorne and other organizations are working to feed data directly into the models, and the company\u2019s head of AI, Joan Creus-Costa, says the direct ingestion of data from their balloons and other sources is the key reason for improvement in the new version of WeatherMesh. The company now has about 400 balloons in flight gathering sensor readings at any given time, launched from 15 sites around the globe.",
+      "what_to_watch": "The advances in its current model come from improvements in how the data collected by the balloons is fed into the models.",
+      "key_points": [
+        "But with the arrival of the weather-forecasting deep learning models in 2022, the team realized they could capture more value by building their own model as well.",
+        "The advances in its current model come from improvements in how the data collected by the balloons is fed into the models.",
+        "Today marks the release of the sixth version of that model, WeatherMesh, which the company says is more accurate than traditional and AI forecasts produced by the European Centre for Medium-Range Weather Forecasts.",
+        "WindBorne, which has raised $25 million in venture funding with a reported valuation of $85 million in 2024, sells its balloon data to NOAA, where it is used in the American weather forecasting enterprise, and the U.S.",
+        "But WindBorne and other organizations are working to feed data directly into the models, and the company\u2019s head of AI, Joan Creus-Costa, says the direct ingestion of data from their balloons and other sources is the key.",
+        "The company now has about 400 balloons in flight gathering sensor readings at any given time, launched from 15 sites around the globe.",
+        "Its resolution is now down to 3 km in Europe and the continental U.S., where the quality of data is highest.",
+        "More from TechCrunch This AI weather startup is out-forecasting government agencies A new AI weather forecasting tool released today by the startup WindBorne Systems offers more frequent and accurate predictions on key.",
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "The company also sells its forecasts to investors and commodity traders, but Dean says the company remains focused on building out its model and data infrastructure over commercial products, in part because of the.",
+        "For now, AI weather models depend on datasets produced by the ECMWF and the U.S.",
+        "It\u2019s taken a year of tuning and re-architecting the transformer-based model for the model to deliver these forecasts without losing stability."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/25187490789ecfc9.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Pic-8.jpg?resize=1200,675",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "9e6cfc192d1748e4a008f261caef3587"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/",
+      "title": "Anthropic files to go public | TechCrunch",
+      "description": "Anthropic, now an AI powerhouse that has landed top-tier enterprise customers, was once considered an underdog in the emerging world of large language models.",
+      "excerpt": "Anthropic, now an AI powerhouse that has landed top-tier enterprise customers, was once considered an underdog in the emerging world of large language models.",
+      "summary": "The filing comes less than a week after Anthropic raised $65 billion in a Series H funding round that pushed its valuation to $965 billion. The round, which was co-led by Altimeter Capital, Dragoneer, Greenoaks, Sequoia Capital, Capital Group, Coatue, and D1 Capital Partners, attracted a bevy of institutional and strategic investors in anticipation of an IPO. The company said recently that its revenue run-rate had surpassed $47 billion, up from $9 billion at the end of 2025. The company, which is valued at close to $1 trillion, submitted a draft registration statement to the U.S. The first StrictlyVC of 2026 hits SF on April 30.",
+      "what_happened": "The filing comes less than a week after Anthropic raised $65 billion in a Series H funding round that pushed its valuation to $965 billion. The round, which was co-led by Altimeter Capital, Dragoneer, Greenoaks, Sequoia Capital, Capital Group, Coatue, and D1 Capital Partners, attracted a bevy of institutional and strategic investors in anticipation of an IPO.",
+      "why_matters": "The company said recently that its revenue run-rate had surpassed $47 billion, up from $9 billion at the end of 2025. The company, which is valued at close to $1 trillion, submitted a draft registration statement to the U.S.",
+      "what_to_watch": "The first StrictlyVC of 2026 hits SF on April 30.",
+      "key_points": [
+        "The filing comes less than a week after Anthropic raised $65 billion in a Series H funding round that pushed its valuation to $965 billion.",
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "The startup was founded in 2021 by former OpenAI employees and was seen for years as a distant competitor to OpenAI and its AI chatbot, ChatGPT.",
+        "Anthropic will evaluate the IPO privately and without the critical eye of the public.",
+        "OpenAI is expected to file for an initial public offering, setting the stage for an IPO season that will pit the two largest AI labs against each other and test the market\u2019s resolve and interest in artificial.",
+        "The company said recently that its revenue run-rate had surpassed $47 billion, up from $9 billion at the end of 2025.",
+        "The company, which is valued at close to $1 trillion, submitted a draft registration statement to the U.S.",
+        "Anthropic, now an AI powerhouse that has landed top-tier enterprise customers, was once considered an underdog in the emerging world of large language models.",
+        "The round, which was co-led by Altimeter Capital, Dragoneer, Greenoaks, Sequoia Capital, Capital Group, Coatue, and D1 Capital Partners, attracted a bevy of institutional and strategic investors in anticipation of an.",
+        "If it follows through, Anthropic will file an S-1 registration document that will contain detailed information about the company\u2019s financials, legal matters, risks, and a breakdown of who holds the most voting power.",
+        "Anthropic has yet to list the number of shares or set the price.",
+        "Anthropic\u2019s filing also comes as its rival OpenAI continues to raise funding, notably a $122 billion round in March at an $852 billion post-money valuation and prepares for its own IPO."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/47ee923ae1bb5ff3.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2261854833.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "d423d68754f047fc827b5afd6f0689cf"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/01/florida-sues-openai-sam-altman-in-first-of-its-kind-lawsuit-over-violent-incidents/",
+      "title": "Florida sues OpenAI, Sam Altman, in first-of-its-kind lawsuit over violent incidents | TechCrunch",
+      "description": "The lawsuit partially revolves around a shooting at Florida State University last year, and ChatGPT's alleged role in the incident.",
+      "excerpt": "The lawsuit partially revolves around a shooting at Florida State University last year, and ChatGPT's alleged role in the incident.",
+      "summary": "\u201cOpenAI and Altman ignored internal and external safety warnings, put children at great risk, and allowed a dangerous product to reach millions of Floridians.\u201d \u201cBecause of Defendants\u2019 misrepresentations about ChatGPT and their careless introduction of ChatGPT to Florida and the world, mass shooters have been aided and abetted in deadly rampages, vulnerable people have been encouraged into suicide, professionals have suffered public humiliation, users have lost critical thinking skills, and minors have become. The Florida attorney general\u2019s office launched a criminal investigation into the company in April. OpenAI just concluded a different legal case involving former co-founder Elon Musk, who sued the company in 2024, accusing it of having betrayed its original mission to help humanity by converting the organization into a for-profit business. Prior to the attack, the shooter is alleged to have consulted the chatbot.",
+      "what_happened": "\u201cOpenAI and Altman ignored internal and external safety warnings, put children at great risk, and allowed a dangerous product to reach millions of Floridians.\u201d \u201cBecause of Defendants\u2019 misrepresentations about ChatGPT and their careless introduction of ChatGPT to Florida and the world, mass shooters have been aided and abetted in deadly rampages, vulnerable people have been encouraged into suicide, professionals have suffered public humiliation, users have lost critical thinking skills, and minors have become.",
+      "why_matters": "The Florida attorney general\u2019s office launched a criminal investigation into the company in April. OpenAI just concluded a different legal case involving former co-founder Elon Musk, who sued the company in 2024, accusing it of having betrayed its original mission to help humanity by converting the organization into a for-profit business.",
+      "what_to_watch": "Prior to the attack, the shooter is alleged to have consulted the chatbot.",
+      "key_points": [
+        "\u201cOpenAI and Altman ignored internal and external safety warnings, put children at great risk, and allowed a dangerous product to reach millions of Floridians.\u201d \u201cBecause of Defendants\u2019 misrepresentations about ChatGPT.",
+        "Prior to the attack, the shooter is alleged to have consulted the chatbot.",
+        "The lawsuit accuses OpenAI of looking the other way on safety concerns as it has sought to prioritize winning \u201cthe AI arms race and amass large fortunes.\u201d \u201cToday, we announced the first-in-the-nation state-led lawsuit.",
+        "The Florida attorney general\u2019s office launched a criminal investigation into the company in April.",
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "The case concluded after the jury swiftly decided that Musk had waited too long to file the case and that the statute of limitations had passed .",
+        "The lawsuit partially revolves around a shooting at Florida State University last year, and ChatGPT's alleged role in the incident.",
+        "OpenAI has previously denied responsibility for the Florida shooting.",
+        "OpenAI has also been sued in a civil suit by the family of one of the victims of that shooting.",
+        "Last year, OpenAI was sued by the parents of Adam Raine, a California teen who took his own life after discussing suicide with the chatbot.",
+        "\u2018What a joke\u2019: GitHub Copilot\u2019s new token-based billing spurs consternation among devs I put Google\u2019s 24/7 AI assistant Gemini Spark to work, and it\u2019s actually pretty useful Blue Origin\u2019s New Glenn rocket explodes.",
+        "OpenAI just concluded a different legal case involving former co-founder Elon Musk, who sued the company in 2024, accusing it of having betrayed its original mission to help humanity by converting the organization into."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7d36f0dea6e8da4c.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2273245180.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "b42dbfdb92fd4aecac60547454646668"
+    },
+    {
+      "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "title": "Anthropic confidentially submits draft S-1 to the SEC",
+      "description": "Anthropic has confidentially submitted a draft S-1 registration statement to the Securities and Exchange Commission",
+      "excerpt": "Anthropic has confidentially submitted a draft S-1 registration statement to the Securities and Exchange Commission",
+      "summary": "Introducing Claude Opus 4.8 An upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work. Anthropic raises $65B in Series H funding at $965B post-money valuation Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital. Anthropic has confidentially submitted a draft S-1 registration statement to the Securities and Exchange Commission Anthropic confidentially submits draft S-1 to the SEC Today, Anthropic, PBC confidentially submitted a draft registration statement on Form S-1 to the U.S. This announcement is being published under Rule 135 of the Securities Act of 1933, as amended. Anthropic has confidentially submitted a draft S-1 registration statement to the Securities and Exchange Commission Anthropic confidentially submits draft S-1 to the SEC Today, Anthropic, PBC confidentially submitted a draft registration statement on Form S-1 to the U.S.",
+      "what_happened": "Introducing Claude Opus 4.8 An upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work. Anthropic raises $65B in Series H funding at $965B post-money valuation Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital.",
+      "why_matters": "Anthropic has confidentially submitted a draft S-1 registration statement to the Securities and Exchange Commission Anthropic confidentially submits draft S-1 to the SEC Today, Anthropic, PBC confidentially submitted a draft registration statement on Form S-1 to the U.S. This announcement is being published under Rule 135 of the Securities Act of 1933, as amended.",
+      "what_to_watch": "Anthropic has confidentially submitted a draft S-1 registration statement to the Securities and Exchange Commission Anthropic confidentially submits draft S-1 to the SEC Today, Anthropic, PBC confidentially submitted a draft registration statement on Form S-1 to the U.S.",
+      "key_points": [
+        "Introducing Claude Opus 4.8 An upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.",
+        "Anthropic raises $65B in Series H funding at $965B post-money valuation Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital.",
+        "Anthropic has confidentially submitted a draft S-1 registration statement to the Securities and Exchange Commission Anthropic confidentially submits draft S-1 to the SEC Today, Anthropic, PBC confidentially submitted a.",
+        "This announcement is being published under Rule 135 of the Securities Act of 1933, as amended.",
+        "This gives us the option to go public after the SEC completes its review.",
+        "The number of shares to be offered and the price have not yet been set.",
+        "Any offers, solicitations of offers to buy, or any sales of securities will be made only in accordance with the registration requirements of the Securities Act.",
+        "Anthropic opens Milan office to support Italian enterprise, research, and developers",
+        "The proposed initial public offering will depend on market conditions and other factors.",
+        "Securities and Exchange Commission for a proposed initial public offering of our common stock.",
+        "It is not an offer to sell securities; nor is it a solicitation of an offer to buy them."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2f17e0698516a533.jpg",
+      "image_url": "https://cdn.sanity.io/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "14b4caf3937842b9a8956237a940f6e2"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/01/duckduckgo-makes-its-no-ai-search-engine-easier-to-access-as-its-traffic-booms/",
+      "title": "DuckDuckGo makes its 'no-AI' search engine easier to access as its traffic booms | TechCrunch",
+      "description": "Alternative search engine DuckDuckGo launches 'no AI' web extensions for Chrome and Firefox users.",
+      "excerpt": "Alternative search engine DuckDuckGo launches 'no AI' web extensions for Chrome and Firefox users.",
+      "summary": "Alternative search engine DuckDuckGo launches 'no AI' web extensions for Chrome and Firefox users. Once enabled, users will be directed to DuckDuckGo\u2019s AI-free search page, where there are no AI-assisted answers, no chat prompts, and fewer AI images in the search results, the company claims. The company still offers its own AI chatbot with access to many popular models, and a subscription plan that provides access to the latest models and other tools, like a VPN service, identity theft restoration, and personal information removal services. Those trends followed news that Google was overhauling its search box in the biggest change to its search engine in more than 25 years. DuckDuckGo says traffic to its no-AI search page was up threefold on Thursday, May 28, 2026 - a new high-water mark since Google\u2019s search announcement - and the numbers are still climbing.",
+      "what_happened": "Alternative search engine DuckDuckGo launches 'no AI' web extensions for Chrome and Firefox users. Once enabled, users will be directed to DuckDuckGo\u2019s AI-free search page, where there are no AI-assisted answers, no chat prompts, and fewer AI images in the search results, the company claims.",
+      "why_matters": "The company still offers its own AI chatbot with access to many popular models, and a subscription plan that provides access to the latest models and other tools, like a VPN service, identity theft restoration, and personal information removal services. Those trends followed news that Google was overhauling its search box in the biggest change to its search engine in more than 25 years.",
+      "what_to_watch": "DuckDuckGo says traffic to its no-AI search page was up threefold on Thursday, May 28, 2026 - a new high-water mark since Google\u2019s search announcement - and the numbers are still climbing.",
+      "key_points": [
+        "Alternative search engine DuckDuckGo launches 'no AI' web extensions for Chrome and Firefox users.",
+        "Last week, the company noted that web visits to its no-AI search page were up nearly 30% week-over-week, and its U.S.",
+        "The company still offers its own AI chatbot with access to many popular models, and a subscription plan that provides access to the latest models and other tools, like a VPN service, identity theft restoration, and.",
+        "Once enabled, users will be directed to DuckDuckGo\u2019s AI-free search page, where there are no AI-assisted answers, no chat prompts, and fewer AI images in the search results, the company claims.",
+        "Those trends followed news that Google was overhauling its search box in the biggest change to its search engine in more than 25 years.",
+        "More from TechCrunch DuckDuckGo makes its \u2018no-AI\u2019 search engine easier to access as its traffic booms As its traffic continues to climb, alternative search engine DuckDuckGo is leaning into anti-AI sentiment with the.",
+        "The company says the extensions are meant to help people have a consistent AI-free search experience - something that\u2019s harder to come by these days, especially after Google announced its AI-first revamp of its search.",
+        "DuckDuckGo says traffic to its no-AI search page was up threefold on Thursday, May 28, 2026 - a new high-water mark since Google\u2019s search announcement - and the numbers are still climbing.",
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "The extensions are currently available for Chrome and Firefox users.",
+        "The traditional \u201c10 blue links\u201d that defined Google in its earlier days are more of an afterthought, appearing below all this AI-fueled productivity.",
+        "In addition to the new \u201cno AI\u201d search Chrome and Firefox extensions, DuckDuckGo will soon update its original DuckDuckGo Privacy Essentials extensions for Chrome, Firefox, Edge, and Opera to offer controls for AI search."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1fe54ab8737c8e2d.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/368466.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/91240f307c9f48bb.png"
+      ],
+      "extra_image_urls": [
+        "https://techcrunch.com/wp-content/uploads/2026/05/DuckDuckGo_NoAI.png?resize=1200,784"
+      ],
+      "_story_id": "8804e9664cbb4158a58ffd43e3d6c5ad"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/",
+      "title": "How we used Gemini to build Google I/O 2026",
+      "description": "Learn how Googlers used AI to produce Google I/O 2026.",
+      "excerpt": "Learn how Googlers used AI to produce Google I/O 2026.",
+      "summary": "The I/O pre-show: Infinite Scaler and Code the Countdown The AI products & models: Google AI Studio; Gemini API; Gemini Canvas; Google Antigravity; Lyria 3; Nano Banana What we did: Infinite Scaler, another part of the pre-show, was a video game where players competed and generated the levels as they played. \u201cTPU Training Day\u201d short film The AI products & models: Google AI Studio; experimental DeepMind models; Gemini Omni; Nano Banana What we did: We created a short film starring a bunch of TPUs getting ready to. pop-up The AI products & models: Flutter; Gemini Enterprise Agent Platform; Google Antigravity; Nano Banana What we did: We created an app for I/O attendees to design and order lattes with custom art, then build their own version of the most unhinged coffee app ever. That shift is the opportunity we want to share, because people keep asking, \u201cWhat can you really do with AI?\u201d Keep reading to learn which AI tools we used - and. Here\u2019s an example prompt we used to generate the sticker designs, starting with some general guidelines: Next, we provided additional details about individual elements like color, lighting and in the example below, the iconic \u201cI/O\u201d shape: To dive.",
+      "what_happened": "The I/O pre-show: Infinite Scaler and Code the Countdown The AI products & models: Google AI Studio; Gemini API; Gemini Canvas; Google Antigravity; Lyria 3; Nano Banana What we did: Infinite Scaler, another part of the pre-show, was a video game where players competed and generated the levels as they played. \u201cTPU Training Day\u201d short film The AI products & models: Google AI Studio; experimental DeepMind models; Gemini Omni; Nano Banana What we did: We created a short film starring a bunch of TPUs getting ready to.",
+      "why_matters": "pop-up The AI products & models: Flutter; Gemini Enterprise Agent Platform; Google Antigravity; Nano Banana What we did: We created an app for I/O attendees to design and order lattes with custom art, then build their own version of the most unhinged coffee app ever. That shift is the opportunity we want to share, because people keep asking, \u201cWhat can you really do with AI?\u201d Keep reading to learn which AI tools we used - and.",
+      "what_to_watch": "Here\u2019s an example prompt we used to generate the sticker designs, starting with some general guidelines: Next, we provided additional details about individual elements like color, lighting and in the example below, the iconic \u201cI/O\u201d shape: To dive deeper, catch up on many of our biggest I/O 2026 announcements here .",
+      "key_points": [
+        "The I/O pre-show: Infinite Scaler and Code the Countdown The AI products & models: Google AI Studio; Gemini API; Gemini Canvas; Google Antigravity; Lyria 3; Nano Banana What we did: Infinite Scaler, another part of the.",
+        "\u201cTPU Training Day\u201d short film The AI products & models: Google AI Studio; experimental DeepMind models; Gemini Omni; Nano Banana What we did: We created a short film starring a bunch of TPUs getting ready to do some.",
+        "AI x Creative Delight The AI products & models: Gemini Omni; Google Flow; Nano Banana Pro What we did: Each speaker got their own custom generated title card made with our image and video generation models.",
+        "How we used Gemini to build Google I/O 2026 From the jellyfish pre-show to our \u201cTPU Training Day\u201d film, see how Gemini helped make I/O happen this year.",
+        "pop-up The AI products & models: Flutter; Gemini Enterprise Agent Platform; Google Antigravity; Nano Banana What we did: We created an app for I/O attendees to design and order lattes with custom art, then build their.",
+        "We merged the base animation and stylized frames using Gemini Omni and other experimental models.",
+        "There were over 100 prompt categories - from blueberries and disco balls to lasers and wood.",
+        "This handled complex reasoning and content generation.",
+        "Firebase bridged the frontend to models like Nano Banana.",
+        "Learn how Googlers used AI to produce Google I/O 2026.",
+        "Here\u2019s a prompt we used to explore icon styles with Nano Banana: AI x Immersive Experiences The I/O pre-show: Jellectronica The AI products & models: Google Antigravity; Google Colab; Google CoralNPU; Google Flow Music.",
+        "I/O visual brand identity What we did: We created the visual brand identity for I/O 2026, landing on a four-color gradient with overlapping transparencies and interlocking icons."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/49a627668c491d0a.png",
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_IO_social.width-1300.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "aa89e0f434a741c797ee46f4bbe5e713"
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/category/enterprise/",
+      "title": "AI Infrastructure Archives",
+      "description": "",
+      "excerpt": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain As factories move from isolated automation to plant-wide intelligence, manufacturers need AI systems that can connect live machine signals...",
+      "summary": "Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA AI Factories: The New Infrastructure of Intelligence NVIDIA Vera CPU Is \u2018Packing a Heavy-Hitting Punch\u2019 Against Competition NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts NVIDIA Research Advances Robotics From Simulation to the Real World NVIDIA GTC Taipei at COMPUTEX: Live Updates on What\u2019s Next in AI NVIDIA AI Cloud Ecosystem Expands Worldwide to. Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA Jetson Brings Agentic AI to the Physical World NVIDIA Levels Up Local AI Agents Across RTX PCs and DGX Spark The Name\u2019s Gaming \u2026 Cloud Gaming: \u2018007 First Light\u2019 Launches on GeForce NOW License to Stream: \u2018007 First Light\u2019 Coming to GeForce NOW With an Ultimate Bundle These cookies enable core functionality such as security, network management, and accessibility. Efficiency at Scale: NVIDIA, Energy Leaders Accelerating Power\u2011Flexible AI Factories to Fortify the Grid CERAWeek - dubbed the Davos of energy - is where policymakers, producers, technologists and financiers gather to discuss how the world powers itself.",
+      "what_happened": "Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA AI Factories: The New Infrastructure of Intelligence NVIDIA Vera CPU Is \u2018Packing a Heavy-Hitting Punch\u2019 Against Competition NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts NVIDIA Research Advances Robotics From Simulation to the Real World NVIDIA GTC Taipei at COMPUTEX: Live Updates on What\u2019s Next in AI NVIDIA AI Cloud Ecosystem Expands Worldwide to.",
+      "why_matters": "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA Jetson Brings Agentic AI to the Physical World NVIDIA Levels Up Local AI Agents Across RTX PCs and DGX Spark The Name\u2019s Gaming \u2026 Cloud Gaming: \u2018007 First Light\u2019 Launches on GeForce NOW License to Stream: \u2018007 First Light\u2019 Coming to GeForce NOW With an Ultimate Bundle These cookies enable core functionality such as security, network management, and accessibility.",
+      "what_to_watch": "Efficiency at Scale: NVIDIA, Energy Leaders Accelerating Power\u2011Flexible AI Factories to Fortify the Grid CERAWeek - dubbed the Davos of energy - is where policymakers, producers, technologists and financiers gather to discuss how the world powers itself next. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open.",
+      "key_points": [
+        "Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA AI Factories: The New Infrastructure of Intelligence NVIDIA Vera CPU Is \u2018Packing a Heavy-Hitting Punch\u2019 Against Competition NVIDIA AI.",
+        "NVIDIA and Emerald AI unveiled at...",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA Jetson Brings Agentic AI to the Physical World NVIDIA Levels Up Local AI Agents Across RTX PCs and DGX Spark The Name\u2019s Gaming \u2026 Cloud Gaming: \u2018007 First Light\u2019.",
+        "NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge.",
+        "Agent sandboxes run 50% faster on NVIDIA Vera than traditional CPUs - while enterprise data queries...",
+        "OpenAI\u2019s New GPT-5.5 Powers Codex on NVIDIA Infrastructure - and NVIDIA Is Already Putting It to Work AI agents have revolutionized developer workflows, and their next frontier is knowledge work: processing information.",
+        "That\u2019s the focus of a new engineering-level collaboration between NVIDIA and Ineffable...",
+        "Blowing Off Steam: How Power-Flexible AI Factories Can Stabilize the Global Energy Grid At the half-time whistle of the UEFA EURO 2020 round of 16 football match between England and Germany, millions of viewers stepped.",
+        "Rethinking AI TCO: Why Cost per Token Is the Only Metric That Matters Traditional data centers only stored, retrieved and processed data.",
+        "In the generative and agentic AI era, these facilities have evolved into AI token factories.",
+        "Partners are expanding capacity to meet growing demand from enterprises, startups, nations, AI labs and developers..."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "0ecd468a61954f6d86cab861d5958452"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/reference-your-own-aws-secrets-manager-secrets-in-amazon-bedrock-agentcore-identity/",
+      "title": "Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity | Amazon Web Services",
+      "description": "Today, we\u2019re excited to announce the ability to reference a secret in AWS Secrets Manager for AgentCore Identity, so you can reference your own preconfigured secret from Secrets Manager and retain full control over how it is managed. With this ability, you can extend your organization\u2019s existing secrets governance processes to AgentCore. You can provide an existing, preconfigured AWS Secrets Manager secret to use with your credential provider resources. You retain full control over its encryption configuration, rotation, replication, tags, and resource policies, just as you would manage other secrets in Secrets Manager. You can also choose a secret from another AWS account within the same AWS Region, though cross-Region secret sharing isn\u2019t supported. This also supports secrets brought in through AWS Secrets Manager external connectors, enabling integration with third-party secret managers.",
+      "excerpt": "Today, we\u2019re excited to announce the ability to reference a secret in AWS Secrets Manager for AgentCore Identity, so you can reference your own preconfigured secret from Secrets Manager and retain full control over how it is managed. With this ability, you can extend your organization\u2019s existing secrets governance processes to AgentCore. You can provide an existing, preconfigured AWS Secrets Manager secret to use with your credential provider resources. You retain full control over its encryption configuration, rotation, replication, tags, and resource policies, just as you would manage other secrets in Secrets Manager. You can also choose a secret from another AWS account within the...",
+      "summary": "You would like to rotate your secret for security best practices and want your agent to continue working as you rotate: When you rotate the secret value, AgentCore Identity retrieves the updated value on its next read. Important: Give AgentCore Identity permission to read your secret by adding a resource policy to the secret that allows the service principal to call secretsmanager:GetSecretValue . For more on secret management, see the AWS Secrets Manager User Guide . Whether retrieving customer data from a CRM, posting updates to Slack, or querying a GitHub repository, agents need to call external APIs, and that means securely passing credentials at runtime. An existing AWS Secrets Manager secret with the API key or OAuth client secret.",
+      "what_happened": "You would like to rotate your secret for security best practices and want your agent to continue working as you rotate: When you rotate the secret value, AgentCore Identity retrieves the updated value on its next read. Important: Give AgentCore Identity permission to read your secret by adding a resource policy to the secret that allows the service principal to call secretsmanager:GetSecretValue .",
+      "why_matters": "For more on secret management, see the AWS Secrets Manager User Guide . Whether retrieving customer data from a CRM, posting updates to Slack, or querying a GitHub repository, agents need to call external APIs, and that means securely passing credentials at runtime.",
+      "what_to_watch": "An existing AWS Secrets Manager secret with the API key or OAuth client secret.",
+      "key_points": [
+        "You can configure a referenced secret when creating a new Outbound Auth resource directly for an OAuth client secret from the AWS CLI as shown in the following code: Using an AI agent on your desktop If you\u2019re using an.",
+        "An existing AWS Secrets Manager secret with the API key or OAuth client secret.",
+        "You would like to rotate your secret for security best practices and want your agent to continue working as you rotate: When you rotate the secret value, AgentCore Identity retrieves the updated value on its next read.",
+        "Artificial Intelligence Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity AI agents are only as powerful as the tools they can access.",
+        "In the Secrets Manager ARN field, enter the ARN of the secret that contains your OAuth client secret.",
+        "In the JSON key field, specify the key within the secret that contains the client secret value.",
+        "You scope secret access to the intended agent use: Configure the resource policy on your secret directly in AWS Secrets Manager.",
+        "Figure 3: AgentCore Identity console, adding an OAuth client secret from Secrets Manager.",
+        "Important: Give AgentCore Identity permission to read your secret by adding a resource policy to the secret that allows the service principal to call secretsmanager:GetSecretValue .",
+        "You can also reference a secret from another AWS account within the same Region, and secrets brought in through AWS Secrets Manager external connectors are supported, enabling integration with third-party secret.",
+        "With the ability to reference a secret in AWS Secrets Manager, AgentCore Identity gives you the flexibility to use your existing secrets and secret management practices when configuring outbound auth for your AI agents.",
+        "In the Secrets Manager ARN field, enter or choose the ARN of your existing secret."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/258e2a65d785fbf7.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/01/ML-21022-1.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5881a1e5a2f663df.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fc90ea5ee469faae.png"
+      ],
+      "extra_image_urls": [
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/01/ML-21022-3.png",
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/01/ML-21022-2.png"
+      ],
+      "_story_id": "25b3b6cdcd7849f1b04718d01f0c9f43"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 8,
+  "has_cta": true,
+  "slides": [
+    "This AI weather startup is out-forecasting government agencies.",
+    "Anthropic files to go public.",
+    "Florida sues OpenAI Sam Altman in first-of-its-kind lawsuit over violent incidents.",
+    "Anthropic confidentially submits draft S-1 to the SEC.",
+    "DuckDuckGo makes its no-AI' search engine easier to access as its traffic.",
+    "Here's an example prompt we used to generate the sticker designs, starting.",
+    "Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity.",
+    "FOLLOW @graitech"
+  ]
+}
