@@ -1,0 +1,379 @@
+{
+  "email_received_at": "2026-06-02T18:35+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "ZeroDrift raises $10M to protect AI models from themselves | TechCrunch",
+  "subject": "",
+  "source_date": "2026-06-02T18:35:26.464381",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://techcrunch.com/2026/06/02/zerodrift-raises-10-million-to-protect-ai-models-from-themselves/",
+  "article_title": "ZeroDrift raises $10M to protect AI models from themselves | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/bb4869162678909e.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Kumesh-headshot.jpg?resize=1200,800",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/02/zerodrift-raises-10-million-to-protect-ai-models-from-themselves/",
+      "title": "ZeroDrift raises $10M to protect AI models from themselves | TechCrunch",
+      "description": "A new AI compliance service sits between AI models and end users to flag and replace any messages that might present a compliance problem.",
+      "excerpt": "A new AI compliance service sits between AI models and end users to flag and replace any messages that might present a compliance problem.",
+      "summary": "That\u2019s the premise of ZeroDrift , a new AI compliance service that on Tuesday said it had raised $10 million in a seed funding round that saw investments from a16z Speedrun, Reign Ventures, PitchDrive Ventures, and U&I Ventures, among others. More from TechCrunch ZeroDrift raises $10M to protect AI models from themselves As enterprises troubleshoot their AI systems, governance has emerged as a key challenge. The company deals entirely with the second part of the system, sitting between AI models and end users to flag and replace any messages that might present a compliance problem. Critically, the company says its entire system can be run with lower latency and more reliability than a conventional LLM. The first StrictlyVC of 2026 hits SF on April 30.",
+      "what_happened": "That\u2019s the premise of ZeroDrift , a new AI compliance service that on Tuesday said it had raised $10 million in a seed funding round that saw investments from a16z Speedrun, Reign Ventures, PitchDrive Ventures, and U&I Ventures, among others. More from TechCrunch ZeroDrift raises $10M to protect AI models from themselves As enterprises troubleshoot their AI systems, governance has emerged as a key challenge.",
+      "why_matters": "The company deals entirely with the second part of the system, sitting between AI models and end users to flag and replace any messages that might present a compliance problem. Critically, the company says its entire system can be run with lower latency and more reliability than a conventional LLM.",
+      "what_to_watch": "The first StrictlyVC of 2026 hits SF on April 30.",
+      "key_points": [
+        "That\u2019s the premise of ZeroDrift , a new AI compliance service that on Tuesday said it had raised $10 million in a seed funding round that saw investments from a16z Speedrun, Reign Ventures, PitchDrive Ventures, and U&I.",
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "The company deals entirely with the second part of the system, sitting between AI models and end users to flag and replace any messages that might present a compliance problem.",
+        "A new AI compliance service sits between AI models and end users to flag and replace any messages that might present a compliance problem.",
+        "More from TechCrunch ZeroDrift raises $10M to protect AI models from themselves As enterprises troubleshoot their AI systems, governance has emerged as a key challenge.",
+        "The most obvious use case is for AI chatbots, which are already deployed in front of consumers where there can be serious consequences for rogue answers.",
+        "\u2018What a joke\u2019: GitHub Copilot\u2019s new token-based billing spurs consternation among devs I put Google\u2019s 24/7 AI assistant Gemini Spark to work, and it\u2019s actually pretty useful Blue Origin\u2019s New Glenn rocket explodes.",
+        "Critically, the company says its entire system can be run with lower latency and more reliability than a conventional LLM.",
+        "Some are taking a dual approach: One model to handle incoming queries, and another to keep the first one from getting into trouble.",
+        "\u201cWe\u2019re able to identify, deterministically, what are all the regulated areas, what\u2019s the violation that\u2019s being broken, and then we have LLMs that can do the rewrites,\u201d CEO Kumesh Aroomoogan says.",
+        "Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections.",
+        "This is what ZeroDrift touts as its primary advantage over big labs like OpenAI and Anthropic, which are often already present in the underlying system."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/bb4869162678909e.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Kumesh-headshot.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "abcedf936dfd46c6927e2c9c8d752391"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/02/rocket-engine-startup-impulse-raises-500-million-to-hire-people-not-ai/",
+      "title": "Rocket engine startup Impulse raises $500 million to hire people, not AI | TechCrunch",
+      "description": "Engineering physical systems still depends on human talent, according to Impulse Space president Eric Romo.",
+      "excerpt": "Engineering physical systems still depends on human talent, according to Impulse Space president Eric Romo.",
+      "summary": "Romo said the company is prepping a new Mira mission that is expected to launch before the end of the year. Next up for the company is another launch of its Mira spacecraft, which made its third flight late last year. While the company\u2019s software teams are adopting AI coding tools, Romo said that when it comes to solving engineering problems in the real world, deep learning models aren\u2019t quite ready for prime time. As the 13th employee at SpaceX back in 2003, Romo\u2019s job was creating computer simulations of the company\u2019s engine design to assess its performance. More from TechCrunch Rocket engine startup Impulse raises $500 million to hire people, not AI Impulse Space, a startup founded by SpaceX engine guru Tom Mueller to build highly-maneuverable spacecraft, announced a $500 million Series D this week that it will use to hire as many as 200 new employees.",
+      "what_happened": "Romo said the company is prepping a new Mira mission that is expected to launch before the end of the year. Next up for the company is another launch of its Mira spacecraft, which made its third flight late last year.",
+      "why_matters": "While the company\u2019s software teams are adopting AI coding tools, Romo said that when it comes to solving engineering problems in the real world, deep learning models aren\u2019t quite ready for prime time. As the 13th employee at SpaceX back in 2003, Romo\u2019s job was creating computer simulations of the company\u2019s engine design to assess its performance.",
+      "what_to_watch": "More from TechCrunch Rocket engine startup Impulse raises $500 million to hire people, not AI Impulse Space, a startup founded by SpaceX engine guru Tom Mueller to build highly-maneuverable spacecraft, announced a $500 million Series D this week that it will use to hire as many as 200 new employees.",
+      "key_points": [
+        "Romo said the company is prepping a new Mira mission that is expected to launch before the end of the year.",
+        "While the company\u2019s software teams are adopting AI coding tools, Romo said that when it comes to solving engineering problems in the real world, deep learning models aren\u2019t quite ready for prime time.",
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "Next up for the company is another launch of its Mira spacecraft, which made its third flight late last year.",
+        "More from TechCrunch Rocket engine startup Impulse raises $500 million to hire people, not AI Impulse Space, a startup founded by SpaceX engine guru Tom Mueller to build highly-maneuverable spacecraft, announced a $500.",
+        "The round, led by 137 Ventures and BANNER VC, with participation from Founders Fund, Lux Capital, and Linse Capital, reflects investor interest in space and defense tech as the U.S.",
+        "\u201cI considered it success if I got within 20% of the right answer, because the simulations were just not that good,\u201d Romo said.",
+        "As the 13th employee at SpaceX back in 2003, Romo\u2019s job was creating computer simulations of the company\u2019s engine design to assess its performance.",
+        "\u201cThey\u2019ve improved, but they\u2019ve not improved that much, and so there\u2019s not really any substitute for designing the thing, analyzing the thing, building it, and then getting it on the test stand.\u201d Romo suspects AI tools.",
+        "\u2018What a joke\u2019: GitHub Copilot\u2019s new token-based billing spurs consternation among devs I put Google\u2019s 24/7 AI assistant Gemini Spark to work, and it\u2019s actually pretty useful Blue Origin\u2019s New Glenn rocket explodes.",
+        "President and COO Eric Romo told TechCrunch that the new capital will help the company build and test more space vehicles and emphasized the company\u2019s hiring plans at a time when aerospace talent is in high demand.",
+        "Impulse started with a focus on propulsion and evolved to build spacecraft, requiring the company to add more expertise in the form of engineers who build vehicle structures and flight computers."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3c8abd877eefd402.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Impulse-Mira-Spacecraft-In-Orbit-2.png?resize=1200,672",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "bc9b197fc3f846ef9fc7b3cca6647c96"
+    },
+    {
+      "url": "https://huggingface.co/blog/drmapavone/nvidia-alpamayo-2",
+      "title": "Taking Alpamayo to New Heights with Driving Foundation Models and Closed-Loop Training",
+      "description": "A Blog post by Marco Pavone on Hugging Face",
+      "excerpt": "A Blog post by Marco Pavone on Hugging Face",
+      "summary": "Alpamayo 2 Super Inference Code \u2192 coming summer 2026 (with post-training scripts to follow shortly after) Tech Blog \u2192 AlpaSim End-to-End Closed-Loop Driving Challenge \u2192 Physical AI AV Reasoning Challenge \u2192 Research on Reasoning VLA Models, End-To-End AV Simulation and Training, and Physical AI Safety: Datasets mentioned in this article 2 Spaces mentioned in this article 2 Expanding the Alpamayo Open Platform for Developing Reasoning AVs Across Models, Data, and Simulation Building Autonomous Vehicles That Reason. Since its launch, the Alpamayo open platform has seen rapid adoption across both industry and academia, with Alpamayo reasoning models collectively surpassing 400,000 downloads to date. Introduced at CES 2026 and expanded at GTC 2026 , the Alpamayo open platform provides researchers and developers with a flexible, high-performance, and scalable suite of models, datasets, simulation, and training tools for developing and. Reasoning models in AVs will unlock new capabilities and levels of safety for the next generation of autonomous systems. NVIDIA Alpamayo 2 Super: Growing Reasoning VLAs into Multi-Task Driving Foundation Models Alpamayo 2 Super is a significant update to.",
+      "what_happened": "Alpamayo 2 Super Inference Code \u2192 coming summer 2026 (with post-training scripts to follow shortly after) Tech Blog \u2192 AlpaSim End-to-End Closed-Loop Driving Challenge \u2192 Physical AI AV Reasoning Challenge \u2192 Research on Reasoning VLA Models, End-To-End AV Simulation and Training, and Physical AI Safety: Datasets mentioned in this article 2 Spaces mentioned in this article 2 Expanding the Alpamayo Open Platform for Developing Reasoning AVs Across Models, Data, and Simulation Building Autonomous Vehicles That Reason.",
+      "why_matters": "Since its launch, the Alpamayo open platform has seen rapid adoption across both industry and academia, with Alpamayo reasoning models collectively surpassing 400,000 downloads to date. Introduced at CES 2026 and expanded at GTC 2026 , the Alpamayo open platform provides researchers and developers with a flexible, high-performance, and scalable suite of models, datasets, simulation, and training tools for developing and.",
+      "what_to_watch": "Reasoning models in AVs will unlock new capabilities and levels of safety for the next generation of autonomous systems. NVIDIA Alpamayo 2 Super: Growing Reasoning VLAs into Multi-Task Driving Foundation Models Alpamayo 2 Super is a significant update to NVIDIA\u2019s suite of open reasoning VLA models, designed to be a.",
+      "key_points": [
+        "Alpamayo 2 Super Inference Code \u2192 coming summer 2026 (with post-training scripts to follow shortly after) Tech Blog \u2192 AlpaSim End-to-End Closed-Loop Driving Challenge \u2192 Physical AI AV Reasoning Challenge \u2192 Research on.",
+        "Reasoning auto-labeling and 2D grounding: Introduces reasoning auto\u2011labeling with 2D grounding so the foundation model can provide high-quality reasoning labels, accelerating data annotation cycles.",
+        "NVIDIA Alpamayo 2 Super: Growing Reasoning VLAs into Multi-Task Driving Foundation Models Alpamayo 2 Super is a significant update to NVIDIA\u2019s suite of open reasoning VLA models, designed to be a multi-task driving.",
+        "AV evaluation \u2013 Generate trajectories and reasoning traces to evaluate the outputs of smaller, edge-deployed models, or assess alternative outcomes by providing different navigation commands to the Alpamayo 2 Super.",
+        "Since its launch, the Alpamayo open platform has seen rapid adoption across both industry and academia, with Alpamayo reasoning models collectively surpassing 400,000 downloads to date.",
+        "Introduced at CES 2026 and expanded at GTC 2026 , the Alpamayo open platform provides researchers and developers with a flexible, high-performance, and scalable suite of models, datasets, simulation, and training tools.",
+        "Alpamayo 2 Super is built on the Cosmos 3 Super Reasoner 32-billion parameter VLM backbone (3x the number of parameters as prior Alpamayo models), is RL post-trained, and introduces support for surround-view camera.",
+        "Based in part on feedback from the community, we are introducing several new additions to the Alpamayo open platform across models and training infrastructure.",
+        "Key Highlights of this New Release Fully-fledged RL training infrastructure: AlpaGym launches with all the tooling and components necessary to get started with closed-loop reinforcement learning immediately.",
+        "Key Highlights of this New Release 3x parameter scale: Alpamayo 2 Super scales to 32B parameters (compared to previous 10B-parameter generations), improving reasoning, 3D spatial understanding and trajectory prediction.",
+        "Reasoning models in AVs will unlock new capabilities and levels of safety for the next generation of autonomous systems.",
+        "Intelligent reactive agents: We are releasing a learning-based traffic model (based on CAT-K ) that enables simulated agents to react and respond to the ego-vehicle\u2019s actions in closed-loop."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5f3555420b0dd7ef.png",
+      "image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/drmapavone/nvidia-alpamayo-2.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "d896ff2b4a80440d94f5159ee1a8b0fb"
+    },
+    {
+      "url": "https://huggingface.co/blog/Hcompany/holo31",
+      "title": "Holo3.1: Fast & Local Computer Use Agents",
+      "description": "A Blog post by H company on Hugging Face",
+      "excerpt": "A Blog post by H company on Hugging Face",
+      "summary": "Computer Use Across GUI Environments and Agent Harnesses Based on the Qwen family, Holo3.1 was designed to improve robustness across the environments where computer-use agents are actually deployed, while retaining state-of-the-art performance. For the first time, we release quantized checkpoints optimized for local inference, including FP8, Q4 GGUF, and NVFP4. A Blog post by H company on Hugging Face Holo3.1: Fast & Local Computer Use Agents Users want to run the same computer-use capabilities across desktop and mobile environments, with seamless integration with different agent frameworks. On AndroidWorld, our 35B-A3B model improves from 67% to 79.3%, while the smaller 4B and 9B variants improve from 58% to 72%. Across OSWorld and our internal benchmark suite covering e-commerce, business software, and collaboration workflows, function-calling and native execution now achieve near-parity performance. Towards Local Agents on Consumer Hardware We also release Q4 GGUF checkpoints aimed at local deployment of Computer Use Agents.",
+      "what_happened": "Computer Use Across GUI Environments and Agent Harnesses Based on the Qwen family, Holo3.1 was designed to improve robustness across the environments where computer-use agents are actually deployed, while retaining state-of-the-art performance. For the first time, we release quantized checkpoints optimized for local inference, including FP8, Q4 GGUF, and NVFP4.",
+      "why_matters": "A Blog post by H company on Hugging Face Holo3.1: Fast & Local Computer Use Agents Users want to run the same computer-use capabilities across desktop and mobile environments, with seamless integration with different agent frameworks. On AndroidWorld, our 35B-A3B model improves from 67% to 79.3%, while the smaller 4B and 9B variants improve from 58% to 72%.",
+      "what_to_watch": "Across OSWorld and our internal benchmark suite covering e-commerce, business software, and collaboration workflows, function-calling and native execution now achieve near-parity performance. Towards Local Agents on Consumer Hardware We also release Q4 GGUF checkpoints aimed at local deployment of Computer Use Agents.",
+      "key_points": [
+        "Smaller Sizes for Cost-Performance Tradeoffs To further enable local and on-device inference, we are also releasing new model sizes including small models (0.8B, 4B, and 9B) for cost-effective and private deployment, in.",
+        "Computer Use Across GUI Environments and Agent Harnesses Based on the Qwen family, Holo3.1 was designed to improve robustness across the environments where computer-use agents are actually deployed, while retaining.",
+        "For the first time, we release quantized checkpoints optimized for local inference, including FP8, Q4 GGUF, and NVFP4.",
+        "Towards Local Agents on Consumer Hardware We also release Q4 GGUF checkpoints aimed at local deployment of Computer Use Agents on consumer hardware.",
+        "Cross-Harness Performance To better support teams deploying Holo inside third-party agent stacks, Holo3.1 introduces native support for function-calling protocols in addition to the structured JSON outputs already.",
+        "Performance versus cost for the Holo3.1 and Qwen 3.5 families.",
+        "A Blog post by H company on Hugging Face Holo3.1: Fast & Local Computer Use Agents Users want to run the same computer-use capabilities across desktop and mobile environments, with seamless integration with different.",
+        "Holo3.1 expands Holo3's capabilities beyond browser and desktop control, delivering major gains on mobile environments.",
+        "On AndroidWorld, our 35B-A3B model improves from 67% to 79.3%, while the smaller 4B and 9B variants improve from 58% to 72%.",
+        "Holo3.1 is a major step toward our vision of universal computer-use agents: systems that can operate across environments, integrate into any agent stack, and run wherever the workflow lives.",
+        "This is why we are releasing the Holo3.1 family.",
+        "Fast & Local Inference This is our first release to ship quantized weights."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f8655014f896c1e4.png",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/698224a939bac08a1b6e0488/V66nfQj4EqV6imWD-Cgf0.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b68abd6c0f23a21e.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/312e47da4b30000d.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f154aeaabbdd0059.png"
+      ],
+      "extra_image_urls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/69ce2739f4b9146a31e99a2f/5voXQcpFKz6Fz3s3e4Kpu.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/69ce2739f4b9146a31e99a2f/LRDMlYHe5n_FLLu41CRXd.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/69ce2739f4b9146a31e99a2f/RyP4nSDHYTtKv0eb3CjZI.png"
+      ],
+      "_story_id": "7467c91109054f1f838379b771eccf1e"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-baz-improved-its-ai-agent-code-review-accuracy-using-amazon-bedrock-agentcore/",
+      "title": "How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore | Amazon Web Services",
+      "description": "This post walks through how Baz built their Spec Review agent using Amazon Bedrock and Amazon Bedrock AgentCore. We'll cover the architecture decisions, implementation details, and the business outcomes they achieved by leveraging these AWS services to automate their code review process",
+      "excerpt": "This post walks through how Baz built their Spec Review agent using Amazon Bedrock and Amazon Bedrock AgentCore. We'll cover the architecture decisions, implementation details, and the business outcomes they achieved by leveraging these AWS services to automate their code review process",
+      "summary": "Enabling intelligent code review with Amazon Bedrock Amazon Bedrock powers the reasoning and decision-making layer behind the Spec Reviewer agent, enabling it to interpret requirements, understand design intent, and evaluate the relevance of behaviors observed in the browser. Amazon Bedrock AgentCore isolation, sandboxing, and observability help Baz scale multiple MCP servers and allow the agent to safely and reliably perform full-stack validation at scale. Nimrod Kor is the Co-Founder and CTO of Baz, where he leads the company\u2019s engineering and AI architecture efforts focused on transforming how developers review and ship code. Its secure, isolated, serverless browser sessions allow the Spec Reviewer agent to open preview environments, navigate through features, and examine UI behavior exactly as a user would. Artificial Intelligence How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore Code review was always manual and ineffective because of the inherent disconnect between code and product.",
+      "what_happened": "Enabling intelligent code review with Amazon Bedrock Amazon Bedrock powers the reasoning and decision-making layer behind the Spec Reviewer agent, enabling it to interpret requirements, understand design intent, and evaluate the relevance of behaviors observed in the browser. Amazon Bedrock AgentCore isolation, sandboxing, and observability help Baz scale multiple MCP servers and allow the agent to safely and reliably perform full-stack validation at scale.",
+      "why_matters": "Nimrod Kor is the Co-Founder and CTO of Baz, where he leads the company\u2019s engineering and AI architecture efforts focused on transforming how developers review and ship code. Its secure, isolated, serverless browser sessions allow the Spec Reviewer agent to open preview environments, navigate through features, and examine UI behavior exactly as a user would.",
+      "what_to_watch": "Artificial Intelligence How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore Code review was always manual and ineffective because of the inherent disconnect between code and product.",
+      "key_points": [
+        "Enabling intelligent code review with Amazon Bedrock Amazon Bedrock powers the reasoning and decision-making layer behind the Spec Reviewer agent, enabling it to interpret requirements, understand design intent, and.",
+        "Artificial Intelligence How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore Code review was always manual and ineffective because of the inherent disconnect between code and product.",
+        "Amazon Bedrock AgentCore isolation, sandboxing, and observability help Baz scale multiple MCP servers and allow the agent to safely and reliably perform full-stack validation at scale.",
+        "The entire agentic flow is powered by large language models served through Amazon Bedrock, providing scalable and secure AI inference throughout the pipeline.",
+        "Amazon Bedrock provides the reliability, security, and scale needed for production-grade agentic workflows, allowing Baz to offload complex interpretation and validation logic to a high-performance LLM while keeping the.",
+        "Nimrod Kor is the Co-Founder and CTO of Baz, where he leads the company\u2019s engineering and AI architecture efforts focused on transforming how developers review and ship code.",
+        "This combination allows the reviewer to bridge the gap between what was intended and what was actually built.",
+        "Its secure, isolated, serverless browser sessions allow the Spec Reviewer agent to open preview environments, navigate through features, and examine UI behavior exactly as a user would.",
+        "This manual validation slowed delivery, introduced inconsistency, and increased the likelihood of regressions.",
+        "The Implementation Subagents are the core of this architecture.These Amazon Bedrock powered agents perform deep code analysis against the extracted specifications, but what sets them apart is their integration with.",
+        "He works with startups to help them build and design their solutions in the cloud, and is passionate about machine learning and container-based solutions.",
+        "By leveraging Amazon Bedrock foundation models for requirement interpretation and decision-making, combined with AgentCore secure browser automation capabilities, Baz created a solution that validates implementations."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5f484575c7deaaa2.jpg",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/26/ML-19914-image-1-scaled.jpeg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "fac41d0124524a2a9ef656b68a71871d"
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/navigating-future-of-work-with-ai",
+      "title": "Navigating the Future of Work with AI",
+      "description": "As AI technology reshapes the workplace, a debate arises over whether it will replace jobs or enhance human roles.",
+      "excerpt": "As AI technology reshapes the workplace, a debate arises over whether it will replace jobs or enhance human roles.",
+      "summary": "When she's not diving deep into the world of AI, she spends her time on passion projects and raising her three daughters. We are really seeing a reason to deploy those AI systems with critical thinking and hard value capture metrics.\u201d Related: Anthropic\u2019s IPO Filing and How It Affects Its Responsible AI Stance Krishnan added that, for C3 AI, the future of work is like a pyramid, with the base consisting of workflows that can be automated through agent-like AI applications. Despite the uncertainty about the future of work, one thing is for sure: change is coming, and in some cases, it is already here. \u201cThe fundamental nature of work is changing,\u201d said Nikhil Krishnan, CTO of AI software platform vendor C3 AI , on the Targeting AI podcast from AI Business . \u201cWe're on the cusp of probably the next industrial revolution and how it evolves,\u201d he said.",
+      "what_happened": "When she's not diving deep into the world of AI, she spends her time on passion projects and raising her three daughters. We are really seeing a reason to deploy those AI systems with critical thinking and hard value capture metrics.\u201d Related: Anthropic\u2019s IPO Filing and How It Affects Its Responsible AI Stance Krishnan added that, for C3 AI, the future of work is like a pyramid, with the base consisting of workflows that can be automated through agent-like AI applications.",
+      "why_matters": "Despite the uncertainty about the future of work, one thing is for sure: change is coming, and in some cases, it is already here. \u201cThe fundamental nature of work is changing,\u201d said Nikhil Krishnan, CTO of AI software platform vendor C3 AI , on the Targeting AI podcast from AI Business .",
+      "what_to_watch": "\u201cWe're on the cusp of probably the next industrial revolution and how it evolves,\u201d he said.",
+      "key_points": [
+        "When she's not diving deep into the world of AI, she spends her time on passion projects and raising her three daughters.",
+        "\u201cWe're on the cusp of probably the next industrial revolution and how it evolves,\u201d he said.",
+        "\u201cThere's going to be a period of experimentation as we roll these systems out while we calibrate what the workflows of the future will look like.\u201d Esther Shittu has covered AI technologies and industry trends since 2021.",
+        "Navigating the Future of Work with AI The future of work is marked by roles in which AI agents perform low-risk tasks autonomously, while also involving some human collaboration.",
+        "The middle of the pyramids indicates that human workers must be involved.",
+        "Shaun Sutner, a journalist with more than 25 years of daily newspaper experience and 12 years at Informa TechTarget as an editor and writer, directs news coverage for AI Business.",
+        "He has written about snow sports as a T&G columnist and correspondent for 21 years.",
+        "\u201cAI is going to provide recommendations and data points,\u201d Krishnan said, adding that those recommendations are on topics like the type of maintenance needed on an equipment or a certain piece of equipment that is needed.",
+        "Before AI Business , she wrote for SearchEnterpriseAI, the New York Daily News, Bklyner and the Brooklyn Daily Eagle.",
+        "He was previously a senior news and features writer covering health IT and HR software at TechTarget and a senior news director overseeing coverage of AI, business analytics, data management and government tech.",
+        "Despite the uncertainty about the future of work, one thing is for sure: change is coming, and in some cases, it is already here.",
+        "With AI agents and generative AI continuing to affect every aspect of work, there remains a conflicting narrative about what the future of work looks like as technology advances: whether AI replaces workers or augments."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4397673b92cfc4a3.jpg",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltd3dbe30bbd5acaaf/6a1db89b710e1711de21f2e0/humanoid_guide_Phantom_MK1_Foundation.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/be753ffbee22265b.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b8051e7edbfe9960.webp"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltdb9fe516e837c101/6a1d8b5a479f3e38d05cf31a/SoftBank.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt90943a44d8b7656d/6a1df4f0a5c0c3b7e3d339f2/Anthropic.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ],
+      "_story_id": "bc14c7216b764746a6fb9a9264be65ab"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/jun/01/meta-ai-hack-obama-sephora-instagram",
+      "title": "Hackers trick Meta AI support bot to infiltrate Obama White House Instagram account",
+      "description": "Breach of high-profile accounts raises concerns about reliance on AI for security measures such as passwords",
+      "excerpt": "Breach of high-profile accounts raises concerns about reliance on AI for security measures such as passwords",
+      "summary": "The press release for the new feature said it could \u201ctake action for you on a growing set of requests directly within Facebook and in the future, on Instagram\u201d. \u201cThe Meta AI support assistant is a major step in our work to deliver stronger support on our apps,\u201d the March press release said. The company has been developing a series of large language models \u2013 the technology that underpins tools such as chatbots \u2013 to power its products. Breach of high-profile accounts raises concerns about reliance on AI for security measures such as passwords Support the Guardian Hackers trick Meta AI support bot to infiltrate Obama White House Instagram account Breach of high-profile accounts raises concerns about reliance on AI. Meta whistleblower\u2019s lawyer says he too is prevented from promoting her book Meta legal action forces Facebook whistleblower to sit in silence at Hay festival Workers need greater say over AI rollout, says TUC-backed report Image of Thai police in sparkly dresses with handcuffed suspect turns out to be AI fake A.",
+      "what_happened": "The press release for the new feature said it could \u201ctake action for you on a growing set of requests directly within Facebook and in the future, on Instagram\u201d. \u201cThe Meta AI support assistant is a major step in our work to deliver stronger support on our apps,\u201d the March press release said.",
+      "why_matters": "The company has been developing a series of large language models \u2013 the technology that underpins tools such as chatbots \u2013 to power its products. Breach of high-profile accounts raises concerns about reliance on AI for security measures such as passwords Support the Guardian Hackers trick Meta AI support bot to infiltrate Obama White House Instagram account Breach of high-profile accounts raises concerns about reliance on AI.",
+      "what_to_watch": "Meta whistleblower\u2019s lawyer says he too is prevented from promoting her book Meta legal action forces Facebook whistleblower to sit in silence at Hay festival Workers need greater say over AI rollout, says TUC-backed report Image of Thai police in sparkly dresses with handcuffed suspect turns out to be AI fake A.",
+      "key_points": [
+        "The press release for the new feature said it could \u201ctake action for you on a growing set of requests directly within Facebook and in the future, on Instagram\u201d.",
+        "\u201cThe Meta AI support assistant is a major step in our work to deliver stronger support on our apps,\u201d the March press release said.",
+        "The company has been developing a series of large language models \u2013 the technology that underpins tools such as chatbots \u2013 to power its products.",
+        "The breach raises concerns about just how safe it is to rely on AI for essential security measures such as passwords.",
+        "The targets ranged from Barack Obama\u2019s White House account to the beauty retailer Sephora and the US Space Force chief master sergeant, John Bentivegna, according to reporting from 404 Media .",
+        "The bot assures the hacker a verification code has been sent to that new email and asks the hacker to input the numbers in the chat interface.",
+        "Breach of high-profile accounts raises concerns about reliance on AI for security measures such as passwords Support the Guardian Hackers trick Meta AI support bot to infiltrate Obama White House Instagram account.",
+        "In at least one video, the hacker used a virtual private network to spoof the account holder\u2019s location and avoid Meta\u2019s safeguards.",
+        "Once the hacker pastes the correct number, they are shown a button to reset the targeted account\u2019s password.",
+        "Security researchers and hacking groups posted videos and screenshots of how to steal an account on Telegram, and a video shared on X appears to show a hacker telling Meta\u2019s AI assistant to link the account to a new.",
+        "Then he sold the land beside it \u2018Hidden datacentre tax\u2019 costing Irish households millions, report says Meta and Snapchat blocking Saudi dissidents\u2019 accounts Meta settles major social media addiction lawsuit with school.",
+        "Trump signs executive order seeking early access to new AI releases \u2018Like a Klingon prison\u2019: inside Barack Obama\u2019s audacious, near-windowless, $850m presidential library A red box for Donald Trump, and eight weeks to."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2171d2faf1101808.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/0a1521f6c70403081189e0e46a7e802e2737a669/567_0_5665_4534/master/5665.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2fe06e652d9b354486d3ef440da5595d",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "1010ee6f91524507bcd90a2a5792e68b"
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/anthropic-s-ipo-filing-how-affects-responsible-ai-stance",
+      "title": "Anthropic\u2019s IPO Filing and Its Responsible AI Stance",
+      "description": "Anthropic\u2019s IPO Filing and How It Affects Its Responsible AI Stance",
+      "excerpt": "Anthropic\u2019s IPO Filing and How It Affects Its Responsible AI Stance",
+      "summary": "\u201cThe company seems to be building a really powerful moat around itself,\u201d Bennett said, referring to model performance and moral responsibility in deploying the model. When she's not diving deep into the world of AI, she spends her time on passion projects and raising her three daughters. Related: SoftBank Commits $87.3B to France AI Infrastructure Buildout A Paradox of Responsibility However, while Anthropic has maintained its reputation as a responsible AI company, the IPO filing brings new pressure. If Anthropic\u2019s IPO is successful and the vendor becomes a publicly traded company, it can\u2019t switch its mode of operation and suddenly become focused solely on maximizing shareholder value, Bennett said. Even though OpenAI models helped bring wide adoption to generative AI, Anthropic focused on the enterprise market by making Claude the premium enterprise coding model.",
+      "what_happened": "\u201cThe company seems to be building a really powerful moat around itself,\u201d Bennett said, referring to model performance and moral responsibility in deploying the model. When she's not diving deep into the world of AI, she spends her time on passion projects and raising her three daughters.",
+      "why_matters": "Related: SoftBank Commits $87.3B to France AI Infrastructure Buildout A Paradox of Responsibility However, while Anthropic has maintained its reputation as a responsible AI company, the IPO filing brings new pressure. If Anthropic\u2019s IPO is successful and the vendor becomes a publicly traded company, it can\u2019t switch its mode of operation and suddenly become focused solely on maximizing shareholder value, Bennett said.",
+      "what_to_watch": "Even though OpenAI models helped bring wide adoption to generative AI, Anthropic focused on the enterprise market by making Claude the premium enterprise coding model.",
+      "key_points": [
+        "\u201cThe company seems to be building a really powerful moat around itself,\u201d Bennett said, referring to model performance and moral responsibility in deploying the model.",
+        "Even though OpenAI models helped bring wide adoption to generative AI, Anthropic focused on the enterprise market by making Claude the premium enterprise coding model.",
+        "When she's not diving deep into the world of AI, she spends her time on passion projects and raising her three daughters.",
+        "\u201cEverything of late indicates that Anthropic is well positioned to maintain its current situation, with respect to the others as the most widely recognized \u2026 most powerful model,\u201d said Michael G Bennet, associate vice.",
+        "\u201cThe most widely recognized as being significantly more advanced than the others.\u201d While OpenAI GPT models are competitive with Anthropic Claude models, Anthropic has spent the last few years solidifying its reputation.",
+        "The filing comes after the Claude creator revealed on May 28 that its valuation had shot up to $965 billion following a $65 billion Series H funding round, surpassing rival OpenAI's $852 valuation.",
+        "While the fight against the administration could have eroded its market share, Anthropic showed enterprises and consumers that the AI lab could be trusted to deliver responsible AI.",
+        "This trust was magnified to some when Anthropic co-founder Christopher Olah met with Pope Leo XIV at the Vatican on May 25 and, together with the Pope, called for global moral oversight of AI.",
+        "The Commitment to Responsible AI Anthropic went head-to-head with the Trump administration earlier this year by refusing to let its models be used for some military activities.",
+        "Related: SoftBank Commits $87.3B to France AI Infrastructure Buildout A Paradox of Responsibility However, while Anthropic has maintained its reputation as a responsible AI company, the IPO filing brings new pressure.",
+        "Anthropic\u2019s IPO Filing and How It Affects Its Responsible AI Stance Anthropic\u2019s IPO Filing and How It Affects Its Responsible AI Stance The IPO reflects the vendor\u2019s accomplishments, even with its responsible AI stance.",
+        "The move underscores the generative AI vendor\u2019s success but also creates tension around its ethical commitments."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a0c14a7949a8716b.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt77e92c50319861bc/6a1ee9912ae8fd24f682312e/Europe.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3ace86458a6a892e.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5e807e067be678bd.webp"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt68f5cd25dcabce66/68fbc4a1df1e043d350b2692/Google_Anthropic.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt3c36302b771b7ad1/68faa8fba84090be97596878/Copilot.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ],
+      "_story_id": "e4375aee9227438bb7285c0f3fbd6d93"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 9,
+  "has_cta": true,
+  "slides": [
+    "ZeroDrift raises $10M to protect AI models from themselves.",
+    "Rocket engine startup Impulse raises $500 million to hire people not AI.",
+    "Taking Alpamayo to New Heights with Driving Foundation Models and Closed.",
+    "Holo3.1 Fast Local Computer Use Agents.",
+    "Nimrod Kor is the Co-Founder and CTO of Baz, where he leads.",
+    "Navigating the Future of Work with AI.",
+    "Hackers trick Meta AI support bot to infiltrate Obama White House Instagram.",
+    "Anthropic's IPO Filing and Its Responsible AI Stance.",
+    "FOLLOW @graitech"
+  ]
+}

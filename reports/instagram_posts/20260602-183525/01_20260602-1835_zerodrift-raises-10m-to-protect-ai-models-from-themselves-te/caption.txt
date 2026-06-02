@@ -1,0 +1,27 @@
+That's the premise of ZeroDrift, a new AI compliance service that on Tuesday said it had raised $10 million in matters.
+
+Swipe for the full breakdown.
+
+- That's the premise of ZeroDrift, a new AI compliance service that on Tuesday said it had raised $10.
+- The company deals entirely with the second part of the system, sitting between AI models and end users.
+- A new AI compliance service sits between AI models and end users to flag and replace any messages.
+- The most obvious use case is for AI chatbots, which are already deployed in front of consumers where.
+- 'What a joke': GitHub Copilot's new token-based billing spurs consternation among devs I put Google's 24/7 AI assistant.
+
+Which industry do you think will feel the impact of this first?
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://techcrunch.com/2026/06/02/zerodrift-raises-10-million-to-protect-ai-models-from-themselves/
+- https://techcrunch.com/2026/06/02/rocket-engine-startup-impulse-raises-500-million-to-hire-people-not-ai/
+- https://huggingface.co/blog/drmapavone/nvidia-alpamayo-2
+- https://huggingface.co/blog/Hcompany/holo31
+- https://aws.amazon.com/blogs/machine-learning/how-baz-improved-its-ai-agent-code-review-accuracy-using-amazon-bedrock-agentcore/
+
+#AINews #AITools #GenerativeAI #AIUpdates #ArtificialIntelligence #FutureOfAI #TechTrends #DataScience #FutureTech #DigitalTransformation #AIExplained #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing #MLNews #AIWeekly #TechInnovation #AIStartups #FutureOfWork
+
+-
+Pricing information can change. Verify directly with the provider.
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-

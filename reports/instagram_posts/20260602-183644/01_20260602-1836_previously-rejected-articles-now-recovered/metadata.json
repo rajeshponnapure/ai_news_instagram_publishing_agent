@@ -1,0 +1,38 @@
+{
+  "email_received_at": "2026-06-02T18:36+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Tue, 02 Jun 2026 18:36:44 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.engadget.com/2185458/blue-origin-new-glenn-launchpad-explosion-repair-update/",
+      "title": "Company : Engadget",
+      "description": "[HIGH] Blue Origin CEO says New Glenn will fly again before the year ends Company : Engadget Summary : In a post on X, Blue Origin CEO Dave Limp provided an update on the investigation into the New Glenn launchpad explosion. Link :",
+      "text": "[HIGH] Blue Origin CEO says New Glenn will fly again before the year ends Company : Engadget Summary : In a post on X, Blue Origin CEO Dave Limp provided an update on the investigation into the New Glenn launchpad explosion. Link :",
+      "excerpt": "[HIGH] Blue Origin CEO says New Glenn will fly again before the year ends Company : Engadget Summary : In a post on X, Blue Origin CEO Dave Limp provided an update on the investigation into the New Glenn launchpad explosion. Link :",
+      "image_url": "https://www.engadget.com/img/gallery/blue-origin-ceo-says-new-glenn-will-fly-again-before-the-year-ends/l-intro-1780378027.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.engadget.com/2185458/blue-origin-new-glenn-launchpad-explosion-repair-update/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "The agency's administrator, Jared Isaacman, told. Isaacman toured the facility, known.",
+    "FOLLOW @graitech"
+  ]
+}
