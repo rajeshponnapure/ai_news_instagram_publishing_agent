@@ -715,6 +715,44 @@ def _settings(**overrides) -> Settings:
     return Settings(**values)
 
 
+class DenseDigestParsingTests(unittest.TestCase):
+    """Dense single-newline digests must yield one clean, correctly-mapped title
+    per URL — never a mid-word slice or a neighbour's title."""
+
+    def _email(self, body: str) -> EmailItem:
+        return EmailItem(uid="1", message_id="<x>", sender="a@b.com",
+                         subject="AI Alert - Tech", date=None, body=body)
+
+    def test_title_per_url_not_midword_or_borrowed(self) -> None:
+        body = "\n".join([
+            "Florida AG sues OpenAI over CEO Altman liability for product harms",
+            "https://www.cnbc.com/2026/06/01/florida-ag-openai.html",
+            "SpaceX sets aside up to 5% of shares in IPO for certain employees",
+            "https://www.bloomberg.com/news/spacex-ipo-shares.html",
+            "Anthropic has filed confidentially for an initial public offering",
+            "https://www.reuters.com/technology/anthropic-ipo.html",
+        ])
+        items = parse_news_items(self._email(body), max_links=20)
+        titles = [it.title for it in items]
+        self.assertEqual(len(items), 3)
+        self.assertEqual(len(set(titles)), 3)  # no borrowed/duplicated titles
+        for it in items:
+            self.assertTrue(it.title[0].isupper() or it.title[0].isdigit(),
+                            msg=f"mid-word title: {it.title!r}")
+        self.assertIn("cnbc.com", items[0].url)
+        self.assertTrue(items[0].title.startswith("Florida AG"))
+
+    def test_title_snippet_url_triples_pick_the_title(self) -> None:
+        body = "\n".join([
+            "Nvidia jumps into PCs with new Arm-based chip",
+            "The chip debuts in laptops from Dell, Microsoft, HP and ASUS this fall.",
+            "https://www.cnbc.com/2026/06/01/nvidia-arm-pc.html",
+        ])
+        items = parse_news_items(self._email(body), max_links=20)
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0].title, "Nvidia jumps into PCs with new Arm-based chip")
+
+
 class UrlSanitizationTests(unittest.TestCase):
     """A tracking-beacon URL with a raw space + en-dash must never abort the run."""
 

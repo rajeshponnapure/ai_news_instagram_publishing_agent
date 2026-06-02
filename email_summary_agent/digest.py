@@ -76,13 +76,34 @@ def _context_window(text: str, url: str) -> str:
     position = text.find(url)
     if position < 0:
         return ""
-    start = max(0, text.rfind("\n\n", 0, position))
+    start = text.rfind("\n\n", 0, position)
     end = text.find("\n\n", position)
-    if end < 0:
-        end = min(len(text), position + 900)
-    if start == 0:
-        start = max(0, position - 450)
-    return text[start:end].strip()
+    if start >= 0:
+        # Paragraph-separated digest: the blank-line block is one story.
+        if end < 0:
+            end = min(len(text), position + 900)
+        return text[start:end].strip()
+
+    # Dense digest (single-newline rows, "Title\n[Snippet\n]URL\nTitle\nURL…").
+    # The story is the URL's own line plus the lines directly above it, bounded
+    # by the previous URL line so we never borrow the next/prior item's title.
+    url_line_start = text.rfind("\n", 0, position) + 1
+    block_start = url_line_start
+    cursor = url_line_start
+    for _ in range(3):  # look back up to 3 preceding lines
+        prev_newline = text.rfind("\n", 0, cursor - 1)
+        cand = prev_newline + 1
+        prev_line = text[cand:cursor].strip()
+        if not prev_line or prev_line.startswith(("http://", "https://")):
+            break
+        block_start = cand
+        cursor = cand
+        if cand == 0:
+            break
+    block_end = text.find("\n", position)
+    if block_end < 0:
+        block_end = len(text)
+    return text[block_start:block_end].strip()
 
 
 def _title_from_context(context: str) -> str:
@@ -94,6 +115,12 @@ def _title_from_context(context: str) -> str:
             continue
         line = re.sub(r"^\d+[\).:-]\s*", "", line)
         line = re.sub(r"\s*https?://\S+.*$", "", line).strip()
+        # Skip sliced fragments: a real headline opens on an uppercase letter or
+        # a digit, not a cut word ("ic has filed…") or a bare URL tail ("om/2026…").
+        if line and not (line[0].isupper() or line[0].isdigit()):
+            continue
+        if re.match(r"^[A-Za-z0-9.]+/\S+$", line) or re.search(r"\.(?:com|org|net|io|html?)\b/", line, re.I):
+            continue
         if 12 <= len(line) <= 140:
             return line
     return ""
