@@ -715,5 +715,67 @@ def _settings(**overrides) -> Settings:
     return Settings(**values)
 
 
+class EditorialCopyQualityTests(unittest.TestCase):
+    """Regression tests for slide heading + keypoint cleanup."""
+
+    def test_primary_entity_rejects_slug_and_connectives(self) -> None:
+        from email_summary_agent.editorial_page import _primary_entity
+
+        self.assertEqual(_primary_entity("Sical-ai-open-world-foundation-model/ Welcome NVIDIA"), "")
+        self.assertEqual(_primary_entity("But cuts new model"), "")
+        self.assertEqual(_primary_entity("The post Why robotic arms"), "")
+        self.assertEqual(_primary_entity("OpenAI launches GPT-5 today"), "OpenAI")
+
+    def test_heading_strips_slug_and_source_and_uses_real_title(self) -> None:
+        from email_summary_agent.editorial_page import _build_heading
+
+        class _S:
+            headline = "AI news roundup"
+            subject = ""
+            summary = ""
+
+        heading = _build_heading(
+            {"title": "Sical-ai-open-world-foundation-model/ Welcome NVIDIA Cosmos 3: "
+                      "The First Open Omni-model for Physical AI Reasoning Hugging Face Blog"},
+            _S(),
+            ["NVIDIA Cosmos 3 is a new open omni-model for physical AI."],
+        )
+        self.assertNotIn("Sical-ai-open-world-foundation-model", heading)
+        self.assertNotIn("Hugging Face Blog", heading)
+        self.assertNotRegex(heading, r"^(?:But|And|Said|Why|The post)\b")
+
+    def test_heading_never_fabricates_from_junk_entity(self) -> None:
+        from email_summary_agent.editorial_page import _build_heading
+
+        class _S:
+            headline = "NVIDIA ships a new AI chip for laptops"
+            subject = ""
+            summary = ""
+
+        heading = _build_heading({"title": "T"}, _S(),
+                                 ["NVIDIA ships a new AI chip for laptops this fall."])
+        self.assertNotRegex(heading, r"^T\b")
+        self.assertGreaterEqual(len(heading.split()), 4)
+
+    def test_keypoint_rejects_boilerplate_and_dangling_clauses(self) -> None:
+        from email_summary_agent.editorial_page import _key_point
+
+        garbage = [
+            "The post Why robotic arms are now integrated with CNC machines appeared first on The Robot Report.",
+            "Gaming Close Gaming Posts from this topic will be added.",
+            "NVIDIA It was only a matter of time before NVIDIA released.",
+            "You can think of it as a portable sibling to the companys DGX spark AI mini-desktop, except",
+            "Something hasnt changed is pixel density; this ones still at 110 pixels per inch, which is",
+        ]
+        for sentence in garbage:
+            self.assertEqual(_key_point(sentence, "heading"), "", msg=sentence)
+
+    def test_keypoint_keeps_clean_complete_sentence(self) -> None:
+        from email_summary_agent.editorial_page import _key_point
+
+        good = "Alienware unveils a 39-inch 5K curved ultrawide monitor coming this fall."
+        self.assertTrue(_key_point(good, "heading"))
+
+
 if __name__ == "__main__":
     unittest.main()

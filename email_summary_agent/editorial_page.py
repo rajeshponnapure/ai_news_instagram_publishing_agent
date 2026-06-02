@@ -52,21 +52,49 @@ def build_editorial_page_copy(
 
 def _build_heading(article: dict[str, Any], summary: "EmailSummary", summary_lines: list[str]) -> str:
     title = clean_creator_text(article.get("title") or summary.headline or summary.subject or "AI update")
+    title = _strip_slug_prefix(title)
+    title = _strip_source_suffix(title)
     title = re.sub(r"\s*[\-|:]\s*(?:TechCrunch|Bloomberg|Reuters|The Verge|AWS|Amazon Web Services)\s*$", "", title, flags=re.I)
     title = layout_safe_headline(title, fallback="AI update")
     title = _sentence(title)
-    if _is_complete_heading(title) and not _bad_heading_source(title):
+    # Prefer the article's real title whenever it reads as a clean, complete
+    # headline — even without an action verb. Synthesizing from parts is a last
+    # resort that easily produces gibberish ("But cuts new model…").
+    if _usable_heading(title):
         return _trim_words(title, 12)
 
     source = " ".join(summary_lines) or title
     source_line = _summary_line(source)
-    if source_line and _is_complete_heading(source_line) and not _bad_heading_source(source_line):
+    if source_line and _usable_heading(source_line):
         return _trim_words(source_line, 12)
-    entity = _primary_entity(source) or _primary_entity(title) or "The update"
-    verb = _primary_action(source) or "updates"
-    object_phrase = _compact_object_phrase(source, entity)
-    heading = f"{entity} {verb} {object_phrase}"
-    return _trim_words(_sentence(heading), 12)
+
+    entity = _primary_entity(source) or _primary_entity(title)
+    verb = _primary_action(source)
+    if entity and verb:
+        object_phrase = _compact_object_phrase(source, entity)
+        return _trim_words(_sentence(f"{entity} {verb} {object_phrase}"), 12)
+
+    # No trustworthy subject/verb — fall back to the clean email headline
+    # rather than fabricating a sentence from stray capitalized words.
+    fallback = _sentence(_strip_source_suffix(_strip_slug_prefix(
+        clean_creator_text(summary.headline or summary.subject or "")
+    )))
+    if _usable_heading(fallback):
+        return _trim_words(fallback, 12)
+    return "AI Update"
+
+
+def _usable_heading(text: str) -> bool:
+    """A heading is usable as-is when it has a real subject, enough words, no
+    slug, and doesn't trail off on a weak word."""
+    if _bad_heading_source(text) or _contains_slug(text):
+        return False
+    words = re.findall(r"[A-Za-z0-9$][A-Za-z0-9$.'+-]*", text)
+    if len(words) < 5:
+        return False
+    if words[-1].lower().strip(".,") in WEAK_HEADLINE_ENDINGS:
+        return False
+    return _is_complete_heading(text) or bool(_primary_entity(text))
 
 
 def _build_summary_lines(
@@ -210,6 +238,18 @@ def _trim_sentence_words(text: str, max_words: int) -> str:
     return " ".join(cut).rstrip(".,;:")
 
 
+# Words that, when a sentence ends on them, signal the clause was cut mid-thought
+# (", except", "…which is", "…is taking", "…before NVIDIA").
+_DANGLING_LAST_WORDS = {
+    "except", "and", "but", "or", "nor", "with", "for", "to", "of", "as",
+    "than", "that", "which", "while", "since", "because", "although",
+    "into", "onto", "upon", "via", "including", "featuring", "amid",
+    "despite", "before", "after", "where", "whether",
+    "is", "are", "was", "were", "be", "been", "being",
+    "uses", "using", "taking", "making", "getting", "becoming",
+}
+
+
 def _complete_public_sentence(text: str) -> bool:
     cleaned = (text or "").strip()
     if not cleaned or contains_public_noise(cleaned):
@@ -217,7 +257,11 @@ def _complete_public_sentence(text: str) -> bool:
     words = cleaned.split()
     if len(words) < KEY_POINT_MIN_WORDS:
         return False
-    if words[-1].lower().strip(".,;:!?") in WEAK_HEADLINE_ENDINGS:
+    last = words[-1].lower().strip(".,;:!?\"'()")
+    if last in WEAK_HEADLINE_ENDINGS or last in _DANGLING_LAST_WORDS:
+        return False
+    # Trailing relative-clause stub: "…, which is", "…that uses".
+    if re.search(r"\b(?:which|that|who)\s+\w+[.!?]?$", cleaned, re.I) and len(words) <= KEY_POINT_MIN_WORDS + 4:
         return False
     if re.search(r"(?:\(|\[|\{)[^)\]\}]*$", cleaned):
         return False
@@ -262,6 +306,16 @@ def _compact_clause(text: str) -> str:
 
 def _clean_sentence(text: str) -> str:
     text = clean_creator_text(_clean_public_text(str(text or "")))
+    text = _strip_slug_prefix(text)
+    # Leading attribution: "Said Anthropic …" / "According to OpenAI …"
+    text = re.sub(r"^\s*(?:Said|Says|Speaking|According to)\b[\s,]*", "", text, flags=re.I)
+    # WordPress footer boilerplate: "The post <title> appeared first on <site>."
+    text = re.sub(r"\bThe post\b.*?\bappeared\b.*$", "", text, flags=re.I)
+    # Navigation/widget cruft scraped from pages.
+    text = re.sub(r"\b(?:Gaming Close Gaming Posts|Close Gaming Posts|Posts from this topic)\b.*$", "", text, flags=re.I)
+    # Duplicated leading entity before a pronoun: "NVIDIA It was…" -> "It was…"
+    text = re.sub(r"^[A-Z][A-Za-z0-9&.'-]+\s+(?=(?:It|They|This|That|We|He|She|Its)\b)", "", text)
+    text = _strip_source_suffix(text)
     text = re.sub(r"\b(?:quick shift|market signal|model move|roll out|dev angle|risk check|by the numbers)\s*:\s*", "", text, flags=re.I)
     text = re.sub(r"\b(?:for more details|read more|learn more|click here)\b.*$", "", text, flags=re.I)
     text = re.sub(r"https?://\S+", "", text)
@@ -270,7 +324,9 @@ def _clean_sentence(text: str) -> str:
         return ""
     if re.search(r"\bstory\s+\d+\s+excerpt\b", text, re.I):
         return ""
-    if re.search(r"\b[a-z0-9-]+/[a-z0-9-]+(?:/[a-z0-9-]+)+", text.lower()):
+    if re.search(r"\bonly a matter of time\b", text, re.I):  # low-value filler
+        return ""
+    if re.search(r"\b[a-z0-9-]+/[a-z0-9-]+(?:/[a-z0-9-]+)+", text.lower()) or _contains_slug(text):
         return ""
     return text
 
@@ -331,12 +387,56 @@ def _bad_heading_source(text: str) -> bool:
     return False
 
 
+# Capitalized words that begin sentences as connectives or attributions —
+# never a real subject entity. Used to keep synthesized headings from reading
+# "But cuts new model…" or "Said Anthropic PBC…".
+_ENTITY_BLOCKLIST = {
+    "The", "This", "That", "These", "Those", "There", "Here", "Their", "They",
+    "AI", "API", "GPU", "LLM", "URL", "Domain", "Category",
+    "But", "And", "Or", "So", "Yet", "Nor", "For", "Also", "Plus",
+    "Said", "Says", "Speaking", "According", "Why", "How", "What",
+    "When", "Where", "Which", "Who", "While", "Welcome",
+}
+
+
+def _looks_like_slug(token: str) -> bool:
+    """True for URL-slug fragments leaked as words, e.g.
+    "sical-ai-open-world-foundation-model"."""
+    return token.count("-") >= 3
+
+
+def _contains_slug(text: str) -> bool:
+    """True when the text carries a long hyphenated URL slug (4+ segments)."""
+    return bool(re.search(r"\b[A-Za-z0-9]+(?:-[A-Za-z0-9]+){4,}\b", text or ""))
+
+
+def _strip_slug_prefix(text: str) -> str:
+    """Drop a leading URL-slug fragment such as
+    "sical-ai-open-world-foundation-model/ Welcome NVIDIA…" -> "Welcome NVIDIA…"."""
+    return re.sub(r"^\s*[A-Za-z0-9]+(?:-[A-Za-z0-9]+){2,}\s*/?\s*", "", text or "").strip()
+
+
+# Source/blog names that get appended to scraped titles and sentences.
+_SOURCE_SUFFIX_RE = re.compile(
+    r"\s+(?:Hugging Face Blog|TechCrunch|The Verge|Engadget|VentureBeat|"
+    r"Ars Technica|Reuters|Bloomberg|The Robot Report|CNBC|Wired|ZDNet)\b.*$",
+    re.I,
+)
+
+
+def _strip_source_suffix(text: str) -> str:
+    return _SOURCE_SUFFIX_RE.sub("", text or "").strip()
+
+
 def _primary_entity(text: str) -> str:
-    matches = re.findall(r"\b[A-Z][A-Za-z0-9&.-]+(?:\s+[A-Z][A-Za-z0-9&.-]+){0,2}\b", text or "")
-    blocked = {"The", "This", "That", "AI", "API", "GPU", "LLM", "URL", "Domain", "Category"}
+    matches = re.findall(r"\b[A-Z][A-Za-z0-9&.'-]+(?:\s+[A-Z][A-Za-z0-9&.'-]+){0,2}\b", text or "")
     for match in matches:
-        if match not in blocked and len(match) >= 3:
-            return match
+        first = match.split()[0]
+        if first in _ENTITY_BLOCKLIST or match in _ENTITY_BLOCKLIST:
+            continue
+        if len(match) < 3 or _looks_like_slug(match):
+            continue
+        return match
     return ""
 
 
