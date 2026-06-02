@@ -1,0 +1,358 @@
+{
+  "email_received_at": "2026-06-02T10:35+00:00",
+  "recommended_post_time": "14:00",
+  "headline": "NVIDIA and TSMC Bring AI Into Fabs to Advance Semiconductor Design and Manufacturing",
+  "subject": "",
+  "source_date": "2026-06-02T10:35:44.087975",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://nvidianews.nvidia.com/news/nvidia-and-tsmc-bring-ai-into-fabs-to-advance-semiconductor-design-and-manufacturing",
+  "article_title": "NVIDIA and TSMC Bring AI Into Fabs to Advance Semiconductor Design and Manufacturing",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f5d9a0a509fc7723.jpg",
+  "article_image_url": "https://www.nvidia.com/content/dam/en-zz/Solutions/navigation/healthcare.jpg",
+  "article_items": [
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-tsmc-bring-ai-into-fabs-to-advance-semiconductor-design-and-manufacturing",
+      "title": "NVIDIA and TSMC Bring AI Into Fabs to Advance Semiconductor Design and Manufacturing",
+      "description": "NVIDIA today announced that TSMC, the world\u2019s leading semiconductor company, is using NVIDIA accelerated computing and AI to advance semiconductor design and manufacturing.",
+      "excerpt": "NVIDIA today announced that TSMC, the world\u2019s leading semiconductor company, is using NVIDIA accelerated computing and AI to advance semiconductor design and manufacturing.",
+      "summary": "NVIDIA, Foxconn and Taiwan Medical Centers Bring Agentic and Physical AI to \u2018Healthy Taiwan\u2019 NVIDIA Releases Major Collection of Open Source Agent Tools and Skills for Physical AI NVIDIA Announces NVIDIA Isaac GR00T Reference Humanoid Robot for Academic Research NVIDIA DRIVE Hyperion Becomes the Global Platform for a Robotaxi-Ready World NVIDIA Launches Alpamayo 2 Super Open Reasoning Model for Robotaxis About NVIDIA NVIDIA (NASDAQ: NVDA) is the world leader in AI and accelerated computing. Certain statements in. NVIDIA today announced that TSMC, the world\u2019s leading semiconductor company, is using NVIDIA accelerated computing and AI to advance semiconductor design and manufacturing. NVIDIA GTC Taipei - NVIDIA today announced that TSMC, the world\u2019s leading semiconductor company, is using NVIDIA accelerated computing and AI to advance semiconductor design and manufacturing. These forward-looking statements are not guarantees of future performance and speak only as of the date hereof, and, except as required by law, NVIDIA disclaims any obligation to update these forward-looking statements to reflect future events or circumstances. NVIDIA and TSMC Bring AI Into Fabs to Advance.",
+      "what_happened": "NVIDIA, Foxconn and Taiwan Medical Centers Bring Agentic and Physical AI to \u2018Healthy Taiwan\u2019 NVIDIA Releases Major Collection of Open Source Agent Tools and Skills for Physical AI NVIDIA Announces NVIDIA Isaac GR00T Reference Humanoid Robot for Academic Research NVIDIA DRIVE Hyperion Becomes the Global Platform for a Robotaxi-Ready World NVIDIA Launches Alpamayo 2 Super Open Reasoning Model for Robotaxis About NVIDIA NVIDIA (NASDAQ: NVDA) is the world leader in AI and accelerated computing. Certain statements in.",
+      "why_matters": "NVIDIA today announced that TSMC, the world\u2019s leading semiconductor company, is using NVIDIA accelerated computing and AI to advance semiconductor design and manufacturing. NVIDIA GTC Taipei - NVIDIA today announced that TSMC, the world\u2019s leading semiconductor company, is using NVIDIA accelerated computing and AI to advance semiconductor design and manufacturing.",
+      "what_to_watch": "These forward-looking statements are not guarantees of future performance and speak only as of the date hereof, and, except as required by law, NVIDIA disclaims any obligation to update these forward-looking statements to reflect future events or circumstances. NVIDIA and TSMC Bring AI Into Fabs to Advance.",
+      "key_points": [
+        "NVIDIA, Foxconn and Taiwan Medical Centers Bring Agentic and Physical AI to \u2018Healthy Taiwan\u2019 NVIDIA Releases Major Collection of Open Source Agent Tools and Skills for Physical AI NVIDIA Announces NVIDIA Isaac GR00T.",
+        "Certain statements in this press release including, but not limited to, statements as to: TSMC bringing NVIDIA AI and accelerated computing into the fab itself, tackling some of the world\u2019s most complex design and.",
+        "NVIDIA today announced that TSMC, the world\u2019s leading semiconductor company, is using NVIDIA accelerated computing and AI to advance semiconductor design and manufacturing.",
+        "NVIDIA GTC Taipei - NVIDIA today announced that TSMC, the world\u2019s leading semiconductor company, is using NVIDIA accelerated computing and AI to advance semiconductor design and manufacturing.",
+        "NVIDIA and TSMC Bring AI Into Fabs to Advance Semiconductor Design and Manufacturing NVIDIA CUDA-X libraries and AI models are accelerating TSMC workloads across lithography, transistor and process simulation, advanced.",
+        "Important factors that could cause actual results to differ materially include: global economic and political conditions; NVIDIA\u2019s reliance on third parties to manufacture, assemble, package and test NVIDIA\u2019s products.",
+        "TSMC is using NVIDIA CUDA-X libraries and AI models to accelerate these workloads on NVIDIA GPUs: Computational lithography: TSMC is using NVIDIA cuLitho , a GPU-accelerated library for lithography - a printing method.",
+        "About NVIDIA NVIDIA (NASDAQ: NVDA) is the world leader in AI and accelerated computing.",
+        "TSMC Advances Defect Inspection With NVIDIA Metropolis and AI Models As chips become more advanced, even the smallest defects can affect quality and yield, making faster and more accurate inspection essential to.",
+        "\u201cTSMC is bringing NVIDIA AI and accelerated computing into the fab itself, tackling some of the world\u2019s most complex design and manufacturing challenges with simulation, optimization and AI to improve speed, efficiency.",
+        "Wei, chairman and CEO of TSMC.",
+        "This lets TSMC speed algorithms and distill hundreds of thousands of process parameters spanning thousands of steps as precision inputs for machine learning models - making significant reduction in process variation."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f5d9a0a509fc7723.jpg",
+      "image_url": "https://www.nvidia.com/content/dam/en-zz/Solutions/navigation/healthcare.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "95b42c9a721e47d2b5dfafa597fcbf54"
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-unveils-vera-the-cpu-for-agents",
+      "title": "NVIDIA Unveils Vera, the CPU for Agents",
+      "description": "NVIDIA today announced that the world\u2019s technology leaders are planning to adopt NVIDIA Vera, the first CPU built for AI agents.",
+      "excerpt": "NVIDIA today announced that the world\u2019s technology leaders are planning to adopt NVIDIA Vera, the first CPU built for AI agents.",
+      "summary": "Now in full production, NVIDIA Vera is a new class of processor enabling 1.8x faster task completion compared with x86 CPUs to drive diverse workloads across industries - including agentic AI, reinforcement learning and data processing - generating more data center token revenue. NVIDIA Unveils Vera, the CPU for Agents NVIDIA launches high-performance, energy-efficient NVIDIA Vera CPUs to drive diverse workloads across industries, including agentic AI, reinforcement learning and data processing. NVIDIA and TSMC Bring AI Into Fabs to Advance Semiconductor Design and Manufacturing NVIDIA, Foxconn and Taiwan Medical Centers Bring Agentic and Physical AI to \u2018Healthy Taiwan\u2019 NVIDIA Releases Major Collection of Open Source Agent Tools and Skills for Physical AI NVIDIA Announces NVIDIA Isaac GR00T Reference Humanoid Robot for Academic Research NVIDIA DRIVE Hyperion Becomes the Global Platform for a Robotaxi-Ready World. NVIDIA today announced that the world\u2019s technology leaders are planning to adopt NVIDIA Vera, the first CPU built for AI agents. Certain statements in this press release including, but not limited to, statements as to: AI agents will be the largest users of computing.",
+      "what_happened": "Now in full production, NVIDIA Vera is a new class of processor enabling 1.8x faster task completion compared with x86 CPUs to drive diverse workloads across industries - including agentic AI, reinforcement learning and data processing - generating more data center token revenue. NVIDIA Unveils Vera, the CPU for Agents NVIDIA launches high-performance, energy-efficient NVIDIA Vera CPUs to drive diverse workloads across industries, including agentic AI, reinforcement learning and data processing.",
+      "why_matters": "NVIDIA and TSMC Bring AI Into Fabs to Advance Semiconductor Design and Manufacturing NVIDIA, Foxconn and Taiwan Medical Centers Bring Agentic and Physical AI to \u2018Healthy Taiwan\u2019 NVIDIA Releases Major Collection of Open Source Agent Tools and Skills for Physical AI NVIDIA Announces NVIDIA Isaac GR00T Reference Humanoid Robot for Academic Research NVIDIA DRIVE Hyperion Becomes the Global Platform for a Robotaxi-Ready World.",
+      "what_to_watch": "NVIDIA today announced that the world\u2019s technology leaders are planning to adopt NVIDIA Vera, the first CPU built for AI agents. Certain statements in this press release including, but not limited to, statements as to: AI agents will be the largest users of computing; expectations with respect to growth, performance.",
+      "key_points": [
+        "Now in full production, NVIDIA Vera is a new class of processor enabling 1.8x faster task completion compared with x86 CPUs to drive diverse workloads across industries - including agentic AI, reinforcement learning and.",
+        "NVIDIA Unveils Vera, the CPU for Agents NVIDIA launches high-performance, energy-efficient NVIDIA Vera CPUs to drive diverse workloads across industries, including agentic AI, reinforcement learning and data processing.",
+        "Certain statements in this press release including, but not limited to, statements as to: AI agents will be the largest users of computing; expectations with respect to growth, performance, availability, and benefits of.",
+        "The NVIDIA Vera BlueField-4 STX processor integrates Vera with high-performance networking, storage acceleration and in-silicon security to create secure-by-design AI-native data platforms.",
+        "NVIDIA today announced that the world\u2019s technology leaders are planning to adopt NVIDIA Vera, the first CPU built for AI agents.",
+        "NVIDIA GTC Taipei - NVIDIA today announced that the world\u2019s technology leaders are planning to adopt NVIDIA Vera , the first CPU built for AI agents.",
+        "Building on the success of NVIDIA Grace CPUs, which have nearly 2.5 million shipments to date, Vera takes CPU performance and energy efficiency to new levels for the most demanding AI workloads in modern data centers -.",
+        "Vera is built to process more instructions, anticipate application behavior and move data across large numbers of concurrent environments, queries and data processing tasks - featuring 88 Olympus cores, Spatial.",
+        "NVIDIA and TSMC Bring AI Into Fabs to Advance Semiconductor Design and Manufacturing NVIDIA, Foxconn and Taiwan Medical Centers Bring Agentic and Physical AI to \u2018Healthy Taiwan\u2019 NVIDIA Releases Major Collection of Open.",
+        "Vera serves as the host CPU for NVIDIA Vera Rubin platforms through second-generation NVIDIA NVLink -C2C interconnect technology, which provides up to 1.8TB/s of coherent bandwidth between CPU and GPU.",
+        "Vera serves as the CPU powering standalone Vera servers, NVIDIA Vera Rubin systems and Vera BlueField-4 STX AI storage platforms.",
+        "\u201cBy deploying NVIDIA Vera CPUs, OCI will support high-throughput reasoning and data processing workloads across next-generation AI environments.\u201d According to Phoronix, which offers a comprehensive, open source."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f5d9a0a509fc7723.jpg",
+      "image_url": "https://www.nvidia.com/content/dam/en-zz/Solutions/navigation/healthcare.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "fee0541e897b4074934cf5ee9eb618ec"
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
+      "title": "NVIDIA Vera Rubin Ramps Into Full Production to Power Agentic AI Factories Worldwide",
+      "description": "NVIDIA today announced the NVIDIA Vera Rubin platform is ramping into full production to power agentic AI factories worldwide.",
+      "excerpt": "NVIDIA today announced the NVIDIA Vera Rubin platform is ramping into full production to power agentic AI factories worldwide.",
+      "summary": "One prompt can launch a thousand-step journey of reasoning, retrieval, tool use and response generation,\u201d said Jensen Huang, founder and CEO of NVIDIA. The platform unifies NVIDIA Vera Rubin NVL72 systems, NVIDIA Vera CPU, NVIDIA Groq 3 LPX, NVIDIA Vera BlueField-4 STX storage and NVIDIA Spectrum -6 SPX Ethernet racks into a fully integrated system. The NVIDIA Vera Rubin platform also integrates NVIDIA BlueField -4 DPUs, featuring software-defined networking at speeds of up to 800Gb/s and built-in multi-tenant isolation. The statements above are not intended to be, and should not be interpreted as a commitment, promise, or legal obligation, and the development, release, and timing of any features or functionalities described for our products is subject to change and. \u201cVera Rubin was built for this moment - an AI factory engine that delivers intelligence at scale, with the performance, efficiency and security needed to power the next industrial revolution.\u201d Vera Rubin Ramp Vera Rubin marks the third generation of NVIDIA MGX rack-scale systems. Certain statements in this press.",
+      "what_happened": "One prompt can launch a thousand-step journey of reasoning, retrieval, tool use and response generation,\u201d said Jensen Huang, founder and CEO of NVIDIA. The platform unifies NVIDIA Vera Rubin NVL72 systems, NVIDIA Vera CPU, NVIDIA Groq 3 LPX, NVIDIA Vera BlueField-4 STX storage and NVIDIA Spectrum -6 SPX Ethernet racks into a fully integrated system.",
+      "why_matters": "The NVIDIA Vera Rubin platform also integrates NVIDIA BlueField -4 DPUs, featuring software-defined networking at speeds of up to 800Gb/s and built-in multi-tenant isolation. The statements above are not intended to be, and should not be interpreted as a commitment, promise, or legal obligation, and the development, release, and timing of any features or functionalities described for our products is subject to change and.",
+      "what_to_watch": "\u201cVera Rubin was built for this moment - an AI factory engine that delivers intelligence at scale, with the performance, efficiency and security needed to power the next industrial revolution.\u201d Vera Rubin Ramp Vera Rubin marks the third generation of NVIDIA MGX rack-scale systems. Certain statements in this press.",
+      "key_points": [
+        "The NVIDIA DOCA software platform delivers advanced security across every Vera Rubin platform rack and layer of the AI factory - protecting data, agents, context memory and AI inference through capabilities enforced.",
+        "One prompt can launch a thousand-step journey of reasoning, retrieval, tool use and response generation,\u201d said Jensen Huang, founder and CEO of NVIDIA.",
+        "The platform unifies NVIDIA Vera Rubin NVL72 systems, NVIDIA Vera CPU, NVIDIA Groq 3 LPX, NVIDIA Vera BlueField-4 STX storage and NVIDIA Spectrum -6 SPX Ethernet racks into a fully integrated system.",
+        "The NVIDIA Vera Rubin platform also integrates NVIDIA BlueField -4 DPUs, featuring software-defined networking at speeds of up to 800Gb/s and built-in multi-tenant isolation.",
+        "Certain statements in this press release including, but not limited to, statements as to: expectations with respect to growth, performance, availability, and benefits of NVIDIA\u2019s products, services and technologies, and.",
+        "The statements above are not intended to be, and should not be interpreted as a commitment, promise, or legal obligation, and the development, release, and timing of any features or functionalities described for our.",
+        "By simplifying design and freeing more power for compute, NVIDIA co-packaged optics networking provides the foundational fabric for million-GPU AI factories, with CoreWeave, Lambda and Oracle Cloud Infrastructure among.",
+        "NVIDIA and TSMC Bring AI Into Fabs to Advance Semiconductor Design and Manufacturing NVIDIA, Foxconn and Taiwan Medical Centers Bring Agentic and Physical AI to \u2018Healthy Taiwan\u2019 NVIDIA Releases Major Collection of Open.",
+        "With a proven, open source MGX design, hundreds of NVIDIA supply chain ecosystem partners - 150 in Taiwan alone - across 350+ factories and 30 countries are ramping Vera Rubin.",
+        "NVIDIA GTC Taipei - NVIDIA today announced the NVIDIA Vera Rubin platform is ramping into full production to power agentic AI factories worldwide.",
+        "NVIDIA today announced the NVIDIA Vera Rubin platform is ramping into full production to power agentic AI factories worldwide.",
+        "Important factors that could cause actual results to differ materially include: global economic and political conditions; NVIDIA\u2019s reliance on third parties to manufacture, assemble, package and test NVIDIA\u2019s products."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f5d9a0a509fc7723.jpg",
+      "image_url": "https://www.nvidia.com/content/dam/en-zz/Solutions/navigation/healthcare.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "36db009423d946338139457d66578dd8"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/01/nvidia-chases-200b-cpu-market-with-ai-agent-pcs-from-microsoft-dell-and-hp/",
+      "title": "Nvidia chases $200B CPU market with AI agent PCs from Microsoft, Dell, and HP | TechCrunch",
+      "description": "If Nvidia has cracked a way to bring AI agents easily, safely, and usefully to the masses, it could - and should - be big.",
+      "excerpt": "If Nvidia has cracked a way to bring AI agents easily, safely, and usefully to the masses, it could - and should - be big.",
+      "summary": "\u201cWith RTX Spark and Microsoft Windows, you ask - and the PC does the work,\u201d he said in the press release. Back in 2013, Microsoft famously had to write off $900 million on its Nvidia ARM-based Surface RT, with partners like Dell also bailing on the product. Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections. In addition to being equipped with secure sandboxes (jointly developed with Microsoft) to run agents securely, the PCs will also have enough CPU, GPU, RAM, and underlying Nvidia CUDA software to run local versions of large language models. Microsoft is positioning its own RTX Spark PC as so mighty that it named it the Surface Laptop Ultra, and is calling it \u201cthe most powerful Surface Laptop ever built.\u201d Still, PC manufacturers have not released a lot of specifics about each of their offerings, including pricing. In addition to being equipped with secure.",
+      "what_happened": "\u201cWith RTX Spark and Microsoft Windows, you ask - and the PC does the work,\u201d he said in the press release. Back in 2013, Microsoft famously had to write off $900 million on its Nvidia ARM-based Surface RT, with partners like Dell also bailing on the product.",
+      "why_matters": "Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections. In addition to being equipped with secure sandboxes (jointly developed with Microsoft) to run agents securely, the PCs will also have enough CPU, GPU, RAM, and underlying Nvidia CUDA software to run local versions of large language models.",
+      "what_to_watch": "Microsoft is positioning its own RTX Spark PC as so mighty that it named it the Surface Laptop Ultra, and is calling it \u201cthe most powerful Surface Laptop ever built.\u201d Still, PC manufacturers have not released a lot of specifics about each of their offerings, including pricing. In addition to being equipped with secure.",
+      "key_points": [
+        "\u201cWith RTX Spark and Microsoft Windows, you ask - and the PC does the work,\u201d he said in the press release.",
+        "The super-fast, 1-petaflop chip is designed to run AI agents like OpenClaw or Hermes Agent securely, according to Nvidia.",
+        "In addition to being equipped with secure sandboxes (jointly developed with Microsoft) to run agents securely, the PCs will also have enough CPU, GPU, RAM, and underlying Nvidia CUDA software to run local versions of.",
+        "Back in 2013, Microsoft famously had to write off $900 million on its Nvidia ARM-based Surface RT, with partners like Dell also bailing on the product.",
+        "Nvidia said more than 100 Windows software makers have signed on to support the new chip, including Adobe, Blender, ComfyUI, Riot Games, and Xbox.",
+        "He made specific mention of the high-end server CPU released earlier this year called Vera - of which Nvidia says it has already sold $20 billion worth.",
+        "Either way, if Nvidia has cracked the code on bringing AI agents easily, safely, and usefully to the masses, it could - and should - be big.",
+        "If Nvidia has cracked a way to bring AI agents easily, safely, and usefully to the masses, it could - and should - be big.",
+        "\u201cWe\u2019ll have billions of agents, and those billions of agents will all use tools.",
+        "The chipmaker unveiled a new PC CPU called the RTX Spark, which it dubbed a \u201csuperchip,\u201d and named a who\u2019s who list of PC makers that will soon deliver AI PCs powered by it.",
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "Nvidia said that its RTX technology will deliver faster performance for AI, better image quality, and support for AI features in more than 1,000 games and applications."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/821b66c51a5db0e4.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-2205761886.jpg?resize=1200,828",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "a0e1ead00145459ebbd0bc46bda68e38"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-a-secure-auth-code-flow-setup-using-agentcore-gateway-with-mcp-clients/",
+      "title": "Building a secure auth code flow setup using AgentCore Gateway with MCP clients | Amazon Web Services",
+      "description": "This post demonstrates how to implement Open Authorization (OAuth) Code flow as an inbound authorization mechanism for MCP servers hosted on Amazon Bedrock AgentCore Gateway. By the end of this guide, you will have a production-ready setup where each AI assistant request is authenticated with a valid user identity token issued from your organization\u2019s identity provider.",
+      "excerpt": "This post demonstrates how to implement Open Authorization (OAuth) Code flow as an inbound authorization mechanism for MCP servers hosted on Amazon Bedrock AgentCore Gateway. By the end of this guide, you will have a production-ready setup where each AI assistant request is authenticated with a valid user identity token issued from your organization\u2019s identity provider.",
+      "summary": "Artificial Intelligence Building a secure auth code flow setup using AgentCore Gateway with MCP clients In modern development workflows, developers increasingly rely on agentic coding assistants such as Kiro Integrated Development Environment (IDE) to interact with remote tools and services. The Gateway doesn\u2019t distinguish between tokens acquired through the following: Client credentials flow , where the application authenticates directly. The IdP verifies the user\u2019s identity and prompts for consent to authorize the application. Authorization code grant \u2013 After approval, the IdP redirects the user\u2019s browser to the client\u2019s local callback URL (managed by the client\u2019s local listener) with an authorization code. Step 2: Configure AgentCore Gateway With your identity provider configured, the next step is to connect AgentCore Gateway to your IdP so it can validate incoming tokens. When it receives a 401 challenge from the Gateway, it initiates the authorization code flow with your IdP.",
+      "what_happened": "Artificial Intelligence Building a secure auth code flow setup using AgentCore Gateway with MCP clients In modern development workflows, developers increasingly rely on agentic coding assistants such as Kiro Integrated Development Environment (IDE) to interact with remote tools and services. The Gateway doesn\u2019t distinguish between tokens acquired through the following: Client credentials flow , where the application authenticates directly.",
+      "why_matters": "The IdP verifies the user\u2019s identity and prompts for consent to authorize the application. Authorization code grant \u2013 After approval, the IdP redirects the user\u2019s browser to the client\u2019s local callback URL (managed by the client\u2019s local listener) with an authorization code.",
+      "what_to_watch": "Step 2: Configure AgentCore Gateway With your identity provider configured, the next step is to connect AgentCore Gateway to your IdP so it can validate incoming tokens. When it receives a 401 challenge from the Gateway, it initiates the authorization code flow with your IdP.",
+      "key_points": [
+        "Artificial Intelligence Building a secure auth code flow setup using AgentCore Gateway with MCP clients In modern development workflows, developers increasingly rely on agentic coding assistants such as Kiro Integrated.",
+        "Step 4: Configure the AI client (Kiro IDE) With the Gateway and MCP OAuth proxy configured, the final configuration step is connecting your AI client to the Gateway endpoint.",
+        "The Gateway doesn\u2019t distinguish between tokens acquired through the following: Client credentials flow , where the application authenticates directly.",
+        "When it receives a 401 challenge from the Gateway, it initiates the authorization code flow with your IdP.",
+        "The IdP verifies the user\u2019s identity and prompts for consent to authorize the application.",
+        "Agentic coding assistant: Kiro IDE, which acts as the OAuth client and manages the authentication flow.",
+        "Test that your Gateway endpoint is accessible and requires authentication: The following response confirms that authentication is properly configured (a 401 response to unauthenticated MCP requests): Step 3: MCP OAuth.",
+        "MCP client (Kiro IDE) : Connect the client to the Gateway URL and verify the end-to-end OAuth flow.",
+        "Authentication challenge \u2013 The Gateway detects that the request lacks a valid token and responds with an HTTP 401, including a www-authenticate header pointing to the Gateway\u2019s OAuth Protected Resource Metadata endpoint.",
+        "Only authorized users and agents can access the tools and services exposed by the MCP server.",
+        "Step 1: Configure the organization\u2019s identity provider In this step, you register an OIDC application with your organization\u2019s identity provider and configure it to support the authorization code flow with PKCE.",
+        "Token exchange request \u2013 The MCP client sends the authorization code along with the PKCE code verifier to the IdP\u2019s token endpoint."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/576eb73178bd1b10.jpg",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/26/ML-20412-2.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "44925229c6544f74b39c2f048ac1a474"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/trendai-launches-inception-program-to-power-the-next-wave-of-secure-ai-innovation-302786513.html",
+      "title": "TrendAI\u2122 Launches Inception Program to Power the Next Wave of Secure AI Innovation",
+      "description": "/PRNewswire/ -- TrendAI , the enterprise cybersecurity business from Trend Micro Incorporated (TYO: 4704; TSE: 4704), announced an initiative at Computex today...",
+      "excerpt": "/PRNewswire/ -- TrendAI , the enterprise cybersecurity business from Trend Micro Incorporated (TYO: 4704; TSE: 4704), announced an initiative at Computex today...",
+      "summary": "The program is designed to help emerging AI providers to strengthen AI maturity early across the full AI stack, including models, pipelines, agents, and data, through technical enablement, AI security benefits, and partner-focused benefits, including: AI Red or Purple Teaming Service (at a preferred partner discount) - Conducted by TrendAI TM experts, validating your AI application's resilience against prompt injection, jailbreak, system prompt leakage, and tool-abuse scenarios, benchmarked against OWASP LLM Top. The program combines AI security expertise, technical enablement, and go-to-market support to help partners accelerate securely without having to independently build deep AI security expertise. TrendAI 's Purple Teaming experts can help us validate our architecture, uncover vulnerabilities that might otherwise have gone unnoticed, and strengthen our platform before launch. Browse News Releases News Releases Overview Multimedia Gallery Overview Auto & Transportation Auto & Transportation Overview View All Auto & Transportation Business Technology Overview View All Business Technology Entertain\u00adment & Media Entertain\u00adment & Media Overview View All Entertain\u00adment & Media.",
+      "what_happened": "The program is designed to help emerging AI providers to strengthen AI maturity early across the full AI stack, including models, pipelines, agents, and data, through technical enablement, AI security benefits, and partner-focused benefits, including: AI Red or Purple Teaming Service (at a preferred partner discount) - Conducted by TrendAI TM experts, validating your AI application's resilience against prompt injection, jailbreak, system prompt leakage, and tool-abuse scenarios, benchmarked against OWASP LLM Top.",
+      "why_matters": "The program combines AI security expertise, technical enablement, and go-to-market support to help partners accelerate securely without having to independently build deep AI security expertise. TrendAI 's Purple Teaming experts can help us validate our architecture, uncover vulnerabilities that might otherwise have gone unnoticed, and strengthen our platform before launch.",
+      "what_to_watch": "Browse News Releases News Releases Overview Multimedia Gallery Overview Auto & Transportation Auto & Transportation Overview View All Auto & Transportation Business Technology Overview View All Business Technology Entertain\u00adment & Media Entertain\u00adment & Media Overview View All Entertain\u00adment & Media Financial Services.",
+      "key_points": [
+        "The program is designed to help emerging AI providers to strengthen AI maturity early across the full AI stack, including models, pipelines, agents, and data, through technical enablement, AI security benefits, and.",
+        "We also recognize that AI introduces new attack surfaces across models, agents, data pipelines, and inference workflows.",
+        "Also from this source /C O R R E C T I O N -- TrendAI/ TrendAI , the enterprise AI security leader from Trend Micro Incorporated (TYO: 4704; TSE: 4704), today announced it is working with Anthropic and...",
+        "/PRNewswire/ -- TrendAI , the enterprise cybersecurity business from Trend Micro Incorporated (TYO: 4704; TSE: 4704), announced an initiative at Computex today...",
+        "Trusted by the largest enterprises and governments across 185 countries, TrendAI secures the entire organization, from identities, to infrastructure, to data.",
+        "The program combines AI security expertise, technical enablement, and go-to-market support to help partners accelerate securely without having to independently build deep AI security expertise.",
+        "Global Fortune 500 companies rely on TrendAI to cut risk and stop threats up to three months earlier, powered by world-leading threat and attack intelligence.",
+        "Browse News Releases News Releases Overview Multimedia Gallery Overview Auto & Transportation Auto & Transportation Overview View All Auto & Transportation Business Technology Overview View All Business Technology.",
+        "TrendAI 's Purple Teaming experts can help us validate our architecture, uncover vulnerabilities that might otherwise have gone unnoticed, and strengthen our platform before launch.",
+        "Co-Marketing & Visibility to Customers - Joint presence at TrendAI Spark events and listing on the TrendAI Partner Locator to expand your reach and connect with customers seeking qualified AI partners.",
+        "Together, we're enabling more secure, scalable, and enterprise-ready AI deployments.\" Robin Wong, COO of Ontonics Lab Co., an AI-native industrial intelligence startup backed by LCY Group and Eternal Materials .",
+        "Through the Inception Program, we can combine scalable AI infrastructure with TrendAI 's decades of cybersecurity expertise to help customers deploy AI with greater trust, governance, and operational confidence."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/cbda7ec114f94be0.img",
+      "image_url": "data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAE0UlEQVR4Xu2aQY7jOgxEGWSRZY7go+RoztF8FB+hl1k0Rl9VRcnu/P4DCDOLj1bVok1T5NNsCpSVifL3FO+JP5BZYzJrTGaNyawxmTUms8Zk1pjMGpNZYzJrTGaNyawx/c9ZH9G0flzKditlx8uFJXGtf3+dC5BdPnvPYpZZZnG9lE+VvgKste7wePWOR13fr9y3ZlmbjCWfephl1qSsrZYvYAmQ6w3bwmt5ApusWhs3s8wy6ztWYJCpBKXI1hC6F2BbrVlmmQWdWDgBav2ZXdQFp0UEBGStWWaZdbAorPeuuP/q4w0FGGQIac3fngsps8yaisVeqLGWA/ufYZNZ713fh2b9ZNabMMjyXNj8GJheFFjxXd93ObPM+rd+JOujfzq1cyF0P0Jcmet+Ir2LricKQpuZZdbcLAFYCuEE+KljH6wJbKEJd4Q6LaYeCShmrQrNeiSgTMX6SLupNGS3dB6V1szDYAX0I2LWmmXW5KygH6lkoUs7MOzOe+K6L3LfbJHMMmtiVuHIki64fgBgTT8uPQSAJsyCuu8D1jTLLLP6IHvKY6f7CXVpM2ABeDFsp8WUWcWsiVlfuqA9WimF8MYsWSXPhQFsA5hl1sSs/LZiGO0rKp3XAQivLHhos7VRJLPMmptV7VYp8tix3rJFQ6+xhH3eucPbudAssyZl4SWTm6ZXfmYh+8zxdrgUIXVTD9r1MMss9aBdj3lYAKy5AJYOg+zS7bmkfQPevWCH7DDLrJlZhXbjyIJe7GmDrIClghoSkIa9927ILLMmZsGPAlAyIY6IXXLeDhPyXNiyYCxmmTU9q2oDANggK/DppBJmaUK0w4/Y98g2maUSZs1SYY9mYHFdIwv5RcktehZde33FpQQKMotJJ5ll1sQsJQkQS0dEfVCdsgUAJpXVdV/KLLMmZhU5j2IXIzjv1dLs2lWw9eT5Tt0ss5TtgJlYshs89hSAzqup7VYAWGVYhQLs+q0pbkkyay1mmbXoNq+8gv/3LrsqtpkQBcEsP77gXewrmWXWzCx17ToMshS6yI/9iMjwbd9DZpk1M4tdKF+BzZlWw9DNX3Pefppp2o61ZpllFj0G5bmQANlNOxybybBkaf61VrNUYtacLBqrHfvixtJ0HrLJYhYsWDMn3a2hzDJrapb8uOf3kgDdbggPwAnb/glmmTU9Cx7Do3ZV1hZ9HWFcOd5qyNRXl55klllmwW4KgaCq80rONNxPYKalZNi2QzHLrLlZelnkxxRMeMpu+raCcrw99dbbW3DuSpll1k9n8Rqcg0xnPZoQCy3Me3L85WYI8lyYCLOwYNasLBzwXgHnsasNMm7QhK5dgGjWZJtZZoVZJ+EEiFJ8UOmIuCDL1rbDKYsdUmaZNTFLpdDaVgqv+7aQS7FDm2nJOrIps8yamXXRU+vIB27Eg9NrQQEZp9ruRzUypYdZKDCLmou1RTpPAEg/MDX1c6FqqQNrllmSWWvJu+8Mmx8vCMkq3AEhhM3MMsusM0smJCDOI+vMwvsnrVl+60ezzIImYVFYJ4D3E6EQpZh06VLtq992v8gss9RyaCYWSyGUUviRNvRtdQIgdZE1v25mlt7NmpX1V2TWmMwak1ljMmtMZo3JrDGZNSazxmTWmMwak1ljMmtMZo3pHyNG2duIR8mwAAAAAElFTkSuQmCC",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "97a13cd2c871417084406f9ef890608d"
+    },
+    {
+      "url": "https://cryptobriefing.com/nvidia-rtx-spark-efficient-pc-chip/",
+      "title": "Nvidia unveils RTX Spark as most efficient PC chip ever built",
+      "description": "Nvidia announces RTX Spark, its first complete consumer PC chip for laptops and mini-PCs, claiming it's the most efficient ever built. No benchmarks provided.",
+      "excerpt": "Nvidia announces RTX Spark, its first complete consumer PC chip for laptops and mini-PCs, claiming it's the most efficient ever built. No benchmarks provided.",
+      "summary": "Nvidia unveils RTX Spark as most efficient PC chip ever built The GPU giant is entering the consumer PC chip market this fall, putting a complete computing system on a single chip for laptops and mini-PCs. Software updates in 2026 added support for agentic AI frameworks like Hermes on the DGX Spark, improving memory management and local AI agent capabilities. This fall, the company will ship the RTX Spark, its first complete computing chip designed for laptops and mini-PCs, putting it in direct competition with Intel, AMD, Apple, and Qualcomm in the consumer PC silicon market. The company calls it \u201cthe most efficient PC chip ever built.\u201d The catch: Nvidia hasn\u2019t shared a single benchmark, statistic, or chart to support that claim. Nvidia announces RTX Spark, its first complete consumer PC chip for laptops and mini-PCs, claiming it's the most efficient ever built.",
+      "what_happened": "Nvidia unveils RTX Spark as most efficient PC chip ever built The GPU giant is entering the consumer PC chip market this fall, putting a complete computing system on a single chip for laptops and mini-PCs. Software updates in 2026 added support for agentic AI frameworks like Hermes on the DGX Spark, improving memory management and local AI agent capabilities.",
+      "why_matters": "This fall, the company will ship the RTX Spark, its first complete computing chip designed for laptops and mini-PCs, putting it in direct competition with Intel, AMD, Apple, and Qualcomm in the consumer PC silicon market. The company calls it \u201cthe most efficient PC chip ever built.\u201d The catch: Nvidia hasn\u2019t shared a single benchmark, statistic, or chart to support that claim.",
+      "what_to_watch": "Nvidia announces RTX Spark, its first complete consumer PC chip for laptops and mini-PCs, claiming it's the most efficient ever built.",
+      "key_points": [
+        "Nvidia unveils RTX Spark as most efficient PC chip ever built The GPU giant is entering the consumer PC chip market this fall, putting a complete computing system on a single chip for laptops and mini-PCs.",
+        "Software updates in 2026 added support for agentic AI frameworks like Hermes on the DGX Spark, improving memory management and local AI agent capabilities.",
+        "Nvidia announces RTX Spark, its first complete consumer PC chip for laptops and mini-PCs, claiming it's the most efficient ever built.",
+        "This fall, the company will ship the RTX Spark, its first complete computing chip designed for laptops and mini-PCs, putting it in direct competition with Intel, AMD, Apple, and Qualcomm in the consumer PC silicon.",
+        "That device, which began shipping in October 2025, combines a 20-core Arm CPU with a Blackwell GPU and delivers up to 1 petaFLOP of FP4 AI performance.",
+        "The chip is designed to compete with the best thin-and-light Windows laptops on the market, combining CPU and GPU capabilities into one package.",
+        "The company calls it \u201cthe most efficient PC chip ever built.\u201d The catch: Nvidia hasn\u2019t shared a single benchmark, statistic, or chart to support that claim.",
+        "The DGX Spark is priced between $3,000 and $4,000 and is available through ASUS, Dell, HP, Lenovo, and MSI.",
+        "Nvidia\u2019s broader silicon ambitions The company already shipped the DGX Spark, a compact desktop AI system powered by the GB10 Grace Blackwell Superchip.",
+        "The company has positioned the device as the \u201cworld\u2019s smallest AI supercomputer,\u201d designed to let developers prototype and run sophisticated AI models without paying for cloud compute time.",
+        "The RTX Spark is the first in what Nvidia describes as a family of chips.",
+        "What we actually know about RTX Spark The RTX Spark represents Nvidia\u2019s first foray into building a full system-on-chip for consumer PCs, not just a discrete GPU that slots into someone else\u2019s machine."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0ea4263a838a245e.jpg",
+      "image_url": "https://static.cryptobriefing.com/wp-content/uploads/2026/06/01004027/nvidia-announces-rtx-spark-as-the-most-efficient-pc-chip-eve-1-800x420.jpeg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "c17cf3af1aae428986abf6d009478661"
+    },
+    {
+      "url": "https://www.engadget.com/2185225/meta-ai-support-chatbot-made-it-ridiculously-easy-for-hackers-to-take-over-instagram-accounts/",
+      "title": "Meta's AI support chatbot made it ridiculously easy for hackers to take over Instagram accounts - Engadget",
+      "description": "Meta says it's working on securing accounts that were affected by a hack.",
+      "excerpt": "Meta says it's working on securing accounts that were affected by a hack.",
+      "summary": "Back in December, Meta announced a new AI support assistant it promised would make the account recovery process \"faster and simpler\" for people who had been locked out of their Facebook or Instagram pages. The account, which hadn't posted since 2017, posted an AI-generated image that translates to \"the White House is under Shiites' control,\" according to TMZ . The images and videos suggest that hackers were able to simply ask the AI support chatbot to change the email associated with their desired account and then request a password reset. Meta's AI support chatbot made it ridiculously easy for hackers to take over Instagram accounts The company says it's working on securing affected accounts. According to 404 Media , users on Telegram have been discussing the vulnerability since March.",
+      "what_happened": "Back in December, Meta announced a new AI support assistant it promised would make the account recovery process \"faster and simpler\" for people who had been locked out of their Facebook or Instagram pages. The account, which hadn't posted since 2017, posted an AI-generated image that translates to \"the White House is under Shiites' control,\" according to TMZ .",
+      "why_matters": "The images and videos suggest that hackers were able to simply ask the AI support chatbot to change the email associated with their desired account and then request a password reset. Meta's AI support chatbot made it ridiculously easy for hackers to take over Instagram accounts The company says it's working on securing affected accounts.",
+      "what_to_watch": "According to 404 Media , users on Telegram have been discussing the vulnerability since March.",
+      "key_points": [
+        "The account, which hadn't posted since 2017, posted an AI-generated image that translates to \"the White House is under Shiites' control,\" according to TMZ .",
+        "According to 404 Media , users on Telegram have been discussing the vulnerability since March.",
+        "The images and videos suggest that hackers were able to simply ask the AI support chatbot to change the email associated with their desired account and then request a password reset.",
+        "The exploit was flagged over the weekend by numerous security researchers on X.",
+        "Meta's AI support chatbot made it ridiculously easy for hackers to take over Instagram accounts The company says it's working on securing affected accounts.",
+        "Details about how to take over accounts, as well as screenshots and video showing the takeovers in action, were circulating widely on Telegram, the researchers said.",
+        "Back in December, Meta announced a new AI support assistant it promised would make the account recovery process \"faster and simpler\" for people who had been locked out of their Facebook or Instagram pages.",
+        "Other accounts that may have been caught up in the exploit include beauty retailer Sephora and a high-ranking Space Force official, according to 404 Media .",
+        "Meta has now addressed the issue, though it's unclear how many accounts were affected by the exploit before it was patched.",
+        "Though Meta didn't provide additional info on why its AI support tool would have such a gaping security vulnerability, it seems that hackers discovered the Meta chatbot relied on account holders' physical location to.",
+        "The now-patched exploit required hackers to use a VPN to show that their location matched the location of the person whose account they were targeting, according to Neowin .",
+        "According to security researchers, the AI tool made it ridiculously easy for hackers to take over the accounts, even if they were protected by two-factor authentication."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/aaaeb8303b06317a.jpg",
+      "image_url": "https://img4.zergnet.com/8755679_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "94d1346e8e91469bae6a1edfb64de68c"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 8,
+  "has_cta": true,
+  "slides": [
+    "NVIDIA and TSMC Bring AI Into Fabs to Advance Semiconductor Design.",
+    "NVIDIA Unveils Vera the CPU for Agents.",
+    "NVIDIA Vera Rubin Ramps Into Full Production to Power Agentic AI Factories.",
+    "Nvidia chases $200B CPU market with AI agent PCs from Microsoft Dell.",
+    "Building a secure auth code flow setup using AgentCore Gateway with MCP.",
+    "Nvidia unveils RTX Spark as most efficient PC chip ever built.",
+    "Meta's AI support chatbot made it ridiculously easy for hackers to take.",
+    "FOLLOW @graitech"
+  ]
+}
