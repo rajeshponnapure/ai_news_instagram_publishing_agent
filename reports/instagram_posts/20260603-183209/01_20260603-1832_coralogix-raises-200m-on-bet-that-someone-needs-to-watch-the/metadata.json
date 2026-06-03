@@ -1,0 +1,373 @@
+{
+  "email_received_at": "2026-06-03T18:32+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Coralogix raises $200M on bet that someone needs to watch the AI agents | TechCrunch",
+  "subject": "",
+  "source_date": "2026-06-03T18:32:09.797010",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://techcrunch.com/2026/06/03/coralogix-raises-200m-in-race-to-build-the-monitoring-layer-for-ai-agents/",
+  "article_title": "Coralogix raises $200M on bet that someone needs to watch the AI agents | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/bb3befdfdec0ebdf.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/06/coralogix-co-founders.jpg?resize=1200,800",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/03/coralogix-raises-200m-in-race-to-build-the-monitoring-layer-for-ai-agents/",
+      "title": "Coralogix raises $200M on bet that someone needs to watch the AI agents | TechCrunch",
+      "description": "Coralogix is among a growing number of infrastructure firms betting that as AI systems move into production, demand will rise for tools that can monitor their behavior, troubleshoot failures, and provide the operational data needed to keep them running reliably.",
+      "excerpt": "Coralogix is among a growing number of infrastructure firms betting that as AI systems move into production, demand will rise for tools that can monitor their behavior, troubleshoot failures, and provide the operational data needed to keep them running reliably.",
+      "summary": "More from TechCrunch Coralogix raises $200M on bet that someone needs to watch the AI agents Coralogix , a Boston-headquartered software-monitoring startup founded in Israel, has raised $200 million in a new funding round, betting that the rise of AI agents will drive demand for a new generation of tools to monitor, troubleshoot, and manage increasingly autonomous software systems. The startup grew revenue by more than 60% over the past year and now counts about 30 customers spending more than $1 million annually. The company has now raised a total of $550 million to date. The platform is used by more than 5,000 customers worldwide, including IBM, Tradeweb, and JFrog, to detect outages, investigate incidents, and optimize applications. The new round values the startup at $1.6 billion post-money and was led by Advent and the Canada Pension Plan Investment Board (CPPIB), with participation from Greenfield Partners and Brighton Park Capital.",
+      "what_happened": "More from TechCrunch Coralogix raises $200M on bet that someone needs to watch the AI agents Coralogix , a Boston-headquartered software-monitoring startup founded in Israel, has raised $200 million in a new funding round, betting that the rise of AI agents will drive demand for a new generation of tools to monitor, troubleshoot, and manage increasingly autonomous software systems. The startup grew revenue by more than 60% over the past year and now counts about 30 customers spending more than $1 million annually.",
+      "why_matters": "The company has now raised a total of $550 million to date. The platform is used by more than 5,000 customers worldwide, including IBM, Tradeweb, and JFrog, to detect outages, investigate incidents, and optimize applications.",
+      "what_to_watch": "The new round values the startup at $1.6 billion post-money and was led by Advent and the Canada Pension Plan Investment Board (CPPIB), with participation from Greenfield Partners and Brighton Park Capital.",
+      "key_points": [
+        "More from TechCrunch Coralogix raises $200M on bet that someone needs to watch the AI agents Coralogix , a Boston-headquartered software-monitoring startup founded in Israel, has raised $200 million in a new funding.",
+        "The startup grew revenue by more than 60% over the past year and now counts about 30 customers spending more than $1 million annually, Assaraf said, as it expands further into the enterprise market.",
+        "The new round values the startup at $1.6 billion post-money and was led by Advent and the Canada Pension Plan Investment Board (CPPIB), with participation from Greenfield Partners and Brighton Park Capital.",
+        "(The more autonomous software you deploy, the more you need to know when something goes wrong and why.) Founded in 2014, Coralogix helps companies monitor the health and performance of software systems by collecting and.",
+        "The company has now raised a total of $550 million to date.",
+        "More than half of the startup\u2019s enterprise customers now use either its AI agent, Olly, or their own AI models through command-line and agentic interfaces to investigate incidents and query operational data, he said.",
+        "Vendors are increasingly embedding AI into monitoring and incident-response workflows as enterprises deploy more AI-powered applications and agents.",
+        "The Series F financing comes just 11 months after Coralogix raised $115 million in a Series E round , a pace that reflects just how quickly investor appetite for AI infrastructure companies has accelerated.",
+        "The platform is used by more than 5,000 customers worldwide, including IBM, Tradeweb, and JFrog, to detect outages, investigate incidents, and optimize applications.",
+        "The startup employs more than 600 people globally, with about 100 based in India, home to its third-largest office after the U.S.",
+        "The observability industry, where Coralogix competes with the likes of Datadog, New Relic, and Splunk, is being reshaped by the rise of AI.",
+        "Jagmeet covers startups, tech policy-related updates, and all other major tech-centric developments from India for TechCrunch."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/bb3befdfdec0ebdf.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/coralogix-co-founders.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "2e85b68ca5ee42f69ba6ed2a41a46cf5"
+    },
+    {
+      "url": "https://www.anthropic.com/news/services-track-partner-hub",
+      "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+      "description": "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we\u2019re announcing two new components that make this ecosystem easier for customers to navigate.",
+      "excerpt": "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we\u2019re announcing two new components that make this ecosystem easier for customers to navigate.",
+      "summary": "In March, we launched the Claude Partner Network - a program, backed by a $100 million investment in partner training, technical support, and shared marketing, for the firms that help enterprises put Claude into production. The $100 million we committed in March funds partner training, dedicated technical support, and shared marketing. At least 10 active certified individuals, at least 2 joint customers deployed in production in the trailing 12 months, and at least 1 public customer story. In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. What this means for partners For firms building a Claude practice, this program is meant to reward real work and to be predictable enough to plan around. Accenture is training 30,000 professionals on the model.",
+      "what_happened": "In March, we launched the Claude Partner Network - a program, backed by a $100 million investment in partner training, technical support, and shared marketing, for the firms that help enterprises put Claude into production. The $100 million we committed in March funds partner training, dedicated technical support, and shared marketing.",
+      "why_matters": "At least 10 active certified individuals, at least 2 joint customers deployed in production in the trailing 12 months, and at least 1 public customer story. In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production..",
+      "what_to_watch": "What this means for partners For firms building a Claude practice, this program is meant to reward real work and to be predictable enough to plan around. Accenture is training 30,000 professionals on the model.",
+      "key_points": [
+        "In March, we launched the Claude Partner Network - a program, backed by a $100 million investment in partner training, technical support, and shared marketing, for the firms that help enterprises put Claude into.",
+        "The $100 million we committed in March funds partner training, dedicated technical support, and shared marketing.",
+        "Accenture is training 30,000 professionals on the model.",
+        "At least 10 active certified individuals, at least 2 joint customers deployed in production in the trailing 12 months, and at least 1 public customer story.",
+        "The Claude Partner Hub is a portal where partners see exactly where they stand against the program's requirements, and customers find the firms most qualified for the scope of their project.",
+        "About the Claude Partner Hub The Claude Partner Hub allows each partner to see its own standing against the published requirements, refreshed daily.",
+        "The best partners have firsthand experience with Claude.",
+        "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production..",
+        "This information is refreshed daily in the Claude Partner Hub.",
+        "At least 100 active certified individuals, at least 15 deployed joint customers, and at least 3 public stories.",
+        "Since then, more than 40,000 firms have applied to join and more than 10,000 consultants have earned a Claude certification - a credential, held by an individual, that signals they've been trained to build and deploy.",
+        "The real work - and the real opportunity - is in the integration, the evaluation, and the way people's work evolves."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/78dd170b7fd7c7b1.png",
+      "image_url": "https://www.anthropic.com/api/opengraph-illustration?name=Hand%20ShapeBuild&backgroundColor=fig",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "941b5e0101874858aec6dc96260cf1a1"
+    },
+    {
+      "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+      "title": "What we learned mapping a year\u2019s worth of AI-enabled cyber threats",
+      "description": "As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up? In a new report, we seek to answer that question.",
+      "excerpt": "As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up? In a new report, we seek to answer that question.",
+      "summary": "Anthropic confidentially submits draft S-1 to the SEC Anthropic has confidentially submitted a draft S-1 registration statement to the Securities and Exchange Commission Get updates on our latest red-teaming research and findings. The more durable differentiator is the type of scaffolding attackers build around the model: higher-risk actors design architectures that allow models to chain together discrete stages of a cyberattack and carry them out with minimal human input. In our Red blog post , we share an interactive visualization of the techniques used by attackers, in order to help defenders stay ahead of AI-enabled threats. For example, they concentrate their use of AI on more operationally demanding techniques - those that require significant time, oversight, or real-time decision making to carry out - like account discovery, lateral movement, and privilege escalation, rather than just on. There is no ATT&CK ID for this type of agentic orchestration - yet these are precisely the behaviors we expect to see much more of as AI agents become more capable. How AI makes attackers more dangerous The most common AI-enabled activities in our database related to preparing for a.",
+      "what_happened": "Anthropic confidentially submits draft S-1 to the SEC Anthropic has confidentially submitted a draft S-1 registration statement to the Securities and Exchange Commission Get updates on our latest red-teaming research and findings. The more durable differentiator is the type of scaffolding attackers build around the model: higher-risk actors design architectures that allow models to chain together discrete stages of a cyberattack and carry them out with minimal human input.",
+      "why_matters": "In our Red blog post , we share an interactive visualization of the techniques used by attackers, in order to help defenders stay ahead of AI-enabled threats. For example, they concentrate their use of AI on more operationally demanding techniques - those that require significant time, oversight, or real-time decision making to carry out - like account discovery, lateral movement, and privilege escalation, rather than just on.",
+      "what_to_watch": "There is no ATT&CK ID for this type of agentic orchestration - yet these are precisely the behaviors we expect to see much more of as AI agents become more capable. How AI makes attackers more dangerous The most common AI-enabled activities in our database related to preparing for a cyberattack, such as writing.",
+      "key_points": [
+        "Anthropic confidentially submits draft S-1 to the SEC Anthropic has confidentially submitted a draft S-1 registration statement to the Securities and Exchange Commission Get updates on our latest red-teaming research.",
+        "The more durable differentiator is the type of scaffolding attackers build around the model: higher-risk actors design architectures that allow models to chain together discrete stages of a cyberattack and carry them.",
+        "How AI makes attackers more dangerous The most common AI-enabled activities in our database related to preparing for a cyberattack, such as writing malware (560 of the 832 accounts we studied, or 67.3%, used AI for this.",
+        "For example, we\u2019ve developed and deployed cyber safeguards on our most capable models to detect and block some of the activities uncovered here, like developing malware or mass data exfiltration.",
+        "Introducing the Services Track and Partner Hub of the Claude Partner Network Expanding Project Glasswing We\u2019re extending Project Glasswing to approximately 150 new organizations in more than fifteen countries.",
+        "The MITRE ATT&CK framework does not fully capture the tools and activities that make AI-enabled attackers so dangerous.",
+        "What we learned mapping a year\u2019s worth of AI-enabled cyber threats As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up?",
+        "The findings from this analysis helped inform the safeguards we build into our models.",
+        "A smaller number of actors use AI for more complex activities - for example, 54 of the 832 actors (6.5%) used AI to assist with \u201clateral movement,\u201d which involves navigating deep inside a compromised network.",
+        "Following on from our work with Verizon, we\u2019re also in discussions with MITRE about how the ATT&CK framework might evolve to include the AI-enabled behaviors we observed.",
+        "Mapping it against the MITRE ATT&CK framework shows that the actor used 30 techniques across 13 tactics, which was comparable to many medium-risk actors in our dataset.",
+        "Now that AI can perform highly technical tasks on an actor\u2019s behalf, there\u2019s little correlation between the skill of a threat actor and how many techniques they use: the least-skilled actors in our dataset used about 16."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f83a38b9b2a82fd0.png",
+      "image_url": "https://www.anthropic.com/api/opengraph-illustration?name=Object-LaptopSecure&backgroundColor=cactus",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "b795c954dd004a3dbc53bc735d0c4426"
+    },
+    {
+      "url": "https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini",
+      "title": "Adding MCP Tools to Reachy Mini",
+      "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "excerpt": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "summary": "Today every tool is local and ships inside the app, and most of them are about the robot's body: How profiles control tools A tool in the code isn't usable until it's enabled in a profile , a folder with two files that matter here: instructions.txt (the prompt) and tools.txt (the tools that are turned on). Spaces mentioned in this article 2 Reachy Mini goes fully local NVIDIA brings agents to life with DGX Spark and Reachy Mini Spaces mentioned in this article 2 Acknowledgements: Many thanks to Fabien Danieau for proofreading this post and helping test the workflow, to Andres Marafioti for helping test it, and to Remi Fabre and the Pollen Robotics team for the ideas and feedback that shaped the remote tools workflow. We started with two canary tools, small test tools to exercise the new flow: They're enough to exercise the whole feature: install from the Hub, discover the remote. Why the prompts matter The remote-tool plumbing gets the tools into the model.",
+      "what_happened": "Today every tool is local and ships inside the app, and most of them are about the robot's body: How profiles control tools A tool in the code isn't usable until it's enabled in a profile , a folder with two files that matter here: instructions.txt (the prompt) and tools.txt (the tools that are turned on). Spaces mentioned in this article 2 Reachy Mini goes fully local NVIDIA brings agents to life with DGX Spark and Reachy Mini Spaces mentioned in this article 2",
+      "why_matters": "Acknowledgements: Many thanks to Fabien Danieau for proofreading this post and helping test the workflow, to Andres Marafioti for helping test it, and to Remi Fabre and the Pollen Robotics team for the ideas and feedback that shaped the remote tools workflow. We started with two canary tools, small test tools to exercise the new flow: They're enough to exercise the whole feature: install from the Hub, discover the remote.",
+      "what_to_watch": "Why the prompts matter The remote-tool plumbing gets the tools into the model.",
+      "key_points": [
+        "Why the prompts matter The remote-tool plumbing gets the tools into the model.",
+        "If the prompt is vague, the model serialises the calls and creates unnecessary latency.",
+        "Today every tool is local and ships inside the app, and most of them are about the robot's body: How profiles control tools A tool in the code isn't usable until it's enabled in a profile , a folder with two files that.",
+        "The prompts decide how the model uses them.",
+        "A tool is something the model can do during a conversation: play an emotion, move the head, look through the camera.",
+        "The part we want to focus on here is the tools that make that possible.",
+        "Acknowledgements: Many thanks to Fabien Danieau for proofreading this post and helping test the workflow, to Andres Marafioti for helping test it, and to Remi Fabre and the Pollen Robotics team for the ideas and.",
+        "Install, list, remove add validates the Space on the Hub, probes the MCP endpoint, discovers its tools, and by default appends the tool IDs to the active profile's tools.txt .",
+        "Spaces mentioned in this article 2 Reachy Mini goes fully local NVIDIA brings agents to life with DGX Spark and Reachy Mini Spaces mentioned in this article 2",
+        "When you talk to the robot, what you get back isn't only a voice, it's a system that reacts to the conversation: the robot can move and respond non-verbally, when it's applicable.",
+        "The limits of local tools The constraint here is that every tool has to be local Python.",
+        "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/31f1da7f66926a3f.png",
+      "image_url": "https://huggingface.co/blog/assets/adding-mcp-tools-to-reachy-mini/reachy_mini_remote_spaces_thumbnail.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f69a054a38a23439.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/288ff5bbe0449138.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/eb450997c1681ede.png"
+      ],
+      "extra_image_urls": [
+        "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/adding-mcp-tools-to-reachy-mini/reachy_mini_window.jpg",
+        "https://huggingface.co/blog/assets/nvidia-reachy-mini/new_thumbnail.png",
+        "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png"
+      ],
+      "_story_id": "47d3b481d1de49af91c829f18693a199"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/03/metas-ai-agent-for-whatsapp-business-is-now-available-globally/",
+      "title": "Meta's AI agent for WhatsApp Business is now available globally | TechCrunch",
+      "description": "WhatsApp will charge businesses for using its AI agent based on token usage.",
+      "excerpt": "WhatsApp will charge businesses for using its AI agent based on token usage.",
+      "summary": "The launch comes as Meta has spent nearly two years testing AI agents in WhatsApp Business for customer support in countries like India and Mexico. Microsoft launches Scout, an OpenClaw-inspired personal assistant \u2018What a joke\u2019: GitHub Copilot\u2019s new token-based billing spurs consternation among devs I put Google\u2019s 24/7 AI assistant Gemini Spark to work, and it\u2019s actually pretty useful Blue Origin\u2019s New Glenn rocket explodes during testing in Florida Anthropic releases Opus 4.8 with new \u2018dynamic workflow\u2019 tool. The company noted that large businesses will pay for the agent based on how many tokens they use. The company on Wednesday said it is making its customer support AI bot, now known as Meta Business Agent, available globally within WhatsApp. He is based out of India and has previously worked at publications including Huffington Post and The Next Web. More from TechCrunch Meta\u2019s AI agent for WhatsApp Business is now available globally For years, WhatsApp has been a communication layer for businesses of all sizes around the world.",
+      "what_happened": "The launch comes as Meta has spent nearly two years testing AI agents in WhatsApp Business for customer support in countries like India and Mexico. Microsoft launches Scout, an OpenClaw-inspired personal assistant \u2018What a joke\u2019: GitHub Copilot\u2019s new token-based billing spurs consternation among devs I put Google\u2019s 24/7 AI assistant Gemini Spark to work, and it\u2019s actually pretty useful Blue Origin\u2019s New Glenn rocket explodes during testing in Florida Anthropic releases Opus 4.8 with new \u2018dynamic workflow\u2019 tool.",
+      "why_matters": "The company noted that large businesses will pay for the agent based on how many tokens they use. The company on Wednesday said it is making its customer support AI bot, now known as Meta Business Agent, available globally within WhatsApp.",
+      "what_to_watch": "He is based out of India and has previously worked at publications including Huffington Post and The Next Web. More from TechCrunch Meta\u2019s AI agent for WhatsApp Business is now available globally For years, WhatsApp has been a communication layer for businesses of all sizes around the world.",
+      "key_points": [
+        "The launch comes as Meta has spent nearly two years testing AI agents in WhatsApp Business for customer support in countries like India and Mexico.",
+        "More from TechCrunch Meta\u2019s AI agent for WhatsApp Business is now available globally For years, WhatsApp has been a communication layer for businesses of all sizes around the world.",
+        "Meta said it is testing a way for the Business Agent to provide daily briefings of chats that occurred overnight and provide insights.",
+        "The company noted that large businesses will pay for the agent based on how many tokens they use.",
+        "WhatsApp will charge businesses for using its AI agent based on token usage.",
+        "The company on Wednesday said it is making its customer support AI bot, now known as Meta Business Agent, available globally within WhatsApp.",
+        "Meta is planning to charge businesses for using this AI agent by including it in some tiers of its WhatsApp Business Premium subscription.",
+        "This is critical for WhatsApp, which has relied on businesses paying for messaging and click-to-WhatsApp ads.",
+        "Meta said it\u2019s also working to enable the Agent to surface businesses when you search for one or share contact details in chat.",
+        "The company is testing this feature with select accounts on WhatsApp Business, Instagram Pro, Messenger, and Meta Business Suite.",
+        "Microsoft launches Scout, an OpenClaw-inspired personal assistant \u2018What a joke\u2019: GitHub Copilot\u2019s new token-based billing spurs consternation among devs I put Google\u2019s 24/7 AI assistant Gemini Spark to work, and it\u2019s.",
+        "The company is also making the bot available within Instagram DMs."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ad92e4312b4fa316.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/English_WhatsApp_conversations-2026-3-e1780457638786.jpeg?w=680",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "fcca9ea6048449559b1a23bee65bc8e7"
+    },
+    {
+      "url": "https://blog.google/products-and-platforms/products/search/thrifting-tips/",
+      "title": "5 ways Google Search can level up your thrift and vintage shopping",
+      "description": "Uncover second-hand scores with AI tools in Google Search and Shopping.",
+      "excerpt": "Uncover second-hand scores with AI tools in Google Search and Shopping.",
+      "summary": "5 ways Google Search can level up your thrift and vintage shopping With search interest in \u201cvintage\u201d and \u201chow to thrift\u201d hitting all-time highs this year, 2026 is proving that old is new again. See it, circle it and shop it with Circle to Search. Snap a photo and ask something like, \"Could I resell this?\" or \"What kind of stores buy items like this?\" to help your pre-loved goods find a new home and make room in your closet for more. Check out a few thrifting trends below for inspiration, then learn how Google tools can help you score the best finds, from a \"vintage jersey\" to \"thrifted heels\" (both trending on Search!). Your next favorite find is just a search, snap or circle away. See it, circle it and shop it with Circle to Search.",
+      "what_happened": "5 ways Google Search can level up your thrift and vintage shopping With search interest in \u201cvintage\u201d and \u201chow to thrift\u201d hitting all-time highs this year, 2026 is proving that old is new again. See it, circle it and shop it with Circle to Search.",
+      "why_matters": "Snap a photo and ask something like, \"Could I resell this?\" or \"What kind of stores buy items like this?\" to help your pre-loved goods find a new home and make room in your closet for more. Check out a few thrifting trends below for inspiration, then learn how Google tools can help you score the best finds, from a \"vintage jersey\" to \"thrifted heels\" (both trending on Search!).",
+      "what_to_watch": "Your next favorite find is just a search, snap or circle away. See it, circle it and shop it with Circle to Search.",
+      "key_points": [
+        "5 ways Google Search can level up your thrift and vintage shopping With search interest in \u201cvintage\u201d and \u201chow to thrift\u201d hitting all-time highs this year, 2026 is proving that old is new again.",
+        "See it, circle it and shop it with Circle to Search.",
+        "Use Lens to see what you can sell from your closet.",
+        "Your next favorite find is just a search, snap or circle away.",
+        "Plan your thrift adventure with AI Mode in Search.",
+        "Get the latest news from Google in your inbox.",
+        "If you're looking to clear out your own closet or home, use Lens to get an idea of what your items are worth.",
+        "Uncover second-hand scores with AI tools in Google Search and Shopping.",
+        "From there, you can ask more detailed follow-up questions like, \u201cWhat are similar styles with a \u201890s vibe?\" to expand your search.",
+        "Snap a photo and ask something like, \"Could I resell this?\" or \"What kind of stores buy items like this?\" to help your pre-loved goods find a new home and make room in your closet for more.",
+        "Instead of trying to guess if that funky vintage jacket is your vibe, Virtual Try-On can be your digital dressing room.",
+        "Circle to Search will quickly find similar items, prices and where to buy them."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0fa3661c392f047e.png",
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Thrifting_Header.width-1300.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "e4933a9e24d8462e84124411c9133e56"
+    },
+    {
+      "url": "https://spectrum.ieee.org/quantum-calibration-decoding",
+      "title": "Why Quantum Computers Need a \u2018Healthy Chunk\u2019 Of Classical Power",
+      "description": "Nvidia and others are developing new software, hardware, and AI to enable quantum",
+      "excerpt": "Nvidia and others are developing new software, hardware, and AI to enable quantum",
+      "summary": "This article appears in the June 2026 print issue as \u201c Sardinia\u2019s Energy Future Hinges on Its Past.\u201d South Sudan Is Building Its Electric Grid Virtually From Scratch \u203a Italy strikes down Sardinian moratorium on renewables \u2013 pv magazine International \u203a The Future of Physical AI Isn\u2019t Smarter Robots, It\u2019s Smarter Interfaces Putting the human back into the computing loop, one neural signal at a time Wetour Robotics is a Physical AI infrastructure and wearable robotics company headquartered in Austin, Texas. But the company shut down the smelter in 2012. The scheme will help power the data center, which will be built both above and below ground, including in the mine\u2019s largest chambers nearly 500 meters below the Earth\u2019s surface. Wetour Robotics\u2019 bet: put the human back into the computing loop Wetour Robotics is betting that the next architectural leap in Physical AI is not about making the robot more capable. The trajectory of the hardware and the foundation models is real, and it is accelerating.",
+      "what_happened": "This article appears in the June 2026 print issue as \u201c Sardinia\u2019s Energy Future Hinges on Its Past.\u201d South Sudan Is Building Its Electric Grid Virtually From Scratch \u203a Italy strikes down Sardinian moratorium on renewables \u2013 pv magazine International \u203a The Future of Physical AI Isn\u2019t Smarter Robots, It\u2019s Smarter Interfaces Putting the human back into the computing loop, one neural signal at a time Wetour Robotics is a Physical AI infrastructure and wearable robotics company headquartered in Austin, Texas.",
+      "why_matters": "But the company shut down the smelter in 2012. The scheme will help power the data center, which will be built both above and below ground, including in the mine\u2019s largest chambers nearly 500 meters below the Earth\u2019s surface.",
+      "what_to_watch": "Wetour Robotics\u2019 bet: put the human back into the computing loop Wetour Robotics is betting that the next architectural leap in Physical AI is not about making the robot more capable. The trajectory of the hardware and the foundation models is real, and it is accelerating.",
+      "key_points": [
+        "The trajectory of the hardware and the foundation models is real, and it is accelerating.",
+        "The tiny squares to the left and right in this image are billboards 200 meters from the center of the explosion.",
+        "But the company shut down the smelter in 2012.",
+        "This article appears in the June 2026 print issue as \u201c Sardinia\u2019s Energy Future Hinges on Its Past.\u201d South Sudan Is Building Its Electric Grid Virtually From Scratch \u203a Italy strikes down Sardinian moratorium on.",
+        "One company building an agriphotovoltaic plant raced to bring construction to 30 percent completion, which the new law said was the threshold for being allowed to proceed.",
+        "He was one of the only people instructed to look toward the blast - through his welder\u2019s glasses - ready to follow the path of the fireball as it launched into the sky.",
+        "This story was updated on 13 May, 2026 to correct the percentage of electricity that Sardinia exports.",
+        "The scheme will help power the data center, which will be built both above and below ground, including in the mine\u2019s largest chambers nearly 500 meters below the Earth\u2019s surface.",
+        "Wetour Robotics uses an AI-agent layer to negotiate connection and protocol translation adaptively, so that Orchestra OS can ingest data from a wide range of devices, run them through neural network models that infer.",
+        "The invasions started with the relatively peaceful settlement of the Phoenicians in the 9th and 8th centuries B.C.E.",
+        "Orchestra itself is the local compute and orchestration core: a portable intelligent hub running the operating system that handles sensor fusion, intent inference, command translation, and safety arbitration.",
+        "Food and Drug Administration] is approving a new drug, you go through different stages of trials, but after the drug is released, the FDA still mandates that companies do post-deployment monitoring, looking at things."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/caef3f1a84c954a4.img",
+      "image_url": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202000%202667'%3E%3C/svg%3E",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "a9d99ead4bdd46a78632b5b04757140a"
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/openai-vs-anthropic-vs-google-model-isn-t-the-point",
+      "title": "OpenAI vs. Anthropic vs. Google: But the Model Isn't the Point",
+      "description": "Enterprises are looking to get the job done, not for a specific brand of AI.",
+      "excerpt": "Enterprises are looking to get the job done, not for a specific brand of AI.",
+      "summary": "Many companies are still at an early stage, either experimenting with AI or deploying it in limited and fragmented workflows across the enterprise, according to a research paper by Jeanne McClure, a postdoctoral research fellow at NC State University's Data Science and AI Academy, and Gregg Gerdau, a managing partner at Matador Advisors, a venture advisory firm. \"The ecosystem piece will be key in the next 12 to 18 months.\" Frank Dickson, an analyst at IDC, said MCP \"is being adopted at a pace that has outrun the. Models will improve on different tasks over time, and organizations want to avoid the risk of a single frontier model falling behind, McMillan said. Related: Safeguarding SaaS Success in the Changing AI Market \"The model is not going to be the special sauce -- they all produce spectacular models,\" said Alisa Scharf, chief AI officer at Seer Interactive, a digital marketing company. \"Enterprise customers expect enterprise capabilities,\" said Ray Wang, founder and principal analyst at Constellation Research. It includes data, the data model, controls and governance, AI models, orchestration and applications.",
+      "what_happened": "Many companies are still at an early stage, either experimenting with AI or deploying it in limited and fragmented workflows across the enterprise, according to a research paper by Jeanne McClure, a postdoctoral research fellow at NC State University's Data Science and AI Academy, and Gregg Gerdau, a managing partner at Matador Advisors, a venture advisory firm. \"The ecosystem piece will be key in the next 12 to 18 months.\" Frank Dickson, an analyst at IDC, said MCP \"is being adopted at a pace that has outrun the.",
+      "why_matters": "Models will improve on different tasks over time, and organizations want to avoid the risk of a single frontier model falling behind, McMillan said. Related: Safeguarding SaaS Success in the Changing AI Market \"The model is not going to be the special sauce -- they all produce spectacular models,\" said Alisa Scharf, chief AI officer at Seer Interactive, a digital marketing company.",
+      "what_to_watch": "\"Enterprise customers expect enterprise capabilities,\" said Ray Wang, founder and principal analyst at Constellation Research. It includes data, the data model, controls and governance, AI models, orchestration and applications.",
+      "key_points": [
+        "It includes data, the data model, controls and governance, AI models, orchestration and applications.",
+        "This makes the data plumbing and orchestration all the more important.",
+        "Many companies are still at an early stage, either experimenting with AI or deploying it in limited and fragmented workflows across the enterprise, according to a research paper by Jeanne McClure, a postdoctoral.",
+        "The orchestration layer \"gives you the flexibility by avoiding direct connection between your apps and the model, \" he said.",
+        "The specific frontier model matters less than the workflows and plumbing around it, he said.",
+        "The firm already uses Google Workspace as well as Big Query, Google's data warehouse, and the tech giant's BI application Data Studio.",
+        "Google: But the Model Isn't the Point Enterprises are looking to get the job done, not for a specific brand of AI.",
+        "AI agents can use these services to access systems and data and act autonomously.",
+        "Models will improve on different tasks over time, and organizations want to avoid the risk of a single frontier model falling behind, McMillan said.",
+        "Related: Safeguarding SaaS Success in the Changing AI Market \"The model is not going to be the special sauce -- they all produce spectacular models,\" said Alisa Scharf, chief AI officer at Seer Interactive, a digital.",
+        "Apart from the risk of vendor lock-in , users are frustrated if they can't access the model of their choice.",
+        "But the real dependency risk might not come from the models themselves, Madduri said."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/be753ffbee22265b.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltdb9fe516e837c101/6a1d8b5a479f3e38d05cf31a/SoftBank.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/78181772d744e7d6.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/074bdebe8268e6f4.webp"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltf864463ec1c001b4/6a203dfaa0b6da8b9813f90f/Glasswing.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltd7a7b7e999f08e91/6a182945ebd0746ed016d980/Router.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ],
+      "_story_id": "17c8cd0c7f724eefaff7ad1da6b3a872"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 9,
+  "has_cta": true,
+  "slides": [
+    "Coralogix raises $200M on bet that someone needs to watch the AI.",
+    "Introducing the Services Track and Partner Hub of the Claude Partner Network.",
+    "Research Economic Futures Commitments Learn News Try Claude Policy Frontier Red Team.",
+    "Adding MCP Tools to Reachy Mini.",
+    "Meta's AI agent for WhatsApp Business is now available globally.",
+    "5 ways Google Search can level up your thrift and vintage shopping.",
+    "This article appears in the June 2026 print issue as \" Sardinia's.",
+    "OpenAI vs Anthropic vs Google But the Model Isn't the Point.",
+    "FOLLOW @graitech"
+  ]
+}
