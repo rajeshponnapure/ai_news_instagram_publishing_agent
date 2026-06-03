@@ -1,0 +1,80 @@
+{
+  "email_received_at": "2026-06-03T04:20+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Wed, 03 Jun 2026 04:20:14 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.engadget.com/2185845/trump-signs-scaled-back-ai-cybersecurity-order/",
+      "title": "Company : Engadget",
+      "description": "[MEDIUM] Trump signs scaled-back AI cybersecurity order Company : Engadget Summary : AI models can voluntarily submitted to the government for review 30 days before release under Trump's new executive order. Link :",
+      "text": "[MEDIUM] Trump signs scaled-back AI cybersecurity order Company : Engadget Summary : AI models can voluntarily submitted to the government for review 30 days before release under Trump's new executive order. Link :",
+      "excerpt": "[MEDIUM] Trump signs scaled-back AI cybersecurity order Company : Engadget Summary : AI models can voluntarily submitted to the government for review 30 days before release under Trump's new executive order. Link :",
+      "image_url": "https://www.engadget.com/img/gallery/trump-signs-scaled-back-ai-cybersecurity-order/l-intro-1780430587.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.engadget.com/2185845/trump-signs-scaled-back-ai-cybersecurity-order/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.theverge.com/tech/941517/google-phone-scammer-ai-impersonation",
+      "title": "Company : The Verge AI",
+      "description": "[HIGH] Google\u2019s Phone app will tell you if a scammer is impersonating one of your contacts Company : The Verge AI Summary : Google is launching a new feature for its Phone app that aims to protect you from AI impersonation scams. Now, when you receive a call from a scammer that appears to be coming from the same number as Link :",
+      "text": "[HIGH] Google\u2019s Phone app will tell you if a scammer is impersonating one of your contacts Company : The Verge AI Summary : Google is launching a new feature for its Phone app that aims to protect you from AI impersonation scams. Now, when you receive a call from a scammer that appears to be coming from the same number as Link :",
+      "excerpt": "[HIGH] Google\u2019s Phone app will tell you if a scammer is impersonating one of your contacts Company : The Verge AI Summary : Google is launching a new feature for its Phone app that aims to protect you from AI impersonation scams. Now, when you receive a call from a scammer that appears to be coming from the same number as Link :",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/0.-Fake-call-detection-header.png?quality=90&amp;strip=all&amp;crop=0%2C3.579433208423%2C100%2C92.841133583154&amp;w=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theverge.com/tech/941517/google-phone-scammer-ai-impersonation",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.engadget.com/2184125/android-will-now-warn-you-if-a-caller-is-impersonating-someone-you-know/",
+      "title": "Company : Engadget",
+      "description": "[HIGH] Android will now warn you if a caller is impersonating someone you know Company : Engadget Summary : Google Photos and Google Play Books are also getting new AI-powered updates. Link :",
+      "text": "[HIGH] Android will now warn you if a caller is impersonating someone you know Company : Engadget Summary : Google Photos and Google Play Books are also getting new AI-powered updates. Link :",
+      "excerpt": "[HIGH] Android will now warn you if a caller is impersonating someone you know Company : Engadget Summary : Google Photos and Google Play Books are also getting new AI-powered updates. Link :",
+      "image_url": "https://www.engadget.com/img/gallery/android-will-now-warn-you-if-a-caller-is-impersonating-someone-you-know/l-intro-1780092847.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.engadget.com/2184125/android-will-now-warn-you-if-a-caller-is-impersonating-someone-you-know/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/02/openai-launches-new-codex-tools-for-white-collar-work/",
+      "title": "Company : TechCrunch AI",
+      "description": "[HIGH] OpenAI launches new Codex tools for white-collar work Company : TechCrunch AI Summary : OpenAI released a set of six plug-ins aimed at specific jobs: data analytics, creative production, sales, product design, equity investing, and investment banking. Available from within the Codex app, Link :",
+      "text": "[HIGH] OpenAI launches new Codex tools for white-collar work Company : TechCrunch AI Summary : OpenAI released a set of six plug-ins aimed at specific jobs: data analytics, creative production, sales, product design, equity investing, and investment banking. Available from within the Codex app, Link :",
+      "excerpt": "[HIGH] OpenAI launches new Codex tools for white-collar work Company : TechCrunch AI Summary : OpenAI released a set of six plug-ins aimed at specific jobs: data analytics, creative production, sales, product design, equity investing, and investment banking. Available from within the Codex app, Link :",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/05/russell-e1755718978143.jpg?w=110",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://techcrunch.com/2026/06/02/openai-launches-new-codex-tools-for-white-collar-work/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "Previously Rejected Articles Now Recovered.",
+    "FOLLOW @graitech"
+  ]
+}
