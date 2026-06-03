@@ -1,0 +1,27 @@
+Anthropic is expanding Project Glasswing, its security vulnerability program, and access to Mythos to 150 orga matters.
+
+Swipe for the full breakdown.
+
+- In early April, Anthropic gave 50 initial partners, including the U.S.
+- Anthropic is expanding Project Glasswing, its security vulnerability program, and access to Mythos to 150 organizations across 15.
+- Since releasing Mythos, rival OpenAI released its own cybersecurity-focused model GPT-5.5-Cyber, which it has rolled out.
+- The expanded list of organizations with access to Mythos as of today covers power, water, healthcare, communications.
+- "For most partners, we estimate that a major attack could affect more than 100 million people, with important.
+
+Which industry do you think will feel the impact of this first?
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/
+- https://blogs.nvidia.com/blog/industrial-software-leaders-secure-autonomous-ai-engineers-nemoclaw/
+- https://huggingface.co/blog/lucidml/516supercut
+- https://docs.nvidia.com/deeplearning/tensorrt/latest/getting-started/release-notes-11/11.0.0.html
+- https://www.therobotreport.com/petal-surgical-adds-more-funding-for-incisionless-surgical-robot/
+
+#AINews #AITools #GenerativeAI #Anthropic #Claude #AIUpdates #ArtificialIntelligence #FutureOfAI #TechTrends #DigitalTransformation #Technology #Tech #AIExplained #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing #MLNews #AIWeekly #TechInnovation
+
+-
+This is not medical advice. AI health tools do not replace professional care.
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-

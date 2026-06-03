@@ -1,0 +1,374 @@
+{
+  "email_received_at": "2026-06-03T00:05+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Anthropic scales Claude Mythos to critical infrastructure in 15+ countries | TechCrunch",
+  "subject": "",
+  "source_date": "2026-06-03T00:05:58.238116",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/",
+  "article_title": "Anthropic scales Claude Mythos to critical infrastructure in 15+ countries | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/629e54341b222220.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2269811684.jpg?w=1024",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/",
+      "title": "Anthropic scales Claude Mythos to critical infrastructure in 15+ countries | TechCrunch",
+      "description": "Anthropic is expanding Project Glasswing, its security vulnerability program, and access to Mythos to 150 organizations across 15 countries - targeting critical infrastructure in power, water, healthcare, and communications where a cyberattack could affect 100 million people.",
+      "excerpt": "Anthropic is expanding Project Glasswing, its security vulnerability program, and access to Mythos to 150 organizations across 15 countries - targeting critical infrastructure in power, water, healthcare, and communications where a cyberattack could affect 100 million people.",
+      "summary": "In early April, Anthropic gave 50 initial partners , including the U.S. More from TechCrunch Anthropic scales Claude Mythos to critical infrastructure in 15+ countries Anthropic is expanding Project Glasswing , its joint industry initiative to find and fix critical software vulnerabilities using AI, to about 150 new organizations across more than 15 countries, the company said Tuesday. The expanded list of organizations with access to Mythos as of today covers power, water, healthcare, communications, and hardware - industries that weren\u2019t \u201cwell-represented\u201d in Anthropic\u2019s initial cohort, the company said. \u201cWhat each partner has in common is that a successful attack on their codebase could be catastrophic,\u201d the company said. Anthropic is expanding Project Glasswing, its security vulnerability program, and access to Mythos to 150 organizations across 15 countries - targeting critical infrastructure in power, water, healthcare, and communications where a cyberattack could affect 100 million people.",
+      "what_happened": "In early April, Anthropic gave 50 initial partners , including the U.S. More from TechCrunch Anthropic scales Claude Mythos to critical infrastructure in 15+ countries Anthropic is expanding Project Glasswing , its joint industry initiative to find and fix critical software vulnerabilities using AI, to about 150 new organizations across more than 15 countries, the company said Tuesday.",
+      "why_matters": "The expanded list of organizations with access to Mythos as of today covers power, water, healthcare, communications, and hardware - industries that weren\u2019t \u201cwell-represented\u201d in Anthropic\u2019s initial cohort, the company said. \u201cWhat each partner has in common is that a successful attack on their codebase could be catastrophic,\u201d the company said.",
+      "what_to_watch": "Anthropic is expanding Project Glasswing, its security vulnerability program, and access to Mythos to 150 organizations across 15 countries - targeting critical infrastructure in power, water, healthcare, and communications where a cyberattack could affect 100 million people.",
+      "key_points": [
+        "In early April, Anthropic gave 50 initial partners , including the U.S.",
+        "More from TechCrunch Anthropic scales Claude Mythos to critical infrastructure in 15+ countries Anthropic is expanding Project Glasswing , its joint industry initiative to find and fix critical software vulnerabilities.",
+        "Anthropic is expanding Project Glasswing, its security vulnerability program, and access to Mythos to 150 organizations across 15 countries - targeting critical infrastructure in power, water, healthcare, and.",
+        "Since releasing Mythos, rival OpenAI released its own cybersecurity-focused model GPT-5.5-Cyber, which it has rolled out to a large group of partners for testing.",
+        "The expanded list of organizations with access to Mythos as of today covers power, water, healthcare, communications, and hardware - industries that weren\u2019t \u201cwell-represented\u201d in Anthropic\u2019s initial cohort, the company.",
+        "\u201cFor most partners, we estimate that a major attack could affect more than 100 million people, with important ramifications for both global and national security.\u201d The expanded group includes organizations in countries.",
+        "Anthropic\u2019s Claude Mythos is at the heart of Project Glasswing.",
+        "Rebecca Bellan is a senior reporter at TechCrunch where she covers the business, policy, and emerging trends shaping artificial intelligence.",
+        "\u201cWhat each partner has in common is that a successful attack on their codebase could be catastrophic,\u201d the company said.",
+        "\u2018What a joke\u2019: GitHub Copilot\u2019s new token-based billing spurs consternation among devs I put Google\u2019s 24/7 AI assistant Gemini Spark to work, and it\u2019s actually pretty useful Blue Origin\u2019s New Glenn rocket explodes.",
+        "The AI firm dubbed the model its most powerful yet, able to identify thousands of zero-day vulnerabilities over several weeks.",
+        "Her work has also appeared in Forbes, Bloomberg, The Atlantic, The Daily Beast, and other publications."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/629e54341b222220.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2269811684.jpg?w=1024",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "ae7681ddc2cb458f96389d530ae44b83"
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/industrial-software-leaders-secure-autonomous-ai-engineers-nemoclaw/",
+      "title": "Industrial Software Leaders Build Secure, Autonomous AI Engineers With NVIDIA NemoClaw",
+      "description": "Showcased at GTC Taipei at COMPUTEX, autonomous AI engineers compress weeks of simulation work into just hours.",
+      "excerpt": "Showcased at GTC Taipei at COMPUTEX, autonomous AI engineers compress weeks of simulation work into just hours.",
+      "summary": "Siemens is integrating NVIDIA NemoClaw and OpenShell into Fuse EDA AI Agent, a purpose-built autonomous agent that plans and orchestrates domain-scoped multi-tool workflows across semiconductor, 3D integrated circuit and printed circuit board system design. NemoClaw includes a choice of harness - meaning it can be integrated with various orchestration frameworks enterprises use to deploy and coordinate agents, such as OpenClaw and Hermes - as well as a model router and NVIDIA NeMo libraries for customization. Bringing together the PhysicsX platform, Microsoft Discovery and NVIDIA NemoClaw, the agent automates the full thermal simulation lifecycle for consumer devices such as Microsoft Surface laptops - from mesh sensitivity analysis and simulation data generation, through physics AI model training and optimization-loop execution, to continuous accuracy monitoring across the design exploration process. Watch NVIDIA CEO Jensen. Luminary is building a long-running AI engineer using NemoClaw to dramatically reduce the time and complexity of training AI physics models by autonomously orchestrating data generation, machine learning model selection, and training and re-training loops.",
+      "what_happened": "Siemens is integrating NVIDIA NemoClaw and OpenShell into Fuse EDA AI Agent, a purpose-built autonomous agent that plans and orchestrates domain-scoped multi-tool workflows across semiconductor, 3D integrated circuit and printed circuit board system design. NemoClaw includes a choice of harness - meaning it can be integrated with various orchestration frameworks enterprises use to deploy and coordinate agents, such as OpenClaw and Hermes - as well as a model router and NVIDIA NeMo libraries for customization.",
+      "why_matters": "Bringing together the PhysicsX platform, Microsoft Discovery and NVIDIA NemoClaw, the agent automates the full thermal simulation lifecycle for consumer devices such as Microsoft Surface laptops - from mesh sensitivity analysis and simulation data generation, through physics AI model training and optimization-loop execution, to continuous accuracy monitoring across the design exploration process. Watch NVIDIA CEO Jensen.",
+      "what_to_watch": "Luminary is building a long-running AI engineer using NemoClaw to dramatically reduce the time and complexity of training AI physics models by autonomously orchestrating data generation, machine learning model selection, and training and re-training loops.",
+      "key_points": [
+        "Luminary is building a long-running AI engineer using NemoClaw to dramatically reduce the time and complexity of training AI physics models by autonomously orchestrating data generation, machine learning model.",
+        "Siemens is integrating NVIDIA NemoClaw and OpenShell into Fuse EDA AI Agent, a purpose-built autonomous agent that plans and orchestrates domain-scoped multi-tool workflows across semiconductor, 3D integrated circuit.",
+        "NemoClaw includes a choice of harness - meaning it can be integrated with various orchestration frameworks enterprises use to deploy and coordinate agents, such as OpenClaw and Hermes - as well as a model router and.",
+        "Bringing together the PhysicsX platform, Microsoft Discovery and NVIDIA NemoClaw, the agent automates the full thermal simulation lifecycle for consumer devices such as Microsoft Surface laptops - from mesh sensitivity.",
+        "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local Why Financial Institutions Are Converging on.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "P-1 AI is building Archie, an AI mechanical and electrical engineer that already works with data center cooling and critical power systems, and will soon work for automotive, aerospace and national security use cases.",
+        "Users can easily deploy NemoClaw from NVIDIA DGX Spark personal AI supercomputers, as well as through enterprise data centers and cloud service providers.",
+        "Neural Concept is deploying an agent for electric motor design.",
+        "These AI engineers are based on NVIDIA NemoClaw , an open blueprint for building specialized, long-running agents with a secure runtime and frontier models.",
+        "Industrial Engineering Leaders Build AI Agents Across Design, Engineering, Simulation Industrial software leaders are building AI engineers for computer-aided engineering (CAE) and electronic design automation (EDA) use.",
+        "PhysicsX is partnering with the Microsoft Surface team to build an electronics thermal simulation agent that compresses weeks of manual CAE workflows into automated, AI-driven design cycles."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a74480578daeee04.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/industrial-ai-engineers-kv-1920x1080-1.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/078b14f9097f3ad0.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/56139373744bcf3e.jpg"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/synopsys-image-1680x1009.jpg",
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/industrial-ai-engineers-kv-1920x1080-1-1280x720.jpg"
+      ],
+      "_story_id": "a9dc5c375b7544e89335302156482fc4"
+    },
+    {
+      "url": "https://huggingface.co/blog/lucidml/516supercut",
+      "title": "A Deep Neural Network that turns Any Image into a Playable Game! All on consumer GPUs, NOT DATACENTER",
+      "description": "A Blog post by lucidml on Hugging Face",
+      "excerpt": "A Blog post by lucidml on Hugging Face",
+      "summary": "What's funny is that this is barely 1% of what's achievable. I started from the weights of the lucidml 420M image DiT model. I started from the weights of the lucidml 420M image DiT model. Every clip in this video is from real play sessions where I was controlling the video. The model takes in an image and realtime keyboard input from me, then generates future frames autoregressively. I started from the weights of the lucidml 420M image DiT model.",
+      "what_happened": "What's funny is that this is barely 1% of what's achievable. I started from the weights of the lucidml 420M image DiT model.",
+      "why_matters": "I started from the weights of the lucidml 420M image DiT model. Every clip in this video is from real play sessions where I was controlling the video.",
+      "what_to_watch": "The model takes in an image and realtime keyboard input from me, then generates future frames autoregressively. I started from the weights of the lucidml 420M image DiT model.",
+      "key_points": [
+        "I started from the weights of the lucidml 420M image DiT model.",
+        "Every clip in this video is from real play sessions where I was controlling the video.",
+        "From there, I added temporal mixing modules and trained on video and gameplay data to model dynamics over time.",
+        "None of the initial images were from the training dataset.",
+        "That makes the core denoiser completely trained from scratch , and not an AR-distillation of an existing video model.",
+        "PS, I used handbrake to make the file size smaller, hope that hasn't affected the video quality much.",
+        "All on consumer GPUs, NOT DATACENTER PS, I used handbrake to make the file size smaller, hope that hasn't affected the video quality much.",
+        "As I write this, I'm finishing training a newer 800M model that significantly improves motion quality, diversity, and long-context behavior on top of the ideas explored here.",
+        "The model takes in an image and realtime keyboard input from me, then generates future frames autoregressively.",
+        "PS: This was my first time ever editing a video in Final Cut Pro.",
+        "What's funny is that this is barely 1% of what's achievable.",
+        "This video is a supercut of some of my favorite rollouts so far."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0b57c3b37997768d.webp",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/69fb1da31c5d292ebc00b4b1/Bp72jOvPdEbuPXLjs8KAw.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "b7169897b743465fb3df97cf65035a65"
+    },
+    {
+      "url": "https://docs.nvidia.com/deeplearning/tensorrt/latest/getting-started/release-notes-11/11.0.0.html",
+      "title": "TensorRT 11.0.0 Release Notes \u2014 NVIDIA TensorRT",
+      "description": "",
+      "excerpt": "Adding Custom Layers using the Python API (TensorRT >= 10.6) Appendix: Migrating Safety Runtime Code from TensorRT 8.x to 10.x TensorRT 11.0.0 Release Notes # These Release Notes apply to x86 Linux and Windows users, and ARM-based CPU cores for Server Base System Architecture (SBSA) users on Linux. This release includes several fixes from the previous TensorRT releases and additional changes. RHEL 10 / Rocky Linux 10 support : RPM and tar packages are now available for Red Hat Enterprise Linux 10 and Rocky Linux 10. New Migration Guide content : The Migration Guide now includes a complete TensorRT 10.x to 11.x migration path with chapters covering the C++ API, Python API, trtexec ...",
+      "summary": "Adding Custom Layers using the Python API (TensorRT >= 10.6) Appendix: Migrating Safety Runtime Code from TensorRT 8.x to 10.x TensorRT 11.0.0 Release Notes # These Release Notes apply to x86 Linux and Windows users, and ARM-based CPU cores for Server Base System Architecture (SBSA) users on Linux. The TensorRT Python bindings for Python versions 3.8 and 3.9 are considered deprecated starting with this release. New Migration Guide content : The Migration Guide now includes a complete TensorRT 10.x to 11.x migration path with chapters covering the C++ API, Python API, trtexec , Safety Runtime, IEngineInspector JSON output changes, and platform-specific guidance for NVIDIA DriveOS and Jetson/JetPack . IPluginV3 plugins that advertise a PluginField with a nullptr data pointer and length == 0 can crash inside the V3 creator dispatch. The OSS BERT plugin family is deprecated in this release and will be removed in a future release. As a workaround, rebuild the affected VC engines with a newer TensorRT 10.x release (10.2 or later) before deserializing them with the TensorRT 11.0.0 runtime on Windows.",
+      "what_happened": "Adding Custom Layers using the Python API (TensorRT >= 10.6) Appendix: Migrating Safety Runtime Code from TensorRT 8.x to 10.x TensorRT 11.0.0 Release Notes # These Release Notes apply to x86 Linux and Windows users, and ARM-based CPU cores for Server Base System Architecture (SBSA) users on Linux. The TensorRT Python bindings for Python versions 3.8 and 3.9 are considered deprecated starting with this release.",
+      "why_matters": "New Migration Guide content : The Migration Guide now includes a complete TensorRT 10.x to 11.x migration path with chapters covering the C++ API, Python API, trtexec , Safety Runtime, IEngineInspector JSON output changes, and platform-specific guidance for NVIDIA DriveOS and Jetson/JetPack . IPluginV3 plugins that advertise a PluginField with a nullptr data pointer and length == 0 can crash inside the V3 creator dispatch.",
+      "what_to_watch": "The OSS BERT plugin family is deprecated in this release and will be removed in a future release. As a workaround, rebuild the affected VC engines with a newer TensorRT 10.x release (10.2 or later) before deserializing them with the TensorRT 11.0.0 runtime on Windows.",
+      "key_points": [
+        "Adding Custom Layers using the Python API (TensorRT >= 10.6) Appendix: Migrating Safety Runtime Code from TensorRT 8.x to 10.x TensorRT 11.0.0 Release Notes # These Release Notes apply to x86 Linux and Windows users.",
+        "The TensorRT Python bindings for Python versions 3.8 and 3.9 are considered deprecated starting with this release.",
+        "As a workaround, rebuild the affected VC engines with a newer TensorRT 10.x release (10.2 or later) before deserializing them with the TensorRT 11.0.0 runtime on Windows.",
+        "Multi-Device Inference is now fully supported : In TensorRT 10.16, Multi-Device Inference was a preview feature that required manually enabling the PreviewFeature::kMULTIDEVICE_RUNTIME_10_16 flag in the builder config.",
+        "Backend performance improvements for MoE inference : Builds on the MoE inference capability introduced in TensorRT 10.16 with significant backend optimizations.",
+        "Until an ONNX Runtime release adopting the TensorRT 11.x API is available, applications integrating ONNX Runtime with TensorRT must either remain on TensorRT 10.x or apply a local patch that removes the references and.",
+        "The supported configuration in TensorRT 11.0.0 is to build with strongly-typed networks (which is the default in 11.0.0, since the precision-enabling BuilderFlag values have been removed).",
+        "The OSS BERT plugin family is deprecated in this release and will be removed in a future release.",
+        "These ops require NCCL \u2265 2.7.0, which is why TensorRT 11.0.0 raises the minimum supported NCCL version (refer to the TensorRT Support Matrix for the full NCCL range).",
+        "In 11.0.0, the plugin is OSS-only.",
+        "ONNX Runtime release 1.24.4 and earlier cannot compile their TensorRT Execution Provider against TensorRT 11.0.0 because the provider still references APIs that were removed in TensorRT 11.0 - namely.",
+        "This release includes several fixes from the previous TensorRT releases and additional changes."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "012a0a0ba76946fbbe0624065dc71f93"
+    },
+    {
+      "url": "https://www.therobotreport.com/petal-surgical-adds-more-funding-for-incisionless-surgical-robot/",
+      "title": "Petal Surgical adds more funding for incisionless surgical robot",
+      "description": "Petal Surgical today announced a new financing round to support its incisionless surgery platform as it works toward first-in-human studies.",
+      "excerpt": "Petal Surgical today announced a new financing round to support its incisionless surgery platform as it works toward first-in-human studies.",
+      "summary": "Petal Surgical adds more funding for incisionless surgical robot Petal Surgical today announced a new financing round to support its incisionless surgery platform as it works toward first-in-human studies. The company says its precise, reproducible tissue treatment uses Millisecond Pulse Histotripsy while further integrating robotics, imaging and AI-driven controls into its architecture. Petal Surgical today announced a new financing round to support its incisionless surgery platform as it works toward first-in-human studies. Blue Pool Capital led the latest financing round for the company, which emerged from stealth with a $10 million Series A last fall. Fred Moll - considered the \u201cfather of surgical robotics \u201d - also joined the Petal Surgical board.",
+      "what_happened": "Petal Surgical adds more funding for incisionless surgical robot Petal Surgical today announced a new financing round to support its incisionless surgery platform as it works toward first-in-human studies. The company says its precise, reproducible tissue treatment uses Millisecond Pulse Histotripsy while further integrating robotics, imaging and AI-driven controls into its architecture.",
+      "why_matters": "Petal Surgical today announced a new financing round to support its incisionless surgery platform as it works toward first-in-human studies. Blue Pool Capital led the latest financing round for the company, which emerged from stealth with a $10 million Series A last fall.",
+      "what_to_watch": "Fred Moll - considered the \u201cfather of surgical robotics \u201d - also joined the Petal Surgical board.",
+      "key_points": [
+        "The company said its Series A brought its total funding to $20 million at the time.",
+        "Petal Surgical adds more funding for incisionless surgical robot Petal Surgical today announced a new financing round to support its incisionless surgery platform as it works toward first-in-human studies.",
+        "The company says its precise, reproducible tissue treatment uses Millisecond Pulse Histotripsy while further integrating robotics, imaging and AI-driven controls into its architecture.",
+        "Fred Moll - considered the \u201cfather of surgical robotics \u201d - also joined the Petal Surgical board.",
+        "Petal Surgical today announced a new financing round to support its incisionless surgery platform as it works toward first-in-human studies.",
+        "Blue Pool Capital led the latest financing round for the company, which emerged from stealth with a $10 million Series A last fall.",
+        "Petal Surgical now continues to gain momentum as it advances its new approach to surgery that uses acoustic liquefaction (a form of histotripsy), AI and robotics.",
+        "GMSL and the growing ecosystem around robotic vision systems GMSL and the growing ecosystem around robotic vision systems Search The Robot Report",
+        "This allows for clear and connected treatment regions with more opportunities to break down tougher tissues.",
+        "Moll was a participant in the October financing round.",
+        "The company says the body heals itself naturally with no cuts, burns or toxicity.",
+        "Then, in March, it said that total eclipsed $25 million through another financing round."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e0bca3ea8a5fe11c.png",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/05/rbr50-sidebar-promo.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "4c0e7b8559084698b94a8e23376987fa"
+    },
+    {
+      "url": "https://www.therobotreport.com/fort-robotics-acquires-mapless-ai-to-expand-teleop-capabilities/",
+      "title": "FORT Robotics acquires Mapless AI to expand teleop capabilities",
+      "description": "While FORT has traditionally worked with technology in industrial environments, Mapless AI brings experience in more unstructured settings.",
+      "excerpt": "While FORT has traditionally worked with technology in industrial environments, Mapless AI brings experience in more unstructured settings.",
+      "summary": "FORT Robotics acquires Mapless AI to expand teleop capabilities FORT Robotics recently acquired Mapless AI, a Boston- and Pittsburgh-based developer of teleoperation and onboard active safety technology. \u201cJoining the FORT family allows us to bring our safety-first vision to a much larger platform, accelerating the type of products that will define the next decade of industrial automation and physical AI.\u201d Brianna Wessling is an Associate Editor, Robotics, WTWH Media. Acquiring Mapless AI expands our platform to directly meet this vital need, allowing FORT to deliver the proactive safety frameworks our customers are asking for. FORT to adopt two technologies from Mapless AI With the acquisition, FORT is adding two pieces of technology from Mapless AI to its platform: Human-in-the-Loop from Anywhere (remote teleoperation): The platform now enables remote teleoperation across long distances. She covers a wide range of robotics topics, but specializes in women in robotics, robotics in healthcare, and space robotics.",
+      "what_happened": "FORT Robotics acquires Mapless AI to expand teleop capabilities FORT Robotics recently acquired Mapless AI, a Boston- and Pittsburgh-based developer of teleoperation and onboard active safety technology. \u201cJoining the FORT family allows us to bring our safety-first vision to a much larger platform, accelerating the type of products that will define the next decade of industrial automation and physical AI.\u201d Brianna Wessling is an Associate Editor, Robotics, WTWH Media.",
+      "why_matters": "Acquiring Mapless AI expands our platform to directly meet this vital need, allowing FORT to deliver the proactive safety frameworks our customers are asking for. FORT to adopt two technologies from Mapless AI With the acquisition, FORT is adding two pieces of technology from Mapless AI to its platform: Human-in-the-Loop from Anywhere (remote teleoperation): The platform now enables remote teleoperation across long distances.",
+      "what_to_watch": "She covers a wide range of robotics topics, but specializes in women in robotics, robotics in healthcare, and space robotics.",
+      "key_points": [
+        "FORT Robotics acquires Mapless AI to expand teleop capabilities FORT Robotics recently acquired Mapless AI, a Boston- and Pittsburgh-based developer of teleoperation and onboard active safety technology.",
+        "We are building the foundational trust system to ensure that as robots become more autonomous, safety is an accelerator rather than a bottleneck.\u201d Founded in 2018, FORT Robotics provides a safety layer for physical AI.",
+        "She covers a wide range of robotics topics, but specializes in women in robotics, robotics in healthcare, and space robotics.",
+        "\u201cJoining the FORT family allows us to bring our safety-first vision to a much larger platform, accelerating the type of products that will define the next decade of industrial automation and physical AI.\u201d Brianna.",
+        "Since it launched, FORT has secured 27 patents and deployed more than 19,000 units to a global base of over 600 customers.",
+        "Acquiring Mapless AI expands our platform to directly meet this vital need, allowing FORT to deliver the proactive safety frameworks our customers are asking for.",
+        "Onboard Active Safety (Environmental Sensing): By adding onboard perception technology, FORT now enables machines to actively detect, anticipate, and respond to their environments in real time.",
+        "FORT to adopt two technologies from Mapless AI With the acquisition, FORT is adding two pieces of technology from Mapless AI to its platform: Human-in-the-Loop from Anywhere (remote teleoperation): The platform now.",
+        "This enables off-site specialists to monitor and operate vehicles or machine systems from anywhere.",
+        "She joined WTWH Media in November 2021, after graduating from the University of Kansas with degrees in Journalism and English.",
+        "By integrating these technologies, FORT said it will expand its technology from safety-certified machine control to a comprehensive architecture for supervised autonomy.",
+        "This predictive approach allows autonomous vehicles to execute smart, real-time planning and contingency maneuvers."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e0bca3ea8a5fe11c.png",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/05/rbr50-sidebar-promo.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "e14ac81a0412454aa491450f78012308"
+    },
+    {
+      "url": "https://aibusiness.com/agentic-ai/microsoft-fully-commits-ai-models-intros-unmetered-intelligence",
+      "title": "Microsoft Fully Commits to AI Models, Unmetered Intelligence",
+      "description": "Microsoft Fully Commits to AI Models, Intros Unmetered Intelligence",
+      "excerpt": "Microsoft Fully Commits to AI Models, Intros Unmetered Intelligence",
+      "summary": "Unmetered Intelligence For Microsoft, integrating the Aion models into its Surface RTX Spark Dev Box (a developer-focused machine for maximizing compute and memory, housed in a striking black box) is one way to achieve what CEO Satya Nadella called \"unmetered intelligence.\" That is the idea of moving away from deploying AI models in the cloud and instead enabling developers to run them locally on their computers. Along with Thinking One, Microsoft introduced models for text-to-image, image-to-image and voice. At its Microsoft Build conference in San Francisco on Tuesday, the vendor introduced a new desktop machine, the Surface RTX Spark Dev Box, a device that runs personal agents and new AI models and platforms to help enterprise developers deploy agentic workflows. \u201cMicrosoft is trying to communicate to the developer audience in particular that it is the best place for them to come and build their AI agents,\u201d said Ed Andersen, an. The Aion 1.0 Plan is for reasoning and tool-calling and is designed to orchestrate local agentic workflows. Microsoft Fully Commits to AI Models, Intros Unmetered Intelligence Microsoft Fully Commits to AI Models, Intros Unmetered Intelligence The.",
+      "what_happened": "Unmetered Intelligence For Microsoft, integrating the Aion models into its Surface RTX Spark Dev Box (a developer-focused machine for maximizing compute and memory, housed in a striking black box) is one way to achieve what CEO Satya Nadella called \"unmetered intelligence.\" That is the idea of moving away from deploying AI models in the cloud and instead enabling developers to run them locally on their computers. Along with Thinking One, Microsoft introduced models for text-to-image, image-to-image and voice.",
+      "why_matters": "At its Microsoft Build conference in San Francisco on Tuesday, the vendor introduced a new desktop machine, the Surface RTX Spark Dev Box, a device that runs personal agents and new AI models and platforms to help enterprise developers deploy agentic workflows. \u201cMicrosoft is trying to communicate to the developer audience in particular that it is the best place for them to come and build their AI agents,\u201d said Ed Andersen, an.",
+      "what_to_watch": "The Aion 1.0 Plan is for reasoning and tool-calling and is designed to orchestrate local agentic workflows. Microsoft Fully Commits to AI Models, Intros Unmetered Intelligence Microsoft Fully Commits to AI Models, Intros Unmetered Intelligence The vendor aims to demonstrate that enterprises can use its AI models and.",
+      "key_points": [
+        "Unmetered Intelligence For Microsoft, integrating the Aion models into its Surface RTX Spark Dev Box (a developer-focused machine for maximizing compute and memory, housed in a striking black box) is one way to achieve.",
+        "Microsoft Fully Commits to AI Models, Intros Unmetered Intelligence Microsoft Fully Commits to AI Models, Intros Unmetered Intelligence The vendor aims to demonstrate that enterprises can use its AI models and.",
+        "They include an AI model for desktop computers and the vendor\u2019s first reasoning model, the MAI Thinking One, which is also Microsoft\u2019s first homegrown entrant in the hot AI coding arena .",
+        "Along with Thinking One, Microsoft introduced models for text-to-image, image-to-image and voice generation workloads, all available on PowerPoint and OneDrive.",
+        "For instance, the cloud provider introduced several new on-device models: Aion 1.0 Instruct, Aion 1.0 Plan and Phi Silica.",
+        "\u201cThey want to show they can innovate all on their own.\u201d The need to innovate in the model arena was evident in the array of new models Microsoft introduced on Tuesday.",
+        "Related: Prompt: Robinhood Wants AI Agents to Trade, Spend on Your Behalf Although integrating other models is beneficial in a market where many enterprises are model-agnostic, Microsoft also showed at the conference.",
+        "At its Microsoft Build conference in San Francisco on Tuesday, the vendor introduced a new desktop machine, the Surface RTX Spark Dev Box, a device that runs personal agents and new AI models and platforms to help.",
+        "Aion 1.0 Instruct is a small language model built for text intelligence and fast processing.",
+        "The Aion 1.0 Plan is for reasoning and tool-calling and is designed to orchestrate local agentic workflows.",
+        "As it tries to reposition itself in the AI race following the end of its exclusive partnership with OpenAI, Microsoft is appealing to enterprise developers by showing how they can use the cloud giant\u2019s devices, tools.",
+        "The system enables users to define any requirements they want on their PCs, and Windows will enforce them when the agents run."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/be753ffbee22265b.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltdb9fe516e837c101/6a1d8b5a479f3e38d05cf31a/SoftBank.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/074bdebe8268e6f4.webp"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltd7a7b7e999f08e91/6a182945ebd0746ed016d980/Router.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ],
+      "_story_id": "ac480e91d0a745e2997775337314d303"
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/alphabet-sets-80b-ai-funding-goal",
+      "title": "Alphabet Sets $80B AI Funding Goal",
+      "description": "Alphabet Sets $80B AI Funding Goal",
+      "excerpt": "Alphabet Sets $80B AI Funding Goal",
+      "summary": "The Google parent said in a statement on June 1 that the funds will support \u201cinvestments in its world-class AI compute infrastructure to meet its unprecedented customer demand.\u201d The fundraise will consist of a $30 billion public offering of Class A Common Stock and Class C Capital Stock, alongside a $10 billion private investment from Berkshire Hathaway -- building on the conglomerate's previous $4.3 billion stake in Alphabet it acquired in November. Alphabet is ramping up spending to try to close that gap. Google CEO Sundar Pichai previously warned investors the company is \"compute constrained in the near term\u201d \u2013 meaning it cannot build the necessary infrastructure to meet demand. \u201cAI is driving an expansionary moment for Alphabet,\u201d the company wrote in its statement. The development comes amid intensifying competition in the AI build-out race , with industry giants Amazon, Microsoft, Alphabet and Meta estimated to be on track to spend more than $700B this year on data centers, chips and computing infrastructure. Alphabet is ramping up spending to try to close that gap, revising.",
+      "what_happened": "The Google parent said in a statement on June 1 that the funds will support \u201cinvestments in its world-class AI compute infrastructure to meet its unprecedented customer demand.\u201d The fundraise will consist of a $30 billion public offering of Class A Common Stock and Class C Capital Stock, alongside a $10 billion private investment from Berkshire Hathaway -- building on the conglomerate's previous $4.3 billion stake in Alphabet it acquired in November. Alphabet is ramping up spending to try to close that gap.",
+      "why_matters": "Google CEO Sundar Pichai previously warned investors the company is \"compute constrained in the near term\u201d \u2013 meaning it cannot build the necessary infrastructure to meet demand. \u201cAI is driving an expansionary moment for Alphabet,\u201d the company wrote in its statement.",
+      "what_to_watch": "The development comes amid intensifying competition in the AI build-out race , with industry giants Amazon, Microsoft, Alphabet and Meta estimated to be on track to spend more than $700B this year on data centers, chips and computing infrastructure. Alphabet is ramping up spending to try to close that gap, revising.",
+      "key_points": [
+        "The Google parent said in a statement on June 1 that the funds will support \u201cinvestments in its world-class AI compute infrastructure to meet its unprecedented customer demand.\u201d The fundraise will consist of a $30.",
+        "Alphabet is ramping up spending to try to close that gap, revising its capital expenditure forecast in April this year to between $180 billion and $190 billion, up from its previous estimate of $175 billion to $185.",
+        "An additional $40 billion at-the-market offering program for Class A Common Stock and Class C Capital Stock is expected to begin in the third quarter of 2026.",
+        "Google CEO Sundar Pichai previously warned investors the company is \"compute constrained in the near term\u201d \u2013 meaning it cannot build the necessary infrastructure to meet demand.",
+        "Alphabet revealed plans to raise $80 billion in equity offerings as part of an ambitious push to expand its AI infrastructure.",
+        "The development comes amid intensifying competition in the AI build-out race , with industry giants Amazon, Microsoft, Alphabet and Meta estimated to be on track to spend more than $700B this year on data centers, chips.",
+        "During its Q1 2026 earnings call, Alphabet said it expects 2027 capital expenditures to increase significantly from 2026.",
+        "\u201cAI is driving an expansionary moment for Alphabet,\u201d the company wrote in its statement.",
+        "\u201cThe company is experiencing strong demand for its AI solutions and services from enterprises and consumers, at levels that are exceeding the company\u2019s available supply, \u201cBy scaling its investments, the company seeks to.",
+        "Yet investment ambitions are outpacing the physical capacity to host the necessary levels of AI infrastructure .",
+        "Scarlett Evans is a freelance writer with a focus on emerging technologies and the minerals industry.",
+        "Scarlett also has a background in the mining and resources sector, with experience at Mine Australia, Mine Technology and Power Technology."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a0c14a7949a8716b.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt77e92c50319861bc/6a1ee9912ae8fd24f682312e/Europe.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3ace86458a6a892e.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b8051e7edbfe9960.webp"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt68f5cd25dcabce66/68fbc4a1df1e043d350b2692/Google_Anthropic.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt90943a44d8b7656d/6a1df4f0a5c0c3b7e3d339f2/Anthropic.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ],
+      "_story_id": "80bdad64d4be4388812c1a51c4e56453"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 8,
+  "has_cta": true,
+  "slides": [
+    "Anthropic scales Claude Mythos to critical infrastructure in 15+ countries.",
+    "Industrial Software Leaders Build Secure Autonomous AI Engineers With NVIDIA NemoClaw.",
+    "A Deep Neural Network that turns Any Image into a Playable Game.",
+    "Petal Surgical adds more funding for incisionless surgical robot.",
+    "FORT Robotics acquires Mapless AI to expand teleop capabilities.",
+    "Microsoft Fully Commits to AI Models Unmetered Intelligence.",
+    "Alphabet Sets $80B AI Funding Goal.",
+    "FOLLOW @graitech"
+  ]
+}
