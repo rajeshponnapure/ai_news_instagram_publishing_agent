@@ -1,0 +1,66 @@
+{
+  "email_received_at": "2026-06-03T21:58+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Wed, 03 Jun 2026 21:58:39 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.marketingaiinstitute.com/blog/ai-b2b-marketers-summit-ai-agents",
+      "title": "Company : Marketing AI Inst.",
+      "description": "[MEDIUM] Three Steps to Start Integrating AI and AI Agents Into Your Marketing Workflows Company : Marketing AI Inst. Summary : Our 2026 State of AI for Business Report surveyed more than 2,100 business professionals \u2014 86% of whom are B2B marketers \u2014 and asked what AI training they want most. Link :",
+      "text": "[MEDIUM] Three Steps to Start Integrating AI and AI Agents Into Your Marketing Workflows Company : Marketing AI Inst. Summary : Our 2026 State of AI for Business Report surveyed more than 2,100 business professionals \u2014 86% of whom are B2B marketers \u2014 and asked what AI training they want most. Link :",
+      "excerpt": "[MEDIUM] Three Steps to Start Integrating AI and AI Agents Into Your Marketing Workflows Company : Marketing AI Inst. Summary : Our 2026 State of AI for Business Report surveyed more than 2,100 business professionals \u2014 86% of whom are B2B marketers \u2014 and asked what AI training they want most. Link :",
+      "image_url": "https://www.marketingaiinstitute.com/hubfs/B2B%20Blog%202.png",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.marketingaiinstitute.com/blog/ai-b2b-marketers-summit-ai-agents",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.producthunt.com/products/taskgpt-2",
+      "title": "Company : Product Hunt AI",
+      "description": "[MEDIUM] TaskGPT Company : Product Hunt AI Summary : Voice agent for MacOS Discussion | Link Link :",
+      "text": "[MEDIUM] TaskGPT Company : Product Hunt AI Summary : Voice agent for MacOS Discussion | Link Link :",
+      "excerpt": "[MEDIUM] TaskGPT Company : Product Hunt AI Summary : Voice agent for MacOS Discussion | Link Link :",
+      "image_url": "https://ph-files.imgix.net/77c5effe-73e0-4491-97b1-5a7213c9504f.png?auto=format&amp;fit=crop&amp;frame=1&amp;h=512&amp;w=1024",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.producthunt.com/products/taskgpt-2",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.therobotreport.com/festo-launches-pneumatic-gripper-tests-gripperai/",
+      "title": "Company : Robotics Business Review",
+      "description": "[HIGH] Festo launches lightweight pneumatic gripper and tests GripperAI Company : Robotics Business Review Summary : Festo has released a compact cobot gripper, and its robot-agnostic GripperAI enables grasping of objects without prior training. The post Festo launches lightweight pneumatic gripper and tests Gripper Link :",
+      "text": "[HIGH] Festo launches lightweight pneumatic gripper and tests GripperAI Company : Robotics Business Review Summary : Festo has released a compact cobot gripper, and its robot-agnostic GripperAI enables grasping of objects without prior training. The post Festo launches lightweight pneumatic gripper and tests Gripper Link :",
+      "excerpt": "[HIGH] Festo launches lightweight pneumatic gripper and tests GripperAI Company : Robotics Business Review Summary : Festo has released a compact cobot gripper, and its robot-agnostic GripperAI enables grasping of objects without prior training. The post Festo launches lightweight pneumatic gripper and tests Gripper Link :",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/06/festo-HPPH-gripper-featured.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.therobotreport.com/festo-launches-pneumatic-gripper-tests-gripperai/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "Best Products Launches Launch archive Most-loved launches by the community Launch Guide.",
+    "FOLLOW @graitech"
+  ]
+}

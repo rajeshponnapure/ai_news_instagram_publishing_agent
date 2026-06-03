@@ -1,0 +1,27 @@
+NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills.
+
+Swipe for the full breakdown.
+
+- Artificial Intelligence Inference ﻿ Agentic AI ﻿ Open Source ﻿ Generative AI ﻿ AI for Good ﻿ Research.
+- Earlier this week, NVIDIA announced NVIDIA Cosmos 3, the open frontier model for physical AI and the world's.
+- Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent.
+- Agents can help launch simulation sessions, author scenes, control simulation, capture data and validate environments in Isaac Sim.
+- NVIDIA is also advancing AV research with its most powerful open driving foundation model to date: NVIDIA Alpamayo.
+
+Would you use something like this in your daily work? Yes or no in the comments.
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://blogs.nvidia.com/blog/cvpr-physical-ai-research-agent-skills/
+- https://blogs.nvidia.com/blog/cvpr-research-grasping-driving-agent-training/
+- https://techcrunch.com/2026/06/03/amazon-will-show-ai-product-images-when-you-search-for-some-reason/
+- https://techcrunch.com/2026/06/03/these-two-founders-left-goldman-and-meta-to-build-voice-ai-for-markets-everyone-else-overlooked/
+- https://huggingface.co/blog/chansung/autoresearch-on-diffusers-pipeline
+
+#AIAgents #AutonomousAgents #AIWorkflow #AutonomousAI #AIResearch #MLResearch #DeepLearning #NVIDIA #NVIDIAGPU #TechTrends #Innovation #EmergingTech #AINews #MachineLearning #DataScience #FutureTech #AIForEveryone #NeuralNetworks #ComputerVision #NaturalLanguageProcessing
+
+-
+Benchmarks reflect results at publication time and may change as models are updated.
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-

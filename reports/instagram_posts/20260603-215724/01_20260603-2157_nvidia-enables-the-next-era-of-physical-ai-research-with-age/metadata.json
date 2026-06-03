@@ -1,0 +1,375 @@
+{
+  "email_received_at": "2026-06-03T21:57+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills For Autonomous Vehicles, Robotics And Vision AI",
+  "subject": "",
+  "source_date": "2026-06-03T21:57:25.053170",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://blogs.nvidia.com/blog/cvpr-physical-ai-research-agent-skills/",
+  "article_title": "NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills For Autonomous Vehicles, Robotics And Vision AI",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7e66b9bca19dfd49.jpg",
+  "article_image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/05/Vera-CPU_Tray_Open-34_Wide_R6C-FNL-5260651.jpg",
+  "article_items": [
+    {
+      "url": "https://blogs.nvidia.com/blog/cvpr-physical-ai-research-agent-skills/",
+      "title": "NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills For Autonomous Vehicles, Robotics And Vision AI",
+      "description": "New physical AI agent skills, powered by NVIDIA Cosmos 3, help researchers accelerate data generation, simulation, policy training and evaluation for autonomous system development.",
+      "excerpt": "New physical AI agent skills, powered by NVIDIA Cosmos 3, help researchers accelerate data generation, simulation, policy training and evaluation for autonomous system development.",
+      "summary": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff NVIDIA Enables the Next Era Of. For video AI agents, the NVIDIA Metropolis Blueprint for video search and summarization (VSS) , NVIDIA TAO and Video Augmentation skills help extract insights from massive volumes of video data, fine-tune models and automate the build-and-evaluate loop. Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale Industrial Software. The PAI-AV Reasoning Challenge , a new open benchmark evaluating how well VLA models explain driving decisions using chain-of-causation labels. Agent skills and tools for synthetic data generation - Neural Reconstruction , Video Augmentation , Defect Image.",
+      "what_happened": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff NVIDIA Enables the Next Era Of.",
+      "why_matters": "For video AI agents, the NVIDIA Metropolis Blueprint for video search and summarization (VSS) , NVIDIA TAO and Video Augmentation skills help extract insights from massive volumes of video data, fine-tune models and automate the build-and-evaluate loop. Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale Industrial Software.",
+      "what_to_watch": "The PAI-AV Reasoning Challenge , a new open benchmark evaluating how well VLA models explain driving decisions using chain-of-causation labels. Agent skills and tools for synthetic data generation - Neural Reconstruction , Video Augmentation , Defect Image Generation - are also available to try instantly on NVIDIA.",
+      "key_points": [
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "Agent skills and tools for synthetic data generation - Neural Reconstruction , Video Augmentation , Defect Image Generation - are also available to try instantly on NVIDIA Brev as Physical AI Launchables , preconfigured.",
+        "For video AI agents, the NVIDIA Metropolis Blueprint for video search and summarization (VSS) , NVIDIA TAO and Video Augmentation skills help extract insights from massive volumes of video data, fine-tune models and.",
+        "New dataset releases include GRAIL , including roughly 50 hours of humanoid-object interaction data, and six synthetic video datasets used to train Cosmos 3 across robotics , physics , digital humans , autonomous.",
+        "Earlier this week, NVIDIA announced NVIDIA Cosmos 3 , the open frontier model for physical AI and the world\u2019s first full omnimodel unifying vision reasoning, world and action generation.",
+        "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale Industrial Software Leaders Build Secure, Autonomous AI Engineers With.",
+        "Agents can help launch simulation sessions, author scenes, control simulation, capture data and validate environments in Isaac Sim, while Isaac Lab skills support reinforcement learning setup, training, evaluation and.",
+        "NVIDIA is also advancing AV research with its most powerful open driving foundation model to date: NVIDIA Alpamayo 2 Super , an open 32-billion-parameter reasoning vision language action (VLA) model that reasons, plans.",
+        "New physical AI agent skills, powered by NVIDIA Cosmos 3, help researchers accelerate data generation, simulation, policy training and evaluation for autonomous system development.",
+        "The workflow combines NVIDIA Isaac Sim for simulation, Cosmos 3 and NVIDIA OSMO for orchestration and vision language reasoning - letting researchers create rare visual cases and assess whether models respond correctly.",
+        "For healthcare robotics, Cosmos-H-Surgical-Simulator advances research by generating realistic surgical robotics data for policy training and evaluation.",
+        "NVIDIA is also expanding the research infrastructure behind physical AI with datasets for training, fine-tuning and evaluation."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7e66b9bca19dfd49.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/05/Vera-CPU_Tray_Open-34_Wide_R6C-FNL-5260651.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4e04fac1e40ba7b7.jpg"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/cvpr-product-blog-still-1920x1080-1.jpg"
+      ],
+      "_story_id": "5659cd5a63c9478a9eb06a3ba37f3e56"
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/cvpr-research-grasping-driving-agent-training/",
+      "title": "NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale",
+      "description": "New NVIDIA Research breakthroughs show how training at scale - across gripper types, driving scenarios and virtual worlds - creates AI that generalizes to diverse applications.",
+      "excerpt": "New NVIDIA Research breakthroughs show how training at scale - across gripper types, driving scenarios and virtual worlds - creates AI that generalizes to diverse applications.",
+      "summary": "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills For Autonomous Vehicles, Robotics And Vision AI Industrial Software Leaders Build Secure, Autonomous AI Engineers With NVIDIA NemoClaw NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local Why Financial Institutions Are Converging on Transaction Foundation Models to Build Their Own Intelligence NVIDIA GTC Taipei at COMPUTEX: Live. NitroGen is a generalized gameplay AI foundation model that harnesses the NVIDIA Isaac GR00T robot foundation model architecture to help train embodied agents in virtual environments across tens of thousands of hours of interaction. Given the geometry of a new gripper and an unknown object it\u2019s never seen before, the model generates reliable grasp pose proposals to enable the robot to grasp the object. Building on the GraspGen research foundation, another paper, Grasp-MPC - presented at ICRA 2026 - advances the next step in the pipeline: moving from grasp generation to closed-loop grasp execution. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff.",
+      "what_happened": "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills For Autonomous Vehicles, Robotics And Vision AI Industrial Software Leaders Build Secure, Autonomous AI Engineers With NVIDIA NemoClaw NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local Why Financial Institutions Are Converging on Transaction Foundation Models to Build Their Own Intelligence NVIDIA GTC Taipei at COMPUTEX: Live.",
+      "why_matters": "NitroGen is a generalized gameplay AI foundation model that harnesses the NVIDIA Isaac GR00T robot foundation model architecture to help train embodied agents in virtual environments across tens of thousands of hours of interaction. Given the geometry of a new gripper and an unknown object it\u2019s never seen before, the model generates reliable grasp pose proposals to enable the robot to grasp the object.",
+      "what_to_watch": "Building on the GraspGen research foundation, another paper, Grasp-MPC - presented at ICRA 2026 - advances the next step in the pipeline: moving from grasp generation to closed-loop grasp execution. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI.",
+      "key_points": [
+        "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills For Autonomous Vehicles, Robotics And Vision AI Industrial Software Leaders Build Secure.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "NitroGen treats them that way - as a training ground for agents that will eventually be trained to handle novel real- or simulated-world situations, like powering a robot that helps with housework based on broad.",
+        "Building on the GraspGen research foundation, another paper, Grasp-MPC - presented at ICRA 2026 - advances the next step in the pipeline: moving from grasp generation to closed-loop grasp execution.",
+        "NVIDIA also unveiled at CVPR new physical AI agent skills that help researchers and developers speed the development of autonomous vehicles, robots and vision AI systems.",
+        "They generated 2 billion simulated grasps across thousands of object shapes and synthetic gripper configurations, spanning the diversity of form factors a deployed robot might encounter.",
+        "NitroGen is a generalized gameplay AI foundation model that harnesses the NVIDIA Isaac GR00T robot foundation model architecture to help train embodied agents in virtual environments across tens of thousands of hours of.",
+        "For robot developers, this foundation model eliminates the need for per-gripper training cycles and can be applied out of the box for several commonly used grippers.",
+        "LCDrive introduces a model that replaces expensive text-based reasoning with compact latent representations, letting autonomous vehicles think faster on embedded hardware.",
+        "Embodied Agents Trained in Virtual Worlds Isaac GR00T - NVIDIA\u2019s open foundation model for humanoid robots - is built on a simple principle: expose a model to enough diverse situations, and it will generalize to ones it.",
+        "The model was built on NVIDIA Alpamayo and trained using supervision derived from existing vehicle data.",
+        "Given the geometry of a new gripper and an unknown object it\u2019s never seen before, the model generates reliable grasp pose proposals to enable the robot to grasp the object."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7e66b9bca19dfd49.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/05/Vera-CPU_Tray_Open-34_Wide_R6C-FNL-5260651.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/18e8a7b5b4a682e2.png"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/CVPR_blog_still-1680x945.png"
+      ],
+      "_story_id": "73b4e90a314e488fb597ede3b0f25f92"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/03/amazon-will-show-ai-product-images-when-you-search-for-some-reason/",
+      "title": "Amazon will show AI product images when you search for some reason | TechCrunch",
+      "description": "Amazon will use visual search and AI to show AI-generated product images that match your search queries. The retailer says it will help guide users to products.",
+      "excerpt": "Amazon will use visual search and AI to show AI-generated product images that match your search queries. The retailer says it will help guide users to products.",
+      "summary": "More from TechCrunch Amazon will show AI product images when you search for some reason In what may be one of the more questionable uses of AI to date, Amazon announced on Wednesday that it will display AI-generated images of products within its shopping app based on users\u2019 search queries. Microsoft launches Scout, an OpenClaw-inspired personal assistant \u2018What a joke\u2019: GitHub Copilot\u2019s new token-based billing spurs consternation among devs I put Google\u2019s 24/7 AI assistant Gemini Spark to work, and it\u2019s actually. Earlier this month, Amazon also replaced its Rufus AI chatbot with Alexa for Shopping to enable natural language shopping queries via voice and text. The retailer says it will help guide users to products. Amazon will use visual search and AI to show AI-generated product images that match your search queries.",
+      "what_happened": "More from TechCrunch Amazon will show AI product images when you search for some reason In what may be one of the more questionable uses of AI to date, Amazon announced on Wednesday that it will display AI-generated images of products within its shopping app based on users\u2019 search queries. Microsoft launches Scout, an OpenClaw-inspired personal assistant \u2018What a joke\u2019: GitHub Copilot\u2019s new token-based billing spurs consternation among devs I put Google\u2019s 24/7 AI assistant Gemini Spark to work, and it\u2019s actually.",
+      "why_matters": "Earlier this month, Amazon also replaced its Rufus AI chatbot with Alexa for Shopping to enable natural language shopping queries via voice and text. The retailer says it will help guide users to products.",
+      "what_to_watch": "Amazon will use visual search and AI to show AI-generated product images that match your search queries.",
+      "key_points": [
+        "Earlier this month, Amazon also replaced its Rufus AI chatbot with Alexa for Shopping to enable natural language shopping queries via voice and text.",
+        "More from TechCrunch Amazon will show AI product images when you search for some reason In what may be one of the more questionable uses of AI to date, Amazon announced on Wednesday that it will display AI-generated.",
+        "Amazon will use visual search and AI to show AI-generated product images that match your search queries.",
+        "The idea is that clicking one would direct you to search results that better match that style, powered by Amazon\u2019s visual search capabilities.",
+        "The retailer says it will help guide users to products.",
+        "Microsoft launches Scout, an OpenClaw-inspired personal assistant \u2018What a joke\u2019: GitHub Copilot\u2019s new token-based billing spurs consternation among devs I put Google\u2019s 24/7 AI assistant Gemini Spark to work, and it\u2019s.",
+        "For instance, if you search for a blue gingham dress, you might see a few dress styles - short or long sleeves, varying lengths, and other differences - appear as visual options.",
+        "On the more useful end, Amazon already summarizes customer reviews via AI, so you don\u2019t have to read them all to get a sense of the key pros and cons of a product.",
+        "Here\u2019s how Amazon says in a blog post that the feature will work.",
+        "The feature follows a number of other attempts by Amazon to integrate AI into its retail site and shopping app, with mixed results.",
+        "And there\u2019s the fairly obvious question of why you\u2019d make up product images when you have a website full of real photographs of real products - which is presumably what an online shopper actually wants to see.",
+        "In reality, it\u2019s somewhat bananas for a retailer to make up fake products as a way of guiding users to search results."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/61507a9f80254410.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Screenshot-2026-06-03-at-11.16.52-AM.jpg?resize=1200,695",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "d0a6d629947b498898bd55b3a4dffd36"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/03/these-two-founders-left-goldman-and-meta-to-build-voice-ai-for-markets-everyone-else-overlooked/",
+      "title": "These two founders left Goldman and Meta to build voice AI for markets everyone else overlooked | TechCrunch",
+      "description": "The startup's own stack for Africa and Middle East is now handling more than 17,000 calls per day.",
+      "excerpt": "The startup's own stack for Africa and Middle East is now handling more than 17,000 calls per day.",
+      "summary": "AI labs that deploy their latest models usually spend millions training them and acquiring data. Walter Baddoo, co-founder and managing partner of 4DX Ventures, argues that the Africa and Middle East market is fundamentally different from the markets most voice AI companies were built to serve. The company is hiring forward-deployed engineers on a contract basis to serve local markets and building channel partnerships with telecoms providers to handle telephony for voice AI calls. On the business side, the company is taking care to walk clients who are new to voice AI through the process, offering onsite demos and workshops to help them identify the best use cases for automation. He is based out of India and has previously worked at publications including Huffington Post and The Next Web. That\u2019s a fraction of the size of the LLMs, which is precisely the point.",
+      "what_happened": "AI labs that deploy their latest models usually spend millions training them and acquiring data. Walter Baddoo, co-founder and managing partner of 4DX Ventures, argues that the Africa and Middle East market is fundamentally different from the markets most voice AI companies were built to serve.",
+      "why_matters": "The company is hiring forward-deployed engineers on a contract basis to serve local markets and building channel partnerships with telecoms providers to handle telephony for voice AI calls. On the business side, the company is taking care to walk clients who are new to voice AI through the process, offering onsite demos and workshops to help them identify the best use cases for automation.",
+      "what_to_watch": "He is based out of India and has previously worked at publications including Huffington Post and The Next Web. That\u2019s a fraction of the size of the LLMs, which is precisely the point.",
+      "key_points": [
+        "AI labs that deploy their latest models usually spend millions training them and acquiring data.",
+        "Walter Baddoo, co-founder and managing partner of 4DX Ventures, argues that the Africa and Middle East market is fundamentally different from the markets most voice AI companies were built to serve.",
+        "Rather than chasing the largest possible models, it decided that small models are enough to tackle the latency problem while maintaining accuracy and developed its own Kora series, with parameters ranging from 300.",
+        "That\u2019s a fraction of the size of the LLMs, which is precisely the point.",
+        "The company is hiring forward-deployed engineers on a contract basis to serve local markets and building channel partnerships with telecoms providers to handle telephony for voice AI calls.",
+        "To train these models, the startup used anonymized recordings from a call center partner.",
+        "On the business side, the company is taking care to walk clients who are new to voice AI through the process, offering onsite demos and workshops to help them identify the best use cases for automation.",
+        "We realized that in order for this to work, we have to use very small models and cut latency at every step,\u201d Odemuyiwa told TechCrunch about the decision to build the company\u2019s own models and orchestration layer.",
+        "AethexAI , a startup founded last year to close that gap, has raised $3 million in pre-seed funding led by 4DX Ventures, with participation from Enza Capital, Dorm Room Fund, Mojo Ventures, and Stanford GSB 26 Fund.",
+        "The startup's own stack for Africa and Middle East is now handling more than 17,000 calls per day.",
+        "More from TechCrunch These two founders left Goldman and Meta to build voice AI for markets everyone else overlooked Customer support and service are among the hottest sectors in voice AI right now.",
+        "\u201cEnterprises in Africa and the Middle East process roughly three times the call volume of their Western counterparts, as voice is still the dominant channel for customer interaction,\u201d he said."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a0cbe91dbf112536.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Athx-Pictures_-Right-Mariama-Left-Ayooluwa.jpg?resize=1200,675",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "79a0595b790c407d825b8cb532cc5159"
+    },
+    {
+      "url": "https://huggingface.co/blog/chansung/autoresearch-on-diffusers-pipeline",
+      "title": "AutoResearch on Diffusers' Pipeline for 10 Rounds on JarvisLabs",
+      "description": "A Blog post by chansung park on Hugging Face",
+      "excerpt": "A Blog post by chansung park on Hugging Face",
+      "summary": "Codex could prepare configs locally, send them to the workers with jl , launch detached runs, poll the exits, download the images, and destroy the machines at the end. It looked at the images, named the failure, chose one lever, edited the mutable router config, launched GPU jobs on JarvisLabs, scored the results, and updated the lineage before moving on. The main result is the lineage. I wanted to keep the generation backbone fixed and let the agent explore the surrounding choices. Codex could see the results, write down the failure, choose the next lever, and run again without the whole process collapsing into waiting. The main result is the lineage.",
+      "what_happened": "Codex could prepare configs locally, send them to the workers with jl , launch detached runs, poll the exits, download the images, and destroy the machines at the end. It looked at the images, named the failure, chose one lever, edited the mutable router config, launched GPU jobs on JarvisLabs, scored the results, and updated the lineage before moving on.",
+      "why_matters": "The main result is the lineage. I wanted to keep the generation backbone fixed and let the agent explore the surrounding choices.",
+      "what_to_watch": "Codex could see the results, write down the failure, choose the next lever, and run again without the whole process collapsing into waiting. The main result is the lineage.",
+      "key_points": [
+        "Codex could prepare configs locally, send them to the workers with jl , launch detached runs, poll the exits, download the images, and destroy the machines at the end.",
+        "It looked at the images, named the failure, chose one lever, edited the mutable router config, launched GPU jobs on JarvisLabs, scored the results, and updated the lineage before moving on.",
+        "The main result is the lineage.",
+        "The winning image size after the aspect ratio sweep was 896x1344 , and the run stayed intentionally cheap with 4 inference steps.",
+        "I wanted to keep the generation backbone fixed and let the agent explore the surrounding choices.",
+        "I used Codex as the research agent.",
+        "The Shape Of The Experiment From Prompting To Research The project started from a simple discomfort with how image generation experiments are usually described.",
+        "If the suspected problem is the bottom floor identity, the agent should try several ways to anchor the bottom floor.",
+        "How The Agent Chose Its Levers First, Make The Image Legible Codex began with the broadest lever because the first failure was broad.",
+        "The mutable layer was the experiment config.",
+        "For this run, the model was black-forest-labs/FLUX.2-klein-4B , wrapped through a Diffusers based Flux2KleinPipeline .",
+        "The agent had to do the duller and more interesting work of finding a path."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/50de88b248e25173.png",
+      "image_url": "https://raw.githubusercontent.com/deep-diver/diffusers-pipeline-autoresearch/refs/heads/main/outputs/staircase_cutaway_artwork_target/reports/progress_unified_exp10.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a054e68e474da8bb.png"
+      ],
+      "extra_image_urls": [
+        "https://raw.githubusercontent.com/deep-diver/diffusers-pipeline-autoresearch/refs/heads/main/outputs/staircase_cutaway_artwork_target/trials/staircase_art_10_c05_conservative_best_final/images/staircase_art_10_c05_conservative_best_final_target.png"
+      ],
+      "_story_id": "a7edbb7c02b94a21a3c356f35b640353"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/fundamentals-large-tabular-model-nexus-is-now-available-on-amazon-sagemaker-jumpstart/",
+      "title": "Fundamental\u2019s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart | Amazon Web Services",
+      "description": "In this post, we show you how to get started with NEXUS on Amazon SageMaker JumpStart, walk through the deployment process, and demonstrate how to run predictions against your enterprise datasets.",
+      "excerpt": "In this post, we show you how to get started with NEXUS on Amazon SageMaker JumpStart, walk through the deployment process, and demonstrate how to run predictions against your enterprise datasets.",
+      "summary": "Artificial Intelligence Fundamental\u2019s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart Today, we\u2019re announcing support for Fundamental\u2019s NEXUS model on Amazon SageMaker AI . With this launch, you can deploy a foundation model (FM) purpose-built for tabular data prediction. NEXUS is architected for tabular data and provides advantages such as the following: Permutation invariance \u2013 Recognizes that changing column order doesn\u2019t change meaning, which differs from how transformers handle data. Why existing approaches fall short The most valuable enterprise data sits in tables such as spreadsheets, enterprise resource planning (ERP) systems, customer relationship management (CRM) systems, and. Non-sequential reasoning \u2013 Most AI models predict sequential data (for example, the next word or the next pixel). NEXUS is purpose-built for this data and helps you go from raw structured data to production-grade predictions without extensive feature engineering or model training.",
+      "what_happened": "Artificial Intelligence Fundamental\u2019s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart Today, we\u2019re announcing support for Fundamental\u2019s NEXUS model on Amazon SageMaker AI . With this launch, you can deploy a foundation model (FM) purpose-built for tabular data prediction.",
+      "why_matters": "NEXUS is architected for tabular data and provides advantages such as the following: Permutation invariance \u2013 Recognizes that changing column order doesn\u2019t change meaning, which differs from how transformers handle data. Why existing approaches fall short The most valuable enterprise data sits in tables such as spreadsheets, enterprise resource planning (ERP) systems, customer relationship management (CRM) systems, and.",
+      "what_to_watch": "Non-sequential reasoning \u2013 Most AI models predict sequential data (for example, the next word or the next pixel). NEXUS is purpose-built for this data and helps you go from raw structured data to production-grade predictions without extensive feature engineering or model training.",
+      "key_points": [
+        "Artificial Intelligence Fundamental\u2019s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart Today, we\u2019re announcing support for Fundamental\u2019s NEXUS model on Amazon SageMaker AI .",
+        "With this launch, you can deploy a foundation model (FM) purpose-built for tabular data prediction.",
+        "However, today\u2019s tools have significant limitations: Traditional ML takes teams of data scientists 3\u20136 months to build, train, and deploy a model for a single use case.",
+        "NEXUS is purpose-built for this data and helps you go from raw structured data to production-grade predictions without extensive feature engineering or model training.",
+        "Large language models (LLMs) are designed for text, and traditional machine learning (ML) approaches require extensive feature engineering and model training.",
+        "He also helps enterprises and startups deploy and optimize a GenAI models and build AI workflows with SageMaker and GPUs.",
+        "NEXUS is a foundation model developed by Fundamental and built for tabular data prediction.",
+        "How NEXUS works on Amazon SageMaker AI The following figure illustrates the end-to-end flow for deploying and running predictions with NEXUS on SageMaker AI.",
+        "Why choose NEXUS on Amazon SageMaker AI Deploying a model is only half the equation.",
+        "Non-sequential reasoning \u2013 Most AI models predict sequential data (for example, the next word or the next pixel).",
+        "Upload data to Amazon S3 \u2013 The SDK serializes your tabular data and uploads it to an Amazon Simple Storage Service (Amazon S3) bucket in your account.",
+        "The endpoint is network-isolated and single-tenant, which makes NEXUS suitable for enterprise workloads with sensitive data."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4355b8b023364131.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/21/ML-20964-2.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a742a6a7af9b771f.png"
+      ],
+      "extra_image_urls": [
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/21/ML-20964-3.png"
+      ],
+      "_story_id": "d2405d1d03ee4928a5297d86e3ae65f5"
+    },
+    {
+      "url": "https://www.therobotreport.com/festo-launches-pneumatic-gripper-tests-gripperai/",
+      "title": "Festo launches lightweight pneumatic gripper and tests GripperAI - The Robot Report",
+      "description": "Festo has released a compact cobot gripper, and its robot-agnostic GripperAI enables grasping of objects without prior training.",
+      "excerpt": "Festo has released a compact cobot gripper, and its robot-agnostic GripperAI enables grasping of objects without prior training.",
+      "summary": "has launched the HPPH two-finger pneumatic parallel gripper, a lightweight system designed to overcome collaborative robot payload and wiring constraints by integrating the controls, sensing, and certified safety functions directly into the gripper body. The new gripper integrates the pneumatic control valve, position sensors , and electrical interface directly into the gripper body. The software enables robots to grip previously unseen or chaotically positioned objects, including bulk materials, without the need for programming or teach-in training, saving significant setup time, according to the company. The company also shared its progress with the GripperAI software. If higher gripping force is required, the force limit can be disabled to support non-collaborative applications with gripping forces up to approximately 40.5 lbf (180 newtons). The gripper joins more than 30,000 interoperable pneumatic, electric, and software products in Festo\u2019s automation portfolio.",
+      "what_happened": "has launched the HPPH two-finger pneumatic parallel gripper, a lightweight system designed to overcome collaborative robot payload and wiring constraints by integrating the controls, sensing, and certified safety functions directly into the gripper body. The new gripper integrates the pneumatic control valve, position sensors , and electrical interface directly into the gripper body.",
+      "why_matters": "The software enables robots to grip previously unseen or chaotically positioned objects, including bulk materials, without the need for programming or teach-in training, saving significant setup time, according to the company. The company also shared its progress with the GripperAI software.",
+      "what_to_watch": "If higher gripping force is required, the force limit can be disabled to support non-collaborative applications with gripping forces up to approximately 40.5 lbf (180 newtons). The gripper joins more than 30,000 interoperable pneumatic, electric, and software products in Festo\u2019s automation portfolio.",
+      "key_points": [
+        "has launched the HPPH two-finger pneumatic parallel gripper, a lightweight system designed to overcome collaborative robot payload and wiring constraints by integrating the controls, sensing, and certified safety.",
+        "The maximum gripper opening is 0.63 in (16 mm), and the HPPH is suitable for handling objects weighing up to 2.2 lb.",
+        "The gripper joins more than 30,000 interoperable pneumatic, electric, and software products in Festo\u2019s automation portfolio.",
+        "The new gripper integrates the pneumatic control valve, position sensors , and electrical interface directly into the gripper body.",
+        "The software enables robots to grip previously unseen or chaotically positioned objects, including bulk materials, without the need for programming or teach-in training, saving significant setup time, according to the.",
+        "Festo added that it developed the HPPH in accordance with ISO/TS 15066 for collaborative robot safety and that it meets T\u00dcV S\u00fcd-certification when used with HAFH-B30-16-45-N gripper fingers.",
+        "Festo has released a compact cobot gripper, and its robot-agnostic GripperAI enables grasping of objects without prior training.",
+        "Festo launches lightweight pneumatic gripper and tests GripperAI The new HPPH gripper is designed to reduce wiring and weight while supporting safe operation.",
+        "The HPPH is available through Esslingen am Neckar, Germany-based Festo\u2019s website and the Universal Robotics Marketplace .",
+        "\u201cWe built a copy of W\u00fcrth\u2019s sorter conveyors in our laboratory, which allowed us to develop the robot\u2019s various capabilities: object-dependent gripper selection, gripping any objects from the trays, packing shipping.",
+        "The company also shared its progress with the GripperAI software.",
+        "GripperAI is compatible with a range of robots, grippers Festo has also introduced GripperAI, which is designed to handle unfamiliar objects in disordered environments without requiring programming or teach-in training."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e0bca3ea8a5fe11c.png",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/05/rbr50-sidebar-promo.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "8b8a8e3f2d004e70b7a19de8d6f5feb9"
+    },
+    {
+      "url": "https://research.google/blog/the-next-chapter-in-flood-resilience-open-sourcing-googles-hydrology-framework/",
+      "title": "The next chapter in flood resilience: Open sourcing Google\u2019s hydrology framework",
+      "description": "",
+      "excerpt": "Explore our many areas of focus Building a collaborative ecosystem Shaping the future together Translating discovery into real-world impact Explore our many areas of focus Building a collaborative ecosystem Shaping the future together Translating discovery into real-world impact The next chapter in flood resilience: Open sourcing Google\u2019s hydrology framework Grey Nearing and Deborah Cohen, Research Scientists, Google Research We have open-sourced our hydrology model to enable National Meteorological and Hydrological Services to integrate advanced AI-based flood forecasting into their own workflows. Floods are one of the most devastating natural hazards worldwide, often arriving with...",
+      "summary": "The hydrology modeling package includes model architectures based on Long Short Term Memory (LSTM) Networks, and a training pipeline that allows these models to be trained using historical river data from the open source Caravan dataset . Releasing our model architecture and training pipeline represents a fundamental shift in global flood preparedness, allowing National Meteorological and Hydrological Services (NMHSs), other meteorological agencies, and authorities to retain full control of their data while. It is developed to allow hydrological scientists to build on what we have done at Google Research by adding and testing new models, data, and approaches. CHMI also developed an adapter that integrates the hydrology open source framework into the Delft-FEWS platform, a popular operational flood forecasting tool used by national and local flood forecasting agencies, NGOs, and private companies to drive predictive models. This open source modeling framework allows researchers and forecasters to train AI flood forecasting models with the same architecture and similar training data to what is used to power riverine flood forecasts on Google\u2019s Flood Hub.",
+      "what_happened": "The hydrology modeling package includes model architectures based on Long Short Term Memory (LSTM) Networks, and a training pipeline that allows these models to be trained using historical river data from the open source Caravan dataset . Releasing our model architecture and training pipeline represents a fundamental shift in global flood preparedness, allowing National Meteorological and Hydrological Services (NMHSs), other meteorological agencies, and authorities to retain full control of their data while.",
+      "why_matters": "It is developed to allow hydrological scientists to build on what we have done at Google Research by adding and testing new models, data, and approaches. CHMI also developed an adapter that integrates the hydrology open source framework into the Delft-FEWS platform, a popular operational flood forecasting tool used by national and local flood forecasting agencies, NGOs, and private companies to drive predictive models.",
+      "what_to_watch": "This open source modeling framework allows researchers and forecasters to train AI flood forecasting models with the same architecture and similar training data to what is used to power riverine flood forecasts on Google\u2019s Flood Hub.",
+      "key_points": [
+        "The hydrology modeling package includes model architectures based on Long Short Term Memory (LSTM) Networks, and a training pipeline that allows these models to be trained using historical river data from the open.",
+        "Releasing our model architecture and training pipeline represents a fundamental shift in global flood preparedness, allowing National Meteorological and Hydrological Services (NMHSs), other meteorological agencies, and.",
+        "This open source modeling framework allows researchers and forecasters to train AI flood forecasting models with the same architecture and similar training data to what is used to power riverine flood forecasts on.",
+        "These frameworks are relatively easy and inexpensive to train, providing accuracy without the complexity of traditional hydrological forecasting models and allowing users to incorporate their own specialized data for.",
+        "It is developed to allow hydrological scientists to build on what we have done at Google Research by adding and testing new models, data, and approaches.",
+        "We at WMO are keen to support open-source, interoperable, Member-driven models and tools that can help save lives and advance the global mission to ensure communities everywhere are forewarned about hazards to protect.",
+        "From theory to operational reality In the Global Status of Multi-Hazard Early Warning Systems 2025 report , the World Meteorological Organization recognizes that both local data and Indigenous and Local Knowledge (ILK).",
+        "Beyond larger institutions like CHMI, the open source model release offers a scalable, accessible tool, democratizing access to advanced forecasting and opening the door for resource-constrained regions and local teams.",
+        "The new model builds upon the foundational success of our initial research by transitioning to a new model architecture.",
+        "This allows CHMI and other hydrological services worldwide to use the model in their standard workflows.",
+        "Our hydrology model is a Python package that uses the open source PyTorch machine learning modeling package to implement the river forecast model that drives the Google Flood Hub.",
+        "This code repository includes two distinct versions of our hydrological model: the original version tested in our benchmarking study published in 2024 , and an upgraded model that currently powers real-time global flood."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/dafebbef16cc999f.img",
+      "image_url": "https://storage.googleapis.com/gweb-research2023-media/original_images/student_programs_nav.svg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "20f6e6de6ba646b1ab67c8702e42b33d"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 9,
+  "has_cta": true,
+  "slides": [
+    "NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills.",
+    "NVIDIA Research Unlocks Advanced Grasping Smarter Autonomous Driving and Agent Training.",
+    "Amazon will show AI product images when you search for some reason.",
+    "These two founders left Goldman and Meta to build voice AI.",
+    "AutoResearch on Diffusers' Pipeline for 10 Rounds on JarvisLabs.",
+    "Fundamental's Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart.",
+    "Festo launches lightweight pneumatic gripper and tests GripperAI.",
+    "The next chapter in flood resilience Open sourcing Google's hydrology framework.",
+    "FOLLOW @graitech"
+  ]
+}
