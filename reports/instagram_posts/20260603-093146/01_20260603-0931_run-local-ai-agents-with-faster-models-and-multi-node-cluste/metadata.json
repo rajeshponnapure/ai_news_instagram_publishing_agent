@@ -1,0 +1,361 @@
+{
+  "email_received_at": "2026-06-03T09:31+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Run Local AI Agents with Faster Models and Multi-Node Clustering on NVIDIA DGX Spark | NVIDIA Technical Blog",
+  "subject": "",
+  "source_date": "2026-06-03T09:31:46.948983",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://developer.nvidia.com/blog/run-local-ai-agents-with-faster-models-and-multi-node-clustering-on-nvidia-dgx-spark/",
+  "article_title": "Run Local AI Agents with Faster Models and Multi-Node Clustering on NVIDIA DGX Spark | NVIDIA Technical Blog",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fc968e2989f77501.png",
+  "article_image_url": "https://developer-blogs.nvidia.com/wp-content/uploads/2024/04/democratizing-ai-workflows-featured-960x540.png",
+  "article_items": [
+    {
+      "url": "https://developer.nvidia.com/blog/run-local-ai-agents-with-faster-models-and-multi-node-clustering-on-nvidia-dgx-spark/",
+      "title": "Run Local AI Agents with Faster Models and Multi-Node Clustering on NVIDIA DGX Spark | NVIDIA Technical Blog",
+      "description": "The rise of autonomous, long-running AI agents has introduced a new class of compute demand, namely tasks that maintain large context windows, spawn concurrent subagents\u2026",
+      "excerpt": "The rise of autonomous, long-running AI agents has introduced a new class of compute demand, namely tasks that maintain large context windows, spawn concurrent subagents\u2026",
+      "summary": "Build a More Secure, Always-On Local AI Agent with OpenClaw and NVIDIA NemoClaw Scaling Autonomous AI Agents and Workloads with NVIDIA DGX Spark Run Autonomous, Self-Evolving Agents More Safely with NVIDIA OpenShell Introducing NVIDIA DGX Cloud Lepton: A Unified AI Platform Built for Developers Democratizing AI Workflows with Union.ai and NVIDIA DGX Cloud Deploy Self-Evolving Agents for Faster, More Secure Research with a Hermes Agent and NVIDIA NemoClaw Advancing AI Infrastructure for Agentic AI with NVIDIA DOCA. This post will cover what these updates mean for developers building agentic AI systems, including how to install NVIDIA NemoClaw , what it sets up, and how to build and run your first agent with OpenClaw on DGX Spark. That\u2019s enough to run large MoE models, multi-agent pipelines with multiple concurrent inference instances, or fine-tuning jobs that benefit from distributed memory. Step 3: Build your first agent With your sandbox running, the NemoClaw Applications playbook offers four ready-to-run agents to get started - each with policy setup, a starter prompt, and personalization guidance: Daily Personal News Digest - a scheduled morning briefing that sweeps your topics.",
+      "what_happened": "Build a More Secure, Always-On Local AI Agent with OpenClaw and NVIDIA NemoClaw Scaling Autonomous AI Agents and Workloads with NVIDIA DGX Spark Run Autonomous, Self-Evolving Agents More Safely with NVIDIA OpenShell Introducing NVIDIA DGX Cloud Lepton: A Unified AI Platform Built for Developers Democratizing AI Workflows with Union.ai and NVIDIA DGX Cloud Deploy Self-Evolving Agents for Faster, More Secure Research with a Hermes Agent and NVIDIA NemoClaw Advancing AI Infrastructure for Agentic AI with NVIDIA DOCA.",
+      "why_matters": "This post will cover what these updates mean for developers building agentic AI systems, including how to install NVIDIA NemoClaw , what it sets up, and how to build and run your first agent with OpenClaw on DGX Spark. That\u2019s enough to run large MoE models, multi-agent pipelines with multiple concurrent inference instances, or fine-tuning jobs that benefit from distributed memory.",
+      "what_to_watch": "Step 3: Build your first agent With your sandbox running, the NemoClaw Applications playbook offers four ready-to-run agents to get started - each with policy setup, a starter prompt, and personalization guidance: Daily Personal News Digest - a scheduled morning briefing that sweeps your topics and posts a structured.",
+      "key_points": [
+        "Build a More Secure, Always-On Local AI Agent with OpenClaw and NVIDIA NemoClaw Scaling Autonomous AI Agents and Workloads with NVIDIA DGX Spark Run Autonomous, Self-Evolving Agents More Safely with NVIDIA OpenShell.",
+        "Explore more on DGX Spark NemoClaw streamlined install: Start with NemoClaw on DGX Spark \u2192 Example NemoClaw Applications: Setup Example NemoClaw Agents \u2192 Bring DGX Spark to NVIDIA Brev: Register your DGX Spark on NVIDIA.",
+        "The latest version of the DGX Spark system software, the June 2026 release , delivers the most streamlined out-of-box experience (OOBE) yet so users can reach local agents faster.",
+        "The rise of autonomous, long-running AI agents has introduced a new class of compute demand, namely tasks that maintain large context windows, spawn concurrent subagents\u2026 Run Local AI Agents with Faster Models and.",
+        "Step 3: Build your first agent With your sandbox running, the NemoClaw Applications playbook offers four ready-to-run agents to get started - each with policy setup, a starter prompt, and personalization guidance: Daily.",
+        "The streamlined NemoClaw install gets developers from unboxing to a running OpenClaw agent with Qwen3.6-35B as the default model and a built-in secure execution environment.",
+        "At Computex 2026, NVIDIA is making it significantly easier to get there, introducing a streamlined path from unboxing to running AI agents in minutes (excluding initial model download, which depends on network speed).",
+        "DGX Spark agents using Qwen3.6-35B Developers can experience up to 2.6x faster inference with top agentic models like Qwen 3.6 35B on vLLM with NVIDIA\u2019s NVFP4 quantized checkpoint using MTP optimizations.",
+        "Familiarity with a terminal for optional configuration steps From unboxing to running a local agent Getting a local AI agent running has historically involved sourcing the right model, configuring an inference backend.",
+        "Clustering matters at the model level: two DGX Spark nodes provide 256 GB of unified memory (sufficient for ~400B-parameter models), and four nodes provide 512 GB.",
+        "Run this single command to install Node.js (if needed), install OpenShell, clone the latest stable NemoClaw release, build the CLI, and run the onboard wizard to create a sandbox.",
+        "Accept NemoClaw and OpenClaw licenses - Confirm by entering yes Local Ollama is set up along with Qwen3.6-35B automatically downloaded Step 2: Access your agent Once the install completes, you are ready to customize."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fc968e2989f77501.png",
+      "image_url": "https://developer-blogs.nvidia.com/wp-content/uploads/2024/04/democratizing-ai-workflows-featured-960x540.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "1cdf70a794784d2c96f025c2c38e1295"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/02/trump-signs-narrower-executive-order-on-ai-oversight-after-industry-objections/",
+      "title": "Trump signs narrower executive order on AI oversight after industry objections | TechCrunch",
+      "description": "After industry objections, President Trump signed a revised AI executive order requiring only voluntary prerelease government reviews of advanced models.",
+      "excerpt": "After industry objections, President Trump signed a revised AI executive order requiring only voluntary prerelease government reviews of advanced models.",
+      "summary": "\u201cNothing in this section shall be construed to authorize the creation of a mandatory governmental licensing, preclearance, or permitting requirement for the development, publication, release, or distribution of new AI models, including frontier models,\u201d reads the order, published Tuesday. OpenAI launches new Codex tools for white-collar work Anthropic scales Claude Mythos to critical infrastructure in 15+ countries This AI weather startup is out-forecasting government agencies Latest in Government & Policy Trump. Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections. More from TechCrunch Trump signs narrower executive order on AI oversight after industry objections President Donald Trump signed an executive order on Tuesday designed to give the government a chance to review powerful AI models before they are released. More from TechCrunch Trump signs narrower executive order on AI oversight after industry objections President Donald Trump signed an executive order on Tuesday designed to give the government a chance to review powerful AI models before they are released.",
+      "what_happened": "\u201cNothing in this section shall be construed to authorize the creation of a mandatory governmental licensing, preclearance, or permitting requirement for the development, publication, release, or distribution of new AI models, including frontier models,\u201d reads the order, published Tuesday. OpenAI launches new Codex tools for white-collar work Anthropic scales Claude Mythos to critical infrastructure in 15+ countries This AI weather startup is out-forecasting government agencies Latest in Government & Policy Trump.",
+      "why_matters": "Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections. More from TechCrunch Trump signs narrower executive order on AI oversight after industry objections President Donald Trump signed an executive order on Tuesday designed to give the government a chance to review powerful AI models before they are released.",
+      "what_to_watch": "More from TechCrunch Trump signs narrower executive order on AI oversight after industry objections President Donald Trump signed an executive order on Tuesday designed to give the government a chance to review powerful AI models before they are released.",
+      "key_points": [
+        "\u201cNothing in this section shall be construed to authorize the creation of a mandatory governmental licensing, preclearance, or permitting requirement for the development, publication, release, or distribution of new AI.",
+        "The order asks certain AI companies to voluntarily submit their new models to the government for testing or evaluation 30 days before releasing the products to the public.",
+        "OpenAI launches new Codex tools for white-collar work Anthropic scales Claude Mythos to critical infrastructure in 15+ countries This AI weather startup is out-forecasting government agencies Latest in Government &.",
+        "More from TechCrunch Trump signs narrower executive order on AI oversight after industry objections President Donald Trump signed an executive order on Tuesday designed to give the government a chance to review powerful.",
+        "This isn\u2019t the president\u2019s first EO on AI.",
+        "In addition to the voluntary governmental AI model review, the EO directs the Department of Justice to treat crimes like AI-assisted hacking and unauthorized access as a high-priority enforcement area.",
+        "A previous draft of the order had called for a voluntary review up to 90 days in advance, though AI industry insiders had pushed for something closer to a two-week window.",
+        "After industry objections, President Trump signed a revised AI executive order requiring only voluntary prerelease government reviews of advanced models.",
+        "The president said at the time that he didn\u2019t want to do anything to get in AI firms\u2019 way of leading against China.",
+        "Every weekday and Sunday, you can get the best of TechCrunch\u2019s coverage.",
+        "Provides movers and shakers with the info they need to start their day.",
+        "Trump had planned to sign the EO with a bevy of Silicon Valley\u2019s top CEOs in attendance but ended up signing the current version privately."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b5e1d9259e4e272e.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2021/08/bellan-rebecca-contributor-copy.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "60df73cc3eec40d1bc3eb6e4f2443f62"
+    },
+    {
+      "url": "https://www.theguardian.com/film/2026/jun/03/dreams-of-violets-ash-koosha-iran-tribeca-film-festival",
+      "title": "\u2018The CGI would have cost millions. I spent $2,000.\u2019 Is Dreams of Violets AI slop \u2013 or the future of film-making?",
+      "description": "It should have taken years, but Ash Koosha made a drama about Iran\u2019s anti-government protests in weeks \u2013 and now it\u2019s the first AI-made movie to screen at a major film festival. It could transform indie film-making, claims the director",
+      "excerpt": "It should have taken years, but Ash Koosha made a drama about Iran\u2019s anti-government protests in weeks \u2013 and now it\u2019s the first AI-made movie to screen at a major film festival. It could transform indie film-making, claims the director",
+      "summary": "I spent under $2,000.\u201d He also points out the difficulties in raising finance and pre-production. An all-AI animated feature called Where the Robots Grow was released way back in 2024. The script was not AI-generated, but he did use the chatbot Claude to improve the language and structure his thoughts. \u201cThat is a very valid point, and I think there are stories that I would never allow AI to touch, that we still need to do in the theatrical way.\u201d The kind of films he\u2019d make with AI, he says, are \u201cimpossible movies, a film that requires a $300m budget, and it doesn\u2019t happen on this planet.\u201d Koosha says that. I spent $2,000.\u2019 Is Dreams of Violets AI slop \u2013 or the future of film-making? I\u2019m somewhere in the middle trying to be the voice of reason.",
+      "what_happened": "I spent under $2,000.\u201d He also points out the difficulties in raising finance and pre-production. An all-AI animated feature called Where the Robots Grow was released way back in 2024.",
+      "why_matters": "The script was not AI-generated, but he did use the chatbot Claude to improve the language and structure his thoughts. \u201cThat is a very valid point, and I think there are stories that I would never allow AI to touch, that we still need to do in the theatrical way.\u201d The kind of films he\u2019d make with AI, he says, are \u201cimpossible movies, a film that requires a $300m budget, and it doesn\u2019t happen on this planet.\u201d Koosha says that.",
+      "what_to_watch": "I spent $2,000.\u2019 Is Dreams of Violets AI slop \u2013 or the future of film-making? I\u2019m somewhere in the middle trying to be the voice of reason.",
+      "key_points": [
+        "I spent under $2,000.\u201d He also points out the difficulties in raising finance and pre-production.",
+        "An all-AI animated feature called Where the Robots Grow was released way back in 2024.",
+        "I\u2019m somewhere in the middle trying to be the voice of reason.",
+        "The script was not AI-generated, but he did use the chatbot Claude to improve the language and structure his thoughts.",
+        "\u201cThat is a very valid point, and I think there are stories that I would never allow AI to touch, that we still need to do in the theatrical way.\u201d The kind of films he\u2019d make with AI, he says, are \u201cimpossible movies, a.",
+        "And they take a share in the financial gain of the film.",
+        "The answer, it turns out, is by using artificial intelligence.",
+        "I spent $2,000.\u2019 Is Dreams of Violets AI slop \u2013 or the future of film-making?",
+        "It could transform indie film-making, claims the director N ext week a breakthrough 75-minute drama about the brutal crackdown in Iran on anti-government protesters in January will premiere at the Tribeca film festival.",
+        "This is where I drew the line.",
+        "It was a bloodbath.\u201d Some estimates put the death toll at more than 30,000.",
+        "\u201cSo, I see that in the next 10 years there will be a reshuffling of money, hopefully in a better way."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/004f2edfc75b7629.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/d0d46710d8b373d5ba0a75932849fa5af6cca458/0_0_801_801/master/801.jpg?width=445&dpr=1&s=none&crop=none",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "0bcc49fc57124fd088129255cb07e70f"
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/c775pp26yz5o?at_medium=RSS&at_campaign=rss",
+      "title": "UK publishers allowed to opt out of Google AI search results",
+      "description": "The Competition and Markets Authority says it would put publishers \"in a stronger position to negotiate content deals with Google\".",
+      "excerpt": "The Competition and Markets Authority says it would put publishers \"in a stronger position to negotiate content deals with Google\".",
+      "summary": "King's College team wins access to cutting-edge Google quantum chip Google worker charged with using internal data to make $1.2m on bets Google to release first smart glasses since Google Glass flop Cancer vaccines using AI gets research funding Researchers use AI supercomputers to compare vasts amount of data in search for personal vaccines. Online publishers can choose not to appear in the AI Overviews of Google search results in the UK, the Competition and Markets Authority (CMA) has announced. AI giant Anthropic plans to sell shares in US as valuation nears $1tn The AI company behind Claude is set to offer the public the chance to buy and sell shares in the firm later this year. Google added it was engaging with regulators \"to ensure website owners have the right tools as user preferences evolve\". The Competition and Markets Authority says it would put publishers \"in a stronger position to negotiate content deals with Google\". In May, Google announced more AI integration into its search box , which the CMA says it is monitoring.",
+      "what_happened": "King's College team wins access to cutting-edge Google quantum chip Google worker charged with using internal data to make $1.2m on bets Google to release first smart glasses since Google Glass flop Cancer vaccines using AI gets research funding Researchers use AI supercomputers to compare vasts amount of data in search for personal vaccines. Online publishers can choose not to appear in the AI Overviews of Google search results in the UK, the Competition and Markets Authority (CMA) has announced.",
+      "why_matters": "AI giant Anthropic plans to sell shares in US as valuation nears $1tn The AI company behind Claude is set to offer the public the chance to buy and sell shares in the firm later this year. Google added it was engaging with regulators \"to ensure website owners have the right tools as user preferences evolve\".",
+      "what_to_watch": "The Competition and Markets Authority says it would put publishers \"in a stronger position to negotiate content deals with Google\". In May, Google announced more AI integration into its search box , which the CMA says it is monitoring.",
+      "key_points": [
+        "King's College team wins access to cutting-edge Google quantum chip Google worker charged with using internal data to make $1.2m on bets Google to release first smart glasses since Google Glass flop Cancer vaccines.",
+        "Online publishers can choose not to appear in the AI Overviews of Google search results in the UK, the Competition and Markets Authority (CMA) has announced.",
+        "In May, Google announced more AI integration into its search box , which the CMA says it is monitoring.",
+        "Google controls more than 90% of the online search market in the UK according to the CMA, and for almost 30 years websites and publishers have relied heavily on its search results to drive users to their businesses.",
+        "Google may be forced to make changes to search engine in UK Google launches new AI search feature in UK What is AI and how does it work?",
+        "In a blog published on Wednesday, Google said it was testing new features allowing website owners to take their sites out of AI search.",
+        "The BBC is in multiple languages",
+        "If a publisher opts out of appearing in Google's AI search results, the CMA says this gives them leverage to negotiate their own deals to be paid for the content the AI uses in its results.",
+        "The CMA says it will be monitoring developments in Google search and has to power to act further if need be.",
+        "Google has nine months to bring all the changes in, but the CMA says it wants to see \"important parts\" of the requirements implemented earlier.",
+        "The CMA said Google must properly attribute publishers' content which appears in its AI search results, with clear links to their sites.",
+        "\"including assessing the implications for businesses\"."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d2e018af05ad6e15.webp",
+      "image_url": "https://ichef.bbci.co.uk/news/480/cpsprodpb/92f7/live/51e59160-5dd6-11f1-b682-cf91850925ea.jpg.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "6a5f720a15f4473d847134e2dfe0b677"
+    },
+    {
+      "url": "https://abcnews.com/Technology/wireStory/nvidia-bets-ai-personal-computers-new-superchip-powering-133478024",
+      "title": "Nvidia bets on AI personal computers with new 'superchip' powering Windows laptops",
+      "description": "Nvidia has unveiled powerful new chips to bring advanced artificial intelligence to Windows laptops and desktops",
+      "excerpt": "Nvidia has unveiled powerful new chips to bring advanced artificial intelligence to Windows laptops and desktops",
+      "summary": "Nvidia has unveiled powerful new chips to bring advanced artificial intelligence to Windows laptops and desktops Good Morning America Nvidia bets on AI personal computers with new 'superchip' powering Windows laptops Nvidia has unveiled powerful new chips to bring advanced artificial intelligence to Windows laptops and desktops TAIPEI, Taiwan -- Nvidia on Monday unveiled new powerful chips that would bring advanced artificial intelligence functions into laptops and desktop computers, with the new personal computer. The company said it will be \u201creinventing the personal computer\u201d for creating and gaming. Nvidia is already the world\u2019s most valuable company, ahead of Apple, Google\u2019s parent Alphabet and Microsoft. Neil Shah, analyst and co-founder of Counterpoint Research, described Nvidia\u2019s announcement as a move that\u2019s \u201crevolutionizing how PCs would look like in the next 10 years.\u201d The new laptops and desktop computers \u201cwill drive agentic AI applications in every home,\u201d Shah said, with an aim of having an \u201cAI supercomputer\u201d.",
+      "what_happened": "Nvidia has unveiled powerful new chips to bring advanced artificial intelligence to Windows laptops and desktops Good Morning America Nvidia bets on AI personal computers with new 'superchip' powering Windows laptops Nvidia has unveiled powerful new chips to bring advanced artificial intelligence to Windows laptops and desktops TAIPEI, Taiwan -- Nvidia on Monday unveiled new powerful chips that would bring advanced artificial intelligence functions into laptops and desktop computers, with the new personal computer.",
+      "why_matters": "The company said it will be \u201creinventing the personal computer\u201d for creating and gaming. Nvidia is already the world\u2019s most valuable company, ahead of Apple, Google\u2019s parent Alphabet and Microsoft.",
+      "what_to_watch": "Neil Shah, analyst and co-founder of Counterpoint Research, described Nvidia\u2019s announcement as a move that\u2019s \u201crevolutionizing how PCs would look like in the next 10 years.\u201d The new laptops and desktop computers \u201cwill drive agentic AI applications in every home,\u201d Shah said, with an aim of having an \u201cAI supercomputer\u201d.",
+      "key_points": [
+        "Nvidia has unveiled powerful new chips to bring advanced artificial intelligence to Windows laptops and desktops Good Morning America Nvidia bets on AI personal computers with new 'superchip' powering Windows laptops.",
+        "\u201cThis is the first across the lineup of PC reinvention for 40 years,\u201d said Huang.",
+        "\u201cThis is going to be the new PC,\u201d Huang said as he unveiled Nvidia\u2019s RTX Spark superchip - which combines CPU, or central processing unit, and GPU, or graphics processing unit, capabilities - that would power new.",
+        "With the new superchips, these personal computers can run AI agents locally, Nvidia said.",
+        "Nvidia\u2019s move is significant at a time when demand is growing for the use of personal AI agents, said Lian Jye Su, chief analyst at the technology research and advisory group Omdia.",
+        "Neil Shah, analyst and co-founder of Counterpoint Research, described Nvidia\u2019s announcement as a move that\u2019s \u201crevolutionizing how PCs would look like in the next 10 years.\u201d The new laptops and desktop computers \u201cwill.",
+        "Also during Monday\u2019s speech, Nvidia\u2019s Huang said its new Vera CPUs for data centers are in full production and are \u201cgoing to be our new major growth driver\u201d on the boom of AI agents, with early customers including.",
+        "The company said it will be \u201creinventing the personal computer\u201d for creating and gaming.",
+        "Nvidia's shares were up nearly 4% in early U.S.",
+        "Sponsored Content by Taboola US conducts 'self-defense' strikes in Iran Trump to headline 250th celebration on National Mall after several artists back out Iran live updates: 'Significant' damage at Kuwait airport after.",
+        "Jensen Huang, the Taiwanese American founder and CEO of Nvidia, made the announcement in Taipei at the annual Nvidia GTC event.",
+        "Microsoft and Nvidia \u201care going to reinvent the PC (personal computer),\u201d he said in his keynote speech."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/08c2c8f9e7699749.jpg",
+      "image_url": "https://i.abcnewsfe.com/a/179a4ab5-0dc9-41c3-a7f5-fd18cb79a88a/wirestory_c807f7333b93b9927b62b1240dcf65a1_16x9.jpg?w=1600",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "3e4282bf6d5a415d9a3351e86623dae8"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/jun/01/nvidia-launches-chip-ai-laptops-pc-rtx-spark-microsoft-windows",
+      "title": "Nvidia launches \u2018superchip\u2019 putting AI power into laptops and PCs",
+      "description": "Firm says its RTX Spark PC chip for Microsoft Windows will let AI agents replace the mouse and keyboard",
+      "excerpt": "Firm says its RTX Spark PC chip for Microsoft Windows will let AI agents replace the mouse and keyboard",
+      "summary": "Firm says its RTX Spark PC chip for Microsoft Windows will let AI agents replace the mouse and keyboard Support the Guardian Nvidia launches \u2018superchip\u2019 putting AI power into laptops and PCs Firm says its RTX Spark PC chip for Microsoft Windows will let AI agents replace the mouse and keyboard A new front has opened up in the battle for dominance in AI chips, as Nvidia said its latest development could replace the mouse and keyboard in how people use computers. For now, Nvidia\u2019s fortunes still depend. The $5tn (\u00a33.7tn) US semiconductor company has launched a \u201csuperchip\u201d that puts AI capabilities into laptops and desktop computers, a move that will pit it against Intel, Apple, Qualcomm and AMD. Because the chip is very powerful, computers will still be thin and light, the company said. \u201cThis is the promise of AI,\u201d he said.",
+      "what_happened": "Firm says its RTX Spark PC chip for Microsoft Windows will let AI agents replace the mouse and keyboard Support the Guardian Nvidia launches \u2018superchip\u2019 putting AI power into laptops and PCs Firm says its RTX Spark PC chip for Microsoft Windows will let AI agents replace the mouse and keyboard A new front has opened up in the battle for dominance in AI chips, as Nvidia said its latest development could replace the mouse and keyboard in how people use computers. For now, Nvidia\u2019s fortunes still depend.",
+      "why_matters": "The $5tn (\u00a33.7tn) US semiconductor company has launched a \u201csuperchip\u201d that puts AI capabilities into laptops and desktop computers, a move that will pit it against Intel, Apple, Qualcomm and AMD. Because the chip is very powerful, computers will still be thin and light, the company said.",
+      "what_to_watch": "\u201cThis is the promise of AI,\u201d he said.",
+      "key_points": [
+        "Firm says its RTX Spark PC chip for Microsoft Windows will let AI agents replace the mouse and keyboard Support the Guardian Nvidia launches \u2018superchip\u2019 putting AI power into laptops and PCs Firm says its RTX Spark PC.",
+        "\u201cThis is the promise of AI,\u201d he said.",
+        "Huang said Nvidia was reimagining the PC \u201cfor the first time in 40 years\u201d.",
+        "For now, Nvidia\u2019s fortunes still depend overwhelmingly on relentless global demand for AI infrastructure and datacentre computing power.\u201d As chip wars heat up, Intel intends to start shipping an AI chip later this year.",
+        "The $5tn (\u00a33.7tn) US semiconductor company has launched a \u201csuperchip\u201d that puts AI capabilities into laptops and desktop computers, a move that will pit it against Intel, Apple, Qualcomm and AMD.",
+        "The RTX Spark chip will be launched this year, and will be used by computer makers including Dell, Lenovo, Asus and HP, paired with Microsoft\u2019s Windows software, according to the Nvidia chief executive, Jensen Huang.",
+        "The unveiling of the RTX Spark chip reinforces Jensen Huang\u2019s vision of PCs evolving from simple productivity tools into hyperintelligent digital co-workers.",
+        "Speaking at the Computex conference in Taiwan, Huang said the chip would \u201creinvent the PC\u201d for the AI era, after three years of collaboration between Nvidia and Microsoft.",
+        "Because the chip is very powerful, computers will still be thin and light, the company said.",
+        "It is \u201cpurpose-built for this upcoming AI generation of agents\u201d, according to Anil Nanduri, the vice-president of AI products at Intel\u2019s Data Center Group.",
+        "It will allow agents to navigate PCs autonomously, replacing humans\u2019 traditional mouse and keyboard interactions.",
+        "Nvidia, which dominates the booming AI semiconductor market, is pushing beyond graphics cards into integrated chips that power the whole computer."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/de8fa12e63409017.png",
+      "image_url": "https://i.guim.co.uk/img/uploads/2022/08/26/Nesrine_Malik.png?width=75&dpr=1&s=none&crop=none",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "970872483b334f61b0629aa3e251489c"
+    },
+    {
+      "url": "https://siliconangle.com/2026/06/01/anthropic-confidentiality-files-ipo-amid-rapid-growth/",
+      "title": "Anthropic confidentiality files for IPO amid rapid growth - SiliconANGLE",
+      "description": "Anthropic confidentiality files for IPO amid rapid growth. SiliconANGLE",
+      "excerpt": "Anthropic confidentiality files for IPO amid rapid growth. SiliconANGLE",
+      "summary": "On theCUBE Pod: Dell\u2019s AI hardware business pays dividends; Snowflake and Anthropic fare well at the stocks Five thoughts from Nvidia CEO Jensen Huang\u2019s GTC Taipei 2026 keynote Merge launches Agent Handler for Employees as an IT gatekeeper for workplace AI agents Nvidia debuts RTX Spark processor for Windows laptops, compact desktops Mitel CX solves the sovereign cloud problem for communications On theCUBE Pod: Dell\u2019s AI hardware business pays dividends; Snowflake and Anthropic fare well at the stocks Five. Claude Mythos Preview is a model the company announced in April but didn\u2019t broadly release. The upcoming IPO will unlock liquidity for Anthropic\u2019s institutional backers, which have invested more than $90 billion in the company since the start of the year alone. 15M+ viewers of theCUBE videos , powering conversations across AI, cloud, cybersecurity and more 11.4k+ theCUBE alumni - Connect with more than 11,400 tech and business leaders shaping the future through a unique trusted-based network. EXTRACT THE SIGNAL FROM THE NOISE",
+      "what_happened": "On theCUBE Pod: Dell\u2019s AI hardware business pays dividends; Snowflake and Anthropic fare well at the stocks Five thoughts from Nvidia CEO Jensen Huang\u2019s GTC Taipei 2026 keynote Merge launches Agent Handler for Employees as an IT gatekeeper for workplace AI agents Nvidia debuts RTX Spark processor for Windows laptops, compact desktops Mitel CX solves the sovereign cloud problem for communications On theCUBE Pod: Dell\u2019s AI hardware business pays dividends; Snowflake and Anthropic fare well at the stocks Five.",
+      "why_matters": "Claude Mythos Preview is a model the company announced in April but didn\u2019t broadly release. The upcoming IPO will unlock liquidity for Anthropic\u2019s institutional backers, which have invested more than $90 billion in the company since the start of the year alone.",
+      "what_to_watch": "15M+ viewers of theCUBE videos , powering conversations across AI, cloud, cybersecurity and more 11.4k+ theCUBE alumni - Connect with more than 11,400 tech and business leaders shaping the future through a unique trusted-based network. EXTRACT THE SIGNAL FROM THE NOISE",
+      "key_points": [
+        "On theCUBE Pod: Dell\u2019s AI hardware business pays dividends; Snowflake and Anthropic fare well at the stocks Five thoughts from Nvidia CEO Jensen Huang\u2019s GTC Taipei 2026 keynote Merge launches Agent Handler for Employees.",
+        "The service\u2019s annualized revenue passed $2.5 billion within less than a year of its launch into general availability.",
+        "Claude Mythos Preview is a model the company announced in April but didn\u2019t broadly release.",
+        "The upcoming IPO will unlock liquidity for Anthropic\u2019s institutional backers, which have invested more than $90 billion in the company since the start of the year alone.",
+        "EXTRACT THE SIGNAL FROM THE NOISE",
+        "The company didn\u2019t share any details about its planned listing in the brief blog post that announced the move.",
+        "Anthropic\u2019s plan to release \u201cMythos-class\u201d LLMs in the coming weeks could further boost the interest around Claude Code, particularly among companies looking to improve their cybersecurity.",
+        "The document revealed that Anthropic had agreed to pay the company $1.25 billion per month through 2029 for access to its AI supercomputers.",
+        "Claude Code is powered by the company\u2019s Claude series of large language models.",
+        "One of the main contributors to Anthropic\u2019s growth is Claude Code, the programming-optimized version of its chatbot.",
+        "This past February, the company revealed that the number of customers who spend more $1 million per year on its services had topped 500.",
+        "The stock sale will likely give it a market capitalization above $965 billion, the valuation it received after its most recent funding round."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e36a4b197324f794.png",
+      "image_url": "https://s3.us-west-2.amazonaws.com/cube365-prod/related-content/ba8c110e-cedf-4670-929d-e2ecca19ae3c.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3877d26b65840836.webp"
+      ],
+      "extra_image_urls": [
+        "https://cube365-prod.s3.us-west-2.amazonaws.com/related-content/eac55888-bfee-48d1-8474-1e6c96d5ef81.webp"
+      ],
+      "_story_id": "a8b276174e8f4cee884297741e693257"
+    },
+    {
+      "url": "https://www.engadget.com/2186257/google-will-allow-websites-to-exclude-themselves-from-ai-search-results/",
+      "title": "Google will allow websites to exclude themselves from AI search results - Engadget",
+      "description": "The company says opting out won't impact placement in regular searches.",
+      "excerpt": "The company says opting out won't impact placement in regular searches.",
+      "summary": "Google will allow websites to exclude themselves from AI search results The company says opting out won't impact placement in regular searches. Google said that it's \"actively listening to feedback from publishers and creators\" and engaging with regulators, such as the UK's Competition and Markets Authority, when it comes to providing website owners \"the right tools as user preferences evolve.\" The announcement also comes just weeks after the company's I/O 2026 developer keynote where it introduced a new dynamic. In a blog post published early Wednesday morning, the company said it would begin testing a new toggle inside of its Search Console designed to allow website owners to decide if their webpages appear in and help ground the company's latest AI search features, including AI Overviews and AI Mode. The company plans to first test the toggle with a small subset of domain owners in the UK before rolling it out globally. He later clarified Cond\u00e9 Nast doesn't expect search traffic to literally reach zero, but he did say he expects referrals from Google to represent a single-digit percentage of total traffic moving forward. More than three years after it began rolling out AI.",
+      "what_happened": "Google will allow websites to exclude themselves from AI search results The company says opting out won't impact placement in regular searches. Google said that it's \"actively listening to feedback from publishers and creators\" and engaging with regulators, such as the UK's Competition and Markets Authority, when it comes to providing website owners \"the right tools as user preferences evolve.\" The announcement also comes just weeks after the company's I/O 2026 developer keynote where it introduced a new dynamic.",
+      "why_matters": "In a blog post published early Wednesday morning, the company said it would begin testing a new toggle inside of its Search Console designed to allow website owners to decide if their webpages appear in and help ground the company's latest AI search features, including AI Overviews and AI Mode. The company plans to first test the toggle with a small subset of domain owners in the UK before rolling it out globally.",
+      "what_to_watch": "He later clarified Cond\u00e9 Nast doesn't expect search traffic to literally reach zero, but he did say he expects referrals from Google to represent a single-digit percentage of total traffic moving forward. More than three years after it began rolling out AI Overviews and a year after the debut of AI Mode , Google is.",
+      "key_points": [
+        "Google will allow websites to exclude themselves from AI search results The company says opting out won't impact placement in regular searches.",
+        "Google said that it's \"actively listening to feedback from publishers and creators\" and engaging with regulators, such as the UK's Competition and Markets Authority, when it comes to providing website owners \"the right.",
+        "In a blog post published early Wednesday morning, the company said it would begin testing a new toggle inside of its Search Console designed to allow website owners to decide if their webpages appear in and help ground.",
+        "The company plans to first test the toggle with a small subset of domain owners in the UK before rolling it out globally.",
+        "The executive said he told the company's teams last year to \"assume there's no search\" to bolster pageviews and revenue.",
+        "The company says opting out won't impact placement in regular searches.",
+        "More than three years after it began rolling out AI Overviews and a year after the debut of AI Mode , Google is giving webmasters the option to exclude their domains from its AI-generated search results.",
+        "He later clarified Cond\u00e9 Nast doesn't expect search traffic to literally reach zero, but he did say he expects referrals from Google to represent a single-digit percentage of total traffic moving forward.",
+        "That announcement prompted plenty of articles declaring the death of \" Google Search as you know it .\" Even if that sentiment was premature, there's been growing resentment toward Google from the very publishers who.",
+        "Do not sell or share my personal information."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/aaaeb8303b06317a.jpg",
+      "image_url": "https://img4.zergnet.com/8755679_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "1ebbebf1a55d4f24811de21ff3e2e1ab"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 9,
+  "has_cta": true,
+  "slides": [
+    "Run Local AI Agents with Faster Models and Multi-Node Clustering on NVIDIA.",
+    "Trump signs narrower executive order on AI oversight after industry objections.",
+    "The CGI would have cost millions I spent $2 000.' Is Dreams.",
+    "UK publishers allowed to opt out of Google AI search results.",
+    "Nvidia bets on AI personal computers with new superchip' powering Windows laptops.",
+    "Nvidia launches superchip' putting AI power into laptops and PCs.",
+    "Anthropic confidentiality files for IPO amid rapid growth.",
+    "Google will allow websites to exclude themselves from AI search results.",
+    "FOLLOW @graitech"
+  ]
+}
