@@ -1,0 +1,52 @@
+{
+  "email_received_at": "2026-06-04T22:00+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Thu, 04 Jun 2026 22:00:58 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.theverge.com/gadgets/942616/oura-ring-5-size-comparison-first-impressions",
+      "title": "Company : The Verge AI",
+      "description": "[MEDIUM] Yes, the Oura Ring 5 is noticeably smaller Company : The Verge AI Summary : This is not an Oura Ring 5 review. That's coming later, once I've had enough time to really test the new durability and battery life claims, plus the new software updates that start rolling out today. Link :",
+      "text": "[MEDIUM] Yes, the Oura Ring 5 is noticeably smaller Company : The Verge AI Summary : This is not an Oura Ring 5 review. That's coming later, once I've had enough time to really test the new durability and battery life claims, plus the new software updates that start rolling out today. Link :",
+      "excerpt": "[MEDIUM] Yes, the Oura Ring 5 is noticeably smaller Company : The Verge AI Summary : This is not an Oura Ring 5 review. That's coming later, once I've had enough time to really test the new durability and battery life claims, plus the new software updates that start rolling out today. Link :",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/ouraring5comp.jpg?quality=90&amp;strip=all&amp;crop=0%2C9.756192857701%2C100%2C80.487614284598&amp;w=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theverge.com/gadgets/942616/oura-ring-5-size-comparison-first-impressions",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://aibusiness.com/agentic-ai/meta-rolls-out-ai-agent-enterprises-globally",
+      "title": "Company : AI Business",
+      "description": "[MEDIUM] Meta Rolls Out AI Agent for Enterprises Globally Company : AI Business Summary : The tool is aimed at small businesses and is part of the social media giant\u2019s push beyond consumers. Link :",
+      "text": "[MEDIUM] Meta Rolls Out AI Agent for Enterprises Globally Company : AI Business Summary : The tool is aimed at small businesses and is part of the social media giant\u2019s push beyond consumers. Link :",
+      "excerpt": "[MEDIUM] Meta Rolls Out AI Agent for Enterprises Globally Company : AI Business Summary : The tool is aimed at small businesses and is part of the social media giant\u2019s push beyond consumers. Link :",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltee176ce55650ab85/6a21c0c5563cbbc1f1a60149/Meta.jpg?disable=upscale&width=1200&height=630&fit=crop",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://aibusiness.com/agentic-ai/meta-rolls-out-ai-agent-enterprises-globally",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "Oura Ring upgrades impatient folks considering upgrades I come bearing.",
+    "FOLLOW @graitech"
+  ]
+}

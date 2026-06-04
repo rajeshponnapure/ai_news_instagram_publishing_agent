@@ -1,0 +1,26 @@
+Updating the taxonomy of failure modes in agentic AI systems What.
+
+Swipe for the full breakdown.
+
+- Session context contamination occurs when an adversary introduces data early in a session that biases the agent's reasoning.
+- The update adds seven new failure mode categories, expands the mitigations section, and grounds the framework in 12.
+- OpenClaw, launched in January 2026, accumulated over 336,000 GitHub stars and spawned more than 2,100 agents within 48.
+- The v1.0 taxonomy was forward-looking.
+- Based on 12 months of red teaming, this update introduces seven new failure modes, from supply chain compromise.
+
+What's the one thing about this that surprised you most?
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://www.microsoft.com/en-us/security/blog/2026/06/04/updating-taxonomy-failure-modes-agentic-ai-systems-year-red-teaming-taught-us/
+- https://techcrunch.com/2026/06/04/apple-approves-poke-as-the-first-ai-agent-on-its-messages-for-business-platform/
+- https://www.anthropic.com/institute/recursive-self-improvement
+- https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety
+- https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-ultra-now-available-on-amazon-sagemaker-jumpstart/
+
+#AIAgents #AutonomousAgents #AIWorkflow #MicrosoftAI #Copilot #EmergingTech #AINews #TechNews #AIUpdates #Technology #Tech #AI #LearnAI #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing #MLNews #AIWeekly #TechInnovation
+
+-
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-

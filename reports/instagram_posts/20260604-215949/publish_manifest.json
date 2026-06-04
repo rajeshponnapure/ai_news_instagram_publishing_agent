@@ -1,0 +1,21 @@
+{
+  "posts": [
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260604-215949/01_20260604-2159_updating-the-taxonomy-of-failure-modes-in-agentic-ai-systems",
+      "caption": "Updating the taxonomy of failure modes in agentic AI systems What.\n\nSwipe for the full breakdown.\n\n- Session context contamination occurs when an adversary introduces data early in a session that biases the agent's reasoning.\n- The update adds seven new failure mode categories, expands the mitigations section, and grounds the framework in 12.\n- OpenClaw, launched in January 2026, accumulated over 336,000 GitHub stars and spawned more than 2,100 agents within 48.\n- The v1.0 taxonomy was forward-looking.\n- Based on 12 months of red teaming, this update introduces seven new failure modes, from supply chain compromise.\n\nWhat's the one thing about this that surprised you most?\n\nSave this before it disappears from your feed.\n\nSources:\n- https://www.microsoft.com/en-us/security/blog/2026/06/04/updating-taxonomy-failure-modes-agentic-ai-systems-year-red-teaming-taught-us/\n- https://techcrunch.com/2026/06/04/apple-approves-poke-as-the-first-ai-agent-on-its-messages-for-business-platform/\n- https://www.anthropic.com/institute/recursive-self-improvement\n- https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety\n- https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-ultra-now-available-on-amazon-sagemaker-jumpstart/\n\n#AIAgents #AutonomousAgents #AIWorkflow #MicrosoftAI #Copilot #EmergingTech #AINews #TechNews #AIUpdates #Technology #Tech #AI #LearnAI #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing #MLNews #AIWeekly #TechInnovation\n\n-\nAI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.\n-\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260604-215949/01_20260604-2159_updating-the-taxonomy-of-failure-modes-in-agentic-ai-systems/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260604-215949/01_20260604-2159_updating-the-taxonomy-of-failure-modes-in-agentic-ai-systems/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260604-215949/01_20260604-2159_updating-the-taxonomy-of-failure-modes-in-agentic-ai-systems/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260604-215949/01_20260604-2159_updating-the-taxonomy-of-failure-modes-in-agentic-ai-systems/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260604-215949/01_20260604-2159_updating-the-taxonomy-of-failure-modes-in-agentic-ai-systems/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260604-215949/01_20260604-2159_updating-the-taxonomy-of-failure-modes-in-agentic-ai-systems/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260604-215949/01_20260604-2159_updating-the-taxonomy-of-failure-modes-in-agentic-ai-systems/slide_07.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260604-215949/01_20260604-2159_updating-the-taxonomy-of-failure-modes-in-agentic-ai-systems/slide_08.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260604-215949/01_20260604-2159_updating-the-taxonomy-of-failure-modes-in-agentic-ai-systems/slide_09.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload"
+    }
+  ]
+}

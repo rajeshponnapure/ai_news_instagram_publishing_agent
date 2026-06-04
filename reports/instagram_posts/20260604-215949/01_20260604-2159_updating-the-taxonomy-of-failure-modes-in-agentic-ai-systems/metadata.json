@@ -1,0 +1,387 @@
+{
+  "email_received_at": "2026-06-04T21:59+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Updating the taxonomy of failure modes in agentic AI systems: What a year of red teaming taught us | Microsoft Security Blog",
+  "subject": "",
+  "source_date": "2026-06-04T21:59:50.193144",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://www.microsoft.com/en-us/security/blog/2026/06/04/updating-taxonomy-failure-modes-agentic-ai-systems-year-red-teaming-taught-us/",
+  "article_title": "Updating the taxonomy of failure modes in agentic AI systems: What a year of red teaming taught us | Microsoft Security Blog",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/76128242a467c9aa.webp",
+  "article_image_url": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/05/MS_Actional-Insights_AI.webp",
+  "article_items": [
+    {
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/04/updating-taxonomy-failure-modes-agentic-ai-systems-year-red-teaming-taught-us/",
+      "title": "Updating the taxonomy of failure modes in agentic AI systems: What a year of red teaming taught us | Microsoft Security Blog",
+      "description": "A surge in real-world attacks against agentic AI systems is reshaping how we think about risk. Based on 12 months of red teaming, this update introduces seven new failure modes, from supply chain compromise to goal hijacking, and the practical mitigations teams need now.",
+      "excerpt": "A surge in real-world attacks against agentic AI systems is reshaping how we think about risk. Based on 12 months of red teaming, this update introduces seven new failure modes, from supply chain compromise to goal hijacking, and the practical mitigations teams need now.",
+      "summary": "Session context contamination occurs when an adversary introduces data early in a session that biases the agent\u2019s reasoning in subsequent steps, without triggering safety controls at any individual step. The update adds seven new failure mode categories, expands the mitigations section, and grounds the framework in 12 months of red team engagements against deployed agentic systems. Updating the taxonomy of failure modes in agentic AI systems: What a year of red teaming taught us Updating the taxonomy of failure modes in agentic AI systems: What a year of red teaming taught us Products and services When the Microsoft AI Red Team published the Taxonomy of Failure Modes in Agentic AI Systems in April 2025, the goal was a shared vocabulary for a threat landscape that did not fit existing frameworks. SBOM. Controls include context provenance tracking, structured separation between trusted system context and untrusted retrieved content, session integrity monitoring for anomalous accumulation patterns, and bounded session contexts that limit how much external content can influence a session\u2019s reasoning. OpenClaw, launched.",
+      "what_happened": "Session context contamination occurs when an adversary introduces data early in a session that biases the agent\u2019s reasoning in subsequent steps, without triggering safety controls at any individual step. The update adds seven new failure mode categories, expands the mitigations section, and grounds the framework in 12 months of red team engagements against deployed agentic systems.",
+      "why_matters": "Updating the taxonomy of failure modes in agentic AI systems: What a year of red teaming taught us Updating the taxonomy of failure modes in agentic AI systems: What a year of red teaming taught us Products and services When the Microsoft AI Red Team published the Taxonomy of Failure Modes in Agentic AI Systems in April 2025, the goal was a shared vocabulary for a threat landscape that did not fit existing frameworks. SBOM.",
+      "what_to_watch": "Controls include context provenance tracking, structured separation between trusted system context and untrusted retrieved content, session integrity monitoring for anomalous accumulation patterns, and bounded session contexts that limit how much external content can influence a session\u2019s reasoning. OpenClaw, launched.",
+      "key_points": [
+        "Session context contamination occurs when an adversary introduces data early in a session that biases the agent\u2019s reasoning in subsequent steps, without triggering safety controls at any individual step.",
+        "The update adds seven new failure mode categories, expands the mitigations section, and grounds the framework in 12 months of red team engagements against deployed agentic systems.",
+        "OpenClaw, launched in January 2026, accumulated over 336,000 GitHub stars and spawned more than 2,100 agents within 48 hours of release.",
+        "The v1.0 taxonomy was forward-looking.",
+        "Based on 12 months of red teaming, this update introduces seven new failure modes, from supply chain compromise to goal hijacking, and the practical mitigations teams need now.",
+        "The original taxonomy covered agent compromise but did not sufficiently distinguish the mechanism of compromise from the strategic objective of redirecting the agent\u2019s goal state.",
+        "Why the Taxonomy Needed Updating Open-source agentic frameworks went mainstream faster than the security community was ready for.",
+        "The failure modes added in v2.0 are the ones that twelve months of operational data made compelling enough to include.",
+        "A security audit conducted shortly after launch identified 512 vulnerabilities including CVE-2026-25253, a one-click RCE via WebSocket hijacking.",
+        "Updating the taxonomy of failure modes in agentic AI systems: What a year of red teaming taught us Updating the taxonomy of failure modes in agentic AI systems: What a year of red teaming taught us Products and services.",
+        "The Model Context Protocol became the de facto standard for connecting models to external tools.",
+        "The updated whitepaper is available now ."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/76128242a467c9aa.webp",
+      "image_url": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/05/MS_Actional-Insights_AI.webp",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5ff9b19f6022fbb7.webp"
+      ],
+      "extra_image_urls": [
+        "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/04/MS_Actional-Insights_Access.webp"
+      ],
+      "_story_id": "548cb9956a0344a2ad0fcf09cfa43fc0"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/04/apple-approves-poke-as-the-first-ai-agent-on-its-messages-for-business-platform/",
+      "title": "Apple approves Poke as the first AI agent on its Messages for Business platform | TechCrunch",
+      "description": "Poke, the startup that lets people use AI agents through simple text messages, has become the first AI agent approved for Apple\u2019s Messages for Business platform.",
+      "excerpt": "Poke, the startup that lets people use AI agents through simple text messages, has become the first AI agent approved for Apple\u2019s Messages for Business platform.",
+      "summary": "The news of Poke\u2019s launch on Apple\u2019s Messages for Business comes just days ahead of Apple\u2019s anticipated Worldwide Developers Conference on Monday, where it\u2019s expected to introduce an AI-optimized version of Siri along with other AI tools and services for app developers. Launched in March, Poke is one of the first AI agents designed to be accessible to everyday users who don\u2019t have the technical skill set or inclination to work with command-line tools or more complex agentic systems, like OpenClaw. More from TechCrunch Apple approves Poke as the first AI agent on its Messages for Business platform Poke , a startup that turns using AI agents into something as simple as sending a text message, has become the first AI agent approved to run on Apple\u2019s Messages for Business platform . Poke, the startup that lets people use AI agents through simple text messages, has become the first AI agent approved for Apple\u2019s Messages for. While he can\u2019t share the exact pricing, he notes that it\u2019s significantly lower than Meta AI, after it increased fees in response to EU regulation that required it to permit third-party AI agents on WhatsApp. For founders and investors, the more interesting detail.",
+      "what_happened": "The news of Poke\u2019s launch on Apple\u2019s Messages for Business comes just days ahead of Apple\u2019s anticipated Worldwide Developers Conference on Monday, where it\u2019s expected to introduce an AI-optimized version of Siri along with other AI tools and services for app developers. Launched in March, Poke is one of the first AI agents designed to be accessible to everyday users who don\u2019t have the technical skill set or inclination to work with command-line tools or more complex agentic systems, like OpenClaw.",
+      "why_matters": "More from TechCrunch Apple approves Poke as the first AI agent on its Messages for Business platform Poke , a startup that turns using AI agents into something as simple as sending a text message, has become the first AI agent approved to run on Apple\u2019s Messages for Business platform . Poke, the startup that lets people use AI agents through simple text messages, has become the first AI agent approved for Apple\u2019s Messages for.",
+      "what_to_watch": "While he can\u2019t share the exact pricing, he notes that it\u2019s significantly lower than Meta AI, after it increased fees in response to EU regulation that required it to permit third-party AI agents on WhatsApp. For founders and investors, the more interesting detail may be the business model it opens up.",
+      "key_points": [
+        "More from TechCrunch Apple approves Poke as the first AI agent on its Messages for Business platform Poke , a startup that turns using AI agents into something as simple as sending a text message, has become the first.",
+        "Poke, the startup that lets people use AI agents through simple text messages, has become the first AI agent approved for Apple\u2019s Messages for Business platform.",
+        "The news of Poke\u2019s launch on Apple\u2019s Messages for Business comes just days ahead of Apple\u2019s anticipated Worldwide Developers Conference on Monday, where it\u2019s expected to introduce an AI-optimized version of Siri along.",
+        "For founders and investors, the more interesting detail may be the business model it opens up.",
+        "Launched in March, Poke is one of the first AI agents designed to be accessible to everyday users who don\u2019t have the technical skill set or inclination to work with command-line tools or more complex agentic systems.",
+        "Microsoft launches Scout, an OpenClaw-inspired personal assistant Hackers hijacked Instagram accounts by tricking Meta AI support chatbot into granting access \u2018What a joke\u2019: GitHub Copilot\u2019s new token-based billing.",
+        "Poke\u2019s users ask the AI agent a question or make a request, and it responds via text.",
+        "He believes Apple\u2019s support for AI agents will grow over time as well.",
+        "To date, it\u2019s relayed some 100 million messages, the company tells TechCrunch.",
+        "Getting Apple\u2019s approval required the company to verify that it could offer live support, if needed, and that its AI agent was clearly identified as such.",
+        "It\u2019s not clear if Apple will announce any news related to AI agents on its Message for Business platform at WWDC next week, and von Hagen isn\u2019t clued into Apple\u2019s plans.",
+        "This allows consumers to reach out to businesses for information, support, appointment scheduling, and more, without having to call them by phone."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a7d12cc76b171157.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/04/Poke-at-3.57.33-PM.jpg?resize=1200,604",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "35a559f397324d4c86b3299ce076b3d4"
+    },
+    {
+      "url": "https://www.anthropic.com/institute/recursive-self-improvement",
+      "title": "When AI builds itself",
+      "description": "Our progress toward recursive self-improvement, and its implications.",
+      "excerpt": "Our progress toward recursive self-improvement, and its implications.",
+      "summary": "3 Before Claude Code launched in research preview in February 2025, this number was in the low single digits. Every time Anthropic releases a model, we run the same test: we give Claude some code that trains a small AI model, and ask it to make that code run as fast as possible while still passing the same correctness checks. And we are still early in the diffusion of today\u2019s models into the wider economy, where a 100-person company can increasingly do the work of a 1,000-person one, because each employee will sit atop a pyramid of agents. 2 SWE-bench is a standard test of real-world software engineering: it hands a model an actual open-source codebase and a real bug report, and asks it to write a code change that fixes the issue and passes the. We examined real Claude Code sessions (between January and March 2026) where Anthropic researchers were working with Claude on an open-ended investigative problem, like figuring out why a training run kept crashing, or why a model scored poorly on a benchmark. There is engineering : writing the code, standing up the.",
+      "what_happened": "3 Before Claude Code launched in research preview in February 2025, this number was in the low single digits. Every time Anthropic releases a model, we run the same test: we give Claude some code that trains a small AI model, and ask it to make that code run as fast as possible while still passing the same correctness checks.",
+      "why_matters": "And we are still early in the diffusion of today\u2019s models into the wider economy, where a 100-person company can increasingly do the work of a 1,000-person one, because each employee will sit atop a pyramid of agents. 2 SWE-bench is a standard test of real-world software engineering: it hands a model an actual open-source codebase and a real bug report, and asks it to write a code change that fixes the issue and passes the.",
+      "what_to_watch": "We examined real Claude Code sessions (between January and March 2026) where Anthropic researchers were working with Claude on an open-ended investigative problem, like figuring out why a training run kept crashing, or why a model scored poorly on a benchmark. There is engineering : writing the code, standing up the.",
+      "key_points": [
+        "There is engineering : writing the code, standing up the infrastructure, and overseeing the model training.",
+        "3 Before Claude Code launched in research preview in February 2025, this number was in the low single digits.",
+        "There, the models\u2019 suggestions were judged better only about 20% of the time.",
+        "Every time Anthropic releases a model, we run the same test: we give Claude some code that trains a small AI model, and ask it to make that code run as fast as possible while still passing the same correctness checks.",
+        "And we are still early in the diffusion of today\u2019s models into the wider economy, where a 100-person company can increasingly do the work of a 1,000-person one, because each employee will sit atop a pyramid of agents.",
+        "We examined real Claude Code sessions (between January and March 2026) where Anthropic researchers were working with Claude on an open-ended investigative problem, like figuring out why a training run kept crashing, or.",
+        "2 SWE-bench is a standard test of real-world software engineering: it hands a model an actual open-source codebase and a real bug report, and asks it to write a code change that fixes the issue and passes the project\u2019s.",
+        "AI systems went from succeeding at reproducing the results roughly 20% of the time in 2024 to saturating the benchmark fifteen months later.",
+        "On the first criterion, the evidence is clear.",
+        "METR, which runs the benchmark measuring how well models can complete long-duration tasks, found that Claude Mythos Preview could work for \u201cat least\u201d 16 hours and was \u201cat the upper end of what [METR] can measure without.",
+        "Benchmarks measure the performance of models in a given domain, and they\u2019re \u201csaturated\u201d when models achieve close to 100% performance.",
+        "In this world, the pace of progress in AI development becomes determined entirely by the availability of compute (or the speed of discovering various efficiencies in algorithmic training or inference) for AI systems."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2f17e0698516a533.jpg",
+      "image_url": "https://cdn.sanity.io/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/cdce66c823529df0.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a671a14ddde23271.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5767b3c5ff592a40.webp"
+      ],
+      "extra_image_urls": [
+        "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F30f1266938f0d62a770dccf77baf24a0ad237fbd-2200x1276.png&w=3840&q=75",
+        "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F52a19d636c659cf4515dc0d7d70b8ceb1bbfd768-2200x1276.png&w=3840&q=75",
+        "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F6fc2841bc896ad4ea8ee77e515df1a0a6bed8bcf-2200x1276.png&w=3840&q=75"
+      ],
+      "_story_id": "be2431e9eab44459a3d859b2b3d93a31"
+    },
+    {
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+      "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+      "description": "A Blog post by NVIDIA on Hugging Face",
+      "excerpt": "A Blog post by NVIDIA on Hugging Face",
+      "summary": "Compared to another reasoning safety model, our model generated up to 50% fewer tokens when reasoning is enabled, making it efficient in terms of cost and latency. Reasoning allows a content safety model to dynamically interpret and enforce custom, domain-specific policies defined in natural language at the time of inference. This consistency helps teams apply the same safety posture across customer, employee, and partner-facing workflows instead of relying on English-only moderation or separate regional safety models. Policy Iteration: The traces reveal how the model interprets edge cases, allowing teams to iteratively refine and improve custom policy language. Nemotron 3.5 Content Safety achieves 3x lower end-to-end latency on a multimodal benchmark compared to an alternative multimodal safety model.",
+      "what_happened": "Compared to another reasoning safety model, our model generated up to 50% fewer tokens when reasoning is enabled, making it efficient in terms of cost and latency. Reasoning allows a content safety model to dynamically interpret and enforce custom, domain-specific policies defined in natural language at the time of inference.",
+      "why_matters": "This consistency helps teams apply the same safety posture across customer, employee, and partner-facing workflows instead of relying on English-only moderation or separate regional safety models. Policy Iteration: The traces reveal how the model interprets edge cases, allowing teams to iteratively refine and improve custom policy language.",
+      "what_to_watch": "Nemotron 3.5 Content Safety achieves 3x lower end-to-end latency on a multimodal benchmark compared to an alternative multimodal safety model.",
+      "key_points": [
+        "The Nemotron 3.5 Content Safety Dataset is multimodal, multilingual, and includes safety reasoning traces that were used to train the model.",
+        "Compared to another reasoning safety model, our model generated up to 50% fewer tokens when reasoning is enabled, making it efficient in terms of cost and latency.",
+        "Nemotron 3.5 Content Safety achieves 3x lower end-to-end latency on a multimodal benchmark compared to an alternative multimodal safety model.",
+        "Reasoning allows a content safety model to dynamically interpret and enforce custom, domain-specific policies defined in natural language at the time of inference.",
+        "A Blog post by NVIDIA on Hugging Face Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI This post covers what changes in 3.5, the design decisions behind each new capability, and how.",
+        "This extends the work first introduced in Nemotron Content Safety Reasoning 4B to the full multimodal, multilingual setting.",
+        "Nemotron 3.5 Content Safety is available on Hugging Face under the NVIDIA Open Model License for research and commercial use, along with the training dataset .",
+        "These reasoning traces were generated in a 2-step manner to make them concise, similar to the Nemotron Content Safety Reasoning 4B model.",
+        "Nemotron 3.5 Content Safety delivers strong harmful-content classification accuracy across multilingual and multimodal safety benchmarks, averaging about 85% across the evaluated benchmark set.",
+        "Unified Multimodal Evaluation Nemotron 3 introduced image understanding; Nemotron 3.5 deepens the multimodal integration.",
+        "Nemotron 3.5 Content Safety's compact 4B design helps reduce the cost and latency of repeated safety checks, making multilingual and multimodal guardrails practical for real-world AI applications.",
+        "The dataset driving Nemotron 3.5 is an evolution of the multimodal, multilingual blends used for Nemotron 3, with additions targeting the reasoning and custom-policy capabilities."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/01d0ab57a3c7a001.png",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/644c4b804ef896a09019a5b4/5drKmlTOcLxVobY03RJ7_.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "3cb7d86062a548178f5e68546197d2b4"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-ultra-now-available-on-amazon-sagemaker-jumpstart/",
+      "title": "NVIDIA Nemotron 3 Ultra now available on Amazon SageMaker JumpStart | Amazon Web Services",
+      "description": "Deploy NVIDIA Nemotron 3 Ultra on Amazon SageMaker JumpStart. Get 5x faster inference and 30% lower cost for agentic AI workloads with this frontier reasoning model.",
+      "excerpt": "Deploy NVIDIA Nemotron 3 Ultra on Amazon SageMaker JumpStart. Get 5x faster inference and 30% lower cost for agentic AI workloads with this frontier reasoning model.",
+      "summary": "Whether you are building agent orchestrators, coding agents, deep research systems, or complex enterprise automation, Nemotron 3 Ultra is ready to deploy today from SageMaker JumpStart. Enterprise use cases Nemotron 3 Ultra excels in workloads that require sustained multi-step reasoning: Agent orchestrators \u2013 coordinate multiple sub-agents, manage state across long tool-calling chains Coding agents \u2013 generate, test, debug, and iterate on code across large repositories Deep research \u2013 synthesize information from. Nemotron 3 Ultra is an open model built for frontier reasoning and orchestration in long-running autonomous agents, delivering 5x faster inference and up to 30% lower cost for agentic workloads. Deploy NVIDIA Nemotron 3 Ultra on Amazon SageMaker JumpStart. See Amazon SageMaker AI pricing for details. Nemotron 3 Ultra is an open model built for frontier reasoning and orchestration in long-running autonomous agents, delivering 5x faster inference and up to 30% lower cost for agentic workloads.",
+      "what_happened": "Whether you are building agent orchestrators, coding agents, deep research systems, or complex enterprise automation, Nemotron 3 Ultra is ready to deploy today from SageMaker JumpStart. Enterprise use cases Nemotron 3 Ultra excels in workloads that require sustained multi-step reasoning: Agent orchestrators \u2013 coordinate multiple sub-agents, manage state across long tool-calling chains Coding agents \u2013 generate, test, debug, and iterate on code across large repositories Deep research \u2013 synthesize information from.",
+      "why_matters": "Nemotron 3 Ultra is an open model built for frontier reasoning and orchestration in long-running autonomous agents, delivering 5x faster inference and up to 30% lower cost for agentic workloads. Deploy NVIDIA Nemotron 3 Ultra on Amazon SageMaker JumpStart.",
+      "what_to_watch": "See Amazon SageMaker AI pricing for details. Nemotron 3 Ultra is an open model built for frontier reasoning and orchestration in long-running autonomous agents, delivering 5x faster inference and up to 30% lower cost for agentic workloads.",
+      "key_points": [
+        "Whether you are building agent orchestrators, coding agents, deep research systems, or complex enterprise automation, Nemotron 3 Ultra is ready to deploy today from SageMaker JumpStart.",
+        "Enterprise use cases Nemotron 3 Ultra excels in workloads that require sustained multi-step reasoning: Agent orchestrators \u2013 coordinate multiple sub-agents, manage state across long tool-calling chains Coding agents \u2013.",
+        "Nemotron 3 Ultra is an open model built for frontier reasoning and orchestration in long-running autonomous agents, delivering 5x faster inference and up to 30% lower cost for agentic workloads.",
+        "Deploy NVIDIA Nemotron 3 Ultra on Amazon SageMaker JumpStart.",
+        "With this launch, you can now deploy the Nemotron 3 Ultra model using a one-click deployment experience.",
+        "Get 5x faster inference and 30% lower cost for agentic AI workloads with this frontier reasoning model.",
+        "Deploy using SageMaker Studio Select your instance type (supported instance types are ml.p5en.48xlarge, ml.p5.48xlarge, or ml.g7e.48xlarge) Review deployment settings (defaults are sufficient for most use cases) Wait.",
+        "He also helps enterprises and startups deploy and optimize a GenAI models and build AI workflows with SageMaker and GPUs.",
+        "Artificial Intelligence NVIDIA Nemotron 3 Ultra now available on Amazon SageMaker JumpStart Today, we are excited to announce the day-zero availability of NVIDIA Nemotron 3 Ultra on Amazon SageMaker JumpStart.",
+        "Overview of NVIDIA Nemotron 3 Ultra NVIDIA Nemotron 3 Ultra is an open large language model with 550 billion total parameters and 55 billion active parameters.",
+        "Nemotron 3 Ultra is optimized for the NVFP4 format, which makes the model much faster and cost effective to host.",
+        "Sufficient service quota for GPU instances (for example, ml.p5en.48xlarge, ml.p5.48xlarge, or ml.g7e.48xlarge) Important: Deploying this model creates a SageMaker endpoint that incurs charges while running."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3a8583b2d091a390.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/04/image-37.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/87011973f1d3346e.png"
+      ],
+      "extra_image_urls": [
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/04/image-36.png"
+      ],
+      "_story_id": "c58103a0d26946e5920428e796856f23"
+    },
+    {
+      "url": "https://www.therobotreport.com/proteus-gets-natural-language-ability-amazon-expands-europe-robot-deployments/",
+      "title": "Proteus gets natural-language ability as Amazon expands European robot deployments - The Robot Report",
+      "description": "Amazon says Proteus needs no special commands as it plans to deploy the mobile robot, as well as STARK and Vulcan, across Europe.",
+      "excerpt": "Amazon says Proteus needs no special commands as it plans to deploy the mobile robot, as well as STARK and Vulcan, across Europe.",
+      "summary": "Proteus is currently deployed at 24 e-commerce fulfillment centers across the U.S., noted the company. \u201cThe investment we\u2019re making here, the talent we\u2019re building with here, the technology we\u2019re deploying here - this is where the next chapter of operations innovation is being written.\u201d Aaron Parness, director of applied science and AI at Amazon Robotics, participated in the opening keynote panel at last week\u2019s Robotics Summit & Expo . The company is piloting the updated system in its laboratories and plans to deploy it in Europe in the first half of next year. \u201cCustomer expectations aren\u2019t slowing down - and neither are we.\u201d Amazon invests billions in modernization Amazon said it plans to invest more than \u20ac10 billion ($11.6 billion U.S.) in modernizing and expanding its fulfillment operations in Europe over the next few years. introduced the next generation of its Proteus autonomous mobile robot, or AMR. Amazon plans to deploy STARK in 15 sites across Europe by 2027.",
+      "what_happened": "Proteus is currently deployed at 24 e-commerce fulfillment centers across the U.S., noted the company. \u201cThe investment we\u2019re making here, the talent we\u2019re building with here, the technology we\u2019re deploying here - this is where the next chapter of operations innovation is being written.\u201d Aaron Parness, director of applied science and AI at Amazon Robotics, participated in the opening keynote panel at last week\u2019s Robotics Summit & Expo .",
+      "why_matters": "The company is piloting the updated system in its laboratories and plans to deploy it in Europe in the first half of next year. \u201cCustomer expectations aren\u2019t slowing down - and neither are we.\u201d Amazon invests billions in modernization Amazon said it plans to invest more than \u20ac10 billion ($11.6 billion U.S.) in modernizing and expanding its fulfillment operations in Europe over the next few years.",
+      "what_to_watch": "introduced the next generation of its Proteus autonomous mobile robot, or AMR. Amazon plans to deploy STARK in 15 sites across Europe by 2027.",
+      "key_points": [
+        "Proteus is currently deployed at 24 e-commerce fulfillment centers across the U.S., noted the company.",
+        "\u201cThe investment we\u2019re making here, the talent we\u2019re building with here, the technology we\u2019re deploying here - this is where the next chapter of operations innovation is being written.\u201d Aaron Parness, director of applied.",
+        "Amazon plans to deploy STARK in 15 sites across Europe by 2027.",
+        "The company is piloting the updated system in its laboratories and plans to deploy it in Europe in the first half of next year.",
+        "\u201cCustomer expectations aren\u2019t slowing down - and neither are we.\u201d Amazon invests billions in modernization Amazon said it plans to invest more than \u20ac10 billion ($11.6 billion U.S.) in modernizing and expanding its.",
+        "introduced the next generation of its Proteus autonomous mobile robot, or AMR.",
+        "In addition to growing its Proteus, Vulcan, and STARK deployments, the company said it plans to hire 25,000 more employees in the coming years.",
+        "Amazon says Proteus needs no special commands as it plans to deploy the mobile robot, as well as STARK and Vulcan, across Europe.",
+        "Proteus can take on more tasks Amazon first unveiled Proteus in 2022, a decade after it acquired automated guided vehicle ( AGV ) maker Kiva Systems.",
+        "It figures out the priority, the route, the timing,\u201d said Scott Dresser, vice president of Amazon Robotics .",
+        "Even as it has deployed more than 1 million robots, Amazon said it has hired hundreds of thousands of people worldwide.",
+        "The Seattle-based company said Proteus can now understand natural-language commands, allowing it to take on more tasks."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d9a3ea9d85e8eec4.img",
+      "image_url": "https://www.automatedwarehouseonline.com/wp-content/uploads/2026/06/STARK-1024x576.gif",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "1d88c7f516804a10a656aaad607171de"
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/nvidia-unveils-physical-ai-research-agent-workflows",
+      "title": "Nvidia Unveils New physical AI Research and Agent Workflows",
+      "description": "Nvidia Unveils New physical AI Research and Agent Workflows",
+      "excerpt": "Nvidia Unveils New physical AI Research and Agent Workflows",
+      "summary": "Nvidia Unveils New physical AI Research and Agent Workflows Nvidia Unveils New Physical AI Research and Agent Workflows The systems, powered by Cosmos 3, are designed to accelerate development of autonomous vehicles, robots and vision AI systems. Unveiled this week at the Computer Vision and Pattern Recognition conference in Denver, the updates build on Nvidia's recently launched Cosmos 3 world foundation model and are designed to help researchers automate key stages of physical AI development, including. In the vision AI arena, Nvidia expanded its video analysis capabilities with updates to its Metropolis platform, including tools for video search, summarization and synthetic data generation. With the updates, the company is positioning virtual environments as a critical tool for developing AI systems that can safely operate in the physical world. Nvidia has released a spate of new physical AI research tools, agent workflows and open source models to train more advanced AI systems for the real world.",
+      "what_happened": "Nvidia Unveils New physical AI Research and Agent Workflows Nvidia Unveils New Physical AI Research and Agent Workflows The systems, powered by Cosmos 3, are designed to accelerate development of autonomous vehicles, robots and vision AI systems. Unveiled this week at the Computer Vision and Pattern Recognition conference in Denver, the updates build on Nvidia's recently launched Cosmos 3 world foundation model and are designed to help researchers automate key stages of physical AI development, including.",
+      "why_matters": "In the vision AI arena, Nvidia expanded its video analysis capabilities with updates to its Metropolis platform, including tools for video search, summarization and synthetic data generation. With the updates, the company is positioning virtual environments as a critical tool for developing AI systems that can safely operate in the physical world.",
+      "what_to_watch": "Nvidia has released a spate of new physical AI research tools, agent workflows and open source models to train more advanced AI systems for the real world.",
+      "key_points": [
+        "Nvidia Unveils New physical AI Research and Agent Workflows Nvidia Unveils New Physical AI Research and Agent Workflows The systems, powered by Cosmos 3, are designed to accelerate development of autonomous vehicles.",
+        "Unveiled this week at the Computer Vision and Pattern Recognition conference in Denver, the updates build on Nvidia's recently launched Cosmos 3 world foundation model and are designed to help researchers automate key.",
+        "In the vision AI arena, Nvidia expanded its video analysis capabilities with updates to its Metropolis platform, including tools for video search, summarization and synthetic data generation.",
+        "Nvidia has released a spate of new physical AI research tools, agent workflows and open source models to train more advanced AI systems for the real world.",
+        "The AI giant also introduced Alpamayo 2 Super, a 32-billion-parameter vision-language-action model for autonomous driving .",
+        "Google: But the Model Isn't the Point The releases highlight Nvidia\u2019s increased focus on physical AI as a key growth area.",
+        "Nvidia\u2019s new physical AI suite is now available through GitHub, while its synthetic data generation tools (Neural Reconstruction, Video Augmentation and Defect Image Generation) are available on Nvidia Brev with free.",
+        "\u201cToday, these steps are fragmented across separate tools, slowing the pace of experimentation as researchers struggle to piece them together.\u201d Related: Safeguarding SaaS Success in the Changing AI Market Among the.",
+        "The system is designed with advanced reasoning capabilities, enabling it to autonomously act across the full driving stack.",
+        "With the updates, the company is positioning virtual environments as a critical tool for developing AI systems that can safely operate in the physical world.",
+        "For autonomous vehicle development, Nvidia introduced tools to help researchers address the industry's \u201clong-tail problem\u201d --difficult-to-capture driving scenarios that are critical for training and validation.",
+        "Robotics was another major focus, with new agent skills designed to automate simulation and training workflows."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f0d762c2a6351463.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blta1c8b1207b30d0f1/6a218ff0c8658d7528614c11/DeepMind.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/be753ffbee22265b.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/15c5b987a5e6f873.webp"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltdb9fe516e837c101/6a1d8b5a479f3e38d05cf31a/SoftBank.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltee176ce55650ab85/6a21c0c5563cbbc1f1a60149/Meta.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ],
+      "_story_id": "0018ee2956ab479a852bbc2fdc02470d"
+    },
+    {
+      "url": "https://aibusiness.com/agentic-ai/meta-rolls-out-ai-agent-enterprises-globally",
+      "title": "Meta Rolls Out AI Agent for Enterprises Globally",
+      "description": "Meta Rolls Out AI Agent for Enterprises Globally",
+      "excerpt": "Meta Rolls Out AI Agent for Enterprises Globally",
+      "summary": "In tandem with the launch of the tool, Meta is also introducing a new Business Agent Platform that provides infrastructure for enterprises using AI agents at scale. The Facebook-Instagram-WhatsApp parent company said in a June 3 release that its Business Agent enables enterprises of all sizes \u201cto increase their output and deliver personalized experiences for customers using AI\u201d by handling an array of tasks, including handling customer inquiries, scheduling appointments and recommending products. Related: Google\u2019s Gemma 4 12B Shows AI Race Moving to Edge Devices Ultimately, the company claims, the goal is for the agent to effectively run all daily operations, including tasks as diverse as conducting market research, surfacing product insights and providing competitive intelligence. Deployment -- or connection into existing infrastructure -- can be done in minutes, with Meta claiming the agent can easily accommodate a. Companies interested in these future services are being encouraged to join a waitlist, but Business Agent, in its current guise, can be activated immediately and for free, although that may not be the case for long. Meta Rolls Out AI Agent for Enterprises Globally.",
+      "what_happened": "In tandem with the launch of the tool, Meta is also introducing a new Business Agent Platform that provides infrastructure for enterprises using AI agents at scale. The Facebook-Instagram-WhatsApp parent company said in a June 3 release that its Business Agent enables enterprises of all sizes \u201cto increase their output and deliver personalized experiences for customers using AI\u201d by handling an array of tasks, including handling customer inquiries, scheduling appointments and recommending products.",
+      "why_matters": "Related: Google\u2019s Gemma 4 12B Shows AI Race Moving to Edge Devices Ultimately, the company claims, the goal is for the agent to effectively run all daily operations, including tasks as diverse as conducting market research, surfacing product insights and providing competitive intelligence. Deployment -- or connection into existing infrastructure -- can be done in minutes, with Meta claiming the agent can easily accommodate a.",
+      "what_to_watch": "Companies interested in these future services are being encouraged to join a waitlist, but Business Agent, in its current guise, can be activated immediately and for free, although that may not be the case for long. Meta Rolls Out AI Agent for Enterprises Globally Meta Rolls Out AI Agent for Enterprises Globally The.",
+      "key_points": [
+        "In tandem with the launch of the tool, Meta is also introducing a new Business Agent Platform that provides infrastructure for enterprises using AI agents at scale.",
+        "The Facebook-Instagram-WhatsApp parent company said in a June 3 release that its Business Agent enables enterprises of all sizes \u201cto increase their output and deliver personalized experiences for customers using AI\u201d by.",
+        "Related: Google\u2019s Gemma 4 12B Shows AI Race Moving to Edge Devices Ultimately, the company claims, the goal is for the agent to effectively run all daily operations, including tasks as diverse as conducting market.",
+        "Meta Rolls Out AI Agent for Enterprises Globally Meta Rolls Out AI Agent for Enterprises Globally The tool is aimed at small businesses and is part of the social media giant\u2019s push beyond consumers.",
+        "Deployment -- or connection into existing infrastructure -- can be done in minutes, with Meta claiming the agent can easily accommodate a host of different languages and adopt a company\u2019s tone of voice.",
+        "Meta says that in the coming months, access to the agent will be using paid subscription offerings with options for businesses of all sizes.",
+        "Meta has unveiled an AI tool designed to help grow companies by automating various tasks and services.",
+        "The platform connects to what Meta says is a \u201cgrowing suite\u201d of external systems, such as Shopify, Zendesk, and Shopee, where agents can take actions on behalf of the business.",
+        "The agent is already in use by around a million businesses on WhatsApp and Messenger in select markets, including Brazil, India and Mexico, but Meta is now making it available to all companies and has extended it to.",
+        "for 26 years, including spells as editor of leading consumer news website and weekly Auto Express and respected buying guide CarBuyer.",
+        "Companies interested in these future services are being encouraged to join a waitlist, but Business Agent, in its current guise, can be activated immediately and for free, although that may not be the case for long.",
+        "While the ability to interact around the clock is important for many small businesses, Meta says this feature is a starting point, with more to come."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/be753ffbee22265b.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltdb9fe516e837c101/6a1d8b5a479f3e38d05cf31a/SoftBank.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/78181772d744e7d6.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/074bdebe8268e6f4.webp"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltf864463ec1c001b4/6a203dfaa0b6da8b9813f90f/Glasswing.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltd7a7b7e999f08e91/6a182945ebd0746ed016d980/Router.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ],
+      "_story_id": "5bd01dc2abe34d37bdc8653bebf15d26"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 9,
+  "has_cta": true,
+  "slides": [
+    "Updating the taxonomy of failure modes in agentic AI systems What.",
+    "Apple approves Poke as the first AI agent on its Messages.",
+    "Every time Anthropic releases a model, we run the same test: we.",
+    "Nemotron 3.5 Content Safety Customizable Multimodal Safety for Global Enterprise AI.",
+    "NVIDIA Nemotron 3 Ultra now available on Amazon SageMaker JumpStart.",
+    "Proteus gets natural-language ability as Amazon expands European robot deployments.",
+    "Nvidia Unveils New physical AI Research and Agent Workflows.",
+    "Meta Rolls Out AI Agent for Enterprises Globally.",
+    "FOLLOW @graitech"
+  ]
+}
