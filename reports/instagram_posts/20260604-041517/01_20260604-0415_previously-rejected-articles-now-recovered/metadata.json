@@ -1,0 +1,53 @@
+{
+  "email_received_at": "2026-06-04T04:15+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Thu, 04 Jun 2026 04:15:17 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.theverge.com/tech/942328/nanoleaf-switchbot-onerobotics-sale-ai-robotics",
+      "title": "Company : The Verge AI",
+      "description": "[HIGH] SwitchBot\u2019s acquisition of Nanoleaf is about more than lighting Company : The Verge AI Summary : Smart lighting company Nanoleaf has been acquired by OneRobotics, the parent company of SwitchBot. In an exclusive interview with The Verge, Nanoleaf CEO Gimmy Chu says the company will remain indepen Link :",
+      "text": "[HIGH] SwitchBot\u2019s acquisition of Nanoleaf is about more than lighting Company : The Verge AI Summary : Smart lighting company Nanoleaf has been acquired by OneRobotics, the parent company of SwitchBot. In an exclusive interview with The Verge, Nanoleaf CEO Gimmy Chu says the company will remain indepen Link :",
+      "excerpt": "[HIGH] SwitchBot\u2019s acquisition of Nanoleaf is about more than lighting Company : The Verge AI Summary : Smart lighting company Nanoleaf has been acquired by OneRobotics, the parent company of SwitchBot. In an exclusive interview with The Verge, Nanoleaf CEO Gimmy Chu says the company will remain indepen Link :",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25546019/nanoleaf1.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.752607989199%2C100%2C78.494784021602&amp;w=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theverge.com/tech/942328/nanoleaf-switchbot-onerobotics-sale-ai-robotics",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.theverge.com/features/940977/trans-teens-pediatric-care-closing",
+      "title": "Company : The Verge AI",
+      "description": "[MEDIUM] Trans teens have something to say Company : The Verge AI Summary : By the time the Children's Hospital closed its doors to trans patients, Sage had already stopped taking testosterone. A nonbinary high school student, they originally received treatment for the rapid Link :",
+      "text": "[MEDIUM] Trans teens have something to say Company : The Verge AI Summary : By the time the Children's Hospital closed its doors to trans patients, Sage had already stopped taking testosterone. A nonbinary high school student, they originally received treatment for the rapid Link :",
+      "excerpt": "[MEDIUM] Trans teens have something to say Company : The Verge AI Summary : By the time the Children's Hospital closed its doors to trans patients, Sage had already stopped taking testosterone. A nonbinary high school student, they originally received treatment for the rapid Link :",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/268514_trans_pediatrics_VSHARMA3.png?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theverge.com/features/940977/trans-teens-pediatric-care-closing",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 3,
+  "has_cta": true,
+  "slides": [
+    "It will also bring access to the manufacturing facilities and supply chain.",
+    "Now changes changes their body experienced felt frightening sudden.",
+    "FOLLOW @graitech"
+  ]
+}
