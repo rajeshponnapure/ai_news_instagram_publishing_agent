@@ -1,0 +1,81 @@
+{
+  "email_received_at": "2026-06-04T14:39+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Thu, 04 Jun 2026 14:39:17 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.techradar.com/pro/we-need-an-ai-that-places-humanity-first-microsoft-ai-ceo-outlines-hopes-to-build-humanist-superintelligence-and-has-seven-new-models-to-help-him-do-it",
+      "title": "CNBC Technology |",
+      "description": "[HIGH] Microsoft unveils new AI models to lessen reliance on OpenAI and lower costs for developers CNBC Technology | https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html [HIGH] \u2018We need an AI that places humanity first\u2019: Microsoft AI CEO outlines hopes to build \u201chumanist superintelligence\u201d - and has seven new models to help him do it TechRadar |",
+      "text": "[HIGH] Microsoft unveils new AI models to lessen reliance on OpenAI and lower costs for developers CNBC Technology | https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html [HIGH] \u2018We need an AI that places humanity first\u2019: Microsoft AI CEO outlines hopes to build \u201chumanist superintelligence\u201d - and has seven new models to help him do it TechRadar |",
+      "excerpt": "[HIGH] Microsoft unveils new AI models to lessen reliance on OpenAI and lower costs for developers CNBC Technology | https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html [HIGH] \u2018We need an AI that places humanity first\u2019: Microsoft AI CEO outlines hopes to build \u201chumanist superintelligence\u201d - and has seven new models to help him do it TechRadar |",
+      "image_url": "https://cdn.mos.cms.futurecdn.net/Exfn6GGMosu9RsGyuqaiDU-2560-80.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.techradar.com/pro/we-need-an-ai-that-places-humanity-first-microsoft-ai-ceo-outlines-hopes-to-build-humanist-superintelligence-and-has-seven-new-models-to-help-him-do-it",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/first-foundation-labs-founded-by-luma-group-collaborates-with-microsoft-to-bring-ai-powered-clinical-and-translational-reasoning-to-microsoft-discovery-302789175.html",
+      "title": "PRNewswire |",
+      "description": "[HIGH] Jun 3, 2026AnnouncementsIntroducing the Services Track and Partner Hub of the Claude Partner Network Anthropic | https://www.anthropic.com/news/services-track-partner-hub [HIGH] First Foundation Labs, Founded by Luma Group, Collaborates with Microsoft to Bring AI-Powered Clinical and Translational Reasoning to Microsoft Discovery PRNewswire |",
+      "text": "[HIGH] Jun 3, 2026AnnouncementsIntroducing the Services Track and Partner Hub of the Claude Partner Network Anthropic | https://www.anthropic.com/news/services-track-partner-hub [HIGH] First Foundation Labs, Founded by Luma Group, Collaborates with Microsoft to Bring AI-Powered Clinical and Translational Reasoning to Microsoft Discovery PRNewswire |",
+      "excerpt": "[HIGH] Jun 3, 2026AnnouncementsIntroducing the Services Track and Partner Hub of the Claude Partner Network Anthropic | https://www.anthropic.com/news/services-track-partner-hub [HIGH] First Foundation Labs, Founded by Luma Group, Collaborates with Microsoft to Bring AI-Powered Clinical and Translational Reasoning to Microsoft Discovery PRNewswire |",
+      "image_url": "https://rt.prnewswire.com/rt.gif?NewsItemId=NY74276&amp;Transmission_Id=202606021544PR_NEWS_USPR_____NY74276&amp;DateId=20260602",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.prnewswire.com/news-releases/first-foundation-labs-founded-by-luma-group-collaborates-with-microsoft-to-bring-ai-powered-clinical-and-translational-reasoning-to-microsoft-discovery-302789175.html",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://researchbuzz.me/2026/06/02/usage-based-ai-pricing-anti-data-center-slop-data-center-construction-more-researchbuzz-ai-update-june-2-2026/",
+      "title": "GitHub Blog |",
+      "description": "[HIGH] GitHub Copilot app: The agent-native desktop experience GitHub Blog | https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/ [HIGH] Usage-Based AI Pricing, Anti-Data Center Slop, Data Center Construction,, More: ResearchBuzz AI Update, June 2, 2026 Researchbuzz.me |",
+      "text": "[HIGH] GitHub Copilot app: The agent-native desktop experience GitHub Blog | https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/ [HIGH] Usage-Based AI Pricing, Anti-Data Center Slop, Data Center Construction,, More: ResearchBuzz AI Update, June 2, 2026 Researchbuzz.me |",
+      "excerpt": "[HIGH] GitHub Copilot app: The agent-native desktop experience GitHub Blog | https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/ [HIGH] Usage-Based AI Pricing, Anti-Data Center Slop, Data Center Construction,, More: ResearchBuzz AI Update, June 2, 2026 Researchbuzz.me |",
+      "image_url": "https://s0.wp.com/_si/?t=eyJpbWciOiJodHRwczpcL1wvczAud3AuY29tXC9pXC9ibGFuay5qcGciLCJ0eHQiOiJSZXNlYXJjaEJ1enoiLCJ0ZW1wbGF0ZSI6ImhpZ2h3YXkiLCJmb250IjoiIiwiYmxvZ19pZCI6NDMyODc1Nn0.BjdcPIDlw4ZG0Ki13B-quwxnrzAxn9iB5rJXagRMNlcMQ",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://researchbuzz.me/2026/06/02/usage-based-ai-pricing-anti-data-center-slop-data-center-construction-more-researchbuzz-ai-update-june-2-2026/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-expanding-mythos-ai-model-access-to-india-report/articleshow/131475680.cms",
+      "title": "The Verge AI |",
+      "description": "[HIGH] As is becoming increasingly common, upcoming Tomb Raider remake Legacy of Atlantis has used AI in the game's development The Verge AI | https://www.eurogamer.net/tomb-raider-legacy-of-atlantis-comes-with-an-ai-disclaimer [HIGH] Anthropic expanding Mythos AI model access to India: Report The Times of India |",
+      "text": "[HIGH] As is becoming increasingly common, upcoming Tomb Raider remake Legacy of Atlantis has used AI in the game's development The Verge AI | https://www.eurogamer.net/tomb-raider-legacy-of-atlantis-comes-with-an-ai-disclaimer [HIGH] Anthropic expanding Mythos AI model access to India: Report The Times of India |",
+      "excerpt": "[HIGH] As is becoming increasingly common, upcoming Tomb Raider remake Legacy of Atlantis has used AI in the game's development The Verge AI | https://www.eurogamer.net/tomb-raider-legacy-of-atlantis-comes-with-an-ai-disclaimer [HIGH] Anthropic expanding Mythos AI model access to India: Report The Times of India |",
+      "image_url": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-52006,resizemode-75,msid-131475680/tech/artificial-intelligence/anthropic-expanding-mythos-ai-model-access-to-india-report.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-expanding-mythos-ai-model-access-to-india-report/articleshow/131475680.cms",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 3,
+  "has_cta": true,
+  "slides": [
+    "Microsoft unveils new AI models to lessen reliance on OpenAI and lower.",
+    "Agencies Claude-maker Anthropic tightens said it will provide access to powerful.",
+    "FOLLOW @graitech"
+  ]
+}
