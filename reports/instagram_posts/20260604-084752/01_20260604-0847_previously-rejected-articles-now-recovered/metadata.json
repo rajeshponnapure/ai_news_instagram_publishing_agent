@@ -1,0 +1,67 @@
+{
+  "email_received_at": "2026-06-04T08:47+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Thu, 04 Jun 2026 08:47:52 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.theguardian.com/uk-news/2026/jun/03/former-officer-hampshire-hiding-after-being-falsely-linked-henry-nowak-arrest",
+      "title": "Company : The Guardian Tech",
+      "description": "[MEDIUM] Former police officer in hiding after being falsely linked to Henry Nowak arrest Company : The Guardian Tech Summary : Christi Hill and male officer misidentified in Vickrum Digwa murder case on AI platforms including Grok A former police officer has been forced to flee to a safe space after she was falsely accused on Link :",
+      "text": "[MEDIUM] Former police officer in hiding after being falsely linked to Henry Nowak arrest Company : The Guardian Tech Summary : Christi Hill and male officer misidentified in Vickrum Digwa murder case on AI platforms including Grok A former police officer has been forced to flee to a safe space after she was falsely accused on Link :",
+      "excerpt": "[MEDIUM] Former police officer in hiding after being falsely linked to Henry Nowak arrest Company : The Guardian Tech Summary : Christi Hill and male officer misidentified in Vickrum Digwa murder case on AI platforms including Grok A former police officer has been forced to flee to a safe space after she was falsely accused on Link :",
+      "image_url": "https://i.guim.co.uk/img/media/498a025f9b73746ca8cd287cde4bb2948a1cfde7/667_0_3333_2667/master/3333.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=a63f57362182faa93fbbb6d807c3c7de",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theguardian.com/uk-news/2026/jun/03/former-officer-hampshire-hiding-after-being-falsely-linked-henry-nowak-arrest",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/microsoft-build-windows-local-cloud-devices/",
+      "title": "Company : Nvidia Blog",
+      "description": "[MEDIUM] NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local Company : Nvidia Blog Summary : The agentic AI moment has arrived, but delivering on its promise requires more than good models. It also takes fast hardware, secure runtimes, a responsive data layer and models tuned for long-running Link :",
+      "text": "[MEDIUM] NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local Company : Nvidia Blog Summary : The agentic AI moment has arrived, but delivering on its promise requires more than good models. It also takes fast hardware, secure runtimes, a responsive data layer and models tuned for long-running Link :",
+      "excerpt": "[MEDIUM] NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local Company : Nvidia Blog Summary : The agentic AI moment has arrived, but delivering on its promise requires more than good models. It also takes fast hardware, secure runtimes, a responsive data layer and models tuned for long-running Link :",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2024/06/DaveSalvator0026-web-1.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://blogs.nvidia.com/blog/microsoft-build-windows-local-cloud-devices/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/openai-vs-anthropic-vs-google-model-isn-t-the-point",
+      "title": "Company : AI Business",
+      "description": "[MEDIUM] OpenAI vs. Anthropic vs. Google: But the Model Isn't the Point Company : AI Business Summary : Enterprises are looking to get the job done, not for a specific brand of AI. Link :",
+      "text": "[MEDIUM] OpenAI vs. Anthropic vs. Google: But the Model Isn't the Point Company : AI Business Summary : Enterprises are looking to get the job done, not for a specific brand of AI. Link :",
+      "excerpt": "[MEDIUM] OpenAI vs. Anthropic vs. Google: But the Model Isn't the Point Company : AI Business Summary : Enterprises are looking to get the job done, not for a specific brand of AI. Link :",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt0ef9fc98d82284fd/6a1f28b9c6f2acbbf71ebee6/Orchestration.jpg?disable=upscale&width=1200&height=630&fit=crop",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://aibusiness.com/generative-ai/openai-vs-anthropic-vs-google-model-isn-t-the-point",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 3,
+  "has_cta": true,
+  "slides": [
+    "Const firstColLink = document.querySelector( '#newsLinks > li:nth-of-type(2) > a', ); /** *.",
+    "At Microsoft Build, NVIDIA founder and CEO Jensen Huang joined Microsoft chairman.",
+    "FOLLOW @graitech"
+  ]
+}
