@@ -1,0 +1,359 @@
+{
+  "email_received_at": "2026-06-04T00:23+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Google's Dreambeans, its weirdest-named AI tool to date, will turn your life into a cartoon | TechCrunch",
+  "subject": "",
+  "source_date": "2026-06-04T00:23:04.690793",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://techcrunch.com/2026/06/03/googles-dreambeans-its-weirdest-named-ai-tool-to-date-will-turn-your-life-into-a-cartoon/",
+  "article_title": "Google's Dreambeans, its weirdest-named AI tool to date, will turn your life into a cartoon | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1532f667f7d2a48c.png",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Screenshot-2026-06-03-at-9.13.33-AM.png?resize=1200,667",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/03/googles-dreambeans-its-weirdest-named-ai-tool-to-date-will-turn-your-life-into-a-cartoon/",
+      "title": "Google's Dreambeans, its weirdest-named AI tool to date, will turn your life into a cartoon | TechCrunch",
+      "description": "Dreambeans is a curated list of AI-illustrated \"stories\" culled from the personal data in your Google account.",
+      "excerpt": "Dreambeans is a curated list of AI-illustrated \"stories\" culled from the personal data in your Google account.",
+      "summary": "More from TechCrunch Google\u2019s Dreambeans, its weirdest-named AI tool to date, will turn your life into a cartoon Google Labs, the tech giant\u2019s team devoted to experimental product design, has launched a new AI-fueled app for iOS and Android that will quite literally animate your life. Microsoft launches Scout, an OpenClaw-inspired personal assistant \u2018What a joke\u2019: GitHub Copilot\u2019s new token-based billing spurs consternation among devs I put Google\u2019s 24/7 AI assistant Gemini Spark to work, and it\u2019s actually pretty. The only person with access to the app\u2019s stories is the user, she said. \u201cWith your permission, Dreambeans uses Personal Intelligence to connect information from Google apps like Gmail, Calendar, Photos, YouTube and Search History, to curate a finite collection of daily stories designed to spark new ideas,\u201d the company says. Dreambeans is a curated list of AI-illustrated \"stories\" culled from the personal data in your Google account.",
+      "what_happened": "More from TechCrunch Google\u2019s Dreambeans, its weirdest-named AI tool to date, will turn your life into a cartoon Google Labs, the tech giant\u2019s team devoted to experimental product design, has launched a new AI-fueled app for iOS and Android that will quite literally animate your life. Microsoft launches Scout, an OpenClaw-inspired personal assistant \u2018What a joke\u2019: GitHub Copilot\u2019s new token-based billing spurs consternation among devs I put Google\u2019s 24/7 AI assistant Gemini Spark to work, and it\u2019s actually pretty.",
+      "why_matters": "The only person with access to the app\u2019s stories is the user, she said. \u201cWith your permission, Dreambeans uses Personal Intelligence to connect information from Google apps like Gmail, Calendar, Photos, YouTube and Search History, to curate a finite collection of daily stories designed to spark new ideas,\u201d the company says.",
+      "what_to_watch": "Dreambeans is a curated list of AI-illustrated \"stories\" culled from the personal data in your Google account.",
+      "key_points": [
+        "The only person with access to the app\u2019s stories is the user, she said.",
+        "Dreambeans is a curated list of AI-illustrated \"stories\" culled from the personal data in your Google account.",
+        "The idea for the name was generated, in part, by the way the system works while you are asleep, she said.",
+        "More from TechCrunch Google\u2019s Dreambeans, its weirdest-named AI tool to date, will turn your life into a cartoon Google Labs, the tech giant\u2019s team devoted to experimental product design, has launched a new AI-fueled.",
+        "\u201cThe dream part is literal, because while you sleep, the app is working through everything across your connected apps, because, as you can imagine, it\u2019s a lot of data that it is distilling,\u201d Oznur said.",
+        "Users can also delete their data whenever they want, and can choose which Google services they want to connect to the tool.",
+        "Gozde Oznur, the product lead behind the new app, told TechCrunch that the idea is to use data culled from across your various Google services to generate a curated list of AI-illustrated \u201cstories.\u201d These stories come.",
+        "Oznur said the app has also been built as a doomscrolling antidote, in that it only provides users with a limited number of stories per day - typically 10 to 14.",
+        "Or, as is the case in this marketing video , if you\u2019re getting a new dog and that event has been marked in your Google Calendar, Dreambeans might deliver some insights about what it\u2019s like to live with a new puppy.",
+        "Microsoft launches Scout, an OpenClaw-inspired personal assistant \u2018What a joke\u2019: GitHub Copilot\u2019s new token-based billing spurs consternation among devs I put Google\u2019s 24/7 AI assistant Gemini Spark to work, and it\u2019s.",
+        "The idea is to get a few inspirational ideas and then go out and live your life, she said.",
+        "\u201cWith your permission, Dreambeans uses Personal Intelligence to connect information from Google apps like Gmail, Calendar, Photos, YouTube and Search History, to curate a finite collection of daily stories designed to."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1532f667f7d2a48c.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Screenshot-2026-06-03-at-9.13.33-AM.png?resize=1200,667",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "1dfa9acdd78645129706c17e59b80ace"
+    },
+    {
+      "url": "https://www.langchain.com/blog/how-to-build-a-custom-agent-harness",
+      "title": "How to Build a Custom Agent Harness",
+      "description": "Effective agents are built with harnesses that are tightly coupled with the task at hand. The easiest way to build a custom harness is with LangChain's create_agent plus middleware. This guide covers the core agent loop and how you can customize it for your agent's use case.",
+      "excerpt": "Effective agents are built with harnesses that are tightly coupled with the task at hand. The easiest way to build a custom harness is with LangChain's create_agent plus middleware. This guide covers the core agent loop and how you can customize it for your agent's use case.",
+      "summary": "This includes runtime control over the agent itself: swapping the model based on task complexity, adjusting the prompt, and updating the agent\u2019s message history (during compaction, for example). S e e w h a t y o u r a g e n t i s r e a l l y d o i n g LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click. A harness for a customer service agent looks very different from one built for a long-running coding agent. Every agent we build at LangChain, including our GTM agent , asynchronous coding agent , and our no-code agent builder , is built on create_agent with a middleware stack tailored to that agent\u2019s mission. Every agent we build at LangChain, including our GTM agent , asynchronous coding agent , and our no-code agent builder , is built on create_agent with a middleware stack tailored to that agent\u2019s mission.",
+      "what_happened": "This includes runtime control over the agent itself: swapping the model based on task complexity, adjusting the prompt, and updating the agent\u2019s message history (during compaction, for example). S e e w h a t y o u r a g e n t i s r e a l l y d o i n g LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click.",
+      "why_matters": "A harness for a customer service agent looks very different from one built for a long-running coding agent. Every agent we build at LangChain, including our GTM agent , asynchronous coding agent , and our no-code agent builder , is built on create_agent with a middleware stack tailored to that agent\u2019s mission.",
+      "what_to_watch": "Every agent we build at LangChain, including our GTM agent , asynchronous coding agent , and our no-code agent builder , is built on create_agent with a middleware stack tailored to that agent\u2019s mission.",
+      "key_points": [
+        "Every agent we build at LangChain, including our GTM agent , asynchronous coding agent , and our no-code agent builder , is built on create_agent with a middleware stack tailored to that agent\u2019s mission.",
+        "An agent is only as good as the context provided to the model The job of a harness is to provide context to the model at every step So, to build a useful agent, you need a harness that\u2019s great at delivering the right.",
+        "This includes runtime control over the agent itself: swapping the model based on task complexity, adjusting the prompt, and updating the agent\u2019s message history (during compaction, for example).",
+        "Pass in a model, tools, and a system prompt, and you have a working agent: Harnesses like Deep Agents and the Claude Agent SDK come pre-assembled with an opinionated middleware (explained below) stack: memory, context.",
+        "Middleware: how you customize the harness Middleware hooks into the agent loop at each step: before and after model calls, before and after tool calls, at agent startup and teardown.",
+        "At its core, an agent is a model calling tools in a loop until it completes a task and returns a result: The harness is the scaffolding around the model that connects it to the real world.",
+        "How to Build a Custom Agent Harness A harness is the scaffolding around the model that connects it to the real world.",
+        "Building useful agents is largely about customization: connecting your agent to the right context, data, and environment(s) for the task at hand.",
+        "Harness capabilities The job of a harness is to get the model the right context at the right time for the given task.",
+        "S e e w h a t y o u r a g e n t i s r e a l l y d o i n g LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click.",
+        "create_agent just implements the core agent loop, and it exposes middleware as a primitive for customization.",
+        "A harness for a customer service agent looks very different from one built for a long-running coding agent."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f385f1eabde1f5c3.img",
+      "image_url": "https://cdn.prod.website-files.com/65b8cd72835ceeacd4449a53/6989c024926f877c1de6e728_updated.svg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "e08c69f7876049bf9f467f8583a549a6"
+    },
+    {
+      "url": "https://www.theguardian.com/film/2026/jun/03/martin-scorsese-accused-of-throwing-artists-under-bus-with-ai-storyboards",
+      "title": "Martin Scorsese accused of \u2018throwing artists under bus\u2019 with AI storyboards",
+      "description": "The director defends investment in and use of AI-generated storyboards, saying the immediacy of communicating his vision to cast and crew is \u2018creatively freeing\u2019",
+      "excerpt": "The director defends investment in and use of AI-generated storyboards, saying the immediacy of communicating his vision to cast and crew is \u2018creatively freeing\u2019",
+      "summary": "The New York Times reported that Scorsese had been appointed in 2025 as a partner and adviser to Black Forest Labs, a German-based venture that specialises in text-to-image generative AI . During the preproduction process, time costs money, and this allowed us to move faster without sacrificing quality or craft.\u201d Fired 60 Minutes correspondent Scott Pelley says CBS told him to inject \u2018falsehoods\u2019 into reporting Pete Hegseth removes all women and some Black service members from navy promotion list Trump appointee. The director defends investment in and use of AI-generated storyboards, saying the immediacy of communicating his vision to cast and crew is \u2018creatively freeing\u2019 Support the Guardian Martin Scorsese accused of \u2018throwing artists under bus\u2019 with AI storyboards The director defends investment in and use of AI-generated storyboards, saying the immediacy of communicating his vision to cast and crew is \u2018creatively freeing\u2019 Martin. In his statement he said: \u201cI recently tested this out on a scene, and the ability to visualise and immediately share the storyboard was creatively freeing.",
+      "what_happened": "The New York Times reported that Scorsese had been appointed in 2025 as a partner and adviser to Black Forest Labs, a German-based venture that specialises in text-to-image generative AI . During the preproduction process, time costs money, and this allowed us to move faster without sacrificing quality or craft.\u201d Fired 60 Minutes correspondent Scott Pelley says CBS told him to inject \u2018falsehoods\u2019 into reporting Pete Hegseth removes all women and some Black service members from navy promotion list Trump appointee.",
+      "why_matters": "The director defends investment in and use of AI-generated storyboards, saying the immediacy of communicating his vision to cast and crew is \u2018creatively freeing\u2019 Support the Guardian Martin Scorsese accused of \u2018throwing artists under bus\u2019 with AI storyboards The director defends investment in and use of AI-generated storyboards, saying the immediacy of communicating his vision to cast and crew is \u2018creatively freeing\u2019 Martin.",
+      "what_to_watch": "In his statement he said: \u201cI recently tested this out on a scene, and the ability to visualise and immediately share the storyboard was creatively freeing.",
+      "key_points": [
+        "The New York Times reported that Scorsese had been appointed in 2025 as a partner and adviser to Black Forest Labs, a German-based venture that specialises in text-to-image generative AI .",
+        "During the preproduction process, time costs money, and this allowed us to move faster without sacrificing quality or craft.\u201d Fired 60 Minutes correspondent Scott Pelley says CBS told him to inject \u2018falsehoods\u2019 into.",
+        "In his statement he said: \u201cI recently tested this out on a scene, and the ability to visualise and immediately share the storyboard was creatively freeing.",
+        "Scorsese said in a statement to the New York Times: \u201cI\u2019m interested in the intersection of technology and storytelling, and seeing how that can push the bounds of creativity to create deeper and richer experiences for.",
+        "There are some things you have to see and feel.",
+        "Remember, cinema is a young medium, only around 125 years old, so we have to be open to how it can evolve.\u201d He added: \u201cFor 70 years, I\u2019ve been creating my own storyboards.",
+        "The director defends investment in and use of AI-generated storyboards, saying the immediacy of communicating his vision to cast and crew is \u2018creatively freeing\u2019 Support the Guardian Martin Scorsese accused of \u2018throwing.",
+        "There\u2019s always been this problem of how do you communicate what you see in your head to your cast and crew.",
+        "There is no suggestion, however, that Scorsese is planning to use gen-AI images in a film, but rather as part of the preparatory process.",
+        "The kicking and screaming occurred naturally\u2019 California primary election results: Hilton narrowly leads as governor\u2019s race remains too close to call",
+        "Steven Soderbergh used AI generated sequences in his recent documentary John Lennon: The Last Interview while Jurassic World Rebirth director Gareth Edwards described AI as \u201ca fucking genius at helping you\u201d.",
+        "Tribeca film festival co-founder Jane Rosenthal defended plans to screen Dreams of Violets , a fully AI-generated film about protesters in Iran, saying that \u201cit\u2019s something that should be seen right now at this time\u201d."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d5d7244546017d99.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/3e37007827b598db22f107192bfab281d6c71aac/127_124_2864_2291/master/2864.jpg?width=465&dpr=1&s=none&crop=none",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "e460313861484a74b6f87d0adac00dc1"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/jun/03/labour-mp-sues-elon-musks-ai-company-over-fake-sexualised-images",
+      "title": "Labour MP sues Elon Musk\u2019s xAI company over fake sexualised images",
+      "description": "Jess Asato was portrayed wearing a bikini in Grok-generated images after she criticised creation of such non-consensual pictures",
+      "excerpt": "Jess Asato was portrayed wearing a bikini in Grok-generated images after she criticised creation of such non-consensual pictures",
+      "summary": "The media regulator, Ofcom, launched an inquiry . Musk\u2019s company initially said it would change the system to only allow paying customers on X to produce such imagery, something condemned by Keir Starmer as \u201chorrific\u201d. Jess Asato was portrayed wearing a bikini in Grok-generated images after she criticised creation of such non-consensual pictures Support the Guardian Labour MP sues Elon Musk\u2019s xAI company over fake sexualised images Jess Asato was portrayed wearing a bikini in Grok-generated images after she criticised creation of such non-consensual pictures A Labour MP has taken legal action against Elon Musk\u2019s xAI company after saying its. Lib Dems push for ban on MPs taking money from X, citing Maga threat Elon Musk\u2019s X cuts payments to users who post clickbait Hackers trick Meta AI support bot to infiltrate Obama White House Instagram account Workers need greater say over AI rollout, says TUC-backed report Social media was once a great global.",
+      "what_happened": "The media regulator, Ofcom, launched an inquiry . Musk\u2019s company initially said it would change the system to only allow paying customers on X to produce such imagery, something condemned by Keir Starmer as \u201chorrific\u201d.",
+      "why_matters": "Jess Asato was portrayed wearing a bikini in Grok-generated images after she criticised creation of such non-consensual pictures Support the Guardian Labour MP sues Elon Musk\u2019s xAI company over fake sexualised images Jess Asato was portrayed wearing a bikini in Grok-generated images after she criticised creation of such non-consensual pictures A Labour MP has taken legal action against Elon Musk\u2019s xAI company after saying its.",
+      "what_to_watch": "Lib Dems push for ban on MPs taking money from X, citing Maga threat Elon Musk\u2019s X cuts payments to users who post clickbait Hackers trick Meta AI support bot to infiltrate Obama White House Instagram account Workers need greater say over AI rollout, says TUC-backed report Social media was once a great global.",
+      "key_points": [
+        "The media regulator, Ofcom, launched an inquiry .",
+        "She told the FT that the images of her were generated after she condemned the creation of such non-consensual sexualised pictures.",
+        "Asato told the newspaper that as well as creating images of her in a bikini, Grok also produced a video \u201cshowing her being chloroformed and prepared for a sexual assault\u201d.",
+        "Musk\u2019s company initially said it would change the system to only allow paying customers on X to produce such imagery, something condemned by Keir Starmer as \u201chorrific\u201d.",
+        "Jess Asato, the MP for Lowestoft, said in January that seeing herself portrayed by the AI tool as wearing a bikini without her consent was \u201cviolating\u201d.",
+        "She said: \u201cMy hope is that this will rebalance individuals\u2019 rights against very large tech companies that should have put safeguards in place before they harmed women and children.\u201d Ravi Naik, the lawyer representing.",
+        "Christi Hill, who served as a police constable for 12 years, said she had been forced to flee to a safe location.",
+        "Downing Street, government departments and many MPs have remained on X despite calls for them to quit the app due to images created by Grok and also Musk\u2019s embrace of far-right causes in the UK and predictions of.",
+        "Grok was among the AI platforms that falsely accused two Hampshire police officers of being involved in the arrest of Henry Nowak .",
+        "Fired 60 Minutes correspondent Scott Pelley says CBS told him to inject \u2018falsehoods\u2019 into reporting Trump appointee leading $205bn US agency had personal ties to Epstein, emails show Pete Hegseth removes all women and.",
+        "She alleged explicit images were also generated of her by Grok, including one image in which she was underage.",
+        "xAI say otherwise.\u201d The UK government threatened action against X in January after Grok was used to produce vast quantities of sexualised imagery based on real women \u2013 and in some cases, children."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/198acbd2e76c098c.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/e94206c8e3df021d1fea16a7ccb2b7527f86d9d7/288_0_1349_1080/master/1349.jpg?width=465&dpr=1&s=none&crop=none",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "de5461c8fde34e0b93d67856cb31a628"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/jun/03/can-autonomous-ai-powered-killer-drones-take-morality-onboard",
+      "title": "Can autonomous AI-powered killer drones take morality onboard?",
+      "description": "While the technology is set to play a growing role in modern warfare, there remains an unresolved ethical challenge",
+      "excerpt": "While the technology is set to play a growing role in modern warfare, there remains an unresolved ethical challenge",
+      "summary": "AI systems are trained on vast amounts of data that allow them to build a probabilistic model of what is the next most likely word or sentence in a sequence. That identification is done autonomously now for the most part.\u201d The same technology can now be used to deploy a weapon, he says, including when to fire a weapon and then guiding it to its target. They\u2019re not looking at it through the eyes of the user. Some autonomy could be the user or the human sets a general path and the drone follows that path.\u201d Jon Gruen, the chief executive of Fortem Technologies, which builds systems to defend against drones, has a different view. \u201cA human certifies this area, there are no friendlies, and I guarantee there will be no friendlies in the next 15 minutes. Zee Talat, an academic specialising in machine learning at the University of Edinburgh\u2019s school of informatics, argues that large language models \u2013 the technology that underpins modern generative.",
+      "what_happened": "AI systems are trained on vast amounts of data that allow them to build a probabilistic model of what is the next most likely word or sentence in a sequence. That identification is done autonomously now for the most part.\u201d The same technology can now be used to deploy a weapon, he says, including when to fire a weapon and then guiding it to its target.",
+      "why_matters": "They\u2019re not looking at it through the eyes of the user. Some autonomy could be the user or the human sets a general path and the drone follows that path.\u201d Jon Gruen, the chief executive of Fortem Technologies, which builds systems to defend against drones, has a different view.",
+      "what_to_watch": "\u201cA human certifies this area, there are no friendlies, and I guarantee there will be no friendlies in the next 15 minutes. Zee Talat, an academic specialising in machine learning at the University of Edinburgh\u2019s school of informatics, argues that large language models \u2013 the technology that underpins modern generative.",
+      "key_points": [
+        "Andrew Rogoyski, of the Institute for People-Centred AI at the University of Surrey, says AI systems have become much more sophisticated since the arrival of ChatGPT in 2022 \u2013 as the emergence of so-called \u201creasoning\u201d.",
+        "AI systems are trained on vast amounts of data that allow them to build a probabilistic model of what is the next most likely word or sentence in a sequence.",
+        "They\u2019re not looking at it through the eyes of the user.",
+        "Zee Talat, an academic specialising in machine learning at the University of Edinburgh\u2019s school of informatics, argues that large language models \u2013 the technology that underpins modern generative AI systems such as.",
+        "More than 100 startups across the US and Europe are now building drones and drone software platforms.",
+        "\u201cA human certifies this area, there are no friendlies, and I guarantee there will be no friendlies in the next 15 minutes.",
+        "That identification is done autonomously now for the most part.\u201d The same technology can now be used to deploy a weapon, he says, including when to fire a weapon and then guiding it to its target.",
+        "With drones being deployed in huge numbers in the Ukraine war and AI being used to assist bombing missions in the Iran conflict, there is an expectation among some observers that weapons will have to operate with.",
+        "If you don\u2019t get the law right you will end up repeating flawed decisions on a vast scale if AI-powered drones are deployed en masse, says Dorsey.",
+        "Article 57 of the Geneva conventions \u2013 a series of international treaties regulating the conduct of war \u2013 states that combatants should do \u201ceverything feasible to verify that the objectives to be attacked are neither.",
+        "This is not how humans make moral and ethical decisions, says Talat, even if the model has ingested all the philosophical tracts known to humanity.",
+        "But some experts argue that giving drones greater autonomy, and programming rules of engagement and morality into them, will be a necessity if other nation states continue to develop and deploy similar technology at."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e92b9d07bfff5841.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/bd81c6d5daae91aac020868af5474879e6cd54dc/289_0_2890_2312/master/2890.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=5eb60ce0125a4cb4536810caa655641d",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "1b2facc19b77491cbce10ca193b46e50"
+    },
+    {
+      "url": "https://www.engadget.com/2185772/claude-ai-free-2026-limits-workarounds/",
+      "title": "Claude AI: What's free in 2026 and what isn't? - Engadget",
+      "description": "Making sense of what you get from Claude AI at the free tier, especially as limits are vague and keep shifting.",
+      "excerpt": "Making sense of what you get from Claude AI at the free tier, especially as limits are vague and keep shifting.",
+      "summary": "Plus, it's the system Claude defaults to when you first launch the chatbot. As far as free offerings go, Anthropic's Sonnet models have consistently been among the best I've tested, and the new 4.6 release is no different. While you can't use Claude Code with a free account, you can still ask the chatbot coding-related questions, allowing you to copy and paste code snippets for one-off debugging help. As of the writing of this article, that's Sonnet 4.6 and Haiku 4.5 , leaving out the company's flagship offering, Opus 4.8 , out of the mix. Outside of its Enterprise plans, that limit is 200,000 tokens long across all of its models and paid plans. Claude AI: What's free in 2026 and what isn't?",
+      "what_happened": "Plus, it's the system Claude defaults to when you first launch the chatbot. As far as free offerings go, Anthropic's Sonnet models have consistently been among the best I've tested, and the new 4.6 release is no different.",
+      "why_matters": "While you can't use Claude Code with a free account, you can still ask the chatbot coding-related questions, allowing you to copy and paste code snippets for one-off debugging help. As of the writing of this article, that's Sonnet 4.6 and Haiku 4.5 , leaving out the company's flagship offering, Opus 4.8 , out of the mix.",
+      "what_to_watch": "Outside of its Enterprise plans, that limit is 200,000 tokens long across all of its models and paid plans. Claude AI: What's free in 2026 and what isn't?",
+      "key_points": [
+        "Plus, it's the system Claude defaults to when you first launch the chatbot.",
+        "As far as free offerings go, Anthropic's Sonnet models have consistently been among the best I've tested, and the new 4.6 release is no different.",
+        "While you can't use Claude Code with a free account, you can still ask the chatbot coding-related questions, allowing you to copy and paste code snippets for one-off debugging help.",
+        "Claude AI: What's free in 2026 and what isn't?",
+        "If you're new to Claude, the chatbot's usage limits can feel ill-defined.",
+        "On the subject of models, I want to draw your attention to Claude's model picker where you'll find the Effort menu.",
+        "The former allows you to organize conversations and related materials around a single topic and set custom instructions for Claude, while Artifacts are small apps and games Claude can program for you.",
+        "Behind the scenes, a large language model is applying the patterns it learned in training to an input it hasn't seen before.",
+        "What you won't get is Claude Design and Claude Code .",
+        "Model access and features at the free tier Anthropic limits free users to just two of its three models.",
+        "As of the writing of this article, that's Sonnet 4.6 and Haiku 4.5 , leaving out the company's flagship offering, Opus 4.8 , out of the mix.",
+        "Ads and model training As a free user, one thing you won't have to endure while using Claude is ads."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ef014632f09d404b.jpg",
+      "image_url": "https://www.engadget.com/img/gallery/claude-ai-whats-free-in-2026-and-what-isnt/model-access-and-features-at-the-free-tier-1780414749.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "f234d1167a044b5284d5bf879ce79048"
+    },
+    {
+      "url": "https://www.amazon.science/blog/ground-truth-is-a-process-not-a-dataset",
+      "title": "Ground truth is a process, not a dataset",
+      "description": "Automatically fact-checking long, AI-generated research reports poses new challenges - including benchmarking.",
+      "excerpt": "Automatically fact-checking long, AI-generated research reports poses new challenges - including benchmarking.",
+      "summary": "Customized Amazon Nova models improve molecular-property prediction in drug discovery Krishnateja Killamsetty , Andy Lapastora , Karthick Prasad Gunasekaran April 15, 2026 A single, optimized LLM unifies what previously required multiple models and can serve as a reasoning partner for medical chemists. Machine learning AWS and Hopkins Engineering announce groundbreaking database for AI/ML antibody design Staff writer April 14, 2026 Built in collaboration with the Gray Lab at Johns Hopkins Whiting School of. Machine learning Engaging the AI community through building, research, and shared learning Staff writer February 2, 2026 Advancing AI requires more than breakthrough models. If the challenger makes the stronger case, we revise the benchmark before we score the model. If the challenger makes the stronger case, we revise the benchmark before we score the model. Machine learning Engaging the AI community through building, research, and shared learning Staff writer February 2, 2026 Advancing AI requires more than breakthrough models.",
+      "what_happened": "Customized Amazon Nova models improve molecular-property prediction in drug discovery Krishnateja Killamsetty , Andy Lapastora , Karthick Prasad Gunasekaran April 15, 2026 A single, optimized LLM unifies what previously required multiple models and can serve as a reasoning partner for medical chemists. Machine learning AWS and Hopkins Engineering announce groundbreaking database for AI/ML antibody design Staff writer April 14, 2026 Built in collaboration with the Gray Lab at Johns Hopkins Whiting School of.",
+      "why_matters": "Machine learning Engaging the AI community through building, research, and shared learning Staff writer February 2, 2026 Advancing AI requires more than breakthrough models. If the challenger makes the stronger case, we revise the benchmark before we score the model.",
+      "what_to_watch": "If the challenger makes the stronger case, we revise the benchmark before we score the model. Machine learning Engaging the AI community through building, research, and shared learning Staff writer February 2, 2026 Advancing AI requires more than breakthrough models.",
+      "key_points": [
+        "Customized Amazon Nova models improve molecular-property prediction in drug discovery Krishnateja Killamsetty , Andy Lapastora , Karthick Prasad Gunasekaran April 15, 2026 A single, optimized LLM unifies what previously.",
+        "Machine learning Engaging the AI community through building, research, and shared learning Staff writer February 2, 2026 Advancing AI requires more than breakthrough models.",
+        "If the challenger makes the stronger case, we revise the benchmark before we score the model.",
+        "Normally, in machine learning, when a model disagrees with a benchmark, we assume the model made a mistake.",
+        "Machine learning AWS and Hopkins Engineering announce groundbreaking database for AI/ML antibody design Staff writer April 14, 2026 Built in collaboration with the Gray Lab at Johns Hopkins Whiting School of.",
+        "And in this setting, building the benchmark turned out to be at least as hard as building the model.",
+        "Instead of treating the initial expert labels as unquestionable ground truth, we decided to use the models to actively scrutinize the benchmark.",
+        "That was higher than the 58.5% of the best traditional fact-checking system we tested and the 69.1% of a strong prior deep-research system.",
+        "When Amazon\u2019s Artificial General Intelligence (AGI) group started working on the problem of evaluating AI-generated research reports, we thought that the main technical challenge would be building a stronger AI fact.",
+        "On DeepFact-Bench, DeepFact-Eval reached 83.4% accuracy when we used GPT-4.1 as the underlying model.",
+        "This is the core idea behind the audit-then-score protocol.",
+        "A new audit-then-score protocol improves accuracy on benchmarks from 60.8% to 90.9% by using AI models to challenge and refine human-generated benchmarks."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0b1e2a4a8b643f38.png",
+      "image_url": "https://cdn.amazon.science/dims4/default/7cd724f/2147483647/strip/true/crop/200x200+0+0/resize/295x295!/quality/90/?url=https%3A%2F%2Famzn-science-production-science.s3.us-east-1.amazonaws.com%2Fscience%2F72%2F07%2F6a108b9c6bb589a53754acb834f9%2Fground-truth-is-a-process-not-a-datasetqrcode",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "7f0e2bfe461f46878644eae0088bb99e"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/jun/03/what-does-uk-watchdog-new-google-ai-results-rule-means-publishers",
+      "title": "What do UK watchdog\u2019s new rules on Google AI results mean for publishers?",
+      "description": "Giving publishers power to block their content from being used in AI summaries will have global ramifications",
+      "excerpt": "Giving publishers power to block their content from being used in AI summaries will have global ramifications",
+      "summary": "What has the CMA announced? It must allow publishers to block Google from using their content to power features such as AI Overviews and AI mode (an expanded version of Overviews). The global deployment underlines the impact of the CMA\u2019s new digital competition powers. The Guardian has signed deals with a variety of businesses including OpenAI, Google, Amazon and Microsoft to allow those companies to use its journalism in some GenAI products. What is next for the publishing industry? The worry is Google will slow-roll this.",
+      "what_happened": "What has the CMA announced? It must allow publishers to block Google from using their content to power features such as AI Overviews and AI mode (an expanded version of Overviews).",
+      "why_matters": "The global deployment underlines the impact of the CMA\u2019s new digital competition powers. The Guardian has signed deals with a variety of businesses including OpenAI, Google, Amazon and Microsoft to allow those companies to use its journalism in some GenAI products.",
+      "what_to_watch": "What is next for the publishing industry? The worry is Google will slow-roll this.",
+      "key_points": [
+        "What has the CMA announced?",
+        "The worry is Google will slow-roll this.",
+        "Publishers have welcomed the CMA\u2019s move.",
+        "It must allow publishers to block Google from using their content to power features such as AI Overviews and AI mode (an expanded version of Overviews).",
+        "The global deployment underlines the impact of the CMA\u2019s new digital competition powers.",
+        "\u201cThe devil in the detail is that we can see Google exploiting the vagueness of what gets reported and when.",
+        "The Guardian has signed deals with a variety of businesses including OpenAI, Google, Amazon and Microsoft to allow those companies to use its journalism in some GenAI products.",
+        "The Competition and Markets Authority (CMA) is using powers that allow it to set bespoke rules for major tech firms that it deems to have \u201cstrategic market status\u201d.",
+        "The search company announced on Wednesday it was testing a new control that lets website owners manage how their links and content appear in AI features such as AI Over views or AI Mode.",
+        "The group added another 20 major publishers this week, as it seeks to strike better AI deals by agreeing common standards and content usage rights.",
+        "Google will have nine months to implement the changes, but the CMA wants swift action on the most important aspects of its decision.",
+        "What is next for the publishing industry?"
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/afc8ee894b61dfcc.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/586d6ac70e47fcec5e086deb427b78aa3241f03f/493_0_5029_4024/master/5029.jpg?width=445&dpr=1&s=none&crop=none",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "ee15c33e249d419faa6032681b1dfaa0"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 9,
+  "has_cta": true,
+  "slides": [
+    "Google's Dreambeans its weirdest-named AI tool to date will turn your life.",
+    "Pass upgrades S e e w h t y.",
+    "Martin Scorsese accused of throwing artists under bus' with AI storyboards.",
+    "Labour MP sues Elon Musk's xAI company over fake sexualised images.",
+    "Can autonomous AI-powered killer drones take morality onboard.",
+    "Claude AI What's free in 2026 and what isn't.",
+    "Ground truth is a process not a dataset.",
+    "Google will have nine months to implement the changes, but the CMA.",
+    "FOLLOW @graitech"
+  ]
+}
