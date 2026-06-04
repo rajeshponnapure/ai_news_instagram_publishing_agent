@@ -1,0 +1,365 @@
+{
+  "email_received_at": "2026-06-04T17:46+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Meta rolls out a new AI creator assistant on Facebook | TechCrunch",
+  "subject": "",
+  "source_date": "2026-06-04T17:46:44.902136",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://techcrunch.com/2026/06/04/meta-rolls-out-a-new-ai-creator-assistant-on-facebook/",
+  "article_title": "Meta rolls out a new AI creator assistant on Facebook | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8365f8a584a8db2d.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Introducing-Creator-Assistant-Plus-More-Languages-for-AI-Translations-on-Facebook_Header.jpg?resize=1200,675",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/04/meta-rolls-out-a-new-ai-creator-assistant-on-facebook/",
+      "title": "Meta rolls out a new AI creator assistant on Facebook | TechCrunch",
+      "description": "Creators often have to parse through charts and dashboards to understand their performance, but with the new AI assistant, they can get quick answers to questions like \"When should I post?\" and \"What are people saying in my comments?\"",
+      "excerpt": "Creators often have to parse through charts and dashboards to understand their performance, but with the new AI assistant, they can get quick answers to questions like \"When should I post?\" and \"What are people saying in my comments?\"",
+      "summary": "Launched last year, the idea behind the feature is to allow creators to reach more audiences by breaking down language barriers. Microsoft launches Scout, an OpenClaw-inspired personal assistant Hackers hijacked Instagram accounts by tricking Meta AI support chatbot into granting access \u2018What a joke\u2019: GitHub Copilot\u2019s new token-based billing spurs consternation among devs I put Google\u2019s 24/7 AI assistant Gemini Spark to work, and it\u2019s actually pretty useful Microsoft under fire for threatening security researcher. Creators often have to parse through charts and dashboards to understand their performance, but with the new AI assistant, they can get quick answers to questions like \"When should I post?\" and \"What are people saying in my comments?\" More from TechCrunch Meta rolls out a new AI creator assistant on Facebook Meta announced on Thursday that it\u2019s introducing a new AI creator assistant on Facebook that will give creators. Meta plans to add new capabilities and bring the assistant to more countries in the future. The new assistant is rolling out to creators in the U.S., Canada, and India.",
+      "what_happened": "Launched last year, the idea behind the feature is to allow creators to reach more audiences by breaking down language barriers. Microsoft launches Scout, an OpenClaw-inspired personal assistant Hackers hijacked Instagram accounts by tricking Meta AI support chatbot into granting access \u2018What a joke\u2019: GitHub Copilot\u2019s new token-based billing spurs consternation among devs I put Google\u2019s 24/7 AI assistant Gemini Spark to work, and it\u2019s actually pretty useful Microsoft under fire for threatening security researcher.",
+      "why_matters": "Creators often have to parse through charts and dashboards to understand their performance, but with the new AI assistant, they can get quick answers to questions like \"When should I post?\" and \"What are people saying in my comments?\" More from TechCrunch Meta rolls out a new AI creator assistant on Facebook Meta announced on Thursday that it\u2019s introducing a new AI creator assistant on Facebook that will give creators.",
+      "what_to_watch": "Meta plans to add new capabilities and bring the assistant to more countries in the future. The new assistant is rolling out to creators in the U.S., Canada, and India.",
+      "key_points": [
+        "The new assistant is rolling out to creators in the U.S., Canada, and India.",
+        "Launched last year, the idea behind the feature is to allow creators to reach more audiences by breaking down language barriers.",
+        "Microsoft launches Scout, an OpenClaw-inspired personal assistant Hackers hijacked Instagram accounts by tricking Meta AI support chatbot into granting access \u2018What a joke\u2019: GitHub Copilot\u2019s new token-based billing.",
+        "Meta plans to add new capabilities and bring the assistant to more countries in the future.",
+        "Meta also announced that it\u2019s introducing new languages for AI translations on Facebook, including Arabic, Bahasa Indonesian, French, Thai, and Vietnamese.",
+        "Creators often have to parse through charts and dashboards to understand their performance, but with the new AI assistant, they can get quick answers to questions like \"When should I post?\" and \"What are people saying.",
+        "With AI-translated Reels , a creator\u2019s tone and sound are preserved and automatically translated into another language.",
+        "Prior to joining the publication in 2021, she was a telecom reporter at MobileSyrup.",
+        "Beyond performance, the AI assistant can help brainstorm ideas for new content by drawing on what\u2019s trending.",
+        "The answers they receive will be based on their own presence and what they can do differently to improve performance.",
+        "By giving creators access to an AI assistant, Meta is looking to keep creators active on Facebook as it competes for their attention against rivals like TikTok and YouTube.",
+        "You can contact or verify outreach from Aisha by emailing aisha@techcrunch.com or via encrypted message at aisha_malik.01 on Signal."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8365f8a584a8db2d.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Introducing-Creator-Assistant-Plus-More-Languages-for-AI-Translations-on-Facebook_Header.jpg?resize=1200,675",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "86683a948c544de79c9bd204d290a5a5"
+    },
+    {
+      "url": "https://huggingface.co/blog/hf-cli-for-agents",
+      "title": "Designing the hf CLI as an agent-optimized way to work with the Hub",
+      "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "excerpt": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "summary": "We introduced agent-mode output in hf v1.9.0 and have been migrating the rest of the CLI to it gradually in the following releases. Agents are becoming real users of the Hub: they train models, build and clean datasets, and ship demos as Spaces, almost always on behalf of a person. Separately, the commands that move real data take a --dry-run that shows exactly what they'll transfer before they run, which proves handy for humans and agents alike, since neither has to commit to a long download or blind sync: Discoverable, predictable commands hf is built to be probed: run hf to see the resource groups, run --help on the one you need, and every --help ends with real, copy-pasteable examples (which an. These are early numbers (we only began attributing agent traffic in April 2026), but the scale is already significant, and we expect it to keep growing as coding agents become a standard way to work with the Hub. The hf CLI (and the huggingface_hub Python SDK it's built on) detects when a coding agent is driving it by.",
+      "what_happened": "We introduced agent-mode output in hf v1.9.0 and have been migrating the rest of the CLI to it gradually in the following releases. Agents are becoming real users of the Hub: they train models, build and clean datasets, and ship demos as Spaces, almost always on behalf of a person.",
+      "why_matters": "Separately, the commands that move real data take a --dry-run that shows exactly what they'll transfer before they run, which proves handy for humans and agents alike, since neither has to commit to a long download or blind sync: Discoverable, predictable commands hf is built to be probed: run hf to see the resource groups, run --help on the one you need, and every --help ends with real, copy-pasteable examples (which an.",
+      "what_to_watch": "These are early numbers (we only began attributing agent traffic in April 2026), but the scale is already significant, and we expect it to keep growing as coding agents become a standard way to work with the Hub. The hf CLI (and the huggingface_hub Python SDK it's built on) detects when a coding agent is driving it by.",
+      "key_points": [
+        "AI agent traffic on the Hub We started tracking agent usage of the Hub in April 2026.",
+        "We introduced agent-mode output in hf v1.9.0 and have been migrating the rest of the CLI to it gradually in the following releases.",
+        "The hf CLI (and the huggingface_hub Python SDK it's built on) detects when a coding agent is driving it by reading the environment variables agents set: CLAUDECODE / CLAUDE_CODE for Claude Code, CODEX_SANDBOX for Codex.",
+        "These are early numbers (we only began attributing agent traffic in April 2026), but the scale is already significant, and we expect it to keep growing as coding agents become a standard way to work with the Hub.",
+        "(self-report error = the agent reported success on the 17 solvable tasks but the Hub said otherwise.",
+        "Each task goes to a fresh coding agent with exactly one way to talk to the Hub: curl / the Python SDK : no hf CLI at all, so the agent falls back to curl against the REST API or the huggingface_hub Python library.",
+        "We ran the whole thing twice, on the two most popular coding agents ( Claude Code with Sonnet 4.6 and OpenAI Codex with GPT-5.5).",
+        "Benchmarking the hf CLI for Coding Agents To find out whether the hf CLI is really more efficient for agents, we measured it.",
+        "Agents are becoming real users of the Hub: they train models, build and clean datasets, and ship demos as Spaces, almost always on behalf of a person.",
+        "Each task/tool combination is run 10 times , since coding agents are non-deterministic, about 520 runs per agent (18 tasks \u00d7 3 tools \u00d7 10 reps, minus a cap on one billable Jobs task) and ~1,000 graded runs in total.",
+        "We found that on complex, multi-step tasks the no-CLI baseline (an agent hand-rolling curl or the Python SDK) uses up to 6\u00d7 as many tokens as the hf CLI.",
+        "If your agent interacts with the Hugging Face Hub, we recommend giving it the hf CLI: Then hand it the skill, so it knows the whole command surface from the first turn: Then point your agent at the Hub and let it work."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/caecf84c5d737343.png",
+      "image_url": "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/huggingface_hub/chart-tokens-dark.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/93c0fdfd5c4a587e.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/94f015b2a581c34c.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/68819cdd34bedcc0.png"
+      ],
+      "extra_image_urls": [
+        "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/huggingface_hub/chart-tokens.png",
+        "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/huggingface_hub/chart-users.png",
+        "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/huggingface_hub/chart-users-dark.png"
+      ],
+      "_story_id": "f25c22ae20694117963f1cc3fd3051c0"
+    },
+    {
+      "url": "https://www.digitimes.com/news/a20260603PD216/anthropic-funding-hbm-investment-micron-samsung-sk-hynix.html",
+      "title": "Commentary: Why the world's memory giants are betting on Anthropic",
+      "description": "The latest funding round for Anthropic produced a headline-grabbing figure: a US$65 billion capital raise that pushed the artificial intelligence (AI) startup's valuation to $965 billion, surpassing OpenAI and making Anthropic the world's most valuable AI startup.",
+      "excerpt": "The latest funding round for Anthropic produced a headline-grabbing figure: a US$65 billion capital raise that pushed the artificial intelligence (AI) startup's valuation to $965 billion, surpassing OpenAI and making Anthropic the world's most valuable AI startup.",
+      "summary": "The latest funding round for Anthropic produced a headline-grabbing figure: a US$65 billion capital raise that pushed the artificial intelligence (AI) startup's valuation to $965 billion, surpassing OpenAI and making Anthropic the world's most valuable AI startup. Commentary: Why the world's memory giants are betting on Anthropic The latest funding round for Anthropic produced a headline-grabbing figure: a US$65 billion capital raise that pushed the artificial intelligence (AI) startup's valuation to $965 billion. Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. Commentary: Why the world's memory giants are betting on Anthropic The latest funding round for Anthropic produced a headline-grabbing figure: a US$65 billion capital raise that pushed the artificial intelligence (AI) startup's valuation to $965 billion, surpassing OpenAI and making. Commentary: Why the world's memory giants are betting on Anthropic The latest funding round for Anthropic produced a headline-grabbing figure: a US$65 billion capital raise that pushed the artificial intelligence (AI) startup's valuation to $965.",
+      "what_happened": "The latest funding round for Anthropic produced a headline-grabbing figure: a US$65 billion capital raise that pushed the artificial intelligence (AI) startup's valuation to $965 billion, surpassing OpenAI and making Anthropic the world's most valuable AI startup. Commentary: Why the world's memory giants are betting on Anthropic The latest funding round for Anthropic produced a headline-grabbing figure: a US$65 billion capital raise that pushed the artificial intelligence (AI) startup's valuation to $965 billion.",
+      "why_matters": "Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. Commentary: Why the world's memory giants are betting on Anthropic The latest funding round for Anthropic produced a headline-grabbing figure: a US$65 billion capital raise that pushed the artificial intelligence (AI) startup's valuation to $965 billion, surpassing OpenAI and making.",
+      "what_to_watch": "Commentary: Why the world's memory giants are betting on Anthropic The latest funding round for Anthropic produced a headline-grabbing figure: a US$65 billion capital raise that pushed the artificial intelligence (AI) startup's valuation to $965 billion, surpassing OpenAI and making Anthropic the world's most valuable.",
+      "key_points": [
+        "The latest funding round for Anthropic produced a headline-grabbing figure: a US$65 billion capital raise that pushed the artificial intelligence (AI) startup's valuation to $965 billion, surpassing OpenAI and making.",
+        "Commentary: Why the world's memory giants are betting on Anthropic The latest funding round for Anthropic produced a headline-grabbing figure: a US$65 billion capital raise that pushed the artificial intelligence (AI).",
+        "This will save the password on the computer you're using to access the site.",
+        "SK Hynix speeds Yongin fab buildout as memory crunch fuels capacity race Memory supply gap stretches beyond 2028 as cloud capex tops US$725 billion Intel's revival secret: Suppliers with TSMC's stamp of approval Holy.",
+        "To activate this function, check the 'Keep me signed in' box in the log-in section.",
+        "Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7c25db5bbafdee7c.jpg",
+      "image_url": "https://img.digitimes.com/ad/en_20250923_b2b3_bigbutton.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "12f04007753a4338bc7455ae8373552c"
+    },
+    {
+      "url": "https://www.databricks.com/blog/3x-faster-search-parallel-test-time-scaling-instructed-retriever-1",
+      "title": "3x Faster Search: Parallel Test-Time Scaling with Instructed-Retriever-1",
+      "description": "Databricks Knowledge Assistant is now faster: Instructed-Retriever-1 cuts search time over 3x and answer time 2x, with no reconfiguration and no quality tradeoff.",
+      "excerpt": "Databricks Knowledge Assistant is now faster: Instructed-Retriever-1 cuts search time over 3x and answer time 2x, with no reconfiguration and no quality tradeoff.",
+      "summary": "Partner Program Explore benefits, tiers and how to become a partner Partner Solutions Find custom industry and migration solutions Platform Overview A unified platform for data, analytics and AI Governance Unified governance for all data, analytics and AI assets Artificial Intelligence Build and deploy ML and GenAI applications Business Intelligence Intelligent analytics for real-world data Data Warehousing Serverless data warehouse for SQL analytics Data Engineering ETL and orchestration for batch and streaming. Our harness provides the model with user instructions and the precise schema of the underlying retrieval index, and it propagates them to all the subsequent stages of query and filter generation, reranking, and answer generation. These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. To prepare the data for training, we build synthetic enterprise-style retrieval environments from a broad pretraining corpus, independently from our evaluation benchmark. The resulting model supports both query and filter generation, as well as verification-style retrieval capabilities, enabling the two stages that.",
+      "what_happened": "Partner Program Explore benefits, tiers and how to become a partner Partner Solutions Find custom industry and migration solutions Platform Overview A unified platform for data, analytics and AI Governance Unified governance for all data, analytics and AI assets Artificial Intelligence Build and deploy ML and GenAI applications Business Intelligence Intelligent analytics for real-world data Data Warehousing Serverless data warehouse for SQL analytics Data Engineering ETL and orchestration for batch and streaming.",
+      "why_matters": "Our harness provides the model with user instructions and the precise schema of the underlying retrieval index, and it propagates them to all the subsequent stages of query and filter generation, reranking, and answer generation. These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+      "what_to_watch": "To prepare the data for training, we build synthetic enterprise-style retrieval environments from a broad pretraining corpus, independently from our evaluation benchmark. The resulting model supports both query and filter generation, as well as verification-style retrieval capabilities, enabling the two stages that.",
+      "key_points": [
+        "Partner Program Explore benefits, tiers and how to become a partner Partner Solutions Find custom industry and migration solutions Platform Overview A unified platform for data, analytics and AI Governance Unified.",
+        "Our harness provides the model with user instructions and the precise schema of the underlying retrieval index, and it propagates them to all the subsequent stages of query and filter generation, reranking, and answer.",
+        "We evaluate Instructed-Retriever-1 on a large-scale internal dataset representative of Knowledge Assistant usage, measuring whether the two scaling mechanisms introduced above improve retrieval quality: parallel query.",
+        "The resulting model supports both query and filter generation, as well as verification-style retrieval capabilities, enabling the two stages that make parallel test-time scaling useful in practice.",
+        "We trained Instructed-Retriever-1 as a single retrieval-specialized model that supports parallel query generation and reranking.",
+        "Instructed-Retriever-1 powers both stages with a single retrieval-specialized model trained for search generation and evidence ranking.",
+        "We described how this can be achieved in our earlier Instructed Retriever blog , and we use the same search harness in training our Instructed-Retriever-1 model.",
+        "Instructed-Retriever-1 is a single model trained for both retrieval stages: query generation to increase recall and reranking to increase precision, run in parallel to keep latency low.",
+        "3 We evaluated the BF16 and FP8 models on KARLBench across 10 trials.",
+        "Training Instructed-Retriever-1 Parallel test-time scaling for search requires a model that can do two things well: generate effective searches and judge retrieved evidence.",
+        "Claude Sonnet 4.5 and Instructed-Retriever-1 score 80.1 and 81.0 nDCG@10, respectively.",
+        "For training Instructed-Retriever-1, we take a different route: rather than scaling compute sequentially, we parallelize it during the initial search phase."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/91c726a194df0b5a.png",
+      "image_url": "https://www.databricks.com/sites/default/files/2026-06/faster-search-parallel-test-time-scaling-instructed-retriever-blog-og.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "7cbdedce3cc1459b80e34314d59fdef6"
+    },
+    {
+      "url": "https://www.engadget.com/2187268/ask-gemini-gmail-search/",
+      "title": "You can now use Ask Gemini in Drive to rummage through your Gmail - Engadget",
+      "description": "Slogging through emails to find stuff can be a chore, but Google AI subscribers can now get Gemini to do it.",
+      "excerpt": "Slogging through emails to find stuff can be a chore, but Google AI subscribers can now get Gemini to do it.",
+      "summary": "Google's \"Ask Gemini in Drive\" feature announced in March can now use Gmail as a source, just as it already can with Drive folders and files. That means you can ask it questions about Gmail threads spanning emails, files and folders, \"to ensure the most helpful and accurate answers possible,\" Google explained in its Workspace Updates blog . To employ the new feature, you must be subscribed to Google AI Pro or Ultra, or be a Business or Enterprise user. Slogging through emails to find stuff can be a chore, but Google AI subscribers and enterprise customers can now get AI to do it. Slogging through emails to find stuff can be a chore, but Google AI subscribers and enterprise customers can now get AI to do it.",
+      "what_happened": "Google's \"Ask Gemini in Drive\" feature announced in March can now use Gmail as a source, just as it already can with Drive folders and files. That means you can ask it questions about Gmail threads spanning emails, files and folders, \"to ensure the most helpful and accurate answers possible,\" Google explained in its Workspace Updates blog .",
+      "why_matters": "To employ the new feature, you must be subscribed to Google AI Pro or Ultra, or be a Business or Enterprise user. Slogging through emails to find stuff can be a chore, but Google AI subscribers and enterprise customers can now get AI to do it.",
+      "what_to_watch": "Slogging through emails to find stuff can be a chore, but Google AI subscribers and enterprise customers can now get AI to do it.",
+      "key_points": [
+        "Google's \"Ask Gemini in Drive\" feature announced in March can now use Gmail as a source, just as it already can with Drive folders and files.",
+        "That means you can ask it questions about Gmail threads spanning emails, files and folders, \"to ensure the most helpful and accurate answers possible,\" Google explained in its Workspace Updates blog .",
+        "Slogging through emails to find stuff can be a chore, but Google AI subscribers and enterprise customers can now get AI to do it.",
+        "You can now use Ask Gemini in Drive to rummage through your Gmail The feature is now available to eligible Google Workspace, AI Pro and Ultra subscribers.",
+        "To use it, you select Gmail from the sources in the left pane, then hit the \"Ask Gemini\" button at the top right.",
+        "\"Users can ground their responses in a complete view of their business context - spanning emails, files, and folders - to ensure the most helpful and accurate answers possible.\" The feature is now out of beta and.",
+        "You can then pose a question like \"find the email where I received approval for the Jenkins project,\" and it will (hopefully) find the relevant one.",
+        "To employ the new feature, you must be subscribed to Google AI Pro or Ultra, or be a Business or Enterprise user.",
+        "\"Users can engage in high-context, multi-turn conversations to efficiently explore and understand content,\" Google explains.",
+        "Do not sell or share my personal information."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f69f294be9ffac9b.jpg",
+      "image_url": "https://img2.zergnet.com/8764101_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "1a4750affe904560881543cd1c8dbfc9"
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-06-04-nemotron-3-ultra-vllm",
+      "title": "Announcing Day-0 Support for NVIDIA Nemotron 3 Ultra on vLLM",
+      "description": "We are excited to announce Day-0 Support for the newly released NVIDIA Nemotron 3 Ultra on vLLM.",
+      "excerpt": "We are excited to announce Day-0 Support for the newly released NVIDIA Nemotron 3 Ultra on vLLM.",
+      "summary": "Within NeMo RL, vLLM serves as a generation backend for reinforcement learning rollouts, enabling efficient sampling, scalable inference, and integration with NeMo Gym for multi-step and multi-turn training environments. Announcing Day-0 Support for NVIDIA Nemotron 3 Ultra on vLLM We are excited to announce Day-0 Support for the newly released NVIDIA Nemotron 3 Ultra on vLLM. NVIDIA: Nirmal Kumar Juluru, Anusha Pant, Alex Steiner, Tomer Asida, Daniel Afrimi, Shaun Kotek, Roi Koren, Daniel Serebrenik, Amir Klein, Omer Ullman Argov, Netanel Haber, Amit Zuker, Shahar Mor, Tomer Bar Natan vLLM team and community: Michael Goin, Kaichao You, Yongye Zhu, Roger Wang, Simon Mo, Woosuk Kwon, Yasong Wang, Nick Hill, Zachary Xi Run Highly Efficient Multimodal Agentic AI with NVIDIA Nemotron 3 Nano Omni Using. It is designed for complex orchestration, coding, deep research, enterprise automation, and other tasks where agents must plan, call tools, recover from errors, and reason across extended context. To mitigate the typical efficiency-accuracy tradeoffs for high-capacity reasoning models, the Nemotron models introduce.",
+      "what_happened": "Within NeMo RL, vLLM serves as a generation backend for reinforcement learning rollouts, enabling efficient sampling, scalable inference, and integration with NeMo Gym for multi-step and multi-turn training environments. Announcing Day-0 Support for NVIDIA Nemotron 3 Ultra on vLLM We are excited to announce Day-0 Support for the newly released NVIDIA Nemotron 3 Ultra on vLLM.",
+      "why_matters": "NVIDIA: Nirmal Kumar Juluru, Anusha Pant, Alex Steiner, Tomer Asida, Daniel Afrimi, Shaun Kotek, Roi Koren, Daniel Serebrenik, Amir Klein, Omer Ullman Argov, Netanel Haber, Amit Zuker, Shahar Mor, Tomer Bar Natan vLLM team and community: Michael Goin, Kaichao You, Yongye Zhu, Roger Wang, Simon Mo, Woosuk Kwon, Yasong Wang, Nick Hill, Zachary Xi Run Highly Efficient Multimodal Agentic AI with NVIDIA Nemotron 3 Nano Omni Using.",
+      "what_to_watch": "It is designed for complex orchestration, coding, deep research, enterprise automation, and other tasks where agents must plan, call tools, recover from errors, and reason across extended context. To mitigate the typical efficiency-accuracy tradeoffs for high-capacity reasoning models, the Nemotron models introduce.",
+      "key_points": [
+        "Reasoning: Optimized for long-running autonomous agents, tool calling, coding, deep research, and orchestration Training: Post-trained with multi-environment reinforcement learning for robust reasoning and agentic.",
+        "To mitigate the typical efficiency-accuracy tradeoffs for high-capacity reasoning models, the Nemotron models introduce profound architectural innovations: Post-Trained for Agent Harness: Nemotron models are.",
+        "vLLM was a key part of the Nemotron 3 Ultra training workflow, powering high-throughput multi-node inference for rollouts and model evaluation throughout training.",
+        "NVIDIA Nemotron 3 Ultra is an open frontier reasoning model for long-running autonomous agents.",
+        "Within NeMo RL, vLLM serves as a generation backend for reinforcement learning rollouts, enabling efficient sampling, scalable inference, and integration with NeMo Gym for multi-step and multi-turn training environments.",
+        "Nemotron 3 Ultra , part of the Nemotron family of open models, is built for frontier-class reasoning in long-running autonomous agent workflows.",
+        "High-Throughput Reasoning for Long-Running Agents Nemotron 3 Ultra is optimized for agentic systems that need sustained reasoning over many steps.",
+        "Announcing Day-0 Support for NVIDIA Nemotron 3 Ultra on vLLM We are excited to announce Day-0 Support for the newly released NVIDIA Nemotron 3 Ultra on vLLM.",
+        "Announcing Gemma 4 on vLLM: Byte for byte, the most capable open models With the debut of Gemma 4, vLLM introduces immediate support for Google's most sophisticated open model lineup, spanning multiple hardware.",
+        "With vLLM, developers can serve the model through an OpenAI-compatible API and integrate it into existing agent frameworks, coding systems, research pipelines, and enterprise automation workflows.",
+        "We are excited to announce Day-0 Support for the newly released NVIDIA Nemotron 3 Ultra on vLLM.",
+        "It is designed for complex orchestration, coding, deep research, enterprise automation, and other tasks where agents must plan, call tools, recover from errors, and reason across extended context."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/efab1f433dc7bfe5.png",
+      "image_url": "https://vllm.ai/blog-assets/figures/2026-nemotron-3-ultra/hero.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "a14f3c93413f4e7a9dbe07435e22970b"
+    },
+    {
+      "url": "https://www.technologyreview.com/2026/06/04/1138391/courts-coping-ai-lawsuits/",
+      "title": "How courts are coping with a flood of AI-generated lawsuits",
+      "description": "Judges are wondering what rights and duties chatbots should have as they stand in for lawyers.",
+      "excerpt": "Judges are wondering what rights and duties chatbots should have as they stand in for lawyers.",
+      "summary": "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. Get the latest updates from MIT Technology Review Discover special offers, top stories, upcoming events, and more. Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI\u2019s models Musk kept his cool, and OpenAI\u2019s lawyer bulldozed him with piercing questions about his motivations for suing the company. \u201cIt is true that AI systems like ChatGPT, Claude, Gemini, and others \u2026 collect user data for training and other purposes. A new US phone network for Christians aims to block porn and gender-related content Launching next week on T-Mobile's network, the cell plan takes a nuclear approach to online safety. The case is still pending before the court.",
+      "what_happened": "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. Get the latest updates from MIT Technology Review Discover special offers, top stories, upcoming events, and more.",
+      "why_matters": "Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI\u2019s models Musk kept his cool, and OpenAI\u2019s lawyer bulldozed him with piercing questions about his motivations for suing the company. \u201cIt is true that AI systems like ChatGPT, Claude, Gemini, and others \u2026 collect user data for training and other purposes.",
+      "what_to_watch": "A new US phone network for Christians aims to block porn and gender-related content Launching next week on T-Mobile's network, the cell plan takes a nuclear approach to online safety. The case is still pending before the court.",
+      "key_points": [
+        "Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI\u2019s models Michelle Kim A new US phone network for Christians aims to block porn and gender-related content James.",
+        "The case is still pending before the court.",
+        "\u201cWhere are you getting the idea that you\u2019re getting $700,000?",
+        "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+        "In one case, a plaintiff who slipped and fell in a store asked for $700,000 from the store, which was wildly more than the case was worth.",
+        "For many of them, the rewards outweigh the risks.",
+        "\u201cChatGPT is not an attorney,\u201d the lawsuit said.",
+        "\u201cIt is true that AI systems like ChatGPT, Claude, Gemini, and others \u2026 collect user data for training and other purposes.",
+        "Get the latest updates from MIT Technology Review Discover special offers, top stories, upcoming events, and more.",
+        "AI supercharges lawsuits To test whether AI was driving the increase in lawsuits filed by people without a lawyer, the authors of the study, Anand Shah at MIT and Joshua Levy at the University of Southern California.",
+        "If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.",
+        "The share flagged as containing AI-generated writing rose from 1% in 2023 to 18% in 2026."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c131535601959a3f.jpg",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/06/court-room.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "125f7981fd3f41519ae39fa268442759"
+    },
+    {
+      "url": "https://aibusiness.com/agentic-ai/google-s-gemma-4-12b-shows-ai-race-moving-edge-devices",
+      "title": "Google\u2019s Gemma 4 12B Shows AI Race Moving to Edge Devices",
+      "description": "The new open source model is encoder-free and can run on a 16GB RAM computer.",
+      "excerpt": "The new open source model is encoder-free and can run on a 16GB RAM computer.",
+      "summary": "It is the latest in the Gemma 4 family of models Google introduced in April. Google\u2019s Gemma 4 12B Shows AI Race Moving to Edge Devices The model, released under the Apache 2.0 license, is another example of how cloud providers are enabling enterprises to run models on local devices for agentic workflows. Instead, they pay a one-time cost for the model itself or download it in the case of Gemma 4 12B, since the model is free for any user with a 16GB laptop. \u201cThat\u2019s very powerful to enhance UX and provide richer response and feedback to the user, which means enterprises can deploy smarter devices,\u201d Su continued. Google DeepMind\u2019s introduction of Gemma 4 12B indicates that the future of agentic AI is shifting more toward local PCs and less toward the cloud, underscoring that the AI race is still in early stages and the market's direction remains fluid. Google DeepMind also made Gemma 4 encoder-free, meaning that pictures and.",
+      "what_happened": "It is the latest in the Gemma 4 family of models Google introduced in April. Google\u2019s Gemma 4 12B Shows AI Race Moving to Edge Devices The model, released under the Apache 2.0 license, is another example of how cloud providers are enabling enterprises to run models on local devices for agentic workflows.",
+      "why_matters": "Instead, they pay a one-time cost for the model itself or download it in the case of Gemma 4 12B, since the model is free for any user with a 16GB laptop. \u201cThat\u2019s very powerful to enhance UX and provide richer response and feedback to the user, which means enterprises can deploy smarter devices,\u201d Su continued.",
+      "what_to_watch": "Google DeepMind\u2019s introduction of Gemma 4 12B indicates that the future of agentic AI is shifting more toward local PCs and less toward the cloud, underscoring that the AI race is still in early stages and the market's direction remains fluid. Google DeepMind also made Gemma 4 encoder-free, meaning that pictures and.",
+      "key_points": [
+        "It is the latest in the Gemma 4 family of models Google introduced in April.",
+        "Google DeepMind also made Gemma 4 encoder-free, meaning that pictures and videos are directly fed into the multimodal model, with no barrier between the media and the model.",
+        "Google\u2019s Gemma 4 12B Shows AI Race Moving to Edge Devices The model, released under the Apache 2.0 license, is another example of how cloud providers are enabling enterprises to run models on local devices for agentic.",
+        "Google\u2019s AI lab released the open source model on June 3.",
+        "Gemma 4 12B is under the Apache 2.0 license, which gives enterprise developers flexibility and digital control in using, modifying and deploying the model commercially without licensing barriers.",
+        "He added that it will be interesting to see how the model supports AI agents , because it\u2019s a small model, while agentic reasoning processes usually require models with larger parameter counts.",
+        "Instead, they pay a one-time cost for the model itself or download it in the case of Gemma 4 12B, since the model is free for any user with a 16GB laptop.",
+        "Related: Microsoft Fully Commits to AI Models, Intros Unmetered Intelligence In addition to its low cost for developers, Gemma 4 12B is an example of how models are becoming much smarter for edge devices like laptops .",
+        "Google DeepMind launched Gemma 4 a day after Microsoft introduced its new Aion line of models on its Surface RTX Spark Dev Box computer.",
+        "Enterprise developers who want to try the model can do so in the Google AI Edge Gallery App, LM Studio and the Google AI Edge Eloquent app.",
+        "\u201cYou need a reasonably sized model because you do want the model to have enough knowledge,\u201d Su said.",
+        "When she's not diving deep into the world of AI, she spends her time on passion projects and raising her three daughters."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/be753ffbee22265b.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltdb9fe516e837c101/6a1d8b5a479f3e38d05cf31a/SoftBank.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/78181772d744e7d6.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/074bdebe8268e6f4.webp"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltf864463ec1c001b4/6a203dfaa0b6da8b9813f90f/Glasswing.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltd7a7b7e999f08e91/6a182945ebd0746ed016d980/Router.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ],
+      "_story_id": "0c70d5d775da40beb34f846167a48d2d"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 9,
+  "has_cta": true,
+  "slides": [
+    "Meta rolls out a new AI creator assistant on Facebook.",
+    "Designing the hf CLI as an agent-optimized way to work.",
+    "Commentary Why the world's memory giants are betting on Anthropic.",
+    "3x Faster Search Parallel Test-Time Scaling with Instructed-Retriever-1.",
+    "You can now use Ask Gemini in Drive to rummage through.",
+    "Announcing Day-0 Support for NVIDIA Nemotron 3 Ultra on vLLM.",
+    "Altman week 1: Elon Musk says he was duped, warns AI could.",
+    "Google's Gemma 4 12B Shows AI Race Moving to Edge Devices.",
+    "FOLLOW @graitech"
+  ]
+}
