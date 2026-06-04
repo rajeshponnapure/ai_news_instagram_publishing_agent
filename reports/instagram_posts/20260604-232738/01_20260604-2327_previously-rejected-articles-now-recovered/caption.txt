@@ -1,0 +1,20 @@
+Articles Now Recovered.
+
+Swipe for the full breakdown.
+
+Would you use something like this in your daily work? Yes or no in the comments.
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://www.engadget.com/2187615/meta-creator-assistant/
+- https://github.com/ollama/ollama/pull/16341
+- https://www.databricks.com/blog/3x-faster-search-parallel-test-time-scaling-instructed-retriever-1
+- https://github.com/ollama/ollama/compare/v0.30.4...v0.30.5-rc0
+- https://aibusiness.com/agentic-ai/google-s-gemma-4-12b-shows-ai-race-moving-edge-devices
+
+#AINews #AITools #GenerativeAI #FutureOfAI #TechTrends #Innovation #EmergingTech #Tech #AI #MachineLearning #AIExplained #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing #MLNews #AIWeekly #TechInnovation #AIStartups #FutureOfWork
+
+-
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-
