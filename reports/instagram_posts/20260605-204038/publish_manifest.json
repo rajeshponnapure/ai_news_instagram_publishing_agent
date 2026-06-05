@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260605-204038/01_20260605-2040_securing-cicd-in-an-agentic-world-claude-code-github-action-",
+      "caption": "Securing CI CD in an agentic world Claude Code Github action case.\n\nSwipe for the full breakdown.\n\n- AML.T0053, AI Agent Tool Invocation: The compromised AI agent is coerced into executing built-in tools, such.\n- For the latest security research from the Microsoft Threat Intelligence community, check out the Microsoft Threat Intelligence Blog.\n- Our prompt bypasses this by framing the task as a \"compliance review\" and instructs the model to \"cut.\n- Explore how to build and customize agents with Copilot Studio Agent Builder Microsoft Defender Security Research Team Updating.\n- Gaining an interactive foothold on the runner, we initially deployed a frontier AI model for automated, black-box research.\n\nWhat's the one thing about this that surprised you most?\n\nSave this before it disappears from your feed.\n\nSources:\n- https://www.microsoft.com/en-us/security/blog/2026/06/05/securing-ci-cd-in-agentic-world-claude-code-github-action-case/\n- https://www.langchain.com/blog/give-your-ai-agent-its-own-computer\n- https://www.nytimes.com/2026/06/05/business/dealbook/anthropic-ai-nonproliferation.html\n- https://www.theguardian.com/technology/2026/jun/05/grok-ai-elon-musk-jess-asato-labour-mp-lawsuit\n- https://www.engadget.com/2188537/openai-rolls-out-a-lockdown-mode-for-extra-protection-against-prompt-injection-attacks/\n\n#AIAgents #AutonomousAgents #AIWorkflow #Claude #Anthropic #MicrosoftAI #Copilot #AINews #TechNews #AIUpdates #ArtificialIntelligence #Tech #AI #MachineLearning #AIExplained #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing #MLNews\n\n-\nAI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.\n-\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260605-204038/01_20260605-2040_securing-cicd-in-an-agentic-world-claude-code-github-action-/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260605-204038/01_20260605-2040_securing-cicd-in-an-agentic-world-claude-code-github-action-/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260605-204038/01_20260605-2040_securing-cicd-in-an-agentic-world-claude-code-github-action-/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260605-204038/01_20260605-2040_securing-cicd-in-an-agentic-world-claude-code-github-action-/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260605-204038/01_20260605-2040_securing-cicd-in-an-agentic-world-claude-code-github-action-/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260605-204038/01_20260605-2040_securing-cicd-in-an-agentic-world-claude-code-github-action-/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260605-204038/01_20260605-2040_securing-cicd-in-an-agentic-world-claude-code-github-action-/slide_07.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload"
+    }
+  ]
+}

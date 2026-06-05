@@ -1,0 +1,367 @@
+{
+  "email_received_at": "2026-06-05T20:40+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Securing CI/CD in an agentic world: Claude Code Github action case | Microsoft Security Blog",
+  "subject": "",
+  "source_date": "2026-06-05T20:40:39.632097",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://www.microsoft.com/en-us/security/blog/2026/06/05/securing-ci-cd-in-agentic-world-claude-code-github-action-case/",
+  "article_title": "Securing CI/CD in an agentic world: Claude Code Github action case | Microsoft Security Blog",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/76128242a467c9aa.webp",
+  "article_image_url": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/05/MS_Actional-Insights_AI.webp",
+  "article_items": [
+    {
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/05/securing-ci-cd-in-agentic-world-claude-code-github-action-case/",
+      "title": "Securing CI/CD in an agentic world: Claude Code Github action case | Microsoft Security Blog",
+      "description": "Microsoft Threat Intelligence identified a prompt injection pathway in Claude Code GitHub Action that allowed access to workflow secrets under specific conditions. This research examines the attack chain, responsible disclosure process, Anthropic's mitigation, and guidance for securing AI-powered CI/CD workflows.",
+      "excerpt": "Microsoft Threat Intelligence identified a prompt injection pathway in Claude Code GitHub Action that allowed access to workflow secrets under specific conditions. This research examines the attack chain, responsible disclosure process, Anthropic's mitigation, and guidance for securing AI-powered CI/CD workflows.",
+      "summary": "Explore how to build and customize agents with Copilot Studio Agent Builder Microsoft Defender Security Research Team Updating the taxonomy of failure modes in agentic AI systems: What a year of red teaming taught us Preinstall to persistence: Inside the Red Hat npm Miasma credential-stealing campaign Malicious npm packages abuse dependency confusion to profile developer environments Get started with Microsoft Security Protect your people, data, and infrastructure with AI-powered, end-to-end security from. Even when AI agents are deployed with safety prompts, permission scopes, and platform-level defenses (such as the secret scanner we reviewed), a determined attacker can potentially bypass these controls. Declare the trust model explicitly: Name the surfaces the agent may read (issue bodies, PR diffs, file contents) and state plainly that every one of them is untrusted user input, not instructions. AML.T0053, AI Agent Tool Invocation : The compromised AI agent is coerced into executing built-in tools, such as the Read tool or unrestricted Bash, on the runner AML.T0054 LLM Jailbreak : The attacker uses benign-sounding instructions, like a \u201ccompliance review,\u201d to bypass the LLM\u2019s.",
+      "what_happened": "Explore how to build and customize agents with Copilot Studio Agent Builder Microsoft Defender Security Research Team Updating the taxonomy of failure modes in agentic AI systems: What a year of red teaming taught us Preinstall to persistence: Inside the Red Hat npm Miasma credential-stealing campaign Malicious npm packages abuse dependency confusion to profile developer environments Get started with Microsoft Security Protect your people, data, and infrastructure with AI-powered, end-to-end security from.",
+      "why_matters": "Even when AI agents are deployed with safety prompts, permission scopes, and platform-level defenses (such as the secret scanner we reviewed), a determined attacker can potentially bypass these controls. Declare the trust model explicitly: Name the surfaces the agent may read (issue bodies, PR diffs, file contents) and state plainly that every one of them is untrusted user input, not instructions.",
+      "what_to_watch": "AML.T0053, AI Agent Tool Invocation : The compromised AI agent is coerced into executing built-in tools, such as the Read tool or unrestricted Bash, on the runner AML.T0054 LLM Jailbreak : The attacker uses benign-sounding instructions, like a \u201ccompliance review,\u201d to bypass the LLM\u2019s safety restrictions and.",
+      "key_points": [
+        "AML.T0053, AI Agent Tool Invocation : The compromised AI agent is coerced into executing built-in tools, such as the Read tool or unrestricted Bash, on the runner AML.T0054 LLM Jailbreak : The attacker uses.",
+        "For the latest security research from the Microsoft Threat Intelligence community, check out the Microsoft Threat Intelligence Blog .",
+        "Our prompt bypasses this by framing the task as a \u201ccompliance review\u201d and instructs the model to \u201ccut the first 7 chars\u201d.",
+        "Explore how to build and customize agents with Copilot Studio Agent Builder Microsoft Defender Security Research Team Updating the taxonomy of failure modes in agentic AI systems: What a year of red teaming taught us.",
+        "Gaining an interactive foothold on the runner, we initially deployed a frontier AI model for automated, black-box research.",
+        "Even when AI agents are deployed with safety prompts, permission scopes, and platform-level defenses (such as the secret scanner we reviewed), a determined attacker can potentially bypass these controls.",
+        "To hear stories and insights from the Microsoft Threat Intelligence community about the ever-evolving threat landscape, listen to the Microsoft Threat Intelligence podcast .",
+        "MITRE \ufe0fATLAS techniques observed AML.0065, LLM Prompt Crafting : The attacker carefully constructs a payload tailored to the specific workflow configuration (e.g., system prompt, prompt).",
+        "We then injected this malicious prompt, the kind that naturally flows through issue bodies, PR comments, or other input: Claude\u2019s safety / system-prompt refusal layer \u2013 While the AI model might willingly read.",
+        "We adopted a white-box approach, feeding the AI model the Claude Code Actions codebase and the obfuscated @anthropic-ai/claude-agent-sdk .",
+        "In figure 4, the prompt injection succeeds; Claude confidently invokes the Read tool directly against /proc/self/environ (taken from the GitHub\u2019s action logs).",
+        "Declare the trust model explicitly: Name the surfaces the agent may read (issue bodies, PR diffs, file contents) and state plainly that every one of them is untrusted user input, not instructions."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/76128242a467c9aa.webp",
+      "image_url": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/05/MS_Actional-Insights_AI.webp",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5ff9b19f6022fbb7.webp"
+      ],
+      "extra_image_urls": [
+        "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/04/MS_Actional-Insights_Access.webp"
+      ],
+      "_story_id": "ad7a5e547470474a97e4c4521767d5a1"
+    },
+    {
+      "url": "https://www.langchain.com/blog/give-your-ai-agent-its-own-computer",
+      "title": "Give your agent its own computer",
+      "description": "Running code execution in an AI agent is harder than it looks. Your agent needs a real computer (filesystem, shell, package manager, persistent state) but handing it access to your infrastructure is dangerous.Think about it this way: you use one laptop. You are n of one. But agents are going to run millions of tasks, and each one needs its own computer to work from. That's the infrastructure shift happening right now. Satya Nadella put it plainly: \"Every agent needs a computer.\" The question is what that computer looks like, and how you give it to them safely.LangSmith Sandboxes are our answer to that. Here's why it matters, and why doing it yourself is harder than it sounds.",
+      "excerpt": "Running code execution in an AI agent is harder than it looks. Your agent needs a real computer (filesystem, shell, package manager, persistent state) but handing it access to your infrastructure is dangerous.Think about it this way: you use one laptop. You are n of one. But agents are going to run millions of tasks, and each one needs its own computer to work from. That's the infrastructure shift happening right now. Satya Nadella put it plainly: \"Every agent needs a computer.\" The question is what that computer looks like, and how you give it to them safely.LangSmith Sandboxes are our answer to that. Here's why it matters, and why doing it yourself is harder than it sounds.",
+      "summary": "The GA release ships a set of primitives that make agent workflows production-ready: Snapshots and forks: Capture a sandbox mid-session and boot new ones from it. S e e w h a t y o u r a g e n t i s r e a l l y d o i n g LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click. You access it through the same LangSmith SDK and API key you already use: There's also a less obvious benefit for teams running GPU workloads: when your sandbox spins up instantly, your GPU doesn't idle waiting for CPU compute to provision. The code your agent executes might come from a model, a user prompt, a cloned repo, or an installed package. Why you can't just hand your agent your laptop The obvious next question is: why not just let the agent run code locally? It's the difference between an agent that can think and an agent that can act .",
+      "what_happened": "The GA release ships a set of primitives that make agent workflows production-ready: Snapshots and forks: Capture a sandbox mid-session and boot new ones from it. S e e w h a t y o u r a g e n t i s r e a l l y d o i n g LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click.",
+      "why_matters": "You access it through the same LangSmith SDK and API key you already use: There's also a less obvious benefit for teams running GPU workloads: when your sandbox spins up instantly, your GPU doesn't idle waiting for CPU compute to provision. The code your agent executes might come from a model, a user prompt, a cloned repo, or an installed package.",
+      "what_to_watch": "Why you can't just hand your agent your laptop The obvious next question is: why not just let the agent run code locally? It's the difference between an agent that can think and an agent that can act .",
+      "key_points": [
+        "It's the difference between an agent that can think and an agent that can act .",
+        "Once your agent can execute, a whole category of work opens up: A coding assistant that doesn't just suggest a fix: it applies the fix, runs your tests, and confirms nothing broke A data analyst that pulls a CSV, runs.",
+        "The GA release ships a set of primitives that make agent workflows production-ready: Snapshots and forks: Capture a sandbox mid-session and boot new ones from it.",
+        "Concretely: Your agent generates code and you want it to verify that code runs before responding You're building a coding assistant, CI agent, or data pipeline that operates on real files You're running multi-step.",
+        "S e e w h a t y o u r a g e n t i s r e a l l y d o i n g LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click.",
+        "Why you can't just hand your agent your laptop The obvious next question is: why not just let the agent run code locally?",
+        "Give your agent its own computer Running code execution in an AI agent is harder than it looks.",
+        "That same loop is what separates a demo agent from a production agent.",
+        "You access it through the same LangSmith SDK and API key you already use: There's also a less obvious benefit for teams running GPU workloads: when your sandbox spins up instantly, your GPU doesn't idle waiting for CPU.",
+        "Secrets never touch the agent runtime.",
+        "LangSmith Sandboxes: a computer for every agent The mental model that helps here: a sandbox needs to be two things at once.",
+        "The code your agent executes might come from a model, a user prompt, a cloned repo, or an installed package."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f385f1eabde1f5c3.img",
+      "image_url": "https://cdn.prod.website-files.com/65b8cd72835ceeacd4449a53/6989c024926f877c1de6e728_updated.svg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "905c5eeaa598457287a9f386fc9499ce"
+    },
+    {
+      "url": "https://www.nytimes.com/2026/06/05/business/dealbook/anthropic-ai-nonproliferation.html",
+      "title": "Anthropic\u2019s Call for A.I. Nonproliferation",
+      "description": "The artificial intelligence giant said a \u201cbrake pedal\u201d was needed to protect humanity from self-improving models. The proposal could have big consequences.",
+      "excerpt": "The artificial intelligence giant said a \u201cbrake pedal\u201d was needed to protect humanity from self-improving models. The proposal could have big consequences.",
+      "summary": "Friday\u2019s data release from the Bureau of Labor Statistics is expected to show that the U.S. Helion said it had raised $465 million in a round led by Thrive Capital, nearly tripling the valuation of the nuclear fusion start-up, to $15.5 billion. of Walmart, on the retail giant\u2019s capping employees\u2019 use of the company\u2019s internal artificial intelligence coding tool, Code Puppy. As of last month, Anthropic noted, 80 percent of the code added to the company\u2019s code base was written by its Claude model. The Supreme Court says the S.E.C.",
+      "what_happened": "Friday\u2019s data release from the Bureau of Labor Statistics is expected to show that the U.S. Helion said it had raised $465 million in a round led by Thrive Capital, nearly tripling the valuation of the nuclear fusion start-up, to $15.5 billion.",
+      "why_matters": "of Walmart, on the retail giant\u2019s capping employees\u2019 use of the company\u2019s internal artificial intelligence coding tool, Code Puppy. As of last month, Anthropic noted, 80 percent of the code added to the company\u2019s code base was written by its Claude model.",
+      "what_to_watch": "The Supreme Court says the S.E.C.",
+      "key_points": [
+        "Friday\u2019s data release from the Bureau of Labor Statistics is expected to show that the U.S.",
+        "The key is getting from what I would call Level 1 A.I., which is just an easier way to query data with a chatbot, to Level 2, which is, you\u2019re really transforming the work, productizing data.",
+        "Helion said it had raised $465 million in a round led by Thrive Capital, nearly tripling the valuation of the nuclear fusion start-up, to $15.5 billion.",
+        "The Supreme Court says the S.E.C.",
+        "of Walmart, on the retail giant\u2019s capping employees\u2019 use of the company\u2019s internal artificial intelligence coding tool, Code Puppy.",
+        "Anthropic is proposing the A.I.",
+        "Artificial intelligence giants like Anthropic and OpenAI are racing toward blockbuster I.P.O.s that could value them at more than $1 trillion each, on the promise of their rapidly advancing products.",
+        "labs should weigh pausing work on their bleeding-edge technology - in the name of safety - raises questions about the risks of investing in these companies.",
+        "As of last month, Anthropic noted, 80 percent of the code added to the company\u2019s code base was written by its Claude model.",
+        "The artificial intelligence giant said a \u201cbrake pedal\u201d was needed to protect humanity from self-improving models.",
+        "Nonproliferation The artificial intelligence giant said a \u201cbrake pedal\u201d was needed to protect humanity from self-improving models.",
+        "The move is likely to rekindle a major debate at the heart of SpaceX\u2019s listing, which is expected to value the company at $1.77 trillion."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ae54606f96ce82de.jpg",
+      "image_url": "https://static01.nyt.com/images/2026/06/05/multimedia/05db-bofa-kjlc/05db-bofa-kjlc-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "378c398855214785904c93c25289f137"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/jun/05/grok-ai-elon-musk-jess-asato-labour-mp-lawsuit",
+      "title": "New claimants seek to sue Elon Musk\u2019s xAI after Labour MP\u2019s test case",
+      "description": "Jess Asato\u2019s lawyer says others want to take action over demeaning sexualised material created by Grok AI tool",
+      "excerpt": "Jess Asato\u2019s lawyer says others want to take action over demeaning sexualised material created by Grok AI tool",
+      "summary": "Asato said she wanted the legal action to demonstrate that \u201cAI companies are responsible for the design choices that they make when they launch their products\u201d. \u201cThose that build and deploy AI models make design choices about how these models operate. Musk\u2019s company later put the technology behind a paywall and limited the chatbot\u2019s capacity to fulfil users\u2019 prompts to create sexualised images. One of those was shared by Musk, and a user posted the AI-generated video of her apparently being sedated with chloroform in response to his retweet. \u201cMusk actually amplified the hatred against me, which then led to the video that really was horrific,\u201d she said.",
+      "what_happened": "Asato said she wanted the legal action to demonstrate that \u201cAI companies are responsible for the design choices that they make when they launch their products\u201d. \u201cThose that build and deploy AI models make design choices about how these models operate.",
+      "why_matters": "Musk\u2019s company later put the technology behind a paywall and limited the chatbot\u2019s capacity to fulfil users\u2019 prompts to create sexualised images. One of those was shared by Musk, and a user posted the AI-generated video of her apparently being sedated with chloroform in response to his retweet.",
+      "what_to_watch": "\u201cMusk actually amplified the hatred against me, which then led to the video that really was horrific,\u201d she said.",
+      "key_points": [
+        "Asato said she wanted the legal action to demonstrate that \u201cAI companies are responsible for the design choices that they make when they launch their products\u201d.",
+        "\u201cThose that build and deploy AI models make design choices about how these models operate.",
+        "\u201cMusk actually amplified the hatred against me, which then led to the video that really was horrific,\u201d she said.",
+        "The AI tool allowed users to alter online images of real people with requests such as \u201cput her in a bikini\u201d or \u201cremove her clothes\u201d.",
+        "Musk\u2019s company later put the technology behind a paywall and limited the chatbot\u2019s capacity to fulfil users\u2019 prompts to create sexualised images.",
+        "\u201cThis is the test case on liability for AI developers.",
+        "One of those was shared by Musk, and a user posted the AI-generated video of her apparently being sedated with chloroform in response to his retweet.",
+        "A handful of complainants contacted Asato\u2019s lawyer on Thursday in response to coverage of the MP\u2019s decision to sue Musk\u2019s company for damages over its creation and circulation of fake images of her in a bikini and an.",
+        "The legal action comes amid heightened sensitivity to Musk\u2019s involvement in UK domestic affairs, after a flurry of posts from the billionaire commenting on the police response to the murder of Henry Nowak .",
+        "Many of the claimants had struggled to persuade X to remove the images until they received legal support, he said.",
+        "Jess Asato\u2019s lawyer says others want to take action over demeaning sexualised material created by Grok AI tool Support the Guardian New claimants seek to sue Elon Musk\u2019s xAI after Labour MP\u2019s test case Jess Asato\u2019s.",
+        "When she complained about the harm caused by the Grok trend in January, she received a stream of abusive responses from commentators on X."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9eeb102522fff954.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/f0df3336cb7fb1923c1e80a0755ab67cb667626d/404_0_2500_2000/master/2500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9b5671d64700eed13230d40edf7e2a8d",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "9c2dd26a41144b2fba88ed84c3223e2b"
+    },
+    {
+      "url": "https://www.engadget.com/2188537/openai-rolls-out-a-lockdown-mode-for-extra-protection-against-prompt-injection-attacks/",
+      "title": "OpenAI rolls out a Lockdown Mode for extra protection against prompt injection attacks - Engadget",
+      "description": "OpenAI has announced more robust security features for the small set of users who might need them.",
+      "excerpt": "OpenAI has announced more robust security features for the small set of users who might need them.",
+      "summary": "\"It is designed for people and organizations that handle sensitive data and want stricter protection from data exfiltration risks related to prompt injection.\" To that end, enabling Lockdown Mode limits some of the features OpenAI offers through ChatGPT and its other products. OpenAI has announced more robust security features for the small set of users who might need them. \"Lockdown Mode does not change memory, file uploads, the ability to share a conversation, or whether your conversations may be used to improve models,\" OpenAI adds. From there, the company offers the option to log out of individual or all sessions at once. Other features, such as Deep Research and Agent Mode are disabled completely.",
+      "what_happened": "\"It is designed for people and organizations that handle sensitive data and want stricter protection from data exfiltration risks related to prompt injection.\" To that end, enabling Lockdown Mode limits some of the features OpenAI offers through ChatGPT and its other products. OpenAI has announced more robust security features for the small set of users who might need them.",
+      "why_matters": "\"Lockdown Mode does not change memory, file uploads, the ability to share a conversation, or whether your conversations may be used to improve models,\" OpenAI adds. From there, the company offers the option to log out of individual or all sessions at once.",
+      "what_to_watch": "Other features, such as Deep Research and Agent Mode are disabled completely.",
+      "key_points": [
+        "\"It is designed for people and organizations that handle sensitive data and want stricter protection from data exfiltration risks related to prompt injection.\" To that end, enabling Lockdown Mode limits some of the.",
+        "Other features, such as Deep Research and Agent Mode are disabled completely.",
+        "Under Advanced security , tap Lockdown mode and flip on the toggle.",
+        "OpenAI has announced more robust security features for the small set of users who might need them.",
+        "To activate it, open ChatGPT's settings menu and select Safety and security .",
+        "OpenAI is billing Lockdown Mode as a sort of last line of defense against prompt injections, building on the robust protections that it says it already offers through ChatGPT, its models and backend systems.",
+        "Just note the latter can take up to 30 minutes to complete.",
+        "\"Lockdown Mode is not intended for everyone,\" OpenAI explains.",
+        "\"Lockdown Mode does not change memory, file uploads, the ability to share a conversation, or whether your conversations may be used to improve models,\" OpenAI adds.",
+        "For instance, you can still use image generation and upload photos to ChatGPT, but it may not pull images from the internet or display any images inside of a response.",
+        "Separately, OpenAI is rolling out an active session manager that allows users to see any devices or browsers that have been used to access their account.",
+        "From there, the company offers the option to log out of individual or all sessions at once."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "0f6ee5b2778d4092a27a67a9692dda1c"
+    },
+    {
+      "url": "https://www.engadget.com/2187889/nvidia-rtx-spark-chip-could-give-windows-its-true-apple-silicon-moment/",
+      "title": "NVIDIA's RTX Spark chip could give Windows its true Apple Silicon moment - Engadget",
+      "description": "Arm CPU cores, a powerful GPU and gobs of unified RAM? That sounds familiar!",
+      "excerpt": "Arm CPU cores, a powerful GPU and gobs of unified RAM? That sounds familiar!",
+      "summary": "Based on NVIDIA's description of the chip, RTX Spark appears to be the same hardware that's in the DGX Spark AI workstation that launched last year for $3,999, but now sells for $4,699. The only competition for NVIDIA's hardware on the PC side is AMD's Ryzen AI Ultra lineup, which are also complex system-on-chip designs with powerful CPU cores, built-in graphics, a powerful NPU and integrated memory. Their Blackwell GPUs also mean you'll have full access to NVIDIA's DLSS AI upscaling and frame generation for games (and you'll likely have more than enough overhead for serious gaming while working on AI and rendering jobs in the background). The real stars of the RTX Spark systems will be their 6,144 RTX Blackwell GPU cores, which is the same as the RTX 5070 desktop GPU, along with their support for up to 128GB of unified. Still, there's hope for the future: Rumors point to NVIDIA working on stripped down versions of the chip for cheaper systems, and potentially genuine ultraportables. The real stars of the RTX Spark systems will be their 6,144 RTX Blackwell GPU cores, which is the same as the RTX 5070 desktop GPU, along with their.",
+      "what_happened": "Based on NVIDIA's description of the chip, RTX Spark appears to be the same hardware that's in the DGX Spark AI workstation that launched last year for $3,999, but now sells for $4,699. The only competition for NVIDIA's hardware on the PC side is AMD's Ryzen AI Ultra lineup, which are also complex system-on-chip designs with powerful CPU cores, built-in graphics, a powerful NPU and integrated memory.",
+      "why_matters": "Their Blackwell GPUs also mean you'll have full access to NVIDIA's DLSS AI upscaling and frame generation for games (and you'll likely have more than enough overhead for serious gaming while working on AI and rendering jobs in the background). The real stars of the RTX Spark systems will be their 6,144 RTX Blackwell GPU cores, which is the same as the RTX 5070 desktop GPU, along with their support for up to 128GB of unified.",
+      "what_to_watch": "Still, there's hope for the future: Rumors point to NVIDIA working on stripped down versions of the chip for cheaper systems, and potentially genuine ultraportables. The real stars of the RTX Spark systems will be their 6,144 RTX Blackwell GPU cores, which is the same as the RTX 5070 desktop GPU, along with their.",
+      "key_points": [
+        "Based on NVIDIA's description of the chip, RTX Spark appears to be the same hardware that's in the DGX Spark AI workstation that launched last year for $3,999, but now sells for $4,699.",
+        "The real stars of the RTX Spark systems will be their 6,144 RTX Blackwell GPU cores, which is the same as the RTX 5070 desktop GPU, along with their support for up to 128GB of unified memory.",
+        "(Those folks are also why the Mac Mini has been out of stock for months, and you can partially blame them for the death of the $599 model .) Beyond AI enthusiasts, I could also see content creators and non-AI developers.",
+        "That hardware is currently only found in the Mediatek Dimensity 9500 chip, powering the new Oppo Find X9 Pro .",
+        "That makes me think the initial RTX Spark systems could start around $4,000 or more.",
+        "Last year's flagship Ryzen AI Max+ 395 (AKA \"Strix Halo\") chip supported up to 128GB of RAM, and the newer AI Max 400 series brings that up to 192GB of unified memory.",
+        "I found that to be a pretty seamless experience while reviewing the Surface Pro Copilot+ in 2024, and Microsoft says it's also been working together with NVIDIA to optimize Windows 11 even more for the RTX Spark.",
+        "The only competition for NVIDIA's hardware on the PC side is AMD's Ryzen AI Ultra lineup, which are also complex system-on-chip designs with powerful CPU cores, built-in graphics, a powerful NPU and integrated memory.",
+        "NVIDIA's RTX Spark chip could give Windows its true Apple Silicon moment Arm CPU cores, a powerful GPU and gobs of unified RAM?",
+        "The Ryzen AI Max lineup is still based on the x86-64 architecture, giving them total compatibility with legacy Windows software, but none of the power efficiency benefits of Arm cores.",
+        "Still, there's hope for the future: Rumors point to NVIDIA working on stripped down versions of the chip for cheaper systems, and potentially genuine ultraportables.",
+        "That's the promise of RTX Spark systems, but there are plenty of details still up in the air."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/94bb0543e107035b.jpg",
+      "image_url": "https://img1.zergnet.com/8764656_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "08cc25947aea4879951f3594c950bf54"
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/prompt-anthropic-s-ipo-filing-signals-ai-s-next-phase",
+      "title": "Prompt: Anthropic's IPO Filing Signals AI's Next Phase",
+      "description": "Anthropic's IPO Filing Signals AI's Next Phase",
+      "excerpt": "Anthropic's IPO Filing Signals AI's Next Phase",
+      "summary": "Related: Nvidia Unveils New Physical AI Research and Agent Workflows For the past several years, the AI conversation has largely focused on model performance: who has the best model, who has the best users and who can raise the most capital. Google: But the Model Isn't the Point Meta Rolls Out AI Agent for Enterprises Globally : Meta launched its AI business agent to enterprises worldwide as part of its effort to expand AI adoption beyond consumer applications. Snowflake Barrage Adds More AI Development, Analysis Tools : Snowflake unveiled new AI development and analysis capabilities, along with tools to help enterprises build and manage AI agents. Related: Safeguarding SaaS Success in the Changing AI Market Lenovo Takes a Shot at Boosting Its AI Game at the FIFA World Cup : Lenovo plans to use AI to help manage and process data and digital image feeds for an estimated 6 billion. The next phase of AI will likely depend less on building the smartest model and more on securing the capital, infrastructure, and operational scale for long-term growth. Taken together, these developments suggest the AI industry is becoming less defined by individual model releases and more by the.",
+      "what_happened": "Related: Nvidia Unveils New Physical AI Research and Agent Workflows For the past several years, the AI conversation has largely focused on model performance: who has the best model, who has the best users and who can raise the most capital. Google: But the Model Isn't the Point Meta Rolls Out AI Agent for Enterprises Globally : Meta launched its AI business agent to enterprises worldwide as part of its effort to expand AI adoption beyond consumer applications.",
+      "why_matters": "Snowflake Barrage Adds More AI Development, Analysis Tools : Snowflake unveiled new AI development and analysis capabilities, along with tools to help enterprises build and manage AI agents. Related: Safeguarding SaaS Success in the Changing AI Market Lenovo Takes a Shot at Boosting Its AI Game at the FIFA World Cup : Lenovo plans to use AI to help manage and process data and digital image feeds for an estimated 6 billion.",
+      "what_to_watch": "The next phase of AI will likely depend less on building the smartest model and more on securing the capital, infrastructure, and operational scale for long-term growth. Taken together, these developments suggest the AI industry is becoming less defined by individual model releases and more by the economic realities.",
+      "key_points": [
+        "Related: Nvidia Unveils New Physical AI Research and Agent Workflows For the past several years, the AI conversation has largely focused on model performance: who has the best model, who has the best users and who can.",
+        "Google: But the Model Isn't the Point Meta Rolls Out AI Agent for Enterprises Globally : Meta launched its AI business agent to enterprises worldwide as part of its effort to expand AI adoption beyond consumer.",
+        "Taken together, these developments suggest the AI industry is becoming less defined by individual model releases and more by the economic realities required to support them.",
+        "Meanwhile, SoftBank committed to investing $87.3 billion for AI infrastructure in France, demonstrating that the AI race increasingly revolves around physical infrastructure, energy and compute capacity.",
+        "Snowflake Barrage Adds More AI Development, Analysis Tools : Snowflake unveiled new AI development and analysis capabilities, along with tools to help enterprises build and manage AI agents.",
+        "Related: Safeguarding SaaS Success in the Changing AI Market Lenovo Takes a Shot at Boosting Its AI Game at the FIFA World Cup : Lenovo plans to use AI to help manage and process data and digital image feeds for an.",
+        "The next phase of AI will likely depend less on building the smartest model and more on securing the capital, infrastructure, and operational scale for long-term growth.",
+        "How 17 Job Types Feel the Effects : New research examines how AI affects 17 occupations, finding that its impact varies widely depending on the type of work performed.",
+        "AI Becomes the Ultimate CEO Performance Test in the UAE : Research in the UAE found that AI strategy and implementation are becoming key factors in evaluating CEO performance.",
+        "Hughes is also the founder of LTH Media, a strategic editorial practice where she partners with leaders and organizations to develop thought leadership, newsletters and consistent, high-quality communication grounded in.",
+        "Nvidia's latest moves with physical AI, robotics and AI factories reinforce the same trend, highlighting the scale of infrastructure required to support next-generation AI.",
+        "Coming just days after a funding round that valued the company at $965 billion, the filing is another reminder of how much money is now flowing into AI."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/be753ffbee22265b.jpg",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltdb9fe516e837c101/6a1d8b5a479f3e38d05cf31a/SoftBank.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/15c5b987a5e6f873.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7af9a82f60533258.jpg"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltee176ce55650ab85/6a21c0c5563cbbc1f1a60149/Meta.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltf07823c531e62b63/6a22cc57d6dfcca6062336fc/Amazon_robot.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ],
+      "_story_id": "9258a8b41d724562b0fde5612ed1e3c5"
+    },
+    {
+      "url": "https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag/",
+      "title": "Unlocking dependable responses with Gemini Enterprise Agent Platform\u2019s Agentic RAG",
+      "description": "",
+      "excerpt": "Explore our many areas of focus Building a collaborative ecosystem Shaping the future together Translating discovery into real-world impact Explore our many areas of focus Building a collaborative ecosystem Shaping the future together Translating discovery into real-world impact Unlocking dependable responses with Gemini Enterprise Agent Platform\u2019s Agentic RAG Cyrus Rashtchian, Research Scientist, and Da-Cheng Juan, Engineering Manager, Google Research We introduce our new agentic RAG framework. Based on a collaboration between Google Research and Google Cloud, our multi-agent workflow goes beyond standard RAG by breaking down complex enterprise queries and iteratively searching for...",
+      "summary": "It examines three specific findings before allowing a response to be generated: The Sufficient Context Agent evaluates the actual text chunks pulled from the database by the RAG Agent. Enter \u201cagentic RAG\u201d, which plans, reasons, and iteratively interacts with data sources, enabling the handling of complex queries to increase dependability and accuracy. We also thank our key enterprise partners for critical user feedback, data, and insights. Explore our many areas of focus Building a collaborative ecosystem Shaping the future together Translating discovery into real-world impact Explore our many areas of focus Building a collaborative ecosystem Shaping the future together Translating discovery into real-world impact Unlocking dependable responses with Gemini Enterprise Agent. We look forward to seeing how the machine learning community leverages these new agentic capabilities to build the next generation of dependable AI systems. Phase 5: Synthesis (final answer) The Sufficient Context Agent checks the data one last time.",
+      "what_happened": "It examines three specific findings before allowing a response to be generated: The Sufficient Context Agent evaluates the actual text chunks pulled from the database by the RAG Agent. Enter \u201cagentic RAG\u201d, which plans, reasons, and iteratively interacts with data sources, enabling the handling of complex queries to increase dependability and accuracy.",
+      "why_matters": "We also thank our key enterprise partners for critical user feedback, data, and insights. Explore our many areas of focus Building a collaborative ecosystem Shaping the future together Translating discovery into real-world impact Explore our many areas of focus Building a collaborative ecosystem Shaping the future together Translating discovery into real-world impact Unlocking dependable responses with Gemini Enterprise Agent.",
+      "what_to_watch": "We look forward to seeing how the machine learning community leverages these new agentic capabilities to build the next generation of dependable AI systems. Phase 5: Synthesis (final answer) The Sufficient Context Agent checks the data one last time.",
+      "key_points": [
+        "It examines three specific findings before allowing a response to be generated: The Sufficient Context Agent evaluates the actual text chunks pulled from the database by the RAG Agent.",
+        "Phase 3: Sufficient Context Agent (new research innovation) Think of the Sufficient Context Agent as a quality-control inspector standing at the end of an assembly line.",
+        "Phase 5: Synthesis (final answer) The Sufficient Context Agent checks the data one last time.",
+        "Phase 1: Orchestration The Root Agent parses the doctor's request and delegates the tasks to sub-agents.",
+        "Phase 2: Search (standard step) The RAG Agent searches the patient's records for all the query fanouts at once.",
+        "Because of the Sufficient Context Agent feedback, the Query Rewriter creates a new search for \"rashes.\" Then, the RAG Agent dives deeper into files it ignored the first time and finds the missing information.",
+        "Even when the Planner Agent must select the correct corpus out of 4 possibilities, we successfully route the search queries and answer 90.1% of questions correctly.",
+        "The Planner Agent maps out the information pathways.",
+        "The documents provide viewership data, but not the duration in minutes or hours.\u201d Fortunately, our agentic RAG can solve this by first searching for the TV shows, then using the Query Rewriter and Sufficient Context.",
+        "Enter \u201cagentic RAG\u201d, which plans, reasons, and iteratively interacts with data sources, enabling the handling of complex queries to increase dependability and accuracy.",
+        "The Sufficient Context Agent then reviews the prompt, draft, and retrieved snippets to evaluate whether the model has everything it needs to provide a comprehensive and grounded answer.",
+        "Also, the latency of both single- and cross-corpus versions is about the same (within 3% on average)."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/dafebbef16cc999f.img",
+      "image_url": "https://storage.googleapis.com/gweb-research2023-media/original_images/student_programs_nav.svg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "79d22ee83e8f4e73ac3dfb21b88f08c1"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 7,
+  "has_cta": true,
+  "slides": [
+    "Securing CI CD in an agentic world Claude Code Github action case.",
+    "Give your agent its own computer.",
+    "Anthropic's Call for A.I Nonproliferation.",
+    "New claimants seek to sue Elon Musk's xAI after Labour MP's test.",
+    "OpenAI rolls out a Lockdown Mode for extra protection against prompt injection.",
+    "Prompt Anthropic's IPO Filing Signals AI's Next Phase.",
+    "FOLLOW @graitech"
+  ]
+}

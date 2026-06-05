@@ -1,0 +1,26 @@
+Securing CI CD in an agentic world Claude Code Github action case.
+
+Swipe for the full breakdown.
+
+- AML.T0053, AI Agent Tool Invocation: The compromised AI agent is coerced into executing built-in tools, such.
+- For the latest security research from the Microsoft Threat Intelligence community, check out the Microsoft Threat Intelligence Blog.
+- Our prompt bypasses this by framing the task as a "compliance review" and instructs the model to "cut.
+- Explore how to build and customize agents with Copilot Studio Agent Builder Microsoft Defender Security Research Team Updating.
+- Gaining an interactive foothold on the runner, we initially deployed a frontier AI model for automated, black-box research.
+
+What's the one thing about this that surprised you most?
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://www.microsoft.com/en-us/security/blog/2026/06/05/securing-ci-cd-in-agentic-world-claude-code-github-action-case/
+- https://www.langchain.com/blog/give-your-ai-agent-its-own-computer
+- https://www.nytimes.com/2026/06/05/business/dealbook/anthropic-ai-nonproliferation.html
+- https://www.theguardian.com/technology/2026/jun/05/grok-ai-elon-musk-jess-asato-labour-mp-lawsuit
+- https://www.engadget.com/2188537/openai-rolls-out-a-lockdown-mode-for-extra-protection-against-prompt-injection-attacks/
+
+#AIAgents #AutonomousAgents #AIWorkflow #Claude #Anthropic #MicrosoftAI #Copilot #AINews #TechNews #AIUpdates #ArtificialIntelligence #Tech #AI #MachineLearning #AIExplained #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing #MLNews
+
+-
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-
