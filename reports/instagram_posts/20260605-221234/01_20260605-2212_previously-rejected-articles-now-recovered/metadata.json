@@ -1,0 +1,82 @@
+{
+  "email_received_at": "2026-06-05T22:12+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Fri, 05 Jun 2026 22:12:34 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.cnbc.com/2026/06/05/meta-stock-sinks-on-report-company-could-raise-tens-of-billions-for-ai.html",
+      "title": "Company : CNBC Technology",
+      "description": "[HIGH] Meta's stock sinks on report company could raise tens of billions of dollars to fund AI push Company : CNBC Technology Summary : Meta shares dropped after the Financial Times reported the company could potentially raise tens of billions of dollars in a stock offering to help its AI push. Link :",
+      "text": "[HIGH] Meta's stock sinks on report company could raise tens of billions of dollars to fund AI push Company : CNBC Technology Summary : Meta shares dropped after the Financial Times reported the company could potentially raise tens of billions of dollars in a stock offering to help its AI push. Link :",
+      "excerpt": "[HIGH] Meta's stock sinks on report company could raise tens of billions of dollars to fund AI push Company : CNBC Technology Summary : Meta shares dropped after the Financial Times reported the company could potentially raise tens of billions of dollars in a stock offering to help its AI push. Link :",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108297760-1777307207308-108297760-1777307153926-gettyimages-2267943764-Zuckerberg_182_032626.jpeg?v=1780690805&amp;w=1920&amp;h=1080",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.cnbc.com/2026/06/05/meta-stock-sinks-on-report-company-could-raise-tens-of-billions-for-ai.html",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
+      "title": "Company : CNBC Technology",
+      "description": "[HIGH] Google to pay SpaceX $920 million a month for compute capacity at xAI data centers Company : CNBC Technology Summary : Ahead of a planned IPO, SpaceX inked a deal to rent compute capacity to Google for $920 million per month for 32 months. Link :",
+      "text": "[HIGH] Google to pay SpaceX $920 million a month for compute capacity at xAI data centers Company : CNBC Technology Summary : Ahead of a planned IPO, SpaceX inked a deal to rent compute capacity to Google for $920 million per month for 32 months. Link :",
+      "excerpt": "[HIGH] Google to pay SpaceX $920 million a month for compute capacity at xAI data centers Company : CNBC Technology Summary : Ahead of a planned IPO, SpaceX inked a deal to rent compute capacity to Google for $920 million per month for 32 months. Link :",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108089110-1737388354894-gettyimages-2194353996-AFP_36UV3WH.jpeg?v=1737388378&amp;w=1920&amp;h=1080",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.cnet.com/tech/services-and-software/samsung-health-app-ai-upgrade-before-samsung-galaxy-watch-9-launch/",
+      "title": "Company : CNET AI",
+      "description": "[HIGH] Samsung Health App Gets AI Upgrade Before Rumored Galaxy Watch 9 Launch Company : CNET AI Summary : AI will help you understand your complex biometric data and what to do with it. Link :",
+      "text": "[HIGH] Samsung Health App Gets AI Upgrade Before Rumored Galaxy Watch 9 Launch Company : CNET AI Summary : AI will help you understand your complex biometric data and what to do with it. Link :",
+      "excerpt": "[HIGH] Samsung Health App Gets AI Upgrade Before Rumored Galaxy Watch 9 Launch Company : CNET AI Summary : AI will help you understand your complex biometric data and what to do with it. Link :",
+      "image_url": "https://www.cnet.com/a/img/resize/aa77a0af727eba61006265ae3ba5e6c97a874cf1/hub/2026/06/05/1befd974-2e46-4955-8cdf-52321d276755/samsung-mobile-next-gen-galaxy-watch-ai-powered-health-companion-main1.jpg?auto=webp&amp;fit=crop&amp;height=675&amp;width=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.cnet.com/tech/services-and-software/samsung-health-app-ai-upgrade-before-samsung-galaxy-watch-9-launch/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/compare/v0.105.2...v0.106.0",
+      "title": "Company : Anthropic",
+      "description": "[HIGH] anthropics/anthropic-sdk-python: v0.106.0 Company : Anthropic Summary : ## 0.106.0 (2026-06-05) Full Changelog: [v0.105.2...v0.106.0]()",
+      "text": "[HIGH] anthropics/anthropic-sdk-python: v0.106.0 Company : Anthropic Summary : ## 0.106.0 (2026-06-05) Full Changelog: [v0.105.2...v0.106.0]()",
+      "excerpt": "[HIGH] anthropics/anthropic-sdk-python: v0.106.0 Company : Anthropic Summary : ## 0.106.0 (2026-06-05) Full Changelog: [v0.105.2...v0.106.0]()",
+      "image_url": "https://opengraph.githubassets.com/89c25e17f6512a35aa35014d216d79424ad4f30f566a655d0dafbf2f9e69c289/anthropics/anthropic-sdk-python",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://github.com/anthropics/anthropic-sdk-python/compare/v0.105.2...v0.106.0",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 4,
+  "has_cta": true,
+  "slides": [
+    "Meta's stock sinks on report company could raise tens of billions.",
+    "Google to pay SpaceX $920 million a month for compute capacity at.",
+    "6k Code Issues 120 Pull requests 174 Discussions Actions Security and quality.",
+    "FOLLOW @graitech"
+  ]
+}
