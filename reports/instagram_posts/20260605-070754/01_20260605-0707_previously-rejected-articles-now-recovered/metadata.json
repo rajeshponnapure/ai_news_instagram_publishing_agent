@@ -1,0 +1,81 @@
+{
+  "email_received_at": "2026-06-05T07:07+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Fri, 05 Jun 2026 07:07:54 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/04/apple-approves-poke-as-the-first-ai-agent-on-its-messages-for-business-platform/",
+      "title": "Company : TechCrunch AI",
+      "description": "[MEDIUM] Apple approves Poke as the first AI agent on its Messages for Business platform Company : TechCrunch AI Summary : Poke, the startup that lets people use AI agents through simple text messages, has become the first AI agent approved for Apple\u2019s Messages for Business platform. Link :",
+      "text": "[MEDIUM] Apple approves Poke as the first AI agent on its Messages for Business platform Company : TechCrunch AI Summary : Poke, the startup that lets people use AI agents through simple text messages, has become the first AI agent approved for Apple\u2019s Messages for Business platform. Link :",
+      "excerpt": "[MEDIUM] Apple approves Poke as the first AI agent on its Messages for Business platform Company : TechCrunch AI Summary : Poke, the startup that lets people use AI agents through simple text messages, has become the first AI agent approved for Apple\u2019s Messages for Business platform. Link :",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/04/Poke-at-3.57.33-PM.jpg?resize=1200,604",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://techcrunch.com/2026/06/04/apple-approves-poke-as-the-first-ai-agent-on-its-messages-for-business-platform/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/04/airbnbs-brian-chesky-plans-to-launch-a-new-ai-lab/",
+      "title": "Company : TechCrunch AI",
+      "description": "[HIGH] Airbnb\u2019s Brian Chesky plans to launch a new AI lab Company : TechCrunch AI Summary : The Airbnb CEO said last year it hasn't struck an LLM partnership because existing products weren't quite ready. Link :",
+      "text": "[HIGH] Airbnb\u2019s Brian Chesky plans to launch a new AI lab Company : TechCrunch AI Summary : The Airbnb CEO said last year it hasn't struck an LLM partnership because existing products weren't quite ready. Link :",
+      "excerpt": "[HIGH] Airbnb\u2019s Brian Chesky plans to launch a new AI lab Company : TechCrunch AI Summary : The Airbnb CEO said last year it hasn't struck an LLM partnership because existing products weren't quite ready. Link :",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2017/05/gettyimages-652988834.jpg?w=1024",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://techcrunch.com/2026/06/04/airbnbs-brian-chesky-plans-to-launch-a-new-ai-lab/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/perplexity-ceo-outlines-multi-model-ai-vision-in-taiwan-event/articleshow/131496683.cms",
+      "title": "OpenAI Blog |",
+      "description": "[HIGH] Dreaming: Better memory for a more helpful ChatGPT OpenAI Blog | https://openai.com/index/chatgpt-memory-dreaming [HIGH] Perplexity CEO outlines multi-model AI vision in Taiwan event The Times of India |",
+      "text": "[HIGH] Dreaming: Better memory for a more helpful ChatGPT OpenAI Blog | https://openai.com/index/chatgpt-memory-dreaming [HIGH] Perplexity CEO outlines multi-model AI vision in Taiwan event The Times of India |",
+      "excerpt": "[HIGH] Dreaming: Better memory for a more helpful ChatGPT OpenAI Blog | https://openai.com/index/chatgpt-memory-dreaming [HIGH] Perplexity CEO outlines multi-model AI vision in Taiwan event The Times of India |",
+      "image_url": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-20630,resizemode-75,msid-131496683/tech/artificial-intelligence/perplexity-ceo-outlines-multi-model-ai-vision-in-taiwan-event.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/perplexity-ceo-outlines-multi-model-ai-vision-in-taiwan-event/articleshow/131496683.cms",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/meta-repeatedly-pushes-back-new-ai-model-release-for-developers/articleshow/131496233.cms",
+      "title": "The Times of India |",
+      "description": "[HIGH] Nvidia's RTX Spark reveals Jensen Huang's bigger AI agent fight with Apple and Google Digitimes | https://www.digitimes.com/news/a20260604PD210/nvidia-rtx-jensen-huang-ai-agent.html [HIGH] Meta repeatedly pushes back new AI model release for developers The Times of India |",
+      "text": "[HIGH] Nvidia's RTX Spark reveals Jensen Huang's bigger AI agent fight with Apple and Google Digitimes | https://www.digitimes.com/news/a20260604PD210/nvidia-rtx-jensen-huang-ai-agent.html [HIGH] Meta repeatedly pushes back new AI model release for developers The Times of India |",
+      "excerpt": "[HIGH] Nvidia's RTX Spark reveals Jensen Huang's bigger AI agent fight with Apple and Google Digitimes | https://www.digitimes.com/news/a20260604PD210/nvidia-rtx-jensen-huang-ai-agent.html [HIGH] Meta repeatedly pushes back new AI model release for developers The Times of India |",
+      "image_url": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-64308,resizemode-75,msid-131496233/tech/artificial-intelligence/meta-repeatedly-pushes-back-new-ai-model-release-for-developers.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/meta-repeatedly-pushes-back-new-ai-model-release-for-developers/articleshow/131496233.cms",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 3,
+  "has_cta": true,
+  "slides": [
+    "During Intel CEO Lip-Bu Tan's keynote session at COMPUTEX 2026 on Tuesday.",
+    "Enter Stock Quotes, News, Mutual Funds and more to search English Edition.",
+    "FOLLOW @graitech"
+  ]
+}
