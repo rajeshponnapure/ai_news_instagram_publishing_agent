@@ -1,0 +1,371 @@
+{
+  "email_received_at": "2026-06-05T14:10+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI",
+  "subject": "",
+  "source_date": "2026-06-05T14:10:03.435678",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://blogs.nvidia.com/blog/korea-ecosystem-2026/",
+  "article_title": "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/74f72a5191b4622f.jpg",
+  "article_image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/IMG_1519-1-scaled.jpg",
+  "article_items": [
+    {
+      "url": "https://blogs.nvidia.com/blog/korea-ecosystem-2026/",
+      "title": "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI",
+      "description": "Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South Korea is one of the world\u2019s centers of AI. NVIDIA founder and CEO Jensen Huang is in Seoul this week to meet the partners and builders behind that work.",
+      "excerpt": "Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South Korea is one of the world\u2019s centers of AI. NVIDIA founder and CEO Jensen Huang is in Seoul this week to meet the partners and builders behind that work.",
+      "summary": "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote Forecast: Fun Ahead - 18 Games Join in June to Stream on GeForce NOW NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills For Autonomous Vehicles, Robotics And Vision AI Industrial Software Leaders Build Secure, Autonomous AI Engineers With NVIDIA NemoClaw NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices. If you do not allow these cookies, then some or all of these services may not function properly. These cookies collect data about how you have interacted with our website to help us improve your web experience, such as which pages you have visited. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "what_happened": "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote Forecast: Fun Ahead - 18 Games Join in June to Stream on GeForce NOW NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills For Autonomous Vehicles, Robotics And Vision AI Industrial Software Leaders Build Secure, Autonomous AI Engineers With NVIDIA NemoClaw NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices.",
+      "why_matters": "If you do not allow these cookies, then some or all of these services may not function properly. These cookies collect data about how you have interacted with our website to help us improve your web experience, such as which pages you have visited.",
+      "what_to_watch": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "key_points": [
+        "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote Forecast: Fun Ahead - 18 Games Join in June to Stream on GeForce NOW NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "NVIDIA founder and CEO Jensen Huang is in Seoul this week to meet the partners and builders behind that work.",
+        "From memory manufacturing to robotics and gaming, Huang is off to a packed schedule with partners - but not without leaving time to enjoy some Korean fried chicken and BBQ.",
+        "Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South Korea is one of the world\u2019s centers of AI.",
+        "\u201cGrace Blackwell, our system, is doing very well, and Vera Rubin is in full production - so we are going to be very busy the second half [of the year].\u201d Huang also touched on the huge potential for robotics and physical.",
+        "If you do not allow these cookies, then some or all of these services may not function properly.",
+        "These cookies are required for the site to function and cannot be turned off.",
+        "These cookies are used to provide quantitative measures of our website visitors, such as the number of times you visit, time on page, your mouse movements, scrolling, clicks and keystroke activity on the websites; other.",
+        "\u201cRobotics is going to be the next major sector here in Korea - this is a great opportunity for Korea to invest in AI,\u201d he said.",
+        "A key focus of the trip, Huang said: to align the AI supply chain ahead of a busy second half of the year.",
+        "On the heels of GTC Taipei at COMPUTEX, NVIDIA founder and CEO Jensen Huang touched down in Seoul Friday afternoon, greeted by fans and media as his visit got underway."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/74f72a5191b4622f.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/IMG_1519-1-scaled.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2ddbd5b8ca190142.jpg"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/IMG_1519-1-1280x720.jpg"
+      ],
+      "_story_id": "65169f82b2e04c21ae02d8ec4ae4c6fa"
+    },
+    {
+      "url": "https://openai.com/index/chatgpt-memory-dreaming/",
+      "title": "Dreaming: Better memory for a more helpful ChatGPT",
+      "description": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
+      "excerpt": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
+      "summary": "In April 2025, we updated ChatGPT\u2019s memory by giving the model the ability to reference chat context outside of the saved memories list; this was done by introducing the first version of dreaming - a method for ChatGPT to automatically curate memories in the background by referencing chat history. With dreaming, memories are automatically updated as time passes, allowing ChatGPT to revise its memory from \"You\u2019re going to Singapore in July\" to \"You went to Singapore in July 2026\" when the trip ends. The model remembers the user\u2019s camera setup and recommends a compatible product. The model provides responses that are relevant to the user\u2019s home location. Memory is what helps ChatGPT learn your preferences, projects, and constraints, allowing future conversations to start from shared context rather than from scratch. The Backscatter trigger is the right TTL solution for the MF-3; the UW Technics converter is the right TTL solution for the Z-330.",
+      "what_happened": "In April 2025, we updated ChatGPT\u2019s memory by giving the model the ability to reference chat context outside of the saved memories list; this was done by introducing the first version of dreaming - a method for ChatGPT to automatically curate memories in the background by referencing chat history. With dreaming, memories are automatically updated as time passes, allowing ChatGPT to revise its memory from \"You\u2019re going to Singapore in July\" to \"You went to Singapore in July 2026\" when the trip ends.",
+      "why_matters": "The model remembers the user\u2019s camera setup and recommends a compatible product. The model provides responses that are relevant to the user\u2019s home location.",
+      "what_to_watch": "Memory is what helps ChatGPT learn your preferences, projects, and constraints, allowing future conversations to start from shared context rather than from scratch. The Backscatter trigger is the right TTL solution for the MF-3; the UW Technics converter is the right TTL solution for the Z-330.",
+      "key_points": [
+        "In April 2025, we updated ChatGPT\u2019s memory by giving the model the ability to reference chat context outside of the saved memories list; this was done by introducing the first version of dreaming - a method for ChatGPT.",
+        "The Backscatter trigger is the right TTL solution for the MF-3; the UW Technics converter is the right TTL solution for the Z-330.",
+        "The key question is whether you want TTL with the Mini Flash 3, the Z-330s, or both.",
+        "With dreaming, memories are automatically updated as time passes, allowing ChatGPT to revise its memory from \"You\u2019re going to Singapore in July\" to \"You went to Singapore in July 2026\" when the trip ends.",
+        "The catch: there probably is no single trigger that gives true TTL for both the Mini Flash 3 and Inon Z-330 at the same time .",
+        "The model remembers the user\u2019s camera setup and recommends a compatible product.",
+        "( Backscatter.com \u2060 (opens in a new window) ) You\u2019d use normal optical fiber cables from the housing to the Mini Flash 3.",
+        "( Backscatter.com \u2060 (opens in a new window) ) Since you shoot macro and have the Mini Flash 3 , I\u2019d buy the Backscatter Smart Control TTL LED Nauticam Flash Trigger for Sony - BS-TR-SN2 .",
+        "How memory has evolved Memory first launched in April 2024 (also known as saved memories).",
+        "For your use case, I\u2019d prioritize Mini Flash 3 TTL / SC Macro and treat the Z-330s as manual when needed.",
+        "On the MF-3, you\u2019d use SC or SC Macro mode; Backscatter says SC / SC Macro are the TTL modes for Mini Flash 3, with SC Macro specifically tuned for close macro work.",
+        "Backscatter\u2019s own UW Technics listing says Backscatter strobes are manual / HSS only on that converter, while the Backscatter Smart Control trigger is the one listed for Sony TTL with the Mini Flash 3."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/88074cf96fadaf87.webp",
+      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6kVwo3uYRhe81W7gx1uGoR/c7c242fd100e910d28b451eada638b89/Saved_memories.png?w=3840&q=90&fm=webp",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/34664aad5a89c369.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0def460e442e3d71.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0ae15e1ea3270dfc.webp"
+      ],
+      "extra_image_urls": [
+        "https://images.ctfassets.net/kftzwdyauwt9/nSkMroPG2SPQCrcIUh2l4/bf05aa9cfb0287cfa7f187f9d84674dd/Memory_settings__1_.png?w=3840&q=90&fm=webp",
+        "https://images.ctfassets.net/kftzwdyauwt9/7C8sUaE2XdajvQ8ckphLG5/326a719fbdcfbc3a85e8990155d5aaed/Memory_summary.png?w=3840&q=90&fm=webp",
+        "https://images.ctfassets.net/kftzwdyauwt9/6USIQM1B7TggUvvTFxxwoi/0176ac6633c8bdc24641d25d1d2db824/GPT-Rosalind_ArtCard.png?w=3840&q=90&fm=webp"
+      ],
+      "_story_id": "8578f24c6e714a4aa4a916fcec9c8b60"
+    },
+    {
+      "url": "https://www.digitimes.com/news/a20260604PD214/nvidia-unitree-robot-robotics-hardware-development.html",
+      "title": "The 'Wintel' of robotics? Nvidia allies with Unitree to standardize AI humanoid development",
+      "description": "In a move set to reshape the global robotics landscape, Nvidia announced at GTC Taipei that it will partner with Chinese humanoid robot pioneer Unitree Robotics to launch the world's first open humanoid robot reference design. By deeply integrating advanced AI with physical hardware, the collaboration aims to drastically lower development barriers across the industry.",
+      "excerpt": "In a move set to reshape the global robotics landscape, Nvidia announced at GTC Taipei that it will partner with Chinese humanoid robot pioneer Unitree Robotics to launch the world's first open humanoid robot reference design. By deeply integrating advanced AI with physical hardware, the collaboration aims to drastically lower development barriers across the industry.",
+      "summary": "In a move set to reshape the global robotics landscape, Nvidia announced at GTC Taipei that it will partner with Chinese humanoid robot pioneer Unitree Robotics to launch the world's first open humanoid robot reference design. Nvidia allies with Unitree to standardize AI humanoid development In a move set to reshape the global robotics landscape, Nvidia announced at GTC Taipei that it will partner with Chinese humanoid robot pioneer Unitree Robotics to launch the world's first open humanoid robot reference design. Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. SK Hynix speeds Yongin fab buildout as memory crunch fuels capacity race Exclusive: SK Group and Foxconn talks could signal deeper Taiwan-Korea AI supply chain ties Analysis: New AI race is redefining semiconductor industry at Computex Intel's revival secret: Suppliers with TSMC's. The 'Wintel' of robotics?",
+      "what_happened": "In a move set to reshape the global robotics landscape, Nvidia announced at GTC Taipei that it will partner with Chinese humanoid robot pioneer Unitree Robotics to launch the world's first open humanoid robot reference design. Nvidia allies with Unitree to standardize AI humanoid development In a move set to reshape the global robotics landscape, Nvidia announced at GTC Taipei that it will partner with Chinese humanoid robot pioneer Unitree Robotics to launch the world's first open humanoid robot reference design.",
+      "why_matters": "Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. SK Hynix speeds Yongin fab buildout as memory crunch fuels capacity race Exclusive: SK Group and Foxconn talks could signal deeper Taiwan-Korea AI supply chain ties Analysis: New AI race is redefining semiconductor industry at Computex Intel's revival secret: Suppliers with TSMC's.",
+      "what_to_watch": "The 'Wintel' of robotics?",
+      "key_points": [
+        "In a move set to reshape the global robotics landscape, Nvidia announced at GTC Taipei that it will partner with Chinese humanoid robot pioneer Unitree Robotics to launch the world's first open humanoid robot reference.",
+        "Nvidia allies with Unitree to standardize AI humanoid development In a move set to reshape the global robotics landscape, Nvidia announced at GTC Taipei that it will partner with Chinese humanoid robot pioneer Unitree.",
+        "The 'Wintel' of robotics?",
+        "By deeply integrating advanced AI with physical hardware, the collaboration aims to drastically lower development barriers across the industry.",
+        "This will save the password on the computer you're using to access the site.",
+        "By deeply integrating advanced...",
+        "To activate this function, check the 'Keep me signed in' box in the log-in section.",
+        "Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site.",
+        "SK Hynix speeds Yongin fab buildout as memory crunch fuels capacity race Exclusive: SK Group and Foxconn talks could signal deeper Taiwan-Korea AI supply chain ties Analysis: New AI race is redefining semiconductor."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/907df8b32904f160.img",
+      "image_url": "https://img.digitimes.com/ad/en_20260520_asiacpo_bigbutton.gif",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "6cc94d777be54fbfba0635b209a85c65"
+    },
+    {
+      "url": "https://www.digitimes.com/news/a20260604PD210/nvidia-rtx-jensen-huang-ai-agent.html",
+      "title": "Nvidia's RTX Spark reveals Jensen Huang's bigger AI agent fight with Apple and Google",
+      "description": "Nvidia CEO Jensen Huang introduced RTX Spark, co-developed with MediaTek, at Nvidia GTC Taipei, with PC brands expected to launch products in the third quarter of 2026. While widely seen as Nvidia's return to Windows on Arm after a 15-year absence and a challenge to Qualcomm, RTX Spark points to a larger fight over AI-era endpoints.",
+      "excerpt": "Nvidia CEO Jensen Huang introduced RTX Spark, co-developed with MediaTek, at Nvidia GTC Taipei, with PC brands expected to launch products in the third quarter of 2026. While widely seen as Nvidia's return to Windows on Arm after a 15-year absence and a challenge to Qualcomm, RTX Spark points to a larger fight over AI-era endpoints.",
+      "summary": "Nvidia CEO Jensen Huang introduced RTX Spark, co-developed with MediaTek, at Nvidia GTC Taipei, with PC brands expected to launch products in the third quarter of 2026. Credit: DIGITIMES Nvidia CEO Jensen Huang introduced RTX Spark, co-developed with MediaTek, at Nvidia GTC Taipei, with PC brands expected to launch products in the third quarter of 2026. Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. SK Hynix speeds Yongin fab buildout as memory crunch fuels capacity race Exclusive: SK Group and Foxconn talks could signal deeper Taiwan-Korea AI supply chain ties Analysis: New AI race is redefining semiconductor industry at Computex Intel's revival secret: Suppliers with TSMC's. While widely seen as Nvidia's return to Windows on Arm after a 15-year absence and a...",
+      "what_happened": "Nvidia CEO Jensen Huang introduced RTX Spark, co-developed with MediaTek, at Nvidia GTC Taipei, with PC brands expected to launch products in the third quarter of 2026. Credit: DIGITIMES Nvidia CEO Jensen Huang introduced RTX Spark, co-developed with MediaTek, at Nvidia GTC Taipei, with PC brands expected to launch products in the third quarter of 2026.",
+      "why_matters": "Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. SK Hynix speeds Yongin fab buildout as memory crunch fuels capacity race Exclusive: SK Group and Foxconn talks could signal deeper Taiwan-Korea AI supply chain ties Analysis: New AI race is redefining semiconductor industry at Computex Intel's revival secret: Suppliers with TSMC's.",
+      "what_to_watch": "While widely seen as Nvidia's return to Windows on Arm after a 15-year absence and a...",
+      "key_points": [
+        "Nvidia CEO Jensen Huang introduced RTX Spark, co-developed with MediaTek, at Nvidia GTC Taipei, with PC brands expected to launch products in the third quarter of 2026.",
+        "Credit: DIGITIMES Nvidia CEO Jensen Huang introduced RTX Spark, co-developed with MediaTek, at Nvidia GTC Taipei, with PC brands expected to launch products in the third quarter of 2026.",
+        "While widely seen as Nvidia's return to Windows on Arm after a 15-year absence and a...",
+        "Nvidia's RTX Spark reveals Jensen Huang's bigger AI agent fight with Apple and Google From the RTX Spark perspective, Jensen Huang's real rivals may not be Qualcomm, but Apple and even Google.",
+        "This will save the password on the computer you're using to access the site.",
+        "To activate this function, check the 'Keep me signed in' box in the log-in section.",
+        "Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site.",
+        "SK Hynix speeds Yongin fab buildout as memory crunch fuels capacity race Exclusive: SK Group and Foxconn talks could signal deeper Taiwan-Korea AI supply chain ties Analysis: New AI race is redefining semiconductor."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5c13a23dfe015c03.jpg",
+      "image_url": "https://img.digitimes.com/tw/x/img/viewpoint/orange/930304a.jpg?v=20260601",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "989c45760fdb47c48d5de487e770599b"
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-06-05-v0.3-vllm-sr-themis-release",
+      "title": "vLLM Semantic Router v0.3 Themis: From Signals to Stateful Production Routing",
+      "description": "vLLM Semantic Router v0.3, codename Themis, is where semantic routing becomes stateful, observable, and production-ready for real AI traffic.",
+      "excerpt": "vLLM Semantic Router v0.3, codename Themis, is where semantic routing becomes stateful, observable, and production-ready for real AI traffic.",
+      "summary": "Speculators v0.5.0: DFlash Support and Online Training The v0.5.0 release brings significant architectural improvements to speculative decoding model training, introducing DFlash algorithm support, fully unified online training capabilities, and a... Since v0.2.0, the project has added more than 350 commits across router core, CLI, dashboard, DSL, Kubernetes, protocol compatibility, model selection, safety, replay, and release readiness. Better router-owned models : improve accuracy and latency for the models the router itself uses, including embedding, classifier, multimodal, and safety signal models. AMD ROCm remains the release-validated GPU path, while --platform nvidia adds local NVIDIA Docker passthrough ergonomics for users who already have the NVIDIA container runtime configured. Fast & Efficient LLM Inference with vLLM: A New Course with DeepLearning.AI We're excited to announce, with Red Hat and Andrew Ng's DeepLearning.AI, a hands-on course that walks through LLM fundamentals and the full optimize, deploy, and benchmark AI deployment lifecycle... Athena rebuilt the model foundation and.",
+      "what_happened": "Speculators v0.5.0: DFlash Support and Online Training The v0.5.0 release brings significant architectural improvements to speculative decoding model training, introducing DFlash algorithm support, fully unified online training capabilities, and a... Since v0.2.0, the project has added more than 350 commits across router core, CLI, dashboard, DSL, Kubernetes, protocol compatibility, model selection, safety, replay, and release readiness.",
+      "why_matters": "Better router-owned models : improve accuracy and latency for the models the router itself uses, including embedding, classifier, multimodal, and safety signal models. AMD ROCm remains the release-validated GPU path, while --platform nvidia adds local NVIDIA Docker passthrough ergonomics for users who already have the NVIDIA container runtime configured.",
+      "what_to_watch": "Fast & Efficient LLM Inference with vLLM: A New Course with DeepLearning.AI We're excited to announce, with Red Hat and Andrew Ng's DeepLearning.AI, a hands-on course that walks through LLM fundamentals and the full optimize, deploy, and benchmark AI deployment lifecycle... Athena rebuilt the model foundation and.",
+      "key_points": [
+        "Speculators v0.5.0: DFlash Support and Online Training The v0.5.0 release brings significant architectural improvements to speculative decoding model training, introducing DFlash algorithm support, fully unified online.",
+        "Since v0.2.0, the project has added more than 350 commits across router core, CLI, dashboard, DSL, Kubernetes, protocol compatibility, model selection, safety, replay, and release readiness.",
+        "Better router-owned models : improve accuracy and latency for the models the router itself uses, including embedding, classifier, multimodal, and safety signal models.",
+        "Athena rebuilt the model foundation and expanded the router into memory, safety, model selection, long-context signal handling, OpenClaw orchestration, and AMD ROCm deployment.",
+        "Fast & Efficient LLM Inference with vLLM: A New Course with DeepLearning.AI We're excited to announce, with Red Hat and Andrew Ng's DeepLearning.AI, a hands-on course that walks through LLM fundamentals and the full.",
+        "The AMD deployment path introduced in Athena also remains part of the v0.3 release contract.",
+        "That is the right symbol for this release.",
+        "RouterArena SOTA Refresh Themis also comes with an external leaderboard signal: in the RouterArena snapshot captured for this release update, vLLM-SR returned to #1 on the RouterArena leaderboard .",
+        "For release operations, Themis also moves away from vague latest assumptions and toward explicit artifact contracts, upgrade and rollback documentation, and release checks.",
+        "The dashboard topology view, the DSL editor, the compiler/decompiler, and runtime metrics were updated to understand these v0.3 surfaces instead of silently dropping or hiding them.",
+        "Protocol Compatibility Becomes a Release Surface v0.3 expands the router's compatibility boundary beyond basic OpenAI Chat Completions.",
+        "Session-Aware Agentic Routing: Continuity-Aware Model Selection for Long-Horizon LLM Agents Long-horizon LLM agents create a routing problem that single-turn prompt routers were not designed to solve."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4f3fd0c7e42fbe12.png",
+      "image_url": "https://vllm.ai/blog-assets/figures/2026-06-01-v0.3-vllm-sr-themis-release/routerarena-leaderboard-vllm-sr.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f92f35f3e6b80ab6.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/83a731335d29fc06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0946c4d7b825d9a2.png"
+      ],
+      "extra_image_urls": [
+        "https://vllm.ai/blog-assets/figures/2026-06-01-v0.3-vllm-sr-themis-release/hero-v2.png",
+        "https://vllm.ai/blog-assets/figures/2026-06-01-v0.3-vllm-sr-themis-release/release-value-map.png",
+        "https://vllm.ai/blog-assets/figures/2026-06-01-v0.3-vllm-sr-themis-release/session-aware-routing.png"
+      ],
+      "_story_id": "11e5a6d5831541e1b01718b0933e5092"
+    },
+    {
+      "url": "https://www.therobotreport.com/generalist-raises-400m-to-scale-its-general-purpose-ai-models/",
+      "title": "Generalist raises $400M to scale its general-purpose AI models - The Robot Report",
+      "description": "Generalist claims its system improves average success rates to 99% on dexterous tasks where previous models achieved 64%.",
+      "excerpt": "Generalist claims its system improves average success rates to 99% on dexterous tasks where previous models achieved 64%.",
+      "summary": "Generalist aims to scale robot learning In April, Generalist AI released GEN-1, its general-purpose AI model for robotics. In November 2025, the San Mateo, Calif.-based company released GEN-0, which it said \u201cbrought robots into the pretraining era.\u201d Generalist said its models, trained on large-scale, real-world data, demonstrated scaling laws in robotics. \u201cThey are the compounding result of thousands of decisions, across data, models, hardware, infrastructure, operations, and deployment, made by a world-class team building at the frontier of AI and robotics.\u201d Since launching GEN-1, the company said a data flywheel has begun to take shape. The company said it now has the resources to build next-generation models, scale its physical data engine, and expand its compute and. It said scaling robot learning creates better models that can do more useful physical work, and data from real businesses will then drive the next generation of more capable models.",
+      "what_happened": "Generalist aims to scale robot learning In April, Generalist AI released GEN-1, its general-purpose AI model for robotics. In November 2025, the San Mateo, Calif.-based company released GEN-0, which it said \u201cbrought robots into the pretraining era.\u201d Generalist said its models, trained on large-scale, real-world data, demonstrated scaling laws in robotics.",
+      "why_matters": "\u201cThey are the compounding result of thousands of decisions, across data, models, hardware, infrastructure, operations, and deployment, made by a world-class team building at the frontier of AI and robotics.\u201d Since launching GEN-1, the company said a data flywheel has begun to take shape. The company said it now has the resources to build next-generation models, scale its physical data engine, and expand its compute and.",
+      "what_to_watch": "It said scaling robot learning creates better models that can do more useful physical work, and data from real businesses will then drive the next generation of more capable models.",
+      "key_points": [
+        "Generalist aims to scale robot learning In April, Generalist AI released GEN-1, its general-purpose AI model for robotics.",
+        "In November 2025, the San Mateo, Calif.-based company released GEN-0, which it said \u201cbrought robots into the pretraining era.\u201d Generalist said its models, trained on large-scale, real-world data, demonstrated scaling.",
+        "\u201cThey are the compounding result of thousands of decisions, across data, models, hardware, infrastructure, operations, and deployment, made by a world-class team building at the frontier of AI and robotics.\u201d Since.",
+        "The company said it now has the resources to build next-generation models, scale its physical data engine, and expand its compute and training infrastructure.",
+        "It said scaling robot learning creates better models that can do more useful physical work, and data from real businesses will then drive the next generation of more capable models.",
+        "Generalist raises $400M to scale its general-purpose AI models Generalist AI Inc., a company creating AI for a range of robot form factors, today said it has raised $400 million in new funding.",
+        "The company asserted that the technology \u201cunlocks commercial viability across a broad range of applications.\u201d Generalist claimed that GEN-1 improves average success rates to 99% on tasks where previous models achieved.",
+        "Founded in 2024, Generalist AI said it is building embodied foundation models for general-purpose robots.",
+        "In addition, GEN-1 demonstrated traction toward the practical thresholds required for real deployments, including the ability to learn complex new physical skills and to solve problems creatively through \u201cemergent.",
+        "Generalist said it plans to use the latest round of funding to accelerate its mission to build physical artificial general intelligence and make it useful to everyone.",
+        "Generalist claims its system improves average success rates to 99% on dexterous tasks where previous models achieved 64%.",
+        "The model also completes dexterous tasks roughly three times faster than current approaches, and it requires only one hour of robot data for each of these results, according to the company."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e0bca3ea8a5fe11c.png",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/05/rbr50-sidebar-promo.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "065d07bced3c4f7b9d33aa69b3856135"
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/czx2x3yl9rgo?at_medium=RSS&at_campaign=rss",
+      "title": "Raspberry Pi raises profit forecast as AI demand grows",
+      "description": "The firm said it expected to deliver adjusted earnings of at least $38m (\u00a328.2m) for the first half of 2026.",
+      "excerpt": "The firm said it expected to deliver adjusted earnings of at least $38m (\u00a328.2m) for the first half of 2026.",
+      "summary": "The company has also raised prices several times for many of its products over the past few months after a global shortage of memory chips , driven in part by demand from AI data centres, pushed up component costs. Raspberry Pi raises profit forecast as AI demand grows Raspberry Pi has increased its profit expectations due to strong demand for the small computers amid rapid growth in the AI sector. The company said it has seen the value of its stock more than triple since the start of the year. AI could put people off tech jobs and hurt the economy, warns Raspberry Pi boss How China fell for a lobster: What an AI assistant tells us about Beijing's ambition Huge job expansion plans for coding and AI company Claude Code users hitting usage limits 'way faster than expected' AI and coding firm's 'pride' at business award. The Cambridge-based firm said it expected to deliver adjusted earnings of at least $38m (\u00a328.2m) for the first half of 2026.",
+      "what_happened": "The company has also raised prices several times for many of its products over the past few months after a global shortage of memory chips , driven in part by demand from AI data centres, pushed up component costs. Raspberry Pi raises profit forecast as AI demand grows Raspberry Pi has increased its profit expectations due to strong demand for the small computers amid rapid growth in the AI sector.",
+      "why_matters": "The company said it has seen the value of its stock more than triple since the start of the year. AI could put people off tech jobs and hurt the economy, warns Raspberry Pi boss How China fell for a lobster: What an AI assistant tells us about Beijing's ambition Huge job expansion plans for coding and AI company Claude Code users hitting usage limits 'way faster than expected' AI and coding firm's 'pride' at business award.",
+      "what_to_watch": "The Cambridge-based firm said it expected to deliver adjusted earnings of at least $38m (\u00a328.2m) for the first half of 2026.",
+      "key_points": [
+        "The firm said it expected to deliver adjusted earnings of at least $38m (\u00a328.2m) for the first half of 2026.",
+        "The Cambridge-based firm said it expected to deliver adjusted earnings of at least $38m (\u00a328.2m) for the first half of 2026.",
+        "The company has also raised prices several times for many of its products over the past few months after a global shortage of memory chips , driven in part by demand from AI data centres, pushed up component costs.",
+        "The company said it has seen the value of its stock more than triple since the start of the year.",
+        "AI could put people off tech jobs and hurt the economy, warns Raspberry Pi boss How China fell for a lobster: What an AI assistant tells us about Beijing's ambition Huge job expansion plans for coding and AI company.",
+        "Raspberry Pi raises profit forecast as AI demand grows Raspberry Pi has increased its profit expectations due to strong demand for the small computers amid rapid growth in the AI sector.",
+        "The update sent shares in the company up by as much as 25% in early trading on Friday, lifting its market value to around \u00a32bn.",
+        "We look at how Slough became the second biggest data hub on the planet.",
+        "The BBC is in multiple languages",
+        "'Nail-biting' Lego victory gets boys to final The team End-Tech overcame 21 schools from as far away as Bradford to make the national final.",
+        "#38 Raspberry Pi Founder: People Overestimate What AI Can Do Raspberry Pi's devices are the most widely sold computers by a UK firm and are popular with people who programme as a hobby.",
+        "It said it is therefore on track for earnings to be \"significantly ahead of current market expectations\" for 2026 as a whole."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/dc0ffb28fbc4072a.webp",
+      "image_url": "https://ichef.bbci.co.uk/news/480/cpsprodpb/da22/live/bb0787d0-0907-11f1-aaa8-3d1a2959c828.jpg.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "d993e9e44cad42df97ceadc42b4cbdb4"
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/cx2124z7g45o?at_medium=RSS&at_campaign=rss",
+      "title": "Anthropic co-founder Jack Clark warns AI needs a 'brake pedal'",
+      "description": "Jack Clark tells BBC's Newsnight AI could get to the point where it develops without human input.",
+      "excerpt": "Jack Clark tells BBC's Newsnight AI could get to the point where it develops without human input.",
+      "summary": "SpaceX says it's worth $1.75tn as it targets largest stock market debut US announces new tariffs over forced labour concerns Universal rejects billionaire Bill Ackman's takeover bid What led one MP to go up against Elon Musk? \"The world needs to do some thinking and we need to eventually develop some new regulations that allow us to be confident in these systems,\" he said. \"I am worried for my kids if we as a society don't have a serious conversation about what the implications of AI's continued advances mean,\" Clark told Newsnight. Clark did not outline how a \"brake pedal\" for AI research and development could be created, but drew a parallel between AI and the oil boom and barons of the turn of the last century. What to know about Canada's new AI strategy Canada new roadmap for how it plans to adopt AI over the next decade includes \"large-scale\" data centres, free AI literacy programme and billions in funding. Clark did not outline how a \"brake pedal\" for AI research and development could be created, but drew a parallel.",
+      "what_happened": "SpaceX says it's worth $1.75tn as it targets largest stock market debut US announces new tariffs over forced labour concerns Universal rejects billionaire Bill Ackman's takeover bid What led one MP to go up against Elon Musk? \"The world needs to do some thinking and we need to eventually develop some new regulations that allow us to be confident in these systems,\" he said.",
+      "why_matters": "\"I am worried for my kids if we as a society don't have a serious conversation about what the implications of AI's continued advances mean,\" Clark told Newsnight. Clark did not outline how a \"brake pedal\" for AI research and development could be created, but drew a parallel between AI and the oil boom and barons of the turn of the last century.",
+      "what_to_watch": "What to know about Canada's new AI strategy Canada new roadmap for how it plans to adopt AI over the next decade includes \"large-scale\" data centres, free AI literacy programme and billions in funding. Clark did not outline how a \"brake pedal\" for AI research and development could be created, but drew a parallel.",
+      "key_points": [
+        "Already, Anthropic's popular chatbot Claude is operating on code of which 80% the system wrote itself.",
+        "Clark did not outline how a \"brake pedal\" for AI research and development could be created, but drew a parallel between AI and the oil boom and barons of the turn of the last century.",
+        "SpaceX says it's worth $1.75tn as it targets largest stock market debut US announces new tariffs over forced labour concerns Universal rejects billionaire Bill Ackman's takeover bid What led one MP to go up against Elon.",
+        "There are also risks.\" Clark added that one of the risks is a disruption to the economy, with fears that AI technology like \"agents\".",
+        "We need to stop AI developing without humans, says Anthropic co-founder Anthropic co-founder Jack Clark has called for the ability to slow progression of artificial intelligence (AI), warning the technology is nearing a.",
+        "\"The world needs to do some thinking and we need to eventually develop some new regulations that allow us to be confident in these systems,\" he said.",
+        "The BBC is in multiple languages",
+        "'World-first' vaccine designed by artificial intelligence Cambridge scientists say they have, for the first time, tested a vaccine designed by AI.",
+        "\"Society's response was to come up with a sensible policy and regulatory framework that gave people confidence in oil and the benefits that oil could provide to the world, and meant that you didn't have to worry about.",
+        "Major AI companies pursuing advances in the technology, including Anthropic, OpenAI and Google, have also not said they will pause their own research.",
+        "Getting to 100% is possible within two years, Clark said, and \"would have huge implications\".",
+        "\"You want the option to be able to take your foot off the gas and put your foot on the brake\", Clark told BBC Newsnight ."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fcd1a18e0adb1df3.webp",
+      "image_url": "https://ichef.bbci.co.uk/news/480/cpsprodpb/e119/live/3101b250-efb1-11f0-b61c-6bc75d705b6c.jpg.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "8d4ddaa5feb7487c8aadb17d3d1b4dc5"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 8,
+  "has_cta": true,
+  "slides": [
+    "Seoul Purpose How NVIDIA and South Korea Are Building the Future.",
+    "Dreaming Better memory for a more helpful ChatGPT.",
+    "The Wintel' of robotics Nvidia allies with Unitree to standardize AI humanoid.",
+    "Nvidia's RTX Spark reveals Jensen Huang's bigger AI agent fight with Apple.",
+    "VLLM Semantic Router v0.3 Themis From Signals to Stateful Production Routing.",
+    "Generalist raises $400M to scale its general-purpose AI models.",
+    "Raspberry Pi raises profit forecast as AI demand grows.",
+    "FOLLOW @graitech"
+  ]
+}
