@@ -1,0 +1,26 @@
+Airbnb's Brian Chesky plans to launch a new AI lab.
+
+Swipe for the full breakdown.
+
+- The news, broken by Bloomberg and confirmed to TechCrunch by a person familiar with the situation, marks Chesky.
+- He met Sam Altman in 2006 through Y Combinator, which incubated Airbnb, and stayed in touch.
+- That's not unlike what Brett Adcock is doing at Hark, the AI lab he launched late last year.
+- While Airbnb has adopted AI coding tools, Chesky said last year it hasn't struck an LLM partnership because.
+- The Airbnb CEO said last year it hasn't struck an LLM partnership because existing products weren't quite ready.
+
+Do you think this technology's move here is exciting or a risk? Drop your take below.
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://techcrunch.com/2026/06/04/airbnbs-brian-chesky-plans-to-launch-a-new-ai-lab/
+- https://techcrunch.com/2026/06/04/is-silicon-valley-ready-to-put-robots-in-peoples-homes-hello-robot-is/
+- https://www.therobotreport.com/voyager-technologies-acquires-astrobotic-advance-lunar-initiatives/
+- https://www.lowpass.cc/p/google-deepmind-dear-upstairs-neighbors-ai-animation-jorge-gutierrez
+- https://ollama.com/blog/nemotron-3-ultra
+
+#AINews #AITools #GenerativeAI #TechNews #AIUpdates #ArtificialIntelligence #FutureOfAI #MachineLearning #DataScience #FutureTech #LearnAI #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing #MLNews #AIWeekly #TechInnovation #AIStartups #FutureOfWork
+
+-
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-

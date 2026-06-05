@@ -1,0 +1,21 @@
+NVIDIA has released Nemotron 3 Ultra, a 550B total (55B active) open Mixture-of-Experts hybrid Mamba-Transform matters.
+
+Swipe for the full breakdown.
+
+- NVIDIA AI Releases Nemotron 3 Ultra: An Open 550B Mixture-of-Experts Hybrid Mamba-Transformer for Long-Running Agents.
+- Developers Are Still Waiting for Access to Meta's Latest AI Model.
+
+Do you think this technology's move here is exciting or a risk? Drop your take below.
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://www.marktechpost.com/2026/06/04/nvidia-ai-releases-nemotron-3-ultra-an-open-550b-mixture-of-experts-hybrid-mamba-transformer-for-long-running-agents/
+- https://www.cnet.com/tech/services-and-software/where-is-metas-ai-model-api/
+- https://www.bbc.com/news/articles/cx2124z7g45o?at_medium=RSS&at_campaign=rss
+
+#AIAgents #AutonomousAgents #AIWorkflow #NVIDIA #NVIDIAGPU #TechTrends #Innovation #EmergingTech #AINews #FutureTech #DigitalTransformation #Technology #AIBreakdown #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing #MLNews #AIWeekly #TechInnovation
+
+-
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-
