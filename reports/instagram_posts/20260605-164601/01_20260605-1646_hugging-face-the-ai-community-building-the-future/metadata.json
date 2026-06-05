@@ -1,0 +1,353 @@
+{
+  "email_received_at": "2026-06-05T16:46+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Hugging Face - The AI community building the future.",
+  "subject": "",
+  "source_date": "2026-06-05T16:46:01.847031",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+  "article_title": "Hugging Face - The AI community building the future.",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+      "title": "Hugging Face - The AI community building the future.",
+      "description": "We're on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "excerpt": "We're on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "summary": "We're on a journey to advance and democratize artificial intelligence through open source and open science. We had to rate limit you. Upgrade to a paid plan ( or send us an email at website@huggingface.co Upgrade to a paid plan ( or send us an email at website@huggingface.co",
+      "what_happened": "We're on a journey to advance and democratize artificial intelligence through open source and open science. We had to rate limit you.",
+      "why_matters": "Upgrade to a paid plan ( or send us an email at website@huggingface.co",
+      "what_to_watch": "Upgrade to a paid plan ( or send us an email at website@huggingface.co",
+      "key_points": [
+        "We're on a journey to advance and democratize artificial intelligence through open source and open science.",
+        "We had to rate limit you.",
+        "Upgrade to a paid plan ( or send us an email at website@huggingface.co"
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "24b83f38b5f642a49fd0683395b0a4e4"
+    },
+    {
+      "url": "https://www.langchain.com/blog/interrupt-2026-overview",
+      "title": "Everything we shipped at Interrupt",
+      "description": "From autonomous debugging to one-line deploys, here's every product LangChain launched at Interrupt 2026 to help teams build, test, and ship agents in production.",
+      "excerpt": "From autonomous debugging to one-line deploys, here's every product LangChain launched at Interrupt 2026 to help teams build, test, and ship agents in production.",
+      "summary": "Managed runtime for creating, updating, managing, and running deep agents through an API Durable threads, streaming runs, checkpointing, and human-in-the-loop workflows for long-running tasks Agent context and files with support for AGENTS.md , skills/ , subagents/ , and tools.json Context Hub for retaining and updating agent memory, operating notes, user preferences, and project context across runs Sandbox-backed execution for agents that need code, shell commands, file I/O, data analysis, or artifact generation. The goal is to help teams turn real agent usage into better agents, while sharing research, evals, and open-source integrations with the broader agent-building community. From autonomous debugging to one-line deploys, here's every product LangChain launched at Interrupt 2026 to help teams build, test, and ship agents in production. Built around the open-source Deep Agents harness, it supports agents that can plan, use tools, delegate to subagents, write files, and work over longer timelines, without requiring teams to stand up their own agent server or rebuild the runtime infrastructure around every agent.",
+      "what_happened": "Managed runtime for creating, updating, managing, and running deep agents through an API Durable threads, streaming runs, checkpointing, and human-in-the-loop workflows for long-running tasks Agent context and files with support for AGENTS.md , skills/ , subagents/ , and tools.json Context Hub for retaining and updating agent memory, operating notes, user preferences, and project context across runs Sandbox-backed execution for agents that need code, shell commands, file I/O, data analysis, or artifact generation.",
+      "why_matters": "The goal is to help teams turn real agent usage into better agents, while sharing research, evals, and open-source integrations with the broader agent-building community. From autonomous debugging to one-line deploys, here's every product LangChain launched at Interrupt 2026 to help teams build, test, and ship agents in production.",
+      "what_to_watch": "Built around the open-source Deep Agents harness, it supports agents that can plan, use tools, delegate to subagents, write files, and work over longer timelines, without requiring teams to stand up their own agent server or rebuild the runtime infrastructure around every agent.",
+      "key_points": [
+        "Managed runtime for creating, updating, managing, and running deep agents through an API Durable threads, streaming runs, checkpointing, and human-in-the-loop workflows for long-running tasks Agent context and files.",
+        "Deep Agents v0.6 improves performance at the agent layer and at scale.",
+        "Built around the open-source Deep Agents harness, it supports agents that can plan, use tools, delegate to subagents, write files, and work over longer timelines, without requiring teams to stand up their own agent.",
+        "LangSmith LLM Gateway LangSmith LLM Gateway is a new runtime governance layer that sits between your agents and the LLM providers they call.",
+        "The goal is to help teams turn real agent usage into better agents, while sharing research, evals, and open-source integrations with the broader agent-building community.",
+        "The release adds a lightweight code interpreter for programmatic tool calling (REPL), typed streaming for agent UIs, and DeltaChannel for more efficient checkpoint storage.",
+        "From autonomous debugging to one-line deploys, here's every product LangChain launched at Interrupt 2026 to help teams build, test, and ship agents in production.",
+        "Together, these launches make the agent development lifecycle faster, safer, and more collaborative, from the first prototype to production monitoring and improvement.",
+        "S e e w h a t y o u r a g e n t i s r e a l l y d o i n g LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click.",
+        "Performance: Up to 15x faster on core LangSmith experiences, with P50 trace tree loads at 92ms and P50 single run loads at 71ms Portability: Object-storage-backed and stateless, so it scales by adding compute and is far.",
+        "We're expanding Fleet agent templates with five prebuilt agents that the LangChain team relies on every day.",
+        "LangSmith Context Hub gives teams a central place to manage the files that shape agent behavior, including AGENTS.md files, skills, policies, examples, and other context bundles agents read and follow."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f385f1eabde1f5c3.img",
+      "image_url": "https://cdn.prod.website-files.com/65b8cd72835ceeacd4449a53/6989c024926f877c1de6e728_updated.svg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "6e3d32bd3ee749b98d70a9157cda17ec"
+    },
+    {
+      "url": "https://www.engadget.com/2188066/anthropic-proposes-global-ai-development-slowdown/",
+      "title": "Anthropic proposes a global slowdown of AI development - Engadget",
+      "description": "Anthropic warns that AIs will soon be able to build their own successor, and it\u2019s suggesting that companies may have to slow down development.",
+      "excerpt": "Anthropic warns that AIs will soon be able to build their own successor, and it\u2019s suggesting that companies may have to slow down development.",
+      "summary": "Critics are specifically pointing to the limited release of its cybersecurity AI model Mythos as an example. Anthropic said it was making Mythos available to a select group of partners due to the potential damage its ability to quickly identify vulnerabilities could cause in the wrong hands. It's worth noting, however, that the company's suggestion is based on the findings of Anthropic Institute, a research division it established in March . Anthropic is suggesting that the answer is the global slowdown or the temporary pause of AI development \"to enable societal structures and alignment research to keep up with the advance of the technology.\" The company is one of the leading names in the AI race today, and. It recently filed paperwork with the SEC to go public , likely before the year ends.",
+      "what_happened": "Critics are specifically pointing to the limited release of its cybersecurity AI model Mythos as an example. Anthropic said it was making Mythos available to a select group of partners due to the potential damage its ability to quickly identify vulnerabilities could cause in the wrong hands.",
+      "why_matters": "It's worth noting, however, that the company's suggestion is based on the findings of Anthropic Institute, a research division it established in March . Anthropic is suggesting that the answer is the global slowdown or the temporary pause of AI development \"to enable societal structures and alignment research to keep up with the advance of the technology.\" The company is one of the leading names in the AI race today, and.",
+      "what_to_watch": "It recently filed paperwork with the SEC to go public , likely before the year ends.",
+      "key_points": [
+        "Critics are specifically pointing to the limited release of its cybersecurity AI model Mythos as an example.",
+        "Anthropic said it was making Mythos available to a select group of partners due to the potential damage its ability to quickly identify vulnerabilities could cause in the wrong hands.",
+        "It's worth noting, however, that the company's suggestion is based on the findings of Anthropic Institute, a research division it established in March .",
+        "Anthropic is suggesting that the answer is the global slowdown or the temporary pause of AI development \"to enable societal structures and alignment research to keep up with the advance of the technology.\" The company.",
+        "It recently filed paperwork with the SEC to go public , likely before the year ends.",
+        "Anthropic said back then that the institute's role is to \"tell the world\" what it learns about the challenges that arise as AI firms develop more advanced AI systems.",
+        "But people think it's just a ploy to hype up the product or to cover up the fact that Anthropic only wants to sell it to the biggest enterprises.",
+        "The institute, along with collaborators, will conduct research on what's needed to \"build the systems that a credible slowdown or pause would require.\" If AI companies agree to a slowdown, mechanisms must be in place to.",
+        "The company is planning to hold talks with policymakers, researchers and other AI companies over the coming months over this issue and will publish the results of those conversations.",
+        "As The Wall Street Journal notes, critics suggest that Anthropic's warnings about its own technology are a marketing ploy, perhaps in an effort to make it look like the least egregious among all the AI companies or to.",
+        "Anthropic proposes a global slowdown of AI development The company says it's concerned about AI being able to build its own successors.",
+        "\"A meaningful slowdown or pause would require multiple well-resourced labs at or near the frontier, in multiple countries, agreeing to stop under the same conditions,\" Anthropic writes."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/aff25d0fbb0df593.jpg",
+      "image_url": "https://img4.zergnet.com/8764571_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "481117b6e26b4eafbdfcc6b35dbbbd32"
+    },
+    {
+      "url": "https://www.therobotreport.com/mitsubishi-electric-opens-serendie-street-boston-digital-transformation-hub/",
+      "title": "Mitsubishi Electric opens Serendie Street Boston digital transformation hub - The Robot Report",
+      "description": "Mitsubishi Electric opened Serendie Street Boston, its first Western digital transformation hub dedicated to collaboration and innovation.",
+      "excerpt": "Mitsubishi Electric opened Serendie Street Boston, its first Western digital transformation hub dedicated to collaboration and innovation.",
+      "summary": "As part of its support for startups and innovation, the company is a partner of MassRobotics , which presented university teams , healthcare startups, and other member companies during last week\u2019s Robotics Summit & Expo . \u201cSerendie\u201d combines \u201cserendipity\u201d and \u201cdigital engineering\u201d (DX), and the company first launched the co-creation initiative last year in Yokohama, Japan. William Nguyen , a Mitsubishi Electric Automation project development manager, explained how the Onyx AI platform can automate difficult AI research steps so that data is more effectively translated into deployable models for control systems. Mitsubishi said it is evolving into a \u201ccircular digital-engineering\u201d company and that the center will enable continuous improvement as it \u201cintegrates devices, systems, and multi-domain. \u201cWe expect significant B2B and B2C growth in the next two years, thanks in part to regulatory changes,\u201d Corbo said. and president and CEO of Mitsubishi Electric US .",
+      "what_happened": "As part of its support for startups and innovation, the company is a partner of MassRobotics , which presented university teams , healthcare startups, and other member companies during last week\u2019s Robotics Summit & Expo . \u201cSerendie\u201d combines \u201cserendipity\u201d and \u201cdigital engineering\u201d (DX), and the company first launched the co-creation initiative last year in Yokohama, Japan.",
+      "why_matters": "William Nguyen , a Mitsubishi Electric Automation project development manager, explained how the Onyx AI platform can automate difficult AI research steps so that data is more effectively translated into deployable models for control systems. Mitsubishi said it is evolving into a \u201ccircular digital-engineering\u201d company and that the center will enable continuous improvement as it \u201cintegrates devices, systems, and multi-domain.",
+      "what_to_watch": "\u201cWe expect significant B2B and B2C growth in the next two years, thanks in part to regulatory changes,\u201d Corbo said. and president and CEO of Mitsubishi Electric US .",
+      "key_points": [
+        "and president and CEO of Mitsubishi Electric US .",
+        "He was senior editor of The Robot Report from 2019 to 2020 and editorial director of Robotics 24/7 from 2020 to 2023.",
+        "William Nguyen , a Mitsubishi Electric Automation project development manager, explained how the Onyx AI platform can automate difficult AI research steps so that data is more effectively translated into deployable.",
+        "As part of its support for startups and innovation, the company is a partner of MassRobotics , which presented university teams , healthcare startups, and other member companies during last week\u2019s Robotics Summit & Expo.",
+        "\u201cSerendie\u201d combines \u201cserendipity\u201d and \u201cdigital engineering\u201d (DX), and the company first launched the co-creation initiative last year in Yokohama, Japan.",
+        "Mitsubishi Electric opens Serendie Street Boston digital transformation hub Global enterprises know where to put innovation centers to gain access to partners, customers, and research expertise.",
+        "GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report This website uses cookies We use cookies to personalise content and ads.",
+        "\u201cDrones are coming that can carry 200 to 300 kg [440.9 to 661.3 lb.] hundreds of miles - that\u2019s our target market.\u201d Nozomi acquisition provides cyber-resilience In September 2025, Mitsubishi Electric acquired Nozomi.",
+        "Following our digital transformation strategy, we acquired the best in class for OT security .\u201d Nozomi\u2019s technology continues to be vendor-agnostic, taking data to feed an AI engine for insights into risks across.",
+        "As a leading healthcare hub, Boston has a need to move lab specimens and samples quickly and affordably rather than relying on vertically integrated vendors, he said.",
+        "Mitsubishi said it is evolving into a \u201ccircular digital-engineering\u201d company and that the center will enable continuous improvement as it \u201cintegrates devices, systems, and multi-domain services into unified solutions.\u201d.",
+        "The power worked at 40 cm (15.7 in.), and the robot moved a camera around an object to scan it without any hazard of cord entanglement."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f0f71b906956a9d8.jpg",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/06/Nozomi_ME.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "30a4e15196be481694fcf66706b27ed3"
+    },
+    {
+      "url": "https://www.therobotreport.com/genisom-ai-debuts-deployable-robotics-platforms-icra-2026/",
+      "title": "GENISOM AI debuts deployable robotics platforms at ICRA 2026 - The Robot Report",
+      "description": "At ICRA 2026, GENISOM AI may have been new to many international attendees - but it is not a concept-stage robotics startup.",
+      "excerpt": "At ICRA 2026, GENISOM AI may have been new to many international attendees - but it is not a concept-stage robotics startup.",
+      "summary": "Rather than centering on a single product launch, the showcase positioned GENISOM AI as a robotics platform company focused on production, development, and real-world deployment. Full-stack technology enables M1 and L1 Behind the M1 and L1-series platforms is a set of in-house software, simulation, navigation, and control technologies that support them across training, development, and deployment. Its capabilities span core components, robot platforms, manufacturing capabilities, software toolchains, and algorithms, allowing partners to work with the company at different layers of the robotics stack. Educational platform wins first place at IROS On the research and development side, the GENISOM L1 EDU combines NVIDIA Jetson Orin NX computing with Livox Mid-360 lidar, RealSense depth cameras, GNSS, and 5G connectivity. Partners get support across the robotics stack GENISOM AI said its model extends beyond selling individual robot units.",
+      "what_happened": "Rather than centering on a single product launch, the showcase positioned GENISOM AI as a robotics platform company focused on production, development, and real-world deployment. Full-stack technology enables M1 and L1 Behind the M1 and L1-series platforms is a set of in-house software, simulation, navigation, and control technologies that support them across training, development, and deployment.",
+      "why_matters": "Its capabilities span core components, robot platforms, manufacturing capabilities, software toolchains, and algorithms, allowing partners to work with the company at different layers of the robotics stack. Educational platform wins first place at IROS On the research and development side, the GENISOM L1 EDU combines NVIDIA Jetson Orin NX computing with Livox Mid-360 lidar, RealSense depth cameras, GNSS, and 5G connectivity.",
+      "what_to_watch": "Partners get support across the robotics stack GENISOM AI said its model extends beyond selling individual robot units.",
+      "key_points": [
+        "MATRiX , GENISOM AI\u2019s open-source simulation platform, combines the MuJoCo physics engine with Unreal Engine 5 rendering to support reinforcement learning training and sensor simulation across RGB, depth, lidar, IMU.",
+        "Rather than centering on a single product launch, the showcase positioned GENISOM AI as a robotics platform company focused on production, development, and real-world deployment.",
+        "Full-stack technology enables M1 and L1 Behind the M1 and L1-series platforms is a set of in-house software, simulation, navigation, and control technologies that support them across training, development, and.",
+        "Partners get support across the robotics stack GENISOM AI said its model extends beyond selling individual robot units.",
+        "GENISOM AI debuts deployable robotics platforms at ICRA 2026 At ICRA 2026, GENISOM AI may have been new to many international attendees - but it is not a concept-stage robotics startup.",
+        "Its capabilities span core components, robot platforms, manufacturing capabilities, software toolchains, and algorithms, allowing partners to work with the company at different layers of the robotics stack.",
+        "Educational platform wins first place at IROS On the research and development side, the GENISOM L1 EDU combines NVIDIA Jetson Orin NX computing with Livox Mid-360 lidar, RealSense depth cameras, GNSS, and 5G.",
+        "Founded in December 2023, the company said it has already produced and delivered more than 10,000 units, making it one of the few robotics companies to reach production scale in under three years.",
+        "The GENISOM M1 is the company\u2019s industrial-grade quadruped robot, rated for a 30 kg (66.1 lb.) continuous walking payload and a payload-to-weight ratio approaching 1:1.",
+        "It is designed to support simultaneous localization and mapping (SLAM), 3D reconstruction, autonomous navigation research, and open-source development workflows.",
+        "This approach supports the Omni-Panorama system for 720 3D spatial awareness and a more semantic understanding of surrounding structures, obstacles, and spatial relationships.",
+        "At ICRA 2026, GENISOM AI may have been new to many international attendees - but it is not a concept-stage robotics startup."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/91e958dda7faf35d.jpg",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/06/genisom-sponsored-image1-june2026-scaled.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "a9eb5fb0f4134c5d9599ba43541e7d9a"
+    },
+    {
+      "url": "https://www.engadget.com/2188124/openai-will-let-us-government-review-its-models/",
+      "title": "OpenAI will let the US government review its AI models before release - Engadget",
+      "description": "The company said this week it would comply with President Trump's voluntary AI executive order.",
+      "excerpt": "The company said this week it would comply with President Trump's voluntary AI executive order.",
+      "summary": "OpenAI will let the US government review its AI models before release The company said it would comply with President Trump's (voluntary) AI executive order. Companies would have been required to submit models 90 days before public release with voluntary participation. Now, OpenAI has said that it will comply with the order and allow regulators to assess its models' capabilities before they're released to the public. The company said this week it would comply with President Trump's voluntary AI executive order. It requests (not orders) that AI firms participate in a benchmarking process to assess advanced cyber capabilities of AI models and whether they should be designated a \"covered frontier model,\" which could limit their distribution and sale. Trump and his advisors subsequently created a new, scaled-back order reducing.",
+      "what_happened": "OpenAI will let the US government review its AI models before release The company said it would comply with President Trump's (voluntary) AI executive order. Companies would have been required to submit models 90 days before public release with voluntary participation.",
+      "why_matters": "Now, OpenAI has said that it will comply with the order and allow regulators to assess its models' capabilities before they're released to the public. The company said this week it would comply with President Trump's voluntary AI executive order.",
+      "what_to_watch": "It requests (not orders) that AI firms participate in a benchmarking process to assess advanced cyber capabilities of AI models and whether they should be designated a \"covered frontier model,\" which could limit their distribution and sale. Trump and his advisors subsequently created a new, scaled-back order reducing.",
+      "key_points": [
+        "OpenAI will let the US government review its AI models before release The company said it would comply with President Trump's (voluntary) AI executive order.",
+        "Companies would have been required to submit models 90 days before public release with voluntary participation.",
+        "Now, OpenAI has said that it will comply with the order and allow regulators to assess its models' capabilities before they're released to the public.",
+        "Trump and his advisors subsequently created a new, scaled-back order reducing the review time to just 30 days.",
+        "The company said this week it would comply with President Trump's voluntary AI executive order.",
+        "Earlier this week Donald Trump put his Sharpie to a new executive order requiring government oversight of advanced AI models to ensure their safety.",
+        "However, critics said the order fell short of rules needed to police potentially dangerous models.",
+        "It requests (not orders) that AI firms participate in a benchmarking process to assess advanced cyber capabilities of AI models and whether they should be designated a \"covered frontier model,\" which could limit their.",
+        "\"What we suggest to governments is they create powerful regulatory bodies, but with a lot of flexibility into how they will operate in the future.\" The original order, drafted in consultation with various stakeholders.",
+        "\"It's quite right that democratic governments have a big role to play in how this technology is used and deployed,\" OpenAI's head of countries George Osborne told CNBC .",
+        "That order was reportedly delayed and watered down following pressure from the tech industry, with Trump himself saying he \"didn't like certain aspects\" of it.",
+        "However, industry insiders like David Sacks and Elon Musk reportedly warned that the bill could lead to a chilling effect on AI tech."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/36a8e370a76beb70.jpg",
+      "image_url": "https://www.engadget.com/img/gallery/openai-will-let-us-government-review-its-models/intro-1780662614.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "6615bafce57a47b981a8ff961c44be27"
+    },
+    {
+      "url": "https://www.technologyreview.com/2026/06/05/1138437/the-meta-hack-shows-theres-more-to-ai-security-than-mythos/",
+      "title": "The Meta hack shows there\u2019s more to AI security than Mythos",
+      "description": "Some AI cybersecurity threats are incredibly simple. They\u2019re still dangerous.",
+      "excerpt": "Some AI cybersecurity threats are incredibly simple. They\u2019re still dangerous.",
+      "summary": "Companies want to deploy capable agents, and the more power an agent has - and the fewer guardrails it is subject to - the more work it can potentially take on. But given the simplicity of the exploit, Gong says, it should have been uncovered easily, before the agent was deployed. Though the probabilistic nature of large language models means that LLM agents will always be vulnerable to some forms of attack, a more sophisticated model might have identified an attempt to change the email associated with the Obama White House account as suspicious. These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. Still, experts expect that the problem of securing AI agents will only become more pressing in the future. Their approach was simple: They asked the agent to link the accounts to email addresses that they controlled, and the agent complied.",
+      "what_happened": "Companies want to deploy capable agents, and the more power an agent has - and the fewer guardrails it is subject to - the more work it can potentially take on. But given the simplicity of the exploit, Gong says, it should have been uncovered easily, before the agent was deployed.",
+      "why_matters": "Though the probabilistic nature of large language models means that LLM agents will always be vulnerable to some forms of attack, a more sophisticated model might have identified an attempt to change the email associated with the Obama White House account as suspicious. These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+      "what_to_watch": "Still, experts expect that the problem of securing AI agents will only become more pressing in the future. Their approach was simple: They asked the agent to link the accounts to email addresses that they controlled, and the agent complied.",
+      "key_points": [
+        "Companies want to deploy capable agents, and the more power an agent has - and the fewer guardrails it is subject to - the more work it can potentially take on.",
+        "Though the probabilistic nature of large language models means that LLM agents will always be vulnerable to some forms of attack, a more sophisticated model might have identified an attempt to change the email.",
+        "Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI\u2019s models Michelle Kim A new US phone network for Christians aims to block porn and gender-related content James.",
+        "But given the simplicity of the exploit, Gong says, it should have been uncovered easily, before the agent was deployed.",
+        "Their approach was simple: They asked the agent to link the accounts to email addresses that they controlled, and the agent complied.",
+        "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+        "And the experts consulted for this article all agree that agents should undergo rigorous red-teaming, a process in which developers try their best to attack a system in order to discover its vulnerabilities before it is.",
+        "Since Anthropic announced in April that its Mythos model was too good at hacking to be released to the general public, commentators, researchers, and federal officials alike have fixated on the idea that superpowered AI.",
+        "Get the latest updates from MIT Technology Review Discover special offers, top stories, upcoming events, and more.",
+        "Gong and other scholars have been issuing warnings about the security vulnerabilities of AI agents for a while.",
+        "The only complication that hackers had to overcome was using a VPN that matched the true account owner\u2019s location; then they directly asked the support agent to change the account\u2019s email address, and it complied.",
+        "Try refreshing this page and updating them one more time."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/59cd888ab736420f.jpg",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/06/hand-keys1.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "76b3a924c1d9432bb12a366bc8a76cce"
+    },
+    {
+      "url": "https://aibusiness.com/robotics/amazon-unveils-next-generation-robot-11-6b-european-push",
+      "title": "Amazon Unveils Next-Generation Robot in $11.6B European Push",
+      "description": "Amazon Unveils Next-Generation Robot in $11.6B European Push",
+      "excerpt": "Amazon Unveils Next-Generation Robot in $11.6B European Push",
+      "summary": "Related: Vendor Training Robots With Human Data Raises $60 Million The robot comes as part of Amazon\u2019s plan to expand and modernize fulfillment centers across Europe over the next few years Proteus is part of Amazon\u2019s broader robotics strategy that includes new collaborative systems and advances in robotic manipulation. It figures out the priority, the route, the timing,\" Scott Dresser, vice president of Amazon Robotics, said in a release your assistant for material movement.\" The new Proteus, currently being. The AI Summit London is the flagship AI event of London Tech Week, bringing together enterprise leaders, technical buyers and innovators to turn AI breakthroughs into real business impact. Choosing Your First Generative AI Use Cases To get started with generative AI, first focus on areas that can improve human experiences with information. Amazon Unveils Next-Generation Robot in $11.6B European Push Amazon Unveils Next-Generation Robot in $11.6B European Push The e-commerce giant unveiled new warehouse automation technology as part of a major investment in its fulfillment operations.",
+      "what_happened": "Related: Vendor Training Robots With Human Data Raises $60 Million The robot comes as part of Amazon\u2019s plan to expand and modernize fulfillment centers across Europe over the next few years Proteus is part of Amazon\u2019s broader robotics strategy that includes new collaborative systems and advances in robotic manipulation. It figures out the priority, the route, the timing,\" Scott Dresser, vice president of Amazon Robotics, said in a release your assistant for material movement.\" The new Proteus, currently being.",
+      "why_matters": "The AI Summit London is the flagship AI event of London Tech Week, bringing together enterprise leaders, technical buyers and innovators to turn AI breakthroughs into real business impact. Choosing Your First Generative AI Use Cases To get started with generative AI, first focus on areas that can improve human experiences with information.",
+      "what_to_watch": "Amazon Unveils Next-Generation Robot in $11.6B European Push Amazon Unveils Next-Generation Robot in $11.6B European Push The e-commerce giant unveiled new warehouse automation technology as part of a major investment in its fulfillment operations.",
+      "key_points": [
+        "Related: Vendor Training Robots With Human Data Raises $60 Million The robot comes as part of Amazon\u2019s plan to expand and modernize fulfillment centers across Europe over the next few years Proteus is part of Amazon\u2019s.",
+        "It figures out the priority, the route, the timing,\" Scott Dresser, vice president of Amazon Robotics, said in a release your assistant for material movement.\" The new Proteus, currently being piloted in Amazon\u2019s labs.",
+        "Amazon Unveils Next-Generation Robot in $11.6B European Push Amazon Unveils Next-Generation Robot in $11.6B European Push The e-commerce giant unveiled new warehouse automation technology as part of a major investment.",
+        "Amazon has unveiled a new iteration of its mobile warehouse robot Proteus, as part of a $11.6 billion investment \u200cinto its European operations.",
+        "The vendor showcased its newly updated robot at its \"Delivering the Future\" event at its Dartford fulfillment center near London earlier this week.",
+        "Now, Amazon plans to roll the system out across 15 European sites by 2027.",
+        "Some of these roles will fill new job requirements created by expanded robotics use, including maintenance, engineering and reliability roles.",
+        "As part of its European expansion plans, Amazon said it will add 25,000 fulfillment center jobs in the coming years.",
+        "Among the technologies being expanded is STARK, a tote-handling robotic system that was first piloted in Barcelona.",
+        "Amazon is also expanding Vulcan, its first robotic system with a sense of touch .",
+        "The robot can both see and feel objects, enabling it to navigate densely packed storage environments and perform more complex picking tasks.",
+        "Based on the prompt, Proteus determines how to complete the task and which steps to prioritize."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/be753ffbee22265b.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltdb9fe516e837c101/6a1d8b5a479f3e38d05cf31a/SoftBank.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/15c5b987a5e6f873.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7af9a82f60533258.jpg"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltee176ce55650ab85/6a21c0c5563cbbc1f1a60149/Meta.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltf07823c531e62b63/6a22cc57d6dfcca6062336fc/Amazon_robot.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ],
+      "_story_id": "680c6661f9634b39a9982e1c9ad50e3e"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 8,
+  "has_cta": true,
+  "slides": [
+    "Everything we shipped at Interrupt.",
+    "Anthropic proposes a global slowdown of AI development.",
+    "Mitsubishi Electric opens Serendie Street Boston digital transformation hub.",
+    "GENISOM AI debuts deployable robotics platforms at ICRA 2026.",
+    "OpenAI will let the US government review its AI models before release.",
+    "The Meta hack shows there's more to AI security than Mythos.",
+    "Amazon Unveils Next-Generation Robot in $11.6B European Push.",
+    "FOLLOW @graitech"
+  ]
+}
