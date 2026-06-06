@@ -1,0 +1,344 @@
+{
+  "email_received_at": "2026-06-05T21:33-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Google will pay SpaceX $920M per month for compute | TechCrunch",
+  "subject": "\ud83d\ude80 AI Digest \u2014 06 Jun 2026 | 50 updates \u00b7 50 launches",
+  "source_date": "Fri, 05 Jun 2026 21:33:43 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "NVIDIA",
+    "Intel",
+    "Tesla"
+  ],
+  "models": [
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/",
+  "article_title": "Google will pay SpaceX $920M per month for compute | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2bc8d346c84bf394.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2259661359.jpg?w=1024",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/",
+      "title": "Google will pay SpaceX $920M per month for compute | TechCrunch",
+      "description": "In a statement, a Google representative described the deal as a result of unexpected demand for its recently launched AI products.",
+      "excerpt": "In a statement, a Google representative described the deal as a result of unexpected demand for its recently launched AI products.",
+      "summary": "Under the terms of the deal, Google will pay SpaceX $920 million per month from October 2026 through June 2029 for access to \u201capproximately 110,000 NVIDIA GPUs, CPUs, memory, and other related components.\u201d The deal is similar in length and scope to the one SpaceX announced with Anthropic in late May. The company announced the deal in a regulatory filing on Friday . SpaceX announced the deal just one week before the company\u2019s stock is expected to start trading on the Nasdaq exchange. CEO Elon Musk has previously suggested his company would reserve the Colossus 2 data center for xAI. The companies are also reportedly in talks to try to build orbital data centers - a major component of SpaceX\u2019s future plans post-IPO. Anthropic was significantly limited in its compute capacity prior to its deal with SpaceX, raising usage limits on the same day the deal was announced.",
+      "what_happened": "Under the terms of the deal, Google will pay SpaceX $920 million per month from October 2026 through June 2029 for access to \u201capproximately 110,000 NVIDIA GPUs, CPUs, memory, and other related components.\u201d The deal is similar in length and scope to the one SpaceX announced with Anthropic in late May. The company announced the deal in a regulatory filing on Friday .",
+      "why_matters": "SpaceX announced the deal just one week before the company\u2019s stock is expected to start trading on the Nasdaq exchange. CEO Elon Musk has previously suggested his company would reserve the Colossus 2 data center for xAI.",
+      "what_to_watch": "The companies are also reportedly in talks to try to build orbital data centers - a major component of SpaceX\u2019s future plans post-IPO. Anthropic was significantly limited in its compute capacity prior to its deal with SpaceX, raising usage limits on the same day the deal was announced.",
+      "key_points": [
+        "As part of that deal, Anthropic agreed to pay SpaceX $1.25 billion per month through 2029 to rent all the available compute from its Colossus 1 data center near Memphis, Tennessee, that xAI - now part of SpaceX -.",
+        "Under the terms of the deal, Google will pay SpaceX $920 million per month from October 2026 through June 2029 for access to \u201capproximately 110,000 NVIDIA GPUs, CPUs, memory, and other related components.\u201d The deal is.",
+        "The company announced the deal in a regulatory filing on Friday .",
+        "Anthropic was significantly limited in its compute capacity prior to its deal with SpaceX, raising usage limits on the same day the deal was announced.",
+        "SpaceX announced the deal just one week before the company\u2019s stock is expected to start trading on the Nasdaq exchange.",
+        "Both SpaceX and Google have the option to terminate the agreement with 90 days\u2019 notice after December 31, 2026.",
+        "Google\u2019s deal appears to be paying for roughly half the amount of compute that Anthropic has access to at Colossus 1.",
+        "\u201cGoogle Cloud and SpaceX are long-time partners,\u201d Google said in a statement.",
+        "In a statement, a Google representative described the deal as a result of unexpected demand for its recently launched AI products.",
+        "CEO Elon Musk has previously suggested his company would reserve the Colossus 2 data center for xAI.",
+        "To help with that, Alphabet recently announced an $80 billion equity sale.",
+        "Microsoft launches Scout, an OpenClaw-inspired personal assistant Hackers hijacked Instagram accounts by tricking Meta AI support chatbot into granting access DuckDuckGo makes its \u2018no-AI\u2019 search engine easier to access."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2bc8d346c84bf394.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2259661359.jpg?w=1024",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim",
+      "title": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
+      "description": "A Blog post by Build Small Hackathon on Hugging Face",
+      "excerpt": "A Blog post by Build Small Hackathon on Hugging Face",
+      "summary": "A Blog post by Build Small Hackathon on Hugging Face Thousand Token Wood: shipping a multi-agent economy on a 3B model I built Thousand Token Wood for the Build Small Hackathon. The 1929 bank runs become the Run on Oona's Hoard. The South Sea Bubble becomes the Hollow Log Trading Company. I reframed it as a mean-reverting mood that recovers when a creature is fed and warm and never hits zero. Oona began liquidating her honey to raise pebbles, and the flood of supply crashed the honey price from 10 to 3 over the next turns. Takeaways for building with small models Most of the engineering is closing the gap between a small model's reliable formatting and its unreliable reasoning, with structure and prompting.",
+      "what_happened": "A Blog post by Build Small Hackathon on Hugging Face Thousand Token Wood: shipping a multi-agent economy on a 3B model I built Thousand Token Wood for the Build Small Hackathon. The 1929 bank runs become the Run on Oona's Hoard.",
+      "why_matters": "The South Sea Bubble becomes the Hollow Log Trading Company. I reframed it as a mean-reverting mood that recovers when a creature is fed and warm and never hits zero.",
+      "what_to_watch": "Oona began liquidating her honey to raise pebbles, and the flood of supply crashed the honey price from 10 to 3 over the next turns. Takeaways for building with small models Most of the engineering is closing the gap between a small model's reliable formatting and its unreliable reasoning, with structure and prompting.",
+      "key_points": [
+        "Takeaways for building with small models Most of the engineering is closing the gap between a small model's reliable formatting and its unreliable reasoning, with structure and prompting rather than scale.",
+        "The 1929 bank runs become the Run on Oona's Hoard.",
+        "The model is served with vLLM on Modal; a Gradio app is the window onto the wood.",
+        "Oona began liquidating her honey to raise pebbles, and the flood of supply crashed the honey price from 10 to 3 over the next turns.",
+        "A Blog post by Build Small Hackathon on Hugging Face Thousand Token Wood: shipping a multi-agent economy on a 3B model I built Thousand Token Wood for the Build Small Hackathon.",
+        "They were frozen because the agents quoted back the reference price I showed them.",
+        "Each legend fires real shocks, and the agents react.",
+        "The fix was not a bigger model, it was a sharper prompt.",
+        "In one run I drew the Run on Oona's Hoard, the rumor that the owl's vault was empty.",
+        "It is a tiny economy: five woodland creatures, each its own agent on Qwen2.5-3B , trade five goods for pebbles, gossip, hoard, and panic.",
+        "The 3B emitted valid JSON on 100% of calls, but its economic judgment was poor: a creature that produced acorns would post an order to buy acorns, the one thing it had in surplus.",
+        "The market cleared once and went silent."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0deafadab1a0407b.png",
+      "image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/build-small-hackathon/thousand-token-wood-sim.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.notus.org/technology/trump-ai-stake-openai",
+      "title": "Senior U.S. Officials Eye Government Shares in AI Giants",
+      "description": "An agreement to give the U.S. government equity stakes in AI companies could have seismic consequences.",
+      "excerpt": "An agreement to give the U.S. government equity stakes in AI companies could have seismic consequences.",
+      "summary": "\u201cIt raises questions about how that could intrude into a lot of the traditional principles when it comes to private enterprise and the free market.\u201d Others fear that any partial disbursement of equity to the government may not go far enough. Texas Will Soon Have a Vacancy in a Crucial Election Role Trump Is Talking With Tech Executives About Acquiring \u2018Pieces\u2019 of Major AI Companies Trump Supports Slashing Intelligence Agency Jobs Federal Judge Throws Out Trump Policy That Kept Some Immigrants in Legal Limbo. After the Intel deal was reached, Trump said publicly , \u201cI hope I\u2019m going to have many more cases like it.\u201d In private, Trump has said that American taxpayers should benefit from artificial intelligence, said one of the people familiar with the matter. has made direct investments in at least 10 companies, including a deal with Intel that the White House has touted for providing a \u201cdirect windfall for American taxpayers,\u201d with. In a paper released in April , OpenAI issued a list of recommendations to ensure \u201ca future where superintelligence benefits everyone,\u201d including giving workers priority to use AI to eliminate dangerous tasks and helping entrepreneurs use AI to cut.",
+      "what_happened": "\u201cIt raises questions about how that could intrude into a lot of the traditional principles when it comes to private enterprise and the free market.\u201d Others fear that any partial disbursement of equity to the government may not go far enough. Texas Will Soon Have a Vacancy in a Crucial Election Role Trump Is Talking With Tech Executives About Acquiring \u2018Pieces\u2019 of Major AI Companies Trump Supports Slashing Intelligence Agency Jobs Federal Judge Throws Out Trump Policy That Kept Some Immigrants in Legal Limbo.",
+      "why_matters": "After the Intel deal was reached, Trump said publicly , \u201cI hope I\u2019m going to have many more cases like it.\u201d In private, Trump has said that American taxpayers should benefit from artificial intelligence, said one of the people familiar with the matter. has made direct investments in at least 10 companies, including a deal with Intel that the White House has touted for providing a \u201cdirect windfall for American taxpayers,\u201d with.",
+      "what_to_watch": "In a paper released in April , OpenAI issued a list of recommendations to ensure \u201ca future where superintelligence benefits everyone,\u201d including giving workers priority to use AI to eliminate dangerous tasks and helping entrepreneurs use AI to cut overhead. An agreement to give the U.S.",
+      "key_points": [
+        "An agreement to give the U.S.",
+        "Like Sanders, Bannon argued that the government should take as much as 50% of the companies\u2019 equity.",
+        "The Vermont independent\u2019s forthcoming bill also would tax at 50% the stock of OpenAI, Athropic, xAI and other AI firms, with the proceeds being placed in a sovereign wealth fund for the public.",
+        "government to acquire 50 percent equity stakes in the AI companies, effectively bringing the companies under federal control.",
+        "officials have held preliminary discussions with major artificial intelligence companies about the potential for the federal government to acquire some shares in their firms, according to three people familiar with the.",
+        "After the Intel deal was reached, Trump said publicly , \u201cI hope I\u2019m going to have many more cases like it.\u201d In private, Trump has said that American taxpayers should benefit from artificial intelligence, said one of the.",
+        "\u201cIt raises questions about how that could intrude into a lot of the traditional principles when it comes to private enterprise and the free market.\u201d Others fear that any partial disbursement of equity to the government.",
+        "Altman first pitched the concept directly to President Donald Trump in a conversation in early 2025, and has discussed it again with senior administration officials in recent weeks as a way to more broadly distribute.",
+        "has made direct investments in at least 10 companies, including a deal with Intel that the White House has touted for providing a \u201cdirect windfall for American taxpayers,\u201d with the value of the company stock surging by.",
+        "Texas Will Soon Have a Vacancy in a Crucial Election Role Trump Is Talking With Tech Executives About Acquiring \u2018Pieces\u2019 of Major AI Companies Trump Supports Slashing Intelligence Agency Jobs Federal Judge Throws Out.",
+        "A person familiar with the matter said Anthropic is not having conversations with the administration about providing equity to the government.",
+        "While planning is ongoing and details are in flux, discussions have centered on having the firms voluntarily cede the shares to the government, the people said."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2363ff4c310e7fa2.jpg",
+      "image_url": "https://static.notus.org/dims4/default/2c57a9a/2147483647/strip/true/crop/5000x2813+0+260/resize/1440x810!/quality/90/?url=https%3A%2F%2Fk2-prod-aji.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fcc%2Fc0%2Fa47d76d744b6beb3074e491462e9%2Fap26154753451949.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/c98r8r7dz5no?at_medium=RSS&at_campaign=rss",
+      "title": "Trump to meet AI leaders over US investment in their companies",
+      "description": "The US president said on Friday he expects to meet the leaders of top AI companies next week.",
+      "excerpt": "The US president said on Friday he expects to meet the leaders of top AI companies next week.",
+      "summary": "Trump compared the prospective investment in AI to the US government last year taking a 10% stake in Intel , a company that makes computer chips. Trump to meet AI leaders to discuss US investment in their companies US President Donald Trump is planning to meet the bosses of some of the country's most notable artificial intelligence (AI) companies to discuss the government taking a financial stake in their future. \"We're talking about it,\"Trump said, referring to conversations with AI leaders \"where the American people can benefit from the success of AI, the American people will like it better\". Part of the US investing directing in AI companies, however, would be to improve Americans' views of the technology, which have grown increasingly negative . Trump to meet AI leaders to discuss US investment in their companies US President Donald Trump is planning to meet the bosses of some of the country's most notable artificial intelligence (AI) companies to discuss the government taking a financial stake in their future.",
+      "what_happened": "Trump compared the prospective investment in AI to the US government last year taking a 10% stake in Intel , a company that makes computer chips. Trump to meet AI leaders to discuss US investment in their companies US President Donald Trump is planning to meet the bosses of some of the country's most notable artificial intelligence (AI) companies to discuss the government taking a financial stake in their future.",
+      "why_matters": "\"We're talking about it,\"Trump said, referring to conversations with AI leaders \"where the American people can benefit from the success of AI, the American people will like it better\". Part of the US investing directing in AI companies, however, would be to improve Americans' views of the technology, which have grown increasingly negative .",
+      "what_to_watch": "Trump to meet AI leaders to discuss US investment in their companies US President Donald Trump is planning to meet the bosses of some of the country's most notable artificial intelligence (AI) companies to discuss the government taking a financial stake in their future.",
+      "key_points": [
+        "Trump to meet AI leaders to discuss US investment in their companies US President Donald Trump is planning to meet the bosses of some of the country's most notable artificial intelligence (AI) companies to discuss the.",
+        "Trump compared the prospective investment in AI to the US government last year taking a 10% stake in Intel , a company that makes computer chips.",
+        "The BBC is in multiple languages",
+        "The US president said on Friday he expects to meet the leaders of top AI companies next week.",
+        "Sanders recently said he intended to propose a sort of sovereign wealth fund in which the US would take a 50% stake in AI companies.",
+        "the latter two of which are expected to go public in the coming weeks .",
+        "Although the president did not name specific companies, the biggest companies in the US working on AI are Google, Microsoft, OpenAI, SpaceX and Anthropic.",
+        "Speaking on Air Force One, Trump said the goal of the US government investing in AI companies was to \"create almost a partnership with the American public\".",
+        "He expects to meet leaders of major AI companies at the White House.",
+        "\"We're talking about it,\"Trump said, referring to conversations with AI leaders \"where the American people can benefit from the success of AI, the American people will like it better\".",
+        "Part of the US investing directing in AI companies, however, would be to improve Americans' views of the technology, which have grown increasingly negative .",
+        "Asked about Sanders' plan, President Trump insisted he had been considering the US investing in AI companies for a year, but did not dismiss the senator's notion."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/afdc8da4d743e29c.webp",
+      "image_url": "https://ichef.bbci.co.uk/news/480/cpsprodpb/3047/live/39bcce30-6049-11f1-8b8c-6d33e1d5abb6.jpg.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2188080/chrome-canary-reportedly-sending-search-straight-to-ai/",
+      "title": "Google experiments with sending Chrome searches straight to AI - Engadget",
+      "description": "Google seems to be testing a new feature that will take you to AI Mode by default when you do a search in Chrome.",
+      "excerpt": "Google seems to be testing a new feature that will take you to AI Mode by default when you do a search in Chrome.",
+      "summary": "At I/O 2026, it launched the new \" Intelligent Search Box ,\" which can take videos, images, files and even Chrome tabs as inputs for search queries. But when the flag is enabled in Canary, you're taken straight to AI Mode, which looks and acts more like a chatbot conversation than your typical Google search results page. While Google says this isn't its intention, the company has been putting more and more AI features into its products recently. Update, June 5, 2026, 3:05PM ET: This article has been updated to note that Google has said this was an error that won't be coming to Chrome. That's about as unambiguous a statement as you can expect on the matter. Update, June 5, 2026, 3:05PM ET: This article has been updated to note that Google has said this was an error that won't be coming to Chrome.",
+      "what_happened": "At I/O 2026, it launched the new \" Intelligent Search Box ,\" which can take videos, images, files and even Chrome tabs as inputs for search queries. But when the flag is enabled in Canary, you're taken straight to AI Mode, which looks and acts more like a chatbot conversation than your typical Google search results page.",
+      "why_matters": "While Google says this isn't its intention, the company has been putting more and more AI features into its products recently. Update, June 5, 2026, 3:05PM ET: This article has been updated to note that Google has said this was an error that won't be coming to Chrome.",
+      "what_to_watch": "That's about as unambiguous a statement as you can expect on the matter. Update, June 5, 2026, 3:05PM ET: This article has been updated to note that Google has said this was an error that won't be coming to Chrome.",
+      "key_points": [
+        "At I/O 2026, it launched the new \" Intelligent Search Box ,\" which can take videos, images, files and even Chrome tabs as inputs for search queries.",
+        "But when the flag is enabled in Canary, you're taken straight to AI Mode, which looks and acts more like a chatbot conversation than your typical Google search results page.",
+        "Update, June 5, 2026, 3:05PM ET: This article has been updated to note that Google has said this was an error that won't be coming to Chrome.",
+        "The publication has confirmed that the test feature works when enabled and has noted that it looks a lot more complete and ready to ship than typical prototypes.",
+        "Google appeared to be mulling the idea of giving you the option to go straight to AI Mode for search queries.",
+        "You would have to tab over to AI Mode if you want to use it.",
+        "Google experiments with sending Chrome searches straight to AI A Google VP confirmed that this feature was released in error and wasn't planned for wide usage.",
+        "Google seems to be testing a new feature that will take you to AI Mode by default when you do a search in Chrome.",
+        "If you do want to see the experimental feature for yourself, open Chrome Canary and go to chrome://flags.",
+        "We're not planning to make AI Mode the default for Chrome searches,\" he wrote.",
+        "That's about as unambiguous a statement as you can expect on the matter.",
+        "After that announcement, DuckDuckGo experienced a surge in installs and usage of its no-AI search website, most likely from people looking for alternatives that won't try to force them to use artificial intelligence."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8d269c0ec9f33a69.jpg",
+      "image_url": "https://img2.zergnet.com/8764685_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2188377/google-shuts-down-the-ai-image-app-pixel-studio/",
+      "title": "Google shuts down the AI image app Pixel Studio - Engadget",
+      "description": "Google's AI app Pixel Studio launched less than two years ago, but is now being shut down.",
+      "excerpt": "Google's AI app Pixel Studio launched less than two years ago, but is now being shut down.",
+      "summary": "Pixel Studio was introduced in 2024, alongside the Pixel 9 smartphone . Google's AI app Pixel Studio launched less than two years ago, but is now being shut down. The AI-powered image generation app launched less than two years ago and received a fairly substantial content update last year . The app now redirects users to Gemini. The AI-powered image generation app launched less than two years ago and received a fairly substantial content update last year .",
+      "what_happened": "Pixel Studio was introduced in 2024, alongside the Pixel 9 smartphone . Google's AI app Pixel Studio launched less than two years ago, but is now being shut down.",
+      "why_matters": "The AI-powered image generation app launched less than two years ago and received a fairly substantial content update last year . The app now redirects users to Gemini.",
+      "what_to_watch": "The AI-powered image generation app launched less than two years ago and received a fairly substantial content update last year .",
+      "key_points": [
+        "Pixel Studio was introduced in 2024, alongside the Pixel 9 smartphone .",
+        "Google's AI app Pixel Studio launched less than two years ago, but is now being shut down.",
+        "The AI-powered image generation app launched less than two years ago and received a fairly substantial content update last year .",
+        "The app now redirects users to Gemini.",
+        "Google shuts down the AI image app Pixel Studio Google has shut down its Pixel Studio app with the latest update, according to a report by 9to5Google .",
+        "Google announced it was winding down Pixel Studio back in February and has been slowly stripping away core functionalities.",
+        "It was an app dedicated to AI image generation, like many others.",
+        "Join me in pouring one out for the shuttered app as it heads to the Google graveyard .",
+        "It also suggests that users try Nano Banana for image generation.",
+        "The software update that bricks Pixel Studio is rolling out now, but it could take a while to reach everyone.",
+        "We've known this was coming for a while.",
+        "Once downloaded, the main interface displays a prominent \"Open Gemini\" button that leads to the Play Store."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.aboutamazon.com/\u2026",
+      "title": "More than a decade later, the team behind N++ is back with a multiplayer sequel",
+      "description": "AI Update Digest 06 Jun 2026 50 updates 8 categories AI launches prioritized Contents AI LAUNCHES & RELEASES 29 FINANCE & FINTECH AI 3 MARKETING & GROWTH AI 3 AI CODING & DEVELOPER TOOLS 2 HARDWARE & INFRASTRUCTURE 1 ROBOTICS & AUTOMATION 4 RESEARCH & SCIENCE 5 OTHER AI NEWS 3 AI LAUNCHES & RELEASES (29 updates) LAUNCH HIGH The Verge AI More than a decade later, the team behind N++ is back with a multiplayer sequel Back in 2015, the two-person studio Metanet released N++, a brutally hard 2D platformer that was a decade in the making, building off of previous releases dating back to the freeware Flash title N. At the time, cofounder Raigan Burns issued some famous last words: \"We hope it's not another 10 years before we come LAUNCH HIGH CNBC Technology...",
+      "excerpt": "AI Update Digest 06 Jun 2026 50 updates 8 categories AI launches prioritized Contents AI LAUNCHES & RELEASES 29 FINANCE & FINTECH AI 3 MARKETING & GROWTH AI 3 AI CODING & DEVELOPER TOOLS 2 HARDWARE & INFRASTRUCTURE 1 ROBOTICS & AUTOMATION 4 RESEARCH & SCIENCE 5 OTHER AI NEWS 3 AI LAUNCHES & RELEASES (29 updates) LAUNCH HIGH The Verge AI More than a decade later, the team behind N++ is back with a multiplayer sequel Back in 2015, the two-person studio Metanet released N++, a brutally hard 2D platformer that was a decade in the making, building off of previous releases dating back to the freeware Flash title N. At the time, cofounder Raigan Burns issued some...",
+      "summary": "AI Update Digest 06 Jun 2026 50 updates 8 categories AI launches prioritized Contents AI LAUNCHES & RELEASES 29 FINANCE & FINTECH AI 3 MARKETING & GROWTH AI 3 AI CODING & DEVELOPER TOOLS 2 HARDWARE & INFRASTRUCTURE 1 ROBOTICS & AUTOMATION 4 RESEARCH & SCIENCE 5 OTHER AI NEWS 3 AI LAUNCHES & RELEASES (29 updates) LAUNCH HIGH The Verge AI More than a decade later, the team behind N++ is back with a multiplayer sequel Back in 2015, the two-person studio Metanet released N++, a brutally hard 2D platformer that was a. At the time, cofounder Raigan Burns issued some famous last words: \"We hope it's not another 10 years before we come LAUNCH HIGH CNBC Technology... At the time, cofounder Raigan Burns issued some famous last words: \"We hope it's not another 10 years before we come LAUNCH HIGH CNBC Technology...",
+      "what_happened": "AI Update Digest 06 Jun 2026 50 updates 8 categories AI launches prioritized Contents AI LAUNCHES & RELEASES 29 FINANCE & FINTECH AI 3 MARKETING & GROWTH AI 3 AI CODING & DEVELOPER TOOLS 2 HARDWARE & INFRASTRUCTURE 1 ROBOTICS & AUTOMATION 4 RESEARCH & SCIENCE 5 OTHER AI NEWS 3 AI LAUNCHES & RELEASES (29 updates) LAUNCH HIGH The Verge AI More than a decade later, the team behind N++ is back with a multiplayer sequel Back in 2015, the two-person studio Metanet released N++, a brutally hard 2D platformer that was a.",
+      "why_matters": "At the time, cofounder Raigan Burns issued some famous last words: \"We hope it's not another 10 years before we come LAUNCH HIGH CNBC Technology...",
+      "what_to_watch": "At the time, cofounder Raigan Burns issued some famous last words: \"We hope it's not another 10 years before we come LAUNCH HIGH CNBC Technology...",
+      "key_points": [
+        "AI Update Digest 06 Jun 2026 50 updates 8 categories AI launches prioritized Contents AI LAUNCHES & RELEASES 29 FINANCE & FINTECH AI 3 MARKETING & GROWTH AI 3 AI CODING & DEVELOPER TOOLS 2 HARDWARE & INFRASTRUCTURE 1.",
+        "At the time, cofounder Raigan Burns issued some famous last words: \"We hope it's not another 10 years before we come LAUNCH HIGH CNBC Technology..."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.notus.org/technology/trump-ai-stake-openai",
+      "title": "ERROR: The request could not be satisfied",
+      "description": "",
+      "excerpt": "The request could not be satisfied.",
+      "summary": "The request could not be satisfied.",
+      "what_happened": "The request could not be satisfied.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The request could not be satisfied."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 6,
+  "has_cta": true,
+  "slides": [
+    "Thousand Token Wood shipping a multi-agent economy on a 3B model.",
+    "Senior U.S Officials Eye Government Shares in AI Giants.",
+    "Trump to meet AI leaders over US investment in their companies.",
+    "Google experiments with sending Chrome searches straight to AI.",
+    "Google shuts down the AI image app Pixel Studio.",
+    "FOLLOW @graitech"
+  ]
+}
