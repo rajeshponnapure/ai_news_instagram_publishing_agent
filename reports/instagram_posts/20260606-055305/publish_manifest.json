@@ -11,8 +11,17 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260606-055305/01_20260605-2133_google-will-pay-spacex-920m-per-month-for-compute-techcrunch/slide_05.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260606-055305/01_20260605-2133_google-will-pay-spacex-920m-per-month-for-compute-techcrunch/slide_06.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260606-055305/01_20260605-2133_google-will-pay-spacex-920m-per-month-for-compute-techcrunch/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260606-055305/01_20260605-2133_google-will-pay-spacex-920m-per-month-for-compute-techcrunch/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260606-055305/01_20260605-2133_google-will-pay-spacex-920m-per-month-for-compute-techcrunch/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260606-055305/01_20260605-2133_google-will-pay-spacex-920m-per-month-for-compute-techcrunch/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260606-055305/01_20260605-2133_google-will-pay-spacex-920m-per-month-for-compute-techcrunch/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260606-055305/01_20260605-2133_google-will-pay-spacex-920m-per-month-for-compute-techcrunch/slide_06.png"
+      ],
+      "status": "published",
+      "creation_id": "18045693089577438",
+      "published_at": "2026-06-06T05:55:46+00:00"
     }
   ]
 }
