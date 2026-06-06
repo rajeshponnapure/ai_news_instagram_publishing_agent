@@ -1,0 +1,27 @@
+Thousand Token Wood: shipping a multi-agent economy on a 3B model A lean base image does not ship it, so all f matters.
+
+Swipe for the full breakdown.
+
+- A Blog post by Build Small Hackathon on Hugging Face Five labs, five minds: building a multi-model finance.
+- The thing that made four heterogeneous models tractable was the same primitive that made one model tractable.
+- That test is the most important one in the suite.
+- A market is interesting when the participants genuinely differ, and four labs' models trained on different data.
+- This is the engineering report.
+
+Is OpenAI moving too fast, or not fast enough? Let's hear it.
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2
+- https://www.engadget.com/2186956/burn-9-makes-an-entire-game-out-of-metal-gear-s-codec-scenes/
+- https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/
+- https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai/
+- https://huggingface.co/blog/build-small-hackathon/persona-atlas
+
+#AIRegulation #TechLaw #AIInfrastructure #AIChips #OpenAI #ChatGPT #GoogleAI #Gemini #MicrosoftAI #Copilot #TechTrends #Innovation #EmergingTech #AINews #DataScience #FutureTech #DigitalTransformation #AIForEveryone #DeepLearning #NeuralNetworks
+
+-
+This is not legal advice. Consult a qualified professional for guidance.
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-

@@ -1,0 +1,288 @@
+{
+  "email_received_at": "2026-06-06T14:13-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Five labs, five minds: building a multi-model finance drama on small models",
+  "subject": "\ud83d\udea8 AI Alert: 29 new launches \u2014 TechCrunch AI, CNET AI, The Verge AI",
+  "source_date": "Sat, 06 Jun 2026 14:13:59 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Microsoft",
+    "Amazon",
+    "NVIDIA",
+    "Intel",
+    "Hugging Face",
+    "TechCrunch AI"
+  ],
+  "models": [],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2",
+  "article_title": "Five labs, five minds: building a multi-model finance drama on small models",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fbbdc6e840172178.png",
+  "article_image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/build-small-hackathon/thousand-token-wood-sim-v2.png",
+  "article_items": [
+    {
+      "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2",
+      "title": "Five labs, five minds: building a multi-model finance drama on small models",
+      "description": "A Blog post by Build Small Hackathon on Hugging Face",
+      "excerpt": "A Blog post by Build Small Hackathon on Hugging Face",
+      "summary": "Thousand Token Wood: shipping a multi-agent economy on a 3B model A lean base image does not ship it, so all four models failed identically with \"could not find nvcc\" until I based them on a CUDA devel image. Standing four distinct models up on one platform surfaced the real lesson: the friction is almost entirely at the serving layer, not the modeling layer. And the biggest change is under the hood: every creature now thinks with a different lab's small model. You can whisper a tip to a creature that is true (a real forecast of the next market mania the deck will draw, your genuine edge) or false (bait). The thing that made four heterogeneous models tractable was the same primitive that made one model tractable in v1: a tolerant JSON parse-and-repair layer that every.",
+      "what_happened": "Thousand Token Wood: shipping a multi-agent economy on a 3B model A lean base image does not ship it, so all four models failed identically with \"could not find nvcc\" until I based them on a CUDA devel image.",
+      "why_matters": "Standing four distinct models up on one platform surfaced the real lesson: the friction is almost entirely at the serving layer, not the modeling layer. And the biggest change is under the hood: every creature now thinks with a different lab's small model.",
+      "what_to_watch": "You can whisper a tip to a creature that is true (a real forecast of the next market mania the deck will draw, your genuine edge) or false (bait). The thing that made four heterogeneous models tractable was the same primitive that made one model tractable in v1: a tolerant JSON parse-and-repair layer that every.",
+      "key_points": [
+        "A Blog post by Build Small Hackathon on Hugging Face Five labs, five minds: building a multi-model finance drama on small models The first version of Thousand Token Wood was a weather-god sandbox: five woodland.",
+        "The thing that made four heterogeneous models tractable was the same primitive that made one model tractable in v1: a tolerant JSON parse-and-repair layer that every model's output flows through.",
+        "That test is the most important one in the suite.",
+        "A market is interesting when the participants genuinely differ, and four labs' models trained on different data with different post-training are about as different as small models get.",
+        "This is the engineering report.",
+        "Heterogeneity is the product, not a constraint The obvious way to run a council of agents is one model, many prompts.",
+        "Secret information given to an agent is a firewall problem, and the firewall belongs in the data flow, proven by a test, not in a prompt instruction.",
+        "The whole council is open, and so are the traces.",
+        "Standing four distinct models up on one platform surfaced the real lesson: the friction is almost entirely at the serving layer, not the modeling layer.",
+        "Takeaways for building with small models A small model is a reliable format generator and an unreliable reasoner; you close the gap with structure, prompting, and a small fine-tune, not with scale.",
+        "And the biggest change is under the hood: every creature now thinks with a different lab's small model.",
+        "The owl hoards differently than the fox speculates."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fbbdc6e840172178.png",
+      "image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/build-small-hackathon/thousand-token-wood-sim-v2.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2186956/burn-9-makes-an-entire-game-out-of-metal-gear-s-codec-scenes/",
+      "title": "Burn-9 makes an entire game out of Metal Gear's Codec scenes - Engadget",
+      "description": "Plus, check out the new trailer for the cosmic horror game Penguin Colony.",
+      "excerpt": "Plus, check out the new trailer for the cosmic horror game Penguin Colony.",
+      "summary": "Announced today during the Story-Rich Showcase, Burn-9 is described as a \"reverse Metal Gear.\" As a radio operator, it's your job to guide a secret agent, who goes by the handle Dodo, as they try to salvage a mission that has gone horribly wrong. Separately, Fellow Traveller shared a new trailer for Penguin Colony , the next game from Origame Digital, the studio behind 2020's excellent Umurangi Generation . Separately, Fellow Traveller shared a new trailer for Penguin Colony , the next game from Origame Digital, the studio behind 2020's excellent Umurangi Generation . Penguin Colony is an adaptation of the H.P. Separately, Fellow Traveller shared a new trailer for Penguin Colony , the next game from Origame Digital, the studio behind 2020's excellent Umurangi Generation .",
+      "what_happened": "Announced today during the Story-Rich Showcase, Burn-9 is described as a \"reverse Metal Gear.\" As a radio operator, it's your job to guide a secret agent, who goes by the handle Dodo, as they try to salvage a mission that has gone horribly wrong. Separately, Fellow Traveller shared a new trailer for Penguin Colony , the next game from Origame Digital, the studio behind 2020's excellent Umurangi Generation .",
+      "why_matters": "Separately, Fellow Traveller shared a new trailer for Penguin Colony , the next game from Origame Digital, the studio behind 2020's excellent Umurangi Generation . Penguin Colony is an adaptation of the H.P.",
+      "what_to_watch": "Separately, Fellow Traveller shared a new trailer for Penguin Colony , the next game from Origame Digital, the studio behind 2020's excellent Umurangi Generation .",
+      "key_points": [
+        "Announced today during the Story-Rich Showcase, Burn-9 is described as a \"reverse Metal Gear.\" As a radio operator, it's your job to guide a secret agent, who goes by the handle Dodo, as they try to salvage a mission.",
+        "Separately, Fellow Traveller shared a new trailer for Penguin Colony , the next game from Origame Digital, the studio behind 2020's excellent Umurangi Generation .",
+        "Penguin Colony is an adaptation of the H.P.",
+        "Burn-9 makes an entire game out of Metal Gear's Codec scenes Plus, check out the new trailer for the cosmic horror game Penguin Colony.",
+        "Your interactions with the agent and others play out over a series of radio conversations.",
+        "As a player, you've most often seen those conversations play out from the perspective of Big Boss or one of his many clones, but a new game from indie studio 14 Hours Productions asks what if you were instead the person.",
+        "A demo of the game will be available as part of Steam Next Fest, which runs from June 15 to 22.",
+        "Lovecraft novellas At the Mountains of Madness and The Shadow Out of Time .",
+        "Plus, check out the new trailer for the cosmic horror game Penguin Colony.",
+        "\"Caught between the military's command and your field agent, the orders you're given may conflict with your own morals and interests,\" says publisher Fellow Traveller.",
+        "Each time, you'll have the chance to respond to situations in a few different ways, deciding how best to guide your agent and the amount of information you want to reveal to them and your superiors.",
+        "The description continues: \"As the pressure mounts, impossible choices will fall on you."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/",
+      "title": "Google will pay SpaceX $920M per month for compute | TechCrunch",
+      "description": "In a statement, a Google representative described the deal as a result of unexpected demand for its recently launched AI products.",
+      "excerpt": "In a statement, a Google representative described the deal as a result of unexpected demand for its recently launched AI products.",
+      "summary": "In a statement, a Google representative described the deal as a result of unexpected demand for its recently launched AI products.",
+      "what_happened": "In a statement, a Google representative described the deal as a result of unexpected demand for its recently launched AI products.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "In a statement, a Google representative described the deal as a result of unexpected demand for its recently launched AI products."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2bc8d346c84bf394.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2259661359.jpg?w=1024",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai/",
+      "title": "The Trump administration might take an equity stake in OpenAI | TechCrunch",
+      "description": "President Donald Trump said he's discussing deals \"where the American people can benefit from the success of AI.\"",
+      "excerpt": "President Donald Trump said he's discussing deals \"where the American people can benefit from the success of AI.\"",
+      "summary": "President Donald Trump said he's discussing deals \"where the American people can benefit from the success of AI.\"",
+      "what_happened": "President Donald Trump said he's discussing deals \"where the American people can benefit from the success of AI.\"",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "President Donald Trump said he's discussing deals \"where the American people can benefit from the success of AI.\""
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fbaa45f10e4fd33c.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/donald-trump-cellphone.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://huggingface.co/blog/build-small-hackathon/persona-atlas",
+      "title": "404 \u2013 Hugging Face",
+      "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "excerpt": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "summary": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "what_happened": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/eebda10fd44407c2.png",
+      "image_url": "https://huggingface.co/front/thumbnails/v2-2.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/06/sriram-krishnan-is-leaving-his-role-as-white-house-ai-advisor/",
+      "title": "Sriram Krishnan is leaving his role as White House AI advisor | TechCrunch",
+      "description": "Krishnan is reportedly starting a new institution to continue shaping Trump's AI policy.",
+      "excerpt": "Krishnan is reportedly starting a new institution to continue shaping Trump's AI policy.",
+      "summary": "Krishnan is reportedly starting a new institution to continue shaping Trump's AI policy.",
+      "what_happened": "Krishnan is reportedly starting a new institution to continue shaping Trump's AI policy.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Krishnan is reportedly starting a new institution to continue shaping Trump's AI policy."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/129d6c9ae8bcd1a3.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2022/06/Screen-Shot-2021-02-03-at-1.18.03-PM-1.webp?resize=1200,833",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2188542/kindle-alternatives-subscription-costs-compared/",
+      "title": "The best Kindle alternatives for those looking to ditch Amazon - Engadget",
+      "description": "Whether you hate subscriptions like Kindle Unlimited or simply want to get away from Amazon for whatever reason, you'll find plenty of solid options available.",
+      "excerpt": "Whether you hate subscriptions like Kindle Unlimited or simply want to get away from Amazon for whatever reason, you'll find plenty of solid options available.",
+      "summary": "Whether you hate subscriptions like Kindle Unlimited or simply want to get away from Amazon for whatever reason, you'll find plenty of solid options available.",
+      "what_happened": "Whether you hate subscriptions like Kindle Unlimited or simply want to get away from Amazon for whatever reason, you'll find plenty of solid options available.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Whether you hate subscriptions like Kindle Unlimited or simply want to get away from Amazon for whatever reason, you'll find plenty of solid options available."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/11d2bafbeb22bfb9.jpg",
+      "image_url": "https://www.engadget.com/img/gallery/the-best-kindle-alternatives-for-those-looking-to-ditch-amazon/ipad-2025-with-a16-1780687891.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.nytimes.com/2026/06/05/technology/reid-hoffman-leaving-microsoft-board.html",
+      "title": "Reid Hoffman to Leave Microsoft\u2019s Board of Directors",
+      "description": "The LinkedIn co-founder was a key bridge to Microsoft\u2019s relationship with OpenAI, but he also came with some baggage.",
+      "excerpt": "The LinkedIn co-founder was a key bridge to Microsoft\u2019s relationship with OpenAI, but he also came with some baggage.",
+      "summary": "The LinkedIn co-founder was a key bridge to Microsoft\u2019s relationship with OpenAI, but he also came with some baggage.",
+      "what_happened": "The LinkedIn co-founder was a key bridge to Microsoft\u2019s relationship with OpenAI, but he also came with some baggage.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The LinkedIn co-founder was a key bridge to Microsoft\u2019s relationship with OpenAI, but he also came with some baggage."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1e202ccafa473f97.jpg",
+      "image_url": "https://static01.nyt.com/images/2026/06/05/multimedia/05biz-microsoft-hoffman-mzhg/05biz-microsoft-hoffman-mzhg-facebookJumbo.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 5,
+  "has_cta": true,
+  "slides": [
+    "Five labs five minds building a multi-model finance drama on small models.",
+    "Thousand Token Wood: shipping a multi-agent economy on a 3B model.",
+    "Sriram Krishnan is leaving his role as White House AI advisor.",
+    "Reid Hoffman to Leave Microsoft's Board of Directors.",
+    "FOLLOW @graitech"
+  ]
+}
