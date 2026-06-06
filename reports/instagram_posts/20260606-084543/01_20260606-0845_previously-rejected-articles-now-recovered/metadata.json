@@ -1,0 +1,53 @@
+{
+  "email_received_at": "2026-06-06T08:45+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Sat, 06 Jun 2026 08:45:43 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.thehindubusinessline.com/info-tech/chatgpt-app-crosses-1-billion-monthly-active-users-in-3-years-of-launch-india-20-of-this-user-base/article71061550.ece",
+      "title": "BusinessLine |",
+      "description": "[HIGH] Microsoft\u2019s Quantum Breakthrough Brings Bitcoin Security Threat Closer ZyCrypto | https://zycrypto.com/microsofts-quantum-breakthrough-brings-bitcoin-security-threat-closer/ [HIGH] ChatGPT app crosses 1 billion active users in 3 years of launch; India 20% of this user base BusinessLine |",
+      "text": "[HIGH] Microsoft\u2019s Quantum Breakthrough Brings Bitcoin Security Threat Closer ZyCrypto | https://zycrypto.com/microsofts-quantum-breakthrough-brings-bitcoin-security-threat-closer/ [HIGH] ChatGPT app crosses 1 billion active users in 3 years of launch; India 20% of this user base BusinessLine |",
+      "excerpt": "[HIGH] Microsoft\u2019s Quantum Breakthrough Brings Bitcoin Security Threat Closer ZyCrypto | https://zycrypto.com/microsofts-quantum-breakthrough-brings-bitcoin-security-threat-closer/ [HIGH] ChatGPT app crosses 1 billion active users in 3 years of launch; India 20% of this user base BusinessLine |",
+      "image_url": "https://bl-i.thgim.com/public/incoming/5rlmsd/article71061702.ece/alternates/LANDSCAPE_1200/2026-05-12T180600Z_1682146124_RC2MKHA8B92T_RTRMADP_3_OPENAI-LAWSUIT-OVERDOSE.JPG",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.thehindubusinessline.com/info-tech/chatgpt-app-crosses-1-billion-monthly-active-users-in-3-years-of-launch-india-20-of-this-user-base/article71061550.ece",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.thehindubusinessline.com/news/world/amazon-launches-next-generation-proteus-robot-as-part-of-10-billion-europe-investment/article71063737.ece",
+      "title": "AI Business |",
+      "description": "[HIGH] Amazon Unveils Next-Generation Robot in $11.6B European Push AI Business | https://aibusiness.com/robotics/amazon-unveils-next-generation-robot-11-6b-european-push [HIGH] Amazon launches next-generation Proteus robot as part of \u20ac10 billion Europe investment BusinessLine |",
+      "text": "[HIGH] Amazon Unveils Next-Generation Robot in $11.6B European Push AI Business | https://aibusiness.com/robotics/amazon-unveils-next-generation-robot-11-6b-european-push [HIGH] Amazon launches next-generation Proteus robot as part of \u20ac10 billion Europe investment BusinessLine |",
+      "excerpt": "[HIGH] Amazon Unveils Next-Generation Robot in $11.6B European Push AI Business | https://aibusiness.com/robotics/amazon-unveils-next-generation-robot-11-6b-european-push [HIGH] Amazon launches next-generation Proteus robot as part of \u20ac10 billion Europe investment BusinessLine |",
+      "image_url": "https://bl-i.thgim.com/public/incoming/nfhz4x/article71063770.ece/alternates/LANDSCAPE_1200/2026-06-04T194731Z_190224612_RC2ZMLAW19U9_RTRMADP_3_AMAZON-COM-INNOVATION.JPG",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.thehindubusinessline.com/news/world/amazon-launches-next-generation-proteus-robot-as-part-of-10-billion-europe-investment/article71063737.ece",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 3,
+  "has_cta": true,
+  "slides": [
+    "Microsoft's Quantum Breakthrough Brings Bitcoin Security Threat Closer ZyCrypto users in. India.",
+    "Amazon Unveils Next-Generation Robot in $11.6B European Push AI Business robot.",
+    "FOLLOW @graitech"
+  ]
+}
