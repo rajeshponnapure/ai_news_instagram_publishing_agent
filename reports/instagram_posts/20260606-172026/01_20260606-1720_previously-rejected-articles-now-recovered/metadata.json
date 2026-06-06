@@ -1,0 +1,52 @@
+{
+  "email_received_at": "2026-06-06T17:20+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Sat, 06 Jun 2026 17:20:26 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.engadget.com/2188862/google-spacex-xai-data-center-deal-gemini/",
+      "title": "Company : Engadget",
+      "description": "[HIGH] Google will pay SpaceX $920 million a month to use xAI's data centers Company : Engadget Summary : Google has just signed a $30 billion AI computing power deal with SpaceX. Link :",
+      "text": "[HIGH] Google will pay SpaceX $920 million a month to use xAI's data centers Company : Engadget Summary : Google has just signed a $30 billion AI computing power deal with SpaceX. Link :",
+      "excerpt": "[HIGH] Google will pay SpaceX $920 million a month to use xAI's data centers Company : Engadget Summary : Google has just signed a $30 billion AI computing power deal with SpaceX. Link :",
+      "image_url": "https://www.engadget.com/img/gallery/google-will-pay-spacex-920-million-a-month-to-use-xais-data-centers/l-intro-1780739713.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.engadget.com/2188862/google-spacex-xai-data-center-deal-gemini/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/jun/05/labour-will-make-ai-work-for-workers-liz-kendall",
+      "title": "Company : The Guardian Tech",
+      "description": "[MEDIUM] Labour will make AI \u2018work for the workers\u2019, says Liz Kendall Company : The Guardian Tech Summary : Technology secretary promises to support people whose jobs are swept away by automation Liz Kendall has insisted Labour will make artificial intelligence \u201cwork for workers\u201d, and not abandon people who Link :",
+      "text": "[MEDIUM] Labour will make AI \u2018work for the workers\u2019, says Liz Kendall Company : The Guardian Tech Summary : Technology secretary promises to support people whose jobs are swept away by automation Liz Kendall has insisted Labour will make artificial intelligence \u201cwork for workers\u201d, and not abandon people who Link :",
+      "excerpt": "[MEDIUM] Labour will make AI \u2018work for the workers\u2019, says Liz Kendall Company : The Guardian Tech Summary : Technology secretary promises to support people whose jobs are swept away by automation Liz Kendall has insisted Labour will make artificial intelligence \u201cwork for workers\u201d, and not abandon people who Link :",
+      "image_url": "https://i.guim.co.uk/img/media/6e1c2389d660df5b46402b1141bfc14cae25429a/683_0_6827_5464/master/6827.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=afe227876d5f572b386b8bc066688e6f",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theguardian.com/technology/2026/jun/05/labour-will-make-ai-work-for-workers-liz-kendall",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "Const firstColLink = document.querySelector( '#newsLinks > li:nth-of-type(2) > a', ); /** *.",
+    "FOLLOW @graitech"
+  ]
+}
