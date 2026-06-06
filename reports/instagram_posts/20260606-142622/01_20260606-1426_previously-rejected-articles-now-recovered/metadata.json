@@ -1,0 +1,68 @@
+{
+  "email_received_at": "2026-06-06T14:26+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Sat, 06 Jun 2026 14:26:22 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.theverge.com/tech/944245/apple-wwdc-2026-ai-siri-gemini",
+      "title": "Company : The Verge AI",
+      "description": "[HIGH] Here comes new Siri again Company : The Verge AI Summary : Apple has been on its back foot, AI-wise, for the past few years. But in a strange way, playing from behind might not be such a bad move. At WWDC on Monday, Apple appears to be getting ready to reintr Link :",
+      "text": "[HIGH] Here comes new Siri again Company : The Verge AI Summary : Apple has been on its back foot, AI-wise, for the past few years. But in a strange way, playing from behind might not be such a bad move. At WWDC on Monday, Apple appears to be getting ready to reintr Link :",
+      "excerpt": "[HIGH] Here comes new Siri again Company : The Verge AI Summary : Apple has been on its back foot, AI-wise, for the past few years. But in a strange way, playing from behind might not be such a bad move. At WWDC on Monday, Apple appears to be getting ready to reintr Link :",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/wwdc_2024.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.597538331207%2C100%2C78.804923337586&amp;w=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theverge.com/tech/944245/apple-wwdc-2026-ai-siri-gemini",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/jun/05/anthropic-urges-temporary-pause-on-ai-development-to-discuss-risks",
+      "title": "Company : The Guardian Tech",
+      "description": "[HIGH] Anthropic says the world should have option to \u2018pause\u2019 on AI Company : The Guardian Tech Summary : US firm says it will convene policymakers for discussion of dangers, in post detailing progress of its Claude model Anthropic has floated the idea of a worldwide \u201ctemporary pause\u201d on AI development \u2013 Link :",
+      "text": "[HIGH] Anthropic says the world should have option to \u2018pause\u2019 on AI Company : The Guardian Tech Summary : US firm says it will convene policymakers for discussion of dangers, in post detailing progress of its Claude model Anthropic has floated the idea of a worldwide \u201ctemporary pause\u201d on AI development \u2013 Link :",
+      "excerpt": "[HIGH] Anthropic says the world should have option to \u2018pause\u2019 on AI Company : The Guardian Tech Summary : US firm says it will convene policymakers for discussion of dangers, in post detailing progress of its Claude model Anthropic has floated the idea of a worldwide \u201ctemporary pause\u201d on AI development \u2013 Link :",
+      "image_url": "https://i.guim.co.uk/img/media/6697acbc2952a9bf0452523611a59d13a40b7ef2/527_0_4615_3693/master/4615.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=1873b3354dc4de77277ca7d43ea6f2e1",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theguardian.com/technology/2026/jun/05/anthropic-urges-temporary-pause-on-ai-development-to-discuss-risks",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.engadget.com/2188542/kindle-alternatives-subscription-costs-compared/",
+      "title": "Company : Engadget",
+      "description": "[MEDIUM] The best Kindle alternatives for those looking to ditch Amazon Company : Engadget Summary : Whether you hate subscriptions like Kindle Unlimited or simply want to get away from Amazon for whatever reason, you'll find plenty of solid options available. Link :",
+      "text": "[MEDIUM] The best Kindle alternatives for those looking to ditch Amazon Company : Engadget Summary : Whether you hate subscriptions like Kindle Unlimited or simply want to get away from Amazon for whatever reason, you'll find plenty of solid options available. Link :",
+      "excerpt": "[MEDIUM] The best Kindle alternatives for those looking to ditch Amazon Company : Engadget Summary : Whether you hate subscriptions like Kindle Unlimited or simply want to get away from Amazon for whatever reason, you'll find plenty of solid options available. Link :",
+      "image_url": "https://www.engadget.com/img/gallery/the-best-kindle-alternatives-for-those-looking-to-ditch-amazon/l-intro-1780687887.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.engadget.com/2188542/kindle-alternatives-subscription-costs-compared/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 4,
+  "has_cta": true,
+  "slides": [
+    "Share Gift Our first glimpse of the new AI Siri came all.",
+    "Const firstColLink = document.querySelector( '#newsLinks > li:nth-of-type(2) > a', ); /** *.",
+    "Some changes to Kindle Unlimited have also irked a lot of people.",
+    "FOLLOW @graitech"
+  ]
+}
