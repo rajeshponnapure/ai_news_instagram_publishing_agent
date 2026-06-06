@@ -1,0 +1,81 @@
+{
+  "email_received_at": "2026-06-06T18:54+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Sat, 06 Jun 2026 18:54:44 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/compare/v0.106.0...v0.107.0",
+      "title": "Company : Anthropic",
+      "description": "[MEDIUM] anthropics/anthropic-sdk-python: v0.107.0 Company : Anthropic Summary : ## 0.107.0 (2026-06-06) Full Changelog: [v0.106.0...v0.107.0]()",
+      "text": "[MEDIUM] anthropics/anthropic-sdk-python: v0.107.0 Company : Anthropic Summary : ## 0.107.0 (2026-06-06) Full Changelog: [v0.106.0...v0.107.0]()",
+      "excerpt": "[MEDIUM] anthropics/anthropic-sdk-python: v0.107.0 Company : Anthropic Summary : ## 0.107.0 (2026-06-06) Full Changelog: [v0.106.0...v0.107.0]()",
+      "image_url": "https://opengraph.githubassets.com/6d7d10e8417069fb7b8c7ef020988590c055ff1022ee6885cff77ceb4c1e7309/anthropics/anthropic-sdk-python",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://github.com/anthropics/anthropic-sdk-python/compare/v0.106.0...v0.107.0",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.cnet.com/tech/mobile/how-to-collect-on-apples-250-million-ai-settlement/",
+      "title": "Company : CNET AI",
+      "description": "[MEDIUM] You Could Be Eligible to Claim Part of Apple's $250 Million AI iPhone Settlement. Here's How Company : CNET AI Summary : Apple must pay iPhone owners to settle a lawsuit over delayed and missing AI features. Link :",
+      "text": "[MEDIUM] You Could Be Eligible to Claim Part of Apple's $250 Million AI iPhone Settlement. Here's How Company : CNET AI Summary : Apple must pay iPhone owners to settle a lawsuit over delayed and missing AI features. Link :",
+      "excerpt": "[MEDIUM] You Could Be Eligible to Claim Part of Apple's $250 Million AI iPhone Settlement. Here's How Company : CNET AI Summary : Apple must pay iPhone owners to settle a lawsuit over delayed and missing AI features. Link :",
+      "image_url": "https://www.cnet.com/a/img/resize/73036cfa5b7806b2c2d48e3214f02c72a30f8d6c/hub/2024/09/30/65c5ca63-9fce-4f5c-8f77-230edb3262c5/apple-intelligence.png?auto=webp&amp;fit=crop&amp;height=675&amp;width=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.cnet.com/tech/mobile/how-to-collect-on-apples-250-million-ai-settlement/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://spectrum.ieee.org/nvidia-rtx-spark-windows-pc",
+      "title": "Company : IEEE Spectrum",
+      "description": "[MEDIUM] Nvidia\u2019s AI Hardware Comes to Windows in RTX Spark PCs Company : IEEE Spectrum Summary : It could be a big change for Windows PCs, but there\u2019s a lot to prove Link :",
+      "text": "[MEDIUM] Nvidia\u2019s AI Hardware Comes to Windows in RTX Spark PCs Company : IEEE Spectrum Summary : It could be a big change for Windows PCs, but there\u2019s a lot to prove Link :",
+      "excerpt": "[MEDIUM] Nvidia\u2019s AI Hardware Comes to Windows in RTX Spark PCs Company : IEEE Spectrum Summary : It could be a big change for Windows PCs, but there\u2019s a lot to prove Link :",
+      "image_url": "https://spectrum.ieee.org/media-library/image.jpg?id=66865925&width=1200&height=600&coordinates=0%2C185%2C0%2C65",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://spectrum.ieee.org/nvidia-rtx-spark-windows-pc",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/commit/72923f986f808597f86482a7eae4fba9a791e6ae",
+      "title": "06 Jun 2026, 11:07 PM IST",
+      "description": "\u26a1 BREAKING AI UPDATE \ud83d\udea8 43 New AI Events Detected 06 Jun 2026, 11:07 PM IST Major AI events just happened. Here's what you need to know: \ud83d\ude80 NEW LAUNCH HIGH \ud83d\ude80 AI LAUNCHES & RELEASES Here comes new Siri again \ud83d\udccc The Verge AI Apple has been on its back foot, AI-wise, for the past few years. But in a strange way, playing from behind might not be such a bad move. At WWDC on Monday, Apple appears to be getting ready to reintroduce us to the new Siri. Again. As a reminder, we met the new Siri in [\u2026] https://www.theverge.com/tech/944245/apple-wwdc-2026-ai-siri-gemini \u2192 Read full story HIGH \ud83d\udce3 MARKETING & GROWTH AI Google will pay SpaceX $920 million a month to use xAI's data centers \ud83d\udccc Engadget Google has just signed a $30 billion AI computing power deal with SpaceX. https://www.engadget.com/2188862/google-spacex-xai-data-center-deal-gemini/ \u2192 Read full story \ud83d\ude80 NEW LAUNCH HIGH \ud83d\ude80 AI LAUNCHES &...",
+      "text": "\u26a1 BREAKING AI UPDATE \ud83d\udea8 43 New AI Events Detected 06 Jun 2026, 11:07 PM IST Major AI events just happened. Here's what you need to know: \ud83d\ude80 NEW LAUNCH HIGH \ud83d\ude80 AI LAUNCHES & RELEASES Here comes new Siri again \ud83d\udccc The Verge AI Apple has been on its back foot, AI-wise, for the past few years. But in a strange way, playing from behind might not be such a bad move. At WWDC on Monday, Apple appears to be getting ready to reintroduce us to the new Siri. Again. As a reminder, we met the new Siri in [\u2026] https://www.theverge.com/tech/944245/apple-wwdc-2026-ai-siri-gemini \u2192 Read full story HIGH \ud83d\udce3 MARKETING & GROWTH AI Google will pay SpaceX $920 million a month to use xAI's data centers \ud83d\udccc Engadget Google has just signed a $30 billion AI computing power deal with SpaceX. https://www.engadget.com/2188862/google-spacex-xai-data-center-deal-gemini/ \u2192 Read full story \ud83d\ude80 NEW LAUNCH HIGH \ud83d\ude80 AI LAUNCHES &...",
+      "excerpt": "\u26a1 BREAKING AI UPDATE \ud83d\udea8 43 New AI Events Detected 06 Jun 2026, 11:07 PM IST Major AI events just happened. Here's what you need to know: \ud83d\ude80 NEW LAUNCH HIGH \ud83d\ude80 AI LAUNCHES & RELEASES Here comes new Siri again \ud83d\udccc The Verge AI Apple has been on its back foot, AI-wise, for the past few years. But in a strange way, playing from behind might not be such a bad move. At WWDC on Monday, Apple appears to be getting ready to reintroduce us to the new Siri. Again. As a reminder, we met the new Siri in [\u2026] https://www.theverge.com/tech/944245/apple-wwdc-2026-ai-siri-gemini \u2192 Read full story HIGH \ud83d\udce3 MARKETING & GROWTH AI Google will pay SpaceX $920 million a month to use xAI's data centers \ud83d\udccc Engadget...",
+      "image_url": "https://opengraph.githubassets.com/a15320a0b3464f21f813b27c442295bc41ad877fd87bedf92ec9fb3dd887a432/anthropics/anthropic-sdk-python/commit/72923f986f808597f86482a7eae4fba9a791e6ae",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://github.com/anthropics/anthropic-sdk-python/commit/72923f986f808597f86482a7eae4fba9a791e6ae",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 3,
+  "has_cta": true,
+  "slides": [
+    "6k Code Issues 120 Pull requests 176 Discussions Actions Security and quality.",
+    "') no-repeat center!important}.feature_post_full.LightGreen.widget__shares i.fa-twitter:before,.feature_post_full.Yellow.widget__shares i.fa-twitter:before{background:url('data:image/svg+xml, ') no-repeat center!important}.feature_post_full.DarkBlue2.like-btn.unlike.heart,.feature_post_full.DarkBlue2.like-btn.like.heart:active,.feature_post_full.DarkBlue1.like-btn.unlike.heart,.feature_post_full.DarkBlue1.like-btn.like.heart:active,.feature_post_full.LightBlue.like-btn.unlike.heart,.feature_post_full.LightBlue.like-btn.like.heart:active,.feature_post_full.Blue.like-btn.unlike.heart,.feature_post_full.Blue.like-btn.like.heart:active,.feature_post_full.Pink.like-btn.unlike.heart,.feature_post_full.Pink.like-btn.like.heart:active,.feature_post_full.Red.like-btn.unlike.heart,.feature_post_full.Red.like-btn.like.heart:active,.feature_post_full.Orange.like-btn.unlike.heart,.feature_post_full.Orange.like-btn.like.heart:active,.feature_post_full.Purple.like-btn.unlike.heart,.feature_post_full.Purple.like-btn.like.heart:active,.feature_post_full.Purple2.like-btn.unlike.heart,.feature_post_full.Purple2.like-btn.like.heart:active,.feature_post_full.Green.like-btn.unlike.heart,.feature_post_full.Green.like-btn.like.heart:active,.feature_post_full.DarkGray.like-btn.unlike.heart,.feature_post_full.DarkGray.like-btn.like.heart:active{background-image:url(\"data:image/svg+xml,%3Csvg%20width='12px'%20height='14px'%20viewBox='0%200%2012%2014'%20xmlns='. Nvidia's AI Hardware Comes.",
+    "FOLLOW @graitech"
+  ]
+}
