@@ -1,0 +1,291 @@
+{
+  "email_received_at": "2026-06-06T04:59-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "EA's Star Wars Zero Company drops August 27. Engadget",
+  "subject": "\ud83d\udea8 AI Alert: 65 new launches \u2014 Engadget, NYT AI",
+  "source_date": "Sat, 06 Jun 2026 04:59:16 -0700",
+  "companies": [
+    "Google",
+    "Anthropic",
+    "NVIDIA",
+    "xAI",
+    "Hugging Face",
+    "Google Cloud",
+    "Pixel Studio"
+  ],
+  "models": [
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.engadget.com/2188845/star-wars-zero-company-release-date-august-27/",
+  "article_title": "EA's Star Wars Zero Company drops August 27 - Engadget",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+  "article_image_url": "https://img5.zergnet.com/8764022_300.jpg",
+  "article_items": [
+    {
+      "url": "https://www.engadget.com/2188845/star-wars-zero-company-release-date-august-27/",
+      "title": "EA's Star Wars Zero Company drops August 27 - Engadget",
+      "description": "Star Wars Zero Company's developers released a gameplay trailer, which features a short appearance by Anakin Skywalker.",
+      "excerpt": "Star Wars Zero Company's developers released a gameplay trailer, which features a short appearance by Anakin Skywalker.",
+      "summary": "Star Wars Zero Company was announced in 2022 as one of the games being co-developed by Respawn Entertainment, the studio behind Jedi: Fallen Order and Jedi: Survivor . Star Wars Zero Company's developers released a gameplay trailer, which features a short appearance by Anakin Skywalker. The developers behind Star Wars Zero Company has revealed the official gameplay trailer for the title at Summer Game Fest 2026 . You can now preorder Star Wars Zero Company for $70 in Standard Edition for the PC, the PS5 and Xbox Series X|S. They have also revealed that the game will be available on the PC, PlayStation 5 and Xbox Series X|S starting on August 27.",
+      "what_happened": "Star Wars Zero Company was announced in 2022 as one of the games being co-developed by Respawn Entertainment, the studio behind Jedi: Fallen Order and Jedi: Survivor . Star Wars Zero Company's developers released a gameplay trailer, which features a short appearance by Anakin Skywalker.",
+      "why_matters": "The developers behind Star Wars Zero Company has revealed the official gameplay trailer for the title at Summer Game Fest 2026 . You can now preorder Star Wars Zero Company for $70 in Standard Edition for the PC, the PS5 and Xbox Series X|S.",
+      "what_to_watch": "They have also revealed that the game will be available on the PC, PlayStation 5 and Xbox Series X|S starting on August 27.",
+      "key_points": [
+        "Star Wars Zero Company was announced in 2022 as one of the games being co-developed by Respawn Entertainment, the studio behind Jedi: Fallen Order and Jedi: Survivor .",
+        "The developers behind Star Wars Zero Company has revealed the official gameplay trailer for the title at Summer Game Fest 2026 .",
+        "They have also revealed that the game will be available on the PC, PlayStation 5 and Xbox Series X|S starting on August 27.",
+        "You can now preorder Star Wars Zero Company for $70 in Standard Edition for the PC, the PS5 and Xbox Series X|S.",
+        "The studio includes former Firaxis Games employees and was also founded by Greg Foertsch, the senior art director on XCOM: Enemy Unknown and XCOM 2 .",
+        "Star Wars Zero Company's developers released a gameplay trailer, which features a short appearance by Anakin Skywalker.",
+        "EA's Star Wars Zero Company drops August 27 Its new gameplay trailer gives us a glimpse of Anakin Skywalker.",
+        "\"We've worked hand-in-hand with Lucasfilm Games to create an authentic Star Wars story packed with unique new characters, robust character customization, a new ship, Separatist Droids, and much more, all rooted in the.",
+        "Respawn developed the game with a new studio called Bit Reactor, with EA as the publisher.",
+        "As Hawks, you'll have to recruit allies across the galaxy and across species to put a team together and hunt Kundri Fathom, the leader of a Dark Side cult that poses a threat to the entire galaxy.",
+        "The \"Den\" will be your base of operations, from which you'll form teams and dispatch groups of your friends, called Operators, to different locations in the map.",
+        "And because of the game's setting, you'll encounter Anakin Skywalker, a Jedi General at that point in time, who's also on an important mission."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/",
+      "title": "Google will pay SpaceX $920M per month for compute | TechCrunch",
+      "description": "In a statement, a Google representative described the deal as a result of unexpected demand for its recently launched AI products.",
+      "excerpt": "In a statement, a Google representative described the deal as a result of unexpected demand for its recently launched AI products.",
+      "summary": "In a statement, a Google representative described the deal as a result of unexpected demand for its recently launched AI products.",
+      "what_happened": "In a statement, a Google representative described the deal as a result of unexpected demand for its recently launched AI products.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "In a statement, a Google representative described the deal as a result of unexpected demand for its recently launched AI products."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2bc8d346c84bf394.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2259661359.jpg?w=1024",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim",
+      "title": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
+      "description": "A Blog post by Build Small Hackathon on Hugging Face",
+      "excerpt": "A Blog post by Build Small Hackathon on Hugging Face",
+      "summary": "A Blog post by Build Small Hackathon on Hugging Face",
+      "what_happened": "A Blog post by Build Small Hackathon on Hugging Face",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "A Blog post by Build Small Hackathon on Hugging Face"
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0deafadab1a0407b.png",
+      "image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/build-small-hackathon/thousand-token-wood-sim.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2188862/google-spacex-xai-data-center-deal-gemini/",
+      "title": "Google will pay SpaceX $920 million a month to use xAI's data centers - Engadget",
+      "description": "Google has just signed a $30 billion AI computing power deal with SpaceX.",
+      "excerpt": "Google has just signed a $30 billion AI computing power deal with SpaceX.",
+      "summary": "Google will pay SpaceX $920 million a month to use xAI's data centers The company needs extra computing power for Gemini Enterprise. Google has just signed a $30 billion AI computing power deal with SpaceX. The Musk-owned company also has a contract with Anthropic , giving the latter access to xAI's Colossus 1 data center. Well, a Google Cloud spokesperson told CNBC and The New York Times that this is but \"a short-term, timely agreement\" to ensure that the company has \"bridge capacity to meeting the surging demand\" for Gemini Enterprise, its AI subscription for large businesses. Google has just signed a $30 billion AI computing power deal with SpaceX.",
+      "what_happened": "Google will pay SpaceX $920 million a month to use xAI's data centers The company needs extra computing power for Gemini Enterprise. Google has just signed a $30 billion AI computing power deal with SpaceX.",
+      "why_matters": "The Musk-owned company also has a contract with Anthropic , giving the latter access to xAI's Colossus 1 data center. Well, a Google Cloud spokesperson told CNBC and The New York Times that this is but \"a short-term, timely agreement\" to ensure that the company has \"bridge capacity to meeting the surging demand\" for Gemini Enterprise, its AI subscription for large businesses.",
+      "what_to_watch": "Google has just signed a $30 billion AI computing power deal with SpaceX.",
+      "key_points": [
+        "Google will pay SpaceX $920 million a month to use xAI's data centers The company needs extra computing power for Gemini Enterprise.",
+        "Google has just signed a $30 billion AI computing power deal with SpaceX.",
+        "The Musk-owned company also has a contract with Anthropic , giving the latter access to xAI's Colossus 1 data center.",
+        "According to a SpaceX filing with the Securities and Exchange Commission, it will receive $920 million a month from Google in exchange for computing power from xAI's data centers, starting in October this year until.",
+        "Google has just signed a $30 billion AI deal with SpaceX, which owns Elon Musk's xAI .",
+        "The agreement will give Google access to 110,000 NVIDIA GPUs, as well as CPUs and memory.",
+        "According to the documents SpaceX filed for its Initial Public Offering, Anthropic will pay it $1.25 billion a month through May 2029.",
+        "Google isn't its only competitor in the AI space that SpaceX is selling computing power to.",
+        "Since Google has its own global network of data centers and continues to build more , you may be wondering why it has to pay SpaceX for more computing power.",
+        "SpaceX is expected to go public on June 12 and to raise enough money to make it the biggest IPO in history .",
+        "Well, a Google Cloud spokesperson told CNBC and The New York Times that this is but \"a short-term, timely agreement\" to ensure that the company has \"bridge capacity to meeting the surging demand\" for Gemini Enterprise.",
+        "SpaceX wrote that if it fails to deliver access to that number of GPUS by September this year, Google could either terminate their deal immediately or accept the number of GPUs provided at a reduced payment rate after a."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2188080/chrome-canary-reportedly-sending-search-straight-to-ai/",
+      "title": "Google experiments with sending Chrome searches straight to AI - Engadget",
+      "description": "Google seems to be testing a new feature that will take you to AI Mode by default when you do a search in Chrome.",
+      "excerpt": "Google seems to be testing a new feature that will take you to AI Mode by default when you do a search in Chrome.",
+      "summary": "Google seems to be testing a new feature that will take you to AI Mode by default when you do a search in Chrome.",
+      "what_happened": "Google seems to be testing a new feature that will take you to AI Mode by default when you do a search in Chrome.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Google seems to be testing a new feature that will take you to AI Mode by default when you do a search in Chrome."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8d269c0ec9f33a69.jpg",
+      "image_url": "https://img2.zergnet.com/8764685_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.notus.org/technology/trump-ai-stake-openai",
+      "title": "Senior U.S. Officials Eye Government Shares in AI Giants",
+      "description": "An agreement to give the U.S. government equity stakes in AI companies could have seismic consequences.",
+      "excerpt": "An agreement to give the U.S. government equity stakes in AI companies could have seismic consequences.",
+      "summary": "An agreement to give the U.S. government equity stakes in AI companies could have seismic consequences.",
+      "what_happened": "An agreement to give the U.S. government equity stakes in AI companies could have seismic consequences.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "An agreement to give the U.S.",
+        "government equity stakes in AI companies could have seismic consequences."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2363ff4c310e7fa2.jpg",
+      "image_url": "https://static.notus.org/dims4/default/2c57a9a/2147483647/strip/true/crop/5000x2813+0+260/resize/1440x810!/quality/90/?url=https%3A%2F%2Fk2-prod-aji.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fcc%2Fc0%2Fa47d76d744b6beb3074e491462e9%2Fap26154753451949.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/c98r8r7dz5no?at_medium=RSS&at_campaign=rss",
+      "title": "Trump to meet AI leaders over US investment in their companies",
+      "description": "The US president said on Friday he expects to meet the leaders of top AI companies next week.",
+      "excerpt": "The US president said on Friday he expects to meet the leaders of top AI companies next week.",
+      "summary": "The US president said on Friday he expects to meet the leaders of top AI companies next week.",
+      "what_happened": "The US president said on Friday he expects to meet the leaders of top AI companies next week.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The US president said on Friday he expects to meet the leaders of top AI companies next week."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/afdc8da4d743e29c.webp",
+      "image_url": "https://ichef.bbci.co.uk/news/480/cpsprodpb/3047/live/39bcce30-6049-11f1-8b8c-6d33e1d5abb6.jpg.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2188377/google-shuts-down-the-ai-image-app-pixel-studio/",
+      "title": "Google shuts down the AI image app Pixel Studio - Engadget",
+      "description": "Google's AI app Pixel Studio launched less than two years ago, but is now being shut down.",
+      "excerpt": "Google's AI app Pixel Studio launched less than two years ago, but is now being shut down.",
+      "summary": "Google's AI app Pixel Studio launched less than two years ago, but is now being shut down.",
+      "what_happened": "Google's AI app Pixel Studio launched less than two years ago, but is now being shut down.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Google's AI app Pixel Studio launched less than two years ago, but is now being shut down."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 3,
+  "has_cta": true,
+  "slides": [
+    "Google will pay SpaceX $920 million a month to use xAI's data.",
+    "Google shuts down the AI image app Pixel Studio.",
+    "FOLLOW @graitech"
+  ]
+}
