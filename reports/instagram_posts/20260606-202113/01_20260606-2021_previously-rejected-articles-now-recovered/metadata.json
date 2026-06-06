@@ -1,0 +1,68 @@
+{
+  "email_received_at": "2026-06-06T20:21+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Sat, 06 Jun 2026 20:21:13 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai/",
+      "title": "Company : TechCrunch AI",
+      "description": "[MEDIUM] The Trump administration might take an equity stake in OpenAI Company : TechCrunch AI Summary : President Donald Trump said he's discussing deals \"where the American people can benefit from the success of AI.\" Link :",
+      "text": "[MEDIUM] The Trump administration might take an equity stake in OpenAI Company : TechCrunch AI Summary : President Donald Trump said he's discussing deals \"where the American people can benefit from the success of AI.\" Link :",
+      "excerpt": "[MEDIUM] The Trump administration might take an equity stake in OpenAI Company : TechCrunch AI Summary : President Donald Trump said he's discussing deals \"where the American people can benefit from the success of AI.\" Link :",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/donald-trump-cellphone.jpg?resize=1200,800",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.engadget.com/2186956/burn-9-makes-an-entire-game-out-of-metal-gear-s-codec-scenes/",
+      "title": "Company : Engadget",
+      "description": "[MEDIUM] Burn-9 makes an entire game out of Metal Gear's Codec scenes Company : Engadget Summary : Plus, check out the new trailer for the cosmic horror game Penguin Colony. Link :",
+      "text": "[MEDIUM] Burn-9 makes an entire game out of Metal Gear's Codec scenes Company : Engadget Summary : Plus, check out the new trailer for the cosmic horror game Penguin Colony. Link :",
+      "excerpt": "[MEDIUM] Burn-9 makes an entire game out of Metal Gear's Codec scenes Company : Engadget Summary : Plus, check out the new trailer for the cosmic horror game Penguin Colony. Link :",
+      "image_url": "https://www.engadget.com/img/gallery/burn-9-makes-an-entire-game-out-of-metal-gears-codec-scenes/l-intro-1780517969.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.engadget.com/2186956/burn-9-makes-an-entire-game-out-of-metal-gear-s-codec-scenes/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.engadget.com/2188942/the-trump-administration-is-reportedly-in-talks-about-taking-a-stake-in-openai/",
+      "title": "Company : Engadget",
+      "description": "[MEDIUM] The Trump administration is reportedly in talks about taking a stake in OpenAI Company : Engadget Summary : Details for a potential deal haven't been finalized yet. Link :",
+      "text": "[MEDIUM] The Trump administration is reportedly in talks about taking a stake in OpenAI Company : Engadget Summary : Details for a potential deal haven't been finalized yet. Link :",
+      "excerpt": "[MEDIUM] The Trump administration is reportedly in talks about taking a stake in OpenAI Company : Engadget Summary : Details for a potential deal haven't been finalized yet. Link :",
+      "image_url": "https://www.engadget.com/img/gallery/the-trump-administration-is-in-talks-about-taking-a-stake-in-openai/l-intro-1780775595.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.engadget.com/2188942/the-trump-administration-is-reportedly-in-talks-about-taking-a-stake-in-openai/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 4,
+  "has_cta": true,
+  "slides": [
+    "The Trump administration might take an equity stake in OpenAI Anthony Ha.",
+    "\" It's one of many questions the Metal Gear series ask players.",
+    "CNBC confirmed the talks and its source said that the talks between.",
+    "FOLLOW @graitech"
+  ]
+}
