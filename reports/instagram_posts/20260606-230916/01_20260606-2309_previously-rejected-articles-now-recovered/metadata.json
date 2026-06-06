@@ -1,0 +1,38 @@
+{
+  "email_received_at": "2026-06-06T23:09+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Sat, 06 Jun 2026 23:09:16 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.marktechpost.com/2026/06/06/googles-new-colab-cli-lets-developers-and-ai-agents-run-python-on-remote-colab-gpus-and-tpus-from-the-terminal/",
+      "title": "Company : MarkTechPost AI",
+      "description": "[HIGH] Google\u2019s New Colab CLI Lets Developers and AI Agents Run Python on Remote Colab GPUs and TPUs From the Terminal Company : MarkTechPost AI Summary : Google released the Colab CLI, letting developers and AI agents run local code on remote Colab GPU and TPU runtime The post Google\u2019s New Colab CLI Lets Developers and AI Agents Run Python on Remote Co Link :",
+      "text": "[HIGH] Google\u2019s New Colab CLI Lets Developers and AI Agents Run Python on Remote Colab GPUs and TPUs From the Terminal Company : MarkTechPost AI Summary : Google released the Colab CLI, letting developers and AI agents run local code on remote Colab GPU and TPU runtime The post Google\u2019s New Colab CLI Lets Developers and AI Agents Run Python on Remote Co Link :",
+      "excerpt": "[HIGH] Google\u2019s New Colab CLI Lets Developers and AI Agents Run Python on Remote Colab GPUs and TPUs From the Terminal Company : MarkTechPost AI Summary : Google released the Colab CLI, letting developers and AI agents run local code on remote Colab GPU and TPU runtime The post Google\u2019s New Colab CLI Lets Developers and AI Agents Run Python on Remote Co Link :",
+      "image_url": "https://www.marktechpost.com/wp-content/uploads/2026/06/blog14-9.png",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.marktechpost.com/2026/06/06/googles-new-colab-cli-lets-developers-and-ai-agents-run-python-on-remote-colab-gpus-and-tpus-from-the-terminal/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "Previously Rejected Articles Now Recovered.",
+    "FOLLOW @graitech"
+  ]
+}
