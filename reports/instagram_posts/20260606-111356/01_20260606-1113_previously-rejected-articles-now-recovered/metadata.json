@@ -1,0 +1,52 @@
+{
+  "email_received_at": "2026-06-06T11:13+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Sat, 06 Jun 2026 11:13:56 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.engadget.com/2188845/star-wars-zero-company-release-date-august-27/",
+      "title": "Company : Engadget",
+      "description": "[HIGH] EA's Star Wars Zero Company drops August 27 Company : Engadget Summary : Star Wars Zero Company's developers released a gameplay trailer, which features a short appearance by Anakin Skywalker. Link :",
+      "text": "[HIGH] EA's Star Wars Zero Company drops August 27 Company : Engadget Summary : Star Wars Zero Company's developers released a gameplay trailer, which features a short appearance by Anakin Skywalker. Link :",
+      "excerpt": "[HIGH] EA's Star Wars Zero Company drops August 27 Company : Engadget Summary : Star Wars Zero Company's developers released a gameplay trailer, which features a short appearance by Anakin Skywalker. Link :",
+      "image_url": "https://www.engadget.com/img/gallery/eas-star-wars-zero-company-drops-august-27/l-intro-1780725598.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.engadget.com/2188845/star-wars-zero-company-release-date-august-27/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.notus.org/technology/trump-ai-stake-openai",
+      "title": "Company : The Verge AI",
+      "description": "[MEDIUM] Senior U.S. Officials Eye Government Shares in AI Giants Company : The Verge AI Summary : The CEO pitched the idea as a way to bring economic benefits from AI to the public, according toNOTUS, which added that Altman first pitched the idea to President Donald Trump early last year. Link :",
+      "text": "[MEDIUM] Senior U.S. Officials Eye Government Shares in AI Giants Company : The Verge AI Summary : The CEO pitched the idea as a way to bring economic benefits from AI to the public, according toNOTUS, which added that Altman first pitched the idea to President Donald Trump early last year. Link :",
+      "excerpt": "[MEDIUM] Senior U.S. Officials Eye Government Shares in AI Giants Company : The Verge AI Summary : The CEO pitched the idea as a way to bring economic benefits from AI to the public, according toNOTUS, which added that Altman first pitched the idea to President Donald Trump early last year. Link :",
+      "image_url": "https://static.notus.org/dims4/default/2c57a9a/2147483647/strip/true/crop/5000x2813+0+260/resize/1440x810!/quality/90/?url=https%3A%2F%2Fk2-prod-aji.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fcc%2Fc0%2Fa47d76d744b6beb3074e491462e9%2Fap26154753451949.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.notus.org/technology/trump-ai-stake-openai",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "EA The developers behind Star Wars Zero Company has revealed the official.",
+    "FOLLOW @graitech"
+  ]
+}
