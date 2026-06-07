@@ -1,0 +1,38 @@
+{
+  "email_received_at": "2026-06-07T13:53+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Sun, 07 Jun 2026 13:53:44 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.theguardian.com/technology/2026/jun/07/anti-ai-tech-extremism-violence",
+      "title": "Company : The Guardian Tech",
+      "description": "[MEDIUM] \u2018A driver of political violence\u2019: how the breakneck AI boom is fueling anti-tech extremism Company : The Guardian Tech Summary : Backlash against AI is taking an extremist turn, following in the footsteps of earlier techno-pessimist militants When a 20-year-old man from Texas was arrested earlier this year for allegedly trying Link :",
+      "text": "[MEDIUM] \u2018A driver of political violence\u2019: how the breakneck AI boom is fueling anti-tech extremism Company : The Guardian Tech Summary : Backlash against AI is taking an extremist turn, following in the footsteps of earlier techno-pessimist militants When a 20-year-old man from Texas was arrested earlier this year for allegedly trying Link :",
+      "excerpt": "[MEDIUM] \u2018A driver of political violence\u2019: how the breakneck AI boom is fueling anti-tech extremism Company : The Guardian Tech Summary : Backlash against AI is taking an extremist turn, following in the footsteps of earlier techno-pessimist militants When a 20-year-old man from Texas was arrested earlier this year for allegedly trying Link :",
+      "image_url": "https://i.guim.co.uk/img/media/798cc9e3b726c997346f78594cc7af41466a8587/0_728_3600_2877/master/3600.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=0f730e0b1d6cf1313b04cd11b16c3918",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theguardian.com/technology/2026/jun/07/anti-ai-tech-extremism-violence",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "Const firstColLink = document.querySelector( '#newsLinks > li:nth-of-type(2) > a', ); /** *.",
+    "FOLLOW @graitech"
+  ]
+}
