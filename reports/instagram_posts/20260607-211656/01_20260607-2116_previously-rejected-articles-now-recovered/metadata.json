@@ -1,0 +1,53 @@
+{
+  "email_received_at": "2026-06-07T21:16+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Sun, 07 Jun 2026 21:16:56 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.engadget.com/2189069/undead-labs-finally-shows-off-state-of-decay-3-gameplay-in-new-trailer/",
+      "title": "Company : Engadget",
+      "description": "[MEDIUM] Undead Labs finally shows off State of Decay 3 gameplay in new trailer Company : Engadget Summary : The game is slated for release in 2027. Link :",
+      "text": "[MEDIUM] Undead Labs finally shows off State of Decay 3 gameplay in new trailer Company : Engadget Summary : The game is slated for release in 2027. Link :",
+      "excerpt": "[MEDIUM] Undead Labs finally shows off State of Decay 3 gameplay in new trailer Company : Engadget Summary : The game is slated for release in 2027. Link :",
+      "image_url": "https://www.engadget.com/img/gallery/undead-labs-finally-shows-off-state-of-decay-3-gameplay-in-new-trailer/l-intro-1780860950.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.engadget.com/2189069/undead-labs-finally-shows-off-state-of-decay-3-gameplay-in-new-trailer/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.engadget.com/2189066/persona-4-revival-gets-an-official-release-date-for-february-2027/",
+      "title": "Company : Engadget",
+      "description": "[MEDIUM] Persona 4 Revival gets an official release date for February 2027 Company : Engadget Summary : The pre-order trailer also revealed new voice actors. Link :",
+      "text": "[MEDIUM] Persona 4 Revival gets an official release date for February 2027 Company : Engadget Summary : The pre-order trailer also revealed new voice actors. Link :",
+      "excerpt": "[MEDIUM] Persona 4 Revival gets an official release date for February 2027 Company : Engadget Summary : The pre-order trailer also revealed new voice actors. Link :",
+      "image_url": "https://www.engadget.com/img/gallery/persona-4-revival-gets-an-official-release-date-for-february-2027/l-intro-1780857910.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.engadget.com/2189066/persona-4-revival-gets-an-official-release-date-for-february-2027/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 3,
+  "has_cta": true,
+  "slides": [
+    "Undead Labs finally shows off State of Decay 3 gameplay in new.",
+    "Previously Rejected Articles Now Recovered.",
+    "FOLLOW @graitech"
+  ]
+}

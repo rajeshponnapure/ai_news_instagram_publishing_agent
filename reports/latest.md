@@ -1,54 +1,53 @@
 # AI News Summary Report
 
-Generated: 2026-06-07T18:07:35+00:00
+Generated: 2026-06-07T21:16:49+00:00
 Source: grdevelopers.co@gmail.com
 Emails summarized: 1
 
 ## Executive Brief
 
-- What to expect from WWDC 2026: Siri’s highly anticipated revamp and Apple Intelligence updates Sriram Krishnan is leaving his role as White House AI advisor The Trump administration might take an equity stake in OpenAI.
-- More from TechCrunch OpenAI is still working on that ‘super app’ OpenAI plans to roll out a revamped version of ChatGPT in the coming weeks. one that will serve as a “super app” with coding tools and AI agents.
-- In March, The Wall Street Journal reported that these plans represent a major strategy shift for the company after launching a variety of standalone products in 2025; OpenAI executives now say they’re abandoning “side.
-- Every weekday and Sunday, you can get the best of TechCrunch’s coverage.
-- TechCrunch Mobility is your destination for transportation news and insight.
-- Provides movers and shakers with the info they need to start their day.
+- I was using the Nemotron 30b I wanted it to create full on games with three js and I tried a lot First simple long prompts, a long prompt explaining what to do and how to, failed the model often gave games that didnt.
+- At some point I gave up on the to-do list stuff and just went all the way in on the "creates adventure part" and it kinda back fired.
+- Abstract Art That Means Something to You Spaces mentioned in this article 1
+- A Blog post by Build Small Hackathon on Hugging Face Amazing Digital Dentures (a failed project) So my idea was simple and a bit complicated at the same time, Have you guys watched The Amazing Digital Circus?
+- Spaces mentioned in this article 1 Room360: Video-to-3D Spatial Reconstruction Platform Mythograph Atelier #1.
+- it's an animated show which features an AI pair of dentures named caine who lives in a virtual circus with some digital clones of real human beings and he creates and sends them on an adventures everyday, so my project.
 
 ## Most Mentioned Companies
 
-OpenAI (1), Google (1), Anthropic (1), Apple (1), Amazon (1), NVIDIA (1), Hugging Face (1), White House AI (1)
+OpenAI (1), Google (1), Amazon (1), NVIDIA (1), Hugging Face (1), The Verge AI (1)
 
 ## Most Mentioned Models
 
-Sora (1)
+No clear model mentions found.
 
 ## Main Topics
 
-model release (1), funding or business (1), regulation or safety (1), developer tools (1), hardware and compute (1), media generation (1)
+model release (1), hardware and compute (1)
 
 ## Voice Script Hooks
 
-- OpenAI just made a move in model release: OpenAI is still working on that ‘super app’ | TechCrunch
+- OpenAI just made a move in model release: Amazing Digital Dentures (a failed project)
 
 ## Per-Email Summaries
 
-### 1. OpenAI is still working on that ‘super app’ | TechCrunch
+### 1. Amazing Digital Dentures (a failed project)
 
-Source date: Sun, 07 Jun 2026 10:37:47 -0700
+Source date: Sun, 07 Jun 2026 13:05:04 -0700
 Confidence: 0.82
-Article: https://techcrunch.com/2026/06/07/openai-is-still-working-on-that-super-app/
-Article title: OpenAI is still working on that ‘super app’ | TechCrunch
+Article: https://huggingface.co/blog/build-small-hackathon/amazingdigitaldentures
+Article title: Amazing Digital Dentures (a failed project)
 
-Article excerpt: "Chat is dead" — at least, according to a senior OpenAI employee.
+Article excerpt: A Blog post by Build Small Hackathon on Hugging Face
 
-What to expect from WWDC 2026: Siri’s highly anticipated revamp and Apple Intelligence updates Sriram Krishnan is leaving his role as White House AI advisor The Trump administration might take an equity stake in OpenAI OpenAI is still working on that ‘super app’ OpenAI unveils Lockdown Mode to protect sensitive data from prompt injection attacks What to expect from WWDC 2026: Siri’s highly anticipated revamp and Apple Intelligence updates We won't sell or share your personal information to inform the ads you see. In March, The Wall Street Journal reported that these plans represent a major strategy shift for the company after launching a variety of standalone products in 2025; OpenAI executives now say they’re abandoning “side quests ” like video generator Sora . Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections. More from TechCrunch OpenAI is still working on that ‘super app’ OpenAI plans to roll out a revamped version of ChatGPT in the coming weeks - one that will serve as a “super app” with coding tools and AI agents, according to the Financial Times . What to expect from WWDC 2026: Siri’s highly anticipated revamp and Apple Intelligence updates Sriram Krishnan is leaving his role as White House AI advisor The Trump administration might take an equity stake in OpenAI. More from TechCrunch OpenAI is still working on that ‘super app’ OpenAI plans to roll out a revamped version of ChatGPT in the coming weeks - one that will serve as a “super app” with coding tools and AI agents. In March, The Wall Street Journal reported that these plans represent a major strategy shift for the company after launching a variety of standalone products in 2025; OpenAI executives now say they’re abandoning “side. Every weekday and Sunday, you can get the best of TechCrunch’s coverage. TechCrunch Mobility is your destination for transportation news and insight. Provides movers and shakers with the info they need to start their day. By submitting your email, you agree to our Terms and Privacy Notice . Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections. "Chat is dead" - at least, according to a senior OpenAI employee. Startups are the core of TechCrunch, so get our best coverage delivered weekly. The company’s goal is reportedly to become more competitive with Anthropic, particularly among business customers, and to get closer to profitability before an IPO. In fact, the FT quotes one senior OpenAI employee as declaring, “Chat is dead.” Thibault Sottiaux, who leads OpenAI’s core product and platform, said the company is working towards a product “where you have your own. "Chat is dead" - at least, according to a senior OpenAI employee. More from TechCrunch OpenAI is still working on that ‘super app’ OpenAI plans to roll out a revamped version of ChatGPT in the coming weeks - one that will serve as a “super app” with coding tools and AI agents, according to the Financial Times . The company’s goal is reportedly to become more competitive with Anthropic, particularly among business customers, and to get closer to profitability before an IPO. That means turning ChatGPT into a gateway leading free users to products they might actually pay for, such as coding product Codex. In fact, the FT quotes one senior OpenAI employee as declaring, “Chat is dead.” Thibault Sottiaux, who leads OpenAI’s core product and platform, said the company is working towards a product “where you have your own personal agent that is capable of helping you … across everything in your life, be it personally or at work.” If this sounds familiar, it’s because there have been reports about OpenAI’s super app ambitions since last year. In March, The Wall Street Journal reported that these plans represent a major strategy shift for the company after launching a variety of standalone products in 2025; OpenAI executives now say they’re abandoning “side quests ” like video generator Sora . Get an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections. Every weekday and Sunday, you can get the best of TechCrunch’s coverage. TechCrunch Mobility is your destination for transportation news and insight. Startups are the core of TechCrunch, so get our best coverage delivered weekly. Provides movers and shakers with the info they need to start their day. By submitting your email, you agree to our Terms and Privacy Notice . What to expect from WWDC 2026: Siri’s highly anticipated revamp and Apple Intelligence updates Sriram Krishnan is leaving his role as White House AI advisor The Trump administration might take an equity stake in OpenAI OpenAI is still working on that ‘super app’ OpenAI unveils Lockdown Mode to protect sensitive data from prompt injection attacks What to expect from WWDC 2026: Siri’s highly anticipated revamp and Apple Intelligence updates We won't sell or share your personal information to inform the ads you see. You may still see interest-based ads if your information is sold or shared by other companies or was sold or shared previously.
+Abstract Art That Means Something to You Spaces mentioned in this article 1 I was using the Nemotron 30b I wanted it to create full on games with three js and I tried a lot First simple long prompts, a long prompt explaining what to do and how to, failed the model often gave games that didnt work then I tried adding skill cards these ones to it, and that failed too it blew up the short context window I had set on the model to save on compute but it backfired so I increased the context window and that didnt fix it. Spaces mentioned in this article 1 Room360: Video-to-3D Spatial Reconstruction Platform Mythograph Atelier #1. I was using the Nemotron 30b I wanted it to create full on games with three js and I tried a lot First simple long prompts, a long prompt explaining what to do and how to, failed the model often gave games that didnt work then I tried adding skill cards these ones to it, and that failed too it blew up the short. I was using the Nemotron 30b I wanted it to create full on games with three js and I tried a lot First simple long prompts, a long prompt explaining what to do and how to, failed the model often gave games that didnt work then I tried adding skill cards these ones to it, and that failed too it blew up the short. I was using the Nemotron 30b I wanted it to create full on games with three js and I tried a lot First simple long prompts, a long prompt explaining what to do and how to, failed the model often gave games that didnt. At some point I gave up on the to-do list stuff and just went all the way in on the "creates adventure part" and it kinda back fired. Abstract Art That Means Something to You Spaces mentioned in this article 1 A Blog post by Build Small Hackathon on Hugging Face Amazing Digital Dentures (a failed project) So my idea was simple and a bit complicated at the same time, Have you guys watched The Amazing Digital Circus? Spaces mentioned in this article 1 Room360: Video-to-3D Spatial Reconstruction Platform Mythograph Atelier #1. it's an animated show which features an AI pair of dentures named caine who lives in a virtual circus with some digital clones of real human beings and he creates and sends them on an adventures everyday, so my project. A digital pet that sends you on adventures that may be useful to your real world productivty of sorts like a over engineered todo list disguised as a game of sorts. A Blog post by Build Small Hackathon on Hugging Face Amazing Digital Dentures (a failed project) So my idea was simple and a bit complicated at the same time, Have you guys watched The Amazing Digital Circus? it's an animated show which features an AI pair of dentures named caine who lives in a virtual circus with some digital clones of real human beings and he creates and sends them on an adventures everyday, so my project was inspired by that. A digital pet that sends you on adventures that may be useful to your real world productivty of sorts like a over engineered todo list disguised as a game of sorts. At some point I gave up on the to-do list stuff and just went all the way in on the "creates adventure part" and it kinda back fired. I was using the Nemotron 30b I wanted it to create full on games with three js and I tried a lot First simple long prompts, a long prompt explaining what to do and how to, failed the model often gave games that didnt work then I tried adding skill cards these ones to it, and that failed too it blew up the short context window I had set on the model to save on compute but it backfired so I increased the context window and that didnt fix it, So I used codex to sort of distill the skills into a single txt file and use RAG over it and that worked but it still didnt give me fully working games they always had something wrong which made them end up as blank screens now I have given up and the project exists as something else, a simple HTML toymaker it can creates simple html stuff in one shot but not games, I used it to make stuff like clocks, to do lists, and snake and breakout anything more complex like tetris breaks it I'm now thinking of a different Idea to pivot to now, any suggestions on this one is greatly appreciated. Spaces mentioned in this article 1 Room360: Video-to-3D Spatial Reconstruction Platform Mythograph Atelier #1. Abstract Art That Means Something to You Spaces mentioned in this article 1
 
 Key points:
-- What to expect from WWDC 2026: Siri’s highly anticipated revamp and Apple Intelligence updates Sriram Krishnan is leaving his role as White House AI advisor The Trump administration might take an equity stake in OpenAI.
-- More from TechCrunch OpenAI is still working on that ‘super app’ OpenAI plans to roll out a revamped version of ChatGPT in the coming weeks. one that will serve as a “super app” with coding tools and AI agents.
-- In March, The Wall Street Journal reported that these plans represent a major strategy shift for the company after launching a variety of standalone products in 2025; OpenAI executives now say they’re abandoning “side.
-- Every weekday and Sunday, you can get the best of TechCrunch’s coverage.
-- TechCrunch Mobility is your destination for transportation news and insight.
-- Provides movers and shakers with the info they need to start their day.
-Companies: OpenAI, Google, Anthropic, Apple, Amazon, NVIDIA, Hugging Face, White House AI
-Models: Sora
-Topics: model release, funding or business, regulation or safety, developer tools, hardware and compute, media generation
+- I was using the Nemotron 30b I wanted it to create full on games with three js and I tried a lot First simple long prompts, a long prompt explaining what to do and how to, failed the model often gave games that didnt.
+- At some point I gave up on the to-do list stuff and just went all the way in on the "creates adventure part" and it kinda back fired.
+- Abstract Art That Means Something to You Spaces mentioned in this article 1
+- A Blog post by Build Small Hackathon on Hugging Face Amazing Digital Dentures (a failed project) So my idea was simple and a bit complicated at the same time, Have you guys watched The Amazing Digital Circus?
+- Spaces mentioned in this article 1 Room360: Video-to-3D Spatial Reconstruction Platform Mythograph Atelier #1.
+- it's an animated show which features an AI pair of dentures named caine who lives in a virtual circus with some digital clones of real human beings and he creates and sends them on an adventures everyday, so my project.
+Companies: OpenAI, Google, Amazon, NVIDIA, Hugging Face, The Verge AI
+Topics: model release, hardware and compute
