@@ -1,0 +1,264 @@
+{
+  "email_received_at": "2026-06-07T19:00-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "OpenAI unveils Lockdown Mode to protect sensitive data from prompt injection attacks | TechCrunch",
+  "subject": "\ud83d\udea8 AI Alert: 26 new launches \u2014 Ollama, The Verge AI, The Guardian Tech",
+  "source_date": "Sun, 07 Jun 2026 19:00:31 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Amazon",
+    "NVIDIA",
+    "Hugging Face",
+    "The Verge AI",
+    "Advance Physical AI"
+  ],
+  "models": [],
+  "topics": [
+    "model release",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/",
+  "article_title": "OpenAI unveils Lockdown Mode to protect sensitive data from prompt injection attacks | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6e3040819140c502.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2201630077.jpg?resize=1200,798",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/",
+      "title": "OpenAI unveils Lockdown Mode to protect sensitive data from prompt injection attacks | TechCrunch",
+      "description": "Even with Lockdown Mode, ChatGPT could be still vulnerable to prompt injections, but the goal is to reduce the likelihood that sensitive data gets shared in the process.",
+      "excerpt": "Even with Lockdown Mode, ChatGPT could be still vulnerable to prompt injections, but the goal is to reduce the likelihood that sensitive data gets shared in the process.",
+      "summary": "Even with Lockdown Mode, ChatGPT could be still vulnerable to prompt injections, but the goal is to reduce the likelihood that sensitive data gets shared in the process.",
+      "what_happened": "Even with Lockdown Mode, ChatGPT could be still vulnerable to prompt injections, but the goal is to reduce the likelihood that sensitive data gets shared in the process.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Even with Lockdown Mode, ChatGPT could be still vulnerable to prompt injections, but the goal is to reduce the likelihood that sensitive data gets shared in the process."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6e3040819140c502.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2201630077.jpg?resize=1200,798",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/nvidia-and-doosan-group-physical-ai/",
+      "title": "NVIDIA and Doosan Group Collaborate to Advance Physical AI and AI Factory Infrastructure",
+      "description": "Companies to explore robotics, AI factory power solutions and advanced electronics materials for next-generation data center systems.",
+      "excerpt": "Companies to explore robotics, AI factory power solutions and advanced electronics materials for next-generation data center systems.",
+      "summary": "Companies to explore robotics, AI factory power solutions and advanced electronics materials for next-generation data center systems.",
+      "what_happened": "Companies to explore robotics, AI factory power solutions and advanced electronics materials for next-generation data center systems.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Companies to explore robotics, AI factory power solutions and advanced electronics materials for next-generation data center systems."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2396e08f9d1733a3.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/kr-visit-blog-doosan-robotics-1920x1080-noncredit.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8b73abd4ab8aa006.jpg"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/kr-visit-blog-doosan-robotics-1920x1080-noncredit-1280x720.jpg"
+      ]
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/",
+      "title": "Google will pay SpaceX $920M per month for compute | TechCrunch",
+      "description": "In a statement, a Google representative described the deal as a result of unexpected demand for its recently launched AI products.",
+      "excerpt": "In a statement, a Google representative described the deal as a result of unexpected demand for its recently launched AI products.",
+      "summary": "In a statement, a Google representative described the deal as a result of unexpected demand for its recently launched AI products.",
+      "what_happened": "In a statement, a Google representative described the deal as a result of unexpected demand for its recently launched AI products.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "In a statement, a Google representative described the deal as a result of unexpected demand for its recently launched AI products."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2bc8d346c84bf394.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2259661359.jpg?w=1024",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://huggingface.co/blog/build-small-hackathon/persona-atlas",
+      "title": "404 \u2013 Hugging Face",
+      "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "excerpt": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "summary": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "what_happened": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/eebda10fd44407c2.png",
+      "image_url": "https://huggingface.co/front/thumbnails/v2-2.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2188542/kindle-alternatives-subscription-costs-compared/",
+      "title": "The best Kindle alternatives for those looking to ditch Amazon - Engadget",
+      "description": "Whether you hate subscriptions like Kindle Unlimited or simply want to get away from Amazon for whatever reason, you'll find plenty of solid options available.",
+      "excerpt": "Whether you hate subscriptions like Kindle Unlimited or simply want to get away from Amazon for whatever reason, you'll find plenty of solid options available.",
+      "summary": "Whether you hate subscriptions like Kindle Unlimited or simply want to get away from Amazon for whatever reason, you'll find plenty of solid options available.",
+      "what_happened": "Whether you hate subscriptions like Kindle Unlimited or simply want to get away from Amazon for whatever reason, you'll find plenty of solid options available.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Whether you hate subscriptions like Kindle Unlimited or simply want to get away from Amazon for whatever reason, you'll find plenty of solid options available."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/11d2bafbeb22bfb9.jpg",
+      "image_url": "https://www.engadget.com/img/gallery/the-best-kindle-alternatives-for-those-looking-to-ditch-amazon/ipad-2025-with-a16-1780687891.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.nytimes.com/2026/06/06/business/dealbook/ai-digital-twin.html",
+      "title": "Sorry, I\u2019m Not Available. Talk to the A.I. Version of Me.",
+      "description": "The hot new productivity hack for C.E.O.s and Harvard professors? A.I. twins that answer questions and attend meetings.",
+      "excerpt": "The hot new productivity hack for C.E.O.s and Harvard professors? A.I. twins that answer questions and attend meetings.",
+      "summary": "twins that answer questions and attend meetings. The hot new productivity hack for C.E.O.s and Harvard professors?",
+      "what_happened": "twins that answer questions and attend meetings. The hot new productivity hack for C.E.O.s and Harvard professors?",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "twins that answer questions and attend meetings.",
+        "The hot new productivity hack for C.E.O.s and Harvard professors?"
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c24bace868bc937a.jpg",
+      "image_url": "https://static01.nyt.com/images/2026/06/08/business/08db-ceo-bot/08db-ceo-bot-facebookJumbo.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2186956/burn-9-makes-an-entire-game-out-of-metal-gear-s-codec-scenes/",
+      "title": "Burn-9 makes an entire game out of Metal Gear's Codec scenes - Engadget",
+      "description": "Plus, check out the new trailer for the cosmic horror game Penguin Colony.",
+      "excerpt": "Plus, check out the new trailer for the cosmic horror game Penguin Colony.",
+      "summary": "Plus, check out the new trailer for the cosmic horror game Penguin Colony.",
+      "what_happened": "Plus, check out the new trailer for the cosmic horror game Penguin Colony.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Plus, check out the new trailer for the cosmic horror game Penguin Colony."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2189066/persona-4-revival-gets-an-official-release-date-for-february-2027/",
+      "title": "Persona 4 Revival gets an official release date for February 2027 - Engadget",
+      "description": "The pre-order trailer also revealed new voice actors.",
+      "excerpt": "The pre-order trailer also revealed new voice actors.",
+      "summary": "The pre-order trailer also revealed new voice actors.",
+      "what_happened": "The pre-order trailer also revealed new voice actors.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The pre-order trailer also revealed new voice actors."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a32b8b72cb7bea0d.jpg",
+      "image_url": "https://www.engadget.com/img/gallery/persona-4-revival-gets-an-official-release-date-for-february-2027/intro-1780857910.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 3,
+  "has_cta": true,
+  "slides": [
+    "NVIDIA and Doosan Group Collaborate to Advance Physical AI and AI Factory.",
+    "Sorry I'm Not Available Talk to the A.I Version of Me.",
+    "FOLLOW @graitech"
+  ]
+}

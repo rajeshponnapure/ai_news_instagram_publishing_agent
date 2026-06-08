@@ -1,0 +1,26 @@
+OpenAI unveils Lockdown Mode to protect sensitive data from prompt injection attacks.
+
+Swipe for the full breakdown.
+
+- Even with Lockdown Mode, ChatGPT could be still vulnerable to prompt injections, but the goal is to reduce.
+- Companies to explore robotics, AI factory power solutions and advanced electronics materials for next-generation data center systems.
+- In a statement, a Google representative described the deal as a result of unexpected demand for its recently.
+- We're on a journey to advance and democratize artificial intelligence through open source and open science.
+- Whether you hate subscriptions like Kindle Unlimited or simply want to get away from Amazon for whatever reason.
+
+Would you use something like this in your daily work? Yes or no in the comments.
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/
+- https://blogs.nvidia.com/blog/nvidia-and-doosan-group-physical-ai/
+- https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/
+- https://huggingface.co/blog/build-small-hackathon/persona-atlas
+- https://www.engadget.com/2188542/kindle-alternatives-subscription-costs-compared/
+
+#AIInfrastructure #AIChips #OpenAI #ChatGPT #GoogleAI #Gemini #NVIDIA #NVIDIAGPU #TechTrends #Innovation #EmergingTech #AINews #Tech #AI #MachineLearning #AIBreakdown #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing
+
+-
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-
