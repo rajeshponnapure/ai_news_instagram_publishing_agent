@@ -11,8 +11,17 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260608-100819/01_20260608-1008_how-the-uk-is-turning-sovereign-ai-ambition-into-action-with/slide_05.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260608-100819/01_20260608-1008_how-the-uk-is-turning-sovereign-ai-ambition-into-action-with/slide_06.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260608-100819/01_20260608-1008_how-the-uk-is-turning-sovereign-ai-ambition-into-action-with/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260608-100819/01_20260608-1008_how-the-uk-is-turning-sovereign-ai-ambition-into-action-with/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260608-100819/01_20260608-1008_how-the-uk-is-turning-sovereign-ai-ambition-into-action-with/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260608-100819/01_20260608-1008_how-the-uk-is-turning-sovereign-ai-ambition-into-action-with/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260608-100819/01_20260608-1008_how-the-uk-is-turning-sovereign-ai-ambition-into-action-with/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260608-100819/01_20260608-1008_how-the-uk-is-turning-sovereign-ai-ambition-into-action-with/slide_06.png"
+      ],
+      "status": "published",
+      "creation_id": "18045937592577438",
+      "published_at": "2026-06-08T10:11:06+00:00"
     }
   ]
 }
