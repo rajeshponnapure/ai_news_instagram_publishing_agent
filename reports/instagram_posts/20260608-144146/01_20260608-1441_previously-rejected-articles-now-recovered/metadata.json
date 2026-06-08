@@ -1,0 +1,67 @@
+{
+  "email_received_at": "2026-06-08T14:41+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Mon, 08 Jun 2026 14:41:46 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.theverge.com/tech/944099/wwdc-2026-how-to-watch",
+      "title": "Company : The Verge AI",
+      "description": "[HIGH] WWDC 2026: How to watch and what to expect Company : The Verge AI Summary : Apple's biggest event of the year is nearly here. The company's Worldwide Developers Conference will spotlight updates to iOS, macOS, and all of Apple's other operating systems, and this year's event Link :",
+      "text": "[HIGH] WWDC 2026: How to watch and what to expect Company : The Verge AI Summary : Apple's biggest event of the year is nearly here. The company's Worldwide Developers Conference will spotlight updates to iOS, macOS, and all of Apple's other operating systems, and this year's event Link :",
+      "excerpt": "[HIGH] WWDC 2026: How to watch and what to expect Company : The Verge AI Summary : Apple's biggest event of the year is nearly here. The company's Worldwide Developers Conference will spotlight updates to iOS, macOS, and all of Apple's other operating systems, and this year's event Link :",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/unnamed-8.jpg?quality=90&amp;strip=all&amp;crop=0%2C18.517948191493%2C100%2C62.964103617014&amp;w=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theverge.com/tech/944099/wwdc-2026-how-to-watch",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.cnet.com/tech/services-and-software/london-robotaxi-debut-waymo-wayve-ai-autonomous-vehicles/",
+      "title": "Company : CNET AI",
+      "description": "[HIGH] Robotaxis Will Hit London's Notoriously Unruly Roads This Year. Are They Ready for Chaos? Company : CNET AI Summary : Waymo and Wayve (in partnership with Uber) are gearing up to launch in the British capital by the end of 2026. At SXSW London, the companies showed how the prep is going. Link :",
+      "text": "[HIGH] Robotaxis Will Hit London's Notoriously Unruly Roads This Year. Are They Ready for Chaos? Company : CNET AI Summary : Waymo and Wayve (in partnership with Uber) are gearing up to launch in the British capital by the end of 2026. At SXSW London, the companies showed how the prep is going. Link :",
+      "excerpt": "[HIGH] Robotaxis Will Hit London's Notoriously Unruly Roads This Year. Are They Ready for Chaos? Company : CNET AI Summary : Waymo and Wayve (in partnership with Uber) are gearing up to launch in the British capital by the end of 2026. At SXSW London, the companies showed how the prep is going. Link :",
+      "image_url": "https://www.cnet.com/a/img/resize/21de8edbddc3cd0ade5696ead3e0047605ec9d8b/hub/2026/06/05/3ec0073a-9930-40a5-9f72-d716ecefe1c2/img-9390.jpg?auto=webp&amp;fit=crop&amp;height=675&amp;width=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.cnet.com/tech/services-and-software/london-robotaxi-debut-waymo-wayve-ai-autonomous-vehicles/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.theverge.com/transportation/945614/uber-wayve-robotaxi-interest-list-launch-london",
+      "title": "Company : The Verge AI",
+      "description": "[MEDIUM] Uber tells London to get ready for robotaxis Company : The Verge AI Summary : Uber is getting ready to put robotaxis on London's streets, opening an interest list for riders who want to be among the first to hail one of Wayve's autonomous vehicles when the service goes live lat Link :",
+      "text": "[MEDIUM] Uber tells London to get ready for robotaxis Company : The Verge AI Summary : Uber is getting ready to put robotaxis on London's streets, opening an interest list for riders who want to be among the first to hail one of Wayve's autonomous vehicles when the service goes live lat Link :",
+      "excerpt": "[MEDIUM] Uber tells London to get ready for robotaxis Company : The Verge AI Summary : Uber is getting ready to put robotaxis on London's streets, opening an interest list for riders who want to be among the first to hail one of Wayve's autonomous vehicles when the service goes live lat Link :",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/Photo-1.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theverge.com/transportation/945614/uber-wayve-robotaxi-interest-list-launch-london",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 3,
+  "has_cta": true,
+  "slides": [
+    "Previously Rejected Articles Now Recovered.",
+    "Even adds those limits Uber's interest list adds momentum.",
+    "FOLLOW @graitech"
+  ]
+}
