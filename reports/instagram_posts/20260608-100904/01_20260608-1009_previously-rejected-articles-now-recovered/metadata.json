@@ -1,0 +1,38 @@
+{
+  "email_received_at": "2026-06-08T10:09+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Mon, 08 Jun 2026 10:09:04 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.cnbc.com/2026/06/08/kospi-sk-hynix-samsung-electronics-why-foreign-investors-are-selling.html",
+      "title": "Company : CNBC Technology",
+      "description": "[HIGH] Foreign investors have dumped billions of dollars of Korean stocks this year despite record rally. Here's why Company : CNBC Technology Summary : The selling intensified Monday as the benchmark Kospi plunged more than 8% at the open, even as it emerged as one of the world's standout performers thus far. Link :",
+      "text": "[HIGH] Foreign investors have dumped billions of dollars of Korean stocks this year despite record rally. Here's why Company : CNBC Technology Summary : The selling intensified Monday as the benchmark Kospi plunged more than 8% at the open, even as it emerged as one of the world's standout performers thus far. Link :",
+      "excerpt": "[HIGH] Foreign investors have dumped billions of dollars of Korean stocks this year despite record rally. Here's why Company : CNBC Technology Summary : The selling intensified Monday as the benchmark Kospi plunged more than 8% at the open, even as it emerged as one of the world's standout performers thus far. Link :",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/106922953-1628218460343-gettyimages-1233571399-AFP_9CQ2JL.jpeg?v=1639697175&amp;w=1920&amp;h=1080",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.cnbc.com/2026/06/08/kospi-sk-hynix-samsung-electronics-why-foreign-investors-are-selling.html",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "Foreign investors have dumped billions of dollars of Korean stocks this year.",
+    "FOLLOW @graitech"
+  ]
+}
