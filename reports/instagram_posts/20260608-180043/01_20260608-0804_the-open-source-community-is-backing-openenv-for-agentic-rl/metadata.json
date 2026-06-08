@@ -1,0 +1,354 @@
+{
+  "email_received_at": "2026-06-08T08:04-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "The Open Source Community is backing OpenEnv for Agentic RL",
+  "subject": "\ud83d\udea8 AI Alert: 48 new launches \u2014 CNBC Technology, Robotics Business Review, Bloomberg Tech",
+  "source_date": "Mon, 08 Jun 2026 08:04:09 -0700",
+  "companies": [
+    "OpenAI",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "NVIDIA",
+    "Hugging Face",
+    "CNBC Technology",
+    "Fleet AI"
+  ],
+  "models": [
+    "GPT-5.5",
+    "Claude"
+  ],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://huggingface.co/blog/openenv-agentic-rl",
+  "article_title": "The Open Source Community is backing OpenEnv for Agentic RL",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/66e5db081a807972.png",
+  "article_image_url": "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/openenv-expansion/banner.png",
+  "article_items": [
+    {
+      "url": "https://huggingface.co/blog/openenv-agentic-rl",
+      "title": "The Open Source Community is backing OpenEnv for Agentic RL",
+      "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "excerpt": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "summary": "OpenEnv in Practice: Evaluating Tool-Using Agents in Real-World Environments Building the Open Agent Ecosystem Together: Introducing OpenEnv Its job is to standardize how environments are published, deployed, and consumed by agents. OpenEnv is community-centric by design, and it's still early - expect rough edges, and help us smooth them. A protocol layer, not a reward framework Alongside the governance change, we're tightening what OpenEnv is . And today, we\u2019re excited to announce that OpenEnv is becoming even more open, to make the future of training agents open source. We want those gains with open source models too: training local models that use harnesses effectively, and saving compute by specializing models for specific tasks.",
+      "what_happened": "OpenEnv in Practice: Evaluating Tool-Using Agents in Real-World Environments Building the Open Agent Ecosystem Together: Introducing OpenEnv Its job is to standardize how environments are published, deployed, and consumed by agents.",
+      "why_matters": "OpenEnv is community-centric by design, and it's still early - expect rough edges, and help us smooth them. A protocol layer, not a reward framework Alongside the governance change, we're tightening what OpenEnv is .",
+      "what_to_watch": "And today, we\u2019re excited to announce that OpenEnv is becoming even more open, to make the future of training agents open source. We want those gains with open source models too: training local models that use harnesses effectively, and saving compute by specializing models for specific tasks.",
+      "key_points": [
+        "We want those gains with open source models too: training local models that use harnesses effectively, and saving compute by specializing models for specific tasks.",
+        "OpenEnv in Practice: Evaluating Tool-Using Agents in Real-World Environments Building the Open Agent Ecosystem Together: Introducing OpenEnv",
+        "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+        "And today, we\u2019re excited to announce that OpenEnv is becoming even more open, to make the future of training agents open source.",
+        "Its job is to standardize how environments are published, deployed, and consumed by agents.",
+        "The model is trained to use the harness and optimised for its characteristics.",
+        "In the open, this isn\u2019t the case.",
+        "One reason for their improvement is that models like GPT-5.5 and Opus 4.8 are trained to use their respective harnesses.",
+        "Auto-validation: measure environment quality and contribution to model learning.",
+        "Why we need OpenEnv to train open source agents Agent harnesses like Claude Code, Codex, OpenClaw, and Hermes just keep improving.",
+        "In recent releases, OpenEnv has become an interoperability layer for RL environments .",
+        "End-to-end examples: full training and evaluation walkthroughs in TRL, Unsloth, and beyond."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/66e5db081a807972.png",
+      "image_url": "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/openenv-expansion/banner.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/051beae944a53beb.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/018b24575000d1e5.png"
+      ],
+      "extra_image_urls": [
+        "https://huggingface.co/blog/assets/openenv-turing/thumbnail.png",
+        "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/openenv-expansion/diagram.png"
+      ]
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/nvidia-and-lg-group-ai-factory/",
+      "title": "NVIDIA and LG Group Build an AI Factory to Advance Physical AI, Mobility and AI Infrastructure",
+      "description": "New AI factory to serve as the foundation for LG Group\u2019s robotics, autonomous driving, data center technologies and GPU cloud services.",
+      "excerpt": "New AI factory to serve as the foundation for LG Group\u2019s robotics, autonomous driving, data center technologies and GPU cloud services.",
+      "summary": "By integrating NVIDIA\u2019s robotics technologies including Isaac open robotics frameworks , NVIDIA Cosmos open world models and Isaac GR00T robotic foundation models into its PhysicalWorks industrial robot platform, the company is accelerating the AI transformation of logistics and manufacturing floors. By integrating the NVIDIA Isaac Sim and NVIDIA Isaac Lab open robotics frameworks into their development workflows, LG can simulate, train and validate these home cobots in physically accurate virtual environments. The company is exploring using the NVIDIA Isaac GR00T open, reasoning vision action language model for both its home robots and modular robotics platforms. To help overcome the training data challenge for robotics, LG Electronics is developing a physical AI data factory poised to help Korean and global companies accelerate physical AI projects. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "what_happened": "By integrating NVIDIA\u2019s robotics technologies including Isaac open robotics frameworks , NVIDIA Cosmos open world models and Isaac GR00T robotic foundation models into its PhysicalWorks industrial robot platform, the company is accelerating the AI transformation of logistics and manufacturing floors. By integrating the NVIDIA Isaac Sim and NVIDIA Isaac Lab open robotics frameworks into their development workflows, LG can simulate, train and validate these home cobots in physically accurate virtual environments.",
+      "why_matters": "The company is exploring using the NVIDIA Isaac GR00T open, reasoning vision action language model for both its home robots and modular robotics platforms. To help overcome the training data challenge for robotics, LG Electronics is developing a physical AI data factory poised to help Korean and global companies accelerate physical AI projects.",
+      "what_to_watch": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "key_points": [
+        "By turning compute into data, LG will be providing high-quality training data for robotics and industrial AI projects, using NVIDIA Cosmos world foundation models for synthetic data generation and augmentation.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "By integrating NVIDIA\u2019s robotics technologies including Isaac open robotics frameworks , NVIDIA Cosmos open world models and Isaac GR00T robotic foundation models into its PhysicalWorks industrial robot platform, the.",
+        "The company is exploring using the NVIDIA Isaac GR00T open, reasoning vision action language model for both its home robots and modular robotics platforms.",
+        "To help overcome the training data challenge for robotics, LG Electronics is developing a physical AI data factory poised to help Korean and global companies accelerate physical AI projects.",
+        "Together, the companies are connecting AI model development, physical AI data generation, robot simulation and training, edge deployment and factory-scale digital twins into a unified workflow for building physical AI.",
+        "New AI factory to serve as the foundation for LG Group\u2019s robotics, autonomous driving, data center technologies and GPU cloud services.",
+        "Advancing Sovereign AI With EXAONE NVIDIA and LG AI Research are collaborating to advance EXAONE, one of Korea\u2019s leading sovereign AI models and an open model family available to developers, enterprises and researchers.",
+        "LG AI Research used NVIDIA Blackwell GPUs, NVIDIA NeMo framework and NVIDIA Nemotron open datasets to support EXAONE model development, as well as NVIDIA TensorRT-LLM software to build high-performance inference engines.",
+        "By integrating the NVIDIA Isaac Sim and NVIDIA Isaac Lab open robotics frameworks into their development workflows, LG can simulate, train and validate these home cobots in physically accurate virtual environments.",
+        "Advancing Physical AI and Robotics The combination of LG\u2019s production technology data and know-how from global manufacturing sites with NVIDIA\u2019s AI infrastructure and digital twin technologies will help enhance.",
+        "The GR00T model will provide LG robots humanlike reasoning and the ability to execute complex tasks."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f377b52328545845.png",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/kr-visit-lg-group-1920x1080-no-credit.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d966b9847abade2f.png"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/kr-visit-lg-group-1920x1080-no-credit-1280x720.png"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v3",
+      "title": "The crash that vanished: control and emergence in a five-model economy",
+      "description": "A Blog post by Build Small Hackathon on Hugging Face",
+      "excerpt": "A Blog post by Build Small Hackathon on Hugging Face",
+      "summary": "The flood of supply crashed the honey price from 10 down to 3 over the next few turns. Five labs, five minds The rebuild swapped one model running five creatures for a council of five different labs' small models, each driving its own creature: an OpenAI model, an NVIDIA model, an OpenBMB model, and a half-billion-parameter model I fine-tuned myself running two of them. Change the population, and the emergent behavior you documented can simply evaporate. Behavior you observe and write up from one population of agents can vanish when you change the population, even if nothing else changes. Five labs, five minds The rebuild swapped one model running five creatures for a council of five different labs' small models, each driving its own creature: an OpenAI model, an NVIDIA model, an OpenBMB model, and a half-billion-parameter model I fine-tuned myself running two of them.",
+      "what_happened": "The flood of supply crashed the honey price from 10 down to 3 over the next few turns. Five labs, five minds The rebuild swapped one model running five creatures for a council of five different labs' small models, each driving its own creature: an OpenAI model, an NVIDIA model, an OpenBMB model, and a half-billion-parameter model I fine-tuned myself running two of them.",
+      "why_matters": "Change the population, and the emergent behavior you documented can simply evaporate. Behavior you observe and write up from one population of agents can vanish when you change the population, even if nothing else changes.",
+      "what_to_watch": "Five labs, five minds The rebuild swapped one model running five creatures for a council of five different labs' small models, each driving its own creature: an OpenAI model, an NVIDIA model, an OpenBMB model, and a half-billion-parameter model I fine-tuned myself running two of them.",
+      "key_points": [
+        "Five labs, five minds The rebuild swapped one model running five creatures for a council of five different labs' small models, each driving its own creature: an OpenAI model, an NVIDIA model, an OpenBMB model, and a.",
+        "When the stand-in and the real agents disagree, believe the agents.",
+        "The pattern was the warning.",
+        "The council models, reading a rumor that the vault was empty and a tip that the crop was doomed, did not dump honey the way the original single model had.",
+        "The flood of supply crashed the honey price from 10 down to 3 over the next few turns.",
+        "Every lever I pulled was an input to the agents' decision, and the agents were free to decline.",
+        "The live models ignored the windfall and traded on their own read of the room.",
+        "Author the seam, do not push the inputs The resolution was to stop trying to convince the agents and to make the panic true by construction.",
+        "When the cheap stand-in and the real agents disagree, the stand-in is the one lying, and any result that only reproduces under the stand-in is not a result.",
+        "It is the residue of what the agents actually choose to trade.",
+        "The price is whatever the agents decide to trade at I rebuilt the operator side too.",
+        "First I left the legend as a pure rumor and trusted the agents to react."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ffd2e2d8c966f4e3.png",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/603945d6db430f160dced222/eDl8k9EOfPvNxOiY2N2tf.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/uk-sovereign-ai-advancements/",
+      "title": "How the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies",
+      "description": "A year after declaring itself an \u201cAI maker, not an AI taker,\u201d the UK is delivering sovereign compute, showcasing breakthrough startup and enterprise AI deployments across biology, agentic AI, coding and more.",
+      "excerpt": "A year after declaring itself an \u201cAI maker, not an AI taker,\u201d the UK is delivering sovereign compute, showcasing breakthrough startup and enterprise AI deployments across biology, agentic AI, coding and more.",
+      "summary": "and European companies.\u201d Doubleword Optimizes Inference to Deliver Abundant Intelligence Tokens Doubleword , the U.K.\u2019s first dedicated inference lab, optimizes every layer of the AI stack to maximize what it calls \u201cIQ per dollar.\u201d The company deploys open models including NVIDIA Nemotron 3 Super 120B and builds on the NVIDIA Dynamo inference framework. We are determined to make sure the next generation of AI breakthroughs happens in this country, and we have everything we need to make it happen.\u201d Commitment to. And the NVIDIA Developer Program now includes more than 200,000 U.K. With its Isambard allocation, the company is developing Pleiades 2, a foundation model combining five biological data modalities. Among its first recipients is Ineffable Intelligence , which recently announced a collaboration with NVIDIA to build the future of reinforcement learning infrastructure. We have the infrastructure and the training.",
+      "what_happened": "and European companies.\u201d Doubleword Optimizes Inference to Deliver Abundant Intelligence Tokens Doubleword , the U.K.\u2019s first dedicated inference lab, optimizes every layer of the AI stack to maximize what it calls \u201cIQ per dollar.\u201d The company deploys open models including NVIDIA Nemotron 3 Super 120B and builds on the NVIDIA Dynamo inference framework. We are determined to make sure the next generation of AI breakthroughs happens in this country, and we have everything we need to make it happen.\u201d Commitment to.",
+      "why_matters": "And the NVIDIA Developer Program now includes more than 200,000 U.K. With its Isambard allocation, the company is developing Pleiades 2, a foundation model combining five biological data modalities.",
+      "what_to_watch": "Among its first recipients is Ineffable Intelligence , which recently announced a collaboration with NVIDIA to build the future of reinforcement learning infrastructure. We have the infrastructure and the training.",
+      "key_points": [
+        "and European companies.\u201d Doubleword Optimizes Inference to Deliver Abundant Intelligence Tokens Doubleword , the U.K.\u2019s first dedicated inference lab, optimizes every layer of the AI stack to maximize what it calls \u201cIQ.",
+        "We have the infrastructure and the training.",
+        "In May, the NVIDIA Deep Learning Institute (DLI) delivered two new courses - added to support the nation\u2019s wireless research community - to participants from over 30 U.K.",
+        "We are determined to make sure the next generation of AI breakthroughs happens in this country, and we have everything we need to make it happen.\u201d Commitment to Compute Over the past year, the number of AI cloud.",
+        "And the NVIDIA Developer Program now includes more than 200,000 U.K.",
+        "Among its first recipients is Ineffable Intelligence , which recently announced a collaboration with NVIDIA to build the future of reinforcement learning infrastructure.",
+        "Achieving nearly 3x speedups in model training with NVIDIA Blackwell GPUs , Prima Mente also uses NVIDIA Parabricks for genomic data processing and NVIDIA Transformer Engine for model optimization.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "AI Talent, Policy and Production NVIDIA\u2019s \u00a32 billion investment in the U.K.",
+        "The result: inference at 90-95% lower costs than other leading inference providers.",
+        "\u201cInference is when you\u2019re actually getting the value from the model - we want that value created in the U.K., with U.K.",
+        "BT and Nscale announced plans to build sovereign AI data centers across three existing BT sites in the U.K., combining NVIDIA AI infrastructure, Nscale\u2019s full stack and BT\u2019s trusted nationwide connectivity backbone."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/debb10be53ba2bd3.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/london-tech-week-2026-key-visual.jpeg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c51121412d877a79.jpg"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/london-tech-week-2026-key-visual-1280x720.jpeg"
+      ]
+    },
+    {
+      "url": "https://www.therobotreport.com/daimon-robotics-and-galbot-jointly-launches-robomni-for-benchmarking-tactile-perception-and-dexterous-manipulation/",
+      "title": "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation - The Robot Report",
+      "description": "Embodied AI is evolving from vision-centric perception toward Physical AI.",
+      "excerpt": "Embodied AI is evolving from vision-centric perception toward Physical AI.",
+      "summary": "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report This enables researchers and robotics developers to move beyond assumptions and quantify the actual value of tactile intelligence during physical interaction. Daimon Robotics, an embodied intelligence company from Hong Kong focused on tactile perception and dexterous manipulation, refers to its approach as \u201comni-modal tactile intelligence\u201d. The platform supports reinforcement learning, imitation learning, and side-by-side comparisons across different algorithms and model architectures. To address this challenge, Daimon Robotics has launched RobOmni at ICRA2026, the first omni-modal evaluation benchmark including tactile sensing for physical interaction.",
+      "what_happened": "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report This enables researchers and robotics developers to move beyond assumptions and quantify the actual value of tactile intelligence during physical interaction.",
+      "why_matters": "Daimon Robotics, an embodied intelligence company from Hong Kong focused on tactile perception and dexterous manipulation, refers to its approach as \u201comni-modal tactile intelligence\u201d. The platform supports reinforcement learning, imitation learning, and side-by-side comparisons across different algorithms and model architectures.",
+      "what_to_watch": "To address this challenge, Daimon Robotics has launched RobOmni at ICRA2026, the first omni-modal evaluation benchmark including tactile sensing for physical interaction.",
+      "key_points": [
+        "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around.",
+        "This enables researchers and robotics developers to move beyond assumptions and quantify the actual value of tactile intelligence during physical interaction.",
+        "To address this challenge, Daimon Robotics has launched RobOmni at ICRA2026, the first omni-modal evaluation benchmark including tactile sensing for physical interaction.",
+        "Daimon Robotics, an embodied intelligence company from Hong Kong focused on tactile perception and dexterous manipulation, refers to its approach as \u201comni-modal tactile intelligence\u201d.",
+        "The platform supports reinforcement learning, imitation learning, and side-by-side comparisons across different algorithms and model architectures.",
+        "While many robotics developers believe tactile will play an important role in the next generation of embodied intelligence, the industry lacks a standardized way to evaluate its impact.",
+        "The robotics industry has established benchmarks for perception, navigation, and machine learning performance.",
+        "Daimon seeks to drive the convergence of standards for tactile sensing and physical interaction.",
+        "Only with a unified evaluation framework can Physical AI progress from isolated breakthroughs to scalable advancement, ultimately enabling robots to truly interact with the real-world safely and reliably.",
+        "As the industry works toward more capable and adaptable robotic systems, understanding the role of tactile may become just as important as advancing the underlying AI models themselves.",
+        "Precisely because tactile sensing provides rich and multidimensional physical feedback, its value and capabilities must be systematically quantified - making a comprehensive tactile benchmark increasingly essential.",
+        "While vision enables robots to perceive the world, it cannot fully capture the physical interactions that underpin real-world manipulation, limiting robots\u2019 ability to operate reliably in unstructured environments."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5d70edc2188d5de8.png",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/06/schenzhen-sponsored-image1-june2026-article2.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2189069/undead-labs-finally-shows-off-state-of-decay-3-gameplay-in-new-trailer/",
+      "title": "Undead Labs finally shows off State of Decay 3 gameplay in new trailer - Engadget",
+      "description": "The game is slated for release in 2027.",
+      "excerpt": "The game is slated for release in 2027.",
+      "summary": "The game is slated for release in 2027. While we didn't get a firm release date, the trailer reveals State of Decay 3 will be here next year. Undead Labs finally shows off State of Decay 3 gameplay in new trailer It's been six years since State of Decay 3 was first announced and we finally just got a proper look at some gameplay. A new trailer premiered at Xbox Games Showcase 2026, providing some much needed confirmation that things are moving along toward release. Here's what to expect from State of Decay 3 : \"In a harsh and unpredictable zombie apocalypse, community is survival. Undead Labs finally shows off State of Decay 3 gameplay in new trailer It's been six years since State of Decay 3 was first announced and we finally just got a proper look at some gameplay.",
+      "what_happened": "The game is slated for release in 2027. While we didn't get a firm release date, the trailer reveals State of Decay 3 will be here next year.",
+      "why_matters": "Undead Labs finally shows off State of Decay 3 gameplay in new trailer It's been six years since State of Decay 3 was first announced and we finally just got a proper look at some gameplay. A new trailer premiered at Xbox Games Showcase 2026, providing some much needed confirmation that things are moving along toward release.",
+      "what_to_watch": "Here's what to expect from State of Decay 3 : \"In a harsh and unpredictable zombie apocalypse, community is survival. Undead Labs finally shows off State of Decay 3 gameplay in new trailer It's been six years since State of Decay 3 was first announced and we finally just got a proper look at some gameplay.",
+      "key_points": [
+        "The game is slated for release in 2027.",
+        "While we didn't get a firm release date, the trailer reveals State of Decay 3 will be here next year.",
+        "Undead Labs finally shows off State of Decay 3 gameplay in new trailer It's been six years since State of Decay 3 was first announced and we finally just got a proper look at some gameplay.",
+        "A new trailer premiered at Xbox Games Showcase 2026, providing some much needed confirmation that things are moving along toward release.",
+        "The game will be available on Xbox, Steam and PlayStation 5.",
+        "Here's what to expect from State of Decay 3 : \"In a harsh and unpredictable zombie apocalypse, community is survival.",
+        "Players will build settlements, keep a community of survivors alive, and fight back against a dynamic and encroaching zombie threat as they reclaim a world overrun by blood plague.\" It'll support both solo play and.",
+        "Do not sell or share my personal information."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2188542/kindle-alternatives-subscription-costs-compared/",
+      "title": "The best Kindle alternatives for those looking to ditch Amazon - Engadget",
+      "description": "Whether you hate subscriptions like Kindle Unlimited or simply want to get away from Amazon for whatever reason, you'll find plenty of solid options available.",
+      "excerpt": "Whether you hate subscriptions like Kindle Unlimited or simply want to get away from Amazon for whatever reason, you'll find plenty of solid options available.",
+      "summary": "Whether you hate subscriptions like Kindle Unlimited or simply want to get away from Amazon for whatever reason, you'll find plenty of solid options available.",
+      "what_happened": "Whether you hate subscriptions like Kindle Unlimited or simply want to get away from Amazon for whatever reason, you'll find plenty of solid options available.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Whether you hate subscriptions like Kindle Unlimited or simply want to get away from Amazon for whatever reason, you'll find plenty of solid options available."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/11d2bafbeb22bfb9.jpg",
+      "image_url": "https://www.engadget.com/img/gallery/the-best-kindle-alternatives-for-those-looking-to-ditch-amazon/ipad-2025-with-a16-1780687891.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2186956/burn-9-makes-an-entire-game-out-of-metal-gear-s-codec-scenes/",
+      "title": "Burn-9 makes an entire game out of Metal Gear's Codec scenes - Engadget",
+      "description": "Plus, check out the new trailer for the cosmic horror game Penguin Colony.",
+      "excerpt": "Plus, check out the new trailer for the cosmic horror game Penguin Colony.",
+      "summary": "Plus, check out the new trailer for the cosmic horror game Penguin Colony.",
+      "what_happened": "Plus, check out the new trailer for the cosmic horror game Penguin Colony.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Plus, check out the new trailer for the cosmic horror game Penguin Colony."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 6,
+  "has_cta": true,
+  "slides": [
+    "The Open Source Community is backing OpenEnv for Agentic RL.",
+    "NVIDIA and LG Group Build an AI Factory to Advance Physical AI.",
+    "Models Datasets Spaces Buckets new Docs Enterprise Pricing Website Tasks HuggingChat Collections.",
+    "Doubleword Optimizes Inference upgrades European companies to Deliver Abundant Intelligence Tokens.",
+    "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception.",
+    "FOLLOW @graitech"
+  ]
+}

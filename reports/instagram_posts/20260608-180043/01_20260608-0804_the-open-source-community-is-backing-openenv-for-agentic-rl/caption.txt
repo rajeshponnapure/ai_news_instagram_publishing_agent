@@ -1,0 +1,27 @@
+Source Community is backing OpenEnv for Agentic RL.
+
+Swipe for the full breakdown.
+
+- We want those gains with open source models too: training local models that use harnesses effectively, and saving.
+- OpenEnv in Practice: Evaluating Tool-Using Agents in Real-World Environments Building the Open Agent Ecosystem Together: Introducing OpenEnv.
+- We're on a journey to advance and democratize artificial intelligence through open source and open science.
+- And today, we're excited to announce that OpenEnv is becoming even more open, to make the future.
+- Its job is to standardize how environments are published, deployed, and consumed by agents.
+
+Do you think OpenAI's move here is exciting or a risk? Drop your take below.
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://huggingface.co/blog/openenv-agentic-rl
+- https://blogs.nvidia.com/blog/nvidia-and-lg-group-ai-factory/
+- https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v3
+- https://blogs.nvidia.com/blog/uk-sovereign-ai-advancements/
+- https://www.therobotreport.com/daimon-robotics-and-galbot-jointly-launches-robomni-for-benchmarking-tactile-perception-and-dexterous-manipulation/
+
+#AIAgents #AutonomousAgents #AIWorkflow #AIRegulation #TechLaw #AITools #ProductivityAI #AIProductivity #OpenAI #ChatGPT #GPT4 #GPT5 #Claude #Anthropic #AIUpdates #ArtificialIntelligence #FutureOfAI #TechTrends #MachineLearning #DataScience
+
+-
+Benchmarks reflect results at publication time and may change as models are updated.
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-

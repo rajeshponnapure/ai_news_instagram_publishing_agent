@@ -1,0 +1,83 @@
+{
+  "email_received_at": "2026-06-08T18:01+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Mon, 08 Jun 2026 18:01:29 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.wired.com/story/momfluencers-are-pitching-ai-as-a-better-coparent-than-men/",
+      "title": "Company : Wired AI",
+      "description": "[MEDIUM] Momfluencers Are Pitching AI as a Better \u2018Coparent\u2019 Than Men Company : Wired AI Summary : Moms are outsourcing tedious household tasks to ChatGPT and selling courses teaching others to do the same. Where are all the dads? Link :",
+      "text": "[MEDIUM] Momfluencers Are Pitching AI as a Better \u2018Coparent\u2019 Than Men Company : Wired AI Summary : Moms are outsourcing tedious household tasks to ChatGPT and selling courses teaching others to do the same. Where are all the dads? Link :",
+      "excerpt": "[MEDIUM] Momfluencers Are Pitching AI as a Better \u2018Coparent\u2019 Than Men Company : Wired AI Summary : Moms are outsourcing tedious household tasks to ChatGPT and selling courses teaching others to do the same. Where are all the dads? Link :",
+      "image_url": "https://media.wired.com/photos/6a2347d049872af07a400381/191:100/w_1280,c_limit/AI-Momfluencers-Culture.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.wired.com/story/momfluencers-are-pitching-ai-as-a-better-coparent-than-men/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/jun/08/stock-markets-fall-tech-firms-ai-boom-oil-prices-iran-israel",
+      "title": "Company : The Guardian Tech",
+      "description": "[MEDIUM] Stock markets fall as concerns persist over tech firms at heart of AI boom Company : The Guardian Tech Summary : Drops follow sharp sell-off of US tech stock last week while oil prices seesaw after Iran and Israel exchange strikes Business live \u2013 latest updates Stock markets have fallen amid concern about the pr Link :",
+      "text": "[MEDIUM] Stock markets fall as concerns persist over tech firms at heart of AI boom Company : The Guardian Tech Summary : Drops follow sharp sell-off of US tech stock last week while oil prices seesaw after Iran and Israel exchange strikes Business live \u2013 latest updates Stock markets have fallen amid concern about the pr Link :",
+      "excerpt": "[MEDIUM] Stock markets fall as concerns persist over tech firms at heart of AI boom Company : The Guardian Tech Summary : Drops follow sharp sell-off of US tech stock last week while oil prices seesaw after Iran and Israel exchange strikes Business live \u2013 latest updates Stock markets have fallen amid concern about the pr Link :",
+      "image_url": "https://i.guim.co.uk/img/media/ef5e7178d44e3cb982ed3f207097d4291b36c415/830_0_6524_5222/master/6524.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=18d85e66e01b5f061d4f0b1a19a32b79",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theguardian.com/business/2026/jun/08/stock-markets-fall-tech-firms-ai-boom-oil-prices-iran-israel",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.producthunt.com/products/claude-artifact-player",
+      "title": "Company : Product Hunt AI",
+      "description": "[MEDIUM] Claude Artifact Player Company : Product Hunt AI Summary : Run Claude artifacts locally Discussion | Link Link :",
+      "text": "[MEDIUM] Claude Artifact Player Company : Product Hunt AI Summary : Run Claude artifacts locally Discussion | Link Link :",
+      "excerpt": "[MEDIUM] Claude Artifact Player Company : Product Hunt AI Summary : Run Claude artifacts locally Discussion | Link Link :",
+      "image_url": "https://ph-files.imgix.net/e4129523-6fd4-4017-ba71-4d960759e742.png?auto=format&amp;fit=crop&amp;frame=1&amp;h=512&amp;w=1024",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.producthunt.com/products/claude-artifact-player",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.cnbc.com/2026/06/08/amazon-taps-corning-for-op.html",
+      "title": "Corning shares jump 4% after company strikes deal to power Amazon AI data centers in U.S.",
+      "description": "Amazon is the latest megacap company to announce a massive deal with Corning, which is rapidly becoming a critical player in the AI buildout.",
+      "text": "Corning shares jump 4% after company strikes deal to power Amazon AI data centers in U.S. Amazon is paying Corning billions of dollars for optical fiber to power and connect its rapidly expanding U.S. data centers for artificial intelligence. It\u2019s the latest megadeal for Corning, following agreements with Meta and Nvidia earlier this year, as the glass company finds itself at the center of the AI boom. Corning\u2019s stock has more than doubled this year and is up almost sixfold since the end of 2023. data centers, the latest megadeal featuring two companies at the center of the artificial intelligence boom. The agreement, announced Monday, will play out over several years and create 1,000 jobs at Corning\u2019s North Carolina factories, the companies said. Corning\u2019s fiber optic cable and networking solutions are becoming essential elements of AI infrastructure because they enable fast connections between data centers and the racks and chips they house. Shares of Corning popped 4% on Monday. Amazon stock was little changed. \u201cAmazon\u2019s data centers power the services millions of people and businesses rely on every day,\u201d the companies said in a press release. \u201cCorning\u2019s fiber optics are a critical piece of that infrastructure, and together, these investments help fuel the U.S. economic engine.\u201d The deal also expands a Corning training program for fiber optic technicians in North Carolina. Amazon Web Services CEO Matt Garman said in the press release that the company\u2019s investments in the state have created over 26,000 jobs. Last year, Amazon committed to spend $10 billion on new data centers in North Carolina. Fresh demand from AI is reinvigorating the 175-year-old Corning as hyperscalers and AI labs scramble to meet their exploding needs for computing power. Corning\u2019s shares have more than doubled so far this year and are up almost sixfold since the end of 2023. In May, Nvidia committed to investing up to $3.2 billion in Corning as part of a deal that involves the glass company building three new advanced manufacturing plants entirely devoted to the chipmaker. And in January, Meta said it would spend up to $6 billion as the flagship customer helping Corning build out its optical cable plant in Hickory, North Carolina, an expansion that\u2019s expected to create around 1,000 jobs. Corning is well known for making all the display glass for Apple \u2019s iPhone, but optical communications remains its largest and fastest-growing business. Since inventing optical fiber for long-range communication in 1970, Corning has provided millions of miles of cables to connect racks together in AI data centers from all the major players. The Trump administration has called on Big Tech to onshore as many steps in the AI supply chain as possible, and Corning helps answer that need. The majority of Corning\u2019s business happens overseas, which CEO Wendell Weeks told CNBC earlier this year isn\u2019t changing. But he also said \u201cnext year the hyperscalers will be our biggest customers.\u201d \u201cThis agreement with Amazon represents a significant milestone for Corning and for American manufacturing,\u201d Weeks said in Monday\u2019s press release, adding it will \u201clead the way toward building a resilient U.S. manufacturing base.\u201d WATCH: Amazon\u2019s biggest AI data center powers Anthropic without Nvidia WWDC 2026: Siri AI revealed, Apple search updates, Liquid Glass changes Apple\u2019s WWDC: Tim Cook\u2019s AI legacy at stake in his final developer conference as CEO Model routing is a fix for AI overspending. That\u2019s a problem for OpenAI and Anthropic Trump signs AI executive order asking companies to give government early access to models Get this delivered to your inbox, and more info about our products and services. Data is a real-time snapshot *Data is delayed at least 15 minutes. Global Business and Financial News, Stock Quotes, and Market Data and Analysis. We and our partners also use tools on this site to provide the services, personalize your experience, and for analytics, marketing, and advertising. If you previously opted out of selling, sharing, or targeted advertising on this site, you will need to update your Privacy Choice. Notice of Right to Opt-Out of Sale/Sharing and Targeted Advertising In addition to the toggle, you should also provide the information requested in our \u201cOpt-Out Form\u201d (accessible by clicking the \u201c+\u201d below), which will enable us to take action on your opt-out election more broadly than just on this site (e.g., we will be able to stop sharing your email with third parties in order to target you with adverting on other site and services, such as social media platforms). If you opt-out, you may continue to see advertising, including ads that may be based on personal information processed before you opted out. Manage Opt-Out Preferences: Move Toggle to Left and Click \u201cConfirm My Choice\u201d and then Complete Opt-Out Form (accessible by clicking \u201c+\u201d below) You should also provide the info requested in this Opt-Out Form , which will enable us to take action on your opt-out election more broadly than just this site (e.g., we will be able to stop sharing your email with third parties in order to target you with adverting on other sites and services, such as social media platforms).",
+      "excerpt": "Amazon is the latest megacap company to announce a massive deal with Corning, which is rapidly becoming a critical player in the AI buildout.",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108302673-1778030331411-260109_cn_30_tech_corning_meta_cleanmp400_15_13_17Still021.jpg?v=1778091614&amp;w=1920&amp;h=1080",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.cnbc.com/2026/06/08/amazon-taps-corning-for-op.html",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 5,
+  "has_cta": true,
+  "slides": [
+    "Previously Rejected Articles Now Recovered.",
+    "Const firstColLink = document.querySelector( '#newsLinks > li:nth-of-type(2) > a', ); /** *.",
+    "Best Products Launches Launch archive Most-loved launches by the community Launch Guide.",
+    "Corning shares jump 4 after company strikes deal to power Amazon AI.",
+    "FOLLOW @graitech"
+  ]
+}
