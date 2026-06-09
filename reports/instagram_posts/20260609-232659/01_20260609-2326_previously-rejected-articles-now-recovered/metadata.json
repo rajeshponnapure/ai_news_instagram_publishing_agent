@@ -1,0 +1,82 @@
+{
+  "email_received_at": "2026-06-09T23:26+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Tue, 09 Jun 2026 23:26:59 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.engadget.com/2190934/anthropic-fable-ai-brings-the-capabilities-of-its-unreleased-mythos-model-to-regular-users/",
+      "title": "Company : Engadget",
+      "description": "[HIGH] Anthropic's Fable AI brings the capabilities of its unreleased Mythos model to regular users Company : Engadget Summary : Claude subscribers can try the model until June 22 without spending usage credits. Link :",
+      "text": "[HIGH] Anthropic's Fable AI brings the capabilities of its unreleased Mythos model to regular users Company : Engadget Summary : Claude subscribers can try the model until June 22 without spending usage credits. Link :",
+      "excerpt": "[HIGH] Anthropic's Fable AI brings the capabilities of its unreleased Mythos model to regular users Company : Engadget Summary : Claude subscribers can try the model until June 22 without spending usage credits. Link :",
+      "image_url": "https://www.engadget.com/img/gallery/anthropic-fable-ai-brings-the-capabilities-of-its-unreleased-mythos-model-to-regular-users/l-intro-1781040381.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.engadget.com/2190934/anthropic-fable-ai-brings-the-capabilities-of-its-unreleased-mythos-model-to-regular-users/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/ckg701v1dp6o?at_medium=RSS&at_campaign=rss",
+      "title": "Company : BBC Tech",
+      "description": "[HIGH] Version of AI tool 'too powerful for public' released to public Company : BBC Tech Summary : Claude Fable 5 is a version of Anthropic's Claude Mythos, an AI program which caused a stir among technology, finance, and government leaders. Link :",
+      "text": "[HIGH] Version of AI tool 'too powerful for public' released to public Company : BBC Tech Summary : Claude Fable 5 is a version of Anthropic's Claude Mythos, an AI program which caused a stir among technology, finance, and government leaders. Link :",
+      "excerpt": "[HIGH] Version of AI tool 'too powerful for public' released to public Company : BBC Tech Summary : Claude Fable 5 is a version of Anthropic's Claude Mythos, an AI program which caused a stir among technology, finance, and government leaders. Link :",
+      "image_url": "https://ichef.bbci.co.uk/news/1024/branded_news/3a65/live/82edf440-642b-11f1-a08b-a904eba6340c.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.bbc.com/news/articles/ckg701v1dp6o?at_medium=RSS&at_campaign=rss",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/openai-s-ipo-navigating-profitability-market-dynamics",
+      "title": "Company : AI Business",
+      "description": "[HIGH] OpenAI\u2019s IPO: Navigating Profitability and Market Dynamics Company : AI Business Summary : The vendor\u2019s filing comes amid a market in which other top AI vendors are also planning to go public. However, OpenAI faces unique challenges that investors will be watching closely. Link :",
+      "text": "[HIGH] OpenAI\u2019s IPO: Navigating Profitability and Market Dynamics Company : AI Business Summary : The vendor\u2019s filing comes amid a market in which other top AI vendors are also planning to go public. However, OpenAI faces unique challenges that investors will be watching closely. Link :",
+      "excerpt": "[HIGH] OpenAI\u2019s IPO: Navigating Profitability and Market Dynamics Company : AI Business Summary : The vendor\u2019s filing comes amid a market in which other top AI vendors are also planning to go public. However, OpenAI faces unique challenges that investors will be watching closely. Link :",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt2b7764d6a75bcab3/6a2837aa77d3ba37c5dbf4fd/OpenAI_IPO.jpg?disable=upscale&width=1200&height=630&fit=crop",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://aibusiness.com/generative-ai/openai-s-ipo-navigating-profitability-market-dynamics",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "title": "Company : Anthropic",
+      "description": "[HIGH] Claude Fable 5 and Claude Mythos 5AnnouncementsJun 9, 2026Our next generation of intelligence for the hardest knowledge work and coding problems. Company : Anthropic Summary : Our next generation of intelligence for the hardest knowledge work and coding problems. Link :",
+      "text": "[HIGH] Claude Fable 5 and Claude Mythos 5AnnouncementsJun 9, 2026Our next generation of intelligence for the hardest knowledge work and coding problems. Company : Anthropic Summary : Our next generation of intelligence for the hardest knowledge work and coding problems. Link :",
+      "excerpt": "[HIGH] Claude Fable 5 and Claude Mythos 5AnnouncementsJun 9, 2026Our next generation of intelligence for the hardest knowledge work and coding problems. Company : Anthropic Summary : Our next generation of intelligence for the hardest knowledge work and coding problems. Link :",
+      "image_url": "https://cdn.sanity.io/images/4zrzovbb/website/b7055119423427c40a0e4d84054aed17682b50a2-2880x1620.png",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 4,
+  "has_cta": true,
+  "slides": [
+    "Anthropic adds adds Fable is particularly adept at tasks.",
+    "Tuesday tightens company also said on said roughly 150.",
+    "For businesses and customers of these AI labs, the implications could include.",
+    "FOLLOW @graitech"
+  ]
+}
