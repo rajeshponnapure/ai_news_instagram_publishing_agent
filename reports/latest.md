@@ -1,53 +1,54 @@
 # AI News Summary Report
 
-Generated: 2026-06-09T07:27:28+00:00
+Generated: 2026-06-09T14:08:11+00:00
 Source: grdevelopers.co@gmail.com
 Emails summarized: 1
 
 ## Executive Brief
 
-- The vibe of Apple's 2026 WWDC keynote felt like a spouse proudly listing all the honey-do-list items tackled.
-- One subtle example: the many AI demos of someone standing, phone in hand.
-- European Union and Chinese citizens will have to wait even longer before getting their hands on Apple's hotly-anticipated iOS 27 and iPadOS 27 with the new Siri.
-- At WWDC 2026, Apple resurrected its AI-powered voice assistant, now named Siri AI.
-- Apple's $3,500 headset is also getting an AI upgrade.
-- "We expect it to leak so we're just announcing it."
+- The hard part of using a state-of-the-art image model, a video model, a TTS model, or a 3D reconstruction model was never the model.
+- Every Space is a building block, via agents.md The Hub hosts thousands of state-of-the-art models (a huge share of them open-weights ), and most are deployed as interactive Spaces .
+- Point your own agent at a Space's agents.md and let it cook: Paste either link into your coding agent (Claude Code, etc.), set your HF_TOKEN , and ask it to build something.
+- The six source images the agent generated, all isolated on black, ready for single-image 3D reconstruction: From there the agent did the "glue" work too.
+- It noticed TripoSplat outputs are Y-down and flipped them upright, auto-framed each monument, compressed the .ply files to .ksplat (~3× smaller, so they load fast), built a Three.js viewer with a scroll-to-switch and.
+- A Blog post by Mishig Davaadorj on Hugging Face How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces I asked a coding agent to build a beautiful website showcasing the monuments of Paris as 3D.
 
 ## Most Mentioned Companies
 
-OpenAI (1), Google (1), Apple (1), NVIDIA (1), WWDC AI (1), Siri AI (1), The AI (1)
+OpenAI (1), Google (1), Anthropic (1), Microsoft (1), Meta (1), Apple (1), xAI (1), Hugging Face (1)
 
 ## Most Mentioned Models
 
-No clear model mentions found.
+Claude (1), Gemini (1), Grok (1)
 
 ## Main Topics
 
-model release (1), media generation (1)
+model release (1), funding or business (1), regulation or safety (1), developer tools (1), hardware and compute (1), media generation (1)
 
 ## Voice Script Hooks
 
-- OpenAI just made a move in model release: Apple's WWDC AI demos looked more real after $250M false ad settlement | TechCrunch
+- OpenAI just made a move in model release: How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces
 
 ## Per-Email Summaries
 
-### 1. Apple's WWDC AI demos looked more real after $250M false ad settlement | TechCrunch
+### 1. How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces
 
-Source date: Mon, 08 Jun 2026 21:43:25 -0700
+Source date: Tue, 09 Jun 2026 04:50:31 -0700
 Confidence: 0.82
-Article: https://techcrunch.com/2026/06/08/apples-wwdc-ai-demos-looked-more-real-after-250m-false-ad-settlement/
-Article title: Apple's WWDC AI demos looked more real after $250M false ad settlement | TechCrunch
+Article: https://huggingface.co/blog/mishig/spaces-agents-md
+Article title: How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces
 
-Article excerpt: The vibe of Apple's 2026 WWDC keynote felt like a spouse proudly listing all the honey-do-list items tackled. One subtle example: the many AI demos of someone standing, phone in hand.
+Article excerpt: A Blog post by Mishig Davaadorj on Hugging Face
 
-The vibe of Apple's 2026 WWDC keynote felt like a spouse proudly listing all the honey-do-list items tackled. One subtle example: the many AI demos of someone standing, phone in hand. One subtle example: the many AI demos of someone standing, phone in hand. One subtle example: the many AI demos of someone standing, phone in hand. The vibe of Apple's 2026 WWDC keynote felt like a spouse proudly listing all the honey-do-list items tackled. One subtle example: the many AI demos of someone standing, phone in hand. The vibe of Apple's 2026 WWDC keynote felt like a spouse proudly listing all the honey-do-list items tackled. One subtle example: the many AI demos of someone standing, phone in hand.
+Every Space is a building block, via agents.md The Hub hosts thousands of state-of-the-art models (a huge share of them open-weights ), and most are deployed as interactive Spaces . It noticed TripoSplat outputs are Y-down and flipped them upright, auto-framed each monument, compressed the .ply files to .ksplat (~3× smaller, so they load fast), built a Three.js viewer with a scroll-to-switch and drag-to-rotate UI, and deployed the whole thing as a static Space. The hard part of using a state-of-the-art image model, a video model, a TTS model, or a 3D reconstruction model was never the model. Point your own agent at a Space's agents.md and let it cook: Paste either link into your coding agent (Claude Code, etc.), set your HF_TOKEN , and ask it to build something. The real unlock is chaining : the output of one Space becomes the input to the next. The hard part of using a state-of-the-art image model, a video model, a TTS model, or a 3D reconstruction model was never the model. The hard part of using a state-of-the-art image model, a video model, a TTS model, or a 3D reconstruction model was never the model. Every Space is a building block, via agents.md The Hub hosts thousands of state-of-the-art models (a huge share of them open-weights ), and most are deployed as interactive Spaces . Point your own agent at a Space's agents.md and let it cook: Paste either link into your coding agent (Claude Code, etc.), set your HF_TOKEN , and ask it to build something. The six source images the agent generated, all isolated on black, ready for single-image 3D reconstruction: From there the agent did the "glue" work too. It noticed TripoSplat outputs are Y-down and flipped them upright, auto-framed each monument, compressed the .ply files to .ksplat (~3× smaller, so they load fast), built a Three.js viewer with a scroll-to-switch and. A Blog post by Mishig Davaadorj on Hugging Face How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces I asked a coding agent to build a beautiful website showcasing the monuments of Paris as 3D. The real unlock is chaining : the output of one Space becomes the input to the next. agents.md makes a Space trivially reachable, so an agent will pick it over a model it has to set up by hand. Spaces mentioned in this article 3 Two Years of Local AI on a Laptop: When Open Models Outpaced Moore's Law 10 Ideas That Turned a 45-Minute Training Run Into 90 Seconds Spaces mentioned in this article 3 As of now, every Gradio Space also exposes a plain-text agents.md that tells an agent exactly how to call it: returns everything needed in one shot: the schema URL, the call and poll templates, how to upload files, and. The agents already know how to glue. The full, reproducible pipeline for this gallery, the scripts that hit those two agents.md endpoints, lives in the Space repo . A Blog post by Mishig Davaadorj on Hugging Face How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces I asked a coding agent to build a beautiful website showcasing the monuments of Paris as 3D Gaussian splats. I never opened an image generator. I never touched a 3D reconstruction tool. The agent produced every asset (the images and the 3D splats) by calling two Hugging Face Spaces directly, then wired them into a cinematic viewer. This post is about how that's possible now, and why I think it's a preview of how a lot of multimedia software gets built from here on. The building-block economy comes for multimedia Mitchell Hashimoto recently described a shift he calls the building block economy : the most effective path to software is no longer a polished monolith, but small, well-documented components that others (increasingly agents ) can assemble. His key observation: AI is okay at building everything from scratch, but it is really good at gluing together proven pieces. That thesis has mostly been told with code libraries. But the same forces are hitting multimedia AI . The hard part of using a state-of-the-art image model, a video model, a TTS model, or a 3D reconstruction model was never the model. It was the integration: SDKs, weights, GPUs, input formats, polling. If each model were instead a documented, callable block, an agent could glue them together the same way it globs together npm packages. That's exactly what Hugging Face Spaces have quietly become. Every Space is a building block, via agents.md The Hub hosts thousands of state-of-the-art models (a huge share of them open-weights ), and most are deployed as interactive Spaces . As of now, every Gradio Space also exposes a plain-text agents.md that tells an agent exactly how to call it: returns everything needed in one shot: the schema URL, the call and poll templates, how to upload files, and the auth hint: No client library. No hardcoded integration. An agent reads that, and it can drive the Space end to end. Set an HF_TOKEN and you're going. The real unlock is chaining : the output of one Space becomes the input to the next. That's the whole pipeline behind this gallery. The worked example: Paris monuments → splats Image: ideogram-ai/ideogram4 turned each monument into a clean, dark-background "specimen" shot (and the Eiffel Tower into a little diorama on a plinth). Splat: VAST-AI/TripoSplat reconstructed a 3D Gaussian splat ( .ply ) from each single image. The six source images the agent generated, all isolated on black, ready for single-image 3D reconstruction: From there the agent did the "glue" work too. It noticed TripoSplat outputs are Y-down and flipped them upright, auto-framed each monument, compressed the .ply files to .ksplat (~3× smaller, so they load fast), built a Three.js viewer with a scroll-to-switch and drag-to-rotate UI, and deployed the whole thing as a static Space. The only human inputs were taste-level: "make it zoomed out," "replace the obelisk with something better for splatting," "the transition lingers too long." Several of those steps were the agent reacting to reality . A wide glass pyramid splats poorly. A single-view reconstruction infers the back. That is exactly the "outsourced R&D, fast iteration" loop the building-block economy predicts, except the R&D was a conversation. Models become composable. A SOTA splat model and a SOTA image model, from different orgs, chained with zero integration code. The Hub's open-weights catalog turns into a library of callable multimedia primitives. Agents prefer what's documented and reachable. agents.md makes a Space trivially reachable, so an agent will pick it over a model it has to set up by hand. That is the same dynamic Hashimoto flags for open-source libraries. The barrier was integration, and it's largely gone. "Turn a prompt into a rotating 3D monument" used to be a project. Here it was a step in a pipeline. Point your own agent at a Space's agents.md and let it cook: Paste either link into your coding agent (Claude Code, etc.), set your HF_TOKEN , and ask it to build something. The full, reproducible pipeline for this gallery, the scripts that hit those two agents.md endpoints, lives in the Space repo . The building blocks are sitting right there on the Hub. The agents already know how to glue. Spaces mentioned in this article 3 Two Years of Local AI on a Laptop: When Open Models Outpaced Moore's Law 10 Ideas That Turned a 45-Minute Training Run Into 90 Seconds Spaces mentioned in this article 3
 
 Key points:
-- The vibe of Apple's 2026 WWDC keynote felt like a spouse proudly listing all the honey-do-list items tackled.
-- One subtle example: the many AI demos of someone standing, phone in hand.
-- European Union and Chinese citizens will have to wait even longer before getting their hands on Apple's hotly-anticipated iOS 27 and iPadOS 27 with the new Siri.
-- At WWDC 2026, Apple resurrected its AI-powered voice assistant, now named Siri AI.
-- Apple's $3,500 headset is also getting an AI upgrade.
-- "We expect it to leak so we're just announcing it."
-Companies: OpenAI, Google, Apple, NVIDIA, WWDC AI, Siri AI, The AI
-Topics: model release, media generation
+- The hard part of using a state-of-the-art image model, a video model, a TTS model, or a 3D reconstruction model was never the model.
+- Every Space is a building block, via agents.md The Hub hosts thousands of state-of-the-art models (a huge share of them open-weights ), and most are deployed as interactive Spaces .
+- Point your own agent at a Space's agents.md and let it cook: Paste either link into your coding agent (Claude Code, etc.), set your HF_TOKEN , and ask it to build something.
+- The six source images the agent generated, all isolated on black, ready for single-image 3D reconstruction: From there the agent did the "glue" work too.
+- It noticed TripoSplat outputs are Y-down and flipped them upright, auto-framed each monument, compressed the .ply files to .ksplat (~3× smaller, so they load fast), built a Three.js viewer with a scroll-to-switch and.
+- A Blog post by Mishig Davaadorj on Hugging Face How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces I asked a coding agent to build a beautiful website showcasing the monuments of Paris as 3D.
+Companies: OpenAI, Google, Anthropic, Microsoft, Meta, Apple, xAI, Hugging Face
+Models: Claude, Gemini, Grok
+Topics: model release, funding or business, regulation or safety, developer tools, hardware and compute, media generation
