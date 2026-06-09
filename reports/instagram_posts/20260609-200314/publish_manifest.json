@@ -1,0 +1,21 @@
+{
+  "posts": [
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260609-200314/01_20260609-2003_reconstructing-ai-activity-in-investigations-microsoft-secur",
+      "caption": "Reconstructing AI activity in investigations.\n\nSwipe for the full breakdown.\n\n- It also extends that model to agent-based systems, where the investigative picture expands: which agents are deployed, how.\n- The playbook operationalizes this approach across Microsoft 365 Copilot and Azure AI services.\n- Security teams are already investigating activity involving Microsoft 365 Copilot and Azure AI services - from prompt injection.\n- It brings together the required configuration, queries, and detection patterns into a single working model - covering schema.\n- Learn how to investigate AI activity in Microsoft 365 Copilot and Azure AI services using a structured, telemetry-driven.\n\nWhat's the one thing about this that surprised you most?\n\nSave this before it disappears from your feed.\n\nSources:\n- https://www.microsoft.com/en-us/security/blog/2026/06/09/reconstructing-ai-activity-investigations/\n- https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/\n- https://www.microsoft.com/en-us/microsoft-cloud/blog/healthcare/2026/06/09/how-collaboration-advances-workflow-native-ai/\n- https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-live-3-5-translate/\n- https://techcrunch.com/2026/06/09/sandstone-raises-30m-to-bring-ai-to-in-house-legal-teams/\n\n#AINews #AITools #GenerativeAI #MicrosoftAI #Copilot #FutureOfAI #TechTrends #Innovation #EmergingTech #MachineLearning #DataScience #FutureTech #AICarousel #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing #MLNews #AIWeekly #TechInnovation\n\n-\nThis is not financial advice. AI investment tools carry significant risks.\nAI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.\n-\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260609-200314/01_20260609-2003_reconstructing-ai-activity-in-investigations-microsoft-secur/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260609-200314/01_20260609-2003_reconstructing-ai-activity-in-investigations-microsoft-secur/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260609-200314/01_20260609-2003_reconstructing-ai-activity-in-investigations-microsoft-secur/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260609-200314/01_20260609-2003_reconstructing-ai-activity-in-investigations-microsoft-secur/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260609-200314/01_20260609-2003_reconstructing-ai-activity-in-investigations-microsoft-secur/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260609-200314/01_20260609-2003_reconstructing-ai-activity-in-investigations-microsoft-secur/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260609-200314/01_20260609-2003_reconstructing-ai-activity-in-investigations-microsoft-secur/slide_07.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260609-200314/01_20260609-2003_reconstructing-ai-activity-in-investigations-microsoft-secur/slide_08.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260609-200314/01_20260609-2003_reconstructing-ai-activity-in-investigations-microsoft-secur/slide_09.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload"
+    }
+  ]
+}

@@ -1,0 +1,379 @@
+{
+  "email_received_at": "2026-06-09T20:03+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Reconstructing AI activity in investigations | Microsoft Security Blog",
+  "subject": "",
+  "source_date": "2026-06-09T20:03:16.281428",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://www.microsoft.com/en-us/security/blog/2026/06/09/reconstructing-ai-activity-investigations/",
+  "article_title": "Reconstructing AI activity in investigations | Microsoft Security Blog",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/acc75fdb37baa3ce.jpg",
+  "article_image_url": "https://www.microsoft.com/en-us/security/blog/wp-content/themes/security-blog-2025/dist/images/footer-promotional.jpg",
+  "article_items": [
+    {
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/09/reconstructing-ai-activity-investigations/",
+      "title": "Reconstructing AI activity in investigations | Microsoft Security Blog",
+      "description": "Learn how to investigate AI activity in Microsoft 365 Copilot and Azure AI services using a structured, telemetry-driven approach. This playbook helps security teams reconstruct events, assess data exposure, and detect potential threats faster.",
+      "excerpt": "Learn how to investigate AI activity in Microsoft 365 Copilot and Azure AI services using a structured, telemetry-driven approach. This playbook helps security teams reconstruct events, assess data exposure, and detect potential threats faster.",
+      "summary": "It also extends that model to agent-based systems, where the investigative picture expands: which agents are deployed, how they are configured, what data they are authorized to access, and whether that authorization was used as expected. It brings together the required configuration, queries, and detection patterns into a single working model - covering schema references, KQL queries, and detection logic - enabling investigators to follow AI activity across tools with fewer ad hoc pivots. When analyzed together, those elements allow investigators to establish what happened, understand the impact, and determine whether activity reflects normal usage, policy violations, or indicators of compromise. To help address that challenge, we\u2019ve published a new investigator playbook for Microsoft 365 Copilot and Azure AI services. Security teams are already investigating activity involving Microsoft 365 Copilot and Azure AI services - from prompt injection attempts to unexpected data access.",
+      "what_happened": "It also extends that model to agent-based systems, where the investigative picture expands: which agents are deployed, how they are configured, what data they are authorized to access, and whether that authorization was used as expected. It brings together the required configuration, queries, and detection patterns into a single working model - covering schema references, KQL queries, and detection logic - enabling investigators to follow AI activity across tools with fewer ad hoc pivots.",
+      "why_matters": "When analyzed together, those elements allow investigators to establish what happened, understand the impact, and determine whether activity reflects normal usage, policy violations, or indicators of compromise. To help address that challenge, we\u2019ve published a new investigator playbook for Microsoft 365 Copilot and Azure AI services.",
+      "what_to_watch": "Security teams are already investigating activity involving Microsoft 365 Copilot and Azure AI services - from prompt injection attempts to unexpected data access.",
+      "key_points": [
+        "It also extends that model to agent-based systems, where the investigative picture expands: which agents are deployed, how they are configured, what data they are authorized to access, and whether that authorization was.",
+        "The playbook operationalizes this approach across Microsoft 365 Copilot and Azure AI services.",
+        "Security teams are already investigating activity involving Microsoft 365 Copilot and Azure AI services - from prompt injection attempts to unexpected data access.",
+        "It brings together the required configuration, queries, and detection patterns into a single working model - covering schema references, KQL queries, and detection logic - enabling investigators to follow AI activity.",
+        "Learn how to investigate AI activity in Microsoft 365 Copilot and Azure AI services using a structured, telemetry-driven approach.",
+        "The ability to determine what happened, what data was involved, and whether activity was authorized is quickly becoming a core incident response capability.",
+        "When analyzed together, those elements allow investigators to establish what happened, understand the impact, and determine whether activity reflects normal usage, policy violations, or indicators of compromise.",
+        "From there, investigators expand into resource context: what the system accessed, what data may have been exposed, and how that activity aligns with expected behavior.",
+        "To help address that challenge, we\u2019ve published a new investigator playbook for Microsoft 365 Copilot and Azure AI services.",
+        "The outcome is practical.",
+        "The playbook gives you the tools to answer it.",
+        "Download it here: Microsoft AI Red Team AI brands as bait: How threat actors are using the AI hype in social engineering Securing CI/CD in an agentic world: Claude Code Github action case Updating the taxonomy of."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/acc75fdb37baa3ce.jpg",
+      "image_url": "https://www.microsoft.com/en-us/security/blog/wp-content/themes/security-blog-2025/dist/images/footer-promotional.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/76128242a467c9aa.webp"
+      ],
+      "extra_image_urls": [
+        "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/05/MS_Actional-Insights_AI.webp"
+      ],
+      "_story_id": "963913b5d42d4b31a9b2f153d5aed8ca"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/",
+      "title": "Anthropic releases Claude Fable, a version of Mythos, days after warning AI is becoming too dangerous",
+      "description": "Anthropic is releasing Claude Fable 5, its first Mythos-class model available to the public. The model comes with guardrails that block responses in high-risk areas like cybersecurity and biology.",
+      "excerpt": "Anthropic is releasing Claude Fable 5, its first Mythos-class model available to the public. The model comes with guardrails that block responses in high-risk areas like cybersecurity and biology.",
+      "summary": "On Tuesday, the AI firm launched Claude Fable 5, the first publicly available version of its Mythos model. As a result, with the launch of Fable 5 and Mythos 5, Anthropic said it will require a 30-day retention on all traffic, even if enterprises previously had zero-retention agreements. AI-powered workspace and agent platform Genspark said Fable beat every other model in its evaluations and performed significantly better on tasks like UI design and game coding. The company said it won\u2019t use the data for training and will use it only to \u201cdefend against complex and novel attacks, including new jailbreaks,\u201d and \u201cidentify and reduce false positives.\u201d The policy could set an industry precedent in which access to. Pricing for both Fable 5 and Mythos 5 is $10 per million input tokens and $50 per million output tokens, double the price of Opus 4.8. Anthropic is also deploying a new version of Mythos, called Mythos 5, to organizations that have already been approved to access the advanced model.",
+      "what_happened": "On Tuesday, the AI firm launched Claude Fable 5, the first publicly available version of its Mythos model. As a result, with the launch of Fable 5 and Mythos 5, Anthropic said it will require a 30-day retention on all traffic, even if enterprises previously had zero-retention agreements.",
+      "why_matters": "AI-powered workspace and agent platform Genspark said Fable beat every other model in its evaluations and performed significantly better on tasks like UI design and game coding. The company said it won\u2019t use the data for training and will use it only to \u201cdefend against complex and novel attacks, including new jailbreaks,\u201d and \u201cidentify and reduce false positives.\u201d The policy could set an industry precedent in which access to.",
+      "what_to_watch": "Pricing for both Fable 5 and Mythos 5 is $10 per million input tokens and $50 per million output tokens, double the price of Opus 4.8. Anthropic is also deploying a new version of Mythos, called Mythos 5, to organizations that have already been approved to access the advanced model.",
+      "key_points": [
+        "On Tuesday, the AI firm launched Claude Fable 5, the first publicly available version of its Mythos model.",
+        "As a result, with the launch of Fable 5 and Mythos 5, Anthropic said it will require a 30-day retention on all traffic, even if enterprises previously had zero-retention agreements.",
+        "Anthropic is also deploying a new version of Mythos, called Mythos 5, to organizations that have already been approved to access the advanced model.",
+        "Anthropic is releasing Claude Fable 5, its first Mythos-class model available to the public.",
+        "Anthropic says the cases in which Fable has to defer to Opus 4.8 are rare, with early data showing at least 95% of Fable sessions running entirely on the model\u2019s own responses.",
+        "More from TechCrunch Anthropic\u2019s Claude Fable 5 is a version of Mythos the public can access today Anthropic is bringing its most powerful AI model to the general public for the first time, but it\u2019s doing it with.",
+        "Fable\u2019s launch comes as Anthropic prepares to enter the public markets, alongside OpenAI and Elon Musk\u2019s SpaceX .",
+        "WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more Microsoft\u2019s open source tools were hacked to steal passwords of AI developers Ahead of its IPO, Anthropic\u2019s Daniela Amodei shrugs off.",
+        "AI-powered workspace and agent platform Genspark said Fable beat every other model in its evaluations and performed significantly better on tasks like UI design and game coding.",
+        "In high-risk areas like cybersecurity, biology, chemistry, and distillation , the model blocks responses and falls back to Claude Opus 4.8.",
+        "The company said it won\u2019t use the data for training and will use it only to \u201cdefend against complex and novel attacks, including new jailbreaks,\u201d and \u201cidentify and reduce false positives.\u201d The policy could set an.",
+        "For those who continue to use the model, not every question will get a Fable 5 answer."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a728b8a976e56560.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2279025960.jpg?w=1024",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "d4c611e10a5f4d15b63922e0dee1cf24"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/healthcare/2026/06/09/how-collaboration-advances-workflow-native-ai/",
+      "title": "How collaboration advances workflow-native AI | The Microsoft Cloud Blog",
+      "description": "Discover how workflow-native AI in PowerScribe One and Dragon Copilot is helping radiologists improve efficiency, reduce cognitive load, and enhance report quality.",
+      "excerpt": "Discover how workflow-native AI in PowerScribe One and Dragon Copilot is helping radiologists improve efficiency, reduce cognitive load, and enhance report quality.",
+      "summary": "Visit us at the SIIM 2026 Booth #630\u2013632 where customers and partners can explore our solutions, see live demos, and engage with our models in an interactive learning lab. Delivered as fully managed endpoints, our premium models are continuously improved with curated data and enable AI builders, health systems, and partners to develop institution-specific solutions tailored to local data, specialty use cases, and evolving clinical needs. Luke\u2019s, this approach enabled the rapid deployment of a fracture detection model from Gleamer, delivering immediate impact across its geographically distributed network and helping ensure more consistent diagnostic support regardless of where patients entered the system. These models are not medical devices, but they enable teams to build and fine-tune models that can complement clinically validated imaging AI solutions. Those insights directly shaped how we evolved to PowerScribe One, where preserving the workflows and integrations that teams rely on while introducing a more modern, cloud-enabled experience designed for what comes next. Building on that foundation, a growing community of customers and partners are fueling rapid.",
+      "what_happened": "Visit us at the SIIM 2026 Booth #630\u2013632 where customers and partners can explore our solutions, see live demos, and engage with our models in an interactive learning lab. Delivered as fully managed endpoints, our premium models are continuously improved with curated data and enable AI builders, health systems, and partners to develop institution-specific solutions tailored to local data, specialty use cases, and evolving clinical needs.",
+      "why_matters": "Luke\u2019s, this approach enabled the rapid deployment of a fracture detection model from Gleamer, delivering immediate impact across its geographically distributed network and helping ensure more consistent diagnostic support regardless of where patients entered the system. These models are not medical devices, but they enable teams to build and fine-tune models that can complement clinically validated imaging AI solutions.",
+      "what_to_watch": "Those insights directly shaped how we evolved to PowerScribe One, where preserving the workflows and integrations that teams rely on while introducing a more modern, cloud-enabled experience designed for what comes next. Building on that foundation, a growing community of customers and partners are fueling rapid.",
+      "key_points": [
+        "Visit us at the SIIM 2026 Booth #630\u2013632 where customers and partners can explore our solutions, see live demos, and engage with our models in an interactive learning lab.",
+        "Delivered as fully managed endpoints, our premium models are continuously improved with curated data and enable AI builders, health systems, and partners to develop institution-specific solutions tailored to local data.",
+        "Building on that foundation, a growing community of customers and partners are fueling rapid innovation by fine-tuning new models, deploying AI applications, and developing specialized agents that expand what\u2019s possible.",
+        "Models derived from CXRReportGen Premium can be integrated into experiences like Dragon Copilot, bringing high-performing AI directly into the radiologist\u2019s workflow for summarization and report generation.",
+        "Our partnership and deep engagement model with URMC and St.",
+        "From clinical applications like PowerScribe One and Dragon Copilot to customizable models from Microsoft Foundry , we provide a trusted, scalable foundation for innovation - enabling organizations to advance at their.",
+        "How collaboration advances workflow-native AI Since announcing Dragon Copilot at RSNA 2025, healthcare organizations have advanced their AI strategies, not only by modernizing their reporting experience with PowerScribe.",
+        "Luke\u2019s are reinforced at scale: today, more than 10,000 radiologists across 250+ organizations have migrated to PowerScribe One, generating millions of reports every week, across environments ranging from large.",
+        "Luke\u2019s, this approach enabled the rapid deployment of a fracture detection model from Gleamer, delivering immediate impact across its geographically distributed network and helping ensure more consistent diagnostic.",
+        "In addition to bringing FDA-cleared imaging AI into practice today, we provide the flexibility for customers and partners to build, customize, and extend AI capabilities as their needs evolve.",
+        "The ongoing adoption of PowerScribe One and its draft impression capabilities reflects a broader principle: when AI is fully integrated into the workflow, it enables radiologists to deliver more consistent, efficient.",
+        "These applications integrate with our reporting workflows, enabling radiologists to access AI-powered insights within PowerScribe One and helping simplify the adoption of new capabilities."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c37345c422405a10.jpg",
+      "image_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/wp-content/uploads/2026/05/AI-skill-fest-2026.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5baff27f51a9fdd4.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/34f11e297fe1012a.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8be0040bd92af999.png"
+      ],
+      "extra_image_urls": [
+        "https://www.microsoft.com/en-us/microsoft-cloud/blog/wp-content/uploads/2026/05/Beyond-AI-Adoption-3.jpg",
+        "https://www.microsoft.com/en-us/microsoft-cloud/blog/wp-content/uploads/2026/05/AI-Readiness-Landscape-1B.jpg",
+        "https://www.microsoft.com/en-us/microsoft-cloud/blog/wp-content/uploads/2026/06/word-image-14644-1-2.png"
+      ],
+      "_story_id": "e007c950ca494dd48be70ae3bfff9442"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-live-3-5-translate/",
+      "title": "Fluid, natural voice translation with Gemini 3.5 Live Translate",
+      "description": "Gemini 3.5 Live Translate brings near real-time, natural speech translation to Google AI Studio, Google Translate and Google Meet.",
+      "excerpt": "Gemini 3.5 Live Translate brings near real-time, natural speech translation to Google AI Studio, Google Translate and Google Meet.",
+      "summary": "Today, we\u2019re taking our next step with the release of Gemini 3.5 Live Translate, our latest audio model for live speech-to-speech translation. Experience 3.5 Live Translate in your video meetings Speech translation in Google Meet will soon use 3.5 Live Translate, improving the experience by: Offering 70+ languages, an improvement from the previous limit of just five languages, Enabling conversations across over 2000+ language combinations in one meeting, expanding from the previous state of only translating to and. During our time with the 3.5 Live Translate model, we tested across several languages, and our team was blown away by the speed, accuracy, and liveliness of the model. By utilizing the Gemini Live API, developer platforms like Agora , Fishjam , LiveKit , Pipecat , and Vision Agents enable developers to build and deploy voice translation apps with ease. Watch the Gemini Live API in action, enabling dubbing and simultaneous multi-language translation. Fluid, natural voice translation with Gemini 3.5 Live Translate Gemini 3.5 Live Translate is our latest audio model, delivering near real-time speech-to-speech translation in over 70 languages.",
+      "what_happened": "Today, we\u2019re taking our next step with the release of Gemini 3.5 Live Translate, our latest audio model for live speech-to-speech translation. Experience 3.5 Live Translate in your video meetings Speech translation in Google Meet will soon use 3.5 Live Translate, improving the experience by: Offering 70+ languages, an improvement from the previous limit of just five languages, Enabling conversations across over 2000+ language combinations in one meeting, expanding from the previous state of only translating to and.",
+      "why_matters": "During our time with the 3.5 Live Translate model, we tested across several languages, and our team was blown away by the speed, accuracy, and liveliness of the model. By utilizing the Gemini Live API, developer platforms like Agora , Fishjam , LiveKit , Pipecat , and Vision Agents enable developers to build and deploy voice translation apps with ease.",
+      "what_to_watch": "Watch the Gemini Live API in action, enabling dubbing and simultaneous multi-language translation. Fluid, natural voice translation with Gemini 3.5 Live Translate Gemini 3.5 Live Translate is our latest audio model, delivering near real-time speech-to-speech translation in over 70 languages.",
+      "key_points": [
+        "Today, we\u2019re taking our next step with the release of Gemini 3.5 Live Translate, our latest audio model for live speech-to-speech translation.",
+        "During our time with the 3.5 Live Translate model, we tested across several languages, and our team was blown away by the speed, accuracy, and liveliness of the model.",
+        "Fluid, natural voice translation with Gemini 3.5 Live Translate Gemini 3.5 Live Translate is our latest audio model, delivering near real-time speech-to-speech translation in over 70 languages.",
+        "Experience 3.5 Live Translate in your video meetings Speech translation in Google Meet will soon use 3.5 Live Translate, improving the experience by: Offering 70+ languages, an improvement from the previous limit of.",
+        "Get 3.5 Live Translate in the Google Translate app on Android or iOS The model is also rolling out on the Google Translate app globally, on both Android and iOS .",
+        "CJ ENM is excited to partner with Google DeepMind on 3.5 Live Translate.",
+        "By utilizing the Gemini Live API, developer platforms like Agora , Fishjam , LiveKit , Pipecat , and Vision Agents enable developers to build and deploy voice translation apps with ease.",
+        "Gemini 3.5 Live Translate makes multilingual voice effortless.",
+        "Gemini 3.5 Live Translate paired with Fishjam\u2019s MoQ protocol sets a new frontier for real-time multimedia streaming, allowing speech-to-speech translation into over 70 languages.",
+        "We tested the Gemini 3.5 Live Translate model at Agora and in our opinion it provided SOTA results, with low latency and high accuracy that set a new bar for real-time translation.",
+        "Gemini 3.5 Live Translate brings near real-time, natural speech translation to Google AI Studio, Google Translate and Google Meet.",
+        "The model automatically detects 70+ languages and generates smooth, natural-sounding translated speech that preserves the speakers' intonation, pacing and pitch."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e5fc6c64c3a5fe64.png",
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/3-5_Live_Translate_hero.width-1300.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "1f6354cb7a9c442fbb5be245443e7e1a"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/09/sandstone-raises-30m-to-bring-ai-to-in-house-legal-teams/",
+      "title": "Sandstone raises $30M to bring AI to in-house legal teams | TechCrunch",
+      "description": "Sandstone's Series A comes just six months after a Sequoia-led seed round.",
+      "excerpt": "Sandstone's Series A comes just six months after a Sequoia-led seed round.",
+      "summary": "Sandstone , which announced $30 million in Series A funding on Tuesday, is focused on an overlooked slice of the legal space, focusing on the tangle of overlapping tasks and systems facing in-house legal teams. WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more Microsoft\u2019s open source tools were hacked to steal passwords of AI developers Ahead of its IPO, Anthropic\u2019s Daniela Amodei shrugs off doubts about AI\u2019s returns We won't sell or share your personal information to inform the ads. As the founders describe it, Sandstone\u2019s initial user base will be the legal departments at small and mid-sized businesses. \u201cAI helps them route and triage that work appropriately, and then they can build custom workflows on top of our platform to actually execute work, whether that\u2019s drafting, reviewing, or providing legal analysis.\u201d The result has little in common with legal reasoning systems like Harvey and Legora. More from TechCrunch Sandstone raises $30M to bring AI to in-house legal teams With Harvey and Legora burning through eight-figure funding rounds, legal tools have proven to be one of the fastest-growing and most hotly contested verticals among AI startups.",
+      "what_happened": "Sandstone , which announced $30 million in Series A funding on Tuesday, is focused on an overlooked slice of the legal space, focusing on the tangle of overlapping tasks and systems facing in-house legal teams. WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more Microsoft\u2019s open source tools were hacked to steal passwords of AI developers Ahead of its IPO, Anthropic\u2019s Daniela Amodei shrugs off doubts about AI\u2019s returns We won't sell or share your personal information to inform the ads.",
+      "why_matters": "As the founders describe it, Sandstone\u2019s initial user base will be the legal departments at small and mid-sized businesses. \u201cAI helps them route and triage that work appropriately, and then they can build custom workflows on top of our platform to actually execute work, whether that\u2019s drafting, reviewing, or providing legal analysis.\u201d The result has little in common with legal reasoning systems like Harvey and Legora.",
+      "what_to_watch": "More from TechCrunch Sandstone raises $30M to bring AI to in-house legal teams With Harvey and Legora burning through eight-figure funding rounds, legal tools have proven to be one of the fastest-growing and most hotly contested verticals among AI startups.",
+      "key_points": [
+        "Sandstone , which announced $30 million in Series A funding on Tuesday, is focused on an overlooked slice of the legal space, focusing on the tangle of overlapping tasks and systems facing in-house legal teams.",
+        "WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more Microsoft\u2019s open source tools were hacked to steal passwords of AI developers Ahead of its IPO, Anthropic\u2019s Daniela Amodei shrugs off.",
+        "More from TechCrunch Sandstone raises $30M to bring AI to in-house legal teams With Harvey and Legora burning through eight-figure funding rounds, legal tools have proven to be one of the fastest-growing and most hotly.",
+        "As Strydom sees it, the focus on in-house legal departments allows Sandstone to provide value where more generalized AI deployments often flounder.",
+        "Instead, Sandstone focuses on relationship management and workflow automation, both tuned to the unique demands of in-house legal work.",
+        "As the founders describe it, Sandstone\u2019s initial user base will be the legal departments at small and mid-sized businesses.",
+        "The Series A was led by Lightspeed Venture Partners, with participation from existing investors at Mantis VC, SV Angel, Operator Partners, Kearny Jackson, Daybreak Ventures, Litquidity Ventures, and others.",
+        "Anthropic has been steadily expanding its Claude for Legal offering, adding new tools in May for case law searches and deposition prep.",
+        "The Series A comes just six months after a $10 million seed round in January, which was led by Sequoia.",
+        "\u201cAI helps them route and triage that work appropriately, and then they can build custom workflows on top of our platform to actually execute work, whether that\u2019s drafting, reviewing, or providing legal analysis.\u201d The.",
+        "Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections.",
+        "Get an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a4da7f8e7ede1bb7.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/image-6.png?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "3b37a72681b34266bd12adbac0694c84"
+    },
+    {
+      "url": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
+      "title": "Introducing North Mini Code: Cohere\u2019s First Model For Developers",
+      "description": "A Blog post by Cohere Labs on Hugging Face",
+      "excerpt": "A Blog post by Cohere Labs on Hugging Face",
+      "summary": "2 We share evaluation results of North Mini Code, comparing the SFT checkpoint with the final model release checkpoint. A Blog post by Cohere Labs on Hugging Face Introducing North Mini Code: Cohere\u2019s First Model For Developers Today, we are releasing North Mini Code, a 30B-parameter Mixture-of-Experts model with 3B active parameters with powerful agentic coding capabilities, available on Hugging Face under the Apache 2.0 license. To understand model performance, we benchmark on four distinct functionalities: Code Explanation: Models are asked to explain particular technical aspects of a given code repository within a README file, or directly to the user. Both environments provide the agent with a pre-built Docker image encoding the environment state, a natural language user prompt, and a set of unit tests used for verification. We address cross-harness generalization by introducing a small amount of additional benchmark harness data (6% of the SFT mix, compared to 50% of the chosen SWE-Agent harness) during the second SFT stage. Without multi-stage training, the 20B non-code tokens during the initial training stage often dominated the 1.5B.",
+      "what_happened": "2 We share evaluation results of North Mini Code, comparing the SFT checkpoint with the final model release checkpoint. A Blog post by Cohere Labs on Hugging Face Introducing North Mini Code: Cohere\u2019s First Model For Developers Today, we are releasing North Mini Code, a 30B-parameter Mixture-of-Experts model with 3B active parameters with powerful agentic coding capabilities, available on Hugging Face under the Apache 2.0 license.",
+      "why_matters": "To understand model performance, we benchmark on four distinct functionalities: Code Explanation: Models are asked to explain particular technical aspects of a given code repository within a README file, or directly to the user. Both environments provide the agent with a pre-built Docker image encoding the environment state, a natural language user prompt, and a set of unit tests used for verification.",
+      "what_to_watch": "We address cross-harness generalization by introducing a small amount of additional benchmark harness data (6% of the SFT mix, compared to 50% of the chosen SWE-Agent harness) during the second SFT stage. Without multi-stage training, the 20B non-code tokens during the initial training stage often dominated the 1.5B.",
+      "key_points": [
+        "[5] Nemotron-Cascade: Scaling Cascaded Reinforcement Learning for General-Purpose Reasoning Models [6] Nemotron-Cascade 2: Post-Training LLMs with Cascade RL and Multi-Domain On-Policy Distillation [7] Terminal-Bench: A.",
+        "Without multi-stage training, the 20B non-code tokens during the initial training stage often dominated the 1.5B tokens of high-quality code data in later training, producing poorer performance and higher behavioral.",
+        "2 We share evaluation results of North Mini Code, comparing the SFT checkpoint with the final model release checkpoint.",
+        "A Blog post by Cohere Labs on Hugging Face Introducing North Mini Code: Cohere\u2019s First Model For Developers Today, we are releasing North Mini Code, a 30B-parameter Mixture-of-Experts model with 3B active parameters.",
+        "We address cross-harness generalization by introducing a small amount of additional benchmark harness data (6% of the SFT mix, compared to 50% of the chosen SWE-Agent harness) during the second SFT stage.",
+        "In addition, the model receives a reward of 0 for generating invalid tool calls or unparseable outputs, enabling a sharp drop in the rate of hallucinated or malformed tool calls within the first training steps.",
+        "Figure 1: North Mini Code\u2019s performance in agentic coding tasks and complex code generation benchmarks, compared to leading open-source models of similar size.",
+        "In order to prime our models on Terminus 2, we include a small amount of data (less than 20%) in a plain-text format in the data mixture, which has proved sufficient for the model to naturally generalise across.",
+        "We additionally track code generation capabilities in SciCode [ 15 ], which measures coding performance for scientific problems, and LiveCodeBench v6 [ 16 ], which requires strong algorithmic reasoning capabilities for.",
+        "For Terminal Bench Hard, we directly used Terminus-2, following the same methodology as the Artificial Analysis Intelligence Index to compare North Mini Code with the other models.",
+        "Models mentioned in this article 2 Build Small Hackathon With Cohere Models Introducing Cohere-transcribe: state-of-the-art speech recognition Models mentioned in this article 2",
+        "This \u201clong-to-longer\u201d cascade approach (similar to [ 5 , 6 ]) enables bipartite training on valuable shorter data, establishing a robust performance baseline, followed by targeted long-context training only on."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ee142386ba00b830.png",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/6361a793c12a09b8a3184bff/f8NXK5yKtc6xE-hJ4XWbd.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a7da7a87d07add97.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/08bab9bac0c63d4a.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/04591664110c15d8.png"
+      ],
+      "extra_image_urls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6361a793c12a09b8a3184bff/g-SYXPG1oIxHEwnItd3he.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/6361a793c12a09b8a3184bff/Oe79J_Vn3Lbi10oKlHiQi.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/6361a793c12a09b8a3184bff/xPc4PSWREdLtTS62tfl8L.png"
+      ],
+      "_story_id": "7162b5441d0541f9a17ebc1f75c0c6db"
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "title": "Claude Fable 5 and Claude Mythos 5",
+      "description": "Today we\u2019re launching Claude Fable 5: a Mythos-class model that we\u2019ve made safe for general use.",
+      "excerpt": "Today we\u2019re launching Claude Fable 5: a Mythos-class model that we\u2019ve made safe for general use.",
+      "summary": "The graph below, from one of our internal evaluations, illustrates how Fable 5\u2019s safeguards give it greater resistance to jailbreaks than our previous generally accessible models: One of our external partners found that Fable 5\u2019s safeguards against harmful cyber queries were the most robust of any model tested (including Opus 4.8 and Opus 4.7). We\u2019ve therefore launched the model with safeguards that mean queries on some topics will instead receive a response from our next-most-capable model, Claude Opus 4.8. A new data retention policy Finally, we\u2019re making a change to the way we handle business customer data for Fable 5, Mythos 5, and future models with similar or higher capability levels. In our automated alignment assessment we found that Mythos 5\u2019s level of misaligned behavior (including misaligned actions taken by the model such as deception, and cooperation with misuse of the model by a user) was low, and similar to that of. On Hebbia \u2019s Finance Benchmark for senior-level reasoning, Fable 5 has the highest score of any model, with substantial gains in document-based reasoning, chart and table interpretation, and problem solving.",
+      "what_happened": "The graph below, from one of our internal evaluations, illustrates how Fable 5\u2019s safeguards give it greater resistance to jailbreaks than our previous generally accessible models: One of our external partners found that Fable 5\u2019s safeguards against harmful cyber queries were the most robust of any model tested (including Opus 4.8 and Opus 4.7). We\u2019ve therefore launched the model with safeguards that mean queries on some topics will instead receive a response from our next-most-capable model, Claude Opus 4.8.",
+      "why_matters": "A new data retention policy Finally, we\u2019re making a change to the way we handle business customer data for Fable 5, Mythos 5, and future models with similar or higher capability levels. In our automated alignment assessment we found that Mythos 5\u2019s level of misaligned behavior (including misaligned actions taken by the model such as deception, and cooperation with misuse of the model by a user) was low, and similar to that of.",
+      "what_to_watch": "On Hebbia \u2019s Finance Benchmark for senior-level reasoning, Fable 5 has the highest score of any model, with substantial gains in document-based reasoning, chart and table interpretation, and problem solving.",
+      "key_points": [
+        "The graph below, from one of our internal evaluations, illustrates how Fable 5\u2019s safeguards give it greater resistance to jailbreaks than our previous generally accessible models: One of our external partners found that.",
+        "On Hebbia \u2019s Finance Benchmark for senior-level reasoning, Fable 5 has the highest score of any model, with substantial gains in document-based reasoning, chart and table interpretation, and problem solving.",
+        "We did not explicitly train our models to perform this task - and yet Mythos-class models outperformed sophisticated models dedicated to protein tasks (known as \u201cprotein language models\u201d) using their biological.",
+        "The capabilities of models like Fable 5 and Mythos 5 have the potential to do profound good for the world.",
+        "The longer and more complex the task, the larger Fable 5\u2019s lead over our other models.",
+        "We\u2019ve therefore launched the model with safeguards that mean queries on some topics will instead receive a response from our next-most-capable model, Claude Opus 4.8.",
+        "To release the model both safely and quickly, we\u2019ve tuned these safeguards conservatively - they\u2019ll sometimes catch harmless requests, though they trigger, on average, in less than 5% of sessions.",
+        "Fable 5 is also more token-efficient than past Claude models: on Cognition\u2019s FrontierCode evaluation, which tests whether models can pass difficult coding tasks while meeting the standards of high-quality production.",
+        "Claude Mythos 5 and the trusted access program Beginning today, all users who currently have access to Claude Mythos Preview (for example, our cybersecurity partners in Project Glasswing) will be able to upgrade to.",
+        "Evaluating Claude Fable 5 and Claude Mythos 5 The table below compares the capabilities of Fable 5 and Mythos 5 to other leading models.",
+        "A new data retention policy Finally, we\u2019re making a change to the way we handle business customer data for Fable 5, Mythos 5, and future models with similar or higher capability levels.",
+        "Distillation of Fable 5\u2019s abilities could indirectly lead to the proliferation of near-frontier AI capabilities - and these could be released without the appropriate safeguards."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "226cadce5a3a436a854f546498f9d8ca"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-an-agentic-incident-triage-assistant-with-amazon-quick-and-new-relic/",
+      "title": "Build an agentic incident triage assistant with Amazon Quick and New Relic | Amazon Web Services",
+      "description": "This post shows engineering teams how to apply that principle to one of the most time-sensitive workflows in engineering: incident triage. You will build a custom incident triage assistant agent using Amazon Quick that orchestrates a response with the New Relic Model Context Protocol (MCP) Server and Asana through native integrations. From a single prompt, the Amazon Quick agent investigates the incident, assembles a root cause analysis (RCA) brief with evidence links, and creates a tracked Asana task ready for handoff.",
+      "excerpt": "This post shows engineering teams how to apply that principle to one of the most time-sensitive workflows in engineering: incident triage. You will build a custom incident triage assistant agent using Amazon Quick that orchestrates a response with the New Relic Model Context Protocol (MCP) Server and Asana through native integrations. From a single prompt, the Amazon Quick agent investigates the incident, assembles a root cause analysis (RCA) brief with evidence links, and creates a tracked Asana task ready for handoff.",
+      "summary": "Enter the following values: Redirect URL: Copy this value from the Amazon Quick configuration screen and paste it into your Asana OAuth app\u2019s allowed redirect URLs before saving. Muthuvelan Swaminathan Muthuvelan is a Principal Partner Architect at New Relic partnership organization building technical integrations with leading cloud providers and strategic partners. To get started, follow the New Relic integration for Amazon Quick article , and the Amazon Quick User Guide . Artificial Intelligence Build an agentic incident triage assistant with Amazon Quick and New Relic Incident triage is time-sensitive because site reliability engineers (SREs) and support engineers often need to collect evidence, assess user impact, and create follow-up work across separate tools. Replace the generated agent instructions with the following: Step 4: Test the workflow Open the Incident triage assistant from Amazon Quick and send the following prompt.",
+      "what_happened": "Enter the following values: Redirect URL: Copy this value from the Amazon Quick configuration screen and paste it into your Asana OAuth app\u2019s allowed redirect URLs before saving. Muthuvelan Swaminathan Muthuvelan is a Principal Partner Architect at New Relic partnership organization building technical integrations with leading cloud providers and strategic partners.",
+      "why_matters": "To get started, follow the New Relic integration for Amazon Quick article , and the Amazon Quick User Guide . Artificial Intelligence Build an agentic incident triage assistant with Amazon Quick and New Relic Incident triage is time-sensitive because site reliability engineers (SREs) and support engineers often need to collect evidence, assess user impact, and create follow-up work across separate tools.",
+      "what_to_watch": "Replace the generated agent instructions with the following: Step 4: Test the workflow Open the Incident triage assistant from Amazon Quick and send the following prompt.",
+      "key_points": [
+        "Step 3: Create the Incident triage assistant chat agent Navigate to Chat agents and choose Create chat agent .",
+        "Replace the generated agent instructions with the following: Step 4: Test the workflow Open the Incident triage assistant from Amazon Quick and send the following prompt.",
+        "When the agent asks to confirm the Asana project, reply: \u201cYes, create an Asana task in project SRE Incident Triage with this RCA brief.\u201d Figure 9: Asana task created by the Incident triage agent in the SRE Incident.",
+        "In the Actions section of the agent builder, choose Link existing integration and add both the New Relic integration and the Asana integration you created in Steps 1 and 2.",
+        "Figure 7: The Incident triage agent calling New Relic reasoning tools from a single prompt.",
+        "Figure 8: RCA brief generated by the Incident triage agent for the checkout-service incident.",
+        "The agent calls New Relic reasoning tools, assembles the RCA brief, and asks you to confirm before creating the Asana task.",
+        "Step 2: Set up the Asana integration The Asana connector uses OAuth 2.0.",
+        "Generate RCA brief.\u201d The following image shows the agent calling New Relic reasoning tools in sequence before assembling the RCA brief.",
+        "Figure 2: New Relic tile in the Amazon Quick Integrations console.",
+        "Step 1: Set up the New Relic integration New Relic is available as a built-in connector in the Amazon Quick Integrations console.",
+        "There are five New Relic reasoning tools the agent uses."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/75de325dfe18a6b1.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/04/ML-20579-9.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "0384ad0642ca4b1492e61d7836441a3f"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 9,
+  "has_cta": true,
+  "slides": [
+    "Reconstructing AI activity in investigations.",
+    "Anthropic releases Claude Fable a version of Mythos days after warning AI.",
+    "By embedding structured preview and validation stages into our development cycle, we.",
+    "Fluid natural voice translation with Gemini 3.5 Live Translate.",
+    "Sandstone raises $30M to bring AI to in-house legal teams.",
+    "Introducing North Mini Code Cohere's First Model For Developers.",
+    "Claude Fable 5 and Claude Mythos 5.",
+    "Build an agentic incident triage assistant with Amazon Quick and New Relic.",
+    "FOLLOW @graitech"
+  ]
+}
