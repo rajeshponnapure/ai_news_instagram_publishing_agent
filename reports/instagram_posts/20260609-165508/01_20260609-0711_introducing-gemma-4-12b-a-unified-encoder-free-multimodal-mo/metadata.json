@@ -1,0 +1,371 @@
+{
+  "email_received_at": "2026-06-09T07:11-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Introducing Gemma 4 12B: a unified, encoder-free multimodal model",
+  "subject": "\ud83d\udea8 AI Alert: 113 new launches \u2014 Google DeepMind, NYT AI, The Guardian Tech",
+  "source_date": "Tue, 09 Jun 2026 07:11:32 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Microsoft",
+    "Apple",
+    "Amazon",
+    "AWS"
+  ],
+  "models": [
+    "Gemini",
+    "llama",
+    "Llama-"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
+  "article_title": "Introducing Gemma 4 12B: a unified, encoder-free multimodal model",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/270e6f5deaab34f4.png",
+  "article_image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Fuji_BlogHeader_v3.png",
+  "article_items": [
+    {
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
+      "title": "Introducing Gemma 4 12B: a unified, encoder-free multimodal model",
+      "description": "An overview of Gemma 4 12B, a model designed to bring high-performance multimodal intelligence directly to your laptop.",
+      "excerpt": "An overview of Gemma 4 12B, a model designed to bring high-performance multimodal intelligence directly to your laptop.",
+      "summary": "Introducing Gemma 4 12B: a unified, encoder-free multimodal model Gemma 4 12B is designed to bring high-performance multimodal intelligence directly to your laptop, combining mobile-first efficiency with advanced reasoning. Today, we are introducing Gemma 4 12B, our latest model designed to bring agentic multimodal intelligence directly to laptops. Open and accessible: Released under an Apache 2.0 license with support across the developer ecosystem. Deploy your way through Gemini Enterprise Agent Platform Model Garden , Cloud Run and GKE . Advanced reasoning: Benchmark performance nearing our 26B model, unlocking powerful multi-step reasoning and agentic workflows. An overview of Gemma 4 12B, a model designed to bring high-performance multimodal intelligence directly to your laptop.",
+      "what_happened": "Introducing Gemma 4 12B: a unified, encoder-free multimodal model Gemma 4 12B is designed to bring high-performance multimodal intelligence directly to your laptop, combining mobile-first efficiency with advanced reasoning. Today, we are introducing Gemma 4 12B, our latest model designed to bring agentic multimodal intelligence directly to laptops.",
+      "why_matters": "Open and accessible: Released under an Apache 2.0 license with support across the developer ecosystem. Deploy your way through Gemini Enterprise Agent Platform Model Garden , Cloud Run and GKE .",
+      "what_to_watch": "Advanced reasoning: Benchmark performance nearing our 26B model, unlocking powerful multi-step reasoning and agentic workflows. An overview of Gemma 4 12B, a model designed to bring high-performance multimodal intelligence directly to your laptop.",
+      "key_points": [
+        "Introducing Gemma 4 12B: a unified, encoder-free multimodal model Gemma 4 12B is designed to bring high-performance multimodal intelligence directly to your laptop, combining mobile-first efficiency with advanced.",
+        "Today, we are introducing Gemma 4 12B, our latest model designed to bring agentic multimodal intelligence directly to laptops.",
+        "An overview of Gemma 4 12B, a model designed to bring high-performance multimodal intelligence directly to your laptop.",
+        "Traditional multimodal models typically rely on separate encoders to translate images and audio before passing those representations to the language model.",
+        "Advanced reasoning: Benchmark performance nearing our 26B model, unlocking powerful multi-step reasoning and agentic workflows.",
+        "The vision and audio inputs flow directly into the LLM backbone.",
+        "Open and accessible: Released under an Apache 2.0 license with support across the developer ecosystem.",
+        "Deploy your way through Gemini Enterprise Agent Platform Model Garden , Cloud Run and GKE .",
+        "Run state-of-the-art agents locally Gemma 4 12B delivers performance nearing our larger 26B MoE model on standard benchmarks, but at less than half the total memory footprint.",
+        "This allows the LLM backbone to take over visual processing.",
+        "Thanks to the developer community, Gemma 4 models have now crossed 150 million downloads.",
+        "See native audio processing in action: Watch Gemma 4 12B transcribe, format, and translate voice inputs entirely offline using the Google AI Edge Eloquent app."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/270e6f5deaab34f4.png",
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Fuji_BlogHeader_v3.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/534d8a6e66908a3a.jpg"
+      ],
+      "extra_image_urls": [
+        "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Gus_1_-__crop.jpg"
+      ]
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/09/how-an-e-scooter-founder-raised-5-million-to-build-space-data-centers/",
+      "title": "How an e-scooter founder raised $5 million to build space data centers | TechCrunch",
+      "description": "Orbital founder Euwyn Poon built 250,000 scooters at Spin. Now he wants to launch 10,000 space data centers.",
+      "excerpt": "Orbital founder Euwyn Poon built 250,000 scooters at Spin. Now he wants to launch 10,000 space data centers.",
+      "summary": "Now he wants to launch 10,000 space data centers. More from TechCrunch How an e-scooter founder raised $5 million to build space data centers Here\u2019s one metric for tracking SpaceX\u2019s IPO later this week: The company has changed the venture industry\u2019s perspective on long-term, capital-intensive space so much that a talented founder with no space experience can fund a space data center company. Jeff Bezos\u2019 space company Blue Origin also announced plans to launch data centers into space using its New Glenn launch vehicle. In 2028, the company hopes to launch its first data-processing spacecraft with Nvidia\u2019s Space-1 Vera Rubin-class GPUs. That\u2019s a similar path to rival data center start-up Starcloud , which already has a GPU in orbit and plans to launch several more to generate income until Starship enables them to deploy their full constellation.",
+      "what_happened": "Now he wants to launch 10,000 space data centers. More from TechCrunch How an e-scooter founder raised $5 million to build space data centers Here\u2019s one metric for tracking SpaceX\u2019s IPO later this week: The company has changed the venture industry\u2019s perspective on long-term, capital-intensive space so much that a talented founder with no space experience can fund a space data center company.",
+      "why_matters": "Jeff Bezos\u2019 space company Blue Origin also announced plans to launch data centers into space using its New Glenn launch vehicle. In 2028, the company hopes to launch its first data-processing spacecraft with Nvidia\u2019s Space-1 Vera Rubin-class GPUs.",
+      "what_to_watch": "That\u2019s a similar path to rival data center start-up Starcloud , which already has a GPU in orbit and plans to launch several more to generate income until Starship enables them to deploy their full constellation.",
+      "key_points": [
+        "Now he wants to launch 10,000 space data centers.",
+        "More from TechCrunch How an e-scooter founder raised $5 million to build space data centers Here\u2019s one metric for tracking SpaceX\u2019s IPO later this week: The company has changed the venture industry\u2019s perspective on.",
+        "Jeff Bezos\u2019 space company Blue Origin also announced plans to launch data centers into space using its New Glenn launch vehicle.",
+        "In 2028, the company hopes to launch its first data-processing spacecraft with Nvidia\u2019s Space-1 Vera Rubin-class GPUs.",
+        "That\u2019s a similar path to rival data center start-up Starcloud , which already has a GPU in orbit and plans to launch several more to generate income until Starship enables them to deploy their full constellation.",
+        "The price of the Falcon 9, the current state of the art, \u201cmakes this not economically feasible.\u201d For now, Poon and company - which includes about a dozen folks in Los Angeles, with experience at Amazon LEO, SpaceX, and.",
+        "\u201cStarting it in 2026 just lets you tap into all the energy and excitement that\u2019s that\u2019s happening in the capital markets.\u201d Poon found his way into the space data center business by a circuitous route.",
+        "Microsoft\u2019s open source tools were hacked to steal passwords of AI developers WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence and more Ahead of its IPO, Anthropic\u2019s Daniela Amodei shrugs off.",
+        "Chen said that Poon\u2019s experience scaling up a company that deployed 250,000 scooters across 100 cities shows he can manage the tricky task of building an aerospace company.",
+        "There\u2019s insatiable demand for AI compute, and deploying it is slow going on Earth.",
+        "At that point, the company wants to start doing piece-wise inference work, which would allow it to generate revenue with each satellite launched.",
+        "When he was ready to start a new company, a16z\u2019s Speedrun was eager to get on board, according to partner Andrew Chen, who told TechCrunch that Poon worked through several ideas before landing on space data centers."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/dec53eed18cf06ec.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/satellite.png?resize=1200,675",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://huggingface.co/blog/clem/arcee-hf",
+      "title": "Arcee Becomes the First Major American AI Lab to Replace AWS S3 with Hugging Face Private Storage, in a Multi-Million Dollar Commercial Partnership",
+      "description": "A Blog post by Clem on Hugging Face",
+      "excerpt": "A Blog post by Clem on Hugging Face",
+      "summary": "The arcee-ai organization is already one of the most active American labs on the Hub: 204 models and 63 datasets published as a verified organization Over 100,000 model downloads per month across the catalog, and millions all-time Flagship open releases the community knows well: the new Trinity family (Trinity-Mini, Trinity-Nano, Trinity-Large-Thinking), the AFM-4.5B foundation models (160K+ downloads for the base model alone), and earlier hits like Llama-3.1-SuperNova-Lite (100K+ downloads) and the Virtuoso. Making it the exclusive home for everything we build, from our public releases to our private models and proprietary datasets, was an easy call: it's the best infrastructure for AI artifacts, and the fastest way to get our work into the hands of every developer and every enterprise on the planet.\" The first co-released drops are already in the works. You need great training, great data, and a distribution platform the whole. Expect deeper integrations, featured releases, and co-developed drops throughout the year. Introducing the agentic robotics appstore for 10,000 Reachy Minis The 100 Most Popular Hardware Setups for AI Builders on Hugging Face",
+      "what_happened": "The arcee-ai organization is already one of the most active American labs on the Hub: 204 models and 63 datasets published as a verified organization Over 100,000 model downloads per month across the catalog, and millions all-time Flagship open releases the community knows well: the new Trinity family (Trinity-Mini, Trinity-Nano, Trinity-Large-Thinking), the AFM-4.5B foundation models (160K+ downloads for the base model alone), and earlier hits like Llama-3.1-SuperNova-Lite (100K+ downloads) and the Virtuoso.",
+      "why_matters": "Making it the exclusive home for everything we build, from our public releases to our private models and proprietary datasets, was an easy call: it's the best infrastructure for AI artifacts, and the fastest way to get our work into the hands of every developer and every enterprise on the planet.\" The first co-released drops are already in the works. You need great training, great data, and a distribution platform the whole.",
+      "what_to_watch": "Expect deeper integrations, featured releases, and co-developed drops throughout the year. Introducing the agentic robotics appstore for 10,000 Reachy Minis The 100 Most Popular Hardware Setups for AI Builders on Hugging Face",
+      "key_points": [
+        "The arcee-ai organization is already one of the most active American labs on the Hub: 204 models and 63 datasets published as a verified organization Over 100,000 model downloads per month across the catalog, and.",
+        "Going forward, Hugging Face will be the exclusive home for all of Arcee's models, datasets and agent traces: not just their public releases, but their private models, proprietary datasets & agent traces too.",
+        "Introducing the agentic robotics appstore for 10,000 Reachy Minis The 100 Most Popular Hardware Setups for AI Builders on Hugging Face",
+        "All Arcee models and datasets will live on the Hugging Face Hub: open releases distributed to the world, and private models and proprietary datasets stored securely in private repositories, with egress and CDN included.",
+        "\"Arcee is one of the best examples of what American open-source AI can be: small teams shipping world-class open models that enterprises actually run in production.",
+        "Companies that don't just consume open models, but train them, release them, and bet their business on openness.",
+        "Making it the exclusive home for everything we build, from our public releases to our private models and proprietary datasets, was an easy call: it's the best infrastructure for AI artifacts, and the fastest way to get.",
+        "The most downloaded and most remixed open models of the past year have increasingly come from outside the United States.",
+        "Something important is happening in AI right now: the gap between closed frontier labs and open-source builders is closing fast, and the question of who builds the leading open models matters more than ever.",
+        "Because it sits outside any single cloud, it makes Arcee fully compute agnostic: they can train on any provider, spin clusters up and down wherever capacity is cheapest, and their models and data follow them with no.",
+        "The private side is powered by Buckets , our private storage product, which Arcee helped shape as a launch partner from day one.",
+        "More open weights, more open datasets, more reproducible results, released where 15 million AI builders can use them on day one."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c687f66d891b29df.jpg",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/5e67bdd61009063689407479/x-lZw5UUMPhVK8QRk-Lo8.jpeg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/60de6f0e76d2ff8e.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9ed33bdfe2df4dc2.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/deadc05ed7bf3133.png"
+      ],
+      "extra_image_urls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/5e67bdd61009063689407479/yB-51a8WsukAzYNuDO3NJ.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/5e67bdd61009063689407479/FDEdNylV9vpt-3QBcPi4q.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/5e67bdd61009063689407479/phE67OF0BSIN5uEXB605t.png"
+      ]
+    },
+    {
+      "url": "https://blog.google/topics/google-europe/powering-the-future-of-robotics-in-europe/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
+      "title": "Powering the future of robotics in Europe",
+      "description": "Google DeepMind Accelerator selects 15 robotics companies from across Europe to join the program. Providing 3 months of intensive mentorship and technical support, enabl\u2026",
+      "excerpt": "Google DeepMind Accelerator selects 15 robotics companies from across Europe to join the program. Providing 3 months of intensive mentorship and technical support, enabl\u2026",
+      "summary": "Providing 3 months of intensive mentorship and technical support, enabl\u2026 Powering the future of robotics in Europe Google DeepMind Accelerator selects 15 robotics companies from across Europe to join the program. Through technical mentorship, product guidance and a wide network of partners, the accelerator will help founders turn cutting-edge AI research into real-world robotics applications. Extend Robotics ( United Kingdom ): Provides teleoperation software and data pipelines that help train and fine-tune foundation models for real-world robotics applications. Robotics is one of the most exciting frontiers of AI, where advances in language, vision and action models can help create intelligent machines that interact with the real world in safer, more helpful and more adaptive ways. This week, the selected startup founders are coming together to kick off the program, meet the Google DeepMind and Google teams, and begin a journey designed to support the next generation of physical AI. Providing 3 months of intensive mentorship and technical support, enabling the integration of AI into their core.",
+      "what_happened": "Providing 3 months of intensive mentorship and technical support, enabl\u2026 Powering the future of robotics in Europe Google DeepMind Accelerator selects 15 robotics companies from across Europe to join the program. Through technical mentorship, product guidance and a wide network of partners, the accelerator will help founders turn cutting-edge AI research into real-world robotics applications.",
+      "why_matters": "Extend Robotics ( United Kingdom ): Provides teleoperation software and data pipelines that help train and fine-tune foundation models for real-world robotics applications. Robotics is one of the most exciting frontiers of AI, where advances in language, vision and action models can help create intelligent machines that interact with the real world in safer, more helpful and more adaptive ways.",
+      "what_to_watch": "This week, the selected startup founders are coming together to kick off the program, meet the Google DeepMind and Google teams, and begin a journey designed to support the next generation of physical AI. Providing 3 months of intensive mentorship and technical support, enabling the integration of AI into their core.",
+      "key_points": [
+        "Providing 3 months of intensive mentorship and technical support, enabl\u2026 Powering the future of robotics in Europe Google DeepMind Accelerator selects 15 robotics companies from across Europe to join the program.",
+        "Extend Robotics ( United Kingdom ): Provides teleoperation software and data pipelines that help train and fine-tune foundation models for real-world robotics applications.",
+        "Through technical mentorship, product guidance and a wide network of partners, the accelerator will help founders turn cutting-edge AI research into real-world robotics applications.",
+        "Adapta Robotics ( Romania ): Deploys physical AI replicating human touch to test devices and software for healthcare, automotive and consumer electronics, unlocking automated QA and supporting the circular economy.",
+        "Danu Robotics ( United Kingdom ): Uses embodied AI robotic systems to automate complex waste sorting, increasing efficiency, improving safety, and enabling scalable recovery of valuable materials that supports the.",
+        "Google DeepMind Accelerator selects 15 robotics companies from across Europe to join the program.",
+        "Robotics is one of the most exciting frontiers of AI, where advances in language, vision and action models can help create intelligent machines that interact with the real world in safer, more helpful and more adaptive.",
+        "Selected founders get access to Google\u2019s AI stack, technical expertise and robotics models.",
+        "That\u2019s why we\u2019re launching the Google DeepMind Accelerator: Robotics, a three-month program for early-stage robotics startups across Europe.",
+        "They\u2019ll have access to our AI stack, technical expertise and Gemini robotics models.",
+        "These startups reflect the growing momentum of robotics and intelligent systems across Europe.",
+        "This week, the selected startup founders are coming together to kick off the program, meet the Google DeepMind and Google teams, and begin a journey designed to support the next generation of physical AI."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/603c5c57059fd1d3.jpg",
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/wagtailvideo-08cki3tv_thumb.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.therobotreport.com/allen-control-systems-raises-200m-for-autonomous-weapons-stations/",
+      "title": "ACS raises $200M to scale autonomous counter-drone system",
+      "description": "Allen Control Systems will use the funding to scale manufacturing and accelerate deployment of its autonomous weapon station, Bullfrog.",
+      "excerpt": "Allen Control Systems will use the funding to scale manufacturing and accelerate deployment of its autonomous weapon station, Bullfrog.",
+      "summary": "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report ACS sees early success with Bullfrog ACS has received contracts through Joint Interagency Task Force 401 and allied military customers, and Bullfrog is already deployed with the U.S. This puts the company\u2019s valuation at $2.2 billion, Allen Control Systems (ACS) claimed. \u201cWe are rapidly expanding our advanced manufacturing so we can get systems into the field faster.\u201d The company recently expanded its manufacturing footprint in Austin, Texas. and allied partners.\u201d Smash Capital led the round.",
+      "what_happened": "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report ACS sees early success with Bullfrog ACS has received contracts through Joint Interagency Task Force 401 and allied military customers, and Bullfrog is already deployed with the U.S.",
+      "why_matters": "This puts the company\u2019s valuation at $2.2 billion, Allen Control Systems (ACS) claimed. \u201cWe are rapidly expanding our advanced manufacturing so we can get systems into the field faster.\u201d The company recently expanded its manufacturing footprint in Austin, Texas.",
+      "what_to_watch": "and allied partners.\u201d Smash Capital led the round.",
+      "key_points": [
+        "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around.",
+        "ACS sees early success with Bullfrog ACS has received contracts through Joint Interagency Task Force 401 and allied military customers, and Bullfrog is already deployed with the U.S.",
+        "and allied partners.\u201d Smash Capital led the round.",
+        "ACS raises $200M to scale autonomous counter-drone system Allen Control Systems has raised $200 million in Series B funding.",
+        "The system is capable of engaging group 1-3 UAs, and it offers both autonomous and semi-autonomous modes.",
+        "This puts the company\u2019s valuation at $2.2 billion, Allen Control Systems (ACS) claimed.",
+        "\u201cWe are rapidly expanding our advanced manufacturing so we can get systems into the field faster.\u201d The company recently expanded its manufacturing footprint in Austin, Texas.",
+        "\u201cACS has demonstrated a prescient understanding of the trajectory of modern warfare,\u201d said Paul Szurek, Partner, Smash Capital.",
+        "ACS will use the funding to scale manufacturing and accelerate deployment of its autonomous weapon station, Bullfrog, for the United States and allied militaries.",
+        "Bullfrog is a lightweight, low-power autonomous weapon station that combines AI , computer vision, and precision robotics.",
+        "This funding helps us scale production to meet the urgent demand from the U.S.",
+        "Allen Control Systems will use the funding to scale manufacturing and accelerate deployment of its autonomous weapon station, Bullfrog."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9d24746feac13693.jpg",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/06/ACS-featured.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2189795/apple-intelligence-is-coming-to-the-shortcuts-app/",
+      "title": "Apple Intelligence is coming to the Shortcuts app - Engadget",
+      "description": "Home and Shortcuts are not immune to Apple's AI upgrades.",
+      "excerpt": "Home and Shortcuts are not immune to Apple's AI upgrades.",
+      "summary": "Apple Intelligence is coming to the Shortcuts app During today's keynote for WWDC 2026, Apple's leadership discussed the long-awaited new capabilities for artificial intelligence on its devices. There's also a new Apple Intelligence layer coming to the Home app. The demo highlighted how AI could help a user set up a complicated shortcut, like messaging a spouse when departing the office each weekday. There's also a new Apple Intelligence layer coming to the Home app. There's also a new Apple Intelligence layer coming to the Home app.",
+      "what_happened": "Apple Intelligence is coming to the Shortcuts app During today's keynote for WWDC 2026, Apple's leadership discussed the long-awaited new capabilities for artificial intelligence on its devices. There's also a new Apple Intelligence layer coming to the Home app.",
+      "why_matters": "The demo highlighted how AI could help a user set up a complicated shortcut, like messaging a spouse when departing the office each weekday. There's also a new Apple Intelligence layer coming to the Home app.",
+      "what_to_watch": "There's also a new Apple Intelligence layer coming to the Home app.",
+      "key_points": [
+        "Apple Intelligence is coming to the Shortcuts app During today's keynote for WWDC 2026, Apple's leadership discussed the long-awaited new capabilities for artificial intelligence on its devices.",
+        "There's also a new Apple Intelligence layer coming to the Home app.",
+        "The app will also highlight the most important-seeming clips based on AI analysis at the top of the home screen.",
+        "Going forward, Apple Intelligence can create shortcuts based on natural language descriptions.",
+        "With a description like \"when I'm leaving work, message Pedro with my ETA\" the Shortcuts app can use Apple Intelligence to take actions such as: assessing the person's location at the workplace; using Maps to determine.",
+        "One segment of the presentation highlighted how the Shortcuts app will start taking advantage of the new AI tools.",
+        "4K video will also be available on supported cameras, although the presentation didn't offer specifics on how widespread that support will be at the start.",
+        "But this is the sort of capability that could be genuinely helpful as a safety tool.",
+        "A lot of other apps from the Apple ecosystem are getting similar treatment, and the WWDC keynote unsurprisingly put a big focus on what's happening with Siri .",
+        "Home and Shortcuts are not immune to Apple's AI upgrades.",
+        "The demo highlighted how AI could help a user set up a complicated shortcut, like messaging a spouse when departing the office each weekday.",
+        "Critters destroying stuff seems to be the industry-accepted way to show this off, and Apple had a raccoon handling that in its videos."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.ft.com/content/ca0f5f5e-fb9a-41a0-a2a9-0127e15b7db9",
+      "title": "OpenAI plots biggest ChatGPT overhaul since launch",
+      "description": "$850bn start-up to recast hit chatbot as a route to higher-margin products before a potential IPO",
+      "excerpt": "$850bn start-up to recast hit chatbot as a route to higher-margin products before a potential IPO",
+      "summary": "Brexit: A Very British Civil War - a maddening account of how we got here OpenAI plots biggest ChatGPT overhaul since launch Get 2 months free with an annual subscription at was $59.88 now $49 . Complete digital access to quality FT journalism on any device. Cancel or change your plan anytime during your trial. Complete digital access to quality FT journalism on any device. Complete digital access to quality FT journalism on any device.",
+      "what_happened": "Brexit: A Very British Civil War - a maddening account of how we got here OpenAI plots biggest ChatGPT overhaul since launch Get 2 months free with an annual subscription at was $59.88 now $49 . Complete digital access to quality FT journalism on any device.",
+      "why_matters": "Cancel or change your plan anytime during your trial. Complete digital access to quality FT journalism on any device.",
+      "what_to_watch": "Complete digital access to quality FT journalism on any device.",
+      "key_points": [
+        "Brexit: A Very British Civil War - a maddening account of how we got here OpenAI plots biggest ChatGPT overhaul since launch Get 2 months free with an annual subscription at was $59.88 now $49 .",
+        "Complete digital access to quality FT journalism on any device.",
+        "For multiple readers Digital access for organisations.",
+        "Pay a year upfront and save 20%.",
+        "Essential digital access to quality FT journalism on any device.",
+        "For seamless reading, access content via the FT Edit page on FT.com and receive the FT Edit newsletter.",
+        "Trump and Netanyahu clash over war goals \u2018He\u2019s not even a Knicks fan\u2019: Trump booed on return to Madison Square Garden OpenAI files to go public in blockbuster Wall Street listing OpenAI files to go public in blockbuster.",
+        "Complete digital access to quality FT journalism with expert analysis from industry leaders.",
+        "Includes exclusive features and content.",
+        "$850bn start-up to recast hit chatbot as a route to higher-margin products before a potential IPO Who calls the shots?",
+        "Check whether you already have access via your university or organisation.",
+        "Access to eight surprising articles a day, hand-picked by FT editors."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a5e36f1fd139101a.jpg",
+      "image_url": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F30267a93-b947-4d9a-bd71-425db9da4ec7.jpg?source=next-barrier-page",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2189069/undead-labs-finally-shows-off-state-of-decay-3-gameplay-in-new-trailer/",
+      "title": "Undead Labs finally shows off State of Decay 3 gameplay in new trailer - Engadget",
+      "description": "The game is slated for release in 2027.",
+      "excerpt": "The game is slated for release in 2027.",
+      "summary": "The game is slated for release in 2027.",
+      "what_happened": "The game is slated for release in 2027.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The game is slated for release in 2027."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 8,
+  "has_cta": true,
+  "slides": [
+    "Introducing Gemma 4 12B a unified encoder-free multimodal model.",
+    "Orbital, a new firm that emerged in May from a16z's startup accelerator.",
+    "Arcee Becomes the First Major American AI Lab to Replace AWS S3.",
+    "Powering the future of robotics in Europe.",
+    "ACS raises $200M to scale autonomous counter-drone system.",
+    "Apple Intelligence is coming to the Shortcuts app.",
+    "OpenAI plots biggest ChatGPT overhaul since launch.",
+    "FOLLOW @graitech"
+  ]
+}

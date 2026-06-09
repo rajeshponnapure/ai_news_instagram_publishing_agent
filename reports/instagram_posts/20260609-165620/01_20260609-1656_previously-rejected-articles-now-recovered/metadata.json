@@ -1,0 +1,66 @@
+{
+  "email_received_at": "2026-06-09T16:56+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Tue, 09 Jun 2026 16:56:20 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.cnet.com/tech/services-and-software/apple-ai-strategy-wwdc-2026-commentary/",
+      "title": "Company : CNET AI",
+      "description": "[MEDIUM] Apple's Cautious AI Strategy Could Have Been Its Smartest Move Company : CNET AI Summary : Commentary: Some say Apple is lagging behind in the AI gold rush. I think the company has positioned itself strategically. Link :",
+      "text": "[MEDIUM] Apple's Cautious AI Strategy Could Have Been Its Smartest Move Company : CNET AI Summary : Commentary: Some say Apple is lagging behind in the AI gold rush. I think the company has positioned itself strategically. Link :",
+      "excerpt": "[MEDIUM] Apple's Cautious AI Strategy Could Have Been Its Smartest Move Company : CNET AI Summary : Commentary: Some say Apple is lagging behind in the AI gold rush. I think the company has positioned itself strategically. Link :",
+      "image_url": "https://www.cnet.com/a/img/resize/5f34488a7a7ee35cb35ee8b11f085de821d71e28/hub/2026/06/09/ee68418b-fe54-4b0a-be7a-a665171f1e29/siri-ai-03.png?auto=webp&amp;fit=crop&amp;height=675&amp;width=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.cnet.com/tech/services-and-software/apple-ai-strategy-wwdc-2026-commentary/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/08/apple-just-taught-your-iphone-to-finish-your-sentences-your-photos-and-your-workflows/",
+      "title": "Company : TechCrunch AI",
+      "description": "[MEDIUM] Apple just taught your iPhone to finish your sentences, your photos, and your workflows Company : TechCrunch AI Summary : Apple is adding new AI-powered features to Safari, Shortcuts, and Password apps. Link :",
+      "text": "[MEDIUM] Apple just taught your iPhone to finish your sentences, your photos, and your workflows Company : TechCrunch AI Summary : Apple is adding new AI-powered features to Safari, Shortcuts, and Password apps. Link :",
+      "excerpt": "[MEDIUM] Apple just taught your iPhone to finish your sentences, your photos, and your workflows Company : TechCrunch AI Summary : Apple is adding new AI-powered features to Safari, Shortcuts, and Password apps. Link :",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Screenshot-2026-06-08-at-2.02.26-PM.png?resize=1200,663",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://techcrunch.com/2026/06/08/apple-just-taught-your-iphone-to-finish-your-sentences-your-photos-and-your-workflows/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.nytimes.com/2026/06/09/business/apple-siri-ai-europe.html",
+      "title": "nytimes.com",
+      "description": "",
+      "text": "",
+      "excerpt": "",
+      "image_url": "https://static01.nyt.com/images/2026/06/09/multimedia/09Biz-Apple-Europe-clwk/09Biz-Apple-Europe-clwk-facebookJumbo.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.nytimes.com/2026/06/09/business/apple-siri-ai-europe.html",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "A feature developers will likely use immediately once Apple opens image generation.",
+    "FOLLOW @graitech"
+  ]
+}
