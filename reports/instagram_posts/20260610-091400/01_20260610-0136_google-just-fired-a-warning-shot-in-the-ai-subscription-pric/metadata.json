@@ -1,0 +1,348 @@
+{
+  "email_received_at": "2026-06-10T01:36-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Google just fired a warning shot in the AI subscription price wars | TechCrunch",
+  "subject": "\ud83d\udea8 AI Alert: 112 new launches \u2014 MarkTechPost AI, Bloomberg Tech",
+  "source_date": "Wed, 10 Jun 2026 01:36:07 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Apple",
+    "Amazon",
+    "NVIDIA",
+    "Oracle"
+  ],
+  "models": [
+    "Claude",
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://techcrunch.com/2026/06/09/google-just-fired-a-warning-shot-in-the-ai-subscription-price-wars/",
+  "article_title": "Google just fired a warning shot in the AI subscription price wars | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6671ca611f1694c2.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/01/ai-mode-google.jpg?resize=1200,800",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/09/google-just-fired-a-warning-shot-in-the-ai-subscription-price-wars/",
+      "title": "Google just fired a warning shot in the AI subscription price wars | TechCrunch",
+      "description": "Google just made it significantly cheaper to enjoy its budget AI subscription tier.",
+      "excerpt": "Google just made it significantly cheaper to enjoy its budget AI subscription tier.",
+      "summary": "The company announced Monday that it is cutting the monthly price of Google AI Plus from $7.99 to $4.99 - while doubling the storage included at that tier, from 200 gigabytes to 400 gigabytes. Google AI Plus launched in January as the most affordable paid AI subscription in the U.S. That competition has been building for nearly a year in markets like India, one of the fastest-growing AI user bases in the world. \u201cMy prediction for a lot of these infrastructure companies - and when I say infrastructure, I mean an OpenAI or an Anthropic, or the backend components, energy, chips, hosting - there will be a period of time when these companies are valuable,\u201d he said. Vikas Kansal, product lead for Gemini AI subscriptions, said on X that the storage updates would roll out to users over the next several days. It includes a decent feature set , too, including video generation via Omni Flash; the creative studio Google Flow; and NotebookLM, Google\u2019s AI research assistant.",
+      "what_happened": "The company announced Monday that it is cutting the monthly price of Google AI Plus from $7.99 to $4.99 - while doubling the storage included at that tier, from 200 gigabytes to 400 gigabytes. Google AI Plus launched in January as the most affordable paid AI subscription in the U.S.",
+      "why_matters": "That competition has been building for nearly a year in markets like India, one of the fastest-growing AI user bases in the world. \u201cMy prediction for a lot of these infrastructure companies - and when I say infrastructure, I mean an OpenAI or an Anthropic, or the backend components, energy, chips, hosting - there will be a period of time when these companies are valuable,\u201d he said.",
+      "what_to_watch": "Vikas Kansal, product lead for Gemini AI subscriptions, said on X that the storage updates would roll out to users over the next several days. It includes a decent feature set , too, including video generation via Omni Flash; the creative studio Google Flow; and NotebookLM, Google\u2019s AI research assistant.",
+      "key_points": [
+        "The company announced Monday that it is cutting the monthly price of Google AI Plus from $7.99 to $4.99 - while doubling the storage included at that tier, from 200 gigabytes to 400 gigabytes.",
+        "Google AI Plus launched in January as the most affordable paid AI subscription in the U.S.",
+        "It includes a decent feature set , too, including video generation via Omni Flash; the creative studio Google Flow; and NotebookLM, Google\u2019s AI research assistant.",
+        "WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more Anthropic\u2019s Claude Fable 5 is a version of Mythos the public can access today Waymo bought Apple\u2019s self-driving car proving ground for.",
+        "Vikas Kansal, product lead for Gemini AI subscriptions, said on X that the storage updates would roll out to users over the next several days.",
+        "until now - and that shift has serious consequences for the broader market, suggests Chi-Hua Chien, co-founder and managing partner at Goodwater Capital, a consumer-focused venture firm in the Bay Area.",
+        "Google followed in December with a sub-$5 AI Plus plan of its own for Indian users.",
+        "The historical parallel he reaches for is instructive.",
+        "They\u2019ve always known that raw AI capability would eventually become a commodity, and that the real competition would play out at the application and distribution layer.",
+        "Subscription pricing hasn\u2019t been a key battleground among AI providers in the U.S.",
+        "But the more interesting story here isn\u2019t about Google\u2019s product lineup.",
+        "The new pricing makes that positioning even more explicit."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6671ca611f1694c2.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/01/ai-mode-google.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/category/enterprise/",
+      "title": "AI Infrastructure Archives",
+      "description": "",
+      "excerpt": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA GPUs with Confidential Computing are now used for confidential inference in Apple\u2019s Private Cloud Compute (PCC), as it expands...",
+      "summary": "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA AI Factories: The New Infrastructure of Intelligence NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts NVIDIA Research Advances Robotics From Simulation to the Real World NVIDIA and LG Group. Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote How the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies NVIDIA, KRAFTON, NC and Reigning \u2018League of Legends\u2019 Champions T1 Celebrate RTX Spark at Korea\u2019s PC Bangs Forecast: Fun Ahead - 18 Games Join in June to Stream on GeForce NOW NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills For Autonomous Vehicles, Robotics And Vision AI. Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South Korea is one of the world\u2019s centers.",
+      "what_happened": "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA AI Factories: The New Infrastructure of Intelligence NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts NVIDIA Research Advances Robotics From Simulation to the Real World NVIDIA and LG Group.",
+      "why_matters": "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote How the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies NVIDIA, KRAFTON, NC and Reigning \u2018League of Legends\u2019 Champions T1 Celebrate RTX Spark at Korea\u2019s PC Bangs Forecast: Fun Ahead - 18 Games Join in June to Stream on GeForce NOW NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills For Autonomous Vehicles, Robotics And Vision AI.",
+      "what_to_watch": "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South Korea is one of the world\u2019s centers of AI.... NVIDIA and Doosan Group Collaborate to Advance Physical.",
+      "key_points": [
+        "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA AI Factories: The New Infrastructure of Intelligence NVIDIA Research.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "NVIDIA and Doosan Group Collaborate to Advance Physical AI and AI Factory Infrastructure NVIDIA and Doosan Group are expanding their collaboration to advance new opportunities across physical AI, robotics and AI factory.",
+        "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote How the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies NVIDIA, KRAFTON, NC and Reigning \u2018League of Legends\u2019 Champions T1 Celebrate RTX Spark.",
+        "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand The NVIDIA AI Cloud ecosystem is accelerating the global buildout of AI factory infrastructure.",
+        "Agent sandboxes run 50% faster on NVIDIA Vera than traditional CPUs - while enterprise data queries...",
+        "NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge.",
+        "That\u2019s the focus of a new engineering-level collaboration between NVIDIA and Ineffable...",
+        "NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local The agentic AI moment has arrived, but delivering on its promise requires more than good models.",
+        "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South.",
+        "It also takes fast hardware, secure runtimes, a responsive data layer and models tuned...",
+        "Partners are expanding capacity to meet growing demand from enterprises, startups, nations, AI labs and developers..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.therobotreport.com/standard-bots-raises-200m-expand-u-s-manufacturing-footprint/",
+      "title": "Standard Bots raises $200M to expand U.S. manufacturing footprint",
+      "description": "Standard Bots asserted that investments in robotics are key to making U.S. manufacturing competitive on the global stage.",
+      "excerpt": "Standard Bots asserted that investments in robotics are key to making U.S. manufacturing competitive on the global stage.",
+      "summary": "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report This website uses cookies We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. Against this backdrop, the company is expanding its facility in Glen Cove, N.Y., to 70,000 sq. has shed manufacturing jobs, said the company. \u201cAI will allow industrial robots to do 100x more tasks with full autonomy. \u201cCombined with their commitment to building and scaling manufacturing in the U.S., we believe Standard Bots is uniquely positioned to define the next generation of industrial robotics.\u201d Tell Us What You Think! Developing a national robotics strategy Standard Bots is a leading advisor to the White House and Congress on.",
+      "what_happened": "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report This website uses cookies We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. Against this backdrop, the company is expanding its facility in Glen Cove, N.Y., to 70,000 sq.",
+      "why_matters": "has shed manufacturing jobs, said the company. \u201cAI will allow industrial robots to do 100x more tasks with full autonomy.",
+      "what_to_watch": "\u201cCombined with their commitment to building and scaling manufacturing in the U.S., we believe Standard Bots is uniquely positioned to define the next generation of industrial robotics.\u201d Tell Us What You Think! Developing a national robotics strategy Standard Bots is a leading advisor to the White House and Congress on.",
+      "key_points": [
+        "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around.",
+        "Developing a national robotics strategy Standard Bots is a leading advisor to the White House and Congress on a National Robotics Strategy , including testimonies to the Joint Economic Committee and Subcommittee on.",
+        "Against this backdrop, the company is expanding its facility in Glen Cove, N.Y., to 70,000 sq.",
+        "manufacturing footprint Standard Bots today announced that it has raised $200 million in Series C funding, bringing its valuation to $1 billion.",
+        "\u201cCombined with their commitment to building and scaling manufacturing in the U.S., we believe Standard Bots is uniquely positioned to define the next generation of industrial robotics.\u201d Tell Us What You Think!",
+        "Standard Bots raises $200M to expand U.S.",
+        "\u201cStandard Bots is the furthest along in that regard with the most vertically integrated, onshore production process, and this new capital just accelerates all of that.\u201d Standard Bots makes AI -native robot arms and.",
+        "Key policy recommendations include financial support for American manufacturers to invest in robotics, and a ban on Chinese-made industrial robots and robotics components.",
+        "Customers range from Fortune 100 companies to small and midsize manufacturers across the country.",
+        "Standard Bots says robotics is key to American manufacturing When counting affiliated suppliers and services, manufacturing accounts for roughly a third of the U.S.",
+        "Sourcing from China and other parts of the world is generally five to 10 times cheaper.",
+        "But for decades, the U.S."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/23d2824731f8beab.jpg",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/06/standard-bots.jpeg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://the-gadgeteer.com/2026/06/08/airpods-pro-4-infrared-cameras-september-2026/",
+      "title": "AirPods Pro 4 Leaks Reveal Infrared Cameras, What to Expect Before September - The Gadgeteer",
+      "description": "If you were waiting for a sign that Apple is ready to rethink what earbuds can do, 2026's supply-chain reports may be it. Analyst Ming-Chi Kuo is pointing to",
+      "excerpt": "If you were waiting for a sign that Apple is ready to rethink what earbuds can do, 2026's supply-chain reports may be it. Analyst Ming-Chi Kuo is pointing to",
+      "summary": "The camera modules are expected to be small enough to preserve the current stem design, and some reports suggest Apple may ship the camera-equipped model as a new \u201cAirPods Ultra\u201d rather than a straight Pro 4. The Pro 2 landed in September 2022, got a USB-C revision in September 2023, and the Pro 3 only just launched in September 2025. The idea sounds outlandish until you realize a University of Washington team led by an ex-Apple AirPods engineer already built a working version this spring. If this is a Pro 4, the Pro 3 gets discontinued. Analyst Ming-Chi Kuo is pointing to a September launch for the next AirPods Pro, with Bloomberg\u2019s Mark Gurman tracking the broader chip refresh. If this is a Pro 4, the Pro 3 gets discontinued.",
+      "what_happened": "The camera modules are expected to be small enough to preserve the current stem design, and some reports suggest Apple may ship the camera-equipped model as a new \u201cAirPods Ultra\u201d rather than a straight Pro 4. The Pro 2 landed in September 2022, got a USB-C revision in September 2023, and the Pro 3 only just launched in September 2025.",
+      "why_matters": "The idea sounds outlandish until you realize a University of Washington team led by an ex-Apple AirPods engineer already built a working version this spring. If this is a Pro 4, the Pro 3 gets discontinued.",
+      "what_to_watch": "Analyst Ming-Chi Kuo is pointing to a September launch for the next AirPods Pro, with Bloomberg\u2019s Mark Gurman tracking the broader chip refresh. If this is a Pro 4, the Pro 3 gets discontinued.",
+      "key_points": [
+        "The camera modules are expected to be small enough to preserve the current stem design, and some reports suggest Apple may ship the camera-equipped model as a new \u201cAirPods Ultra\u201d rather than a straight Pro 4.",
+        "The Pro 2 landed in September 2022, got a USB-C revision in September 2023, and the Pro 3 only just launched in September 2025.",
+        "If this is a Pro 4, the Pro 3 gets discontinued.",
+        "Analyst Ming-Chi Kuo is pointing to a September launch for the next AirPods Pro, with Bloomberg\u2019s Mark Gurman tracking the broader chip refresh.",
+        "Either way, the camera model is expected to be the most expensive AirPods Apple has shipped.",
+        "The current AirPods Pro 3 retails at $249.",
+        "The Upgrades We\u2019re More Certain About The H3 chip is widely expected, following the H2 in the Pro 3 and AirPods 4, bringing better power efficiency and faster on-device processing.",
+        "The AirPods Pro 4 or AirPods Ultra , or whatever Apple calls the camera-equipped model, is shaping up to be more than a routine refresh.",
+        "Should You Buy AirPods Pro 3 Now or Wait AirPods Pro 3 launched at $249 in September 2025.",
+        "Their VueBuds prototype , unveiled in April 2026 and earning an Honorable Mention at CHI \u201926, embeds rice-grain-sized cameras in each stem and pipes low-resolution, black-and-white images to a phone, where an on-device.",
+        "Kuo has flagged fall 2026 as the window for the camera-equipped model, with Apple\u2019s rumored foldable \u201ciPhone Ultra\u201d event as the likely stage.",
+        "MacRumors has outlined two pricing scenarios: if Apple keeps the camera model at $249, it replaces the Pro 3; if it lands around $299 or higher, it slots above the Pro 3 as a new tier."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/386654a21965a4a8.jpg",
+      "image_url": "https://the-gadgeteer.com/wp-content/uploads/2026/06/Airpods-Pro-3-Review.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/543f75c1fa4f77e9.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ef122c3aedeb2a28.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8746ca8a601387c2.jpg"
+      ],
+      "extra_image_urls": [
+        "https://the-gadgeteer.com/wp-content/uploads/2026/06/Airpods-Pro-3-Release.jpg",
+        "https://the-gadgeteer.com/wp-content/uploads/2026/06/Airpods-Pro-3.jpg",
+        "https://the-gadgeteer.com/wp-content/uploads/2026/06/Airpods-Pro-4-Concept.jpg"
+      ]
+    },
+    {
+      "url": "https://www.digitimes.com/news/a20260609VL201/nvidia-hyundai-robotics-partnership-industrial.html",
+      "title": "Nvidia and Hyundai deepen AI partnership in robotics and mobility",
+      "description": "Nvidia and Hyundai Motor Group have agreed to deepen their collaboration in artificial intelligence, robotics, and future mobility technologies as the two companies seek to accelerate the commercialization of physical AI and expand South Korea's role in next-generation AI infrastructure.",
+      "excerpt": "Nvidia and Hyundai Motor Group have agreed to deepen their collaboration in artificial intelligence, robotics, and future mobility technologies as the two companies seek to accelerate the commercialization of physical AI and expand South Korea's role in next-generation AI infrastructure.",
+      "summary": "Samsung Foundry turns to 5nm, 8nm orders as 2nm comeback takes shape SK Hynix speeds Yongin fab buildout as memory crunch fuels capacity race Exclusive: SK Group and Foxconn talks could signal deeper Taiwan-Korea AI supply chain ties Global semiconductor market to hit US$1.5 trillion in 2026 as memory surges 250%, WSTS forecasts Analysis: New AI race is redefining semiconductor industry at Computex Chinese AI startup StepFun seeks US$12 billion valuation in Hong Kong IPO Column: Computex 2026 shows Taiwan. Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. Nvidia and Hyundai deepen AI partnership in robotics and mobility Nvidia and Hyundai Motor Group have agreed to deepen their collaboration in artificial intelligence, robotics, and future mobility technologies as the two companies seek to accelerate the commercialization of physical. Nvidia and Hyundai deepen AI partnership in robotics and mobility Nvidia and Hyundai Motor Group have agreed to deepen their collaboration in artificial intelligence, robotics, and future mobility technologies as the two companies seek to accelerate the.",
+      "what_happened": "Samsung Foundry turns to 5nm, 8nm orders as 2nm comeback takes shape SK Hynix speeds Yongin fab buildout as memory crunch fuels capacity race Exclusive: SK Group and Foxconn talks could signal deeper Taiwan-Korea AI supply chain ties Global semiconductor market to hit US$1.5 trillion in 2026 as memory surges 250%, WSTS forecasts Analysis: New AI race is redefining semiconductor industry at Computex Chinese AI startup StepFun seeks US$12 billion valuation in Hong Kong IPO Column: Computex 2026 shows Taiwan.",
+      "why_matters": "Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. Nvidia and Hyundai deepen AI partnership in robotics and mobility Nvidia and Hyundai Motor Group have agreed to deepen their collaboration in artificial intelligence, robotics, and future mobility technologies as the two companies seek to accelerate the commercialization of physical.",
+      "what_to_watch": "Nvidia and Hyundai deepen AI partnership in robotics and mobility Nvidia and Hyundai Motor Group have agreed to deepen their collaboration in artificial intelligence, robotics, and future mobility technologies as the two companies seek to accelerate the commercialization of physical AI and expand South Korea's role.",
+      "key_points": [
+        "Nvidia and Hyundai deepen AI partnership in robotics and mobility Nvidia and Hyundai Motor Group have agreed to deepen their collaboration in artificial intelligence, robotics, and future mobility technologies as the.",
+        "Nvidia and Hyundai Motor Group have agreed to deepen their collaboration in artificial intelligence, robotics, and future mobility technologies as the two companies seek to accelerate the commercialization of physical.",
+        "This will save the password on the computer you're using to access the site.",
+        "To activate this function, check the 'Keep me signed in' box in the log-in section.",
+        "Samsung Foundry turns to 5nm, 8nm orders as 2nm comeback takes shape SK Hynix speeds Yongin fab buildout as memory crunch fuels capacity race Exclusive: SK Group and Foxconn talks could signal deeper Taiwan-Korea AI.",
+        "Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/377cfc0a8ebfb0ca.jpg",
+      "image_url": "https://img.digitimes.com/tw/x/img/viewpoint/orange/990203a.jpg?v=20260601",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/the-price-enterprises-will-pay-anthropic-claude-fable-5",
+      "title": "The Price Enterprises Will Pay for Anthropic Claude Fable 5",
+      "description": "Anthropic released Fable 5 as a general-use model. It also introduced Claude Mythos 5.",
+      "excerpt": "Anthropic released Fable 5 as a general-use model. It also introduced Claude Mythos 5.",
+      "summary": "Anthropic released Fable 5 as a general-use model. It also introduced Claude Mythos 5.",
+      "what_happened": "Anthropic released Fable 5 as a general-use model. It also introduced Claude Mythos 5.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Anthropic released Fable 5 as a general-use model.",
+        "It also introduced Claude Mythos 5."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4d63b5fa7c6a5fc8.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltfea5863c45e34dc9/6a28502d3c3efcdea8fa4c58/Waymo3.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/36a10531184bf378.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/15c5b987a5e6f873.webp"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltf0cb9fcaa3c26e02/6a26d9ec77d3baca5bdbf02e/Shadow_AI.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltee176ce55650ab85/6a21c0c5563cbbc1f1a60149/Meta.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ]
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/amazon-taps-fiber-optics-producer-corning-data-center-expansion",
+      "title": "Amazon Taps Corning for Data Center Expansion",
+      "description": "Amazon Taps Fiber Optics Producer Corning for Data Center Expansion",
+      "excerpt": "Amazon Taps Fiber Optics Producer Corning for Data Center Expansion",
+      "summary": "Amazon Taps Fiber Optics Producer Corning for Data Center Expansion",
+      "what_happened": "Amazon Taps Fiber Optics Producer Corning for Data Center Expansion",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Amazon Taps Fiber Optics Producer Corning for Data Center Expansion"
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4d63b5fa7c6a5fc8.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltfea5863c45e34dc9/6a28502d3c3efcdea8fa4c58/Waymo3.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/36a10531184bf378.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/15c5b987a5e6f873.webp"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltf0cb9fcaa3c26e02/6a26d9ec77d3baca5bdbf02e/Shadow_AI.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltee176ce55650ab85/6a21c0c5563cbbc1f1a60149/Meta.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ]
+    },
+    {
+      "url": "https://www.engadget.com/2190537/xenoblade-genesis-the-next-mainline-entry-in-the-action-rpg-franchise-launches-in-2027/",
+      "title": "Xenoblade Genesis, the next mainline entry in the action RPG franchise, launches in 2027 - Engadget",
+      "description": "Nintendo dropped a lot of news for Xenoblade fans this morning.",
+      "excerpt": "Nintendo dropped a lot of news for Xenoblade fans this morning.",
+      "summary": "Nintendo dropped a lot of news for Xenoblade fans this morning.",
+      "what_happened": "Nintendo dropped a lot of news for Xenoblade fans this morning.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Nintendo dropped a lot of news for Xenoblade fans this morning."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a39389e3ddf71c2e.jpg",
+      "image_url": "https://www.engadget.com/img/gallery/xenoblade-genesis-the-next-mainline-entry-in-the-action-rpg-franchise-launches-in-2027/intro-1781020824.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 7,
+  "has_cta": true,
+  "slides": [
+    "Google just fired a warning shot in the AI subscription price wars.",
+    "Standard Bots raises $200M to expand U.S manufacturing footprint.",
+    "AirPods Pro 4 Leaks Reveal Infrared Cameras What to Expect Before September.",
+    "Nvidia and Hyundai deepen AI partnership in robotics and mobility.",
+    "The Price Enterprises Will Pay for Anthropic Claude Fable 5.",
+    "Amazon Taps Corning for Data Center Expansion.",
+    "FOLLOW @graitech"
+  ]
+}
