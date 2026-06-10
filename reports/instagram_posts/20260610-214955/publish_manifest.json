@@ -1,0 +1,21 @@
+{
+  "posts": [
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260610-214955/01_20260610-2149_for-robotaxis-safety-must-be-built-in-not-bolted-on",
+      "caption": "For Robotaxis Safety Must Be Built In Not Bolted On.\n\nSwipe for the full breakdown.\n\n- Halos Infra runs on NVIDIA's three-computer autonomous driving solution: NVIDIA DGX systems for training the AI stack.\n- It's the foundation for the recently released NVIDIA Halos Safety Evaluation Framework (SEF).\n- Robotaxi safety requires solving four distinct challenges simultaneously: To help solve these challenges, the recently introduced Halos Operating.\n- The Halos Safety Evaluation Framework Halos Infra is the cloud-side development infrastructure that enables autonomous vehicle training, simulation.\n- Halos Core is compliant with ISO 26262 ASIL D, includes safety-certified support for NVIDIA CUDA and TensorRT.\n\nIs this technology moving too fast, or not fast enough? Let's hear it.\n\nSave this before it disappears from your feed.\n\nSources:\n- https://blogs.nvidia.com/blog/halos-os-robotaxi-safety/\n- https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/\n- https://techcrunch.com/2026/06/10/warner-music-acquires-ai-attribution-startup-sureel-ai/\n- https://www.anthropic.com/policy-on-the-ai-exponential\n- https://techcrunch.com/2026/06/10/fresh-off-bond-sale-amazon-borrows-17-5-billion-from-banks-as-ai-spending-continues/\n\n#AIRobotics #Robotics #HumanoidRobots #FutureOfAI #TechTrends #Innovation #EmergingTech #Technology #Tech #AI #AIExplained #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing #MLNews #AIWeekly #TechInnovation #AIStartups #FutureOfWork\n\n-\nAI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.\n-\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260610-214955/01_20260610-2149_for-robotaxis-safety-must-be-built-in-not-bolted-on/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260610-214955/01_20260610-2149_for-robotaxis-safety-must-be-built-in-not-bolted-on/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260610-214955/01_20260610-2149_for-robotaxis-safety-must-be-built-in-not-bolted-on/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260610-214955/01_20260610-2149_for-robotaxis-safety-must-be-built-in-not-bolted-on/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260610-214955/01_20260610-2149_for-robotaxis-safety-must-be-built-in-not-bolted-on/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260610-214955/01_20260610-2149_for-robotaxis-safety-must-be-built-in-not-bolted-on/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260610-214955/01_20260610-2149_for-robotaxis-safety-must-be-built-in-not-bolted-on/slide_07.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260610-214955/01_20260610-2149_for-robotaxis-safety-must-be-built-in-not-bolted-on/slide_08.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260610-214955/01_20260610-2149_for-robotaxis-safety-must-be-built-in-not-bolted-on/slide_09.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload"
+    }
+  ]
+}

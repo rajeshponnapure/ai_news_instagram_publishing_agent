@@ -1,0 +1,26 @@
+For Robotaxis Safety Must Be Built In Not Bolted On.
+
+Swipe for the full breakdown.
+
+- Halos Infra runs on NVIDIA's three-computer autonomous driving solution: NVIDIA DGX systems for training the AI stack.
+- It's the foundation for the recently released NVIDIA Halos Safety Evaluation Framework (SEF).
+- Robotaxi safety requires solving four distinct challenges simultaneously: To help solve these challenges, the recently introduced Halos Operating.
+- The Halos Safety Evaluation Framework Halos Infra is the cloud-side development infrastructure that enables autonomous vehicle training, simulation.
+- Halos Core is compliant with ISO 26262 ASIL D, includes safety-certified support for NVIDIA CUDA and TensorRT.
+
+Is this technology moving too fast, or not fast enough? Let's hear it.
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://blogs.nvidia.com/blog/halos-os-robotaxi-safety/
+- https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/
+- https://techcrunch.com/2026/06/10/warner-music-acquires-ai-attribution-startup-sureel-ai/
+- https://www.anthropic.com/policy-on-the-ai-exponential
+- https://techcrunch.com/2026/06/10/fresh-off-bond-sale-amazon-borrows-17-5-billion-from-banks-as-ai-spending-continues/
+
+#AIRobotics #Robotics #HumanoidRobots #FutureOfAI #TechTrends #Innovation #EmergingTech #Technology #Tech #AI #AIExplained #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing #MLNews #AIWeekly #TechInnovation #AIStartups #FutureOfWork
+
+-
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-

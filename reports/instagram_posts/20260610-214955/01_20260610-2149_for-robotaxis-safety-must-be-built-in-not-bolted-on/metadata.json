@@ -1,0 +1,363 @@
+{
+  "email_received_at": "2026-06-10T21:49+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "For Robotaxis, Safety Must Be Built In, Not Bolted On",
+  "subject": "",
+  "source_date": "2026-06-10T21:49:56.765518",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://blogs.nvidia.com/blog/halos-os-robotaxi-safety/",
+  "article_title": "For Robotaxis, Safety Must Be Built In, Not Bolted On",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/de8a8683d3d2f453.jpg",
+  "article_image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/robotaxis_halos_blog-body-1.jpg",
+  "article_items": [
+    {
+      "url": "https://blogs.nvidia.com/blog/halos-os-robotaxi-safety/",
+      "title": "For Robotaxis, Safety Must Be Built In, Not Bolted On",
+      "description": "NVIDIA Halos OS delivers safety-certified platform software, standardized interfaces, AI guardrails, and pre-deployment validation for L4 robotaxi deployments at scale.",
+      "excerpt": "NVIDIA Halos OS delivers safety-certified platform software, standardized interfaces, AI guardrails, and pre-deployment validation for L4 robotaxi deployments at scale.",
+      "summary": "It\u2019s the foundation for the recently released NVIDIA Halos Safety Evaluation Framework (SEF). Robotaxi safety requires solving four distinct challenges simultaneously: To help solve these challenges, the recently introduced Halos Operating System (OS) - a component of the NVIDIA Halos full-stack, comprehensive safety system - offers a unified, production-ready safety foundation for AI-driven vehicles, built on NVIDIA DRIVE Hyperion. Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute How the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies NVIDIA and LG Group Build an AI Factory to Advance Physical AI, Mobility and AI Infrastructure NVIDIA Confidential Computing to Help Expand Apple\u2019s Private. This includes the NVIDIA Alpamayo family of open models for autonomous vehicle development, which enables chain-of-thought reasoning, continuously evaluating the road, planning next steps and adapting to changing conditions. Halos Infra runs on NVIDIA\u2019s three-computer autonomous driving solution: NVIDIA DGX systems.",
+      "what_happened": "It\u2019s the foundation for the recently released NVIDIA Halos Safety Evaluation Framework (SEF). Robotaxi safety requires solving four distinct challenges simultaneously: To help solve these challenges, the recently introduced Halos Operating System (OS) - a component of the NVIDIA Halos full-stack, comprehensive safety system - offers a unified, production-ready safety foundation for AI-driven vehicles, built on NVIDIA DRIVE Hyperion.",
+      "why_matters": "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute How the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies NVIDIA and LG Group Build an AI Factory to Advance Physical AI, Mobility and AI Infrastructure NVIDIA Confidential Computing to Help Expand Apple\u2019s Private.",
+      "what_to_watch": "This includes the NVIDIA Alpamayo family of open models for autonomous vehicle development, which enables chain-of-thought reasoning, continuously evaluating the road, planning next steps and adapting to changing conditions. Halos Infra runs on NVIDIA\u2019s three-computer autonomous driving solution: NVIDIA DGX systems.",
+      "key_points": [
+        "Halos Infra runs on NVIDIA\u2019s three-computer autonomous driving solution: NVIDIA DGX systems for training the AI stack in the data center NVIDIA Omniverse on NVIDIA OVX systems for simulation and synthetic data.",
+        "It\u2019s the foundation for the recently released NVIDIA Halos Safety Evaluation Framework (SEF).",
+        "Robotaxi safety requires solving four distinct challenges simultaneously: To help solve these challenges, the recently introduced Halos Operating System (OS) - a component of the NVIDIA Halos full-stack, comprehensive.",
+        "The Halos Safety Evaluation Framework Halos Infra is the cloud-side development infrastructure that enables autonomous vehicle training, simulation and validation at scale.",
+        "Halos Core is compliant with ISO 26262 ASIL D, includes safety-certified support for NVIDIA CUDA and TensorRT, and provides the TensorRT Edge-LLM open source framework for high-performance large language model inference.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "This includes the NVIDIA Alpamayo family of open models for autonomous vehicle development, which enables chain-of-thought reasoning, continuously evaluating the road, planning next steps and adapting to changing.",
+        "It comprises: Halos Core: A Certified OS Foundation At the foundation of NVIDIA Halos OS is Halos Core, which is the next generation of NVIDIA DriveOS and certified to automotive safety standards.",
+        "It draws on more than 330 research papers and 1,000 patents developed within NVIDIA Halos OS.",
+        "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute How the UK Is Turning.",
+        "Halos SDK: Standardized and Safe Interfaces A robotaxi integrates cameras, radar, lidar and other sensors, each streaming data in a different format at a different rate.",
+        "It includes world model perception and the top-rated NVIDIA DRIVE active safety stack featuring automatic emergency braking, lane departure warning, blind spot monitoring, collision warning and more."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/de8a8683d3d2f453.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/robotaxis_halos_blog-body-1.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "ef9748ebd91a43bcb2fcc1ecef097337"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/",
+      "title": "Cybersecurity researchers aren't happy about the guardrails on Anthropic's Fable | TechCrunch",
+      "description": "Cybersecurity researchers are complaining that Anthropic's new model Fable has guardrails that are too strict for any cybersecurity work.",
+      "excerpt": "Cybersecurity researchers are complaining that Anthropic's new model Fable has guardrails that are too strict for any cybersecurity work.",
+      "summary": "More from TechCrunch Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s Fable Anthropic released its latest model Fable on Tuesday, billing it as a public and limited version of its powerful and much-hyped cybersecurity model Mythos. When the AI giant released Mythos in April, it restricted the model to a limited number of companies and organizations in what it called Project Glasswing , an effort to deploy the model to secure critical software and infrastructure. Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections. \u201cIt\u2019s better to catch more people than not enough when you do such a release and to relax the guardrails over time.\u201d Another researcher griped on X that \u201ceven asking for a code review\u201d triggers Fable\u2019s guardrails. When a prompt triggers its guardrails, Fable pauses the chat and says that its \u201csafety measures flagged this message for cybersecurity or biology topics.\u201d The guardrails were put in place to limit the risk that Fable could be used to develop malware or compromise software - a long-standing concern within Anthropic.",
+      "what_happened": "More from TechCrunch Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s Fable Anthropic released its latest model Fable on Tuesday, billing it as a public and limited version of its powerful and much-hyped cybersecurity model Mythos. When the AI giant released Mythos in April, it restricted the model to a limited number of companies and organizations in what it called Project Glasswing , an effort to deploy the model to secure critical software and infrastructure.",
+      "why_matters": "Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections. \u201cIt\u2019s better to catch more people than not enough when you do such a release and to relax the guardrails over time.\u201d Another researcher griped on X that \u201ceven asking for a code review\u201d triggers Fable\u2019s guardrails.",
+      "what_to_watch": "When a prompt triggers its guardrails, Fable pauses the chat and says that its \u201csafety measures flagged this message for cybersecurity or biology topics.\u201d The guardrails were put in place to limit the risk that Fable could be used to develop malware or compromise software - a long-standing concern within Anthropic.",
+      "key_points": [
+        "More from TechCrunch Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s Fable Anthropic released its latest model Fable on Tuesday, billing it as a public and limited version of its powerful and.",
+        "When the AI giant released Mythos in April, it restricted the model to a limited number of companies and organizations in what it called Project Glasswing , an effort to deploy the model to secure critical software and.",
+        "Google just fired a warning shot in the AI subscription price wars WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more Anthropic\u2019s Claude Fable 5 is a version of Mythos the public can access.",
+        "\u201cIt\u2019s better to catch more people than not enough when you do such a release and to relax the guardrails over time.\u201d Another researcher griped on X that \u201ceven asking for a code review\u201d triggers Fable\u2019s guardrails.",
+        "I am sure they are going to evolve over time as Anthropic and other frontier model companies will collaborate more with the current new generation of cybersecurity companies,\u201d said Suiche, who is a member of the.",
+        "Last week, Anthropic expanded access to Mythos to hundreds of organizations in 15 countries.",
+        "Cybersecurity researchers are complaining that Anthropic's new model Fable has guardrails that are too strict for any cybersecurity work.",
+        "Apart from guardrails inside its models, Anthropic requires cybersecurity professionals to apply to the Cyber Verification Program .",
+        "When a prompt triggers its guardrails, Fable pauses the chat and says that its \u201csafety measures flagged this message for cybersecurity or biology topics.\u201d The guardrails were put in place to limit the risk that Fable.",
+        "\u201cIt seems to be keyword based, so anything in the lexical field of \u2018cybersecurity\u2019 triggers the guardrails.\u201d \u201cBut it is understandable as we are still in the early days and they are still adapting their guardrails.",
+        "But not everyone is happy with the restrictions, and a number of cybersecurity researchers and professionals have aired complaints online.",
+        "But despite the good intentions, many cybersecurity experts are still put off by the haphazard nature of the restrictions."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/16c7b931ce62486f.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/anthropic-claude-fable.jpg?resize=1200,798",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "b185345c50bd4e6c9f59560e4df6bbb5"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/10/warner-music-acquires-ai-attribution-startup-sureel-ai/",
+      "title": "Warner Music acquires AI attribution startup Sureel AI | TechCrunch",
+      "description": "Through the acquisition, WMG aims to better track when its artists' work is used in AI-generated content or for training AI models.",
+      "excerpt": "Through the acquisition, WMG aims to better track when its artists' work is used in AI-generated content or for training AI models.",
+      "summary": "\u201cBringing Sureel into WMG strengthens our capability for protection, control and monetization and ensures that the creative community remains in control of its intellectual property, name, image, likeness, and voice,\u201d said WMG chief executive Robert Kyncl in the press release. Google just fired a warning shot in the AI subscription price wars WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more Anthropic\u2019s Claude Fable 5 is a version of Mythos the public can access today Microsoft\u2019s. \u201cSureel was built to make that possible, and with WMG\u2019s backing, we can deliver on our mission at scale, building a more transparent and fair future and driving value growth for the whole music and entertainment ecosystem.\u201d WMG has embraced AI after initially opposing it, as the company originally sued music-generation startup Suno in 2024 and later signed a licensing deal with the company last year. The startup will continue. The startup also has a name, image, and likeness (NIL) attribution suite to track how artist voices, likenesses, and performance identities are used in AI training and generation.",
+      "what_happened": "\u201cBringing Sureel into WMG strengthens our capability for protection, control and monetization and ensures that the creative community remains in control of its intellectual property, name, image, likeness, and voice,\u201d said WMG chief executive Robert Kyncl in the press release. Google just fired a warning shot in the AI subscription price wars WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more Anthropic\u2019s Claude Fable 5 is a version of Mythos the public can access today Microsoft\u2019s.",
+      "why_matters": "\u201cSureel was built to make that possible, and with WMG\u2019s backing, we can deliver on our mission at scale, building a more transparent and fair future and driving value growth for the whole music and entertainment ecosystem.\u201d WMG has embraced AI after initially opposing it, as the company originally sued music-generation startup Suno in 2024 and later signed a licensing deal with the company last year. The startup will continue.",
+      "what_to_watch": "The startup also has a name, image, and likeness (NIL) attribution suite to track how artist voices, likenesses, and performance identities are used in AI training and generation.",
+      "key_points": [
+        "\u201cBringing Sureel into WMG strengthens our capability for protection, control and monetization and ensures that the creative community remains in control of its intellectual property, name, image, likeness, and voice,\u201d.",
+        "Founded in 2022, Sureel also offers intellectual property provenance, audit and compliance reporting, model optimization, and AI business intelligence.",
+        "Google just fired a warning shot in the AI subscription price wars WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more Anthropic\u2019s Claude Fable 5 is a version of Mythos the public can access.",
+        "The startup also has a name, image, and likeness (NIL) attribution suite to track how artist voices, likenesses, and performance identities are used in AI training and generation.",
+        "Through the acquisition, WMG aims to better track when its artists\u2019 and songwriters\u2019 work is used in AI-generated content or for training AI models.",
+        "More from TechCrunch Warner Music acquires AI attribution startup Sureel AI theWarner Music Music (WMG) announced on Wednesday that it\u2019s acquiring AI attribution startup Sureel AI.",
+        "This includes voice clones, AI-generated avatars, and style replication.",
+        "WMG said at the time that artists and songwriters would have full control over whether and how their names, images, likenesses, voices, and compositions are used in new AI-generated music.",
+        "\u201cSureel was built to make that possible, and with WMG\u2019s backing, we can deliver on our mission at scale, building a more transparent and fair future and driving value growth for the whole music and entertainment.",
+        "Prior to joining the publication in 2021, she was a telecom reporter at MobileSyrup.",
+        "The startup will continue to operate as a stand-alone platform serving the broader music and AI ecosystem, WMG says.",
+        "WMG last year also settled its lawsuit against AI music startup Udio and reached a licensing deal with the company."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3e6a6af2cba664cb.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/warner-music.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "b6509e6a4df24a6e91ed465b8f712406"
+    },
+    {
+      "url": "https://www.anthropic.com/policy-on-the-ai-exponential",
+      "title": "Policy on the AI Exponential",
+      "description": "We are sharing two policy proposals to prepare for AI progress: Our Advanced AI Framework and our Economic Policy Framework.",
+      "excerpt": "We are sharing two policy proposals to prepare for AI progress: Our Advanced AI Framework and our Economic Policy Framework.",
+      "summary": "Preemption is powerful, so it should be surgical, allowing states to regulate AI on all issues - such as child safety and consumer protection - which fall outside the specific safety functions a federal law covers. On cyber, we recommend hardening the software that the internet runs on, deploying technical support for critical infrastructure operators, and replacing legacy software systems in critical infrastructure. The second, our Economic Policy Framework, turns to the question of how to prepare workers and the economy for AI\u2019s impact and ensure the financial benefits of AI are broadly shared. Frontier developers should secure their whole development environment and protect against threats from both outside and inside the company. These issues are both complex and novel, and we expect vigorous debate about the recommendations we present. They should publish a safety framework explaining how they evaluate catastrophic risks, and system cards evaluating the capabilities and risks of their frontier models.",
+      "what_happened": "Preemption is powerful, so it should be surgical, allowing states to regulate AI on all issues - such as child safety and consumer protection - which fall outside the specific safety functions a federal law covers. On cyber, we recommend hardening the software that the internet runs on, deploying technical support for critical infrastructure operators, and replacing legacy software systems in critical infrastructure.",
+      "why_matters": "The second, our Economic Policy Framework, turns to the question of how to prepare workers and the economy for AI\u2019s impact and ensure the financial benefits of AI are broadly shared. Frontier developers should secure their whole development environment and protect against threats from both outside and inside the company.",
+      "what_to_watch": "These issues are both complex and novel, and we expect vigorous debate about the recommendations we present. They should publish a safety framework explaining how they evaluate catastrophic risks, and system cards evaluating the capabilities and risks of their frontier models.",
+      "key_points": [
+        "Preemption is powerful, so it should be surgical, allowing states to regulate AI on all issues - such as child safety and consumer protection - which fall outside the specific safety functions a federal law covers.",
+        "They should publish a safety framework explaining how they evaluate catastrophic risks, and system cards evaluating the capabilities and risks of their frontier models.",
+        "Frontier developers should test their models and publish a summary of the results.",
+        "On cyber, we recommend hardening the software that the internet runs on, deploying technical support for critical infrastructure operators, and replacing legacy software systems in critical infrastructure.",
+        "AI systems are automating the research and development of AI itself, which could further amplify the three above risks.",
+        "In parallel, governments and industry should develop the ecosystem of qualified independent evaluators by setting standards for them and ensuring they have funding and sufficient access to frontier models.",
+        "Model weights and training infrastructure are valuable targets for cyberattackers, including well-resourced state actors.",
+        "In the second half of our framework, we recommend ways for governments to increase society\u2019s resilience to the risks that models could pose.",
+        "The government should be able to block or deter the deployment of models that pose a significant risk of catastrophic harm.",
+        "The second, our Economic Policy Framework, turns to the question of how to prepare workers and the economy for AI\u2019s impact and ensure the financial benefits of AI are broadly shared.",
+        "The resilience agenda for loss-of-control and automated R&D risks is less developed.",
+        "These issues are both complex and novel, and we expect vigorous debate about the recommendations we present."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/37e0d30998efd057.jpg",
+      "image_url": "https://cdn.sanity.io/images/4zrzovbb/website/577dda8172ff9540c2c58481a3ae1757f0a1f65f-2400x1260.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0963160f281e9d3f.webp"
+      ],
+      "extra_image_urls": [
+        "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fb2f6b8c56ad7bfd7663153922ce18ee9c3ab7574-2032x1141.jpg&w=3840&q=75"
+      ],
+      "_story_id": "56167a2a07e3448781749cc94c0564a0"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/10/fresh-off-bond-sale-amazon-borrows-17-5-billion-from-banks-as-ai-spending-continues/",
+      "title": "Fresh off bond sale, Amazon borrows $17.5B from banks as AI spending continues | TechCrunch",
+      "description": "Companies are burning through exorbitant sums of money to keep pace in the AI arms race. Debt is climbing.",
+      "excerpt": "Companies are burning through exorbitant sums of money to keep pace in the AI arms race. Debt is climbing.",
+      "summary": "About a week ago, Google parent company Alphabet said that it planned to raise $80 billion through a stock sale designed to help \u201cfund its investments in a balanced way while retaining a healthy balance sheet.\u201d Meta has also announced plans to raise $30 billion in a bond sale - its largest ever. The deal has been characterized as a delayed draw term loan , meaning Amazon can draw down the funds on its own timeline rather than taking the full sum upfront, giving it flexibility in how and when the money gets. Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections. More from TechCrunch Fresh off bond sale, Amazon borrows $17.5B from banks as AI spending continues Companies are burning through exorbitant sums of money to keep pace in the AI arms race. More from TechCrunch Fresh off bond sale, Amazon borrows $17.5B from banks as AI spending continues Companies are burning through exorbitant sums of money to keep pace in the AI arms race.",
+      "what_happened": "About a week ago, Google parent company Alphabet said that it planned to raise $80 billion through a stock sale designed to help \u201cfund its investments in a balanced way while retaining a healthy balance sheet.\u201d Meta has also announced plans to raise $30 billion in a bond sale - its largest ever. The deal has been characterized as a delayed draw term loan , meaning Amazon can draw down the funds on its own timeline rather than taking the full sum upfront, giving it flexibility in how and when the money gets.",
+      "why_matters": "Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections. More from TechCrunch Fresh off bond sale, Amazon borrows $17.5B from banks as AI spending continues Companies are burning through exorbitant sums of money to keep pace in the AI arms race.",
+      "what_to_watch": "More from TechCrunch Fresh off bond sale, Amazon borrows $17.5B from banks as AI spending continues Companies are burning through exorbitant sums of money to keep pace in the AI arms race.",
+      "key_points": [
+        "About a week ago, Google parent company Alphabet said that it planned to raise $80 billion through a stock sale designed to help \u201cfund its investments in a balanced way while retaining a healthy balance sheet.\u201d Meta has.",
+        "The deal has been characterized as a delayed draw term loan , meaning Amazon can draw down the funds on its own timeline rather than taking the full sum upfront, giving it flexibility in how and when the money gets.",
+        "More from TechCrunch Fresh off bond sale, Amazon borrows $17.5B from banks as AI spending continues Companies are burning through exorbitant sums of money to keep pace in the AI arms race.",
+        "The loan comes just two days after it was reported that Amazon would also raise $14 billion in a Canadian bond sale , bringing its total new financing to roughly $31.5 billion in the span of roughly 48 hours.",
+        "Pinterest bets on creators with Amazon Storefront integration Meta signs first AI data center deal in India with Reliance Why Apple\u2019s slow-and-steady AI bet is starting to look pretty smart Fresh off bond sale, Amazon.",
+        "The scale of the borrowing is striking even by Silicon Valley standards.",
+        "Every weekday and Sunday, you can get the best of TechCrunch\u2019s coverage.",
+        "To fund new AI infrastructure like chips and data centers, companies are leveraging historic capex.",
+        "It\u2019s not clear exactly how Amazon plans to spend all the new money.",
+        "Companies are burning through exorbitant sums of money to keep pace in the AI arms race.",
+        "Amidst this flurry of activity, Amazon has signed a deal to borrow some $17.5 billion from a number of financial lenders, according to Bloomberg .",
+        "The question investors and analysts are increasingly asking isn\u2019t whether this spending is necessary - it\u2019s whether the returns will ever justify it."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f6558d8457a7e5be.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/apple-siri-ai-use-cases.png?w=662",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "a9e5cc555bce408f8bfa4be183cc9ece"
+    },
+    {
+      "url": "https://www.databricks.com/blog/ai-serving-platform-adapts-your-model",
+      "title": "AI Serving Platform That Adapts to Your Model",
+      "description": "How we serve a large variety of custom AI models without asking customers to tune infrastructure, at 300K+ QPS, under 10ms latency overhead, with cost-efficient scaling on fully elastic, pay-for-what-you-use compute",
+      "excerpt": "How we serve a large variety of custom AI models without asking customers to tune infrastructure, at 300K+ QPS, under 10ms latency overhead, with cost-efficient scaling on fully elastic, pay-for-what-you-use compute",
+      "summary": "How we serve a large variety of custom AI models without asking customers to tune infrastructure, at 300K+ QPS, under 10ms latency overhead, with cost-efficient scaling on fully elastic, pay-for-what-you-use compute Partner Program Explore benefits, tiers and how to become a partner Partner Solutions Find custom industry and migration solutions Platform Overview A unified platform for data, analytics and AI Governance Unified governance for all data, analytics and AI assets Artificial Intelligence Build and deploy. Inside each pod, the model runs on the inference engine best suited to its type - an async Gunicorn MLflow server for classic ML models, and GPU-optimized engines for large models with support for vLLM, Triton or customer's own runtime - all behind one uniform serving interface. A platform hosting a foundation model (Llama, Mistral, a CLIP variant) knows exactly what it is running: the architecture, the memory footprint, the. Challenges of Running Custom Model Inferences When you deploy a machine learning model to production, you are committing to a contract : every request completes within a few milliseconds regardless of traffic spikes, and your bill stays low when.",
+      "what_happened": "How we serve a large variety of custom AI models without asking customers to tune infrastructure, at 300K+ QPS, under 10ms latency overhead, with cost-efficient scaling on fully elastic, pay-for-what-you-use compute Partner Program Explore benefits, tiers and how to become a partner Partner Solutions Find custom industry and migration solutions Platform Overview A unified platform for data, analytics and AI Governance Unified governance for all data, analytics and AI assets Artificial Intelligence Build and deploy.",
+      "why_matters": "Inside each pod, the model runs on the inference engine best suited to its type - an async Gunicorn MLflow server for classic ML models, and GPU-optimized engines for large models with support for vLLM, Triton or customer's own runtime - all behind one uniform serving interface. A platform hosting a foundation model (Llama, Mistral, a CLIP variant) knows exactly what it is running: the architecture, the memory footprint, the.",
+      "what_to_watch": "Challenges of Running Custom Model Inferences When you deploy a machine learning model to production, you are committing to a contract : every request completes within a few milliseconds regardless of traffic spikes, and your bill stays low when traffic is low.",
+      "key_points": [
+        "How we serve a large variety of custom AI models without asking customers to tune infrastructure, at 300K+ QPS, under 10ms latency overhead, with cost-efficient scaling on fully elastic, pay-for-what-you-use compute.",
+        "And it never stops: every new model and traffic shift means re-profiling and re-tuning, so your best engineers fire-fight production before and after shipping, and serving becomes the anchor that slows every launch.",
+        "Challenges of Running Custom Model Inferences When you deploy a machine learning model to production, you are committing to a contract : every request completes within a few milliseconds regardless of traffic spikes.",
+        "Inside each pod, the model runs on the inference engine best suited to its type - an async Gunicorn MLflow server for classic ML models, and GPU-optimized engines for large models with support for vLLM, Triton or.",
+        "The infrastructure adapts to the model instead of the other way around.",
+        "A platform hosting a foundation model (Llama, Mistral, a CLIP variant) knows exactly what it is running: the architecture, the memory footprint, the inference characteristics, and can optimize deeply for that one model.",
+        "Model serving is the infrastructure that keeps that contract, and for most of the industry's history, keeping it has been as hard as building the model itself.",
+        "A CPU heavy xgboost model may only serve 1 request per core, an agent can run 100s of requests per core, while a fine-tuned 13B LLM benefits from multiple requests batched together.",
+        "The same platform has to serve a 2 MB scikit-learn classifier on a single CPU core and a fine-tuned 70B LLM on eight GPUs; a low-latency ranker that cannot tolerate queuing and an embedding model that thrives on.",
+        "This works because Custom Model Serving is built natively into Databricks: data, features, training, MLflow packaging, serving, and agents are one governed stack, not separate systems stitched together.",
+        "On Databricks all of that lives in one governed platform: data and features, training, MLflow packaging, serving, agents, and the telemetry that watches them.",
+        "This is why the autoscaler is the heart of the system: it is the one component holding all three constraints - latency, scale, and cost - at the same time, for every model on the platform."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/05b8129ebc50ebff.png",
+      "image_url": "https://www.databricks.com/sites/default/files/2026-06/ai-serving-model-that-adapts-to-your-platform-og.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "1bf9ba8b6b1d4062865baf03898f72fd"
+    },
+    {
+      "url": "https://www.langchain.com/blog/full-text-search-in-smithdb-designing-an-inverted-index-for-object-storage",
+      "title": "Full Text Search in SmithDB: Designing an Inverted Index for Object Storage",
+      "description": "SmithDB supports full-text search and JSON filtering over agent traces with a median (P50) latency of 400 ms, even though the underlying data consists of large, deeply nested JSON documents stored in object storage.",
+      "excerpt": "SmithDB supports full-text search and JSON filtering over agent traces with a median (P50) latency of 400 ms, even though the underlying data consists of large, deeply nested JSON documents stored in object storage.",
+      "summary": "S e e w h a t y o u r a g e n t i s r e a l l y d o i n g LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click. We leaned on Vortex's defaults: FSST encoding for the term columns, bitpacked encoding for postings and positions, and a zoned storage layout that allowed for pruning at query time. SmithDB requires a different approach to search Challenge 1: Unique data characteristics of agent traces Every LangSmith event encodes the fields inputs and outputs as the overwhelming majority of its total bytes. The FST resolves the term to an ordinal. SmithDB requires a different approach to search Challenge 1: Unique data characteristics of agent traces Every LangSmith event encodes the fields inputs and outputs as the overwhelming majority of its total bytes.",
+      "what_happened": "S e e w h a t y o u r a g e n t i s r e a l l y d o i n g LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click. We leaned on Vortex's defaults: FSST encoding for the term columns, bitpacked encoding for postings and positions, and a zoned storage layout that allowed for pruning at query time.",
+      "why_matters": "SmithDB requires a different approach to search Challenge 1: Unique data characteristics of agent traces Every LangSmith event encodes the fields inputs and outputs as the overwhelming majority of its total bytes. The FST resolves the term to an ordinal.",
+      "what_to_watch": "SmithDB requires a different approach to search Challenge 1: Unique data characteristics of agent traces Every LangSmith event encodes the fields inputs and outputs as the overwhelming majority of its total bytes.",
+      "key_points": [
+        "A query like search(\"deep agents\") intersects the posting lists for deep ( [1, 2, 3, 4] ) and agents ( [0, 1, 2, 3] ) to get [1, 2, 3] with no payload scan.",
+        "SmithDB requires a different approach to search Challenge 1: Unique data characteristics of agent traces Every LangSmith event encodes the fields inputs and outputs as the overwhelming majority of its total bytes.",
+        "The FST resolves the term to an ordinal.",
+        "SmithDB needs the index to point directly at row positions in the corresponding Vortex data file (we use Vortex for our core event data files), so a doc ID is a row index - no translation table, no second identity to.",
+        "Full Text Search in SmithDB: Designing an Inverted Index for Object Storage SmithDB supports full-text search and JSON filtering over agent traces with a median (P50) latency of 400 ms, even though the underlying data.",
+        "SmithDB supports full-text search and JSON filtering over agent traces with a median (P50) latency of 400 ms, even though the underlying data consists of large, deeply nested JSON documents stored in object storage.",
+        "Challenge 2: Object storage SmithDB keeps all durable data in object storage so compute is relatively stateless and the system scales by adding nodes without having to manage local disks.",
+        "S e e w h a t y o u r a g e n t i s r e a l l y d o i n g LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click.",
+        "We leaned on Vortex's defaults: FSST encoding for the term columns, bitpacked encoding for postings and positions, and a zoned storage layout that allowed for pruning at query time.",
+        "The shape of the win depends on cardinality: On term_key , where a few hundred JSON paths repeat across millions of rows, the FST collapses the entire dictionary to 3.8 KiB: four orders of magnitude smaller than the raw.",
+        "On object storage a round-trip costs roughly 100 ms, so the primary lever for query latency is minimizing the number of requests.",
+        "The positions column records, per document, the token offset(s) where the term appears, e.g."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f385f1eabde1f5c3.img",
+      "image_url": "https://cdn.prod.website-files.com/65b8cd72835ceeacd4449a53/6989c024926f877c1de6e728_updated.svg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "13a67e632e6e4d4cb4274abd65008f01"
+    },
+    {
+      "url": "https://www.statnews.com/2026/06/10/sepsis-algorithm-shouldnt-require-time-machine-ai-prognosis/?utm_campaign=rss",
+      "title": "Your sepsis algorithm shouldn\u2019t require a time machine",
+      "description": "In this edition of AI Prognosis: Quirky medical data tripping up sepsis algorithms, AI scribes for patients, and some AI biotech news.",
+      "excerpt": "In this edition of AI Prognosis: Quirky medical data tripping up sepsis algorithms, AI scribes for patients, and some AI biotech news.",
+      "summary": "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance. If you do not allow these cookies then some or all of these services may not function properly. They help us to know which pages are the most and least popular and see how visitors move around the site. STAT Plus: The China question is tearing biotech apart STAT Plus: For pancreatic cancer patients, an exciting drug can feel out of reach STAT Plus: Lilly shares safety, tolerability data on its next-gen obesity drug Email alerts for authors and topics Get alerted when we publish a story by this author or on this.",
+      "what_happened": "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.",
+      "why_matters": "If you do not allow these cookies then some or all of these services may not function properly. They help us to know which pages are the most and least popular and see how visitors move around the site.",
+      "what_to_watch": "STAT Plus: The China question is tearing biotech apart STAT Plus: For pancreatic cancer patients, an exciting drug can feel out of reach STAT Plus: Lilly shares safety, tolerability data on its next-gen obesity drug Email alerts for authors and topics Get alerted when we publish a story by this author or on this.",
+      "key_points": [
+        "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+        "Y ou\u2019re reading the web edition of STAT\u2019s AI Prognosis newsletter, our subscriber-exclusive guide to artificial intelligence in health care and medicine.",
+        "If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.",
+        "STAT Plus: The China question is tearing biotech apart STAT Plus: For pancreatic cancer patients, an exciting drug can feel out of reach STAT Plus: Lilly shares safety, tolerability data on its next-gen obesity drug.",
+        "If you do not allow these cookies then some or all of these services may not function properly.",
+        "STAT Plus: AI medical devices\u2019 dirty FDA secret STAT Plus: When the path to good AI is littered with bad data STAT Plus: After hospitals, patients get a turn to bring AI into the doctor\u2019s office STAT Plus: Does.",
+        "You can reach Brittany on Signal at btrang.01.",
+        "In this edition of AI Prognosis: Quirky medical data tripping up sepsis algorithms, AI scribes for patients, and some AI biotech news.",
+        "They help us to know which pages are the most and least popular and see how visitors move around the site.",
+        "These cookies enable the website to provide enhanced functionality and personalisation.",
+        "A decade of reporting from the frontiers of health and medicine Privacy Preference Center Manage Consent Preferences These cookies are necessary for the website to function and cannot be switched off in our systems.",
+        "Now CMS says otherwise Lilly shares safety, tolerability data on its next-gen obesity drug What stripping civil service protections for thousands of federal workers will mean for HHS Drug companies, patient groups urge."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/bb4780d92fa40c0c.jpg",
+      "image_url": "https://www.statnews.com/wp-content/uploads/2026/06/Chess_AIPrognosis-1024x576.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "7cc1f62e432343e78926e8c1370425f9"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 9,
+  "has_cta": true,
+  "slides": [
+    "AI Update",
+    "Cybersecurity researchers aren't happy about the guardrails on Anthropic's Fable.",
+    "Warner Music acquires AI attribution startup Sureel AI.",
+    "Policy on the AI Exponential.",
+    "Fresh off bond sale Amazon borrows $17.5B from banks as AI spending.",
+    "AI Serving Platform That Adapts to Your Model.",
+    "Full Text Search in SmithDB Designing an Inverted Index for Object Storage.",
+    "Your sepsis algorithm shouldn't require a time machine.",
+    "FOLLOW @graitech"
+  ]
+}
