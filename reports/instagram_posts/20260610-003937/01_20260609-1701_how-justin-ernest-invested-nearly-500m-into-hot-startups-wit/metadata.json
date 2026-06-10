@@ -1,0 +1,349 @@
+{
+  "email_received_at": "2026-06-09T17:01-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "How Justin Ernest invested nearly $500M into hot startups without a traditional VC fund | TechCrunch",
+  "subject": "\ud83d\udea8 AI Alert: 113 new launches \u2014 Nvidia Blog, CNBC Technology, CNET AI",
+  "source_date": "Tue, 09 Jun 2026 17:01:42 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Apple",
+    "Amazon",
+    "AWS"
+  ],
+  "models": [
+    "Claude"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://techcrunch.com/2026/06/09/how-justin-ernest-invested-nearly-400m-into-hot-startups-without-a-traditional-vc-fund/",
+  "article_title": "How Justin Ernest invested nearly $500M into hot startups without a traditional VC fund | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5c61a1e2f1d075ae.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/06/JustinErnest_TechCrunch.jpg?resize=1200,675",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/09/how-justin-ernest-invested-nearly-400m-into-hot-startups-without-a-traditional-vc-fund/",
+      "title": "How Justin Ernest invested nearly $500M into hot startups without a traditional VC fund | TechCrunch",
+      "description": "Instead of spending a year raising a formal venture fund, the Sabertooth VC founder used a captive network of LPs to invest in startups like Anthropic, Anduril, and SpaceX.",
+      "excerpt": "Instead of spending a year raising a formal venture fund, the Sabertooth VC founder used a captive network of LPs to invest in startups like Anthropic, Anduril, and SpaceX.",
+      "summary": "Sabertooth has already had one major big return from chipmaker Groq, which was licensed and acqui-hired by Nvidia for $20 billion late last year. Having spent over five years at Playground Global investing in deep tech and helping lead fundraising, Ernest was confident his connections to both investors and founders would allow him to bridge that gap. \u201cHe has judgment, he has expertise, he\u2019s very technical, that really distinguishes him from other organizations that tend to, in my opinion, just trying to aggregate capital.\u201d When Wagner tried to invest directly in PsiQuantum, the quantum computing startup last valued at $7 billion, the company\u2019s CFO suggested that he invest through Sabertooth. He\u2019s writing checks ranging from $10 million to $275 million - meaning he\u2019s. Next up is SpaceX\u2019s highly anticipated IPO this Friday, along with Anthropic\u2019s expected public listing later this year. Instead of spending a year raising a formal venture fund, the Sabertooth VC founder used a captive network of LPs to invest in startups like Anthropic, Anduril, and SpaceX.",
+      "what_happened": "Sabertooth has already had one major big return from chipmaker Groq, which was licensed and acqui-hired by Nvidia for $20 billion late last year. Having spent over five years at Playground Global investing in deep tech and helping lead fundraising, Ernest was confident his connections to both investors and founders would allow him to bridge that gap.",
+      "why_matters": "\u201cHe has judgment, he has expertise, he\u2019s very technical, that really distinguishes him from other organizations that tend to, in my opinion, just trying to aggregate capital.\u201d When Wagner tried to invest directly in PsiQuantum, the quantum computing startup last valued at $7 billion, the company\u2019s CFO suggested that he invest through Sabertooth. He\u2019s writing checks ranging from $10 million to $275 million - meaning he\u2019s.",
+      "what_to_watch": "Next up is SpaceX\u2019s highly anticipated IPO this Friday, along with Anthropic\u2019s expected public listing later this year. Instead of spending a year raising a formal venture fund, the Sabertooth VC founder used a captive network of LPs to invest in startups like Anthropic, Anduril, and SpaceX.",
+      "key_points": [
+        "Sabertooth has already had one major big return from chipmaker Groq, which was licensed and acqui-hired by Nvidia for $20 billion late last year.",
+        "Having spent over five years at Playground Global investing in deep tech and helping lead fundraising, Ernest was confident his connections to both investors and founders would allow him to bridge that gap.",
+        "Instead of spending a year raising a formal venture fund, the Sabertooth VC founder used a captive network of LPs to invest in startups like Anthropic, Anduril, and SpaceX.",
+        "WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more Anthropic\u2019s Claude Fable 5 is a version of Mythos the public can access today Waymo bought Apple\u2019s self-driving car proving ground for.",
+        "Over the last 12 months, his firm, Sabertooth Capital , has invested nearly $500 million into 10 companies, including Anthropic, Anduril, Base Power, Databricks, PsiQuantum, and SpaceX.",
+        "\u201cI wanted to be in the action,\u201d he said.",
+        "However, Ernest quickly raised a significant amount of cash from them because, in the sometimes-shady world of small allocations and SPVs targeting family offices, he\u2019s earned a solid reputation.",
+        "Ernest credits his ability to secure allocations of stock when highly coveted tech companies are raising to his wide network.",
+        "\u201cI can usually make four or five or six phone calls, and I know exactly what my LPs will commit.\u201d Ernest told TechCrunch that for now, he wants to continue growing his business of raising funds for specific companies on.",
+        "At a time when startups like Anthropic and Anduril are cracking down on unauthorized SPVs , investing through Sabertooth gives smaller limited partners some peace of mind.",
+        "\u201cJustin is authentically an investor,\u201d said Benjamin Wagner, a CIO for a family office managing the wealth of 50 individuals.",
+        "Marina Temkin is a venture capital and startups reporter at TechCrunch."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5c61a1e2f1d075ae.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/JustinErnest_TechCrunch.jpg?resize=1200,675",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/category/enterprise/",
+      "title": "AI Infrastructure Archives",
+      "description": "",
+      "excerpt": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA GPUs with Confidential Computing are now used for confidential inference in Apple\u2019s Private Cloud Compute (PCC), as it expands...",
+      "summary": "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA AI Factories: The New Infrastructure of Intelligence NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts NVIDIA Research Advances Robotics From Simulation to the Real World NVIDIA and LG Group. Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote How the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies NVIDIA, KRAFTON, NC and Reigning \u2018League of Legends\u2019 Champions T1 Celebrate RTX Spark at Korea\u2019s PC Bangs Forecast: Fun Ahead - 18 Games Join in June to Stream on GeForce NOW NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills For Autonomous Vehicles, Robotics And Vision AI. Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South Korea is one of the world\u2019s centers.",
+      "what_happened": "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA AI Factories: The New Infrastructure of Intelligence NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts NVIDIA Research Advances Robotics From Simulation to the Real World NVIDIA and LG Group.",
+      "why_matters": "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote How the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies NVIDIA, KRAFTON, NC and Reigning \u2018League of Legends\u2019 Champions T1 Celebrate RTX Spark at Korea\u2019s PC Bangs Forecast: Fun Ahead - 18 Games Join in June to Stream on GeForce NOW NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills For Autonomous Vehicles, Robotics And Vision AI.",
+      "what_to_watch": "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South Korea is one of the world\u2019s centers of AI.... NVIDIA and Doosan Group Collaborate to Advance Physical.",
+      "key_points": [
+        "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA AI Factories: The New Infrastructure of Intelligence NVIDIA Research.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "NVIDIA and Doosan Group Collaborate to Advance Physical AI and AI Factory Infrastructure NVIDIA and Doosan Group are expanding their collaboration to advance new opportunities across physical AI, robotics and AI factory.",
+        "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote How the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies NVIDIA, KRAFTON, NC and Reigning \u2018League of Legends\u2019 Champions T1 Celebrate RTX Spark.",
+        "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand The NVIDIA AI Cloud ecosystem is accelerating the global buildout of AI factory infrastructure.",
+        "Agent sandboxes run 50% faster on NVIDIA Vera than traditional CPUs - while enterprise data queries...",
+        "NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge.",
+        "That\u2019s the focus of a new engineering-level collaboration between NVIDIA and Ineffable...",
+        "NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local The agentic AI moment has arrived, but delivering on its promise requires more than good models.",
+        "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South.",
+        "It also takes fast hardware, secure runtimes, a responsive data layer and models tuned...",
+        "Partners are expanding capacity to meet growing demand from enterprises, startups, nations, AI labs and developers..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/09/anthropics-fable-5-can-make-weirdly-fun-video-games-with-the-click-of-a-button/",
+      "title": "Anthropic's Fable 5 can make weirdly fun video games with the click of a button | TechCrunch",
+      "description": "Anthropic's Claude Fable 5 is going to be a big hit with the web's vibe coders.",
+      "excerpt": "Anthropic's Claude Fable 5 is going to be a big hit with the web's vibe coders.",
+      "summary": "More from TechCrunch Anthropic\u2019s Fable 5 can make weirdly fun video games with the click of a button Anthropic has released Claude Fable 5 , the first publicly available version of its closely watched Mythos model. WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more Anthropic\u2019s Claude Fable 5 is a version of Mythos the public can access today Waymo bought Apple\u2019s self-driving car proving ground for $220M Microsoft\u2019s open source tools were hacked to steal passwords of AI developers We. Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections. The accuracy and detail is arresting. The accuracy and detail is arresting.",
+      "what_happened": "More from TechCrunch Anthropic\u2019s Fable 5 can make weirdly fun video games with the click of a button Anthropic has released Claude Fable 5 , the first publicly available version of its closely watched Mythos model. WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more Anthropic\u2019s Claude Fable 5 is a version of Mythos the public can access today Waymo bought Apple\u2019s self-driving car proving ground for $220M Microsoft\u2019s open source tools were hacked to steal passwords of AI developers We.",
+      "why_matters": "Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections. The accuracy and detail is arresting.",
+      "what_to_watch": "The accuracy and detail is arresting.",
+      "key_points": [
+        "More from TechCrunch Anthropic\u2019s Fable 5 can make weirdly fun video games with the click of a button Anthropic has released Claude Fable 5 , the first publicly available version of its closely watched Mythos model.",
+        "WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more Anthropic\u2019s Claude Fable 5 is a version of Mythos the public can access today Waymo bought Apple\u2019s self-driving car proving ground for.",
+        "The accuracy and detail is arresting.",
+        "Anthropic's Claude Fable 5 is going to be a big hit with the web's vibe coders.",
+        "The snake never stops moving, and if you run off the screen, you die.",
+        "Ethan Mollick, a notable AI researcher and University of Pennsylvania scholar, has been playing around with the model and seems to be having a lot of fun.",
+        "The implications are pretty clear.",
+        "As for founders and operators watching AI capability curves, it\u2019s a useful data point about how quickly the floor is rising.",
+        "I like the animation here best - the player is a lone figure in a nocturnal landscape - although there isn\u2019t much to the gameplay other than walking around while Rilke passages materialize on the screen.",
+        "The graphics look like a degraded version of Myst - they aren\u2019t great - but the fact that the game exists at all, generated from a single prompt, is impressive.",
+        "He added that it was \u201ccapable across many problems and produced some startling results - it would work up to a dozen hours executing on multi-page specifications.\u201d Perhaps most strikingly, Mollick used Fable to create a.",
+        "It\u2019s reason for vibe coders of the world to rejoice."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/934046f54e640231.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Screenshot-2026-06-09-at-11.40.18-AM.png?resize=1200,871",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2190638/siri-ai-first-look-how-apples-rebuilt-ai-powered-assistant-behaves-across-iphone-ipad-and-mac/",
+      "title": "Siri AI first look: How Apple's rebuilt AI-powered assistant behaves across iPhone, iPad and Mac - Engadget",
+      "description": "Here's your first look at Siri AI, and how it works across Apple's devices.",
+      "excerpt": "Here's your first look at Siri AI, and how it works across Apple's devices.",
+      "summary": "Those who don't want to mess around with potentially buggy software can wait until the fall, when Apple typically releases the latest versions of its various operating systems to the public. After you install the iOS 27 beta , you can register your desire to check out Siri AI in the Apple Intelligence portion of the Settings app. It's something that will most likely change by the time the public beta arrives, or when Siri AI rolls out generally. Finally, another change in the way you access Siri is in context menus. Siri AI first look: How Apple's rebuilt AI-powered assistant behaves across iPhone, iPad and Mac The biggest news out of WWDC 2026 was, as widely rumored, the next generation of Siri.",
+      "what_happened": "Those who don't want to mess around with potentially buggy software can wait until the fall, when Apple typically releases the latest versions of its various operating systems to the public. After you install the iOS 27 beta , you can register your desire to check out Siri AI in the Apple Intelligence portion of the Settings app.",
+      "why_matters": "It's something that will most likely change by the time the public beta arrives, or when Siri AI rolls out generally. Finally, another change in the way you access Siri is in context menus.",
+      "what_to_watch": "Siri AI first look: How Apple's rebuilt AI-powered assistant behaves across iPhone, iPad and Mac The biggest news out of WWDC 2026 was, as widely rumored, the next generation of Siri.",
+      "key_points": [
+        "After you install the iOS 27 beta , you can register your desire to check out Siri AI in the Apple Intelligence portion of the Settings app.",
+        "Siri AI first look: How Apple's rebuilt AI-powered assistant behaves across iPhone, iPad and Mac The biggest news out of WWDC 2026 was, as widely rumored, the next generation of Siri.",
+        "Those who don't want to mess around with potentially buggy software can wait until the fall, when Apple typically releases the latest versions of its various operating systems to the public.",
+        "You bring it up the same way you would switch from Photo to Video to Portrait modes - that is, by swiping through the options at the bottom of the viewfinder until you land on \"Siri.\" On Macs, there are two new keyboard.",
+        "By the way, I saw this gesture on both iPhones and iPads, and on the latter the animation is quite delightful.",
+        "For now, you'll see a new Ask Siri option at the top of this menu in macOS, while the Ask Siri option is at the bottom of the context menu in iPadOS.",
+        "You were always able to access Visual Intelligence by long-pressing the Camera Control button or the Action button if you had programmed it that way.",
+        "One of the main differences is the new onscreen gesture you can use to invoke Siri.",
+        "Then, the Spotlight search bar appeared with the words \"Search to ask\" in it.",
+        "Instead of double tapping the bottom of the display to type to Siri, you now swipe down from the top center, just as you would have to pull down Spotlight search in the past.",
+        "In the demos I saw, and in the rare instances where I tried to ask my own questions, the system was fairly responsive.",
+        "On the demo devices that I saw, there were lots of cards with titles like \"San Francisco Parks for Kids,\" \"NYC Buildings over 1,000 feet\" or \"Dog Domestication Timeline.\" Above each title was a time or day, and the."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/092544be8a7e6de9.jpg",
+      "image_url": "https://www.engadget.com/img/gallery/siri-ai-first-look-how-apples-rebuilt-ai-powered-assistant-behaves-across-iphone-ipad-and-mac/how-does-siri-ai-perform-1781023831.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/amazon-taps-fiber-optics-producer-corning-data-center-expansion",
+      "title": "Amazon Taps Corning for Data Center Expansion",
+      "description": "Amazon Taps Fiber Optics Producer Corning for Data Center Expansion",
+      "excerpt": "Amazon Taps Fiber Optics Producer Corning for Data Center Expansion",
+      "summary": "\u201cAmazon\u2019s data centers power the services millions of people and businesses rely on every day,\u201d the companies said in a release . economic engine.\u201d Related: The Price Enterprises Will Pay for Anthropic Claude Fable 5 AWS CEO Matt Garman said in the release that the company is also working to train North Carolinians for highly skilled roles in fiber optics and fusion splicing. Corning will supply the optical fiber, cables, and connectivity systems needed to enable rapid data sharing across racks and chips in data centers. In May, Nvidia invested $3.2B in Corning , as part of a deal that will see the fiber-optics company build three new advanced manufacturing plants in North Carolina and Texas for the AI chipmaker. AI supply chains, aligning with the White House's AI action plan that puts bolstering domestic production at the heart of AI strategy. Amazon Taps Fiber Optics Producer Corning for Data Center Expansion Amazon Taps Fiber Optics Producer Corning for Data Center Expansion The agreement follows AI infrastructure deals.",
+      "what_happened": "\u201cAmazon\u2019s data centers power the services millions of people and businesses rely on every day,\u201d the companies said in a release . economic engine.\u201d Related: The Price Enterprises Will Pay for Anthropic Claude Fable 5 AWS CEO Matt Garman said in the release that the company is also working to train North Carolinians for highly skilled roles in fiber optics and fusion splicing.",
+      "why_matters": "Corning will supply the optical fiber, cables, and connectivity systems needed to enable rapid data sharing across racks and chips in data centers. In May, Nvidia invested $3.2B in Corning , as part of a deal that will see the fiber-optics company build three new advanced manufacturing plants in North Carolina and Texas for the AI chipmaker.",
+      "what_to_watch": "AI supply chains, aligning with the White House's AI action plan that puts bolstering domestic production at the heart of AI strategy. Amazon Taps Fiber Optics Producer Corning for Data Center Expansion Amazon Taps Fiber Optics Producer Corning for Data Center Expansion The agreement follows AI infrastructure deals.",
+      "key_points": [
+        "\u201cAmazon\u2019s data centers power the services millions of people and businesses rely on every day,\u201d the companies said in a release .",
+        "economic engine.\u201d Related: The Price Enterprises Will Pay for Anthropic Claude Fable 5 AWS CEO Matt Garman said in the release that the company is also working to train North Carolinians for highly skilled roles in.",
+        "Amazon Taps Fiber Optics Producer Corning for Data Center Expansion Amazon Taps Fiber Optics Producer Corning for Data Center Expansion The agreement follows AI infrastructure deals between Corning and Nvidia and.",
+        "Corning will supply the optical fiber, cables, and connectivity systems needed to enable rapid data sharing across racks and chips in data centers.",
+        "In May, Nvidia invested $3.2B in Corning , as part of a deal that will see the fiber-optics company build three new advanced manufacturing plants in North Carolina and Texas for the AI chipmaker.",
+        "The deal, made public on June 8, will span several years and is expected to generate 1,000 jobs at Corning\u2019s North Carolina facilities.",
+        "The deal is framed as a boost to U.S.",
+        "The development also adds to growing industry interest in the glass and fiber optics industry.",
+        "Amazon has signed a multibillion-dollar agreement with fiber-optics manufacturer Corning in an infrastructure deal intended to support the e-commerce giant\u2019s data center expansion in the U.S.",
+        "\u201cCorning\u2019s fiber optics are a critical piece of that infrastructure, and together, these investments help fuel the U.S.",
+        "Scarlett Evans is a freelance writer with a focus on emerging technologies and the minerals industry.",
+        "Scarlett also has a background in the mining and resources sector, with experience at Mine Australia, Mine Technology and Power Technology."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4d63b5fa7c6a5fc8.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltfea5863c45e34dc9/6a28502d3c3efcdea8fa4c58/Waymo3.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/36a10531184bf378.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/15c5b987a5e6f873.webp"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltf0cb9fcaa3c26e02/6a26d9ec77d3baca5bdbf02e/Shadow_AI.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltee176ce55650ab85/6a21c0c5563cbbc1f1a60149/Meta.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ]
+    },
+    {
+      "url": "https://www.bloomberg.com/news/videos/2026-06-09/open-interest-6-9-2026-video",
+      "title": "Watch AI Rally Fuels Tech Optimism | Open Interest 6/9/2026 - Bloomberg",
+      "description": "Get a jump start on the US trading day with Matt Miller and Dani Burger on \"Bloomberg Open Interest.\" The AI rebound rolls on as investors stay bullish on tech. OpenAI confidentially files for an IPO, SpaceX readies its blockbuster debut, and Apple faces doubts over its AI push. Plus, some optimism in the housing market as existing home sales accelerate, Emily Graffeo joins Open Interest on Apollo and Blackstone\u2019s $35 billion AI financing deal, and Firefly Aerospace CEO Jason Kim on the space economy.",
+      "excerpt": "Get a jump start on the US trading day with Matt Miller and Dani Burger on \"Bloomberg Open Interest.\" The AI rebound rolls on as investors stay bullish on tech. OpenAI confidentially files for an IPO, SpaceX readies its blockbuster debut, and Apple faces doubts over its AI push. Plus, some optimism in the housing market as existing home sales accelerate, Emily Graffeo joins Open Interest on Apollo and Blackstone\u2019s $35 billion AI financing deal, and Firefly Aerospace CEO Jason Kim on the space economy.",
+      "summary": "Plus, some optimism in the housing market as existing home sales accelerate, Emily Graffeo joins Open Interest on Apollo and Blackstone\u2019s $35 billion AI financing deal, and Firefly Aerospace CEO Jason Kim on the space economy. Get a jump start on the US trading day with Matt Miller and Dani Burger on \"Bloomberg Open Interest.\" The AI rebound rolls on as investors stay bullish on tech. Get a jump start on the US trading day with Matt Miller and Dani Burger on \"Bloomberg Open Interest.\" The AI rebound rolls on as investors stay bullish on tech. OpenAI confidentially files for an IPO, SpaceX readies its blockbuster debut, and Apple faces doubts over its AI push. Get a jump start on the US trading day with Matt Miller and Dani Burger on \"Bloomberg Open Interest.\" The AI rebound rolls on as investors stay bullish on tech.",
+      "what_happened": "Plus, some optimism in the housing market as existing home sales accelerate, Emily Graffeo joins Open Interest on Apollo and Blackstone\u2019s $35 billion AI financing deal, and Firefly Aerospace CEO Jason Kim on the space economy. Get a jump start on the US trading day with Matt Miller and Dani Burger on \"Bloomberg Open Interest.\" The AI rebound rolls on as investors stay bullish on tech.",
+      "why_matters": "Get a jump start on the US trading day with Matt Miller and Dani Burger on \"Bloomberg Open Interest.\" The AI rebound rolls on as investors stay bullish on tech. OpenAI confidentially files for an IPO, SpaceX readies its blockbuster debut, and Apple faces doubts over its AI push.",
+      "what_to_watch": "Get a jump start on the US trading day with Matt Miller and Dani Burger on \"Bloomberg Open Interest.\" The AI rebound rolls on as investors stay bullish on tech.",
+      "key_points": [
+        "Plus, some optimism in the housing market as existing home sales accelerate, Emily Graffeo joins Open Interest on Apollo and Blackstone\u2019s $35 billion AI financing deal, and Firefly Aerospace CEO Jason Kim on the space.",
+        "Get a jump start on the US trading day with Matt Miller and Dani Burger on \"Bloomberg Open Interest.\" The AI rebound rolls on as investors stay bullish on tech.",
+        "OpenAI confidentially files for an IPO, SpaceX readies its blockbuster debut, and Apple faces doubts over its AI push."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/311888ac8e87323b.webp",
+      "image_url": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ixgi.zgp7faI/v3/400x-1.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/nvidia-confidential-computing-apple-private-cloud-compute/",
+      "title": "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute",
+      "description": "NVIDIA GPUs to support server-side inference for Apple Intelligence, announced at WWDC.",
+      "excerpt": "NVIDIA GPUs to support server-side inference for Apple Intelligence, announced at WWDC.",
+      "summary": "NVIDIA GPUs to support server-side inference for Apple Intelligence, announced at WWDC.",
+      "what_happened": "NVIDIA GPUs to support server-side inference for Apple Intelligence, announced at WWDC.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "NVIDIA GPUs to support server-side inference for Apple Intelligence, announced at WWDC."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2e2657ca1b8d7c98.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/nvidia-confidential-computing-apple-pcc.jpeg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5065f5e2e56cc39a.jpg"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/nvidia-confidential-computing-apple-pcc-1280x720.jpeg"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/blog/ServiceNow-AI/code-switching",
+      "title": "Can Voice Agents Handle Bilingual Customers? Benchmarking Frontier ASR on Code-Switched Speech",
+      "description": "A Blog post by ServiceNow-AI on Hugging Face",
+      "excerpt": "A Blog post by ServiceNow-AI on Hugging Face",
+      "summary": "A Blog post by ServiceNow-AI on Hugging Face",
+      "what_happened": "A Blog post by ServiceNow-AI on Hugging Face",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "A Blog post by ServiceNow-AI on Hugging Face"
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e7501712172e4bb0.png",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/6977dd4e7754c316dbc9f4b3/XhgSRGk1VKLBaiTSBSCvy.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fbd65492caa94c88.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ce21f1420964f227.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c2e6b66238845a41.png"
+      ],
+      "extra_image_urls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6977dd4e7754c316dbc9f4b3/KjE9EikoFswYiJrepz4R4.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/6977dd4e7754c316dbc9f4b3/eN7BKO9j6GJTrO-fTkdRs.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/6977dd4e7754c316dbc9f4b3/NhfLkDCD9A_329PDGov-L.png"
+      ]
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 7,
+  "has_cta": true,
+  "slides": [
+    "AI Update",
+    "Anthropic's Fable 5 can make weirdly fun video games with the click.",
+    "Siri AI first look How Apple's rebuilt AI-powered assistant behaves across iPhone.",
+    "Amazon Taps Corning for Data Center Expansion.",
+    "NVIDIA Confidential Computing to Help Expand Apple's Private Cloud Compute.",
+    "Can Voice Agents Handle Bilingual Customers Benchmarking Frontier ASR on Code.",
+    "FOLLOW @graitech"
+  ]
+}
