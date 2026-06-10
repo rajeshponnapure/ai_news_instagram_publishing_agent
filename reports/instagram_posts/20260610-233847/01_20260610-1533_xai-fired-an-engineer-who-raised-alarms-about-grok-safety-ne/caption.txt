@@ -1,0 +1,27 @@
+XAI fired an engineer who raised alarms about Grok safety new lawsuit.
+
+Swipe for the full breakdown.
+
+- Ba attempted to thwart EU safety regulations during the release of Grok Code 1, misrepresenting aspects.
+- According to the lawsuit, which TechCrunch has viewed, Kim became a prominent voice for AI safety while working.
+- A former xAI engineer is suing the company and SpaceX, alleging he was fired for raising AI safety.
+- Google just fired a warning shot in the AI subscription price wars WWDC 2026: Everything announced on Siri.
+- Ba indicated that he would rather release an unsafe model than a poor-performing one.
+
+Would you use something like this in your daily work? Yes or no in the comments.
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/
+- https://www.cnet.com/news-live/gemini-down-live-updates-google-workspaces-ai-errors/
+- https://www.therobotreport.com/robotics-will-not-have-a-clean-llama-moment/
+- https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/
+- https://aws.amazon.com/blogs/machine-learning/stop-hand-tuning-kernels-how-neuron-agentic-development-accelerates-aws-trainium-optimizations/
+
+#AIRegulation #TechLaw #AITools #ProductivityAI #AIProductivity #AIInfrastructure #AIChips #OpenAI #ChatGPT #GoogleAI #Gemini #EmergingTech #AINews #TechNews #AIUpdates #FutureTech #DigitalTransformation #Technology #AIBreakdown #DeepLearning
+
+-
+This is not legal advice. Consult a qualified professional for guidance.
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-
