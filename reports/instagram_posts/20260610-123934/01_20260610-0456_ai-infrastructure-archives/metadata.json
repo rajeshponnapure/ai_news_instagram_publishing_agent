@@ -1,0 +1,322 @@
+{
+  "email_received_at": "2026-06-10T04:56-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "AI Infrastructure Archives",
+  "subject": "\ud83d\udea8 AI Alert: 103 new launches \u2014 NYT AI, Bloomberg Tech",
+  "source_date": "Wed, 10 Jun 2026 04:56:35 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Apple",
+    "NVIDIA",
+    "NYT AI",
+    "Agentic AI"
+  ],
+  "models": [
+    "GPT-4o",
+    "GPT-5",
+    "GPT-5.5",
+    "Claude",
+    "Claude 3.5",
+    "Gemini",
+    "Gemini 2.5",
+    "Gemini 3.1"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "hardware and compute"
+  ],
+  "article_url": "https://blogs.nvidia.com/blog/category/enterprise/",
+  "article_title": "AI Infrastructure Archives",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+  "article_image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+  "article_items": [
+    {
+      "url": "https://blogs.nvidia.com/blog/category/enterprise/",
+      "title": "AI Infrastructure Archives",
+      "description": "",
+      "excerpt": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA GPUs with Confidential Computing are now used for confidential inference in Apple\u2019s Private Cloud Compute (PCC), as it expands...",
+      "summary": "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA AI Factories: The New Infrastructure of Intelligence NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts NVIDIA Research Advances Robotics From Simulation to the Real World NVIDIA and LG Group. Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote How the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies NVIDIA, KRAFTON, NC and Reigning \u2018League of Legends\u2019 Champions T1 Celebrate RTX Spark at Korea\u2019s PC Bangs Forecast: Fun Ahead - 18 Games Join in June to Stream on GeForce NOW NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills For Autonomous Vehicles, Robotics And Vision AI. Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South Korea is one of the world\u2019s centers.",
+      "what_happened": "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA AI Factories: The New Infrastructure of Intelligence NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts NVIDIA Research Advances Robotics From Simulation to the Real World NVIDIA and LG Group.",
+      "why_matters": "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote How the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies NVIDIA, KRAFTON, NC and Reigning \u2018League of Legends\u2019 Champions T1 Celebrate RTX Spark at Korea\u2019s PC Bangs Forecast: Fun Ahead - 18 Games Join in June to Stream on GeForce NOW NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills For Autonomous Vehicles, Robotics And Vision AI.",
+      "what_to_watch": "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South Korea is one of the world\u2019s centers of AI.... NVIDIA and Doosan Group Collaborate to Advance Physical.",
+      "key_points": [
+        "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA AI Factories: The New Infrastructure of Intelligence NVIDIA Research.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "NVIDIA and Doosan Group Collaborate to Advance Physical AI and AI Factory Infrastructure NVIDIA and Doosan Group are expanding their collaboration to advance new opportunities across physical AI, robotics and AI factory.",
+        "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote How the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies NVIDIA, KRAFTON, NC and Reigning \u2018League of Legends\u2019 Champions T1 Celebrate RTX Spark.",
+        "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand The NVIDIA AI Cloud ecosystem is accelerating the global buildout of AI factory infrastructure.",
+        "Agent sandboxes run 50% faster on NVIDIA Vera than traditional CPUs - while enterprise data queries...",
+        "NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge.",
+        "That\u2019s the focus of a new engineering-level collaboration between NVIDIA and Ineffable...",
+        "NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local The agentic AI moment has arrived, but delivering on its promise requires more than good models.",
+        "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South.",
+        "It also takes fast hardware, secure runtimes, a responsive data layer and models tuned...",
+        "Partners are expanding capacity to meet growing demand from enterprises, startups, nations, AI labs and developers..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.sciencedaily.com/releases/2026/06/260610003049.htm",
+      "title": "A classic brain test exposed AI's biggest weakness",
+      "description": "Researchers gave top AI models a classic attention test used in psychology and found a major flaw. While the models could correctly name colors in short lists, their performance deteriorated sharply as the task became longer and more complex. Some leading systems fell from over 90% accuracy to nearly complete failure.",
+      "excerpt": "Researchers gave top AI models a classic attention test used in psychology and found a major flaw. While the models could correctly name colors in short lists, their performance deteriorated sharply as the task became longer and more complex. Some leading systems fell from over 90% accuracy to nearly complete failure.",
+      "summary": "When the list expanded to forty words, accuracy dropped to just 15%. They are trained on enormous amounts of text and learn patterns in language, allowing them to generate responses that often appear remarkably human. Plant Protein: Scientists Found a Surprising Nutritional Difference This Simple Drink Could Help Calm the Inflammation Behind Many Diseases Stay informed with ScienceDaily's free email newsletter, updated daily and weekly. According to the researchers, the AI models had trouble maintaining the instruction to identify ink colors. According to the researchers, the AI models had trouble maintaining the instruction to identify ink colors.",
+      "what_happened": "When the list expanded to forty words, accuracy dropped to just 15%. They are trained on enormous amounts of text and learn patterns in language, allowing them to generate responses that often appear remarkably human.",
+      "why_matters": "Plant Protein: Scientists Found a Surprising Nutritional Difference This Simple Drink Could Help Calm the Inflammation Behind Many Diseases Stay informed with ScienceDaily's free email newsletter, updated daily and weekly. According to the researchers, the AI models had trouble maintaining the instruction to identify ink colors.",
+      "what_to_watch": "According to the researchers, the AI models had trouble maintaining the instruction to identify ink colors.",
+      "key_points": [
+        "When the list expanded to forty words, accuracy dropped to just 15%.",
+        "According to the researchers, the AI models had trouble maintaining the instruction to identify ink colors.",
+        "Sometimes the word and the ink color match.",
+        "The study highlights an important distinction between human and artificial intelligence.",
+        "The researchers argue that the performance collapse seen in these experiments points to fundamental limitations in today's large language models.",
+        "The researchers wanted to see whether modern large language models (LLMs) handle this challenge in the same way humans do.",
+        "The brain must suppress the urge to read the word and instead focus on identifying the ink color.",
+        "The researchers observed similar patterns in GPT-5, Claude Opus 4.1, and Gemini 2.5.",
+        "They are trained on enormous amounts of text and learn patterns in language, allowing them to generate responses that often appear remarkably human.",
+        "While the models could correctly name colors in short lists, their performance deteriorated sharply as the task became longer and more complex.",
+        "Participants are asked to name the color of the ink rather than read the word itself.",
+        "Although modern AI systems can produce impressive language and reasoning capabilities, their underlying mechanisms differ from the attention processes found in biological brains."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/cef673fffe2062e3.webp",
+      "image_url": "https://www.sciencedaily.com/images/1920/humanoid-artificial-intelligence-robot-confused.webp",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/cef673fffe2062e3.webp"
+      ],
+      "extra_image_urls": [
+        "https://www.sciencedaily.com/images/1920/humanoid-artificial-intelligence-robot-confused.webp"
+      ]
+    },
+    {
+      "url": "https://www.engadget.com/2190934/anthropic-fable-ai-brings-the-capabilities-of-its-unreleased-mythos-model-to-regular-users/",
+      "title": "Anthropic's Fable AI brings the capabilities of its unreleased Mythos model to regular users - Engadget",
+      "description": "Claude subscribers can try the model until June 22 without spending usage credits.",
+      "excerpt": "Claude subscribers can try the model until June 22 without spending usage credits.",
+      "summary": "\"With more capable models arriving in the coming months, we're working to improve our safeguards and reduce false positives as quickly as we can.\" On Tuesday, Anthropic also released Mythos 5, which runs on the same underlying model as Fable 5 but comes with fewer safeguards. The model Anthropic used for that Twitch series, 3.7 Sonnet , required an overlay to allow Claude to make sense of the game's pixel art interface and world. \"To release [Fable 5] both safely and quickly, we've tuned these safeguards conservatively - they'll sometimes catch harmless requests, though they trigger, on average, in less than 5 percent of sessions,\" the company said. Anthropic says the new system, which starts at version five to align with the company's other models, offers capabilities that \"exceed\" those of any it has made publicly available in the past. \"The longer and more complex the task, the larger Fable 5's lead over our other models,\" Anthropic says.",
+      "what_happened": "\"With more capable models arriving in the coming months, we're working to improve our safeguards and reduce false positives as quickly as we can.\" On Tuesday, Anthropic also released Mythos 5, which runs on the same underlying model as Fable 5 but comes with fewer safeguards. The model Anthropic used for that Twitch series, 3.7 Sonnet , required an overlay to allow Claude to make sense of the game's pixel art interface and world.",
+      "why_matters": "\"To release [Fable 5] both safely and quickly, we've tuned these safeguards conservatively - they'll sometimes catch harmless requests, though they trigger, on average, in less than 5 percent of sessions,\" the company said. Anthropic says the new system, which starts at version five to align with the company's other models, offers capabilities that \"exceed\" those of any it has made publicly available in the past.",
+      "what_to_watch": "\"The longer and more complex the task, the larger Fable 5's lead over our other models,\" Anthropic says.",
+      "key_points": [
+        "\"With more capable models arriving in the coming months, we're working to improve our safeguards and reduce false positives as quickly as we can.\" On Tuesday, Anthropic also released Mythos 5, which runs on the same.",
+        "The model Anthropic used for that Twitch series, 3.7 Sonnet , required an overlay to allow Claude to make sense of the game's pixel art interface and world.",
+        "\"The longer and more complex the task, the larger Fable 5's lead over our other models,\" Anthropic says.",
+        "Anthropic's Fable AI brings the capabilities of its unreleased Mythos model to regular users Claude subscribers can try the model until June 22 without spending usage credits.",
+        "Anthropic has just announced Fable , the start of a new family of models that brings many of the capabilities of its Mythos system to the public.",
+        "\"To release [Fable 5] both safely and quickly, we've tuned these safeguards conservatively - they'll sometimes catch harmless requests, though they trigger, on average, in less than 5 percent of sessions,\" the company.",
+        "Last week, Anthropic said it was working as quickly as possible to release a Mythos-capable model with \"highly robust safeguards\" to the public, and today it's doing exactly that with Fable.",
+        "The project saw Anthropic share access to the model with select partners, including Apple and NVIDIA, with the aim of helping those organizations harden their software against AI cyberattacks.",
+        "Claude subscribers can try the model until June 22 without spending usage credits.",
+        "As a refresher, Mythos is the state-of-the-art model Anthropic debuted at the start of April through Project Glasswing .",
+        "\"After this point - when sufficient capacity allows us to do so - we aim to restore Fable 5 as a standard part of subscription plans.",
+        "Claude subscribers can try Fable 5 until June 22."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/38212e887f503525.jpg",
+      "image_url": "https://www.engadget.com/img/gallery/anthropic-fable-ai-brings-the-capabilities-of-its-unreleased-mythos-model-to-regular-users/intro-1781040381.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/09/google-just-fired-a-warning-shot-in-the-ai-subscription-price-wars/",
+      "title": "Google just fired a warning shot in the AI subscription price wars | TechCrunch",
+      "description": "Google just made it significantly cheaper to enjoy its budget AI subscription tier.",
+      "excerpt": "Google just made it significantly cheaper to enjoy its budget AI subscription tier.",
+      "summary": "Google just made it significantly cheaper to enjoy its budget AI subscription tier.",
+      "what_happened": "Google just made it significantly cheaper to enjoy its budget AI subscription tier.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Google just made it significantly cheaper to enjoy its budget AI subscription tier."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6671ca611f1694c2.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/01/ai-mode-google.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.digitimes.com/news/a20260609VL201/nvidia-hyundai-robotics-partnership-industrial.html",
+      "title": "Nvidia and Hyundai deepen AI partnership in robotics and mobility",
+      "description": "Nvidia and Hyundai Motor Group have agreed to deepen their collaboration in artificial intelligence, robotics, and future mobility technologies as the two companies seek to accelerate the commercialization of physical AI and expand South Korea's role in next-generation AI infrastructure.",
+      "excerpt": "Nvidia and Hyundai Motor Group have agreed to deepen their collaboration in artificial intelligence, robotics, and future mobility technologies as the two companies seek to accelerate the commercialization of physical AI and expand South Korea's role in next-generation AI infrastructure.",
+      "summary": "Nvidia and Hyundai Motor Group have agreed to deepen their collaboration in artificial intelligence, robotics, and future mobility technologies as the two companies seek to accelerate the commercialization of physical AI and expand South Korea's role in next-generation AI infrastructure.",
+      "what_happened": "Nvidia and Hyundai Motor Group have agreed to deepen their collaboration in artificial intelligence, robotics, and future mobility technologies as the two companies seek to accelerate the commercialization of physical AI and expand South Korea's role in next-generation AI infrastructure.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Nvidia and Hyundai Motor Group have agreed to deepen their collaboration in artificial intelligence, robotics, and future mobility technologies as the two companies seek to accelerate the commercialization of physical."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/377cfc0a8ebfb0ca.jpg",
+      "image_url": "https://img.digitimes.com/tw/x/img/viewpoint/orange/990203a.jpg?v=20260601",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://the-gadgeteer.com/2026/06/08/airpods-pro-4-infrared-cameras-september-2026/",
+      "title": "AirPods Pro 4 Leaks Reveal Infrared Cameras, What to Expect Before September - The Gadgeteer",
+      "description": "If you were waiting for a sign that Apple is ready to rethink what earbuds can do, 2026's supply-chain reports may be it. Analyst Ming-Chi Kuo is pointing to",
+      "excerpt": "If you were waiting for a sign that Apple is ready to rethink what earbuds can do, 2026's supply-chain reports may be it. Analyst Ming-Chi Kuo is pointing to",
+      "summary": "If you were waiting for a sign that Apple is ready to rethink what earbuds can do, 2026's supply-chain reports may be it. Analyst Ming-Chi Kuo is pointing to Analyst Ming-Chi Kuo is pointing to Analyst Ming-Chi Kuo is pointing to",
+      "what_happened": "If you were waiting for a sign that Apple is ready to rethink what earbuds can do, 2026's supply-chain reports may be it. Analyst Ming-Chi Kuo is pointing to",
+      "why_matters": "Analyst Ming-Chi Kuo is pointing to",
+      "what_to_watch": "Analyst Ming-Chi Kuo is pointing to",
+      "key_points": [
+        "If you were waiting for a sign that Apple is ready to rethink what earbuds can do, 2026's supply-chain reports may be it.",
+        "Analyst Ming-Chi Kuo is pointing to"
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/386654a21965a4a8.jpg",
+      "image_url": "https://the-gadgeteer.com/wp-content/uploads/2026/06/Airpods-Pro-3-Review.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/543f75c1fa4f77e9.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ef122c3aedeb2a28.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8746ca8a601387c2.jpg"
+      ],
+      "extra_image_urls": [
+        "https://the-gadgeteer.com/wp-content/uploads/2026/06/Airpods-Pro-3-Release.jpg",
+        "https://the-gadgeteer.com/wp-content/uploads/2026/06/Airpods-Pro-3.jpg",
+        "https://the-gadgeteer.com/wp-content/uploads/2026/06/Airpods-Pro-4-Concept.jpg"
+      ]
+    },
+    {
+      "url": "https://www.therobotreport.com/standard-bots-raises-200m-expand-u-s-manufacturing-footprint/",
+      "title": "Standard Bots raises $200M to expand U.S. manufacturing footprint",
+      "description": "Standard Bots asserted that investments in robotics are key to making U.S. manufacturing competitive on the global stage.",
+      "excerpt": "Standard Bots asserted that investments in robotics are key to making U.S. manufacturing competitive on the global stage.",
+      "summary": "Standard Bots asserted that investments in robotics are key to making U.S. manufacturing competitive on the global stage.",
+      "what_happened": "Standard Bots asserted that investments in robotics are key to making U.S. manufacturing competitive on the global stage.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Standard Bots asserted that investments in robotics are key to making U.S.",
+        "manufacturing competitive on the global stage."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/23d2824731f8beab.jpg",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/06/standard-bots.jpeg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2189795/apple-intelligence-is-coming-to-the-shortcuts-app/",
+      "title": "Apple Intelligence is coming to the Shortcuts app - Engadget",
+      "description": "Home and Shortcuts are not immune to Apple's AI upgrades.",
+      "excerpt": "Home and Shortcuts are not immune to Apple's AI upgrades.",
+      "summary": "Home and Shortcuts are not immune to Apple's AI upgrades.",
+      "what_happened": "Home and Shortcuts are not immune to Apple's AI upgrades.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Home and Shortcuts are not immune to Apple's AI upgrades."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 3,
+  "has_cta": true,
+  "slides": [
+    "A classic brain test exposed AI's biggest weakness.",
+    "AirPods Pro 4 Leaks Reveal Infrared Cameras What to Expect Before September.",
+    "FOLLOW @graitech"
+  ]
+}
