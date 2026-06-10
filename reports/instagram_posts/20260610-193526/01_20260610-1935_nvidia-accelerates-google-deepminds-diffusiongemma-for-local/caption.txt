@@ -1,0 +1,26 @@
+NVIDIA Accelerates Google DeepMind's DiffusionGemma for Local AI.
+
+Swipe for the full breakdown.
+
+- Artificial Intelligence Inference ﻿ Agentic AI ﻿ Open Source ﻿ Generative AI ﻿ AI for Good ﻿ Research.
+- DiffusionGemma delivers 1,000 tokens/sec on a single NVIDIA H100 Tensor Core GPU, 15 0 tokens/sec on NVIDIA DGX.
+- Building Windows agents just got a full toolset - NVIDIA and Microsoft rolled out turnkey agent sandboxing.
+- The fastest way to start testing and prototyping the model is through Hugging Face Transformers, which runs DiffusionGemma.
+- On NVIDIA RTX PRO 6000 workstations, providing developers, researchers and AI professionals with the headroom to run local.
+
+Would you use something like this in your daily work? Yes or no in the comments.
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://blogs.nvidia.com/blog/rtx-ai-garage-local-gemma-diffusion/
+- https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in/
+- https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/06/10/ai-amplifies-creativity-by-removing-friction/
+- https://techcrunch.com/2026/06/10/meta-signs-first-ai-data-center-deal-in-india-with-reliance/
+- https://www.langchain.com/blog/agents-and-applications
+
+#AINews #AITools #GenerativeAI #GoogleAI #Gemini #GoogleDeepMind #DeepMind #NVIDIA #NVIDIAGPU #TechNews #AIUpdates #ArtificialIntelligence #Tech #AI #MachineLearning #AIExplained #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing
+
+-
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-

@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260610-193526/01_20260610-1935_nvidia-accelerates-google-deepminds-diffusiongemma-for-local",
+      "caption": "NVIDIA Accelerates Google DeepMind's DiffusionGemma for Local AI.\n\nSwipe for the full breakdown.\n\n- Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research.\n- DiffusionGemma delivers 1,000 tokens/sec on a single NVIDIA H100 Tensor Core GPU, 15 0 tokens/sec on NVIDIA DGX.\n- Building Windows agents just got a full toolset - NVIDIA and Microsoft rolled out turnkey agent sandboxing.\n- The fastest way to start testing and prototyping the model is through Hugging Face Transformers, which runs DiffusionGemma.\n- On NVIDIA RTX PRO 6000 workstations, providing developers, researchers and AI professionals with the headroom to run local.\n\nWould you use something like this in your daily work? Yes or no in the comments.\n\nSave this before it disappears from your feed.\n\nSources:\n- https://blogs.nvidia.com/blog/rtx-ai-garage-local-gemma-diffusion/\n- https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in/\n- https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/06/10/ai-amplifies-creativity-by-removing-friction/\n- https://techcrunch.com/2026/06/10/meta-signs-first-ai-data-center-deal-in-india-with-reliance/\n- https://www.langchain.com/blog/agents-and-applications\n\n#AINews #AITools #GenerativeAI #GoogleAI #Gemini #GoogleDeepMind #DeepMind #NVIDIA #NVIDIAGPU #TechNews #AIUpdates #ArtificialIntelligence #Tech #AI #MachineLearning #AIExplained #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing\n\n-\nAI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.\n-\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260610-193526/01_20260610-1935_nvidia-accelerates-google-deepminds-diffusiongemma-for-local/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260610-193526/01_20260610-1935_nvidia-accelerates-google-deepminds-diffusiongemma-for-local/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260610-193526/01_20260610-1935_nvidia-accelerates-google-deepminds-diffusiongemma-for-local/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260610-193526/01_20260610-1935_nvidia-accelerates-google-deepminds-diffusiongemma-for-local/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260610-193526/01_20260610-1935_nvidia-accelerates-google-deepminds-diffusiongemma-for-local/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260610-193526/01_20260610-1935_nvidia-accelerates-google-deepminds-diffusiongemma-for-local/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260610-193526/01_20260610-1935_nvidia-accelerates-google-deepminds-diffusiongemma-for-local/slide_07.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload"
+    }
+  ]
+}
