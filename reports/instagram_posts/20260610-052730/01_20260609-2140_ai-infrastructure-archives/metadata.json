@@ -1,0 +1,315 @@
+{
+  "email_received_at": "2026-06-09T21:40-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "AI Infrastructure Archives",
+  "subject": "\ud83d\udea8 AI Alert: 107 new launches \u2014 CNET AI, Nvidia Blog, CNBC Technology",
+  "source_date": "Tue, 09 Jun 2026 21:40:18 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Apple",
+    "Amazon",
+    "NVIDIA",
+    "CNET AI"
+  ],
+  "models": [
+    "GPT-5.5",
+    "Claude",
+    "Gemini 3.1",
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "developer tools",
+    "hardware and compute"
+  ],
+  "article_url": "https://blogs.nvidia.com/blog/category/enterprise/",
+  "article_title": "AI Infrastructure Archives",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+  "article_image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+  "article_items": [
+    {
+      "url": "https://blogs.nvidia.com/blog/category/enterprise/",
+      "title": "AI Infrastructure Archives",
+      "description": "",
+      "excerpt": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA GPUs with Confidential Computing are now used for confidential inference in Apple\u2019s Private Cloud Compute (PCC), as it expands...",
+      "summary": "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA AI Factories: The New Infrastructure of Intelligence NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts NVIDIA Research Advances Robotics From Simulation to the Real World NVIDIA and LG Group. Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote How the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies NVIDIA, KRAFTON, NC and Reigning \u2018League of Legends\u2019 Champions T1 Celebrate RTX Spark at Korea\u2019s PC Bangs Forecast: Fun Ahead - 18 Games Join in June to Stream on GeForce NOW NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills For Autonomous Vehicles, Robotics And Vision AI. Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South Korea is one of the world\u2019s centers.",
+      "what_happened": "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA AI Factories: The New Infrastructure of Intelligence NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts NVIDIA Research Advances Robotics From Simulation to the Real World NVIDIA and LG Group.",
+      "why_matters": "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote How the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies NVIDIA, KRAFTON, NC and Reigning \u2018League of Legends\u2019 Champions T1 Celebrate RTX Spark at Korea\u2019s PC Bangs Forecast: Fun Ahead - 18 Games Join in June to Stream on GeForce NOW NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills For Autonomous Vehicles, Robotics And Vision AI.",
+      "what_to_watch": "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South Korea is one of the world\u2019s centers of AI.... NVIDIA and Doosan Group Collaborate to Advance Physical.",
+      "key_points": [
+        "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA AI Factories: The New Infrastructure of Intelligence NVIDIA Research.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "NVIDIA and Doosan Group Collaborate to Advance Physical AI and AI Factory Infrastructure NVIDIA and Doosan Group are expanding their collaboration to advance new opportunities across physical AI, robotics and AI factory.",
+        "Watch NVIDIA CEO Jensen Huang\u2019s GTC Taipei Keynote How the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies NVIDIA, KRAFTON, NC and Reigning \u2018League of Legends\u2019 Champions T1 Celebrate RTX Spark.",
+        "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand The NVIDIA AI Cloud ecosystem is accelerating the global buildout of AI factory infrastructure.",
+        "Agent sandboxes run 50% faster on NVIDIA Vera than traditional CPUs - while enterprise data queries...",
+        "NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge.",
+        "That\u2019s the focus of a new engineering-level collaboration between NVIDIA and Ineffable...",
+        "NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local The agentic AI moment has arrived, but delivering on its promise requires more than good models.",
+        "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South.",
+        "It also takes fast hardware, secure runtimes, a responsive data layer and models tuned...",
+        "Partners are expanding capacity to meet growing demand from enterprises, startups, nations, AI labs and developers..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/the-price-enterprises-will-pay-anthropic-claude-fable-5",
+      "title": "The Price Enterprises Will Pay for Anthropic Claude Fable 5",
+      "description": "Anthropic released Fable 5 as a general-use model. It also introduced Claude Mythos 5.",
+      "excerpt": "Anthropic released Fable 5 as a general-use model. It also introduced Claude Mythos 5.",
+      "summary": "Claude Fable 5 is a Mythos-class model , according to Anthropic -- a reference to the original Mythos, which is still in restricted release due to its reputed ability to easily find and exploit security holes in software. Anthropic released Fable 5 as a general-use model. As it continues to target cybersecurity, AI lab Anthropic on Tuesday introduced two new models, demonstrating how it is improving capabilities such as reasoning and providing tools to help cyber defenders. CodeRabbit\u2019s Experience The company had early access to Fable 5, and the team found that while the model excels in long-horizon tasks (jobs that take multiple steps or a long time to complete, such as modernizing a. While Anthropic released Fable as a general-use model, it still included restrictions because the model could be misused in areas such as cybersecurity.",
+      "what_happened": "Claude Fable 5 is a Mythos-class model , according to Anthropic -- a reference to the original Mythos, which is still in restricted release due to its reputed ability to easily find and exploit security holes in software. Anthropic released Fable 5 as a general-use model.",
+      "why_matters": "As it continues to target cybersecurity, AI lab Anthropic on Tuesday introduced two new models, demonstrating how it is improving capabilities such as reasoning and providing tools to help cyber defenders. CodeRabbit\u2019s Experience The company had early access to Fable 5, and the team found that while the model excels in long-horizon tasks (jobs that take multiple steps or a long time to complete, such as modernizing a.",
+      "what_to_watch": "While Anthropic released Fable as a general-use model, it still included restrictions because the model could be misused in areas such as cybersecurity.",
+      "key_points": [
+        "Claude Fable 5 is a Mythos-class model , according to Anthropic -- a reference to the original Mythos, which is still in restricted release due to its reputed ability to easily find and exploit security holes in.",
+        "Anthropic released Fable 5 as a general-use model.",
+        "While Anthropic released Fable as a general-use model, it still included restrictions because the model could be misused in areas such as cybersecurity.",
+        "The Open Source Cost Meanwhile, since advanced reasoning means more expensive models, it is possible that it will be harder for open source model providers to provide similarly capable models, Beccue said.",
+        "The AI market\u2019s increased focus on reasoning is driving up the cost of these models.",
+        "The AI lab also introduced Claude Mythos 5, which will be deployed through Project Glasswing , a vendor-led security initiative in collaboration with select companies and the U.S.",
+        "And for Google\u2019s Gemini 3.1 Pro, the costs are between $2 and $4 per million for input tokens and between $12 and $18 per million for output tokens.",
+        "A Focus on Reasoning Fable 5 is an example of how frontier model providers are placing greater emphasis on reasoning , said Mark Beccue, an analyst at Omdia, a division of Informa TechTarget.",
+        "As it continues to target cybersecurity, AI lab Anthropic on Tuesday introduced two new models, demonstrating how it is improving capabilities such as reasoning and providing tools to help cyber defenders.",
+        "As a general-use model, Fable 5 shows impressive performance in areas such as software engineering, knowledge work, vision and scientific research.",
+        "Related: OpenAI\u2019s IPO: Navigating Profitability and Market Dynamics In alternative, with medium-complexity software and agent tasks on which extra reasoning is helpful but not necessary, the model did quite well, he.",
+        "While Fable 5 offers better reasoning than other frontier models, its powerful capabilities come at a tradeoff."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4d63b5fa7c6a5fc8.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltfea5863c45e34dc9/6a28502d3c3efcdea8fa4c58/Waymo3.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/36a10531184bf378.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/15c5b987a5e6f873.webp"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltf0cb9fcaa3c26e02/6a26d9ec77d3baca5bdbf02e/Shadow_AI.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltee176ce55650ab85/6a21c0c5563cbbc1f1a60149/Meta.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ]
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/09/how-justin-ernest-invested-nearly-400m-into-hot-startups-without-a-traditional-vc-fund/",
+      "title": "How Justin Ernest invested nearly $500M into hot startups without a traditional VC fund | TechCrunch",
+      "description": "Instead of spending a year raising a formal venture fund, the Sabertooth VC founder used a captive network of LPs to invest in startups like Anthropic, Anduril, and SpaceX.",
+      "excerpt": "Instead of spending a year raising a formal venture fund, the Sabertooth VC founder used a captive network of LPs to invest in startups like Anthropic, Anduril, and SpaceX.",
+      "summary": "Instead of spending a year raising a formal venture fund, the Sabertooth VC founder used a captive network of LPs to invest in startups like Anthropic, Anduril, and SpaceX.",
+      "what_happened": "Instead of spending a year raising a formal venture fund, the Sabertooth VC founder used a captive network of LPs to invest in startups like Anthropic, Anduril, and SpaceX.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Instead of spending a year raising a formal venture fund, the Sabertooth VC founder used a captive network of LPs to invest in startups like Anthropic, Anduril, and SpaceX."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5c61a1e2f1d075ae.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/JustinErnest_TechCrunch.jpg?resize=1200,675",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/09/anthropics-fable-5-can-make-weirdly-fun-video-games-with-the-click-of-a-button/",
+      "title": "Anthropic's Fable 5 can make weirdly fun video games with the click of a button | TechCrunch",
+      "description": "Anthropic's Claude Fable 5 is going to be a big hit with the web's vibe coders.",
+      "excerpt": "Anthropic's Claude Fable 5 is going to be a big hit with the web's vibe coders.",
+      "summary": "Anthropic's Claude Fable 5 is going to be a big hit with the web's vibe coders.",
+      "what_happened": "Anthropic's Claude Fable 5 is going to be a big hit with the web's vibe coders.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Anthropic's Claude Fable 5 is going to be a big hit with the web's vibe coders."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/934046f54e640231.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Screenshot-2026-06-09-at-11.40.18-AM.png?resize=1200,871",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2190537/xenoblade-genesis-the-next-mainline-entry-in-the-action-rpg-franchise-launches-in-2027/",
+      "title": "Xenoblade Genesis, the next mainline entry in the action RPG franchise, launches in 2027 - Engadget",
+      "description": "Nintendo dropped a lot of news for Xenoblade fans this morning.",
+      "excerpt": "Nintendo dropped a lot of news for Xenoblade fans this morning.",
+      "summary": "Xenoblade Genesis, the next mainline entry in the action RPG franchise, launches in 2027 Nintendo is also releasing Switch 2 versions of the older Xenoblade games There's a brand-new Xenoblade game coming to the Switch 2 in 2027. This offers 4K resolution on TVs and full HD in handheld mode, along with new content like high-speed vehicles for traversal, additional voiceovers, updated equipment designs and a whole lot more. However, this wasn't the only Xenoblade-adjacent announcement the company made. The first one came out for the Wii all the way back in 2010. The first one came out for the Wii all the way back in 2010.",
+      "what_happened": "Xenoblade Genesis, the next mainline entry in the action RPG franchise, launches in 2027 Nintendo is also releasing Switch 2 versions of the older Xenoblade games There's a brand-new Xenoblade game coming to the Switch 2 in 2027. This offers 4K resolution on TVs and full HD in handheld mode, along with new content like high-speed vehicles for traversal, additional voiceovers, updated equipment designs and a whole lot more.",
+      "why_matters": "However, this wasn't the only Xenoblade-adjacent announcement the company made. The first one came out for the Wii all the way back in 2010.",
+      "what_to_watch": "The first one came out for the Wii all the way back in 2010.",
+      "key_points": [
+        "Xenoblade Genesis, the next mainline entry in the action RPG franchise, launches in 2027 Nintendo is also releasing Switch 2 versions of the older Xenoblade games There's a brand-new Xenoblade game coming to the Switch.",
+        "The first one came out for the Wii all the way back in 2010.",
+        "Xenoblade Chronicles 2 \u2013 Nintendo Switch 2 Edition arrives on July 30 and Xenoblade Chronicles 3 \u2013 Nintendo Switch 2 Edition is coming on December 3.",
+        "The ridiculously-named Xenoblade Chronicles: Definitive Edition \u2013 Nintendo Switch 2 Edition is available for purchase right now and costs $64.",
+        "Xenoblade Chronicles X , which is set in a different universe to the mainline games, already got a Switch 2 edition earlier this year .",
+        "All three mainline Xenoblade Chronicles games are getting dedicated Switch 2 editions.",
+        "It's called Xenoblade Genesis and it was revealed at the latest Nintendo Direct livestream .",
+        "There's an upgrade pack available for people who already own the Switch version of the game .",
+        "However, this wasn't the only Xenoblade-adjacent announcement the company made.",
+        "We don't know too much about this story, other than that the protagonist is enrolled in some type of magic school (which reminds me of Final Fantasy VIII .) Nintendo promises more details on Xenoblade Genesis as we get.",
+        "This offers 4K resolution on TVs and full HD in handheld mode, along with new content like high-speed vehicles for traversal, additional voiceovers, updated equipment designs and a whole lot more.",
+        "Nintendo dropped a lot of news for Xenoblade fans this morning."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a39389e3ddf71c2e.jpg",
+      "image_url": "https://www.engadget.com/img/gallery/xenoblade-genesis-the-next-mainline-entry-in-the-action-rpg-franchise-launches-in-2027/intro-1781020824.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-amazon-sagemaker-ai/",
+      "title": "Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI | Amazon Web Services",
+      "description": "In this post, we show how to train robot policies for the Unitree H1 humanoid with NVIDIA Isaac Lab on Amazon SageMaker AI across two compute options: Amazon SageMaker HyperPod and Amazon SageMaker Training Jobs.",
+      "excerpt": "In this post, we show how to train robot policies for the Unitree H1 humanoid with NVIDIA Isaac Lab on Amazon SageMaker AI across two compute options: Amazon SageMaker HyperPod and Amazon SageMaker Training Jobs.",
+      "summary": "In this post, we show how to train robot policies for the Unitree H1 humanoid with NVIDIA Isaac Lab on Amazon SageMaker AI across two compute options: Amazon SageMaker HyperPod and Amazon SageMaker Training Jobs.",
+      "what_happened": "In this post, we show how to train robot policies for the Unitree H1 humanoid with NVIDIA Isaac Lab on Amazon SageMaker AI across two compute options: Amazon SageMaker HyperPod and Amazon SageMaker Training Jobs.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "In this post, we show how to train robot policies for the Unitree H1 humanoid with NVIDIA Isaac Lab on Amazon SageMaker AI across two compute options: Amazon SageMaker HyperPod and Amazon SageMaker Training Jobs."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2b8caff2063f6547.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/29/ML-20813-4.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-06-09-announcing-vime",
+      "title": "Announcing vime: A Simple, Stable, and Efficient RL Framework for LLMs",
+      "description": "vime connects slime's training stack with vLLM rollouts to provide a simple, stable, and efficient RL post-training pipeline.",
+      "excerpt": "vime connects slime's training stack with vLLM rollouts to provide a simple, stable, and efficient RL post-training pipeline.",
+      "summary": "vime connects slime's training stack with vLLM rollouts to provide a simple, stable, and efficient RL post-training pipeline.",
+      "what_happened": "vime connects slime's training stack with vLLM rollouts to provide a simple, stable, and efficient RL post-training pipeline.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "vime connects slime's training stack with vLLM rollouts to provide a simple, stable, and efficient RL post-training pipeline."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d7f15fa8a124ad77.png",
+      "image_url": "https://vllm.ai/blog-assets/figures/2026-06-09-vime/GLM-4.5-Air_GB200_precision.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/14a13a0a38038372.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7a3ea4d9f77884a6.png"
+      ],
+      "extra_image_urls": [
+        "https://vllm.ai/blog-assets/figures/2026-06-09-vime/Qwen3-4B_Training_raw_reward_compare.png",
+        "https://vllm.ai/blog-assets/figures/2026-06-09-vime/Qwen3-30B-A3B_MoE_R3_Comparison.png"
+      ]
+    },
+    {
+      "url": "https://www.engadget.com/2190638/siri-ai-first-look-how-apples-rebuilt-ai-powered-assistant-behaves-across-iphone-ipad-and-mac/",
+      "title": "Siri AI first look: How Apple's rebuilt AI-powered assistant behaves across iPhone, iPad and Mac - Engadget",
+      "description": "Here's your first look at Siri AI, and how it works across Apple's devices.",
+      "excerpt": "Here's your first look at Siri AI, and how it works across Apple's devices.",
+      "summary": "Here's your first look at Siri AI, and how it works across Apple's devices.",
+      "what_happened": "Here's your first look at Siri AI, and how it works across Apple's devices.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Here's your first look at Siri AI, and how it works across Apple's devices."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/092544be8a7e6de9.jpg",
+      "image_url": "https://www.engadget.com/img/gallery/siri-ai-first-look-how-apples-rebuilt-ai-powered-assistant-behaves-across-iphone-ipad-and-mac/how-does-siri-ai-perform-1781023831.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 5,
+  "has_cta": true,
+  "slides": [
+    "The Price Enterprises Will Pay for Anthropic Claude Fable 5.",
+    "Xenoblade Genesis the next mainline entry in the action RPG franchise launches.",
+    "Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI.",
+    "Announcing vime A Simple Stable and Efficient RL Framework for LLMs.",
+    "FOLLOW @graitech"
+  ]
+}
