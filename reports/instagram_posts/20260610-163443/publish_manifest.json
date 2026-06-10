@@ -19,8 +19,10 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260610-163443/01_20260610-1634_previously-rejected-articles-now-recovered/slide_05.png",
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260610-163443/01_20260610-1634_previously-rejected-articles-now-recovered/slide_06.png"
       ],
-      "status": "publish_failed_retryable",
-      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"Only photo or video can be accepted as media type.\",\"type\":\"OAuthException\",\"code\":9004,\"error_subcode\":2207052,\"is_transient\":false,\"error_user_title\":\"Media download has failed. The media URI doesn't meet our requirements.\",\"error_user_msg\":\"The media could not be fetched from this URI: https:\\/\\/rajeshponnapure.github.io\\/ai_news_instagram_publishing_agent\\/instagram_posts\\/20260610-163443\\/01_20260610-1634_previously-rejected-articles-now-recovered\\/slide_02.png.Please check the limitations section in our development document for more information: https:\\/\\/developers.facebook.com\\/docs\\/instagram-platform\\/instagram-graph-api\\/reference\\/ig-user\\/media#creating\",\"fbtrace_id\":\"APA7ALSGwU8CxTWSMiHKdVW\"}}"
+      "status": "published",
+      "error": "Graph API request failed for 17841447323115790/media: 400 Bad Request. Response: {\"error\":{\"message\":\"Only photo or video can be accepted as media type.\",\"type\":\"OAuthException\",\"code\":9004,\"error_subcode\":2207052,\"is_transient\":false,\"error_user_title\":\"Media download has failed. The media URI doesn't meet our requirements.\",\"error_user_msg\":\"The media could not be fetched from this URI: https:\\/\\/rajeshponnapure.github.io\\/ai_news_instagram_publishing_agent\\/instagram_posts\\/20260610-163443\\/01_20260610-1634_previously-rejected-articles-now-recovered\\/slide_02.png.Please check the limitations section in our development document for more information: https:\\/\\/developers.facebook.com\\/docs\\/instagram-platform\\/instagram-graph-api\\/reference\\/ig-user\\/media#creating\",\"fbtrace_id\":\"APA7ALSGwU8CxTWSMiHKdVW\"}}",
+      "creation_id": "18046197302577438",
+      "published_at": "2026-06-10T19:39:52+00:00"
     }
   ]
 }
