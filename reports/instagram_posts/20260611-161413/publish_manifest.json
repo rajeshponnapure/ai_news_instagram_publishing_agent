@@ -10,8 +10,16 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260611-161413/01_20260611-0554_profiling-in-pytorch-part-2-from-nnlinear-to-a-fused-mlp/slide_04.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260611-161413/01_20260611-0554_profiling-in-pytorch-part-2-from-nnlinear-to-a-fused-mlp/slide_05.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260611-161413/01_20260611-0554_profiling-in-pytorch-part-2-from-nnlinear-to-a-fused-mlp/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260611-161413/01_20260611-0554_profiling-in-pytorch-part-2-from-nnlinear-to-a-fused-mlp/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260611-161413/01_20260611-0554_profiling-in-pytorch-part-2-from-nnlinear-to-a-fused-mlp/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260611-161413/01_20260611-0554_profiling-in-pytorch-part-2-from-nnlinear-to-a-fused-mlp/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260611-161413/01_20260611-0554_profiling-in-pytorch-part-2-from-nnlinear-to-a-fused-mlp/slide_05.png"
+      ],
+      "status": "published",
+      "creation_id": "18046280186577438",
+      "published_at": "2026-06-11T16:22:06+00:00"
     }
   ]
 }
