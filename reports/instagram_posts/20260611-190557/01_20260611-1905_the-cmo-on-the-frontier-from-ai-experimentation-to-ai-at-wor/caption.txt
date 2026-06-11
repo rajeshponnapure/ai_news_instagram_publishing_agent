@@ -1,0 +1,26 @@
+The CMO on the frontier From AI experimentation to AI at work.
+
+Swipe for the full breakdown.
+
+- That's why the next phase of transformation isn't about deploying AI around the business it's about embedding.
+- The era of experimentation is over.
+- And can leaders scale AI without introducing risk to their brand?
+- CMOs described teams juggling 25-30 disconnected applications, with AI pilots layered on top but rarely integrated end-to-end.
+- Customer and consumer engagement is not limited to human audiences, but LLMs and agents shaping discovery, consideration.
+
+Would you use something like this in your daily work? Yes or no in the comments.
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/06/11/the-cmo-on-the-frontier-from-ai-experimentation-to-ai-at-work/
+- https://aws.amazon.com/blogs/machine-learning/optimize-blueprint-extraction-accuracy-in-amazon-bedrock-data-automation/
+- https://aws.amazon.com/blogs/machine-learning/evaluate-ai-agents-systematically-with-agent-evalkit/
+- https://aws.amazon.com/blogs/machine-learning/spot-trends-faster-sort-smarter-unlocking-sparklines-and-custom-sort-in-amazon-quick/
+- https://www.databricks.com/blog/stop-building-data-products-start-building-data-services
+
+#CloudAI #AICloud #MicrosoftAI #Copilot #FutureOfAI #TechTrends #Innovation #EmergingTech #Technology #Tech #AI #AICarousel #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing #MLNews #AIWeekly #TechInnovation #AIStartups
+
+-
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-

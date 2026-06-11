@@ -1,0 +1,381 @@
+{
+  "email_received_at": "2026-06-11T19:05+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "The CMO on the frontier: From AI experimentation to AI at work | The Microsoft Cloud Blog",
+  "subject": "",
+  "source_date": "2026-06-11T19:05:58.756403",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/06/11/the-cmo-on-the-frontier-from-ai-experimentation-to-ai-at-work/",
+  "article_title": "The CMO on the frontier: From AI experimentation to AI at work | The Microsoft Cloud Blog",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8e4f8b296871805f.jpg",
+  "article_image_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/wp-content/uploads/2026/06/Cloud-AI-Tour-Tracie-3.jpg",
+  "article_items": [
+    {
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/06/11/the-cmo-on-the-frontier-from-ai-experimentation-to-ai-at-work/",
+      "title": "The CMO on the frontier: From AI experimentation to AI at work | The Microsoft Cloud Blog",
+      "description": "CMOs are moving from AI experimentation to enterprise AI transformation. Learn how leaders operationalize AI for real impact across the business.",
+      "excerpt": "CMOs are moving from AI experimentation to enterprise AI transformation. Learn how leaders operationalize AI for real impact across the business.",
+      "summary": "That\u2019s why the next phase of transformation isn\u2019t about deploying AI around the business it\u2019s about embedding it through the business. And can leaders scale AI without introducing risk to their brand? Customer and consumer engagement is not limited to human audiences, but LLMs and agents shaping discovery, consideration, and purchase in real time. Creating shared data and process standards to enable agents to operate reliably. That\u2019s because the next chapter isn\u2019t about experimenting with AI. The era of experimentation is over.",
+      "what_happened": "That\u2019s why the next phase of transformation isn\u2019t about deploying AI around the business it\u2019s about embedding it through the business. And can leaders scale AI without introducing risk to their brand?",
+      "why_matters": "Customer and consumer engagement is not limited to human audiences, but LLMs and agents shaping discovery, consideration, and purchase in real time. Creating shared data and process standards to enable agents to operate reliably.",
+      "what_to_watch": "That\u2019s because the next chapter isn\u2019t about experimenting with AI. The era of experimentation is over.",
+      "key_points": [
+        "That\u2019s why the next phase of transformation isn\u2019t about deploying AI around the business it\u2019s about embedding it through the business.",
+        "The era of experimentation is over.",
+        "And can leaders scale AI without introducing risk to their brand?",
+        "CMOs described teams juggling 25\u201330 disconnected applications, with AI pilots layered on top but rarely integrated end-to-end.",
+        "Discovery, consideration, and even purchase decisions are increasingly intermediated by AI agents disrupting traditional attribution models and forcing CMOs to rethink influence altogether.",
+        "Customer and consumer engagement is not limited to human audiences, but LLMs and agents shaping discovery, consideration, and purchase in real time.",
+        "And they need confidence in how to scale.",
+        "This introduces a profound shift: Brands must optimize not just for human attention, but for machine comprehension and recommendation.",
+        "Creating shared data and process standards to enable agents to operate reliably.",
+        "They\u2019re accelerating the integration and operationalization of AI in an effort to rewire processes and supercharge their people.",
+        "But the real challenge runs deeper than the tech.",
+        "Leading companies are taking decisive action: Redesigning roles around human + agent collaboration, not task ownership Establishing clear governance models for AI decision-making and accountability."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8e4f8b296871805f.jpg",
+      "image_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/wp-content/uploads/2026/06/Cloud-AI-Tour-Tracie-3.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e4f706a97b56a91f.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c37345c422405a10.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5baff27f51a9fdd4.jpg"
+      ],
+      "extra_image_urls": [
+        "https://www.microsoft.com/en-us/microsoft-cloud/blog/wp-content/uploads/2026/06/CMO-conference-1.jpg",
+        "https://www.microsoft.com/en-us/microsoft-cloud/blog/wp-content/uploads/2026/05/AI-skill-fest-2026.jpg",
+        "https://www.microsoft.com/en-us/microsoft-cloud/blog/wp-content/uploads/2026/05/Beyond-AI-Adoption-3.jpg"
+      ],
+      "_story_id": "d269300f96734f108b48c0aa4d718bb4"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/optimize-blueprint-extraction-accuracy-in-amazon-bedrock-data-automation/",
+      "title": "Optimize blueprint extraction accuracy in Amazon Bedrock Data Automation | Amazon Web Services",
+      "description": "Blueprint instruction optimization is a BDA feature that automatically refines your extraction instructions to address this challenge directly. You provide three to ten example documents with expected values, and BDA refines your blueprint instructions to improve accuracy in minutes, not weeks. No separate model fine-tuning is required. By the end of this post, you can optimize your blueprints to improve accuracy, run the optimization workflow through the Amazon Bedrock console or the API, and apply best practices for selecting examples and ground truth.",
+      "excerpt": "Blueprint instruction optimization is a BDA feature that automatically refines your extraction instructions to address this challenge directly. You provide three to ten example documents with expected values, and BDA refines your blueprint instructions to improve accuracy in minutes, not weeks. No separate model fine-tuning is required. By the end of this post, you can optimize your blueprints to improve accuracy, run the optimization workflow through the Amazon Bedrock console or the API, and apply best practices for selecting examples and ground truth.",
+      "summary": "If you\u2019re using the sample from the deployed stack, you can paste in the provided JSON. When optimization completes, review the optimized blueprint and compare the updated instructions with the originals. Integration with other Amazon Bedrock features Optimized blueprints improve accuracy at the extraction layer, which can help strengthen downstream workflows you build on Amazon Bedrock Data Automation: Amazon Bedrock Knowledge Bases , a fully managed retrieval-augmented generation (RAG) capability, benefits from higher-quality extracted data through better vector embeddings for semantic search, improving the accuracy of RAG. Ground truth is the verified, accurate data that serves as the benchmark for measuring extraction quality. Artificial Intelligence Optimize blueprint extraction accuracy in Amazon Bedrock Data Automation Extracting structured data from unstructured documents such as invoices, contracts, tax forms, and enrollment.",
+      "what_happened": "If you\u2019re using the sample from the deployed stack, you can paste in the provided JSON. When optimization completes, review the optimized blueprint and compare the updated instructions with the originals.",
+      "why_matters": "Integration with other Amazon Bedrock features Optimized blueprints improve accuracy at the extraction layer, which can help strengthen downstream workflows you build on Amazon Bedrock Data Automation: Amazon Bedrock Knowledge Bases , a fully managed retrieval-augmented generation (RAG) capability, benefits from higher-quality extracted data through better vector embeddings for semantic search, improving the accuracy of RAG.",
+      "what_to_watch": "Ground truth is the verified, accurate data that serves as the benchmark for measuring extraction quality. Artificial Intelligence Optimize blueprint extraction accuracy in Amazon Bedrock Data Automation Extracting structured data from unstructured documents such as invoices, contracts, tax forms, and enrollment.",
+      "key_points": [
+        "Artificial Intelligence Optimize blueprint extraction accuracy in Amazon Bedrock Data Automation Extracting structured data from unstructured documents such as invoices, contracts, tax forms, and enrollment applications.",
+        "For more information about managing Amazon Bedrock Data Automation resources, refer to the Amazon Bedrock Data Automation documentation .",
+        "If you\u2019re using the sample from the deployed stack, you can paste in the provided JSON.",
+        "When optimization completes, review the optimized blueprint and compare the updated instructions with the originals.",
+        "Try the feature by deploying the sample solution into your account and running the SageMaker AI notebook.",
+        "Access to Amazon Bedrock with Amazon Bedrock Data Automation enabled in a supported Region .",
+        "For the latest Region availability, see the Amazon Bedrock Data Automation documentation .",
+        "In this example, the F1 score also improved from 92.4% to 100%, indicating the optimized instructions captured both the right values and the right amount of content.",
+        "If you deployed the sample solution or created resources while following this post, complete the following steps to avoid incurring ongoing costs: Warning: The following cleanup steps permanently delete resources and.",
+        "To use the sample from the deployed stack, choose Manually create new blueprint.",
+        "Ground truth is the verified, accurate data that serves as the benchmark for measuring extraction quality.",
+        "Delete blueprints you created by navigating to Amazon Bedrock Data Automation in the Amazon Bedrock console, selecting the blueprint, and choosing Delete ."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/59cd1d77f17e5b70.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/04/ML-21032-1.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "d8c172fd0515463c9ba50ae3257adf87"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/evaluate-ai-agents-systematically-with-agent-evalkit/",
+      "title": "Evaluate AI agents systematically with Agent-EvalKit | Amazon Web Services",
+      "description": "Agent-EvalKit is an open-source toolkit (Apache 2.0) that makes this evaluation infrastructure available by integrating with AI coding assistants, including Claude Code, Kiro CLI, and Kilo Code. This post walks through how Agent-EvalKit works across its six evaluation phases, using a travel research agent built with the Strands Agents SDK and Amazon Bedrock as a running example.",
+      "excerpt": "Agent-EvalKit is an open-source toolkit (Apache 2.0) that makes this evaluation infrastructure available by integrating with AI coding assistants, including Claude Code, Kiro CLI, and Kilo Code. This post walks through how Agent-EvalKit works across its six evaluation phases, using a travel research agent built with the Strands Agents SDK and Amazon Bedrock as a running example.",
+      "summary": "Agent-EvalKit is an open-source toolkit (Apache 2.0) that makes this evaluation infrastructure available by integrating with AI coding assistants, including Claude Code, Kiro CLI, and Kilo Code. His work focuses on large language models (LLMs) and AI agents, where he leads research in areas such as agent evaluation, agent tool optimization, prompt optimization, and model routing. Agent evaluation pays off most when it runs on every meaningful change rather than as a pre-release checkpoint. Review test cases before execution because the data phase synthesizes cases from the evaluation plan, but your understanding of real user behavior is irreplaceable. Data ( /evalkit.data ) generates test cases grounded in the evaluation plan, each with inputs and expected outcomes targeting the specific behaviors and failure modes your agent needs to handle. His work focuses on large language models (LLMs) and AI agents, where he leads research in areas such as agent evaluation.",
+      "what_happened": "Agent-EvalKit is an open-source toolkit (Apache 2.0) that makes this evaluation infrastructure available by integrating with AI coding assistants, including Claude Code, Kiro CLI, and Kilo Code. His work focuses on large language models (LLMs) and AI agents, where he leads research in areas such as agent evaluation, agent tool optimization, prompt optimization, and model routing.",
+      "why_matters": "Agent evaluation pays off most when it runs on every meaningful change rather than as a pre-release checkpoint. Review test cases before execution because the data phase synthesizes cases from the evaluation plan, but your understanding of real user behavior is irreplaceable.",
+      "what_to_watch": "Data ( /evalkit.data ) generates test cases grounded in the evaluation plan, each with inputs and expected outcomes targeting the specific behaviors and failure modes your agent needs to handle. His work focuses on large language models (LLMs) and AI agents, where he leads research in areas such as agent evaluation.",
+      "key_points": [
+        "His work focuses on large language models (LLMs) and AI agents, where he leads research in areas such as agent evaluation, agent tool optimization, prompt optimization, and model routing.",
+        "Demonstration study: evaluating a travel research agent During development of a travel research agent built with the Strands Agents SDK and Amazon Bedrock, we noticed the agent sometimes provided suspiciously precise.",
+        "Because these failures sit below the surface of the final response, catching them requires evaluation that traces the agent\u2019s full execution path: which tools the agent called, what data those tools returned, and.",
+        "Agent-EvalKit is an open-source toolkit (Apache 2.0) that makes this evaluation infrastructure available by integrating with AI coding assistants, including Claude Code, Kiro CLI, and Kilo Code.",
+        "Run agent ( /evalkit.run_agent ) executes your agent against each test case, producing a structured trace file for every run that captures the full history of tool calls, model responses, and intermediate state.",
+        "Response Quality scored 83.9%, confirming that the agent produced clear, actionable travel advice, and Tool Parameter Accuracy reached 64.5%, showing the agent generally selected the right tools but sometimes passed.",
+        "Data ( /evalkit.data ) generates test cases grounded in the evaluation plan, each with inputs and expected outcomes targeting the specific behaviors and failure modes your agent needs to handle.",
+        "The process starts with your agent\u2019s source code, where the assistant reads tool definitions, the system prompt, and framework configuration to build a detailed model of what your agent does, which tools it can call.",
+        "Large language model (LLM) as judge evaluators provide nuanced assessment at the cost of additional inference and careful prompt design.",
+        "Artificial Intelligence Evaluate AI agents systematically with Agent-EvalKit Teams building AI agents typically evaluate them the way they evaluate any other software: by checking whether the output matches expectations.",
+        "Your agent directory should contain the source code, tool definitions, and any configuration needed to run the agent.",
+        "The sections that follow walk through how Agent-EvalKit works across its six evaluation phases, using a travel research agent built with the Strands Agents SDK and Amazon Bedrock as a running example."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/084c9af55157d232.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/18/ML-20590-2.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/eba997b14a9e3819.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/cc734de27238ba22.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8202c0e066bf7083.png"
+      ],
+      "extra_image_urls": [
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/18/ML-20590-6.png",
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/18/ML-20590-4.png",
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/18/ML-20590-3.png"
+      ],
+      "_story_id": "dba120f8ec8947bbba7fafd33d5b0518"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/spot-trends-faster-sort-smarter-unlocking-sparklines-and-custom-sort-in-amazon-quick/",
+      "title": "Spot trends faster, sort smarter: Unlocking Sparklines and Custom Sort in Amazon Quick | Amazon Web Services",
+      "description": "Today, we\u2019re excited to announce two new capabilities that make Quick Sight dashboards even more expressive and business-aligned: sparklines and custom sort for controls. In this post, we walk through both features, what they are, when to use them, and how to configure them, with real-world scenarios that bring them together in a practical, decision-ready dashboard.",
+      "excerpt": "Today, we\u2019re excited to announce two new capabilities that make Quick Sight dashboards even more expressive and business-aligned: sparklines and custom sort for controls. In this post, we walk through both features, what they are, when to use them, and how to configure them, with real-world scenarios that bring them together in a practical, decision-ready dashboard.",
+      "summary": "Amazon Quick brings together AI-powered agents for business insights, research, and automation in one integrated experience, helping teams work smarter and faster while maintaining security and access policies. Rather than requiring a separate visual to show trend data, sparklines allow readers to see and compare trends immediately without leaving the context of the surrounding data. The result: A filter control that ranks by business impact, not the alphabet. Artificial Intelligence Spot trends faster, sort smarter: Unlocking Sparklines and Custom Sort in Amazon Quick Amazon Quick Sight , the business intelligence capability of Amazon Quick , delivers a unified BI experience, from modern interactive dashboards and natural language querying to pixel-perfect reports, machine learning insights, and embedded. Pair a Sparkline-enabled table with a custom-sorted control to create a dashboard experience that tells the story your stakeholders need, in the order they expect. Artificial Intelligence Spot trends faster, sort smarter: Unlocking Sparklines and Custom Sort in Amazon Quick Amazon Quick Sight , the business.",
+      "what_happened": "Amazon Quick brings together AI-powered agents for business insights, research, and automation in one integrated experience, helping teams work smarter and faster while maintaining security and access policies. Rather than requiring a separate visual to show trend data, sparklines allow readers to see and compare trends immediately without leaving the context of the surrounding data.",
+      "why_matters": "The result: A filter control that ranks by business impact, not the alphabet. Artificial Intelligence Spot trends faster, sort smarter: Unlocking Sparklines and Custom Sort in Amazon Quick Amazon Quick Sight , the business intelligence capability of Amazon Quick , delivers a unified BI experience, from modern interactive dashboards and natural language querying to pixel-perfect reports, machine learning insights, and embedded.",
+      "what_to_watch": "Pair a Sparkline-enabled table with a custom-sorted control to create a dashboard experience that tells the story your stakeholders need, in the order they expect. Artificial Intelligence Spot trends faster, sort smarter: Unlocking Sparklines and Custom Sort in Amazon Quick Amazon Quick Sight , the business.",
+      "key_points": [
+        "Amazon Quick brings together AI-powered agents for business insights, research, and automation in one integrated experience, helping teams work smarter and faster while maintaining security and access policies.",
+        "If your data exceeds this limit, Quick displays the last 52 data points according to your X-axis sort order Requires at least one field in the Group by field well and one field in the Values field well.",
+        "Rather than requiring a separate visual to show trend data, sparklines allow readers to see and compare trends immediately without leaving the context of the surrounding data.",
+        "Artificial Intelligence Spot trends faster, sort smarter: Unlocking Sparklines and Custom Sort in Amazon Quick Amazon Quick Sight , the business intelligence capability of Amazon Quick , delivers a unified BI.",
+        "Prior to AWS, he worked as a BI consultant across industry verticals including Automotive, Healthcare, Entertainment, Consumer, Publishing, and Financial Services, delivering business intelligence, data warehousing.",
+        "Explore the documentation.",
+        "Choose the pencil icon on the control to open the Format control pane.",
+        "The X-axis field must not be the same as a field in the Group by field.",
+        "Since joining Amazon in 2017, she has led initiatives across last-mile routing optimization, database migration, and business intelligence, bringing broad experience to complex data challenges.",
+        "The sparkline appears as a new column in the table, named after the value field.",
+        "Pair a Sparkline-enabled table with a custom-sorted control to create a dashboard experience that tells the story your stakeholders need, in the order they expect.",
+        "On the menu in the upper-right corner of the visual, select the Format visual icon (pencil visual)."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b7ab73642fa4c978.jpg",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/03/ML-20928-8.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "4d37b6eaaa18436887b2c7a05a41dfce"
+    },
+    {
+      "url": "https://www.databricks.com/blog/stop-building-data-products-start-building-data-services",
+      "title": "Stop building data products. Start building data services.",
+      "description": "Howden Group CDO Barry Panayi on why the one-product-per-use-case model gets clunky at scale and why insight lag is the metric your strategy is actually optimizing for.",
+      "excerpt": "Howden Group CDO Barry Panayi on why the one-product-per-use-case model gets clunky at scale and why insight lag is the metric your strategy is actually optimizing for.",
+      "summary": "Partner Program Explore benefits, tiers and how to become a partner Partner Solutions Find custom industry and migration solutions Platform Overview A unified platform for data, analytics and AI Governance Unified governance for all data, analytics and AI assets Artificial Intelligence Build and deploy ML and GenAI applications Business Intelligence Intelligent analytics for real-world data Data Warehousing Serverless data warehouse for SQL analytics Data Engineering ETL and orchestration for batch and streaming. We have since built a standard data model, the Accord data model, alongside the platform. Not after the platform is built. The plan is the artifact, and the artifact is built to last. And what fuels that is the data.",
+      "what_happened": "Partner Program Explore benefits, tiers and how to become a partner Partner Solutions Find custom industry and migration solutions Platform Overview A unified platform for data, analytics and AI Governance Unified governance for all data, analytics and AI assets Artificial Intelligence Build and deploy ML and GenAI applications Business Intelligence Intelligent analytics for real-world data Data Warehousing Serverless data warehouse for SQL analytics Data Engineering ETL and orchestration for batch and streaming.",
+      "why_matters": "We have since built a standard data model, the Accord data model, alongside the platform. Not after the platform is built.",
+      "what_to_watch": "The plan is the artifact, and the artifact is built to last. And what fuels that is the data.",
+      "key_points": [
+        "Partner Program Explore benefits, tiers and how to become a partner Partner Solutions Find custom industry and migration solutions Platform Overview A unified platform for data, analytics and AI Governance Unified.",
+        "We have since built a standard data model, the Accord data model, alongside the platform.",
+        "And what fuels that is the data.",
+        "Howden's Group CDO on why the data product model breaks down at acquisition pace - and what an agent-ready data layer looks like instead The one-product-per-use-case model breaks down under acquisition-driven growth and.",
+        "The plan is the artifact, and the artifact is built to last.",
+        "Barry: When I arrived, we had roughly 80 data sources ingested, and it was taking about six months to integrate data post-acquisition.",
+        "The product model that fit a dashboard era is not the model that fits an agentic one.",
+        "At the pace we are acquiring, that meant people were creating silos or pulling data from elsewhere because they needed results now.",
+        "We can do cross-domain analytics, mixing client data, risk data and market data together, building it once instead of rebuilding per division.",
+        "And start thinking about data services, not just data products.",
+        "The data was not wrong, but by the time you saw it, it was stale.",
+        "The dashboard backlog becomes the bottleneck."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a25e09f1a9bd5b68.png",
+      "image_url": "https://www.databricks.com/sites/default/files/2023-08/databricks-default.png?v=1712162038",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "af83e5dc1e0541929b7303cff7a46964"
+    },
+    {
+      "url": "https://www.engadget.com/2192124/im-glad-apple-isnt-hyping-up-agentic-ai-yet/",
+      "title": "I'm glad Apple isn't hyping up agentic AI (yet) - Engadget",
+      "description": "Apple is more focused on delivering usable features with Siri AI, instead of hyping up agentic AI. That's a good thing.",
+      "excerpt": "Apple is more focused on delivering usable features with Siri AI, instead of hyping up agentic AI. That's a good thing.",
+      "summary": "We're also dealing with the first developer beta, so there's a lot of room for things to change between now and when Apple's latest OS updates drop this fall. Apple, meanwhile, has struggled with delays for its AI-powered Siri upgrade, which was first announced two years ago. For the most part, Siri AI responds to your commands, it just has the benefit of modern AI models to better synthesize data. And not surprisingly, it's also tied to one of the more troubling new Apple Intelligence features : The ability to automatically change your compromised passwords. It's easy to see how Apple could take this feature further: Maybe eventually AI could automatically purchase a hot product before it goes out of stock, or send an email to a group of friends if you're eyeing a vacation property's pricing. Apple is rarely the first to new technology, though.",
+      "what_happened": "We're also dealing with the first developer beta, so there's a lot of room for things to change between now and when Apple's latest OS updates drop this fall. Apple, meanwhile, has struggled with delays for its AI-powered Siri upgrade, which was first announced two years ago.",
+      "why_matters": "For the most part, Siri AI responds to your commands, it just has the benefit of modern AI models to better synthesize data. And not surprisingly, it's also tied to one of the more troubling new Apple Intelligence features : The ability to automatically change your compromised passwords.",
+      "what_to_watch": "It's easy to see how Apple could take this feature further: Maybe eventually AI could automatically purchase a hot product before it goes out of stock, or send an email to a group of friends if you're eyeing a vacation property's pricing. Apple is rarely the first to new technology, though.",
+      "key_points": [
+        "For the most part, Siri AI responds to your commands, it just has the benefit of modern AI models to better synthesize data.",
+        "We're also dealing with the first developer beta, so there's a lot of room for things to change between now and when Apple's latest OS updates drop this fall.",
+        "Apple is rarely the first to new technology, though.",
+        "And not surprisingly, it's also tied to one of the more troubling new Apple Intelligence features : The ability to automatically change your compromised passwords.",
+        "Apple's commitment to privacy with Private Cloud Compute also gives it a leg up on Google and Microsoft - the company says it only uploads relevant data, makes it all anonymous and doesn't track server logs.",
+        "The first batch of Apple Intelligence features, like notification summaries and Genmojis, were fairly underwhelming (and in the case of those summaries, it led to some embarrassing mistakes ).",
+        "Apple, meanwhile, has struggled with delays for its AI-powered Siri upgrade, which was first announced two years ago.",
+        "The goal of making users more secure may be worth the slight loss of agency through Apple's agent, but it's a slippery slope.",
+        "For its new AFM3 Cloud Pro model, which runs on Google's servers with NVIDIA-powered hardware, Apple has also upgraded Private Cloud Compute to offer a similar amount of security.",
+        "Apple claims the new Passwords app \"securely navigates through websites to sign in and upgrade their accounts to strong passwords.\" The potential issues are obvious: What else can happen when Apple Intelligence logs.",
+        "\"Because PCC itself, by design from the ground up, is going to vaporize any record of that data the moment after it answers your question...",
+        "It's as if the tech world can't wait to sit back and let AI take the wheel."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "ed88fb0303d2487eb20f910d6287fe0a"
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/ai-s-hidden-energy-bill-why-visibility-becoming-critical-enterprises",
+      "title": "AI's Hidden Energy Bill: Visibility is Critical for Enterprises",
+      "description": "AI's Hidden Energy Bill: Why Visibility is Becoming Critical for Enterprises",
+      "excerpt": "AI's Hidden Energy Bill: Why Visibility is Becoming Critical for Enterprises",
+      "summary": "Apptio's platform , acquired by IBM in 2023, looks to meet the challenge by helping organizations track the financial and resource costs of running data across hybrid environments. Related: Meta Partners With Reliance for First India AI Data Center Holmes: One approach is to estimate the energy use of workloads based on available information. Related: The Price Enterprises Will Pay for Anthropic Claude Fable 5 There is a lot of work being done through government policy to improve the sustainability of energy consumption. If people don\u2019t see the impact of their actions, they can\u2019t realize how it contributes to the organization\u2019s energy consumption. Is it critical to the operation of the business?",
+      "what_happened": "Apptio's platform , acquired by IBM in 2023, looks to meet the challenge by helping organizations track the financial and resource costs of running data across hybrid environments. Related: Meta Partners With Reliance for First India AI Data Center Holmes: One approach is to estimate the energy use of workloads based on available information.",
+      "why_matters": "Related: The Price Enterprises Will Pay for Anthropic Claude Fable 5 There is a lot of work being done through government policy to improve the sustainability of energy consumption. If people don\u2019t see the impact of their actions, they can\u2019t realize how it contributes to the organization\u2019s energy consumption.",
+      "what_to_watch": "Is it critical to the operation of the business?",
+      "key_points": [
+        "Apptio's platform , acquired by IBM in 2023, looks to meet the challenge by helping organizations track the financial and resource costs of running data across hybrid environments.",
+        "Is it critical to the operation of the business?",
+        "Related: Meta Partners With Reliance for First India AI Data Center Holmes: One approach is to estimate the energy use of workloads based on available information.",
+        "Why is energy consumption a key consideration for companies deploying AI?",
+        "By combining workload data with information from sources such as energy maps , organizations can get a better understanding of the sustainability of their energy consumption.",
+        "All of those factors affect the sustainability profile of the energy being used.",
+        "Related: The Price Enterprises Will Pay for Anthropic Claude Fable 5 There is a lot of work being done through government policy to improve the sustainability of energy consumption.",
+        "But for many organizations, technology is becoming one of the largest sources of Scope 2 emissions.",
+        "Energy costs are relatively high, but the U.K.'s energy sustainability is better than in many countries.",
+        "Organizations need to think about whether the data they're using is appropriate from a legal and compliance perspective.",
+        "What are the risks of AI adoption if factors such as energy go unmanaged?",
+        "If people don\u2019t see the impact of their actions, they can\u2019t realize how it contributes to the organization\u2019s energy consumption."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4397673b92cfc4a3.jpg",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltd3dbe30bbd5acaaf/6a1db89b710e1711de21f2e0/humanoid_guide_Phantom_MK1_Foundation.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/dd1ac3a9875a8148.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7af9a82f60533258.jpg"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltddeb6a06fb0bae3c/6a297a126ce8947594f7a8f1/MetaAI.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltf07823c531e62b63/6a22cc57d6dfcca6062336fc/Amazon_robot.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ],
+      "_story_id": "199ae59d129744d69715f24b345989bd"
+    },
+    {
+      "url": "https://www.databricks.com/blog/empower-your-healthcare-agents-ready-use-mcp-databricks-marketplace",
+      "title": "Empower your healthcare agents with ready-to-use MCP on Databricks Marketplace",
+      "description": "Whil",
+      "excerpt": "Whil",
+      "summary": "Whil Partner Program Explore benefits, tiers and how to become a partner Partner Solutions Find custom industry and migration solutions Platform Overview A unified platform for data, analytics and AI Governance Unified governance for all data, analytics and AI assets Artificial Intelligence Build and deploy ML and GenAI applications Business Intelligence Intelligent analytics for real-world data Data Warehousing Serverless data warehouse for SQL analytics Data Engineering ETL and orchestration for batch and. Learn how to easily build and deploy bespoke agents to production no matter your developer experience. It deploys MLflow Agent Server with a FastAPI endpoint and a React User Interface (UI). Rather than relying on manual code lookups or specialized healthcare data expertise, organizations can use Kythera's MCP server to quickly move from clinical questions to actionable insights, enabling AI agents and analysts to work more effectively across claims, EHR, pharmacy, laboratory, and research datasets.",
+      "what_happened": "Whil Partner Program Explore benefits, tiers and how to become a partner Partner Solutions Find custom industry and migration solutions Platform Overview A unified platform for data, analytics and AI Governance Unified governance for all data, analytics and AI assets Artificial Intelligence Build and deploy ML and GenAI applications Business Intelligence Intelligent analytics for real-world data Data Warehousing Serverless data warehouse for SQL analytics Data Engineering ETL and orchestration for batch and.",
+      "why_matters": "Learn how to easily build and deploy bespoke agents to production no matter your developer experience. It deploys MLflow Agent Server with a FastAPI endpoint and a React User Interface (UI).",
+      "what_to_watch": "Rather than relying on manual code lookups or specialized healthcare data expertise, organizations can use Kythera's MCP server to quickly move from clinical questions to actionable insights, enabling AI agents and analysts to work more effectively across claims, EHR, pharmacy, laboratory, and research datasets.",
+      "key_points": [
+        "Whil Partner Program Explore benefits, tiers and how to become a partner Partner Solutions Find custom industry and migration solutions Platform Overview A unified platform for data, analytics and AI Governance Unified.",
+        "Empower everyone to extract agentic insights from your data Whether you prefer a low-code experience using Agent Bricks or flexible coding options with Databricks Notebooks (now with Genie Code AI assistance), both.",
+        "Rather than relying on manual code lookups or specialized healthcare data expertise, organizations can use Kythera's MCP server to quickly move from clinical questions to actionable insights, enabling AI agents and.",
+        "You can do this in 5 mins with the no-code Agent Bricks Supervisor Agent .",
+        "The Kythera Clinical Semantic Translation MCP Server enables users to describe diseases, medications, procedures, laboratory tests, outcomes, and eligibility criteria in plain language and automatically translates them.",
+        "This is where the Model Context Protocol (MCP) as an open standard interface is key to integrating all the above add-ons to supercharge agents with the appropriate capabilities.",
+        "Design and manage healthcare data integrations using natural language with Redox MCP We partnered with Climb , a trusted Databricks systems integrator partner, to provide direct access to key biomedical MCP servers.",
+        "By bridging the gap between clinical language and structured healthcare data, Kythera accelerates cohort discovery, patient finding, clinical trial feasibility, commercial analytics, market access research, and.",
+        "Select the Model and Tools and select the external MCP server(s).",
+        "Add your own MCP servers or data to your agents.",
+        "This enables us to ask questions like \u201cList the GLP-1 agonists in DrugBank and their ADMET properties\u201d.",
+        "More crucially, because your data is already on Databricks, you can use it to build bespoke agents to unlock valuable insights from your data assets."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a25e09f1a9bd5b68.png",
+      "image_url": "https://www.databricks.com/sites/default/files/2023-08/databricks-default.png?v=1712162038",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "8cb181052c9342c786b13b1e22229114"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 9,
+  "has_cta": true,
+  "slides": [
+    "The CMO on the frontier From AI experimentation to AI at work.",
+    "Optimize blueprint extraction accuracy in Amazon Bedrock Data Automation.",
+    "Evaluate AI agents systematically with Agent.",
+    "Spot trends faster sort smarter Unlocking Sparklines and Custom Sort in Amazon.",
+    "Stop building data products Start building data services.",
+    "I'm glad Apple isn't hyping up agentic AI yet.",
+    "AI's Hidden Energy Bill Visibility is Critical for Enterprises.",
+    "Empower your healthcare agents with ready-to-use MCP on Databricks Marketplace.",
+    "FOLLOW @graitech"
+  ]
+}
