@@ -1,0 +1,374 @@
+{
+  "email_received_at": "2026-06-11T12:26-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+  "subject": "\ud83d\udea8 AI Alert: 95 new launches \u2014 Bloomberg Tech, The Verge AI",
+  "source_date": "Thu, 11 Jun 2026 12:26:11 -0700",
+  "companies": [
+    "Google",
+    "Anthropic",
+    "Apple",
+    "Amazon",
+    "NVIDIA",
+    "Hugging Face",
+    "Oracle",
+    "The Verge AI"
+  ],
+  "models": [
+    "GPT-5",
+    "GPT 5.2",
+    "Claude",
+    "Claude-certified",
+    "Claude 9",
+    "Gemini 3.1",
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+  "article_title": "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/62bbdc0508a01718.png",
+  "article_image_url": "https://www.anthropic.com/api/opengraph-illustration?name=Hand%20Megaphone&backgroundColor=coral",
+  "article_items": [
+    {
+      "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+      "title": "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+      "description": "We\u2019re announcing a multi-year global alliance with DXC Technology, one of the world\u2019s largest IT services companies.",
+      "excerpt": "We\u2019re announcing a multi-year global alliance with DXC Technology, one of the world\u2019s largest IT services companies.",
+      "summary": "For example, in April 2026, DXC launched DXC OASIS, its tool for running customers' IT systems, where AI agents handle much of the routine work. Introducing the Services Track and Partner Hub of the Claude Partner Network Claude was also the primary tool DXC used to build the platform. DXC will train tens of thousands of Claude-certified forward-deployed engineers (FDEs) - engineers embedded directly inside customer organizations - to bring Claude into the systems DXC operates for the world\u2019s largest banks, airlines, insurers, manufacturers, and government agencies. \u201cFor more than 50 years, DXC and the companies it was built from run the systems that run the world,\u201d said Raul Fernandez, President and CEO, DXC Technology.",
+      "what_happened": "For example, in April 2026, DXC launched DXC OASIS, its tool for running customers' IT systems, where AI agents handle much of the routine work. Introducing the Services Track and Partner Hub of the Claude Partner Network",
+      "why_matters": "Claude was also the primary tool DXC used to build the platform. DXC will train tens of thousands of Claude-certified forward-deployed engineers (FDEs) - engineers embedded directly inside customer organizations - to bring Claude into the systems DXC operates for the world\u2019s largest banks, airlines, insurers, manufacturers, and government agencies.",
+      "what_to_watch": "\u201cFor more than 50 years, DXC and the companies it was built from run the systems that run the world,\u201d said Raul Fernandez, President and CEO, DXC Technology.",
+      "key_points": [
+        "Claude Fable 5 and Claude Mythos 5 Our next generation of intelligence for the hardest knowledge work and coding problems.",
+        "For example, in April 2026, DXC launched DXC OASIS, its tool for running customers' IT systems, where AI agents handle much of the routine work.",
+        "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+        "\u201cFor more than 50 years, DXC and the companies it was built from run the systems that run the world,\u201d said Raul Fernandez, President and CEO, DXC Technology.",
+        "DXC is also now part of the Claude Partner Network , our network of consulting and services firms that bring Claude to enterprise clients.",
+        "OASIS now serves over 50 DXC customers, and the firm plans to roll it out to customers around the world.",
+        "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on We\u2019re announcing a multi-year global alliance with DXC Technology, one of the world\u2019s largest IT services companies.",
+        "This is a defining moment for DXC and for the industry.\u201d Introducing Claude Corps We\u2019re launching Claude Corps, a national fellowship program for people early in their careers who are passionate about extending the.",
+        "Claude was also the primary tool DXC used to build the platform.",
+        "DXC will train tens of thousands of Claude-certified forward-deployed engineers (FDEs) - engineers embedded directly inside customer organizations - to bring Claude into the systems DXC operates for the world\u2019s largest.",
+        "We\u2019re announcing a multi-year global alliance with DXC Technology, one of the world\u2019s largest IT services companies.",
+        "Application services: Finally, DXC is using Claude to develop OASIS agents that embed Claude directly into the application maintenance and management environments DXC operates for its enterprise customers."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/62bbdc0508a01718.png",
+      "image_url": "https://www.anthropic.com/api/opengraph-illustration?name=Hand%20Megaphone&backgroundColor=coral",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://huggingface.co/blog/dlouapre/physics-intern",
+      "title": "PhysicsIntern: from an Autonomous Benchmark-runner to a Research Sidekick",
+      "description": "A Blog post by David Louapre on Hugging Face",
+      "excerpt": "A Blog post by David Louapre on Hugging Face",
+      "summary": "That single move of recognising the question is ill-posed and fixing it is precisely the kind of judgment a benchmark can never reward, and precisely what you want from a research partner. A Blog post by David Louapre on Hugging Face PhysicsIntern: from an Autonomous Benchmark-runner to a Research Sidekick A few weeks ago we released physics-intern , an autonomous agent for physics research . The plan is the moment where a researcher's judgment is worth the most and the agent's is worth the least, so that's where the intern hands the wheel back to you. Twenty-one commits, one per step, each bundling the new artefact with the updated research log. The plan is the moment where a researcher's judgment is worth the most and the agent's is worth the least, so that's where the intern hands the wheel back to you.",
+      "what_happened": "That single move of recognising the question is ill-posed and fixing it is precisely the kind of judgment a benchmark can never reward, and precisely what you want from a research partner. A Blog post by David Louapre on Hugging Face PhysicsIntern: from an Autonomous Benchmark-runner to a Research Sidekick A few weeks ago we released physics-intern , an autonomous agent for physics research .",
+      "why_matters": "The plan is the moment where a researcher's judgment is worth the most and the agent's is worth the least, so that's where the intern hands the wheel back to you. Twenty-one commits, one per step, each bundling the new artefact with the updated research log.",
+      "what_to_watch": "The plan is the moment where a researcher's judgment is worth the most and the agent's is worth the least, so that's where the intern hands the wheel back to you.",
+      "key_points": [
+        "That single move of recognising the question is ill-posed and fixing it is precisely the kind of judgment a benchmark can never reward, and precisely what you want from a research partner.",
+        "The structured, multi-agent approach measurably outperformed the single-shot baselines, for instance bringing Kimi K2.6 from 8.0% to 21.4% on the CritPt benchmark, and lifting Gemini 3.1 Pro from 17.7% to 31.4%, higher.",
+        "The plan is the moment where a researcher's judgment is worth the most and the agent's is worth the least, so that's where the intern hands the wheel back to you.",
+        "A Blog post by David Louapre on Hugging Face PhysicsIntern: from an Autonomous Benchmark-runner to a Research Sidekick A few weeks ago we released physics-intern , an autonomous agent for physics research .",
+        "Twenty-one commits, one per step, each bundling the new artefact with the updated research log.",
+        "The session is disposable, because the files are the memory.",
+        "Then I launched Codex in the workspace and asked it to read the problem, the notes I provided, and then run a survey (which triggered the corresponding /survey skill).",
+        "Everything that matters lives in plain files in a git repository: the research log, the plan, the derivations and their reviews, the computations, the critiques, the final answer.",
+        "After each sub-agent returns, the main agent runs a tight integration loop: read the result, update research_log.md and the plan, and commit.",
+        "This ensures that no lone verdict moves the work forward, and the whole research program won\u2019t be derailed by the mistake of a single agent.",
+        "The way you get that evidence is to run on a benchmark like CritPt , and obviously such a benchmark cannot have a human in the loop.",
+        "The run above was on Codex with GPT-5."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d59ae12b4ef6f8e8.png",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/687b3be66012eb65451278fd/nHTjNbocvJmarlrvTTsO6.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ce233decf43efb77.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/087643f693880075.png"
+      ],
+      "extra_image_urls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/687b3be66012eb65451278fd/5_xpWcHhE97ZmxWnjptVk.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/687b3be66012eb65451278fd/58Kp2YwYiEh9HK7CT5Ln7.png"
+      ]
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/11/deezers-new-tool-can-identify-ai-music-from-spotify-apple-music-and-others/",
+      "title": "Deezer's new tool can identify AI music from Spotify, Apple Music, and others | TechCrunch",
+      "description": "Deezer introduced a tool that scans playlists from Spotify, Apple Music, and other platforms to identify AI music.",
+      "excerpt": "Deezer introduced a tool that scans playlists from Spotify, Apple Music, and other platforms to identify AI music.",
+      "summary": "The launch of the new tool comes on the heels of Deezer revealing that a staggering 44% of all new music uploaded to its platform is AI-generated. The launch further positions Deezer as one of the music industry\u2019s most aggressive opponents of AI music, which could be a selling point for its service among consumers. To use the new tool, go to Deezer\u2019s AI music detector website, select your streaming service, and allow Deezer to access your playlists. Around 85% of these streams are flagged as fraudulent and are demonetized by the platform. Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s Fable Google just fired a warning shot in the AI subscription price wars WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more Anthropic\u2019s Claude Fable 5 is a version of Mythos the public can access today",
+      "what_happened": "The launch of the new tool comes on the heels of Deezer revealing that a staggering 44% of all new music uploaded to its platform is AI-generated. The launch further positions Deezer as one of the music industry\u2019s most aggressive opponents of AI music, which could be a selling point for its service among consumers.",
+      "why_matters": "To use the new tool, go to Deezer\u2019s AI music detector website, select your streaming service, and allow Deezer to access your playlists. Around 85% of these streams are flagged as fraudulent and are demonetized by the platform.",
+      "what_to_watch": "Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s Fable Google just fired a warning shot in the AI subscription price wars WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more Anthropic\u2019s Claude Fable 5 is a version of Mythos the public can access today",
+      "key_points": [
+        "The launch of the new tool comes on the heels of Deezer revealing that a staggering 44% of all new music uploaded to its platform is AI-generated.",
+        "The launch further positions Deezer as one of the music industry\u2019s most aggressive opponents of AI music, which could be a selling point for its service among consumers.",
+        "Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s Fable Google just fired a warning shot in the AI subscription price wars WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence.",
+        "Announced on Thursday, this free online AI music detector supports 27 languages and gives users from 20 of the most popular platforms the chance to see if their playlists include any AI-generated songs.",
+        "Deezer introduced a tool that scans playlists from Spotify, Apple Music, and other platforms to identify AI music.",
+        "However, many music streaming services have yet to launch AI music detection tools.",
+        "To use the new tool, go to Deezer\u2019s AI music detector website, select your streaming service, and allow Deezer to access your playlists.",
+        "The tool is compatible with Spotify, Apple Music, SoundCloud, and YouTube Music, among other platforms.",
+        "\u201cBy detecting and tagging AI-generated music over the past year and a half, Deezer has been at the forefront of transparency in music streaming.",
+        "In the ongoing effort to tackle this issue, Deezer introduced a tool that scans playlists from various streaming platforms to identify AI-generated tracks.",
+        "Around 85% of these streams are flagged as fraudulent and are demonetized by the platform.",
+        "Despite this influx, the listening rate for AI-generated music remains relatively low, accounting for just 1-3% of total streams."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9e92a0984cca0b65.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-2180853826.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.databricks.com/blog/how-ecolab-rebuilt-retail-intelligence-databricks-and-anthropic-claude",
+      "title": "How Ecolab rebuilt retail intelligence on Databricks and Anthropic Claude",
+      "description": "When a store manager",
+      "excerpt": "When a store manager",
+      "summary": "When a store manager Partner Program Explore benefits, tiers and how to become a partner Partner Solutions Find custom industry and migration solutions Platform Overview A unified platform for data, analytics and AI Governance Unified governance for all data, analytics and AI assets Artificial Intelligence Build and deploy ML and GenAI applications Business Intelligence Intelligent analytics for real-world data Data Warehousing Serverless data warehouse for SQL analytics Data Engineering ETL and orchestration for. The Unity AI Gateway layers on payload logging, per-user rate limiting, PII guardrails, and automatic fallbacks, while Unity Catalog governs access to both the data and the models serving it. These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. Next, Ecolab plans to add MCP-powered automated actions - pest inspections, chemical reorders, food safety norms and work orders triggered directly from the chat interface - turning the system from an intelligence layer into a full operational Agent. And because the conversational agent supports approximately twelve.",
+      "what_happened": "When a store manager Partner Program Explore benefits, tiers and how to become a partner Partner Solutions Find custom industry and migration solutions Platform Overview A unified platform for data, analytics and AI Governance Unified governance for all data, analytics and AI assets Artificial Intelligence Build and deploy ML and GenAI applications Business Intelligence Intelligent analytics for real-world data Data Warehousing Serverless data warehouse for SQL analytics Data Engineering ETL and orchestration for.",
+      "why_matters": "The Unity AI Gateway layers on payload logging, per-user rate limiting, PII guardrails, and automatic fallbacks, while Unity Catalog governs access to both the data and the models serving it. These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+      "what_to_watch": "Next, Ecolab plans to add MCP-powered automated actions - pest inspections, chemical reorders, food safety norms and work orders triggered directly from the chat interface - turning the system from an intelligence layer into a full operational Agent. And because the conversational agent supports approximately twelve.",
+      "key_points": [
+        "When a store manager Partner Program Explore benefits, tiers and how to become a partner Partner Solutions Find custom industry and migration solutions Platform Overview A unified platform for data, analytics and AI.",
+        "Behind the scenes, nine separate data sources have been unified into a single governed lakehouse, serving hundreds of North American locations at launch in mid-April 2026.",
+        "And because the conversational agent supports approximately twelve languages at ~98% accuracy, frontline staff can interact in whichever language they're most comfortable with.",
+        "by Babu Chinnaswamy , Nicholas Dylla , Alissa Ellingson and Harish Gaur Ecolab uses Anthropic's Claude Sonnet and Haiku on Databricks Foundation Model APIs to convert 700-page FDA food safety manuals into cited.",
+        "The Unity AI Gateway layers on payload logging, per-user rate limiting, PII guardrails, and automatic fallbacks, while Unity Catalog governs access to both the data and the models serving it.",
+        "For Ecolab's customers, the outcome is measurably better compliance postures, fewer penalty events, and a partner that delivers intelligence proactively rather than reactively.",
+        "Next, Ecolab plans to add MCP-powered automated actions - pest inspections, chemical reorders, food safety norms and work orders triggered directly from the chat interface - turning the system from an intelligence layer.",
+        "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+        "But unifying the data was only half the challenge.",
+        "Profiles are stored as structured records and continuously updated as the user interacts.",
+        "Through Foundation Model APIs , Ecolab serves Claude Sonnet for complex reasoning, Haiku for fast and cost-effective summarization, and Gemini for image analysis, all from the same control plane.",
+        "All nine data sources flow through Lakeflow and Spark Declarative Pipelines into a governed lakehouse under Unity Catalog , deployed reproducibly via Databricks Asset Bundles."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8c294eaba96833d0.png",
+      "image_url": "https://www.databricks.com/sites/default/files/inline-images/2026-05-blog-how-ecolab-revolutionizes-retail-intelligence-with-ai-agents-databricks-and-anthropic-claude-inline-960x886-2x.png?v=1780610622",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/bcb4a225b202f571.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/01531b9376a97c18.png"
+      ],
+      "extra_image_urls": [
+        "https://www.databricks.com/sites/default/files/inline-images/2026-05-blog-how-ecolab-revolutionizes-retail-intelligence-with-ai-agents-databricks-and-anthropic-claude-inline-960x571-2x.png?v=1779401987",
+        "https://www.databricks.com/sites/default/files/inline-images/2026-05-blog-how-ecolab-revolutionizes-retail-intelligence-with-ai-agents-databricks-and-anthropic-claude-inline-960x564-2x.png?v=1779401987"
+      ]
+    },
+    {
+      "url": "https://aibusiness.com/robotics/neura-robotics-raises-1-4b-physical-ai",
+      "title": "Neura Robotics Raises $1.4B for Physical AI",
+      "description": "Neura Robotics Raises $1.4B for Physical AI",
+      "excerpt": "Neura Robotics Raises $1.4B for Physical AI",
+      "summary": "Neura Robotics Raises $1.4B for Physical AI Neura Robotics Raises $1.4B for Physical AI Funding from investors including Nvidia, Amazon and Qualcomm will support the vendor\u2019s development of humanoid robots and physical AI. AI hardware-software giant Nvidia, in particular, has been stepping up its push into physical AI, expanding partnerships with robotics companies including Agility Robotics, Figure AI , ABB Robotics and Kuka. The company also plans to develop its \" Neura Gyms \" -- a network of training environments designed to collect real-world robotics data and support the development of physical AI models. German startup Neura Robotics completed a Series C funding round of up to $1.4 billion, which the vendor claims the largest investment into a full-stack robotics company to date. \u201cIt will move, interact, learn and work beside us in the real world.\u201d Related: Amazon Unveils Next-Generation Robot in $11.6B European Push Established in 2019, Neura\u2019s cognitive and humanoid robots are designed to work alongside humans across industrial, commercial and domestic environments.",
+      "what_happened": "Neura Robotics Raises $1.4B for Physical AI Neura Robotics Raises $1.4B for Physical AI Funding from investors including Nvidia, Amazon and Qualcomm will support the vendor\u2019s development of humanoid robots and physical AI. AI hardware-software giant Nvidia, in particular, has been stepping up its push into physical AI, expanding partnerships with robotics companies including Agility Robotics, Figure AI , ABB Robotics and Kuka.",
+      "why_matters": "The company also plans to develop its \" Neura Gyms \" -- a network of training environments designed to collect real-world robotics data and support the development of physical AI models. German startup Neura Robotics completed a Series C funding round of up to $1.4 billion, which the vendor claims the largest investment into a full-stack robotics company to date.",
+      "what_to_watch": "\u201cIt will move, interact, learn and work beside us in the real world.\u201d Related: Amazon Unveils Next-Generation Robot in $11.6B European Push Established in 2019, Neura\u2019s cognitive and humanoid robots are designed to work alongside humans across industrial, commercial and domestic environments.",
+      "key_points": [
+        "Neura Robotics Raises $1.4B for Physical AI Neura Robotics Raises $1.4B for Physical AI Funding from investors including Nvidia, Amazon and Qualcomm will support the vendor\u2019s development of humanoid robots and physical.",
+        "AI hardware-software giant Nvidia, in particular, has been stepping up its push into physical AI, expanding partnerships with robotics companies including Agility Robotics, Figure AI , ABB Robotics and Kuka.",
+        "The company also plans to develop its \" Neura Gyms \" -- a network of training environments designed to collect real-world robotics data and support the development of physical AI models.",
+        "German startup Neura Robotics completed a Series C funding round of up to $1.4 billion, which the vendor claims the largest investment into a full-stack robotics company to date.",
+        "\u201cIt will move, interact, learn and work beside us in the real world.\u201d Related: Amazon Unveils Next-Generation Robot in $11.6B European Push Established in 2019, Neura\u2019s cognitive and humanoid robots are designed to work.",
+        "As part of the physical AI push, Neura said it will put the investment toward expanding its physical AI ecosystem, the Neuraverse.",
+        "\u201cThe future of AI will not only live on screens,\u201d Neura CEO and founder David Reger said in a release.",
+        "The funding round also included backing from investors and strategic partners Tether, Bosch, Schaeffler and the European Investment Bank.",
+        "The funding highlights growing investor interest in physical AI and robotics, as technology advancements and consumer demands call for increasingly autonomous and capable machines.",
+        "The platform is designed as a skill- and data-exchange platform for robots, enabling them to continuously learn from one another.",
+        "Scarlett also has a background in the mining and resources sector, with experience at Mine Australia, Mine Technology and Power Technology.",
+        "Previously, she served as assistant editor at IoT World Today, where she specialized in robotics and smart city technologies."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4397673b92cfc4a3.jpg",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltd3dbe30bbd5acaaf/6a1db89b710e1711de21f2e0/humanoid_guide_Phantom_MK1_Foundation.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4d63b5fa7c6a5fc8.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/dd1ac3a9875a8148.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7af9a82f60533258.jpg"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltfea5863c45e34dc9/6a28502d3c3efcdea8fa4c58/Waymo3.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltddeb6a06fb0bae3c/6a297a126ce8947594f7a8f1/MetaAI.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltf07823c531e62b63/6a22cc57d6dfcca6062336fc/Amazon_robot.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ]
+    },
+    {
+      "url": "https://www.thewrap.com/creative-content/movies/lionsgate-runway-ai-short-films-franchises-ip/",
+      "title": "Lionsgate Takes Equity Stake in Runway, Will Mine IP for AI-Generated Shorts",
+      "description": "Lionsgate will mine existing franchises to create AI-generated short films as part of an expanded partnership with AI company Runway.",
+      "excerpt": "Lionsgate will mine existing franchises to create AI-generated short films as part of an expanded partnership with AI company Runway.",
+      "summary": "That\u2019s core to our mission at Runway, and we\u2019re excited to help create the next generation of iconic content.\u201d Lionsgate was the first major studio to partner with an AI company when it teamed with Runway in 2024, but as TheWrap exclusively reported last year , the partnership ran into some limitations when it came to generating AI films. The \u201cpreferred partnership\u201d with Runway is \u201cpart of Lionsgate\u2019s multifaceted AI strategy under the leadership of Chief AI Officer Kathleen Grace and the studio\u2019s AI Steering. Lionsgate Takes Equity Stake in Runway, Will Mine IP for AI-Generated Shorts The companies\u2019 expanded partnership will blend existing IP with Runway\u2019s generative AI Share on Social Media Lionsgate and Runway, the generative AI research company, announced an expanded partnership on Thursday that involves Lionsgate taking an equity stake in the tech company and launching a joint development program to develop and produce new IP. The companies plan to roll out a full slate of co-developed projects blending AI and content, with the AI shows marking the first to be released.",
+      "what_happened": "That\u2019s core to our mission at Runway, and we\u2019re excited to help create the next generation of iconic content.\u201d Lionsgate was the first major studio to partner with an AI company when it teamed with Runway in 2024, but as TheWrap exclusively reported last year , the partnership ran into some limitations when it came to generating AI films. The \u201cpreferred partnership\u201d with Runway is \u201cpart of Lionsgate\u2019s multifaceted AI strategy under the leadership of Chief AI Officer Kathleen Grace and the studio\u2019s AI Steering.",
+      "why_matters": "Lionsgate Takes Equity Stake in Runway, Will Mine IP for AI-Generated Shorts The companies\u2019 expanded partnership will blend existing IP with Runway\u2019s generative AI Share on Social Media Lionsgate and Runway, the generative AI research company, announced an expanded partnership on Thursday that involves Lionsgate taking an equity stake in the tech company and launching a joint development program to develop and produce new IP.",
+      "what_to_watch": "The companies plan to roll out a full slate of co-developed projects blending AI and content, with the AI shows marking the first to be released.",
+      "key_points": [
+        "That\u2019s core to our mission at Runway, and we\u2019re excited to help create the next generation of iconic content.\u201d Lionsgate was the first major studio to partner with an AI company when it teamed with Runway in 2024, but.",
+        "The \u201cpreferred partnership\u201d with Runway is \u201cpart of Lionsgate\u2019s multifaceted AI strategy under the leadership of Chief AI Officer Kathleen Grace and the studio\u2019s AI Steering Committee,\u201d the studio said in a press.",
+        "The companies plan to roll out a full slate of co-developed projects blending AI and content, with the AI shows marking the first to be released.",
+        "Lionsgate Takes Equity Stake in Runway, Will Mine IP for AI-Generated Shorts The companies\u2019 expanded partnership will blend existing IP with Runway\u2019s generative AI Share on Social Media Lionsgate and Runway, the.",
+        "Lionsgate will mine existing franchises to create AI-generated short films as part of an expanded partnership with AI company Runway.",
+        "A timetable for when the series would be released was not given.",
+        "This expanded partnership will help more stories be told, faster.",
+        "\u201cRunway is a great creative partner, an exciting part of our AI strategy and a valuable driver in expanding our storytelling capabilities,\u201d said Lionsgate Vice Chairman Michael Burns in a statement.",
+        "As we continue to expand the use cases of Runway technology across our production operations and introduce its tools to more of our filmmakers, we believe it will help our talent redefine and reshape the art of the.",
+        "As part of the expansion, the companies will create AI-generated short episodic series using existing Lionsgate IP.",
+        "Now, with the announcement of these IP-driven short series, we\u2019ll see what Lionsgate and Runway have come up with.",
+        "They did not reveal which franchises will be used for these AI series, and while some of the most popular IP in the Lionsgate library includes \u201cJohn Wick\u201d and \u201cThe Hunger Games,\u201d there are thousands of titles that could."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f7461b1fa8c18336.jpg",
+      "image_url": "https://www.thewrap.com/wp-content/uploads/2023/04/keanu-reeves-john-wick.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://spectrum.ieee.org/isomorphic-labs-ai-drug-discovery",
+      "title": "The Google DeepMind Spinoff Chasing Hidden Drug Targets",
+      "description": "Isomorphic Labs is developing a new engine for AI drug discovery",
+      "excerpt": "Isomorphic Labs is developing a new engine for AI drug discovery",
+      "summary": "Isomorphic Labs is developing a new engine for AI drug discovery",
+      "what_happened": "Isomorphic Labs is developing a new engine for AI drug discovery",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Isomorphic Labs is developing a new engine for AI drug discovery"
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/caef3f1a84c954a4.img",
+      "image_url": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202000%202667'%3E%3C/svg%3E",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://github.com/openai/openai-python/commit/2a91011abc21032db9566b98068afefb5fbb9b24",
+      "title": "build: Remove scheduled release workflow trigger (#3366) \u00b7 openai/openai-python@2a91011",
+      "description": "The official Python library for the OpenAI API. Contribute to openai/openai-python development by creating an account on GitHub.",
+      "excerpt": "The official Python library for the OpenAI API. Contribute to openai/openai-python development by creating an account on GitHub.",
+      "summary": "Use saved searches to filter your results more quickly Notifications You must be signed in to change notification settings \u200e.github/workflows/create-releases.yml\u200e The official Python library for the OpenAI API. The official Python library for the OpenAI API. Contribute to openai/openai-python development by creating an account on GitHub. The official Python library for the OpenAI API.",
+      "what_happened": "Use saved searches to filter your results more quickly Notifications You must be signed in to change notification settings \u200e.github/workflows/create-releases.yml\u200e The official Python library for the OpenAI API.",
+      "why_matters": "The official Python library for the OpenAI API. Contribute to openai/openai-python development by creating an account on GitHub.",
+      "what_to_watch": "The official Python library for the OpenAI API.",
+      "key_points": [
+        "Use saved searches to filter your results more quickly Notifications You must be signed in to change notification settings \u200e.github/workflows/create-releases.yml\u200e",
+        "The official Python library for the OpenAI API.",
+        "Contribute to openai/openai-python development by creating an account on GitHub.",
+        "We read every piece of feedback, and take your input very seriously.",
+        "Search code, repositories, users, issues, pull requests..."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 7,
+  "has_cta": true,
+  "slides": [
+    "DXC will integrate Claude into the systems banks airlines and other regulated.",
+    "PhysicsIntern from an Autonomous Benchmark-runner to a Research Sidekick.",
+    "Deezer's new tool can identify AI music from Spotify Apple Music.",
+    "The Unity AI Gateway layers on payload logging, per-user rate limiting, PII.",
+    "Neura Robotics Raises $1.4B for Physical AI.",
+    "Lionsgate Takes Equity Stake in Runway Will Mine IP for AI.",
+    "FOLLOW @graitech"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "email_received_at": "2026-06-11T21:35+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Thu, 11 Jun 2026 21:35:34 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/11/deezers-new-tool-can-identify-ai-music-from-spotify-apple-music-and-others/",
+      "title": "Company : TechCrunch AI",
+      "description": "[HIGH] Deezer\u2019s new tool can identify AI music from Spotify, Apple Music, and others Company : TechCrunch AI Summary : Deezer introduced a tool that scans playlists from Spotify, Apple Music, and other platforms to identify AI music. Link :",
+      "text": "[HIGH] Deezer\u2019s new tool can identify AI music from Spotify, Apple Music, and others Company : TechCrunch AI Summary : Deezer introduced a tool that scans playlists from Spotify, Apple Music, and other platforms to identify AI music. Link :",
+      "excerpt": "[HIGH] Deezer\u2019s new tool can identify AI music from Spotify, Apple Music, and others Company : TechCrunch AI Summary : Deezer introduced a tool that scans playlists from Spotify, Apple Music, and other platforms to identify AI music. Link :",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-2180853826.jpg?resize=1200,800",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://techcrunch.com/2026/06/11/deezers-new-tool-can-identify-ai-music-from-spotify-apple-music-and-others/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.theverge.com/tech/948363/weather-channel-mobile-app-ios-android-pollen-forecast",
+      "title": "Company : The Verge AI",
+      "description": "[HIGH] The Weather Channel app now predicts bad allergy days Company : The Verge AI Summary : The Weather Company announced an \"enhanced allergy experience\" now available through its The Weather Channel app designed to help allergy sufferers better understand when their symptoms might flare up Link :",
+      "text": "[HIGH] The Weather Channel app now predicts bad allergy days Company : The Verge AI Summary : The Weather Company announced an \"enhanced allergy experience\" now available through its The Weather Channel app designed to help allergy sufferers better understand when their symptoms might flare up Link :",
+      "excerpt": "[HIGH] The Weather Channel app now predicts bad allergy days Company : The Verge AI Summary : The Weather Company announced an \"enhanced allergy experience\" now available through its The Weather Channel app designed to help allergy sufferers better understand when their symptoms might flare up Link :",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/weatherchannel1.jpg?quality=90&amp;strip=all&amp;crop=0,10.732984293194,100,78.534031413613",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theverge.com/tech/948363/weather-channel-mobile-app-ios-android-pollen-forecast",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://aibusiness.com/robotics/neura-robotics-raises-1-4b-physical-ai",
+      "title": "Company : AI Business",
+      "description": "[HIGH] Neura Robotics Raises $1.4B for Physical AI Company : AI Business Summary : Funding from investors including Nvidia, Amazon and Qualcomm will support the vendor\u2019s development of humanoid robots and physical AI. Link :",
+      "text": "[HIGH] Neura Robotics Raises $1.4B for Physical AI Company : AI Business Summary : Funding from investors including Nvidia, Amazon and Qualcomm will support the vendor\u2019s development of humanoid robots and physical AI. Link :",
+      "excerpt": "[HIGH] Neura Robotics Raises $1.4B for Physical AI Company : AI Business Summary : Funding from investors including Nvidia, Amazon and Qualcomm will support the vendor\u2019s development of humanoid robots and physical AI. Link :",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt828ad944fcc10887/6a2abfd02d94f46b1264820e/Neura.jpg?disable=upscale&width=1200&height=630&fit=crop",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://aibusiness.com/robotics/neura-robotics-raises-1-4b-physical-ai",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.theverge.com/tech/948181/cash-app-mobile",
+      "title": "Company : The Verge AI",
+      "description": "[HIGH] Cash App\u2019s launching a phone service Company : The Verge AI Summary : Cash App's AT&T-based MVNO will offer an unlimited 5G data plan for $40 per month including taxes and fees. The new mobile service is powered by Gigs, the same firm behind the Klarna mobile servic Link :",
+      "text": "[HIGH] Cash App\u2019s launching a phone service Company : The Verge AI Summary : Cash App's AT&T-based MVNO will offer an unlimited 5G data plan for $40 per month including taxes and fees. The new mobile service is powered by Gigs, the same firm behind the Klarna mobile servic Link :",
+      "excerpt": "[HIGH] Cash App\u2019s launching a phone service Company : The Verge AI Summary : Cash App's AT&T-based MVNO will offer an unlimited 5G data plan for $40 per month including taxes and fees. The new mobile service is powered by Gigs, the same firm behind the Klarna mobile servic Link :",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/01_ProductScreen_CashApp_Products.png?quality=90&amp;strip=all&amp;crop=0%2C10.723395278369%2C100%2C78.553209443262&amp;w=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theverge.com/tech/948181/cash-app-mobile",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 3,
+  "has_cta": true,
+  "slides": [
+    "Those paying the $4.99/per month or $29.99/year subscription for The Weather Channel.",
+    "Previously Rejected Articles Now Recovered.",
+    "FOLLOW @graitech"
+  ]
+}
