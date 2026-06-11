@@ -1,0 +1,326 @@
+{
+  "email_received_at": "2026-06-11T14:34-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Extract Data with On-demand and Batch Pipelines Dynamically | Amazon Web Services",
+  "subject": "\ud83d\udea8 AI Alert: 96 new launches \u2014 GitHub Blog, Bloomberg Tech, CNBC Technology",
+  "source_date": "Thu, 11 Jun 2026 14:34:53 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Apple",
+    "Amazon",
+    "AWS",
+    "Tesla"
+  ],
+  "models": [
+    "Claude 4",
+    "Claude",
+    "Gemini",
+    "Grok",
+    "Sora"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://aws.amazon.com/blogs/machine-learning/extract-data-with-on-demand-and-batch-pipelines-dynamically/",
+  "article_title": "Extract Data with On-demand and Batch Pipelines Dynamically | Amazon Web Services",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a58576c251065e32.png",
+  "article_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/02/ML-18264-4.png",
+  "article_items": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/extract-data-with-on-demand-and-batch-pipelines-dynamically/",
+      "title": "Extract Data with On-demand and Batch Pipelines Dynamically | Amazon Web Services",
+      "description": "This post demonstrates an intelligent document processing pipeline that consists of both on-demand inference and batch inference options on Amazon Bedrock to enable the flexibility on the document processing time and cost.",
+      "excerpt": "This post demonstrates an intelligent document processing pipeline that consists of both on-demand inference and batch inference options on Amazon Bedrock to enable the flexibility on the document processing time and cost.",
+      "summary": "It also explains how to dynamically specify the large language model and prompts at the document level, enabling you to extract data from multiple types of documents using the same pipelines. As of this writing, the Claude 4 Sonnet model only allows a maximum of 20 images per multimodal invocation. This post demonstrates an intelligent document processing pipeline that consists of both on-demand inference and batch inference options on Amazon Bedrock to enable the flexibility on the document processing time and cost. With parallelism enabled using the Python\u2019s multiprocessing module, both Lambda functions of the batch inference pipeline can process 1,000 documents within 15 minutes. With parallelism enabled using the Python\u2019s multiprocessing module, both Lambda functions of the batch inference pipeline can process 1,000 documents within 15 minutes.",
+      "what_happened": "It also explains how to dynamically specify the large language model and prompts at the document level, enabling you to extract data from multiple types of documents using the same pipelines. As of this writing, the Claude 4 Sonnet model only allows a maximum of 20 images per multimodal invocation.",
+      "why_matters": "This post demonstrates an intelligent document processing pipeline that consists of both on-demand inference and batch inference options on Amazon Bedrock to enable the flexibility on the document processing time and cost. With parallelism enabled using the Python\u2019s multiprocessing module, both Lambda functions of the batch inference pipeline can process 1,000 documents within 15 minutes.",
+      "what_to_watch": "With parallelism enabled using the Python\u2019s multiprocessing module, both Lambda functions of the batch inference pipeline can process 1,000 documents within 15 minutes.",
+      "key_points": [
+        "It also explains how to dynamically specify the large language model and prompts at the document level, enabling you to extract data from multiple types of documents using the same pipelines.",
+        "As of this writing, the Claude 4 Sonnet model only allows a maximum of 20 images per multimodal invocation.",
+        "With parallelism enabled using the Python\u2019s multiprocessing module, both Lambda functions of the batch inference pipeline can process 1,000 documents within 15 minutes.",
+        "Post-processing Lambda function The Lambda function fetches the inference output JSONL from the batch inference data S3 bucket.",
+        "The main components in the batch inference pipeline includes: Batch Inference AWS Lambda function to pre-process the scanned PDFs, create JSONL files and submit the batch inference job.",
+        "Another key feature in this solution is the ability to specify the large language model (for on-demand pipeline) and prompt at the individual document level, enabling these pipelines to support various types of.",
+        "The following sections describe the details of the batch inference pipeline.",
+        "Finally, the batch inference Lambda function creates the Amazon Bedrock batch inference job using the JSONL artifacts from the previous step.",
+        "The Lambda function loops through the messages in the queue and extracts the document ID, LLM model ID, prompt ID/version, and system promptID/version.",
+        "The pipeline on the right is the batch inference pipeline that processes multiple document requests in a single Amazon Bedrock batch inference job, where your model invocation will be processed asynchronously.",
+        "The JSONL files are uploaded to the Batch Inference Data S3 bucket.",
+        "The following screenshot is the Events for your reference: You can also deploy the batch pipeline following the same steps."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a58576c251065e32.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/02/ML-18264-4.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/c0r1975ded7o?at_medium=RSS&at_campaign=rss",
+      "title": "Who is Elon Musk and what is his net worth?",
+      "description": "The boss of X, Tesla and SpaceX is the world's richest person. and might even soon become a trillionaire.",
+      "excerpt": "The boss of X, Tesla and SpaceX is the world's richest person. and might even soon become a trillionaire.",
+      "summary": "A chainsaw, two hats and Lil X: Musk's eventful time at Doge Musk announced his departure from the White House on 28 May 2025. In early 2024, his reach expanded further after Donald Trump's victory in the US presidential election. He also has ambitions in the AI sector, being an early investor in ChatGPT's parent company before parting ways in 2018, and setting up his own company xAI \"to understand the true nature of the universe\" in 2023. and a new electric car company, Tesla, where he chaired the board until becoming chief executive in 2008. Despite his own interest in artificial intelligence, he has also been one of the most prominent figures expressing concern about the supposed threat to humanity's future that super-intelligent AIs might pose. However, the value of the firm plunged from the $44bn he originally paid to just $9.4bn, according to some.",
+      "what_happened": "A chainsaw, two hats and Lil X: Musk's eventful time at Doge Musk announced his departure from the White House on 28 May 2025. In early 2024, his reach expanded further after Donald Trump's victory in the US presidential election.",
+      "why_matters": "He also has ambitions in the AI sector, being an early investor in ChatGPT's parent company before parting ways in 2018, and setting up his own company xAI \"to understand the true nature of the universe\" in 2023. and a new electric car company, Tesla, where he chaired the board until becoming chief executive in 2008.",
+      "what_to_watch": "Despite his own interest in artificial intelligence, he has also been one of the most prominent figures expressing concern about the supposed threat to humanity's future that super-intelligent AIs might pose. However, the value of the firm plunged from the $44bn he originally paid to just $9.4bn, according to some.",
+      "key_points": [
+        "A chainsaw, two hats and Lil X: Musk's eventful time at Doge Musk announced his departure from the White House on 28 May 2025.",
+        "In early 2024, his reach expanded further after Donald Trump's victory in the US presidential election.",
+        "However, the value of the firm plunged from the $44bn he originally paid to just $9.4bn, according to some estimates.",
+        "The initiative oversaw deep.",
+        "The boss of X, Tesla and SpaceX is the world's richest person.",
+        "He also has ambitions in the AI sector, being an early investor in ChatGPT's parent company before parting ways in 2018, and setting up his own company xAI \"to understand the true nature of the universe\" in 2023.",
+        "He has claimed that the rise of artificial intelligence, combined with a declining birth rate, could result in \"not enough people\" being in the world.",
+        "Musk officially endorsed Trump for a second term in 2024 after his attempted assassination and became one of the campaign's foremost backers and influencers.",
+        "Musk has fathered 14 children.",
+        "Despite his own interest in artificial intelligence, he has also been one of the most prominent figures expressing concern about the supposed threat to humanity's future that super-intelligent AIs might pose.",
+        "In October 2025, he became the first person to achieve a net worth of more than half a trillion dollars, according to Forbes, which tracks the wealth of billionaires.",
+        "In December 2024, a Delaware judge rejected his claim to it for a second time , but in December 2025 the package was reinstated by the Delaware Supreme Court."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7da2e5914016c8e5.webp",
+      "image_url": "https://ichef.bbci.co.uk/news/480/cpsprodpb/e2d6/live/9a3ff590-6420-11f1-b421-199136196dd5.jpg.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.cnet.com/news-live/gemini-down-live-updates-google-workspaces-ai-errors/",
+      "title": "Gemini Outage Mostly Resolved: What Went Wrong for Google's AI",
+      "description": "Service disruptions inhibited many Google users' AI work on Wednesday. Here's what Google said happened.",
+      "excerpt": "Service disruptions inhibited many Google users' AI work on Wednesday. Here's what Google said happened.",
+      "summary": "As AI Expands, Erin Brockovich Taps Communities to Map Data Center Concerns AI Chatbot Pricing Comparison: Here's What You Get When You Pay AI Detectors Are Garbage: Here Is How to Spot a Bot Yourself Apple Cider Vinegar: Here's What to Know About Health Benefits, Proper Dosage and More Best Travel Tech Gifts: Must-Haves for the Journey and the Destination The 23 Best Luxury Gifts Our Editors Say Are Worth Every Penny Best Travel Tech Gifts: Must-Haves for the Journey and the Destination The 23 Best Luxury Gifts. The company confirmed at 6 p.m. On a status update page , the company said it had resolved issues with its Haiku 4.5 model after reports of malfunctions. Google says its next update will arrive at 8:30 p.m. Google confirmed in an update at 11:37 a.m.",
+      "what_happened": "As AI Expands, Erin Brockovich Taps Communities to Map Data Center Concerns AI Chatbot Pricing Comparison: Here's What You Get When You Pay AI Detectors Are Garbage: Here Is How to Spot a Bot Yourself Apple Cider Vinegar: Here's What to Know About Health Benefits, Proper Dosage and More Best Travel Tech Gifts: Must-Haves for the Journey and the Destination The 23 Best Luxury Gifts Our Editors Say Are Worth Every Penny Best Travel Tech Gifts: Must-Haves for the Journey and the Destination The 23 Best Luxury Gifts.",
+      "why_matters": "The company confirmed at 6 p.m. On a status update page , the company said it had resolved issues with its Haiku 4.5 model after reports of malfunctions.",
+      "what_to_watch": "Google says its next update will arrive at 8:30 p.m. Google confirmed in an update at 11:37 a.m.",
+      "key_points": [
+        "As AI Expands, Erin Brockovich Taps Communities to Map Data Center Concerns AI Chatbot Pricing Comparison: Here's What You Get When You Pay AI Detectors Are Garbage: Here Is How to Spot a Bot Yourself Apple Cider.",
+        "The company confirmed at 6 p.m.",
+        "Google confirmed in an update at 11:37 a.m.",
+        "A \"mitigation\" or fix is on the way, Google confirmed at 9:24 a.m.",
+        "So when I see something like \"Gemini is down,\" my mind goes to all of the Google products that have integrated the AI system over the past few years.",
+        "Google still hasn't given us many details about the underlying issue, but it did confirm that the error codes 1099 and 1076 are part of the issue.",
+        "PT that some fixes to the Gemini outage are on the way.",
+        "I had the flash model selected, which I immediately knew wouldn't be the best model for the task after I hit \"run.\" But I didn't have to wait long to fix my error, because Gemini couldn't run the task at all.",
+        "On a status update page , the company said it had resolved issues with its Haiku 4.5 model after reports of malfunctions.",
+        "I checked my Google Health app, which is what the old Fitbit app has become, and had a conversation with the chatbot there about why the fact that I feel like I'm coming down with a cold isn't showing up in my biometric.",
+        "Google said it will issue another update at 9:30 a.m.",
+        "Most likely, the Google engineering teams caught the issue late last night or early this morning, before many of us logged on for work at 8 a.m."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/caec2fab5a1f8542.jpg",
+      "image_url": "https://www.cnet.com/a/img/resize/d8d148527d16d67eed889cc163d314cb9e39acec/hub/2026/06/11/c3cbe2d8-9e0a-443d-ac83-5b6d83d76ce2/gettyimages-2263054879.jpg?auto=webp&width=1200",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.databricks.com/blog/ingesting-milky-way-petabyte-scale-zerobus-ingest",
+      "title": "Ingesting the Milky Way: Petabyte-Scale with Zerobus Ingest",
+      "description": "Explore the engineering behind Zerobus Ingest. Learn how dynamic partitioning and zero-copy parsing enable effortless petabyte-scale data pipelines.",
+      "excerpt": "Explore the engineering behind Zerobus Ingest. Learn how dynamic partitioning and zero-copy parsing enable effortless petabyte-scale data pipelines.",
+      "summary": "Partner Program Explore benefits, tiers and how to become a partner Partner Solutions Find custom industry and migration solutions Platform Overview A unified platform for data, analytics and AI Governance Unified governance for all data, analytics and AI assets Artificial Intelligence Build and deploy ML and GenAI applications Business Intelligence Intelligent analytics for real-world data Data Warehousing Serverless data warehouse for SQL analytics Data Engineering ETL and orchestration for batch and streaming. These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. We used NASA\u2019s NEOWISE dataset , representing 200 billion data points over 11 years, to benchmark Zerobus Ingest, ingesting 1 petabyte in under 24 hours, with zero pre-configuration and stable latency.",
+      "what_happened": "Partner Program Explore benefits, tiers and how to become a partner Partner Solutions Find custom industry and migration solutions Platform Overview A unified platform for data, analytics and AI Governance Unified governance for all data, analytics and AI assets Artificial Intelligence Build and deploy ML and GenAI applications Business Intelligence Intelligent analytics for real-world data Data Warehousing Serverless data warehouse for SQL analytics Data Engineering ETL and orchestration for batch and streaming.",
+      "why_matters": "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site.",
+      "what_to_watch": "We used NASA\u2019s NEOWISE dataset , representing 200 billion data points over 11 years, to benchmark Zerobus Ingest, ingesting 1 petabyte in under 24 hours, with zero pre-configuration and stable latency.",
+      "key_points": [
+        "Partner Program Explore benefits, tiers and how to become a partner Partner Solutions Find custom industry and migration solutions Platform Overview A unified platform for data, analytics and AI Governance Unified.",
+        "Zero-copy high-performance data handling Zerobus's main goal is to allow an efficient, row-by-row transfer of data streams of any volume.",
+        "We used NASA\u2019s NEOWISE dataset , representing 200 billion data points over 11 years, to benchmark Zerobus Ingest, ingesting 1 petabyte in under 24 hours, with zero pre-configuration and stable latency.",
+        "The result was that we built zeroparser : Bridging this gap by using single-pass parsing with zero memory allocations, enabling it to sustain throughputs of ~1 GB/s protobuf parsing per CPU core even with dynamic.",
+        "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+        "Zeroparser is open-sourced as part of the Zerobus SDK available here .",
+        "The unit of granularity is the stream connection, not the partition assignment.",
+        "The number of partitions and the distribution of data across them affect a consumer's ability to keep up with ingestion.",
+        "Our benchmark was deployed on Kubernetes with one Locust master and a fleet of Locust workers, each running as a separate pod.",
+        "If you are ready to get started with Zerobus Ingest, refer to our technical documentation , the Zerobus Ingest SDK , or check out the GitHub repo with the Neowise benchmark .",
+        "Zerobus gives you the same guarantee.",
+        "That's the problem Zerobus Ingest is built to solve."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/918c943cdb11b738.png",
+      "image_url": "https://www.databricks.com/sites/default/files/2026-06/zerobus-blog.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+      "title": "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+      "description": "We\u2019re announcing a multi-year global alliance with DXC Technology, one of the world\u2019s largest IT services companies.",
+      "excerpt": "We\u2019re announcing a multi-year global alliance with DXC Technology, one of the world\u2019s largest IT services companies.",
+      "summary": "We\u2019re announcing a multi-year global alliance with DXC Technology, one of the world\u2019s largest IT services companies.",
+      "what_happened": "We\u2019re announcing a multi-year global alliance with DXC Technology, one of the world\u2019s largest IT services companies.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "We\u2019re announcing a multi-year global alliance with DXC Technology, one of the world\u2019s largest IT services companies."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/62bbdc0508a01718.png",
+      "image_url": "https://www.anthropic.com/api/opengraph-illustration?name=Hand%20Megaphone&backgroundColor=coral",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/11/deezers-new-tool-can-identify-ai-music-from-spotify-apple-music-and-others/",
+      "title": "Deezer's new tool can identify AI music from Spotify, Apple Music, and others | TechCrunch",
+      "description": "Deezer introduced a tool that scans playlists from Spotify, Apple Music, and other platforms to identify AI music.",
+      "excerpt": "Deezer introduced a tool that scans playlists from Spotify, Apple Music, and other platforms to identify AI music.",
+      "summary": "Deezer introduced a tool that scans playlists from Spotify, Apple Music, and other platforms to identify AI music.",
+      "what_happened": "Deezer introduced a tool that scans playlists from Spotify, Apple Music, and other platforms to identify AI music.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Deezer introduced a tool that scans playlists from Spotify, Apple Music, and other platforms to identify AI music."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9e92a0984cca0b65.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-2180853826.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://huggingface.co/blog/dlouapre/physics-intern",
+      "title": "PhysicsIntern: from an Autonomous Benchmark-runner to a Research Sidekick",
+      "description": "A Blog post by David Louapre on Hugging Face",
+      "excerpt": "A Blog post by David Louapre on Hugging Face",
+      "summary": "A Blog post by David Louapre on Hugging Face",
+      "what_happened": "A Blog post by David Louapre on Hugging Face",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "A Blog post by David Louapre on Hugging Face"
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d59ae12b4ef6f8e8.png",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/687b3be66012eb65451278fd/nHTjNbocvJmarlrvTTsO6.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ce233decf43efb77.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/087643f693880075.png"
+      ],
+      "extra_image_urls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/687b3be66012eb65451278fd/5_xpWcHhE97ZmxWnjptVk.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/687b3be66012eb65451278fd/58Kp2YwYiEh9HK7CT5Ln7.png"
+      ]
+    },
+    {
+      "url": "https://www.thewrap.com/creative-content/movies/lionsgate-runway-ai-short-films-franchises-ip/",
+      "title": "Lionsgate Takes Equity Stake in Runway, Will Mine IP for AI-Generated Shorts",
+      "description": "Lionsgate will mine existing franchises to create AI-generated short films as part of an expanded partnership with AI company Runway.",
+      "excerpt": "Lionsgate will mine existing franchises to create AI-generated short films as part of an expanded partnership with AI company Runway.",
+      "summary": "Lionsgate will mine existing franchises to create AI-generated short films as part of an expanded partnership with AI company Runway.",
+      "what_happened": "Lionsgate will mine existing franchises to create AI-generated short films as part of an expanded partnership with AI company Runway.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Lionsgate will mine existing franchises to create AI-generated short films as part of an expanded partnership with AI company Runway."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f7461b1fa8c18336.jpg",
+      "image_url": "https://www.thewrap.com/wp-content/uploads/2023/04/keanu-reeves-john-wick.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 5,
+  "has_cta": true,
+  "slides": [
+    "Extract Data with On-demand and Batch Pipelines Dynamically.",
+    "Who is Elon Musk and what is his net worth.",
+    "Ingesting the Milky Way Petabyte.",
+    "PhysicsIntern from an Autonomous Benchmark-runner to a Research Sidekick.",
+    "FOLLOW @graitech"
+  ]
+}
