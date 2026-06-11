@@ -1,0 +1,17 @@
+{
+  "posts": [
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260611-161413/01_20260611-0554_profiling-in-pytorch-part-2-from-nnlinear-to-a-fused-mlp",
+      "caption": "Profiling in PyTorch Part 2 From nn.Linear to a Fused MLP.\n\nSwipe for the full breakdown.\n\n- It does not launch a kernel on the GPU.\n- The launch parameters were chosen for the hardware.\n- This is also our way of paying tribute to one of the greatest lines ever written.\n- The three GEMMs each do an extra cudaOccupancyMaxActiveBlocksPerMultiprocessor call before the launch.\n- The answer is in the kernel's name.\n\nIs Google moving too fast, or not fast enough? Let's hear it.\n\nSave this before it disappears from your feed.\n\nSources:\n- https://huggingface.co/blog/torch-mlp-fusion\n- https://spectrum.ieee.org/isomorphic-labs-ai-drug-discovery\n- https://www.statnews.com/2026/06/10/sepsis-algorithm-shouldnt-require-time-machine-ai-prognosis/?utm_campaign=rss\n- https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/\n- https://cryptobriefing.com/cohere-north-mini-code-release/\n\n#AIRegulation #TechLaw #AITools #ProductivityAI #AIProductivity #AIInfrastructure #AIChips #GoogleAI #Gemini #GoogleDeepMind #DeepMind #TechTrends #Innovation #EmergingTech #AINews #FutureTech #DigitalTransformation #Technology #LearnAI #DeepLearning\n\n-\nThis is not legal advice. Consult a qualified professional for guidance.\nAI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.\n-\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260611-161413/01_20260611-0554_profiling-in-pytorch-part-2-from-nnlinear-to-a-fused-mlp/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260611-161413/01_20260611-0554_profiling-in-pytorch-part-2-from-nnlinear-to-a-fused-mlp/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260611-161413/01_20260611-0554_profiling-in-pytorch-part-2-from-nnlinear-to-a-fused-mlp/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260611-161413/01_20260611-0554_profiling-in-pytorch-part-2-from-nnlinear-to-a-fused-mlp/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260611-161413/01_20260611-0554_profiling-in-pytorch-part-2-from-nnlinear-to-a-fused-mlp/slide_05.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload"
+    }
+  ]
+}

@@ -1,0 +1,320 @@
+{
+  "email_received_at": "2026-06-11T05:54-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP",
+  "subject": "\ud83d\udea8 AI Alert: 93 new launches \u2014 Bloomberg Tech, The Robot Report, IEEE Spectrum",
+  "source_date": "Thu, 11 Jun 2026 05:54:18 -0700",
+  "companies": [
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "NVIDIA",
+    "Hugging Face",
+    "Cohere",
+    "Isomorphic Labs",
+    "Targets Isomorphic Labs"
+  ],
+  "models": [
+    "Claude",
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://huggingface.co/blog/torch-mlp-fusion",
+  "article_title": "Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/bf43ce69fd596d21.png",
+  "article_image_url": "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/torch-mlp-fusion/transpose-cpu-dispatch.png",
+  "article_items": [
+    {
+      "url": "https://huggingface.co/blog/torch-mlp-fusion",
+      "title": "Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP",
+      "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "excerpt": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "summary": "It does not launch a kernel on the GPU. The launch parameters were chosen for the hardware. The three GEMMs each do an extra cudaOccupancyMaxActiveBlocksPerMultiprocessor call before the launch. The answer is in the kernel's name. We should also expect two pointwise kernel launches, one for the GeLU and one for the multiplication. The three GEMMs each do an extra cudaOccupancyMaxActiveBlocksPerMultiprocessor call before the launch.",
+      "what_happened": "It does not launch a kernel on the GPU. The launch parameters were chosen for the hardware.",
+      "why_matters": "The three GEMMs each do an extra cudaOccupancyMaxActiveBlocksPerMultiprocessor call before the launch. The answer is in the kernel's name.",
+      "what_to_watch": "We should also expect two pointwise kernel launches, one for the GeLU and one for the multiplication. The three GEMMs each do an extra cudaOccupancyMaxActiveBlocksPerMultiprocessor call before the launch.",
+      "key_points": [
+        "It does not launch a kernel on the GPU.",
+        "The launch parameters were chosen for the hardware.",
+        "This is also our way of paying tribute to one of the greatest lines ever written in the history of deep learning research (Figure 6).",
+        "The three GEMMs each do an extra cudaOccupancyMaxActiveBlocksPerMultiprocessor call before the launch.",
+        "The answer is in the kernel's name.",
+        "Figure 12 shows the profile for the LigerGEGLUMLP layer using the Liger kernels from the Hub.",
+        "Where x is the input, w is the weight and b is the bias.",
+        "the CPU dispatch chain, launch overhead, the difference between an overhead-bound and a compute-bound regime, and some internals of torch.compile .",
+        "The CPU schedules and launches these kernels.",
+        "There is no aten::add (the bias addition) in the dispatch chain of the linear layer, as seen in Figure 3.",
+        "The pointwise ops (GeLU and mul) launch directly, with no occupancy query.",
+        "This is the building block every deep learning model uses."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/bf43ce69fd596d21.png",
+      "image_url": "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/torch-mlp-fusion/transpose-cpu-dispatch.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b1c2c318b59418e0.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d9e11d5ab719a33d.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/bdb8d8808b5ece2f.png"
+      ],
+      "extra_image_urls": [
+        "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/torch-mlp-fusion/simple-mlp-eager.png",
+        "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/torch-mlp-fusion/simple-mlp-compile-trace.png",
+        "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/torch-mlp-fusion/simple-mlp-table.png"
+      ]
+    },
+    {
+      "url": "https://spectrum.ieee.org/isomorphic-labs-ai-drug-discovery",
+      "title": "The Google DeepMind Spinoff Chasing Hidden Drug Targets",
+      "description": "Isomorphic Labs is developing a new engine for AI drug discovery",
+      "excerpt": "Isomorphic Labs is developing a new engine for AI drug discovery",
+      "summary": "That said, in the years since the AF3 release, multiple groups have evaluated it along the axis of pocket novelty. When the state faced the most destructive storm in the company\u2019s history, Hurricane Helene, Georgia Power deployed a rapid response team that utilized its \u201csmart grid\u201d and restored power to more than 1 million customers within days. But the company shut down the smelter in 2012. One company building an agriphotovoltaic plant raced to bring construction to 30 percent completion, which the new law said was the threshold for being allowed to proceed. See full bio \u2192 Why Orbital Data Centers Are Harder Than Silicon Valley Thinks Beyond Dexterity: Why Contact May Define the Next Era of Robotics How JPL Keeps the 13-Year-Old Curiosity Rover Doing Science \u200bBoston Dynamics and Google DeepMind Teach Spot to Reason\u200b AI Trained on Birdsong Can Recognize Whale Calls How.",
+      "what_happened": "That said, in the years since the AF3 release, multiple groups have evaluated it along the axis of pocket novelty. When the state faced the most destructive storm in the company\u2019s history, Hurricane Helene, Georgia Power deployed a rapid response team that utilized its \u201csmart grid\u201d and restored power to more than 1 million customers within days.",
+      "why_matters": "But the company shut down the smelter in 2012. One company building an agriphotovoltaic plant raced to bring construction to 30 percent completion, which the new law said was the threshold for being allowed to proceed.",
+      "what_to_watch": "See full bio \u2192 Why Orbital Data Centers Are Harder Than Silicon Valley Thinks Beyond Dexterity: Why Contact May Define the Next Era of Robotics How JPL Keeps the 13-Year-Old Curiosity Rover Doing Science \u200bBoston Dynamics and Google DeepMind Teach Spot to Reason\u200b AI Trained on Birdsong Can Recognize Whale Calls How.",
+      "key_points": [
+        "That said, in the years since the AF3 release, multiple groups have evaluated it along the axis of pocket novelty.",
+        "The tiny squares to the left and right in this image are billboards 200 meters from the center of the explosion.",
+        "The more people that document, the more data that exists.",
+        "But the company shut down the smelter in 2012.",
+        "And you could see that as the pocket distance grows away from the training set, the model performance decreases.",
+        "When the state faced the most destructive storm in the company\u2019s history, Hurricane Helene, Georgia Power deployed a rapid response team that utilized its \u201csmart grid\u201d and restored power to more than 1 million customers.",
+        "Faculty Advisor Awards Navid Shaghaghi , a lecturer and researcher at Santa Clara University , in California, was recognized for his dedication to integrating service learning into engineering education and fostering.",
+        "One company building an agriphotovoltaic plant raced to bring construction to 30 percent completion, which the new law said was the threshold for being allowed to proceed.",
+        "The basic approach is now routine: People record the state, or anything else - as in the January 6 attack on the U.S.",
+        "This story was updated on 13 May, 2026 to correct the percentage of electricity that Sardinia exports.",
+        "He was one of the only people instructed to look toward the blast - through his welder\u2019s glasses - ready to follow the path of the fireball as it launched into the sky.",
+        "The scheme will help power the data center, which will be built both above and below ground, including in the mine\u2019s largest chambers nearly 500 meters below the Earth\u2019s surface."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/caef3f1a84c954a4.img",
+      "image_url": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202000%202667'%3E%3C/svg%3E",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.statnews.com/2026/06/10/sepsis-algorithm-shouldnt-require-time-machine-ai-prognosis/?utm_campaign=rss",
+      "title": "Your sepsis algorithm shouldn\u2019t require a time machine",
+      "description": "In this edition of AI Prognosis: Quirky medical data tripping up sepsis algorithms, AI scribes for patients, and some AI biotech news.",
+      "excerpt": "In this edition of AI Prognosis: Quirky medical data tripping up sepsis algorithms, AI scribes for patients, and some AI biotech news.",
+      "summary": "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance. If you do not allow these cookies then some or all of these services may not function properly. They help us to know which pages are the most and least popular and see how visitors move around the site. STAT Plus: For pancreatic cancer patients, an exciting drug can feel out of reach STAT Plus: Lilly shares safety, tolerability data on its next-gen obesity drug STAT Plus: The China question is tearing biotech apart Email alerts for authors and topics Get alerted when we publish a story by this author or on this.",
+      "what_happened": "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.",
+      "why_matters": "If you do not allow these cookies then some or all of these services may not function properly. They help us to know which pages are the most and least popular and see how visitors move around the site.",
+      "what_to_watch": "STAT Plus: For pancreatic cancer patients, an exciting drug can feel out of reach STAT Plus: Lilly shares safety, tolerability data on its next-gen obesity drug STAT Plus: The China question is tearing biotech apart Email alerts for authors and topics Get alerted when we publish a story by this author or on this.",
+      "key_points": [
+        "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+        "Y ou\u2019re reading the web edition of STAT\u2019s AI Prognosis newsletter, our subscriber-exclusive guide to artificial intelligence in health care and medicine.",
+        "If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.",
+        "STAT Plus: For pancreatic cancer patients, an exciting drug can feel out of reach STAT Plus: Lilly shares safety, tolerability data on its next-gen obesity drug STAT Plus: The China question is tearing biotech apart.",
+        "In 2026, it cost us $12,850 Lilly shares safety, tolerability data on its next-gen obesity drug What stripping civil service protections for thousands of federal workers will mean for HHS Drug companies, patient groups.",
+        "If you do not allow these cookies then some or all of these services may not function properly.",
+        "STAT Plus: AI medical devices\u2019 dirty FDA secret STAT Plus: When the path to good AI is littered with bad data STAT Plus: After hospitals, patients get a turn to bring AI into the doctor\u2019s office STAT Plus: Does.",
+        "You can reach Brittany on Signal at btrang.01.",
+        "In this edition of AI Prognosis: Quirky medical data tripping up sepsis algorithms, AI scribes for patients, and some AI biotech news.",
+        "They help us to know which pages are the most and least popular and see how visitors move around the site.",
+        "These cookies enable the website to provide enhanced functionality and personalisation.",
+        "Alcohol study discarded by Trump officials is published in scientific journal Diabetes association leader apologizes for expulsion of members, pledges to rebuild trust How living and practicing medicine abroad."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/bb4780d92fa40c0c.jpg",
+      "image_url": "https://www.statnews.com/wp-content/uploads/2026/06/Chess_AIPrognosis-1024x576.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/",
+      "title": "Landmark German ruling declares Google's AI Overviews are Google's own words and makes it liable for false answers",
+      "description": "A German regional court has ruled that Google is directly liable for the content of its AI search overviews. According to the court, previous limited liability protections for search engine operators don't apply to AI overviews. In this case, Google's AI had falsely linked two publishers to fraud and made claims that didn't appear in any of the linked sources. The ruling could set a precedent for AI-generated content liability worldwide.",
+      "excerpt": "A German regional court has ruled that Google is directly liable for the content of its AI search overviews. According to the court, previous limited liability protections for search engine operators don't apply to AI overviews. In this case, Google's AI had falsely linked two publishers to fraud and made claims that didn't appear in any of the linked sources. The ruling could set a precedent for AI-generated content liability worldwide.",
+      "summary": "The ruling could set a precedent for AI-generated content liability worldwide. A German regional court has ruled that Google is directly liable for the content of its AI search overviews. According to the court, previous limited liability protections for search engine operators don't apply to AI overviews. In this case, Google's AI had falsely linked two publishers to fraud and made claims that didn't appear in any of the linked sources. According to the court, previous limited liability protections for search engine operators don't apply to AI overviews.",
+      "what_happened": "The ruling could set a precedent for AI-generated content liability worldwide. A German regional court has ruled that Google is directly liable for the content of its AI search overviews.",
+      "why_matters": "According to the court, previous limited liability protections for search engine operators don't apply to AI overviews. In this case, Google's AI had falsely linked two publishers to fraud and made claims that didn't appear in any of the linked sources.",
+      "what_to_watch": "According to the court, previous limited liability protections for search engine operators don't apply to AI overviews.",
+      "key_points": [
+        "The ruling could set a precedent for AI-generated content liability worldwide.",
+        "A German regional court has ruled that Google is directly liable for the content of its AI search overviews.",
+        "According to the court, previous limited liability protections for search engine operators don't apply to AI overviews.",
+        "In this case, Google's AI had falsely linked two publishers to fraud and made claims that didn't appear in any of the linked sources."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b986e7c9076f86ca.png",
+      "image_url": "https://the-decoder.com/wp-content/uploads/2026/06/ai_overviews_hammer_law.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://cryptobriefing.com/cohere-north-mini-code-release/",
+      "title": "Cohere releases North Mini Code, a 30B parameter open-source coding model built for enterprise developers",
+      "description": "Cohere launched North Mini Code, a 30B parameter open-source MoE coding model with just 3B active parameters, targeting enterprise developers under the",
+      "excerpt": "Cohere launched North Mini Code, a 30B parameter open-source MoE coding model with just 3B active parameters, targeting enterprise developers under the",
+      "summary": "Cohere launched North Mini Code, a 30B parameter open-source MoE coding model with just 3B active parameters, targeting enterprise developers under the",
+      "what_happened": "Cohere launched North Mini Code, a 30B parameter open-source MoE coding model with just 3B active parameters, targeting enterprise developers under the",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Cohere launched North Mini Code, a 30B parameter open-source MoE coding model with just 3B active parameters, targeting enterprise developers under the"
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1164fcbdb8ebf899.png",
+      "image_url": "https://cryptobriefing.com/wp-content/themes/cryptobriefing-lovable/nexo-mark.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://cryptobriefing.com/anthropic-mythos-fable-5-cybersecurity/",
+      "title": "Anthropic rolls out public version of Mythos without cybersecurity features",
+      "description": "Anthropic launches Claude Fable 5, the first public Mythos-class AI model, with cybersecurity capabilities stripped out. Here's what it means for DeFi",
+      "excerpt": "Anthropic launches Claude Fable 5, the first public Mythos-class AI model, with cybersecurity capabilities stripped out. Here's what it means for DeFi",
+      "summary": "Anthropic launches Claude Fable 5, the first public Mythos-class AI model, with cybersecurity capabilities stripped out. Here's what it means for DeFi Here's what it means for DeFi Here's what it means for DeFi",
+      "what_happened": "Anthropic launches Claude Fable 5, the first public Mythos-class AI model, with cybersecurity capabilities stripped out. Here's what it means for DeFi",
+      "why_matters": "Here's what it means for DeFi",
+      "what_to_watch": "Here's what it means for DeFi",
+      "key_points": [
+        "Anthropic launches Claude Fable 5, the first public Mythos-class AI model, with cybersecurity capabilities stripped out.",
+        "Here's what it means for DeFi"
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ca90994be4f98393.jpg",
+      "image_url": "https://static.cryptobriefing.com/wp-content/uploads/2026/06/09230136/anthropic-releases-its-first-mythos-class-model-to-the-publi-800x420.jpeg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.therobotreport.com/neura-robotics-raise-up-1-4b-in-series-c-funding-physical-ai/",
+      "title": "NEURA Robotics to raise up to $1.4B in Series C funding for physical AI - The Robot Report",
+      "description": "NEURA Robotics plans to expand its platforms for robot learning and global production of humanoids and other systems.",
+      "excerpt": "NEURA Robotics plans to expand its platforms for robot learning and global production of humanoids and other systems.",
+      "summary": "NEURA Robotics plans to expand its platforms for robot learning and global production of humanoids and other systems.",
+      "what_happened": "NEURA Robotics plans to expand its platforms for robot learning and global production of humanoids and other systems.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "NEURA Robotics plans to expand its platforms for robot learning and global production of humanoids and other systems."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/603589c3fb6bc520.jpg",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/06/NEURA-Gym-copy.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2191174/gemini-in-chrome-expands-to-latin-america-middle-east/",
+      "title": "Gemini in Chrome expands further to Latin America and the Middle East - Engadget",
+      "description": "Gemini in Chrome continues to roll out and has now landed in Latin America, the Middle East and Africa.",
+      "excerpt": "Gemini in Chrome continues to roll out and has now landed in Latin America, the Middle East and Africa.",
+      "summary": "Gemini in Chrome continues to roll out and has now landed in Latin America, the Middle East and Africa.",
+      "what_happened": "Gemini in Chrome continues to roll out and has now landed in Latin America, the Middle East and Africa.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Gemini in Chrome continues to roll out and has now landed in Latin America, the Middle East and Africa."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ac3cdf8be986aad9.jpg",
+      "image_url": "https://www.engadget.com/img/gallery/gemini-in-chrome-expands-further-to-latin-america-and-the-middle-east/intro-1781086121.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 5,
+  "has_cta": true,
+  "slides": [
+    "Profiling in PyTorch Part 2 From nn.Linear to a Fused MLP.",
+    "The Google DeepMind Spinoff Chasing Hidden Drug Targets.",
+    "Anthropic rolls out public version of Mythos without cybersecurity features.",
+    "NEURA Robotics to raise up to $1.4B in Series C funding.",
+    "FOLLOW @graitech"
+  ]
+}
