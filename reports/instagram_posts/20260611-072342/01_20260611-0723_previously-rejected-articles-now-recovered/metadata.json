@@ -1,0 +1,122 @@
+{
+  "email_received_at": "2026-06-11T07:23+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Thu, 11 Jun 2026 07:23:42 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.cnbc.com/2026/06/10/jim-cramer-says-one-of-spacexs-biggest-risks-is-this-group-of-investors.html",
+      "title": "Jim Cramer says one of SpaceX's biggest risks is this group of investors",
+      "description": "CNBC's Jim Cramer said one of the biggest risks facing the SpaceX IPO is speculators who may rush to sell shares shortly after the stock begins trading.",
+      "text": "Jim Cramer says one of SpaceX\u2019s biggest risks is this group of investors CNBC\u2019s Jim Cramer said one of the biggest risks facing the SpaceX IPO is the presence of short-term speculators who may rush to sell shares shortly after the stock begins trading. While SpaceX is reportedly four times oversubscribed, Cramer said stronger demand and tighter share allocations would help ensure the stock ends up in the hands of long-term investors rather than traders looking for a quick profit. CNBC\u2019s Jim Cramer said Wednesday that one of the biggest risks facing the upcoming SpaceX IPO isn\u2019t a lack of demand \u2014 it\u2019s the possibility that too many investors are looking for a quick profit. \u201cThe speculators aren\u2019t there for the long haul. They may not even be there for the afternoon,\u201d the \u201c Mad Money \u201d host said. \u201cThis cohort worries me.\u201d Elon Musk\u2019s rocket company is reportedly four times oversubscribed , meaning demand from investors is roughly four times greater than the number of shares available in the offering. While that typically signals strong interest, Cramer said the composition of the buyer base may matter more than the headline demand figure. His concern is that some investors are treating the IPO as a short-term trade rather than a long-term investment. If those shareholders rush to sell after the stock begins trading, it could create volatility and pressure the shares. \u201cThese people could hurt you,\u201d Cramer said. \u201cThey\u2019re not your friends, because they just want to flip this thing as soon as possible.\u201d Instead, Cramer said the healthiest IPOs tend to attract investors who are willing to hold the stock for years. \u201cWhat you want is a deal where the only buyers are retail investors who don\u2019t touch it, or maybe buy more after the opening, coupled with big institutions who got in very early and don\u2019t want to sell it because they promised they wouldn\u2019t,\u201d he said. Cramer added that a tightly allocated offering can help reduce the influence of short-term traders. In his view, investors should actually hope they receive fewer shares than they request because it signals demand is outstripping supply. \u201cIf you\u2019re in for 100 shares and you only get 25 shares, you know you\u2019re in good shape,\u201d he said. \u201cIt makes everyone hungry to buy more.\u201d While SpaceX\u2019s reported oversubscription should help limit the impact of speculators, Cramer said he would feel more comfortable if demand were even stronger. \u201cGiven that this deal is four times oversubscribed, that shouldn\u2019t happen,\u201d he said. \u201cBut, in reality, I accept that if SpaceX were ten times oversubscribed, I would feel a heck of a lot better.\u201d Jim Cramer\u2019s Guide to Investing Sign up now for the CNBC Investing Club to follow Jim Cramer\u2019s every move in the market. Want to take a deep dive into Cramer\u2019s world? Hit him up! Mad Money Twitter - Jim Cramer Twitter - Facebook - Instagram Questions, comments, suggestions for the \u201cMad Money\u201d website? madcap@cnbc.com Kuwait closes airspace, Israel warns of launches from Lebanon after U.S strikes in Iran OpenAI mulls slashing prices as it competes with Anthropic for users: WSJ Trump says \u2018I love the inflation\u2019 after consumer price index hits 3-year high Oracle beats on earnings, but stock drops on plans to raise another $20 billion Get this delivered to your inbox, and more info about our products and services. Data is a real-time snapshot *Data is delayed at least 15 minutes. Global Business and Financial News, Stock Quotes, and Market Data and Analysis. We and our partners also use tools on this site to provide the services, personalize your experience, and for analytics, marketing, and advertising. If you previously opted out of selling, sharing, or targeted advertising on this site, you will need to update your Privacy Choice. Notice of Right to Opt-Out of Sale/Sharing and Targeted Advertising In addition to the toggle, you should also provide the information requested in our \u201cOpt-Out Form\u201d (accessible by clicking the \u201c+\u201d below), which will enable us to take action on your opt-out election more broadly than just on this site (e.g., we will be able to stop sharing your email with third parties in order to target you with adverting on other site and services, such as social media platforms). If you opt-out, you may continue to see advertising, including ads that may be based on personal information processed before you opted out. Manage Opt-Out Preferences: Move Toggle to Left and Click \u201cConfirm My Choice\u201d and then Complete Opt-Out Form (accessible by clicking \u201c+\u201d below) You should also provide the info requested in this Opt-Out Form , which will enable us to take action on your opt-out election more broadly than just this site (e.g., we will be able to stop sharing your email with third parties in order to target you with adverting on other sites and services, such as social media platforms).",
+      "excerpt": "CNBC's Jim Cramer said one of the biggest risks facing the SpaceX IPO is speculators who may rush to sell shares shortly after the stock begins trading.",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108316639-1780576646880-gettyimages-2278970792-yanow-notitle260603_npysS.jpeg?v=1780576706&amp;w=1920&amp;h=1080",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.cnbc.com/2026/06/10/jim-cramer-says-one-of-spacexs-biggest-risks-is-this-group-of-investors.html",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://openai.com/index/prc-linked-influence-operations-ai-debates/",
+      "title": "PRC-linked influence operations are targeting AI debates in the US",
+      "description": "A new report from OpenAI details PRC-linked influence operations using AI to target U.S. tech debates, data center narratives, tariffs, and false claims about ChatGPT.",
+      "text": "PRC-linked influence operations are targeting AI debates in the US Our mission is to ensure that artificial general intelligence benefits all of humanity. We advance this mission by deploying our innovations to build democratic AI: AI shaped by democratic principles, governed by common-sense rules and designed to help people solve hard problems while protecting them from real harm. That mission also requires identifying and disrupting attempts by authoritarian regimes and their proxies to use AI systems to coerce critics, surveil communities or covertly interfere in democratic societies. In this report, we describe two clusters of ChatGPT accounts likely originating from China that we banned after they used our models in support of apparent covert influence operations that promoted narratives in an attempt to manipulate a legitimate debate about American AI and wider tech policies. The first cluster generated social media comments and images claiming that data center buildouts for AI were increasing electricity prices for average families. We named this cluster the \u201cData Center Bandwagon\u201d campaign. The second cluster generated comments and images criticizing US tariffs as attempts to dominate technological competition and specified in their prompts that the content should not include China\u2019s leader Xi Jinping in the output and instead include only President Trump. This cluster was connected to a network of likely inauthentic social media accounts that were also likely targeting OpenAI by claiming ChatGPT user data had been compromised. These allegations were entirely false. We named this second cluster the \u201cTech and Tariffs\u201d campaign. The targeting of OpenAI and US data center buildouts is significant not because the operation appears to have shifted public opinion, but because it shows PRC-origin influence operators testing narratives against AI infrastructure \u2013 a foundation of US technological leadership, economic growth and the broader democratic AI ecosystem. The operation sought to exploit and amplify existing public concerns about energy prices and local impacts of data center development, but we found no evidence of meaningful breakout beyond its own activity. Foreign influence operations have long sought to latch onto existing local issues and sincerely held beliefs, using them to build credibility, amplify divisions or exacerbate public distrust. In this case, the operators attempted to covertly insert themselves into an ongoing American debate about the future of the country\u2019s AI capabilities while hiding who they were and what motivated them. By publishing these findings, we aim to help our industry, governments, civil society and the public better identify and disrupt attempts by foreign threat actors to manipulate legitimate public debates, weaken democratic institutions and advance totalitarianism with AI characteristics - the use of AI for surveillance, censorship and control over political, social and private life. [MEDIUM] PRC-linked influence operations are targeting AI debates in the US Company : OpenAI Blog Summary : A new report from OpenAI details PRC-linked influence operations using AI to target U.S. tech debates, data center narratives, tariffs, and false claims about ChatGPT. Link :",
+      "excerpt": "A new report from OpenAI details PRC-linked influence operations using AI to target U.S. tech debates, data center narratives, tariffs, and false claims about ChatGPT.",
+      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/2QCspAgfjkdGeWDut7k5MN/030874503264f486120aaa1b1e623b3e/Threat-Intelligence-Repart-SEO.png?w=1600&amp;h=900&amp;fit=fill",
+      "image_path": "",
+      "extra_image_urls": [
+        "https://images.ctfassets.net/kftzwdyauwt9/U3OuQtdga2BaxWxb0e2ge/2fdc2fb1cf5c70a8f77fc4b55236aa78/Frame2.png?w=3840&q=90&fm=webp",
+        "https://images.ctfassets.net/kftzwdyauwt9/2QCspAgfjkdGeWDut7k5MN/030874503264f486120aaa1b1e623b3e/Threat-Intelligence-Repart-SEO.png?w=1600&h=900&fit=fill"
+      ],
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0e12b7b9470efa51.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9a95bfbbd038416b.png"
+      ],
+      "_rejected_url": "https://openai.com/index/prc-linked-influence-operations-ai-debates/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/10/decarts-new-world-model-can-simulate-hours-of-photorealistic-driving-with-some-caveats/",
+      "title": "Company : TechCrunch AI",
+      "description": "[HIGH] Decart\u2019s new world model can simulate hours of photorealistic driving \u2014 with some caveats Company : TechCrunch AI Summary : Decart is launching Oasis 3, a real-time world model that generates photorealistic driving environments for autonomous vehicle testing, now available via API for developers to build on. Link :",
+      "text": "[HIGH] Decart\u2019s new world model can simulate hours of photorealistic driving \u2014 with some caveats Company : TechCrunch AI Summary : Decart is launching Oasis 3, a real-time world model that generates photorealistic driving environments for autonomous vehicle testing, now available via API for developers to build on. Link :",
+      "excerpt": "[HIGH] Decart\u2019s new world model can simulate hours of photorealistic driving \u2014 with some caveats Company : TechCrunch AI Summary : Decart is launching Oasis 3, a real-time world model that generates photorealistic driving environments for autonomous vehicle testing, now available via API for developers to build on. Link :",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Oasis-a.png?resize=1200,677",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://techcrunch.com/2026/06/10/decarts-new-world-model-can-simulate-hours-of-photorealistic-driving-with-some-caveats/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.theverge.com/tech/948155/apple-siri-ai-chatbot-personality",
+      "title": "Company : The Verge AI",
+      "description": "[MEDIUM] Apple\u2019s new Siri AI knows when to shut up Company : The Verge AI Summary : Apple's new Siri AI is finally here, and so far, it seems like it works. I have access and have been messing around with it, and my biggest impression so far is that Siri AI is quite curt - which I me Link :",
+      "text": "[MEDIUM] Apple\u2019s new Siri AI knows when to shut up Company : The Verge AI Summary : Apple's new Siri AI is finally here, and so far, it seems like it works. I have access and have been messing around with it, and my biggest impression so far is that Siri AI is quite curt - which I me Link :",
+      "excerpt": "[MEDIUM] Apple\u2019s new Siri AI knows when to shut up Company : The Verge AI Summary : Apple's new Siri AI is finally here, and so far, it seems like it works. I have access and have been messing around with it, and my biggest impression so far is that Siri AI is quite curt - which I me Link :",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/videoframe_13193.png?quality=90&amp;strip=all&amp;crop=0%2C3.4613147178592%2C100%2C93.077370564282&amp;w=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theverge.com/tech/948155/apple-siri-ai-chatbot-personality",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.cnbc.com/2026/06/11/openai-mulls-slashing-prices-ahead-of-competition-from-anthropic-wsj.html",
+      "title": "OpenAI mulls slashing prices as it competes with Anthropic for users: WSJ",
+      "description": "OpenAI is reportedly mulling drastic price cuts to its AI models, as it looks to woo consumers from rival AI company Anthropic, the WSJ reported on Wednesday.",
+      "text": "OpenAI mulls slashing prices as it competes with Anthropic for users: WSJ OpenAI is reportedly considering cutting prices for paid access to its AI models, the WSJ reported on Wednesday, citing sources familiar with the matter. The ChatGPT developer is anticipating similar price cuts from rival Anthropic. These reports come amid mounting competition between both companies. OpenAI is mulling sharp price cuts to its artificial intelligence offerings, as it looks to woo consumers away from rival Anthropic, the Wall Street Journal reported Wednesday evening stateside, citing sources familiar with the matter. \u201cThe company is weighing significant cuts to what it charges for tokens, the unit of measurement artificial-intelligence firms use to bill for their products,\u201d the report said, adding that it was \u201cin anticipation of similar cuts the company expects at Anthropic,\u201d according to sources. The ChatGPT producer, which did not immediately respond to CNBC\u2019s requests for comment, currently charges consumers in tiered subscriptions of $8, $20 and $100 and above each month for access to its flagship GPT-5.5 models. Anthropic conversely charges users $17 each month with an annual subscription to Claude Pro, and $100 and above monthly for a subscription to Claude Max. The report on possible price cuts come as competition has been ramping up between the two companies. OpenAI on Monday confidentially filed for an initial public offering with the U.S. Securities and Exchange Commission, close on the heels of an IPO filing from Anthropic. Anthropic closed its Series H funding round on May 28 at a $965 billion valuation, slightly edging out OpenAI, which was valued at $852 billion in March. ChatGPT became the first app to reach 1 billion monthly app users in May \u2014 roughly three years after its November 2022 launch \u2014 surpassing the previous record set by Google Maps, which took around five years after launch to reach the same milestone, according to estimates from market intelligence firm Sensor Tower. Kuwait closes airspace, Israel warns of launches from Lebanon after U.S strikes in Iran Trump says \u2018I love the inflation\u2019 after consumer price index hits 3-year high Oracle beats on earnings, but stock drops on plans to raise another $20 billion Get this delivered to your inbox, and more info about our products and services. Data is a real-time snapshot *Data is delayed at least 15 minutes. Global Business and Financial News, Stock Quotes, and Market Data and Analysis. We and our partners also use tools on this site to provide the services, personalize your experience, and for analytics, marketing, and advertising. If you previously opted out of selling, sharing, or targeted advertising on this site, you will need to update your Privacy Choice. Notice of Right to Opt-Out of Sale/Sharing and Targeted Advertising In addition to the toggle, you should also provide the information requested in our \u201cOpt-Out Form\u201d (accessible by clicking the \u201c+\u201d below), which will enable us to take action on your opt-out election more broadly than just on this site (e.g., we will be able to stop sharing your email with third parties in order to target you with adverting on other site and services, such as social media platforms). If you opt-out, you may continue to see advertising, including ads that may be based on personal information processed before you opted out. Manage Opt-Out Preferences: Move Toggle to Left and Click \u201cConfirm My Choice\u201d and then Complete Opt-Out Form (accessible by clicking \u201c+\u201d below) You should also provide the info requested in this Opt-Out Form , which will enable us to take action on your opt-out election more broadly than just this site (e.g., we will be able to stop sharing your email with third parties in order to target you with adverting on other sites and services, such as social media platforms).",
+      "excerpt": "OpenAI is reportedly mulling drastic price cuts to its AI models, as it looks to woo consumers from rival AI company Anthropic, the WSJ reported on Wednesday.",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108316427-1780524884815-gettyimages-2278945689-AFP_B4XB779.jpeg?v=1780524953&amp;w=1920&amp;h=1080",
+      "image_path": "",
+      "extra_image_urls": [
+        "https://image.cnbcfm.com/api/v1/image/108316427-1780524884815-gettyimages-2278945689-AFP_B4XB779.jpeg?v=1780524953&w=1858&h=1045&vtcrop=y"
+      ],
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/dfbd0e3f2d32d58e.jpg"
+      ],
+      "_rejected_url": "https://www.cnbc.com/2026/06/11/openai-mulls-slashing-prices-ahead-of-competition-from-anthropic-wsj.html",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/",
+      "title": "Company : TechCrunch AI",
+      "description": "[HIGH] xAI fired an engineer who raised alarms about Grok safety, new lawsuit claims Company : TechCrunch AI Summary : A former xAI engineer is suing the company and SpaceX, alleging he was fired for raising AI safety concerns about Grok days before SpaceX's historic IPO. Link :",
+      "text": "[HIGH] xAI fired an engineer who raised alarms about Grok safety, new lawsuit claims Company : TechCrunch AI Summary : A former xAI engineer is suing the company and SpaceX, alleging he was fired for raising AI safety concerns about Grok days before SpaceX's historic IPO. Link :",
+      "excerpt": "[HIGH] xAI fired an engineer who raised alarms about Grok safety, new lawsuit claims Company : TechCrunch AI Summary : A former xAI engineer is suing the company and SpaceX, alleging he was fired for raising AI safety concerns about Grok days before SpaceX's historic IPO. Link :",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/03/grok-getty.jpg?resize=1200,800",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 6,
+  "has_cta": true,
+  "slides": [
+    "Jim Cramer says one of SpaceX's biggest risks is this group.",
+    "PRC-linked influence operations are targeting AI debates in the US.",
+    "With some caveats. With some caveats Rebecca Bellan 6:07 AM PDT \u00b7.",
+    "Share Gift Image: Apple Part Of WWDC 2026: All the news.",
+    "OpenAI mulls slashing prices as it competes with Anthropic for users WSJ.",
+    "FOLLOW @graitech"
+  ]
+}
