@@ -1,0 +1,81 @@
+{
+  "email_received_at": "2026-06-12T14:35+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Fri, 12 Jun 2026 14:35:52 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://pypi.org/project/nebeso/0.1.0/",
+      "title": "nebeso",
+      "description": "Open source AI cost tracking for OpenAI and Anthropic",
+      "text": "Tags ai , anthropic , cost , llm , observability , openai , tokens , tracking Provides-Extra: anthropic , bedrock , dev , langchain , llamaindex , openai Privacy first \u2014 we never store prompts, responses, or API keys See your costs at tokenbudget.com \u2014 broken down by feature, user, model, and project. Apache 2.0 \u2014 Free for personal and open source use. Commercial use requires license. See LICENSE . Tags ai , anthropic , cost , llm , observability , openai , tokens , tracking Provides-Extra: anthropic , bedrock , dev , langchain , llamaindex , openai Release history Release notifications | RSS feed Source Distributions Copy a direct link to the current filters https://pypi.org/project/nebeso/0.1.0/#files Copy Contributing to PyPI Developed and maintained by the Python community, for the Python community. Donate today! \"PyPI\", \"Python Package Index\", and the blocks logos are registered trademarks of the Python Software Foundation .",
+      "excerpt": "Open source AI cost tracking for OpenAI and Anthropic",
+      "image_url": "https://pypi.org/static/images/twitter.abaf4b19.webp",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://pypi.org/project/nebeso/0.1.0/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/jun/11/canada-mother-chatgpt-daughter-suicide-lawsuit",
+      "title": "Company : The Guardian Tech",
+      "description": "[MEDIUM] Canadian mother sues OpenAI, alleging ChatGPT led her daughter to kill herself Company : The Guardian Tech Summary : Suit filed in US alleges chatbot told Alice Carrier, 24, \u2018maybe this is just the end\u2019 as she struggled with suicidal thoughts A Canadian mother sued OpenAI and its CEO, Sam Altman, in US court on Thur Link :",
+      "text": "[MEDIUM] Canadian mother sues OpenAI, alleging ChatGPT led her daughter to kill herself Company : The Guardian Tech Summary : Suit filed in US alleges chatbot told Alice Carrier, 24, \u2018maybe this is just the end\u2019 as she struggled with suicidal thoughts A Canadian mother sued OpenAI and its CEO, Sam Altman, in US court on Thur Link :",
+      "excerpt": "[MEDIUM] Canadian mother sues OpenAI, alleging ChatGPT led her daughter to kill herself Company : The Guardian Tech Summary : Suit filed in US alleges chatbot told Alice Carrier, 24, \u2018maybe this is just the end\u2019 as she struggled with suicidal thoughts A Canadian mother sued OpenAI and its CEO, Sam Altman, in US court on Thur Link :",
+      "image_url": "https://i.guim.co.uk/img/media/f60de82acdf518360559012a8befee837437552b/659_559_2572_2057/master/2572.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=78c76ca4ecbb771f3f4f9dd0ec6c70ba",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theguardian.com/technology/2026/jun/11/canada-mother-chatgpt-daughter-suicide-lawsuit",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.producthunt.com/products/underpay",
+      "title": "Company : Product Hunt AI",
+      "description": "[MEDIUM] Meet Warren 3.0 Company : Product Hunt AI Summary : Your voice-supported AI financial planning partner Discussion | Link Link :",
+      "text": "[MEDIUM] Meet Warren 3.0 Company : Product Hunt AI Summary : Your voice-supported AI financial planning partner Discussion | Link Link :",
+      "excerpt": "[MEDIUM] Meet Warren 3.0 Company : Product Hunt AI Summary : Your voice-supported AI financial planning partner Discussion | Link Link :",
+      "image_url": "https://ph-files.imgix.net/34870857-47e0-4bdd-b282-785a867005e1.png?auto=format&amp;fit=crop&amp;frame=1&amp;h=512&amp;w=1024",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.producthunt.com/products/underpay",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.wired.com/story/you-probably-wont-get-rich-off-the-spacex-ipo/",
+      "title": "Company : Wired AI",
+      "description": "[HIGH] You Probably Won\u2019t Get Rich Off the SpaceX IPO Company : Wired AI Summary : The company has set aside an unusually high number of shares for retail investors. Still, experts say, you\u2019re just getting the crumbs. Link :",
+      "text": "[HIGH] You Probably Won\u2019t Get Rich Off the SpaceX IPO Company : Wired AI Summary : The company has set aside an unusually high number of shares for retail investors. Still, experts say, you\u2019re just getting the crumbs. Link :",
+      "excerpt": "[HIGH] You Probably Won\u2019t Get Rich Off the SpaceX IPO Company : Wired AI Summary : The company has set aside an unusually high number of shares for retail investors. Still, experts say, you\u2019re just getting the crumbs. Link :",
+      "image_url": "https://media.wired.com/photos/6a2b26d63472ef5ff1e6a164/191:100/w_1280,c_limit/Probably-Wont-Get-Rich-SpaceX-IPO-Business-AP-26156715402871.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.wired.com/story/you-probably-wont-get-rich-off-the-spacex-ipo/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 3,
+  "has_cta": true,
+  "slides": [
+    "Overview Launches 4 Reviews Alternatives Team More This is the 4th launch.",
+    "Previously Rejected Articles Now Recovered.",
+    "FOLLOW @graitech"
+  ]
+}
