@@ -1,0 +1,82 @@
+{
+  "email_received_at": "2026-06-12T21:33+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Fri, 12 Jun 2026 21:33:41 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20-valuation/",
+      "title": "Company : TechCrunch AI",
+      "description": "[HIGH] Mistral is rumored to be raising \u20ac3B at \u20ac20B valuation Company : TechCrunch AI Summary : The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion. Link :",
+      "text": "[HIGH] Mistral is rumored to be raising \u20ac3B at \u20ac20B valuation Company : TechCrunch AI Summary : The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion. Link :",
+      "excerpt": "[HIGH] Mistral is rumored to be raising \u20ac3B at \u20ac20B valuation Company : TechCrunch AI Summary : The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion. Link :",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2264771189.jpg?resize=1200,800",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20-valuation/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://github.com/ollama/ollama/pull/16549",
+      "title": "Company : Ollama",
+      "description": "[MEDIUM] ollama/ollama: v0.30.8 Company : Ollama Summary : ## What's Changed * docs: hermes desktop by @BruceMacD in",
+      "text": "[MEDIUM] ollama/ollama: v0.30.8 Company : Ollama Summary : ## What's Changed * docs: hermes desktop by @BruceMacD in Company : Ollama Summary : ## What's Changed * docs: hermes desktop by @BruceMacD in https://github.com/ollama/ollama/pull/16549 * docs: omp by @BruceMacD in \u26a1 BREAKING AI UPDATE \ud83d\udea8 105 New AI Events Detected 12 Jun 2026, 11:58 PM IST Major AI events just happened. Here's what you need to know: \ud83d\ude80 NEW LAUNCH HIGH \ud83d\udcb0 FINANCE & FINTECH AI SpaceX market cap tops $2 trillion after shares of Elon Musk's rocket company gain 25% on debut \ud83d\udccc CNBC Technology SpaceX shares soared on Friday as trading commenced on the Nasdaq. https://www.cnbc.com/2026/06/12/spacex-stock-jumps-2-trillion.html \u2192 Read full story HIGH \ud83d\udcb0 FINANCE & FINTECH AI Elon Musk becomes world's first trillionaire as SpaceX begins trading on the Nasdaq \ud83d\udccc CNBC Technology Elon Musk's stake in SpaceX is worth more than $766 billion. Combined with his Tesla holdings, Musk's net worth as of Friday is roughly $1.05 trillion. https://www.cnbc.com/2026/06/12/elon-musk-trillionaire-spacex.html \u2192 Read full story \ud83d\ude80 NEW LAUNCH HIGH \ud83d\udcb0 FINANCE & FINTECH AI SpaceX Surges 11% In Public Debut | Open... \u26a1 BREAKING AI UPDATE \ud83d\udea8 105 New AI Events Detected 12 Jun 2026, 11:58 PM IST Major AI events just happened. [MEDIUM] ollama/ollama: v0.30.8 Company : Ollama Summary : ## What's Changed * docs: hermes desktop by @BruceMacD in /16549",
+      "excerpt": "[MEDIUM] ollama/ollama: v0.30.8 Company : Ollama Summary : ## What's Changed * docs: hermes desktop by @BruceMacD in",
+      "image_url": "https://opengraph.githubassets.com/ceeebea247afcd58b6d051091000ff293bc9e0c1bf24316c530242ee8e2e2add/ollama/ollama/pull/16549",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://github.com/ollama/ollama/pull/16549",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.therobotreport.com/gatik-brings-autonomous-freight-pepsico-north-american-supply-chain/",
+      "title": "Company : Robotics Business Review",
+      "description": "[MEDIUM] Gatik to bring autonomous freight to PepsiCo\u2019s North American supply chain Company : Robotics Business Review Summary : The partnership focuses on PepsiCo\u2019s regional transportation networks, where it moves products daily from site to site. The post Gatik to bring autonomous freight to PepsiCo\u2019s North American supply ch Link :",
+      "text": "[MEDIUM] Gatik to bring autonomous freight to PepsiCo\u2019s North American supply chain Company : Robotics Business Review Summary : The partnership focuses on PepsiCo\u2019s regional transportation networks, where it moves products daily from site to site. The post Gatik to bring autonomous freight to PepsiCo\u2019s North American supply ch Link :",
+      "excerpt": "[MEDIUM] Gatik to bring autonomous freight to PepsiCo\u2019s North American supply chain Company : Robotics Business Review Summary : The partnership focuses on PepsiCo\u2019s regional transportation networks, where it moves products daily from site to site. The post Gatik to bring autonomous freight to PepsiCo\u2019s North American supply ch Link :",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/06/Gatik-PepsiCo-featured.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.therobotreport.com/gatik-brings-autonomous-freight-pepsico-north-american-supply-chain/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.cnet.com/tech/computing/apple-vision-pro-siri-visionos-27-visual-intelligence/",
+      "title": "Company : CNET AI",
+      "description": "[MEDIUM] I'm Letting Siri See My Life on Vision Pro, and It's a Sign of Things to Come Company : CNET AI Summary : Commentary: An early test of VisionOS 27's Siri AI visual intelligence already feels like a phase change, and a preview of camera-enabled wearables like glasses. Link :",
+      "text": "[MEDIUM] I'm Letting Siri See My Life on Vision Pro, and It's a Sign of Things to Come Company : CNET AI Summary : Commentary: An early test of VisionOS 27's Siri AI visual intelligence already feels like a phase change, and a preview of camera-enabled wearables like glasses. Link :",
+      "excerpt": "[MEDIUM] I'm Letting Siri See My Life on Vision Pro, and It's a Sign of Things to Come Company : CNET AI Summary : Commentary: An early test of VisionOS 27's Siri AI visual intelligence already feels like a phase change, and a preview of camera-enabled wearables like glasses. Link :",
+      "image_url": "https://www.cnet.com/a/img/resize/a058d7953982cb7d23a26492d2e4aec83182f8b8/hub/2026/06/12/6e2c03f1-f199-45bc-88cb-d20371241a78/visionos27-siri-1.jpg?auto=webp&amp;fit=crop&amp;height=675&amp;width=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.cnet.com/tech/computing/apple-vision-pro-siri-visionos-27-visual-intelligence/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 4,
+  "has_cta": true,
+  "slides": [
+    "Mistral is rumored to be raising \u20ac3B at \u20ac20B valuation. The funding.",
+    "6k Star 174k Code Issues 2.4k Pull requests 979 Actions Security.",
+    "Autonomous vehicles can reduce variability, improve on-time performance, and add capacity without.",
+    "FOLLOW @graitech"
+  ]
+}
