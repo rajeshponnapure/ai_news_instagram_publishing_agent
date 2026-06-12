@@ -1,0 +1,329 @@
+{
+  "email_received_at": "2026-06-11T18:38-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Jeff Bezos's Prometheus raises $12B to build an 'artificial general engineer' for the physical world |.",
+  "subject": "\ud83d\udea8 AI Alert: 86 new launches \u2014 TechCrunch AI, CNET AI, Wired AI",
+  "source_date": "Thu, 11 Jun 2026 18:38:58 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Apple",
+    "Amazon",
+    "Tesla"
+  ],
+  "models": [
+    "Claude",
+    "Gemini",
+    "Grok",
+    "Sora"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/",
+  "article_title": "Jeff Bezos's Prometheus raises $12B to build an 'artificial general engineer' for the physical world | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1530038f49e36d3c.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2208733347.jpg?w=1024",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/",
+      "title": "Jeff Bezos's Prometheus raises $12B to build an 'artificial general engineer' for the physical world | TechCrunch",
+      "description": "The new round values the physical AI startup that aims to automate heavy engineering and drug design at $41 billion.",
+      "excerpt": "The new round values the physical AI startup that aims to automate heavy engineering and drug design at $41 billion.",
+      "summary": "More from TechCrunch Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world Prometheus, the physical AI startup co-founded by Jeff Bezos and Vik Bajaj, the former co-founder of Verily, Google\u2019s life sciences unit, announced it raised $12 billion at a $41 billion valuation. This is the second fundraise round for Prometheus, which launched late last year with an initial raise of $6.2 billion, according to CNBC . Amazon - where he serves as executive chairman and is the largest individual shareholder - employs more than 1.5 million people worldwide and over the past year, under CEO Andy Jassy, has laid off tens of thousands of people as the company has accelerated its own automation push. Bezos indicated that a large portion of the capital will go toward the company\u2019s large compute needs. At $41 billion, Prometheus is one of the most richly valued AI startups ever funded, and one of the largest single bets on the physical AI sector.",
+      "what_happened": "More from TechCrunch Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world Prometheus, the physical AI startup co-founded by Jeff Bezos and Vik Bajaj, the former co-founder of Verily, Google\u2019s life sciences unit, announced it raised $12 billion at a $41 billion valuation. This is the second fundraise round for Prometheus, which launched late last year with an initial raise of $6.2 billion, according to CNBC .",
+      "why_matters": "Amazon - where he serves as executive chairman and is the largest individual shareholder - employs more than 1.5 million people worldwide and over the past year, under CEO Andy Jassy, has laid off tens of thousands of people as the company has accelerated its own automation push. Bezos indicated that a large portion of the capital will go toward the company\u2019s large compute needs.",
+      "what_to_watch": "At $41 billion, Prometheus is one of the most richly valued AI startups ever funded, and one of the largest single bets on the physical AI sector.",
+      "key_points": [
+        "More from TechCrunch Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world Prometheus, the physical AI startup co-founded by Jeff Bezos and Vik Bajaj, the former co-founder.",
+        "This is the second fundraise round for Prometheus, which launched late last year with an initial raise of $6.2 billion, according to CNBC .",
+        "At $41 billion, Prometheus is one of the most richly valued AI startups ever funded, and one of the largest single bets on the physical AI sector.",
+        "Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s Fable Google just fired a warning shot in the AI subscription price wars WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence.",
+        "Amazon - where he serves as executive chairman and is the largest individual shareholder - employs more than 1.5 million people worldwide and over the past year, under CEO Andy Jassy, has laid off tens of thousands of.",
+        "The new round values the physical AI startup that aims to automate heavy engineering and drug design at $41 billion.",
+        "Bezos indicated that a large portion of the capital will go toward the company\u2019s large compute needs.",
+        "Maybe some people who are working overtime will stop working overtime.\u201d The company, which currently has 150 employees across offices in San Francisco, London, and Zurich, is keeping the specifics of what it has already.",
+        "\u201cSignificant productivity in the economy is going to raise the standard of living,\u201d he said.",
+        "Prometheus is building what it calls an \u201cartificial general engineer\u201d - software capable of automating the design and manufacturing of complex physical systems, from jet engines to drug compounds.",
+        "You can contact or verify outreach from Marina by emailing marina.temkin@techcrunch.com or via encrypted message at +1 347-683-3909 on Signal.",
+        "The ambition is sweeping: replace large swaths of engineering work with AI."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1530038f49e36d3c.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2208733347.jpg?w=1024",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.cnet.com/news-live/spacex-ipo-live-starlink-xai-going-public/",
+      "title": "Elon Musk's SpaceX Is Going Public: Live Updates About What This Means for You",
+      "description": "The first big tech IPO of the summer could set the stage for expected public offerings by Anthropic and OpenAI.",
+      "excerpt": "The first big tech IPO of the summer could set the stage for expected public offerings by Anthropic and OpenAI.",
+      "summary": "As AI Expands, Erin Brockovich Taps Communities to Map Data Center Concerns AI Chatbot Pricing Comparison: Here's What You Get When You Pay AI Detectors Are Garbage: Here Is How to Spot a Bot Yourself Apple Cider Vinegar: Here's What to Know About Health Benefits, Proper Dosage and More Best Travel Tech Gifts: Must-Haves for the Journey and the Destination The 23 Best Luxury Gifts Our Editors Say Are Worth Every Penny Best Travel Tech Gifts: Must-Haves for the Journey and the Destination The 23 Best Luxury Gifts. The IPO, as planned, is expected to value the company around $1.75 trillion. One reason is that SpaceX, which holds a dominant market share in the global commercial launch and satellite internet industries, has long been a private company. Goldman Sachs, the lead underwriter for SpaceX's planned public offering, projects SpaceX's AI revenue will skyrocket tenfold in the next several years, from $3.2 billion in 2025 to to $322 billion by 2030 . This is the first chance for most of the public to invest.",
+      "what_happened": "As AI Expands, Erin Brockovich Taps Communities to Map Data Center Concerns AI Chatbot Pricing Comparison: Here's What You Get When You Pay AI Detectors Are Garbage: Here Is How to Spot a Bot Yourself Apple Cider Vinegar: Here's What to Know About Health Benefits, Proper Dosage and More Best Travel Tech Gifts: Must-Haves for the Journey and the Destination The 23 Best Luxury Gifts Our Editors Say Are Worth Every Penny Best Travel Tech Gifts: Must-Haves for the Journey and the Destination The 23 Best Luxury Gifts.",
+      "why_matters": "The IPO, as planned, is expected to value the company around $1.75 trillion. One reason is that SpaceX, which holds a dominant market share in the global commercial launch and satellite internet industries, has long been a private company.",
+      "what_to_watch": "Goldman Sachs, the lead underwriter for SpaceX's planned public offering, projects SpaceX's AI revenue will skyrocket tenfold in the next several years, from $3.2 billion in 2025 to to $322 billion by 2030 . This is the first chance for most of the public to invest.",
+      "key_points": [
+        "As AI Expands, Erin Brockovich Taps Communities to Map Data Center Concerns AI Chatbot Pricing Comparison: Here's What You Get When You Pay AI Detectors Are Garbage: Here Is How to Spot a Bot Yourself Apple Cider.",
+        "SpaceX's initial public offering is expected to be the biggest ever in terms of money raised, with $75 billion in shares going on sale to value the company at roughly $1.75 trillion.",
+        "This is the first chance for most of the public to invest.",
+        "The IPO, as planned, is expected to value the company around $1.75 trillion.",
+        "Demand is high, and so is the risk SpaceX's $75 billion IPO is expected to be the biggest ever.",
+        "CNET Elon Musk's SpaceX Is Going Public: Live Updates About What This Means for You The first big tech IPO of the summer could set the stage for expected public offerings by Anthropic and OpenAI.",
+        "This information is vital to how Wall Street reacts; it determines the success of a launch.",
+        "One reason is that SpaceX, which holds a dominant market share in the global commercial launch and satellite internet industries, has long been a private company.",
+        "Where things go from there is in the hands of the market.",
+        "SpaceX launched its IPO marketing by saying that it is selling 555,555,555 shares at $135 per share.",
+        "We'll be keeping an eye on what transpires and sharing the latest updates here.",
+        "The IPO has ramifications all over the place."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/822dc4c81c1b766a.jpg",
+      "image_url": "https://www.cnet.com/a/img/hub/2026/06/11/78d87e4c-1511-49b3-a56a-d576607bfe36/gettyimages-2278970792.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.cnet.com/news-live/gemini-down-live-updates-google-workspaces-ai-errors/",
+      "title": "Gemini Outage Mostly Resolved: What Went Wrong for Google's AI",
+      "description": "Service disruptions inhibited many Google users' AI work on Wednesday. Here's what Google said happened.",
+      "excerpt": "Service disruptions inhibited many Google users' AI work on Wednesday. Here's what Google said happened.",
+      "summary": "As AI Expands, Erin Brockovich Taps Communities to Map Data Center Concerns AI Chatbot Pricing Comparison: Here's What You Get When You Pay AI Detectors Are Garbage: Here Is How to Spot a Bot Yourself Apple Cider Vinegar: Here's What to Know About Health Benefits, Proper Dosage and More Best Travel Tech Gifts: Must-Haves for the Journey and the Destination The 23 Best Luxury Gifts Our Editors Say Are Worth Every Penny Best Travel Tech Gifts: Must-Haves for the Journey and the Destination The 23 Best Luxury Gifts. The company confirmed at 6 p.m. On a status update page , the company said it had resolved issues with its Haiku 4.5 model after reports of malfunctions. Google says its next update will arrive at 8:30 p.m. Google confirmed in an update at 11:37 a.m.",
+      "what_happened": "As AI Expands, Erin Brockovich Taps Communities to Map Data Center Concerns AI Chatbot Pricing Comparison: Here's What You Get When You Pay AI Detectors Are Garbage: Here Is How to Spot a Bot Yourself Apple Cider Vinegar: Here's What to Know About Health Benefits, Proper Dosage and More Best Travel Tech Gifts: Must-Haves for the Journey and the Destination The 23 Best Luxury Gifts Our Editors Say Are Worth Every Penny Best Travel Tech Gifts: Must-Haves for the Journey and the Destination The 23 Best Luxury Gifts.",
+      "why_matters": "The company confirmed at 6 p.m. On a status update page , the company said it had resolved issues with its Haiku 4.5 model after reports of malfunctions.",
+      "what_to_watch": "Google says its next update will arrive at 8:30 p.m. Google confirmed in an update at 11:37 a.m.",
+      "key_points": [
+        "As AI Expands, Erin Brockovich Taps Communities to Map Data Center Concerns AI Chatbot Pricing Comparison: Here's What You Get When You Pay AI Detectors Are Garbage: Here Is How to Spot a Bot Yourself Apple Cider.",
+        "The company confirmed at 6 p.m.",
+        "Google confirmed in an update at 11:37 a.m.",
+        "A \"mitigation\" or fix is on the way, Google confirmed at 9:24 a.m.",
+        "So when I see something like \"Gemini is down,\" my mind goes to all of the Google products that have integrated the AI system over the past few years.",
+        "Google still hasn't given us many details about the underlying issue, but it did confirm that the error codes 1099 and 1076 are part of the issue.",
+        "PT that some fixes to the Gemini outage are on the way.",
+        "I had the flash model selected, which I immediately knew wouldn't be the best model for the task after I hit \"run.\" But I didn't have to wait long to fix my error, because Gemini couldn't run the task at all.",
+        "On a status update page , the company said it had resolved issues with its Haiku 4.5 model after reports of malfunctions.",
+        "I checked my Google Health app, which is what the old Fitbit app has become, and had a conversation with the chatbot there about why the fact that I feel like I'm coming down with a cold isn't showing up in my biometric.",
+        "Google said it will issue another update at 9:30 a.m.",
+        "Most likely, the Google engineering teams caught the issue late last night or early this morning, before many of us logged on for work at 8 a.m."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/caec2fab5a1f8542.jpg",
+      "image_url": "https://www.cnet.com/a/img/resize/d8d148527d16d67eed889cc163d314cb9e39acec/hub/2026/06/11/c3cbe2d8-9e0a-443d-ac83-5b6d83d76ce2/gettyimages-2263054879.jpg?auto=webp&width=1200",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.nytimes.com/2026/06/11/business/spacex-openai-ipo-china.html",
+      "title": "Absent From the SpaceX and OpenAI I.P.O.s? Chinese Investors.",
+      "description": "SpaceX will not raise money from investors in China and Hong Kong. Others firms, like OpenAI, may follow suit.",
+      "excerpt": "SpaceX will not raise money from investors in China and Hong Kong. Others firms, like OpenAI, may follow suit.",
+      "summary": "The company has already barred Chinese investors from participating in private fund-raising rounds, one of those people said. SpaceX, Elon Musk\u2019s rocket maker and artificial intelligence company, has excluded investors in China and Hong Kong from participating in its I.P.O., according to five people with knowledge of the decision, who asked not to be identified because they were not authorized to speak publicly. SpaceX, Elon Musk\u2019s rocket maker and artificial intelligence company, has excluded investors in China and Hong Kong from participating in its I.P.O., according to five people with knowledge of the decision, who asked not to be identified because they were not authorized to speak publicly. company, is likely to impose the same restriction when it goes public this year, said three people with knowledge of the discussion. SpaceX will not raise money from investors in China and Hong Kong.",
+      "what_happened": "The company has already barred Chinese investors from participating in private fund-raising rounds, one of those people said. SpaceX, Elon Musk\u2019s rocket maker and artificial intelligence company, has excluded investors in China and Hong Kong from participating in its I.P.O., according to five people with knowledge of the decision, who asked not to be identified because they were not authorized to speak publicly.",
+      "why_matters": "SpaceX, Elon Musk\u2019s rocket maker and artificial intelligence company, has excluded investors in China and Hong Kong from participating in its I.P.O., according to five people with knowledge of the decision, who asked not to be identified because they were not authorized to speak publicly. company, is likely to impose the same restriction when it goes public this year, said three people with knowledge of the discussion.",
+      "what_to_watch": "SpaceX will not raise money from investors in China and Hong Kong.",
+      "key_points": [
+        "SpaceX, Elon Musk\u2019s rocket maker and artificial intelligence company, has excluded investors in China and Hong Kong from participating in its I.P.O., according to five people with knowledge of the decision, who asked.",
+        "SpaceX will not raise money from investors in China and Hong Kong.",
+        "The company has already barred Chinese investors from participating in private fund-raising rounds, one of those people said.",
+        "Alexandra Stevenson is the Shanghai bureau chief for The Times, reporting on China\u2019s economy and society.",
+        "Firms Go Public, China Is Being Shut Out SpaceX will not raise money from investors in China and Hong Kong.",
+        "But Washington has been focused on keeping artificial intelligence out of China\u2019s reach.",
+        "Both companies count the U.S.",
+        "When SpaceX starts trading this week, one group will be noticeably absent from the frenzy: investors from China and Hong Kong.",
+        "Alexandra Stevenson reported from Hong Kong and Maureen Farrell and Lauren Hirsch from New York.",
+        "It highlights how the United States and China have steadily scaled back trade, investment and collaboration - especially in sensitive sectors involving technology and science.",
+        "Maureen Farrell writes about Wall Street for The Times, focusing on private equity, hedge funds and billionaires and how they influence the world of investing.",
+        "companies have not disclosed why they are hesitant to accept investments from the region, and it\u2019s unclear whether the move is being made with input from the Trump administration."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fd1d101185f71444.jpg",
+      "image_url": "https://static01.nyt.com/images/2026/06/11/multimedia/Biz-SpaceX-China-01-kcqf/Biz-SpaceX-China-01-kcqf-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/extract-data-with-on-demand-and-batch-pipelines-dynamically/",
+      "title": "Extract Data with On-demand and Batch Pipelines Dynamically | Amazon Web Services",
+      "description": "This post demonstrates an intelligent document processing pipeline that consists of both on-demand inference and batch inference options on Amazon Bedrock to enable the flexibility on the document processing time and cost.",
+      "excerpt": "This post demonstrates an intelligent document processing pipeline that consists of both on-demand inference and batch inference options on Amazon Bedrock to enable the flexibility on the document processing time and cost.",
+      "summary": "This post demonstrates an intelligent document processing pipeline that consists of both on-demand inference and batch inference options on Amazon Bedrock to enable the flexibility on the document processing time and cost.",
+      "what_happened": "This post demonstrates an intelligent document processing pipeline that consists of both on-demand inference and batch inference options on Amazon Bedrock to enable the flexibility on the document processing time and cost.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "This post demonstrates an intelligent document processing pipeline that consists of both on-demand inference and batch inference options on Amazon Bedrock to enable the flexibility on the document processing time and."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a58576c251065e32.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/02/ML-18264-4.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.databricks.com/blog/ingesting-milky-way-petabyte-scale-zerobus-ingest",
+      "title": "Ingesting the Milky Way: Petabyte-Scale with Zerobus Ingest",
+      "description": "Explore the engineering behind Zerobus Ingest. Learn how dynamic partitioning and zero-copy parsing enable effortless petabyte-scale data pipelines.",
+      "excerpt": "Explore the engineering behind Zerobus Ingest. Learn how dynamic partitioning and zero-copy parsing enable effortless petabyte-scale data pipelines.",
+      "summary": "Learn how dynamic partitioning and zero-copy parsing enable effortless petabyte-scale data pipelines. Explore the engineering behind Zerobus Ingest.",
+      "what_happened": "Learn how dynamic partitioning and zero-copy parsing enable effortless petabyte-scale data pipelines. Explore the engineering behind Zerobus Ingest.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Learn how dynamic partitioning and zero-copy parsing enable effortless petabyte-scale data pipelines.",
+        "Explore the engineering behind Zerobus Ingest."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/918c943cdb11b738.png",
+      "image_url": "https://www.databricks.com/sites/default/files/2026-06/zerobus-blog.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/c0r1975ded7o?at_medium=RSS&at_campaign=rss",
+      "title": "Who is Elon Musk and what is his net worth?",
+      "description": "The boss of X, Tesla and SpaceX is the world's richest person. and might even soon become a trillionaire.",
+      "excerpt": "The boss of X, Tesla and SpaceX is the world's richest person. and might even soon become a trillionaire.",
+      "summary": "The boss of X, Tesla and SpaceX is the world's richest person. and might even soon become a trillionaire.",
+      "what_happened": "The boss of X, Tesla and SpaceX is the world's richest person. and might even soon become a trillionaire.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The boss of X, Tesla and SpaceX is the world's richest person.",
+        "and might even soon become a trillionaire."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7da2e5914016c8e5.webp",
+      "image_url": "https://ichef.bbci.co.uk/news/480/cpsprodpb/e2d6/live/9a3ff590-6420-11f1-b421-199136196dd5.jpg.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aibusiness.com/robotics/neura-robotics-raises-1-4b-physical-ai",
+      "title": "Neura Robotics Raises $1.4B for Physical AI",
+      "description": "Neura Robotics Raises $1.4B for Physical AI",
+      "excerpt": "Neura Robotics Raises $1.4B for Physical AI",
+      "summary": "Neura Robotics Raises $1.4B for Physical AI",
+      "what_happened": "Neura Robotics Raises $1.4B for Physical AI",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Neura Robotics Raises $1.4B for Physical AI"
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4397673b92cfc4a3.jpg",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltd3dbe30bbd5acaaf/6a1db89b710e1711de21f2e0/humanoid_guide_Phantom_MK1_Foundation.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4d63b5fa7c6a5fc8.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/dd1ac3a9875a8148.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7af9a82f60533258.jpg"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltfea5863c45e34dc9/6a28502d3c3efcdea8fa4c58/Waymo3.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltddeb6a06fb0bae3c/6a297a126ce8947594f7a8f1/MetaAI.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltf07823c531e62b63/6a22cc57d6dfcca6062336fc/Amazon_robot.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ]
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 4,
+  "has_cta": true,
+  "slides": [
+    "Jeff Bezos's Prometheus raises $12B to build an artificial general engineer'.",
+    "Absent From the SpaceX and OpenAI I.P.O.s Chinese Investors.",
+    "Neura Robotics Raises $1.4B for Physical AI.",
+    "FOLLOW @graitech"
+  ]
+}
