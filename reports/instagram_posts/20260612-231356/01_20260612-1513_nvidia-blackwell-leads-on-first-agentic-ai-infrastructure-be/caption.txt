@@ -1,0 +1,27 @@
+NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark.
+
+Swipe for the full breakdown.
+
+- Artificial Intelligence Inference ﻿ Agentic AI ﻿ Open Source ﻿ Generative AI ﻿ AI for Good ﻿ Research.
+- Artificial Analysis AgentPerf: Built on Real-World Agentic Workloads AgentPerf is built based on real coding agent trajectories.
+- For companies building and deploying agents at scale, it's important to understand how responsive agents are, how many.
+- NVIDIA Ecosystem Partners Harness Blackwell's Leading Performance Leading inference providers including Baseten, DeepInfra and Together AI are already.
+- GB300 NVL72 connects 72 GPUs into a single rack-scale system, enabling large MoE models like DeepSeek V4 Pro.
+
+Do you think OpenAI's move here is exciting or a risk? Drop your take below.
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://blogs.nvidia.com/blog/nvidia-blackwell-agentperf-artificial-analysis/
+- https://blogs.nvidia.com/blog/category/enterprise/
+- https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20-valuation/
+- https://aws.amazon.com/blogs/machine-learning/building-supercharger-how-rocket-close-optimized-title-operations-with-agentic-ai/
+- https://www.therobotreport.com/gatik-brings-autonomous-freight-pepsico-north-american-supply-chain/
+
+#AIAgents #AutonomousAgents #AIWorkflow #AIRegulation #TechLaw #AITools #ProductivityAI #AIProductivity #OpenAI #ChatGPT #GoogleAI #Gemini #ArtificialIntelligence #FutureOfAI #TechTrends #Innovation #Tech #AI #MachineLearning #AIForEveryone
+
+-
+Benchmarks reflect results at publication time and may change as models are updated.
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-

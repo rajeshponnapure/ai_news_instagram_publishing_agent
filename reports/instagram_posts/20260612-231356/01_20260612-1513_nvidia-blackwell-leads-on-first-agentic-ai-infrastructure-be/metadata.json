@@ -1,0 +1,350 @@
+{
+  "email_received_at": "2026-06-12T15:13-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark",
+  "subject": "\ud83d\udea8 AI Alert: 106 new launches \u2014 Bloomberg Tech, CNBC Technology, Nvidia Blog",
+  "source_date": "Fri, 12 Jun 2026 15:13:15 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Microsoft",
+    "Apple",
+    "Amazon",
+    "AWS"
+  ],
+  "models": [
+    "Claude",
+    "Gemini-powered",
+    "Mistral"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://blogs.nvidia.com/blog/nvidia-blackwell-agentperf-artificial-analysis/",
+  "article_title": "NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/70844a171938681f.png",
+  "article_image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/Agentic-Pipeline_v1-2.png",
+  "article_items": [
+    {
+      "url": "https://blogs.nvidia.com/blog/nvidia-blackwell-agentperf-artificial-analysis/",
+      "title": "NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark",
+      "description": "New AgentPerf results from Artificial Analysis show how accelerated computing systems handle real-world agentic workloads, with NVIDIA GB300 NVL72 running up to 20x more agents per megawatt than NVIDIA Hopper.",
+      "excerpt": "New AgentPerf results from Artificial Analysis show how accelerated computing systems handle real-world agentic workloads, with NVIDIA GB300 NVL72 running up to 20x more agents per megawatt than NVIDIA Hopper.",
+      "summary": "For companies building and deploying agents at scale, it\u2019s important to understand how responsive agents are, how many can be deployed simultaneously and how much useful work AI infrastructure can deliver for every dollar and watt invested. NVIDIA Ecosystem Partners Harness Blackwell\u2019s Leading Performance Leading inference providers including Baseten, DeepInfra and Together AI are already serving agentic workloads on frontier models such as DeepSeek V4 Pro on NVIDIA Blackwell and powering production agentic. DeepInfra powers Pam.ai , an AI workforce platform for car dealerships, which deploys agents to book service appointments, handle calls and run outbound sales campaigns, entirely on NVIDIA Blackwell. As NVIDIA and the open source ecosystem continue to optimize inference software, performance and efficiency on agentic workloads will only improve. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "what_happened": "For companies building and deploying agents at scale, it\u2019s important to understand how responsive agents are, how many can be deployed simultaneously and how much useful work AI infrastructure can deliver for every dollar and watt invested. NVIDIA Ecosystem Partners Harness Blackwell\u2019s Leading Performance Leading inference providers including Baseten, DeepInfra and Together AI are already serving agentic workloads on frontier models such as DeepSeek V4 Pro on NVIDIA Blackwell and powering production agentic.",
+      "why_matters": "DeepInfra powers Pam.ai , an AI workforce platform for car dealerships, which deploys agents to book service appointments, handle calls and run outbound sales campaigns, entirely on NVIDIA Blackwell. As NVIDIA and the open source ecosystem continue to optimize inference software, performance and efficiency on agentic workloads will only improve.",
+      "what_to_watch": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "key_points": [
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "Artificial Analysis AgentPerf: Built on Real-World Agentic Workloads AgentPerf is built based on real coding agent trajectories: an agent receives a task, reads files, writes and edits code, executes commands and.",
+        "For companies building and deploying agents at scale, it\u2019s important to understand how responsive agents are, how many can be deployed simultaneously and how much useful work AI infrastructure can deliver for every.",
+        "NVIDIA Ecosystem Partners Harness Blackwell\u2019s Leading Performance Leading inference providers including Baseten, DeepInfra and Together AI are already serving agentic workloads on frontier models such as DeepSeek V4 Pro.",
+        "GB300 NVL72 connects 72 GPUs into a single rack-scale system, enabling large MoE models like DeepSeek V4 Pro to distribute model execution efficiently at scale.",
+        "NVIDIA GB300 NVL72 Runs 20x More Agents per Megawatt In this first round, AgentPerf measures agentic performance with DeepSeek V4 Pro , a large mixture-of-experts (MoE) model that represents the class of frontier models.",
+        "On this workload, NVIDIA GB300 NVL72 delivers the highest performance in the benchmark, running up to 20x more agents per megawatt than the NVIDIA HGX H200 system.",
+        "Existing AI inference benchmarks measure one LLM call: how fast an LLM responds to a single request and how many simultaneous requests a system can handle.",
+        "DeepInfra powers Pam.ai , an AI workforce platform for car dealerships, which deploys agents to book service appointments, handle calls and run outbound sales campaigns, entirely on NVIDIA Blackwell.",
+        "As NVIDIA and the open source ecosystem continue to optimize inference software, performance and efficiency on agentic workloads will only improve.",
+        "Together AI powers real-time inference for Cursor , an AI-powered agentic coding platform, on NVIDIA Blackwell.",
+        "New AgentPerf results from Artificial Analysis show how accelerated computing systems handle real-world agentic workloads, with NVIDIA GB300 NVL72 running up to 20x more agents per megawatt than NVIDIA Hopper."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/70844a171938681f.png",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/Agentic-Pipeline_v1-2.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eff3a4958d9943a.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c78f97c7d2d84749.jpg"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/agentperf-blackwell-graph-1.jpg",
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/dgx-social-gb300-2048x2048-1-1-1280x720.jpg"
+      ]
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/category/enterprise/",
+      "title": "AI Infrastructure Archives",
+      "description": "",
+      "excerpt": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark AgentPerf from Artificial Analysis, the industry\u2019s first agentic AI benchmark, gives developers, enterprises and infrastructure providers a...",
+      "summary": "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts. NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge. If you do not allow these cookies, then some or all of these services may not function properly. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "what_happened": "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts.",
+      "why_matters": "NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge. If you do not allow these cookies, then some or all of these services may not function properly.",
+      "what_to_watch": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "key_points": [
+        "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "NVIDIA and Doosan Group Collaborate to Advance Physical AI and AI Factory Infrastructure NVIDIA and Doosan Group are expanding their collaboration to advance new opportunities across physical AI, robotics and AI factory.",
+        "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand The NVIDIA AI Cloud ecosystem is accelerating the global buildout of AI factory infrastructure.",
+        "And as agentic AI scales and autonomous, always-on special agents are deployed in the enterprise, performance per watt...",
+        "NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge.",
+        "Agent sandboxes run 50% faster on NVIDIA Vera than traditional CPUs - while enterprise data queries...",
+        "NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local The agentic AI moment has arrived, but delivering on its promise requires more than good models.",
+        "That\u2019s the focus of a new engineering-level collaboration between NVIDIA and Ineffable...",
+        "AI Factories: The New Infrastructure of Intelligence AI factories are token factories, converting power into intelligence in real time.",
+        "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South.",
+        "Partners are expanding capacity to meet growing demand from enterprises, startups, nations, AI labs and developers..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20-valuation/",
+      "title": "Mistral is rumored to be raising \u20ac3B at \u20ac20B valuation | TechCrunch",
+      "description": "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion.",
+      "excerpt": "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion.",
+      "summary": "One of Europe\u2019s leading AI startups, Mistral launched in 2023 with the stated ambition to \u201cput frontier AI in the hands of everyone.\u201d The company has taken a more open approach to its AI development compared to its American rivals, offering some foundational large language models with open weights, allowing anyone to customize them as they see fit. The company is setting up a data center near Paris and has partnered with France\u2019s army , the government of Luxembourg , and several major European companies . The company also offers closed models tailored for use cases such as programming, voice cloning and generation, and optical character recognition. The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion. rivals OpenAI ($186 billion) and Anthropic ($161.25 billion) have taken in.",
+      "what_happened": "One of Europe\u2019s leading AI startups, Mistral launched in 2023 with the stated ambition to \u201cput frontier AI in the hands of everyone.\u201d The company has taken a more open approach to its AI development compared to its American rivals, offering some foundational large language models with open weights, allowing anyone to customize them as they see fit. The company is setting up a data center near Paris and has partnered with France\u2019s army , the government of Luxembourg , and several major European companies .",
+      "why_matters": "The company also offers closed models tailored for use cases such as programming, voice cloning and generation, and optical character recognition. The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion.",
+      "what_to_watch": "rivals OpenAI ($186 billion) and Anthropic ($161.25 billion) have taken in.",
+      "key_points": [
+        "One of Europe\u2019s leading AI startups, Mistral launched in 2023 with the stated ambition to \u201cput frontier AI in the hands of everyone.\u201d The company has taken a more open approach to its AI development compared to its.",
+        "rivals OpenAI ($186 billion) and Anthropic ($161.25 billion) have taken in.",
+        "The company is setting up a data center near Paris and has partnered with France\u2019s army , the government of Luxembourg , and several major European companies .",
+        "The company also offers closed models tailored for use cases such as programming, voice cloning and generation, and optical character recognition.",
+        "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion.",
+        "More from TechCrunch Mistral is rumored to be raising \u20ac3B at \u20ac20B valuation French AI lab Mistral AI is in early discussions to raise about \u20ac3 billion ($3.5 billion), Bloomberg reported Friday, citing anonymous sources.",
+        "Still, Mistral has only raised about $4 billion to date, per PitchBook, a fraction of what U.S.",
+        "Chinese cybercrime operation that used AI to scam \u2018hundreds of thousands of victims\u2019 sued by Google Cheaper, faster, and culturally aware, Avataar\u2019s video AI is built for India\u2019s scale Deezer\u2019s new tool can identify AI.",
+        "Every weekday and Sunday, you can get the best of TechCrunch\u2019s coverage.",
+        "Provides movers and shakers with the info they need to start their day.",
+        "TechCrunch Mobility is your destination for transportation news and insight.",
+        "These labs are also valued much, much higher, reflecting how much further American labs have pulled ahead in revenue, model adoption, and enterprise demand."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/abfac8affe8052f9.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2264771189.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-supercharger-how-rocket-close-optimized-title-operations-with-agentic-ai/",
+      "title": "Building Supercharger: How Rocket Close optimized title operations with agentic AI | Amazon Web Services",
+      "description": "In this post, we explore how Rocket Close built a solution using Strands Agents, large language models (LLMs), Amazon Bedrock, Amazon Bedrock Knowledge Bases, and Model Context Protocol (MCP) tools. We cover solution features, the rationale for the technology stack, lessons learned, and the business impact at Rocket Close.",
+      "excerpt": "In this post, we explore how Rocket Close built a solution using Strands Agents, large language models (LLMs), Amazon Bedrock, Amazon Bedrock Knowledge Bases, and Model Context Protocol (MCP) tools. We cover solution features, the rationale for the technology stack, lessons learned, and the business impact at Rocket Close.",
+      "summary": "With Strands Agents, developers define a prompt and a list of tools in code, then test the agent locally and deploy it to the cloud. The team learned that effective LLM prompting focuses on describing what the agent should accomplish rather than prescribing how, because removing deterministic steps allowed the agent to orchestrate dynamically using its inherent capabilities, proving more adaptable than custom approaches. Using Strands Agents and MCP tools helps build a flexible, high-performing solution that allows team members with instant access to order information and intelligent automation. Exam title agent invocation \u2013 The Strands Agent is invoked, triggering the agentic workflow based on system prompts and user input. The SDK plans the agent\u2019s next steps and runs tools through the reasoning capabilities of the model. The Supercharger solution is powered by Strands Agents, an open source agent harness SDK by AWS for building agents using the Anthropic Claude Large Language Model (LLM) through Amazon Bedrock, giving it the.",
+      "what_happened": "With Strands Agents, developers define a prompt and a list of tools in code, then test the agent locally and deploy it to the cloud. The team learned that effective LLM prompting focuses on describing what the agent should accomplish rather than prescribing how, because removing deterministic steps allowed the agent to orchestrate dynamically using its inherent capabilities, proving more adaptable than custom approaches.",
+      "why_matters": "Using Strands Agents and MCP tools helps build a flexible, high-performing solution that allows team members with instant access to order information and intelligent automation. Exam title agent invocation \u2013 The Strands Agent is invoked, triggering the agentic workflow based on system prompts and user input.",
+      "what_to_watch": "The SDK plans the agent\u2019s next steps and runs tools through the reasoning capabilities of the model. The Supercharger solution is powered by Strands Agents, an open source agent harness SDK by AWS for building agents using the Anthropic Claude Large Language Model (LLM) through Amazon Bedrock, giving it the.",
+      "key_points": [
+        "The Supercharger solution is powered by Strands Agents, an open source agent harness SDK by AWS for building agents using the Anthropic Claude Large Language Model (LLM) through Amazon Bedrock, giving it the flexibility.",
+        "The SDK plans the agent\u2019s next steps and runs tools through the reasoning capabilities of the model.",
+        "With Strands Agents, developers define a prompt and a list of tools in code, then test the agent locally and deploy it to the cloud.",
+        "The team learned that effective LLM prompting focuses on describing what the agent should accomplish rather than prescribing how, because removing deterministic steps allowed the agent to orchestrate dynamically using.",
+        "Using Strands Agents and MCP tools helps build a flexible, high-performing solution that allows team members with instant access to order information and intelligent automation.",
+        "In this post, we explore how Rocket Close built a solution using Strands Agents, large language models (LLMs), Amazon Bedrock, Amazon Bedrock Knowledge Bases, and Model Context Protocol (MCP) tools.",
+        "Finally, performance was optimized through architectural refinement and better prompting techniques that reduced the number of calls the agent made to the LLM, achieving 3x latency improvements and reduced costs.",
+        "With deep expertise in AI/ML, Generative AI, and built for the cloud architectures, Sajjan enables financial institutions to achieve scalable, data-driven outcomes.",
+        "Exam title agent invocation \u2013 The Strands Agent is invoked, triggering the agentic workflow based on system prompts and user input.",
+        "The solution delivered immediate operational efficiency gains for the operations and client relations teams, reducing the number of incoming calls and emails to the contact center by 30% through its question-answering.",
+        "Conversation Analytics enables natural language processing that understands context and intent across multi-turn conversations, making interactions feel intuitive and human-like rather than rigid and transactional.",
+        "Strands Agents uses the planning, tool-calling, and reflection capabilities of LLMs to drive agent behavior."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/42716ee9772070a1.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/10/ML-20329-2.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.therobotreport.com/gatik-brings-autonomous-freight-pepsico-north-american-supply-chain/",
+      "title": "Gatik to bring autonomous freight to PepsiCo's North American supply chain - The Robot Report",
+      "description": "The partners are adding autonomous trucks to the PepsiCo regional transportation networks, where it moves products daily from site to site.",
+      "excerpt": "The partners are adding autonomous trucks to the PepsiCo regional transportation networks, where it moves products daily from site to site.",
+      "summary": "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report The partners are adding autonomous trucks to the PepsiCo regional transportation networks, where it moves products daily from site to site. The company \u2019s first deployment with PepsiCo was in 2022. Gatik to bring autonomous freight to PepsiCo\u2019s North American supply chain PepsiCo this week announced a multi-year strategic partnership with Gatik AI Inc., a developer of autonomous systems for middle-mile logistics. Gatik said it is supporting PepsiCo\u2019s frontline teams with greater flexibility, consistency, and reliability across the transportation network, as well as ensuring that PepsiCo\u2019s people grow with the future of the business. \u201cThat is what Gatik is doing with PepsiCo.",
+      "what_happened": "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report The partners are adding autonomous trucks to the PepsiCo regional transportation networks, where it moves products daily from site to site.",
+      "why_matters": "The company \u2019s first deployment with PepsiCo was in 2022. Gatik to bring autonomous freight to PepsiCo\u2019s North American supply chain PepsiCo this week announced a multi-year strategic partnership with Gatik AI Inc., a developer of autonomous systems for middle-mile logistics.",
+      "what_to_watch": "Gatik said it is supporting PepsiCo\u2019s frontline teams with greater flexibility, consistency, and reliability across the transportation network, as well as ensuring that PepsiCo\u2019s people grow with the future of the business. \u201cThat is what Gatik is doing with PepsiCo.",
+      "key_points": [
+        "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around.",
+        "The company \u2019s first deployment with PepsiCo was in 2022.",
+        "The partners are adding autonomous trucks to the PepsiCo regional transportation networks, where it moves products daily from site to site.",
+        "Gatik to bring autonomous freight to PepsiCo\u2019s North American supply chain PepsiCo this week announced a multi-year strategic partnership with Gatik AI Inc., a developer of autonomous systems for middle-mile logistics.",
+        "\u201cThat is what Gatik is doing with PepsiCo.",
+        "Our autonomous trucks are already moving products every day across Texas, Arizona, and Arkansas, and this partnership is proof that Gatik is becoming central to how the world\u2019s largest companies move goods.\u201d PepsiCo.",
+        "Today, Gatik said it operates with more than 98% on-time delivery across its operations.",
+        "The partners said their agreement builds on PepsiCo\u2019s experience running one of North America\u2019s largest private fleets.",
+        "Gatik will bring autonomous freight into PepsiCo\u2019s North America food and beverage supply chain.",
+        "Gatik said it is supporting PepsiCo\u2019s frontline teams with greater flexibility, consistency, and reliability across the transportation network, as well as ensuring that PepsiCo\u2019s people grow with the future of the.",
+        "The company asserted that its collaboration with Gatik will strengthen its supply chain network.",
+        "This enables PepsiCo to modify route plans in response to daily operational needs."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/794b3a40db1f98f1.jpg",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/06/Gatik-PepsiCo-featured.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2192877/apple-says-siri-ai-will-not-flatter-or-romance-you/",
+      "title": "Apple says Siri AI won't suck up to you - Engadget",
+      "description": "In an interview, Apple\u2019s SVP of engineering explains how the new Siri wasn\u2019t designed to be sycophantic.",
+      "excerpt": "In an interview, Apple\u2019s SVP of engineering explains how the new Siri wasn\u2019t designed to be sycophantic.",
+      "summary": "Apple will also release a dedicated Siri app to compete with chatbots like ChatGPT and Claude, allowing users to talk to the assistant through text and voice. \"Have the products and features become better, and this is just a really helpful technology in making those features and products better.\" It took nearly two years of delays before Apple officially introduced the new Gemini-powered Siri that it introduced at WWDC back in 2024. The new Siri will be more deeply integrated into Apple's mobile platform, as well as its apps, including Camera and Photos. They kind of wanna pull you in,\" Federighi replied when asked about the possibility of Siri becoming a user's AI partner. As MacRumors has reported, Federighi clarified that the upgraded Siri for iOS 27 won't suck up to you like other AIs in an interview with the podcast Mostly Human , along with Apple marketing chief Greg Joswiak.",
+      "what_happened": "Apple will also release a dedicated Siri app to compete with chatbots like ChatGPT and Claude, allowing users to talk to the assistant through text and voice. \"Have the products and features become better, and this is just a really helpful technology in making those features and products better.\" It took nearly two years of delays before Apple officially introduced the new Gemini-powered Siri that it introduced at WWDC back in 2024.",
+      "why_matters": "The new Siri will be more deeply integrated into Apple's mobile platform, as well as its apps, including Camera and Photos. They kind of wanna pull you in,\" Federighi replied when asked about the possibility of Siri becoming a user's AI partner.",
+      "what_to_watch": "As MacRumors has reported, Federighi clarified that the upgraded Siri for iOS 27 won't suck up to you like other AIs in an interview with the podcast Mostly Human , along with Apple marketing chief Greg Joswiak.",
+      "key_points": [
+        "Apple will also release a dedicated Siri app to compete with chatbots like ChatGPT and Claude, allowing users to talk to the assistant through text and voice.",
+        "\"Have the products and features become better, and this is just a really helpful technology in making those features and products better.\" It took nearly two years of delays before Apple officially introduced the new.",
+        "The new Siri will be more deeply integrated into Apple's mobile platform, as well as its apps, including Camera and Photos.",
+        "They kind of wanna pull you in,\" Federighi replied when asked about the possibility of Siri becoming a user's AI partner.",
+        "As MacRumors has reported, Federighi clarified that the upgraded Siri for iOS 27 won't suck up to you like other AIs in an interview with the podcast Mostly Human , along with Apple marketing chief Greg Joswiak.",
+        "Apple says Siri AI won't suck up to you Craig Federighi, Apple\u2019s SVP of engineering, said the new Siri will resist attempts at romance.",
+        "The company doesn't want or need its users to become prompt experts to get the most out of Siri.",
+        "In an interview, Apple\u2019s SVP of engineering explains how the new Siri wasn\u2019t designed to be sycophantic.",
+        "Joswiak added that Apple likes for the technology behind its features to \"disappear\" into the background, so that its users can just focus on what they want to do or focus on the content itself.",
+        "Apple, however, designed Siri to put up and maintain boundaries, so to speak.",
+        "Siri AI will fend off users' attempts at romancing it, according to Craig Federighi, Apple's SVP of engineering.",
+        "\"Quite the opposite because as you may know, if you use many of the existing chat bots, they're really focused on engagement to a large degree."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/eb75ff0b052f69ce.jpg",
+      "image_url": "https://img5.zergnet.com/8767110_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/built-from-the-inside-out-how-aws-professional-services-became-a-frontier-team-first/",
+      "title": "Built from the inside out: How AWS Professional Services became a frontier team first | Amazon Web Services",
+      "description": "AWS Professional Services (AWS ProServe) compressed engagement timelines from months to days, not by adding artificial intelligence (AI) tools to an existing process, but by fundamentally rebuilding how we deliver from the inside out. In this post, we share how AWS ProServe became a frontier team, the practices that enabled it, and what your engineering organization can take from our experience.",
+      "excerpt": "AWS Professional Services (AWS ProServe) compressed engagement timelines from months to days, not by adding artificial intelligence (AI) tools to an existing process, but by fundamentally rebuilding how we deliver from the inside out. In this post, we share how AWS ProServe became a frontier team, the practices that enabled it, and what your engineering organization can take from our experience.",
+      "summary": "In this post, we share how AWS ProServe became a frontier team, the practices that enabled it, and what your engineering organization can take from our experience. AWS Professional Services (AWS ProServe) compressed engagement timelines from months to days, not by adding artificial intelligence (AI) tools to an existing process, but by fundamentally rebuilding how we deliver from the inside out. AWS Professional Services (AWS ProServe) compressed engagement timelines from months to days, not by adding artificial intelligence (AI) tools to an existing process, but by fundamentally rebuilding how we deliver from the inside out. AWS Professional Services (AWS ProServe) compressed engagement timelines from months to days, not by adding artificial intelligence (AI) tools to an existing process, but by fundamentally rebuilding how we deliver from the inside out.",
+      "what_happened": "In this post, we share how AWS ProServe became a frontier team, the practices that enabled it, and what your engineering organization can take from our experience. AWS Professional Services (AWS ProServe) compressed engagement timelines from months to days, not by adding artificial intelligence (AI) tools to an existing process, but by fundamentally rebuilding how we deliver from the inside out.",
+      "why_matters": "AWS Professional Services (AWS ProServe) compressed engagement timelines from months to days, not by adding artificial intelligence (AI) tools to an existing process, but by fundamentally rebuilding how we deliver from the inside out.",
+      "what_to_watch": "AWS Professional Services (AWS ProServe) compressed engagement timelines from months to days, not by adding artificial intelligence (AI) tools to an existing process, but by fundamentally rebuilding how we deliver from the inside out.",
+      "key_points": [
+        "AWS Professional Services (AWS ProServe) compressed engagement timelines from months to days, not by adding artificial intelligence (AI) tools to an existing process, but by fundamentally rebuilding how we deliver from.",
+        "In this post, we share how AWS ProServe became a frontier team, the practices that enabled it, and what your engineering organization can take from our experience."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8617eeb508dfb64a.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/11/ML-21052-1.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/jun/11/canada-mother-chatgpt-daughter-suicide-lawsuit",
+      "title": "Canadian mother sues OpenAI, alleging ChatGPT led her daughter to kill herself",
+      "description": "Suit filed in US alleges chatbot told Alice Carrier, 24, \u2018maybe this is just the end\u2019 as she struggled with suicidal thoughts",
+      "excerpt": "Suit filed in US alleges chatbot told Alice Carrier, 24, \u2018maybe this is just the end\u2019 as she struggled with suicidal thoughts",
+      "summary": "Suit filed in US alleges chatbot told Alice Carrier, 24, \u2018maybe this is just the end\u2019 as she struggled with suicidal thoughts",
+      "what_happened": "Suit filed in US alleges chatbot told Alice Carrier, 24, \u2018maybe this is just the end\u2019 as she struggled with suicidal thoughts",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Suit filed in US alleges chatbot told Alice Carrier, 24, \u2018maybe this is just the end\u2019 as she struggled with suicidal thoughts"
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/712af6850f77c89f.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/e015a597f37cb58b701ac61902e61284798349db/0_752_6309_5050/master/6309.jpg?width=460&quality=85&auto=format&fit=max&s=e6729ff0ef75a1665f136a54ffdb77e9",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 4,
+  "has_cta": true,
+  "slides": [
+    "NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark.",
+    "Building Supercharger How Rocket Close optimized title operations with agentic AI.",
+    "Apple says Siri AI won't suck up to you.",
+    "FOLLOW @graitech"
+  ]
+}
