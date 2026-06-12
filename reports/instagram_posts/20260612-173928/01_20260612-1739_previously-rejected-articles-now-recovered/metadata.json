@@ -1,0 +1,38 @@
+{
+  "email_received_at": "2026-06-12T17:39+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Fri, 12 Jun 2026 17:39:28 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.theguardian.com/technology/2026/jun/11/elon-musk-engineer-fired-grok-lawsuit",
+      "title": "Company : The Guardian Tech",
+      "description": "[MEDIUM] Musk\u2019s xAI fired engineer for raising concerns about Grok chatbot, lawsuit claims Company : The Guardian Tech Summary : Former xAI engineer Devin Kim alleges he was illegally fired for trying to implement safety mechanisms for the chatbot A former engineer at Elon Musk \u2019s xAI who now heads a thinktank focused on AI saf Link :",
+      "text": "[MEDIUM] Musk\u2019s xAI fired engineer for raising concerns about Grok chatbot, lawsuit claims Company : The Guardian Tech Summary : Former xAI engineer Devin Kim alleges he was illegally fired for trying to implement safety mechanisms for the chatbot A former engineer at Elon Musk \u2019s xAI who now heads a thinktank focused on AI saf Link :",
+      "excerpt": "[MEDIUM] Musk\u2019s xAI fired engineer for raising concerns about Grok chatbot, lawsuit claims Company : The Guardian Tech Summary : Former xAI engineer Devin Kim alleges he was illegally fired for trying to implement safety mechanisms for the chatbot A former engineer at Elon Musk \u2019s xAI who now heads a thinktank focused on AI saf Link :",
+      "image_url": "https://i.guim.co.uk/img/media/45cdc89f89fba290a175f28fb25397be28c86655/333_0_6882_5504/master/6882.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=905eaf0c6f393ac9531c7a545f11232b",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theguardian.com/technology/2026/jun/11/elon-musk-engineer-fired-grok-lawsuit",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "Const firstColLink = document.querySelector( '#newsLinks > li:nth-of-type(2) > a', ); /** *.",
+    "FOLLOW @graitech"
+  ]
+}
