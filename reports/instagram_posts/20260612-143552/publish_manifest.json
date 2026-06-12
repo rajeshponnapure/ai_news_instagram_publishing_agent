@@ -13,8 +13,10 @@
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260612-143552/01_20260612-1435_previously-rejected-articles-now-recovered/slide_02.png",
         "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260612-143552/01_20260612-1435_previously-rejected-articles-now-recovered/slide_03.png"
       ],
-      "status": "publish_failed_retryable",
-      "error": "Graph API request failed for 17841447323115790/media: 500 Internal Server Error. Response: {\"error\":{\"message\":\"An unexpected error has occurred. Please retry your request later.\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":2,\"fbtrace_id\":\"AFr1FuW8_gLmt1SQ4HNhvT1\"}}"
+      "status": "published",
+      "error": "Graph API request failed for 17841447323115790/media: 500 Internal Server Error. Response: {\"error\":{\"message\":\"An unexpected error has occurred. Please retry your request later.\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":2,\"fbtrace_id\":\"AFr1FuW8_gLmt1SQ4HNhvT1\"}}",
+      "creation_id": "18046395554577438",
+      "published_at": "2026-06-12T17:42:56+00:00"
     }
   ]
 }
