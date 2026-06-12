@@ -1,0 +1,27 @@
+OpenAI just changed everything.
+
+Swipe for the full breakdown.
+
+- If no model is configured, the reviewer can query the endpoint's /models route and fall back.
+- Then it fetches the pull request, prepares the diff and repository context, calls the model, validates the result.
+- Can teams choose the model they trust, including open models?
+- The staged web app is the human-in-the-loop path.
+- The Action is the fastest path: add an LLM API key as a repository secret, install the workflow.
+
+Which industry do you think will feel the impact of this first?
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://huggingface.co/blog/huggingface/serge
+- https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/
+- https://www.digitimes.com/news/a20260611VL210/openai-sam-altman-ai-infrastructure-ipo.html
+- https://ollama.com/blog/mlx-performance
+- https://www.cnet.com/news-live/spacex-ipo-live-starlink-xai-going-public/
+
+#AIRegulation #TechLaw #AITools #ProductivityAI #AIProductivity #AIInfrastructure #AIChips #OpenAI #ChatGPT #GoogleAI #Gemini #AIUpdates #ArtificialIntelligence #FutureOfAI #TechTrends #AI #MachineLearning #DataScience #AICarousel #DeepLearning
+
+-
+This is not legal advice. Consult a qualified professional for guidance.
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-

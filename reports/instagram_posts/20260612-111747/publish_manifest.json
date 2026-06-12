@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260612-111747/01_20260612-0343_introducing-serge-github-native-ai-code-review",
+      "caption": "OpenAI just changed everything.\n\nSwipe for the full breakdown.\n\n- If no model is configured, the reviewer can query the endpoint's /models route and fall back.\n- Then it fetches the pull request, prepares the diff and repository context, calls the model, validates the result.\n- Can teams choose the model they trust, including open models?\n- The staged web app is the human-in-the-loop path.\n- The Action is the fastest path: add an LLM API key as a repository secret, install the workflow.\n\nWhich industry do you think will feel the impact of this first?\n\nSave this before it disappears from your feed.\n\nSources:\n- https://huggingface.co/blog/huggingface/serge\n- https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/\n- https://www.digitimes.com/news/a20260611VL210/openai-sam-altman-ai-infrastructure-ipo.html\n- https://ollama.com/blog/mlx-performance\n- https://www.cnet.com/news-live/spacex-ipo-live-starlink-xai-going-public/\n\n#AIRegulation #TechLaw #AITools #ProductivityAI #AIProductivity #AIInfrastructure #AIChips #OpenAI #ChatGPT #GoogleAI #Gemini #AIUpdates #ArtificialIntelligence #FutureOfAI #TechTrends #AI #MachineLearning #DataScience #AICarousel #DeepLearning\n\n-\nThis is not legal advice. Consult a qualified professional for guidance.\nAI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.\n-\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260612-111747/01_20260612-0343_introducing-serge-github-native-ai-code-review/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260612-111747/01_20260612-0343_introducing-serge-github-native-ai-code-review/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260612-111747/01_20260612-0343_introducing-serge-github-native-ai-code-review/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260612-111747/01_20260612-0343_introducing-serge-github-native-ai-code-review/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260612-111747/01_20260612-0343_introducing-serge-github-native-ai-code-review/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260612-111747/01_20260612-0343_introducing-serge-github-native-ai-code-review/slide_06.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload"
+    }
+  ]
+}

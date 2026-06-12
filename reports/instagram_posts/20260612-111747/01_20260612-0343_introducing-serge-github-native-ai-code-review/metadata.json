@@ -1,0 +1,310 @@
+{
+  "email_received_at": "2026-06-12T03:43-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Introducing Serge: GitHub-Native AI Code Review",
+  "subject": "\ud83d\udea8 AI Alert: 93 new launches \u2014 Bloomberg Tech, CNBC Technology",
+  "source_date": "Fri, 12 Jun 2026 03:43:15 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Apple",
+    "Hugging Face",
+    "LM Studio",
+    "Taiwan-Korea AI"
+  ],
+  "models": [
+    "Claude",
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute"
+  ],
+  "article_url": "https://huggingface.co/blog/huggingface/serge",
+  "article_title": "Introducing Serge: GitHub-Native AI Code Review",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/31a17c4601fb5285.png",
+  "article_image_url": "https://cdn-uploads.huggingface.co/production/uploads/5f7fbd813e94f16a85448745/upOfRdqHhdk4GsiWg4BEg.png",
+  "article_items": [
+    {
+      "url": "https://huggingface.co/blog/huggingface/serge",
+      "title": "Introducing Serge: GitHub-Native AI Code Review",
+      "description": "A Blog post by Hugging Face on Hugging Face",
+      "excerpt": "A Blog post by Hugging Face on Hugging Face",
+      "summary": "Approval reviews are blocked by default unless ALLOW_APPROVE=1 is explicitly enabled. A Blog post by Hugging Face on Hugging Face Introducing Serge: GitHub-Native AI Code Review Serge is a GitHub-native code reviewer built around that constraint. If no model is configured, the reviewer can query the endpoint's /models route and fall back to the first returned model. Then it fetches the pull request, prepares the diff and repository context, calls the model, validates the result, and publishes the review. A reviewer can start a review, watch the model stream its work, edit or discard comments, and publish only the parts that are useful. If no model is configured, the reviewer can query the endpoint's /models route and fall back to the first returned model.",
+      "what_happened": "Approval reviews are blocked by default unless ALLOW_APPROVE=1 is explicitly enabled. A Blog post by Hugging Face on Hugging Face Introducing Serge: GitHub-Native AI Code Review Serge is a GitHub-native code reviewer built around that constraint.",
+      "why_matters": "If no model is configured, the reviewer can query the endpoint's /models route and fall back to the first returned model. Then it fetches the pull request, prepares the diff and repository context, calls the model, validates the result, and publishes the review.",
+      "what_to_watch": "A reviewer can start a review, watch the model stream its work, edit or discard comments, and publish only the parts that are useful. If no model is configured, the reviewer can query the endpoint's /models route and fall back to the first returned model.",
+      "key_points": [
+        "If no model is configured, the reviewer can query the endpoint's /models route and fall back to the first returned model.",
+        "Then it fetches the pull request, prepares the diff and repository context, calls the model, validates the result, and publishes the review.",
+        "In short: use the Action for a quick trial, the GitHub App for organization-wide automation, and the staged web app when you want humans to approve the model's comments before publishing.",
+        "Can teams choose the model they trust, including open models?",
+        "The staged web app is the human-in-the-loop path.",
+        "The Action is the fastest path: add an LLM API key as a repository secret, install the workflow, and comment on a pull request to start a review.",
+        "The Hugging Face Router is a strong fit: it exposes many open and commercial models through an OpenAI-compatible API, keeping the integration simple while giving operators real model choice.",
+        "The deployment modes also reflect GitHub's security model.",
+        "Teams should be able to run the model that fits their code, policy, cost, and deployment constraints, especially open models they can evaluate and swap over time.",
+        "Approval reviews are blocked by default unless ALLOW_APPROVE=1 is explicitly enabled.",
+        "It reviews pull requests with an OpenAI-compatible language model, follows repository-owned review rules, and publishes comments through GitHub's normal pull request review experience.",
+        "The default reviewer persona is \"Serge\"."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/31a17c4601fb5285.png",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/5f7fbd813e94f16a85448745/upOfRdqHhdk4GsiWg4BEg.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/30d106b457d8d3a7.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/83e5d4722f46f0e3.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/daf58a37beb1760b.png"
+      ],
+      "extra_image_urls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/5f7fbd813e94f16a85448745/5npx9483I2RySXQonGYph.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/5f7fbd813e94f16a85448745/D1-G6zPPbW1ZbWUOnq6sv.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/657f3d21f4f72f2c4c51d2ca/T6coq0sPUhFhLk-biOLJm.png"
+      ]
+    },
+    {
+      "url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
+      "title": "Google DeepMind and partners announce multi-agent safety research funding call.",
+      "description": "Google DeepMind and partners are announcing a new technical research funding call of up to $10M for researchers worldwide to strengthen multi-agent safety.",
+      "excerpt": "Google DeepMind and partners are announcing a new technical research funding call of up to $10M for researchers worldwide to strengthen multi-agent safety.",
+      "summary": "Google DeepMind and partners are announcing a new technical research funding call of up to $10M for researchers worldwide to strengthen multi-agent safety.",
+      "what_happened": "Google DeepMind and partners are announcing a new technical research funding call of up to $10M for researchers worldwide to strengthen multi-agent safety.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Google DeepMind and partners are announcing a new technical research funding call of up to $10M for researchers worldwide to strengthen multi-agent safety."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9eb6a59dec8f3ce5.jpg",
+      "image_url": "https://lh3.googleusercontent.com/CX2FIxrVM-tVllAd5MWuw2o-17LZTsKx6UQAA30M62w170ZRuMfd1gwGozg0-1n7nX37YvUtFBTayv-4Zm5T9Vglobu1_aORnxP04mhXKV05kN1QCQ=w1440-h810-n-nu",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.digitimes.com/news/a20260611VL210/openai-sam-altman-ai-infrastructure-ipo.html",
+      "title": "OpenAI reportedly eyes IPO within a year as it readies new AI model and massive infrastructure push",
+      "description": "OpenAI is targeting a public listing within the next year, according to an internal message from CEO Sam Altman obtained by , even as the company prepares to launch a new flagship AI model and ramps up spending on infrastructure needed to support increasingly powerful systems.",
+      "excerpt": "OpenAI is targeting a public listing within the next year, according to an internal message from CEO Sam Altman obtained by , even as the company prepares to launch a new flagship AI model and ramps up spending on infrastructure needed to support increasingly powerful systems.",
+      "summary": "OpenAI reportedly eyes IPO within a year as it readies new AI model and massive infrastructure push OpenAI is targeting a public listing within the next year, according to an internal message from CEO Sam Altman obtained by The Information , even as the company prepares to launch a new flagship AI model and ramps up... OpenAI is targeting a public listing within the next year, according to an internal message from CEO Sam Altman obtained by , even as the company prepares to launch a new flagship AI model and ramps. Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. This will save the password on the computer you're using to access the site. This will save the password on the computer you're using to access the site.",
+      "what_happened": "OpenAI reportedly eyes IPO within a year as it readies new AI model and massive infrastructure push OpenAI is targeting a public listing within the next year, according to an internal message from CEO Sam Altman obtained by The Information , even as the company prepares to launch a new flagship AI model and ramps up... OpenAI is targeting a public listing within the next year, according to an internal message from CEO Sam Altman obtained by , even as the company prepares to launch a new flagship AI model and ramps.",
+      "why_matters": "Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. This will save the password on the computer you're using to access the site.",
+      "what_to_watch": "This will save the password on the computer you're using to access the site.",
+      "key_points": [
+        "OpenAI reportedly eyes IPO within a year as it readies new AI model and massive infrastructure push OpenAI is targeting a public listing within the next year, according to an internal message from CEO Sam Altman.",
+        "OpenAI is targeting a public listing within the next year, according to an internal message from CEO Sam Altman obtained by , even as the company prepares to launch a new flagship AI model and ramps up spending on.",
+        "Samsung Foundry turns to 5nm, 8nm orders as 2nm comeback takes shape SK Hynix speeds Yongin fab buildout as memory crunch fuels capacity race Exclusive: SK Group and Foxconn talks could signal deeper Taiwan-Korea AI.",
+        "This will save the password on the computer you're using to access the site.",
+        "To activate this function, check the 'Keep me signed in' box in the log-in section.",
+        "Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7c25db5bbafdee7c.jpg",
+      "image_url": "https://img.digitimes.com/ad/en_20250923_b2b3_bigbutton.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://ollama.com/blog/mlx-performance",
+      "title": "Ollama's highest performance on Apple Silicon yet with MLX \u00b7 Ollama Blog",
+      "description": "Ollama's MLX engine has been updated to deliver its highest performance on Apple Silicon yet. Models output higher quality responses, respond faster, and use less memory.",
+      "excerpt": "Ollama's MLX engine has been updated to deliver its highest performance on Apple Silicon yet. Models output higher quality responses, respond faster, and use less memory.",
+      "summary": "Ollama's MLX engine has been updated to deliver its highest performance on Apple Silicon yet. Models output higher quality responses, respond faster, and use less memory. Models output higher quality responses, respond faster, and use less memory. Models output higher quality responses, respond faster, and use less memory.",
+      "what_happened": "Ollama's MLX engine has been updated to deliver its highest performance on Apple Silicon yet. Models output higher quality responses, respond faster, and use less memory.",
+      "why_matters": "Models output higher quality responses, respond faster, and use less memory.",
+      "what_to_watch": "Models output higher quality responses, respond faster, and use less memory.",
+      "key_points": [
+        "Ollama's MLX engine has been updated to deliver its highest performance on Apple Silicon yet.",
+        "Models output higher quality responses, respond faster, and use less memory."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2a07483d0c381adc.png",
+      "image_url": "https://ollama.com/public/og.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.cnet.com/news-live/spacex-ipo-live-starlink-xai-going-public/",
+      "title": "Elon Musk's SpaceX Is Going Public: Live Updates About What This Means for You",
+      "description": "The first big tech IPO of the summer could set the stage for expected public offerings by Anthropic and OpenAI.",
+      "excerpt": "The first big tech IPO of the summer could set the stage for expected public offerings by Anthropic and OpenAI.",
+      "summary": "The first big tech IPO of the summer could set the stage for expected public offerings by Anthropic and OpenAI.",
+      "what_happened": "The first big tech IPO of the summer could set the stage for expected public offerings by Anthropic and OpenAI.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The first big tech IPO of the summer could set the stage for expected public offerings by Anthropic and OpenAI."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/822dc4c81c1b766a.jpg",
+      "image_url": "https://www.cnet.com/a/img/hub/2026/06/11/78d87e4c-1511-49b3-a56a-d576607bfe36/gettyimages-2278970792.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.nytimes.com/2026/06/11/business/spacex-openai-ipo-china.html",
+      "title": "Absent From the SpaceX and OpenAI I.P.O.s? Chinese Investors.",
+      "description": "SpaceX will not raise money from investors in China and Hong Kong. Others firms, like OpenAI, may follow suit.",
+      "excerpt": "SpaceX will not raise money from investors in China and Hong Kong. Others firms, like OpenAI, may follow suit.",
+      "summary": "SpaceX will not raise money from investors in China and Hong Kong. Others firms, like OpenAI, may follow suit.",
+      "what_happened": "SpaceX will not raise money from investors in China and Hong Kong. Others firms, like OpenAI, may follow suit.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "SpaceX will not raise money from investors in China and Hong Kong.",
+        "Others firms, like OpenAI, may follow suit."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fd1d101185f71444.jpg",
+      "image_url": "https://static01.nyt.com/images/2026/06/11/multimedia/Biz-SpaceX-China-01-kcqf/Biz-SpaceX-China-01-kcqf-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.cnet.com/news-live/gemini-down-live-updates-google-workspaces-ai-errors/",
+      "title": "Gemini Outage Mostly Resolved: What Went Wrong for Google's AI",
+      "description": "Service disruptions inhibited many Google users' AI work on Wednesday. Here's what Google said happened.",
+      "excerpt": "Service disruptions inhibited many Google users' AI work on Wednesday. Here's what Google said happened.",
+      "summary": "Here's what Google said happened. Service disruptions inhibited many Google users' AI work on Wednesday.",
+      "what_happened": "Here's what Google said happened. Service disruptions inhibited many Google users' AI work on Wednesday.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Here's what Google said happened.",
+        "Service disruptions inhibited many Google users' AI work on Wednesday."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/caec2fab5a1f8542.jpg",
+      "image_url": "https://www.cnet.com/a/img/resize/d8d148527d16d67eed889cc163d314cb9e39acec/hub/2026/06/11/c3cbe2d8-9e0a-443d-ac83-5b6d83d76ce2/gettyimages-2263054879.jpg?auto=webp&width=1200",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.databricks.com/blog/how-ecolab-rebuilt-retail-intelligence-databricks-and-anthropic-claude",
+      "title": "How Ecolab rebuilt retail intelligence on Databricks and Anthropic Claude",
+      "description": "When a store manager",
+      "excerpt": "When a store manager",
+      "summary": "When a store manager",
+      "what_happened": "When a store manager",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "When a store manager"
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8c294eaba96833d0.png",
+      "image_url": "https://www.databricks.com/sites/default/files/inline-images/2026-05-blog-how-ecolab-revolutionizes-retail-intelligence-with-ai-agents-databricks-and-anthropic-claude-inline-960x886-2x.png?v=1780610622",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/bcb4a225b202f571.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/01531b9376a97c18.png"
+      ],
+      "extra_image_urls": [
+        "https://www.databricks.com/sites/default/files/inline-images/2026-05-blog-how-ecolab-revolutionizes-retail-intelligence-with-ai-agents-databricks-and-anthropic-claude-inline-960x571-2x.png?v=1779401987",
+        "https://www.databricks.com/sites/default/files/inline-images/2026-05-blog-how-ecolab-revolutionizes-retail-intelligence-with-ai-agents-databricks-and-anthropic-claude-inline-960x564-2x.png?v=1779401987"
+      ]
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 6,
+  "has_cta": true,
+  "slides": [
+    "Missing tests for behavior changes Avoid. A typical rules file might ask.",
+    "Google DeepMind and partners announce multi-agent safety research funding call.",
+    "OpenAI reportedly eyes IPO within a year as it readies new AI.",
+    "Absent From the SpaceX and OpenAI I.P.O.s Chinese Investors.",
+    "A typical rules file might ask the reviewer to focus on correctness.",
+    "FOLLOW @graitech"
+  ]
+}
