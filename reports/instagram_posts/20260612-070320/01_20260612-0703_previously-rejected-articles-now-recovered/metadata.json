@@ -1,0 +1,131 @@
+{
+  "email_received_at": "2026-06-12T07:03+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Fri, 12 Jun 2026 07:03:20 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.thehindubusinessline.com/info-tech/anthropic-pledges-200-million-to-research-ais-economic-impact-as-ceo-suggests-job-loss-solutions/article71087471.ece",
+      "title": "The Verge AI |",
+      "description": "[HIGH] Deezer launches an AI music detector for other streaming services The Verge AI | https://www.theverge.com/ai-artificial-intelligence/948153/deezer-ai-music-detector-spotify-apple [HIGH] Anthropic pledges $200 million to research AI's economic impact as CEO suggests job loss solutions BusinessLine |",
+      "text": "[HIGH] Deezer launches an AI music detector for other streaming services The Verge AI | https://www.theverge.com/ai-artificial-intelligence/948153/deezer-ai-music-detector-spotify-apple [HIGH] Anthropic pledges $200 million to research AI's economic impact as CEO suggests job loss solutions BusinessLine |",
+      "excerpt": "[HIGH] Deezer launches an AI music detector for other streaming services The Verge AI | https://www.theverge.com/ai-artificial-intelligence/948153/deezer-ai-music-detector-spotify-apple [HIGH] Anthropic pledges $200 million to research AI's economic impact as CEO suggests job loss solutions BusinessLine |",
+      "image_url": "https://bl-i.thgim.com/public/incoming/nngmrj/article71087553.ece/alternates/LANDSCAPE_1200/2026-06-10T203219Z_1559513811_RC2UNLAVJD5Q_RTRMADP_3_USA-CONGRESS-ANTHROPIC.JPG",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.thehindubusinessline.com/info-tech/anthropic-pledges-200-million-to-research-ais-economic-impact-as-ceo-suggests-job-loss-solutions/article71087471.ece",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://uk.pcmag.com/migrated-3765-windows-10/165502/seeing-apples-new-macos-27-golden-gate-just-makes-me-appreciate-windows-11",
+      "title": "MarkTechPost AI |",
+      "description": "[HIGH] Google AI Releases DiffusionGemma, a 26B MoE Open Model Using Text Diffusion for Up to 4x Faster Generation MarkTechPost AI | https://www.marktechpost.com/2026/06/10/google-ai-releases-diffusiongemma-a-26b-moe-open-model-using-text-diffusion-for-up-to-4x-faster-generation/ [HIGH] Seeing Apple\u2019s New macOS 27 Golden Gate Just Makes Me Appreciate Windows 11 PCMag.com |",
+      "text": "[HIGH] Google AI Releases DiffusionGemma, a 26B MoE Open Model Using Text Diffusion for Up to 4x Faster Generation MarkTechPost AI | https://www.marktechpost.com/2026/06/10/google-ai-releases-diffusiongemma-a-26b-moe-open-model-using-text-diffusion-for-up-to-4x-faster-generation/ [HIGH] Seeing Apple\u2019s New macOS 27 Golden Gate Just Makes Me Appreciate Windows 11 PCMag.com |",
+      "excerpt": "[HIGH] Google AI Releases DiffusionGemma, a 26B MoE Open Model Using Text Diffusion for Up to 4x Faster Generation MarkTechPost AI | https://www.marktechpost.com/2026/06/10/google-ai-releases-diffusiongemma-a-26b-moe-open-model-using-text-diffusion-for-up-to-4x-faster-generation/ [HIGH] Seeing Apple\u2019s New macOS 27 Golden Gate Just Makes Me Appreciate Windows 11 PCMag.com |",
+      "image_url": "https://sm.pcmag.com/t/pcmag_uk/opinion/s/seeing-app/seeing-apples-new-macos-27-golden-gate-just-makes-me-appreci_7yp4.1200.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://uk.pcmag.com/migrated-3765-windows-10/165502/seeing-apples-new-macos-27-golden-gate-just-makes-me-appreciate-windows-11",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/ai-risks-are-here-time-for-tough-rules-anthropic-ceo-dario-amodei/articleshow/131649696.cms",
+      "title": "The Times of India |",
+      "description": "\u26a0\ufe0f AI SAFETY & ETHICS ---------------------------------------- [HIGH] AI risks are here, time for tough rules: Anthropic CEO Dario Amodei The Times of India |",
+      "text": "\u26a0\ufe0f AI SAFETY & ETHICS ---------------------------------------- [HIGH] AI risks are here, time for tough rules: Anthropic CEO Dario Amodei The Times of India |",
+      "excerpt": "\u26a0\ufe0f AI SAFETY & ETHICS ---------------------------------------- [HIGH] AI risks are here, time for tough rules: Anthropic CEO Dario Amodei The Times of India |",
+      "image_url": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-66200,resizemode-75,msid-131649696/tech/artificial-intelligence/ai-risks-are-here-time-for-tough-rules-anthropic-ceo-dario-amodei.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/ai-risks-are-here-time-for-tough-rules-anthropic-ceo-dario-amodei/articleshow/131649696.cms",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.cnbc.com/2026/06/11/spacex-raises-75-billion-in-record-setting-ipo-ahead-of-nasdaq-debut.html",
+      "title": "SpaceX raising $75 billion in record-setting IPO as Nasdaq debut awaits",
+      "description": "SpaceX is selling 555.6 shares at $135 a piece, raising $75 billion in the largest IPO on record.",
+      "text": "SpaceX raising $75 billion in record-setting IPO as Nasdaq debut awaits SpaceX is selling 555.6 shares at $135 a piece, raising $75 billion in the largest IPO on record. The company had already set the share price, giving investors a take-it-or-leave-it deal. SpaceX is set to debut on the Nasdaq on Friday under the ticker symbol SPCX. Elon Musk\u2019s reusable rocket company is raising $75 billion, selling 555.6 million shares for $135 a piece, according to a filing with the Securities and Exchange Commission. The deal values SpaceX at $1.77 trillion, making it the seventh most-valuable U.S. company, ahead of Tesla , Musk\u2019s electric vehicle maker. SpaceX\u2019s Nasdaq debut will come Friday, when the masses will have their first opportunity to buy into the 24-year-old company. Betting on SpaceX at this price is largely a wager on Musk, as the company is burning cash and is far smaller by revenue than any of its trillion-dollar peers. SpaceX said in its prospectus that revenue increased 15% to $4.69 billion in the first quarter from $4.07 billion a year earlier. For all of last year, revenue jumped 33% to $18.67 billion. The company recorded a net loss in the latest quarter of $4.28 billion after losing $4.94 billion in 2025. In addition to its space business, Musk\u2019s company owns the Starlink satellite internet service, which accounts for the bulk of its revenue and is the only profitable unit, and artificial intelligence division xAI, which merged with SpaceX in February. SpaceX said in its IPO filing that capital expenditures in the first quarter reached $10.1 billion, more than doubling from a year earlier. The vast majority of those costs \u2014 $7.7 billion \u2014 were for AI, with the rest spent on space and connectivity. The company has racked up a cumulative deficit of around $41.3 billion since it was founded in 2002. It warned investors in its prospectus that it may not achieve profitability in the future. Some of the IPO drama was removed last week, when SpaceX set a fixed price of $135 a share. New issuers would typically offer a price range that allows a company and its advisers to gauge demand sensitivity at different levels, but SpaceX took a take-it-or-leave-it approach after a slew of testing-the-waters meetings leading up to the roadshow launch. Goldman Sachs is the lead banker for the offering, followed by Morgan Stanley, Bank of America, Citigroup and JPMorgan Chase. With the IPO, Musk is poised to be the world\u2019s first trillionaire . His stake in SpaceX is worth $866.5 billion, adding to his Tesla holdings that are valued at about $320 billion, not including some options. For the 54-year-old Musk, the SpaceX offering comes 16 years after he took Tesla public. Musk controls over 82% of voting power at SpaceX, giving him virtually complete control over the board. Two Wall Street firms initiated coverage of SpaceX on Thursday. Oppenheimer opened with an outperform rating and a 12- to 18-month price target of $190, implying a gain of 40% from the IPO price. Analyst Timothy Horan wrote that the company\u2019s diversified portfolio makes it attractive for investors. \u201cWe see potential for SPCX to leverage terrestrial compute expertise as a bridge (and possible back-up plan) to enable key scale and cost advantages,\u201d he wrote. Horan called it the \u201conly vertically-integrated AI company with the required capital, data, LLMs, hardware, manufacturing and engineering talent,\u201d and said \u201cits space infrastructure appears structurally advantaged.\u201d Meanwhile, New Street Research initiated coverage with a $165 price target, and said it views xAI as a $575 billion business, \u201crelative to expectations for OpenAI and Anthropic.\u201d While SpaceX\u2019s IPO is roughly three times the size of the largest U.S. IPO in history, it could be challenged by what\u2019s to come. Anthropic and OpenAI, which are each valued at close to $1 trillion by private investors, have confidentially filed to go public less than four years into the generative AI boom. Those deals could happen this year. From startup to $1.8 trillion: The investors who took a chance on SpaceX now reap the rewards SpaceX cuts retail IPO allocation to low 20% range, source says Stock futures tick higher as Wall Street gears up for SpaceX\u2019s historic IPO Get this delivered to your inbox, and more info about our products and services. Data is a real-time snapshot *Data is delayed at least 15 minutes. Global Business and Financial News, Stock Quotes, and Market Data and Analysis. We and our partners also use tools on this site to provide the services, personalize your experience, and for analytics, marketing, and advertising. If you previously opted out of selling, sharing, or targeted advertising on this site, you will need to update your Privacy Choice. Notice of Right to Opt-Out of Sale/Sharing and Targeted Advertising In addition to the toggle, you should also provide the information requested in our \u201cOpt-Out Form\u201d (accessible by clicking the \u201c+\u201d below), which will enable us to take action on your opt-out election more broadly than just on this site (e.g., we will be able to stop sharing your email with third parties in order to target you with adverting on other site and services, such as social media platforms). If you opt-out, you may continue to see advertising, including ads that may be based on personal information processed before you opted out. Manage Opt-Out Preferences: Move Toggle to Left and Click \u201cConfirm My Choice\u201d and then Complete Opt-Out Form (accessible by clicking \u201c+\u201d below) You should also provide the info requested in this Opt-Out Form , which will enable us to take action on your opt-out election more broadly than just this site (e.g., we will be able to stop sharing your email with third parties in order to target you with adverting on other sites and services, such as social media platforms).",
+      "excerpt": "SpaceX is selling 555.6 shares at $135 a piece, raising $75 billion in the largest IPO on record.",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108310153-1779310542372-gettyimages-2223125661-ELON_MUSK.jpeg?v=1779310665&amp;w=1920&amp;h=1080",
+      "image_path": "",
+      "extra_image_urls": [
+        "https://image.cnbcfm.com/api/v1/image/108310153-1779310542372-gettyimages-2223125661-ELON_MUSK.jpeg?v=1779310665&w=1858&h=1045&vtcrop=y"
+      ],
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f2851ca965fcc61e.jpg"
+      ],
+      "_rejected_url": "https://www.cnbc.com/2026/06/11/spacex-raises-75-billion-in-record-setting-ipo-ahead-of-nasdaq-debut.html",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.zdnet.com/article/treat-your-ai-agents-like-interns-before-you-lose-control/",
+      "title": "Company : ZDNet AI",
+      "description": "[MEDIUM] Treat your AI agents like eager but misguided human interns - before you lose control Company : ZDNet AI Summary : Think twice about what permissions you are providing your AI agents and what actions they can take on your behalf. Link :",
+      "text": "[MEDIUM] Treat your AI agents like eager but misguided human interns - before you lose control Company : ZDNet AI Summary : Think twice about what permissions you are providing your AI agents and what actions they can take on your behalf. Link :",
+      "excerpt": "[MEDIUM] Treat your AI agents like eager but misguided human interns - before you lose control Company : ZDNet AI Summary : Think twice about what permissions you are providing your AI agents and what actions they can take on your behalf. Link :",
+      "image_url": "https://www.zdnet.com/a/img/resize/0d366168c8d46b5ffc5ffeaf3234c939874fc74d/2026/06/10/fd99e72d-409f-4b61-877e-e21ddd194d87/herding-screenshot-2026-06-10-104023.jpg?auto=webp&amp;fit=crop&amp;height=675&amp;width=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.zdnet.com/article/treat-your-ai-agents-like-interns-before-you-lose-control/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.wired.com/story/apple-camera-chief-thinks-ai-can-give-you-superpowers/",
+      "title": "Company : Wired AI",
+      "description": "[MEDIUM] Apple\u2019s Camera Chief Thinks AI Can Give You Superpowers Company : Wired AI Summary : The generative features in iOS 27\u2019s new Photos app will add fake pixels to some of your shots, but Apple\u2019s Jon McCormack says the company isn\u2019t using AI \u201cfor the sake of AI.\u201d Link :",
+      "text": "[MEDIUM] Apple\u2019s Camera Chief Thinks AI Can Give You Superpowers Company : Wired AI Summary : The generative features in iOS 27\u2019s new Photos app will add fake pixels to some of your shots, but Apple\u2019s Jon McCormack says the company isn\u2019t using AI \u201cfor the sake of AI.\u201d Link :",
+      "excerpt": "[MEDIUM] Apple\u2019s Camera Chief Thinks AI Can Give You Superpowers Company : Wired AI Summary : The generative features in iOS 27\u2019s new Photos app will add fake pixels to some of your shots, but Apple\u2019s Jon McCormack says the company isn\u2019t using AI \u201cfor the sake of AI.\u201d Link :",
+      "image_url": "https://media.wired.com/photos/6a2991038b88eda4e0bec24e/191:100/w_1280,c_limit/Siri%20AI%20in%20Camera%20SOURCE%20Julian%20Chokkattu%20(1).jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.wired.com/story/apple-camera-chief-thinks-ai-can-give-you-superpowers/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.cnbc.com/2026/06/12/chatgpt-a-billion-monthly-app-users-despite-souring-public-ai-sentiment.html",
+      "title": "Company : CNBC Technology",
+      "description": "[HIGH] ChatGPT hits a billion monthly app users despite souring public AI sentiment Company : CNBC Technology Summary : ChatGPT reached a billion monthly users in May despite growing unease over its ethical and environmental impacts. Link :",
+      "text": "[HIGH] ChatGPT hits a billion monthly app users despite souring public AI sentiment Company : CNBC Technology Summary : ChatGPT reached a billion monthly users in May despite growing unease over its ethical and environmental impacts. Link :",
+      "excerpt": "[HIGH] ChatGPT hits a billion monthly app users despite souring public AI sentiment Company : CNBC Technology Summary : ChatGPT reached a billion monthly users in May despite growing unease over its ethical and environmental impacts. Link :",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/108319972-1781129396110-gettyimages-2263468705-AFP_99BR6XA.jpeg?v=1781129422&amp;w=1920&amp;h=1080",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.cnbc.com/2026/06/12/chatgpt-a-billion-monthly-app-users-despite-souring-public-ai-sentiment.html",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 7,
+  "has_cta": true,
+  "slides": [
+    "Deezer launches an AI music detector for other streaming services. Articles recovered.",
+    "Google AI Releases DiffusionGemma, a 26B MoE Open Model Using Text Diffusion.",
+    "Enter Stock Quotes, News, Mutual Funds and more to search English Edition.",
+    "SpaceX raising $75 billion in record-setting IPO as Nasdaq debut awaits.",
+    "The Extend function only works once and expands the image by 25.",
+    "Previously Rejected Articles Now Recovered.",
+    "FOLLOW @graitech"
+  ]
+}
