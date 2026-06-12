@@ -1,0 +1,80 @@
+{
+  "email_received_at": "2026-06-12T19:46+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Fri, 12 Jun 2026 19:46:39 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://aibusiness.com/companies/spacex-ipo-new-ai-financing-era",
+      "title": "Company : AI Business",
+      "description": "[HIGH] Massive SpaceX IPO Kicks off New AI Financing Era Company : AI Business Summary : The public offering marks the start of a new wave of AI and tech investment. But the markets are turbulent, and big IPOs are no guarantee of long-term financial success. Link :",
+      "text": "[HIGH] Massive SpaceX IPO Kicks off New AI Financing Era Company : AI Business Summary : The public offering marks the start of a new wave of AI and tech investment. But the markets are turbulent, and big IPOs are no guarantee of long-term financial success. Link :",
+      "excerpt": "[HIGH] Massive SpaceX IPO Kicks off New AI Financing Era Company : AI Business Summary : The public offering marks the start of a new wave of AI and tech investment. But the markets are turbulent, and big IPOs are no guarantee of long-term financial success. Link :",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt1c7093608c3b4d42/6a2c19ac8ad5d717104e3ca3/SpaceX_IPO.jpg?disable=upscale&width=1200&height=630&fit=crop",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://aibusiness.com/companies/spacex-ipo-new-ai-financing-era",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.anthropic.com/news/anthropic-public-record",
+      "title": "Company : Anthropic",
+      "description": "Link : https://openai.com/index/preply [HIGH] Jun 12, 2026AnnouncementsResults from the first Anthropic Public Record Company : Anthropic Link :",
+      "text": "Link : https://openai.com/index/preply [HIGH] Jun 12, 2026AnnouncementsResults from the first Anthropic Public Record Company : Anthropic Link :",
+      "excerpt": "Link : https://openai.com/index/preply [HIGH] Jun 12, 2026AnnouncementsResults from the first Anthropic Public Record Company : Anthropic Link :",
+      "image_url": "https://www.anthropic.com/api/opengraph-illustration?name=Hand%20Globe&amp;backgroundColor=heather",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.anthropic.com/news/anthropic-public-record",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.marktechpost.com/2026/06/12/moonshot-ai-launches-kimi-work-a-local-desktop-agent-reportedly-running-on-kimi-k2-6-with-a-300-sub-agent-agent-swarm/",
+      "title": "Company : MarkTechPost AI",
+      "description": "[HIGH] Moonshot AI Launches Kimi Work, a Local Desktop Agent Reportedly Running on Kimi K2.6 With a 300-Sub-Agent Agent Swarm Company : MarkTechPost AI Summary : Moonshot AI's Kimi Work is a local desktop agent for macOS and Windows. It runs a 300-sub-agent swarm, drives your logged-in browser via WebBridge, and schedules background jobs. The post Moonshot AI Link :",
+      "text": "[HIGH] Moonshot AI Launches Kimi Work, a Local Desktop Agent Reportedly Running on Kimi K2.6 With a 300-Sub-Agent Agent Swarm Company : MarkTechPost AI Summary : Moonshot AI's Kimi Work is a local desktop agent for macOS and Windows. It runs a 300-sub-agent swarm, drives your logged-in browser via WebBridge, and schedules background jobs. The post Moonshot AI Link :",
+      "excerpt": "[HIGH] Moonshot AI Launches Kimi Work, a Local Desktop Agent Reportedly Running on Kimi K2.6 With a 300-Sub-Agent Agent Swarm Company : MarkTechPost AI Summary : Moonshot AI's Kimi Work is a local desktop agent for macOS and Windows. It runs a 300-sub-agent swarm, drives your logged-in browser via WebBridge, and schedules background jobs. The post Moonshot AI Link :",
+      "image_url": "https://www.marktechpost.com/wp-content/uploads/2026/06/blog15-1-2-1024x731.png",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.marktechpost.com/2026/06/12/moonshot-ai-launches-kimi-work-a-local-desktop-agent-reportedly-running-on-kimi-k2-6-with-a-300-sub-agent-agent-swarm/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/",
+      "title": "Company : TechCrunch AI",
+      "description": "[HIGH] Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world Company : TechCrunch AI Summary : The new round values the physical AI startup that aims to automate heavy engineering and drug design at $41 billion. Link :",
+      "text": "[HIGH] Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world Company : TechCrunch AI Summary : The new round values the physical AI startup that aims to automate heavy engineering and drug design at $41 billion. Link :",
+      "excerpt": "[HIGH] Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world Company : TechCrunch AI Summary : The new round values the physical AI startup that aims to automate heavy engineering and drug design at $41 billion. Link :",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2208733347.jpg?w=1024",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "Moonshot AI Launches Kimi Work, a Local Desktop Agent Reportedly Running.",
+    "FOLLOW @graitech"
+  ]
+}
