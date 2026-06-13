@@ -1,0 +1,331 @@
+{
+  "email_received_at": "2026-06-12T23:14-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Meta's months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it | TechCrunch",
+  "subject": "\ud83d\udea8 AI Alert: 100 new launches \u2014 LangChain, TechCrunch AI, Wired AI",
+  "source_date": "Fri, 12 Jun 2026 23:14:46 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Apple",
+    "Amazon"
+  ],
+  "models": [
+    "Claude"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://techcrunch.com/2026/06/12/metas-months-old-ai-unit-is-a-soul-crushing-gulag-say-the-engineers-stuck-inside-it/",
+  "article_title": "Meta's months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fe0136128f47f0be.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2025/07/GettyImages-2194278734.jpg?w=1024",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/12/metas-months-old-ai-unit-is-a-soul-crushing-gulag-say-the-engineers-stuck-inside-it/",
+      "title": "Meta's months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it | TechCrunch",
+      "description": "A new report suggests the unit, which employs 6,500 people, is on the verge of revolt.",
+      "excerpt": "A new report suggests the unit, which employs 6,500 people, is on the verge of revolt.",
+      "summary": "Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s Fable Google just fired a warning shot in the AI subscription price wars WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more Anthropic\u2019s Claude Fable 5 is a version of Mythos the public can access today Microsoft\u2019s open source tools were hacked to steal passwords of AI developers We won't sell or share your. More than 1,600 Meta employees company-wide have reportedly signed a petition protesting a program that monitors their clicks and keystrokes for AI training data. That outburst, Wired reports, reflects simmering rage inside the three-month-old unit of roughly 6,500 engineers and product managers who have been tasked with supporting the company\u2019s AI research ambitions. A new report suggests the unit, which employs 6,500 people, is on the verge of revolt.",
+      "what_happened": "Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s Fable Google just fired a warning shot in the AI subscription price wars WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more Anthropic\u2019s Claude Fable 5 is a version of Mythos the public can access today Microsoft\u2019s open source tools were hacked to steal passwords of AI developers We won't sell or share your.",
+      "why_matters": "More than 1,600 Meta employees company-wide have reportedly signed a petition protesting a program that monitors their clicks and keystrokes for AI training data. That outburst, Wired reports, reflects simmering rage inside the three-month-old unit of roughly 6,500 engineers and product managers who have been tasked with supporting the company\u2019s AI research ambitions.",
+      "what_to_watch": "A new report suggests the unit, which employs 6,500 people, is on the verge of revolt.",
+      "key_points": [
+        "Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s Fable Google just fired a warning shot in.",
+        "A new report suggests the unit, which employs 6,500 people, is on the verge of revolt.",
+        "More than 1,600 Meta employees company-wide have reportedly signed a petition protesting a program that monitors their clicks and keystrokes for AI training data.",
+        "That outburst, Wired reports, reflects simmering rage inside the three-month-old unit of roughly 6,500 engineers and product managers who have been tasked with supporting the company\u2019s AI research ambitions.",
+        "According to earlier reports, the Applied AI team is led by Maher Saba, a 12-year veteran of Meta who was previously a vice president in its Reality Labs division, the division that burned through $83 billion on the.",
+        "Originally, the unit was structured in such a way that up to 50 employees reported to one manager.",
+        "Alexandr Wang - who sold his data-labeling startup Scale AI to Meta for $14.3 billion before taking the role of chief AI officer and heading up Meta Superintelligence Labs - knows the data-labeling world well.",
+        "\u201cFor agents to understand how people actually complete everyday tasks using computers, we need to train our models on real examples,\u201d the announcement read.",
+        "And candidly, the average Meta employee has \u201csignificantly higher\u201d intelligence than third-party contractors, he added, making them the better choice.",
+        "Generating puzzles and coding problems to train AI models.",
+        "Now, a new report in Wired suggests the company\u2019s Applied AI team is on the verge of revolt.",
+        "\u201cMost people find the work soul-crushing,\u201d said another."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fe0136128f47f0be.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/07/GettyImages-2194278734.jpg?w=1024",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/category/enterprise/",
+      "title": "AI Infrastructure Archives",
+      "description": "",
+      "excerpt": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark AgentPerf from Artificial Analysis, the industry\u2019s first agentic AI benchmark, gives developers, enterprises and infrastructure providers a...",
+      "summary": "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts. NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge. If you do not allow these cookies, then some or all of these services may not function properly. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "what_happened": "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts.",
+      "why_matters": "NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge. If you do not allow these cookies, then some or all of these services may not function properly.",
+      "what_to_watch": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "key_points": [
+        "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "NVIDIA and Doosan Group Collaborate to Advance Physical AI and AI Factory Infrastructure NVIDIA and Doosan Group are expanding their collaboration to advance new opportunities across physical AI, robotics and AI factory.",
+        "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand The NVIDIA AI Cloud ecosystem is accelerating the global buildout of AI factory infrastructure.",
+        "And as agentic AI scales and autonomous, always-on special agents are deployed in the enterprise, performance per watt...",
+        "NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge.",
+        "Agent sandboxes run 50% faster on NVIDIA Vera than traditional CPUs - while enterprise data queries...",
+        "NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local The agentic AI moment has arrived, but delivering on its promise requires more than good models.",
+        "That\u2019s the focus of a new engineering-level collaboration between NVIDIA and Ineffable...",
+        "AI Factories: The New Infrastructure of Intelligence AI factories are token factories, converting power into intelligence in real time.",
+        "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South.",
+        "Partners are expanding capacity to meet growing demand from enterprises, startups, nations, AI labs and developers..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.therobotreport.com/massrobotics-announces-winners-2026-robotics-medal-rising-star-awards/",
+      "title": "MassRobotics announces the winners of 2026 Robotics Medal and Rising Star awards - The Robot Report",
+      "description": "Allison Okamura and Ayoung Kim won MassRobotics' 2026 Robotics Medal and Rising Star Medal, which honor women in robotics.",
+      "excerpt": "Allison Okamura and Ayoung Kim won MassRobotics' 2026 Robotics Medal and Rising Star Medal, which honor women in robotics.",
+      "summary": "MassRobotics announces the winners of 2026 Robotics Medal and Rising Star awards MassRobotics announced its 2026 Robotics Medal and Rising Star recipients at the IEEE ICRA conference in Vienna. Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report \u201cThis award reflects the contributions women in robotics have made, and inspires the next generation who will make an impact in this expanding field.\u201d MassRobotics will hold a formal gala awarding the medals and celebrating the recipients at the MIT Samberg Conference Center in Cambridge, Mass., on Nov. The Robotics Medal recognizes the wide-ranging impact of female researchers focusing on the development of robotics around. \u201cAs the founding sponsor of the Robotics Medal, our mission is to celebrate and honor female robotics professors around the world who have made extraordinary contributions to advancing robotics technology,\u201d said Tye Brady, chief technologist at Amazon Robotics and chairperson of the MassRobotics board.",
+      "what_happened": "MassRobotics announces the winners of 2026 Robotics Medal and Rising Star awards MassRobotics announced its 2026 Robotics Medal and Rising Star recipients at the IEEE ICRA conference in Vienna. Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report",
+      "why_matters": "\u201cThis award reflects the contributions women in robotics have made, and inspires the next generation who will make an impact in this expanding field.\u201d MassRobotics will hold a formal gala awarding the medals and celebrating the recipients at the MIT Samberg Conference Center in Cambridge, Mass., on Nov. The Robotics Medal recognizes the wide-ranging impact of female researchers focusing on the development of robotics around.",
+      "what_to_watch": "\u201cAs the founding sponsor of the Robotics Medal, our mission is to celebrate and honor female robotics professors around the world who have made extraordinary contributions to advancing robotics technology,\u201d said Tye Brady, chief technologist at Amazon Robotics and chairperson of the MassRobotics board.",
+      "key_points": [
+        "MassRobotics announces the winners of 2026 Robotics Medal and Rising Star awards MassRobotics announced its 2026 Robotics Medal and Rising Star recipients at the IEEE ICRA conference in Vienna.",
+        "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around.",
+        "\u201cAs the founding sponsor of the Robotics Medal, our mission is to celebrate and honor female robotics professors around the world who have made extraordinary contributions to advancing robotics technology,\u201d said Tye.",
+        "\u201cThis award reflects the contributions women in robotics have made, and inspires the next generation who will make an impact in this expanding field.\u201d MassRobotics will hold a formal gala awarding the medals and.",
+        "The Robotics Medal recognizes the wide-ranging impact of female researchers focusing on the development of robotics around the globe.",
+        "Allison Okamura and Ayoung Kim won MassRobotics' 2026 Robotics Medal and Rising Star Medal, which honor women in robotics.",
+        "The Rising Star Medal recognizes up-and-coming women making strides and advancing the field of robotics and includes a $5,000 award.",
+        "The award includes a $50,000 prize awarded to the individual.",
+        "When it comes to engineering and robotics roles, women only make up 16% of the workforce, according to the National Girls Collaborative Project.",
+        "Amazon and MassRobotics invest in women in STEM To encourage diversity in the field of robotics, Amazon established an endowment with MassRobotics in 2022.",
+        "The 4th Annual MassRobotics Robotics Medal award, sponsored by Amazon Robotics , was presented to Dr.",
+        "The purpose of The Robotics Medal is not just to celebrate individual achievements."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e0bca3ea8a5fe11c.png",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/05/rbr50-sidebar-promo.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.therobotreport.com/robotics-summit-panel-explores-state-humanoid-robot-design/",
+      "title": "Robotics Summit panel explores the state of humanoid robot design - The Robot Report",
+      "description": "At the Robotics Summit & Expo, experts weighed in on humanoid robotics today - and the ability to achieve a $20,000 price point tomorrow.",
+      "excerpt": "At the Robotics Summit & Expo, experts weighed in on humanoid robotics today - and the ability to achieve a $20,000 price point tomorrow.",
+      "summary": "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report \u201cThis year, we\u2019re going back to the factory to show a more end-to-end demonstration of Atlas - a full learning pipeline, not just handling the behavior, but handling the entire workflow, connecting to the factory, and handling exceptions.\u201d He also noted that. \u201cWe\u2019ve really been expanding the commercial side and learning from that to figure out - what do we need to close the remaining gaps that allow us to scale?\u201d said Velagapudi. \u201cBecause if you don\u2019t have real-world implications built into the model, then you\u2019re really just using face and eyeballs.\u201d Nielsen also said his company is learning a lot from China , where the customers are moving extremely fast. \u201cWe are starting to work on the performance repeatability tests, and there are numerous other efforts going on.\u201d In response to a question about humanoid safety, Prather said he hoped that the first safety standards will be drafted within the next two years. At the.",
+      "what_happened": "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report \u201cThis year, we\u2019re going back to the factory to show a more end-to-end demonstration of Atlas - a full learning pipeline, not just handling the behavior, but handling the entire workflow, connecting to the factory, and handling exceptions.\u201d He also noted that.",
+      "why_matters": "\u201cWe\u2019ve really been expanding the commercial side and learning from that to figure out - what do we need to close the remaining gaps that allow us to scale?\u201d said Velagapudi. \u201cBecause if you don\u2019t have real-world implications built into the model, then you\u2019re really just using face and eyeballs.\u201d Nielsen also said his company is learning a lot from China , where the customers are moving extremely fast.",
+      "what_to_watch": "\u201cWe are starting to work on the performance repeatability tests, and there are numerous other efforts going on.\u201d In response to a question about humanoid safety, Prather said he hoped that the first safety standards will be drafted within the next two years. At the Robotics Summit & Expo, experts weighed in on.",
+      "key_points": [
+        "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around.",
+        "At the Robotics Summit & Expo, experts weighed in on humanoid robotics today - and the ability to achieve a $20,000 price point tomorrow.",
+        "Robotics safety and standards efforts continue The state of standards in robotic safety worldwide is evolving as fast as the robots themselves are.",
+        "\u201cThis year, we\u2019re going back to the factory to show a more end-to-end demonstration of Atlas - a full learning pipeline, not just handling the behavior, but handling the entire workflow, connecting to the factory, and.",
+        "\u201cThere\u2019s some really interesting activity right now with NVIDIA and a few others on developing \u2026 a universal vision model, which allows you to take a RealSense camera in any modality that you want to and applying those.",
+        "So that research is being accelerated at RealSense - fewer sensors is good, without losing 360-degree perception.\u201d Makke noted that at the 2025 Robotics Summit & Expo, a panel member said that they were a little bit.",
+        "\u201cWe\u2019ve really been expanding the commercial side and learning from that to figure out - what do we need to close the remaining gaps that allow us to scale?\u201d said Velagapudi.",
+        "\u201cOur roadmap is building the technology that is necessary to promote that general-purpose case at the levels of hardware, at the levels of the models and architectures that are driving the behavior, and also very.",
+        "The $20,000 humanoid question One of the industry\u2019s more enduring questions revolves around the economics of humanoids: Can the cost of the technology ever come down to where a $20,000 price point is achievable?",
+        "\u201cWe are starting to work on the performance repeatability tests, and there are numerous other efforts going on.\u201d In response to a question about humanoid safety, Prather said he hoped that the first safety standards.",
+        "He explained that the product life cycles in China iterations are on the order of 30 to 40 times faster than they see in other areas, because the tolerance for risk is higher.",
+        "Presented by The Robot Report , roughly 3,900 attendees filled the presentations and explored the exhibit hall, seeing everything from component manufacturers to tennis ball-shooting robots."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e0bca3ea8a5fe11c.png",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/05/rbr50-sidebar-promo.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theguardian.com/science/2026/jun/12/spacex-stock-price-ipo-spcx",
+      "title": "SpaceX to list on US stock market at historic $1.77tn valuation",
+      "description": "Initial public offering for aerospace and AI company made Musk the world\u2019s first trillionaire as share prices jumped",
+      "excerpt": "Initial public offering for aerospace and AI company made Musk the world\u2019s first trillionaire as share prices jumped",
+      "summary": "Shotwell announced that the company had launched a Falcon 9 rocket on Friday morning from the Cape Canaveral Space Force Station in Florida, to take 29 Starlink satellites into low-Earth orbit. Musk has said that the reason SpaceX is seeking to go public, raising billions of dollars, is to be able to obtain the capital necessary to further explore space and create human colonies on other planets. At market close, the company\u2019s shares traded at $160, up more than 19% from the initial price \u2013 putting SpaceX\u2019s valuation at a historic $2.1tn. Musk, the founder of SpaceX, has a large stake in the company as majority shareholder, so as investors\u2019 enthusiasm validated the eye-popping valuation during Friday trading, he took title of the world\u2019s first-ever trillionaire, with Forbes estimating his net worth at $1.1tn at the. SpaceX\u2019s IPO comes in what is predicted to be a banner year for public offerings of artificial intelligence companies, a group the rocket maker is part of as the acquirer of Musk\u2019s AI startup, xAI.",
+      "what_happened": "Shotwell announced that the company had launched a Falcon 9 rocket on Friday morning from the Cape Canaveral Space Force Station in Florida, to take 29 Starlink satellites into low-Earth orbit. Musk has said that the reason SpaceX is seeking to go public, raising billions of dollars, is to be able to obtain the capital necessary to further explore space and create human colonies on other planets.",
+      "why_matters": "At market close, the company\u2019s shares traded at $160, up more than 19% from the initial price \u2013 putting SpaceX\u2019s valuation at a historic $2.1tn. Musk, the founder of SpaceX, has a large stake in the company as majority shareholder, so as investors\u2019 enthusiasm validated the eye-popping valuation during Friday trading, he took title of the world\u2019s first-ever trillionaire, with Forbes estimating his net worth at $1.1tn at the.",
+      "what_to_watch": "SpaceX\u2019s IPO comes in what is predicted to be a banner year for public offerings of artificial intelligence companies, a group the rocket maker is part of as the acquirer of Musk\u2019s AI startup, xAI.",
+      "key_points": [
+        "The mogul is also the CEO of Tesla, which is valued at $1.2tn, and his stake in the EV maker is worth around $300bn.",
+        "Shotwell announced that the company had launched a Falcon 9 rocket on Friday morning from the Cape Canaveral Space Force Station in Florida, to take 29 Starlink satellites into low-Earth orbit.",
+        "At market close, the company\u2019s shares traded at $160, up more than 19% from the initial price \u2013 putting SpaceX\u2019s valuation at a historic $2.1tn.",
+        "Musk, the founder of SpaceX, has a large stake in the company as majority shareholder, so as investors\u2019 enthusiasm validated the eye-popping valuation during Friday trading, he took title of the world\u2019s first-ever.",
+        "The company offered an accept-it-or-leave-it share price of $135 before trading began , instead of providing the customary range of prices to investors.",
+        "The company\u2019s initial public offering made the company\u2019s CEO, Elon Musk , the world\u2019s first trillionaire.",
+        "SpaceX\u2019s IPO comes in what is predicted to be a banner year for public offerings of artificial intelligence companies, a group the rocket maker is part of as the acquirer of Musk\u2019s AI startup, xAI.",
+        "Musk has said that the reason SpaceX is seeking to go public, raising billions of dollars, is to be able to obtain the capital necessary to further explore space and create human colonies on other planets.",
+        "More than 4,400 current and former employees are expected to become millionaires with the IPO, according to the New York Times , with 400 of them each securing $100m or more.",
+        "Throughout the company\u2019s first day of trading, SpaceX saw its stock pop, reaching a high of $176 per share.",
+        "While expansive, the company is not profitable.",
+        "Public trading began around midday with a starting share price of $150, which quickly jumped by a double digit percentage and sent the company\u2019s valuation above $2tn, where it remained through market close."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1ee61e896b5a08af.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/16dc5a1aa8616c5301ccdcda329741cfb959c55b/448_0_4167_3333/master/4167.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=53f3a7d0d77872b1180380152cb403ea",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai/",
+      "title": "Anthropic's safety warnings may have just backfired \u2014 the government has pulled the plug on its most powerful AI | TechCrunch",
+      "description": "Anthropic isn't hiding its frustration. \"We disagree that the finding of a narrow potential jailbreak should be cause for recalling a commercial model deployed to hundreds of millions of people,\" the company wrote in a blog post.",
+      "excerpt": "Anthropic isn't hiding its frustration. \"We disagree that the finding of a narrow potential jailbreak should be cause for recalling a commercial model deployed to hundreds of millions of people,\" the company wrote in a blog post.",
+      "summary": "\"We disagree that the finding of a narrow potential jailbreak should be cause for recalling a commercial model deployed to hundreds of millions of people,\" the company wrote in a blog post. Anthropic isn't hiding its frustration. Anthropic isn't hiding its frustration. Anthropic isn't hiding its frustration.",
+      "what_happened": "\"We disagree that the finding of a narrow potential jailbreak should be cause for recalling a commercial model deployed to hundreds of millions of people,\" the company wrote in a blog post. Anthropic isn't hiding its frustration.",
+      "why_matters": "Anthropic isn't hiding its frustration.",
+      "what_to_watch": "Anthropic isn't hiding its frustration.",
+      "key_points": [
+        "\"We disagree that the finding of a narrow potential jailbreak should be cause for recalling a commercial model deployed to hundreds of millions of people,\" the company wrote in a blog post.",
+        "Anthropic isn't hiding its frustration."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b967f9ab56e6594f.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2153561878.jpg?w=1024",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.statnews.com/2026/06/11/abridge-inks-deals-with-nvidia-and-lilly/?utm_campaign=rss",
+      "title": "Abridge inks deals with Nvidia and Lilly",
+      "description": "Abridge announced new deals with Eli Lilly and Nvidia as it aims to gain an edge in a competitive market.",
+      "excerpt": "Abridge announced new deals with Eli Lilly and Nvidia as it aims to gain an edge in a competitive market.",
+      "summary": "Abridge announced new deals with Eli Lilly and Nvidia as it aims to gain an edge in a competitive market.",
+      "what_happened": "Abridge announced new deals with Eli Lilly and Nvidia as it aims to gain an edge in a competitive market.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Abridge announced new deals with Eli Lilly and Nvidia as it aims to gain an edge in a competitive market."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ac5c7c3072a8e047.jpg",
+      "image_url": "https://www.statnews.com/wp-content/uploads/2026/06/IMG_0792-1024x576.jpeg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/jun/11/ai-wealth-boom-san-francisco-home-prices",
+      "title": "AI wealth boom sending San Francisco home prices surging: \u2018It\u2019s ridiculous\u2019",
+      "description": "Employees at artificial intelligence companies are coming into gargantuan sums of money amid boom in IPOs",
+      "excerpt": "Employees at artificial intelligence companies are coming into gargantuan sums of money amid boom in IPOs",
+      "summary": "Employees at artificial intelligence companies are coming into gargantuan sums of money amid boom in IPOs",
+      "what_happened": "Employees at artificial intelligence companies are coming into gargantuan sums of money amid boom in IPOs",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Employees at artificial intelligence companies are coming into gargantuan sums of money amid boom in IPOs"
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7af7a26fad049963.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/f60eb6ce957614453856486dc51296a8e9083d69/193_0_3308_2646/master/3308.jpg?width=75&dpr=1&s=none&crop=none",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 7,
+  "has_cta": true,
+  "slides": [
+    "Meta's months-old AI unit is a soul-crushing gulag say the engineers stuck.",
+    "MassRobotics announces the winners of 2026 Robotics Medal and Rising Star awards.",
+    "Robotics Summit panel explores the state of humanoid robot design.",
+    "SpaceX to list on US stock market at historic $1.77tn valuation.",
+    "Abridge inks deals with Nvidia and Lilly.",
+    "AI wealth boom sending San Francisco home prices surging It's ridiculous'.",
+    "FOLLOW @graitech"
+  ]
+}
