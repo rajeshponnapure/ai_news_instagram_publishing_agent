@@ -1,0 +1,328 @@
+{
+  "email_received_at": "2026-06-12T21:57-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Anthropic's safety warnings may have just backfired - the government has pulled the plug on its most powerful.",
+  "subject": "\ud83d\ude80 AI Digest \u2014 13 Jun 2026 | 50 updates \u00b7 50 launches",
+  "source_date": "Fri, 12 Jun 2026 21:57:31 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Apple",
+    "Amazon",
+    "NVIDIA"
+  ],
+  "models": [
+    "GPT-5.5",
+    "Claude",
+    "Gemini",
+    "Mistral"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "media generation"
+  ],
+  "article_url": "https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai/",
+  "article_title": "Anthropic's safety warnings may have just backfired \u2014 the government has pulled the plug on its most powerful AI | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b967f9ab56e6594f.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2153561878.jpg?w=1024",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai/",
+      "title": "Anthropic's safety warnings may have just backfired \u2014 the government has pulled the plug on its most powerful AI | TechCrunch",
+      "description": "Anthropic isn't hiding its frustration. \"We disagree that the finding of a narrow potential jailbreak should be cause for recalling a commercial model deployed to hundreds of millions of people,\" the company wrote in a blog post.",
+      "excerpt": "Anthropic isn't hiding its frustration. \"We disagree that the finding of a narrow potential jailbreak should be cause for recalling a commercial model deployed to hundreds of millions of people,\" the company wrote in a blog post.",
+      "summary": "Fable 5, released just three days ago, was Anthropic\u2019s answer to the obvious commercial pressure: a version of Mythos fitted with guardrails that block responses in high-risk areas like cybersecurity and biology, making it safe enough for general release, the company argued. Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s Fable Google just fired a warning shot in the AI subscription price. The directive, which Anthropic said it received on Friday at 5:21 pm ET, forces the company to disable both models for all users worldwide - not just the foreign nationals the government\u2019s export control order was nominally aimed at. \u201cWe disagree that the finding of a narrow potential jailbreak should be cause for recalling a commercial model deployed to hundreds of millions of people,\u201d the company wrote. The irony isn\u2019t lost on observers that the very caution Anthropic displayed in restricting Mythos - which it promoted as a model so dangerous it couldn\u2019t be released publicly - has now apparently attracted exactly the kind of government scrutiny that could disrupt its.",
+      "what_happened": "Fable 5, released just three days ago, was Anthropic\u2019s answer to the obvious commercial pressure: a version of Mythos fitted with guardrails that block responses in high-risk areas like cybersecurity and biology, making it safe enough for general release, the company argued. Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s Fable Google just fired a warning shot in the AI subscription price.",
+      "why_matters": "The directive, which Anthropic said it received on Friday at 5:21 pm ET, forces the company to disable both models for all users worldwide - not just the foreign nationals the government\u2019s export control order was nominally aimed at. \u201cWe disagree that the finding of a narrow potential jailbreak should be cause for recalling a commercial model deployed to hundreds of millions of people,\u201d the company wrote.",
+      "what_to_watch": "The irony isn\u2019t lost on observers that the very caution Anthropic displayed in restricting Mythos - which it promoted as a model so dangerous it couldn\u2019t be released publicly - has now apparently attracted exactly the kind of government scrutiny that could disrupt its business most.",
+      "key_points": [
+        "Fable 5, released just three days ago, was Anthropic\u2019s answer to the obvious commercial pressure: a version of Mythos fitted with guardrails that block responses in high-risk areas like cybersecurity and biology, making.",
+        "Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s Fable Google just fired a warning shot in.",
+        "The directive, which Anthropic said it received on Friday at 5:21 pm ET, forces the company to disable both models for all users worldwide - not just the foreign nationals the government\u2019s export control order was.",
+        "\u201cWe disagree that the finding of a narrow potential jailbreak should be cause for recalling a commercial model deployed to hundreds of millions of people,\u201d the company wrote.",
+        "The irony isn\u2019t lost on observers that the very caution Anthropic displayed in restricting Mythos - which it promoted as a model so dangerous it couldn\u2019t be released publicly - has now apparently attracted exactly the.",
+        "\"We disagree that the finding of a narrow potential jailbreak should be cause for recalling a commercial model deployed to hundreds of millions of people,\" the company wrote in a blog post.",
+        "And by the way, adds the company, it\u2019s a \u201clevel of capability\u201d that\u2019s already widely available in other publicly accessible models, including OpenAI\u2019s GPT-5.5.",
+        "More from TechCrunch Anthropic\u2019s safety warnings may have just backfired - the government has pulled the plug on its most powerful AI The U.S.",
+        "According to Anthropic, Mythos identified flaws in every major operating system and web browser it tested, so rather than release it broadly, the company launched a controlled program called Project Glasswing, sharing.",
+        "It was immediately the most capable AI model available to the public, according to benchmark tests from Vals AI, a company that tracks AI tech performance.",
+        "Anthropic announced on X that it has complied, but it made clear it thinks the government got this one wrong .",
+        "government on Friday ordered Anthropic to immediately shut off access to two of its most powerful AI models - Claude Fable 5 and Claude Mythos 5 - citing national security concerns."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b967f9ab56e6594f.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2153561878.jpg?w=1024",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.nbcnews.com/tech/tech-news/anthropic-rankles-users-safety-first-fable-release-rcna349702",
+      "title": "Anthropic rankles users with safety-first Fable release",
+      "description": "The AI company\u2019s newest public model was met with strong backlash over stringent safety rules and refusals to help users, though others described the measures as \u201creasonable.\u201d",
+      "excerpt": "The AI company\u2019s newest public model was met with strong backlash over stringent safety rules and refusals to help users, though others described the measures as \u201creasonable.\u201d",
+      "summary": "The AI company\u2019s newest public model was met with strong backlash over stringent safety rules and refusals to help users, though others described the measures as \u201creasonable.\u201d Anthropic rankles users with safety-first Fable release Anthropic\u2019s latest AI model might be its most powerful public release, but the system\u2019s strict safety measures quickly triggered some of the strongest backlash the AI giant has faced. Artificial intelligence Anthropic suspends new AI models after government directive Markets Meet the. Anthropic is also worried that competitors could use Anthropic\u2019s AI systems to turbocharge their own research - Anthropic uses its own AI systems to help create the next generation of its models. Many users, some of whom have marveled at Anthropic\u2019s previous announcements, torched the company for debuting its Fable 5 model Tuesday with what they say are overly stringent guardrails. Peter Wallich, a senior research manager at an AI safety research center called the Constellation Institute , said the rocky rollout was less than ideal but sensible given the powerful technology. In a statement, an Anthropic spokesperson wrote: \u201cWe intend to make Mythos-class models available.",
+      "what_happened": "The AI company\u2019s newest public model was met with strong backlash over stringent safety rules and refusals to help users, though others described the measures as \u201creasonable.\u201d Anthropic rankles users with safety-first Fable release Anthropic\u2019s latest AI model might be its most powerful public release, but the system\u2019s strict safety measures quickly triggered some of the strongest backlash the AI giant has faced. Artificial intelligence Anthropic suspends new AI models after government directive Markets Meet the.",
+      "why_matters": "Anthropic is also worried that competitors could use Anthropic\u2019s AI systems to turbocharge their own research - Anthropic uses its own AI systems to help create the next generation of its models. Many users, some of whom have marveled at Anthropic\u2019s previous announcements, torched the company for debuting its Fable 5 model Tuesday with what they say are overly stringent guardrails.",
+      "what_to_watch": "Peter Wallich, a senior research manager at an AI safety research center called the Constellation Institute , said the rocky rollout was less than ideal but sensible given the powerful technology. In a statement, an Anthropic spokesperson wrote: \u201cWe intend to make Mythos-class models available without these safeguards.",
+      "key_points": [
+        "The AI company\u2019s newest public model was met with strong backlash over stringent safety rules and refusals to help users, though others described the measures as \u201creasonable.\u201d Anthropic rankles users with safety-first.",
+        "Artificial intelligence Anthropic suspends new AI models after government directive Markets Meet the regular people making money off SpaceX\u2019s IPO - from a few bucks to a few million Opus 4.8, which was released in late.",
+        "In a statement, an Anthropic spokesperson wrote: \u201cWe intend to make Mythos-class models available without these safeguards to the broader biology and life sciences community so these capabilities can be used to.",
+        "Anthropic is also worried that competitors could use Anthropic\u2019s AI systems to turbocharge their own research - Anthropic uses its own AI systems to help create the next generation of its models.",
+        "Peter Wallich, a senior research manager at an AI safety research center called the Constellation Institute , said the rocky rollout was less than ideal but sensible given the powerful technology.",
+        "After the outcry, Anthropic backtracked and reversed some of its most conservative decisions less than two days after Fable 5 was released, highlighting growing concerns about AI companies\u2019 ability to unilaterally limit.",
+        "As a result, Anthropic released Fable 5 with a strict set of guardrails preventing it from answering a range of questions about cybersecurity or biology.",
+        "Many users, some of whom have marveled at Anthropic\u2019s previous announcements, torched the company for debuting its Fable 5 model Tuesday with what they say are overly stringent guardrails.",
+        "We are working to reduce these as fast as possible.\u201d Nathan Lambert, a leading AI researcher who champions collaborative approaches to building AI systems, wrote that with the cautious debut , \u201cAnthropic has made it.",
+        "Anthropic said Tuesday that to prevent other AI companies from using Fable 5 to improve their own AI products or research, it would include safeguards to make Fable 5\u2019s answers less intelligent or useful for user.",
+        "Regular people get the model earlier than they would otherwise.\u201d Wallich said a more lax approach - prioritizing earlier public access to Fable 5\u2019s full power without adequate protections - would be far worse.",
+        "Anthropic fears that powerful AI models like Mythos could allow bad actors to use AI systems to commit crimes, from launching crippling cyberattacks against critical infrastructure to designing bioweapons that could."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f0d9245c1518a28b.jpg",
+      "image_url": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/rockcms/2025-05/250523-anthropic-mn-1530-6cadda.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://siliconangle.com/2026/06/11/helix-launches-10b-funding-build-ai-infrastructure/",
+      "title": "Helix launches with $10B+ in funding to build AI infrastructure - SiliconANGLE",
+      "description": "Helix launches with $10B+ in funding to build AI infrastructure. SiliconANGLE",
+      "excerpt": "Helix launches with $10B+ in funding to build AI infrastructure. SiliconANGLE",
+      "summary": "Helix launches with $10B+ in funding to build AI infrastructure Endurance Energy raises $54M to tap geothermal power from undersea volcanoes Jeff Bezos' Prometheus raises $12B to accelerate industrial engineering projects Elon Musk's SpaceX raises record-breaking $75B after pricing IPO at $135 per share Upriver raises $14M to automate enterprise data engineering for AI Helix launches with $10B+ in funding to build AI infrastructure Endurance Energy raises $54M to tap geothermal power from undersea volcanoes Jeff. Vistra, the energy company that contributed to Helix\u2019s 10-figure funding haul, will be its preferred power provider. The chipmaker will help it with AI infrastructure deployment tasks. 15M+ viewers of theCUBE videos , powering conversations across AI, cloud, cybersecurity and more 11.4k+ theCUBE alumni - Connect with more than 11,400 tech and business leaders shaping the future through a unique trusted-based network. Helix launches with $10B+ in funding to build AI infrastructure.",
+      "what_happened": "Helix launches with $10B+ in funding to build AI infrastructure Endurance Energy raises $54M to tap geothermal power from undersea volcanoes Jeff Bezos' Prometheus raises $12B to accelerate industrial engineering projects Elon Musk's SpaceX raises record-breaking $75B after pricing IPO at $135 per share Upriver raises $14M to automate enterprise data engineering for AI Helix launches with $10B+ in funding to build AI infrastructure Endurance Energy raises $54M to tap geothermal power from undersea volcanoes Jeff.",
+      "why_matters": "Vistra, the energy company that contributed to Helix\u2019s 10-figure funding haul, will be its preferred power provider. The chipmaker will help it with AI infrastructure deployment tasks.",
+      "what_to_watch": "15M+ viewers of theCUBE videos , powering conversations across AI, cloud, cybersecurity and more 11.4k+ theCUBE alumni - Connect with more than 11,400 tech and business leaders shaping the future through a unique trusted-based network. Helix launches with $10B+ in funding to build AI infrastructure.",
+      "key_points": [
+        "Helix launches with $10B+ in funding to build AI infrastructure Endurance Energy raises $54M to tap geothermal power from undersea volcanoes Jeff Bezos' Prometheus raises $12B to accelerate industrial engineering.",
+        "\u201cHelix combines significant long-term capital with the capabilities and expertise to deliver holistic AI infrastructure solutions with speed and scale.\u201d The decision to launch the venture may have partly been motivated.",
+        "EXTRACT THE SIGNAL FROM THE NOISE",
+        "to build artificial intelligence data centers for hyperscaler cloud providers.",
+        "SiliconANGLE Helix launches with $10B+ in funding to build AI infrastructure An investor consortium today launched a venture called Helix Digital Infrastructure Inc.",
+        "The utility operates electricity generation facilities with aggregate capacity of about 44 gigawatts.",
+        "The group has provided Helix with more than $10 billion worth of long-term capital commitments.",
+        "Vistra, the energy company that contributed to Helix\u2019s 10-figure funding haul, will be its preferred power provider.",
+        "Helix has named Nvidia as a strategic partner.",
+        "A simulation tool enables engineers to test their data center designs before deploying them.",
+        "The chipmaker will help it with AI infrastructure deployment tasks.",
+        "Helix\u2019s energy investments will span electricity generation facilities and transport infrastructure such as power lines."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e36a4b197324f794.png",
+      "image_url": "https://s3.us-west-2.amazonaws.com/cube365-prod/related-content/ba8c110e-cedf-4670-929d-e2ecca19ae3c.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/cf586ab167606e9d.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c0e4e508bd4bb3ac.webp"
+      ],
+      "extra_image_urls": [
+        "https://cube365-prod.s3.us-west-2.amazonaws.com/related-content/efc8ccaf-b7a9-45c0-8564-437de321cf2d.webp",
+        "https://cube365-prod.s3.us-west-2.amazonaws.com/related-content/b32e0723-9db1-4985-888b-39e9503265c5.webp"
+      ]
+    },
+    {
+      "url": "https://cryptobriefing.com/openai-codex-free-rate-limit-reset/",
+      "title": "OpenAI introduces free banked reset system for Codex users",
+      "description": "OpenAI launches a free banked reset system for Codex users on Plus and Pro plans, letting them save and reuse rate limit resets alongside a referral",
+      "excerpt": "OpenAI launches a free banked reset system for Codex users on Plus and Pro plans, letting them save and reuse rate limit resets alongside a referral",
+      "summary": "OpenAI has paired the launch with a limited-time referral program. OpenAI has rolled out a \u201cbanked reset\u201d system for its Codex coding assistant, giving subscribers the ability to accumulate rate limit resets and deploy them whenever they actually need them. OpenAI launches a free banked reset system for Codex users on Plus and Pro plans, letting them save and reuse rate limit resets alongside a referral OpenAI introduces free banked reset system for Codex users A new rate limit banking feature lets ChatGPT subscribers save and reuse resets on demand, addressing months of user complaints about inflexible timing. When an existing user invites a friend and that friend completes. The feature is free for eligible users on Plus and Pro plans, marking a notable shift from the old model where resets happened on a fixed schedule whether you needed them or not.",
+      "what_happened": "OpenAI has paired the launch with a limited-time referral program. OpenAI has rolled out a \u201cbanked reset\u201d system for its Codex coding assistant, giving subscribers the ability to accumulate rate limit resets and deploy them whenever they actually need them.",
+      "why_matters": "OpenAI launches a free banked reset system for Codex users on Plus and Pro plans, letting them save and reuse rate limit resets alongside a referral OpenAI introduces free banked reset system for Codex users A new rate limit banking feature lets ChatGPT subscribers save and reuse resets on demand, addressing months of user complaints about inflexible timing. When an existing user invites a friend and that friend completes.",
+      "what_to_watch": "The feature is free for eligible users on Plus and Pro plans, marking a notable shift from the old model where resets happened on a fixed schedule whether you needed them or not.",
+      "key_points": [
+        "OpenAI has paired the launch with a limited-time referral program.",
+        "OpenAI has rolled out a \u201cbanked reset\u201d system for its Codex coding assistant, giving subscribers the ability to accumulate rate limit resets and deploy them whenever they actually need them.",
+        "Codex has grown significantly, crossing the 3 million weekly active users milestone and continuing to scale from there.",
+        "The feature is free for eligible users on Plus and Pro plans, marking a notable shift from the old model where resets happened on a fixed schedule whether you needed them or not.",
+        "OpenAI launches a free banked reset system for Codex users on Plus and Pro plans, letting them save and reuse rate limit resets alongside a referral OpenAI introduces free banked reset system for Codex users A new rate.",
+        "When an existing user invites a friend and that friend completes their first Codex interaction, both the referrer and the new user earn an additional reset.",
+        "The mechanics are straightforward.",
+        "From April through June 2026, user complaints about unpredictable and inflexible reset schedules became increasingly vocal across developer communities.",
+        "Users can track their available resets through the profile or usage menu inside the platform.",
+        "There is no token, no blockchain integration, and no digital asset play embedded in the banked reset feature.",
+        "Each eligible user can refer up to three friends, and the program runs for a two-week window.",
+        "OpenAI remains squarely focused on improving the usability of its coding tools."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/80b4351f00a3e381.jpg",
+      "image_url": "https://static.cryptobriefing.com/wp-content/uploads/2026/06/12005152/y-combinator-s-sam-altman-thinks-that-startups-are-overvalue-800x420.jpeg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20-valuation/",
+      "title": "Mistral is rumored to be raising \u20ac3B at \u20ac20B valuation | TechCrunch",
+      "description": "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion.",
+      "excerpt": "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion.",
+      "summary": "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion.",
+      "what_happened": "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/abfac8affe8052f9.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2264771189.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/category/enterprise/",
+      "title": "AI Infrastructure Archives",
+      "description": "",
+      "excerpt": "",
+      "summary": "AI Infrastructure Archives",
+      "what_happened": "AI Infrastructure Archives",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "AI Infrastructure Archives"
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://recipes.vllm.ai/MiniMaxAI/MiniMax-M3",
+      "title": "MiniMaxAI/MiniMax-M3 \u2014 427B / 26B active \u00b7 MOE \u00b7 1024K ctx",
+      "description": "MiniMax M3 vision-language MoE (427B total / 26B active) for frontier coding, agent toolchains, and 1M-token reasoning via MSA sparse attention. native multimodal (image + video + computer use); BF16 checkpoint with an MXFP8 variant from NVIDIA. Runs on NVIDIA (Hopper/Blackwell) and on AMD CDNA4 (MI350X/MI355X) and CDNA3 (MI300X/MI325X).",
+      "excerpt": "MiniMax M3 vision-language MoE (427B total / 26B active) for frontier coding, agent toolchains, and 1M-token reasoning via MSA sparse attention. native multimodal (image + video + computer use); BF16 checkpoint with an MXFP8 variant from NVIDIA. Runs on NVIDIA (Hopper/Blackwell) and on AMD CDNA4 (MI350X/MI355X) and CDNA3 (MI300X/MI325X).",
+      "summary": "MiniMax M3 vision-language MoE (427B total / 26B active) for frontier coding, agent toolchains, and 1M-token reasoning via MSA sparse attention. native multimodal (image + video + computer use); BF16 checkpoint with an MXFP8 variant from NVIDIA. Runs on NVIDIA (Hopper/Blackwell) and on AMD CDNA4 (MI350X/MI355X) and CDNA3 (MI300X/MI325X). Runs on NVIDIA (Hopper/Blackwell) and on AMD CDNA4 (MI350X/MI355X) and CDNA3 (MI300X/MI325X).",
+      "what_happened": "MiniMax M3 vision-language MoE (427B total / 26B active) for frontier coding, agent toolchains, and 1M-token reasoning via MSA sparse attention. native multimodal (image + video + computer use); BF16 checkpoint with an MXFP8 variant from NVIDIA.",
+      "why_matters": "Runs on NVIDIA (Hopper/Blackwell) and on AMD CDNA4 (MI350X/MI355X) and CDNA3 (MI300X/MI325X).",
+      "what_to_watch": "Runs on NVIDIA (Hopper/Blackwell) and on AMD CDNA4 (MI350X/MI355X) and CDNA3 (MI300X/MI325X).",
+      "key_points": [
+        "MiniMax M3 vision-language MoE (427B total / 26B active) for frontier coding, agent toolchains, and 1M-token reasoning via MSA sparse attention.",
+        "native multimodal (image + video + computer use); BF16 checkpoint with an MXFP8 variant from NVIDIA.",
+        "Runs on NVIDIA (Hopper/Blackwell) and on AMD CDNA4 (MI350X/MI355X) and CDNA3 (MI300X/MI325X)."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/89a5492425be718b.png",
+      "image_url": "https://recipes.vllm.ai/og?title=MiniMaxAI%2FMiniMax-M3&meta=427B%20%2F%2026B%20active%20%C2%B7%20MOE%20%C2%B7%201024K%20ctx&version=vLLM%20nightly%2B&path=%2FMiniMaxAI%2FMiniMax-M3",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.therobotreport.com/gatik-brings-autonomous-freight-pepsico-north-american-supply-chain/",
+      "title": "Gatik to bring autonomous freight to PepsiCo's North American supply chain - The Robot Report",
+      "description": "The partners are adding autonomous trucks to the PepsiCo regional transportation networks, where it moves products daily from site to site.",
+      "excerpt": "The partners are adding autonomous trucks to the PepsiCo regional transportation networks, where it moves products daily from site to site.",
+      "summary": "The partners are adding autonomous trucks to the PepsiCo regional transportation networks, where it moves products daily from site to site.",
+      "what_happened": "The partners are adding autonomous trucks to the PepsiCo regional transportation networks, where it moves products daily from site to site.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The partners are adding autonomous trucks to the PepsiCo regional transportation networks, where it moves products daily from site to site."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/794b3a40db1f98f1.jpg",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/06/Gatik-PepsiCo-featured.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 5,
+  "has_cta": true,
+  "slides": [
+    "Anthropic's safety warnings may have just backfired the government has pulled.",
+    "Anthropic rankles users with safety-first Fable release.",
+    "Helix launches with $10B+ in funding to build AI infrastructure.",
+    "OpenAI introduces free banked reset system for Codex users.",
+    "FOLLOW @graitech"
+  ]
+}
