@@ -1,0 +1,295 @@
+{
+  "email_received_at": "2026-06-13T02:35-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "AI Infrastructure Archives",
+  "subject": "\ud83d\udea8 AI Alert: 97 new launches \u2014 ZDNet AI, LangChain, TechCrunch AI",
+  "source_date": "Sat, 13 Jun 2026 02:35:52 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Microsoft",
+    "Apple",
+    "NVIDIA",
+    "Mistral"
+  ],
+  "models": [
+    "Gemini",
+    "Mistral"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "hardware and compute"
+  ],
+  "article_url": "https://blogs.nvidia.com/blog/category/enterprise/",
+  "article_title": "AI Infrastructure Archives",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+  "article_image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+  "article_items": [
+    {
+      "url": "https://blogs.nvidia.com/blog/category/enterprise/",
+      "title": "AI Infrastructure Archives",
+      "description": "",
+      "excerpt": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark AgentPerf from Artificial Analysis, the industry\u2019s first agentic AI benchmark, gives developers, enterprises and infrastructure providers a...",
+      "summary": "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts. NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge. If you do not allow these cookies, then some or all of these services may not function properly. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "what_happened": "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts.",
+      "why_matters": "NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge. If you do not allow these cookies, then some or all of these services may not function properly.",
+      "what_to_watch": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "key_points": [
+        "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "NVIDIA and Doosan Group Collaborate to Advance Physical AI and AI Factory Infrastructure NVIDIA and Doosan Group are expanding their collaboration to advance new opportunities across physical AI, robotics and AI factory.",
+        "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand The NVIDIA AI Cloud ecosystem is accelerating the global buildout of AI factory infrastructure.",
+        "And as agentic AI scales and autonomous, always-on special agents are deployed in the enterprise, performance per watt...",
+        "NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge.",
+        "Agent sandboxes run 50% faster on NVIDIA Vera than traditional CPUs - while enterprise data queries...",
+        "NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local The agentic AI moment has arrived, but delivering on its promise requires more than good models.",
+        "That\u2019s the focus of a new engineering-level collaboration between NVIDIA and Ineffable...",
+        "AI Factories: The New Infrastructure of Intelligence AI factories are token factories, converting power into intelligence in real time.",
+        "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South.",
+        "Partners are expanding capacity to meet growing demand from enterprises, startups, nations, AI labs and developers..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.therobotreport.com/ai-in-warehousing-akash-guptas-vision-for-the-future/",
+      "title": "AI in Warehousing: Akash Gupta's vision for the future",
+      "description": "Explore how GreyOrange's software revolutionizes warehouse automation with AI, transforming logistics into dynamic, predictive ecosystems.",
+      "excerpt": "Explore how GreyOrange's software revolutionizes warehouse automation with AI, transforming logistics into dynamic, predictive ecosystems.",
+      "summary": "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report AI in warehousing: Akash Gupta\u2019s vision for the future Episode 247 of The Robot Report Podcast features the CEO of GreyOrange. Podcast guest: Akash Gupta of GreyOrange Akash Gupta is the CEO of GreyOrange, where he leads the company \u2018s global strategy and culture of innovation at the intersection of AI, software, and robotics. Since co-founding GreyOrange in 2012, he has helped build the company into a global leader in AI-powered fulfillment orchestration, serving some of the world\u2019s largest retailers and logistics providers. AI in warehousing: Akash Gupta\u2019s vision for the future Episode 247 of The Robot Report Podcast features the CEO of GreyOrange.",
+      "what_happened": "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report AI in warehousing: Akash Gupta\u2019s vision for the future Episode 247 of The Robot Report Podcast features the CEO of GreyOrange.",
+      "why_matters": "Podcast guest: Akash Gupta of GreyOrange Akash Gupta is the CEO of GreyOrange, where he leads the company \u2018s global strategy and culture of innovation at the intersection of AI, software, and robotics. Since co-founding GreyOrange in 2012, he has helped build the company into a global leader in AI-powered fulfillment orchestration, serving some of the world\u2019s largest retailers and logistics providers.",
+      "what_to_watch": "AI in warehousing: Akash Gupta\u2019s vision for the future Episode 247 of The Robot Report Podcast features the CEO of GreyOrange.",
+      "key_points": [
+        "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around.",
+        "AI in warehousing: Akash Gupta\u2019s vision for the future Episode 247 of The Robot Report Podcast features the CEO of GreyOrange.",
+        "Effort to establish a National Commission on Robotics advances in Congress AGIBOT holds World Challenge 2026 to see how AI models perform on real tasks If you\u2019re running a warehouse , your robots, people, and systems.",
+        "Podcast guest: Akash Gupta of GreyOrange Akash Gupta is the CEO of GreyOrange, where he leads the company \u2018s global strategy and culture of innovation at the intersection of AI, software, and robotics.",
+        "Oitzman is a robotics industry veteran with 25-plus years of experience at various high-tech companies in the roles of marketing, sales and product management.",
+        "Akash was recognized in MIT Technology Review \u2018s \u201c35 Innovators Under 35\u201d and has mentored entrepreneurs and technology leaders at more than 25 institutions worldwide, including Stanford, MIT, and the Indian institutes.",
+        "Since co-founding GreyOrange in 2012, he has helped build the company into a global leader in AI-powered fulfillment orchestration, serving some of the world\u2019s largest retailers and logistics providers.",
+        "GreyMatter works with the robots you already have, or with the ones you want.",
+        "Contact Mike Oitzman \u2013 moitzman@wtwhmedia.com Mike Oitzman is Senior Editor of WTWH's Robotics Group and founder of the Mobile Robot Guide.",
+        "GreyMatter by GreyOrange is the AI-powered warehouse orchestration platform that coordinates every agent on your floor in real time, with over a million optimizations per minute, and delivering up to 4x productivity.",
+        "Explore how GreyOrange's software revolutionizes warehouse automation with AI, transforming logistics into dynamic, predictive ecosystems.",
+        "Learn how your comment data is processed."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e0bca3ea8a5fe11c.png",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/05/rbr50-sidebar-promo.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20-valuation/",
+      "title": "Mistral is rumored to be raising \u20ac3B at \u20ac20B valuation | TechCrunch",
+      "description": "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion.",
+      "excerpt": "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion.",
+      "summary": "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion.",
+      "what_happened": "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/abfac8affe8052f9.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2264771189.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.nbcnews.com/tech/tech-news/anthropic-rankles-users-safety-first-fable-release-rcna349702",
+      "title": "Anthropic rankles users with safety-first Fable release",
+      "description": "The AI company\u2019s newest public model was met with strong backlash over stringent safety rules and refusals to help users, though others described the measures as \u201creasonable.\u201d",
+      "excerpt": "The AI company\u2019s newest public model was met with strong backlash over stringent safety rules and refusals to help users, though others described the measures as \u201creasonable.\u201d",
+      "summary": "The AI company\u2019s newest public model was met with strong backlash over stringent safety rules and refusals to help users, though others described the measures as \u201creasonable.\u201d",
+      "what_happened": "The AI company\u2019s newest public model was met with strong backlash over stringent safety rules and refusals to help users, though others described the measures as \u201creasonable.\u201d",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The AI company\u2019s newest public model was met with strong backlash over stringent safety rules and refusals to help users, though others described the measures as \u201creasonable.\u201d"
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f0d9245c1518a28b.jpg",
+      "image_url": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/rockcms/2025-05/250523-anthropic-mn-1530-6cadda.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://cryptobriefing.com/openai-codex-free-rate-limit-reset/",
+      "title": "OpenAI introduces free banked reset system for Codex users",
+      "description": "OpenAI launches a free banked reset system for Codex users on Plus and Pro plans, letting them save and reuse rate limit resets alongside a referral",
+      "excerpt": "OpenAI launches a free banked reset system for Codex users on Plus and Pro plans, letting them save and reuse rate limit resets alongside a referral",
+      "summary": "OpenAI launches a free banked reset system for Codex users on Plus and Pro plans, letting them save and reuse rate limit resets alongside a referral",
+      "what_happened": "OpenAI launches a free banked reset system for Codex users on Plus and Pro plans, letting them save and reuse rate limit resets alongside a referral",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "OpenAI launches a free banked reset system for Codex users on Plus and Pro plans, letting them save and reuse rate limit resets alongside a referral"
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/80b4351f00a3e381.jpg",
+      "image_url": "https://static.cryptobriefing.com/wp-content/uploads/2026/06/12005152/y-combinator-s-sam-altman-thinks-that-startups-are-overvalue-800x420.jpeg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2192877/apple-says-siri-ai-will-not-flatter-or-romance-you/",
+      "title": "Apple says Siri AI won't suck up to you - Engadget",
+      "description": "In an interview, Apple\u2019s SVP of engineering explains how the new Siri wasn\u2019t designed to be sycophantic.",
+      "excerpt": "In an interview, Apple\u2019s SVP of engineering explains how the new Siri wasn\u2019t designed to be sycophantic.",
+      "summary": "In an interview, Apple\u2019s SVP of engineering explains how the new Siri wasn\u2019t designed to be sycophantic.",
+      "what_happened": "In an interview, Apple\u2019s SVP of engineering explains how the new Siri wasn\u2019t designed to be sycophantic.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "In an interview, Apple\u2019s SVP of engineering explains how the new Siri wasn\u2019t designed to be sycophantic."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/eb75ff0b052f69ce.jpg",
+      "image_url": "https://img5.zergnet.com/8767110_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2192873/google-injunction-chinese-ai-scams/",
+      "title": "Google sues Chinese scammers using Gemini AI for fraud - Engadget",
+      "description": "Google sued a Chinese cybercrime network for using its Gemini AI in a 'massive' scam operation.",
+      "excerpt": "Google sued a Chinese cybercrime network for using its Gemini AI in a 'massive' scam operation.",
+      "summary": "Google sued a Chinese cybercrime network for using its Gemini AI in a 'massive' scam operation.",
+      "what_happened": "Google sued a Chinese cybercrime network for using its Gemini AI in a 'massive' scam operation.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Google sued a Chinese cybercrime network for using its Gemini AI in a 'massive' scam operation."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://siliconangle.com/2026/06/11/helix-launches-10b-funding-build-ai-infrastructure/",
+      "title": "Helix launches with $10B+ in funding to build AI infrastructure - SiliconANGLE",
+      "description": "Helix launches with $10B+ in funding to build AI infrastructure. SiliconANGLE",
+      "excerpt": "Helix launches with $10B+ in funding to build AI infrastructure. SiliconANGLE",
+      "summary": "Helix launches with $10B+ in funding to build AI infrastructure.",
+      "what_happened": "Helix launches with $10B+ in funding to build AI infrastructure.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Helix launches with $10B+ in funding to build AI infrastructure."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e36a4b197324f794.png",
+      "image_url": "https://s3.us-west-2.amazonaws.com/cube365-prod/related-content/ba8c110e-cedf-4670-929d-e2ecca19ae3c.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/cf586ab167606e9d.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c0e4e508bd4bb3ac.webp"
+      ],
+      "extra_image_urls": [
+        "https://cube365-prod.s3.us-west-2.amazonaws.com/related-content/efc8ccaf-b7a9-45c0-8564-437de321cf2d.webp",
+        "https://cube365-prod.s3.us-west-2.amazonaws.com/related-content/b32e0723-9db1-4985-888b-39e9503265c5.webp"
+      ]
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 3,
+  "has_cta": true,
+  "slides": [
+    "AI in Warehousing Akash Gupta's vision for the future.",
+    "Helix launches with $10B+ in funding to build AI infrastructure.",
+    "FOLLOW @graitech"
+  ]
+}
