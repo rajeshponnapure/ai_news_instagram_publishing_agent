@@ -1,0 +1,38 @@
+{
+  "email_received_at": "2026-06-13T20:12+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Sat, 13 Jun 2026 20:12:51 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/948425/tribeca-2026-dear-upstairs-neighbors-google-deepmind-openai",
+      "title": "Company : The Verge AI",
+      "description": "[MEDIUM] The future of Hollywood isn\u2019t feeding prompts into vanilla gen AI models Company : The Verge AI Summary : AI wasn\u2019t just slop at this year\u2019s Tribeca Film Festival.\ufeff Link :",
+      "text": "[MEDIUM] The future of Hollywood isn\u2019t feeding prompts into vanilla gen AI models Company : The Verge AI Summary : AI wasn\u2019t just slop at this year\u2019s Tribeca Film Festival.\ufeff Link :",
+      "excerpt": "[MEDIUM] The future of Hollywood isn\u2019t feeding prompts into vanilla gen AI models Company : The Verge AI Summary : AI wasn\u2019t just slop at this year\u2019s Tribeca Film Festival.\ufeff Link :",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/Figure05_700_6_1080p.png?quality=90&amp;strip=all&amp;crop=0%2C3.4613147178592%2C100%2C93.077370564282&amp;w=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theverge.com/ai-artificial-intelligence/948425/tribeca-2026-dear-upstairs-neighbors-google-deepmind-openai",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "Share Gift Concept builds art Dear Upstairs Neighbors used to train.",
+    "FOLLOW @graitech"
+  ]
+}
