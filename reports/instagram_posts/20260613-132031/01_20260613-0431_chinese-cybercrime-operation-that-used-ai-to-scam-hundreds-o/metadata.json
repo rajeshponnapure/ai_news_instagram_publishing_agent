@@ -1,0 +1,291 @@
+{
+  "email_received_at": "2026-06-13T04:31-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Chinese cybercrime operation that used AI to scam 'hundreds of thousands of victims' sued by Google |.",
+  "subject": "\ud83d\udea8 AI Alert: 93 new launches \u2014 The Guardian Tech, Bloomberg Tech, ZDNet AI",
+  "source_date": "Sat, 13 Jun 2026 04:31:03 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Apple",
+    "NVIDIA"
+  ],
+  "models": [
+    "Claude",
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "hardware and compute"
+  ],
+  "article_url": "https://techcrunch.com/2026/06/12/chinese-cybercrime-operation-that-used-ai-to-scam-hundreds-of-thousands-of-victims-sued-by-google/",
+  "article_title": "Chinese cybercrime operation that used AI to scam 'hundreds of thousands of victims' sued by Google | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6143d1ecacf9e31f.png",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/06/outsider-enterprise-stolen-credit-cards.png?w=680",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/12/chinese-cybercrime-operation-that-used-ai-to-scam-hundreds-of-thousands-of-victims-sued-by-google/",
+      "title": "Chinese cybercrime operation that used AI to scam 'hundreds of thousands of victims' sued by Google | TechCrunch",
+      "description": "The tech giant said a group called \"Outsider Enterprise\" used AI to scam hundreds of thousands of victims, sending 2.5 million text messages over a span of two weeks.",
+      "excerpt": "The tech giant said a group called \"Outsider Enterprise\" used AI to scam hundreds of thousands of victims, sending 2.5 million text messages over a span of two weeks.",
+      "summary": "Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s Fable Google just fired a warning shot in the AI subscription price wars WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more Anthropic\u2019s Claude Fable 5 is a version of Mythos the public can access today Microsoft\u2019s open source tools were hacked to steal passwords of AI developers We won't sell or share your. Google said this \u201cphishing-for-dummies\u201d software called Outsider, which costs $88 per week or $200 per month, allows operators to create fake websites with the help of AI platforms, including Google\u2019s own Gemini. The spokesperson said that since July 2023, Outsider Enterprise\u2019s phishing platform enabled cybercriminals to steal \u201cat least an estimated 3,870,000 stolen credit cards and a corresponding estimated $1.9B in losses.\u201d. PDT and has since been updated with new information from Google\u2019s complaint, and the FBI\u2019s comment.",
+      "what_happened": "Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s Fable Google just fired a warning shot in the AI subscription price wars WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more Anthropic\u2019s Claude Fable 5 is a version of Mythos the public can access today Microsoft\u2019s open source tools were hacked to steal passwords of AI developers We won't sell or share your.",
+      "why_matters": "Google said this \u201cphishing-for-dummies\u201d software called Outsider, which costs $88 per week or $200 per month, allows operators to create fake websites with the help of AI platforms, including Google\u2019s own Gemini. The spokesperson said that since July 2023, Outsider Enterprise\u2019s phishing platform enabled cybercriminals to steal \u201cat least an estimated 3,870,000 stolen credit cards and a corresponding estimated $1.9B in losses.\u201d.",
+      "what_to_watch": "PDT and has since been updated with new information from Google\u2019s complaint, and the FBI\u2019s comment.",
+      "key_points": [
+        "Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s Fable Google just fired a warning shot in.",
+        "Outsider Enterprise has financially scammed \u201chundreds of thousands of victims\u201d with losses \u201cestimated in the millions.\u201d The group deployed 9,000 fake websites, one million fraudulent web domains, and 2.5 million texts.",
+        "Google said this \u201cphishing-for-dummies\u201d software called Outsider, which costs $88 per week or $200 per month, allows operators to create fake websites with the help of AI platforms, including Google\u2019s own Gemini.",
+        "PDT and has since been updated with new information from Google\u2019s complaint, and the FBI\u2019s comment.",
+        "The spokesperson said that since July 2023, Outsider Enterprise\u2019s phishing platform enabled cybercriminals to steal \u201cat least an estimated 3,870,000 stolen credit cards and a corresponding estimated $1.9B in losses.\u201d.",
+        "The common goal is to steal passwords and corresponding multi-factor codes as well as financial information, which the scammers can do by receiving the data that victims input into the fake websites, with the.",
+        "To give an idea of the scale of Outsider Enterprise\u2019s operation, Google said that over a five-month period, from November 14, 2025 to April 14, 2026, the company detected more than 1.59 million URLs connected to it.",
+        "The company said it has been collaborating with AT&T, T-Mobile, and Verizon to block the scam text messages, and said it is coordinating with the FBI.",
+        "On Friday, the tech giant announced a lawsuit against an alleged Chinese cybercrime network called Outsider Enterprise, which Google says uses AI in its campaigns to send scam text messages impersonating Google and.",
+        "The cybercriminals have allegedly used Google Drive and Google Cloud infrastructure to host the phishing websites.",
+        "The cybercriminals have stolen \u201cat least 36,000 payment cards issued by financial institutions in 95 countries,\u201d according to Google.",
+        "This group \u201cbuilt, maintains, and uses a turn-key, online software suite that enables criminals, regardless of technical skill, to publish fraudulent websites designed to rob victims and enrich themselves,\u201d according to."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6143d1ecacf9e31f.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/outsider-enterprise-stolen-credit-cards.png?w=680",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/category/enterprise/",
+      "title": "AI Infrastructure Archives",
+      "description": "",
+      "excerpt": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark AgentPerf from Artificial Analysis, the industry\u2019s first agentic AI benchmark, gives developers, enterprises and infrastructure providers a...",
+      "summary": "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts. NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge. If you do not allow these cookies, then some or all of these services may not function properly. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "what_happened": "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts.",
+      "why_matters": "NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge. If you do not allow these cookies, then some or all of these services may not function properly.",
+      "what_to_watch": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "key_points": [
+        "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "NVIDIA and Doosan Group Collaborate to Advance Physical AI and AI Factory Infrastructure NVIDIA and Doosan Group are expanding their collaboration to advance new opportunities across physical AI, robotics and AI factory.",
+        "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand The NVIDIA AI Cloud ecosystem is accelerating the global buildout of AI factory infrastructure.",
+        "And as agentic AI scales and autonomous, always-on special agents are deployed in the enterprise, performance per watt...",
+        "NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge.",
+        "Agent sandboxes run 50% faster on NVIDIA Vera than traditional CPUs - while enterprise data queries...",
+        "NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local The agentic AI moment has arrived, but delivering on its promise requires more than good models.",
+        "That\u2019s the focus of a new engineering-level collaboration between NVIDIA and Ineffable...",
+        "AI Factories: The New Infrastructure of Intelligence AI factories are token factories, converting power into intelligence in real time.",
+        "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South.",
+        "Partners are expanding capacity to meet growing demand from enterprises, startups, nations, AI labs and developers..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/12/metas-months-old-ai-unit-is-a-soul-crushing-gulag-say-the-engineers-stuck-inside-it/",
+      "title": "Meta's months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it | TechCrunch",
+      "description": "A new report suggests the unit, which employs 6,500 people, is on the verge of revolt.",
+      "excerpt": "A new report suggests the unit, which employs 6,500 people, is on the verge of revolt.",
+      "summary": "A new report suggests the unit, which employs 6,500 people, is on the verge of revolt.",
+      "what_happened": "A new report suggests the unit, which employs 6,500 people, is on the verge of revolt.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "A new report suggests the unit, which employs 6,500 people, is on the verge of revolt."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fe0136128f47f0be.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/07/GettyImages-2194278734.jpg?w=1024",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.therobotreport.com/robotics-summit-panel-explores-state-humanoid-robot-design/",
+      "title": "Robotics Summit panel explores the state of humanoid robot design - The Robot Report",
+      "description": "At the Robotics Summit & Expo, experts weighed in on humanoid robotics today. and the ability to achieve a $20,000 price point tomorrow.",
+      "excerpt": "At the Robotics Summit & Expo, experts weighed in on humanoid robotics today. and the ability to achieve a $20,000 price point tomorrow.",
+      "summary": "and the ability to achieve a $20,000 price point tomorrow. At the Robotics Summit & Expo, experts weighed in on humanoid robotics today. At the Robotics Summit & Expo, experts weighed in on humanoid robotics today. At the Robotics Summit & Expo, experts weighed in on humanoid robotics today.",
+      "what_happened": "and the ability to achieve a $20,000 price point tomorrow. At the Robotics Summit & Expo, experts weighed in on humanoid robotics today.",
+      "why_matters": "At the Robotics Summit & Expo, experts weighed in on humanoid robotics today.",
+      "what_to_watch": "At the Robotics Summit & Expo, experts weighed in on humanoid robotics today.",
+      "key_points": [
+        "At the Robotics Summit & Expo, experts weighed in on humanoid robotics today.",
+        "and the ability to achieve a $20,000 price point tomorrow."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e0bca3ea8a5fe11c.png",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/05/rbr50-sidebar-promo.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.therobotreport.com/massrobotics-announces-winners-2026-robotics-medal-rising-star-awards/",
+      "title": "MassRobotics announces the winners of 2026 Robotics Medal and Rising Star awards - The Robot Report",
+      "description": "Allison Okamura and Ayoung Kim won MassRobotics' 2026 Robotics Medal and Rising Star Medal, which honor women in robotics.",
+      "excerpt": "Allison Okamura and Ayoung Kim won MassRobotics' 2026 Robotics Medal and Rising Star Medal, which honor women in robotics.",
+      "summary": "Allison Okamura and Ayoung Kim won MassRobotics' 2026 Robotics Medal and Rising Star Medal, which honor women in robotics.",
+      "what_happened": "Allison Okamura and Ayoung Kim won MassRobotics' 2026 Robotics Medal and Rising Star Medal, which honor women in robotics.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Allison Okamura and Ayoung Kim won MassRobotics' 2026 Robotics Medal and Rising Star Medal, which honor women in robotics."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e0bca3ea8a5fe11c.png",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/05/rbr50-sidebar-promo.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theguardian.com/science/2026/jun/12/spacex-stock-price-ipo-spcx",
+      "title": "SpaceX to list on US stock market at historic $1.77tn valuation",
+      "description": "Initial public offering for aerospace and AI company made Musk the world\u2019s first trillionaire as share prices jumped",
+      "excerpt": "Initial public offering for aerospace and AI company made Musk the world\u2019s first trillionaire as share prices jumped",
+      "summary": "Initial public offering for aerospace and AI company made Musk the world\u2019s first trillionaire as share prices jumped",
+      "what_happened": "Initial public offering for aerospace and AI company made Musk the world\u2019s first trillionaire as share prices jumped",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Initial public offering for aerospace and AI company made Musk the world\u2019s first trillionaire as share prices jumped"
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1ee61e896b5a08af.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/16dc5a1aa8616c5301ccdcda329741cfb959c55b/448_0_4167_3333/master/4167.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=53f3a7d0d77872b1180380152cb403ea",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/prompt-ai-ipos-raise-question-enterprises-still-trying-to-answer",
+      "title": "AI IPOs Raise a Question Enterprises Are Still Trying to Answer",
+      "description": "AI's IPOs Raise a Question Enterprises Are Still Trying to Answer",
+      "excerpt": "AI's IPOs Raise a Question Enterprises Are Still Trying to Answer",
+      "summary": "AI's IPOs Raise a Question Enterprises Are Still Trying to Answer",
+      "what_happened": "AI's IPOs Raise a Question Enterprises Are Still Trying to Answer",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "AI's IPOs Raise a Question Enterprises Are Still Trying to Answer"
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9164e7d359d15b15.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blte64887ebaf268da0/6a2ac9d393023eb9cc9ebbb8/Sustainability.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c44b7f4f4250295f.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7af9a82f60533258.jpg"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blta3a86028509ef6dc/69dfbb233abc6d90646e834f/Broadcom.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltf07823c531e62b63/6a22cc57d6dfcca6062336fc/Amazon_robot.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ]
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/c4gyp523ly8o?at_medium=RSS&at_campaign=rss",
+      "title": "Elon Musk, the world's first trillionaire - his stratospheric rise in charts",
+      "description": "The BBC breaks down how the tech mogul's fortune has grown.",
+      "excerpt": "The BBC breaks down how the tech mogul's fortune has grown.",
+      "summary": "The BBC breaks down how the tech mogul's fortune has grown.",
+      "what_happened": "The BBC breaks down how the tech mogul's fortune has grown.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The BBC breaks down how the tech mogul's fortune has grown."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/862ee0b3abdca6e8.webp",
+      "image_url": "https://ichef.bbci.co.uk/news/480/cpsprodpb/94ec/live/18c51a40-66aa-11f1-8546-8f19e4fe30f4.png.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "AI IPOs Raise a Question Enterprises Are Still Trying to Answer.",
+    "FOLLOW @graitech"
+  ]
+}
