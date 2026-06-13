@@ -9,8 +9,15 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260613-215608/01_20260613-1349_chinese-cybercrime-operation-that-used-ai-to-scam-hundreds-o/slide_03.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260613-215608/01_20260613-1349_chinese-cybercrime-operation-that-used-ai-to-scam-hundreds-o/slide_04.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260613-215608/01_20260613-1349_chinese-cybercrime-operation-that-used-ai-to-scam-hundreds-o/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260613-215608/01_20260613-1349_chinese-cybercrime-operation-that-used-ai-to-scam-hundreds-o/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260613-215608/01_20260613-1349_chinese-cybercrime-operation-that-used-ai-to-scam-hundreds-o/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260613-215608/01_20260613-1349_chinese-cybercrime-operation-that-used-ai-to-scam-hundreds-o/slide_04.png"
+      ],
+      "status": "published",
+      "creation_id": "18046525850577438",
+      "published_at": "2026-06-13T21:58:55+00:00"
     }
   ]
 }
