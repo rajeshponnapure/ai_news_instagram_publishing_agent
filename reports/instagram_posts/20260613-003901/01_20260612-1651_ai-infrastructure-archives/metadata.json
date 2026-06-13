@@ -1,0 +1,337 @@
+{
+  "email_received_at": "2026-06-12T16:51-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "AI Infrastructure Archives",
+  "subject": "\ud83d\udea8 AI Alert: 111 new launches \u2014 Bloomberg Tech, CNBC Technology",
+  "source_date": "Fri, 12 Jun 2026 16:51:28 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Apple",
+    "Amazon"
+  ],
+  "models": [],
+  "topics": [
+    "funding or business",
+    "regulation or safety",
+    "hardware and compute"
+  ],
+  "article_url": "https://blogs.nvidia.com/blog/category/enterprise/",
+  "article_title": "AI Infrastructure Archives",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+  "article_image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+  "article_items": [
+    {
+      "url": "https://blogs.nvidia.com/blog/category/enterprise/",
+      "title": "AI Infrastructure Archives",
+      "description": "",
+      "excerpt": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark AgentPerf from Artificial Analysis, the industry\u2019s first agentic AI benchmark, gives developers, enterprises and infrastructure providers a...",
+      "summary": "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts. NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge. If you do not allow these cookies, then some or all of these services may not function properly. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "what_happened": "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts.",
+      "why_matters": "NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge. If you do not allow these cookies, then some or all of these services may not function properly.",
+      "what_to_watch": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "key_points": [
+        "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "NVIDIA and Doosan Group Collaborate to Advance Physical AI and AI Factory Infrastructure NVIDIA and Doosan Group are expanding their collaboration to advance new opportunities across physical AI, robotics and AI factory.",
+        "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand The NVIDIA AI Cloud ecosystem is accelerating the global buildout of AI factory infrastructure.",
+        "And as agentic AI scales and autonomous, always-on special agents are deployed in the enterprise, performance per watt...",
+        "NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge.",
+        "Agent sandboxes run 50% faster on NVIDIA Vera than traditional CPUs - while enterprise data queries...",
+        "NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local The agentic AI moment has arrived, but delivering on its promise requires more than good models.",
+        "That\u2019s the focus of a new engineering-level collaboration between NVIDIA and Ineffable...",
+        "AI Factories: The New Infrastructure of Intelligence AI factories are token factories, converting power into intelligence in real time.",
+        "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South.",
+        "Partners are expanding capacity to meet growing demand from enterprises, startups, nations, AI labs and developers..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/prompt-ai-ipos-raise-question-enterprises-still-trying-to-answer",
+      "title": "AI IPOs Raise a Question Enterprises Are Still Trying to Answer",
+      "description": "AI's IPOs Raise a Question Enterprises Are Still Trying to Answer",
+      "excerpt": "AI's IPOs Raise a Question Enterprises Are Still Trying to Answer",
+      "summary": "Neura Robotics Raises $1.4B for Physical AI : Neura Robotics secured a $1.4 billion funding round backed by Nvidia, Amazon and Qualcomm, highlighting continued momentum behind humanoid robotics as investors bet on AI's expansion beyond software and into the physical world. The findings suggest that deploying AI may be the easier part. As the company prepares for life in the public markets, attention is likely to shift toward revenue growth, margins, customer retention and a clear path to profitability. Enterprises are facing a similar challenge: how to measure AI's impact, move projects into production and translate adoption into business outcomes. The next phase of enterprise AI may be defined by the ability to demonstrate measurable business value for both vendors and enterprises. Databricks Intros OpenSharing, a New Standard for Sharing AI : Databricks introduced OpenSharing, an open standard designed to make it easier for organizations to share AI assets.",
+      "what_happened": "Neura Robotics Raises $1.4B for Physical AI : Neura Robotics secured a $1.4 billion funding round backed by Nvidia, Amazon and Qualcomm, highlighting continued momentum behind humanoid robotics as investors bet on AI's expansion beyond software and into the physical world. The findings suggest that deploying AI may be the easier part.",
+      "why_matters": "As the company prepares for life in the public markets, attention is likely to shift toward revenue growth, margins, customer retention and a clear path to profitability. Enterprises are facing a similar challenge: how to measure AI's impact, move projects into production and translate adoption into business outcomes.",
+      "what_to_watch": "The next phase of enterprise AI may be defined by the ability to demonstrate measurable business value for both vendors and enterprises. Databricks Intros OpenSharing, a New Standard for Sharing AI : Databricks introduced OpenSharing, an open standard designed to make it easier for organizations to share AI assets.",
+      "key_points": [
+        "Neura Robotics Raises $1.4B for Physical AI : Neura Robotics secured a $1.4 billion funding round backed by Nvidia, Amazon and Qualcomm, highlighting continued momentum behind humanoid robotics as investors bet on AI's.",
+        "The findings suggest that deploying AI may be the easier part.",
+        "Databricks Intros OpenSharing, a New Standard for Sharing AI : Databricks introduced OpenSharing, an open standard designed to make it easier for organizations to share AI assets such as models, agents and tools across.",
+        "Related: Meta Partners With Reliance for First India AI Data Center Humans Matter, AI Still in Flux and More Lessons from Gartner Summit : One of the key messages emerging from the tech research firm\u2019s latest summit was.",
+        "The issue isn't necessarily the technology itself.",
+        "Buy : Apple's latest AI update suggests the build-versus-buy equation is changing, with AI making it faster and cheaper for organizations to develop some capabilities in-house while still relying on partners for others.",
+        "Hughes is also the founder of LTH Media, a strategic editorial practice where she partners with leaders and organizations to develop thought leadership, newsletters and consistent, high-quality communication grounded in.",
+        "The next phase of enterprise AI may be defined by the ability to demonstrate measurable business value for both vendors and enterprises.",
+        "She most recently served as editor of AI Business and IoT World Today, leading editorial strategy, daily coverage and newsletters reaching more than 1 million readers each month.",
+        "AI Summit London: AI\u2019s Role in UK Defence : Speakers at the AI conference examined AI's growing role in defense, underscoring the tension between the rapid pace of AI innovation and the slower adoption cycles typically.",
+        "And a recent IBM report found that many technology leaders feel unprepared for the scale of AI deployments expected in the coming year.",
+        "Related: Startup Gets OpenAI Backing to Overhaul Enterprise AI Automation This week\u2019s developments point to a shift in how organizations evaluate AI success: The focus is moving from adoption and experimentation to."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9164e7d359d15b15.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blte64887ebaf268da0/6a2ac9d393023eb9cc9ebbb8/Sustainability.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c44b7f4f4250295f.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7af9a82f60533258.jpg"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blta3a86028509ef6dc/69dfbb233abc6d90646e834f/Broadcom.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltf07823c531e62b63/6a22cc57d6dfcca6062336fc/Amazon_robot.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ]
+    },
+    {
+      "url": "https://recipes.vllm.ai/MiniMaxAI/MiniMax-M3",
+      "title": "MiniMaxAI/MiniMax-M3 \u2014 427B / 26B active \u00b7 MOE \u00b7 1024K ctx",
+      "description": "MiniMax M3 vision-language MoE (427B total / 26B active) for frontier coding, agent toolchains, and 1M-token reasoning via MSA sparse attention - native multimodal (image + video + computer use); BF16 checkpoint with an MXFP8 variant from NVIDIA. Runs on NVIDIA (Hopper/Blackwell) and on AMD CDNA4 (MI350X/MI355X) and CDNA3 (MI300X/MI325X).",
+      "excerpt": "MiniMax M3 vision-language MoE (427B total / 26B active) for frontier coding, agent toolchains, and 1M-token reasoning via MSA sparse attention - native multimodal (image + video + computer use); BF16 checkpoint with an MXFP8 variant from NVIDIA. Runs on NVIDIA (Hopper/Blackwell) and on AMD CDNA4 (MI350X/MI355X) and CDNA3 (MI300X/MI325X).",
+      "summary": "MiniMax-M3 support has not yet shipped in a stable vLLM release - use the dedicated Docker image: MiniMax-M3 support has not yet shipped in a stable vLLM release - use the dedicated Docker image or nightly after the release: Launching the Server NVIDIA - TP8 (8x H200 / H20) AMD ROCm (MI350X/MI355X (gfx950), MI300X/MI325X (gfx942)) For gfx950: Prefer using the MXFP8 variant MiniMaxAI/MiniMax-M3-MXFP8 for TP=4 and a smaller footprint. M3 reasoning is controlled by the thinking_mode , there are three values: enabled. To go past it, supply a YaRN rope_scaling on the text config (a top-level override silently misses the decoder's config) and allow the long max length. --block-size 128 is mandatory on every platform (MSA sparse/index cache). MiniMax M3 vision-language MoE (427B total / 26B active) for frontier coding, agent toolchains, and 1M-token reasoning via MSA sparse attention - native multimodal (image + video + computer use); BF16 checkpoint with an MXFP8 variant from NVIDIA.",
+      "what_happened": "MiniMax-M3 support has not yet shipped in a stable vLLM release - use the dedicated Docker image: MiniMax-M3 support has not yet shipped in a stable vLLM release - use the dedicated Docker image or nightly after the release: Launching the Server NVIDIA - TP8 (8x H200 / H20) AMD ROCm (MI350X/MI355X (gfx950), MI300X/MI325X (gfx942)) For gfx950: Prefer using the MXFP8 variant MiniMaxAI/MiniMax-M3-MXFP8 for TP=4 and a smaller footprint. M3 reasoning is controlled by the thinking_mode , there are three values: enabled.",
+      "why_matters": "To go past it, supply a YaRN rope_scaling on the text config (a top-level override silently misses the decoder's config) and allow the long max length. --block-size 128 is mandatory on every platform (MSA sparse/index cache).",
+      "what_to_watch": "MiniMax M3 vision-language MoE (427B total / 26B active) for frontier coding, agent toolchains, and 1M-token reasoning via MSA sparse attention - native multimodal (image + video + computer use); BF16 checkpoint with an MXFP8 variant from NVIDIA.",
+      "key_points": [
+        "MiniMax-M3 support has not yet shipped in a stable vLLM release - use the dedicated Docker image: MiniMax-M3 support has not yet shipped in a stable vLLM release - use the dedicated Docker image or nightly after the.",
+        "MiniMax M3 vision-language MoE (427B total / 26B active) for frontier coding, agent toolchains, and 1M-token reasoning via MSA sparse attention - native multimodal (image + video + computer use); BF16 checkpoint with an.",
+        "MiniMaxAI / MiniMax-M3 MiniMax M3 vision-language MoE (427B total / 26B active) for frontier coding, agent toolchains, and 1M-token reasoning via MSA sparse attention - native multimodal (image + video + computer use).",
+        "M3 reasoning is controlled by the thinking_mode , there are three values: enabled - the model thinks before every response, including after tool results.",
+        "Quantized Variant (MXFP8) MiniMaxAI/MiniMax-M3-MXFP8 is an MXFP8 checkpoint quantized by NVIDIA from the original FP16 weights - roughly half the VRAM of the BF16 release.",
+        "Use TP=8 for lower latency or long context length, or the default bf16 model.",
+        "TP size is set to the GPU count at deploy time.",
+        "Frontier coding and agent (SWE-Bench Pro 59.0, Terminal-Bench 2.1 66.0); MSA sparse attention; 1M context Single-node tensor parallel.",
+        "BF16 needs TP=8; the MXFP8 variant runs from TP=4.",
+        "Use for complex reasoning and agents.",
+        "Context Length & GPU Memory The full 1M-token window ( context_length: 1048576 ) needs a large KV cache.",
+        "Frontier coding and agent capabilities - SWE-Bench Pro 59.0%, Terminal-Bench 2.1 66.0%, SWE-fficiency 34.8%, KernelBench Hard 28.8%, MCP Atlas 74.2%."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/89a5492425be718b.png",
+      "image_url": "https://recipes.vllm.ai/og?title=MiniMaxAI%2FMiniMax-M3&meta=427B%20%2F%2026B%20active%20%C2%B7%20MOE%20%C2%B7%201024K%20ctx&version=vLLM%20nightly%2B&path=%2FMiniMaxAI%2FMiniMax-M3",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/c4gyp523ly8o?at_medium=RSS&at_campaign=rss",
+      "title": "Elon Musk, the world's first trillionaire - his stratospheric rise in charts",
+      "description": "The BBC breaks down how the tech mogul's fortune has grown.",
+      "excerpt": "The BBC breaks down how the tech mogul's fortune has grown.",
+      "summary": "Elon Musk's SpaceX raises $75bn ahead of world's biggest stock market launch The public sale is also expected to make Elon Musk the world's first trillionaire. Look at the grid below: the expanding blue blocks show how completely tech titans have monopolised the top spots over the last decade. 'I was employee number one': SpaceX co-founder reacts to firm's market debut The BBC's Michelle Fleury spoke to Tom Mueller, who was one of the company's founders alongside Elon Musk in 2002. What you need to know as millions of SpaceX shares go up for sale Elon Musk gets public trading of SpaceX under way from Texas SpaceX founder Elon Musk said he gave the company \"less than a 10% chance of succeeding at all\" when it first. Watch: Three things to know about SpaceX's stock market debut The BBC's Samira Hussain explains everything you need to know about SpaceX's historic IPO. In January 2020, he was only the 35th richest person in the world, with a fortune of around $28bn.",
+      "what_happened": "Elon Musk's SpaceX raises $75bn ahead of world's biggest stock market launch The public sale is also expected to make Elon Musk the world's first trillionaire. Look at the grid below: the expanding blue blocks show how completely tech titans have monopolised the top spots over the last decade.",
+      "why_matters": "'I was employee number one': SpaceX co-founder reacts to firm's market debut The BBC's Michelle Fleury spoke to Tom Mueller, who was one of the company's founders alongside Elon Musk in 2002. What you need to know as millions of SpaceX shares go up for sale Elon Musk gets public trading of SpaceX under way from Texas SpaceX founder Elon Musk said he gave the company \"less than a 10% chance of succeeding at all\" when it first.",
+      "what_to_watch": "Watch: Three things to know about SpaceX's stock market debut The BBC's Samira Hussain explains everything you need to know about SpaceX's historic IPO. In January 2020, he was only the 35th richest person in the world, with a fortune of around $28bn.",
+      "key_points": [
+        "Elon Musk's SpaceX raises $75bn ahead of world's biggest stock market launch The public sale is also expected to make Elon Musk the world's first trillionaire.",
+        "Back in 2015, only two of the world's top 10 richest people were from the tech world.",
+        "Look at the grid below: the expanding blue blocks show how completely tech titans have monopolised the top spots over the last decade.",
+        "In January 2020, he was only the 35th richest person in the world, with a fortune of around $28bn.",
+        "By January 2021, the tech mogul had risen to become the world's richest person, briefly overtaking Jeff Bezos.",
+        "who first made waves in the tech industry in the late 1990s.",
+        "Indeed in February, the tech mogul said on X that less than \"0.1%\" of his net worth was held in cash.",
+        "'I was employee number one': SpaceX co-founder reacts to firm's market debut The BBC's Michelle Fleury spoke to Tom Mueller, who was one of the company's founders alongside Elon Musk in 2002.",
+        "What you need to know as millions of SpaceX shares go up for sale Elon Musk gets public trading of SpaceX under way from Texas SpaceX founder Elon Musk said he gave the company \"less than a 10% chance of succeeding at.",
+        "The BBC is in multiple languages",
+        "Musk currently owns a 12% stake in Tesla, a company with a market valuation of around $1.5tn, and a 42% stake in SpaceX, which is now worth more than $2tn.",
+        "in charts Elon Musk became the world's first trillionaire on Friday, following the record-breaking stock market debut of his company SpaceX."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/862ee0b3abdca6e8.webp",
+      "image_url": "https://ichef.bbci.co.uk/news/480/cpsprodpb/94ec/live/18c51a40-66aa-11f1-8546-8f19e4fe30f4.png.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2192873/google-injunction-chinese-ai-scams/",
+      "title": "Google sues Chinese scammers using Gemini AI for fraud - Engadget",
+      "description": "Google sued a Chinese cybercrime network for using its Gemini AI in a 'massive' scam operation.",
+      "excerpt": "Google sued a Chinese cybercrime network for using its Gemini AI in a 'massive' scam operation.",
+      "summary": "Google sued a Chinese cybercrime network for using its Gemini AI to perpetuate a \"massive\" scam operation, the company announced . Google is also advocating for updated laws to deal with AI-driven attacks, saying the technology has the potential to \"supercharge\" threats. Google sues Chinese scammers using Gemini AI for fraud The company is also promoting legislation to fight the potential of AI to create 'massive' scams. \"This is our first coordinated effort and lawsuit and that speaks to the breadth of impact that this particular scam has,\" Google's general counsel DeLaine Prado told The New York Times in an interview. Those include the \"National Strategy for Combatting Scams Act,\" \"Strategic Task Force on Scam Prevention Act,\" \"STOP Scams Against Seniors Act\" and the AI Plan act. The search giant has coordinated with the FBI, along with carriers AT&T, T-Mobile and Verizon to dismantle the operation.",
+      "what_happened": "Google sued a Chinese cybercrime network for using its Gemini AI to perpetuate a \"massive\" scam operation, the company announced . Google is also advocating for updated laws to deal with AI-driven attacks, saying the technology has the potential to \"supercharge\" threats.",
+      "why_matters": "Google sues Chinese scammers using Gemini AI for fraud The company is also promoting legislation to fight the potential of AI to create 'massive' scams. \"This is our first coordinated effort and lawsuit and that speaks to the breadth of impact that this particular scam has,\" Google's general counsel DeLaine Prado told The New York Times in an interview.",
+      "what_to_watch": "Those include the \"National Strategy for Combatting Scams Act,\" \"Strategic Task Force on Scam Prevention Act,\" \"STOP Scams Against Seniors Act\" and the AI Plan act. The search giant has coordinated with the FBI, along with carriers AT&T, T-Mobile and Verizon to dismantle the operation.",
+      "key_points": [
+        "Google sued a Chinese cybercrime network for using its Gemini AI to perpetuate a \"massive\" scam operation, the company announced .",
+        "Google is also advocating for updated laws to deal with AI-driven attacks, saying the technology has the potential to \"supercharge\" threats.",
+        "The search giant has coordinated with the FBI, along with carriers AT&T, T-Mobile and Verizon to dismantle the operation.",
+        "The scam has impacted \"hundreds of thousands of victims,\" Google said, with losses estimated in the millions.",
+        "The group created 9,000 fake websites and one million fraudulent URLs, while creating 55,000 spam texts flagged by Android users and 2.5 million messages with links to fraudulent websites over just a two-week period.",
+        "Google sues Chinese scammers using Gemini AI for fraud The company is also promoting legislation to fight the potential of AI to create 'massive' scams.",
+        "The group allegedly used Gemini to create websites imitating Google, YouTube and government organizations including the US Postal Service and New York's E-ZPass toll service.",
+        "\"This is our first coordinated effort and lawsuit and that speaks to the breadth of impact that this particular scam has,\" Google's general counsel DeLaine Prado told The New York Times in an interview.",
+        "Those include the \"National Strategy for Combatting Scams Act,\" \"Strategic Task Force on Scam Prevention Act,\" \"STOP Scams Against Seniors Act\" and the AI Plan act.",
+        "Google didn't reveal what internal measures it took to address the issue, given it is in control of Gemini.",
+        "It is organized transnational crime moving through our phones, and it demands a response as coordinated and aggressive as the threat itself,\" said congressman Brian Fitzpatrick (R-Pennsylvania).",
+        "In its lawsuit, Google accused a Chinese organization called Outsider Enterprise of employing its technology and brand to commit fraud, requesting a restraining order so that the network can be shut down."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/nvidia-blackwell-agentperf-artificial-analysis/",
+      "title": "NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark",
+      "description": "New AgentPerf results from Artificial Analysis show how accelerated computing systems handle real-world agentic workloads, with NVIDIA GB300 NVL72 running up to 20x more agents per megawatt than NVIDIA Hopper.",
+      "excerpt": "New AgentPerf results from Artificial Analysis show how accelerated computing systems handle real-world agentic workloads, with NVIDIA GB300 NVL72 running up to 20x more agents per megawatt than NVIDIA Hopper.",
+      "summary": "New AgentPerf results from Artificial Analysis show how accelerated computing systems handle real-world agentic workloads, with NVIDIA GB300 NVL72 running up to 20x more agents per megawatt than NVIDIA Hopper.",
+      "what_happened": "New AgentPerf results from Artificial Analysis show how accelerated computing systems handle real-world agentic workloads, with NVIDIA GB300 NVL72 running up to 20x more agents per megawatt than NVIDIA Hopper.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "New AgentPerf results from Artificial Analysis show how accelerated computing systems handle real-world agentic workloads, with NVIDIA GB300 NVL72 running up to 20x more agents per megawatt than NVIDIA Hopper."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/70844a171938681f.png",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/Agentic-Pipeline_v1-2.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eff3a4958d9943a.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c78f97c7d2d84749.jpg"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/agentperf-blackwell-graph-1.jpg",
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/dgx-social-gb300-2048x2048-1-1-1280x720.jpg"
+      ]
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20-valuation/",
+      "title": "Mistral is rumored to be raising \u20ac3B at \u20ac20B valuation | TechCrunch",
+      "description": "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion.",
+      "excerpt": "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion.",
+      "summary": "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion.",
+      "what_happened": "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/abfac8affe8052f9.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2264771189.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-supercharger-how-rocket-close-optimized-title-operations-with-agentic-ai/",
+      "title": "Building Supercharger: How Rocket Close optimized title operations with agentic AI | Amazon Web Services",
+      "description": "In this post, we explore how Rocket Close built a solution using Strands Agents, large language models (LLMs), Amazon Bedrock, Amazon Bedrock Knowledge Bases, and Model Context Protocol (MCP) tools. We cover solution features, the rationale for the technology stack, lessons learned, and the business impact at Rocket Close.",
+      "excerpt": "In this post, we explore how Rocket Close built a solution using Strands Agents, large language models (LLMs), Amazon Bedrock, Amazon Bedrock Knowledge Bases, and Model Context Protocol (MCP) tools. We cover solution features, the rationale for the technology stack, lessons learned, and the business impact at Rocket Close.",
+      "summary": "In this post, we explore how Rocket Close built a solution using Strands Agents, large language models (LLMs), Amazon Bedrock, Amazon Bedrock Knowledge Bases, and Model Context Protocol (MCP) tools. We cover solution features, the rationale for the technology stack, lessons learned, and the business impact at Rocket Close.",
+      "what_happened": "In this post, we explore how Rocket Close built a solution using Strands Agents, large language models (LLMs), Amazon Bedrock, Amazon Bedrock Knowledge Bases, and Model Context Protocol (MCP) tools. We cover solution features, the rationale for the technology stack, lessons learned, and the business impact at Rocket Close.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "In this post, we explore how Rocket Close built a solution using Strands Agents, large language models (LLMs), Amazon Bedrock, Amazon Bedrock Knowledge Bases, and Model Context Protocol (MCP) tools.",
+        "We cover solution features, the rationale for the technology stack, lessons learned, and the business impact at Rocket Close."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/42716ee9772070a1.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/10/ML-20329-2.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 6,
+  "has_cta": true,
+  "slides": [
+    "AI IPOs Raise a Question Enterprises Are Still Trying to Answer.",
+    "MiniMaxAI MiniMax-M3 427B 26B active MOE 1024K ctx.",
+    "Elon Musk the world's first trillionaire his stratospheric rise in charts.",
+    "Google sues Chinese scammers using Gemini AI for fraud.",
+    "NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark.",
+    "FOLLOW @graitech"
+  ]
+}
