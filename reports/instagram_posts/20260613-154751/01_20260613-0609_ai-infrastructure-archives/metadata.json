@@ -1,0 +1,300 @@
+{
+  "email_received_at": "2026-06-13T06:09-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "AI Infrastructure Archives",
+  "subject": "\ud83d\udea8 AI Alert: 93 new launches \u2014 The Verge AI, The Guardian Tech, Bloomberg Tech",
+  "source_date": "Sat, 13 Jun 2026 06:09:06 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Apple",
+    "NVIDIA"
+  ],
+  "models": [
+    "Claude",
+    "Mistral"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "hardware and compute"
+  ],
+  "article_url": "https://blogs.nvidia.com/blog/category/enterprise/",
+  "article_title": "AI Infrastructure Archives",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+  "article_image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+  "article_items": [
+    {
+      "url": "https://blogs.nvidia.com/blog/category/enterprise/",
+      "title": "AI Infrastructure Archives",
+      "description": "",
+      "excerpt": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark AgentPerf from Artificial Analysis, the industry\u2019s first agentic AI benchmark, gives developers, enterprises and infrastructure providers a...",
+      "summary": "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts. NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge. If you do not allow these cookies, then some or all of these services may not function properly. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "what_happened": "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand How Cosmos 3 Helps Physical AI Think Before It Acts.",
+      "why_matters": "NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge. If you do not allow these cookies, then some or all of these services may not function properly.",
+      "what_to_watch": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "key_points": [
+        "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "NVIDIA and Doosan Group Collaborate to Advance Physical AI and AI Factory Infrastructure NVIDIA and Doosan Group are expanding their collaboration to advance new opportunities across physical AI, robotics and AI factory.",
+        "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand The NVIDIA AI Cloud ecosystem is accelerating the global buildout of AI factory infrastructure.",
+        "And as agentic AI scales and autonomous, always-on special agents are deployed in the enterprise, performance per watt...",
+        "NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure Reinforcement-learning agents - AI systems that learn by trial and error - can convert computation into new knowledge.",
+        "Agent sandboxes run 50% faster on NVIDIA Vera than traditional CPUs - while enterprise data queries...",
+        "NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local The agentic AI moment has arrived, but delivering on its promise requires more than good models.",
+        "That\u2019s the focus of a new engineering-level collaboration between NVIDIA and Ineffable...",
+        "AI Factories: The New Infrastructure of Intelligence AI factories are token factories, converting power into intelligence in real time.",
+        "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South.",
+        "Partners are expanding capacity to meet growing demand from enterprises, startups, nations, AI labs and developers..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2193656/anthropic-blocks-access-fable-5-mythos-5/",
+      "title": "Anthropic blocks all customers' access to Fable 5 and Mythos 5 - Engadget",
+      "description": "Anthropic has suspended all access to its new AI models Fable 5 and Mythos 5 to comply with a government order citing national security concerns.",
+      "excerpt": "Anthropic has suspended all access to its new AI models Fable 5 and Mythos 5 to comply with a government order citing national security concerns.",
+      "summary": "The company has just launched the Fable AI model, which was designed to bring many of Mythos' capabilities to the public, on June 9. The company said in its announcement that the US government wanted it to suspend all foreign nationals' access to its newly launched AI models, whether they're inside or outside the US and even if they're Anthropic employees, citing national security concerns. The government apparently gave the company verbal evidence for one potential narrow, non-universal jailbreak that an unnamed entity shared with officials. It beat Pok\u00e9mon FireRed during the company's tests, for instance, while Claude failed to beat Pok\u00e9mon Red , the original game it was based on. Anthropic promised to share more details over the next 24 hours, but it clarified that it disagrees that a potential jailbreak should be cause for recalling a commercial model. Anthropic has suspended all access to its new AI models Fable 5 and Mythos 5 to comply with a government order citing national security.",
+      "what_happened": "The company has just launched the Fable AI model, which was designed to bring many of Mythos' capabilities to the public, on June 9. The company said in its announcement that the US government wanted it to suspend all foreign nationals' access to its newly launched AI models, whether they're inside or outside the US and even if they're Anthropic employees, citing national security concerns.",
+      "why_matters": "The government apparently gave the company verbal evidence for one potential narrow, non-universal jailbreak that an unnamed entity shared with officials. It beat Pok\u00e9mon FireRed during the company's tests, for instance, while Claude failed to beat Pok\u00e9mon Red , the original game it was based on.",
+      "what_to_watch": "Anthropic promised to share more details over the next 24 hours, but it clarified that it disagrees that a potential jailbreak should be cause for recalling a commercial model. Anthropic has suspended all access to its new AI models Fable 5 and Mythos 5 to comply with a government order citing national security.",
+      "key_points": [
+        "The company has just launched the Fable AI model, which was designed to bring many of Mythos' capabilities to the public, on June 9.",
+        "The company said in its announcement that the US government wanted it to suspend all foreign nationals' access to its newly launched AI models, whether they're inside or outside the US and even if they're Anthropic.",
+        "Anthropic has suspended all access to its new AI models Fable 5 and Mythos 5 to comply with a government order citing national security concerns.",
+        "Fable's capabilities \"exceed\" any previous model Anthropic has launched.",
+        "While the US government didn't specify those concerns, Anthropic believes that it's because the government heard about a method of jailbreaking Fable 5.",
+        "If you'll recall, Mythos is its state-of-the-art cybersecurity model that's only available to its Project Glasswing partners.",
+        "All its other models and its Claude chatbot are not affected.",
+        "Anthroic has disabled all of its customers' access to Fable 5 and Mythos 5 in order to ensure compliance with an order it received from the government on Friday, June 12.",
+        "Anthropic promised to share more details over the next 24 hours, but it clarified that it disagrees that a potential jailbreak should be cause for recalling a commercial model.",
+        "Anthropic blocks all customers' access to Fable 5 and Mythos 5 It's to ensure compliance with a government directive citing national security concerns.",
+        "Anthropic listed the measures it took to ensure that Fable was secure in its post.",
+        "The government apparently gave the company verbal evidence for one potential narrow, non-universal jailbreak that an unnamed entity shared with officials."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2193666/openai-investigation-state-attorneys-general/",
+      "title": "OpenAI is facing investigation from a group of state attorneys general - Engadget",
+      "description": "A coalition of state attorneys general is asking OpenAI for documents about its activities.",
+      "excerpt": "A coalition of state attorneys general is asking OpenAI for documents about its activities.",
+      "summary": "\"We take the concerns raised by state attorneys general seriously and intend to engage constructively with their offices.\" It's unclear what prompted the investigation, but tech companies developing AI products have been under scrutiny by state AGs for quite a while now. On Friday, June 12, the company received a subpoena seeking information and documents related to its activities and impact on users. They also want to know about the company's activities related to minor and senior users, its deep learning models, its policies and its models' sycophancy. Based on what the publication saw, the AGs are asking for documentation about the company's advertising, user engagement and retention, as well as its handling of its users' data and health information. It hasn't decided on timing and pricing yet. The lawsuit claimed that the plaintiff's daughter who died by suicide discussed her suicidal thoughts and plans with the chatbot in the months leading up to her death.",
+      "what_happened": "\"We take the concerns raised by state attorneys general seriously and intend to engage constructively with their offices.\" It's unclear what prompted the investigation, but tech companies developing AI products have been under scrutiny by state AGs for quite a while now. On Friday, June 12, the company received a subpoena seeking information and documents related to its activities and impact on users.",
+      "why_matters": "They also want to know about the company's activities related to minor and senior users, its deep learning models, its policies and its models' sycophancy. Based on what the publication saw, the AGs are asking for documentation about the company's advertising, user engagement and retention, as well as its handling of its users' data and health information.",
+      "what_to_watch": "It hasn't decided on timing and pricing yet. The lawsuit claimed that the plaintiff's daughter who died by suicide discussed her suicidal thoughts and plans with the chatbot in the months leading up to her death.",
+      "key_points": [
+        "They also want to know about the company's activities related to minor and senior users, its deep learning models, its policies and its models' sycophancy.",
+        "On Friday, June 12, the company received a subpoena seeking information and documents related to its activities and impact on users.",
+        "The lawsuit claimed that the plaintiff's daughter who died by suicide discussed her suicidal thoughts and plans with the chatbot in the months leading up to her death.",
+        "Last year, a group of 44 state AGs sent a letter to Meta, Google, Apple, Microsoft, OpenAI, Anthropic, Perplexity AI and XAI, asking them to protect children from being exposed to inappropriate and potentially harmful.",
+        "Based on what the publication saw, the AGs are asking for documentation about the company's advertising, user engagement and retention, as well as its handling of its users' data and health information.",
+        "\"We take the concerns raised by state attorneys general seriously and intend to engage constructively with their offices.\" It's unclear what prompted the investigation, but tech companies developing AI products have.",
+        "In April, Florida Attorney General James Ulthmeier opened a criminal investigation into OpenAI, because the suspect in the 2025 Florida State University mass shooting reportedly used ChatGPT.",
+        "However, the company didn't alert the family or authorities.",
+        "The Journal said it viewed the subpoena sent by New York's attorney general.",
+        "OpenAI was named as a defendant in the first ever wrongful death lawsuit linked to a chatbot, as well.",
+        "OpenAI is facing investigation from a group of state attorneys general OpenAI is under investigation by a coalition of state attorneys general, according to the Wall Street Journal .",
+        "A coalition of state attorneys general is asking OpenAI for documents about its activities."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/12/chinese-cybercrime-operation-that-used-ai-to-scam-hundreds-of-thousands-of-victims-sued-by-google/",
+      "title": "Chinese cybercrime operation that used AI to scam 'hundreds of thousands of victims' sued by Google | TechCrunch",
+      "description": "The tech giant said a group called \"Outsider Enterprise\" used AI to scam hundreds of thousands of victims, sending 2.5 million text messages over a span of two weeks.",
+      "excerpt": "The tech giant said a group called \"Outsider Enterprise\" used AI to scam hundreds of thousands of victims, sending 2.5 million text messages over a span of two weeks.",
+      "summary": "The tech giant said a group called \"Outsider Enterprise\" used AI to scam hundreds of thousands of victims, sending 2.5 million text messages over a span of two weeks.",
+      "what_happened": "The tech giant said a group called \"Outsider Enterprise\" used AI to scam hundreds of thousands of victims, sending 2.5 million text messages over a span of two weeks.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The tech giant said a group called \"Outsider Enterprise\" used AI to scam hundreds of thousands of victims, sending 2.5 million text messages over a span of two weeks."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6143d1ecacf9e31f.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/outsider-enterprise-stolen-credit-cards.png?w=680",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20-valuation/",
+      "title": "Mistral is rumored to be raising \u20ac3B at \u20ac20B valuation | TechCrunch",
+      "description": "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion.",
+      "excerpt": "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion.",
+      "summary": "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion.",
+      "what_happened": "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The funding round would value the company at around \u20ac20 billion (about $23.15 billion), nearly double its Series C valuation of \u20ac11.7 billion."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/abfac8affe8052f9.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2264771189.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/12/metas-months-old-ai-unit-is-a-soul-crushing-gulag-say-the-engineers-stuck-inside-it/",
+      "title": "Meta's months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it | TechCrunch",
+      "description": "A new report suggests the unit, which employs 6,500 people, is on the verge of revolt.",
+      "excerpt": "A new report suggests the unit, which employs 6,500 people, is on the verge of revolt.",
+      "summary": "A new report suggests the unit, which employs 6,500 people, is on the verge of revolt.",
+      "what_happened": "A new report suggests the unit, which employs 6,500 people, is on the verge of revolt.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "A new report suggests the unit, which employs 6,500 people, is on the verge of revolt."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fe0136128f47f0be.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/07/GettyImages-2194278734.jpg?w=1024",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.therobotreport.com/ai-in-warehousing-akash-guptas-vision-for-the-future/",
+      "title": "AI in Warehousing: Akash Gupta's vision for the future",
+      "description": "Explore how GreyOrange's software revolutionizes warehouse automation with AI, transforming logistics into dynamic, predictive ecosystems.",
+      "excerpt": "Explore how GreyOrange's software revolutionizes warehouse automation with AI, transforming logistics into dynamic, predictive ecosystems.",
+      "summary": "Explore how GreyOrange's software revolutionizes warehouse automation with AI, transforming logistics into dynamic, predictive ecosystems.",
+      "what_happened": "Explore how GreyOrange's software revolutionizes warehouse automation with AI, transforming logistics into dynamic, predictive ecosystems.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Explore how GreyOrange's software revolutionizes warehouse automation with AI, transforming logistics into dynamic, predictive ecosystems."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e0bca3ea8a5fe11c.png",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/05/rbr50-sidebar-promo.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.therobotreport.com/robotics-summit-panel-explores-state-humanoid-robot-design/",
+      "title": "Robotics Summit panel explores the state of humanoid robot design - The Robot Report",
+      "description": "At the Robotics Summit & Expo, experts weighed in on humanoid robotics today. and the ability to achieve a $20,000 price point tomorrow.",
+      "excerpt": "At the Robotics Summit & Expo, experts weighed in on humanoid robotics today. and the ability to achieve a $20,000 price point tomorrow.",
+      "summary": "and the ability to achieve a $20,000 price point tomorrow. At the Robotics Summit & Expo, experts weighed in on humanoid robotics today. At the Robotics Summit & Expo, experts weighed in on humanoid robotics today. At the Robotics Summit & Expo, experts weighed in on humanoid robotics today.",
+      "what_happened": "and the ability to achieve a $20,000 price point tomorrow. At the Robotics Summit & Expo, experts weighed in on humanoid robotics today.",
+      "why_matters": "At the Robotics Summit & Expo, experts weighed in on humanoid robotics today.",
+      "what_to_watch": "At the Robotics Summit & Expo, experts weighed in on humanoid robotics today.",
+      "key_points": [
+        "At the Robotics Summit & Expo, experts weighed in on humanoid robotics today.",
+        "and the ability to achieve a $20,000 price point tomorrow."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e0bca3ea8a5fe11c.png",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/05/rbr50-sidebar-promo.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 3,
+  "has_cta": true,
+  "slides": [
+    "Anthropic blocks all customers' access to Fable 5 and Mythos 5.",
+    "OpenAI is facing investigation from a group of state attorneys general.",
+    "FOLLOW @graitech"
+  ]
+}
