@@ -1,0 +1,80 @@
+{
+  "email_received_at": "2026-06-13T21:56+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Sat, 13 Jun 2026 21:56:22 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai/",
+      "title": "Company : TechCrunch AI",
+      "description": "[HIGH] Anthropic\u2019s safety warnings may have just backfired \u2014 the government has pulled the plug on its most powerful AI Company : TechCrunch AI Summary : Anthropic isn't hiding its frustration. \"We disagree that the finding of a narrow potential jailbreak should be cause for recalling a commercial model deployed to hundreds of millions of people,\" the Link :",
+      "text": "[HIGH] Anthropic\u2019s safety warnings may have just backfired \u2014 the government has pulled the plug on its most powerful AI Company : TechCrunch AI Summary : Anthropic isn't hiding its frustration. \"We disagree that the finding of a narrow potential jailbreak should be cause for recalling a commercial model deployed to hundreds of millions of people,\" the Link :",
+      "excerpt": "[HIGH] Anthropic\u2019s safety warnings may have just backfired \u2014 the government has pulled the plug on its most powerful AI Company : TechCrunch AI Summary : Anthropic isn't hiding its frustration. \"We disagree that the finding of a narrow potential jailbreak should be cause for recalling a commercial model deployed to hundreds of millions of people,\" the Link :",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2153561878.jpg?w=1024",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/",
+      "title": "Company : TechCrunch AI",
+      "description": "[MEDIUM] KPMG pulls report on AI usage due to apparent hallucinations Company : TechCrunch AI Summary : Once again, AI proves to be an unreliable source of information about AI. Link :",
+      "text": "[MEDIUM] KPMG pulls report on AI usage due to apparent hallucinations Company : TechCrunch AI Summary : Once again, AI proves to be an unreliable source of information about AI. Link :",
+      "excerpt": "[MEDIUM] KPMG pulls report on AI usage due to apparent hallucinations Company : TechCrunch AI Summary : Once again, AI proves to be an unreliable source of information about AI. Link :",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2276519058.jpg?w=1024",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown/",
+      "title": "Company : TechCrunch AI",
+      "description": "[MEDIUM] Amazon CEO reportedly raised Anthropic model concerns before government crackdown Company : TechCrunch AI Summary : Amazon CEO Andy Jassy may have been the source of security concerns that led Anthropic to cut off worldwide access to two models on Friday. Link :",
+      "text": "[MEDIUM] Amazon CEO reportedly raised Anthropic model concerns before government crackdown Company : TechCrunch AI Summary : Amazon CEO Andy Jassy may have been the source of security concerns that led Anthropic to cut off worldwide access to two models on Friday. Link :",
+      "excerpt": "[MEDIUM] Amazon CEO reportedly raised Anthropic model concerns before government crackdown Company : TechCrunch AI Summary : Amazon CEO Andy Jassy may have been the source of security concerns that led Anthropic to cut off worldwide access to two models on Friday. Link :",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2022/07/GettyImages-1348139958.jpg?resize=1200,767",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general/",
+      "title": "Company : TechCrunch AI",
+      "description": "[MEDIUM] OpenAI faces investigation from state attorneys general Company : TechCrunch AI Summary : It's not clear which states are involved, but they're asking about everything from OpenAI's ad policies to its handling of health data. Link :",
+      "text": "[MEDIUM] OpenAI faces investigation from state attorneys general Company : TechCrunch AI Summary : It's not clear which states are involved, but they're asking about everything from OpenAI's ad policies to its handling of health data. Link :",
+      "excerpt": "[MEDIUM] OpenAI faces investigation from state attorneys general Company : TechCrunch AI Summary : It's not clear which states are involved, but they're asking about everything from OpenAI's ad policies to its handling of health data. Link :",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2021/01/vtobb68s1b8yujb2lsfk.jpg?w=150",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "Research group GPTZero identified a number of inaccuracies in the report, which.",
+    "FOLLOW @graitech"
+  ]
+}
