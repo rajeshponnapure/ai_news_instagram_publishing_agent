@@ -1,0 +1,38 @@
+{
+  "email_received_at": "2026-06-13T23:22+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Sat, 13 Jun 2026 23:22:38 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/949601/amazon-anthropic-fablemythos-government-ban",
+      "title": "Company : The Verge AI",
+      "description": "[MEDIUM] Amazon security research reportedly led to the White House\u2019s Anthropic Fable ban Company : The Verge AI Summary : According to the Wall Street Journal, the export control directive that led to Anthropic cutting off access to Fable 5 and Mythos 5 was triggered in part by cybersecurity research from Amazon and conv Link :",
+      "text": "[MEDIUM] Amazon security research reportedly led to the White House\u2019s Anthropic Fable ban Company : The Verge AI Summary : According to the Wall Street Journal, the export control directive that led to Anthropic cutting off access to Fable 5 and Mythos 5 was triggered in part by cybersecurity research from Amazon and conv Link :",
+      "excerpt": "[MEDIUM] Amazon security research reportedly led to the White House\u2019s Anthropic Fable ban Company : The Verge AI Summary : According to the Wall Street Journal, the export control directive that led to Anthropic cutting off access to Fable 5 and Mythos 5 was triggered in part by cybersecurity research from Amazon and conv Link :",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_A.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theverge.com/ai-artificial-intelligence/949601/amazon-anthropic-fablemythos-government-ban",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "Amazon security research reportedly led to the White House's Anthropic Fable ban.",
+    "FOLLOW @graitech"
+  ]
+}
