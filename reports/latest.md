@@ -1,6 +1,6 @@
 # AI News Summary Report
 
-Generated: 2026-06-13T23:22:28+00:00
+Generated: 2026-06-14T01:51:12+00:00
 Source: grdevelopers.co@gmail.com
 Emails summarized: 1
 
@@ -33,7 +33,7 @@ model release (1), funding or business (1), regulation or safety (1)
 
 ### 1. OpenAI faces investigation from state attorneys general | TechCrunch
 
-Source date: Sat, 13 Jun 2026 14:55:14 -0700
+Source date: Sat, 13 Jun 2026 17:04:16 -0700
 Confidence: 0.82
 Article: https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general/
 Article title: OpenAI faces investigation from state attorneys general | TechCrunch
