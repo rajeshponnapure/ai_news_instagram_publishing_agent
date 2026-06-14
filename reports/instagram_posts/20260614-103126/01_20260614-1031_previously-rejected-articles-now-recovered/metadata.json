@@ -1,0 +1,38 @@
+{
+  "email_received_at": "2026-06-14T10:31+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Sun, 14 Jun 2026 10:31:26 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.producthunt.com/products/memoriq",
+      "title": "Company : Product Hunt AI",
+      "description": "[MEDIUM] Memoriq Company : Product Hunt AI Summary : Your private AI memory for ChatGPT, Claude, Gemini and Grok Discussion | Link Link :",
+      "text": "[MEDIUM] Memoriq Company : Product Hunt AI Summary : Your private AI memory for ChatGPT, Claude, Gemini and Grok Discussion | Link Link :",
+      "excerpt": "[MEDIUM] Memoriq Company : Product Hunt AI Summary : Your private AI memory for ChatGPT, Claude, Gemini and Grok Discussion | Link Link :",
+      "image_url": "https://ph-files.imgix.net/27c93767-291d-4163-a836-0fd87c8109db.png?auto=format&amp;fit=crop&amp;frame=1&amp;h=512&amp;w=1024",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.producthunt.com/products/memoriq",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "Chat UI for LLMs Pay for API key per use, no subscription.",
+    "FOLLOW @graitech"
+  ]
+}
