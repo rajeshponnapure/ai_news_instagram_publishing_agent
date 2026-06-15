@@ -1,0 +1,293 @@
+{
+  "email_received_at": "2026-06-15T00:02-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "AA-AgentPerf releases initial results for DeepSeek V4 Pro benchmark, showing NVIDIA Blackwell dominance",
+  "subject": "\ud83d\udea8 AI Alert: 18 new launches \u2014 MarkTechPost AI, CNBC Technology, OpenAI Blog",
+  "source_date": "Mon, 15 Jun 2026 00:02:16 -0700",
+  "companies": [
+    "OpenAI",
+    "Anthropic",
+    "Amazon",
+    "AWS",
+    "NVIDIA",
+    "AMD",
+    "Cohere",
+    "MarkTechPost AI"
+  ],
+  "models": [],
+  "topics": [
+    "model release",
+    "developer tools",
+    "hardware and compute"
+  ],
+  "article_url": "https://cryptobriefing.com/aa-agentperf-deepseek-v4-pro-benchmark-results/",
+  "article_title": "AA-AgentPerf releases initial results for DeepSeek V4 Pro benchmark, showing NVIDIA Blackwell dominance",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9b3c987d6bde939b.jpg",
+  "article_image_url": "https://static.cryptobriefing.com/wp-content/uploads/2026/06/12182425/nvidia-blackwell-architecture-deep-dive-slides-1-800x420.jpeg",
+  "article_items": [
+    {
+      "url": "https://cryptobriefing.com/aa-agentperf-deepseek-v4-pro-benchmark-results/",
+      "title": "AA-AgentPerf releases initial results for DeepSeek V4 Pro benchmark, showing NVIDIA Blackwell dominance",
+      "description": "Artificial Analysis launches AA-AgentPerf, the first open benchmark for agentic AI workloads, showing NVIDIA Blackwell outperforms AMD MI355X in power",
+      "excerpt": "Artificial Analysis launches AA-AgentPerf, the first open benchmark for agentic AI workloads, showing NVIDIA Blackwell outperforms AMD MI355X in power",
+      "summary": "Artificial Analysis launches AA-AgentPerf, the first open benchmark for agentic AI workloads, showing NVIDIA Blackwell outperforms AMD MI355X in power AA-AgentPerf releases initial results for DeepSeek V4 Pro benchmark, showing NVIDIA Blackwell dominance Artificial Analysis launches the first multi-vendor open benchmark for agentic coding tasks, and the early numbers paint a clear picture of NVIDIA's power efficiency lead over AMD Artificial Analysis has dropped something the AI hardware world has been quietly. The timing is notable: the performance leadership data was reported relative to a June 12, 2026 crawl date, suggesting NVIDIA moved quickly to publicize favorable results through its developer blog. For NVIDIA, these results reinforce a narrative the company has been building around Blackwell\u2019s efficiency characteristics. It scored 1554 on the GDPval-AA benchmark, placing it firmly among the top-performing open-weights models available today. DeepSeek V4 Pro (Max) also earned a score of 52 on the Artificial Analysis Intelligence Index, ranking it second among open-weights reasoning models.",
+      "what_happened": "Artificial Analysis launches AA-AgentPerf, the first open benchmark for agentic AI workloads, showing NVIDIA Blackwell outperforms AMD MI355X in power AA-AgentPerf releases initial results for DeepSeek V4 Pro benchmark, showing NVIDIA Blackwell dominance Artificial Analysis launches the first multi-vendor open benchmark for agentic coding tasks, and the early numbers paint a clear picture of NVIDIA's power efficiency lead over AMD Artificial Analysis has dropped something the AI hardware world has been quietly.",
+      "why_matters": "The timing is notable: the performance leadership data was reported relative to a June 12, 2026 crawl date, suggesting NVIDIA moved quickly to publicize favorable results through its developer blog. For NVIDIA, these results reinforce a narrative the company has been building around Blackwell\u2019s efficiency characteristics.",
+      "what_to_watch": "It scored 1554 on the GDPval-AA benchmark, placing it firmly among the top-performing open-weights models available today. DeepSeek V4 Pro (Max) also earned a score of 52 on the Artificial Analysis Intelligence Index, ranking it second among open-weights reasoning models.",
+      "key_points": [
+        "Artificial Analysis launches AA-AgentPerf, the first open benchmark for agentic AI workloads, showing NVIDIA Blackwell outperforms AMD MI355X in power AA-AgentPerf releases initial results for DeepSeek V4 Pro benchmark.",
+        "DeepSeek V4 Pro enters the chat The model at the center of this benchmark is DeepSeek V4 Pro, which has been turning heads since its release around April 2026.",
+        "DeepSeek V4 Pro (Max) also earned a score of 52 on the Artificial Analysis Intelligence Index, ranking it second among open-weights reasoning models.",
+        "It scored 1554 on the GDPval-AA benchmark, placing it firmly among the top-performing open-weights models available today.",
+        "What AA-AgentPerf actually measures It\u2019s the first multi-vendor open benchmark from Artificial Analysis designed specifically for hardware performance in agentic coding tasks.",
+        "The timing is notable: the performance leadership data was reported relative to a June 12, 2026 crawl date, suggesting NVIDIA moved quickly to publicize favorable results through its developer blog.",
+        "Rather than relying on synthetic evaluation methods, the benchmark leverages actual coding trajectories.",
+        "AMD and what it means for the data center market The initial AA-AgentPerf results paint a clear picture of competitive positioning.",
+        "The benchmark evaluates how many concurrent agents a system can support while meeting specific service-level objectives.",
+        "A chip that can support more concurrent agents per megawatt of power consumed has a tangible, quantifiable advantage that translates directly to the bottom line.",
+        "The benchmark is called AA-AgentPerf, and its initial results running DeepSeek V4 Pro tell a story that AMD probably would rather not hear right now.",
+        "NVIDIA\u2019s Blackwell systems, specifically the B200 and GB300, consistently outperformed AMD\u2019s Instinct MI355X GPUs on power-efficient agentic inference."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9b3c987d6bde939b.jpg",
+      "image_url": "https://static.cryptobriefing.com/wp-content/uploads/2026/06/12182425/nvidia-blackwell-architecture-deep-dive-slides-1-800x420.jpeg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://openai.com/index/introducing-openai-partner-network/",
+      "title": "Introducing the OpenAI Partner Network",
+      "description": "OpenAI launches the Partner Network, investing $150M to help global partners accelerate enterprise AI adoption, deployment, and transformation.",
+      "excerpt": "OpenAI launches the Partner Network, investing $150M to help global partners accelerate enterprise AI adoption, deployment, and transformation.",
+      "summary": "OpenAI launches the Partner Network, investing $150M to help global partners accelerate enterprise AI adoption, deployment, and transformation.",
+      "what_happened": "OpenAI launches the Partner Network, investing $150M to help global partners accelerate enterprise AI adoption, deployment, and transformation.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "OpenAI launches the Partner Network, investing $150M to help global partners accelerate enterprise AI adoption, deployment, and transformation."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8a413a3490d8faba.webp",
+      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/3JLNH7ejJFnxLmX2LpzoKD/19f9e3c4d36cc9d677ba88e842ad2db2/Art_Card_1080x1080__4_.png?w=3840&q=90&fm=webp",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5b94bfbaca1f7f47.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/83a8594ba11f30eb.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0ae15e1ea3270dfc.webp"
+      ],
+      "extra_image_urls": [
+        "https://images.ctfassets.net/kftzwdyauwt9/4xugzd9dTDMUzIUmuamtO3/1f40af4e50ab8b2bdd64d5b491964961/1_1_Art_Card.png?w=3840&q=90&fm=webp",
+        "https://images.ctfassets.net/kftzwdyauwt9/4Mmo10RLJ6HIoEmbRe3QPf/4dd23942812b8e483d345607db7bc551/Introducing_OAI_Partner_Network_seo_card.png?w=1600&h=900&fit=fill",
+        "https://images.ctfassets.net/kftzwdyauwt9/6USIQM1B7TggUvvTFxxwoi/0176ac6633c8bdc24641d25d1d2db824/GPT-Rosalind_ArtCard.png?w=3840&q=90&fm=webp"
+      ]
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/",
+      "title": "As Anthropic suspends access to new models, India debates its AI future | TechCrunch",
+      "description": "Tech leaders debate whether the Anthropic episode is a wake-up call for India\u2019s AI ambitions.",
+      "excerpt": "Tech leaders debate whether the Anthropic episode is a wake-up call for India\u2019s AI ambitions.",
+      "summary": "Tech leaders debate whether the Anthropic episode is a wake-up call for India\u2019s AI ambitions.",
+      "what_happened": "Tech leaders debate whether the Anthropic episode is a wake-up call for India\u2019s AI ambitions.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Tech leaders debate whether the Anthropic episode is a wake-up call for India\u2019s AI ambitions."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/cc208483fb5eb8fe.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Claude-photo.jpg?w=1024",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride/",
+      "title": "As AI companies race to go public, who else is along for the ride? | TechCrunch",
+      "description": "Startups are trying to \"ride that SpaceX IPO wave.\"",
+      "excerpt": "Startups are trying to \"ride that SpaceX IPO wave.\"",
+      "summary": "Startups are trying to \"ride that SpaceX IPO wave.\"",
+      "what_happened": "Startups are trying to \"ride that SpaceX IPO wave.\"",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Startups are trying to \"ride that SpaceX IPO wave.\""
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9e9a8adcdbf5ed5e.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/spacexipo-nasdaq.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.infoq.com/news/2026/06/elasticache-valkey-durability/",
+      "title": "AWS Introduces Durable Storage Option for ElastiCache for Valkey",
+      "description": "AWS has recently introduced durability for Amazon ElastiCache for Valkey, enabling reliable data retention across failures and expanding support beyond caching to persistent workloads. The feature offers new options that prioritize either minimizing data loss or maintaining lower write latency, expanding the range of use cases supported by the Redis fork.",
+      "excerpt": "AWS has recently introduced durability for Amazon ElastiCache for Valkey, enabling reliable data retention across failures and expanding support beyond caching to persistent workloads. The feature offers new options that prioritize either minimizing data loss or maintaining lower write latency, expanding the range of use cases supported by the Redis fork.",
+      "summary": "The feature offers new options that prioritize either minimizing data loss or maintaining lower write latency, expanding the range of use cases supported by the Redis fork. AWS has recently introduced durability for Amazon ElastiCache for Valkey, enabling reliable data retention across failures and expanding support beyond caching to persistent workloads.",
+      "what_happened": "The feature offers new options that prioritize either minimizing data loss or maintaining lower write latency, expanding the range of use cases supported by the Redis fork. AWS has recently introduced durability for Amazon ElastiCache for Valkey, enabling reliable data retention across failures and expanding support beyond caching to persistent workloads.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The feature offers new options that prioritize either minimizing data loss or maintaining lower write latency, expanding the range of use cases supported by the Redis fork.",
+        "AWS has recently introduced durability for Amazon ElastiCache for Valkey, enabling reliable data retention across failures and expanding support beyond caching to persistent workloads."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ecf7b5e89908cf9f.jpg",
+      "image_url": "https://imgopt.infoq.com/fit-in/50x50/filters:quality(80)/articles/lambda-extension-deferred-flush/en/smallimage/lambda-extension-deferred-flush-thumbnail-1775648097720.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://devops.com/coheres-north-mini-code-lets-devs-stack-their-own-ai/",
+      "title": "Cohere's North Mini Code Lets Devs Stack Their Own AI - DevOps.com",
+      "description": "Toronto startup Cohere has released an open weight model designed for developers to use to build their own AI stack.",
+      "excerpt": "Toronto startup Cohere has released an open weight model designed for developers to use to build their own AI stack.",
+      "summary": "Toronto startup Cohere has released an open weight model designed for developers to use to build their own AI stack.",
+      "what_happened": "Toronto startup Cohere has released an open weight model designed for developers to use to build their own AI stack.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Toronto startup Cohere has released an open weight model designed for developers to use to build their own AI stack."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/527095e7a751263b.webp",
+      "image_url": "https://devops.com/wp-content/uploads/2026/03/2o2nes4oyrivdk5aq0z1y2ynrcgd_1774269834sjeyNKSZue.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ba6a99407afb8bc8.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/30c6679f5108d9c4.webp"
+      ],
+      "extra_image_urls": [
+        "https://devops.com/wp-content/uploads/2026/05/2026.06.18-Xint.io-LandingPage-1540x660-1.png",
+        "https://devops.com/wp-content/uploads/2026/05/2026.06.17-JFrog-LandingPage-1540x660-1.png"
+      ]
+    },
+    {
+      "url": "https://alltoc.com/",
+      "title": "AllToc | World News",
+      "description": "The entire world of news and insights in one place. The Web\u2019s most comprehensive multi-topic information hub.",
+      "excerpt": "The entire world of news and insights in one place. The Web\u2019s most comprehensive multi-topic information hub.",
+      "summary": "The Web\u2019s most comprehensive multi-topic information hub. The entire world of news and insights in one place.",
+      "what_happened": "The Web\u2019s most comprehensive multi-topic information hub. The entire world of news and insights in one place.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The Web\u2019s most comprehensive multi-topic information hub.",
+        "The entire world of news and insights in one place."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ec5f965ff9f2af6f.webp",
+      "image_url": "https://cdn.alltoc.com/555897f82f06bcde_s.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2193666/openai-investigation-state-attorneys-general/",
+      "title": "OpenAI is facing investigation from a group of state attorneys general - Engadget",
+      "description": "A coalition of state attorneys general is asking OpenAI for documents about its activities.",
+      "excerpt": "A coalition of state attorneys general is asking OpenAI for documents about its activities.",
+      "summary": "A coalition of state attorneys general is asking OpenAI for documents about its activities.",
+      "what_happened": "A coalition of state attorneys general is asking OpenAI for documents about its activities.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "A coalition of state attorneys general is asking OpenAI for documents about its activities."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 7,
+  "has_cta": true,
+  "slides": [
+    "AA-AgentPerf releases initial results for DeepSeek V4 Pro benchmark showing NVIDIA Blackwell.",
+    "Introducing the OpenAI Partner Network.",
+    "As AI companies race to go public who else is along.",
+    "AWS Introduces Durable Storage Option for ElastiCache for Valkey.",
+    "Cohere's North Mini Code Lets Devs Stack Their Own AI.",
+    "Children tightens online safety move to center of European.",
+    "FOLLOW @graitech"
+  ]
+}

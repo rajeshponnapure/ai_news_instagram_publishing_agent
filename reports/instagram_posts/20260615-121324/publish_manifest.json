@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "folder": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260615-121324/01_20260615-0002_aa-agentperf-releases-initial-results-for-deepseek-v4-pro-be",
+      "caption": "AA-AgentPerf releases initial results for DeepSeek V4 Pro benchmark showing NVIDIA.\n\nSwipe for the full breakdown.\n\n- Artificial Analysis launches AA-AgentPerf, the first open benchmark for agentic AI workloads, showing NVIDIA Blackwell outperforms AMD MI355X.\n- DeepSeek V4 Pro enters the chat The model at the center of this benchmark is DeepSeek V4 Pro.\n- DeepSeek V4 Pro (Max) also earned a score of 52 on the Artificial Analysis Intelligence Index, ranking.\n- It scored 1554 on the GDPval-AA benchmark, placing it firmly among the top-performing open-weights models available today.\n- What AA-AgentPerf actually measures It's the first multi-vendor open benchmark from Artificial Analysis designed specifically for hardware performance.\n\nWould you use something like this in your daily work? Yes or no in the comments.\n\nSave this before it disappears from your feed.\n\nSources:\n- https://cryptobriefing.com/aa-agentperf-deepseek-v4-pro-benchmark-results/\n- https://openai.com/index/introducing-openai-partner-network/\n- https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/\n- https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride/\n- https://www.infoq.com/news/2026/06/elasticache-valkey-durability/\n\n#AIAgents #AutonomousAgents #AIWorkflow #AITools #ProductivityAI #AIProductivity #AIInfrastructure #AIChips #OpenAI #ChatGPT #Anthropic #Claude #NVIDIA #NVIDIAGPU #TechTrends #Innovation #EmergingTech #AINews #DataScience #FutureTech\n\n-\nBenchmarks reflect results at publication time and may change as models are updated.\nAI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.\n-\n",
+      "local_slides": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260615-121324/01_20260615-0002_aa-agentperf-releases-initial-results-for-deepseek-v4-pro-be/slide_01.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260615-121324/01_20260615-0002_aa-agentperf-releases-initial-results-for-deepseek-v4-pro-be/slide_02.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260615-121324/01_20260615-0002_aa-agentperf-releases-initial-results-for-deepseek-v4-pro-be/slide_03.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260615-121324/01_20260615-0002_aa-agentperf-releases-initial-results-for-deepseek-v4-pro-be/slide_04.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260615-121324/01_20260615-0002_aa-agentperf-releases-initial-results-for-deepseek-v4-pro-be/slide_05.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260615-121324/01_20260615-0002_aa-agentperf-releases-initial-results-for-deepseek-v4-pro-be/slide_06.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260615-121324/01_20260615-0002_aa-agentperf-releases-initial-results-for-deepseek-v4-pro-be/slide_07.png"
+      ],
+      "public_slide_urls": [],
+      "status": "ready_for_upload"
+    }
+  ]
+}

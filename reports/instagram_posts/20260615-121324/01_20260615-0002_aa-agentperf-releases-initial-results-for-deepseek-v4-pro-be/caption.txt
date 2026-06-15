@@ -1,0 +1,27 @@
+AA-AgentPerf releases initial results for DeepSeek V4 Pro benchmark showing NVIDIA.
+
+Swipe for the full breakdown.
+
+- Artificial Analysis launches AA-AgentPerf, the first open benchmark for agentic AI workloads, showing NVIDIA Blackwell outperforms AMD MI355X.
+- DeepSeek V4 Pro enters the chat The model at the center of this benchmark is DeepSeek V4 Pro.
+- DeepSeek V4 Pro (Max) also earned a score of 52 on the Artificial Analysis Intelligence Index, ranking.
+- It scored 1554 on the GDPval-AA benchmark, placing it firmly among the top-performing open-weights models available today.
+- What AA-AgentPerf actually measures It's the first multi-vendor open benchmark from Artificial Analysis designed specifically for hardware performance.
+
+Would you use something like this in your daily work? Yes or no in the comments.
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://cryptobriefing.com/aa-agentperf-deepseek-v4-pro-benchmark-results/
+- https://openai.com/index/introducing-openai-partner-network/
+- https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/
+- https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride/
+- https://www.infoq.com/news/2026/06/elasticache-valkey-durability/
+
+#AIAgents #AutonomousAgents #AIWorkflow #AITools #ProductivityAI #AIProductivity #AIInfrastructure #AIChips #OpenAI #ChatGPT #Anthropic #Claude #NVIDIA #NVIDIAGPU #TechTrends #Innovation #EmergingTech #AINews #DataScience #FutureTech
+
+-
+Benchmarks reflect results at publication time and may change as models are updated.
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-
