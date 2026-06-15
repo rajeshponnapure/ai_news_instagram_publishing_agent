@@ -7,8 +7,12 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260615-204952/01_20260615-2049_previously-rejected-articles-now-recovered/slide_01.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260615-204952/01_20260615-2049_previously-rejected-articles-now-recovered/slide_02.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260615-204952/01_20260615-2049_previously-rejected-articles-now-recovered/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260615-204952/01_20260615-2049_previously-rejected-articles-now-recovered/slide_02.png"
+      ],
+      "status": "publish_failed_retryable",
+      "error": "Graph API request failed for 17841447323115790/media: 500 Internal Server Error. Response: {\"error\":{\"message\":\"An unexpected error has occurred. Please retry your request later.\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":2,\"fbtrace_id\":\"AzlbGpP7JhiR9DYBGbj8ri7\"}}"
     }
   ]
 }
