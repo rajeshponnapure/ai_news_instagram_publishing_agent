@@ -1,0 +1,26 @@
+Meta's new AI Mode' on Facebook pulls from public info across.
+
+Swipe for the full breakdown.
+
+- Alongside these feature rollouts, the company recently launched global subscription plans for Facebook, Instagram, and WhatsApp - starting.
+- Meta announced Monday that it's rolling out a wave of new AI features on Facebook, the latest sign.
+- The FBI built its own replica small town to simulate real-world cyberattacks Meta's months-old AI unit.
+- This follows Meta's quiet launch last month of Forum, a Reddit-style app that includes its own AI "Ask".
+- Taken together, the flurry of releases points to a broader strategy: Meta wants Facebook's AI tools to make.
+
+What's the one thing about this that surprised you most?
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://techcrunch.com/2026/06/15/metas-new-ai-mode-on-facebook-pulls-from-public-info-across-its-platforms/
+- https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/
+- https://huggingface.co/blog/build-small-hackathon/eyas
+- https://aws.amazon.com/blogs/machine-learning/introducing-gemma-4-models-on-amazon-bedrock/
+- https://aws.amazon.com/blogs/machine-learning/ai-agent-failure-detection-and-root-cause-analysis-with-strands-evals/
+
+#AINews #AITools #GenerativeAI #MetaAI #LlamaAI #TechNews #AIUpdates #ArtificialIntelligence #FutureOfAI #MachineLearning #DataScience #FutureTech #AIForEveryone #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing #MLNews #AIWeekly #TechInnovation
+
+-
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-
