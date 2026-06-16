@@ -1,0 +1,364 @@
+{
+  "email_received_at": "2026-06-16T18:36+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "ChatGPT's market share slips below 50% for first time | TechCrunch",
+  "subject": "",
+  "source_date": "2026-06-16T18:36:16.038396",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://techcrunch.com/2026/06/16/chatgpts-market-share-slips-below-50-for-first-time/",
+  "article_title": "ChatGPT's market share slips below 50% for first time | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a181ea2d3d3c519b.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2205105208.jpg?resize=1200,800",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/16/chatgpts-market-share-slips-below-50-for-first-time/",
+      "title": "ChatGPT's market share slips below 50% for first time | TechCrunch",
+      "description": "The chatbot still remains the most popular AI assistant worldwide with over 1.1 billion monthly users, followed by Gemini with 662 million and Claude with 245 million.",
+      "excerpt": "The chatbot still remains the most popular AI assistant worldwide with over 1.1 billion monthly users, followed by Gemini with 662 million and Claude with 245 million.",
+      "summary": "More from TechCrunch ChatGPT\u2019s market share slips below 50% for first time More than three and a half years after ChatGPT\u2019s initial release, AI assistants are now used by millions of people worldwide, and the competitive landscape is changing fast. SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a. According to Sensor Tower, the company has scaled the number of ads gradually, along with the share of users who see them. Amazon, which has blocked ChatGPT\u2019s web crawlers, has seen stagnant referral traffic from the platform as a result. He is based out of India and has previously worked at publications including Huffington Post and The Next Web. The chatbot still remains the most popular AI assistant worldwide with over 1.1 billion monthly users, followed by Gemini with 662 million and Claude with 245 million.",
+      "what_happened": "More from TechCrunch ChatGPT\u2019s market share slips below 50% for first time More than three and a half years after ChatGPT\u2019s initial release, AI assistants are now used by millions of people worldwide, and the competitive landscape is changing fast. SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a.",
+      "why_matters": "According to Sensor Tower, the company has scaled the number of ads gradually, along with the share of users who see them. Amazon, which has blocked ChatGPT\u2019s web crawlers, has seen stagnant referral traffic from the platform as a result.",
+      "what_to_watch": "He is based out of India and has previously worked at publications including Huffington Post and The Next Web. The chatbot still remains the most popular AI assistant worldwide with over 1.1 billion monthly users, followed by Gemini with 662 million and Claude with 245 million.",
+      "key_points": [
+        "More from TechCrunch ChatGPT\u2019s market share slips below 50% for first time More than three and a half years after ChatGPT\u2019s initial release, AI assistants are now used by millions of people worldwide, and the.",
+        "The chatbot still remains the most popular AI assistant worldwide with over 1.1 billion monthly users, followed by Gemini with 662 million and Claude with 245 million.",
+        "While OpenAI\u2019s chatbot is still the most popular assistant globally, its market share has dipped below 50% for the first time as users are migrating between different assistants like Google\u2019s Gemini, Anthropic\u2019s Claude.",
+        "In the first half of 2026, people are on pace to download nearly 2.3 billion AI apps and spend over $4.2 billion on them, according to Sensor Tower estimates.",
+        "Regionally, Asia recorded the first download decline of 3.3% in Q1 2026, driven by dips in China and India.",
+        "Software and shopping are the largest advertiser categories in ChatGPT so far, followed by media and entertainment and food and dining.",
+        "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world.",
+        "Until January, ChatGPT commanded over 50% market share, but by May\u2019s end, it had fallen to 46.4% thanks to the rise of Gemini (27.7%) and Claude (10.3%).",
+        "The top three assistants command 89% time spent on AI assistant apps.",
+        "Sensor Tower estimates that the hours spent on AI apps will have increased from 17.2 billion hours in H1 2025 to roughly 36 billion hours in H1 2026.",
+        "It became the fastest app ever to reach 1 billion monthly users, as Sensor Tower reported this month.",
+        "Notably, OpenAI counts weekly active users, and it last reported 900 million of them in February ."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a181ea2d3d3c519b.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2205105208.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "d722169f8d9048529354d939ceb634db"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/16/probably-raises-9m-to-build-a-more-reliable-kind-of-ai/",
+      "title": "Probably raises $9M to build a more reliable kind of AI | TechCrunch",
+      "description": "Probably wants to prevent hallucinations and factual errors from reaching users, and achieve accuracy on par with deterministic systems.",
+      "excerpt": "Probably wants to prevent hallucinations and factual errors from reaching users, and achieve accuracy on par with deterministic systems.",
+      "summary": "Basically, it\u2019s an exercise in reducing ambiguity.\u201d That allows Probably\u2019s data science tool to run on significantly smaller AI models. Probably , which just raised $9 million in seed funding from Andreessen Horowitz, is trying to build a more rigorous way to catch those errors. Crucially, the LLM has been trained against the validator, and the whole system is optimized for fast and accurate answers, the company said. As founder Peter Elias (pictured above) puts it, the company\u2019s goal is to prevent hallucinations and simple factual errors from ever reaching the user, and achieve the kind of 99.99% accuracy that\u2019s common in deterministic systems but much more difficult to reach with AI. Elias says the current version is running on a model that\u2019s \u201cfour classes weaker than the frontier models,\u201d which means it can be run on local hardware (that is, a desktop computer instead of a data center), which reduces a huge amount of the token costs associated with AI use.",
+      "what_happened": "Basically, it\u2019s an exercise in reducing ambiguity.\u201d That allows Probably\u2019s data science tool to run on significantly smaller AI models. Probably , which just raised $9 million in seed funding from Andreessen Horowitz, is trying to build a more rigorous way to catch those errors.",
+      "why_matters": "Crucially, the LLM has been trained against the validator, and the whole system is optimized for fast and accurate answers, the company said. As founder Peter Elias (pictured above) puts it, the company\u2019s goal is to prevent hallucinations and simple factual errors from ever reaching the user, and achieve the kind of 99.99% accuracy that\u2019s common in deterministic systems but much more difficult to reach with AI.",
+      "what_to_watch": "Elias says the current version is running on a model that\u2019s \u201cfour classes weaker than the frontier models,\u201d which means it can be run on local hardware (that is, a desktop computer instead of a data center), which reduces a huge amount of the token costs associated with AI use.",
+      "key_points": [
+        "Elias says the current version is running on a model that\u2019s \u201cfour classes weaker than the frontier models,\u201d which means it can be run on local hardware (that is, a desktop computer instead of a data center), which.",
+        "Basically, it\u2019s an exercise in reducing ambiguity.\u201d That allows Probably\u2019s data science tool to run on significantly smaller AI models.",
+        "Crucially, the LLM has been trained against the validator, and the whole system is optimized for fast and accurate answers, the company said.",
+        "Probably , which just raised $9 million in seed funding from Andreessen Horowitz, is trying to build a more rigorous way to catch those errors.",
+        "\u201cWhat we learned building this was that the better your harness engineering is, the weaker the model can be,\u201d Elias says.",
+        "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world.",
+        "\u201cIf you can refine the context enough, the model does not have to work very hard to do the right thing.",
+        "Errors pop up in even the smartest models, and while there are ways to catch those errors, the industry is still figuring out the best way to do it.",
+        "As founder Peter Elias (pictured above) puts it, the company\u2019s goal is to prevent hallucinations and simple factual errors from ever reaching the user, and achieve the kind of 99.99% accuracy that\u2019s common in.",
+        "But keeping errors from creeping into those summaries required an elaborate harness system that Elias describes as a \u201cdata science mech suit.\u201d The LLM\u2019s first-pass answers are checked against a deterministic validator.",
+        "\u201cThey\u2019re incentivized not to, because they make money the more times you have to correct the model.\u201d When you purchase through links in our articles, we may earn a small commission .",
+        "And, Elias\u2019 idea doesn\u2019t end with data science, as the same engine can be extended to cover use cases like accounting or medical services - as Elias puts it, \u201cany precision-sensitive use case.\u201d \u201cI think it\u2019s really."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ce7379d1501b0be5.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/probably-peter-elias.png?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "f1703b3166154ef59c96f2e0d922f779"
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/blackwell-mlperf-training-6-0/",
+      "title": "Fastest, Largest, Strongest: NVIDIA Blackwell Sweeps MLPerf Training 6.0",
+      "description": "NVIDIA delivers the performance, scale and reliability that frontier training requires - in benchmarks and beyond.",
+      "excerpt": "NVIDIA delivers the performance, scale and reliability that frontier training requires - in benchmarks and beyond.",
+      "summary": "Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay HPE AI Factory With NVIDIA Expands for the Era of Agents NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark Save Big and Play Bigger: GeForce NOW Summer Sale Brings Major Membership Savings For Robotaxis, Safety Must Be Built In, Not Bolted On NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills For Autonomous Vehicles. Nebius , running NVIDIA Blackwell and Blackwell Ultra infrastructure on its AI cloud, enabled Higgsfield to reduce model training time by 30%, supporting a platform that now serves 22 million users and generates over 6 million pieces of AI content per day. The MLPerf Training v6.0 results above speak to the performance of NVIDIA\u2019s platform. This round\u2019s results also reflect the deep co-engineering between NVIDIA and its partners on system architecture, networking and software: Microsoft Azure scaled Llama 3.1 405B training to 8,192 GPUs using GB200 NVL72 systems, and reached the reference quality target in 7.07 minutes, the fastest time to train for this.",
+      "what_happened": "Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay HPE AI Factory With NVIDIA Expands for the Era of Agents NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark Save Big and Play Bigger: GeForce NOW Summer Sale Brings Major Membership Savings For Robotaxis, Safety Must Be Built In, Not Bolted On NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills For Autonomous Vehicles.",
+      "why_matters": "Nebius , running NVIDIA Blackwell and Blackwell Ultra infrastructure on its AI cloud, enabled Higgsfield to reduce model training time by 30%, supporting a platform that now serves 22 million users and generates over 6 million pieces of AI content per day. The MLPerf Training v6.0 results above speak to the performance of NVIDIA\u2019s platform.",
+      "what_to_watch": "This round\u2019s results also reflect the deep co-engineering between NVIDIA and its partners on system architecture, networking and software: Microsoft Azure scaled Llama 3.1 405B training to 8,192 GPUs using GB200 NVL72 systems, and reached the reference quality target in 7.07 minutes, the fastest time to train for this.",
+      "key_points": [
+        "Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay HPE AI Factory With NVIDIA Expands for the Era of Agents NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark Save Big and Play Bigger: GeForce.",
+        "In MLPerf Training 6.0 - the latest of a series of rigorous, peer-reviewed industry benchmarks for evaluating AI training performance - the NVIDIA Blackwell platform led across every category, demonstrating.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "This round\u2019s results also reflect the deep co-engineering between NVIDIA and its partners on system architecture, networking and software: Microsoft Azure scaled Llama 3.1 405B training to 8,192 GPUs using GB200 NVL72.",
+        "Nebius , running NVIDIA Blackwell and Blackwell Ultra infrastructure on its AI cloud, enabled Higgsfield to reduce model training time by 30%, supporting a platform that now serves 22 million users and generates over 6.",
+        "The MLPerf Training v6.0 results above speak to the performance of NVIDIA\u2019s platform.",
+        "NVIDIA continues to push low-precision training innovation across different model architectures, most recently using NVFP4 to pretrain the massive 550-billion-parameter NVIDIA Nemotron 3 Ultra model.",
+        "On DeepSeek-V3 671B, the largest MoE model in the suite, NVIDIA scaled its submission to 8,192 GPUs using GB200 NVL72 systems, the largest-scale Blackwell-based submission in MLPerf Training to date.",
+        "Within each rack-scale system, fifth-generation NVIDIA NVLink Switches connect all 72 GPUs with high bandwidth, into a unified pool of compute and memory, enabling them to act as one giant GPU.",
+        "Many of these partners are running some of the most demanding AI training workloads on NVIDIA infrastructure.",
+        "As models grow in size, complexity and intelligence, the demands on training infrastructure are also rising.",
+        "Performance: Fastest Time to Train on Every Benchmark MLPerf Training 6.0 added two new mixture-of-experts (MoE) pretraining workloads to the suite: DeepSeek-V3 671B and GPT-OSS-20B, reflecting the growing centrality of."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ff90c924be512a32.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/end-to-end-graphics-mlperf-6.0-training-charts-5311563-v6_Slide3.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9bbf6c442dcd24b6.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/83155ddb36957876.jpg"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/end-to-end-graphics-mlperf-6.0-training-charts-5311563-v6_Slide2.jpg",
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/end-to-end-graphics-mlperf-6.0-training-charts-5311563-v6_Slide1.jpg"
+      ],
+      "_story_id": "170696d73ed14d829bc57d734fc8f8b3"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/16/doj-claims-xais-unpermitted-gas-turbines-are-a-matter-of-national-economic-and-energy-security/",
+      "title": "DOJ claims xAI\u2019s unpermitted gas turbines are a matter of \u2018national, economic, and energy security\u2019 | TechCrunch",
+      "description": "The Justice department says the Pentagon needs xAI to keep using its unpermitted gas turbines.",
+      "excerpt": "The Justice department says the Pentagon needs xAI to keep using its unpermitted gas turbines.",
+      "summary": "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s Fable In SpaceX\u2019s IPO. The NAACP started telegraphing its intent to sue xAI last June , seeking to end the company\u2019s practice of using \u201cmobile\u201d gas turbines at its Colossus and Colossus 2 data centers. Those efforts failed, and Elon Musk\u2019s AI company has since added more turbines, bringing the total to 57. He has written for a wide range of publications, including Wired magazine, the Chicago Tribune, Ars Technica, The Wire China, and NOVA Next, where he was founding editor. Since last year, the number of turbines at the data centers have more than doubled, resulting in a corresponding increase in three major air.",
+      "what_happened": "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s Fable In SpaceX\u2019s IPO.",
+      "why_matters": "The NAACP started telegraphing its intent to sue xAI last June , seeking to end the company\u2019s practice of using \u201cmobile\u201d gas turbines at its Colossus and Colossus 2 data centers. Those efforts failed, and Elon Musk\u2019s AI company has since added more turbines, bringing the total to 57.",
+      "what_to_watch": "He has written for a wide range of publications, including Wired magazine, the Chicago Tribune, Ars Technica, The Wire China, and NOVA Next, where he was founding editor. Since last year, the number of turbines at the data centers have more than doubled, resulting in a corresponding increase in three major air.",
+      "key_points": [
+        "In SpaceX\u2019s IPO filing , the company said that it will buy another $2.8 billion worth of gas turbines to power its AI data centers over the next three years.",
+        "The NAACP started telegraphing its intent to sue xAI last June , seeking to end the company\u2019s practice of using \u201cmobile\u201d gas turbines at its Colossus and Colossus 2 data centers.",
+        "Since last year, the number of turbines at the data centers have more than doubled, resulting in a corresponding increase in three major air pollutants: PM2.5, formaldehyde, and oxides of nitrogen (NO x ).",
+        "The NAACP has said that the region, already one of the most polluted in the country, has suffered worse air quality since xAI\u2019s data centers went online.",
+        "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world.",
+        "Those efforts failed, and Elon Musk\u2019s AI company has since added more turbines, bringing the total to 57.",
+        "De Chant is also a lecturer in MIT\u2019s Graduate Program in Science Writing, and he was awarded a Knight Science Journalism Fellowship at MIT in 2018, during which time he studied climate technologies and explored new.",
+        "Formaldehyde exposure increases the risk of cancer, and PM2.5 has been implicated in a range of ailments, from stroke to Alzheimer\u2019s disease.",
+        "The Justice department says the Pentagon needs xAI to keep using its unpermitted gas turbines.",
+        "More from TechCrunch DOJ claims xAI\u2019s unpermitted gas turbines are a matter of \u2018national, economic, and energy security\u2019 The Department of Justice on Monday sided with xAI in a lawsuit that sought to stop the company\u2019s.",
+        "The company, which is now a division of SpaceX, is likely to buy more generators in the coming months or years.",
+        "The Southern Environmental Law Center, which filed the lawsuit on behalf of the NAACP, says that the company\u2019s use still violates federal law, which states that trailer-mounted turbines can be considered stationary and."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fe25dd04ea857a21.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-2217198328.jpeg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "8346c997f43d4f2c878d793efcc2e4e3"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/16/plaud-says-its-software-business-topped-100m-in-arr-after-shipping-over-2m-ai-notetakers/",
+      "title": "Plaud says its software business topped $100M in ARR after shipping over 2M AI notetakers | TechCrunch",
+      "description": "Plaud is trying to make a mark in a crowded market full of AI-powered meeting notetakers.",
+      "excerpt": "Plaud is trying to make a mark in a crowded market full of AI-powered meeting notetakers.",
+      "summary": "Last year, the company launched the $179 Plaud Pro, and this year, it added the new Plaud Pin S at a similar price . SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the. The company said it has sold more than 2 million of its devices, including Plaud Pins and credit-card-styled gadgets that stick on the back of the phone. Besides hardware, the company has accelerated its software development, too. Xu told TechCrunch that its revenue is largely powered by nearly 50% of the device users upgrading from the basic plan to the pro or unlimited plans. Plaud users can buy the hardware and get 300 minutes of transcription for free.",
+      "what_happened": "Last year, the company launched the $179 Plaud Pro, and this year, it added the new Plaud Pin S at a similar price . SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the.",
+      "why_matters": "The company said it has sold more than 2 million of its devices, including Plaud Pins and credit-card-styled gadgets that stick on the back of the phone. Besides hardware, the company has accelerated its software development, too.",
+      "what_to_watch": "Xu told TechCrunch that its revenue is largely powered by nearly 50% of the device users upgrading from the basic plan to the pro or unlimited plans. Plaud users can buy the hardware and get 300 minutes of transcription for free.",
+      "key_points": [
+        "Last year, the company launched the $179 Plaud Pro, and this year, it added the new Plaud Pin S at a similar price .",
+        "The company said it has sold more than 2 million of its devices, including Plaud Pins and credit-card-styled gadgets that stick on the back of the phone.",
+        "Plaud users can buy the hardware and get 300 minutes of transcription for free.",
+        "Xu told TechCrunch that its revenue is largely powered by nearly 50% of the device users upgrading from the basic plan to the pro or unlimited plans.",
+        "We built the interface for the post-screen world.",
+        "And the market validated it,\u201d said Nathan Xu, co-founder and CEO of Plaud.",
+        "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world.",
+        "More from TechCrunch Plaud says its software business topped $100M in ARR after shipping over 2M AI notetakers There aren\u2019t many success stories to refer to when it comes to AI hardware.",
+        "Last month, it also introduced Plaud Teams with shared memory to target enterprises.",
+        "Earlier this year, it launched a desktop app that can take Granola-style notes via system audio for online meetings.",
+        "Besides hardware, the company has accelerated its software development, too.",
+        "It also said that its subscription business has reached more than $100 million in annualized revenue run rate."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0e1ee19223a8557e.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/08/SilverBlack-Plaud-Note-Pro.jpeg?resize=1200,675",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "d5f1f5249bef486387c335eebb933db7"
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/category/enterprise/",
+      "title": "AI Infrastructure Archives",
+      "description": "",
+      "excerpt": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff HPE AI Factory With NVIDIA Expands for the Era of Agents Enterprises are moving agentic AI from proof of concept to production - and the next generation of AI factories are built for the era of... Fastest...",
+      "summary": "Fastest, Largest, Strongest: NVIDIA Blackwell Sweeps MLPerf Training 6.0 NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand NVIDIA Factory Operations Blueprint Gives Factories a New AI. If you do not allow these cookies, then some or all of these services may not function properly. These cookies collect data about how you have interacted with our website to help us improve your web experience, such as which pages you have visited. Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South Korea is one of the world\u2019s centers of AI.... NVIDIA and Doosan Group Collaborate to Advance Physical.",
+      "what_happened": "Fastest, Largest, Strongest: NVIDIA Blackwell Sweeps MLPerf Training 6.0 NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand NVIDIA Factory Operations Blueprint Gives Factories a New AI.",
+      "why_matters": "If you do not allow these cookies, then some or all of these services may not function properly. These cookies collect data about how you have interacted with our website to help us improve your web experience, such as which pages you have visited.",
+      "what_to_watch": "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South Korea is one of the world\u2019s centers of AI.... NVIDIA and Doosan Group Collaborate to Advance Physical.",
+      "key_points": [
+        "Fastest, Largest, Strongest: NVIDIA Blackwell Sweeps MLPerf Training 6.0 NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "NVIDIA and Doosan Group Collaborate to Advance Physical AI and AI Factory Infrastructure NVIDIA and Doosan Group are expanding their collaboration to advance new opportunities across physical AI, robotics and AI factory.",
+        "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand The NVIDIA AI Cloud ecosystem is accelerating the global buildout of AI factory infrastructure.",
+        "Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA Taiwan is home to more than 500 NVIDIA ecosystem partners.",
+        "And as agentic AI scales and autonomous, always-on special agents are deployed in the enterprise, performance per watt...",
+        "Agent sandboxes run 50% faster on NVIDIA Vera than traditional CPUs - while enterprise data queries...",
+        "NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local The agentic AI moment has arrived, but delivering on its promise requires more than good models.",
+        "AI Factories: The New Infrastructure of Intelligence AI factories are token factories, converting power into intelligence in real time.",
+        "More than 1 million NVIDIA MGX rack components for NVIDIA Vera Rubin infrastructure come together in Taiwan, from across 25...",
+        "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South.",
+        "Partners are expanding capacity to meet growing demand from enterprises, startups, nations, AI labs and developers..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "6379c1cfd26e4b859de121464ad5f9a1"
+    },
+    {
+      "url": "https://www.langchain.com/blog/the-art-of-loop-engineering",
+      "title": "The Art of Loop Engineering",
+      "description": "Agents automate real-world work, but reliable performance requires more than a good model, it requires a carefully designed harness built for specific tasks. This post explores the core agent loop, how stacking and extending loops builds more effective agents, and how to instrument each level with LangChain primitives.",
+      "excerpt": "Agents automate real-world work, but reliable performance requires more than a good model, it requires a carefully designed harness built for specific tasks. This post explores the core agent loop, how stacking and extending loops builds more effective agents, and how to instrument each level with LangChain primitives.",
+      "summary": "The key move here is that the return arrow doesn't just loop back to the top - it reaches inside and updates the agent loop directly. S e e w h a t y o u r a g e n t i s r e a l l y d o i n g LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click. Looking forward: prompt and tool configuration are the most simple things to improve, but they're not the only options.For teams running open-weight models, the hill climbing loop can feed into RL fine-tuning, using trace or eval outcomes as training signal to improve the model itself.Auxiliary context like memory and retrieved skills can be improved the same way. Human oversight and expertise Automation doesn't mean removing. This is the most fundamental loop.",
+      "what_happened": "The key move here is that the return arrow doesn't just loop back to the top - it reaches inside and updates the agent loop directly. S e e w h a t y o u r a g e n t i s r e a l l y d o i n g LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click.",
+      "why_matters": "Looking forward: prompt and tool configuration are the most simple things to improve, but they're not the only options.For teams running open-weight models, the hill climbing loop can feed into RL fine-tuning, using trace or eval outcomes as training signal to improve the model itself.Auxiliary context like memory and retrieved skills can be improved the same way. Human oversight and expertise Automation doesn't mean removing.",
+      "what_to_watch": "This is the most fundamental loop.",
+      "key_points": [
+        "The key move here is that the return arrow doesn't just loop back to the top - it reaches inside and updates the agent loop directly.",
+        "Level 3: Event driven loop One of the most important parts of agent development is the integrations layer: connecting your agent to your ecosystem so that it can run in the background.",
+        "This is the most fundamental loop.",
+        "Level 2: Verification loop The agent loop gets work done, but it doesn't always produce correct or consistent work on the first pass.",
+        "S e e w h a t y o u r a g e n t i s r e a l l y d o i n g LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click.",
+        "Wrapping up the docs agent analogy, we run engine over the docs agent traces to detect any issues.",
+        "The loop is the pattern; what it optimizes is up to you.",
+        "The core agent algorithm is simple: give the LLM context and let it call tools in a loop until it's done.",
+        "Tools are what give the agent the power to take action in the real world.",
+        "Every agent run produce a trace: a record of what the model did, the tools it called, grader feedback, etc.",
+        "The event-driven loop connects your agent to your ecosystem.",
+        "The hill climbing loop runs an analysis agent over those traces and uses the findings to rewrite the harness with improved configuration."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f385f1eabde1f5c3.img",
+      "image_url": "https://cdn.prod.website-files.com/65b8cd72835ceeacd4449a53/6989c024926f877c1de6e728_updated.svg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "8e0af1d86e4c4f32b5de837558b7f8e8"
+    },
+    {
+      "url": "https://www.databricks.com/blog/introducing-genie-one-genie-ontology-and-genie-agents",
+      "title": "Introducing Genie One, Genie Agents, and Genie Ontology",
+      "description": "Genie One is the next evolution of Genie, designed for business users. It leverages Genie Ontology to connect to all your systems, and gives everyone a data-smart AI coworker to automate their work.",
+      "excerpt": "Genie One is the next evolution of Genie, designed for business users. It leverages Genie Ontology to connect to all your systems, and gives everyone a data-smart AI coworker to automate their work.",
+      "summary": "Partner Program Explore benefits, tiers and how to become a partner Partner Solutions Find custom industry and migration solutions Platform Overview A unified platform for data, analytics and AI Application Development Quickly build secure data and AI apps Artificial Intelligence Build and deploy ML and GenAI applications Business Intelligence Intelligent analytics for real-world data Business Productivity Unified search, chat, dashboards and apps Data Engineering ETL and orchestration for batch and streaming data. And for organizations who have adopted an existing AI agent or developed their own, we\u2019re also announcing the Genie MCP App, which allows those users to benefit from Genie without having to change their workflows. These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. Our internal benchmark of real-world enterprise data analysis tasks have shown that Genie Ontology significantly improves agent performance on complex, enterprise data questions. In our testing, Genie answered 84.5% of questions correctly on the first attempt, while the strongest general-purpose coding agent managed.",
+      "what_happened": "Partner Program Explore benefits, tiers and how to become a partner Partner Solutions Find custom industry and migration solutions Platform Overview A unified platform for data, analytics and AI Application Development Quickly build secure data and AI apps Artificial Intelligence Build and deploy ML and GenAI applications Business Intelligence Intelligent analytics for real-world data Business Productivity Unified search, chat, dashboards and apps Data Engineering ETL and orchestration for batch and streaming data.",
+      "why_matters": "And for organizations who have adopted an existing AI agent or developed their own, we\u2019re also announcing the Genie MCP App, which allows those users to benefit from Genie without having to change their workflows. These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+      "what_to_watch": "Our internal benchmark of real-world enterprise data analysis tasks have shown that Genie Ontology significantly improves agent performance on complex, enterprise data questions. In our testing, Genie answered 84.5% of questions correctly on the first attempt, while the strongest general-purpose coding agent managed.",
+      "key_points": [
+        "Partner Program Explore benefits, tiers and how to become a partner Partner Solutions Find custom industry and migration solutions Platform Overview A unified platform for data, analytics and AI Application Development.",
+        "Genie One: a data-smart AI coworker that works across all of your data, Genie Agents: a way for everyone to create dedicated agents to automate work, and Genie Ontology: an automatic and secure context store that.",
+        "Genie delivers high accuracy and low latency, 2\u00d7 faster than the strongest coding agent.",
+        "In our testing, Genie answered 84.5% of questions correctly on the first attempt, while the strongest general-purpose coding agent managed just 52.4% - and the weakest only 25% .",
+        "Genie Agents let teams turn prompts into shareable, autonomous agents that can reason over structured and unstructured data, and take action across business tools.",
+        "Our internal benchmark of real-world enterprise data analysis tasks have shown that Genie Ontology significantly improves agent performance on complex, enterprise data questions.",
+        "For all of your apps and data.",
+        "is hard even with the latest generations of models and agents.",
+        "Best of all, creating an agent is as simple as describing what you want: spin up a Genie Agent from a single prompt in Genie One or Genie Code, scope it, benchmark it, and share it for teammates to use or customize.",
+        "And for organizations who have adopted an existing AI agent or developed their own, we\u2019re also announcing the Genie MCP App, which allows those users to benefit from Genie without having to change their workflows.",
+        "Genie Ontology: a living context graph for your business Genie One and Genie Agents are powered by Genie Ontology , an automatic context layer.",
+        "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a25e09f1a9bd5b68.png",
+      "image_url": "https://www.databricks.com/sites/default/files/2023-08/databricks-default.png?v=1712162038",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "f0213c2f5ffb4d71914c837de72b590f"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 8,
+  "has_cta": true,
+  "slides": [
+    "ChatGPT's market share slips below 50 for first time.",
+    "Probably raises $9M to build a more reliable kind of AI.",
+    "Fastest Largest Strongest NVIDIA Blackwell Sweeps MLPerf Training 6.0.",
+    "DOJ claims xAI's unpermitted gas turbines are a matter of national economic.",
+    "Plaud says its software business topped $100M in ARR after shipping over.",
+    "The Art of Loop Engineering.",
+    "Introducing Genie One Genie Agents and Genie Ontology.",
+    "FOLLOW @graitech"
+  ]
+}
