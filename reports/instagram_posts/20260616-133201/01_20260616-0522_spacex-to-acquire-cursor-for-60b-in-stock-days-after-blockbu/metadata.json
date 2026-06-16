@@ -1,0 +1,317 @@
+{
+  "email_received_at": "2026-06-16T05:22-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO | TechCrunch",
+  "subject": "\ud83d\udea8 AI Alert: 117 new launches \u2014 The Verge AI, Bloomberg Tech",
+  "source_date": "Tue, 16 Jun 2026 05:22:11 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Meta",
+    "Amazon",
+    "NVIDIA",
+    "Tesla",
+    "xAI"
+  ],
+  "models": [
+    "Grok"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/",
+  "article_title": "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5750d71862dfcc02.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/06/elon-nasdaq-spacex-ipo.jpg?resize=1200,801",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/",
+      "title": "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO | TechCrunch",
+      "description": "The deal is supposed to help SpaceX's struggling AI division. The company told IPO investors it sees a $26 trillion addressable market in AI.",
+      "excerpt": "The deal is supposed to help SpaceX's struggling AI division. The company told IPO investors it sees a $26 trillion addressable market in AI.",
+      "summary": "More from TechCrunch SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO SpaceX has agreed to acquire AI coding startup Cursor in a $60 billion stock deal, just a few days after the space company\u2019s historic IPO and less than two months after announcing a tie-up between the two . That\u2019s despite the startup previously raising $900 million in a Series C in June 2025, and another $2.3 billion in late 2025. All 11 of Musk\u2019s co-founders in xAI had left the company by the end of March, and Musk publicly admitted that xAI \u201cwas not built right [the] first time around\u201d and that he was rebuilding it \u201cfrom the foundations up.\u201d This followed xAI\u2019s Grok chatbot calling itself \u201cMechaHitler\u201d in 2025, and allowing users to generate nudes and sexual deepfakes of women and children earlier this year . Musk\u2019s company announced a curious deal. It went through OpenAI\u2019s startup accelerator in 2024 before raising enough money to wind up with a price tag of around $29 billion before the SpaceX deal was announced.",
+      "what_happened": "More from TechCrunch SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO SpaceX has agreed to acquire AI coding startup Cursor in a $60 billion stock deal, just a few days after the space company\u2019s historic IPO and less than two months after announcing a tie-up between the two . That\u2019s despite the startup previously raising $900 million in a Series C in June 2025, and another $2.3 billion in late 2025.",
+      "why_matters": "All 11 of Musk\u2019s co-founders in xAI had left the company by the end of March, and Musk publicly admitted that xAI \u201cwas not built right [the] first time around\u201d and that he was rebuilding it \u201cfrom the foundations up.\u201d This followed xAI\u2019s Grok chatbot calling itself \u201cMechaHitler\u201d in 2025, and allowing users to generate nudes and sexual deepfakes of women and children earlier this year . Musk\u2019s company announced a curious deal.",
+      "what_to_watch": "It went through OpenAI\u2019s startup accelerator in 2024 before raising enough money to wind up with a price tag of around $29 billion before the SpaceX deal was announced.",
+      "key_points": [
+        "More from TechCrunch SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO SpaceX has agreed to acquire AI coding startup Cursor in a $60 billion stock deal, just a few days after the space company\u2019s.",
+        "That\u2019s despite the startup previously raising $900 million in a Series C in June 2025, and another $2.3 billion in late 2025.",
+        "All 11 of Musk\u2019s co-founders in xAI had left the company by the end of March, and Musk publicly admitted that xAI \u201cwas not built right [the] first time around\u201d and that he was rebuilding it \u201cfrom the foundations up.\u201d.",
+        "It went through OpenAI\u2019s startup accelerator in 2024 before raising enough money to wind up with a price tag of around $29 billion before the SpaceX deal was announced.",
+        "Musk\u2019s company announced a curious deal in April ahead of its IPO: it would either buy Cursor for $60 billion in stock, or pay a $10 billion break-up fee if the deal fell through.",
+        "Before SpaceX came knocking, Cursor was on track to close a $2 billion funding round from the likes of Andreessen Horowitz, Thrive, and Nvidia that would have valued the AI coding startup at $50 billion, TechCrunch has.",
+        "In that process, SpaceX and its bankers pitched investors on the idea that the company faced a total addressable market of around $28 trillion.",
+        "Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a soul-crushing gulag, say the.",
+        "The company told IPO investors it sees a $26 trillion addressable market in AI.",
+        "Nearly all of that - $26 trillion - was centered around the company\u2019s AI efforts.",
+        "Founded in 2022 as Anysphere, Cursor has been on a meteoric rise as AI-powered coding took off over the last two years.",
+        "But the prospect of acquiring the startup must have seemed even easier to swallow post-IPO: Since going public last Friday, SpaceX\u2019s stock has gone from its IPO price of $135 per share to more than $200 per share in."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5750d71862dfcc02.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/elon-nasdaq-spacex-ipo.jpg?resize=1200,801",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/15/malaysias-respond-io-raises-62-5m-eyes-acquisitions-in-north-america-and-europe/",
+      "title": "Malaysia's AI agent-powered messaging app Respond.io raises $62.5M, eyes acquisitions | TechCrunch",
+      "description": "Respond.io, one of Malaysia startups to watch, uses AI agents to handle high volumes of customer inquiries and charges per convo, not per seat.",
+      "excerpt": "Respond.io, one of Malaysia startups to watch, uses AI agents to handle high volumes of customer inquiries and charges per convo, not per seat.",
+      "summary": "The startup, headquartered in Kuala Lumpur, has raised a $62.5 million Series B round led by Camber Partners, with participation from Endeavor Catalyst and existing investors. More from TechCrunch Malaysia\u2019s AI agent-powered messaging app Respond.io raises $62.5M, eyes acquisitions In 2017, Respond.io set out to solve a simple problem: businesses couldn\u2019t keep up with customers who had moved to messaging apps. The company is currently processing 2 billion messages per quarter. The team relocated the business to Malaysia two years later. Despite the fresh injection of capital, Salandra is cautious about what comes next. \u201cThis is what we call the data flywheel,\u201d Salandra said.",
+      "what_happened": "The startup, headquartered in Kuala Lumpur, has raised a $62.5 million Series B round led by Camber Partners, with participation from Endeavor Catalyst and existing investors. More from TechCrunch Malaysia\u2019s AI agent-powered messaging app Respond.io raises $62.5M, eyes acquisitions In 2017, Respond.io set out to solve a simple problem: businesses couldn\u2019t keep up with customers who had moved to messaging apps.",
+      "why_matters": "The company is currently processing 2 billion messages per quarter. The team relocated the business to Malaysia two years later.",
+      "what_to_watch": "Despite the fresh injection of capital, Salandra is cautious about what comes next. \u201cThis is what we call the data flywheel,\u201d Salandra said.",
+      "key_points": [
+        "The startup, headquartered in Kuala Lumpur, has raised a $62.5 million Series B round led by Camber Partners, with participation from Endeavor Catalyst and existing investors.",
+        "More from TechCrunch Malaysia\u2019s AI agent-powered messaging app Respond.io raises $62.5M, eyes acquisitions In 2017, Respond.io set out to solve a simple problem: businesses couldn\u2019t keep up with customers who had moved.",
+        "\u201cThis is what we call the data flywheel,\u201d Salandra said.",
+        "It last raised a $7 million Series A in 2022 .",
+        "Respond currently generates roughly 30% of its revenue from APAC, 30% from Latin America, and 20% from the Middle East and Africa, leaving North America and Western Europe at just 20%.",
+        "The company is currently processing 2 billion messages per quarter.",
+        "The rise of AI has raised an obvious question for platforms like Respond: Can tools like ChatGPT simply replace what they\u2019ve built?",
+        "The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it Jeff Bezos\u2019s Prometheus raises $12B to build an.",
+        "The team relocated the business to Malaysia two years later.",
+        "\u201cImagine how many months I can save if I find the right company that maybe already has the clients and the team,\u201d he said.",
+        "The company has grown to $35 million in annual recurring revenue (ARR), growing 169% year-over-year, at a 30% profit margin, it tells TechCrunch.",
+        "Co-founder and CEO Gerardo Salandra, who worked at IBM and Google before joining Runtastic , a fitness tracking app that was sold to Adidas in 2015, founded Respond in Hong Kong in 2017 alongside Hassan Ahmed (CTO) and."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b830fae3542e1e1d.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/respond-team-comp-2.webp?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://huggingface.co/blog/build-small-hackathon/interview-coach-blog",
+      "title": "Building an AI Interview Coach for the BuildSmall Hackathon 2026",
+      "description": "A Blog post by Build Small Hackathon on Hugging Face",
+      "excerpt": "A Blog post by Build Small Hackathon on Hugging Face",
+      "summary": "I designed an isolated, safe JSON parsing pipeline that allowed the model to map out successful keyword hits conceptually, instantly transforming a rigid checker into a fluid, human-like technical evaluator. \ufe0f The Local, Ultra-Lightweight Stack To stay safely under the hackathon's strict 32B cap and keep container overhead close to zero, the platform runs on an highly efficient, decoupled decoupled layout: Core Reasoning Model: Qwen/Qwen2.5-7B-Instruct (Operating over a high-availability cloud serverless API. If a user explained a brilliant technical concept using structural synonyms or operational workflows instead of the exact verbatim keyword string, the script penalized them heavily and capped their score at 5/10. Deep Semantic STAR Methodology Evaluation The platform completely abandons rigid text character checking. What I learned from this journey They say the best way to truly learn a framework is to watch it break under a hackathon deadline, and building this AI Interview Coach proved that theory right in the most exhausting, rewarding way possible. Core Features of the AI Coach 1.",
+      "what_happened": "I designed an isolated, safe JSON parsing pipeline that allowed the model to map out successful keyword hits conceptually, instantly transforming a rigid checker into a fluid, human-like technical evaluator. \ufe0f The Local, Ultra-Lightweight Stack To stay safely under the hackathon's strict 32B cap and keep container overhead close to zero, the platform runs on an highly efficient, decoupled decoupled layout: Core Reasoning Model: Qwen/Qwen2.5-7B-Instruct (Operating over a high-availability cloud serverless API.",
+      "why_matters": "If a user explained a brilliant technical concept using structural synonyms or operational workflows instead of the exact verbatim keyword string, the script penalized them heavily and capped their score at 5/10. Deep Semantic STAR Methodology Evaluation The platform completely abandons rigid text character checking.",
+      "what_to_watch": "What I learned from this journey They say the best way to truly learn a framework is to watch it break under a hackathon deadline, and building this AI Interview Coach proved that theory right in the most exhausting, rewarding way possible. Core Features of the AI Coach 1.",
+      "key_points": [
+        "\ufe0f The Local, Ultra-Lightweight Stack To stay safely under the hackathon's strict 32B cap and keep container overhead close to zero, the platform runs on an highly efficient, decoupled decoupled layout: Core Reasoning.",
+        "Core Features of the AI Coach 1.",
+        "My project is the answer.",
+        "I learned the hard way the importance of choosing the right model for the right version of software because as it turns out, some model dont actually support all the version of the libraries and support apps you may be.",
+        "I completely ripped out the unstructured string generation pipelines and rewrote the model core to utilize the modern, OpenAI-compliant client.chat_completion() framework.",
+        "But when I attempted to boot up the advanced Qwen 2.5 7B model, the serverless cluster repeatedly threw catastrophic, unhandled metadata errors.",
+        "I entirely deleted the hardcoded Python filtering loops and prompt-engineered the Qwen model to handle deep semantic extraction.",
+        "I designed an isolated, safe JSON parsing pipeline that allowed the model to map out successful keyword hits conceptually, instantly transforming a rigid checker into a fluid, human-like technical evaluator.",
+        "\ufe0f Demo Video & Social Pitch Check out the system operating in real-time, handling prompt validation, processing answers, and assembling reports: The Problem: Unstructured Data & Rigid Feedback The Target Is a Moving.",
+        "This single architectural shift bypassed the task limitations, dropped latency to milliseconds, and unlocked the true reasoning capabilities of the Qwen framework.",
+        "Job seekers struggle to pinpoint the exact 5\u20137 domain concepts that recruiters screen for.",
+        "If a user explained a brilliant technical concept using structural synonyms or operational workflows instead of the exact verbatim keyword string, the script penalized them heavily and capped their score at 5/10."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e273977011d52a40.png",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/686f49a3a31e9a517952dd0c/pzt4aWOzCal0BJM_8NSoE.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/967b6a97690e0c03.png"
+      ],
+      "extra_image_urls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/686f49a3a31e9a517952dd0c/wYgwgbRcQY1wAdl69pl0J.png"
+      ]
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/",
+      "title": "The US government's Anthropic models ban was never about an AI jailbreak | TechCrunch",
+      "description": "The Trump administration's decision that forced Anthropic to pull its latest cybersecurity models could be reactionary, retaliatory, or both, but the message is clear: The AI industry isn't immune from U.S. government interference.",
+      "excerpt": "The Trump administration's decision that forced Anthropic to pull its latest cybersecurity models could be reactionary, retaliatory, or both, but the message is clear: The AI industry isn't immune from U.S. government interference.",
+      "summary": "The Trump administration's decision that forced Anthropic to pull its latest cybersecurity models could be reactionary, retaliatory, or both, but the message is clear: The AI industry isn't immune from U.S.",
+      "what_happened": "The Trump administration's decision that forced Anthropic to pull its latest cybersecurity models could be reactionary, retaliatory, or both, but the message is clear: The AI industry isn't immune from U.S.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The Trump administration's decision that forced Anthropic to pull its latest cybersecurity models could be reactionary, retaliatory, or both, but the message is clear: The AI industry isn't immune from U.S."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/79a396088fc8eb6d.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/trump-2267050833.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/15/sundar-pichai-faces-boos-walkout-at-stanford-graduation-ceremony-over-googles-israel-ice-ties/",
+      "title": "Sundar Pichai faces boos, walkout at Stanford graduation ceremony over Google's Israel, ICE ties | TechCrunch",
+      "description": "AI is once again at the heart of a college graduation protest. this time for the technology's use in Google's defense contracts.",
+      "excerpt": "AI is once again at the heart of a college graduation protest. this time for the technology's use in Google's defense contracts.",
+      "summary": "AI is once again at the heart of a college graduation protest. this time for the technology's use in Google's defense contracts.",
+      "what_happened": "AI is once again at the heart of a college graduation protest. this time for the technology's use in Google's defense contracts.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "AI is once again at the heart of a college graduation protest.",
+        "this time for the technology's use in Google's defense contracts."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4c4c01fb67346297.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/sundar-io2026-intro-close.png?w=1191",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.therobotreport.com/autonomous-freight-developer-einride-goes-public-via-spac/",
+      "title": "Autonomous freight developer Einride goes public via SPAC - The Robot Report",
+      "description": "Stockholm-based Einride operates a fleet of heavy-duty electric trucks servicing Global Fortune 500 companies across the U.S. and Europe.",
+      "excerpt": "Stockholm-based Einride operates a fleet of heavy-duty electric trucks servicing Global Fortune 500 companies across the U.S. and Europe.",
+      "summary": "Stockholm-based Einride operates a fleet of heavy-duty electric trucks servicing Global Fortune 500 companies across the U.S.",
+      "what_happened": "Stockholm-based Einride operates a fleet of heavy-duty electric trucks servicing Global Fortune 500 companies across the U.S.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Stockholm-based Einride operates a fleet of heavy-duty electric trucks servicing Global Fortune 500 companies across the U.S."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b1b2180105d5f4fc.jpg",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/06/einride-featured.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aibusiness.com/agentic-ai/cohere-north-mini-code-gives-ai-developers-control",
+      "title": "Cohere North Mini Code Gives AI Developers More Control",
+      "description": "The new North Mini Code from Cohere aims to help developers maintain sovereignty over their tech stacks.",
+      "excerpt": "The new North Mini Code from Cohere aims to help developers maintain sovereignty over their tech stacks.",
+      "summary": "The new North Mini Code from Cohere aims to help developers maintain sovereignty over their tech stacks.",
+      "what_happened": "The new North Mini Code from Cohere aims to help developers maintain sovereignty over their tech stacks.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The new North Mini Code from Cohere aims to help developers maintain sovereignty over their tech stacks."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9164e7d359d15b15.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blte64887ebaf268da0/6a2ac9d393023eb9cc9ebbb8/Sustainability.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/403e0f2d5d062d3e.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/15c5b987a5e6f873.webp"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltef46e96defe80790/6a3010b8fa8a9d8c431b14e4/Foxconn.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltee176ce55650ab85/6a21c0c5563cbbc1f1a60149/Meta.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ]
+    },
+    {
+      "url": "https://www.engadget.com/2193666/openai-investigation-state-attorneys-general/",
+      "title": "OpenAI is facing investigation from a group of state attorneys general - Engadget",
+      "description": "A coalition of state attorneys general is asking OpenAI for documents about its activities.",
+      "excerpt": "A coalition of state attorneys general is asking OpenAI for documents about its activities.",
+      "summary": "A coalition of state attorneys general is asking OpenAI for documents about its activities.",
+      "what_happened": "A coalition of state attorneys general is asking OpenAI for documents about its activities.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "A coalition of state attorneys general is asking OpenAI for documents about its activities."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 5,
+  "has_cta": true,
+  "slides": [
+    "SpaceX to acquire Cursor for $60B in stock days after blockbuster IPO.",
+    "Malaysia's AI agent-powered messaging app Respond.io raises $62.5M eyes acquisitions.",
+    "Building an AI Interview Coach for the BuildSmall Hackathon 2026.",
+    "Cohere North Mini Code Gives AI Developers More Control.",
+    "FOLLOW @graitech"
+  ]
+}
