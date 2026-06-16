@@ -1,0 +1,325 @@
+{
+  "email_received_at": "2026-06-15T22:42-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "The US government's Anthropic models ban was never about an AI jailbreak | TechCrunch",
+  "subject": "\ud83d\ude80 AI Digest \u2014 16 Jun 2026 | 50 updates \u00b7 50 launches",
+  "source_date": "Mon, 15 Jun 2026 22:42:21 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "Cohere",
+    "IBM"
+  ],
+  "models": [
+    "Claude"
+  ],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "developer tools",
+    "media generation"
+  ],
+  "article_url": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/",
+  "article_title": "The US government's Anthropic models ban was never about an AI jailbreak | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/79a396088fc8eb6d.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/06/trump-2267050833.jpg?resize=1200,800",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/",
+      "title": "The US government's Anthropic models ban was never about an AI jailbreak | TechCrunch",
+      "description": "The Trump administration's decision that forced Anthropic to pull its latest cybersecurity models could be reactionary, retaliatory, or both, but the message is clear: The AI industry isn't immune from U.S. government interference.",
+      "excerpt": "The Trump administration's decision that forced Anthropic to pull its latest cybersecurity models could be reactionary, retaliatory, or both, but the message is clear: The AI industry isn't immune from U.S. government interference.",
+      "summary": "To quote Hendrix, \u201cthe climate is one of a cloud of suspicion that senior officials are picking favorites based on personal and political factors.\u201d The aftermath is that the government has set a dangerous precedent about how much control it intends to wield over the release of American-made software. The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it Jeff Bezos\u2019s Prometheus raises $12B to build an. government\u2019s enforcement letter to Anthropic, which effectively forced the company to pull its latest AI models offline just before the weekend, should be a wake-up call for any U.S. government successfully forced a tech company to pull its models offline with a swift and unilateral action that didn\u2019t appear to require court approval. Did Amazon CEO Andy Jassy say something to senior government officials that prompted the reaction, out of caution or spite? The result was that the U.S.",
+      "what_happened": "To quote Hendrix, \u201cthe climate is one of a cloud of suspicion that senior officials are picking favorites based on personal and political factors.\u201d The aftermath is that the government has set a dangerous precedent about how much control it intends to wield over the release of American-made software. The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it Jeff Bezos\u2019s Prometheus raises $12B to build an.",
+      "why_matters": "government\u2019s enforcement letter to Anthropic, which effectively forced the company to pull its latest AI models offline just before the weekend, should be a wake-up call for any U.S. government successfully forced a tech company to pull its models offline with a swift and unilateral action that didn\u2019t appear to require court approval.",
+      "what_to_watch": "Did Amazon CEO Andy Jassy say something to senior government officials that prompted the reaction, out of caution or spite? The result was that the U.S.",
+      "key_points": [
+        "The result was that the U.S.",
+        "To quote Hendrix, \u201cthe climate is one of a cloud of suspicion that senior officials are picking favorites based on personal and political factors.\u201d The aftermath is that the government has set a dangerous precedent.",
+        "More from TechCrunch The US government\u2019s Anthropic models ban was never about an AI jailbreak The U.S.",
+        "For instance, language used by the U.S.",
+        "To catch you up on the news blitz: On Friday afternoon, the U.S.",
+        "New details about the issue that emerged over the weekend now cast further doubt on the government\u2019s already shaky reasoning.",
+        "Anthropic said it believes the letter is related to a bypass of the model\u2019s guardrails, but isn\u2019t sure because the letter doesn\u2019t provide specific details.",
+        "\u201cThe behavior described in the paper cannot meaningfully be fixed, and any attempt would only weaken the model for defense,\u201d said Moussouris, who criticized the export control directive as hasty, heavy-handed, and.",
+        "Did the officials misread the report and freak out?",
+        "The Trump administration's decision that forced Anthropic to pull its latest cybersecurity models could be reactionary, retaliatory, or both, but the message is clear: The AI industry isn't immune from U.S.",
+        "The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it Jeff Bezos\u2019s Prometheus raises $12B to build an.",
+        "Citing sources, Axios described a tense situation over the weekend between the two major players, saying that the \u201cpersonality differences\u201d between Anthropic and the Trump administration led to the export directive."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/79a396088fc8eb6d.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/trump-2267050833.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/15/sundar-pichai-faces-boos-walkout-at-stanford-graduation-ceremony-over-googles-israel-ice-ties/",
+      "title": "Sundar Pichai faces boos, walkout at Stanford graduation ceremony over Google's Israel, ICE ties | TechCrunch",
+      "description": "AI is once again at the heart of a college graduation protest - this time for the technology's use in Google's defense contracts.",
+      "excerpt": "AI is once again at the heart of a college graduation protest - this time for the technology's use in Google's defense contracts.",
+      "summary": "Student signs included phrases like \u201cICE SPIES WITH GOOGLE AI\u201d and \u201cGENOCIDE RUNS ON GOOGLE,\u201d as well as \u201cFREE FREE PALESTINE,\u201d a press release associated with the protest notes. The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s. As the war in Gaza has raged, Google\u2019s participation in Nimbus has drawn protests from both inside and outside of the company. Vinod Khosla, the billionaire co-founder of Sun Microsystems and one of Silicon Valley\u2019s most prominent venture capitalists, posted on X that the protest was \u201cbiased, idiotic, short-sighted and very selfish,\u201d adding that it was selfish because the students \u201cignored the bottom 3 billion people on this. About 200 students from the graduating class reportedly walked out, while others loudly booed the tech executive.",
+      "what_happened": "Student signs included phrases like \u201cICE SPIES WITH GOOGLE AI\u201d and \u201cGENOCIDE RUNS ON GOOGLE,\u201d as well as \u201cFREE FREE PALESTINE,\u201d a press release associated with the protest notes. The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s.",
+      "why_matters": "As the war in Gaza has raged, Google\u2019s participation in Nimbus has drawn protests from both inside and outside of the company. Vinod Khosla, the billionaire co-founder of Sun Microsystems and one of Silicon Valley\u2019s most prominent venture capitalists, posted on X that the protest was \u201cbiased, idiotic, short-sighted and very selfish,\u201d adding that it was selfish because the students \u201cignored the bottom 3 billion people on this.",
+      "what_to_watch": "About 200 students from the graduating class reportedly walked out, while others loudly booed the tech executive.",
+      "key_points": [
+        "The focus of the protest was Google\u2019s defense ties - including Project Nimbus, the controversial $1.2 billion contract, shared with Amazon, to provide cloud and AI services to the Israeli military, as well as its.",
+        "Student signs included phrases like \u201cICE SPIES WITH GOOGLE AI\u201d and \u201cGENOCIDE RUNS ON GOOGLE,\u201d as well as \u201cFREE FREE PALESTINE,\u201d a press release associated with the protest notes.",
+        "About 200 students from the graduating class reportedly walked out, while others loudly booed the tech executive.",
+        "In 2024, Google fired 28 workers for protesting the contract, although it has continued to suffer internal dissent over the issue since then.",
+        "The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it Jeff Bezos\u2019s Prometheus raises $12B to build an.",
+        "Students also waved Palestinian flags and shouted \u201cfree Palestine,\u201d online video of the protest shows.",
+        "AI is once again at the heart of a college graduation protest - this time for the technology's use in Google's defense contracts.",
+        "As the war in Gaza has raged, Google\u2019s participation in Nimbus has drawn protests from both inside and outside of the company.",
+        "The student protest also drew criticism from business leaders online.",
+        "It was also recently criticized by the Electronic Frontier Foundation, which accused it and other companies of \u201cchoosing to look the other way\u201d on Israel\u2019s use of their services.",
+        "Vinod Khosla, the billionaire co-founder of Sun Microsystems and one of Silicon Valley\u2019s most prominent venture capitalists, posted on X that the protest was \u201cbiased, idiotic, short-sighted and very selfish,\u201d adding.",
+        "Microsoft has also been criticized for its support of the Israeli military, although the company restricted the Israeli government\u2019s use of its technology after an investigation found that its cloud services were being."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4c4c01fb67346297.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/sundar-io2026-intro-close.png?w=1191",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aibusiness.com/agentic-ai/cohere-north-mini-code-gives-ai-developers-control",
+      "title": "Cohere North Mini Code Gives AI Developers More Control",
+      "description": "The new North Mini Code from Cohere aims to help developers maintain sovereignty over their tech stacks.",
+      "excerpt": "The new North Mini Code from Cohere aims to help developers maintain sovereignty over their tech stacks.",
+      "summary": "Cohere\u2019s release of an open model that aims to provide enterprise developers with direct control directly contrasts with frontier AI model providers like OpenAI and Anthropic, whose models are often expensive, deeply controlled by the vendor or restricted, as in the case of Anthropic's Claude Mythos and Project Glasswing . He added that the rapid turnaround of these models from release to release can be disruptive to enterprises that build on them. While sovereign AI has come to commonly mean national or regional control over AI technology and infrastructure, in this aspect, it means control over the model used so that there is more trust and transparency as to how the model is built. Cohere, a Canada-based generative AI vendor, has launched a model designed to help enterprise developers maintain sovereignty, or control, over their AI technology stack. The mixture-of-experts (MoE) model is the AI lab\u2019s first agentic coding model.",
+      "what_happened": "Cohere\u2019s release of an open model that aims to provide enterprise developers with direct control directly contrasts with frontier AI model providers like OpenAI and Anthropic, whose models are often expensive, deeply controlled by the vendor or restricted, as in the case of Anthropic's Claude Mythos and Project Glasswing . He added that the rapid turnaround of these models from release to release can be disruptive to enterprises that build on them.",
+      "why_matters": "While sovereign AI has come to commonly mean national or regional control over AI technology and infrastructure, in this aspect, it means control over the model used so that there is more trust and transparency as to how the model is built. Cohere, a Canada-based generative AI vendor, has launched a model designed to help enterprise developers maintain sovereignty, or control, over their AI technology stack.",
+      "what_to_watch": "The mixture-of-experts (MoE) model is the AI lab\u2019s first agentic coding model.",
+      "key_points": [
+        "Cohere\u2019s release of an open model that aims to provide enterprise developers with direct control directly contrasts with frontier AI model providers like OpenAI and Anthropic, whose models are often expensive, deeply.",
+        "The mixture-of-experts (MoE) model is the AI lab\u2019s first agentic coding model.",
+        "He added that the rapid turnaround of these models from release to release can be disruptive to enterprises that build on them.",
+        "government forced AI lab Anthropic to turn off its model due to cybersecurity concerns, also show how little control enterprises using proprietary models could have if their model provider turns off the model built into.",
+        "Cohere said the model gives developers control and flexibility over their agentic coding infrastructure.",
+        "The vendor last week introduced North Mini Code, an open source model for developers.",
+        "The model comes at a time when transparency and trust in frontier models have become significant issues.",
+        "In addition, Cohere\u2019s new release shows that the AI market has two areas of innovation.",
+        "The smaller models are also useful for specific tasks such as extracting text from documents, recognizing text and images or, in the case of Cohere, code generation.",
+        "While sovereign AI has come to commonly mean national or regional control over AI technology and infrastructure, in this aspect, it means control over the model used so that there is more trust and transparency as to.",
+        "Cohere North Mini Code Gives AI Developers More Control The AI lab appeals to developers who feel that frontier models from Anthropic and OpenAI are less transparent and too deep for the tasks they need done.",
+        "\u201cCompanies can't trust the continued continuity of the frontier model makers,\u201d Shimmin said."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9164e7d359d15b15.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blte64887ebaf268da0/6a2ac9d393023eb9cc9ebbb8/Sustainability.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/403e0f2d5d062d3e.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/15c5b987a5e6f873.webp"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltef46e96defe80790/6a3010b8fa8a9d8c431b14e4/Foxconn.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltee176ce55650ab85/6a21c0c5563cbbc1f1a60149/Meta.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ]
+    },
+    {
+      "url": "https://www.therobotreport.com/autonomous-freight-developer-einride-goes-public-via-spac/",
+      "title": "Autonomous freight developer Einride goes public via SPAC - The Robot Report",
+      "description": "Stockholm-based Einride operates a fleet of heavy-duty electric trucks servicing Global Fortune 500 companies across the U.S. and Europe.",
+      "excerpt": "Stockholm-based Einride operates a fleet of heavy-duty electric trucks servicing Global Fortune 500 companies across the U.S. and Europe.",
+      "summary": "Next, Einride digitally models and stress-tests its routes before launch, which it claimed reduces risk and protects service levels from Day 1. Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report \u201cWe are building the world\u2019s most efficient freight network, and going public gives us the platform to deploy our electric and autonomous technologies at the speed this market demands.\u201d Founded in 2016, Einride said it designs, develops, and deploys freight technology systems to accelerate the transition to future-proofed transportation. Company also raises money, is valued at $1.35B Last year, Einride raised about $100. In addition, Einride raised $113 million through an oversubscribed private investment in public equity (PIPE) in connection with the transaction.",
+      "what_happened": "Next, Einride digitally models and stress-tests its routes before launch, which it claimed reduces risk and protects service levels from Day 1. Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report",
+      "why_matters": "\u201cWe are building the world\u2019s most efficient freight network, and going public gives us the platform to deploy our electric and autonomous technologies at the speed this market demands.\u201d Founded in 2016, Einride said it designs, develops, and deploys freight technology systems to accelerate the transition to future-proofed transportation. Company also raises money, is valued at $1.35B Last year, Einride raised about $100.",
+      "what_to_watch": "In addition, Einride raised $113 million through an oversubscribed private investment in public equity (PIPE) in connection with the transaction.",
+      "key_points": [
+        "Next, Einride digitally models and stress-tests its routes before launch, which it claimed reduces risk and protects service levels from Day 1.",
+        "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around.",
+        "\u201cWe are building the world\u2019s most efficient freight network, and going public gives us the platform to deploy our electric and autonomous technologies at the speed this market demands.\u201d Founded in 2016, Einride said it.",
+        "In addition, Einride raised $113 million through an oversubscribed private investment in public equity (PIPE) in connection with the transaction.",
+        "Company also raises money, is valued at $1.35B Last year, Einride raised about $100 million in funding from a mix of existing and new investors.",
+        "Once the vehicles are deployed.",
+        "Einride begins expanding operations across vehicles, lanes, and operating hours.",
+        "When Einride sets out to deploy its autonomous vehicles , it starts by identifying high-volume, repetitive routes where autonomy can deliver the strongest utilization, cost efficiency, and operational stability.",
+        "Stockholm-based Einride operates a fleet of heavy-duty electric trucks servicing Global Fortune 500 companies across the U.S.",
+        "This news came a week after it announced that its electric, autonomous vehicle completed the company\u2019s cross-border operation without a human driver onboard.",
+        "Once the transaction is completed, Einride\u2019s ordinary shares and warrants will trade on the Nasdaq Global Market and Nasdaq Capital Market under the ticker symbols \u201cENRD\u201d and \u201cENRDW,\u201d respectively.",
+        "The self-driving truck crossed the border between Norway and Sweden at \u00d8rje, Norway."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b1b2180105d5f4fc.jpg",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/06/einride-featured.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://cryptobriefing.com/aa-agentperf-deepseek-v4-pro-benchmark-results/",
+      "title": "AA-AgentPerf releases initial results for DeepSeek V4 Pro benchmark, showing NVIDIA Blackwell dominance",
+      "description": "Artificial Analysis launches AA-AgentPerf, the first open benchmark for agentic AI workloads, showing NVIDIA Blackwell outperforms AMD MI355X in power",
+      "excerpt": "Artificial Analysis launches AA-AgentPerf, the first open benchmark for agentic AI workloads, showing NVIDIA Blackwell outperforms AMD MI355X in power",
+      "summary": "Artificial Analysis launches AA-AgentPerf, the first open benchmark for agentic AI workloads, showing NVIDIA Blackwell outperforms AMD MI355X in power",
+      "what_happened": "Artificial Analysis launches AA-AgentPerf, the first open benchmark for agentic AI workloads, showing NVIDIA Blackwell outperforms AMD MI355X in power",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Artificial Analysis launches AA-AgentPerf, the first open benchmark for agentic AI workloads, showing NVIDIA Blackwell outperforms AMD MI355X in power"
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9b3c987d6bde939b.jpg",
+      "image_url": "https://static.cryptobriefing.com/wp-content/uploads/2026/06/12182425/nvidia-blackwell-architecture-deep-dive-slides-1-800x420.jpeg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2193666/openai-investigation-state-attorneys-general/",
+      "title": "OpenAI is facing investigation from a group of state attorneys general - Engadget",
+      "description": "A coalition of state attorneys general is asking OpenAI for documents about its activities.",
+      "excerpt": "A coalition of state attorneys general is asking OpenAI for documents about its activities.",
+      "summary": "A coalition of state attorneys general is asking OpenAI for documents about its activities.",
+      "what_happened": "A coalition of state attorneys general is asking OpenAI for documents about its activities.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "A coalition of state attorneys general is asking OpenAI for documents about its activities."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://siliconangle.com/2026/06/12/mistral-reportedly-seeking-3-5b-funding-round-amid-physics-ai-push/",
+      "title": "Mistral reportedly seeking $3.5B funding round amid physics AI push - SiliconANGLE",
+      "description": "Mistral reportedly seeking $3.5B funding round amid physics AI push. SiliconANGLE",
+      "excerpt": "Mistral reportedly seeking $3.5B funding round amid physics AI push. SiliconANGLE",
+      "summary": "Mistral reportedly seeking $3.5B funding round amid physics AI push.",
+      "what_happened": "Mistral reportedly seeking $3.5B funding round amid physics AI push.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Mistral reportedly seeking $3.5B funding round amid physics AI push."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e36a4b197324f794.png",
+      "image_url": "https://s3.us-west-2.amazonaws.com/cube365-prod/related-content/ba8c110e-cedf-4670-929d-e2ecca19ae3c.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/cf586ab167606e9d.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c0e4e508bd4bb3ac.webp"
+      ],
+      "extra_image_urls": [
+        "https://cube365-prod.s3.us-west-2.amazonaws.com/related-content/efc8ccaf-b7a9-45c0-8564-437de321cf2d.webp",
+        "https://cube365-prod.s3.us-west-2.amazonaws.com/related-content/b32e0723-9db1-4985-888b-39e9503265c5.webp"
+      ]
+    },
+    {
+      "url": "https://www.dailymail.com/news/article-15900117/Gina-Rinehart-takes-giant-leap-space-1-4-billion-stake-Elon-Musks-SpaceX.html",
+      "title": "Access Denied",
+      "description": "",
+      "excerpt": "",
+      "summary": "",
+      "what_happened": "",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Access Denied"
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 6,
+  "has_cta": true,
+  "slides": [
+    "The US government's Anthropic models ban was never about an AI jailbreak.",
+    "Sundar Pichai faces boos walkout at Stanford graduation ceremony over Google's Israel.",
+    "Cohere North Mini Code Gives AI Developers More Control.",
+    "Autonomous freight developer Einride goes public via SPAC.",
+    "Mistral reportedly seeking $3.5B funding round amid physics AI push.",
+    "FOLLOW @graitech"
+  ]
+}
