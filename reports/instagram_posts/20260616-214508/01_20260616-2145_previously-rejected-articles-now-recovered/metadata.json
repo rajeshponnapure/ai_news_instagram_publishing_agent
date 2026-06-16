@@ -1,0 +1,68 @@
+{
+  "email_received_at": "2026-06-16T21:45+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Tue, 16 Jun 2026 21:45:08 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.producthunt.com/products/edgee",
+      "title": "Company : Product Hunt AI",
+      "description": "[MEDIUM] Edgee Turbo Models Company : Product Hunt AI Summary : Use Claude Code with Kimi K2.7 Code, MiniMax M2.7, and more Discussion | Link Link :",
+      "text": "[MEDIUM] Edgee Turbo Models Company : Product Hunt AI Summary : Use Claude Code with Kimi K2.7 Code, MiniMax M2.7, and more Discussion | Link Link :",
+      "excerpt": "[MEDIUM] Edgee Turbo Models Company : Product Hunt AI Summary : Use Claude Code with Kimi K2.7 Code, MiniMax M2.7, and more Discussion | Link Link :",
+      "image_url": "https://ph-files.imgix.net/f3791be9-99e9-49f3-99c5-036f9db7143d.jpeg?auto=format&amp;fit=crop&amp;frame=1&amp;h=512&amp;w=1024",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.producthunt.com/products/edgee",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/15/ai-agents-are-becoming-employees-newcore-emerges-with-66m-to-give-them-identities/",
+      "title": "Company : TechCrunch AI",
+      "description": "[MEDIUM] As AI agents become employees, NewCore emerges with $66M to give them identities Company : TechCrunch AI Summary : NewCore argues the next challenge in enterprise security will be managing AI agents, not people. Link :",
+      "text": "[MEDIUM] As AI agents become employees, NewCore emerges with $66M to give them identities Company : TechCrunch AI Summary : NewCore argues the next challenge in enterprise security will be managing AI agents, not people. Link :",
+      "excerpt": "[MEDIUM] As AI agents become employees, NewCore emerges with $66M to give them identities Company : TechCrunch AI Summary : NewCore argues the next challenge in enterprise security will be managing AI agents, not people. Link :",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/newcore-founders.jpg?resize=1200,800",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://techcrunch.com/2026/06/15/ai-agents-are-becoming-employees-newcore-emerges-with-66m-to-give-them-identities/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.producthunt.com/products/agentbrowse",
+      "title": "Company : Product Hunt AI",
+      "description": "[MEDIUM] agentbrowse Company : Product Hunt AI Summary : Give your AI coding agent the web as a command line Discussion | Link Link :",
+      "text": "[MEDIUM] agentbrowse Company : Product Hunt AI Summary : Give your AI coding agent the web as a command line Discussion | Link Link :",
+      "excerpt": "[MEDIUM] agentbrowse Company : Product Hunt AI Summary : Give your AI coding agent the web as a command line Discussion | Link Link :",
+      "image_url": "https://ph-files.imgix.net/960ffcfb-73be-4611-9ad5-0f0332ceda63.png?auto=format&amp;fit=crop&amp;frame=1&amp;h=512&amp;w=1024",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.producthunt.com/products/agentbrowse",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 4,
+  "has_cta": true,
+  "slides": [
+    "Overview Launches 6 Reviews 2 Alternatives Customers Built with Forum More This.",
+    "As AI agents become employees, NewCore emerges with $66M to give them.",
+    "Best Products Launches Launch archive Most-loved launches by the community Launch Guide.",
+    "FOLLOW @graitech"
+  ]
+}
