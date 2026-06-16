@@ -1,0 +1,83 @@
+{
+  "email_received_at": "2026-06-16T23:22+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Tue, 16 Jun 2026 23:22:53 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.producthunt.com/products/glasskit-ui",
+      "title": "Company : Product Hunt AI",
+      "description": "[MEDIUM] GlassKit UI Company : Product Hunt AI Summary : AI-ready React UI for Meta's Ray-Ban Display glasses Discussion | Link Link :",
+      "text": "[MEDIUM] GlassKit UI Company : Product Hunt AI Summary : AI-ready React UI for Meta's Ray-Ban Display glasses Discussion | Link Link :",
+      "excerpt": "[MEDIUM] GlassKit UI Company : Product Hunt AI Summary : AI-ready React UI for Meta's Ray-Ban Display glasses Discussion | Link Link :",
+      "image_url": "https://ph-files.imgix.net/0cf6e5bc-3773-4972-94da-1bd18f8019a1.png?auto=format&amp;fit=crop&amp;frame=1&amp;h=512&amp;w=1024",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.producthunt.com/products/glasskit-ui",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.theverge.com/policy/949970/ai-regulation-child-safety-kosa-congress",
+      "title": "Company : The Verge AI",
+      "description": "Link : https://www.producthunt.com/products/tychi-ai [MEDIUM] Big Tech\u2019s desperate last push at AI regulation Company : The Verge AI Link :",
+      "text": "Link : https://www.producthunt.com/products/tychi-ai [MEDIUM] Big Tech\u2019s desperate last push at AI regulation Company : The Verge AI Link :",
+      "excerpt": "Link : https://www.producthunt.com/products/tychi-ai [MEDIUM] Big Tech\u2019s desperate last push at AI regulation Company : The Verge AI Link :",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/gettyimages-2163958194.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theverge.com/policy/949970/ai-regulation-child-safety-kosa-congress",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.theverge.com/tech/950591/dji-osmo-pocket-4p-dual-gimbal-camera-baby-steadicam-4k-tracking",
+      "title": "Company : The Verge AI",
+      "description": "[HIGH] We now know how DJI\u2019s dual camera Osmo Pocket 4P compares to Insta360\u2019s Company : The Verge AI Summary : After a brief debut at the Cannes film festival last month, DJI announced all the details of its Osmo Pocket 4P stabilized camera today as part of its initial launch in China. While it doesn't match t Link :",
+      "text": "[HIGH] We now know how DJI\u2019s dual camera Osmo Pocket 4P compares to Insta360\u2019s Company : The Verge AI Summary : After a brief debut at the Cannes film festival last month, DJI announced all the details of its Osmo Pocket 4P stabilized camera today as part of its initial launch in China. While it doesn't match t Link :",
+      "excerpt": "[HIGH] We now know how DJI\u2019s dual camera Osmo Pocket 4P compares to Insta360\u2019s Company : The Verge AI Summary : After a brief debut at the Cannes film festival last month, DJI announced all the details of its Osmo Pocket 4P stabilized camera today as part of its initial launch in China. While it doesn't match t Link :",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/dji1.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theverge.com/tech/950591/dji-osmo-pocket-4p-dual-gimbal-camera-baby-steadicam-4k-tracking",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.theverge.com/streaming/950644/fox-roku-acquisition-lachlan-murdoch-fox-news-consolidation",
+      "title": "Company : The Verge AI",
+      "description": "[HIGH] Pour one out for Roku City Company : The Verge AI Summary : By this time next year, Fox Corporation CEO Lachlan Murdoch intends to have added Roku to his already expansive media empire. Should the acquisition go through, Fox will gain control of Roku's modest Link :",
+      "text": "[HIGH] Pour one out for Roku City Company : The Verge AI Summary : By this time next year, Fox Corporation CEO Lachlan Murdoch intends to have added Roku to his already expansive media empire. Should the acquisition go through, Fox will gain control of Roku's modest Link :",
+      "excerpt": "[HIGH] Pour one out for Roku City Company : The Verge AI Summary : By this time next year, Fox Corporation CEO Lachlan Murdoch intends to have added Roku to his already expansive media empire. Should the acquisition go through, Fox will gain control of Roku's modest Link :",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/Screenshot-2026-06-16-at-10.51.35AM.png?quality=90&amp;strip=all&amp;crop=0%2C4.079815590148%2C100%2C91.840368819704&amp;w=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theverge.com/streaming/950644/fox-roku-acquisition-lachlan-murdoch-fox-news-consolidation",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 5,
+  "has_cta": true,
+  "slides": [
+    "Best Products Launches Launch archive Most-loved launches by the community Launch Guide.",
+    "Marsha Blackburn tightens R-TN Majority Leader Chuck Schumer D-NY arrive.",
+    "The 4K Osmo Pocket 4P launched in China with 240fps slo-mo capabilities.",
+    "Previously Rejected Articles Now Recovered.",
+    "FOLLOW @graitech"
+  ]
+}
