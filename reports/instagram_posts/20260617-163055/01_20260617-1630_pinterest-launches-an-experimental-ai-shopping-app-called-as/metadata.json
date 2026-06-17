@@ -1,0 +1,362 @@
+{
+  "email_received_at": "2026-06-17T16:30+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Pinterest launches an experimental AI shopping app called 'Ask Pinterest' | TechCrunch",
+  "subject": "",
+  "source_date": "2026-06-17T16:30:56.578281",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://techcrunch.com/2026/06/17/pinterest-launches-an-experimental-ai-shopping-app-called-ask-pinterest/",
+  "article_title": "Pinterest launches an experimental AI shopping app called 'Ask Pinterest' | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/dd774f34f100d06d.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/06/ask-pinterest.jpg?resize=1200,922",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/17/pinterest-launches-an-experimental-ai-shopping-app-called-ask-pinterest/",
+      "title": "Pinterest launches an experimental AI shopping app called 'Ask Pinterest' | TechCrunch",
+      "description": "Pinterest has launched 'Ask Pinterest,' an experimental AI-powered shopping app that lets users seek recommendations and inspiration through a conversational interface.",
+      "excerpt": "Pinterest has launched 'Ask Pinterest,' an experimental AI-powered shopping app that lets users seek recommendations and inspiration through a conversational interface.",
+      "summary": "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world We won't sell or share your. More from TechCrunch Pinterest launches an experimental AI shopping app called \u2018Ask Pinterest\u2019 Pinterest on Wednesday announced a new experimental app called \u201c Ask Pinterest \u201d that will allow the company to explore a more conversational approach to shopping and product discovery that could eventually find its way to the main Pinterest app. It also introduced other AI initiatives, including Pinterest Model Context Protocol. In an announcement sharing the news, Pinterest\u2019s Chief Business Officer, Lee Brown, gestured towards the changing nature of web search, remarking that, \u201cthe future of discovery won\u2019t be driven by keywords alone. Pinterest has launched 'Ask Pinterest,'.",
+      "what_happened": "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world We won't sell or share your.",
+      "why_matters": "More from TechCrunch Pinterest launches an experimental AI shopping app called \u2018Ask Pinterest\u2019 Pinterest on Wednesday announced a new experimental app called \u201c Ask Pinterest \u201d that will allow the company to explore a more conversational approach to shopping and product discovery that could eventually find its way to the main Pinterest app. It also introduced other AI initiatives, including Pinterest Model Context Protocol.",
+      "what_to_watch": "In an announcement sharing the news, Pinterest\u2019s Chief Business Officer, Lee Brown, gestured towards the changing nature of web search, remarking that, \u201cthe future of discovery won\u2019t be driven by keywords alone. Pinterest has launched 'Ask Pinterest,' an experimental AI-powered shopping app that lets users seek.",
+      "key_points": [
+        "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak Amazon CEO reportedly raised Anthropic model concerns before government.",
+        "Pinterest\u2019s new app was announced alongside the updates aimed at marketers, including the introduction of an AI assistant, still in beta, in its Ads Manager in the U.S.",
+        "More from TechCrunch Pinterest launches an experimental AI shopping app called \u2018Ask Pinterest\u2019 Pinterest on Wednesday announced a new experimental app called \u201c Ask Pinterest \u201d that will allow the company to explore a.",
+        "It also introduced other AI initiatives, including Pinterest Model Context Protocol (MCP), designed for advertisers running campaigns on Pinterest\u2019s platform, and other AI ad tools.",
+        "A new AI model, Performance+ creative, was also introduced globally to help advertisers pick between different ad creatives to find the one that\u2019s likely to perform best each time the ad is shown.",
+        "Pinterest has launched 'Ask Pinterest,' an experimental AI-powered shopping app that lets users seek recommendations and inspiration through a conversational interface.",
+        "And the MCP infrastructure layer that Pinterest announced will allow advertisers to manage and monitor their campaigns using other third-party agentic tools in a standardized way.",
+        "Plus, by making Ask Pinterest a standalone app, the company has a way to experiment with the technology without disrupting the main Pinterest experience.",
+        "The \u201cAsk Pinterest\u201d online application gives the company another way to utilize its \u201cTaste Graph\u201d - its internal data mapping people to their interests and aesthetics.",
+        "The AI-powered experience is designed to expand the visual discovery experience Pinterest is known for beyond the main app to a conversational, chatbot-like interface where consumers can ask questions using natural.",
+        "Rather than turning itself into a source of product recommendations that other AI services could leverage through licensing deals, Pinterest has largely focused on using its own data to train AI models and power its AI.",
+        "In time, these results will help Pinterest when building more AI-powered experiences for the company\u2019s flagship app, the company believes."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/dd774f34f100d06d.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/ask-pinterest.jpg?resize=1200,922",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "dbd299d67ca8498eb298a400b7303b38"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/12/chinese-cybercrime-operation-that-used-ai-to-scam-hundreds-of-thousands-of-victims-sued-by-google/",
+      "title": "Chinese cybercrime operation that used AI to scam 'hundreds of thousands of victims' sued by Google | TechCrunch",
+      "description": "The tech giant said a group called \"Outsider Enterprise\" used AI to scam hundreds of thousands of victims, sending 2.5 million text messages over a span of two weeks.",
+      "excerpt": "The tech giant said a group called \"Outsider Enterprise\" used AI to scam hundreds of thousands of victims, sending 2.5 million text messages over a span of two weeks.",
+      "summary": "Outsider Enterprise has financially scammed \u201chundreds of thousands of victims\u201d with losses \u201cestimated in the millions.\u201d The group deployed 9,000 fake websites, one million fraudulent web domains, and 2.5 million texts sent to Android users in a two-week period, according to Google. Google said this \u201cphishing-for-dummies\u201d software called Outsider, which costs $88 per week or $200 per month, allows operators to create fake websites with the help of AI platforms, including Google\u2019s own Gemini. The spokesperson said that since July 2023, Outsider Enterprise\u2019s phishing platform enabled cybercriminals to steal \u201cat least an estimated 3,870,000 stolen credit cards and a corresponding estimated $1.9B in losses.\u201d Inside Outsider Enterprise In its complaint filed as part of the lawsuit , Google laid out the evidence it gathered against people involved in the Outsider Enterprise operations, whom the company said are. SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate.",
+      "what_happened": "Outsider Enterprise has financially scammed \u201chundreds of thousands of victims\u201d with losses \u201cestimated in the millions.\u201d The group deployed 9,000 fake websites, one million fraudulent web domains, and 2.5 million texts sent to Android users in a two-week period, according to Google. Google said this \u201cphishing-for-dummies\u201d software called Outsider, which costs $88 per week or $200 per month, allows operators to create fake websites with the help of AI platforms, including Google\u2019s own Gemini.",
+      "why_matters": "The spokesperson said that since July 2023, Outsider Enterprise\u2019s phishing platform enabled cybercriminals to steal \u201cat least an estimated 3,870,000 stolen credit cards and a corresponding estimated $1.9B in losses.\u201d Inside Outsider Enterprise In its complaint filed as part of the lawsuit , Google laid out the evidence it gathered against people involved in the Outsider Enterprise operations, whom the company said are.",
+      "what_to_watch": "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s.",
+      "key_points": [
+        "Outsider Enterprise has financially scammed \u201chundreds of thousands of victims\u201d with losses \u201cestimated in the millions.\u201d The group deployed 9,000 fake websites, one million fraudulent web domains, and 2.5 million texts.",
+        "Google said this \u201cphishing-for-dummies\u201d software called Outsider, which costs $88 per week or $200 per month, allows operators to create fake websites with the help of AI platforms, including Google\u2019s own Gemini.",
+        "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak Amazon CEO reportedly raised Anthropic model concerns before government.",
+        "PDT and has since been updated with new information from Google\u2019s complaint, and the FBI\u2019s comment.",
+        "The spokesperson said that since July 2023, Outsider Enterprise\u2019s phishing platform enabled cybercriminals to steal \u201cat least an estimated 3,870,000 stolen credit cards and a corresponding estimated $1.9B in losses.\u201d.",
+        "The common goal is to steal passwords and corresponding multi-factor codes as well as financial information, which the scammers can do by receiving the data that victims input into the fake websites, with the.",
+        "To give an idea of the scale of Outsider Enterprise\u2019s operation, Google said that over a five-month period, from November 14, 2025 to April 14, 2026, the company detected more than 1.59 million URLs connected to it.",
+        "The company said it has been collaborating with AT&T, T-Mobile, and Verizon to block the scam text messages, and said it is coordinating with the FBI.",
+        "On Friday, the tech giant announced a lawsuit against an alleged Chinese cybercrime network called Outsider Enterprise, which Google says uses AI in its campaigns to send scam text messages impersonating Google and.",
+        "The cybercriminals have allegedly used Google Drive and Google Cloud infrastructure to host the phishing websites.",
+        "The cybercriminals have stolen \u201cat least 36,000 payment cards issued by financial institutions in 95 countries,\u201d according to Google.",
+        "This group \u201cbuilt, maintains, and uses a turn-key, online software suite that enables criminals, regardless of technical skill, to publish fraudulent websites designed to rob victims and enrich themselves,\u201d according to."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6143d1ecacf9e31f.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/outsider-enterprise-stolen-credit-cards.png?w=680",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "a41b14d9ce3f4a9e9f2ae5bbd3267d1c"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/17/canadian-pension-giant-joins-race-to-fund-indias-ai-fueled-data-center-boom/",
+      "title": "Canadian pension giant joins race to fund India's AI-fueled data center boom | TechCrunch",
+      "description": "The Canadian pension giant will acquire an 8.2% stake in CtrlS, a tech giant that operates more than 15 data centers across India.",
+      "excerpt": "The Canadian pension giant will acquire an 8.2% stake in CtrlS, a tech giant that operates more than 15 data centers across India.",
+      "summary": "Under the partnership announced on Wednesday, CPP Investments will invest \u20b940 billion (around $423 million) to acquire an 8.2% stake in CtrlS and commit up to \u20b930 billion (about $317 million) to a joint venture to develop hyperscale data center campuses across India. In 2023, CtrlS announced plans to invest $2 billion over six years to expand its data center footprint across India. The Hyderabad-based company has been expanding its footprint to meet rising demand from cloud providers, enterprises, and AI workloads. The partnership will help CtrlS expand capacity and build infrastructure tailored for AI workloads, said CtrlS founder and chief executive Sridhar Pinnapureddy. More from TechCrunch Canadian pension giant joins race to fund India\u2019s AI-fueled data center boom As global investors race to fund the infrastructure underpinning the artificial-intelligence boom, Canada Pension Plan Investment Board\u2019s CPP Investments has committed up to \u20b970 billion (about $741 million) to Indian data.",
+      "what_happened": "Under the partnership announced on Wednesday, CPP Investments will invest \u20b940 billion (around $423 million) to acquire an 8.2% stake in CtrlS and commit up to \u20b930 billion (about $317 million) to a joint venture to develop hyperscale data center campuses across India. In 2023, CtrlS announced plans to invest $2 billion over six years to expand its data center footprint across India.",
+      "why_matters": "The Hyderabad-based company has been expanding its footprint to meet rising demand from cloud providers, enterprises, and AI workloads. The partnership will help CtrlS expand capacity and build infrastructure tailored for AI workloads, said CtrlS founder and chief executive Sridhar Pinnapureddy.",
+      "what_to_watch": "More from TechCrunch Canadian pension giant joins race to fund India\u2019s AI-fueled data center boom As global investors race to fund the infrastructure underpinning the artificial-intelligence boom, Canada Pension Plan Investment Board\u2019s CPP Investments has committed up to \u20b970 billion (about $741 million) to Indian data.",
+      "key_points": [
+        "Under the partnership announced on Wednesday, CPP Investments will invest \u20b940 billion (around $423 million) to acquire an 8.2% stake in CtrlS and commit up to \u20b930 billion (about $317 million) to a joint venture to.",
+        "In 2023, CtrlS announced plans to invest $2 billion over six years to expand its data center footprint across India.",
+        "Meta , meanwhile, partnered with Reliance Industries last week on a 168-megawatt AI-enabled data center in the western state of Gujarat.",
+        "The pension fund said it has invested in the data center sector since 2017 and has built a portfolio of assets and joint ventures across major markets worldwide.",
+        "Adani Group and Tata Consultancy Services are among the companies that have unveiled major data center projects aimed at supporting AI and cloud workloads.",
+        "Founded in 2007, CtrlS operates more than 15 data centers across India.",
+        "The Canadian pension giant will acquire an 8.2% stake in CtrlS, a tech giant that operates more than 15 data centers across India.",
+        "CPP Investments will own 48% of the joint venture, while CtrlS will hold the remaining 52%, the companies said in a joint statement.",
+        "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak Amazon CEO reportedly raised Anthropic model concerns before government.",
+        "More from TechCrunch Canadian pension giant joins race to fund India\u2019s AI-fueled data center boom As global investors race to fund the infrastructure underpinning the artificial-intelligence boom, Canada Pension Plan.",
+        "The CPP-CtrlS deal is the latest in a string of investments targeting India\u2019s data center sector.",
+        "Earlier this month, Blackstone-backed AirTrunk said it would invest $30 billion to build five gigawatts of data center capacity in India by 2030."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0a7c6897c76d2a22.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2024/05/GettyImages-1468360413.jpg?resize=1200,857",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "5d111d4700e6465e81b91dd028aa48fb"
+    },
+    {
+      "url": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware",
+      "title": "From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot",
+      "description": "A Blog post by Amazon on Hugging Face",
+      "excerpt": "A Blog post by Amazon on Hugging Face",
+      "summary": "This post walks you through five steps inside a single agent: build the agent over the LeRobot AgentTools, record a demonstration as a LeRobotDataset in simulation, run a policy on the same robot, deploy the same agent code to a physical SO-101 with one keyword argument change, and broadcast commands across a fleet over the Zenoh mesh. Release the serial ports: if you ran the hardware path, disconnect the SO-101 follower and leader. The example agent in this post does four things: record new demonstrations in simulation, push the result to the Hub as a LeRobotDataset, run a policy in simulation against that same format, and deploy the same agent code to a physical robot with one keyword argument change. He is currently extending that focus into physical AI, collaborating on Strands Robots to bring the same agent developer experience to robotics. Run a policy in simulation With the dataset on the Hub, the next step is to run a policy. The example uses the Robot() factory in its default sim mode, then attaches gr00t_inference so the agent can manage the inference container: Under the hood, the agent runs gr00t_inference(action=\"lifecycle\", lifecycle=\"full\".",
+      "what_happened": "This post walks you through five steps inside a single agent: build the agent over the LeRobot AgentTools, record a demonstration as a LeRobotDataset in simulation, run a policy on the same robot, deploy the same agent code to a physical SO-101 with one keyword argument change, and broadcast commands across a fleet over the Zenoh mesh. Release the serial ports: if you ran the hardware path, disconnect the SO-101 follower and leader.",
+      "why_matters": "The example agent in this post does four things: record new demonstrations in simulation, push the result to the Hub as a LeRobotDataset, run a policy in simulation against that same format, and deploy the same agent code to a physical robot with one keyword argument change. He is currently extending that focus into physical AI, collaborating on Strands Robots to bring the same agent developer experience to robotics.",
+      "what_to_watch": "Run a policy in simulation With the dataset on the Hub, the next step is to run a policy. The example uses the Robot() factory in its default sim mode, then attaches gr00t_inference so the agent can manage the inference container: Under the hood, the agent runs gr00t_inference(action=\"lifecycle\", lifecycle=\"full\".",
+      "key_points": [
+        "The example uses the Robot() factory in its default sim mode, then attaches gr00t_inference so the agent can manage the inference container: Under the hood, the agent runs gr00t_inference(action=\"lifecycle\".",
+        "This post walks you through five steps inside a single agent: build the agent over the LeRobot AgentTools, record a demonstration as a LeRobotDataset in simulation, run a policy on the same robot, deploy the same agent.",
+        "Release the serial ports: if you ran the hardware path, disconnect the SO-101 follower and leader.",
+        "Models mentioned in this article 5 Building Blocks for Foundation Model Training and Inference on AWS Models mentioned in this article 5",
+        "NVIDIA's recently released Cosmos 3 is also available as a policy provider behind the same interface, so the agent code stays the same whichever provider you point it at.",
+        "He designs interfaces that connect AI agents to physical robots, enabling developers to control robotic systems through natural language and making agents and robotics development accessible to builders at any skill.",
+        "When the agent invokes a gated action, the Strands runtime pauses the agent loop and asks the operator to approve out-of-band of the LLM's tool arguments.",
+        "Strands Robots (SDK, AgentTools, Robot factory): github.com/strands-labs/robots , Apache 2.0 Strands Robots docs (full documentation): strands-labs.github.io/robots Strands Robots Sim (examples, simulation backends).",
+        "The example agent in this post does four things: record new demonstrations in simulation, push the result to the Hub as a LeRobotDataset, run a policy in simulation against that same format, and deploy the same agent.",
+        "To return your environment to a clean state: Stop the GR00T inference container: agent.tool.gr00t_inference(action=\"stop\", port=5555) , or use lifecycle=\"teardown\" to remove the container as well.",
+        "Deploy the policy to physical hardware This is the same code as Step 3, with one keyword argument changed.",
+        "With a trained policy (a GR00T or MolmoAct2 checkpoint), the agent drives the SO-100 to grasp the red cube in simulation, the behavior the Mock policy stands in for."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fb78e8ca64a50ba9.png",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/6a1dc0f2b4238bb17ff94794/LC9TP6EKBDCBC4waZEXJo.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fb8487286d060143.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b60aca2235f13b12.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6fdd87d4dc59a189.png"
+      ],
+      "extra_image_urls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6a1dc0f2b4238bb17ff94794/23tSv83E-Y06YWhpso9AS.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/6a1dc0f2b4238bb17ff94794/70ZHVAM2CTkP0_kjNy08U.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/6a1dc0f2b4238bb17ff94794/DBe5futoSUQ9z9s4ECZ79.png"
+      ],
+      "_story_id": "f0ecf28aba2d4ed58877ab4fce9e3a2b"
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/category/enterprise/",
+      "title": "AI Infrastructure Archives",
+      "description": "",
+      "excerpt": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff HPE AI Factory With NVIDIA Expands for the Era of Agents Enterprises are moving agentic AI from proof of concept to production - and the next generation of AI factories are built for the era of... Fastest...",
+      "summary": "Fastest, Largest, Strongest: NVIDIA Blackwell Sweeps MLPerf Training 6.0 NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand NVIDIA Factory Operations Blueprint Gives Factories a New AI. If you do not allow these cookies, then some or all of these services may not function properly. These cookies collect data about how you have interacted with our website to help us improve your web experience, such as which pages you have visited. Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South Korea is one of the world\u2019s centers of AI.... NVIDIA and Doosan Group Collaborate to Advance Physical.",
+      "what_happened": "Fastest, Largest, Strongest: NVIDIA Blackwell Sweeps MLPerf Training 6.0 NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand NVIDIA Factory Operations Blueprint Gives Factories a New AI.",
+      "why_matters": "If you do not allow these cookies, then some or all of these services may not function properly. These cookies collect data about how you have interacted with our website to help us improve your web experience, such as which pages you have visited.",
+      "what_to_watch": "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South Korea is one of the world\u2019s centers of AI.... NVIDIA and Doosan Group Collaborate to Advance Physical.",
+      "key_points": [
+        "Fastest, Largest, Strongest: NVIDIA Blackwell Sweeps MLPerf Training 6.0 NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "NVIDIA and Doosan Group Collaborate to Advance Physical AI and AI Factory Infrastructure NVIDIA and Doosan Group are expanding their collaboration to advance new opportunities across physical AI, robotics and AI factory.",
+        "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand The NVIDIA AI Cloud ecosystem is accelerating the global buildout of AI factory infrastructure.",
+        "Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA Taiwan is home to more than 500 NVIDIA ecosystem partners.",
+        "And as agentic AI scales and autonomous, always-on special agents are deployed in the enterprise, performance per watt...",
+        "Agent sandboxes run 50% faster on NVIDIA Vera than traditional CPUs - while enterprise data queries...",
+        "NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local The agentic AI moment has arrived, but delivering on its promise requires more than good models.",
+        "AI Factories: The New Infrastructure of Intelligence AI factories are token factories, converting power into intelligence in real time.",
+        "More than 1 million NVIDIA MGX rack components for NVIDIA Vera Rubin infrastructure come together in Taiwan, from across 25...",
+        "Seoul Purpose: How NVIDIA and South Korea Are Building the Future of AI Home to cutting-edge sovereign AI infrastructure and robotics innovators, as well as one of the world\u2019s most passionate gaming communities, South.",
+        "Partners are expanding capacity to meet growing demand from enterprises, startups, nations, AI labs and developers..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "6379c1cfd26e4b859de121464ad5f9a1"
+    },
+    {
+      "url": "https://www.therobotreport.com/pegasus-tech-ventures-launches-60m-fund-physical-ai-startups/",
+      "title": "Pegasus Tech Ventures launches $60M fund for physical AI startups - The Robot Report",
+      "description": "Pegasus and CYBERDYNE will invest in startups developing robotics, physical AI, healthcare, automation, and intelligent systems.",
+      "excerpt": "Pegasus and CYBERDYNE will invest in startups developing robotics, physical AI, healthcare, automation, and intelligent systems.",
+      "summary": "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report Pegasus Tech Ventures launches $60M fund for physical AI startups Pegasus Tech Ventures today announced the launch of a JPY 10 billion ($60 million U.S.) corporate venture capital, or CVC, fund. CYBERDYNE hopes to collaborate with startups Founded in 2004, CYBERDYNE said it has expertise in cybernics, the combination of human biology and technology \u201cto enhance, expand, and regenerate physical and cognitive functions.\u201d The company has applied its technologies across healthcare, rehabilitation , labor support, disaster response, and industrial robotics. Through its VCaaS platform, the company provides its partners with. Pegasus and CYBERDYNE will invest in startups developing robotics, physical AI, healthcare, automation, and intelligent systems.",
+      "what_happened": "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report Pegasus Tech Ventures launches $60M fund for physical AI startups Pegasus Tech Ventures today announced the launch of a JPY 10 billion ($60 million U.S.) corporate venture capital, or CVC, fund.",
+      "why_matters": "CYBERDYNE hopes to collaborate with startups Founded in 2004, CYBERDYNE said it has expertise in cybernics, the combination of human biology and technology \u201cto enhance, expand, and regenerate physical and cognitive functions.\u201d The company has applied its technologies across healthcare, rehabilitation , labor support, disaster response, and industrial robotics. Through its VCaaS platform, the company provides its partners with.",
+      "what_to_watch": "Pegasus and CYBERDYNE will invest in startups developing robotics, physical AI, healthcare, automation, and intelligent systems.",
+      "key_points": [
+        "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around.",
+        "Pegasus Tech Ventures launches $60M fund for physical AI startups Pegasus Tech Ventures today announced the launch of a JPY 10 billion ($60 million U.S.) corporate venture capital, or CVC, fund.",
+        "Pegasus and CYBERDYNE will invest in startups developing robotics, physical AI, healthcare, automation, and intelligent systems.",
+        "Pegasus will serve as the general partner of the new CVC fund, and CYBERDYNE will participate as the sole limited partner.",
+        "The fund will invest in startups developing technologies across robotics, physical AI , healthcare , automation, and intelligent systems.",
+        "It will have a particular focus on advancing CYBERDYNE\u2019s vision for \u201chuman-cyber-physical space\u201d (HCPS) cybernics, fusing humans, artificial intelligence, robotics, and information systems.",
+        "Pegasus manages more than 40 funds and over $2 billion in assets.",
+        "Tsukuba, Japan-based CYBERDYNE will use Pegasus\u2019 venture capital-as-a-service (VCaaS) network of startups, investors, and corporate partners.",
+        "The San Jose, Calif.-based venture capital firm launched the fund with CYBERDYNE Inc.",
+        "CYBERDYNE hopes to collaborate with startups Founded in 2004, CYBERDYNE said it has expertise in cybernics, the combination of human biology and technology \u201cto enhance, expand, and regenerate physical and cognitive.",
+        "\u201cBy partnering with Pegasus Tech Ventures and leveraging its global innovation network, we look forward to accelerating technology development, business co-creation, and global expansion opportunities.\u201d Tell Us What You.",
+        "Through its VCaaS platform, the company provides its partners with access to strategic relationships with some of the world\u2019s most promising technology companies."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/18439f8ec452882b.jpg",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/06/Cyberdyne_HAL.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "92596cc63bd441bdb54629403a866c8a"
+    },
+    {
+      "url": "https://9to5google.com/2026/06/11/google-tv-gemini-settings-controls/",
+      "title": "Gemini can now control your Google TV's settings, but only on these models",
+      "description": "Announced earlier this year, Google TV is now rolling out a Gemini update that lets you adjust TV settings with...",
+      "excerpt": "Announced earlier this year, Google TV is now rolling out a Gemini update that lets you adjust TV settings with...",
+      "summary": "Gemini can now control your Google TV\u2019s settings, but only on these models Announced earlier this year, Google TV is now rolling out a Gemini update that lets you adjust TV settings with voice commands, but only on TCL models at first. Announced earlier this year, Google TV is now rolling out a Gemini update that lets you adjust TV settings with... Adjust audio & video settings : Change common settings like brightness, contrast, picture, volume, and sound modes\u00b3. You can say, \u201cIt\u2019s movie night - help make this feel like a cinematic experience.\u201d Find settings menus : Go directly to the menu you want without clicking through multiple screens. Google TV Streamer\u2019s new update turns it into a better smart home device The Hisense L9Q short-throw projector perfectly nails the low-profile theater room feel Walmart now sells Google TV sets starting at $250, including \u2018The Fresco\u2019 art TV [Gallery] This is every new feature in Android 17 [Video] June 2026 Pixel.",
+      "what_happened": "Gemini can now control your Google TV\u2019s settings, but only on these models Announced earlier this year, Google TV is now rolling out a Gemini update that lets you adjust TV settings with voice commands, but only on TCL models at first. Announced earlier this year, Google TV is now rolling out a Gemini update that lets you adjust TV settings with...",
+      "why_matters": "Adjust audio & video settings : Change common settings like brightness, contrast, picture, volume, and sound modes\u00b3. You can say, \u201cIt\u2019s movie night - help make this feel like a cinematic experience.\u201d Find settings menus : Go directly to the menu you want without clicking through multiple screens.",
+      "what_to_watch": "Google TV Streamer\u2019s new update turns it into a better smart home device The Hisense L9Q short-throw projector perfectly nails the low-profile theater room feel Walmart now sells Google TV sets starting at $250, including \u2018The Fresco\u2019 art TV [Gallery] This is every new feature in Android 17 [Video] June 2026 Pixel.",
+      "key_points": [
+        "Gemini can now control your Google TV\u2019s settings, but only on these models Announced earlier this year, Google TV is now rolling out a Gemini update that lets you adjust TV settings with voice commands, but only on TCL.",
+        "It\u2019s only in the US, and only on \u201cselect\u201d 2025 and 2026 models.",
+        "Announced earlier this year, Google TV is now rolling out a Gemini update that lets you adjust TV settings with...",
+        "Just say, \u201cOpen display settings.\u201d This functionality was announced earlier this year , but is now actively rolling out.",
+        "Adjust audio & video settings : Change common settings like brightness, contrast, picture, volume, and sound modes\u00b3.",
+        "With an update rolling out now, Gemini is able to adjust TV settings such as brightness, volume, sound, and picture modes.",
+        "For now, this is a TCL exclusive.",
+        "Diving into your TV\u2019s settings menu to make adjustments can be a bit exhausting, but that\u2019s something Gemini can now do for you.",
+        "Try saying, \u201cThe screen is too dark\u201d or \u201cI can\u2019t hear the dialogue clearly.\u201d Optimize settings for your content : Tune settings for what you\u2019re watching.",
+        "Some specific releases that will get support in this first wave include the QM9K, QM7L, RM7L, X11L, QM9L, QM8L, and RM9L.",
+        "That\u2019s for the first 60 days at least, TCL tells 9to5Google in an email, so other brands might not have to wait that long.",
+        "For example, ask Gemini to \u201cSet picture mode to Sport\u201d or \u201cIncrease the bass.\u201d Troubleshoot picture & sound issues : Describe what you\u2019re experiencing, and Gemini will adjust the settings to fix it."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a0dde785b4fed882.jpg",
+      "image_url": "https://9to5google.com/wp-content/uploads/sites/4/2026/06/google-tv-gemini-controls-1.jpg?quality=82&strip=all&w=1600",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "1cbc9c8e4e68497cb4bef3a1bfe0a418"
+    },
+    {
+      "url": "https://spectrum.ieee.org/china-humanoid-robot-marathon",
+      "title": "How Liquid Cooling Let a Humanoid Robot Shatter Half Marathon Records",
+      "description": "This impressive athletic performance isn\u2019t magic, it\u2019s motors and gear ratios",
+      "excerpt": "This impressive athletic performance isn\u2019t magic, it\u2019s motors and gear ratios",
+      "summary": "Therefore, you must launch at least 40 percent more radiator mass, endure higher atmospheric drag, and sacrifice valuable launch volume just to survive the degradation of the thermal coating. It showed that the cost to launch and run a GPU in space for a year is at least an order of magnitude higher than the same feat in a terrestrial data center. When the state faced the most destructive storm in the company\u2019s history, Hurricane Helene, Georgia Power deployed a rapid response team that utilized its \u201csmart grid\u201d and restored power to more than 1 million customers within days. GM\u2019s effort is being spearheaded by Sterling Anderson , the technologist and robotics guru who led development teams for Tesla\u2019s Autopilot and the Model X before cofounding Aurora Innovation , the. See full bio \u2192 How Musicians Can Get Paid for Training AI Beyond Dexterity: Why Contact May Define the Next Era of Robotics This 1976 University Experiment Spun Up the U.S. This increase adds significantly to the launch cost and further erodes the economics of a space-based data center.",
+      "what_happened": "Therefore, you must launch at least 40 percent more radiator mass, endure higher atmospheric drag, and sacrifice valuable launch volume just to survive the degradation of the thermal coating. It showed that the cost to launch and run a GPU in space for a year is at least an order of magnitude higher than the same feat in a terrestrial data center.",
+      "why_matters": "When the state faced the most destructive storm in the company\u2019s history, Hurricane Helene, Georgia Power deployed a rapid response team that utilized its \u201csmart grid\u201d and restored power to more than 1 million customers within days. GM\u2019s effort is being spearheaded by Sterling Anderson , the technologist and robotics guru who led development teams for Tesla\u2019s Autopilot and the Model X before cofounding Aurora Innovation , the.",
+      "what_to_watch": "See full bio \u2192 How Musicians Can Get Paid for Training AI Beyond Dexterity: Why Contact May Define the Next Era of Robotics This 1976 University Experiment Spun Up the U.S. This increase adds significantly to the launch cost and further erodes the economics of a space-based data center.",
+      "key_points": [
+        "To understand how big this baseline area is in practice, I used the Stefan-Boltzmann law to model the heat-rejection area needed to keep a single chip that draws 700 watts of power - such as the H100 GPU chip, an AI.",
+        "Therefore, you must launch at least 40 percent more radiator mass, endure higher atmospheric drag, and sacrifice valuable launch volume just to survive the degradation of the thermal coating.",
+        "It showed that the cost to launch and run a GPU in space for a year is at least an order of magnitude higher than the same feat in a terrestrial data center.",
+        "This increase adds significantly to the launch cost and further erodes the economics of a space-based data center.",
+        "We are moving away from the \u201claunch and forget\u201d era toward an era of \u201cautonomous logistics.\u201d As our thermal model demonstrated, the harsh environment of space steadily attacks the hardware.",
+        "To make the economics of orbital computation work, the infrastructure must be serviceable and the rockets to launch them reusable.",
+        "Our rough total-cost-of-ownership model uses optimistic versions of current numbers, such as launch cost, chip cost, and power use.",
+        "Even as launch costs fall, the mass and cost burden of power generation and thermal management will remain a fundamental problem.",
+        "The tiny squares to the left and right in this image are billboards 200 meters from the center of the explosion.",
+        "A standard rad-hard chip doesn\u2019t have the processing power to run a modern large language model (LLM).",
+        "When the state faced the most destructive storm in the company\u2019s history, Hurricane Helene, Georgia Power deployed a rapid response team that utilized its \u201csmart grid\u201d and restored power to more than 1 million customers.",
+        "To maintain that same 60 C operating temperature for the GPU chips, the required surface area jumps from about 1.4 square meters per chip to nearly 2.0 square meters."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c39dada5e3c514bd.img",
+      "image_url": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202000%201470'%3E%3C/svg%3E",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "619f98480c55450f8b6b2b121c5e67ee"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 6,
+  "has_cta": true,
+  "slides": [
+    "Pinterest launches an experimental AI shopping app called Ask Pinterest'.",
+    "Canadian pension giant joins race to fund India's AI-fueled data center boom.",
+    "From the Hugging Face Hub to robot hardware with Strands Agents.",
+    "Pegasus Tech Ventures launches $60M fund for physical AI startups.",
+    "Hurricane Helene adds When state faced most destructive storm in.",
+    "FOLLOW @graitech"
+  ]
+}
