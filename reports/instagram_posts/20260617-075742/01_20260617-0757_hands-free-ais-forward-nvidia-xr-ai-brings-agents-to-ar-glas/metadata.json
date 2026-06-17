@@ -1,0 +1,368 @@
+{
+  "email_received_at": "2026-06-17T07:57+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Hands Free, AIs Forward: NVIDIA XR AI Brings Agents to AR Glasses",
+  "subject": "",
+  "source_date": "2026-06-17T07:57:43.221801",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://blogs.nvidia.com/blog/nvidia-xr-ai/",
+  "article_title": "Hands Free, AIs Forward: NVIDIA XR AI Brings Agents to AR Glasses",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c1b1136418d70be9.png",
+  "article_image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/NVIDIA-XR-AI_Featured-Image-Poster-Alt-scaled.png",
+  "article_items": [
+    {
+      "url": "https://blogs.nvidia.com/blog/nvidia-xr-ai/",
+      "title": "Hands Free, AIs Forward: NVIDIA XR AI Brings Agents to AR Glasses",
+      "description": "NVIDIA XR AI is now available in public beta, giving developers a framework for building multimodal AI agents for AR glasses and XR devices.",
+      "excerpt": "NVIDIA XR AI is now available in public beta, giving developers a framework for building multimodal AI agents for AR glasses and XR devices.",
+      "summary": "NVIDIA NeMo Agent Toolkit enables tool use, reasoning workflows and multi-agent coordination, while NVIDIA accelerated computing platforms - including NVIDIA DGX Spark, NVIDIA DGX Station and NVIDIA RTX PRO systems - provide the infrastructure to run inference across cloud, data center and edge environments. By connecting inputs from AR glasses and XR devices with AI models, enterprise data, tools and accelerated computing, NVIDIA XR AI enables agents that can perceive, reason and act in the flow of work. In the research lab, Rana , an AutoBio company building AI systems for scientific research, is introducing its LabOS system on NVIDIA XR AI to bring spatial intelligence directly into scientific workflows. Integrates agent orchestration and accelerated runtime services to help developers move from prototype to production. Like human workers, they need knowledge, tools and specialized skills to perceive and understand the world through video, audio and sensor data, interpret fast-changing conditions and spatial context, retrieve information from enterprise systems, reason about the next best action and use software tools to complete.",
+      "what_happened": "NVIDIA NeMo Agent Toolkit enables tool use, reasoning workflows and multi-agent coordination, while NVIDIA accelerated computing platforms - including NVIDIA DGX Spark, NVIDIA DGX Station and NVIDIA RTX PRO systems - provide the infrastructure to run inference across cloud, data center and edge environments. By connecting inputs from AR glasses and XR devices with AI models, enterprise data, tools and accelerated computing, NVIDIA XR AI enables agents that can perceive, reason and act in the flow of work.",
+      "why_matters": "In the research lab, Rana , an AutoBio company building AI systems for scientific research, is introducing its LabOS system on NVIDIA XR AI to bring spatial intelligence directly into scientific workflows. Integrates agent orchestration and accelerated runtime services to help developers move from prototype to production.",
+      "what_to_watch": "Like human workers, they need knowledge, tools and specialized skills to perceive and understand the world through video, audio and sensor data, interpret fast-changing conditions and spatial context, retrieve information from enterprise systems, reason about the next best action and use software tools to complete.",
+      "key_points": [
+        "NVIDIA NeMo Agent Toolkit enables tool use, reasoning workflows and multi-agent coordination, while NVIDIA accelerated computing platforms - including NVIDIA DGX Spark, NVIDIA DGX Station and NVIDIA RTX PRO systems -.",
+        "By connecting inputs from AR glasses and XR devices with AI models, enterprise data, tools and accelerated computing, NVIDIA XR AI enables agents that can perceive, reason and act in the flow of work.",
+        "Connects agents to specialized tools and services, including NVIDIA Metropolis and the NVIDIA Metropolis for video search and summarization (VSS) for visual AI and video understanding, and NVIDIA NeMo Retriever for.",
+        "It provides a foundation for developers to build or connect skills and tools for enterprise XR applications, and simplifies the integration of multimodal perception, enterprise retrieval, reasoning models and agent.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "In the research lab, Rana , an AutoBio company building AI systems for scientific research, is introducing its LabOS system on NVIDIA XR AI to bring spatial intelligence directly into scientific workflows.",
+        "Supports a broad ecosystem of AI models, including NVIDIA Nemotron reasoning models, NVIDIA Cosmos Reason and other compatible foundation models.",
+        "Integrates agent orchestration and accelerated runtime services to help developers move from prototype to production.",
+        "Like human workers, they need knowledge, tools and specialized skills to perceive and understand the world through video, audio and sensor data, interpret fast-changing conditions and spatial context, retrieve.",
+        "Ingests real-world signals from AR and XR devices, including video, audio, depth, pose and sensor data.",
+        "Industries Put NVIDIA XR AI to Work Across manufacturing, science, healthcare, design and immersive learning, developers and enterprises are already tapping NVIDIA XR AI - embedding AI agents where the work happens.",
+        "VITURE integrated NVIDIA XR AI into a wearable interface that gives workers a hands-free way to find the right context and guide the next step at the point of work."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c1b1136418d70be9.png",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/NVIDIA-XR-AI_Featured-Image-Poster-Alt-scaled.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "8adbd714070442adadbd4c7ddfabe8d6"
+    },
+    {
+      "url": "https://bitcoinist.com/kraken-launches-pre-ipo-perps-for-openai-and-anthropic-with-up-to-5x-leverage/",
+      "title": "Kraken Launches Pre-IPO Perps For OpenAI And Anthropic With Up To 5x Leverage | Bitcoinist.com",
+      "description": "Kraken has launched pre-IPO perpetual futures tied to OpenAI and Anthropic, giving eligible traders leveraged exposure to private AI companies before public listings.",
+      "excerpt": "Kraken has launched pre-IPO perpetual futures tied to OpenAI and Anthropic, giving eligible traders leveraged exposure to private AI companies before public listings.",
+      "summary": "Kraken Launches Pre-IPO Perps For OpenAI And Anthropic With Up To 5x Leverage Kraken is pushing deeper into the overlap between crypto derivatives and private-market exposure with the launch of pre-IPO perpetual futures tied to OpenAI and Anthropic. The exchange said the new contracts allow eligible traders to take long or short positions on two of the most closely watched private artificial intelligence companies before any public listing. Why This Launch Matters The launch shows how crypto trading infrastructure is expanding beyond tokens. Kraken has launched pre-IPO perpetual futures for OpenAI and Anthropic. That could be powerful, but it also raises questions about investor protection, disclosures, pricing sources, and liquidity depth. Why This Launch Matters The launch shows how crypto trading infrastructure is expanding beyond tokens.",
+      "what_happened": "Kraken Launches Pre-IPO Perps For OpenAI And Anthropic With Up To 5x Leverage Kraken is pushing deeper into the overlap between crypto derivatives and private-market exposure with the launch of pre-IPO perpetual futures tied to OpenAI and Anthropic. The exchange said the new contracts allow eligible traders to take long or short positions on two of the most closely watched private artificial intelligence companies before any public listing.",
+      "why_matters": "Why This Launch Matters The launch shows how crypto trading infrastructure is expanding beyond tokens. Kraken has launched pre-IPO perpetual futures for OpenAI and Anthropic.",
+      "what_to_watch": "That could be powerful, but it also raises questions about investor protection, disclosures, pricing sources, and liquidity depth. Why This Launch Matters The launch shows how crypto trading infrastructure is expanding beyond tokens.",
+      "key_points": [
+        "Kraken Launches Pre-IPO Perps For OpenAI And Anthropic With Up To 5x Leverage Kraken is pushing deeper into the overlap between crypto derivatives and private-market exposure with the launch of pre-IPO perpetual futures.",
+        "The exchange said the new contracts allow eligible traders to take long or short positions on two of the most closely watched private artificial intelligence companies before any public listing.",
+        "Why This Launch Matters The launch shows how crypto trading infrastructure is expanding beyond tokens.",
+        "Kraken has launched pre-IPO perpetual futures for OpenAI and Anthropic.",
+        "Kraken has launched pre-IPO perpetual futures tied to OpenAI and Anthropic, giving eligible traders leveraged exposure to private AI companies before public listings.",
+        "For traders, the attraction is obvious.",
+        "Bitcoinist Editorial Team BlackRock Launches Covered-Call Bitcoin ETF Under BITA Ticker Kraken Launches CFTC-Regulated Perpetual Futures For US Pro Traders Michael Saylor Rejects Protocol Yield In Bitcoin Digital Asset.",
+        "Crypto Derivatives Meet Private AI Exposure OpenAI and Anthropic are two of the most sought-after private companies in the world.",
+        "XRP Price Needs 73% Just for Breakeven \u2013 Here Is the Best...",
+        "The products offer exposure to private AI companies before public listings.",
+        "For Kraken, the product fits a wider push into derivatives and trader-focused markets.",
+        "That could be powerful, but it also raises questions about investor protection, disclosures, pricing sources, and liquidity depth."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/061bd9bfd719bbc3.jpg",
+      "image_url": "https://bitcoinist.com/wp-content/uploads/2025/12/resized4-1.jpg?fit=1200%2C680",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "d8d30d1de6e94afdaf5696aa18edc6e1"
+    },
+    {
+      "url": "https://www.nextgov.com/acquisition/2026/06/sba-partners-perplexity-launch-25m-main-street-ai-accelerator/414198/",
+      "title": "SBA partners with Perplexity to launch $25M Main Street AI Accelerator",
+      "description": "Administration officials have stressed the importance of supporting small businesses amid the global AI race between the U.S. and China.",
+      "excerpt": "Administration officials have stressed the importance of supporting small businesses amid the global AI race between the U.S. and China.",
+      "summary": "SBA partners with Perplexity to launch $25M Main Street AI Accelerator Future-Ready Workforce Administration officials have stressed the importance of supporting small businesses amid the global AI race between the U.S. \u201cIf China wins, this is going to be really problematic for the entire country, but particularly for Main Street.\u201d Earlier this month, AI firm Perplexity announced the launch of the Main Street AI Accelerator in collaboration with the SBA to help support small businesses looking to harness the. \u201cWhen you talk to small business owners, one of the biggest bottlenecks for them is actually they can't hire enough people to grow their business,\u201d Shevelenko said, adding that Perplexity\u2019s Computer AI system and enhanced access to the capabilities is like if a small business \u201cjust got 100 digital co-workers.\u201d Shevelenko said the company is also in the process of investing \u201cin kind of what we call concierge onboarding for. seeking to maintain its status as the globe\u2019s artificial intelligence superpower, the Trump administration has been looking to support initiatives that can drive innovation and economic growth across the nation\u2019s small businesses.",
+      "what_happened": "SBA partners with Perplexity to launch $25M Main Street AI Accelerator Future-Ready Workforce Administration officials have stressed the importance of supporting small businesses amid the global AI race between the U.S. \u201cIf China wins, this is going to be really problematic for the entire country, but particularly for Main Street.\u201d Earlier this month, AI firm Perplexity announced the launch of the Main Street AI Accelerator in collaboration with the SBA to help support small businesses looking to harness the.",
+      "why_matters": "\u201cWhen you talk to small business owners, one of the biggest bottlenecks for them is actually they can't hire enough people to grow their business,\u201d Shevelenko said, adding that Perplexity\u2019s Computer AI system and enhanced access to the capabilities is like if a small business \u201cjust got 100 digital co-workers.\u201d Shevelenko said the company is also in the process of investing \u201cin kind of what we call concierge onboarding for.",
+      "what_to_watch": "seeking to maintain its status as the globe\u2019s artificial intelligence superpower, the Trump administration has been looking to support initiatives that can drive innovation and economic growth across the nation\u2019s small businesses.",
+      "key_points": [
+        "SBA partners with Perplexity to launch $25M Main Street AI Accelerator Future-Ready Workforce Administration officials have stressed the importance of supporting small businesses amid the global AI race between the U.S.",
+        "\u201cIf China wins, this is going to be really problematic for the entire country, but particularly for Main Street.\u201d Earlier this month, AI firm Perplexity announced the launch of the Main Street AI Accelerator in.",
+        "seeking to maintain its status as the globe\u2019s artificial intelligence superpower, the Trump administration has been looking to support initiatives that can drive innovation and economic growth across the nation\u2019s small.",
+        "SBA did not respond to multiple requests for comment, although Perplexity said it is the first time an AI firm has launched such a program with the agency.",
+        "Administration officials have stressed the importance of supporting small businesses amid the global AI race between the U.S.",
+        "Computer is the name of the company\u2019s unified system that it said \u201cconnects to 400+ tools that growing businesses already run on, including Intuit QuickBooks, Intuit Mailchimp, Shopify, and Stripe.\u201d Perplexity said the.",
+        "The $25 million initiative is offering $250 Perplexity Computer credits to up to 100,000 small businesses that are recipients of SBA\u2019s 7(a)- or 504-backed loans.",
+        "During a June 9 Axios event , SBA Administrator Kelly Loeffler said AI \u201cis going to be a powerful engine for fueling growth on Main Street, for fueling job creation.\u201d \u201cWinning the AI arms race is absolutely vital,\u201d she.",
+        "The national AI legislative framework released by the White House last month included a pillar stating that the development of emerging technologies \u201cshould strengthen American communities and small businesses through.",
+        "\u201cWhen you talk to small business owners, one of the biggest bottlenecks for them is actually they can't hire enough people to grow their business,\u201d Shevelenko said, adding that Perplexity\u2019s Computer AI system and.",
+        "In an interview with Nextgov/FCW , Perplexity Chief Business Officer Dmitry Shevelenko said the partnership with SBA was \u201cvery organic\u201d because the agency was already using Perplexity Enterprise internally.",
+        "Please check out our other newsletter offerings on our Newsletter page."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8da77534fd3a38d2.jpg",
+      "image_url": "https://cdn.nextgov.com/media/img/cd/2026/06/15/061526PerplexityNG/open-graph.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "e1758ecebd5d4d12ae4428af3488b1e2"
+    },
+    {
+      "url": "https://www.therobotreport.com/kawasaki-robotics-debut-rl030n-physical-ai-platform-automate/",
+      "title": "Kawasaki Robotics to debut RL030N physical AI platform at Automate - The Robot Report",
+      "description": "Kawasaki Robotics says its 8-DoF robot, Pulseboard inspection tech, and other systems will show its vision for intelligent automation.",
+      "excerpt": "Kawasaki Robotics says its 8-DoF robot, Pulseboard inspection tech, and other systems will show its vision for intelligent automation.",
+      "summary": "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report Kawasaki Robotics to debut RL030N physical AI platform at Automate Kawasaki Robotics plans to unveil several systems next week at Automate in Chicago. The company said they will show how robotics, artificial intelligence, machine learning, vision systems, and real-time control are transforming industrial automation. High-speed axis performance reaching 730 /s and an extended 2,093 mm (82.4 in.) reach help improve cycle times while maintaining weld quality, said Kawasaki Robotics. \u201cAt Kawasaki Robotics, we believe the future of automation will be defined by robotic systems that seamlessly integrate perception, motion, and decision-making,\u201d stated Seiji Amazawa, president of, Kawasaki Robotics. \u201cAutomate 2026 marks an important milestone as we introduce technologies designed to support emerging.",
+      "what_happened": "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report Kawasaki Robotics to debut RL030N physical AI platform at Automate Kawasaki Robotics plans to unveil several systems next week at Automate in Chicago.",
+      "why_matters": "The company said they will show how robotics, artificial intelligence, machine learning, vision systems, and real-time control are transforming industrial automation. High-speed axis performance reaching 730 /s and an extended 2,093 mm (82.4 in.) reach help improve cycle times while maintaining weld quality, said Kawasaki Robotics.",
+      "what_to_watch": "\u201cAt Kawasaki Robotics, we believe the future of automation will be defined by robotic systems that seamlessly integrate perception, motion, and decision-making,\u201d stated Seiji Amazawa, president of, Kawasaki Robotics. \u201cAutomate 2026 marks an important milestone as we introduce technologies designed to support emerging.",
+      "key_points": [
+        "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around.",
+        "The company said they will show how robotics, artificial intelligence, machine learning, vision systems, and real-time control are transforming industrial automation.",
+        "\u201cAutomate 2026 marks an important milestone as we introduce technologies designed to support emerging physical AI applications while continuing to deliver the industrial reliability manufacturers depend on.\u201d Since 1969.",
+        "He was senior editor of The Robot Report from 2019 to 2020 and editorial director of Robotics 24/7 from 2020 to 2023.",
+        "Kawasaki Robotics says its 8-DoF robot, Pulseboard inspection tech, and other systems will show its vision for intelligent automation.",
+        "Kawasaki Robotics to debut RL030N physical AI platform at Automate Kawasaki Robotics plans to unveil several systems next week at Automate in Chicago.",
+        "\u201cAt Kawasaki Robotics, we believe the future of automation will be defined by robotic systems that seamlessly integrate perception, motion, and decision-making,\u201d stated Seiji Amazawa, president of, Kawasaki Robotics.",
+        "This enables external AI software, ROS environments, machine learning systems, vision platforms, and third-party orchestration systems to directly control the robot in real time.",
+        "BA013L and MXP360L robots expand automation portfolio The BA013L 13 kg (28.6 lb.) arc-welding robot will debut inside a compact workcell designed for high-performance welding applications.",
+        "High-speed axis performance reaching 730 /s and an extended 2,093 mm (82.4 in.) reach help improve cycle times while maintaining weld quality, said Kawasaki Robotics.",
+        "\u201cPulseboard allows the robot to work at full speed without compromising, stretching out, or blurring the image,\u201d noted Marcovecchio.",
+        "\u201cOur tried-and-true robots build millions of products a year, so we take a realistic approach to the transition to AI and full automation.\u201d At Booth S-2201 in Chicago\u2019s McCormick Place, Kawasaki will show its new RL030N."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e0bca3ea8a5fe11c.png",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/05/rbr50-sidebar-promo.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "c09cfb1edf734dafad71fc2ef7c1764d"
+    },
+    {
+      "url": "https://devops.com/mimo-code-is-the-open-source-answer-to-claude-code/",
+      "title": "MiMo Code Is the Open Source Answer to Claude Code - DevOps.com",
+      "description": "Terminal-based coding assistants for AI-curious developers are hot these days, and the most popular choice appears to be Claude Code.",
+      "excerpt": "Terminal-based coding assistants for AI-curious developers are hot these days, and the most popular choice appears to be Claude Code.",
+      "summary": "For benchmarks, Xiaomi paired MiMo Code with the latest release of its own model, the MiMo-V2.5 released in April. Since its v0.1 release last week, MiMo Code has garnered 9,000 stars on GitHub , and has been forked 783 times. And unlike Claude Code, which costs $20 a month to start, MiMo is free, and may not even require connecting to a cloud provider, if the user installs a model on their own machine. The Real Challenge Is Operating It Securely The Validation Gap Is Costing You More Than You Think A Day with Developer Assist: Faster Fixes, Cleaner Commits Agentic AI for Defense: How Checkmarx Turns Security into a Coding Partner Iceberg Won the. They don\u2019t remember the context from one task to the next. He concluded MiMo is best for prototyping and learning projects, but Claude Code is best for production work, where the safety guardrails can be well worth the $20 monthly fee.",
+      "what_happened": "For benchmarks, Xiaomi paired MiMo Code with the latest release of its own model, the MiMo-V2.5 released in April. Since its v0.1 release last week, MiMo Code has garnered 9,000 stars on GitHub , and has been forked 783 times.",
+      "why_matters": "And unlike Claude Code, which costs $20 a month to start, MiMo is free, and may not even require connecting to a cloud provider, if the user installs a model on their own machine. The Real Challenge Is Operating It Securely The Validation Gap Is Costing You More Than You Think A Day with Developer Assist: Faster Fixes, Cleaner Commits Agentic AI for Defense: How Checkmarx Turns Security into a Coding Partner Iceberg Won the.",
+      "what_to_watch": "They don\u2019t remember the context from one task to the next. He concluded MiMo is best for prototyping and learning projects, but Claude Code is best for production work, where the safety guardrails can be well worth the $20 monthly fee.",
+      "key_points": [
+        "For benchmarks, Xiaomi paired MiMo Code with the latest release of its own model, the MiMo-V2.5 released in April.",
+        "He concluded MiMo is best for prototyping and learning projects, but Claude Code is best for production work, where the safety guardrails can be well worth the $20 monthly fee.",
+        "Since its v0.1 release last week, MiMo Code has garnered 9,000 stars on GitHub , and has been forked 783 times.",
+        "Using the Ollama framework , users can run MiMo Code against a model, such as Qwen 2.5 Coder , running directly in the environment.",
+        "MiMo Code Is the Open Source Answer to Claude Code Terminal-based coding assistants for AI-curious developers are hot these days, and the most popular choice appears to be Claude Code .",
+        "The software aims to \u201cmaintain decision quality and state continuity over dozens or even hundreds of execution steps.\u201d The AI community has taken notice of this release.",
+        "And unlike Claude Code, which costs $20 a month to start, MiMo is free, and may not even require connecting to a cloud provider, if the user installs a model on their own machine.",
+        "The Real Challenge Is Operating It Securely The Validation Gap Is Costing You More Than You Think A Day with Developer Assist: Faster Fixes, Cleaner Commits Agentic AI for Defense: How Checkmarx Turns Security into a.",
+        "Unlike Claude Code, MiMo Code is not restricted to a specific LLM provider.",
+        "A New Way to Run Agents Unlike Claude Code, MiMo Code does not wire the user to a single proprietary environment.",
+        "Terminal-based coding assistants for AI-curious developers are hot these days, and the most popular choice appears to be Claude Code.",
+        "In a video review , Tyson Cung compared MiMo Code and Claude Code across a few real-world scenarios."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/527095e7a751263b.webp",
+      "image_url": "https://devops.com/wp-content/uploads/2026/03/2o2nes4oyrivdk5aq0z1y2ynrcgd_1774269834sjeyNKSZue.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ba6a99407afb8bc8.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/09793c546c512d14.webp"
+      ],
+      "extra_image_urls": [
+        "https://devops.com/wp-content/uploads/2026/05/2026.06.18-Xint.io-LandingPage-1540x660-1.png",
+        "https://devops.com/wp-content/uploads/2026/06/2026.06.23-Harness-LandingPage-1540x660-1.png"
+      ],
+      "_story_id": "cccf84557124435ea626d97258ea4cbe"
+    },
+    {
+      "url": "https://www.theguardian.com/environment/2026/jun/16/ai-could-help-win-race-against-extinction-of-vital-plants-say-botanists",
+      "title": "AI could help win \u2018race against extinction\u2019 of vital plants, say botanists",
+      "description": "Tech is helping to identify and save new specimens and could open \u2018genomic goldmine\u2019 of fungi data",
+      "excerpt": "Tech is helping to identify and save new specimens and could open \u2018genomic goldmine\u2019 of fungi data",
+      "summary": "OpenAI\u2019s boss, Sam Altman, said in February: \u201cIt also takes a lot of energy to train a human.\u201d The report, produced by 400 scientists across 40 countries, cautions that using digitisation and AI could amplify existing biases and inequalities unless the underlying data is expanded and improved. New technology is enabling scientists to track how flowering times have shifted by weeks around the world, rapidly identify new specimens and even get crucial genetic data from 180-year-old fungus specimens, potentially. Tech is helping to identify and save new specimens and could open \u2018genomic goldmine\u2019 of fungi data Support the Guardian AI could help win \u2018race against extinction\u2019 of vital plants, say botanists Tech is helping to identify and save new specimens and could open \u2018genomic goldmine\u2019 of fungi data The rise of AI and digitisation could be a turning point in the \u201crace against extinction\u201d faced by botanists trying to identify and. The Guardian reported in May that datacentres are now consuming 6% of electricity in the UK and US.",
+      "what_happened": "OpenAI\u2019s boss, Sam Altman, said in February: \u201cIt also takes a lot of energy to train a human.\u201d The report, produced by 400 scientists across 40 countries, cautions that using digitisation and AI could amplify existing biases and inequalities unless the underlying data is expanded and improved. New technology is enabling scientists to track how flowering times have shifted by weeks around the world, rapidly identify new specimens and even get crucial genetic data from 180-year-old fungus specimens, potentially.",
+      "why_matters": "Tech is helping to identify and save new specimens and could open \u2018genomic goldmine\u2019 of fungi data Support the Guardian AI could help win \u2018race against extinction\u2019 of vital plants, say botanists Tech is helping to identify and save new specimens and could open \u2018genomic goldmine\u2019 of fungi data The rise of AI and digitisation could be a turning point in the \u201crace against extinction\u201d faced by botanists trying to identify and.",
+      "what_to_watch": "The Guardian reported in May that datacentres are now consuming 6% of electricity in the UK and US.",
+      "key_points": [
+        "OpenAI\u2019s boss, Sam Altman, said in February: \u201cIt also takes a lot of energy to train a human.\u201d The report, produced by 400 scientists across 40 countries, cautions that using digitisation and AI could amplify existing.",
+        "New technology is enabling scientists to track how flowering times have shifted by weeks around the world, rapidly identify new specimens and even get crucial genetic data from 180-year-old fungus specimens, potentially.",
+        "The Guardian reported in May that datacentres are now consuming 6% of electricity in the UK and US.",
+        "It called for partnerships between the technology companies and environment organisations and for governments and funders to invest in plant and fungi collections.",
+        "The situation is even more stark for fungi, with 90% of an estimated 2m species still unknown to science and less than 1% of known species assessed for extinction risk.",
+        "The researchers said the breakthrough makes historical fungarium specimens a \u201cgenomic goldmine\u201d for new medicines and the prediction of disease outbreaks.",
+        "For example, a study using herbarium specimens showed that about 80% of the kindal trees in India\u2019s Western Ghats , which are important for timber, used to flower at the same time.",
+        "In total, there are 145m digital specimens now online globally, but this is less than 16% of the total held in herbariums, leaving \u201chuge blind spots in understanding\u201d, the scientists said.",
+        "It revealed flowering has shifted by an average 2.5 days a decade over the last century due to the climate crisis.",
+        "About 2,000 new plant species are recorded each year but this \u201cbarely scratches the surface\u201d said Prof Alexandre Antonelli, the executive director of science at RBG Kew.",
+        "Tech is helping to identify and save new specimens and could open \u2018genomic goldmine\u2019 of fungi data Support the Guardian AI could help win \u2018race against extinction\u2019 of vital plants, say botanists Tech is helping to.",
+        "Digitising images and collection data of plant and fungi specimens also speeds up international collaboration and can open up important but rarely accessed collections in biodiversity hotspots, such as Madagascar."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/49c247efe6ac2de1.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/c4e167267081d6a78dbaf545c6c337ae9639bcaf/224_0_1907_1526/master/1907.jpg?width=445&dpr=1&s=none&crop=none",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "e0907c0677514aa5a73c277f61e689cb"
+    },
+    {
+      "url": "https://siliconangle.com/2026/06/15/gpu-infrastructure-management-startup-hydra-host-raises-100m/",
+      "title": "GPU infrastructure management startup Hydra Host raises $100M - SiliconANGLE",
+      "description": "GPU infrastructure management startup Hydra Host raises $100M. SiliconANGLE",
+      "excerpt": "GPU infrastructure management startup Hydra Host raises $100M. SiliconANGLE",
+      "summary": "The Boulder, Colorado-based company says the Brokkr AI Factory Operating System has been deployed at more than 50 data centers across the world, including in the Americas, Asia Pacific and Europe, Middle East and Africa regions. SiliconANGLE GPU infrastructure management startup Hydra Host raises $100M Data center infrastructure startup Hydra Host Inc. Hydra Host has developed an operating system for data centers that supports the procurement, provisioning and orchestration of GPUs, as well as an intelligent \u201cofftake\u201d network that\u2019s used by the world\u2019s leading AI inference platform providers, frontier labs and enterprises. \u201cThis funding will expand our data center footprint, scale our platform and support our global customer base, who are looking to rent GPUs easily. 15M+ viewers of theCUBE videos , powering conversations across AI, cloud, cybersecurity and more 11.4k+ theCUBE alumni - Connect with more than 11,400 tech and business leaders shaping the future through a unique trusted-based network. The startup has carved out a novel role in the artificial intelligence compute.",
+      "what_happened": "The Boulder, Colorado-based company says the Brokkr AI Factory Operating System has been deployed at more than 50 data centers across the world, including in the Americas, Asia Pacific and Europe, Middle East and Africa regions. SiliconANGLE GPU infrastructure management startup Hydra Host raises $100M Data center infrastructure startup Hydra Host Inc.",
+      "why_matters": "Hydra Host has developed an operating system for data centers that supports the procurement, provisioning and orchestration of GPUs, as well as an intelligent \u201cofftake\u201d network that\u2019s used by the world\u2019s leading AI inference platform providers, frontier labs and enterprises. \u201cThis funding will expand our data center footprint, scale our platform and support our global customer base, who are looking to rent GPUs easily.",
+      "what_to_watch": "15M+ viewers of theCUBE videos , powering conversations across AI, cloud, cybersecurity and more 11.4k+ theCUBE alumni - Connect with more than 11,400 tech and business leaders shaping the future through a unique trusted-based network. The startup has carved out a novel role in the artificial intelligence compute.",
+      "key_points": [
+        "The Boulder, Colorado-based company says the Brokkr AI Factory Operating System has been deployed at more than 50 data centers across the world, including in the Americas, Asia Pacific and Europe, Middle East and Africa.",
+        "The startup has carved out a novel role in the artificial intelligence compute industry, creating a marketplace that helps connect developers and enterprises to high-performance graphics processing units that are pooled.",
+        "SiliconANGLE GPU infrastructure management startup Hydra Host raises $100M Data center infrastructure startup Hydra Host Inc.",
+        "EXTRACT THE SIGNAL FROM THE NOISE",
+        "Databricks' new releases zero in on support and deployment of AI agents Bland raises $50M to automate complex, high-stakes phone calls The AGI moment?",
+        "GPU infrastructure management startup Hydra Host raises $100M.",
+        "HPE expands self-driving networking strategy as AI moves into production Qualcomm takes spatial computing into the AI era with Snapdragon Reality Elite The AGI moment?",
+        "Hydra Host has developed an operating system for data centers that supports the procurement, provisioning and orchestration of GPUs, as well as an intelligent \u201cofftake\u201d network that\u2019s used by the world\u2019s leading AI.",
+        "\u201cWe have spent years building the go-to operating system for global GPU deployments for data centers that want to become an AI factory,\u201d he explained.",
+        "15M+ viewers of theCUBE videos , powering conversations across AI, cloud, cybersecurity and more 11.4k+ theCUBE alumni - Connect with more than 11,400 tech and business leaders shaping the future through a unique.",
+        "The reaction to Oracle\u2019s plan revealed the growing tensions in the AI industry \u2013 the surging demand that makes distributed compute marketplaces like Hydra Host so attractive also requires staggering upfront investment.",
+        "Hydra Host says that its distributed compute model is a direct result of this dynamic."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e36a4b197324f794.png",
+      "image_url": "https://s3.us-west-2.amazonaws.com/cube365-prod/related-content/ba8c110e-cedf-4670-929d-e2ecca19ae3c.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/cf586ab167606e9d.webp"
+      ],
+      "extra_image_urls": [
+        "https://cube365-prod.s3.us-west-2.amazonaws.com/related-content/efc8ccaf-b7a9-45c0-8564-437de321cf2d.webp"
+      ],
+      "_story_id": "5bca41e5232e4641b61a018562b1b584"
+    },
+    {
+      "url": "https://www.engadget.com/2194861/xreal-aura-android-xr-glasses-launch-no-price/",
+      "title": "Xreal officially reveals its Android XR Aura glasses \u2014 without a pricetag - Engadget",
+      "description": "The company is taking paid reservations for a launch later this year.",
+      "excerpt": "The company is taking paid reservations for a launch later this year.",
+      "summary": "The company is taking paid reservations for a launch later this year. Xreal officially reveals its Android XR Aura glasses - without a pricetag The company is taking paid reservations for a launch later this year. And the company has clearly invested on the content side, announcing a slew of new experiences coming to Aura. Xreal's first Android XR glasses will go on sale later this year, the company announced at the Augmented World Expo event in Long Beach, California. And I fully expect Aura to be much more expensive than any other glasses it makes given all the extra tech involved (its OnePro frames, by comparison, cost $650). Xreal says it's \"targeting\" the initial \"wave\" of products to launch in the fall in the US, UK, Japan, Canada and South Korea with European availability.",
+      "what_happened": "The company is taking paid reservations for a launch later this year. Xreal officially reveals its Android XR Aura glasses - without a pricetag The company is taking paid reservations for a launch later this year.",
+      "why_matters": "And the company has clearly invested on the content side, announcing a slew of new experiences coming to Aura. Xreal's first Android XR glasses will go on sale later this year, the company announced at the Augmented World Expo event in Long Beach, California.",
+      "what_to_watch": "And I fully expect Aura to be much more expensive than any other glasses it makes given all the extra tech involved (its OnePro frames, by comparison, cost $650). Xreal says it's \"targeting\" the initial \"wave\" of products to launch in the fall in the US, UK, Japan, Canada and South Korea with European availability.",
+      "key_points": [
+        "The company is taking paid reservations for a launch later this year.",
+        "Xreal officially reveals its Android XR Aura glasses - without a pricetag The company is taking paid reservations for a launch later this year.",
+        "Instead, it's opening up a two-week reservation period during which you can pay $99 to reserve a pair that will come with a $199 \"launch credit.\" That will effectively save you $100 when it actually goes on sale.",
+        "Xreal says it's \"targeting\" the initial \"wave\" of products to launch in the fall in the US, UK, Japan, Canada and South Korea with European availability \"coming soon after.\" Do not sell or share my personal information.",
+        "And the company has clearly invested on the content side, announcing a slew of new experiences coming to Aura.",
+        "Xreal is also offering a limited number of \"founder priority pass\" reservations that cost $299 in exchange for \"guaranteed launch-day delivery\" and special edition hardware.",
+        "Xreal's first Android XR glasses will go on sale later this year, the company announced at the Augmented World Expo event in Long Beach, California.",
+        "With a 70-degree field of view, built-in hand tracking and Qualcomm's new Snapdragon Reality Elite chip, the frames felt like a powerful middle ground between a bulky headset and a true \"glasses\" experience.",
+        "It's also not entirely clear when people who pay for a reservation will get one, since that \"guaranteed launch day\" still doesn't have an actual date.",
+        "And I fully expect Aura to be much more expensive than any other glasses it makes given all the extra tech involved (its OnePro frames, by comparison, cost $650).",
+        "Xreal might be hoping it can capitalize on the lack of other Android XR devices at the moment.",
+        "Despite AWE marking the glasses' \"official\" debut, the company hasn't shared a final price."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/aaaeb8303b06317a.jpg",
+      "image_url": "https://img4.zergnet.com/8755679_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "f0ac2ceb1a0e4c2ba7f4ff513ac3222c"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 8,
+  "has_cta": true,
+  "slides": [
+    "Hands Free AIs Forward NVIDIA XR AI Brings Agents to AR Glasses.",
+    "Kraken Launches Pre-IPO Perps For OpenAI And Anthropic With Up To 5x.",
+    "SBA partners with Perplexity to launch $25M Main Street AI Accelerator.",
+    "Kawasaki Robotics to debut RL030N physical AI platform at Automate.",
+    "MiMo Code Is the Open Source Answer to Claude Code.",
+    "GPU infrastructure management startup Hydra Host raises $100M.",
+    "Xreal officially reveals its Android XR Aura glasses without a pricetag.",
+    "FOLLOW @graitech"
+  ]
+}
