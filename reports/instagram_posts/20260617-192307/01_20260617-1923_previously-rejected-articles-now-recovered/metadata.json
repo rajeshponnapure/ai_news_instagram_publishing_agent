@@ -1,0 +1,68 @@
+{
+  "email_received_at": "2026-06-17T19:23+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Wed, 17 Jun 2026 19:23:07 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.theguardian.com/technology/2026/jun/16/elon-musk-techscape",
+      "title": "Company : The Guardian Tech",
+      "description": "[HIGH] Elon Musk\u2019s unprecendented accumulation of wealth Company : The Guardian Tech Summary : IPO mints Musk as world\u2019s first trillionaire \u2013 now SpaceX is public, it will be harder than ever not to have a stake in its future Hi and welcome to TechScape. Nick Robins-Early here, US tech and powe Link :",
+      "text": "[HIGH] Elon Musk\u2019s unprecendented accumulation of wealth Company : The Guardian Tech Summary : IPO mints Musk as world\u2019s first trillionaire \u2013 now SpaceX is public, it will be harder than ever not to have a stake in its future Hi and welcome to TechScape. Nick Robins-Early here, US tech and powe Link :",
+      "excerpt": "[HIGH] Elon Musk\u2019s unprecendented accumulation of wealth Company : The Guardian Tech Summary : IPO mints Musk as world\u2019s first trillionaire \u2013 now SpaceX is public, it will be harder than ever not to have a stake in its future Hi and welcome to TechScape. Nick Robins-Early here, US tech and powe Link :",
+      "image_url": "https://i.guim.co.uk/img/media/521f3b049ac5da2f48e391d41a57b861f897c558/688_0_6880_5504/master/6880.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=d1713804b8c6cf3066d0a2109313492c",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theguardian.com/technology/2026/jun/16/elon-musk-techscape",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.producthunt.com/products/solongate",
+      "title": "Company : Product Hunt AI",
+      "description": "[MEDIUM] SolonGate Company : Product Hunt AI Summary : Zero-trust security gateway for AI agents Discussion | Link Link :",
+      "text": "[MEDIUM] SolonGate Company : Product Hunt AI Summary : Zero-trust security gateway for AI agents Discussion | Link Link :",
+      "excerpt": "[MEDIUM] SolonGate Company : Product Hunt AI Summary : Zero-trust security gateway for AI agents Discussion | Link Link :",
+      "image_url": "https://ph-files.imgix.net/69877781-1ec6-43e9-9748-264cb975bbdf.png?auto=format&amp;fit=crop&amp;frame=1&amp;h=512&amp;w=1024",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.producthunt.com/products/solongate",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.bbc.co.uk/sounds/play/live:bbc_world_service_west_africa?at_medium=RSS&at_campaign=rss",
+      "title": "Company : BBC Tech",
+      "description": "[MEDIUM] Tech Life Company : BBC Tech Summary : The prompt that made ChatGPT generate disturbing images. What does this tell us about AI? Link :",
+      "text": "[MEDIUM] Tech Life Company : BBC Tech Summary : The prompt that made ChatGPT generate disturbing images. What does this tell us about AI? Link :",
+      "excerpt": "[MEDIUM] Tech Life Company : BBC Tech Summary : The prompt that made ChatGPT generate disturbing images. What does this tell us about AI? Link :",
+      "image_url": "https://sounds.files.bbci.co.uk/3.9.4/networks/bbc_world_service/blocks-colour_600x600.png",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.bbc.co.uk/sounds/play/live:bbc_world_service_west_africa?at_medium=RSS&at_campaign=rss",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 4,
+  "has_cta": true,
+  "slides": [
+    "Const firstColLink = document.querySelector( '#newsLinks > li:nth-of-type(2) > a', ); /** *.",
+    "Overview Launches 2 Reviews Alternatives Built with Team More This is.",
+    "Previously Rejected Articles Now Recovered.",
+    "FOLLOW @graitech"
+  ]
+}

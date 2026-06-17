@@ -1,0 +1,363 @@
+{
+  "email_received_at": "2026-06-17T19:21+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Google bets on Gemini to reinvent the smart home speaker | TechCrunch",
+  "subject": "",
+  "source_date": "2026-06-17T19:21:40.370058",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://techcrunch.com/2026/06/17/google-bets-on-gemini-to-reinvent-the-smart-home-speaker/",
+  "article_title": "Google bets on Gemini to reinvent the smart home speaker | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/063513835d4021ed.png",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Google-Home-Speaker-Multi.png",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/17/google-bets-on-gemini-to-reinvent-the-smart-home-speaker/",
+      "title": "Google bets on Gemini to reinvent the smart home speaker | TechCrunch",
+      "description": "Google is betting generative AI can breathe new life into the smart speaker. The company's new $99.99 Google Home Speaker replaces the rigid commands of the Google Assistant era with more conversational Gemini interactions.",
+      "excerpt": "Google is betting generative AI can breathe new life into the smart speaker. The company's new $99.99 Google Home Speaker replaces the rigid commands of the Google Assistant era with more conversational Gemini interactions.",
+      "summary": "On Wednesday, the company introduced its first audio device built specifically for Gemini with the $99.99 Google Home Speaker. Plus, the device will ship with 10 new voices that can have two-way conversations with you about topics that aren\u2019t limited to smart home tasks or other simple commands. The company's new $99.99 Google Home Speaker replaces the rigid commands of the Google Assistant era with more conversational Gemini interactions. That means you could say something like, \u201cTurn off the coffee maker \u2026 I mean, turn it on!\u201d and the AI will respond appropriately, Google points out. The new Google Home device is the first stand-alone smart speaker from the tech giant since the Nest Audio in September 2020 .",
+      "what_happened": "On Wednesday, the company introduced its first audio device built specifically for Gemini with the $99.99 Google Home Speaker. Plus, the device will ship with 10 new voices that can have two-way conversations with you about topics that aren\u2019t limited to smart home tasks or other simple commands.",
+      "why_matters": "The company's new $99.99 Google Home Speaker replaces the rigid commands of the Google Assistant era with more conversational Gemini interactions. That means you could say something like, \u201cTurn off the coffee maker \u2026 I mean, turn it on!\u201d and the AI will respond appropriately, Google points out.",
+      "what_to_watch": "The new Google Home device is the first stand-alone smart speaker from the tech giant since the Nest Audio in September 2020 .",
+      "key_points": [
+        "On Wednesday, the company introduced its first audio device built specifically for Gemini with the $99.99 Google Home Speaker.",
+        "The new Google Home device is the first stand-alone smart speaker from the tech giant since the Nest Audio in September 2020 .",
+        "Plus, the device will ship with 10 new voices that can have two-way conversations with you about topics that aren\u2019t limited to smart home tasks or other simple commands.",
+        "The company's new $99.99 Google Home Speaker replaces the rigid commands of the Google Assistant era with more conversational Gemini interactions.",
+        "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak Amazon CEO reportedly raised Anthropic model concerns before government.",
+        "The device is available for preorder now and will ship later this month.",
+        "More from TechCrunch Google bets on Gemini to reinvent the smart home speaker After years of incremental updates, Google is betting that its Gemini AI can reinvent its smart speaker.",
+        "In the U.S., the speaker comes in Jade and Berry colors in addition to the Hazel and Porcelain options available in the rest of the world.",
+        "For instance, you could tell the speaker to \u201cturn off all the lights except for my bedside lamp,\u201d or \u201cdim the kitchen lights, play some relaxing music, and set a timer for 20 minutes.\u201d You can also make corrections.",
+        "The Google Home Speaker is changing that, as you\u2019ll be able to speak using natural language requests and even make multistep requests using the phrasing you\u2019d like.",
+        "The device looks similar to older versions, with its 3D-knit textile wrapping and rounded 3.4 x 4.2-inch design.",
+        "Google will sell Google Home Premium subscription plans for $10 per month (or $100 per year) if you want to take advantage of more powerful AI features."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/063513835d4021ed.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Google-Home-Speaker-Multi.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/231587e969022848.jpg"
+      ],
+      "extra_image_urls": [
+        "https://techcrunch.com/wp-content/uploads/2026/06/Google-Home-Speaker-Berry.jpeg?resize=1200,899"
+      ],
+      "_story_id": "c74f719fa45a43dd842cbc4fbf7b82af"
+    },
+    {
+      "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
+      "title": "Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
+      "description": "Anthropic opens Seoul and announces new partnerships across the Korean AI ecosystem - with the enterprises, startups, and researchers behind some of the most ambitious deployments of Claude.",
+      "excerpt": "Anthropic opens Seoul and announces new partnerships across the Korean AI ecosystem - with the enterprises, startups, and researchers behind some of the most ambitious deployments of Claude.",
+      "summary": "TCS will provide Claude to 50,000 of its own employees across 56 countries; build Claude-powered products for clients in financial services, healthcare, the public sector, and other regulated industries; and join the Claude Partner Network. Anthropic opens Seoul and announces new partnerships across the Korean AI ecosystem - with the enterprises, startups, and researchers behind some of the most ambitious deployments of Claude. Channel Corp uses Claude to power Channel Talk, its customer AI platform that resolves customer inquiries and analyzes service and sales data to deliver business insights - used by over 230,000 companies across Korea, Japan, and the United States. In the nonprofit sector, Good Neighbors Korea - a child rights specialist NGO - is deploying Claude to help staff analyze program outcomes, navigate social welfare law and internal. Alongside it, we are announcing new partnerships across the Korean AI ecosystem - with the enterprises, startups, and researchers behind some of the most ambitious deployments of Claude.",
+      "what_happened": "TCS will provide Claude to 50,000 of its own employees across 56 countries; build Claude-powered products for clients in financial services, healthcare, the public sector, and other regulated industries; and join the Claude Partner Network. Anthropic opens Seoul and announces new partnerships across the Korean AI ecosystem - with the enterprises, startups, and researchers behind some of the most ambitious deployments of Claude.",
+      "why_matters": "Channel Corp uses Claude to power Channel Talk, its customer AI platform that resolves customer inquiries and analyzes service and sales data to deliver business insights - used by over 230,000 companies across Korea, Japan, and the United States. In the nonprofit sector, Good Neighbors Korea - a child rights specialist NGO - is deploying Claude to help staff analyze program outcomes, navigate social welfare law and internal.",
+      "what_to_watch": "Alongside it, we are announcing new partnerships across the Korean AI ecosystem - with the enterprises, startups, and researchers behind some of the most ambitious deployments of Claude.",
+      "key_points": [
+        "Anthropic will provide Claude access to up to 60 NAIRL-affiliated researchers, supporting work on AI safety, model evaluation, alignment, robustness, and broader frontier AI research.",
+        "TCS will provide Claude to 50,000 of its own employees across 56 countries; build Claude-powered products for clients in financial services, healthcare, the public sector, and other regulated industries; and join the.",
+        "Anthropic opens Seoul and announces new partnerships across the Korean AI ecosystem - with the enterprises, startups, and researchers behind some of the most ambitious deployments of Claude.",
+        "Alongside it, we are announcing new partnerships across the Korean AI ecosystem - with the enterprises, startups, and researchers behind some of the most ambitious deployments of Claude.",
+        "It will also deploy Claude across LG Group.",
+        "Channel Corp uses Claude to power Channel Talk, its customer AI platform that resolves customer inquiries and analyzes service and sales data to deliver business insights - used by over 230,000 companies across Korea.",
+        "Korea\u2019s largest business groups are also deploying Claude.",
+        "Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem Our Seoul office is now open.",
+        "Opening an office in Seoul gives a long-term home to our work alongside the people shaping Korean leadership in AI.\u201d This week, senior leaders from Anthropic traveled to Seoul to open the office and meet with partners.",
+        "To support them, Claude for Startups is live in Korea, and Claude Meetups have drawn hundreds of Korean developers since September 2025.",
+        "In the nonprofit sector, Good Neighbors Korea - a child rights specialist NGO - is deploying Claude to help staff analyze program outcomes, navigate social welfare law and internal guidelines, and cut down on the.",
+        "Samsung SDS, the IT services arm of Samsung Group, is deploying Claude to employees across Samsung Electronics."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/283cfd4e0ffa4328.png",
+      "image_url": "https://www.anthropic.com/api/opengraph-illustration?name=Object%20Globe&backgroundColor=heather",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "288c4220f318493195be5e9c133fd898"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai/",
+      "title": "Pramaana Labs raises $27M seed round from Khosla Ventures to bring formal verification to AI | TechCrunch",
+      "description": "Pramaana will focus on highly sensitive verticals like law, drug discovery, and tax preparation - where errors can be costly and reliability is at a premium.",
+      "excerpt": "Pramaana will focus on highly sensitive verticals like law, drug discovery, and tax preparation - where errors can be costly and reliability is at a premium.",
+      "summary": "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world We won't sell or share your. For tax law, the company is working with former IRS commissioner Danny Werfel, while professors from IIT Delhi, IIT Madras, and UC Berkeley oversee the cybersecurity and drug discovery system. Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections. \u201cOnce you have a codified version of it, the reasoning on top of it starts becoming deterministic.\u201d Pramaana\u2019s system still runs on a conventional LLM, giving it the flexibility to answer natural language questions and tackle complex problems that conventional computers can\u2019t handle.",
+      "what_happened": "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it Jeff Bezos\u2019s Prometheus raises $12B to build an \u2018artificial general engineer\u2019 for the physical world We won't sell or share your.",
+      "why_matters": "For tax law, the company is working with former IRS commissioner Danny Werfel, while professors from IIT Delhi, IIT Madras, and UC Berkeley oversee the cybersecurity and drug discovery system. Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections.",
+      "what_to_watch": "\u201cOnce you have a codified version of it, the reasoning on top of it starts becoming deterministic.\u201d Pramaana\u2019s system still runs on a conventional LLM, giving it the flexibility to answer natural language questions and tackle complex problems that conventional computers can\u2019t handle.",
+      "key_points": [
+        "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak Amazon CEO reportedly raised Anthropic model concerns before government.",
+        "\u201cOnce you have a codified version of it, the reasoning on top of it starts becoming deterministic.\u201d Pramaana\u2019s system still runs on a conventional LLM, giving it the flexibility to answer natural language questions and.",
+        "On Wednesday, Pramaana Labs announced $27 million in seed funding led by Khosla Ventures, with participation from Accel, BoldCap, Nexus Venture Partners, Premji Invest, and Unbound.",
+        "But there\u2019s a deterministic layer on top of that LLM ensuring the LLM\u2019s work checks out.",
+        "This combination of an LLM engine with deterministic verification is a popular setup ; Pramaana\u2019s unique approach is to use the tools of formal verification - drawing on the open source LEAN programming language used to.",
+        "Deploying AI in those systems will require stronger protections against hallucinations and errors than we currently have.",
+        "\u201cIt\u2019s like math in the sense that you have a lot of rules that you need to abide by,\u201d Rajagopalan told TechCrunch, describing the rules of the tax code.",
+        "More from TechCrunch Pramaana Labs raises $27M seed round from Khosla Ventures to bring formal verification to AI As enterprises struggle to turn AI pilot programs into functional parts of their business, reliability.",
+        "Pramaana will focus on highly sensitive verticals like law, drug discovery, and tax preparation - where errors can be costly and reliability is at a premium.",
+        "For tax law, the company is working with former IRS commissioner Danny Werfel, while professors from IIT Delhi, IIT Madras, and UC Berkeley oversee the cybersecurity and drug discovery system.",
+        "\u201cThe world\u2019s hardest problems are not unsolvable.",
+        "Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/bb52ea8ff6191eec.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Screenshot-2026-06-17-at-9.53.46-AM.jpg?resize=1200,560",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "172ea6ce15ba408f859f1998d4202314"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names/",
+      "title": "World model maker Odyssey nabs $1.45B valuation backed by Amazon and other big names | TechCrunch",
+      "description": "World models are the next big thing in AI beyond LLMs and, with this round, Odyssey has cemented itself as one of the startups to watch.",
+      "excerpt": "World models are the next big thing in AI beyond LLMs and, with this round, Odyssey has cemented itself as one of the startups to watch.",
+      "summary": "Pramaana Labs raises $27M seed round from Khosla Ventures to bring formal verification to AI Anthropic\u2019s latest feud with the Trump admin may actually help it, sales data suggests SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO World model maker Odyssey nabs $1.45B valuation backed by Amazon and other big names Collecting robot training data is dirty, unglamorous work. More from TechCrunch World model maker Odyssey nabs $1.45B valuation backed by Amazon and other big names Odyssey, a world. The company has now raised $337 million to date. Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections. World models are the next big thing in AI beyond text- and chat-based large language models.",
+      "what_happened": "Pramaana Labs raises $27M seed round from Khosla Ventures to bring formal verification to AI Anthropic\u2019s latest feud with the Trump admin may actually help it, sales data suggests SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO World model maker Odyssey nabs $1.45B valuation backed by Amazon and other big names Collecting robot training data is dirty, unglamorous work. More from TechCrunch World model maker Odyssey nabs $1.45B valuation backed by Amazon and other big names Odyssey, a world.",
+      "why_matters": "The company has now raised $337 million to date. Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections.",
+      "what_to_watch": "World models are the next big thing in AI beyond text- and chat-based large language models.",
+      "key_points": [
+        "Pramaana Labs raises $27M seed round from Khosla Ventures to bring formal verification to AI Anthropic\u2019s latest feud with the Trump admin may actually help it, sales data suggests SpaceX to acquire Cursor for $60B in.",
+        "More from TechCrunch World model maker Odyssey nabs $1.45B valuation backed by Amazon and other big names Odyssey, a world model AI startup founded by self-driving vehicle pioneers CEO Oliver Cameron and CTO Jeff Hawke.",
+        "World models are the next big thing in AI beyond text- and chat-based large language models.",
+        "The company has now raised $337 million to date.",
+        "Odyssey, founded in 2023, now offers a handful of world models for a variety of use cases, from video-game creation to robotics.",
+        "They gather data from the physical world and simulate it with accurate physics.",
+        "World models are the next big thing in AI beyond LLMs and, with this round, Odyssey has cemented itself as one of the startups to watch.",
+        "Cameron was the co-founder and CEO of autonomous vehicle startup Voyage, which was acquired by GM\u2019s Cruise , where he later became VP of product; Hawke was an engineer at buzzy U.K.",
+        "With the backing from Amazon, the startup says AWS is now its preferred cloud provider and it will optimize its models to run on AWS\u2019s Trainium chips, a competitor to Nvidia\u2019s AI chips.",
+        "Every weekday and Sunday, you can get the best of TechCrunch\u2019s coverage.",
+        "Provides movers and shakers with the info they need to start their day.",
+        "In Odyssey\u2019s case, it has mimicked how Google Earth gathered data; the startup sent people out with cameras strapped to their backs ."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6eaa5c71edfd6088.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2024/11/ODYSSEY-INTHEWILD-974_Retouched_V1.00.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "a02ab9bd59474a72b04fd4b314ba478f"
+    },
+    {
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/ai-is-accelerating-cyberattacks%E2%80%94here%E2%80%99s-how-to-stay-ahead/4528592",
+      "title": "AI is accelerating cyberattacks\u2014here\u2019s how to stay ahead | Microsoft Community Hub",
+      "description": "See how Microsoft unifies identity and security signals to help teams prevent, detect, and respond to AI-accelerated attacks faster.",
+      "excerpt": "See how Microsoft unifies identity and security signals to help teams prevent, detect, and respond to AI-accelerated attacks faster.",
+      "summary": "The imperative is becoming clear: identity and security teams need comprehensive visibility and integrated solutions that streamline how they prevent, detect, and respond to identity threats. That may solve the permissions issue, but it also expands the blast radius if the application or identity is misused or compromised. See how Microsoft unifies identity and security signals to help teams prevent, detect, and respond to AI-accelerated attacks faster. The future of identity security In the AI era, identity is not just a control point. The future of identity security In the AI era, identity is not just a control point.",
+      "what_happened": "The imperative is becoming clear: identity and security teams need comprehensive visibility and integrated solutions that streamline how they prevent, detect, and respond to identity threats. That may solve the permissions issue, but it also expands the blast radius if the application or identity is misused or compromised.",
+      "why_matters": "See how Microsoft unifies identity and security signals to help teams prevent, detect, and respond to AI-accelerated attacks faster. The future of identity security In the AI era, identity is not just a control point.",
+      "what_to_watch": "The future of identity security In the AI era, identity is not just a control point.",
+      "key_points": [
+        "</li:i18n>\\\" class=\\\"c-uhff-link\\\" href=\\\" data-m=\\\"{\"cN\":\"Footer_WhatsNew_SurfacePro_nav\",\"id\":\"n1c1c1c1m1r1a2\",\"sN\":1,\"aN\":\"c1c1c1m1r1a2\"}\\\"> </li:i18n>\\\" class=\\\"c-uhff-link\\\" href=\\\".",
+        "The imperative is becoming clear: identity and security teams need comprehensive visibility and integrated solutions that streamline how they prevent, detect, and respond to identity threats.",
+        "That may solve the permissions issue, but it also expands the blast radius if the application or identity is misused or compromised.",
+        "The future of identity security In the AI era, identity is not just a control point.",
+        "Every account, admin, workload, application, non-human identity , and AI agent can become a path to sensitive data and critical systems if not properly secured.",
+        "Securing the future of identity at the speed of AI One of the biggest security challenges organizations face today is fragmentation, and identity security is no exception.",
+        "Actionable intelligence, everywhere At RSA earlier this year, we unveiled our unified identity risk score , a new way to turn broader attack-chain insight into real-time access decisions.",
+        "That\u2019s why we were so excited to extend the Security Alert Triage Agent to identity scenarios and pair it with automatic attack disruption and new predictive shielding capabilities.",
+        "Rather than forcing identity teams to piece together risk signals across disconnected views, the updated experience brings deeper visibility into risky users, sign-ins, workloads, and associated detections in one place.",
+        "This allows organizations to preserve least privilege access while reducing operational friction between IAM and SOC teams.",
+        "Combined with the native privileged identity management in Microsoft Entra, organizations can also create just-in-time access policies for these response roles, further reducing standing privilege while still enabling.",
+        "See how Microsoft unifies identity and security signals to help teams prevent, detect, and respond to AI-accelerated attacks faster."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b87c406ddd52e8ce.img",
+      "image_url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/m_assets/components/MicrosoftFooter/assets/social-share-linkedin.svg?time=1743177821000",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "6a095c271e5541c98a3eca968da6b63f"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/",
+      "title": "New research shows how AMIE, our medical AI, could help manage health conditions.",
+      "description": "Research in \u201cNature\u201d shows our conversational AI system matches primary care physicians in complex disease management.",
+      "excerpt": "Research in \u201cNature\u201d shows our conversational AI system matches primary care physicians in complex disease management.",
+      "summary": "Google has announced a $1.5 billion investment for 2026 and 2027 to expand its data center campus in Jackson County, Alabama. 4 ways researchers are collaborating with Co-Scientist to solve big problems The latest AI news we announced in May 2026 Let\u2019s stay in touch. New research shows how AMIE, our medical AI, could help manage health conditions. Research published today in \u201cNature\u201d shows the capabilities of the Articulate Medical Intelligence Explorer (AMIE), our best-in-class research AI system for medical reasoning and conversations, evolving from one-off diagnostic conversations to long-term disease management using drug formularies and clinical guidelines. Next up: We're exploring how AMIE could work in clinical settings , and we launched a nationwide study to assess AI in real-world virtual care. Research published today in \u201cNature\u201d shows the capabilities of the Articulate Medical Intelligence Explorer (AMIE), our best-in-class research AI system for medical reasoning.",
+      "what_happened": "Google has announced a $1.5 billion investment for 2026 and 2027 to expand its data center campus in Jackson County, Alabama. 4 ways researchers are collaborating with Co-Scientist to solve big problems The latest AI news we announced in May 2026 Let\u2019s stay in touch.",
+      "why_matters": "New research shows how AMIE, our medical AI, could help manage health conditions. Research published today in \u201cNature\u201d shows the capabilities of the Articulate Medical Intelligence Explorer (AMIE), our best-in-class research AI system for medical reasoning and conversations, evolving from one-off diagnostic conversations to long-term disease management using drug formularies and clinical guidelines.",
+      "what_to_watch": "Next up: We're exploring how AMIE could work in clinical settings , and we launched a nationwide study to assess AI in real-world virtual care. Research published today in \u201cNature\u201d shows the capabilities of the Articulate Medical Intelligence Explorer (AMIE), our best-in-class research AI system for medical reasoning.",
+      "key_points": [
+        "Research published today in \u201cNature\u201d shows the capabilities of the Articulate Medical Intelligence Explorer (AMIE), our best-in-class research AI system for medical reasoning and conversations, evolving from one-off.",
+        "Using the long-context capabilities of Gemini models, AMIE for disease management features an empathetic dialogue agent for real-time patient conversations and a deep-thinking management reasoning agent that.",
+        "Google has announced a $1.5 billion investment for 2026 and 2027 to expand its data center campus in Jackson County, Alabama.",
+        "Google's new research on medical AI for disease management was published in \"Nature\" today.",
+        "4 ways researchers are collaborating with Co-Scientist to solve big problems The latest AI news we announced in May 2026 Let\u2019s stay in touch.",
+        "New research shows how AMIE, our medical AI, could help manage health conditions.",
+        "Research in \u201cNature\u201d shows our conversational AI system matches primary care physicians in complex disease management.",
+        "Next up: We're exploring how AMIE could work in clinical settings , and we launched a nationwide study to assess AI in real-world virtual care.",
+        "AMIE matched clinicians in overall management reasoning and scored significantly higher in plan preciseness and guideline alignment, which suggests AI could someday support medical care, giving physicians more time to.",
+        "In this blinded study with patient actors, specialist physicians compared AMIE with 21 primary care doctors.",
+        "Once a diagnosis is established, the challenge becomes managing a health condition over time - tracking symptoms across multiple appointments, parsing guidelines as they\u2019re updated and fine-tuning medications.",
+        "(Credit: Google, with permission from \"Nature.\") We\u2019re strengthening our presence in Alabama through new investments and community support."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/eeb6f0dae3e1882b.png",
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AMIE_Mx_Nature_Social_Visual_Variant_2_Stil.max-1440x810.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "828e4719e21e4938b1465a75c9898b8c"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/17/anthropic-becomes-first-ai-startup-to-join-the-frontier-carbon-removal-coalition/",
+      "title": "Anthropic becomes first AI startup to join the Frontier carbon removal coalition | TechCrunch",
+      "description": "Anthropic has joined the Frontier coalition, which received another $915M in pledges to fund carbon removal projects.",
+      "excerpt": "Anthropic has joined the Frontier coalition, which received another $915M in pledges to fund carbon removal projects.",
+      "summary": "Since its launch in 2022, Frontier has backed a range of carbon removal technologies over the years, including direct air capture , enhanced rock weathering , bio-oil , ocean antacids , and bioenergy with carbon removal and sequestration . SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate. While Google is a founding member, Anthropic is the first pure AI company to join the ranks. The new funding will help bolster Frontier\u2019s position in the carbon removal industry, but more notable are Anthropic\u2019s pledges. In the announcement of the new pledges, Frontier said that funding for future projects would come with a higher level of scrutiny. The new funding nearly doubles pledges to Frontier , bringing the total to $1.8 billion.",
+      "what_happened": "Since its launch in 2022, Frontier has backed a range of carbon removal technologies over the years, including direct air capture , enhanced rock weathering , bio-oil , ocean antacids , and bioenergy with carbon removal and sequestration . SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate.",
+      "why_matters": "While Google is a founding member, Anthropic is the first pure AI company to join the ranks. The new funding will help bolster Frontier\u2019s position in the carbon removal industry, but more notable are Anthropic\u2019s pledges.",
+      "what_to_watch": "In the announcement of the new pledges, Frontier said that funding for future projects would come with a higher level of scrutiny. The new funding nearly doubles pledges to Frontier , bringing the total to $1.8 billion.",
+      "key_points": [
+        "Since its launch in 2022, Frontier has backed a range of carbon removal technologies over the years, including direct air capture , enhanced rock weathering , bio-oil , ocean antacids , and bioenergy with carbon removal.",
+        "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak Amazon CEO reportedly raised Anthropic model concerns before government.",
+        "The new funding nearly doubles pledges to Frontier , bringing the total to $1.8 billion.",
+        "More from TechCrunch Anthropic becomes first AI startup to join the Frontier carbon removal coalition Anthropic is joining Frontier, the carbon removal collective, contributing to a new $915 million tranche of funding.",
+        "De Chant is also a lecturer in MIT\u2019s Graduate Program in Science Writing, and he was awarded a Knight Science Journalism Fellowship at MIT in 2018, during which time he studied climate technologies and explored new.",
+        "The organization said it will fund fewer projects, focusing on those that it thinks have the best chance at removing a gigaton - 1 billion metric tons - of CO 2 or more annually.",
+        "Frontier said it will contract as far out as 2040.",
+        "At the rate the climate is warming , we\u2019ll have bigger problems on our hands.",
+        "While Google is a founding member, Anthropic is the first pure AI company to join the ranks.",
+        "The new funding will help bolster Frontier\u2019s position in the carbon removal industry, but more notable are Anthropic\u2019s pledges.",
+        "So far, Frontier has contracted nearly $700 million across more than 50 projects to remove 1.8 million tons of carbon.",
+        "But the move might signal changing attitudes within the company."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/763af1c8ae6810ab.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2278736523.jpeg?resize=1200,798",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "7fcea198bf4b4852b708328d0c912ba0"
+    },
+    {
+      "url": "https://huggingface.co/blog/agentic-resource-discovery-launch",
+      "title": "Agentic Resource Discovery: Let agents search",
+      "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "excerpt": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "summary": "Many Spaces ship an agents.md file describing how an agent should interact with them. The client searches in natural language, and the model invokes whatever the search returns. It is a shared standard that any company can implement independently, and that any agent or tool can participate in. Next steps are tighter integration with the specification's federation modes ( auto , referrals , none ) and Hub-side support for static ai-catalog.json manifests on user and organization profiles. The client searches in natural language, and the model invokes whatever the search returns.",
+      "what_happened": "Many Spaces ship an agents.md file describing how an agent should interact with them. The client searches in natural language, and the model invokes whatever the search returns.",
+      "why_matters": "It is a shared standard that any company can implement independently, and that any agent or tool can participate in. Next steps are tighter integration with the specification's federation modes ( auto , referrals , none ) and Hub-side support for static ai-catalog.json manifests on user and organization profiles.",
+      "what_to_watch": "The client searches in natural language, and the model invokes whatever the search returns.",
+      "key_points": [
+        "The client searches in natural language, and the model invokes whatever the search returns.",
+        "The discovery problem The current model for agent capabilities is install-first, use-later.",
+        "The fallback is to dump every available tool description into the LLM's context window and let the model pick.",
+        "Many Spaces ship an agents.md file describing how an agent should interact with them.",
+        "The Agentic Resource Discovery Specification: The Hugging Face Discover Tool: The Hugging Face CLI: Agent Skills on the Hub: The Open Source Community is backing OpenEnv for Agentic RL The PR you would have opened.",
+        "A generated SKILL.md wrapping the Space's agents.md .",
+        "The shift is from manually installed, static catalogs to intent-based search that lets an agent find the right capability dynamically, and reach a growing ecosystem of MCP tools, A2A agents, and other services without.",
+        "Agentic Resource Discovery: Let agents search for tools, skills, and other agents.",
+        "ARD moves selection outside the LLM.",
+        "Second, the response media type is driven by the request.",
+        "It works by combining the Hub's existing semantic search over Spaces, alongside our Agent Skills, and serving the results as ARD catalog entries.",
+        "This is limited by the context budget."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/31ab512f9e719619.jpg",
+      "image_url": "https://huggingface.co/blog/assets/transformers-to-mlx/thumbnail.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "850bf2871af642a786cc94744153c0a9"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 9,
+  "has_cta": true,
+  "slides": [
+    "Google bets on Gemini to reinvent the smart home speaker.",
+    "Anthropic opens Seoul office and announces new partnerships across the Korean AI.",
+    "Pramaana Labs raises $27M seed round from Khosla Ventures to bring formal.",
+    "World model maker Odyssey nabs $1.45B valuation backed by Amazon and other.",
+    "AI is accelerating cyberattacks-here's how to stay ahead.",
+    "New research shows how AMIE our medical AI could help manage health.",
+    "Anthropic becomes first AI startup to join the Frontier carbon removal coalition.",
+    "Agentic Resource Discovery Let agents search.",
+    "FOLLOW @graitech"
+  ]
+}
