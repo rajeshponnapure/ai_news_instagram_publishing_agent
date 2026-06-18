@@ -1,0 +1,349 @@
+{
+  "email_received_at": "2026-06-18T11:33-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Amazon hopes to challenge Nvidia more directly by selling its AI chips | TechCrunch",
+  "subject": "\ud83d\udea8 AI Alert: 79 new launches \u2014 TechCrunch AI, LangChain Blog, AWS Machine Learning",
+  "source_date": "Thu, 18 Jun 2026 11:33:44 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Apple",
+    "Amazon"
+  ],
+  "models": [],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/",
+  "article_title": "Amazon hopes to challenge Nvidia more directly by selling its AI chips | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1c647f5662c42451.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2022/11/GettyImages-1421680585.jpg?resize=1200,675",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/",
+      "title": "Amazon hopes to challenge Nvidia more directly by selling its AI chips | TechCrunch",
+      "description": "AWS is in talks to sell its chips to other data centers. CEO Andy Jassy has said this represents a $50 billion opportunity for the company.",
+      "excerpt": "AWS is in talks to sell its chips to other data centers. CEO Andy Jassy has said this represents a $50 billion opportunity for the company.",
+      "summary": "Slowtech is fixing it Why startups should \u2018be more concerned\u2019 about competition in their investors\u2019 portfolios Texas government data breach allowed hackers to steal 3 million driver\u2019s licenses and passports We won't sell or share your personal information to inform the ads you see. So selling its chips to others means it would likely have to leave current customers on waiting lists, unless it could somehow manufacture a surplus of chips through its manufacturing partners such as TSMC. CEO Andy Jassy has said this represents a $50 billion opportunity for the company. Such talks about selling chips are in the early stages, the company tells TechCrunch, and stem from Amazon CEO Andy Jassy\u2019s annual shareholder letter in early April, in which he said the company\u2019s homegrown AI chips were so coveted that he was thinking about selling them. \u201cWhile we\u2019ve historically declined requests to sell chips directly, Andy noted it\u2019s quite possible we\u2019ll sell racks of them to third parties in the future.\u201d So while Nvidia\u2019s founder and CEO Jensen Huang recently declared that he\u2019s found a brand new $200 billion market for Nvidia in selling CPUs for AI, not just GPUs.",
+      "what_happened": "Slowtech is fixing it Why startups should \u2018be more concerned\u2019 about competition in their investors\u2019 portfolios Texas government data breach allowed hackers to steal 3 million driver\u2019s licenses and passports We won't sell or share your personal information to inform the ads you see. So selling its chips to others means it would likely have to leave current customers on waiting lists, unless it could somehow manufacture a surplus of chips through its manufacturing partners such as TSMC.",
+      "why_matters": "CEO Andy Jassy has said this represents a $50 billion opportunity for the company. Such talks about selling chips are in the early stages, the company tells TechCrunch, and stem from Amazon CEO Andy Jassy\u2019s annual shareholder letter in early April, in which he said the company\u2019s homegrown AI chips were so coveted that he was thinking about selling them.",
+      "what_to_watch": "\u201cWhile we\u2019ve historically declined requests to sell chips directly, Andy noted it\u2019s quite possible we\u2019ll sell racks of them to third parties in the future.\u201d So while Nvidia\u2019s founder and CEO Jensen Huang recently declared that he\u2019s found a brand new $200 billion market for Nvidia in selling CPUs for AI, not just GPUs.",
+      "key_points": [
+        "Slowtech is fixing it Why startups should \u2018be more concerned\u2019 about competition in their investors\u2019 portfolios Texas government data breach allowed hackers to steal 3 million driver\u2019s licenses and passports We won't.",
+        "AWS is in talks to sell its chips to other data centers.",
+        "CEO Andy Jassy has said this represents a $50 billion opportunity for the company.",
+        "\u201cIf our chips business was a standalone business, and sold chips produced this year to AWS and other third parties (as other leading chips companies do), our annual run rate would be ~$50 billion.",
+        "The biggest is that the money AWS actually makes on its chips is a waterfall effect.",
+        "Amazon\u2019s AI chief Peter DeSantis told Bloomberg that AWS is in talks to sell its AI chip Trainium to other companies for use in data centers.",
+        "So selling its chips to others means it would likely have to leave current customers on waiting lists, unless it could somehow manufacture a surplus of chips through its manufacturing partners such as TSMC.",
+        "DeSantis declined to specify which companies could be the buyers of such chips.",
+        "More from TechCrunch Amazon hopes to challenge Nvidia more directly by selling its AI chips If Amazon Web Services has its way, the cloud giant is going to push even deeper into Nvidia\u2019s market, in what might be one of.",
+        "This was before AWS formally added OpenAI to the models it was serving up.",
+        "AWS has so far resisted selling its AI chips for a lot of reasons.",
+        "AWS spokesperson Doron Aronson ( who hosted me during a recent private tour of the AWS chip design facility ) also confirmed that AWS may sell these chips."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1c647f5662c42451.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2022/11/GettyImages-1421680585.jpg?resize=1200,675",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/18/queer-eyes-life-coach-karamo-brown-launches-ke-a-wellness-app-featuring-his-ai-digital-clone/",
+      "title": "'Queer Eye's' life coach Karamo Brown launches K\u0113, a wellness app featuring his AI digital clone | TechCrunch",
+      "description": "Karamo Brown, famous for his pep talks on Netflix's \u201cQueer Eye,\u201d has jumped into the wellness and AI space with his new app, K\u0113. After spending a year and",
+      "excerpt": "Karamo Brown, famous for his pep talks on Netflix's \u201cQueer Eye,\u201d has jumped into the wellness and AI space with his new app, K\u0113. After spending a year and",
+      "summary": "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak As Anthropic suspends access to new models, India debates its AI future Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it We won't sell or share your personal information to inform. After spending a year and a half focusing on his own journey - from fitness and nutrition to meditation, sobriety, relationships, and personal growth - Brown wants to help others do the same. Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections. For instance, if AI Karamo gives you advice on your workout routine, it may one day be able to go into the \u201cMy Plan\u201d tab for you and adjust it immediately. That said, the goal isn\u2019t to keep users talking to the AI indefinitely.",
+      "what_happened": "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak As Anthropic suspends access to new models, India debates its AI future Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it We won't sell or share your personal information to inform.",
+      "why_matters": "After spending a year and a half focusing on his own journey - from fitness and nutrition to meditation, sobriety, relationships, and personal growth - Brown wants to help others do the same. Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections.",
+      "what_to_watch": "For instance, if AI Karamo gives you advice on your workout routine, it may one day be able to go into the \u201cMy Plan\u201d tab for you and adjust it immediately. That said, the goal isn\u2019t to keep users talking to the AI indefinitely.",
+      "key_points": [
+        "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak As Anthropic suspends access to new models, India debates its AI future.",
+        "The subscription costs $14.99/month after the 3-day free trial.",
+        "After spending a year and More from TechCrunch \u2018Queer Eye\u2019s\u2019 life coach Karamo Brown launches K\u0113, a wellness app featuring his AI digital clone Karamo Brown, famous for his pep talks on Netflix\u2019s \u201cQueer Eye,\u201d has jumped.",
+        "That said, the goal isn\u2019t to keep users talking to the AI indefinitely.",
+        "For example, stars like Matthew McConaughey and Michael Caine have partnered with ElevenLabs to license their voices for digital replicas.",
+        "Users have the flexibility to request adjustments to their fitness and meal plans through an AI chatbot, making it easy to customize their experience.",
+        "They can ask questions and get advice in real-time, delivered in his voice.",
+        "Karamo Brown, famous for his pep talks on Netflix's \u201cQueer Eye,\u201d has jumped into the wellness and AI space with his new app, K\u0113.",
+        "After spending a year and a half focusing on his own journey - from fitness and nutrition to meditation, sobriety, relationships, and personal growth - Brown wants to help others do the same.",
+        "However, many celebrities are publicly expressing their concerns and taking action against the rise of AI, particularly regarding the unauthorized use of their likenesses and voices in creating digital clones.",
+        "\u201cIf someone is struggling with a sensitive issue, it can direct them toward appropriate resources and remind them to seek support from real people in their lives\u2026 At the end of the day, this is meant to be a tool that.",
+        "(However, users should keep in mind that using the AI feature means they\u2019re sharing their conversation data with Delphi, so it\u2019s smart to avoid disclosing sensitive info.) He adds, \u201cWhen AI first started becoming part."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a6363e172cc2b24b.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/KaramoBrown-Ke.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://huggingface.co/blog/ServiceNow/mosaicleaks",
+      "title": "MosaicLeaks: Can your research agent keep a secret?",
+      "description": "A Blog post by ServiceNow on Hugging Face",
+      "excerpt": "A Blog post by ServiceNow on Hugging Face",
+      "summary": "We propose a mosaic-leakage-aware RL training method, Privacy-Aware Deep Research (PA-DR) , which raises strict chain success (the share of chains where every hop is answered correctly) from 48.7% to 58.7% while reducing answer/full-information leakage from 34.0% to 9.9%. Training for privacy did not simply cancel the leakage that training for performance introduced. The final split contains 559 training chains, 98 validation chains, and 344 held-out-company test chains. The enterprise documents are synthetic, the web corpus is fixed, the chains span three company contexts, and every result comes from a single agent harness running multi-hop question answering rather than open-ended research. The answer to one sub-question becomes a bridge entity in the next, so the agent must retrieve local information before it can form the next useful web query. Making the agent better made it leak more Before training for privacy, we tried the obvious thing: train the agent only to solve more chains correctly.",
+      "what_happened": "We propose a mosaic-leakage-aware RL training method, Privacy-Aware Deep Research (PA-DR) , which raises strict chain success (the share of chains where every hop is answered correctly) from 48.7% to 58.7% while reducing answer/full-information leakage from 34.0% to 9.9%. Training for privacy did not simply cancel the leakage that training for performance introduced.",
+      "why_matters": "The final split contains 559 training chains, 98 validation chains, and 344 held-out-company test chains. The enterprise documents are synthetic, the web corpus is fixed, the chains span three company contexts, and every result comes from a single agent harness running multi-hop question answering rather than open-ended research.",
+      "what_to_watch": "The answer to one sub-question becomes a bridge entity in the next, so the agent must retrieve local information before it can form the next useful web query. Making the agent better made it leak more Before training for privacy, we tried the obvious thing: train the agent only to solve more chains correctly.",
+      "key_points": [
+        "We propose a mosaic-leakage-aware RL training method, Privacy-Aware Deep Research (PA-DR) , which raises strict chain success (the share of chains where every hop is answered correctly) from 48.7% to 58.7% while.",
+        "Training for privacy did not simply cancel the leakage that training for performance introduced.",
+        "Making the agent better made it leak more Before training for privacy, we tried the obvious thing: train the agent only to solve more chains correctly.",
+        "MosaicLeaks treats those web queries as the leakage channel: the adversary never sees the private documents or the agent's reasoning, only the cumulative query log, and tries to infer private enterprise information from.",
+        "That 9.9% is lower than the untrained base model's own 34.0%.",
+        "The agent still finds the right public documents.",
+        "Deep research agents increasingly combine private local documents with external tools like web retrieval, creating a privacy risk: an agent's external queries may leak sensitive information.",
+        "PA-DR actually issues more web queries than the base model, but those queries drop the revealing details: specific metrics like \"15%\" or \"2024\", and clues about the kind of answer it is looking for.",
+        "Across the models we tested, agents frequently leaked private information, and training only for task performance made it worse.",
+        "It left the agent leaking less than it did at the start.",
+        "But anyone watching the agent's outbound traffic can reassemble the fragments: MediConn had migrated 70% of its infrastructure to the cloud by January 2025, a fact that lived only in private documents.",
+        "They are also much more sample-efficient: the situational task reward reaches the same task performance as outcome-only RL with roughly 5-6x fewer generated training samples, and PA-DR keeps that efficiency while adding."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fe964e94371383ce.png",
+      "image_url": "https://cdn-uploads.huggingface.co/production/uploads/63229a336b1992383fa8dd4d/SVD_kNyF9P2ifMlT7Hq8K.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4eeada6f0627911d.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/36b9c664552d47b9.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e0fcefb2f80711d0.png"
+      ],
+      "extra_image_urls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/63229a336b1992383fa8dd4d/3cRVUE7Ev-3-JfSXUIt7v.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/63229a336b1992383fa8dd4d/zfVeK2pYFKJICW-a3mXoj.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/63229a336b1992383fa8dd4d/tfczFtyElmBT_Nho-SlZ2.png"
+      ]
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/category/enterprise/",
+      "title": "AI Infrastructure Archives",
+      "description": "",
+      "excerpt": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff France Advances Europe\u2019s AI Future With NVIDIA Technologies A year ago at NVIDIA GTC Paris at VivaTech, France laid out plans to advance local AI - from new AI factories and national compute... Coherent Breaks...",
+      "summary": "Coherent Breaks Ground on Expanded Texas Facility, Scaling AI\u2019s Optical Backbone HPE AI Factory With NVIDIA Expands for the Era of Agents Fastest, Largest, Strongest: NVIDIA Blackwell Sweeps MLPerf Training 6.0 NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain. Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay At Cannes Lions, NVIDIA Partners Reshape Advertising and Marketing With AI Sync and Stream: GeForce NOW Connects to Members\u2019 Game Libraries Across Devices Hands Free, AIs Forward: NVIDIA XR AI Brings Agents to AR Glasses Save Big and Play Bigger: GeForce NOW Summer Sale Brings Major Membership Savings These cookies enable core functionality such as security, network. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin.",
+      "what_happened": "Coherent Breaks Ground on Expanded Texas Facility, Scaling AI\u2019s Optical Backbone HPE AI Factory With NVIDIA Expands for the Era of Agents Fastest, Largest, Strongest: NVIDIA Blackwell Sweeps MLPerf Training 6.0 NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain.",
+      "why_matters": "Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay At Cannes Lions, NVIDIA Partners Reshape Advertising and Marketing With AI Sync and Stream: GeForce NOW Connects to Members\u2019 Game Libraries Across Devices Hands Free, AIs Forward: NVIDIA XR AI Brings Agents to AR Glasses Save Big and Play Bigger: GeForce NOW Summer Sale Brings Major Membership Savings These cookies enable core functionality such as security, network.",
+      "what_to_watch": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "key_points": [
+        "Coherent Breaks Ground on Expanded Texas Facility, Scaling AI\u2019s Optical Backbone HPE AI Factory With NVIDIA Expands for the Era of Agents Fastest, Largest, Strongest: NVIDIA Blackwell Sweeps MLPerf Training 6.0 NVIDIA.",
+        "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA GPUs with Confidential Computing are now used for confidential inference in Apple\u2019s Private Cloud Compute (PCC), as it expands beyond.",
+        "NVIDIA and Doosan Group Collaborate to Advance Physical AI and AI Factory Infrastructure NVIDIA and Doosan Group are expanding their collaboration to advance new opportunities across physical AI, robotics and AI factory.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "NVIDIA and LG Group Build an AI Factory to Advance Physical AI, Mobility and AI Infrastructure NVIDIA and LG Group are building an AI factory to accelerate LG Group\u2019s next wave of AI-driven businesses, spanning.",
+        "Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA Taiwan is home to more than 500 NVIDIA ecosystem partners.",
+        "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand The NVIDIA AI Cloud ecosystem is accelerating the global buildout of AI factory infrastructure.",
+        "And as agentic AI scales and autonomous, always-on special agents are deployed in the enterprise, performance per watt...",
+        "NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local The agentic AI moment has arrived, but delivering on its promise requires more than good models.",
+        "AI Factories: The New Infrastructure of Intelligence AI factories are token factories, converting power into intelligence in real time.",
+        "More than 1 million NVIDIA MGX rack components for NVIDIA Vera Rubin infrastructure come together in Taiwan, from across 25...",
+        "Partners are expanding capacity to meet growing demand from enterprises, startups, nations, AI labs and developers..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/18/general-intuition-in-talks-to-raise-300m-at-around-2b-valuation/",
+      "title": "General Intuition in talks to raise $300M at around $2B valuation | TechCrunch",
+      "description": "The startup trains embodied AI and world models using Medal\u2019s dataset of 2 billion videos per year from 10 million monthly active users.",
+      "excerpt": "The startup trains embodied AI and world models using Medal\u2019s dataset of 2 billion videos per year from 10 million monthly active users.",
+      "summary": "Startups like Runway , Decart , and World Labs have all recently released world models, and Google\u2019s Genie 3 recently began integrating Google Maps data for more real-world simulation capabilities. General Intuition will use the funds to scale up its compute capacity so it can release a new product by the end of summer or early fall, according to a source familiar with the matter. The raise comes eight months after General Intuition spun out of Medal , a platform for uploading and sharing video game clips, with a $134 million seed round. Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections. SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak As Anthropic suspends access to new models, India debates its AI future Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own.",
+      "what_happened": "Startups like Runway , Decart , and World Labs have all recently released world models, and Google\u2019s Genie 3 recently began integrating Google Maps data for more real-world simulation capabilities. General Intuition will use the funds to scale up its compute capacity so it can release a new product by the end of summer or early fall, according to a source familiar with the matter.",
+      "why_matters": "The raise comes eight months after General Intuition spun out of Medal , a platform for uploading and sharing video game clips, with a $134 million seed round. Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections.",
+      "what_to_watch": "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak As Anthropic suspends access to new models, India debates its AI future Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own.",
+      "key_points": [
+        "Startups like Runway , Decart , and World Labs have all recently released world models, and Google\u2019s Genie 3 recently began integrating Google Maps data for more real-world simulation capabilities.",
+        "General Intuition will use the funds to scale up its compute capacity so it can release a new product by the end of summer or early fall, according to a source familiar with the matter.",
+        "More from TechCrunch General Intuition in talks to raise $300M at around $2B valuation General Intuition, the New York-based startup building a foundation model that trains AI agents how to move through space and time.",
+        "The startup\u2019s pitch is that such a dataset - unique because it allows AI to learn from interactive, first-person gameplay - is the perfect base to teach machines deep spatial-temporal reasoning, allowing them to.",
+        "All of these companies see gaming and robotics training as near-term commercial use cases, but General Intuition takes a different approach: It builds world models to train agents, not to sell them.",
+        "The agents are the product, and the startup\u2019s unique dataset gives it a path to viability.",
+        "The startup trains embodied AI and world models using Medal\u2019s dataset of 2 billion videos per year from 10 million monthly active users.",
+        "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak As Anthropic suspends access to new models, India debates its AI future.",
+        "The fresh funds would bring the startup\u2019s valuation up to just over $2 billion, sources say.",
+        "The raise comes eight months after General Intuition spun out of Medal , a platform for uploading and sharing video game clips, with a $134 million seed round.",
+        "The world model space that General Intuition is playing in is heating up.",
+        "Rebecca Bellan is a senior reporter at TechCrunch where she covers the business, policy, and emerging trends shaping artificial intelligence."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/fe19d5a78d34eb72.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/General-intuition.png?w=880",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.langchain.com/blog/langsmith-agent-builder",
+      "title": "Introducing LangSmith\u2019s No Code Agent Builder",
+      "description": "Build AI agents without code using LangSmith Agent Builder. Create agents with memory, guided prompts, and MCP tools - no technical expertise needed.",
+      "excerpt": "Build AI agents without code using LangSmith Agent Builder. Create agents with memory, guided prompts, and MCP tools - no technical expertise needed.",
+      "summary": "Introducing LangSmith\u2019s No Code Agent Builder Today, we\u2019re expanding who can build agents beyond developers. S e e w h a t y o u r a g e n t i s r e a l l y d o i n g LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click. With LangSmith\u2019s new Agent Authorization functionality, you can securely connect to tools your team has approved such as Gmail, Slack, LinkedIn, or Linear \u2013 all within the agent building flow. We'll continue to expand what's possible with Agent Builder based on community feedback - start building with Agent Builder to help shape what comes next. If you correct the agent, it will now remember that correction so you don't have to prompt it to do so again in the future. Build AI agents without code using LangSmith Agent Builder.",
+      "what_happened": "Introducing LangSmith\u2019s No Code Agent Builder Today, we\u2019re expanding who can build agents beyond developers. S e e w h a t y o u r a g e n t i s r e a l l y d o i n g LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click.",
+      "why_matters": "With LangSmith\u2019s new Agent Authorization functionality, you can securely connect to tools your team has approved such as Gmail, Slack, LinkedIn, or Linear \u2013 all within the agent building flow. We'll continue to expand what's possible with Agent Builder based on community feedback - start building with Agent Builder to help shape what comes next.",
+      "what_to_watch": "If you correct the agent, it will now remember that correction so you don't have to prompt it to do so again in the future. Build AI agents without code using LangSmith Agent Builder.",
+      "key_points": [
+        "Introducing LangSmith\u2019s No Code Agent Builder Today, we\u2019re expanding who can build agents beyond developers.",
+        "S e e w h a t y o u r a g e n t i s r e a l l y d o i n g LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click.",
+        "Build AI agents without code using LangSmith Agent Builder.",
+        "Set up triggers to launch your agent when you receive an email, get a Slack message in a particular channel, or on a time-based schedule.",
+        "By focusing on letting users build agents, we make agent building accessible to a broader audience while enabling users to tackle more complicated and complex tasks, rather than simple workflows.",
+        "Unlike other solutions out there, LangSmith Agent Builder is an agent builder, not a visual workflow builder .",
+        "What an agent consists of Every agent in LangSmith is built from four core components that work together: Tools: In order to interact with the world, agents need to call tools.",
+        "Have your agent remember over time.",
+        "First, start with your request and describe what you want your agent to do in plain language.",
+        "Rather than follow a predetermined path, agents can delegate more decision-making to an LLM, allowing for more dynamic responses.",
+        "Deep Agents gives your agents access to planning capabilities, persistent memory, and the ability to break down complex tasks into manageable subtasks.",
+        "LangSmith uses MCP to connect your agent to external services and data."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f385f1eabde1f5c3.img",
+      "image_url": "https://cdn.prod.website-files.com/65b8cd72835ceeacd4449a53/6989c024926f877c1de6e728_updated.svg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/nvidia-ai-marketing-advertising-cannes-lions/",
+      "title": "At Cannes Lions, NVIDIA Partners Reshape Advertising and Marketing With AI",
+      "description": "At Cannes Lions, running June 22-26 in France, industry leaders including Alembic, Amazon Web Services (AWS), Criteo, Higgsfield, KERV.ai and Taboola are showcasing how NVIDIA technologies help unlock greater creativity and enable faster, autonomous operations at enterprise scale.",
+      "excerpt": "At Cannes Lions, running June 22-26 in France, industry leaders including Alembic, Amazon Web Services (AWS), Criteo, Higgsfield, KERV.ai and Taboola are showcasing how NVIDIA technologies help unlock greater creativity and enable faster, autonomous operations at enterprise scale.",
+      "summary": "At Cannes Lions, running June 22-26 in France, industry leaders including Alembic, Amazon Web Services (AWS), Criteo, Higgsfield, KERV.ai and Taboola are showcasing how NVIDIA technologies help unlock greater creativity and enable faster, autonomous operations at enterprise scale.",
+      "what_happened": "At Cannes Lions, running June 22-26 in France, industry leaders including Alembic, Amazon Web Services (AWS), Criteo, Higgsfield, KERV.ai and Taboola are showcasing how NVIDIA technologies help unlock greater creativity and enable faster, autonomous operations at enterprise scale.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "At Cannes Lions, running June 22-26 in France, industry leaders including Alembic, Amazon Web Services (AWS), Criteo, Higgsfield, KERV.ai and Taboola are showcasing how NVIDIA technologies help unlock greater creativity."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a39ff4777850f6d2.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/cannes-lions-featured-visual-still-1920x1080-1.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://huggingface.co/blog/peft-beyond-lora",
+      "title": "Beyond LoRA: Can you beat the most popular fine-tuning technique?",
+      "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "excerpt": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "summary": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "what_happened": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6951ac18d96a0096.png",
+      "image_url": "https://huggingface.co/datasets/peft-internal-testing/peft-blog-assets/resolve/main/peft-beyond-lora/lora-celebration.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 8,
+  "has_cta": true,
+  "slides": [
+    "Amazon hopes to challenge Nvidia more directly by selling its AI chips.",
+    "Queer Eye's' life coach Karamo Brown launches K a wellness app featuring.",
+    "MosaicLeaks Can your research agent keep a secret.",
+    "General Intuition in talks to raise $300M at around $2B valuation.",
+    "Introducing LangSmith's No Code Agent Builder.",
+    "At Cannes Lions NVIDIA Partners Reshape Advertising and Marketing With AI.",
+    "Beyond LoRA Can you beat the most popular fine-tuning technique.",
+    "FOLLOW @graitech"
+  ]
+}
