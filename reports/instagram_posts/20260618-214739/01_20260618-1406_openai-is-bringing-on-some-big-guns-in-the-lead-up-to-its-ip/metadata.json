@@ -1,0 +1,318 @@
+{
+  "email_received_at": "2026-06-18T14:06-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "OpenAI is bringing on some big guns in the lead-up to its IPO | TechCrunch",
+  "subject": "\ud83d\udea8 AI Alert: 80 new launches \u2014 Bloomberg Tech, MarkTechPost AI",
+  "source_date": "Thu, 18 Jun 2026 14:06:48 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Apple",
+    "Amazon"
+  ],
+  "models": [
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
+  "article_title": "OpenAI is bringing on some big guns in the lead-up to its IPO | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0693266e650258db.png",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/06/noam-shazeer-deal-ball.png?resize=1200,800",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
+      "title": "OpenAI is bringing on some big guns in the lead-up to its IPO | TechCrunch",
+      "description": "OpenAI is bulking up before its IPO, landing Transformer co-inventor Noam Shazeer from Google DeepMind and former Trump AI policy official Dean Ball in the same week.",
+      "excerpt": "OpenAI is bulking up before its IPO, landing Transformer co-inventor Noam Shazeer from Google DeepMind and former Trump AI policy official Dean Ball in the same week.",
+      "summary": "He co-authored the seminal 2017 paper \u201cAttention Is All You Need,\u201d which introduced the Transformer architecture. SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak As Anthropic suspends access to new models, India debates its AI future Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a. In the meantime, OpenAI is also shoring up its policy credentials by bringing Ball to the team. The \u201csmall, high-agency team\u201d will focus on \u201cmatters pertaining to: catastrophic risk, recursive self-improvement, labor market impact, and the relationship between the frontier labs, governments (particularly the U.S. \u201cIn other words, internal governance will be more central to the future of AI than most people realize,\u201d Ball wrote. Late last week, President Donald Trump ordered an export control ban on Anthropic\u2019s latest models, Fable 5 and Mythos 5 , leading to the AI firm being forced to take the models down entirely to avoid.",
+      "what_happened": "He co-authored the seminal 2017 paper \u201cAttention Is All You Need,\u201d which introduced the Transformer architecture. SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak As Anthropic suspends access to new models, India debates its AI future Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world cyberattacks Meta\u2019s months-old AI unit is a.",
+      "why_matters": "In the meantime, OpenAI is also shoring up its policy credentials by bringing Ball to the team. The \u201csmall, high-agency team\u201d will focus on \u201cmatters pertaining to: catastrophic risk, recursive self-improvement, labor market impact, and the relationship between the frontier labs, governments (particularly the U.S.",
+      "what_to_watch": "\u201cIn other words, internal governance will be more central to the future of AI than most people realize,\u201d Ball wrote. Late last week, President Donald Trump ordered an export control ban on Anthropic\u2019s latest models, Fable 5 and Mythos 5 , leading to the AI firm being forced to take the models down entirely to avoid.",
+      "key_points": [
+        "He co-authored the seminal 2017 paper \u201cAttention Is All You Need,\u201d which introduced the Transformer architecture.",
+        "Late last week, President Donald Trump ordered an export control ban on Anthropic\u2019s latest models, Fable 5 and Mythos 5 , leading to the AI firm being forced to take the models down entirely to avoid noncompliance.",
+        "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak As Anthropic suspends access to new models, India debates its AI future.",
+        "Shazeer, a co-lead at Gemini and the founder of AI role-playing startup Character AI, announced his departure on Wednesday .",
+        "Two years ago, Google re-hired Shazeer in a $2.7 billion deal that gave the tech giant access to the startup\u2019s technology.",
+        "Rebecca Bellan is a senior reporter at TechCrunch where she covers the business, policy, and emerging trends shaping artificial intelligence.",
+        "The move is the latest in a series of shufflings between the top AI labs, including Google, OpenAI, Anthropic, and Meta.",
+        "In the meantime, OpenAI is also shoring up its policy credentials by bringing Ball to the team.",
+        "The \u201csmall, high-agency team\u201d will focus on \u201cmatters pertaining to: catastrophic risk, recursive self-improvement, labor market impact, and the relationship between the frontier labs, governments (particularly the U.S.",
+        "Ball\u2019s decision to join OpenAI - arguably an AI favorite in the administration - comes as Anthropic battles once again with the U.S.",
+        "\u201cI am pleased and honored to announce that, on July 6, I\u2019ll be joining OpenAI as leader of a new team called Strategic Futures,\u201d Ball wrote on X on Thursday .",
+        "Her work has also appeared in Forbes, Bloomberg, The Atlantic, The Daily Beast, and other publications."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0693266e650258db.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/noam-shazeer-deal-ball.png?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/ferc-large-load-interconnection/",
+      "title": "How FERC\u2019s Large-Load Interconnection Actions Help Address Grid Stress, Improve Affordability",
+      "description": "The U.S. Federal Energy Regulatory Commission\u2019s new actions on energy - a foundational layer of AI - are poised to reduce costs for ratepayers, grow the industrial base and strengthen the nation\u2019s electrical grid.",
+      "excerpt": "The U.S. Federal Energy Regulatory Commission\u2019s new actions on energy - a foundational layer of AI - are poised to reduce costs for ratepayers, grow the industrial base and strengthen the nation\u2019s electrical grid.",
+      "summary": "Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay At Cannes Lions, NVIDIA Partners Reshape Advertising and Marketing With AI Sync and Stream: GeForce NOW Connects to Members\u2019 Game Libraries Across Devices France Advances Europe\u2019s AI Future With NVIDIA Technologies Hands Free, AIs Forward: NVIDIA XR AI Brings Agents to AR Glasses For Robotaxis, Safety Must Be Built In, Not Bolted On Into the Omniverse: Manufacturing\u2019s Simulation-First Era Has Arrived Autonomous AI at Scale: Adobe Agents Unlock Breakthrough. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff. It underpins the technologies shaping the next generation of American competitiveness. In parallel with FERC\u2019s action, NVIDIA and Emerald AI are already working with partners across the ecosystem to build a new class of AI factories - designed from the ground.",
+      "what_happened": "Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay At Cannes Lions, NVIDIA Partners Reshape Advertising and Marketing With AI Sync and Stream: GeForce NOW Connects to Members\u2019 Game Libraries Across Devices France Advances Europe\u2019s AI Future With NVIDIA Technologies Hands Free, AIs Forward: NVIDIA XR AI Brings Agents to AR Glasses For Robotaxis, Safety Must Be Built In, Not Bolted On Into the Omniverse: Manufacturing\u2019s Simulation-First Era Has Arrived Autonomous AI at Scale: Adobe Agents Unlock Breakthrough.",
+      "why_matters": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff.",
+      "what_to_watch": "It underpins the technologies shaping the next generation of American competitiveness. In parallel with FERC\u2019s action, NVIDIA and Emerald AI are already working with partners across the ecosystem to build a new class of AI factories - designed from the ground up as flexible grid assets.",
+      "key_points": [
+        "Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay At Cannes Lions, NVIDIA Partners Reshape Advertising and Marketing With AI Sync and Stream: GeForce NOW Connects to Members\u2019 Game Libraries Across Devices France.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "For policymakers, utilities and technology partners, the message is clear: This is a pro-growth, pro-affordability and pro-reliability policy.",
+        "They build on the successes of communities across North Dakota, Mississippi, Louisiana and Virginia to create a national on-ramp, enabling every region to compete for and benefit from the next wave of industrial and.",
+        "In parallel with FERC\u2019s action, NVIDIA and Emerald AI are already working with partners across the ecosystem to build a new class of AI factories - designed from the ground up as flexible grid assets.",
+        "It underpins the technologies shaping the next generation of American competitiveness.",
+        "PG&E has forecast that, under the right conditions, each new 1 gigawatt of data center load could reduce electric rates by 1-2% by spreading fixed grid costs over more usage.",
+        "North Dakota , after adding 23 data centers, saw the nation\u2019s largest decrease in electricity prices.",
+        "FERC\u2019s actions do more than modernize the grid interconnection queue - the approval process power developers must complete to safely connect new energy generation to the electrical grid.",
+        "This is what the future of large-load interconnection looks like: not a burden on the grid, but a backbone of reliability and efficiency.",
+        "These cookies are required for the site to function and cannot be turned off.",
+        "These cookies are used to provide quantitative measures of our website visitors, such as the number of times you visit, time on page, your mouse movements, scrolling, clicks and keystroke activity on the websites; other."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/391a51ccdae065e9.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2025/09/nvidiaheadquarters.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/category/enterprise/",
+      "title": "AI Infrastructure Archives",
+      "description": "",
+      "excerpt": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff France Advances Europe\u2019s AI Future With NVIDIA Technologies A year ago at NVIDIA GTC Paris at VivaTech, France laid out plans to advance local AI - from new AI factories and national compute... Coherent Breaks...",
+      "summary": "Coherent Breaks Ground on Expanded Texas Facility, Scaling AI\u2019s Optical Backbone HPE AI Factory With NVIDIA Expands for the Era of Agents Fastest, Largest, Strongest: NVIDIA Blackwell Sweeps MLPerf Training 6.0 NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain. Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay At Cannes Lions, NVIDIA Partners Reshape Advertising and Marketing With AI Sync and Stream: GeForce NOW Connects to Members\u2019 Game Libraries Across Devices Hands Free, AIs Forward: NVIDIA XR AI Brings Agents to AR Glasses Save Big and Play Bigger: GeForce NOW Summer Sale Brings Major Membership Savings These cookies enable core functionality such as security, network. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin.",
+      "what_happened": "Coherent Breaks Ground on Expanded Texas Facility, Scaling AI\u2019s Optical Backbone HPE AI Factory With NVIDIA Expands for the Era of Agents Fastest, Largest, Strongest: NVIDIA Blackwell Sweeps MLPerf Training 6.0 NVIDIA Accelerates Google DeepMind\u2019s DiffusionGemma for Local AI NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain.",
+      "why_matters": "Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay At Cannes Lions, NVIDIA Partners Reshape Advertising and Marketing With AI Sync and Stream: GeForce NOW Connects to Members\u2019 Game Libraries Across Devices Hands Free, AIs Forward: NVIDIA XR AI Brings Agents to AR Glasses Save Big and Play Bigger: GeForce NOW Summer Sale Brings Major Membership Savings These cookies enable core functionality such as security, network.",
+      "what_to_watch": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "key_points": [
+        "Coherent Breaks Ground on Expanded Texas Facility, Scaling AI\u2019s Optical Backbone HPE AI Factory With NVIDIA Expands for the Era of Agents Fastest, Largest, Strongest: NVIDIA Blackwell Sweeps MLPerf Training 6.0 NVIDIA.",
+        "NVIDIA Confidential Computing to Help Expand Apple\u2019s Private Cloud Compute NVIDIA GPUs with Confidential Computing are now used for confidential inference in Apple\u2019s Private Cloud Compute (PCC), as it expands beyond.",
+        "NVIDIA and Doosan Group Collaborate to Advance Physical AI and AI Factory Infrastructure NVIDIA and Doosan Group are expanding their collaboration to advance new opportunities across physical AI, robotics and AI factory.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "NVIDIA and LG Group Build an AI Factory to Advance Physical AI, Mobility and AI Infrastructure NVIDIA and LG Group are building an AI factory to accelerate LG Group\u2019s next wave of AI-driven businesses, spanning.",
+        "Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA Taiwan is home to more than 500 NVIDIA ecosystem partners.",
+        "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand The NVIDIA AI Cloud ecosystem is accelerating the global buildout of AI factory infrastructure.",
+        "NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark AgentPerf from Artificial Analysis, the industry\u2019s first agentic AI benchmark, gives developers, enterprises and infrastructure providers a clear way.",
+        "NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local The agentic AI moment has arrived, but delivering on its promise requires more than good models.",
+        "More than 1 million NVIDIA MGX rack components for NVIDIA Vera Rubin infrastructure come together in Taiwan, from across 25...",
+        "Partners are expanding capacity to meet growing demand from enterprises, startups, nations, AI labs and developers...",
+        "It also takes fast hardware, secure runtimes, a responsive data layer and models tuned..."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2197051/waymo-recalls-3800-robotaxis-that-might-drive-onto-closed-freeways/",
+      "title": "Waymo recalls over 3,800 robotaxis that might drive onto closed freeways - Engadget",
+      "description": "Waymo is recalling over 3,800 of its self-driving taxis due to a software issue that could cause them to enter closed freeway construction zones at speed.",
+      "excerpt": "Waymo is recalling over 3,800 of its self-driving taxis due to a software issue that could cause them to enter closed freeway construction zones at speed.",
+      "summary": "The company released a video at the time showing how its vehicle would navigate freeways. Waymo's Jaguar I-Pace robotaxis were first allowed to hit freeways in Phoenix in 2024, first with employees then paying customers. The company is reportedly working on a fix and has \"restricted freeway driving,\" the NHTSA safety notice states. Waymo recalls over 3,800 robotaxis that might drive onto closed freeways The company is working on a fix and has restricted freeway driving. Waymo is recalling over 3,800 of its self-driving taxis due to a software issue that could cause them to enter closed freeway construction zones at speed, according to a National Highway Traffic Safety Admininstration (NHTSA) bulletin seen by Reuters .",
+      "what_happened": "The company released a video at the time showing how its vehicle would navigate freeways. Waymo's Jaguar I-Pace robotaxis were first allowed to hit freeways in Phoenix in 2024, first with employees then paying customers.",
+      "why_matters": "The company is reportedly working on a fix and has \"restricted freeway driving,\" the NHTSA safety notice states. Waymo recalls over 3,800 robotaxis that might drive onto closed freeways The company is working on a fix and has restricted freeway driving.",
+      "what_to_watch": "Waymo is recalling over 3,800 of its self-driving taxis due to a software issue that could cause them to enter closed freeway construction zones at speed, according to a National Highway Traffic Safety Admininstration (NHTSA) bulletin seen by Reuters .",
+      "key_points": [
+        "The company released a video at the time showing how its vehicle would navigate freeways.",
+        "Waymo's Jaguar I-Pace robotaxis were first allowed to hit freeways in Phoenix in 2024, first with employees then paying customers.",
+        "The company is reportedly working on a fix and has \"restricted freeway driving,\" the NHTSA safety notice states.",
+        "Waymo recalls over 3,800 robotaxis that might drive onto closed freeways The company is working on a fix and has restricted freeway driving.",
+        "Waymo is recalling over 3,800 of its self-driving taxis due to a software issue that could cause them to enter closed freeway construction zones at speed, according to a National Highway Traffic Safety Admininstration.",
+        "On its safety impact page , Waymo says its vehicles have been involved in 92 percent fewer \"serious injury or worse\" crashes compared to human drivers and 92 percent fewer pedestrian crashes.",
+        "Prior to that, the fleet was recalled for a particularly dangerous situation when some of its robotaxis were seen failing to stop for school buses that had their stop signs and flashing lights deployed.",
+        "This is the second recall for the Alphabet-owned robotaxi company in a bit more than a month.",
+        "Fortunately, no one was injured as the taxi was unoccupied, but the vehicle was swept away by the flood.",
+        "Prior to that, the cars could only run on highways with a safety driver aboard.",
+        "It's not known if Waymo had an incident that prompted the recall.",
+        "Back in May, Waymo recalled 3,791 robotaxis after a vehicle drove onto a flood road in San Antonio."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/362a5c54320a41b8.jpg",
+      "image_url": "https://www.engadget.com/img/gallery/waymo-recalls-3800-robotaxis-that-might-drive-onto-closed-freeways/intro-1781780591.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://huggingface.co/blog/is-it-agentic-enough",
+      "title": "Is it agentic enough? Benchmarking open models on your own tooling",
+      "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "excerpt": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "summary": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "what_happened": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c779716065626cf1.png",
+      "image_url": "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/is-it-agentic-enough/img_6.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/ceqdrw2yy3vo?at_medium=RSS&at_campaign=rss",
+      "title": "Jeff Bezos says AI will create more jobs at VivaTech Paris",
+      "description": "The Amazon founder, who now has robotics and space travel companies, thinks AI will create a labour shortage.",
+      "excerpt": "The Amazon founder, who now has robotics and space travel companies, thinks AI will create a labour shortage.",
+      "summary": "The Amazon founder, who now has robotics and space travel companies, thinks AI will create a labour shortage.",
+      "what_happened": "The Amazon founder, who now has robotics and space travel companies, thinks AI will create a labour shortage.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The Amazon founder, who now has robotics and space travel companies, thinks AI will create a labour shortage."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7b17deaf907550da.webp",
+      "image_url": "https://ichef.bbci.co.uk/news/480/cpsprodpb/d50d/live/e62d0850-6a68-11f1-8546-8f19e4fe30f4.png.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2196998/midjourney-full-body-ultrasonic-scanner/",
+      "title": "Midjourney, the AI image generator, is developing a full-body ultrasonic scanner - Engadget",
+      "description": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "excerpt": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "summary": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "what_happened": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9cc2b344f3a13eeb.jpg",
+      "image_url": "https://img1.zergnet.com/8768660_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/jun/18/ai-threatens-gig-work-rise",
+      "title": "Gig workers are endlessly exploited. AI could make more of us share their fate",
+      "description": "As companies integrate AI and hire fewer employees, a shift toward a \u2018gig economy\u2019 will commence",
+      "excerpt": "As companies integrate AI and hire fewer employees, a shift toward a \u2018gig economy\u2019 will commence",
+      "summary": "As companies integrate AI and hire fewer employees, a shift toward a \u2018gig economy\u2019 will commence",
+      "what_happened": "As companies integrate AI and hire fewer employees, a shift toward a \u2018gig economy\u2019 will commence",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "As companies integrate AI and hire fewer employees, a shift toward a \u2018gig economy\u2019 will commence"
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9d4b741181951702.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/c155ea35b992f33994c7c0d6f6700ac4e7ecbbf1/3_0_2763_2210/master/2763.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=72568c94c740f6910612eed82dc42665",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 7,
+  "has_cta": true,
+  "slides": [
+    "OpenAI is bringing on some big guns in the lead-up.",
+    "SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO.",
+    "Waymo recalls over 3 800 robotaxis that might drive onto closed freeways.",
+    "Is it agentic enough Benchmarking open models on your own tooling.",
+    "Jeff Bezos says AI will create more jobs at VivaTech Paris.",
+    "Gig workers are endlessly exploited AI could make more of us share.",
+    "FOLLOW @graitech"
+  ]
+}
