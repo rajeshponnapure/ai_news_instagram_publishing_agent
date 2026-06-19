@@ -1,0 +1,332 @@
+{
+  "email_received_at": "2026-06-19T16:22+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Introducing Web Search on Amazon Bedrock AgentCore | Amazon Web Services",
+  "subject": "",
+  "source_date": "2026-06-19T16:22:45.599038",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://aws.amazon.com/blogs/machine-learning/introducing-web-search-on-amazon-bedrock-agentcore/",
+  "article_title": "Introducing Web Search on Amazon Bedrock AgentCore | Amazon Web Services",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8f92fb40fb254eeb.png",
+  "article_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/17/ml-21231-image1-new.png",
+  "article_items": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-web-search-on-amazon-bedrock-agentcore/",
+      "title": "Introducing Web Search on Amazon Bedrock AgentCore | Amazon Web Services",
+      "description": "Web Search on Amazon Bedrock AgentCore is now generally available. In this post, we walk through what makes Web Search on Amazon Bedrock AgentCore different, why it matters, and how to wire it in with a few lines of code.",
+      "excerpt": "Web Search on Amazon Bedrock AgentCore is now generally available. In this post, we walk through what makes Web Search on Amazon Bedrock AgentCore different, why it matters, and how to wire it in with a few lines of code.",
+      "summary": "By enabling agents to retrieve and ground their reasoning in live web data, Kalyan\u2019s work directly improves the reliability and accuracy of enterprise AI agents at scale. He leads the development and launch of web search capabilities for Amazon Bedrock AgentCore, tackling a core limitation of modern AI agents: their inability to access real-time, factual information beyond their training data, which leads to outdated responses and hallucinations. It grounds agents in the public web, for questions whose responses live outside your organization and change by the minute. Reasoning about where customer queries travel and how that data might be retained or reused. For many enterprises, the question that stalls a web search rollout isn\u2019t \u201cdoes it work.\u201d It\u2019s \u201cwhere do my users\u2019 queries go, and what happens to them?\u201d Web Search on Amazon Bedrock AgentCore is built so the answers to those questions are simple. Artificial Intelligence Introducing Web Search on Amazon Bedrock.",
+      "what_happened": "By enabling agents to retrieve and ground their reasoning in live web data, Kalyan\u2019s work directly improves the reliability and accuracy of enterprise AI agents at scale. He leads the development and launch of web search capabilities for Amazon Bedrock AgentCore, tackling a core limitation of modern AI agents: their inability to access real-time, factual information beyond their training data, which leads to outdated responses and hallucinations.",
+      "why_matters": "It grounds agents in the public web, for questions whose responses live outside your organization and change by the minute. Reasoning about where customer queries travel and how that data might be retained or reused.",
+      "what_to_watch": "For many enterprises, the question that stalls a web search rollout isn\u2019t \u201cdoes it work.\u201d It\u2019s \u201cwhere do my users\u2019 queries go, and what happens to them?\u201d Web Search on Amazon Bedrock AgentCore is built so the answers to those questions are simple. Artificial Intelligence Introducing Web Search on Amazon Bedrock.",
+      "key_points": [
+        "By enabling agents to retrieve and ground their reasoning in live web data, Kalyan\u2019s work directly improves the reliability and accuracy of enterprise AI agents at scale.",
+        "He leads the development and launch of web search capabilities for Amazon Bedrock AgentCore, tackling a core limitation of modern AI agents: their inability to access real-time, factual information beyond their training.",
+        "Artificial Intelligence Introducing Web Search on Amazon Bedrock AgentCore AI agents are changing how organizations find and act on information, but they share one structural limitation: their knowledge is frozen at.",
+        "The Web Search Tool is the complement.",
+        "When you ask an agent that relies only on its training data about today\u2019s stock price, a sports score, or a release that shipped an hour ago, it can\u2019t respond.",
+        "Many production agents use both: a knowledge base for \u201cwhat do our documents say\u201d and web search for \u201cwhat\u2019s true in the world right now.\u201d At $7 per 1,000 queries, you can run a web-search agent for less than a cent per.",
+        "Where the Web Search Tool fits If you need to ground an agent in your own enterprise data, Amazon Bedrock Knowledge Bases and Amazon Bedrock Managed Knowledge Bases are the right tools.",
+        "The Gateway authenticates to the connector owned by AWS and routes the request internally, so the data path stays inside AWS end to end.",
+        "You can access the Web Search Tool connector today in us-east-1 (US East (N.",
+        "Figure 1: Your application connects to the AgentCore Gateway (AWS Identity and Access Management (IAM) or JSON Web Token (JWT) inbound auth), which routes queries through a managed connector to the Web Search tool in.",
+        "The Amazon Bedrock AgentCore Web Search Tool gives your agents current web knowledge through a single connectorId .",
+        "The Amazon Bedrock AgentCore Gateway and Web Search invocations are billable."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8f92fb40fb254eeb.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/17/ml-21231-image1-new.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "3aa9b053b5aa4d5b89b7e0307e2627e3"
+    },
+    {
+      "url": "https://www.engadget.com/2197051/waymo-recalls-3800-robotaxis-that-might-drive-onto-closed-freeways/",
+      "title": "Waymo recalls over 3,800 robotaxis that might drive onto closed freeways - Engadget",
+      "description": "Waymo is recalling over 3,800 of its self-driving taxis due to a software issue that could cause them to enter closed freeway construction zones at speed.",
+      "excerpt": "Waymo is recalling over 3,800 of its self-driving taxis due to a software issue that could cause them to enter closed freeway construction zones at speed.",
+      "summary": "Waymo is recalling over 3,800 of its self-driving taxis due to a software issue that could cause them to enter closed freeway construction zones at speed.",
+      "what_happened": "Waymo is recalling over 3,800 of its self-driving taxis due to a software issue that could cause them to enter closed freeway construction zones at speed.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Waymo is recalling over 3,800 of its self-driving taxis due to a software issue that could cause them to enter closed freeway construction zones at speed."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/362a5c54320a41b8.jpg",
+      "image_url": "https://www.engadget.com/img/gallery/waymo-recalls-3800-robotaxis-that-might-drive-onto-closed-freeways/intro-1781780591.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "9da9a6fd4c6b40c19eabefa2430bd177"
+    },
+    {
+      "url": "https://www.engadget.com/2197988/amazon-investigates-engineers-spoke-out-against-ai-data-center/",
+      "title": "Amazon is investigating three employees who spoke out against building more AI data centers - Engadget",
+      "description": "The engineers who spoke negatively about AI data centers at Seattle city hearings accuse Amazon of threatening their jobs over their testimonies.",
+      "excerpt": "The engineers who spoke negatively about AI data centers at Seattle city hearings accuse Amazon of threatening their jobs over their testimonies.",
+      "summary": "Company spokesperson Margaret Callahan told the publications in a statement that after reviewing the engineers' testimonies, \"it became clear that they may have been speaking in their capacity as Amazonians and not as private citizens.\" The company is looking into whether there truly was a violation, since Amazon doesn't allow employees to speak as its representatives without following certain procedures. Amazon fired Emily Cunningham and Maren Costa, two of AECJ's original organizers, back in 2020 over criticisms. The former employees sued the company for illegal termination. Now, three of them are apparently under investigation by the company. In addition, they called for the government to put a stop to the industry's plans \"to build out as much compute capacity as they can, as fast as they can, before regulations can catch up.\" The Seattle city council ultimately voted in favor of passing the year-long moratorium on AI data centers for a year.",
+      "what_happened": "Company spokesperson Margaret Callahan told the publications in a statement that after reviewing the engineers' testimonies, \"it became clear that they may have been speaking in their capacity as Amazonians and not as private citizens.\" The company is looking into whether there truly was a violation, since Amazon doesn't allow employees to speak as its representatives without following certain procedures. Amazon fired Emily Cunningham and Maren Costa, two of AECJ's original organizers, back in 2020 over criticisms.",
+      "why_matters": "The former employees sued the company for illegal termination. Now, three of them are apparently under investigation by the company.",
+      "what_to_watch": "In addition, they called for the government to put a stop to the industry's plans \"to build out as much compute capacity as they can, as fast as they can, before regulations can catch up.\" The Seattle city council ultimately voted in favor of passing the year-long moratorium on AI data centers for a year.",
+      "key_points": [
+        "In addition, they called for the government to put a stop to the industry's plans \"to build out as much compute capacity as they can, as fast as they can, before regulations can catch up.\" The Seattle city council.",
+        "The former employees sued the company for illegal termination.",
+        "Amazon is investigating three employees who spoke out against building more AI data centers Five members of Amazon Employees for Climate Justice (AECJ) previously testified at Seattle city council meetings about AI data.",
+        "They reportedly urged the council to add renewable energy requirements and labor protections related to data centers to the city's regulations.",
+        "The engineers who spoke negatively about AI data centers at Seattle city hearings accuse Amazon of threatening their jobs over their testimonies.",
+        "Amazon fired Emily Cunningham and Maren Costa, two of AECJ's original organizers, back in 2020 over criticisms of the company's climate and labor practices.",
+        "The engineers spoke at Seattle city council hearings over whether to put a pause on AI data center buildouts.",
+        "GeekWire says Amazon denied it told the engineers that they were at risk of being terminated over speaking at the hearings.",
+        "In their complaint, the engineers said Amazon called them in separately for a meeting with HR after the hearings and were told that they were being investigated over a concern about their testimonies.",
+        "Amazon settled with them in 2021 and was required to pay their back wages, as well as post a notice to all workers that it can't fire them \"for organizing and exercising their rights.\" Do not sell or share my personal.",
+        "Now, three of them are apparently under investigation by the company.",
+        "Company spokesperson Margaret Callahan told the publications in a statement that after reviewing the engineers' testimonies, \"it became clear that they may have been speaking in their capacity as Amazonians and not as."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/aaaeb8303b06317a.jpg",
+      "image_url": "https://img4.zergnet.com/8755679_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "16a33ee48bb7474da26ecabfee89c286"
+    },
+    {
+      "url": "https://www.engadget.com/2197065/trump-claims-apple-intel-deal-is-done/",
+      "title": "Trump claims Apple and Intel closed deal to manufacture chips in the US - Engadget",
+      "description": "In a Truth Social post, Trump said Apple and Intel have already finalized an agreement to manufacture chips for the former\u2019s devices stateside.",
+      "excerpt": "In a Truth Social post, Trump said Apple and Intel have already finalized an agreement to manufacture chips for the former\u2019s devices stateside.",
+      "summary": "In a Truth Social post, Trump said Apple and Intel have already finalized an agreement to manufacture chips for the former\u2019s devices stateside.",
+      "what_happened": "In a Truth Social post, Trump said Apple and Intel have already finalized an agreement to manufacture chips for the former\u2019s devices stateside.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "In a Truth Social post, Trump said Apple and Intel have already finalized an agreement to manufacture chips for the former\u2019s devices stateside."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/aaaeb8303b06317a.jpg",
+      "image_url": "https://img4.zergnet.com/8755679_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "924c8b705c9e4136b5b223a066529d7b"
+    },
+    {
+      "url": "https://www.engadget.com/2197271/toy-story-5-is-a-surprisingly-thoughtful-critique-of-technology/",
+      "title": "Toy Story 5 is a surprisingly thoughtful critique of technology - Engadget",
+      "description": "Toy Story 5 introduces a tablet as a villain, but it's also smart enough to realize tech isn't always bad. Parents just need to step up.",
+      "excerpt": "Toy Story 5 introduces a tablet as a villain, but it's also smart enough to realize tech isn't always bad. Parents just need to step up.",
+      "summary": "Toy Story 5 introduces a tablet as a villain, but it's also smart enough to realize tech isn't always bad. ( Toy Story 3 must have traumatized an entire generation.) Toy Story 5 isn't nearly as essential as the original trilogy, but at least it's a reminder to parents that they can't just sit back and relax when it comes to tech. While Lilypad stumbles to help Bonnie connect, older toys like Cowgirl Jessie (Joan Cusack) also realize they're out of touch with the way kids play today. The film makes the case that parents need to take a hands-on approach to help kids manage their gadgets, especially when it comes to managing screen time or dealing with bullying. Now that tablets have entered the world of Toy Story , it's unclear where the franchise can go next. ( Toy Story 3 must have traumatized an entire generation.) Toy Story 5 isn't nearly as essential as the original trilogy, but at least it's a reminder to parents that they can't just sit back and relax when it comes to.",
+      "what_happened": "Toy Story 5 introduces a tablet as a villain, but it's also smart enough to realize tech isn't always bad. ( Toy Story 3 must have traumatized an entire generation.) Toy Story 5 isn't nearly as essential as the original trilogy, but at least it's a reminder to parents that they can't just sit back and relax when it comes to tech.",
+      "why_matters": "While Lilypad stumbles to help Bonnie connect, older toys like Cowgirl Jessie (Joan Cusack) also realize they're out of touch with the way kids play today. The film makes the case that parents need to take a hands-on approach to help kids manage their gadgets, especially when it comes to managing screen time or dealing with bullying.",
+      "what_to_watch": "Now that tablets have entered the world of Toy Story , it's unclear where the franchise can go next. ( Toy Story 3 must have traumatized an entire generation.) Toy Story 5 isn't nearly as essential as the original trilogy, but at least it's a reminder to parents that they can't just sit back and relax when it comes to.",
+      "key_points": [
+        "Toy Story 5 introduces a tablet as a villain, but it's also smart enough to realize tech isn't always bad.",
+        "( Toy Story 3 must have traumatized an entire generation.) Toy Story 5 isn't nearly as essential as the original trilogy, but at least it's a reminder to parents that they can't just sit back and relax when it comes to.",
+        "It's hokey, but it works in the context of the film.",
+        "And it's also the reality parents have to live with today.",
+        "Toy Story 5 centers on Bonnie, a young girl struggling to make friends who was gifted Woody, Buzz and Andy's other toys from the first three films.",
+        "The key is moderation and parental supervision.",
+        "Toy Story 5 is a surprisingly thoughtful critique of technology Tablets can introduce problems for kids, but they\u2019re not always bad.",
+        "Toy Story 5 would be even more of an insightful critique if it made room for new types of play.",
+        "It might seem crazy that parents even have to worry about social networking for 8-year-olds, but platforms like Zigazoo and JusTalk Kids already exist.",
+        "Research shows a relationship between managing anxiety and imaginative play in kids, and Toy Story's main cast make convenient messengers for that information.",
+        "Now that tablets have entered the world of Toy Story , it's unclear where the franchise can go next.",
+        "But the film surprised me by finding ways to make room for Lilypad and other new devices."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/aaaeb8303b06317a.jpg",
+      "image_url": "https://img4.zergnet.com/8755679_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "8f47eb009cff4a368e11ac0da7b91084"
+    },
+    {
+      "url": "https://spectrum.ieee.org/amazon-astro-robot-sound",
+      "title": "What Amazon\u2019s Astro Taught Me About Giving Robots a Soul",
+      "description": "Character is the difference between a machine people tolerate and a product people trust",
+      "excerpt": "Character is the difference between a machine people tolerate and a product people trust",
+      "summary": "Therefore, you must launch at least 40 percent more radiator mass, endure higher atmospheric drag, and sacrifice valuable launch volume just to survive the degradation of the thermal coating. It showed that the cost to launch and run a GPU in space for a year is at least an order of magnitude higher than the same feat in a terrestrial data center. When the state faced the most destructive storm in the company\u2019s history, Hurricane Helene, Georgia Power deployed a rapid response team that utilized its \u201csmart grid\u201d and restored power to more than 1 million customers within days. I had been brought on to the Astro team to define the robot\u2019s sound design language and voice. Beyond Dexterity: Why Contact May Define the Next Era of Robotics Two E-Paper Engineers Keep Turning to the Wisdom of the Crowd iRobot Founder Wants to Put a Robotic Familiar Into Your Home Video Friday: This Floor Lamp Will Do Your Chores Why iRobot\u2019s Bankruptcy Was No Surprise to Colin Angle This 1976 University.",
+      "what_happened": "Therefore, you must launch at least 40 percent more radiator mass, endure higher atmospheric drag, and sacrifice valuable launch volume just to survive the degradation of the thermal coating. It showed that the cost to launch and run a GPU in space for a year is at least an order of magnitude higher than the same feat in a terrestrial data center.",
+      "why_matters": "When the state faced the most destructive storm in the company\u2019s history, Hurricane Helene, Georgia Power deployed a rapid response team that utilized its \u201csmart grid\u201d and restored power to more than 1 million customers within days. I had been brought on to the Astro team to define the robot\u2019s sound design language and voice.",
+      "what_to_watch": "Beyond Dexterity: Why Contact May Define the Next Era of Robotics Two E-Paper Engineers Keep Turning to the Wisdom of the Crowd iRobot Founder Wants to Put a Robotic Familiar Into Your Home Video Friday: This Floor Lamp Will Do Your Chores Why iRobot\u2019s Bankruptcy Was No Surprise to Colin Angle This 1976 University.",
+      "key_points": [
+        "To understand how big this baseline area is in practice, I used the Stefan-Boltzmann law to model the heat-rejection area needed to keep a single chip that draws 700 watts of power - such as the H100 GPU chip, an AI.",
+        "Therefore, you must launch at least 40 percent more radiator mass, endure higher atmospheric drag, and sacrifice valuable launch volume just to survive the degradation of the thermal coating.",
+        "It showed that the cost to launch and run a GPU in space for a year is at least an order of magnitude higher than the same feat in a terrestrial data center.",
+        "This increase adds significantly to the launch cost and further erodes the economics of a space-based data center.",
+        "The federal funds in 1975 allowed Heronemus to really spin up the project and recruit a squad of students to engineer the balance of WF-1\u2019s components.",
+        "We are moving away from the \u201claunch and forget\u201d era toward an era of \u201cautonomous logistics.\u201d As our thermal model demonstrated, the harsh environment of space steadily attacks the hardware.",
+        "To make the economics of orbital computation work, the infrastructure must be serviceable and the rockets to launch them reusable.",
+        "Even as launch costs fall, the mass and cost burden of power generation and thermal management will remain a fundamental problem.",
+        "Our rough total-cost-of-ownership model uses optimistic versions of current numbers, such as launch cost, chip cost, and power use.",
+        "Consider his presentation at the IEEE Power and Energy Society \u2019s 1974 winter meeting, where Heronemus suggested scrapping the utilities\u2019 then nuclear-focused research arm, the Electric Power Research Institute .",
+        "After the story was written, sound gave that story a metaphorical voice: the excited tones, the pacing as it checked its wheels, and the bright melodic phrase as Astro looked up at its new family for the first time and.",
+        "Finally, they integrated their device to the light-feed of the Dunn Solar Telescope and recorded snapshots of the sun."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5953c3470a0da519.img",
+      "image_url": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202000%202990'%3E%3C/svg%3E",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "a9fb57315cd14e7d89560ed42c92545d"
+    },
+    {
+      "url": "https://www.engadget.com/2197972/valve-steam-controller-2027-shipping/",
+      "title": "Are you prepared to wait until 2027 for a Steam Controller? - Engadget",
+      "description": "In an update, Valve says it may not ship some Steam Controller orders until next year.",
+      "excerpt": "In an update, Valve says it may not ship some Steam Controller orders until next year.",
+      "summary": "In fact, Valve has announced that any fresh orders for the gamepad may not be delivered until 2027, although you would hope things would ease up by then. In an update, Valve says it may not ship some Steam Controller orders until next year. Of course, the same statement does say that the company will try to get as many devices out as it is able to achieve. \"Initial demand exceeded our expectations,\" wrote an unnamed company spokesperson after a heavy sip of understatement juice. The present deadlines are September 2026 and December 2026, with additional orders expected \"In 2027.\" If you're unfamiliar, the Steam Controller is Valve's latest proprietary gamepad designed to work exclusively with Steam.",
+      "what_happened": "In fact, Valve has announced that any fresh orders for the gamepad may not be delivered until 2027, although you would hope things would ease up by then. In an update, Valve says it may not ship some Steam Controller orders until next year.",
+      "why_matters": "Of course, the same statement does say that the company will try to get as many devices out as it is able to achieve. \"Initial demand exceeded our expectations,\" wrote an unnamed company spokesperson after a heavy sip of understatement juice.",
+      "what_to_watch": "The present deadlines are September 2026 and December 2026, with additional orders expected \"In 2027.\" If you're unfamiliar, the Steam Controller is Valve's latest proprietary gamepad designed to work exclusively with Steam.",
+      "key_points": [
+        "In fact, Valve has announced that any fresh orders for the gamepad may not be delivered until 2027, although you would hope things would ease up by then.",
+        "The present deadlines are September 2026 and December 2026, with additional orders expected \"In 2027.\" If you're unfamiliar, the Steam Controller is Valve's latest proprietary gamepad designed to work exclusively with.",
+        "In an update, Valve says it may not ship some Steam Controller orders until next year.",
+        "Are you prepared to wait until 2027 for a Steam Controller?",
+        "\"As we look at the current demand compared to how many we know we can make by the end of the year, we cant to manage expectations as much as we can,\" they added.",
+        "Steam Controllers have been effectively sold out since the moment they went on sale, and there's no sign the supply crunch is going to ease up.",
+        "Of course, the same statement does say that the company will try to get as many devices out as it is able to achieve.",
+        "The only downside, really, is that it's designed specifically to work just with Steam, rather than as a generic PC gamepad, as part of Valve's quest to maintain dominance.",
+        "Users who have already ordered a device can check the relevant page on Steam to learn when their order will be fulfilled.",
+        "But it's worth bearing these delays in mind given Valve is also pledging to get its Steam Machine PC/console and Steam Frame headset into people's homes this summer.",
+        "Engadget's Jessica Conditt reviewed it back in April, and said it was a sturdy and sleek gamepad with high-end TMR thumbsticks.",
+        "Do not sell or share my personal information."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/01ca60d4c21144dc.jpg",
+      "image_url": "https://www.engadget.com/img/gallery/are-you-prepared-to-wait-until-2027-for-a-steam-controller/intro-1781862767.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "fe617939886b43b2828bba1d2889e4d7"
+    },
+    {
+      "url": "https://www.engadget.com/2198001/amazon-mgm-wont-release-sam-altman-biopic/",
+      "title": "Amazon won't release Sam Altman biopic focused on OpenAI's 2023 leadership crisis - Engadget",
+      "description": "Luca Guadagnino\u2019s Sam Altman biopic has to find a new studio after Amazon dropped it.",
+      "excerpt": "Luca Guadagnino\u2019s Sam Altman biopic has to find a new studio after Amazon dropped it.",
+      "summary": "Amazon won't release Sam Altman biopic focused on OpenAI's 2023 leadership crisis Apropos of nothing, in February, Amazon invested $50 billion in OpenAI. \"We believe that Artificial will be better served if it were released by a different studio and are working closely with the filmmaking team to find the film a new home.\" Five months after reports came out that Amazon was developing a film about Sam Altman, OpenAI signed a $38 billion multi-year cloud contract with Amazon. Amazon MGM Studios has reportedly dropped the Sam Altman biopic Artificial , even though it's nearly finished, after the company deepened its partnership with OpenAI. Amazon invested $50 billion into OpenAI, and they closed another deal for AWS to run OpenAI models for enterprise customers. It gives OpenAI access to \"thousands\" of NVIDIA GB200 and GB300 GPUs through Amazon Web Services for inference and training its next-generation models. Amazon invested $50 billion into OpenAI, and they closed another deal for AWS to run OpenAI models for enterprise customers.",
+      "what_happened": "Amazon won't release Sam Altman biopic focused on OpenAI's 2023 leadership crisis Apropos of nothing, in February, Amazon invested $50 billion in OpenAI. \"We believe that Artificial will be better served if it were released by a different studio and are working closely with the filmmaking team to find the film a new home.\" Five months after reports came out that Amazon was developing a film about Sam Altman, OpenAI signed a $38 billion multi-year cloud contract with Amazon.",
+      "why_matters": "Amazon MGM Studios has reportedly dropped the Sam Altman biopic Artificial , even though it's nearly finished, after the company deepened its partnership with OpenAI. Amazon invested $50 billion into OpenAI, and they closed another deal for AWS to run OpenAI models for enterprise customers.",
+      "what_to_watch": "It gives OpenAI access to \"thousands\" of NVIDIA GB200 and GB300 GPUs through Amazon Web Services for inference and training its next-generation models. Amazon invested $50 billion into OpenAI, and they closed another deal for AWS to run OpenAI models for enterprise customers.",
+      "key_points": [
+        "Amazon won't release Sam Altman biopic focused on OpenAI's 2023 leadership crisis Apropos of nothing, in February, Amazon invested $50 billion in OpenAI.",
+        "\"We believe that Artificial will be better served if it were released by a different studio and are working closely with the filmmaking team to find the film a new home.\" Five months after reports came out that Amazon.",
+        "Amazon invested $50 billion into OpenAI, and they closed another deal for AWS to run OpenAI models for enterprise customers.",
+        "It gives OpenAI access to \"thousands\" of NVIDIA GB200 and GB300 GPUs through Amazon Web Services for inference and training its next-generation models.",
+        "Artificial revolves around Altman's controversial firing and reinstatement as CEO of OpenAI back in 2023.",
+        "In February this year, the companies expanded their partnership .",
+        "Variety says the film portrayed Altman and Musk as the least sympathetic characters in the story.",
+        "Amazon MGM Studios has reportedly dropped the Sam Altman biopic Artificial , even though it's nearly finished, after the company deepened its partnership with OpenAI.",
+        "Luca Guadagnino\u2019s Sam Altman biopic has to find a new studio after Amazon dropped it.",
+        "Amazon had a copy of all iterations of the script even before Guadagnino joined the project, so it knew what kind of film it was greenlighting and even fast-tracking last year.",
+        "The film had already been screened for other companies, but it's not clear yet which studio fancies painting the head of OpenAI in a negative light.",
+        "\"We have the utmost respect and admiration for Luca Guadagnino as an award-winning filmmaker - not to mention a longstanding relationship that we hope to continue,\" a spokesperson told the publication."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0d3477c928c8664b.jpg",
+      "image_url": "https://www.engadget.com/img/gallery/amazon-reportedly-dropped-sam-altman-movie-about-2023-openai-boardroom-drama/intro-1781873568.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "b5e1b163576c4972a4e07f06fdbe8192"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 7,
+  "has_cta": true,
+  "slides": [
+    "Introducing Web Search on Amazon Bedrock AgentCore.",
+    "Amazon is investigating three employees who spoke out against building more AI.",
+    "Toy Story 5 is a surprisingly thoughtful critique of technology.",
+    "The federal funds in 1975 allowed Heronemus to really spin up.",
+    "Are you prepared to wait until 2027 for a Steam Controller.",
+    "Amazon won't release Sam Altman biopic focused on OpenAI's 2023 leadership crisis.",
+    "FOLLOW @graitech"
+  ]
+}
