@@ -1,0 +1,27 @@
+The company also claims that SubQ is able to process up to 12 times as much text at once than most other model matters.
+
+Swipe for the full breakdown.
+
+- On LiveCodeBench, a test that looks at how well models perform on competitive coding problems taken from real.
+- One nagging issue is that Subquadratic reused the weights ( values set within a model during training.
+- The company also claims that SubQ is able to process up to 12 times as much text.
+- Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits.
+- In a straight-up speed test, which sets a baseline for how fast a model can operate in theory.
+
+Which industry do you think will feel the impact of this first?
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/
+- https://www.gsmarena.com/google_home_speaker_with_gemini_finally_has_an_official_release_date_preorders_start-news-73324.php
+- https://www.engadget.com/2197051/waymo-recalls-3800-robotaxis-that-might-drive-onto-closed-freeways/
+- https://www.engadget.com/2197065/trump-claims-apple-intel-deal-is-done/
+- https://www.helpnetsecurity.com/2026/06/18/aws-continuum-for-code-vulnerabilities/
+
+#LargeLanguageModels #LLMNews #LanguageModels #AIRegulation #TechLaw #AITools #ProductivityAI #AIProductivity #OpenAI #ChatGPT #GoogleAI #Gemini #AIUpdates #ArtificialIntelligence #FutureOfAI #TechTrends #AI #MachineLearning #DataScience #AIExplained
+
+-
+This is not legal advice. Consult a qualified professional for guidance.
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-

@@ -1,0 +1,280 @@
+{
+  "email_received_at": "2026-06-19T04:10-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "A startup claims it broke through a bottleneck that\u2019s holding back LLMs",
+  "subject": "\ud83d\udea8 AI Alert: 73 new launches \u2014 CNBC Technology, Bloomberg Tech",
+  "source_date": "Fri, 19 Jun 2026 04:10:29 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Apple",
+    "AWS",
+    "NVIDIA",
+    "Intel"
+  ],
+  "models": [
+    "Gemini"
+  ],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/",
+  "article_title": "A startup claims it broke through a bottleneck that\u2019s holding back LLMs",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a8f56b4a615d939d.jpg",
+  "article_image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/06/cheetah-speed2a.jpg",
+  "article_items": [
+    {
+      "url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/",
+      "title": "A startup claims it broke through a bottleneck that\u2019s holding back LLMs",
+      "description": "Subquadratic has now shared more details about its new model. But some are still skeptical.",
+      "excerpt": "Subquadratic has now shared more details about its new model. But some are still skeptical.",
+      "summary": "The company also claims that SubQ is able to process up to 12 times as much text at once than most other models, allowing it to carry out a range of data-heavy tasks, such as analyzing hundreds of documents or entire code bases. It announced that it had solved a mathematical bottleneck that had been holding back large language models for almost a decade. These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI\u2019s models Musk kept his cool, and OpenAI\u2019s lawyer bulldozed him with piercing questions about his motivations for suing the company. Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI\u2019s models Michelle Kim China has approved the world\u2019s first invasive brain-computer chip - here\u2019s what\u2019s next You Xiaoying Artificial intelligence 10 Things That Matter in AI Right Now MIT Technology Review's.",
+      "what_happened": "The company also claims that SubQ is able to process up to 12 times as much text at once than most other models, allowing it to carry out a range of data-heavy tasks, such as analyzing hundreds of documents or entire code bases. It announced that it had solved a mathematical bottleneck that had been holding back large language models for almost a decade.",
+      "why_matters": "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI\u2019s models Musk kept his cool, and OpenAI\u2019s lawyer bulldozed him with piercing questions about his motivations for suing the company.",
+      "what_to_watch": "Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI\u2019s models Michelle Kim China has approved the world\u2019s first invasive brain-computer chip - here\u2019s what\u2019s next You Xiaoying Artificial intelligence 10 Things That Matter in AI Right Now MIT Technology Review's.",
+      "key_points": [
+        "On LiveCodeBench, a test that looks at how well models perform on competitive coding problems taken from real contests, SubQ scored 89.7%, putting it in the same ballpark as other top coding models .",
+        "One nagging issue is that Subquadratic reused the weights ( values set within a model during training that determine how it will behave ) from a version of the Chinese open-source model Qwen to bootstrap SubQ, rather.",
+        "The company also claims that SubQ is able to process up to 12 times as much text at once than most other models, allowing it to carry out a range of data-heavy tasks, such as analyzing hundreds of documents or entire.",
+        "Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI\u2019s models Michelle Kim China has approved the world\u2019s first invasive brain-computer chip - here\u2019s what\u2019s next.",
+        "In a straight-up speed test, which sets a baseline for how fast a model can operate in theory rather than assess what a model can actually do, Appen found that SubQ was 56 times faster than models using FlashAttention.",
+        "According to Dangel, it costs $2600 to run Anthropic's LLM Opus 4.6 through RULER 128, a test developed by Nvidia to assess a model's ability to retrieve information from large data sets.",
+        "Subquadratic is offering SubQ as a model tailored to coding and to searching very large data sets.",
+        "As the length of the text increases, the number of computations skyrockets.",
+        "Dan McAteer, an artificial intelligence engineer, captured the overall response on X : \u201cSubQ is either the biggest breakthrough since the Transformer ...",
+        "It announced that it had solved a mathematical bottleneck that had been holding back large language models for almost a decade.",
+        "The model has a context window (roughly akin to a working memory) up to 12 million tokens long.",
+        "What\u2019s more, Subquadratic says, SubQ does this while more or less matching the performance of the best models put out by Google DeepMind, OpenAI, and Anthropic on key tasks like coding."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a8f56b4a615d939d.jpg",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/06/cheetah-speed2a.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.gsmarena.com/google_home_speaker_with_gemini_finally_has_an_official_release_date_preorders_start-news-73324.php",
+      "title": "Google Home Speaker with Gemini finally has an official release date, pre-orders start",
+      "description": "The price hasn't changed, thankfully. Back in August of last year, during the introduction of the Pixel 10 family, Google also teased an upcoming smart...",
+      "excerpt": "The price hasn't changed, thankfully. Back in August of last year, during the introduction of the Pixel 10 family, Google also teased an upcoming smart...",
+      "summary": "Back in August of last year, during the introduction of the Pixel 10 family, Google also teased an upcoming smart... The price hasn't changed, thankfully. The price hasn't changed, thankfully. The price hasn't changed, thankfully.",
+      "what_happened": "Back in August of last year, during the introduction of the Pixel 10 family, Google also teased an upcoming smart... The price hasn't changed, thankfully.",
+      "why_matters": "The price hasn't changed, thankfully.",
+      "what_to_watch": "The price hasn't changed, thankfully.",
+      "key_points": [
+        "Back in August of last year, during the introduction of the Pixel 10 family, Google also teased an upcoming smart...",
+        "The price hasn't changed, thankfully."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9d3195091cd9cc57.jpg",
+      "image_url": "https://fdn.gsmarena.com/imgroot/news/26/06/google-home-speaker-release-date/inline/-1200/gsmarena_001.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2197051/waymo-recalls-3800-robotaxis-that-might-drive-onto-closed-freeways/",
+      "title": "Waymo recalls over 3,800 robotaxis that might drive onto closed freeways - Engadget",
+      "description": "Waymo is recalling over 3,800 of its self-driving taxis due to a software issue that could cause them to enter closed freeway construction zones at speed.",
+      "excerpt": "Waymo is recalling over 3,800 of its self-driving taxis due to a software issue that could cause them to enter closed freeway construction zones at speed.",
+      "summary": "Waymo is recalling over 3,800 of its self-driving taxis due to a software issue that could cause them to enter closed freeway construction zones at speed.",
+      "what_happened": "Waymo is recalling over 3,800 of its self-driving taxis due to a software issue that could cause them to enter closed freeway construction zones at speed.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Waymo is recalling over 3,800 of its self-driving taxis due to a software issue that could cause them to enter closed freeway construction zones at speed."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/362a5c54320a41b8.jpg",
+      "image_url": "https://www.engadget.com/img/gallery/waymo-recalls-3800-robotaxis-that-might-drive-onto-closed-freeways/intro-1781780591.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2197065/trump-claims-apple-intel-deal-is-done/",
+      "title": "Trump claims Apple and Intel closed deal to manufacture chips in the US - Engadget",
+      "description": "In a Truth Social post, Trump said Apple and Intel have already finalized an agreement to manufacture chips for the former\u2019s devices stateside.",
+      "excerpt": "In a Truth Social post, Trump said Apple and Intel have already finalized an agreement to manufacture chips for the former\u2019s devices stateside.",
+      "summary": "In a Truth Social post, Trump said Apple and Intel have already finalized an agreement to manufacture chips for the former\u2019s devices stateside.",
+      "what_happened": "In a Truth Social post, Trump said Apple and Intel have already finalized an agreement to manufacture chips for the former\u2019s devices stateside.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "In a Truth Social post, Trump said Apple and Intel have already finalized an agreement to manufacture chips for the former\u2019s devices stateside."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/aaaeb8303b06317a.jpg",
+      "image_url": "https://img4.zergnet.com/8755679_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.helpnetsecurity.com/2026/06/18/aws-continuum-for-code-vulnerabilities/",
+      "title": "AWS Continuum brings AI models to code vulnerability management - Help Net Security",
+      "description": "AWS Continuum for code vulnerabilities enters gated preview, using frontier AI models to find, prioritize, validate, and fix code flaws.",
+      "excerpt": "AWS Continuum for code vulnerabilities enters gated preview, using frontier AI models to find, prioritize, validate, and fix code flaws.",
+      "summary": "AWS Continuum for code vulnerabilities enters gated preview, using frontier AI models to find, prioritize, validate, and fix code flaws.",
+      "what_happened": "AWS Continuum for code vulnerabilities enters gated preview, using frontier AI models to find, prioritize, validate, and fix code flaws.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "AWS Continuum for code vulnerabilities enters gated preview, using frontier AI models to find, prioritize, validate, and fix code flaws."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ce5dfb4615888dcb.webp",
+      "image_url": "https://img.helpnetsecurity.com/wp-content/uploads/2026/06/18062330/aws-1500.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/jun/18/california-billionaire-tax-ballot-tech-opposition",
+      "title": "California \u2018billionaire tax\u2019 makes ballot despite opposition from tech moguls",
+      "description": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "excerpt": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "summary": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "what_happened": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn"
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e54963f129a234ea.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/38e509e5c6cebd21b697c28446bba95920578c09/305_0_3560_2848/master/3560.jpg?width=465&dpr=1&s=none&crop=none",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2196998/midjourney-full-body-ultrasonic-scanner/",
+      "title": "Midjourney, the AI image generator, is developing a full-body ultrasonic scanner - Engadget",
+      "description": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "excerpt": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "summary": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "what_happened": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9cc2b344f3a13eeb.jpg",
+      "image_url": "https://img1.zergnet.com/8768660_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2196902/tim-cook-says-apple-price-increases-are-unavoidable-due-to-memory-crunch/",
+      "title": "Tim Cook says Apple price increases are 'unavoidable' due to memory crunch - Engadget",
+      "description": "RAMaggedon claims another one.",
+      "excerpt": "RAMaggedon claims another one.",
+      "summary": "RAMaggedon claims another one.",
+      "what_happened": "RAMaggedon claims another one.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "RAMaggedon claims another one."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/aaaeb8303b06317a.jpg",
+      "image_url": "https://img4.zergnet.com/8755679_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 7,
+  "has_cta": true,
+  "slides": [
+    "A startup claims it broke through a bottleneck that's holding back LLMs.",
+    "Google Home Speaker with Gemini finally has an official release date pre-orders.",
+    "Waymo recalls over 3 800 robotaxis that might drive onto closed freeways.",
+    "Trump claims Apple and Intel closed deal to manufacture chips.",
+    "AWS Continuum brings AI models to code vulnerability management.",
+    "Tim Cook says Apple price increases are unavoidable' due to memory crunch.",
+    "FOLLOW @graitech"
+  ]
+}
