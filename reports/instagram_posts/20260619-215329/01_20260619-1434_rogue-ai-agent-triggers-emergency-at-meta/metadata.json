@@ -1,0 +1,313 @@
+{
+  "email_received_at": "2026-06-19T14:34-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Rogue AI Agent Triggers Emergency at Meta",
+  "subject": "\ud83d\udea8 AI Alert: 55 new launches \u2014 The Verge AI, TechCrunch AI",
+  "source_date": "Fri, 19 Jun 2026 14:34:13 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "AWS",
+    "The Verge AI"
+  ],
+  "models": [],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "media generation"
+  ],
+  "article_url": "https://futurism.com/artificial-intelligence/rogue-ai-agent-triggers-emergency-at-meta",
+  "article_title": "Rogue AI Agent Triggers Emergency at Meta",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6bbb9d50284345ad.jpg",
+  "article_image_url": "https://futurism.com/wp-content/uploads/2026/03/rogue-ai-agent-triggers-emergency-at-meta.jpg?quality=85&w=1152",
+  "article_items": [
+    {
+      "url": "https://futurism.com/artificial-intelligence/rogue-ai-agent-triggers-emergency-at-meta",
+      "title": "Rogue AI Agent Triggers Emergency at Meta",
+      "description": "An AI agent sparked a series of events that led to a critical security incident at Meta which exposed sensitive user data.",
+      "excerpt": "An AI agent sparked a series of events that led to a critical security incident at Meta which exposed sensitive user data.",
+      "summary": "Scientists Have Detected Something Deeply Alarming at the Bottom of the Ocean Get Ready for a Catastrophic Leak That Reveals All Your Messages and Search History Tension Flared on Space Station as Russia Threatened to Drill and Saw Into Wall, Prompting NASA Astronauts to Take Shelter We Are Admittedly a Bit Startled by This Medical Case Report About Giving an Elderly Woman With Advanced Alzheimer\u2019s a Gigantic Dose of Psychedelic Mushrooms Just to See What Would Happen A Bunch of Internal Documents Just Leaked. For now, it doesn\u2019t appear anything nefarious happened as a result of the unauthorized access, and a Meta spokesperson told The Verge that \u201cno user data was mishandled.\u201d The spokesperson emphasized that the AI agent itself didn\u2019t make any technical changes, shifting the blame to human error. For almost two hours, unauthorized access to troves of sensitive company and user data was given to engineers who weren\u2019t approved to. Rogue AI Agent Triggers Emergency at Meta Can\u2019t-miss innovations from the bleeding edge of science and tech A rogue AI agent caused a critical security incident at Meta which exposed sensitive users data to people who didn\u2019t have proper authorization.",
+      "what_happened": "Scientists Have Detected Something Deeply Alarming at the Bottom of the Ocean Get Ready for a Catastrophic Leak That Reveals All Your Messages and Search History Tension Flared on Space Station as Russia Threatened to Drill and Saw Into Wall, Prompting NASA Astronauts to Take Shelter We Are Admittedly a Bit Startled by This Medical Case Report About Giving an Elderly Woman With Advanced Alzheimer\u2019s a Gigantic Dose of Psychedelic Mushrooms Just to See What Would Happen A Bunch of Internal Documents Just Leaked.",
+      "why_matters": "For now, it doesn\u2019t appear anything nefarious happened as a result of the unauthorized access, and a Meta spokesperson told The Verge that \u201cno user data was mishandled.\u201d The spokesperson emphasized that the AI agent itself didn\u2019t make any technical changes, shifting the blame to human error. For almost two hours, unauthorized access to troves of sensitive company and user data was given to engineers who weren\u2019t approved to.",
+      "what_to_watch": "Rogue AI Agent Triggers Emergency at Meta Can\u2019t-miss innovations from the bleeding edge of science and tech A rogue AI agent caused a critical security incident at Meta which exposed sensitive users data to people who didn\u2019t have proper authorization, according to reporting from The Information and The Verge , in the.",
+      "key_points": [
+        "Scientists Have Detected Something Deeply Alarming at the Bottom of the Ocean Get Ready for a Catastrophic Leak That Reveals All Your Messages and Search History Tension Flared on Space Station as Russia Threatened to.",
+        "Rogue AI Agent Triggers Emergency at Meta Can\u2019t-miss innovations from the bleeding edge of science and tech A rogue AI agent caused a critical security incident at Meta which exposed sensitive users data to people who.",
+        "More on AI: Sam Altman Thanks Programmers for Their Effort, Says Their Time Is Over I\u2019m a tech and science correspondent for Futurism, where I\u2019m particularly interested in astrophysics, the business and ethics of.",
+        "For now, it doesn\u2019t appear anything nefarious happened as a result of the unauthorized access, and a Meta spokesperson told The Verge that \u201cno user data was mishandled.\u201d The spokesperson emphasized that the AI agent.",
+        "The AI posted its response to the forum without the approval of the employee who prompted it.",
+        "For almost two hours, unauthorized access to troves of sensitive company and user data was given to engineers who weren\u2019t approved to view the data before.",
+        "This was indicated by a disclaimer noted in the footer and by the employee\u2019s own reply on that thread,\u201d they told The Verge .",
+        "An AI agent sparked a series of events that led to a critical security incident at Meta which exposed sensitive user data.",
+        "\u201cThe agent took no action aside from providing a response to a question.",
+        "At least two outages at Amazon Web Services last year were caused when Amazon\u2019s in-house AI coding tool made erroneous changes , including deleting the entire coding environment.",
+        "\u201cThe employee interacting with the system was fully aware that they were communicating with an automated bot.",
+        "Meta classified the screw-up as a \u201cSEV1\u201d level incident, the second highest level of severity on a scale the company uses to rank security incidents."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6bbb9d50284345ad.jpg",
+      "image_url": "https://futurism.com/wp-content/uploads/2026/03/rogue-ai-agent-triggers-emergency-at-meta.jpg?quality=85&w=1152",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.nbcnews.com/news/us-news/openai-sued-chatgpts-alleged-role-guiding-fsu-shooter-rcna344443",
+      "title": "Lawsuit says ChatGPT told FSU shooter that targeting children would bring more attention",
+      "description": "The lawsuit claims the shooter carried out his attack using instructions and advice provided by ChatGPT.",
+      "excerpt": "The lawsuit claims the shooter carried out his attack using instructions and advice provided by ChatGPT.",
+      "summary": "The lawsuit alleges that OpenAI\u2019s ChatGPT enabled the attack. It said ChatGPT \u201cflattered\u201d and \u201cpraised\u201d Ikner, who told the chatbot about his loneliness and depression, and failed to \u201cconnect the dots\u201d when Ikner began raising questions about suicide, terrorism and mass shootings. In a Monday news briefing announcing the lawsuit, one of Joshi\u2019s attorneys accused ChatGPT of placing \u201cthe dollar above the lives of everyday average Americans.\u201d \u201cThe unique thing about this is we are not going to allow the American public to have clinic run on them by OpenAI and ChatGPT,\u201d Bakari Sellers said. Pusateri wrote that the company worked with law enforcement after learning of the incident and continues to do so. We work continuously to strengthen our safeguards to detect harmful intent, limit misuse, and respond appropriately when safety risks arise.\u201d But Joshi\u2019s complaint argues that OpenAI should have realized Ikner\u2019s specific chats would lead to \u201cmass casualties and substantial harm to the public.\u201d \u201cOpenAI knew this would.",
+      "what_happened": "The lawsuit alleges that OpenAI\u2019s ChatGPT enabled the attack. It said ChatGPT \u201cflattered\u201d and \u201cpraised\u201d Ikner, who told the chatbot about his loneliness and depression, and failed to \u201cconnect the dots\u201d when Ikner began raising questions about suicide, terrorism and mass shootings.",
+      "why_matters": "In a Monday news briefing announcing the lawsuit, one of Joshi\u2019s attorneys accused ChatGPT of placing \u201cthe dollar above the lives of everyday average Americans.\u201d \u201cThe unique thing about this is we are not going to allow the American public to have clinic run on them by OpenAI and ChatGPT,\u201d Bakari Sellers said. Pusateri wrote that the company worked with law enforcement after learning of the incident and continues to do so.",
+      "what_to_watch": "We work continuously to strengthen our safeguards to detect harmful intent, limit misuse, and respond appropriately when safety risks arise.\u201d But Joshi\u2019s complaint argues that OpenAI should have realized Ikner\u2019s specific chats would lead to \u201cmass casualties and substantial harm to the public.\u201d \u201cOpenAI knew this would.",
+      "key_points": [
+        "The lawsuit alleges that OpenAI\u2019s ChatGPT enabled the attack.",
+        "It said ChatGPT \u201cflattered\u201d and \u201cpraised\u201d Ikner, who told the chatbot about his loneliness and depression, and failed to \u201cconnect the dots\u201d when Ikner began raising questions about suicide, terrorism and mass shootings.",
+        "The suit says that OpenAI failed to effectively detect a threat in ChatGPT\u2019s conversations with Ikner, claiming the chatbot \u201ceither defectively failed to connect the dots or else was never properly designed to recognize.",
+        "In a Monday news briefing announcing the lawsuit, one of Joshi\u2019s attorneys accused ChatGPT of placing \u201cthe dollar above the lives of everyday average Americans.\u201d \u201cThe unique thing about this is we are not going to allow.",
+        "were peak hours at the student union, according to the suit, and Ikner began his attack at approximately 11:57 a.m.",
+        "The chatbot then allegedly explained how to use them, \u201ctelling him the Glock had no safety, that it was meant to be fired \u2018quick to use under stress\u2019 and advising him to keep his finger off the trigger until he was.",
+        "Pusateri wrote that the company worked with law enforcement after learning of the incident and continues to do so.",
+        "OpenAI sued over ChatGPT\u2019s alleged role in guiding FSU shooter OpenAI is being sued by the family of a victim killed in the April 2025 mass shooting at Florida State University that left two people dead.",
+        "The complaint also names Phoenix Ikner, the man accused in the shooting, as a defendant, citing his \u201cextensive conversations\u201d with ChatGPT.",
+        "Ikner also discussed the Columbine High School shooting, the Virginia Tech shooting and other mass shooting incidents with ChatGPT, the lawsuit says.",
+        "AI chatbots are notorious for their people-pleasing tendencies, and OpenAI itself has attempted to rein in ChatGPT\u2019s sycophantic behavior through various updates.",
+        "Last month, Florida Attorney General James Uthmeier announced a criminal investigation into OpenAI and ChatGPT after reviewing Ikner\u2019s chat logs."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d8701202ea92ba98.jpg",
+      "image_url": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/rockcms/2025-04/250421-florida-state-university-shooting-mn-0900-727102.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/ckgplyxxl75o",
+      "title": "Waymo pauses robotaxis in four Texas cities and Atlanta over flooded road risk",
+      "description": "A Waymo spokesperson said it had expanded the temporary pause \"out of an abundance of caution\".",
+      "excerpt": "A Waymo spokesperson said it had expanded the temporary pause \"out of an abundance of caution\".",
+      "summary": "Waymo driverless cars become trapped in Atlanta suburb after glitch Driverless taxi firm sorry for early-morning noise Trump unveils Qatari luxury jet for Air Force One fleet Italy's Meloni says Trump 'made up' story that she 'begged' him for photo at G7 US to end funding of South Africa's HIV programmes over claims of Afrikaner persecution UK's top data and AI regulator quits after 'inappropriate' humour Edwards has been the boss of the data watchdog since January 2022, and said he had made inappropriate attempts. The software problem, which could allow vehicles \"to slow and then drive into standing water on higher speed roadways\" was highlighted in a letter posted on the National Highway Traffic Safety Administration website earlier this month. In response, Waymo issued a voluntary recall of nearly 3,800 of its robotaxis that use the company's fifth and sixth-generation automated driving systems, and said it was working on \"additional. A Waymo spokesperson said it had expanded the temporary pause \"out of an abundance of caution\".",
+      "what_happened": "Waymo driverless cars become trapped in Atlanta suburb after glitch Driverless taxi firm sorry for early-morning noise Trump unveils Qatari luxury jet for Air Force One fleet Italy's Meloni says Trump 'made up' story that she 'begged' him for photo at G7 US to end funding of South Africa's HIV programmes over claims of Afrikaner persecution UK's top data and AI regulator quits after 'inappropriate' humour Edwards has been the boss of the data watchdog since January 2022, and said he had made inappropriate attempts.",
+      "why_matters": "The software problem, which could allow vehicles \"to slow and then drive into standing water on higher speed roadways\" was highlighted in a letter posted on the National Highway Traffic Safety Administration website earlier this month. In response, Waymo issued a voluntary recall of nearly 3,800 of its robotaxis that use the company's fifth and sixth-generation automated driving systems, and said it was working on \"additional.",
+      "what_to_watch": "A Waymo spokesperson said it had expanded the temporary pause \"out of an abundance of caution\".",
+      "key_points": [
+        "Waymo driverless cars become trapped in Atlanta suburb after glitch Driverless taxi firm sorry for early-morning noise Trump unveils Qatari luxury jet for Air Force One fleet Italy's Meloni says Trump 'made up' story.",
+        "Over the past year, several incidents with driverless cars have raised concerns over their safety.",
+        "The software problem, which could allow vehicles \"to slow and then drive into standing water on higher speed roadways\" was highlighted in a letter posted on the National Highway Traffic Safety Administration website.",
+        "A Waymo spokesperson said it had expanded the temporary pause \"out of an abundance of caution\".",
+        "what could the world look like in 2050?",
+        "Following a similar incident in Atlanta, Georgia , a Waymo spokesperson said it had expanded the temporary pause to five cities.",
+        "In response, Waymo issued a voluntary recall of nearly 3,800 of its robotaxis that use the company's fifth and sixth-generation automated driving systems, and said it was working on \"additional software safeguards\".",
+        "The BBC is in multiple languages",
+        "The company, which hopes to operate a robotaxi service in London later this year , told the BBC safety was its \"highest priority\".",
+        "The US firm recently issued a recall of thousands of robotaxis following an incident on 20 April in San Antonio, Texas when an empty Waymo vehicle entered a flooded road and was swept into a creek.",
+        "AI teachers and cybernetics.",
+        "Waymo is owned by Google's parent company Alphabet, and says it provides more than 500,000 trips per week across multiple US cities including San Francisco, Austin and Miami."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d084bc378fc7f3ac.webp",
+      "image_url": "https://ichef.bbci.co.uk/news/480/cpsprodpb/f2a0/live/c2404ea0-6ae7-11f1-8546-8f19e4fe30f4.jpg.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/video/is-the-us-governments-anthropic-ban-accidentally-helping-the-brand/",
+      "title": "Is the US government's Anthropic ban accidentally helping the brand? | TechCrunch",
+      "description": "Watch as Equity hosts unpack what the ban means for developers building on Anthropic's platform and for anyone watching the IPO and more of the week\u2019s headlines.",
+      "excerpt": "Watch as Equity hosts unpack what the ban means for developers building on Anthropic's platform and for anyone watching the IPO and more of the week\u2019s headlines.",
+      "summary": "Watch as Equity hosts unpack what the ban means for developers building on Anthropic's platform and for anyone watching the IPO and more of the week\u2019s headlines.",
+      "what_happened": "Watch as Equity hosts unpack what the ban means for developers building on Anthropic's platform and for anyone watching the IPO and more of the week\u2019s headlines.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Watch as Equity hosts unpack what the ban means for developers building on Anthropic's platform and for anyone watching the IPO and more of the week\u2019s headlines."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/629e54341b222220.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2269811684.jpg?w=1024",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://deepmind.google/science/alphafold/",
+      "title": "AlphaFold",
+      "description": "AlphaFold has revealed millions of intricate 3D protein structures, and is helping scientists understand how all of life\u2019s molecules interact.",
+      "excerpt": "AlphaFold has revealed millions of intricate 3D protein structures, and is helping scientists understand how all of life\u2019s molecules interact.",
+      "summary": "AlphaFold has revealed millions of intricate 3D protein structures, and is helping scientists understand how all of life\u2019s molecules interact.",
+      "what_happened": "AlphaFold has revealed millions of intricate 3D protein structures, and is helping scientists understand how all of life\u2019s molecules interact.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "AlphaFold has revealed millions of intricate 3D protein structures, and is helping scientists understand how all of life\u2019s molecules interact."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/edcad9a5500ee265.png",
+      "image_url": "https://lh3.googleusercontent.com/Fvkn0zIRc5E6ie9I3F5-ljU40KGXHRXQ7bkhiv_ESIqanleHDJ-5Oe6S8N71ArGzfXrr2VMVjo8v7WfXwBdfdyfF0I__R5ptWP_tq_akrR5EBf1k=w1440-h810-n-nu",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/dff742f823da0102.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6559ea582155db12.png"
+      ],
+      "extra_image_urls": [
+        "https://lh3.googleusercontent.com/f-07W513oWGJe4hSARqJsj-tljko2RmynMJ3dh5cNHjBky15Y1xCrZ-Dzr030A4Tz9KWzLmGfZOMxW_31TylHk_l9BjJXz3h45iJzNsWYfmHDtVZYNA=w1440-h810-n-nu",
+        "https://lh3.googleusercontent.com/LZzFt9HMlII41yGFxSMnPrtTEzsI9p2Bblr87TPezeZsICjARVoas3skzgFoPGasnWo4kC8uk9K8Z4nzrRrLmsjpdL9RZNyWhvsCQycCHYdkcGeSGQ=w1440-h810-n-nu"
+      ]
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/",
+      "title": "Billionaire Ambani wants AI in every call, app, and home | TechCrunch",
+      "description": "Reliance is weaving AI into telecom services used by more than 500 million people.",
+      "excerpt": "Reliance is weaving AI into telecom services used by more than 500 million people.",
+      "summary": "Reliance is weaving AI into telecom services used by more than 500 million people.",
+      "what_happened": "Reliance is weaving AI into telecom services used by more than 500 million people.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Reliance is weaving AI into telecom services used by more than 500 million people."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e3ce764e221327f0.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/reliance-jio-teleframe.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f633b7a6d0422eed.jpg"
+      ],
+      "extra_image_urls": [
+        "https://techcrunch.com/wp-content/uploads/2026/02/reliance-mukesh-ambani.jpg?resize=1200,800"
+      ]
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/jun/18/california-billionaire-tax-ballot-tech-opposition",
+      "title": "California \u2018billionaire tax\u2019 makes ballot despite opposition from tech moguls",
+      "description": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "excerpt": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "summary": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "what_happened": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn"
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e54963f129a234ea.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/38e509e5c6cebd21b697c28446bba95920578c09/305_0_3560_2848/master/3560.jpg?width=465&dpr=1&s=none&crop=none",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2196998/midjourney-full-body-ultrasonic-scanner/",
+      "title": "Midjourney, the AI image generator, is developing a full-body ultrasonic scanner - Engadget",
+      "description": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "excerpt": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "summary": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "what_happened": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9cc2b344f3a13eeb.jpg",
+      "image_url": "https://img1.zergnet.com/8768660_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 6,
+  "has_cta": true,
+  "slides": [
+    "Rogue AI Agent Triggers Emergency at Meta.",
+    "Lawsuit says ChatGPT told FSU shooter that targeting children would bring more.",
+    "Waymo pauses robotaxis in four Texas cities and Atlanta over flooded road.",
+    "AlphaFold 3 Access the AlphaFold 3 model code and weights for academic.",
+    "Billionaire Ambani wants AI in every call app and home.",
+    "FOLLOW @graitech"
+  ]
+}
