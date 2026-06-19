@@ -1,0 +1,80 @@
+{
+  "email_received_at": "2026-06-19T04:23+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Fri, 19 Jun 2026 04:23:34 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.engadget.com/2197702/rivian-faces-a-class-action-lawsuit-over-self-driving-in-its-early-vehicles/",
+      "title": "Company : Engadget",
+      "description": "[MEDIUM] Rivian faces a class action lawsuit over self-driving in its early vehicles Company : Engadget Summary : Rivian is being sued over the self-driving capabilities of its early vehicles, or lack thereof. Link :",
+      "text": "[MEDIUM] Rivian faces a class action lawsuit over self-driving in its early vehicles Company : Engadget Summary : Rivian is being sued over the self-driving capabilities of its early vehicles, or lack thereof. Link :",
+      "excerpt": "[MEDIUM] Rivian faces a class action lawsuit over self-driving in its early vehicles Company : Engadget Summary : Rivian is being sued over the self-driving capabilities of its early vehicles, or lack thereof. Link :",
+      "image_url": "https://www.engadget.com/img/gallery/rivian-faces-a-class-action-lawsuit-over-self-driving-in-its-early-vehicles/l-intro-1781811685.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.engadget.com/2197702/rivian-faces-a-class-action-lawsuit-over-self-driving-in-its-early-vehicles/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
+      "title": "Company : TechCrunch AI",
+      "description": "[HIGH] OpenAI is bringing on some big guns in the lead-up to its IPO Company : TechCrunch AI Summary : OpenAI is bulking up before its IPO, landing Transformer co-inventor Noam Shazeer from Google DeepMind and former Trump AI policy official Dean Ball in the same week. Link :",
+      "text": "[HIGH] OpenAI is bringing on some big guns in the lead-up to its IPO Company : TechCrunch AI Summary : OpenAI is bulking up before its IPO, landing Transformer co-inventor Noam Shazeer from Google DeepMind and former Trump AI policy official Dean Ball in the same week. Link :",
+      "excerpt": "[HIGH] OpenAI is bringing on some big guns in the lead-up to its IPO Company : TechCrunch AI Summary : OpenAI is bulking up before its IPO, landing Transformer co-inventor Noam Shazeer from Google DeepMind and former Trump AI policy official Dean Ball in the same week. Link :",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/noam-shazeer-deal-ball.png?resize=1200,800",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.cnet.com/roadshow/news/waymo-recall-highway-construction-zones/",
+      "title": "Company : CNET AI",
+      "description": "[MEDIUM] Waymo Issues Another Recall, This Time Over Highway Construction Zones Company : CNET AI Summary : The robotaxi company issues a recall on 3,871 vehicles that could make incorrect decisions while driving in highway construction zones. Link :",
+      "text": "[MEDIUM] Waymo Issues Another Recall, This Time Over Highway Construction Zones Company : CNET AI Summary : The robotaxi company issues a recall on 3,871 vehicles that could make incorrect decisions while driving in highway construction zones. Link :",
+      "excerpt": "[MEDIUM] Waymo Issues Another Recall, This Time Over Highway Construction Zones Company : CNET AI Summary : The robotaxi company issues a recall on 3,871 vehicles that could make incorrect decisions while driving in highway construction zones. Link :",
+      "image_url": "https://www.cnet.com/a/img/resize/a593380d08002176f028508c349fe1cde7a92b7e/hub/2025/11/11/ace52b13-e59e-44ee-b68d-dcfa84f01798/waymo-on-freeways-sf.png?auto=webp&amp;fit=crop&amp;height=675&amp;width=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.cnet.com/roadshow/news/waymo-recall-highway-construction-zones/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://www.wired.com/story/anthropic-mythos-export-controls-ai-regulations/",
+      "title": "Company : Wired AI",
+      "description": "[MEDIUM] The White House Is Making Up Its Rules for AI in Real Time Company : Wired AI Summary : Anthropic still can\u2019t distribute Claude Mythos or Fable 5 after running afoul of the Trump administration. But no one can say exactly what the company did wrong. Link :",
+      "text": "[MEDIUM] The White House Is Making Up Its Rules for AI in Real Time Company : Wired AI Summary : Anthropic still can\u2019t distribute Claude Mythos or Fable 5 after running afoul of the Trump administration. But no one can say exactly what the company did wrong. Link :",
+      "excerpt": "[MEDIUM] The White House Is Making Up Its Rules for AI in Real Time Company : Wired AI Summary : Anthropic still can\u2019t distribute Claude Mythos or Fable 5 after running afoul of the Trump administration. But no one can say exactly what the company did wrong. Link :",
+      "image_url": "https://media.wired.com/photos/6a342bff039398b1addb3ba2/191:100/w_1280,c_limit/Model-Behavior-SB.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.wired.com/story/anthropic-mythos-export-controls-ai-regulations/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "The Trump administration demanded that Anthropic prohibit all foreign nationals from accessing.",
+    "FOLLOW @graitech"
+  ]
+}

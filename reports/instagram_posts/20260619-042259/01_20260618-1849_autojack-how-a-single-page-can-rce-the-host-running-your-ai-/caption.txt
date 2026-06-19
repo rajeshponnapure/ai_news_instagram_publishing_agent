@@ -1,0 +1,27 @@
+AutoJack How a single page can RCE the host running your AI.
+
+Swipe for the full breakdown.
+
+- AutoJack: How a single page can RCE the host running your AI agent AutoJack: How a single page.
+- Microsoft Defender for Cloud Threat Protection for AI Services raises alerts on jailbreak, data leakage, and credential theft.
+- Anatomy of the chain Issue 1: Origin allowlist that the agent itself defeats AutoGen Studio's MCP WebSocket relies.
+- The screenshots below show the full chain on a single workstation: the developer launches AutoGen Studio on localhost:8081.
+- Within seconds of MultimodalWebSurfer rendering the page, calc.exe pops on the developer's desktop, launched by the AutoGen Studio.
+
+Do you think OpenAI's move here is exciting or a risk? Drop your take below.
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://www.microsoft.com/en-us/security/blog/2026/06/18/autojack-single-page-rce-host-running-ai-agent/
+- https://aws.amazon.com/blogs/machine-learning/monitor-and-debug-generative-ai-inference-with-sagemaker-detailed-metrics-and-insights-dashboard-on-cloudwatch/
+- https://blogs.nvidia.com/blog/ferc-large-load-interconnection/
+- https://www.engadget.com/2196725/akai-refreshes-the-mpc-one-and-key-37-workstations/
+- https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/
+
+#AIAgents #AutonomousAgents #AIWorkflow #AIRegulation #TechLaw #AITools #ProductivityAI #AIProductivity #OpenAI #ChatGPT #GoogleAI #Gemini #GoogleDeepMind #DeepMind #TechTrends #Innovation #EmergingTech #AINews #MachineLearning #DataScience
+
+-
+This is not legal advice. Consult a qualified professional for guidance.
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-

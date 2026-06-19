@@ -1,0 +1,323 @@
+{
+  "email_received_at": "2026-06-18T18:49-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "AutoJack: How a single page can RCE the host running your AI agent | Microsoft Security Blog",
+  "subject": "\ud83d\udea8 AI Alert: 76 new launches \u2014 Bloomberg Tech, TechCrunch AI",
+  "source_date": "Thu, 18 Jun 2026 18:49:38 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Microsoft",
+    "Amazon",
+    "AWS",
+    "AutoGen Studio",
+    "Modern AI"
+  ],
+  "models": [],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://www.microsoft.com/en-us/security/blog/2026/06/18/autojack-single-page-rce-host-running-ai-agent/",
+  "article_title": "AutoJack: How a single page can RCE the host running your AI agent | Microsoft Security Blog",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/acc75fdb37baa3ce.jpg",
+  "article_image_url": "https://www.microsoft.com/en-us/security/blog/wp-content/themes/security-blog-2025/dist/images/footer-promotional.jpg",
+  "article_items": [
+    {
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/18/autojack-single-page-rce-host-running-ai-agent/",
+      "title": "AutoJack: How a single page can RCE the host running your AI agent | Microsoft Security Blog",
+      "description": "AutoJack is a novel exploit chain showing how a single malicious webpage can turn an AI browsing agent into a remote code execution vector on the host machine. By abusing trust in localhost, missing authentication, and unsafe parameter handling, attackers can trigger arbitrary process execution through AutoGen Studio\u2019s MCP WebSocket. The research highlights a broader pattern. when agents can browse untrusted content and access local services, traditional boundaries like localhost are no longer secure.",
+      "excerpt": "AutoJack is a novel exploit chain showing how a single malicious webpage can turn an AI browsing agent into a remote code execution vector on the host machine. By abusing trust in localhost, missing authentication, and unsafe parameter handling, attackers can trigger arbitrary process execution through AutoGen Studio\u2019s MCP WebSocket. The research highlights a broader pattern. when agents can browse untrusted content and access local services, traditional boundaries like localhost are no longer secure.",
+      "summary": "AutoJack: How a single page can RCE the host running your AI agent AutoJack: How a single page can RCE the host running your AI agent Products and services Ongoing research into AI agent framework security identified an exploit chain in AutoGen Studio (AutoGen\u2019s open-source prototyping user interface) that allows untrusted web content rendered by a browsing agent to reach a local Model Context Protocol (MCP) WebSocket and spawn arbitrary processes on the host. Microsoft Defender for Cloud Threat Protection for AI. The screenshots below show the full chain on a single workstation: the developer launches AutoGen Studio on localhost:8081 (the default port), opens the Web Content Summarizer app, and submits an attacker-controlled URL. Within seconds of MultimodalWebSurfer rendering the page, calc.exe pops on the developer\u2019s desktop, launched by the AutoGen Studio process, not by the browser and not by the agent\u2019s headless Chromium. For the latest security research from the Microsoft Threat Intelligence community, check out the Microsoft Threat Intelligence Blog .",
+      "what_happened": "AutoJack: How a single page can RCE the host running your AI agent AutoJack: How a single page can RCE the host running your AI agent Products and services Ongoing research into AI agent framework security identified an exploit chain in AutoGen Studio (AutoGen\u2019s open-source prototyping user interface) that allows untrusted web content rendered by a browsing agent to reach a local Model Context Protocol (MCP) WebSocket and spawn arbitrary processes on the host. Microsoft Defender for Cloud Threat Protection for AI.",
+      "why_matters": "The screenshots below show the full chain on a single workstation: the developer launches AutoGen Studio on localhost:8081 (the default port), opens the Web Content Summarizer app, and submits an attacker-controlled URL. Within seconds of MultimodalWebSurfer rendering the page, calc.exe pops on the developer\u2019s desktop, launched by the AutoGen Studio process, not by the browser and not by the agent\u2019s headless Chromium.",
+      "what_to_watch": "For the latest security research from the Microsoft Threat Intelligence community, check out the Microsoft Threat Intelligence Blog .",
+      "key_points": [
+        "AutoJack: How a single page can RCE the host running your AI agent AutoJack: How a single page can RCE the host running your AI agent Products and services Ongoing research into AI agent framework security identified an.",
+        "Microsoft Defender for Cloud Threat Protection for AI Services raises alerts on jailbreak, data leakage, and credential theft patterns observed against Azure-hosted models, including models used by AutoGen agents when.",
+        "Anatomy of the chain Issue 1: Origin allowlist that the agent itself defeats AutoGen Studio\u2019s MCP WebSocket relies on the conventional defense for browser-driven cross-site WebSocket hijacking (CSWSH): allow only.",
+        "The screenshots below show the full chain on a single workstation: the developer launches AutoGen Studio on localhost:8081 (the default port), opens the Web Content Summarizer app, and submits an attacker-controlled URL.",
+        "Within seconds of MultimodalWebSurfer rendering the page, calc.exe pops on the developer\u2019s desktop, launched by the AutoGen Studio process, not by the browser and not by the agent\u2019s headless Chromium.",
+        "For the latest security research from the Microsoft Threat Intelligence community, check out the Microsoft Threat Intelligence Blog .",
+        "The issue was identified and addressed during development before any PyPI release, and the affected MCP WebSocket route is not present in the published package.",
+        "The app takes a URL from the user and hands it to a MultimodalWebSurfer agent with the prompt \u201cBrowse this URL and summarize its content.\u201d It is, in other words, a fully-fledged AutoGen agent that anyone could build on.",
+        "The user routinely runs an agent on the same machine, and that agent is willing to render arbitrary web content.",
+        "To hear stories and insights from the Microsoft Threat Intelligence community about the ever-evolving threat landscape, listen to the Microsoft Threat Intelligence podcast .",
+        "This was confirmed by downloading autogenstudio 0.4.2.2, the current published release, and inspecting its contents directly: the package doesn\u2019t include autogenstudio/web/routes/mcp.py, the FastAPI application in.",
+        "Microsoft Foundry AI Red Teaming Agent and the open-source PyRIT automate adversarial probing for indirect prompt injection, prohibited actions, and sensitive data leakage."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/acc75fdb37baa3ce.jpg",
+      "image_url": "https://www.microsoft.com/en-us/security/blog/wp-content/themes/security-blog-2025/dist/images/footer-promotional.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9b4255a68c11ce49.webp"
+      ],
+      "extra_image_urls": [
+        "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-47-926x1024.webp"
+      ]
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/monitor-and-debug-generative-ai-inference-with-sagemaker-detailed-metrics-and-insights-dashboard-on-cloudwatch/",
+      "title": "Monitor and debug generative AI inference with SageMaker detailed metrics and Insights dashboard on CloudWatch | Amazon Web Services",
+      "description": "Amazon SageMaker AI provides fully managed real-time inference hosting for machine learning models. You deploy a model to a SageMaker endpoint backed by one or more compute instances, and SageMaker handles provisioning and scaling. SageMaker supports multiple endpoint architectures. This post focuses on the two most relevant to generative AI workloads with detailed observability: Single-model endpoints (SME) and Inference component (IC) endpoints.",
+      "excerpt": "Amazon SageMaker AI provides fully managed real-time inference hosting for machine learning models. You deploy a model to a SageMaker endpoint backed by one or more compute instances, and SageMaker handles provisioning and scaling. SageMaker supports multiple endpoint architectures. This post focuses on the two most relevant to generative AI workloads with detailed observability: Single-model endpoints (SME) and Inference component (IC) endpoints.",
+      "summary": "For more details on SageMaker inference, see Deploy models for real-time inference . You deploy a model to a SageMaker endpoint backed by one or more compute instances, and SageMaker handles provisioning and scaling. Machine learning (ML) platform engineers, MLOps teams, and site reliability engineers (SREs) must keep inference endpoints healthy, responsive, and cost-efficient, often across dozens of models and hundreds of GPU instances. This panel separates total latency into Model Latency (time the model spends processing) and Overhead Latency (time the platform spends routing and scheduling). In this post, you enabled SageMaker detailed metrics on inference endpoints and used the built-in SageMaker Insights dashboard to monitor fleet health, debug latency using token-level metrics, validate high availability, and plan capacity for new deployments. Artificial Intelligence Monitor and debug generative AI.",
+      "what_happened": "For more details on SageMaker inference, see Deploy models for real-time inference . You deploy a model to a SageMaker endpoint backed by one or more compute instances, and SageMaker handles provisioning and scaling.",
+      "why_matters": "Machine learning (ML) platform engineers, MLOps teams, and site reliability engineers (SREs) must keep inference endpoints healthy, responsive, and cost-efficient, often across dozens of models and hundreds of GPU instances. This panel separates total latency into Model Latency (time the model spends processing) and Overhead Latency (time the platform spends routing and scheduling).",
+      "what_to_watch": "In this post, you enabled SageMaker detailed metrics on inference endpoints and used the built-in SageMaker Insights dashboard to monitor fleet health, debug latency using token-level metrics, validate high availability, and plan capacity for new deployments. Artificial Intelligence Monitor and debug generative AI.",
+      "key_points": [
+        "For more details on SageMaker inference, see Deploy models for real-time inference .",
+        "You deploy a model to a SageMaker endpoint backed by one or more compute instances, and SageMaker handles provisioning and scaling.",
+        "Artificial Intelligence Monitor and debug generative AI inference with SageMaker detailed metrics and Insights dashboard on CloudWatch Monitoring and troubleshooting generative AI inference endpoints operating at scale.",
+        "Step 2: Configure your Grafana data source In Amazon Managed Grafana (Classic CloudWatch 2.4+) or self-hosted Grafana with the Amazon Managed Service for Prometheus plugin (v3.0.0+): Navigate to Configuration, Data.",
+        "The default is 60 seconds.",
+        "The shift from training to serving is reshaping how teams deploy LLMs and other generative AI models in production.",
+        "Machine learning (ML) platform engineers, MLOps teams, and site reliability engineers (SREs) must keep inference endpoints healthy, responsive, and cost-efficient, often across dozens of models and hundreds of GPU.",
+        "Amazon SageMaker AI \u2013 Managed inference with endpoints and inference components.",
+        "In this post, you enabled SageMaker detailed metrics on inference endpoints and used the built-in SageMaker Insights dashboard to monitor fleet health, debug latency using token-level metrics, validate high.",
+        "Inference component (IC) endpoints \u2013 Multiple models share the same set of instances through inference components.",
+        "Import the downloaded JSON template into Grafana (Dashboards \u2192 Import), select the Prometheus data source you configured in Step 2, and you get pre-configured Performance, Capacity, and Reliability panels matching the.",
+        "Every panel on the page updates to show only that instance\u2019s data."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/af7c4c523df2db17.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/18/ML-21272-8.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b2073581ffa9aadc.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/22c8c95780b76075.png"
+      ],
+      "extra_image_urls": [
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/18/ML-21272-5.png",
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/18/ML-21272-9.png"
+      ]
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/ferc-large-load-interconnection/",
+      "title": "How FERC\u2019s Large-Load Interconnection Actions Help Address Grid Stress, Improve Affordability",
+      "description": "The U.S. Federal Energy Regulatory Commission\u2019s new actions on energy. a foundational layer of AI. are poised to reduce costs for ratepayers, grow the industrial base and strengthen the nation\u2019s electrical grid.",
+      "excerpt": "The U.S. Federal Energy Regulatory Commission\u2019s new actions on energy. a foundational layer of AI. are poised to reduce costs for ratepayers, grow the industrial base and strengthen the nation\u2019s electrical grid.",
+      "summary": "Federal Energy Regulatory Commission\u2019s new actions on energy. are poised to reduce costs for ratepayers, grow the industrial base and strengthen the nation\u2019s electrical grid. a foundational layer of AI. a foundational layer of AI.",
+      "what_happened": "Federal Energy Regulatory Commission\u2019s new actions on energy. are poised to reduce costs for ratepayers, grow the industrial base and strengthen the nation\u2019s electrical grid.",
+      "why_matters": "a foundational layer of AI.",
+      "what_to_watch": "a foundational layer of AI.",
+      "key_points": [
+        "Federal Energy Regulatory Commission\u2019s new actions on energy.",
+        "are poised to reduce costs for ratepayers, grow the industrial base and strengthen the nation\u2019s electrical grid.",
+        "a foundational layer of AI."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/391a51ccdae065e9.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2025/09/nvidiaheadquarters.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2196725/akai-refreshes-the-mpc-one-and-key-37-workstations/",
+      "title": "Akai refreshes the MPC One and Key 37 workstations - Engadget",
+      "description": "Akai updates the MPC One and Key 37 with better processors, additional RAM and more storage.",
+      "excerpt": "Akai updates the MPC One and Key 37 with better processors, additional RAM and more storage.",
+      "summary": "Akai updates the MPC One and Key 37 with better processors, additional RAM and more storage. Akai just released new versions of its MPC One sampler and MPC Key 37 workstation. To that end, they feature new 8-core processors that should speed things up and allow for larger projects. Eight tracks can be limiting when making a full song but 16 is more than enough (in my experience.) They both run Akai's latest MPC 3.9 operating system , which is a standalone production platform with a full linear arranger, expanded arrangement workflows and a new synth engine. We should expect even more Native Instruments content moving forward, being as how NI and Akai are now under the same corporate umbrella . The Akai MPC One G2 costs $800 and the Key 37 G2 costs $1,000.",
+      "what_happened": "Akai updates the MPC One and Key 37 with better processors, additional RAM and more storage. Akai just released new versions of its MPC One sampler and MPC Key 37 workstation.",
+      "why_matters": "To that end, they feature new 8-core processors that should speed things up and allow for larger projects. Eight tracks can be limiting when making a full song but 16 is more than enough (in my experience.) They both run Akai's latest MPC 3.9 operating system , which is a standalone production platform with a full linear arranger, expanded arrangement workflows and a new synth engine.",
+      "what_to_watch": "We should expect even more Native Instruments content moving forward, being as how NI and Akai are now under the same corporate umbrella . The Akai MPC One G2 costs $800 and the Key 37 G2 costs $1,000.",
+      "key_points": [
+        "Akai updates the MPC One and Key 37 with better processors, additional RAM and more storage.",
+        "The Akai MPC One G2 costs $800 and the Key 37 G2 costs $1,000.",
+        "Akai just released new versions of its MPC One sampler and MPC Key 37 workstation.",
+        "Akai refreshes the MPC One and Key 37 workstations They feature better processors, additional RAM and more storage.",
+        "To that end, they feature new 8-core processors that should speed things up and allow for larger projects.",
+        "For comparison, the original MPC One and Key 37 could handle around eight simultaneous virtual instruments and eight stereo tracks.",
+        "Eight tracks can be limiting when making a full song but 16 is more than enough (in my experience.) They both run Akai's latest MPC 3.9 operating system , which is a standalone production platform with a full linear.",
+        "The primary difference between the two is that the Key 37 has a keyboard, making it a good choice for traditional songwriters.",
+        "The company promises \"dramatically faster load times, larger project capacity and smoother standalone sessions.\" Both machines support up to 32 simultaneous virtual instruments and 16 concurrent stereo tracks in.",
+        "Both machines ship with a good amount of software to get started and there's a store to purchase more.",
+        "The MPC One is a fantastic machine for sample-based music.",
+        "There's also now 4GB of RAM, instead of 2GB, and 64GB of internal storage, versus 32GB."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a8d1731c80c7cd93.jpg",
+      "image_url": "https://img1.zergnet.com/8710836_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
+      "title": "OpenAI is bringing on some big guns in the lead-up to its IPO | TechCrunch",
+      "description": "OpenAI is bulking up before its IPO, landing Transformer co-inventor Noam Shazeer from Google DeepMind and former Trump AI policy official Dean Ball in the same week.",
+      "excerpt": "OpenAI is bulking up before its IPO, landing Transformer co-inventor Noam Shazeer from Google DeepMind and former Trump AI policy official Dean Ball in the same week.",
+      "summary": "OpenAI is bulking up before its IPO, landing Transformer co-inventor Noam Shazeer from Google DeepMind and former Trump AI policy official Dean Ball in the same week.",
+      "what_happened": "OpenAI is bulking up before its IPO, landing Transformer co-inventor Noam Shazeer from Google DeepMind and former Trump AI policy official Dean Ball in the same week.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "OpenAI is bulking up before its IPO, landing Transformer co-inventor Noam Shazeer from Google DeepMind and former Trump AI policy official Dean Ball in the same week."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0693266e650258db.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/noam-shazeer-deal-ball.png?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/category/enterprise/",
+      "title": "AI Infrastructure Archives",
+      "description": "",
+      "excerpt": "",
+      "summary": "AI Infrastructure Archives",
+      "what_happened": "AI Infrastructure Archives",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "AI Infrastructure Archives"
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/464e6cc3f74ff787.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-kv-2026-ari.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2197702/rivian-faces-a-class-action-lawsuit-over-self-driving-in-its-early-vehicles/",
+      "title": "Rivian faces a class action lawsuit over self-driving in its early vehicles - Engadget",
+      "description": "Rivian is being sued over the self-driving capabilities of its early vehicles, or lack thereof.",
+      "excerpt": "Rivian is being sued over the self-driving capabilities of its early vehicles, or lack thereof.",
+      "summary": "Rivian unquestionably knew that its Gen 1 Vehicles would never be capable of Level 3 autonomy or 'true hands-free driving' yet continued to tout the supposed capabilities of its vehicles to induce consumers to purchase them.\" Rivian introduced its \" universal hands-free driving \" software update late last year. \"In reality, Rivian manufactured its Gen 1 Vehicles without the hardware, cameras, sensors, and compute to enable hands-free driving and/or Level 3 autonomous operation,\" the complaint states. \"In reality, Rivian manufactured its Gen 1 Vehicles without the hardware, cameras, sensors, and compute to enable hands-free driving and/or Level 3 autonomous operation,\" the complaint states. According to the class action complaint brought by Rivian customers, the first-generation models of these vehicles are not capable of the offering the self-driving potential that the company had promised. The plaintiffs argued that Rivian represented that those early models would be capable of level 3 autonomous driving, meaning the vehicle would be able to steer, accelerate and break without driver action.",
+      "what_happened": "Rivian unquestionably knew that its Gen 1 Vehicles would never be capable of Level 3 autonomy or 'true hands-free driving' yet continued to tout the supposed capabilities of its vehicles to induce consumers to purchase them.\" Rivian introduced its \" universal hands-free driving \" software update late last year. \"In reality, Rivian manufactured its Gen 1 Vehicles without the hardware, cameras, sensors, and compute to enable hands-free driving and/or Level 3 autonomous operation,\" the complaint states.",
+      "why_matters": "\"In reality, Rivian manufactured its Gen 1 Vehicles without the hardware, cameras, sensors, and compute to enable hands-free driving and/or Level 3 autonomous operation,\" the complaint states. According to the class action complaint brought by Rivian customers, the first-generation models of these vehicles are not capable of the offering the self-driving potential that the company had promised.",
+      "what_to_watch": "The plaintiffs argued that Rivian represented that those early models would be capable of level 3 autonomous driving, meaning the vehicle would be able to steer, accelerate and break without driver action.",
+      "key_points": [
+        "Rivian unquestionably knew that its Gen 1 Vehicles would never be capable of Level 3 autonomy or 'true hands-free driving' yet continued to tout the supposed capabilities of its vehicles to induce consumers to purchase.",
+        "\"In reality, Rivian manufactured its Gen 1 Vehicles without the hardware, cameras, sensors, and compute to enable hands-free driving and/or Level 3 autonomous operation,\" the complaint states.",
+        "The plaintiffs argued that Rivian represented that those early models would be capable of level 3 autonomous driving, meaning the vehicle would be able to steer, accelerate and break without driver action.",
+        "According to the class action complaint brought by Rivian customers, the first-generation models of these vehicles are not capable of the offering the self-driving potential that the company had promised.",
+        "The tech was made available for the company's R2 collection of electric vehicles and the second generation of its R1 lineup.",
+        "Rivian is being sued over the self-driving capabilities of its early vehicles, or lack thereof.",
+        "Rivian faces a class action lawsuit over self-driving in its early vehicles Plaintiffs claim the company overstated the capabilities of the R1T and R1S.",
+        "\"No software update - no matter how sophisticated - will enable its Gen 1 Vehicles to perform as advertised.",
+        "Rivian has been sued on allegations that it made misleading statements about the self-driving capabilities of its R1T truck and R1S SUV.",
+        "When contacted by TechCrunch , Rivian declined to offer comment on the pending case.",
+        "Do not sell or share my personal information."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a8d1731c80c7cd93.jpg",
+      "image_url": "https://img1.zergnet.com/8710836_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2197051/waymo-recalls-3800-robotaxis-that-might-drive-onto-closed-freeways/",
+      "title": "Waymo recalls over 3,800 robotaxis that might drive onto closed freeways - Engadget",
+      "description": "Waymo is recalling over 3,800 of its self-driving taxis due to a software issue that could cause them to enter closed freeway construction zones at speed.",
+      "excerpt": "Waymo is recalling over 3,800 of its self-driving taxis due to a software issue that could cause them to enter closed freeway construction zones at speed.",
+      "summary": "Waymo is recalling over 3,800 of its self-driving taxis due to a software issue that could cause them to enter closed freeway construction zones at speed.",
+      "what_happened": "Waymo is recalling over 3,800 of its self-driving taxis due to a software issue that could cause them to enter closed freeway construction zones at speed.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Waymo is recalling over 3,800 of its self-driving taxis due to a software issue that could cause them to enter closed freeway construction zones at speed."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/362a5c54320a41b8.jpg",
+      "image_url": "https://www.engadget.com/img/gallery/waymo-recalls-3800-robotaxis-that-might-drive-onto-closed-freeways/intro-1781780591.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 5,
+  "has_cta": true,
+  "slides": [
+    "AutoJack How a single page can RCE the host running your AI.",
+    "Monitor and debug generative AI inference with SageMaker detailed metrics and Insights.",
+    "Akai refreshes the MPC One and Key 37 workstations.",
+    "Rivian faces a class action lawsuit over self-driving in its early vehicles.",
+    "FOLLOW @graitech"
+  ]
+}
