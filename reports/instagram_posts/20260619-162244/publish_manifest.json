@@ -12,8 +12,18 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260619-162244/01_20260619-1622_introducing-web-search-on-amazon-bedrock-agentcore-amazon-we/slide_06.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260619-162244/01_20260619-1622_introducing-web-search-on-amazon-bedrock-agentcore-amazon-we/slide_07.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260619-162244/01_20260619-1622_introducing-web-search-on-amazon-bedrock-agentcore-amazon-we/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260619-162244/01_20260619-1622_introducing-web-search-on-amazon-bedrock-agentcore-amazon-we/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260619-162244/01_20260619-1622_introducing-web-search-on-amazon-bedrock-agentcore-amazon-we/slide_03.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260619-162244/01_20260619-1622_introducing-web-search-on-amazon-bedrock-agentcore-amazon-we/slide_04.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260619-162244/01_20260619-1622_introducing-web-search-on-amazon-bedrock-agentcore-amazon-we/slide_05.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260619-162244/01_20260619-1622_introducing-web-search-on-amazon-bedrock-agentcore-amazon-we/slide_06.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260619-162244/01_20260619-1622_introducing-web-search-on-amazon-bedrock-agentcore-amazon-we/slide_07.png"
+      ],
+      "status": "published",
+      "creation_id": "18047111813577438",
+      "published_at": "2026-06-19T16:27:09+00:00"
     }
   ]
 }
