@@ -1,0 +1,309 @@
+{
+  "email_received_at": "2026-06-19T13:11-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "AlphaFold",
+  "subject": "\ud83d\udea8 AI Alert: 52 new launches \u2014 The Verge AI, TechCrunch AI",
+  "source_date": "Fri, 19 Jun 2026 13:11:56 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Meta",
+    "Apple",
+    "Amazon",
+    "AWS"
+  ],
+  "models": [],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "media generation"
+  ],
+  "article_url": "https://deepmind.google/science/alphafold/",
+  "article_title": "AlphaFold",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/edcad9a5500ee265.png",
+  "article_image_url": "https://lh3.googleusercontent.com/Fvkn0zIRc5E6ie9I3F5-ljU40KGXHRXQ7bkhiv_ESIqanleHDJ-5Oe6S8N71ArGzfXrr2VMVjo8v7WfXwBdfdyfF0I__R5ptWP_tq_akrR5EBf1k=w1440-h810-n-nu",
+  "article_items": [
+    {
+      "url": "https://deepmind.google/science/alphafold/",
+      "title": "AlphaFold",
+      "description": "AlphaFold has revealed millions of intricate 3D protein structures, and is helping scientists understand how all of life\u2019s molecules interact.",
+      "excerpt": "AlphaFold has revealed millions of intricate 3D protein structures, and is helping scientists understand how all of life\u2019s molecules interact.",
+      "summary": "In close collaboration with the European Bioinformatics Institute at the European Molecular Biology Laboratory (EMBL-EBI), DeepMind launches the AlphaFold Protein Structure Database (AFDB) to give the scientific community free of charge and open access to the human proteome along with another 20 model organisms. We share the structures of over 200 million proteins with the research community In partnership with EMBL\u2019s European Bioinformatics Institute (EMBL-EBI) , DeepMind releases the predicted structures for. Explore our next generation AI systems Our latest AI breakthroughs and updates from the lab Unlocking a new era of discovery with AI Our mission is to build AI responsibly to benefit humanity Explore our next generation AI systems Our latest AI breakthroughs and updates from the lab Unlocking a new era of discovery with AI Our mission is to build AI responsibly to benefit humanity Powered by AlphaFold 3 - AlphaFold Server. 3 times more accurate than the next best system and comparable to experimental methods. AlphaFold 3 and AlphaFold Server are launched Google DeepMind and Isomorphic Labs introduce AlphaFold 3 , which predicts the structure and interactions of all of.",
+      "what_happened": "In close collaboration with the European Bioinformatics Institute at the European Molecular Biology Laboratory (EMBL-EBI), DeepMind launches the AlphaFold Protein Structure Database (AFDB) to give the scientific community free of charge and open access to the human proteome along with another 20 model organisms. We share the structures of over 200 million proteins with the research community In partnership with EMBL\u2019s European Bioinformatics Institute (EMBL-EBI) , DeepMind releases the predicted structures for.",
+      "why_matters": "Explore our next generation AI systems Our latest AI breakthroughs and updates from the lab Unlocking a new era of discovery with AI Our mission is to build AI responsibly to benefit humanity Explore our next generation AI systems Our latest AI breakthroughs and updates from the lab Unlocking a new era of discovery with AI Our mission is to build AI responsibly to benefit humanity Powered by AlphaFold 3 - AlphaFold Server.",
+      "what_to_watch": "3 times more accurate than the next best system and comparable to experimental methods. AlphaFold 3 and AlphaFold Server are launched Google DeepMind and Isomorphic Labs introduce AlphaFold 3 , which predicts the structure and interactions of all of life\u2019s molecules.",
+      "key_points": [
+        "In close collaboration with the European Bioinformatics Institute at the European Molecular Biology Laboratory (EMBL-EBI), DeepMind launches the AlphaFold Protein Structure Database (AFDB) to give the scientific.",
+        "We share the structures of over 200 million proteins with the research community In partnership with EMBL\u2019s European Bioinformatics Institute (EMBL-EBI) , DeepMind releases the predicted structures for nearly all.",
+        "AlphaFold 3 and AlphaFold Server are launched Google DeepMind and Isomorphic Labs introduce AlphaFold 3 , which predicts the structure and interactions of all of life\u2019s molecules.",
+        "AlphaFold\u2019s methodology is published in Nature Nature publishes AlphaFold\u2019s detailed methodology in the paper \u201c Highly accurate protein structure prediction with AlphaFold \u201d and DeepMind open sources the code along with.",
+        "Explore our next generation AI systems Our latest AI breakthroughs and updates from the lab Unlocking a new era of discovery with AI Our mission is to build AI responsibly to benefit humanity Explore our next generation.",
+        "We launch the AlphaFold Protein Structure Database with EMBL-EB A week later, Nature publishes a second DeepMind paper containing the structure predictions of the entire human proteome.",
+        "Access the AlphaFold 3 model code and weights for academic use.",
+        "Over 2 million researchers in over 190 countries are using the AlphaFold Protein Structure Database to inform their research.",
+        "AlphaFold Protein Structure Database View over 200 million protein structure predictions to support your research.",
+        "AlphaFold is a global research tool AlphaFold is being used by over 3 million researchers from over 190 countries around the world, tackling problems such as antimicrobial resistance, crop resilience and heart disease.",
+        "At the same time, Google DeepMind launches AlphaFold Server , a platform that provides scientists free access to AF3 structure prediction capabilities for non-commercial research.",
+        "The AlphaFold Protein Structure Database makes this data freely available."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/edcad9a5500ee265.png",
+      "image_url": "https://lh3.googleusercontent.com/Fvkn0zIRc5E6ie9I3F5-ljU40KGXHRXQ7bkhiv_ESIqanleHDJ-5Oe6S8N71ArGzfXrr2VMVjo8v7WfXwBdfdyfF0I__R5ptWP_tq_akrR5EBf1k=w1440-h810-n-nu",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/dff742f823da0102.png",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6559ea582155db12.png"
+      ],
+      "extra_image_urls": [
+        "https://lh3.googleusercontent.com/f-07W513oWGJe4hSARqJsj-tljko2RmynMJ3dh5cNHjBky15Y1xCrZ-Dzr030A4Tz9KWzLmGfZOMxW_31TylHk_l9BjJXz3h45iJzNsWYfmHDtVZYNA=w1440-h810-n-nu",
+        "https://lh3.googleusercontent.com/LZzFt9HMlII41yGFxSMnPrtTEzsI9p2Bblr87TPezeZsICjARVoas3skzgFoPGasnWo4kC8uk9K8Z4nzrRrLmsjpdL9RZNyWhvsCQycCHYdkcGeSGQ=w1440-h810-n-nu"
+      ]
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/",
+      "title": "Billionaire Ambani wants AI in every call, app, and home | TechCrunch",
+      "description": "Reliance is weaving AI into telecom services used by more than 500 million people.",
+      "excerpt": "Reliance is weaving AI into telecom services used by more than 500 million people.",
+      "summary": "The push follows the launch of Reliance Intelligence last year, through which the conglomerate aims to develop AI infrastructure and services for consumers, businesses, and governments, including applications that support 22 Indian languages. The service, which can be activated by saying \u201cHey Jio,\u201d is expected to launch later this year for Jio\u2019s more than 500 million users. While the company said the services would operate with user consent, it did not answer questions about whether data generated through the products could be used to train AI models or shared with technology partners. The company further introduced TeleFrame, a home display that uses AI agents to proactively surface information and recommendations, such as weather alerts, schedules, and household reminders. Tata Consultancy Services , Infosys , and rival Adani Group have also expanded their AI initiatives and partnerships with global players, including Anthropic, Google, and OpenAI, as India\u2019s largest corporations race to secure a leading role in the country\u2019s AI future. At the shareholder meeting, Reliance also unveiled.",
+      "what_happened": "The push follows the launch of Reliance Intelligence last year, through which the conglomerate aims to develop AI infrastructure and services for consumers, businesses, and governments, including applications that support 22 Indian languages. The service, which can be activated by saying \u201cHey Jio,\u201d is expected to launch later this year for Jio\u2019s more than 500 million users.",
+      "why_matters": "While the company said the services would operate with user consent, it did not answer questions about whether data generated through the products could be used to train AI models or shared with technology partners. The company further introduced TeleFrame, a home display that uses AI agents to proactively surface information and recommendations, such as weather alerts, schedules, and household reminders.",
+      "what_to_watch": "Tata Consultancy Services , Infosys , and rival Adani Group have also expanded their AI initiatives and partnerships with global players, including Anthropic, Google, and OpenAI, as India\u2019s largest corporations race to secure a leading role in the country\u2019s AI future. At the shareholder meeting, Reliance also unveiled.",
+      "key_points": [
+        "The push follows the launch of Reliance Intelligence last year, through which the conglomerate aims to develop AI infrastructure and services for consumers, businesses, and governments, including applications that.",
+        "The service, which can be activated by saying \u201cHey Jio,\u201d is expected to launch later this year for Jio\u2019s more than 500 million users.",
+        "While the company said the services would operate with user consent, it did not answer questions about whether data generated through the products could be used to train AI models or shared with technology partners.",
+        "The company further introduced TeleFrame, a home display that uses AI agents to proactively surface information and recommendations, such as weather alerts, schedules, and household reminders.",
+        "The announcements also raise questions about how Reliance will handle user data as it expands AI services across phone calls, mobile apps, and connected homes.",
+        "At the shareholder meeting, Reliance also unveiled a suite of AI services for healthcare, education, agriculture, and small businesses.",
+        "NASA picks Eric Schmidt\u2019s rocket company for Mars mission, setting up a race with SpaceX SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an.",
+        "Last week, Reliance announced a collaboration with Meta to establish an AI data center in the western state of Gujarat, building on Meta\u2019s earlier investment in Jio Platforms and a joint venture launched last year to.",
+        "Earlier this year, the company announced plans to invest $110 billion in AI infrastructure as it seeks to establish itself as a major player in India\u2019s emerging AI ecosystem.",
+        "At its annual shareholder meeting on Friday, the Mumbai-based conglomerate announced Jio Call Agent, an AI assistant that can join phone calls to transcribe conversations, generate summaries, and perform tasks such as.",
+        "Nonetheless, for Reliance, the stakes are particularly high; it\u2019s preparing Jio for a long-awaited stock market debut and needs new growth drivers, with the conglomerate\u2019s shares down about 17% this year.",
+        "Tata Consultancy Services , Infosys , and rival Adani Group have also expanded their AI initiatives and partnerships with global players, including Anthropic, Google, and OpenAI, as India\u2019s largest corporations race to."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e3ce764e221327f0.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/reliance-jio-teleframe.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f633b7a6d0422eed.jpg"
+      ],
+      "extra_image_urls": [
+        "https://techcrunch.com/wp-content/uploads/2026/02/reliance-mukesh-ambani.jpg?resize=1200,800"
+      ]
+    },
+    {
+      "url": "https://techcrunch.com/video/is-the-us-governments-anthropic-ban-accidentally-helping-the-brand/",
+      "title": "Is the US government's Anthropic ban accidentally helping the brand? | TechCrunch",
+      "description": "Watch as Equity hosts unpack what the ban means for developers building on Anthropic's platform and for anyone watching the IPO and more of the week\u2019s headlines.",
+      "excerpt": "Watch as Equity hosts unpack what the ban means for developers building on Anthropic's platform and for anyone watching the IPO and more of the week\u2019s headlines.",
+      "summary": "NASA picks Eric Schmidt\u2019s rocket company for Mars mission, setting up a race with SpaceX SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak As Anthropic suspends access to new models, India debates its AI future Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world cyberattacks Every weekday and Sunday, you can get the best of. Watch as Equity hosts unpack what the ban means for developers building on Anthropic's platform and for anyone watching the IPO and more of the week\u2019s headlines. On this episode of TechCrunch\u2019s Equity podcast, hosts Anthony Ha, Sean O\u2019Kane, and Rebecca Bellan unpack what the ban means for developers building on Anthropic\u2019s platform and for anyone watching the IPO, why it might accidentally be good for the company , and more. More from TechCrunch Is the US government\u2019s Anthropic ban accidentally helping the brand?",
+      "what_happened": "NASA picks Eric Schmidt\u2019s rocket company for Mars mission, setting up a race with SpaceX SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak As Anthropic suspends access to new models, India debates its AI future Amazon CEO reportedly raised Anthropic model concerns before government crackdown The FBI built its own replica small town to simulate real-world cyberattacks Every weekday and Sunday, you can get the best of.",
+      "why_matters": "Watch as Equity hosts unpack what the ban means for developers building on Anthropic's platform and for anyone watching the IPO and more of the week\u2019s headlines. On this episode of TechCrunch\u2019s Equity podcast, hosts Anthony Ha, Sean O\u2019Kane, and Rebecca Bellan unpack what the ban means for developers building on Anthropic\u2019s platform and for anyone watching the IPO, why it might accidentally be good for the company , and more.",
+      "what_to_watch": "More from TechCrunch Is the US government\u2019s Anthropic ban accidentally helping the brand?",
+      "key_points": [
+        "NASA picks Eric Schmidt\u2019s rocket company for Mars mission, setting up a race with SpaceX SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an.",
+        "More from TechCrunch Is the US government\u2019s Anthropic ban accidentally helping the brand?",
+        "Just as last week was ending, the US government forced Anthropic to pull its two newest models , Fable 5 and Mythos 5, citing national security concerns after Amazon researchers allegedly found a way to bypass Fable 5\u2019s.",
+        "TechCrunch's AI experts cover the latest news in the fast-moving field.",
+        "Watch as Equity hosts unpack what the ban means for developers building on Anthropic's platform and for anyone watching the IPO and more of the week\u2019s headlines.",
+        "Cybersecurity researchers have since signed an open letter calling the move dangerous, and Anthropic itself noted the same jailbreaks exist in other models.",
+        "Before joining TechCrunch in 2022, she was one of 2 producers at a four-station conglomerate where she wrote, recorded, voiced and edited content, and engineered live performances and interviews from guests like.",
+        "So is this a genuine security concern, or just the latest chapter in a messy relationship between Anthropic and the Trump administration?",
+        "On this episode of TechCrunch\u2019s Equity podcast, hosts Anthony Ha, Sean O\u2019Kane, and Rebecca Bellan unpack what the ban means for developers building on Anthropic\u2019s platform and for anyone watching the IPO, why it might.",
+        "Sixty percent of US consumers say \u2018AI\u2019 in brand messaging is a turnoff, survey finds The AI layoff wave is becoming a powder keg Supabase doubles valuation to $10B in 8 months",
+        "Theresa Loconsolo is an audio producer at TechCrunch focusing on Equity, the network\u2019s flagship podcast.",
+        "Every Monday, gets you up to speed on the latest advances in aerospace."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/629e54341b222220.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2269811684.jpg?w=1024",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/jun/18/california-billionaire-tax-ballot-tech-opposition",
+      "title": "California \u2018billionaire tax\u2019 makes ballot despite opposition from tech moguls",
+      "description": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "excerpt": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "summary": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "what_happened": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn"
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e54963f129a234ea.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/38e509e5c6cebd21b697c28446bba95920578c09/305_0_3560_2848/master/3560.jpg?width=465&dpr=1&s=none&crop=none",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2196998/midjourney-full-body-ultrasonic-scanner/",
+      "title": "Midjourney, the AI image generator, is developing a full-body ultrasonic scanner - Engadget",
+      "description": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "excerpt": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "summary": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "what_happened": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9cc2b344f3a13eeb.jpg",
+      "image_url": "https://img1.zergnet.com/8768660_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/",
+      "title": "A startup claims it broke through a bottleneck that\u2019s holding back LLMs",
+      "description": "Subquadratic has now shared more details about its new model. But some are still skeptical.",
+      "excerpt": "Subquadratic has now shared more details about its new model. But some are still skeptical.",
+      "summary": "Subquadratic has now shared more details about its new model. But some are still skeptical.",
+      "what_happened": "Subquadratic has now shared more details about its new model. But some are still skeptical.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Subquadratic has now shared more details about its new model.",
+        "But some are still skeptical."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/a8f56b4a615d939d.jpg",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/06/cheetah-speed2a.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2196902/tim-cook-says-apple-price-increases-are-unavoidable-due-to-memory-crunch/",
+      "title": "Tim Cook says Apple price increases are 'unavoidable' due to memory crunch - Engadget",
+      "description": "RAMaggedon claims another one.",
+      "excerpt": "RAMaggedon claims another one.",
+      "summary": "RAMaggedon claims another one.",
+      "what_happened": "RAMaggedon claims another one.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "RAMaggedon claims another one."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/aaaeb8303b06317a.jpg",
+      "image_url": "https://img4.zergnet.com/8755679_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-bedrock-managed-knowledge-base/",
+      "title": "Amazon Bedrock Managed Knowledge Base is now generally available - AWS",
+      "description": "Discover more about what's new at AWS with Amazon Bedrock Managed Knowledge Base is now generally available",
+      "excerpt": "Discover more about what's new at AWS with Amazon Bedrock Managed Knowledge Base is now generally available",
+      "summary": "Discover more about what's new at AWS with Amazon Bedrock Managed Knowledge Base is now generally available",
+      "what_happened": "Discover more about what's new at AWS with Amazon Bedrock Managed Knowledge Base is now generally available",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Discover more about what's new at AWS with Amazon Bedrock Managed Knowledge Base is now generally available"
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "",
+      "image_url": "",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 3,
+  "has_cta": true,
+  "slides": [
+    "European Bioinformatics Institute launches In close collaboration at European Molecular Biology.",
+    "Billionaire Ambani wants AI in every call app and home.",
+    "FOLLOW @graitech"
+  ]
+}

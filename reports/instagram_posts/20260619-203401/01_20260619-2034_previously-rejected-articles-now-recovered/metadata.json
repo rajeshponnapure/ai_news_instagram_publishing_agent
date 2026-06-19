@@ -1,0 +1,52 @@
+{
+  "email_received_at": "2026-06-19T20:34+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Fri, 19 Jun 2026 20:34:01 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.theverge.com/tech/952953/phillips-hue-wired-wall-module-play-lamp-candle-bulb",
+      "title": "Company : The Verge AI",
+      "description": "[HIGH] Hue\u2019s wired wall modules bring non-smart lights into its ecosystem Company : The Verge AI Summary : Smart lighting company Philips Hue has launched its first wired wall modules. Installed behind existing wall switches, the new devices bring non-smart lights into the Hue ecosystem for the first time. Link :",
+      "text": "[HIGH] Hue\u2019s wired wall modules bring non-smart lights into its ecosystem Company : The Verge AI Summary : Smart lighting company Philips Hue has launched its first wired wall modules. Installed behind existing wall switches, the new devices bring non-smart lights into the Hue ecosystem for the first time. Link :",
+      "excerpt": "[HIGH] Hue\u2019s wired wall modules bring non-smart lights into its ecosystem Company : The Verge AI Summary : Smart lighting company Philips Hue has launched its first wired wall modules. Installed behind existing wall switches, the new devices bring non-smart lights into the Hue ecosystem for the first time. Link :",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/philips-hue-wandschalter-modul.webp?quality=90&amp;strip=all&amp;crop=0%2C3.4613147178592%2C100%2C93.077370564282&amp;w=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theverge.com/tech/952953/phillips-hue-wired-wall-module-play-lamp-candle-bulb",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    },
+    {
+      "url": "https://spectrum.ieee.org/amazon-astro-robot-sound",
+      "title": "Company : IEEE Spectrum",
+      "description": "[MEDIUM] What Amazon\u2019s Astro Taught Me About Giving Robots a Soul Company : IEEE Spectrum Summary : Character is the difference between a machine people tolerate and a product people trust Link :",
+      "text": "[MEDIUM] What Amazon\u2019s Astro Taught Me About Giving Robots a Soul Company : IEEE Spectrum Summary : Character is the difference between a machine people tolerate and a product people trust Link :",
+      "excerpt": "[MEDIUM] What Amazon\u2019s Astro Taught Me About Giving Robots a Soul Company : IEEE Spectrum Summary : Character is the difference between a machine people tolerate and a product people trust Link :",
+      "image_url": "https://spectrum.ieee.org/media-library/image.jpg?id=66906422&width=1200&height=600&coordinates=0%2C250%2C0%2C250",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://spectrum.ieee.org/amazon-astro-robot-sound",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 2
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "Upgrades include higher lumen output, a wider white light spectrum (1000-20,000K).",
+    "FOLLOW @graitech"
+  ]
+}
