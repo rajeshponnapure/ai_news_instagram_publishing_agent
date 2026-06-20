@@ -1,0 +1,67 @@
+{
+  "email_received_at": "2026-06-20T12:34+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Sat, 20 Jun 2026 12:34:27 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.theguardian.com/business/2026/jun/20/lloyds-banking-group-ai-recruitment-drive-300-tech-experts",
+      "title": "Company : The Guardian Tech",
+      "description": "[HIGH] Lloyds Banking Group to hire 300 tech experts to work on AI Company : The Guardian Tech Summary : Exclusive: While recruits will increase headcount for now, broader adoption of AI could lead to jobs cuts in future Lloyds Banking Group has launched an AI recruitment drive for 300 tech experts, week Link :",
+      "text": "[HIGH] Lloyds Banking Group to hire 300 tech experts to work on AI Company : The Guardian Tech Summary : Exclusive: While recruits will increase headcount for now, broader adoption of AI could lead to jobs cuts in future Lloyds Banking Group has launched an AI recruitment drive for 300 tech experts, week Link :",
+      "excerpt": "[HIGH] Lloyds Banking Group to hire 300 tech experts to work on AI Company : The Guardian Tech Summary : Exclusive: While recruits will increase headcount for now, broader adoption of AI could lead to jobs cuts in future Lloyds Banking Group has launched an AI recruitment drive for 300 tech experts, week Link :",
+      "image_url": "https://i.guim.co.uk/img/media/56a9f6722e09f125f1ef23bce556074b0c16807c/438_0_4375_3500/master/4375.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=d34845ff294d93c3b6497469c34565f2",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theguardian.com/business/2026/jun/20/lloyds-banking-group-ai-recruitment-drive-300-tech-experts",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.cnet.com/home/smart-home/best-apple-homekit-siri-devices/",
+      "title": "Company : CNET AI",
+      "description": "[MEDIUM] Best Apple HomeKit and Siri Devices to Buy in 2026 Company : CNET AI Summary : As Apple prepares for Siri AI and new Apple Home capabilities, it's never been a better time to buy a compatible device. Link :",
+      "text": "[MEDIUM] Best Apple HomeKit and Siri Devices to Buy in 2026 Company : CNET AI Summary : As Apple prepares for Siri AI and new Apple Home capabilities, it's never been a better time to buy a compatible device. Link :",
+      "excerpt": "[MEDIUM] Best Apple HomeKit and Siri Devices to Buy in 2026 Company : CNET AI Summary : As Apple prepares for Siri AI and new Apple Home capabilities, it's never been a better time to buy a compatible device. Link :",
+      "image_url": "https://www.cnet.com/a/img/resize/093b6e2b17f2555b16e9e0b97046638d57b2dbae/hub/2026/06/18/9b7ee5be-a874-45a0-827b-2f7a5314513c/gettyimages-1082224518.jpg?auto=webp&amp;fit=crop&amp;height=675&amp;width=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.cnet.com/home/smart-home/best-apple-homekit-siri-devices/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/jun/20/europe-sleepwalking-ai-disaster-us-china",
+      "title": "Company : The Guardian Tech",
+      "description": "[MEDIUM] A viral doomsday scenario aims to shake Europe out of its AI complacency Company : The Guardian Tech Summary : Does a thought-experiment about US ascendancy in the technology say as much about AI jitters as it does about the reality? It\u2019s 2031 and the US and China are about to tear Europe into pieces. The US p Link :",
+      "text": "[MEDIUM] A viral doomsday scenario aims to shake Europe out of its AI complacency Company : The Guardian Tech Summary : Does a thought-experiment about US ascendancy in the technology say as much about AI jitters as it does about the reality? It\u2019s 2031 and the US and China are about to tear Europe into pieces. The US p Link :",
+      "excerpt": "[MEDIUM] A viral doomsday scenario aims to shake Europe out of its AI complacency Company : The Guardian Tech Summary : Does a thought-experiment about US ascendancy in the technology say as much about AI jitters as it does about the reality? It\u2019s 2031 and the US and China are about to tear Europe into pieces. The US p Link :",
+      "image_url": "https://i.guim.co.uk/img/media/b3962d03da5e05ce790c02cf6de8f24dc3b59578/599_0_2835_2268/master/2835.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=eb1e9602a87e5da02e40dc6017d165b6",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theguardian.com/technology/2026/jun/20/europe-sleepwalking-ai-disaster-us-china",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 3,
+  "has_cta": true,
+  "slides": [
+    "Lloyds Banking Group to hire 300 tech experts to work on AI.",
+    "It's 2031 and the US and China are about to tear Europe.",
+    "FOLLOW @graitech"
+  ]
+}
