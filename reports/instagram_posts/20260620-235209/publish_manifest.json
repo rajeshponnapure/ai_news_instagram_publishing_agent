@@ -8,8 +8,14 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260620-235209/01_20260620-2352_previously-rejected-articles-now-recovered/slide_02.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260620-235209/01_20260620-2352_previously-rejected-articles-now-recovered/slide_03.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260620-235209/01_20260620-2352_previously-rejected-articles-now-recovered/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260620-235209/01_20260620-2352_previously-rejected-articles-now-recovered/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260620-235209/01_20260620-2352_previously-rejected-articles-now-recovered/slide_03.png"
+      ],
+      "status": "published",
+      "creation_id": "18047257895577438",
+      "published_at": "2026-06-20T23:55:03+00:00"
     }
   ]
 }
