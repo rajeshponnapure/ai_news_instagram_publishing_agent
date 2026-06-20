@@ -1,0 +1,38 @@
+{
+  "email_received_at": "2026-06-20T16:20+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Sat, 20 Jun 2026 16:20:40 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.therobotreport.com/defense-manufacturing-readiness-hinges-autonomous-surface-prep-says-graymatter/",
+      "title": "Company : Robotics Business Review",
+      "description": "[MEDIUM] Defense manufacturing readiness hinges on autonomous finishing, says GrayMatter Robotics Company : Robotics Business Review Summary : The Navy's industrial base review identified a projected need for 174,000 new workers. GrayMatter says robotics can fill this gap. The post Defense manufacturing readiness hinges on autonomous finishi Link :",
+      "text": "[MEDIUM] Defense manufacturing readiness hinges on autonomous finishing, says GrayMatter Robotics Company : Robotics Business Review Summary : The Navy's industrial base review identified a projected need for 174,000 new workers. GrayMatter says robotics can fill this gap. The post Defense manufacturing readiness hinges on autonomous finishi Link :",
+      "excerpt": "[MEDIUM] Defense manufacturing readiness hinges on autonomous finishing, says GrayMatter Robotics Company : Robotics Business Review Summary : The Navy's industrial base review identified a projected need for 174,000 new workers. GrayMatter says robotics can fill this gap. The post Defense manufacturing readiness hinges on autonomous finishi Link :",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/06/graymatter-robotics-BUFFING-featured.jpg",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.therobotreport.com/defense-manufacturing-readiness-hinges-autonomous-surface-prep-says-graymatter/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "\"The geometry changes with each unit, and so does the finishing challenge.",
+    "FOLLOW @graitech"
+  ]
+}
