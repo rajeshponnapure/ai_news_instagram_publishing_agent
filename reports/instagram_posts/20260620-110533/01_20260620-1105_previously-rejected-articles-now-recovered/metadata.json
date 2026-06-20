@@ -1,0 +1,66 @@
+{
+  "email_received_at": "2026-06-20T11:05+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Sat, 20 Jun 2026 11:05:33 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/",
+      "title": "Company : TechCrunch AI",
+      "description": "[HIGH] Billionaire Ambani wants AI in every call, app, and home Company : TechCrunch AI Summary : Reliance is weaving AI into telecom services used by more than 500 million people. Link :",
+      "text": "[HIGH] Billionaire Ambani wants AI in every call, app, and home Company : TechCrunch AI Summary : Reliance is weaving AI into telecom services used by more than 500 million people. Link :",
+      "excerpt": "[HIGH] Billionaire Ambani wants AI in every call, app, and home Company : TechCrunch AI Summary : Reliance is weaving AI into telecom services used by more than 500 million people. Link :",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/reliance-mukesh-ambani.jpg?resize=1200,800",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.cnet.com/home/kitchen-and-household/a-coffee-expert-explains-why-a-burr-grinder-is-the-only-grinder-worth-buying/",
+      "title": "Company : CNET AI",
+      "description": "[MEDIUM] A Coffee Expert Explains Why Burr Grinders Are the Only Grinders Worth Buying Company : CNET AI Summary : The single upgrade that transforms your home coffee the most? Your grinder. A coffee expert shared their go-to recommendation with me. Link :",
+      "text": "[MEDIUM] A Coffee Expert Explains Why Burr Grinders Are the Only Grinders Worth Buying Company : CNET AI Summary : The single upgrade that transforms your home coffee the most? Your grinder. A coffee expert shared their go-to recommendation with me. Link :",
+      "excerpt": "[MEDIUM] A Coffee Expert Explains Why Burr Grinders Are the Only Grinders Worth Buying Company : CNET AI Summary : The single upgrade that transforms your home coffee the most? Your grinder. A coffee expert shared their go-to recommendation with me. Link :",
+      "image_url": "https://www.cnet.com/a/img/resize/c76c5711a7e0bade0964078f3d8948920aad18d7/hub/2025/12/05/4db52a4b-c89b-4f26-a11c-33c7e4e14ffd/gettyimages-1301799837.jpg?auto=webp&amp;fit=crop&amp;height=675&amp;width=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.cnet.com/home/kitchen-and-household/a-coffee-expert-explains-why-a-burr-grinder-is-the-only-grinder-worth-buying/",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    },
+    {
+      "url": "https://www.producthunt.com/products/gitsync-for-macos",
+      "title": "Company : Product Hunt AI",
+      "description": "[MEDIUM] GitSync for macOS Company : Product Hunt AI Summary : Visual GitHub management directly from a graphical interface Discussion | Link Link :",
+      "text": "[MEDIUM] GitSync for macOS Company : Product Hunt AI Summary : Visual GitHub management directly from a graphical interface Discussion | Link Link :",
+      "excerpt": "[MEDIUM] GitSync for macOS Company : Product Hunt AI Summary : Visual GitHub management directly from a graphical interface Discussion | Link Link :",
+      "image_url": "https://ph-files.imgix.net/5c2c54b5-7b6b-4cfe-ae86-30b98f6fc023.jpeg?auto=format&amp;fit=crop&amp;frame=1&amp;h=512&amp;w=1024",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.producthunt.com/products/gitsync-for-macos",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "Best Products Launches Launch archive Most-loved launches by the community Launch Guide.",
+    "FOLLOW @graitech"
+  ]
+}
