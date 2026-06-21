@@ -7,8 +7,13 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260621-085229/01_20260620-2224_does-apples-new-ios-27-siri-ai-live-up-to-the-hype/slide_01.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260621-085229/01_20260620-2224_does-apples-new-ios-27-siri-ai-live-up-to-the-hype/slide_02.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260621-085229/01_20260620-2224_does-apples-new-ios-27-siri-ai-live-up-to-the-hype/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260621-085229/01_20260620-2224_does-apples-new-ios-27-siri-ai-live-up-to-the-hype/slide_02.png"
+      ],
+      "status": "published",
+      "creation_id": "18047300648577438",
+      "published_at": "2026-06-21T08:55:36+00:00"
     }
   ]
 }
