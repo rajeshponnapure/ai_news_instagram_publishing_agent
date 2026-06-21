@@ -8,8 +8,14 @@
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260621-161835/01_20260621-0743_beyond-siri-here-are-the-practical-ai-features-coming-to-you/slide_02.png",
         "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/reports/instagram_posts/20260621-161835/01_20260621-0743_beyond-siri-here-are-the-practical-ai-features-coming-to-you/slide_03.png"
       ],
-      "public_slide_urls": [],
-      "status": "ready_for_upload"
+      "public_slide_urls": [
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260621-161835/01_20260621-0743_beyond-siri-here-are-the-practical-ai-features-coming-to-you/slide_01.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260621-161835/01_20260621-0743_beyond-siri-here-are-the-practical-ai-features-coming-to-you/slide_02.png",
+        "https://rajeshponnapure.github.io/ai_news_instagram_publishing_agent/instagram_posts/20260621-161835/01_20260621-0743_beyond-siri-here-are-the-practical-ai-features-coming-to-you/slide_03.png"
+      ],
+      "status": "published",
+      "creation_id": "18047342033577438",
+      "published_at": "2026-06-21T16:22:28+00:00"
     }
   ]
 }
