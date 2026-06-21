@@ -1,0 +1,38 @@
+{
+  "email_received_at": "2026-06-21T18:10+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "Previously Rejected Articles Now Recovered",
+  "subject": "Recovered Articles",
+  "source_date": "Sun, 21 Jun 2026 18:10:25 +0000",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "",
+  "article_title": "",
+  "article_image_path": "",
+  "article_image_url": "",
+  "article_items": [
+    {
+      "url": "https://www.theverge.com/entertainment/953303/cold-court-hands-up-ep-music-review",
+      "title": "Company : The Verge AI",
+      "description": "[MEDIUM] Cold Court\u2019s debut EP is an infectious, glitchy genre mashup Company : The Verge AI Summary : Cold Court is a brother-sister duo from Philly that seems to love nothing more than shoving all of their influences together in a messy soup that at least superficially resembles the hyperpop you've c Link :",
+      "text": "[MEDIUM] Cold Court\u2019s debut EP is an infectious, glitchy genre mashup Company : The Verge AI Summary : Cold Court is a brother-sister duo from Philly that seems to love nothing more than shoving all of their influences together in a messy soup that at least superficially resembles the hyperpop you've c Link :",
+      "excerpt": "[MEDIUM] Cold Court\u2019s debut EP is an infectious, glitchy genre mashup Company : The Verge AI Summary : Cold Court is a brother-sister duo from Philly that seems to love nothing more than shoving all of their influences together in a messy soup that at least superficially resembles the hyperpop you've c Link :",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/Cold-Court-Hands-Up-EP-Art-by-Gabriel-Good-large.jpg?quality=90&amp;strip=all&amp;crop=2.25%2C0%2C95.5%2C100&amp;w=1200",
+      "image_path": "",
+      "extra_image_urls": [],
+      "extra_image_paths": [],
+      "_rejected_url": "https://www.theverge.com/entertainment/953303/cold-court-hands-up-ep-music-review",
+      "_rejected_reason": "quality_filter",
+      "_rejected_attempts": 1
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 2,
+  "has_cta": true,
+  "slides": [
+    "Previously Rejected Articles Now Recovered.",
+    "FOLLOW @graitech"
+  ]
+}
