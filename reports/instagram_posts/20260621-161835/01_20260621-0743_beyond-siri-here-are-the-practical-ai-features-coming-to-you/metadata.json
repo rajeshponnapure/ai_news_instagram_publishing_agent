@@ -1,0 +1,280 @@
+{
+  "email_received_at": "2026-06-21T07:43-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27 | TechCrunch",
+  "subject": "\ud83d\udea8 AI Alert: 14 new launches \u2014 TechCrunch AI, CNET AI, Bloomberg Tech",
+  "source_date": "Sun, 21 Jun 2026 07:43:30 -0700",
+  "companies": [
+    "Anthropic",
+    "Apple",
+    "TechCrunch AI",
+    "CNET AI",
+    "Beyond Siri AI",
+    "The AI",
+    "Xiao-I Corporation",
+    "Siri AI"
+  ],
+  "models": [
+    "Claude"
+  ],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "developer tools",
+    "media generation"
+  ],
+  "article_url": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/",
+  "article_title": "Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27 | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/190b00cafcdec1de.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/06/shortcut.jpg?w=680",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/",
+      "title": "Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27 | TechCrunch",
+      "description": "Siri\u2019s AI overhaul may have grabbed the headlines at WWDC, but some of Apple\u2019s most useful AI features are arriving elsewhere in iOS 27.",
+      "excerpt": "Siri\u2019s AI overhaul may have grabbed the headlines at WWDC, but some of Apple\u2019s most useful AI features are arriving elsewhere in iOS 27.",
+      "summary": "The features are live now in the developer beta and will soon arrive in the public beta, before iOS 27\u2019s general public release later this fall. Messages\u2019 one-tap suggestions If you thought the feature that automatically displays the SMS passcode you need to sign into a website right above the keyboard is one of the best things Apple has ever introduced, you\u2019re going to like the new one-tap suggestions in iOS 27. Adding Calendar events Replicating a feature that third-party apps like Fantasical have had for years, Apple will now also allow you to add or change Calendar events just by describing them in natural language. The 11 standout startups from YC\u2019s Demo Day, according to VCs NASA picks Eric Schmidt\u2019s rocket company for Mars mission, setting up a race with SpaceX SpaceX to acquire Cursor for $60B in stock, days after blockbuster. Apple suggests you could configure your alarm every night based on what events you have on your calendar the next day, or make it so your favorite productivity apps open in a certain way every time you connect your Magic Keyboard with an iPad. Apple Intelligence works to extract the key details from the bill, like the.",
+      "what_happened": "The features are live now in the developer beta and will soon arrive in the public beta, before iOS 27\u2019s general public release later this fall. Messages\u2019 one-tap suggestions If you thought the feature that automatically displays the SMS passcode you need to sign into a website right above the keyboard is one of the best things Apple has ever introduced, you\u2019re going to like the new one-tap suggestions in iOS 27.",
+      "why_matters": "Adding Calendar events Replicating a feature that third-party apps like Fantasical have had for years, Apple will now also allow you to add or change Calendar events just by describing them in natural language. The 11 standout startups from YC\u2019s Demo Day, according to VCs NASA picks Eric Schmidt\u2019s rocket company for Mars mission, setting up a race with SpaceX SpaceX to acquire Cursor for $60B in stock, days after blockbuster.",
+      "what_to_watch": "Apple suggests you could configure your alarm every night based on what events you have on your calendar the next day, or make it so your favorite productivity apps open in a certain way every time you connect your Magic Keyboard with an iPad. Apple Intelligence works to extract the key details from the bill, like the.",
+      "key_points": [
+        "The features are live now in the developer beta and will soon arrive in the public beta, before iOS 27\u2019s general public release later this fall.",
+        "Messages\u2019 one-tap suggestions If you thought the feature that automatically displays the SMS passcode you need to sign into a website right above the keyboard is one of the best things Apple has ever introduced, you\u2019re.",
+        "Apple Intelligence works to extract the key details from the bill, like the items ordered and the quantities, the tip, and the total.",
+        "With Apple Intelligence in iOS 27, the Home app can make sense of the multiple actions and how they\u2019re connected, so it sends a single notification related to the overall activity: that someone arrived at home and.",
+        "Under the hood, Apple Intelligence extracts the contacts and locations and creates a title for the event on your behalf.",
+        "For instance, if your partner comes home, raises the smart garage door, checks the mail, and then enters the house, you could get one notification per action - which starts to feel like spam.",
+        "These appear at the top of the browser, above the webpage, for easy access when you\u2019re ready to return to your web research.",
+        "To work, the feature is leveraging Apple Intelligence to pull the information from your email in Mail, running entirely on the device for privacy.",
+        "Adding Calendar events Replicating a feature that third-party apps like Fantasical have had for years, Apple will now also allow you to add or change Calendar events just by describing them in natural language.",
+        "In iOS 27, you can just describe what you want your iPhone to do.",
+        "Apple\u2019s new password-updating feature will now leverage AI to agentically take action on users\u2019 behalf by identifying both weak and compromised passwords - like those found in a data breach.",
+        "You can choose the items you ordered from the receipt and then share a request for others to do the same by messaging the group chat."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/190b00cafcdec1de.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/shortcut.jpg?w=680",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/xiao-i-corporation-provides-update-on-first-instance-rulings-in-patent-litigation-against-apple-company-intends-to-appeal-to-the-supreme-peoples-court-302804076.html",
+      "title": "Xiao-I Corporation Provides Update on First-Instance Rulings in Patent Litigation Against Apple; Company Intends to Appeal to the Supreme People's Court",
+      "description": "/PRNewswire/ -- Xiao-I Corporation (NASDAQ: AIXI) (\"Xiao-I\" or the \"Company\"), a leading developer of AI solutions, provided a material update on the...",
+      "excerpt": "/PRNewswire/ -- Xiao-I Corporation (NASDAQ: AIXI) (\"Xiao-I\" or the \"Company\"), a leading developer of AI solutions, provided a material update on the...",
+      "summary": "/PRNewswire/ -- Xiao-I Corporation (NASDAQ: AIXI) (\"Xiao-I\" or the \"Company\"), a leading developer of AI solutions, provided a material update on the...",
+      "what_happened": "/PRNewswire/ -- Xiao-I Corporation (NASDAQ: AIXI) (\"Xiao-I\" or the \"Company\"), a leading developer of AI solutions, provided a material update on the...",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "/PRNewswire/ -- Xiao-I Corporation (NASDAQ: AIXI) (\"Xiao-I\" or the \"Company\"), a leading developer of AI solutions, provided a material update on the..."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8132376a49f6699e.jpg",
+      "image_url": "https://www.prnewswire.com/content/dam/prnewswire/subject-and-industry-code-images/CPR.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/c1jy512r19ro?at_medium=RSS&at_campaign=rss",
+      "title": "Why the social media ban is about so much more than social media",
+      "description": "If we are witnessing a profound shift in the online space, how will it reshape our relationship with it? Technology and AI editor Zoe Kleinman writes.",
+      "excerpt": "If we are witnessing a profound shift in the online space, how will it reshape our relationship with it? Technology and AI editor Zoe Kleinman writes.",
+      "summary": "If we are witnessing a profound shift in the online space, how will it reshape our relationship with it? Technology and AI editor Zoe Kleinman writes.",
+      "what_happened": "If we are witnessing a profound shift in the online space, how will it reshape our relationship with it? Technology and AI editor Zoe Kleinman writes.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "If we are witnessing a profound shift in the online space, how will it reshape our relationship with it?",
+        "Technology and AI editor Zoe Kleinman writes."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f19faa4ee0e5ef8f.webp",
+      "image_url": "https://ichef.bbci.co.uk/news/480/cpsprodpb/b941/live/6c8211f0-6bf1-11f1-8546-8f19e4fe30f4.jpg.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.geeky-gadgets.com/apple-siri-beats-gemini/",
+      "title": "Does Apple's New iOS 27 'Siri AI' Live Up to the Hype?",
+      "description": "Apple completely rebuilt its assistant from scratch at WWDC 2026. We test the new iOS 27 'Siri AI' features, onscreen awareness, and more.",
+      "excerpt": "Apple completely rebuilt its assistant from scratch at WWDC 2026. We test the new iOS 27 'Siri AI' features, onscreen awareness, and more.",
+      "summary": "Apple completely rebuilt its assistant from scratch at WWDC 2026. We test the new iOS 27 'Siri AI' features, onscreen awareness, and more. We test the new iOS 27 'Siri AI' features, onscreen awareness, and more. We test the new iOS 27 'Siri AI' features, onscreen awareness, and more.",
+      "what_happened": "Apple completely rebuilt its assistant from scratch at WWDC 2026. We test the new iOS 27 'Siri AI' features, onscreen awareness, and more.",
+      "why_matters": "We test the new iOS 27 'Siri AI' features, onscreen awareness, and more.",
+      "what_to_watch": "We test the new iOS 27 'Siri AI' features, onscreen awareness, and more.",
+      "key_points": [
+        "Apple completely rebuilt its assistant from scratch at WWDC 2026.",
+        "We test the new iOS 27 'Siri AI' features, onscreen awareness, and more."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ddb3320b7210dcad.jpg",
+      "image_url": "https://www.geeky-gadgets.com/wp-content/uploads/2026/06/ios-27-2-2-1.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/59f31965a18fb994.webp"
+      ],
+      "extra_image_urls": [
+        "https://www.geeky-gadgets.com/wp-content/uploads/2026/06/ios-27-2-2-1.webp"
+      ]
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/jun/18/california-billionaire-tax-ballot-tech-opposition",
+      "title": "California \u2018billionaire tax\u2019 makes ballot despite opposition from tech moguls",
+      "description": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "excerpt": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "summary": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "what_happened": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn"
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e54963f129a234ea.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/38e509e5c6cebd21b697c28446bba95920578c09/305_0_3560_2848/master/3560.jpg?width=465&dpr=1&s=none&crop=none",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2196998/midjourney-full-body-ultrasonic-scanner/",
+      "title": "Midjourney, the AI image generator, is developing a full-body ultrasonic scanner - Engadget",
+      "description": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "excerpt": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "summary": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "what_happened": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9cc2b344f3a13eeb.jpg",
+      "image_url": "https://img1.zergnet.com/8768660_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2198346/claude-guillemot-one-of-ubisoft-co-founders-has-died-in-a-plane-crash/",
+      "title": "Claude Guillemot, one of Ubisoft\u2019s co-founders, has died in a plane crash - Engadget",
+      "description": "The crash reportedly happened on an airstrip near the western coast of France on June 19.",
+      "excerpt": "The crash reportedly happened on an airstrip near the western coast of France on June 19.",
+      "summary": "The crash reportedly happened on an airstrip near the western coast of France on June 19.",
+      "what_happened": "The crash reportedly happened on an airstrip near the western coast of France on June 19.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The crash reportedly happened on an airstrip near the western coast of France on June 19."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/aaaeb8303b06317a.jpg",
+      "image_url": "https://img4.zergnet.com/8755679_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2196902/tim-cook-says-apple-price-increases-are-unavoidable-due-to-memory-crunch/",
+      "title": "Tim Cook says Apple price increases are 'unavoidable' due to memory crunch - Engadget",
+      "description": "RAMaggedon claims another one.",
+      "excerpt": "RAMaggedon claims another one.",
+      "summary": "RAMaggedon claims another one.",
+      "what_happened": "RAMaggedon claims another one.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "RAMaggedon claims another one."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/aaaeb8303b06317a.jpg",
+      "image_url": "https://img4.zergnet.com/8755679_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 3,
+  "has_cta": true,
+  "slides": [
+    "Beyond Siri Here are the practical AI features coming to your iPhone.",
+    "Does Apple's New iOS 27 Siri AI' Live Up to the Hype.",
+    "FOLLOW @graitech"
+  ]
+}
