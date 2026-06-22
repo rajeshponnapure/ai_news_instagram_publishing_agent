@@ -1,54 +1,53 @@
 # AI News Summary Report
 
-Generated: 2026-06-22T21:42:48+00:00
+Generated: 2026-06-22T23:33:52+00:00
 Source: grdevelopers.co@gmail.com
 Emails summarized: 1
 
 ## Executive Brief
 
-- More from TechCrunch Nvidia wants to cut data center water use, but that’s not the same as fixing AI’s water problem Nvidia just announced a warm-water cooling system that it says can dramatically reduce the amount of.
-- The problem is, water use outside of the data center. primarily in electricity generation and chip manufacturing. can double or triple the total water footprint of a facility.
-- Nvidia announced a new cooling system that cuts water use inside the data center.
-- Fossil fuel power plants are one of the largest water users in the U.S., consuming 2.7 billion gallons per day, according to the U.S.
-- The core issue is how Nvidia measures data center water use.
-- As long as AI data centers run on fossil fuels. a choice tech companies are increasingly making. the savings stop at the data center’s walls.
+- Reflection AI will pay $150 million a month beginning July 1, 2026 through 2029 for immediate access to Nvidia's latest GB300 AI chips and supporting hardware across SpaceX's Colossus 2 data center near Memphis.
+- Uber's shareholders have filed a lawsuit against the ride-sharing giant.
+- "Uber's leadership has a long history of devoting insufficient resources to customer safety and protection, and setting a tone of non-compliance for the organization," the lawsuit read.
+- In 2022, more than 500 women passengers filed a lawsuit against the company, alleging that they were "kidnapped, sexually assaulted, sexually battered, raped, falsely imprisoned, stalked, harassed, or otherwise.
+- "This has inevitably led to harm to customers and massive legal and regulatory exposure to Uber." The shareholders behind this lawsuit are seeking a jury trial, but also for the company to "reform and improve its.
+- An Uber spokesperson told Engadget that "this suit ignores important facts and is based on misleading, false narratives from other meritless lawsuits that we have already addressed publicly and in the courtroom." Legal.
 
 ## Most Mentioned Companies
 
-OpenAI (1), Google (1), DeepMind (1), Anthropic (1), Amazon (1), NVIDIA (1), Salesforce (1), CNBC Technology (1)
+Amazon (1), NVIDIA (1), Reflection AI (1), GB300 AI (1), Multimodal AI (1)
 
 ## Most Mentioned Models
 
-Claude (1)
+No clear model mentions found.
 
 ## Main Topics
 
-model release (1), funding or business (1), regulation or safety (1), developer tools (1), hardware and compute (1), media generation (1)
+regulation or safety (1), hardware and compute (1)
 
 ## Voice Script Hooks
 
-- OpenAI just made a move in model release: Nvidia wants to cut data center water use, but that's not the same as fixing AI's water problem | TechCrunch
+- Amazon just made a move in regulation or safety: SpaceX inks compute deal with Reflection AI, an open source AI lab | TechCrunch
 
 ## Per-Email Summaries
 
-### 1. Nvidia wants to cut data center water use, but that's not the same as fixing AI's water problem | TechCrunch
+### 1. SpaceX inks compute deal with Reflection AI, an open source AI lab | TechCrunch
 
-Source date: Mon, 22 Jun 2026 13:46:16 -0700
+Source date: Mon, 22 Jun 2026 15:27:57 -0700
 Confidence: 0.82
-Article: https://techcrunch.com/2026/06/22/nvidia-wants-to-cut-data-center-water-use-but-thats-not-the-same-as-fixing-ais-water-problem/
-Article title: Nvidia wants to cut data center water use, but that's not the same as fixing AI's water problem | TechCrunch
+Article: https://techcrunch.com/2026/06/22/spacex-inks-compute-deal-with-reflection-ai-an-open-source-ai-lab/
+Article title: SpaceX inks compute deal with Reflection AI, an open source AI lab | TechCrunch
 
-Article excerpt: Nvidia announced a new cooling system that cuts water use inside the data center. But it does nothing to address AI's biggest water use — fossil fuel power plants.
+Article excerpt: Reflection AI will pay $150 million a month beginning July 1, 2026 through 2029 for immediate access to Nvidia's latest GB300 AI chips and supporting hardware across SpaceX's Colossus 2 data center near Memphis, Tennessee.
 
-More from TechCrunch Nvidia wants to cut data center water use, but that’s not the same as fixing AI’s water problem Nvidia just announced a warm-water cooling system that it says can dramatically reduce the amount of water a data center uses - eliminating “pretty much all water usage” inside the data center, according to an Nvidia executive in a press release . Nvidia announced a new cooling system that cuts water use inside the data center. In favorable climates, the company says, that can amount to a 100% reduction in on-site water use. According to its blog post, the company essentially draws a line around the data center. He has written for a wide range of publications, including Wired magazine, the Chicago Tribune, Ars Technica, The Wire China, and NOVA Next, where he was founding editor. The problem is, water use outside of the data center - primarily in electricity generation and chip manufacturing - can double or triple the total. More from TechCrunch Nvidia wants to cut data center water use, but that’s not the same as fixing AI’s water problem Nvidia just announced a warm-water cooling system that it says can dramatically reduce the amount of. The problem is, water use outside of the data center - primarily in electricity generation and chip manufacturing - can double or triple the total water footprint of a facility. Nvidia announced a new cooling system that cuts water use inside the data center. Fossil fuel power plants are one of the largest water users in the U.S., consuming 2.7 billion gallons per day, according to the U.S. The core issue is how Nvidia measures data center water use. As long as AI data centers run on fossil fuels - a choice tech companies are increasingly making - the savings stop at the data center’s walls. Hydropower dams, which supply around 10% of data center power, don’t consume water in the same direct way, but evaporation from their reservoirs amounts to 6.8 liters lost per kilowatt-hour generated. While renewables are providing a growing share of new electricity capacity, natural gas and coal are expected to provide more than 40% of new electricity needed to meet data center demand through 2030, the IEA projects. Wind and solar power, on the other hand, use vanishingly small amounts of water, about 0.01 liters and 0.03 liters per kilowatt-hour, respectively - figures that include the water needed for manufacturing and cleaning. In favorable climates, the company says, that can amount to a 100% reduction in on-site water use. According to its blog post, the company essentially draws a line around the data center. After passing through a server, the coolant emerges at 55 C (131 F), Nvidia said, bringing a significant amount of heat away from the hardware. Nvidia announced a new cooling system that cuts water use inside the data center. But it does nothing to address AI's biggest water use - fossil fuel power plants. More from TechCrunch Nvidia wants to cut data center water use, but that’s not the same as fixing AI’s water problem Nvidia just announced a warm-water cooling system that it says can dramatically reduce the amount of water a data center uses - eliminating “pretty much all water usage” inside the data center, according to an Nvidia executive in a press release . “The water consumption challenge for data centers is largely solved,” Josh Parker, chief sustainability officer at Nvidia, recently told Axios. But that’s only part of the water story. As long as AI data centers run on fossil fuels - a choice tech companies are increasingly making - the savings stop at the data center’s walls. The core issue is how Nvidia measures data center water use. According to its blog post, the company essentially draws a line around the data center. Anything inside gets counted, and anything outside gets ignored. To be fair, Nvidia’s system does appear to deliver on its facility-level promise - the coolant runs in a closed loop, filled once and recirculated for the life of the facility, meaning no new water is consumed to cool the chips. In favorable climates, the company says, that can amount to a 100% reduction in on-site water use. TechCrunch has asked Nvidia to clarify the matter, and we’ll update this article if we receive a reply. The problem is, water use outside of the data center - primarily in electricity generation and chip manufacturing - can double or triple the total water footprint of a facility. That means Nvidia’s solution addresses about a quarter to a third of AI data centers’ total water consumption. The new system is clever, pumping coolant into racks at 45 C (113 F). That’s hot for humans but not for computer chips. After passing through a server, the coolant emerges at 55 C (131 F), Nvidia said, bringing a significant amount of heat away from the hardware. At that temperature, the outside air in most climates can draw heat off passive radiators without evaporative cooling or, in some cases, fans. A data center without fans or chillers would not only use less water, but it would also be more efficient and quieter. But no data center can operate without an electricity supply, and many types of power plants are themselves major water consumers. Fossil fuel power plants are one of the largest water users in the U.S., consuming 2.7 billion gallons per day, according to the U.S. Geological Survey - most of it for evaporative cooling. Natural gas power plants use 1.17 liters of water for every kilowatt-hour of electricity they generate, according to a recent study . Coal plants are even more water-intensive, using 2.2 liters per kilowatt-hour. Fossil fuel power plants collectively generate about half of all data center power today, according to the IEA. Hydropower dams, which supply around 10% of data center power, don’t consume water in the same direct way, but evaporation from their reservoirs amounts to 6.8 liters lost per kilowatt-hour generated. Geothermal, a source that tech companies are starting to explore, varies widely - it can be higher or lower depending on the specific technology. Some enhanced geothermal startups, like Fervo, have pledged to use mostly “degraded” water that would otherwise go unused. Wind and solar power, on the other hand, use vanishingly small amounts of water, about 0.01 liters and 0.03 liters per kilowatt-hour, respectively - figures that include the water needed for manufacturing and cleaning solar panels. While renewables are providing a growing share of new electricity capacity, natural gas and coal are expected to provide more than 40% of new electricity needed to meet data center demand through 2030, the IEA projects. Without major changes to that trajectory, data centers will still consume large amounts of water, regardless of what Nvidia does inside its walls. When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence. Tim De Chant is a senior climate reporter at TechCrunch. He has written for a wide range of publications, including Wired magazine, the Chicago Tribune, Ars Technica, The Wire China, and NOVA Next, where he was founding editor. De Chant is also a lecturer in MIT’s Graduate Program in Science Writing, and he was awarded a Knight Science Journalism Fellowship at MIT in 2018, during which time he studied climate technologies and explored new business models for journalism. He received his PhD in environmental science, policy, and management from the University of California, Berkeley, and his BA degree in environmental studies, English, and biology from St. You can contact or verify outreach from Tim by emailing tim.dechant@techcrunch.com . Get an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections. The 11 standout startups from YC’s Demo Day, according to VCs NASA picks Eric Schmidt’s rocket company for Mars mission, setting up a race with SpaceX Snap finally debuts its long-awaited AR glasses, Specs, and, oof, they aren’t cheap SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO We won't sell or share your personal information to inform the ads you see. You may still see interest-based ads if your information is sold or shared by other companies or was sold or shared previously.
+Reflection AI will pay $150 million a month beginning July 1, 2026 through 2029 for immediate access to Nvidia's latest GB300 AI chips and supporting hardware across SpaceX's Colossus 2 data center near Memphis, Tennessee. Reflection AI will pay $150 million a month beginning July 1, 2026 through 2029 for immediate access to Nvidia's latest GB300 AI chips and supporting hardware across SpaceX's Colossus 2 data center near Memphis. Reflection AI will pay $150 million a month beginning July 1, 2026 through 2029 for immediate access to Nvidia's latest GB300 AI chips and supporting hardware across SpaceX's Colossus 2 data center near Memphis, Tennessee.
 
 Key points:
-- More from TechCrunch Nvidia wants to cut data center water use, but that’s not the same as fixing AI’s water problem Nvidia just announced a warm-water cooling system that it says can dramatically reduce the amount of.
-- The problem is, water use outside of the data center. primarily in electricity generation and chip manufacturing. can double or triple the total water footprint of a facility.
-- Nvidia announced a new cooling system that cuts water use inside the data center.
-- Fossil fuel power plants are one of the largest water users in the U.S., consuming 2.7 billion gallons per day, according to the U.S.
-- The core issue is how Nvidia measures data center water use.
-- As long as AI data centers run on fossil fuels. a choice tech companies are increasingly making. the savings stop at the data center’s walls.
-Companies: OpenAI, Google, DeepMind, Anthropic, Amazon, NVIDIA, Salesforce, CNBC Technology
-Models: Claude
-Topics: model release, funding or business, regulation or safety, developer tools, hardware and compute, media generation
+- Reflection AI will pay $150 million a month beginning July 1, 2026 through 2029 for immediate access to Nvidia's latest GB300 AI chips and supporting hardware across SpaceX's Colossus 2 data center near Memphis.
+- Uber's shareholders have filed a lawsuit against the ride-sharing giant.
+- "Uber's leadership has a long history of devoting insufficient resources to customer safety and protection, and setting a tone of non-compliance for the organization," the lawsuit read.
+- In 2022, more than 500 women passengers filed a lawsuit against the company, alleging that they were "kidnapped, sexually assaulted, sexually battered, raped, falsely imprisoned, stalked, harassed, or otherwise.
+- "This has inevitably led to harm to customers and massive legal and regulatory exposure to Uber." The shareholders behind this lawsuit are seeking a jury trial, but also for the company to "reform and improve its.
+- An Uber spokesperson told Engadget that "this suit ignores important facts and is based on misleading, false narratives from other meritless lawsuits that we have already addressed publicly and in the courtroom." Legal.
+Companies: Amazon, NVIDIA, Reflection AI, GB300 AI, Multimodal AI
+Topics: regulation or safety, hardware and compute
