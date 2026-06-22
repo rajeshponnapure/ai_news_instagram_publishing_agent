@@ -1,0 +1,358 @@
+{
+  "email_received_at": "2026-06-21T22:38-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "When the Trump administration cracks down on Anthropic, who benefits? | TechCrunch",
+  "subject": "\ud83d\ude80 AI Digest \u2014 22 Jun 2026 | 50 updates \u00b7 50 launches",
+  "source_date": "Sun, 21 Jun 2026 22:38:39 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Apple",
+    "Amazon",
+    "AWS",
+    "NVIDIA"
+  ],
+  "models": [
+    "Claude"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/",
+  "article_title": "When the Trump administration cracks down on Anthropic, who benefits? | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/16c7b931ce62486f.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/06/anthropic-claude-fable.jpg?resize=1200,798",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/",
+      "title": "When the Trump administration cracks down on Anthropic, who benefits? | TechCrunch",
+      "description": "On the new episode of Equity, we discussed what actually prompted the administration's latest moves against Anthropic, and what this might mean for the AI ecosystem.",
+      "excerpt": "On the new episode of Equity, we discussed what actually prompted the administration's latest moves against Anthropic, and what this might mean for the AI ecosystem.",
+      "summary": "And there\u2019s something about the way Anthropic talks about Mythos in particular, where they\u2019re like, \u201cThis is the most incredibly powerful model ever, it\u2019s too dangerous to release to the public.\u201d And so on some level, [you say,] \u201cWell, okay, let\u2019s say that we take that seriously then. Amazon CEO Andy Jassy raised these concerns with the White House , and it just kind of spiraled from there. The 11 standout startups from YC\u2019s Demo Day, according to VCs NASA picks Eric Schmidt\u2019s rocket company for Mars mission, setting up a race with SpaceX SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak On the new episode of Equity, we discussed what actually prompted the administration's latest moves against Anthropic, and what this. And I feel that way not only because that was my initial reaction, but because of what a lot of cybersecurity researchers have said. I think a lot of people who maybe had thought of ChatGPT as the chatbot, the AI assistant before, suddenly they were looking at Claude as maybe the more responsible one, the more.",
+      "what_happened": "And there\u2019s something about the way Anthropic talks about Mythos in particular, where they\u2019re like, \u201cThis is the most incredibly powerful model ever, it\u2019s too dangerous to release to the public.\u201d And so on some level, [you say,] \u201cWell, okay, let\u2019s say that we take that seriously then. Amazon CEO Andy Jassy raised these concerns with the White House , and it just kind of spiraled from there.",
+      "why_matters": "The 11 standout startups from YC\u2019s Demo Day, according to VCs NASA picks Eric Schmidt\u2019s rocket company for Mars mission, setting up a race with SpaceX SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO The US government\u2019s Anthropic models ban was never about an AI jailbreak On the new episode of Equity, we discussed what actually prompted the administration's latest moves against Anthropic, and what this.",
+      "what_to_watch": "And I feel that way not only because that was my initial reaction, but because of what a lot of cybersecurity researchers have said. I think a lot of people who maybe had thought of ChatGPT as the chatbot, the AI assistant before, suddenly they were looking at Claude as maybe the more responsible one, the more.",
+      "key_points": [
+        "And there\u2019s something about the way Anthropic talks about Mythos in particular, where they\u2019re like, \u201cThis is the most incredibly powerful model ever, it\u2019s too dangerous to release to the public.\u201d And so on some level.",
+        "government basically just forced Anthropic to pull its two newest models offline - Fable 5, and then there was also Mythos 5, which was the one that was available to current Mythos users, [whereas] Fable 5 was more.",
+        "The 11 standout startups from YC\u2019s Demo Day, according to VCs NASA picks Eric Schmidt\u2019s rocket company for Mars mission, setting up a race with SpaceX SpaceX to acquire Cursor for $60B in stock, days after blockbuster.",
+        "I think a lot of people who maybe had thought of ChatGPT as the chatbot, the AI assistant before, suddenly they were looking at Claude as maybe the more responsible one, the more \u201cresistance\u201d one.",
+        "Amazon CEO Andy Jassy raised these concerns with the White House , and it just kind of spiraled from there.",
+        "Everyone\u2019s like, \u201cIt\u2019s the most powerful model, even Trump says so.",
+        "And in the same way, [while] Anthropic is very stressed out about this, this could, again, make their models seem even more powerful.",
+        "Anthropic itself said some of the same jailbreaks could have been found in several other AI models.",
+        "On the new episode of Equity, we discussed what actually prompted the administration's latest moves against Anthropic, and what this might mean for the AI ecosystem.",
+        "And it\u2019s at the same time that the administration was ostensibly trying to negotiate some sort of treaty for the war that it started in Iran.",
+        "But we also ran some stories about Ramp analysis to highlight the fact that the last big blow-up between Anthropic and the Trump administration was good for the company , in at least some ways.",
+        "So Anthropic was like, \u201cOkay, I guess we have to just pull the models entirely, because we don\u2019t know when someone\u2019s a foreign national."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/16c7b931ce62486f.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/anthropic-claude-fable.jpg?resize=1200,798",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/",
+      "title": "Samsung Electronics brings ChatGPT and Codex to employees",
+      "description": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI\u2019s largest enterprise AI rollouts.",
+      "excerpt": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI\u2019s largest enterprise AI rollouts.",
+      "summary": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI\u2019s largest enterprise AI rollouts. Samsung Electronics brings ChatGPT and Codex to employees ChatGPT Enterprise and Codex available to all Samsung Electronics employees in Korea and all Device eXperience (DX) employees worldwide Samsung\u2019s global deployment is one of OpenAI\u2019s largest enterprise launches ever Samsung Electronics to use ChatGPT and Codex across its operations, from R&D and manufacturing to marketing. AI CODING & DEVELOPER TOOLS ---------------------------------------- [HIGH] Samsung Electronics brings ChatGPT and Codex to employees OpenAI Blog | With Samsung Electronics\u2019 adoption of ChatGPT Enterprise, the relationship between the two companies is expanding beyond AI infrastructure to encompass workforce transformation and company-wide AI adoption. Samsung Electronics is working with OpenAI to supply advanced memory semiconductors required for next-generation AI infrastructure. Under the agreement, ChatGPT and Codex will be made available to all Samsung Electronics employees in Korea, and all employees worldwide in its Device eXperience (DX) division.",
+      "what_happened": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI\u2019s largest enterprise AI rollouts. Samsung Electronics brings ChatGPT and Codex to employees ChatGPT Enterprise and Codex available to all Samsung Electronics employees in Korea and all Device eXperience (DX) employees worldwide Samsung\u2019s global deployment is one of OpenAI\u2019s largest enterprise launches ever Samsung Electronics to use ChatGPT and Codex across its operations, from R&D and manufacturing to marketing.",
+      "why_matters": "AI CODING & DEVELOPER TOOLS ---------------------------------------- [HIGH] Samsung Electronics brings ChatGPT and Codex to employees OpenAI Blog | With Samsung Electronics\u2019 adoption of ChatGPT Enterprise, the relationship between the two companies is expanding beyond AI infrastructure to encompass workforce transformation and company-wide AI adoption.",
+      "what_to_watch": "Samsung Electronics is working with OpenAI to supply advanced memory semiconductors required for next-generation AI infrastructure. Under the agreement, ChatGPT and Codex will be made available to all Samsung Electronics employees in Korea, and all employees worldwide in its Device eXperience (DX) division.",
+      "key_points": [
+        "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI\u2019s largest enterprise AI rollouts.",
+        "AI CODING & DEVELOPER TOOLS ---------------------------------------- [HIGH] Samsung Electronics brings ChatGPT and Codex to employees OpenAI Blog |",
+        "Samsung Electronics brings ChatGPT and Codex to employees ChatGPT Enterprise and Codex available to all Samsung Electronics employees in Korea and all Device eXperience (DX) employees worldwide Samsung\u2019s global.",
+        "More than 5 million people now use Codex every week for technical and non-technical workflows and roles.",
+        "With Samsung Electronics\u2019 adoption of ChatGPT Enterprise, the relationship between the two companies is expanding beyond AI infrastructure to encompass workforce transformation and company-wide AI adoption.",
+        "Under the agreement, ChatGPT and Codex will be made available to all Samsung Electronics employees in Korea, and all employees worldwide in its Device eXperience (DX) division.",
+        "Samsung Electronics plans to use ChatGPT and Codex for technical and non-technical work, across a broad range of functions, including software development, marketing, product development, and manufacturing, to enhance.",
+        "\u201cOpenAI will work closely with Samsung Electronics to help its employees level up with ChatGPT and Codex to move from ideas to execution faster, solve complex problems, and create new products and services.\u201d OpenAI and.",
+        "Also in Korea, Seoul National University recently began providing ChatGPT Edu to all 47,000 members of its community, including students, faculty, and staff, as part of its transition toward becoming an AI-native campus.",
+        "Codex weekly active users in Korea have grown nearly 800% since February 1, 2026.",
+        "Companies across a wide range of industries in Korea, including LG Electronics, LG Uplus, LG CNS, GS E&C, Samsung SDS, TVING, Krafton, Toss, MUSINSA, Korea Zinc, Nexen Tire, and HanaTour are also using ChatGPT.",
+        "For example, employees can use Codex to turn ideas into working software, internal tools, websites, and automated workflows."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/871ce60e7fdcbcbd.webp",
+      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6SkgXCQ08f4AYarun2I3oU/24414c9962c945767f783bdb63006841/OAI-Ona-ArtCard.png?w=3840&q=90&fm=webp",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5142255556a1fb7a.png"
+      ],
+      "extra_image_urls": [
+        "https://images.ctfassets.net/kftzwdyauwt9/18IGXqgYieQfH2AcUiYbua/4975e902fc7b1eb55f0863da06f82c92/samsung-electronics-16_9.png?w=1600&h=900&fit=fill"
+      ]
+    },
+    {
+      "url": "https://www.technologyreview.com/2026/04/21/1135645/llm-large-language-models-ai/",
+      "title": "LLMs+",
+      "description": "LLMs are evolving. The next generation of the world\u2019s hottest technology will be cheaper, more efficient, and able to solve bigger problems without going off the rails.",
+      "excerpt": "LLMs are evolving. The next generation of the world\u2019s hottest technology will be cheaper, more efficient, and able to solve bigger problems without going off the rails.",
+      "summary": "When OpenAI launched ChatGPT as an experimental prototype in late 2022, it chatbot became an everyday everything app for hundreds of millions of people. These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. A reality check on the AI jobs hysteria What do the numbers really say about the impact of artificial intelligence on the labor market? Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI\u2019s models Musk kept his cool, and OpenAI\u2019s lawyer bulldozed him with piercing questions about his motivations for suing the company. The next generation of the world\u2019s hottest technology will be cheaper, more efficient, and able to solve bigger problems without going off the rails. But the bigger the context window and the longer the task, the more likely models are to go off the rails or forget what they were doing.",
+      "what_happened": "When OpenAI launched ChatGPT as an experimental prototype in late 2022, it chatbot became an everyday everything app for hundreds of millions of people. These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+      "why_matters": "A reality check on the AI jobs hysteria What do the numbers really say about the impact of artificial intelligence on the labor market? Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI\u2019s models Musk kept his cool, and OpenAI\u2019s lawyer bulldozed him with piercing questions about his motivations for suing the company.",
+      "what_to_watch": "The next generation of the world\u2019s hottest technology will be cheaper, more efficient, and able to solve bigger problems without going off the rails. But the bigger the context window and the longer the task, the more likely models are to go off the rails or forget what they were doing.",
+      "key_points": [
+        "Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI\u2019s models Michelle Kim China has approved the world\u2019s first invasive brain-computer chip - here\u2019s what\u2019s next.",
+        "But the bigger the context window and the longer the task, the more likely models are to go off the rails or forget what they were doing.",
+        "A reality check on the AI jobs hysteria What do the numbers really say about the impact of artificial intelligence on the labor market?",
+        "When OpenAI launched ChatGPT as an experimental prototype in late 2022, it chatbot became an everyday everything app for hundreds of millions of people.",
+        "Another way to make LLMs more efficient could be to ditch transformers - the type of neural network underpinning almost all of them today - in favor of diffusion models, an alternative type of neural network more.",
+        "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+        "The next generation of the world\u2019s hottest technology will be cheaper, more efficient, and able to solve bigger problems without going off the rails.",
+        "The result is an LLM, but not as we know it.",
+        "Get the latest updates from MIT Technology Review Discover special offers, top stories, upcoming events, and more.",
+        "This is the amount of text (or video) that a model can take in at once, equivalent to its working memory.",
+        "If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.",
+        "The answer might surprise you."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d05ede45d0a1eddd.jpg",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/04/llm-plusC.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.technologyreview.com/2026/04/21/1135647/supercharged-scams-ai-artificial-intelligence/",
+      "title": "Supercharged scams",
+      "description": "AI tools are making it easier than ever for online criminals to trick people and steal money and valuable confidential data.",
+      "excerpt": "AI tools are making it easier than ever for online criminals to trick people and steal money and valuable confidential data.",
+      "summary": "Anthropic says all of them have been patched, but it\u2019s delaying the model\u2019s release as a result of these new capabilities and set up a consortium of tech companies called Project Glasswing that it says will try to put these capabilities to work for defensive purposes in the meantime. These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. A reality check on the AI jobs hysteria What do the numbers really say about the impact of artificial intelligence on the labor market? Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI\u2019s models Musk kept his cool, and OpenAI\u2019s lawyer bulldozed him with piercing questions about his motivations for suing the company. How well positioned we\u2019ll be to ward off more sophisticated attacks in the future is much less clear. When ChatGPT was released to the public in late 2022, it opened people\u2019s eyes to how easily generative AI could churn out vast amounts of human-seeming text from simple prompts.",
+      "what_happened": "Anthropic says all of them have been patched, but it\u2019s delaying the model\u2019s release as a result of these new capabilities and set up a consortium of tech companies called Project Glasswing that it says will try to put these capabilities to work for defensive purposes in the meantime. These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+      "why_matters": "A reality check on the AI jobs hysteria What do the numbers really say about the impact of artificial intelligence on the labor market? Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI\u2019s models Musk kept his cool, and OpenAI\u2019s lawyer bulldozed him with piercing questions about his motivations for suing the company.",
+      "what_to_watch": "How well positioned we\u2019ll be to ward off more sophisticated attacks in the future is much less clear. When ChatGPT was released to the public in late 2022, it opened people\u2019s eyes to how easily generative AI could churn out vast amounts of human-seeming text from simple prompts.",
+      "key_points": [
+        "Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI\u2019s models Michelle Kim China has approved the world\u2019s first invasive brain-computer chip - here\u2019s what\u2019s next.",
+        "Anthropic says all of them have been patched, but it\u2019s delaying the model\u2019s release as a result of these new capabilities and set up a consortium of tech companies called Project Glasswing that it says will try to put.",
+        "A reality check on the AI jobs hysteria What do the numbers really say about the impact of artificial intelligence on the labor market?",
+        "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+        "When ChatGPT was released to the public in late 2022, it opened people\u2019s eyes to how easily generative AI could churn out vast amounts of human-seeming text from simple prompts.",
+        "This quickly caught the attention of criminals, who soon began using large language models to produce malicious emails - both the untargeted spam kind and more sophisticated, targeted attacks designed to steal money and.",
+        "Get the latest updates from MIT Technology Review Discover special offers, top stories, upcoming events, and more.",
+        "Try refreshing this page and updating them one more time.",
+        "The company says that between April 2024 and April 2025, it managed to block $4 billion worth of scams and fraudulent transactions, many of which may have been aided by AI content.",
+        "If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.",
+        "They help us to know which pages are the most and least popular and see how visitors move around the site.",
+        "AI tools are making it easier than ever for online criminals to trick people and steal money and valuable confidential data."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/bd1b6eb4dd327df3.jpg",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/04/superchargedC.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/from-developer-desks-to-the-whole-organization-running-claude-cowork-in-amazon-bedrock/",
+      "title": "From developer desks to the whole organization: Running Claude Cowork in Amazon Bedrock | Amazon Web Services",
+      "description": "Today, we're excited to announce Claude Cowork in Amazon Bedrock. You can now run Cowork and Claude Code Desktop through Amazon Bedrock, directly or using an LLM gateway. In this post, we walk through how Claude Cowork integrates with Amazon Bedrock and show an example of how knowledge workers use it in practice.",
+      "excerpt": "Today, we're excited to announce Claude Cowork in Amazon Bedrock. You can now run Cowork and Claude Code Desktop through Amazon Bedrock, directly or using an LLM gateway. In this post, we walk through how Claude Cowork integrates with Amazon Bedrock and show an example of how knowledge workers use it in practice.",
+      "summary": "How Claude Cowork Integrates with Amazon Bedrock Amazon Bedrock serves as the inference backend in your AWS account and supported AWS Regions . In this post, we walk through how Claude Cowork integrates with Amazon Bedrock and show an example of how knowledge workers use it in practice. Artificial Intelligence From developer desks to the whole organization: Running Claude Cowork in Amazon Bedrock Today, we\u2019re excited to announce Claude Cowork in Amazon Bedrock. From startups to global enterprises across every industry, organizations build with Claude Code in Amazon Bedrock to boost developer productivity and accelerate delivery. He works at the intersection of cloud architecture and Artificial Intelligence, helping organizations adopt and scale Anthropic\u2019s technologies on AWS. What is Claude Cowork With Claude Cowork, your users can delegate research, document analysis, data processing, and report generation to Claude from a desktop.",
+      "what_happened": "How Claude Cowork Integrates with Amazon Bedrock Amazon Bedrock serves as the inference backend in your AWS account and supported AWS Regions . In this post, we walk through how Claude Cowork integrates with Amazon Bedrock and show an example of how knowledge workers use it in practice.",
+      "why_matters": "Artificial Intelligence From developer desks to the whole organization: Running Claude Cowork in Amazon Bedrock Today, we\u2019re excited to announce Claude Cowork in Amazon Bedrock. From startups to global enterprises across every industry, organizations build with Claude Code in Amazon Bedrock to boost developer productivity and accelerate delivery.",
+      "what_to_watch": "He works at the intersection of cloud architecture and Artificial Intelligence, helping organizations adopt and scale Anthropic\u2019s technologies on AWS. What is Claude Cowork With Claude Cowork, your users can delegate research, document analysis, data processing, and report generation to Claude from a desktop.",
+      "key_points": [
+        "How Claude Cowork Integrates with Amazon Bedrock Amazon Bedrock serves as the inference backend in your AWS account and supported AWS Regions .",
+        "What is Claude Cowork With Claude Cowork, your users can delegate research, document analysis, data processing, and report generation to Claude from a desktop application.",
+        "Artificial Intelligence From developer desks to the whole organization: Running Claude Cowork in Amazon Bedrock Today, we\u2019re excited to announce Claude Cowork in Amazon Bedrock.",
+        "Features that require Anthropic-hosted inference, including the Chat tab, Computer Use, and the Skills Marketplace, are not included because Claude Cowork routes model inference exclusively through Amazon Bedrock in.",
+        "Second, your device-management system (such as Jamf, Microsoft Intune, or Group Policy) pushes a configuration to Claude Desktop that activates the inference mode, specifying the model ID and Amazon Bedrock Inference.",
+        "Model inference goes to Amazon Bedrock in the AWS Regions you configure.",
+        "Claude Cowork is available on macOS and Windows in AWS Regions where Claude models are available on Amazon Bedrock .",
+        "In this post, we walk through how Claude Cowork integrates with Amazon Bedrock and show an example of how knowledge workers use it in practice.",
+        "Your data stays under your account\u2019s controls: Amazon Bedrock does not store prompts, files, tool inputs and outputs, or model responses, and does not use them to train foundation models.",
+        "With Amazon Bedrock you can build within your existing AWS environment, maintain enterprise security and regional data residency, and scale inference.",
+        "Today, we're excited to announce Claude Cowork in Amazon Bedrock.",
+        "You can now run Cowork and Claude Code Desktop through Amazon Bedrock, directly or using an LLM gateway."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8fa90f60cccdfe39.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/04/21/ml-20855-1120x630.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-04-24-deepseek-v4",
+      "title": "DeepSeek V4 in vLLM: Efficient Long-context Attention",
+      "description": "A first-principles walkthrough of DeepSeek V4's long-context attention, and how we implemented it in vLLM.",
+      "excerpt": "A first-principles walkthrough of DeepSeek V4's long-context attention, and how we implemented it in vLLM.",
+      "summary": "Announcing Gemma 4 on vLLM: Byte for byte, the most capable open models How vLLM supports Google's Gemma 4 open models across NVIDIA, AMD, Intel, and TPU backends, with multimodal inputs, agentic workflows, long context, function calling, and deployment recipes. Announcing Day-0 Support for NVIDIA Nemotron 3 Ultra on vLLM How to serve NVIDIA Nemotron 3 Ultra with vLLM for long-running agentic reasoning, including BF16 and NVFP4 checkpoints, supported GPU configurations, OpenAI-compatible deployment, and NeMo RL. We want to thank the DeepSeek team for open-sourcing DeepSeek V4, as well as DeepSeek leadership for their trust and support in vLLM! We hope the technical explanation that follows can help the open-source community understand both the attention mechanism itself and the rationale behind our current implementation decisions. Launch the interactive version to hover over tokens and inspect the connections.",
+      "what_happened": "Announcing Gemma 4 on vLLM: Byte for byte, the most capable open models How vLLM supports Google's Gemma 4 open models across NVIDIA, AMD, Intel, and TPU backends, with multimodal inputs, agentic workflows, long context, function calling, and deployment recipes. Announcing Day-0 Support for NVIDIA Nemotron 3 Ultra on vLLM How to serve NVIDIA Nemotron 3 Ultra with vLLM for long-running agentic reasoning, including BF16 and NVFP4 checkpoints, supported GPU configurations, OpenAI-compatible deployment, and NeMo RL.",
+      "why_matters": "We want to thank the DeepSeek team for open-sourcing DeepSeek V4, as well as DeepSeek leadership for their trust and support in vLLM! We hope the technical explanation that follows can help the open-source community understand both the attention mechanism itself and the rationale behind our current implementation decisions.",
+      "what_to_watch": "Launch the interactive version to hover over tokens and inspect the connections.",
+      "key_points": [
+        "Announcing Gemma 4 on vLLM: Byte for byte, the most capable open models How vLLM supports Google's Gemma 4 open models across NVIDIA, AMD, Intel, and TPU backends, with multimodal inputs, agentic workflows, long.",
+        "Announcing Day-0 Support for NVIDIA Nemotron 3 Ultra on vLLM How to serve NVIDIA Nemotron 3 Ultra with vLLM for long-running agentic reasoning, including BF16 and NVFP4 checkpoints, supported GPU configurations.",
+        "Launch the interactive version to hover over tokens and inspect the connections.",
+        "Keeping the GPU Busy Memory layout is only half of the runtime story; the other half is keeping the GPU compute saturated.",
+        "Fusing the two avoids a back-to-back HBM round trip and raises arithmetic intensity, for a ~2-3x speedup over the unfused version.",
+        "On top of that, we use CUDA graphs to cut launch overhead on the decode path, as we do for every other model.",
+        "Run Highly Efficient Multimodal Agentic AI with NVIDIA Nemotron 3 Nano Omni Using vLLM How to serve NVIDIA Nemotron 3 Nano Omni with vLLM for multimodal agentic AI, including BF16, FP8, and NVFP4 checkpoints.",
+        "This means the attention output is the same if we shift the query and the key by the same amount.",
+        "c128a : compress the KV cache by roughly 1/128.",
+        "c4a : compress the KV cache by roughly 1/4.",
+        "Implementation details: The exact value of k in c4a and c128a For c4a attention in DeepSeek V4, the default value of is 512, and for c128a attention, the default value of is 8192.",
+        "(For comparison, in DeepSeek V3.2, the default value of is 2048)."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1bb100b5b343b3f7.img",
+      "image_url": "https://vllm.ai/blog-assets/figures/2026-04-dsv4/c4a_animation.gif",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theguardian.com/news/ng-interactive/2026/jun/21/toy-story-5-go-hard-enough-on-technology",
+      "title": "To the tablet and beyond: does Toy Story 5 go hard enough on technology?",
+      "description": "The animated sequel sets up a tug-of-war between physical and digital play for children but is still eager not to be an anti-tech screed",
+      "excerpt": "The animated sequel sets up a tug-of-war between physical and digital play for children but is still eager not to be an anti-tech screed",
+      "summary": "Part of the nefariousness of tech is the way it introduces new guiding forces into a child\u2019s life, unbidden and often unqualified. So many years after the tech breakthroughs that allowed Toy Story to become the first computer-animated feature, and Pixar to become a household name in family entertainment, has the formerly Steve Jobs-owned company turned against the kind of innovation that built its success? The tech may change, the movie implies, but the fundamentals of guiding a child and imprinting your best moments into their memories remains universal. Pleasant surprises are typical of the Pixar storytelling style \u2013 grab the viewers with a great hook (the toys versus their new nemesis, the screens) and then deepen the story they thought they were getting until it is about something else (the positive impact parents hope to. But as much as Pixar acknowledges that toys may not have a future, their faith in the partnership between humans and tech may belong in the past. According to Pew Research , the majority of kids under 12 are using tablets and/or smartphones, even as links between screen time and mental health difficulties continue to.",
+      "what_happened": "Part of the nefariousness of tech is the way it introduces new guiding forces into a child\u2019s life, unbidden and often unqualified. So many years after the tech breakthroughs that allowed Toy Story to become the first computer-animated feature, and Pixar to become a household name in family entertainment, has the formerly Steve Jobs-owned company turned against the kind of innovation that built its success?",
+      "why_matters": "The tech may change, the movie implies, but the fundamentals of guiding a child and imprinting your best moments into their memories remains universal. Pleasant surprises are typical of the Pixar storytelling style \u2013 grab the viewers with a great hook (the toys versus their new nemesis, the screens) and then deepen the story they thought they were getting until it is about something else (the positive impact parents hope to.",
+      "what_to_watch": "But as much as Pixar acknowledges that toys may not have a future, their faith in the partnership between humans and tech may belong in the past. According to Pew Research , the majority of kids under 12 are using tablets and/or smartphones, even as links between screen time and mental health difficulties continue to.",
+      "key_points": [
+        "It may not be the purview of Toy Story 5 (or Toy Story 6) to tell a story about Bonnie taking advice from YouTubers spewing nonsense, or training herself away from reading and toward short-form video, or relying on.",
+        "Part of the nefariousness of tech is the way it introduces new guiding forces into a child\u2019s life, unbidden and often unqualified.",
+        "So many years after the tech breakthroughs that allowed Toy Story to become the first computer-animated feature, and Pixar to become a household name in family entertainment, has the formerly Steve Jobs-owned company.",
+        "According to Pew Research , the majority of kids under 12 are using tablets and/or smartphones, even as links between screen time and mental health difficulties continue to be studied.",
+        "The animated sequel sets up a tug-of-war between physical and digital play for children but is still eager not to be an anti-tech screed Support the Guardian To the tablet and beyond: does Toy Story 5 go hard enough on.",
+        "Whether because of their tech roots or the trademark nuance they bring to these issues (most likely both), the film-makers behind Toy Story 5 haven\u2019t created an anti-tech screed.",
+        "The movie seems to sense this discomfort: its big emotional wallop doesn\u2019t have much to do with tech, but rather the same insecurities Jessie has felt since Toy Story 2.",
+        "(The human characters have clearly not aged seven full years since 2019\u2019s Toy Story 4.) For the non-human characters in the movie, tech \u2013 personified by a child-friendly \u201cLilypad\u201d tablet nicknamed Lily \u2013 threatens to.",
+        "The movie arrives at a conspicuous juncture in the sometimes-uneasy relationship between humans, their children and their tech.",
+        "It\u2019s only natural \u2013 maybe even a little belated \u2013 that Toy Story 5 would address the encroachment of technology, which continues to make its way to children earlier and earlier.",
+        "It\u2019s only natural that Toy Story 5 would reflect this, even if it\u2019s not entirely clear when the movie itself is taking place.",
+        "One band of landfill-clogging capitalism-enabled plastic toys \u2013 nostalgic and adorable though they may be \u2013 is not necessarily positioned as morally superior to a more complicated yet also more practical configuration."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d26d4a73337de968.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/59e5ad2259b960f9308eca69d95b1dc233775e9c/183_0_2016_1614/master/2016.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=791aa10d299ed9b5bbb6d5d9be666978",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/",
+      "title": "Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27 | TechCrunch",
+      "description": "Siri\u2019s AI overhaul may have grabbed the headlines at WWDC, but some of Apple\u2019s most useful AI features are arriving elsewhere in iOS 27.",
+      "excerpt": "Siri\u2019s AI overhaul may have grabbed the headlines at WWDC, but some of Apple\u2019s most useful AI features are arriving elsewhere in iOS 27.",
+      "summary": "Siri\u2019s AI overhaul may have grabbed the headlines at WWDC, but some of Apple\u2019s most useful AI features are arriving elsewhere in iOS 27.",
+      "what_happened": "Siri\u2019s AI overhaul may have grabbed the headlines at WWDC, but some of Apple\u2019s most useful AI features are arriving elsewhere in iOS 27.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Siri\u2019s AI overhaul may have grabbed the headlines at WWDC, but some of Apple\u2019s most useful AI features are arriving elsewhere in iOS 27."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/190b00cafcdec1de.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/shortcut.jpg?w=680",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 6,
+  "has_cta": true,
+  "slides": [
+    "Samsung Electronics brings ChatGPT and Codex to employees.",
+    "Altman week 1: Elon Musk says he was duped, warns AI could.",
+    "Each day, Microsoft-just one of the many businesses keeping tabs on such.",
+    "From developer desks to the whole organization Running Claude Cowork in Amazon.",
+    "DeepSeek V4 in vLLM Efficient Long-context Attention.",
+    "FOLLOW @graitech"
+  ]
+}
