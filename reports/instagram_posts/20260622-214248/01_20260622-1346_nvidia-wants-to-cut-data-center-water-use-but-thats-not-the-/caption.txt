@@ -1,0 +1,27 @@
+Nvidia wants to cut data center water use but that's not.
+
+Swipe for the full breakdown.
+
+- The problem is, water use outside of the data center - primarily in electricity generation and chip manufacturing.
+- Nvidia announced a new cooling system that cuts water use inside the data center.
+- Fossil fuel power plants are one of the largest water users in the U.S., consuming 2.7 billion gallons.
+- The core issue is how Nvidia measures data center water use.
+- Hydropower dams, which supply around 10% of data center power, don't consume water in the same direct way.
+
+Would you use something like this in your daily work? Yes or no in the comments.
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://techcrunch.com/2026/06/22/nvidia-wants-to-cut-data-center-water-use-but-thats-not-the-same-as-fixing-ais-water-problem/
+- https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal/
+- https://www.therobotreport.com/bear-robotics-acquires-kinisi-robotics-to-boost-its-physical-ai-capabilities/
+- https://aibusiness.com/generative-ai/anthropic-aims-transform-enterprise-collaboration-artifacts
+- https://blogs.nvidia.com/blog/eco-wave-power-ai-digital-twins/
+
+#AIRegulation #TechLaw #AITools #ProductivityAI #AIProductivity #AIInfrastructure #AIChips #OpenAI #ChatGPT #GoogleAI #Gemini #GoogleDeepMind #DeepMind #TechTrends #Innovation #EmergingTech #AINews #DigitalTransformation #Technology #Tech
+
+-
+This is not legal advice. Consult a qualified professional for guidance.
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-

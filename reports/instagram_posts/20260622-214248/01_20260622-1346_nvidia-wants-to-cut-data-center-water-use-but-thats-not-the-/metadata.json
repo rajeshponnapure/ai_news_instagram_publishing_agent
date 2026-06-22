@@ -1,0 +1,339 @@
+{
+  "email_received_at": "2026-06-22T13:46-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Nvidia wants to cut data center water use, but that's not the same as fixing AI's water problem | TechCrunch",
+  "subject": "\ud83d\udea8 AI Alert: 69 new launches \u2014 CNBC Technology, CNET AI, TechCrunch AI",
+  "source_date": "Mon, 22 Jun 2026 13:46:16 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Amazon",
+    "NVIDIA",
+    "Salesforce",
+    "CNBC Technology"
+  ],
+  "models": [
+    "Claude"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://techcrunch.com/2026/06/22/nvidia-wants-to-cut-data-center-water-use-but-thats-not-the-same-as-fixing-ais-water-problem/",
+  "article_title": "Nvidia wants to cut data center water use, but that's not the same as fixing AI's water problem | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4223e565ca964984.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2024/12/GettyImages-155376474.jpeg?resize=1200,800",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/22/nvidia-wants-to-cut-data-center-water-use-but-thats-not-the-same-as-fixing-ais-water-problem/",
+      "title": "Nvidia wants to cut data center water use, but that's not the same as fixing AI's water problem | TechCrunch",
+      "description": "Nvidia announced a new cooling system that cuts water use inside the data center. But it does nothing to address AI's biggest water use - fossil fuel power plants.",
+      "excerpt": "Nvidia announced a new cooling system that cuts water use inside the data center. But it does nothing to address AI's biggest water use - fossil fuel power plants.",
+      "summary": "More from TechCrunch Nvidia wants to cut data center water use, but that\u2019s not the same as fixing AI\u2019s water problem Nvidia just announced a warm-water cooling system that it says can dramatically reduce the amount of water a data center uses - eliminating \u201cpretty much all water usage\u201d inside the data center, according to an Nvidia executive in a press release . Nvidia announced a new cooling system that cuts water use inside the data center. In favorable climates, the company says, that can amount to a 100% reduction in on-site water use. According to its blog post, the company essentially draws a line around the data center. He has written for a wide range of publications, including Wired magazine, the Chicago Tribune, Ars Technica, The Wire China, and NOVA Next, where he was founding editor. The problem is, water use outside of the data center - primarily in electricity generation and chip manufacturing - can double or triple the total.",
+      "what_happened": "More from TechCrunch Nvidia wants to cut data center water use, but that\u2019s not the same as fixing AI\u2019s water problem Nvidia just announced a warm-water cooling system that it says can dramatically reduce the amount of water a data center uses - eliminating \u201cpretty much all water usage\u201d inside the data center, according to an Nvidia executive in a press release . Nvidia announced a new cooling system that cuts water use inside the data center.",
+      "why_matters": "In favorable climates, the company says, that can amount to a 100% reduction in on-site water use. According to its blog post, the company essentially draws a line around the data center.",
+      "what_to_watch": "He has written for a wide range of publications, including Wired magazine, the Chicago Tribune, Ars Technica, The Wire China, and NOVA Next, where he was founding editor. The problem is, water use outside of the data center - primarily in electricity generation and chip manufacturing - can double or triple the total.",
+      "key_points": [
+        "More from TechCrunch Nvidia wants to cut data center water use, but that\u2019s not the same as fixing AI\u2019s water problem Nvidia just announced a warm-water cooling system that it says can dramatically reduce the amount of.",
+        "The problem is, water use outside of the data center - primarily in electricity generation and chip manufacturing - can double or triple the total water footprint of a facility.",
+        "Nvidia announced a new cooling system that cuts water use inside the data center.",
+        "Fossil fuel power plants are one of the largest water users in the U.S., consuming 2.7 billion gallons per day, according to the U.S.",
+        "The core issue is how Nvidia measures data center water use.",
+        "As long as AI data centers run on fossil fuels - a choice tech companies are increasingly making - the savings stop at the data center\u2019s walls.",
+        "Hydropower dams, which supply around 10% of data center power, don\u2019t consume water in the same direct way, but evaporation from their reservoirs amounts to 6.8 liters lost per kilowatt-hour generated.",
+        "While renewables are providing a growing share of new electricity capacity, natural gas and coal are expected to provide more than 40% of new electricity needed to meet data center demand through 2030, the IEA projects.",
+        "Wind and solar power, on the other hand, use vanishingly small amounts of water, about 0.01 liters and 0.03 liters per kilowatt-hour, respectively - figures that include the water needed for manufacturing and cleaning.",
+        "In favorable climates, the company says, that can amount to a 100% reduction in on-site water use.",
+        "According to its blog post, the company essentially draws a line around the data center.",
+        "After passing through a server, the coolant emerges at 55 C (131 F), Nvidia said, bringing a significant amount of heat away from the hardware."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4223e565ca964984.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2024/12/GettyImages-155376474.jpeg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal/",
+      "title": "Google DeepMind bets $75M on AI's future in Hollywood with A24 deal | TechCrunch",
+      "description": "Google DeepMind and A24 are teaming up to build AI filmmaking tools.",
+      "excerpt": "Google DeepMind and A24 are teaming up to build AI filmmaking tools.",
+      "summary": "\u201cWe believe the best way to develop tools that empower artists is to work directly with them,\u201d Demis Hassabis, Google DeepMind co-founder and CEO, said in a press release. On Monday, Google DeepMind announced a $75 million investment (per the WSJ) into popular indie film studio A24, known for hits like \u201cMarty Supreme,\u201d \u201cEverything Everywhere All At Once,\u201d and the latest blockbuster \u201cBackrooms.\u201d Google DeepMind is billing the investment as a partnership, a \u201cfirst-of-its-kind\u201d that will see the two companies create. Netflix announced earlier this year that it was buying Ben Affleck\u2019s company, InterPositive, which creates AI tools for filmmakers. \u201cBy collaborating with filmmakers and industry leaders like A24 from the beginning, we can build new AI features to support artists in authentic, meaningful storytelling that helps enable their creative vision.\u201d Though controversy has swirled around Hollywood over the use of AI in movies, A24. The AI world is getting \u2018loopy\u2019 AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia\u2019s $20B not-acqui-hire deal Nvidia wants to cut data center water use, but that\u2019s not the same as fixing AI\u2019s water problem Latest in Media & Entertainment.",
+      "what_happened": "\u201cWe believe the best way to develop tools that empower artists is to work directly with them,\u201d Demis Hassabis, Google DeepMind co-founder and CEO, said in a press release. On Monday, Google DeepMind announced a $75 million investment (per the WSJ) into popular indie film studio A24, known for hits like \u201cMarty Supreme,\u201d \u201cEverything Everywhere All At Once,\u201d and the latest blockbuster \u201cBackrooms.\u201d Google DeepMind is billing the investment as a partnership, a \u201cfirst-of-its-kind\u201d that will see the two companies create.",
+      "why_matters": "Netflix announced earlier this year that it was buying Ben Affleck\u2019s company, InterPositive, which creates AI tools for filmmakers. \u201cBy collaborating with filmmakers and industry leaders like A24 from the beginning, we can build new AI features to support artists in authentic, meaningful storytelling that helps enable their creative vision.\u201d Though controversy has swirled around Hollywood over the use of AI in movies, A24.",
+      "what_to_watch": "The AI world is getting \u2018loopy\u2019 AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia\u2019s $20B not-acqui-hire deal Nvidia wants to cut data center water use, but that\u2019s not the same as fixing AI\u2019s water problem Latest in Media & Entertainment Google DeepMind bets $75M on AI\u2019s future in Hollywood with A24 deal.",
+      "key_points": [
+        "\u201cWe believe the best way to develop tools that empower artists is to work directly with them,\u201d Demis Hassabis, Google DeepMind co-founder and CEO, said in a press release.",
+        "On Monday, Google DeepMind announced a $75 million investment (per the WSJ) into popular indie film studio A24, known for hits like \u201cMarty Supreme,\u201d \u201cEverything Everywhere All At Once,\u201d and the latest blockbuster.",
+        "Google DeepMind and A24 are teaming up to build AI filmmaking tools.",
+        "Last year, meanwhile, Amazon\u2019s MGM Studios launched an AI unit focused on developing tools for television and movie production.",
+        "Every weekday and Sunday, you can get the best of TechCrunch\u2019s coverage.",
+        "The AI world is getting \u2018loopy\u2019 AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia\u2019s $20B not-acqui-hire deal Nvidia wants to cut data center water use, but that\u2019s not the same as fixing AI\u2019s water problem.",
+        "Netflix announced earlier this year that it was buying Ben Affleck\u2019s company, InterPositive, which creates AI tools for filmmakers.",
+        "\u201cBy collaborating with filmmakers and industry leaders like A24 from the beginning, we can build new AI features to support artists in authentic, meaningful storytelling that helps enable their creative vision.\u201d Though.",
+        "TechCrunch Mobility is your destination for transportation news and insight.",
+        "Provides movers and shakers with the info they need to start their day.",
+        "More from TechCrunch Google DeepMind bets $75M on AI\u2019s future in Hollywood with A24 deal A new alliance has formed between a Hollywood studio and a tech juggernaut.",
+        "Through candid fireside chats and high-impact networking, you\u2019ll walk away with valuable insights and new connections."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/132e26e8b7450d6d.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2024/12/GettyImages-155376474.jpeg?w=563",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.therobotreport.com/bear-robotics-acquires-kinisi-robotics-to-boost-its-physical-ai-capabilities/",
+      "title": "Bear Robotics acquires Kinisi Robotics to boost its physical AI capabilities - The Robot Report",
+      "description": "Kinisi's KR1 humanoid robot, its Bristol-based engineering team, and its physical AI capabilities will be integrated into Bear Robotics.",
+      "excerpt": "Kinisi's KR1 humanoid robot, its Bristol-based engineering team, and its physical AI capabilities will be integrated into Bear Robotics.",
+      "summary": "Bear Robotics acquires Kinisi Robotics to boost its physical AI capabilities Bear Robotics today announced it has signed a definitive agreement to acquire Kinisi Robotics. Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report On closing, Kinisi\u2019s KR1 humanoid robot, its Bristol-based engineering team, and its physical AI capabilities will be integrated into Bear Robotics , completing Bear\u2019s end-to-end physical AI robotics platform. Kinisi's KR1 humanoid robot, its Bristol-based engineering team, and its physical AI capabilities will be integrated into Bear Robotics. The companies expect to close the transaction in the coming days. She covers a wide range of robotics topics, but specializes in women in robotics, robotics in healthcare, and space robotics.",
+      "what_happened": "Bear Robotics acquires Kinisi Robotics to boost its physical AI capabilities Bear Robotics today announced it has signed a definitive agreement to acquire Kinisi Robotics. Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report",
+      "why_matters": "On closing, Kinisi\u2019s KR1 humanoid robot, its Bristol-based engineering team, and its physical AI capabilities will be integrated into Bear Robotics , completing Bear\u2019s end-to-end physical AI robotics platform. Kinisi's KR1 humanoid robot, its Bristol-based engineering team, and its physical AI capabilities will be integrated into Bear Robotics.",
+      "what_to_watch": "The companies expect to close the transaction in the coming days. She covers a wide range of robotics topics, but specializes in women in robotics, robotics in healthcare, and space robotics.",
+      "key_points": [
+        "Bear Robotics acquires Kinisi Robotics to boost its physical AI capabilities Bear Robotics today announced it has signed a definitive agreement to acquire Kinisi Robotics.",
+        "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around.",
+        "On closing, Kinisi\u2019s KR1 humanoid robot, its Bristol-based engineering team, and its physical AI capabilities will be integrated into Bear Robotics , completing Bear\u2019s end-to-end physical AI robotics platform.",
+        "She covers a wide range of robotics topics, but specializes in women in robotics, robotics in healthcare, and space robotics.",
+        "This allows it to decouple training-data collection from robot time and scale the demonstrations the models learn from.",
+        "Kinisi's KR1 humanoid robot, its Bristol-based engineering team, and its physical AI capabilities will be integrated into Bear Robotics.",
+        "Kinisi completes that platform,\u201d John Ha, the founder and CEO of Bear Robotics, said.",
+        "This is the start of a much bigger chapter for Bear.\u201d Why is Kinisi acquiring Bear?",
+        "What Bear has that no one else does is a real physical AI platform already operating at commercial scale \u2013 deployed robots, enterprise customers, manufacturing, and cloud orchestration,\u201d Brennand Pierce, the founder and.",
+        "Bear has shipped more than 16,000 robots worldwide Since its founding in 2017, Bear has shipped more than 16,000 service robots into commercial service worldwide.",
+        "Until closing, Bear Robotics and Kinisi Robotics continue to operate as separate, independent companies.",
+        "I want to thank the Kinisi team for what they\u2019ve built in the KR1, our customers and partners for their continued trust, and our employees and investors for backing this next chapter."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/22adfb6a7399b0bb.jpg",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/06/kinisi-announcement-featured.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/anthropic-aims-transform-enterprise-collaboration-artifacts",
+      "title": "Anthropic Aims to for Enterprise Collaboration With Artifacts",
+      "description": "Anthropic Aims to Transform Enterprise Collaboration With Artifacts",
+      "excerpt": "Anthropic Aims to Transform Enterprise Collaboration With Artifacts",
+      "summary": "When she's not diving deep into the world of AI, she spends her time on passion projects and raising her three daughters. Artifacts come after OpenAI introduced Sites for Codex, which enables users to build, host and deploy interactive web applications. Using Claude Code and artifacts, developers can build an artifact using the full context of a user session, including the codebase, connectors and conversation. \u201cIt's like a little library of code snippets that you can share with your team.\u201d Esther Shittu has covered AI technologies and industry trends since 2021. Most of the time, the coding outputs are one-off links that users can share to share items like quarterly numbers or data, so they do not require the resources or effort that an actual application does.",
+      "what_happened": "When she's not diving deep into the world of AI, she spends her time on passion projects and raising her three daughters. Artifacts come after OpenAI introduced Sites for Codex, which enables users to build, host and deploy interactive web applications.",
+      "why_matters": "Using Claude Code and artifacts, developers can build an artifact using the full context of a user session, including the codebase, connectors and conversation. \u201cIt's like a little library of code snippets that you can share with your team.\u201d Esther Shittu has covered AI technologies and industry trends since 2021.",
+      "what_to_watch": "Most of the time, the coding outputs are one-off links that users can share to share items like quarterly numbers or data, so they do not require the resources or effort that an actual application does.",
+      "key_points": [
+        "When she's not diving deep into the world of AI, she spends her time on passion projects and raising her three daughters.",
+        "Anthropic\u2019s introduction of artifacts, on June 18, along with Sites for Codex , underscores how AI model providers continue to expand their services, offering enterprises features that cloud providers also provide, such.",
+        "Most of the time, the coding outputs are one-off links that users can share to share items like quarterly numbers or data, so they do not require the resources or effort that an actual application does.",
+        "Using Claude Code and artifacts, developers can build an artifact using the full context of a user session, including the codebase, connectors and conversation.",
+        "\u201cIt's like a little library of code snippets that you can share with your team.\u201d Esther Shittu has covered AI technologies and industry trends since 2021.",
+        "Artifacts come after OpenAI introduced Sites for Codex, which enables users to build, host and deploy interactive web applications.",
+        "Features like artifacts also show how model providers such as Anthropic are giving enterprises tools that produce deterministic outputs that can be easily seen and shared within an enterprise.",
+        "Anthropic Aims to Transform Enterprise Collaboration With Artifacts Anthropic Aims to Transform Enterprise Collaboration With Artifacts The move highlights a trend among AI labs: shifting from just providing models to.",
+        "However, enterprises that want an application that stores and manages data over time would need a full hosting and management service, such as Vercel or Amazon EC2 .",
+        "Rebellions Aims to Take on Nvidia in AI Inference Chip Battle Choosing Your First Generative AI Use Cases To get started with generative AI, first focus on areas that can improve human experiences with information.",
+        "Before AI Business , she wrote for SearchEnterpriseAI, the New York Daily News, Bklyner and the Brooklyn Daily Eagle.",
+        "By providing these services, AI labs such as Anthropic and OpenAI are, in a sense, becoming mini cloud providers."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e2b0b8c78a44b256.png",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltfa3a070f135cd1d7/6a319c7729bcbf0008c72ca5/Cursor.png?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/403e0f2d5d062d3e.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/15c5b987a5e6f873.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b3763009c0f601a6.webp"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltef46e96defe80790/6a3010b8fa8a9d8c431b14e4/Foxconn.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltee176ce55650ab85/6a21c0c5563cbbc1f1a60149/Meta.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltd6f862d65d39c0f6/6a3164f78a574a00087ff10d/IBMAI.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ]
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/eco-wave-power-ai-digital-twins/",
+      "title": "Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins",
+      "description": "Eco Wave Power, a member of the NVIDIA Inception startup program\u2019s Sustainable Futures initiative, is developing technology. powered by NVIDIA AI infrastructure and digital twins. that converts energy from ocean waves into clean electricity using existing marine infrastructure.",
+      "excerpt": "Eco Wave Power, a member of the NVIDIA Inception startup program\u2019s Sustainable Futures initiative, is developing technology. powered by NVIDIA AI infrastructure and digital twins. that converts energy from ocean waves into clean electricity using existing marine infrastructure.",
+      "summary": "powered by NVIDIA AI infrastructure and digital twins. that converts energy from ocean waves into clean electricity using existing marine infrastructure. Eco Wave Power, a member of the NVIDIA Inception startup program\u2019s Sustainable Futures initiative, is developing technology. Eco Wave Power, a member of the NVIDIA Inception startup program\u2019s Sustainable Futures initiative, is developing technology.",
+      "what_happened": "powered by NVIDIA AI infrastructure and digital twins. that converts energy from ocean waves into clean electricity using existing marine infrastructure.",
+      "why_matters": "Eco Wave Power, a member of the NVIDIA Inception startup program\u2019s Sustainable Futures initiative, is developing technology.",
+      "what_to_watch": "Eco Wave Power, a member of the NVIDIA Inception startup program\u2019s Sustainable Futures initiative, is developing technology.",
+      "key_points": [
+        "powered by NVIDIA AI infrastructure and digital twins.",
+        "that converts energy from ocean waves into clean electricity using existing marine infrastructure.",
+        "Eco Wave Power, a member of the NVIDIA Inception startup program\u2019s Sustainable Futures initiative, is developing technology."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/877bb60189816530.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/eco-wave-1920x1080-1-1280x720.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/nairr-scientific-research-ai-infrastructure/",
+      "title": "NAIRR Science Program Reshapes Scientific Research, Powered by NVIDIA AI Infrastructure",
+      "description": "The U.S. National Science Foundation\u2019s NAIRR pilot program has driven innovative research across the U.S. for over 700 projects. spanning protein prediction and infectious disease outbreak management.",
+      "excerpt": "The U.S. National Science Foundation\u2019s NAIRR pilot program has driven innovative research across the U.S. for over 700 projects. spanning protein prediction and infectious disease outbreak management.",
+      "summary": "National Science Foundation\u2019s NAIRR pilot program has driven innovative research across the U.S. spanning protein prediction and infectious disease outbreak management.",
+      "what_happened": "National Science Foundation\u2019s NAIRR pilot program has driven innovative research across the U.S. spanning protein prediction and infectious disease outbreak management.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "National Science Foundation\u2019s NAIRR pilot program has driven innovative research across the U.S.",
+        "spanning protein prediction and infectious disease outbreak management."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e709c3cb9e17f73e.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/hpc-press-ai-for-science-1920x1080-plasma-reactor-4462250.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/",
+      "title": "Hotter Than a Hot Tub: The 45\u00b0C Breakthrough to Cool AI\u2019s Biggest Machines",
+      "description": "NVIDIA\u2019s latest AI servers can run on coolant warmer than a hot tub. and that counterintuitive choice is one of the biggest efficiency leaps in data center history.",
+      "excerpt": "NVIDIA\u2019s latest AI servers can run on coolant warmer than a hot tub. and that counterintuitive choice is one of the biggest efficiency leaps in data center history.",
+      "summary": "and that counterintuitive choice is one of the biggest efficiency leaps in data center history. NVIDIA\u2019s latest AI servers can run on coolant warmer than a hot tub.",
+      "what_happened": "and that counterintuitive choice is one of the biggest efficiency leaps in data center history. NVIDIA\u2019s latest AI servers can run on coolant warmer than a hot tub.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "and that counterintuitive choice is one of the biggest efficiency leaps in data center history.",
+        "NVIDIA\u2019s latest AI servers can run on coolant warmer than a hot tub."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/35cf5c380a79f8b8.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/45CLiquidCooling.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1753cf0abad63382.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ec53f3f38a83aeda.jpg"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/liquid-cooling-hoses-1680x726.jpg",
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/liquid-cooling-pipes-1680x595.jpg"
+      ]
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/nvidia-vera-cpu-los-alamos-national-laboratory/",
+      "title": "NVIDIA Vera CPU Opens the Way for Agentic Scientific AI at Los Alamos National Laboratory",
+      "description": "Mission, Vision and Veritas supercomputers with Vera CPUs to advance materials simulation, scientific AI agents and molecular design.",
+      "excerpt": "Mission, Vision and Veritas supercomputers with Vera CPUs to advance materials simulation, scientific AI agents and molecular design.",
+      "summary": "Mission, Vision and Veritas supercomputers with Vera CPUs to advance materials simulation, scientific AI agents and molecular design.",
+      "what_happened": "Mission, Vision and Veritas supercomputers with Vera CPUs to advance materials simulation, scientific AI agents and molecular design.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Mission, Vision and Veritas supercomputers with Vera CPUs to advance materials simulation, scientific AI agents and molecular design."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/cd1cddb7bf664efc.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/vera-cpu-lanl-1920x1080-1.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6e1e2692701761e8.jpg"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/vera-cpu-lanl-1920x1080-1-1280x720.jpg"
+      ]
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 7,
+  "has_cta": true,
+  "slides": [
+    "Nvidia wants to cut data center water use but that's not.",
+    "Google DeepMind bets $75M on AI's future in Hollywood with A24 deal.",
+    "Bear Robotics acquires Kinisi Robotics to boost its physical AI capabilities.",
+    "Anthropic Aims to for Enterprise Collaboration With Artifacts.",
+    "Hotter Than a Hot Tub The 45 C Breakthrough to Cool AI's.",
+    "NVIDIA Vera CPU Opens the Way for Agentic Scientific AI at Los.",
+    "FOLLOW @graitech"
+  ]
+}
