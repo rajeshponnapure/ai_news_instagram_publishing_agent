@@ -1,0 +1,368 @@
+{
+  "email_received_at": "2026-06-22T06:18-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "From Materials Simulation to Experimental Astronomy, New NVIDIA AI Software Unlocks Scientific Discoveries",
+  "subject": "\ud83d\udea8 AI Alert: 34 new launches \u2014 Nvidia Blog, The Verge AI, Bloomberg Tech",
+  "source_date": "Mon, 22 Jun 2026 06:18:33 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Microsoft",
+    "NVIDIA",
+    "Tesla",
+    "xAI"
+  ],
+  "models": [],
+  "topics": [
+    "model release",
+    "funding or business",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://blogs.nvidia.com/blog/ai-for-science-software-cuda/",
+  "article_title": "From Materials Simulation to Experimental Astronomy, New NVIDIA AI Software Unlocks Scientific Discoveries",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8504b237512087e2.jpg",
+  "article_image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/cuda-press-corp-blog-isc26-1920x1080-1-1280x720.jpg",
+  "article_items": [
+    {
+      "url": "https://blogs.nvidia.com/blog/ai-for-science-software-cuda/",
+      "title": "From Materials Simulation to Experimental Astronomy, New NVIDIA AI Software Unlocks Scientific Discoveries",
+      "description": "NVIDIA CUDA-X libraries, microservices and reference code accelerate AI for science.",
+      "excerpt": "NVIDIA CUDA-X libraries, microservices and reference code accelerate AI for science.",
+      "summary": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff From Materials Simulation to. The company also taps into NVIDIA BioNeMo for molecular generation, NVIDIA Triton and NIM microservices for inference serving, and NVIDIA Omniverse libraries for digital twins . Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay NVIDIA Vera CPU Opens the Way for Agentic Scientific AI at Los Alamos National Laboratory Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins Hotter Than a Hot. ALCHEMI\u2019s specialized kernels for TensorNet gave Lila a 6x speedup in training and inference and reduced memory usage by 3x, enabling simulations that previously took weeks in just days.",
+      "what_happened": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff Telecommunications \ufeff Energy \ufeff Financial Services \ufeff Retail and CPG \ufeff From Materials Simulation to.",
+      "why_matters": "The company also taps into NVIDIA BioNeMo for molecular generation, NVIDIA Triton and NIM microservices for inference serving, and NVIDIA Omniverse libraries for digital twins . Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay NVIDIA Vera CPU Opens the Way for Agentic Scientific AI at Los Alamos National Laboratory Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins Hotter Than a Hot.",
+      "what_to_watch": "ALCHEMI\u2019s specialized kernels for TensorNet gave Lila a 6x speedup in training and inference and reduced memory usage by 3x, enabling simulations that previously took weeks in just days.",
+      "key_points": [
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "In addition, Lila Sciences accelerates scientific discovery with the full NVIDIA stack, using NVIDIA Megatron-LM and NVIDIA Nemotron for training - including the Nemotron 3 Nano and Nemotron 3 Super open models, as well.",
+        "NVIDIA DAQIRI - short for Data Acquisition for Integrated Real-time Instruments - is a high-performance networking library that streams data from fast detectors and sensors into NVIDIA software.",
+        "ALCHEMI\u2019s specialized kernels for TensorNet gave Lila a 6x speedup in training and inference and reduced memory usage by 3x, enabling simulations that previously took weeks in just days.",
+        "The company also taps into NVIDIA BioNeMo for molecular generation, NVIDIA Triton and NIM microservices for inference serving, and NVIDIA Omniverse libraries for digital twins .",
+        "It also enabled up to 8,400x faster signal processing and analysis using 32 NVIDIA Grace Blackwell superchips.",
+        "Plus, developers and researchers can use the ALCHEMI Toolkit to accelerate training of AI surrogate models called machine learning interatomic potentials and easily build custom, high-performance atomistic simulation.",
+        "A-GHOST analyses data that would normally be rejected by ATLAS - over 99% of it, due to storage constraints - allowing it to catch potentially interesting signals that would otherwise be lost.",
+        "The NVIDIA ALCHEMI Toolkit and Toolkit-Ops are available for download from Github and PyPI.",
+        "In addition, ALCHEMI is expected to soon include a microservice for the widely used Vienna Ab initio Simulation Package (VASP), enabling researchers to run materials simulations with higher GPU throughput.",
+        "New Software, From the Lab Bench to the Telescope The new software accelerates research on dark matter, materials simulation and more.",
+        "NVIDIA released in March two ALCHEMI NIM microservices for batched geometry relaxation (BGR) and batched molecular dynamics (BMD)."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8504b237512087e2.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/cuda-press-corp-blog-isc26-1920x1080-1-1280x720.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/04699e8e6e6e40e9.jpg"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/cuPhoton_Demo_ISC26.jpg"
+      ]
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/nairr-scientific-research-ai-infrastructure/",
+      "title": "NAIRR Science Program Reshapes Scientific Research, Powered by NVIDIA AI Infrastructure",
+      "description": "The U.S. National Science Foundation\u2019s NAIRR pilot program has driven innovative research across the U.S. for over 700 projects - spanning protein prediction and infectious disease outbreak management.",
+      "excerpt": "The U.S. National Science Foundation\u2019s NAIRR pilot program has driven innovative research across the U.S. for over 700 projects - spanning protein prediction and infectious disease outbreak management.",
+      "summary": "Internationally deployed doctors, government organizations and academic researchers are already using the BEACON model to quickly identify and treat infectious diseases. If you do not allow these cookies, then some or all of these services may not function properly. The research group also plans to explore scaling laws to help accelerate the development of more powerful foundation models for scientific applications. Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay NVIDIA Vera CPU Opens the Way for Agentic Scientific AI at Los Alamos National Laboratory From Materials Simulation to Experimental Astronomy, New NVIDIA AI Software Unlocks Scientific Discoveries Eco Wave Power Turns. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "what_happened": "Internationally deployed doctors, government organizations and academic researchers are already using the BEACON model to quickly identify and treat infectious diseases. If you do not allow these cookies, then some or all of these services may not function properly.",
+      "why_matters": "The research group also plans to explore scaling laws to help accelerate the development of more powerful foundation models for scientific applications. Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay NVIDIA Vera CPU Opens the Way for Agentic Scientific AI at Los Alamos National Laboratory From Materials Simulation to Experimental Astronomy, New NVIDIA AI Software Unlocks Scientific Discoveries Eco Wave Power Turns.",
+      "what_to_watch": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "key_points": [
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "National Science Foundation \u2019s National Artificial Intelligence Research Resource (NAIRR) pilot program has driven innovative research across the U.S.",
+        "MIST was developed on a 40-GPU NVIDIA DGX cluster the researchers gained as part of a NAIRR allocation and an additional 200,000 NVIDIA GPU hours on ALCF\u2019s Polaris cluster.",
+        "Internationally deployed doctors, government organizations and academic researchers are already using the BEACON model to quickly identify and treat infectious diseases.",
+        "Boston University \u2019s Hariri Institute for Computing and the Center on Emerging Infectious Diseases is working to train and evaluate a LLM using NVIDIA accelerated compute, through an AI pipeline to support an outbreak.",
+        "MIST models have been fine-tuned on more than 400 structure-property relationships and can match or exceed state-of-the-art performance across benchmarks spanning electrochemistry, quantum chemistry, physiology and.",
+        "for over 700 projects - spanning protein prediction and infectious disease outbreak management.",
+        "The research group also plans to explore scaling laws to help accelerate the development of more powerful foundation models for scientific applications.",
+        "Researchers at the University of Michigan, led by Professor Venkat Viswanathan in the Department of Aerospace engineering, are developing a model-fusion framework that brings together domain-specific molecular AI and.",
+        "The family of molecular foundation models, MIST (the Molecular Insight SMILES Transformers), is designed for discovery and exploration across chemical space.",
+        "University of Michigan \u2019s Fusion Model for Energy Storage Energy, a foundation of society, requires designing novel and efficient materials for energy storage and conversion.",
+        "\u201cNow, producing a report gets done in roughly two minutes.\u201d NAIRR and NVIDIA Across the Nation The latest scientific research doesn\u2019t end there."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e709c3cb9e17f73e.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/hpc-press-ai-for-science-1920x1080-plasma-reactor-4462250.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/nvidia-vera-cpu-los-alamos-national-laboratory/",
+      "title": "NVIDIA Vera CPU Opens the Way for Agentic Scientific AI at Los Alamos National Laboratory",
+      "description": "Mission, Vision and Veritas supercomputers with Vera CPUs to advance materials simulation, scientific AI agents and molecular design.",
+      "excerpt": "Mission, Vision and Veritas supercomputers with Vera CPUs to advance materials simulation, scientific AI agents and molecular design.",
+      "summary": "Researchers are adding a new tool for science with AI agents that can form hypotheses, choose tools, launch simulations, analyze outputs and refine the next step. Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins Hotter Than a Hot Tub: The 45 C Breakthrough to Cool AI\u2019s Biggest Machines How FERC\u2019s Large-Load Interconnection Actions Help Address Grid Stress, Improve Affordability At Cannes Lions, NVIDIA Partners Reshape. LANL\u2019s public work on URSA, the Universal Research and Scientific Agent - running on Venado and soon Mission and Vision - points in this direction: a modular, feedback-driven AI framework designed to help scientists brainstorm hypotheses, plan experiments, run simulations and analyze results. The supercomputers will use the HPE Cray Supercomputing GX5000 architecture with the NVIDIA Vera Rubin platform, combining NVIDIA Vera. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin.",
+      "what_happened": "Researchers are adding a new tool for science with AI agents that can form hypotheses, choose tools, launch simulations, analyze outputs and refine the next step. Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins Hotter Than a Hot Tub: The 45 C Breakthrough to Cool AI\u2019s Biggest Machines How FERC\u2019s Large-Load Interconnection Actions Help Address Grid Stress, Improve Affordability At Cannes Lions, NVIDIA Partners Reshape.",
+      "why_matters": "LANL\u2019s public work on URSA, the Universal Research and Scientific Agent - running on Venado and soon Mission and Vision - points in this direction: a modular, feedback-driven AI framework designed to help scientists brainstorm hypotheses, plan experiments, run simulations and analyze results. The supercomputers will use the HPE Cray Supercomputing GX5000 architecture with the NVIDIA Vera Rubin platform, combining NVIDIA Vera.",
+      "what_to_watch": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "key_points": [
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "Under the planned configuration, Mission will include NVIDIA Vera Rubin GPU nodes and 2,300 standalone NVIDIA Vera CPUs using the HPE Cray Supercomputing GX240 blade.",
+        "Researchers are adding a new tool for science with AI agents that can form hypotheses, choose tools, launch simulations, analyze outputs and refine the next step.",
+        "Vision, also expected to be operational in 2027, will serve as a resource for fundamental science, including materials and nuclear science, energy modeling, biomedical research and AI - letting more scientists test.",
+        "LANL\u2019s public work on URSA, the Universal Research and Scientific Agent - running on Venado and soon Mission and Vision - points in this direction: a modular, feedback-driven AI framework designed to help scientists.",
+        "Veritas will arrive alongside Mission and Vision and serve the Laboratory Directed Research and Development program, helping accelerate agentic AI for science.",
+        "Veritas will feature approximately 1,150 standalone NVIDIA Vera CPUs to complement NVIDIA Vera Rubin nodes.",
+        "The three new supercomputers build on Venado, the HPE Cray EX supercomputer installed at Los Alamos in 2024 with NVIDIA GH200 Grace Hopper Superchips and NVIDIA Grace CPU Superchips.",
+        "Mission, Vision and Veritas supercomputers with Vera CPUs to advance materials simulation, scientific AI agents and molecular design.",
+        "The work extends more than a decade of LANL and NVIDIA\u2019s deep collaboration on CPUs, from Grace to Vera, using extreme codesign for LANL simulation workloads.",
+        "Building on Generations of LANL Systems Mission, expected to be operational in 2027, will be the fifth Advanced Technology System in the National Nuclear Security Administration\u2019s Advanced Simulation and Computing.",
+        "Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins Hotter Than a Hot Tub: The 45 C Breakthrough to Cool AI\u2019s Biggest Machines."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/cd1cddb7bf664efc.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/vera-cpu-lanl-1920x1080-1.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6e1e2692701761e8.jpg"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/vera-cpu-lanl-1920x1080-1-1280x720.jpg"
+      ]
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/eco-wave-power-ai-digital-twins/",
+      "title": "Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins",
+      "description": "Eco Wave Power, a member of the NVIDIA Inception startup program\u2019s Sustainable Futures initiative, is developing technology - powered by NVIDIA AI infrastructure and digital twins - that converts energy from ocean waves into clean electricity using existing marine infrastructure.",
+      "excerpt": "Eco Wave Power, a member of the NVIDIA Inception startup program\u2019s Sustainable Futures initiative, is developing technology - powered by NVIDIA AI infrastructure and digital twins - that converts energy from ocean waves into clean electricity using existing marine infrastructure.",
+      "summary": "With wave energy, you can generate around the clock.\u201d AI Wave Energy Layer Using NVIDIA Omniverse Libraries and Accelerated Compute As AI infrastructure expands, energy systems themselves are becoming increasingly intelligent. By using already-built coastal structures, wave energy generation can be deployed closer to areas with growing power demand - including ports, industrial zones and future AI infrastructure hubs. AI models can continuously analyze ocean conditions, equipment performance and energy generation patterns to improve efficiency and operational resilience. \u201cThe energy is needed now, so I think we\u2019re in the right place at the right time and we\u2019re innovative, but we\u2019re not futuristic, and that\u2019s what sets us apart.\u201d Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay Hotter Than a Hot Tub: The 45 C Breakthrough to Cool. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "what_happened": "With wave energy, you can generate around the clock.\u201d AI Wave Energy Layer Using NVIDIA Omniverse Libraries and Accelerated Compute As AI infrastructure expands, energy systems themselves are becoming increasingly intelligent. By using already-built coastal structures, wave energy generation can be deployed closer to areas with growing power demand - including ports, industrial zones and future AI infrastructure hubs.",
+      "why_matters": "AI models can continuously analyze ocean conditions, equipment performance and energy generation patterns to improve efficiency and operational resilience. \u201cThe energy is needed now, so I think we\u2019re in the right place at the right time and we\u2019re innovative, but we\u2019re not futuristic, and that\u2019s what sets us apart.\u201d Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay Hotter Than a Hot Tub: The 45 C Breakthrough to Cool.",
+      "what_to_watch": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX.",
+      "key_points": [
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "With wave energy, you can generate around the clock.\u201d AI Wave Energy Layer Using NVIDIA Omniverse Libraries and Accelerated Compute As AI infrastructure expands, energy systems themselves are becoming increasingly.",
+        "By using already-built coastal structures, wave energy generation can be deployed closer to areas with growing power demand - including ports, industrial zones and future AI infrastructure hubs.",
+        "alone, wave energy could produce over 60% of annual energy consumption, according to the Energy Information Administration.",
+        "AI models can continuously analyze ocean conditions, equipment performance and energy generation patterns to improve efficiency and operational resilience.",
+        "The next step is managing and distributing that power.",
+        "Ocean Powered Data Centers on the Horizon Eco Wave Power operates projects in Jaffa Port, Israel, created in collaboration with EDF Power Solutions and the Israeli Energy Ministry, and in the Port of Los Angeles.",
+        "AI software serves as the control layer for this data center pilot, planning compute tasks based on the available power supply.",
+        "\u201cThe energy is needed now, so I think we\u2019re in the right place at the right time and we\u2019re innovative, but we\u2019re not futuristic, and that\u2019s what sets us apart.\u201d Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay.",
+        "The density of seawater is roughly 800x the density of air, allowing larger amounts of energy to be generated using much smaller devices than wind turbines.",
+        "\u201cThey need cooling and water, so they\u2019re now located in ports.\u201d Pilots are already underway at the port of Los Angeles to showcase how wave energy can be the sole power source for a data center without tapping into the.",
+        "\u201cWave energy is the least intermittent source of renewable energy,\u201d Braverman said."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/877bb60189816530.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/eco-wave-1920x1080-1-1280x720.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/",
+      "title": "Hotter Than a Hot Tub: The 45\u00b0C Breakthrough to Cool AI\u2019s Biggest Machines",
+      "description": "NVIDIA\u2019s latest AI servers can run on coolant warmer than a hot tub - and that counterintuitive choice is one of the biggest efficiency leaps in data center history.",
+      "excerpt": "NVIDIA\u2019s latest AI servers can run on coolant warmer than a hot tub - and that counterintuitive choice is one of the biggest efficiency leaps in data center history.",
+      "summary": "A New Standard for the Industry Because the NVIDIA Rubin platform integrates 100% liquid-cooled infrastructure, every cloud provider and data center operator building for it is making the transition. Although each generation offers significantly more computing power for each watt, full liquid-cooled AI compute infrastructure enables data centers to dramatically reduce cooling energy consumption - making a meaningful difference to overall data center energy use at hyperscale. Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay How FERC\u2019s Large-Load Interconnection Actions Help Address Grid Stress, Improve Affordability At Cannes Lions, NVIDIA Partners Reshape Advertising and Marketing With AI Sync and Stream: GeForce NOW Connects to Members\u2019 Game Libraries Across Devices France Advances Europe\u2019s AI Future With NVIDIA Technologies Hotter Than a Hot Tub: The 45 C Breakthrough to Cool AI\u2019s. With NVIDIA\u2019s 45-degree liquid cooling, heat is captured directly at the chip and transported through liquid loops operating at much higher temperatures, allowing outdoor dry coolers to reject heat efficiently for much of the year while significantly reducing mechanical cooling requirements.",
+      "what_happened": "A New Standard for the Industry Because the NVIDIA Rubin platform integrates 100% liquid-cooled infrastructure, every cloud provider and data center operator building for it is making the transition. Although each generation offers significantly more computing power for each watt, full liquid-cooled AI compute infrastructure enables data centers to dramatically reduce cooling energy consumption - making a meaningful difference to overall data center energy use at hyperscale.",
+      "why_matters": "Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay How FERC\u2019s Large-Load Interconnection Actions Help Address Grid Stress, Improve Affordability At Cannes Lions, NVIDIA Partners Reshape Advertising and Marketing With AI Sync and Stream: GeForce NOW Connects to Members\u2019 Game Libraries Across Devices France Advances Europe\u2019s AI Future With NVIDIA Technologies Hotter Than a Hot Tub: The 45 C Breakthrough to Cool AI\u2019s.",
+      "what_to_watch": "With NVIDIA\u2019s 45-degree liquid cooling, heat is captured directly at the chip and transported through liquid loops operating at much higher temperatures, allowing outdoor dry coolers to reject heat efficiently for much of the year while significantly reducing mechanical cooling requirements and facility water.",
+      "key_points": [
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "A New Standard for the Industry Because the NVIDIA Rubin platform integrates 100% liquid-cooled infrastructure, every cloud provider and data center operator building for it is making the transition.",
+        "Although each generation offers significantly more computing power for each watt, full liquid-cooled AI compute infrastructure enables data centers to dramatically reduce cooling energy consumption - making a meaningful.",
+        "With NVIDIA\u2019s 45-degree liquid cooling, heat is captured directly at the chip and transported through liquid loops operating at much higher temperatures, allowing outdoor dry coolers to reject heat efficiently for much.",
+        "The Rubin generation of NVIDIA AI infrastructure is the world\u2019s first to achieve 100% liquid cooling - every chip, every networking component, cooled entirely by liquid in a closed loop with no fans anywhere in the.",
+        "Silicon processors generate enormous internal heat - the coolant entering a fully liquid-cooled chip at 45 degrees Celsius exits at roughly 55 degrees, having absorbed that heat load across the chip surface.",
+        "Liquid cooling at up to 45 degrees Celsius - hotter than a hot tub, cooler for the planet - is one of the most important tools the industry has to close that gap.",
+        "Industry estimates suggest that raising chiller plant temperatures by just one degree can cut cooling energy costs by about 4%.",
+        "The loop is filled once and runs closed for the life of the facility.",
+        "Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay How FERC\u2019s Large-Load Interconnection Actions Help Address Grid Stress, Improve Affordability At Cannes Lions, NVIDIA Partners Reshape Advertising and Marketing.",
+        "Here is a link to the video instead.",
+        "The liquid does all the work - and the same liquid can be recirculated in a closed loop so no new water is consumed to cool the chips."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/35cf5c380a79f8b8.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/45CLiquidCooling.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1753cf0abad63382.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ec53f3f38a83aeda.jpg"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/liquid-cooling-hoses-1680x726.jpg",
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/liquid-cooling-pipes-1680x595.jpg"
+      ]
+    },
+    {
+      "url": "https://www.mitsloanme.com/article/elon-musk-predicts-ai-will-eclipse-human-intelligence-in-5-years/",
+      "title": "Elon Musk Predicts AI Will Eclipse Human Intelligence in 5 Years",
+      "description": "The xAI CEO responded to fellow entrepreneur Peter Diamandis, forecasting an AI milestone that has left the internet divided.",
+      "excerpt": "The xAI CEO responded to fellow entrepreneur Peter Diamandis, forecasting an AI milestone that has left the internet divided.",
+      "summary": "Get free, timely updates from MIT Sloan Management Review Middle East with new ideas, research, frameworks, and more. You more or less rip off the human mind uncompensated, make it run far faster, then sell it to employers for cheaper.\u201d In another post, @DavidSHolz raised a staggering possibility: what if five million humanoid robots could erect Manhattan in six months? Possibly true but meaningless.\u201d The discourse around AI\u2019s impact on the future of human intelligence and work continues, with AI experts being divided on what AI will do. Diamandis on X, Musk wrote, \u201cAI probably exceeds the sum of all human intelligence in 4 or 5 years.\u201d \u200bThe Tesla and xAI CEO contested Diamandis\u2019s view that human brilliance is limited not only by intelligence but also by the number of people with access to. Diamandis on X, Musk wrote, \u201cAI probably exceeds the sum of all human intelligence in 4 or 5 years.\u201d \u200bThe Tesla and xAI CEO contested Diamandis\u2019s view that human brilliance is limited not only by intelligence but also by the number of people with access to tools and resources.",
+      "what_happened": "Get free, timely updates from MIT Sloan Management Review Middle East with new ideas, research, frameworks, and more. You more or less rip off the human mind uncompensated, make it run far faster, then sell it to employers for cheaper.\u201d In another post, @DavidSHolz raised a staggering possibility: what if five million humanoid robots could erect Manhattan in six months?",
+      "why_matters": "Possibly true but meaningless.\u201d The discourse around AI\u2019s impact on the future of human intelligence and work continues, with AI experts being divided on what AI will do. Diamandis on X, Musk wrote, \u201cAI probably exceeds the sum of all human intelligence in 4 or 5 years.\u201d \u200bThe Tesla and xAI CEO contested Diamandis\u2019s view that human brilliance is limited not only by intelligence but also by the number of people with access to.",
+      "what_to_watch": "Diamandis on X, Musk wrote, \u201cAI probably exceeds the sum of all human intelligence in 4 or 5 years.\u201d \u200bThe Tesla and xAI CEO contested Diamandis\u2019s view that human brilliance is limited not only by intelligence but also by the number of people with access to tools and resources.",
+      "key_points": [
+        "Elon Musk Predicts AI Will Eclipse Human Intelligence in 5 Years Elon Musk has made another bold prediction about the future of artificial intelligence, claiming that AI could surpass the combined intelligence of all.",
+        "Diamandis on X, Musk wrote, \u201cAI probably exceeds the sum of all human intelligence in 4 or 5 years.\u201d \u200bThe Tesla and xAI CEO contested Diamandis\u2019s view that human brilliance is limited not only by intelligence but also.",
+        "But it may be the same as saying the sum of all mammal intelligence exceeds the sum of all human intelligence today.",
+        "Musk\u2019s views drew mixed reactions from users, with one claiming, \u201cIntelligence without a soul is not true intelligence.\u201d Another, by the username of @TechySwift, echoed the above sentiments, \u201cIt might exceed the sum of.",
+        "The ceiling on human genius has always been the size of the human population and their access to tools and resources.",
+        "If that\u2019s true, what does the world look like in 2045 - or 2100?",
+        "Get free, timely updates from MIT Sloan Management Review Middle East with new ideas, research, frameworks, and more.",
+        "Possibly true but meaningless.\u201d The discourse around AI\u2019s impact on the future of human intelligence and work continues, with AI experts being divided on what AI will do.",
+        "You more or less rip off the human mind uncompensated, make it run far faster, then sell it to employers for cheaper.\u201d In another post, @DavidSHolz raised a staggering possibility: what if five million humanoid robots.",
+        "The xAI CEO responded to fellow entrepreneur Peter Diamandis, forecasting an AI milestone that has left the internet divided.",
+        "\u200b\u201cAbundance isn\u2019t just more compute and more energy.",
+        "Responding to a post by entrepreneur and author Peter H."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/59b3cd556719dfc9.jpg",
+      "image_url": "https://www.mitsloanme.com/wp-content/uploads/2026/06/AI-intelligence.jpg.jpeg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://fintech.global/2026/06/22/andera-raises-37m-to-automate-internal-audit/",
+      "title": "Andera raises $37m to automate internal audit",
+      "description": "Andera raises $37m Series A led by Lightspeed to automate internal audit workflows with AI. Read the full story.",
+      "excerpt": "Andera raises $37m Series A led by Lightspeed to automate internal audit workflows with AI. Read the full story.",
+      "summary": "launches AI-powered dealership training tool Connie Health completes Clearlink deal US firms dominated World Cup FinTech deal activity securing 42% of all deals since 2023 ZestyAI appoints CFO and SVP to drive next growth phase European FinTech funding projections for 2026 took a hit after a... The venture firm spent several months building its thesis before committing capital, consulting with finance and audit leaders across Fortune 500 companies spanning technology, financial services, healthcare, and consumer. The company frames this not as a displacement of audit professionals, but as an extension of their capability, enabling them to cover more of the enterprise and engage with a wider risk surface. Whitepaper: Addressing Advisor Movement in Wealth Management Whitepaper: Addressing Advisor Movement in Wealth Management Andera raises $37m to automate internal audit Andera , an AI-native platform built to automate the internal. The architecture also includes probabilistic beam search to concentrate compute on uncertain areas of the data graph, and bespoke agents that interact with financial workpapers with precision.",
+      "what_happened": "launches AI-powered dealership training tool Connie Health completes Clearlink deal US firms dominated World Cup FinTech deal activity securing 42% of all deals since 2023 ZestyAI appoints CFO and SVP to drive next growth phase European FinTech funding projections for 2026 took a hit after a... The venture firm spent several months building its thesis before committing capital, consulting with finance and audit leaders across Fortune 500 companies spanning technology, financial services, healthcare, and consumer.",
+      "why_matters": "The company frames this not as a displacement of audit professionals, but as an extension of their capability, enabling them to cover more of the enterprise and engage with a wider risk surface. Whitepaper: Addressing Advisor Movement in Wealth Management Whitepaper: Addressing Advisor Movement in Wealth Management Andera raises $37m to automate internal audit Andera , an AI-native platform built to automate the internal.",
+      "what_to_watch": "The architecture also includes probabilistic beam search to concentrate compute on uncertain areas of the data graph, and bespoke agents that interact with financial workpapers with precision.",
+      "key_points": [
+        "Lightspeed concluded that a genuine opportunity had opened for a new entrant, driven by two converging forces: the arrival of large language model reasoning capable of handling complex audit workflows, and mounting.",
+        "launches AI-powered dealership training tool Connie Health completes Clearlink deal US firms dominated World Cup FinTech deal activity securing 42% of all deals since 2023 ZestyAI appoints CFO and SVP to drive next.",
+        "The architecture also includes probabilistic beam search to concentrate compute on uncertain areas of the data graph, and bespoke agents that interact with financial workpapers with precision.",
+        "The venture firm spent several months building its thesis before committing capital, consulting with finance and audit leaders across Fortune 500 companies spanning technology, financial services, healthcare, and.",
+        "The company frames this not as a displacement of audit professionals, but as an extension of their capability, enabling them to cover more of the enterprise and engage with a wider risk surface.",
+        "Andera raises $37m Series A led by Lightspeed to automate internal audit workflows with AI.",
+        "Patel previously worked on Azure infrastructure scaling at Microsoft and on the trading desk at Jane Street, approaching the audit problem through the lens of reasoning rather than IT infrastructure.",
+        "Whitepaper: Addressing Advisor Movement in Wealth Management Whitepaper: Addressing Advisor Movement in Wealth Management Andera raises $37m to automate internal audit Andera , an AI-native platform built to automate.",
+        "How Vneuron is tackling financial crime through unified compliance platforms Why your AML platform must be built for global scale How Theta Lake is helping regulators define safe AI Andera raises $37m to automate.",
+        "US firms dominated World Cup FinTech deal activity securing 42% of...",
+        "The investment marks Lightspeed\u2019s conviction that the audit sector has reached a pivotal moment for AI-driven transformation.",
+        "The company\u2019s longer-term vision extends to documenting, assessing, and testing any category of control regardless of industry, complexity, or the underlying system."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/ee5d878f8a6b71ce.jpg",
+      "image_url": "https://fintech.global/wp-content/uploads/2026/06/pexels-john-guccione-www-advergroup-com-1874301-15633962-scaled.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/",
+      "title": "When the Trump administration cracks down on Anthropic, who benefits? | TechCrunch",
+      "description": "On the new episode of Equity, we discussed what actually prompted the administration's latest moves against Anthropic, and what this might mean for the AI ecosystem.",
+      "excerpt": "On the new episode of Equity, we discussed what actually prompted the administration's latest moves against Anthropic, and what this might mean for the AI ecosystem.",
+      "summary": "On the new episode of Equity, we discussed what actually prompted the administration's latest moves against Anthropic, and what this might mean for the AI ecosystem.",
+      "what_happened": "On the new episode of Equity, we discussed what actually prompted the administration's latest moves against Anthropic, and what this might mean for the AI ecosystem.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "On the new episode of Equity, we discussed what actually prompted the administration's latest moves against Anthropic, and what this might mean for the AI ecosystem."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/16c7b931ce62486f.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/anthropic-claude-fable.jpg?resize=1200,798",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 8,
+  "has_cta": true,
+  "slides": [
+    "From Materials Simulation to Experimental Astronomy New NVIDIA AI Software Unlocks Scientific.",
+    "NAIRR Science Program Reshapes Scientific Research Powered by NVIDIA AI Infrastructure.",
+    "NVIDIA Vera CPU Opens the Way for Agentic Scientific AI at Los.",
+    "Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure.",
+    "Hotter Than a Hot Tub The 45 C Breakthrough to Cool AI's.",
+    "Elon Musk Predicts AI Will Eclipse Human Intelligence in 5 Years.",
+    "Andera raises $37m to automate internal audit.",
+    "FOLLOW @graitech"
+  ]
+}
