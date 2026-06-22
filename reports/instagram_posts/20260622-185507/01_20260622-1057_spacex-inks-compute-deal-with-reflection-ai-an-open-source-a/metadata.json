@@ -1,0 +1,355 @@
+{
+  "email_received_at": "2026-06-22T10:57-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "SpaceX inks compute deal with Reflection AI, an open source AI lab | TechCrunch",
+  "subject": "\ud83d\udea8 AI Alert: 60 new launches \u2014 CNBC Technology, Wired AI, TechCrunch AI",
+  "source_date": "Mon, 22 Jun 2026 10:57:34 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "DeepMind",
+    "Anthropic",
+    "Microsoft",
+    "Amazon",
+    "AWS",
+    "NVIDIA"
+  ],
+  "models": [
+    "Claude"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://techcrunch.com/2026/06/22/spacex-inks-compute-deal-with-reflection-ai-an-open-source-ai-lab/",
+  "article_title": "SpaceX inks compute deal with Reflection AI, an open source AI lab | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2bc8d346c84bf394.jpg",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2259661359.jpg?w=1024",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/22/spacex-inks-compute-deal-with-reflection-ai-an-open-source-ai-lab/",
+      "title": "SpaceX inks compute deal with Reflection AI, an open source AI lab | TechCrunch",
+      "description": "Reflection AI will pay $150 million a month beginning July 1, 2026 through 2029 for immediate access to Nvidia's latest GB300 AI chips and supporting hardware across SpaceX's Colossus 2 data center near Memphis, Tennessee.",
+      "excerpt": "Reflection AI will pay $150 million a month beginning July 1, 2026 through 2029 for immediate access to Nvidia's latest GB300 AI chips and supporting hardware across SpaceX's Colossus 2 data center near Memphis, Tennessee.",
+      "summary": "The startup , which was founded in 2024 by two former Google DeepMind researchers, said the compute deal is one of the largest announced open AI infrastructure commitments to date. Open-weight AI models, which publicly release their trained parameters, have received more attention following the U.S. The deal is worth up to $6.3 billion and either company has the option to end the contract with 90 days\u2019 notice after the first three months. \u201cOur deal with SpaceXAI signals Reflection\u2019s strategic importance within the frontier AI ecosystem, and more compute means more runway to build the world\u2019s best open models at scale.\u201d The Colossus data center was originally built by xAI, a company founded by Elon Musk that is now part. The deal is smaller than SpaceX\u2019s deals with Anthropic and Google, which cost the companies $1.25 billion per month and $920 million per month, respectively.",
+      "what_happened": "The startup , which was founded in 2024 by two former Google DeepMind researchers, said the compute deal is one of the largest announced open AI infrastructure commitments to date. Open-weight AI models, which publicly release their trained parameters, have received more attention following the U.S.",
+      "why_matters": "The deal is worth up to $6.3 billion and either company has the option to end the contract with 90 days\u2019 notice after the first three months. \u201cOur deal with SpaceXAI signals Reflection\u2019s strategic importance within the frontier AI ecosystem, and more compute means more runway to build the world\u2019s best open models at scale.\u201d The Colossus data center was originally built by xAI, a company founded by Elon Musk that is now part.",
+      "what_to_watch": "The deal is smaller than SpaceX\u2019s deals with Anthropic and Google, which cost the companies $1.25 billion per month and $920 million per month, respectively.",
+      "key_points": [
+        "The startup , which was founded in 2024 by two former Google DeepMind researchers, said the compute deal is one of the largest announced open AI infrastructure commitments to date.",
+        "Open-weight AI models, which publicly release their trained parameters, have received more attention following the U.S.",
+        "The deal is worth up to $6.3 billion and either company has the option to end the contract with 90 days\u2019 notice after the first three months.",
+        "\u201cOur deal with SpaceXAI signals Reflection\u2019s strategic importance within the frontier AI ecosystem, and more compute means more runway to build the world\u2019s best open models at scale.\u201d The Colossus data center was.",
+        "The deal is smaller than SpaceX\u2019s deals with Anthropic and Google, which cost the companies $1.25 billion per month and $920 million per month, respectively.",
+        "Reflection AI will pay $150 million a month beginning July 1, 2026 through 2029 for immediate access to Nvidia\u2019s latest GB300 AI chips and supporting hardware across SpaceX\u2019s Colossus 2 data center near Memphis.",
+        "Reflection used the compute deal - its first - to tout the value of its open-weight AI strategy , which it has pitched as an open source alternative to closed frontier labs like Anthropic and OpenAI.",
+        "Those contracts also run through July 2029, although Elon Musk has publicly downplayed the three-year term, emphasizing that the contracts can be canceled at any time.",
+        "\u201cRecent events highlight how important open source is to the AI ecosystem, with more nations and enterprises recognizing the risks and costs associated with exclusively depending on closed models,\u201d a spokesperson said.",
+        "As its internal pursuits have faltered, SpaceX leveraged its valuable AI chip holdings and began renting them out to some of the world\u2019s top AI labs.",
+        "government\u2019s ban of Anthropic\u2019s closed models, Fable and Mythos.",
+        "More from TechCrunch SpaceX inks compute deal with Reflection AI, an open source AI lab First came Anthropic , then Google ."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2bc8d346c84bf394.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2259661359.jpg?w=1024",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/embed-the-world-multimodal-ai-for-searchable-aerial-imagery-at-scale/",
+      "title": "Embed the world: Multimodal AI for searchable aerial imagery at scale | Amazon Web Services",
+      "description": "In this post, we walk through the problem space, our architecture on Amazon Bedrock and Amazon OpenSearch Serverless, the evaluation methodology we built on OpenStreetMap ground truth, four experiments that compared embedding models, fusion strategies, captioning, and search methods, and the practical guidance you can apply when building a similar system. You\u2019ll learn which design choices move the needle for geospatial semantic search, including why Amazon Nova Multimodal Embeddings delivered the highest F1 scores across both benchmark queries in our evaluation. The work described here evolved into Vexcel Intelligence, a searchable imagery product.",
+      "excerpt": "In this post, we walk through the problem space, our architecture on Amazon Bedrock and Amazon OpenSearch Serverless, the evaluation methodology we built on OpenStreetMap ground truth, four experiments that compared embedding models, fusion strategies, captioning, and search methods, and the practical guidance you can apply when building a similar system. You\u2019ll learn which design choices move the needle for geospatial semantic search, including why Amazon Nova Multimodal Embeddings delivered the highest F1 scores across both benchmark queries in our evaluation. The work described here evolved into Vexcel Intelligence, a searchable imagery product.",
+      "summary": "The framework is the primary deliverable: it keeps finding optimal configurations as newer models launch and new feature types are added. Lepadatu is a Senior Deep Learning Architect at the AWS Generative AI Innovation Center, where he designs and deploys custom generative AI solutions for customers across industries. The interface provides caption generation controls, a real-time dimension impact analysis, embedding model, and fusion strategy selection (Figures 5 and 6). This was the highest-ROI optimization we tested: an 11% F1 score improvement for pools and 13% for roads, more impact than switching embedding models or tuning fusion strategies. Across approximately 100 configurations tested on two benchmark queries, the following seven findings emerged as the most actionable guidance for teams building geospatial semantic search systems: Start with Amazon Nova Multimodal Embeddings. Multimodal embeddings, large language model (LLM) captioning, and vector.",
+      "what_happened": "The framework is the primary deliverable: it keeps finding optimal configurations as newer models launch and new feature types are added. Lepadatu is a Senior Deep Learning Architect at the AWS Generative AI Innovation Center, where he designs and deploys custom generative AI solutions for customers across industries.",
+      "why_matters": "The interface provides caption generation controls, a real-time dimension impact analysis, embedding model, and fusion strategy selection (Figures 5 and 6). This was the highest-ROI optimization we tested: an 11% F1 score improvement for pools and 13% for roads, more impact than switching embedding models or tuning fusion strategies.",
+      "what_to_watch": "Across approximately 100 configurations tested on two benchmark queries, the following seven findings emerged as the most actionable guidance for teams building geospatial semantic search systems: Start with Amazon Nova Multimodal Embeddings. Multimodal embeddings, large language model (LLM) captioning, and vector.",
+      "key_points": [
+        "A typical oblique image from Vexcel, providing models rich 360-degree vision of the world Vexcel had explored this problem through three prior POCs: an agent-based approach combining imagery with property data, a.",
+        "The framework is the primary deliverable: it keeps finding optimal configurations as newer models launch and new feature types are added.",
+        "Multimodal embeddings, large language model (LLM) captioning, and vector search on AWS offer a faster alternative: index once, then query using natural language.",
+        "The interface provides caption generation controls, a real-time dimension impact analysis, embedding model, and fusion strategy selection (Figures 5 and 6).",
+        "Lepadatu is a Senior Deep Learning Architect at the AWS Generative AI Innovation Center, where he designs and deploys custom generative AI solutions for customers across industries.",
+        "Across approximately 100 configurations tested on two benchmark queries, the following seven findings emerged as the most actionable guidance for teams building geospatial semantic search systems: Start with Amazon Nova.",
+        "Artificial Intelligence Embed the world: Multimodal AI for searchable aerial imagery at scale Turning a library of aerial imagery into a natural-language-searchable knowledge base is a problem that touches every.",
+        "The AWS Generative AI Innovation Center (GenAIIC) partnered with Vexcel to answer a focused question: what is the optimal combination of embedding model, fusion strategy, captioning approach, and search method for.",
+        "The alternative is training a computer vision model for each feature, which requires labeled data, engineering time, and ongoing retraining.",
+        "The Embed & Index interface \u2013 Caption Generation section The following figure shows the embedding configuration panel, where users select the embedding model and fusion strategy for their indexing run.",
+        "The system auto-detects which fields exist in the index (per-view embeddings, fused embeddings, caption text, caption embeddings) and dynamically enables only the search methods that the index supports.",
+        "For example, a \u201cbaseball field\u201d query weights the orthophoto at ~0.3 for field markings, while a \u201cmulti-story buildings\u201d query weights the DSM at ~0.35 for height data."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d01bc95bd51394f5.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/08/ML-20912-figure7.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-pay-per-intelligence-for-ai-agents-how-ampersend-uses-amazon-bedrock-agentcore-payments/",
+      "title": "Building pay-per-intelligence for AI agents: How Ampersend uses Amazon Bedrock AgentCore Payments | Amazon Web Services",
+      "description": "In this post, you will learn how Ampersend built a pay-per-intelligence routing layer on top of Amazon Bedrock AgentCore Payments. AI agents autonomously route tasks to the most effective model, pay per request, and operate within spending budgets. You will also see how the two-hop payment pattern works end-to-end and how to get started with your own implementation.",
+      "excerpt": "In this post, you will learn how Ampersend built a pay-per-intelligence routing layer on top of Amazon Bedrock AgentCore Payments. AI agents autonomously route tasks to the most effective model, pay per request, and operate within spending budgets. You will also see how the two-hop payment pattern works end-to-end and how to get started with your own implementation.",
+      "summary": "Ampersend allows AI agents to autonomously pay for intelligence services across multiple model providers through a single integration point, powered by the x402 open protocol and Amazon Bedrock AgentCore Payments. With over 15 years of experience in deploying production applications, he is passionate about fostering innovation and education in the blockchain space, particularly in dapp development and the promotion of public goods education. Artificial Intelligence Building pay-per-intelligence for AI agents: How Ampersend uses Amazon Bedrock AgentCore Payments This post was co-written with Kevin Jones from Ampersend (Edge & Node) and Chethan Shriyan from the Amazon Bedrock AgentCore Payments team. Without AgentCore Payments, the team estimated the wallet custody, signing infrastructure, and spending controls alone would have required 3\u20134 months of engineering. If the budget is exhausted, the next payment is rejected cleanly. For agent builders: Your agent needs to call a paid large language model (LLM), a paid data API, or a paid content endpoint.",
+      "what_happened": "Ampersend allows AI agents to autonomously pay for intelligence services across multiple model providers through a single integration point, powered by the x402 open protocol and Amazon Bedrock AgentCore Payments. With over 15 years of experience in deploying production applications, he is passionate about fostering innovation and education in the blockchain space, particularly in dapp development and the promotion of public goods education.",
+      "why_matters": "Artificial Intelligence Building pay-per-intelligence for AI agents: How Ampersend uses Amazon Bedrock AgentCore Payments This post was co-written with Kevin Jones from Ampersend (Edge & Node) and Chethan Shriyan from the Amazon Bedrock AgentCore Payments team. Without AgentCore Payments, the team estimated the wallet custody, signing infrastructure, and spending controls alone would have required 3\u20134 months of engineering.",
+      "what_to_watch": "If the budget is exhausted, the next payment is rejected cleanly. For agent builders: Your agent needs to call a paid large language model (LLM), a paid data API, or a paid content endpoint.",
+      "key_points": [
+        "For agent builders: Your agent needs to call a paid large language model (LLM), a paid data API, or a paid content endpoint.",
+        "Ampersend allows AI agents to autonomously pay for intelligence services across multiple model providers through a single integration point, powered by the x402 open protocol and Amazon Bedrock AgentCore Payments.",
+        "Figure 1: Two-hop payment routing - Agent \u2192 Ampersend \u2192 Model Provider How the two-hop payment flow works The preceding diagram illustrates the end-to-end payment architecture.",
+        "Native x402 protocol \u2013 When an agent encounters a paid endpoint (HTTP 402), AgentCore handles the x402 protocol negotiation, wallet authentication, stablecoin payment, and proof delivery without interrupting the agent\u2019s.",
+        "The integration across a buyer agent with AgentCore, a seller agent with Ampersend, and BlockRun AI for pay-as-you-go LLM inference came together far more smoothly than we anticipated.",
+        "The agent retries the original request to Ampersend with the proof attached.",
+        "Payment Session \u2013 Before the agent starts, the backend opens a Payment Session with a budget cap (for example, $0.05).",
+        "ProcessPayment API \u2013 When Ampersend returns an HTTP 402 (payment required), the agent calls ProcessPayment with the x402 payment details.",
+        "Settlement \u2013 After it\u2019s signed, the payment proof is returned to the agent.",
+        "With over 15 years of experience in deploying production applications, he is passionate about fostering innovation and education in the blockchain space, particularly in dapp development and the promotion of public.",
+        "Integrate with Ampersend \u2013 Visit ampersend.ai to explore the model catalog and integrate your agent with Ampersend\u2019s payment routing API.",
+        "\u2022 Agents that transact: Amazon Bedrock AgentCore now includes Payments (preview) \u2013 launch announcement Guy is a Senior Solutions Architect at AWS, working with fintech and capital markets firms on agentic AI, autonomous."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d2b5e19372f7cef7.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/16/ML-21061-1.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/running-comfyui-workflows-on-amazon-sagemaker-ai-processing-jobs/",
+      "title": "Running ComfyUI workflows on Amazon SageMaker AI processing jobs | Amazon Web Services",
+      "description": "In this post, we walk you through how to deploy ComfyUI workflows on Amazon SageMaker AI processing jobs to generate hundreds of high-quality images in a single batch. You learn how to set up the infrastructure using AWS Cloud Development Kit (AWS CDK), configure GPU-accelerated processing, and automate image generation at scale. You can then adapt this solution to your ComfyUI workflows specific to your needs. We will guide you through a practical, step-by-step process to automate ComfyUI workflows to generate hundreds of high-quality images in a single batch empowering you to scale your creative pipeline.",
+      "excerpt": "In this post, we walk you through how to deploy ComfyUI workflows on Amazon SageMaker AI processing jobs to generate hundreds of high-quality images in a single batch. You learn how to set up the infrastructure using AWS Cloud Development Kit (AWS CDK), configure GPU-accelerated processing, and automate image generation at scale. You can then adapt this solution to your ComfyUI workflows specific to your needs. We will guide you through a practical, step-by-step process to automate ComfyUI workflows to generate hundreds of high-quality images in a single batch empowering you to scale your creative pipeline.",
+      "summary": "SageMaker AI provisions a GPU instance within the private network, pulls the ComfyUI container image from the registry, and deploys it with the necessary storage and network configurations. In addition, he builds and deploys AI/ML models on the AWS Cloud. She has expertise in Machine Learning, spanning large language model customization, reward modeling, and building end-to-end training pipelines for AI agents. The AWS CDK deployed the infrastructure with security, encryption, and network isolation built in from the ground up. When not exploring the latest developments in artificial intelligence, Justin enjoys traveling the country to watch his kids play soccer and wakesurfing on Michigan\u2019s lakes with family and friends. She has expertise in Machine Learning, spanning large language model customization, reward modeling, and building.",
+      "what_happened": "SageMaker AI provisions a GPU instance within the private network, pulls the ComfyUI container image from the registry, and deploys it with the necessary storage and network configurations. In addition, he builds and deploys AI/ML models on the AWS Cloud.",
+      "why_matters": "She has expertise in Machine Learning, spanning large language model customization, reward modeling, and building end-to-end training pipelines for AI agents. The AWS CDK deployed the infrastructure with security, encryption, and network isolation built in from the ground up.",
+      "what_to_watch": "When not exploring the latest developments in artificial intelligence, Justin enjoys traveling the country to watch his kids play soccer and wakesurfing on Michigan\u2019s lakes with family and friends. She has expertise in Machine Learning, spanning large language model customization, reward modeling, and building.",
+      "key_points": [
+        "SageMaker AI provisions a GPU instance within the private network, pulls the ComfyUI container image from the registry, and deploys it with the necessary storage and network configurations.",
+        "In addition, he builds and deploys AI/ML models on the AWS Cloud.",
+        "She has expertise in Machine Learning, spanning large language model customization, reward modeling, and building end-to-end training pipelines for AI agents.",
+        "The AWS CDK deployed the infrastructure with security, encryption, and network isolation built in from the ground up.",
+        "When a product launch deadline looms or a seasonal promotion needs urgent assets, waiting for designers to iterate on a single social media post or a 15-second video ad can cost thousands in lost conversions.",
+        "The following sections walk through deploying the ComfyUI on SageMaker Processing Jobs solution.",
+        "Artificial Intelligence Running ComfyUI workflows on Amazon SageMaker AI processing jobs With ComfyUI workflows on Amazon SageMaker AI processing jobs, you can automate content generation at scale.",
+        "Z-Image Turbo uses a decoder-only Transformer backbone, inspired by large language model (LLM) decoders, with 30 layers, hidden size 3840, 32 attention heads, 10240 Feed Forward network intermediate dimensions, and a.",
+        "Deploying ComfyUI on SageMaker AI processing jobs brings several benefits to your image generation workflows.",
+        "Although this example focuses on image generation, ComfyUI\u2019s workflow engine can scale AI-driven creative tasks as mentioned previously, whether it\u2019s audio synthesis, 3D asset rendering, or dynamic video animations.",
+        "This container packages ComfyUI with the Z-Image Turbo model, providing high-quality image generation with configurable parameters for prompts, seeds, and batch processing.",
+        "The key has automatic rotation enabled and includes resource policies allowing AWS services like Amazon S3 and CloudWatch to use it for encryption operations."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5209ee4d2c0cc661.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/02/ML-19966-1.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aibusiness.com/robotics/nvidia-launches-system-make-robots-safer",
+      "title": "Nvidia Launches System to Make Robots Safer",
+      "description": "Nvidia Launches System to Make Robots Safer",
+      "excerpt": "Nvidia Launches System to Make Robots Safer",
+      "summary": "\"Nvidia Halos enables companies to rely on a standardized, unified safety architecture that connects AI compute, system software, sensor data, safety applications and inspection for robotic systems,\" the vendor said in a blog post on Monday. Nvidia Launches System to Make Robots Safer Nvidia Launches System to Make Robots Safer The platform applies Nvidia\u2019s expertise in autonomous vehicle safety to physical AI. The vendor touted the platform, Halos for Robotics, as the industry\u2019s first full-stack safety system for physical AI . The company is using Halos for Robotics in robots deployed across manufacturing, warehouse and logistics environments for customers including Amazon, GXO, Schaeffler and Toyota Motor Manufacturing Canada. The hardware stack includes Nvidia's IGX Thor industrial AI computer and Holoscan Sensor Bridge, which provide sensor connectivity and real-time processing capabilities for robotics workloads.",
+      "what_happened": "\"Nvidia Halos enables companies to rely on a standardized, unified safety architecture that connects AI compute, system software, sensor data, safety applications and inspection for robotic systems,\" the vendor said in a blog post on Monday. Nvidia Launches System to Make Robots Safer Nvidia Launches System to Make Robots Safer The platform applies Nvidia\u2019s expertise in autonomous vehicle safety to physical AI.",
+      "why_matters": "The vendor touted the platform, Halos for Robotics, as the industry\u2019s first full-stack safety system for physical AI . The company is using Halos for Robotics in robots deployed across manufacturing, warehouse and logistics environments for customers including Amazon, GXO, Schaeffler and Toyota Motor Manufacturing Canada.",
+      "what_to_watch": "The hardware stack includes Nvidia's IGX Thor industrial AI computer and Holoscan Sensor Bridge, which provide sensor connectivity and real-time processing capabilities for robotics workloads.",
+      "key_points": [
+        "\"Nvidia Halos enables companies to rely on a standardized, unified safety architecture that connects AI compute, system software, sensor data, safety applications and inspection for robotic systems,\" the vendor said in.",
+        "The vendor touted the platform, Halos for Robotics, as the industry\u2019s first full-stack safety system for physical AI .",
+        "Nvidia said the broader Halos ecosystem includes more than 40 companies spanning robotics manufacturers, safety vendors and certification bodies, reflecting growing industry momentum to establish safety standards as.",
+        "Nvidia Launches System to Make Robots Safer Nvidia Launches System to Make Robots Safer The platform applies Nvidia\u2019s expertise in autonomous vehicle safety to physical AI.",
+        "The company is using Halos for Robotics in robots deployed across manufacturing, warehouse and logistics environments for customers including Amazon, GXO, Schaeffler and Toyota Motor Manufacturing Canada.",
+        "Humanoid robotics vendor Agility is among the first adopters of the platform.",
+        "Related: ABB Robotics Enters Partnership to Advance Physical AI On the software side, Nvidia\u2019s Halos OS provides safety-related operating functions, while the company's open source Outside-In Safety Blueprint extends.",
+        "The platform is also supported by the Nvidia Halos AI Systems Inspection Lab, an ANSI-accredited program focused on both functional and AI safety for physical AI systems.",
+        "The platform is built around three core layers: safety-focused computing systems, robotics software and inspection services.",
+        "The hardware stack includes Nvidia's IGX Thor industrial AI computer and Holoscan Sensor Bridge, which provide sensor connectivity and real-time processing capabilities for robotics workloads.",
+        "Drawing on technologies originally developed for autonomous vehicles, Halos for Robotics combines AI computing hardware, software, sensors and certification tools into a unified framework to help robots better.",
+        "Scarlett Evans is a freelance writer with a focus on emerging technologies and the minerals industry."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3f3027883da944b9.webp",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt215b5d9f1675b284/6a0f22acb3761358bc65c442/Google_AI.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c80e1f4d56bf2e7b.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/be753ffbee22265b.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b3763009c0f601a6.webp"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltd2b3dadf34e75859/6a397ebf63c5af93ffb05f5e/Artifacts.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltdb9fe516e837c101/6a1d8b5a479f3e38d05cf31a/SoftBank.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltd6f862d65d39c0f6/6a3164f78a574a00087ff10d/IBMAI.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/",
+      "title": "Samsung Electronics brings ChatGPT and Codex to employees",
+      "description": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI\u2019s largest enterprise AI rollouts.",
+      "excerpt": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI\u2019s largest enterprise AI rollouts.",
+      "summary": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI\u2019s largest enterprise AI rollouts.",
+      "what_happened": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI\u2019s largest enterprise AI rollouts.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI\u2019s largest enterprise AI rollouts."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/871ce60e7fdcbcbd.webp",
+      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6SkgXCQ08f4AYarun2I3oU/24414c9962c945767f783bdb63006841/OAI-Ona-ArtCard.png?w=3840&q=90&fm=webp",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/5142255556a1fb7a.png"
+      ],
+      "extra_image_urls": [
+        "https://images.ctfassets.net/kftzwdyauwt9/18IGXqgYieQfH2AcUiYbua/4975e902fc7b1eb55f0863da06f82c92/samsung-electronics-16_9.png?w=1600&h=900&fit=fill"
+      ]
+    },
+    {
+      "url": "https://www.engadget.com/2198633/openai-signs-deal-with-getty-to-show-images-in-chatgpt-results/",
+      "title": "OpenAI signs deal to show Getty's images in ChatGPT results - Engadget",
+      "description": "Getty Images will allow OpenAI to use its content library in AI search and ChatGPT.",
+      "excerpt": "Getty Images will allow OpenAI to use its content library in AI search and ChatGPT.",
+      "summary": "Getty Images will allow OpenAI to use its content library in AI search and ChatGPT. But in October 2025, Getty signed a deal with Perplexity AI , allowing the latter's AI search and discovery tools to access Getty's library. Notably, Getty hasn't shared any details on whether its images will be used in AI training, although its deal with Perplexity doesn't allow for it. OpenAI signs deal to show Getty's images in ChatGPT results Getty Images has announced a multi-year partnership with OpenAI that will bring its licensed content libraries to the AI company. A year after its AI-generated art ban, Getty announced its own generative AI tool , trained on its library and powered by NVIDIA's Edigy AI model.",
+      "what_happened": "Getty Images will allow OpenAI to use its content library in AI search and ChatGPT. But in October 2025, Getty signed a deal with Perplexity AI , allowing the latter's AI search and discovery tools to access Getty's library.",
+      "why_matters": "Notably, Getty hasn't shared any details on whether its images will be used in AI training, although its deal with Perplexity doesn't allow for it. OpenAI signs deal to show Getty's images in ChatGPT results Getty Images has announced a multi-year partnership with OpenAI that will bring its licensed content libraries to the AI company.",
+      "what_to_watch": "A year after its AI-generated art ban, Getty announced its own generative AI tool , trained on its library and powered by NVIDIA's Edigy AI model.",
+      "key_points": [
+        "Getty Images will allow OpenAI to use its content library in AI search and ChatGPT.",
+        "But in October 2025, Getty signed a deal with Perplexity AI , allowing the latter's AI search and discovery tools to access Getty's library.",
+        "A year after its AI-generated art ban, Getty announced its own generative AI tool , trained on its library and powered by NVIDIA's Edigy AI model.",
+        "Notably, Getty hasn't shared any details on whether its images will be used in AI training, although its deal with Perplexity doesn't allow for it.",
+        "OpenAI signs deal to show Getty's images in ChatGPT results Getty Images has announced a multi-year partnership with OpenAI that will bring its licensed content libraries to the AI company.",
+        "In September 2022, Getty banned all AI-generated art from its library .",
+        "The agreement means Getty's content will appear in OpenAI search and ChatGPT.",
+        "Critically, the release stated that \"Perplexity will be making improvements to how it displays imagery, including image credit with a link to source, to better educate users on how to use licensed imagery legally.\".",
+        "\"High\u2011quality, licensed visual content makes AI\u2011powered search and discovery more useful and more trustworthy,\" Getty CEO Craig Peters said in a statement.",
+        "\"This partnership with OpenAI reflects a shared recognition of that, and together we will deliver richer visual experiences to ChatGPT users.\" Getty, until recently, had taken a strong stance against working with AI.",
+        "Each of the resulting images came with a royalty-free license.",
+        "Do not sell or share my personal information."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/from-developer-desks-to-the-whole-organization-running-claude-cowork-in-amazon-bedrock/",
+      "title": "From developer desks to the whole organization: Running Claude Cowork in Amazon Bedrock | Amazon Web Services",
+      "description": "Today, we're excited to announce Claude Cowork in Amazon Bedrock. You can now run Cowork and Claude Code Desktop through Amazon Bedrock, directly or using an LLM gateway. In this post, we walk through how Claude Cowork integrates with Amazon Bedrock and show an example of how knowledge workers use it in practice.",
+      "excerpt": "Today, we're excited to announce Claude Cowork in Amazon Bedrock. You can now run Cowork and Claude Code Desktop through Amazon Bedrock, directly or using an LLM gateway. In this post, we walk through how Claude Cowork integrates with Amazon Bedrock and show an example of how knowledge workers use it in practice.",
+      "summary": "In this post, we walk through how Claude Cowork integrates with Amazon Bedrock and show an example of how knowledge workers use it in practice. Today, we're excited to announce Claude Cowork in Amazon Bedrock. Today, we're excited to announce Claude Cowork in Amazon Bedrock. You can now run Cowork and Claude Code Desktop through Amazon Bedrock, directly or using an LLM gateway. Today, we're excited to announce Claude Cowork in Amazon Bedrock.",
+      "what_happened": "In this post, we walk through how Claude Cowork integrates with Amazon Bedrock and show an example of how knowledge workers use it in practice. Today, we're excited to announce Claude Cowork in Amazon Bedrock.",
+      "why_matters": "Today, we're excited to announce Claude Cowork in Amazon Bedrock. You can now run Cowork and Claude Code Desktop through Amazon Bedrock, directly or using an LLM gateway.",
+      "what_to_watch": "Today, we're excited to announce Claude Cowork in Amazon Bedrock.",
+      "key_points": [
+        "Today, we're excited to announce Claude Cowork in Amazon Bedrock.",
+        "In this post, we walk through how Claude Cowork integrates with Amazon Bedrock and show an example of how knowledge workers use it in practice.",
+        "You can now run Cowork and Claude Code Desktop through Amazon Bedrock, directly or using an LLM gateway."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8fa90f60cccdfe39.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/04/21/ml-20855-1120x630.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 7,
+  "has_cta": true,
+  "slides": [
+    "Embed the world Multimodal AI for searchable aerial imagery at scale.",
+    "Building pay-per-intelligence for AI agents How Ampersend uses Amazon Bedrock AgentCore Payments.",
+    "Running ComfyUI workflows on Amazon SageMaker AI processing jobs.",
+    "Nvidia Launches System to Make Robots Safer.",
+    "Samsung Electronics brings ChatGPT and Codex to employees.",
+    "OpenAI signs deal to show Getty's images in ChatGPT results.",
+    "FOLLOW @graitech"
+  ]
+}
