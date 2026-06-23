@@ -1,0 +1,27 @@
+Anthropic's Claude Tag is learning your company one Slack message.
+
+Swipe for the full breakdown.
+
+- Users can already DM @Claude within Slack or tag it in channels for on-demand help, and Claude Code.
+- Glean is also building an intelligence layer that understands company context and sits between the model.
+- The new feature - which allows users to tag @Claude to provide insights in chats and assign tasks.
+- Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+- Join 1,000+ founders and VCs for all-day bootcamp.
+
+Is OpenAI moving too fast, or not fast enough? Let's hear it.
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/
+- https://aws.amazon.com/blogs/machine-learning/build-a-protein-research-copilot-with-amazon-bedrock-agentcore/
+- https://aws.amazon.com/blogs/machine-learning/shared-infrastructure-isolated-tenants-pool-model-multi-tenancy-with-amazon-bedrock-agentcore/
+- https://www.theguardian.com/us-news/2026/jun/18/california-billionaire-tax-ballot-tech-opposition
+- https://www.bbc.com/news/articles/c0kyzk2p255o?at_medium=RSS&at_campaign=rss
+
+#AIRegulation #TechLaw #AITools #ProductivityAI #AIProductivity #AIInfrastructure #AIChips #OpenAI #ChatGPT #Anthropic #Claude #TechNews #AIUpdates #ArtificialIntelligence #FutureOfAI #FutureTech #DigitalTransformation #Technology #LearnAI #DeepLearning
+
+-
+This is not legal advice. Consult a qualified professional for guidance.
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-

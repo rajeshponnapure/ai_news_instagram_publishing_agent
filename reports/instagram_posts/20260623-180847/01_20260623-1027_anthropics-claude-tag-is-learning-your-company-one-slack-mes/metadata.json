@@ -1,0 +1,307 @@
+{
+  "email_received_at": "2026-06-23T10:27-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "Anthropic\u2019s Claude Tag is learning your company, one Slack message at a time | TechCrunch",
+  "subject": "\ud83d\udea8 AI Alert: 95 new launches \u2014 The Verge AI, CNBC Technology, ZDNet AI",
+  "source_date": "Tue, 23 Jun 2026 10:27:49 -0700",
+  "companies": [
+    "OpenAI",
+    "Anthropic",
+    "Microsoft",
+    "Meta",
+    "Amazon",
+    "AWS",
+    "Mistral",
+    "The Verge AI"
+  ],
+  "models": [
+    "Claude",
+    "Mistral"
+  ],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/",
+  "article_title": "Anthropic\u2019s Claude Tag is learning your company, one Slack message at a time | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/056e2eac74a5aefa.png",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Claude-Tag.png?resize=1200,687",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/",
+      "title": "Anthropic\u2019s Claude Tag is learning your company, one Slack message at a time | TechCrunch",
+      "description": "Anthropic\u2019s new Claude Tag brings an always-on AI teammate to Slack. But beyond productivity, the feature is a strategic play to capture organizational context, institutional knowledge, and enterprise workflows.",
+      "excerpt": "Anthropic\u2019s new Claude Tag brings an always-on AI teammate to Slack. But beyond productivity, the feature is a strategic play to capture organizational context, institutional knowledge, and enterprise workflows.",
+      "summary": "More from TechCrunch Anthropic\u2019s Claude Tag is learning your company, one Slack message at a time Anthropic is introducing Claude Tag in research preview, an \u201calways-on Claude\u201d that lives in Slack and acts as an AI teammate. Users can already DM @Claude within Slack or tag it in channels for on-demand help, and Claude Code in Slack routes coding tasks from channel mentions to full coding sessions on the web, posting updates back into the thread. Glean is also building an intelligence layer that understands company context and sits between the model and the enterprise data. The new feature - which allows users to tag @Claude to provide insights in chats and assign tasks - will begin in research preview, available through Slack for Claude Enterprise and Claude Team customers. WhatsApp gets new chief as Meta taps India\u2019s CRED founder Kunal Shah and invests $900M in startup Aura\u2019s impressive e-ink photo frame doesn\u2019t even look digital The CEO of Allbirds\u2019 new AI biz has a plan. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.",
+      "what_happened": "More from TechCrunch Anthropic\u2019s Claude Tag is learning your company, one Slack message at a time Anthropic is introducing Claude Tag in research preview, an \u201calways-on Claude\u201d that lives in Slack and acts as an AI teammate. Users can already DM @Claude within Slack or tag it in channels for on-demand help, and Claude Code in Slack routes coding tasks from channel mentions to full coding sessions on the web, posting updates back into the thread.",
+      "why_matters": "Glean is also building an intelligence layer that understands company context and sits between the model and the enterprise data. The new feature - which allows users to tag @Claude to provide insights in chats and assign tasks - will begin in research preview, available through Slack for Claude Enterprise and Claude Team customers.",
+      "what_to_watch": "WhatsApp gets new chief as Meta taps India\u2019s CRED founder Kunal Shah and invests $900M in startup Aura\u2019s impressive e-ink photo frame doesn\u2019t even look digital The CEO of Allbirds\u2019 new AI biz has a plan. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.",
+      "key_points": [
+        "More from TechCrunch Anthropic\u2019s Claude Tag is learning your company, one Slack message at a time Anthropic is introducing Claude Tag in research preview, an \u201calways-on Claude\u201d that lives in Slack and acts as an AI.",
+        "Users can already DM @Claude within Slack or tag it in channels for on-demand help, and Claude Code in Slack routes coding tasks from channel mentions to full coding sessions on the web, posting updates back into the.",
+        "Glean is also building an intelligence layer that understands company context and sits between the model and the enterprise data.",
+        "The new feature - which allows users to tag @Claude to provide insights in chats and assign tasks - will begin in research preview, available through Slack for Claude Enterprise and Claude Team customers.",
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.",
+        "But Claude Tag also features an ambient mode that proactively jumps into the chat of its own accord to keep your team updated, flag things from across the organization, and follow up on threads or tasks that have been.",
+        "Join 1,000+ founders and VCs for all-day bootcamp.",
+        "Rebecca Bellan is a senior reporter at TechCrunch where she covers the business, policy, and emerging trends shaping artificial intelligence.",
+        "Her work has also appeared in Forbes, Bloomberg, The Atlantic, The Daily Beast, and other publications.",
+        "Anthropic\u2019s new Claude Tag brings an always-on AI teammate to Slack.",
+        "Snowflake and Databricks are positioning their platforms as the back-end support containing tacit organizational knowledge that agents can tap into."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/056e2eac74a5aefa.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Claude-Tag.png?resize=1200,687",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-protein-research-copilot-with-amazon-bedrock-agentcore/",
+      "title": "Build a protein research copilot with Amazon Bedrock AgentCore | Amazon Web Services",
+      "description": "This post shows you how to build a conversational protein research assistant that combines three capabilities: Natural language query parsing to extract structured search parameters, vector similarity search over protein embeddings using a specialized language model and ai-generated scientific summaries of search results.",
+      "excerpt": "This post shows you how to build a conversational protein research assistant that combines three capabilities: Natural language query parsing to extract structured search parameters, vector similarity search over protein embeddings using a specialized language model and ai-generated scientific summaries of search results.",
+      "summary": "The inference handler constructs the model architecture directly and loads pre-packaged weights: The predict_fn handler takes a protein sequence, encodes it, and returns the mean-pooled embedding: The endpoint is deployed as a serverless configuration with 6144 MB memory and a max concurrency of 5, using the PyTorch 2.6.0 CPU inference container. The system uses the Strands Agents SDK to orchestrate three specialized tools within one agent, deploys to Amazon Bedrock AgentCore for production serving, and stores. By the end of this post, you will have built an end-to-end agent application that demonstrates how to: Parse natural language user input like \u201cFind 10 similar peptides to the dengue virus peptide LPAIVREAI\u201d, into structured tool parameters using the Strands Agents SDK\u2019s tool-use pattern. It receives the user\u2019s query and decides which tools to call and in what order: This design uses the \u201cagents-as-tools\u201d pattern: the parser. The Amazon RDS Data API has a 1 MB response size limit, so queries returning large result sets may need pagination. Building the agent with Strands Agents SDK The Strands Agents SDK provides a clean abstraction for building tool-using agents.",
+      "what_happened": "The inference handler constructs the model architecture directly and loads pre-packaged weights: The predict_fn handler takes a protein sequence, encodes it, and returns the mean-pooled embedding: The endpoint is deployed as a serverless configuration with 6144 MB memory and a max concurrency of 5, using the PyTorch 2.6.0 CPU inference container. The system uses the Strands Agents SDK to orchestrate three specialized tools within one agent, deploys to Amazon Bedrock AgentCore for production serving, and stores.",
+      "why_matters": "By the end of this post, you will have built an end-to-end agent application that demonstrates how to: Parse natural language user input like \u201cFind 10 similar peptides to the dengue virus peptide LPAIVREAI\u201d, into structured tool parameters using the Strands Agents SDK\u2019s tool-use pattern. It receives the user\u2019s query and decides which tools to call and in what order: This design uses the \u201cagents-as-tools\u201d pattern: the parser.",
+      "what_to_watch": "The Amazon RDS Data API has a 1 MB response size limit, so queries returning large result sets may need pagination. Building the agent with Strands Agents SDK The Strands Agents SDK provides a clean abstraction for building tool-using agents.",
+      "key_points": [
+        "The inference handler constructs the model architecture directly and loads pre-packaged weights: The predict_fn handler takes a protein sequence, encodes it, and returns the mean-pooled embedding: The endpoint is.",
+        "Building the agent with Strands Agents SDK The Strands Agents SDK provides a clean abstraction for building tool-using agents.",
+        "By the end of this post, you will have built an end-to-end agent application that demonstrates how to: Parse natural language user input like \u201cFind 10 similar peptides to the dengue virus peptide LPAIVREAI\u201d, into.",
+        "The system uses the Strands Agents SDK to orchestrate three specialized tools within one agent, deploys to Amazon Bedrock AgentCore for production serving, and stores peptide embeddings in Amazon Aurora.",
+        "The initial load samples 1,000 linear peptides: Database access goes through the Amazon Relational Database Service (Amazon RDS) Data API, which means the agent runtime does not need direct network connectivity to the.",
+        "Building a protein research copilot can transform how researchers search for structurally similar peptides across large datasets - enabling natural language queries, automated embedding generation, and AI-powered result.",
+        "The SageMaker AI serverless endpoint takes 2\u20133 minutes on the first invocation after an idle period while the container initializes and loads model weights.",
+        "The model packaging script downloads weights once via from_pretrained , saves the state dict, and bundles it with the inference code into a model.tar.gz with the required code/ directory structure for SageMaker AI.",
+        "AgentCore runtime and Streamlit UI - The Strands agent is deployed to an Amazon Bedrock AgentCore runtime via AWS CodeBuild (no local Docker required), and the Streamlit frontend is deployed to AWS Fargate.",
+        "Protein embeddings with ESM-C 300M The core of the similarity search is ESM-C 300M, a protein language model from EvolutionaryScale (Built with ESM) that produces 960-dimensional embeddings capturing structural and.",
+        "The agent uses Anthropic Claude Sonnet 4.6 via the Bedrock Converse API and has access to three tools defined with the @tool decorator.",
+        "He partners with enterprise customers to design and implement high-performance, highly available, cost-effective, resilient, and secure solutions spanning generative AI, data mesh, data lake, and analytics platforms on."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/abc5a26e6658d224.jpg",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/03/ML-19630-1.jpeg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/0300cecccd1e714c.jpg"
+      ],
+      "extra_image_urls": [
+        "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/03/ML-19630-2.jpeg"
+      ]
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/shared-infrastructure-isolated-tenants-pool-model-multi-tenancy-with-amazon-bedrock-agentcore/",
+      "title": "Shared infrastructure, isolated tenants: Pool model multi-tenancy with Amazon Bedrock AgentCore | Amazon Web Services",
+      "description": "In this post, you will learn patterns for implementing production-ready multi-tenant systems using Amazon Bedrock AgentCore. You will see these patterns demonstrated through healthcare AI agents that serve multiple clinics and hospitals.",
+      "excerpt": "In this post, you will learn patterns for implementing production-ready multi-tenant systems using Amazon Bedrock AgentCore. You will see these patterns demonstrated through healthcare AI agents that serve multiple clinics and hospitals.",
+      "summary": "The agent must call current_time first and pass the current hour, and the policy engine denies the call if the hour falls outside the allowed window. Amazon API Gateway : Routes requests and enforces tier-based rate limiting via usage plans AWS Lambda : Extracts tenant context and invokes the corresponding Amazon Bedrock AgentCore agent AgentCore components : Runtime (agent execution), Memory (conversation state), Identity (agent identity management), Gateway (tool server), and Policy (agent action boundary). The following diagram illustrates the multi-tenant architecture for the solution, showing how requests flow from authenticated users through tier-specific agents to isolated document storage: Figure 1: Multi-tenant architecture with hierarchical isolation (Tier \u2192 Tenant \u2192 User). The Cognito ID token validates the user at both the Runtime and Gateway boundaries, while tool Lambdas mint their own scoped credentials for. These logs land in CloudWatch and can be queried with Logs Insights to compute per-clinic usage: To estimate costs, you can multiply the token counts by the published per-token pricing for each model. Amazon Bedrock AgentCore components The architecture.",
+      "what_happened": "The agent must call current_time first and pass the current hour, and the policy engine denies the call if the hour falls outside the allowed window. Amazon API Gateway : Routes requests and enforces tier-based rate limiting via usage plans AWS Lambda : Extracts tenant context and invokes the corresponding Amazon Bedrock AgentCore agent AgentCore components : Runtime (agent execution), Memory (conversation state), Identity (agent identity management), Gateway (tool server), and Policy (agent action boundary).",
+      "why_matters": "The following diagram illustrates the multi-tenant architecture for the solution, showing how requests flow from authenticated users through tier-specific agents to isolated document storage: Figure 1: Multi-tenant architecture with hierarchical isolation (Tier \u2192 Tenant \u2192 User). The Cognito ID token validates the user at both the Runtime and Gateway boundaries, while tool Lambdas mint their own scoped credentials for.",
+      "what_to_watch": "These logs land in CloudWatch and can be queried with Logs Insights to compute per-clinic usage: To estimate costs, you can multiply the token counts by the published per-token pricing for each model. Amazon Bedrock AgentCore components The architecture leverages six core Bedrock AgentCore capabilities to implement.",
+      "key_points": [
+        "The agent must call current_time first and pass the current hour, and the policy engine denies the call if the hour falls outside the allowed window.",
+        "Amazon Bedrock AgentCore components The architecture leverages six core Bedrock AgentCore capabilities to implement multi-tenancy: AgentCore Runtime : AgentCore Runtime provides the compute for the agents in this.",
+        "Amazon API Gateway : Routes requests and enforces tier-based rate limiting via usage plans AWS Lambda : Extracts tenant context and invokes the corresponding Amazon Bedrock AgentCore agent AgentCore components : Runtime.",
+        "You run the deploy script to set up the infrastructure and application for the solution.",
+        "At runtime, the agent passes the project ID on every inference request through the Bedrock Mantle (OpenAI-compatible) endpoint.",
+        "This means every model invocation is automatically tagged with the tier\u2019s cost metadata: Once you activate cost allocation tags in AWS Billing (tags may take up to 24 hours to propagate), you can filter and group.",
+        "This blog post is part 2 of the series, Building multi-tenant agents with Amazon Bedrock AgentCore.",
+        "The following diagram illustrates the multi-tenant architecture for the solution, showing how requests flow from authenticated users through tier-specific agents to isolated document storage: Figure 1: Multi-tenant.",
+        "For the basic tier, a Cedar policy restricts the patient_context tool to business hours (8 AM\u20136 PM) by evaluating the request_hour field from the tool\u2019s input.",
+        "At runtime, the agent assumes a TVM role with Tier, ClinicId, and UserId as session tags, receiving temporary credentials scoped to that tenant\u2019s namespace: The TVM role\u2019s trust policy ensures only the agent execution.",
+        "For per-clinic cost granularity, the solution logs token usage after each agent invocation as structured JSON with the tenant context already flowing through the system: The Strands SDK automatically tracks token.",
+        "For the premium tier, the policy permits patient_context unconditionally, giving hospitals 24/7 access."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f5e0d95119a5780f.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/09/agentcore-blog-architecture.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/jun/18/california-billionaire-tax-ballot-tech-opposition",
+      "title": "California \u2018billionaire tax\u2019 makes ballot despite opposition from tech moguls",
+      "description": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "excerpt": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "summary": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "what_happened": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn"
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e54963f129a234ea.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/38e509e5c6cebd21b697c28446bba95920578c09/305_0_3560_2848/master/3560.jpg?width=465&dpr=1&s=none&crop=none",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/c0kyzk2p255o?at_medium=RSS&at_campaign=rss",
+      "title": "Steam Machine launches with \u00a3879 price tag as Valve cites component costs",
+      "description": "Valve said the cost of its PC-console hybrid reflects a broader trend of component costs rising over time.",
+      "excerpt": "Valve said the cost of its PC-console hybrid reflects a broader trend of component costs rising over time.",
+      "summary": "Valve said the cost of its PC-console hybrid reflects a broader trend of component costs rising over time.",
+      "what_happened": "Valve said the cost of its PC-console hybrid reflects a broader trend of component costs rising over time.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Valve said the cost of its PC-console hybrid reflects a broader trend of component costs rising over time."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7efe71729d33c492.webp",
+      "image_url": "https://ichef.bbci.co.uk/news/480/cpsprodpb/6028/live/b268cc10-fb60-11f0-82aa-61d6ba92387c.jpg.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2196998/midjourney-full-body-ultrasonic-scanner/",
+      "title": "Midjourney, the AI image generator, is developing a full-body ultrasonic scanner - Engadget",
+      "description": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "excerpt": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "summary": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "what_happened": "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Midjourney has announced its first hardware project, and it can do more than make cute AI pet photos."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9cc2b344f3a13eeb.jpg",
+      "image_url": "https://img1.zergnet.com/8768660_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2199578/amazon-ordered-to-bargain-with-teamsters/",
+      "title": "Amazon ordered to bargain with Teamsters in case that could set back union progress - Engadget",
+      "description": "Amazon violated federal law when it refused to recognize a union, a judge ruled.",
+      "excerpt": "Amazon violated federal law when it refused to recognize a union, a judge ruled.",
+      "summary": "Amazon violated federal law when it refused to recognize a union, a judge ruled.",
+      "what_happened": "Amazon violated federal law when it refused to recognize a union, a judge ruled.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Amazon violated federal law when it refused to recognize a union, a judge ruled."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9df9b984bb49692f.jpg",
+      "image_url": "https://img2.zergnet.com/8769361_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://spectrum.ieee.org/europe-tech-sovereignty-package",
+      "title": "Is Europe Finally Ready to Take Back Control Of Its Tech Stack?",
+      "description": "Open source and European industry may benefit, if the EU overcomes inertia",
+      "excerpt": "Open source and European industry may benefit, if the EU overcomes inertia",
+      "summary": "Open source and European industry may benefit, if the EU overcomes inertia",
+      "what_happened": "Open source and European industry may benefit, if the EU overcomes inertia",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Open source and European industry may benefit, if the EU overcomes inertia"
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/88c40d0db1a88b5a.img",
+      "image_url": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202000%201909'%3E%3C/svg%3E",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 5,
+  "has_cta": true,
+  "slides": [
+    "Anthropic's Claude Tag is learning your company one Slack message.",
+    "Build a protein research copilot with Amazon Bedrock AgentCore.",
+    "Shared infrastructure isolated tenants Pool model multi-tenancy with Amazon Bedrock AgentCore.",
+    "Midjourney the AI image generator is developing a full-body ultrasonic scanner.",
+    "FOLLOW @graitech"
+  ]
+}
