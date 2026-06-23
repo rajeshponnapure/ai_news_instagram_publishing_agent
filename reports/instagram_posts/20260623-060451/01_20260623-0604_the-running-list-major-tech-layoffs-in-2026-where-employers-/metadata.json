@@ -1,0 +1,334 @@
+{
+  "email_received_at": "2026-06-23T06:04+00:00",
+  "recommended_post_time": "08:00",
+  "headline": "The running list: major tech layoffs in 2026 where employers cited AI | TechCrunch",
+  "subject": "",
+  "source_date": "2026-06-23T06:04:52.569873",
+  "companies": [],
+  "models": [],
+  "topics": [],
+  "article_url": "https://techcrunch.com/2026/06/22/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
+  "article_title": "The running list: major tech layoffs in 2026 where employers cited AI | TechCrunch",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e3d483d6d83c8865.png",
+  "article_image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Robot-hand.png?resize=1200,800",
+  "article_items": [
+    {
+      "url": "https://techcrunch.com/2026/06/22/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
+      "title": "The running list: major tech layoffs in 2026 where employers cited AI | TechCrunch",
+      "description": "A running look - in reverse chronological order - at the bigger tech companies that have announced significant layoffs this year with AI as a stated factor.",
+      "excerpt": "A running look - in reverse chronological order - at the bigger tech companies that have announced significant layoffs this year with AI as a stated factor.",
+      "summary": "\u201cRapid advancements in artificial intelligence enable our teams to reduce repetitive work, increase velocity, and better support our community, partners, and advertisers,\u201d Spiegel wrote in a memo filed with the SEC. Unlike most companies on this list, Google has never announced a single overall number - the cuts have come through a rolling performance review process, a voluntary buyout program, and structural reorganizations, with outside estimates putting the 2026 total at between 1,500 and 3,000+ engineers. CEO Brian Armstrong wrote that AI had changed the pace of work dramatically - \u201cengineers use AI to ship in days what used to take a team weeks \u201d - and that the company needed to \u201cleverage AI across every facet of our jobs.\u201d PayPal - May 5, 2026. GitLab is exiting 22 countries, flattening management layers, and partnering with an unspecified AI lab to rebuild its platform for agent-scale workloads. PayPal announced plans to cut around 20% of its workforce over the next two to three years - north of 4,500 jobs - as part of a turnaround strategy centered on AI adoption and organizational simplification.",
+      "what_happened": "\u201cRapid advancements in artificial intelligence enable our teams to reduce repetitive work, increase velocity, and better support our community, partners, and advertisers,\u201d Spiegel wrote in a memo filed with the SEC. Unlike most companies on this list, Google has never announced a single overall number - the cuts have come through a rolling performance review process, a voluntary buyout program, and structural reorganizations, with outside estimates putting the 2026 total at between 1,500 and 3,000+ engineers.",
+      "why_matters": "CEO Brian Armstrong wrote that AI had changed the pace of work dramatically - \u201cengineers use AI to ship in days what used to take a team weeks \u201d - and that the company needed to \u201cleverage AI across every facet of our jobs.\u201d PayPal - May 5, 2026. GitLab is exiting 22 countries, flattening management layers, and partnering with an unspecified AI lab to rebuild its platform for agent-scale workloads.",
+      "what_to_watch": "PayPal announced plans to cut around 20% of its workforce over the next two to three years - north of 4,500 jobs - as part of a turnaround strategy centered on AI adoption and organizational simplification.",
+      "key_points": [
+        "\u201cRapid advancements in artificial intelligence enable our teams to reduce repetitive work, increase velocity, and better support our community, partners, and advertisers,\u201d Spiegel wrote in a memo filed with the SEC.",
+        "Unlike most companies on this list, Google has never announced a single overall number - the cuts have come through a rolling performance review process, a voluntary buyout program, and structural reorganizations, with.",
+        "PayPal announced plans to cut around 20% of its workforce over the next two to three years - north of 4,500 jobs - as part of a turnaround strategy centered on AI adoption and organizational simplification.",
+        "Cisco announced it\u2019s cutting nearly 4,000 jobs , about 5% of its workforce, despite reporting better-than-expected profit and revenue.",
+        "CEO Brian Armstrong wrote that AI had changed the pace of work dramatically - \u201cengineers use AI to ship in days what used to take a team weeks \u201d - and that the company needed to \u201cleverage AI across every facet of our.",
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "Intuit announced plans to eliminate roughly 3,000 jobs - about 17% of its total workforce - in a restructuring centered on reducing complexity and reallocating resources toward AI.",
+        "GitLab is exiting 22 countries, flattening management layers, and partnering with an unspecified AI lab to rebuild its platform for agent-scale workloads.",
+        "Dorsey wrote on X: \u201cWe\u2019re already seeing that the intelligence tools we\u2019re creating and using, paired with smaller and flatter teams, are enabling a new way of working which fundamentally changes what it means to build.",
+        "The company said it was part of \u201cstrengthen[ing] our organization by reducing layers, increasing ownership, and removing bureaucracy.\u201d CEO Andy Jassy had said in June 2025 that, \u201cAs we roll out more generative AI and.",
+        "GM\u2019s statement said it was \u201ctransforming its Information Technology organization to better position the company for the future.\u201d Despite the cuts, the company still had roughly 80 open IT positions, including roles in.",
+        "Alphabet\u2019s Google has quietly cut employees across its Cloud division, including its Threat Intelligence Group and Mandiant-linked cybersecurity staff, even as Cloud revenue grew 63% to exceed $20 billion for the first."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e3d483d6d83c8865.png",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Robot-hand.png?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "52666697d7df4be0bd50bf811d514e07"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/22/the-ai-world-is-getting-loopy/",
+      "title": "The AI world is getting 'loopy' | TechCrunch",
+      "description": "The loop takes agentic AI a step further by authorizing a swarm of agents to work continuously in the background, endlessly.",
+      "excerpt": "The loop takes agentic AI a step further by authorizing a swarm of agents to work continuously in the background, endlessly.",
+      "summary": "Still, depending on the problem the agentic loop is trying to solve, and the right setup that allows for oversight of token spend, drift, and other classic AI issues, the benefits could be staggering enough to outweigh the costs. \u201cAs big as the step from source code to agents was, loops are just as important and as big a step.\u201d Later in the talk (around the 32:00 mark in the YouTube video posted above), Cherny got specific about the loops he keeps running in his own work. Now she needs a \u201cbrand-new team\u201d The 11 standout startups from YC\u2019s Demo Day, according to VCs NASA picks Eric Schmidt\u2019s rocket company for Mars mission, setting up a race with SpaceX We won't sell or share your personal information to inform the ads you see. One agent is continually looking for ways to improve the code architecture, while another looks for duplicated abstractions that can be unified. Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27 Aura\u2019s impressive e-ink photo frame doesn\u2019t even look digital The CEO of Allbirds\u2019 new AI biz has a plan. The first StrictlyVC of 2026 hits SF on April 30.",
+      "what_happened": "Still, depending on the problem the agentic loop is trying to solve, and the right setup that allows for oversight of token spend, drift, and other classic AI issues, the benefits could be staggering enough to outweigh the costs. \u201cAs big as the step from source code to agents was, loops are just as important and as big a step.\u201d Later in the talk (around the 32:00 mark in the YouTube video posted above), Cherny got specific about the loops he keeps running in his own work.",
+      "why_matters": "Now she needs a \u201cbrand-new team\u201d The 11 standout startups from YC\u2019s Demo Day, according to VCs NASA picks Eric Schmidt\u2019s rocket company for Mars mission, setting up a race with SpaceX We won't sell or share your personal information to inform the ads you see. One agent is continually looking for ways to improve the code architecture, while another looks for duplicated abstractions that can be unified.",
+      "what_to_watch": "Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27 Aura\u2019s impressive e-ink photo frame doesn\u2019t even look digital The CEO of Allbirds\u2019 new AI biz has a plan. The first StrictlyVC of 2026 hits SF on April 30.",
+      "key_points": [
+        "\u201cAs big as the step from source code to agents was, loops are just as important and as big a step.\u201d Later in the talk (around the 32:00 mark in the YouTube video posted above), Cherny got specific about the loops he.",
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "Still, depending on the problem the agentic loop is trying to solve, and the right setup that allows for oversight of token spend, drift, and other classic AI issues, the benefits could be staggering enough to outweigh.",
+        "And now we\u2019re transitioning to the point where agents are prompting agents that then write the code,\u201d he continued.",
+        "It\u2019s a way of dealing with AI models getting lost as they run for too long - essentially bouncing the model back and forth until the task is complete.",
+        "We started to transition so agents write the code.",
+        "The loop takes it a step further by authorizing a swarm of agents to work continuously in the background, endlessly.",
+        "One of the most popular tricks is the Ralph Loop (named for Ralph Wiggum), which basically sums up all the work that the model has done and asks if it\u2019s accomplished its goal.",
+        "The loop takes agentic AI a step further by authorizing a swarm of agents to work continuously in the background, endlessly.",
+        "Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.",
+        "Another way to think of loops is as part of the general push for more test-time compute.",
+        "With the shift to agentic AI, the focus for most users has been managing their agents as well as possible: establish clear goals, check in on discrete units of progress, and don\u2019t let them stray too far beyond the."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8248d9b6f2fc8d85.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Screenshot-2026-06-22-at-3.44.39-PM.jpg?resize=1200,676",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "560f8e6306a34550a23ea9a4708c0279"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs/",
+      "title": "OpenAI launches new initiative to help find and patch open-source bugs | TechCrunch",
+      "description": "OpenAI is attempting to tackle the security issues of the open source software community.",
+      "excerpt": "OpenAI is attempting to tackle the security issues of the open source software community.",
+      "summary": "More from TechCrunch OpenAI launches new initiative to help find and patch open-source bugs OpenAI announced a new initiative on Monday designed to help the open source community improve its cybersecurity game and ward off bugs. The first StrictlyVC of 2026 hits SF on April 30. \u201cPatch the Planet,\u201d (which is a not-so-subtle allusion to \u201c Hack the Planet ,\u201d the iconic catch phrase from the 1995 movie Hackers ) will see OpenAI team up with the security company Trail of Bits to help open source maintainers secure their projects. Now she needs a \u201cbrand-new team\u201d The 11 standout startups from YC\u2019s Demo Day, according to VCs NASA picks Eric Schmidt\u2019s rocket company for Mars mission, setting up a race with. Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27 Aura\u2019s impressive e-ink photo frame doesn\u2019t even look digital The CEO of Allbirds\u2019 new AI biz has a plan. OpenAI is attempting to tackle the security issues of the open source software community.",
+      "what_happened": "More from TechCrunch OpenAI launches new initiative to help find and patch open-source bugs OpenAI announced a new initiative on Monday designed to help the open source community improve its cybersecurity game and ward off bugs. The first StrictlyVC of 2026 hits SF on April 30.",
+      "why_matters": "\u201cPatch the Planet,\u201d (which is a not-so-subtle allusion to \u201c Hack the Planet ,\u201d the iconic catch phrase from the 1995 movie Hackers ) will see OpenAI team up with the security company Trail of Bits to help open source maintainers secure their projects. Now she needs a \u201cbrand-new team\u201d The 11 standout startups from YC\u2019s Demo Day, according to VCs NASA picks Eric Schmidt\u2019s rocket company for Mars mission, setting up a race with.",
+      "what_to_watch": "Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27 Aura\u2019s impressive e-ink photo frame doesn\u2019t even look digital The CEO of Allbirds\u2019 new AI biz has a plan. OpenAI is attempting to tackle the security issues of the open source software community.",
+      "key_points": [
+        "The first StrictlyVC of 2026 hits SF on April 30.",
+        "More from TechCrunch OpenAI launches new initiative to help find and patch open-source bugs OpenAI announced a new initiative on Monday designed to help the open source community improve its cybersecurity game and ward.",
+        "\u201cPatch the Planet,\u201d (which is a not-so-subtle allusion to \u201c Hack the Planet ,\u201d the iconic catch phrase from the 1995 movie Hackers ) will see OpenAI team up with the security company Trail of Bits to help open source.",
+        "OpenAI is attempting to tackle the security issues of the open source software community.",
+        "Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.",
+        "While the automation of cybercrime is not new, these tools undoubtedly have the potential to make it significantly more convenient for bad actors.",
+        "Join 1,000+ founders and VCs for all-day bootcamp.",
+        "Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27 Aura\u2019s impressive e-ink photo frame doesn\u2019t even look digital The CEO of Allbirds\u2019 new AI biz has a plan.",
+        "Open source projects are the digital bedrock upon which the commercial software industry rests, but, unfortunately, due to the decentralized and poorly monitored structure of that ecosystem, much of the software is.",
+        "Now she needs a \u201cbrand-new team\u201d The 11 standout startups from YC\u2019s Demo Day, according to VCs NASA picks Eric Schmidt\u2019s rocket company for Mars mission, setting up a race with SpaceX We won't sell or share your.",
+        "OpenAI\u2019s security tools - like Codex Security - will be used to assist in the process.",
+        "Savings end June 26, 11:59 p.m."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/bf690be00594f47f.jpg",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/09/GettyImages-2214107176.jpg?resize=1200,800",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "322d1babc5a149438cc903631afc3f80"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-pay-per-intelligence-for-ai-agents-how-ampersend-uses-amazon-bedrock-agentcore-payments/",
+      "title": "Building pay-per-intelligence for AI agents: How Ampersend uses Amazon Bedrock AgentCore Payments | Amazon Web Services",
+      "description": "In this post, you will learn how Ampersend built a pay-per-intelligence routing layer on top of Amazon Bedrock AgentCore Payments. AI agents autonomously route tasks to the most effective model, pay per request, and operate within spending budgets. You will also see how the two-hop payment pattern works end-to-end and how to get started with your own implementation.",
+      "excerpt": "In this post, you will learn how Ampersend built a pay-per-intelligence routing layer on top of Amazon Bedrock AgentCore Payments. AI agents autonomously route tasks to the most effective model, pay per request, and operate within spending budgets. You will also see how the two-hop payment pattern works end-to-end and how to get started with your own implementation.",
+      "summary": "AI agents autonomously route tasks to the most effective model, pay per request, and operate within spending budgets. You will also see how the two-hop payment pattern works end-to-end and how to get started with your own implementation. In this post, you will learn how Ampersend built a pay-per-intelligence routing layer on top of Amazon Bedrock AgentCore Payments. In this post, you will learn how Ampersend built a pay-per-intelligence routing layer on top of Amazon Bedrock AgentCore Payments.",
+      "what_happened": "AI agents autonomously route tasks to the most effective model, pay per request, and operate within spending budgets. You will also see how the two-hop payment pattern works end-to-end and how to get started with your own implementation.",
+      "why_matters": "In this post, you will learn how Ampersend built a pay-per-intelligence routing layer on top of Amazon Bedrock AgentCore Payments.",
+      "what_to_watch": "In this post, you will learn how Ampersend built a pay-per-intelligence routing layer on top of Amazon Bedrock AgentCore Payments.",
+      "key_points": [
+        "AI agents autonomously route tasks to the most effective model, pay per request, and operate within spending budgets.",
+        "You will also see how the two-hop payment pattern works end-to-end and how to get started with your own implementation.",
+        "In this post, you will learn how Ampersend built a pay-per-intelligence routing layer on top of Amazon Bedrock AgentCore Payments."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/d2b5e19372f7cef7.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/16/ML-21061-1.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "9645a8d8a2ae48839e7bcc391b47ca27"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/from-developer-desks-to-the-whole-organization-running-claude-cowork-in-amazon-bedrock/",
+      "title": "From developer desks to the whole organization: Running Claude Cowork in Amazon Bedrock | Amazon Web Services",
+      "description": "Today, we're excited to announce Claude Cowork in Amazon Bedrock. You can now run Cowork and Claude Code Desktop through Amazon Bedrock, directly or using an LLM gateway. In this post, we walk through how Claude Cowork integrates with Amazon Bedrock and show an example of how knowledge workers use it in practice.",
+      "excerpt": "Today, we're excited to announce Claude Cowork in Amazon Bedrock. You can now run Cowork and Claude Code Desktop through Amazon Bedrock, directly or using an LLM gateway. In this post, we walk through how Claude Cowork integrates with Amazon Bedrock and show an example of how knowledge workers use it in practice.",
+      "summary": "In this post, we walk through how Claude Cowork integrates with Amazon Bedrock and show an example of how knowledge workers use it in practice. Today, we're excited to announce Claude Cowork in Amazon Bedrock. Today, we're excited to announce Claude Cowork in Amazon Bedrock. You can now run Cowork and Claude Code Desktop through Amazon Bedrock, directly or using an LLM gateway. Today, we're excited to announce Claude Cowork in Amazon Bedrock.",
+      "what_happened": "In this post, we walk through how Claude Cowork integrates with Amazon Bedrock and show an example of how knowledge workers use it in practice. Today, we're excited to announce Claude Cowork in Amazon Bedrock.",
+      "why_matters": "Today, we're excited to announce Claude Cowork in Amazon Bedrock. You can now run Cowork and Claude Code Desktop through Amazon Bedrock, directly or using an LLM gateway.",
+      "what_to_watch": "Today, we're excited to announce Claude Cowork in Amazon Bedrock.",
+      "key_points": [
+        "Today, we're excited to announce Claude Cowork in Amazon Bedrock.",
+        "In this post, we walk through how Claude Cowork integrates with Amazon Bedrock and show an example of how knowledge workers use it in practice.",
+        "You can now run Cowork and Claude Code Desktop through Amazon Bedrock, directly or using an LLM gateway."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8fa90f60cccdfe39.png",
+      "image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/04/21/ml-20855-1120x630.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "62ccd33e758c48c8ae3eef9a3bbf3f87"
+    },
+    {
+      "url": "https://www.therobotreport.com/fort-and-nvidia-launch-ai-driven-outside-in-safety-blueprint/",
+      "title": "FORT and NVIDIA launch AI-driven Outside-In Safety blueprint - The Robot Report",
+      "description": "FORT Robotics and NVIDIA launch Outside-In Safety, using external sensors to improve autonomous robot productivity and worker safety.",
+      "excerpt": "FORT Robotics and NVIDIA launch Outside-In Safety, using external sensors to improve autonomous robot productivity and worker safety.",
+      "summary": "FORT Robotics and NVIDIA launch Outside-In Safety, using external sensors to improve autonomous robot productivity and worker safety. Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report The company will demonstrate the new application this week at the Automate conference in Chicago, ahead of a joint presentation with NVIDIA in the Humanoid Robotics Pavilion on June 23rd. | Credit: FORT Robotics FORT Robotics announced today that it has joined the NVIDIA Halos for Robotics ecosystem. | Credit: FORT Robotics FORT Robotics announced today that it has joined the NVIDIA Halos for Robotics ecosystem.",
+      "what_happened": "FORT Robotics and NVIDIA launch Outside-In Safety, using external sensors to improve autonomous robot productivity and worker safety. Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report",
+      "why_matters": "The company will demonstrate the new application this week at the Automate conference in Chicago, ahead of a joint presentation with NVIDIA in the Humanoid Robotics Pavilion on June 23rd. | Credit: FORT Robotics FORT Robotics announced today that it has joined the NVIDIA Halos for Robotics ecosystem.",
+      "what_to_watch": "| Credit: FORT Robotics FORT Robotics announced today that it has joined the NVIDIA Halos for Robotics ecosystem.",
+      "key_points": [
+        "FORT Robotics and NVIDIA launch Outside-In Safety, using external sensors to improve autonomous robot productivity and worker safety.",
+        "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around.",
+        "| Credit: FORT Robotics FORT Robotics announced today that it has joined the NVIDIA Halos for Robotics ecosystem.",
+        "FORT and NVIDIA launch AI-driven Outside-In Safety blueprint FORT extends robot perception beyond on-board sensors by including external sensors to dynamically control robot behavior and perform at maximum efficiency.",
+        "The companies introduced an AI-driven \u201cOutside-In Safety\u201d solution.",
+        "The NVIDIA Outside-In Safety Blueprint, combined with the FORT Trust Layer, extends robot perception beyond onboard sensors by using external infrastructure sensors and visual AI agents to deliver real-time.",
+        "A robotics safety ecosystem built for scale FORT is a member of the NVIDIA Halos AI Systems Inspection Lab.",
+        "It provides a unified framework to verify functional safety, cybersecurity, and AI compliance for autonomous vehicles ( AVs ), robotics, and sensor technologies.",
+        "\u201cSafety has always been the precondition for scale - you can\u2019t deploy robots broadly if you can\u2019t guarantee they\u2019ll operate safely around people and valuable infrastructure,\u201d said Samuel Reeves, CEO of FORT.",
+        "Onboard Active Safety: Onboard perception technology, either embedded or bolted-on, enables machines to actively detect, anticipate, and respond to their environments in real time.",
+        "Outside-In Safety (new): Reduces costly robot slowdowns and improves safety without sacrificing productivity, by automatically modulating robot efficiency across dynamic environments.",
+        "Key benefits of outside-in safety Enhanced Productivity: Some traditional, conservative inside-out safety systems are limited to onboard sensors."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e0bca3ea8a5fe11c.webp",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/05/rbr50-sidebar-promo.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "54effb6667b843afa9f2065a2adc591f"
+    },
+    {
+      "url": "https://www.therobotreport.com/nvidia-releases-halos-a-full-stack-safety-system-for-robotics/",
+      "title": "NVIDIA releases Halos, a full-stack safety system for robotics - The Robot Report",
+      "description": "NVIDIA said Halos connects AI compute, system software, sensor data, safety applications, and inspection for robotic systems.",
+      "excerpt": "NVIDIA said Halos connects AI compute, system software, sensor data, safety applications, and inspection for robotic systems.",
+      "summary": "NVIDIA releases Halos, a full-stack safety system for robotics NVIDIA today launched NVIDIA Halos for Robotics. NVIDIA said Halos enables companies to rely on a standardized, unified safety architecture that connects AI compute, system software, sensor data, safety applications, and inspection for robotic systems. This is a full-stack, comprehensive safety system for robotics and physical AI that unifies AI compute and safety. NVIDIA IGX Thor and NVIDIA Holoscan Sensor Bridge provide industrial-grade AI compute, built-in safety, and sensor connectivity for real-time robotics and safety workloads. This collaboration unlocks true human-robot teamwork, driving the long-term returns that will power next-generation manufacturing and logistics operations.\u201d Tell Us What You Think! This is a full-stack, comprehensive safety system for robotics and physical AI that unifies AI compute and safety.",
+      "what_happened": "NVIDIA releases Halos, a full-stack safety system for robotics NVIDIA today launched NVIDIA Halos for Robotics. NVIDIA said Halos enables companies to rely on a standardized, unified safety architecture that connects AI compute, system software, sensor data, safety applications, and inspection for robotic systems.",
+      "why_matters": "This is a full-stack, comprehensive safety system for robotics and physical AI that unifies AI compute and safety. NVIDIA IGX Thor and NVIDIA Holoscan Sensor Bridge provide industrial-grade AI compute, built-in safety, and sensor connectivity for real-time robotics and safety workloads.",
+      "what_to_watch": "This collaboration unlocks true human-robot teamwork, driving the long-term returns that will power next-generation manufacturing and logistics operations.\u201d Tell Us What You Think! This is a full-stack, comprehensive safety system for robotics and physical AI that unifies AI compute and safety.",
+      "key_points": [
+        "NVIDIA releases Halos, a full-stack safety system for robotics NVIDIA today launched NVIDIA Halos for Robotics.",
+        "NVIDIA said Halos enables companies to rely on a standardized, unified safety architecture that connects AI compute, system software, sensor data, safety applications, and inspection for robotic systems.",
+        "This is a full-stack, comprehensive safety system for robotics and physical AI that unifies AI compute and safety.",
+        "NVIDIA IGX Thor and NVIDIA Holoscan Sensor Bridge provide industrial-grade AI compute, built-in safety, and sensor connectivity for real-time robotics and safety workloads.",
+        "NVIDIA builds Halos with scale in mind The NVIDIA Halos for Robotics ecosystem brings together partners across software, systems, sensors, and silicon, industrial applications, and certification bodies to support safety.",
+        "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around.",
+        "Halos for Robotics provides developers with a common safety architecture for building, validating, and deploying physical AI systems.",
+        "NVIDIA Halos OS provides the software stack for robotics safety.",
+        "NVIDIA said Halos connects AI compute, system software, sensor data, safety applications, and inspection for robotic systems.",
+        "Industrial applications: FORT Robotics , Inventec, KION Group , and Neurealm are developing functional safety agents using the NVIDIA Halos Outside-In Safety Blueprint.",
+        "NVIDIA brings safety to the entire software stack To create Halos, NVIDIA drew on over 18,600 engineering years of autonomous vehicle safety development.",
+        "\u201cPartnering with NVIDIA to implement and optimize the Halos for Robotics system extends our leadership in responsible automation, which is a non-negotiable requirement for bringing humanoids safely into industrial."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e0bca3ea8a5fe11c.webp",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/05/rbr50-sidebar-promo.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "5ed457d6ee1e4772a72ff6d3cb1093cf"
+    },
+    {
+      "url": "https://www.therobotreport.com/eclipse-automation-launches-realitysync-simulation-platform/",
+      "title": "Eclipse Automation launches RealitySync simulation platform - The Robot Report",
+      "description": "Eclipse said its new RealitySync platform allows manufacturers to step into their future factory before it\u2019s built.",
+      "excerpt": "Eclipse said its new RealitySync platform allows manufacturers to step into their future factory before it\u2019s built.",
+      "summary": "Eclipse Automation launches RealitySync simulation platform Eclipse Automation launched Eclipse RealitySync at Automate 2026. Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report Eclipse brings transparency to early-stage automation Eclipse RealitySync is an immersive collaboration platform that brings people, project data, and the physical system together in a shared environment. From life sciences and transportation to energy, electronics, and consumer and industrial products, Eclipse designs and builds advanced automation systems that enable manufacturers to deliver critical products at scale. We believe the future of factory automation is more immersive, collaborative, and informed.\u201d Eclipse Automation is a global provider of precision factory automation solutions with locations in the U.S., Canada, Hungary, and Germany.",
+      "what_happened": "Eclipse Automation launches RealitySync simulation platform Eclipse Automation launched Eclipse RealitySync at Automate 2026. Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around robotic vision systems Search The Robot Report",
+      "why_matters": "Eclipse brings transparency to early-stage automation Eclipse RealitySync is an immersive collaboration platform that brings people, project data, and the physical system together in a shared environment. From life sciences and transportation to energy, electronics, and consumer and industrial products, Eclipse designs and builds advanced automation systems that enable manufacturers to deliver critical products at scale.",
+      "what_to_watch": "We believe the future of factory automation is more immersive, collaborative, and informed.\u201d Eclipse Automation is a global provider of precision factory automation solutions with locations in the U.S., Canada, Hungary, and Germany.",
+      "key_points": [
+        "Eclipse Automation launches RealitySync simulation platform Eclipse Automation launched Eclipse RealitySync at Automate 2026.",
+        "Daimon Robotics and Galbot jointly launches RobOmni for benchmarking tactile perception and dexterous manipulation GENISOM AI debuts deployable robotics platforms at ICRA 2026 GMSL and the growing ecosystem around.",
+        "We believe the future of factory automation is more immersive, collaborative, and informed.\u201d Eclipse Automation is a global provider of precision factory automation solutions with locations in the U.S., Canada, Hungary.",
+        "By enabling engineering, operations, finance, and leadership teams to collaborate with automation systems before deployment, organizations can align faster, identify issues earlier, and evaluate automation decisions.",
+        "Attendees at Automate 2026 in Chicago can experience Eclipse RealitySync firsthand through live immersive demonstrations at the Eclipse Automation booth 24011.",
+        "\u201cThe way manufacturers evaluate automation hasn\u2019t kept pace with the real-world complexity of modern production,\u201d said Steve Mai, the CEO of Eclipse Automation .",
+        "Eclipse RealitySync allows manufacturers to step into their future factory before it\u2019s built.",
+        "Eclipse brings transparency to early-stage automation Eclipse RealitySync is an immersive collaboration platform that brings people, project data, and the physical system together in a shared environment.",
+        "From life sciences and transportation to energy, electronics, and consumer and industrial products, Eclipse designs and builds advanced automation systems that enable manufacturers to deliver critical products at scale.",
+        "Eclipse said its new RealitySync platform allows manufacturers to step into their future factory before it\u2019s built.",
+        "The company said this product offers a new approach to how manufacturers evaluate, de-risk, and scale factory automation.",
+        "The system uses immersive environments powered by Apple Vision Pro technology and guided by Eclipse Automation experts."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e0bca3ea8a5fe11c.webp",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/05/rbr50-sidebar-promo.png",
+      "extra_image_paths": [],
+      "extra_image_urls": [],
+      "_story_id": "bbb8b08dec2f40e886387aade3990ab2"
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 4,
+  "has_cta": true,
+  "slides": [
+    "In one of the most recent cuts on this list, GitLab laid.",
+    "OpenAI launches new initiative to help find and patch open-source bugs.",
+    "FORT and NVIDIA launch AI-driven Outside.",
+    "FOLLOW @graitech"
+  ]
+}

@@ -1,0 +1,26 @@
+The running list major tech layoffs in 2026 where employers cited AI.
+
+Swipe for the full breakdown.
+
+- "Rapid advancements in artificial intelligence enable our teams to reduce repetitive work, increase velocity, and better support our.
+- Unlike most companies on this list, Google has never announced a single number - the cuts have come.
+- PayPal announced plans to cut around 20% of its workforce over the next two to three years .
+- Cisco announced it's cutting nearly 4,000 jobs, about 5% of its workforce, despite reporting better-than-expected profit and revenue.
+- CEO Brian Armstrong wrote that AI had changed the pace of work dramatically - "engineers use AI.
+
+Would you use something like this in your daily work? Yes or no in the comments.
+
+Save this before it disappears from your feed.
+
+Sources:
+- https://techcrunch.com/2026/06/22/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/
+- https://techcrunch.com/2026/06/22/the-ai-world-is-getting-loopy/
+- https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs/
+- https://aws.amazon.com/blogs/machine-learning/building-pay-per-intelligence-for-ai-agents-how-ampersend-uses-amazon-bedrock-agentcore-payments/
+- https://aws.amazon.com/blogs/machine-learning/from-developer-desks-to-the-whole-organization-running-claude-cowork-in-amazon-bedrock/
+
+#AINews #AITools #GenerativeAI #EmergingTech #TechNews #AIUpdates #Tech #AI #MachineLearning #LearnAI #DeepLearning #NeuralNetworks #ComputerVision #NaturalLanguageProcessing #MLNews #AIWeekly #TechInnovation #AIStartups #FutureOfWork
+
+-
+AI-assisted summary by Graitech from the sources listed above. Original rights remain with the publishers.
+-
