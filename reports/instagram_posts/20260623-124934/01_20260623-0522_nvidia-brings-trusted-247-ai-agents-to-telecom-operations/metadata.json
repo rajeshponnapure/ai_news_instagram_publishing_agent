@@ -1,0 +1,352 @@
+{
+  "email_received_at": "2026-06-23T05:22-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "NVIDIA Brings Trusted, 24/7 AI Agents to Telecom Operations",
+  "subject": "\ud83d\udea8 AI Alert: 98 new launches \u2014 CNBC Technology, STAT Health AI, BBC Tech",
+  "source_date": "Tue, 23 Jun 2026 05:22:37 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Anthropic",
+    "Microsoft",
+    "Apple",
+    "Amazon",
+    "AWS",
+    "NVIDIA"
+  ],
+  "models": [
+    "Claude",
+    "Gemini",
+    "Llama 3"
+  ],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://blogs.nvidia.com/blog/telecom-ai-agents-dtw-ignite-2026/",
+  "article_title": "NVIDIA Brings Trusted, 24/7 AI Agents to Telecom Operations",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/386665e0ef295177.jpg",
+  "article_image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/telco-tm-forum-1920x1080-1.jpg",
+  "article_items": [
+    {
+      "url": "https://blogs.nvidia.com/blog/telecom-ai-agents-dtw-ignite-2026/",
+      "title": "NVIDIA Brings Trusted, 24/7 AI Agents to Telecom Operations",
+      "description": "At DTW Ignite 2026, NVIDIA and its partners are showcasing the data, models, simulation and secure runtime stack enabling telcos to build more secure agentic workflows across autonomous networks and operations.",
+      "excerpt": "At DTW Ignite 2026, NVIDIA and its partners are showcasing the data, models, simulation and secure runtime stack enabling telcos to build more secure agentic workflows across autonomous networks and operations.",
+      "summary": "At DTW Ignite 2026, NVIDIA and its partners are showcasing the data, models, simulation and secure runtime stack enabling telcos to build more secure agentic workflows across autonomous networks and operations. Synthetic data is enabling operators to safely increase the volume and diversity of training data, protect sensitive information and democratize access to production\u2011like telecom datasets across internal teams and external developers, without exposing raw customer records. Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff. The industry is now pushing toward truly autonomous networks and operations, where AI agents proactively watch for problems and coordinate changes across network, IT and business systems. Unlock Privacy\u2011Safe Telecom Data for AI Models Reasoning models that understand the telecom domain are the.",
+      "what_happened": "At DTW Ignite 2026, NVIDIA and its partners are showcasing the data, models, simulation and secure runtime stack enabling telcos to build more secure agentic workflows across autonomous networks and operations. Synthetic data is enabling operators to safely increase the volume and diversity of training data, protect sensitive information and democratize access to production\u2011like telecom datasets across internal teams and external developers, without exposing raw customer records.",
+      "why_matters": "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff Simulation and Design \ufeff Digital Twin \ufeff Smart Spaces \ufeff Gaming & Creating NVIDIA RTX \ufeff GeForce NOW \ufeff RTX AI Garage \ufeff Workstation \ufeff Industries Healthcare and Life Sciences \ufeff Industrial and Manufacturing \ufeff.",
+      "what_to_watch": "The industry is now pushing toward truly autonomous networks and operations, where AI agents proactively watch for problems and coordinate changes across network, IT and business systems. Unlock Privacy\u2011Safe Telecom Data for AI Models Reasoning models that understand the telecom domain are the foundation of autonomous.",
+      "key_points": [
+        "At DTW Ignite 2026, NVIDIA and its partners are showcasing the data, models, simulation and secure runtime stack enabling telcos to build more secure agentic workflows across autonomous networks and operations.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "Synthetic data is enabling operators to safely increase the volume and diversity of training data, protect sensitive information and democratize access to production\u2011like telecom datasets across internal teams and.",
+        "Together, synthetic data, telecom-domain models, secure agent runtimes and simulations form critical pieces of a secure, telecom autonomy platform , where agents understand operator intent, act safely across business.",
+        "These specialized models require fine\u2011tuning on high\u2011quality datasets, yet 54% of operators cite data\u2011related issues as their biggest barrier, with the most valuable network and customer data too sensitive to use.",
+        "Unlock Privacy\u2011Safe Telecom Data for AI Models Reasoning models that understand the telecom domain are the foundation of autonomous networks.",
+        "Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay At ISC, JUPITER Shows What Exascale Science Looks Like NAIRR Science Program Reshapes Scientific Research, Powered by NVIDIA AI Infrastructure NVIDIA Vera CPU.",
+        "NVIDIA and its partners are demonstrating these building blocks at TM Forum\u2019s DTW Ignite 2026 - running this week in Copenhagen - giving operators a practical path to running more autonomous, resilient networks and.",
+        "These anomaly agents track long\u2011term performance trends and escalate relevant cases to research agents for fine\u2011grained telemetry analysis and clear remediation proposals.",
+        "Forsk has integrated an AI\u2011based radio propagation model into its Naos RAN planning platform, achieving ray\u2011tracing\u2011level accuracy up to 200x faster than CPU\u2011only baselines on NVIDIA RTX PRO 6000 Blackwell Server.",
+        "Securely Deploy Autonomous Telecom Agents As telecom operators look to achieve autonomy across end-to-end workflows, they need AI agents that can stick with a complex job from start to finish, not just execute a pointed.",
+        "KDDI and KDDI Research are bringing accelerated simulation into the 6G era through a collaboration with NVIDIA, Keysight and Samsung Research America to build a high\u2011fidelity RAN digital twin using NVIDIA Aerial."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/386665e0ef295177.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/telco-tm-forum-1920x1080-1.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/01fff42f3fc4aace.jpg"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/telco-tm-forum-1920x1080-1-1280x720.jpg"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/blog/huggingface-hub-release-ci",
+      "title": "Shipping huggingface_hub every week with AI, open tools, and a human in the loop",
+      "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "excerpt": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "summary": "The human checkpoint After the RC is published, the draft GitHub release sits there with the AI's first pass in it. Trust but verify: the human-in-the-loop core Here's the failure mode everyone worries about with AI-generated release notes: the model quietly drops a PR or invents one that isn't in this release. No closed model behind an API we couldn't swap, no proprietary release platform, no secret sauce. Before the model runs, a Python script retrieves all PRs that belong to the release and stores them as ground truth. Compute the next version, create or reuse the release branch, bump __version__ , commit, tag, push. Before the model runs, a Python script retrieves all PRs that belong to the release and stores them as ground truth.",
+      "what_happened": "The human checkpoint After the RC is published, the draft GitHub release sits there with the AI's first pass in it. Trust but verify: the human-in-the-loop core Here's the failure mode everyone worries about with AI-generated release notes: the model quietly drops a PR or invents one that isn't in this release.",
+      "why_matters": "No closed model behind an API we couldn't swap, no proprietary release platform, no secret sauce. Before the model runs, a Python script retrieves all PRs that belong to the release and stores them as ground truth.",
+      "what_to_watch": "Compute the next version, create or reuse the release branch, bump __version__ , commit, tag, push. Before the model runs, a Python script retrieves all PRs that belong to the release and stores them as ground truth.",
+      "key_points": [
+        "The human checkpoint After the RC is published, the draft GitHub release sits there with the AI's first pass in it.",
+        "Trust but verify: the human-in-the-loop core Here's the failure mode everyone worries about with AI-generated release notes: the model quietly drops a PR or invents one that isn't in this release.",
+        "A full release (notes plus the Slack announcement, across 20-40 PRs and a few rounds of prompting) costs about $0.25 on Inference Providers.",
+        "Before the model runs, a Python script retrieves all PRs that belong to the release and stores them as ground truth.",
+        "It's the kind of judgment that kept the release manual for years.",
+        "Reading through every PR merged since the last release and writing release notes by hand: grouped by theme, with context, in a voice that didn't read like a git log dump.",
+        "Compute the next version, create or reuse the release branch, bump __version__ , commit, tag, push.",
+        "Models mentioned in this article 1 Designing the hf CLI as an agent-optimized way to work with the Hub Agentic Resource Discovery: Let agents search Models mentioned in this article 1",
+        "What changed in practice The cadence went from one release every 4 to 6 weeks to once a week.",
+        "Leave a \"this shipped in vX.Y.Z\" comment on every PR in the release.",
+        "We don't trust the generated release notes to be complete on the first try, we verify it deterministically.",
+        "A tour of the pipeline The full workflow is a single file, .github/workflows/release.yml , triggered by hand from the Actions UI."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3c2e5dab09c5a640.png",
+      "image_url": "https://huggingface.co/blog/assets/huggingface-hub-release-ci/thumbnail.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/top500-green500-supercomputers-isc-2026/",
+      "title": "NVIDIA Powers Over 400 of the World\u2019s 500 Fastest Supercomputers",
+      "description": "NVIDIA technologies power more than 400 of the world\u2019s 500 fastest supercomputers - 81% of the TOP500.",
+      "excerpt": "NVIDIA technologies power more than 400 of the world\u2019s 500 fastest supercomputers - 81% of the TOP500.",
+      "summary": "A Full-Stack Footprint NVIDIA\u2019s reach now spans the full system - GPU, networking and, increasingly, the CPU - with NVIDIA Grace CPU adoption reaching 26 systems, up eight from the previous list, with nearly 2.5 million Grace CPUs shipped. NVIDIA technologies power more than 400 of the world\u2019s 500 fastest supercomputers - 81% of the TOP500 - according to the latest rankings released this week at the ISC High Performance conference in Hamburg, Germany. And it\u2019s compounding: NVIDIA systems across the TOP500 now deliver more than 2x the AI training and nearly 3x the AI inference throughput of every other platform combined. Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay NVIDIA Brings Trusted, 24/7 AI Agents to Telecom Operations At ISC, JUPITER Shows What Exascale Science Looks Like NAIRR Science Program Reshapes Scientific Research, Powered by NVIDIA AI. From Exascale Science to the Next Wave A record 35 NVIDIA AI HPC supercomputers are in development across Europe - equipping more than 3 million researchers with next-generation infrastructure for continental AI, accelerated science and industrial innovation. 10 on the TOP500, and KAIROS at No.",
+      "what_happened": "A Full-Stack Footprint NVIDIA\u2019s reach now spans the full system - GPU, networking and, increasingly, the CPU - with NVIDIA Grace CPU adoption reaching 26 systems, up eight from the previous list, with nearly 2.5 million Grace CPUs shipped. NVIDIA technologies power more than 400 of the world\u2019s 500 fastest supercomputers - 81% of the TOP500 - according to the latest rankings released this week at the ISC High Performance conference in Hamburg, Germany.",
+      "why_matters": "And it\u2019s compounding: NVIDIA systems across the TOP500 now deliver more than 2x the AI training and nearly 3x the AI inference throughput of every other platform combined. Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay NVIDIA Brings Trusted, 24/7 AI Agents to Telecom Operations At ISC, JUPITER Shows What Exascale Science Looks Like NAIRR Science Program Reshapes Scientific Research, Powered by NVIDIA AI.",
+      "what_to_watch": "From Exascale Science to the Next Wave A record 35 NVIDIA AI HPC supercomputers are in development across Europe - equipping more than 3 million researchers with next-generation infrastructure for continental AI, accelerated science and industrial innovation. 10 on the TOP500, and KAIROS at No.",
+      "key_points": [
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "A Full-Stack Footprint NVIDIA\u2019s reach now spans the full system - GPU, networking and, increasingly, the CPU - with NVIDIA Grace CPU adoption reaching 26 systems, up eight from the previous list, with nearly 2.5 million.",
+        "10 on the TOP500, and KAIROS at No.",
+        "NVIDIA technologies power more than 400 of the world\u2019s 500 fastest supercomputers - 81% of the TOP500 - according to the latest rankings released this week at the ISC High Performance conference in Hamburg, Germany.",
+        "26 systems on the TOP500 adopted the NVIDIA Grace CPU, up eight from the previous list.",
+        "The NVIDIA Vera CPU , announced earlier this year, builds on the success of Grace, taking CPU performance and energy efficiency to new levels for the most demanding AI workloads in modern data centers - where agents.",
+        "The top eight systems on the Green500 run on NVIDIA GPUs and nine of the top 10 use NVIDIA technologies.",
+        "Topping the Efficiency List NVIDIA swept the Green500 ranking of the most energy-efficient supercomputers: The top eight all run on NVIDIA GPUs and nine of the top 10 use NVIDIA technologies.",
+        "And it\u2019s compounding: NVIDIA systems across the TOP500 now deliver more than 2x the AI training and nearly 3x the AI inference throughput of every other platform combined.",
+        "GPU and networking adoption each hit new highs, with NVIDIA GPUs accelerating a record 238 systems and NVIDIA networking connecting a record 376 - the vast majority on NVIDIA Quantum InfiniBand, the backbone of.",
+        "Watch NVIDIA CEO Jensen Huang's GTC Taipei Keynote Replay NVIDIA Brings Trusted, 24/7 AI Agents to Telecom Operations At ISC, JUPITER Shows What Exascale Science Looks Like NAIRR Science Program Reshapes Scientific.",
+        "376 of the TOP500 systems are interconnected using NVIDIA networking."
+      ],
+      "rag_angles": [
+        "what the capability unlocks",
+        "where the limitation still matters",
+        "whether the result is research-only or product-ready",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "Separate proven capability from claimed capability.",
+        "Name the benchmark, model, dataset, or method when available.",
+        "Explain the user-facing meaning of the technical result.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/22854eecdb436183.png",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/hpc-corp-blog-isc26-wrap-up-blog-1280x680-5375050.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/c0kyzk2p255o?at_medium=RSS&at_campaign=rss",
+      "title": "Steam Machine launches with \u00a3879 price tag as Valve cites component costs",
+      "description": "Valve said the cost of its PC-console hybrid reflects a broader trend of component costs rising over time.",
+      "excerpt": "Valve said the cost of its PC-console hybrid reflects a broader trend of component costs rising over time.",
+      "summary": "Studio makes game free for 10th anniversary Valve hikes Steam Deck prices by more than 40%, blaming rising costs The gaming giant said the handheld had not changed but the rise reflected \"the current state of component costs\" Valve's \u00a385 Steam Controller divides gamers ahead of May launch The pad will be compatible with PCs, Valve's handheld console, the Steam Deck as well as its upcoming gaming PC. Steam Machine launches with \u00a3879 price tag as Valve cites component costs Valve has launched the Steam Machine. The developer said on Monday the controller would be available alongside a 512GB edition of the Steam Machine in a bundle for \u00a3938. PC gaming giant Valve unveils new console to rival Xbox and PlayStation The Steam Machine is a console designed to allow gamers to play PC games on their TV. Why everything from your phone to your PC may get pricier in 2026 Valve's Steam Machine pricing also follows a wave of device makers hiking prices up to swallow rising memory and storage costs. The gaming giant said in a blog post on Monday that its new gaming PC, which also doubles as a console, would retail at \u00a3879.",
+      "what_happened": "Studio makes game free for 10th anniversary Valve hikes Steam Deck prices by more than 40%, blaming rising costs The gaming giant said the handheld had not changed but the rise reflected \"the current state of component costs\" Valve's \u00a385 Steam Controller divides gamers ahead of May launch The pad will be compatible with PCs, Valve's handheld console, the Steam Deck as well as its upcoming gaming PC. Steam Machine launches with \u00a3879 price tag as Valve cites component costs Valve has launched the Steam Machine.",
+      "why_matters": "The developer said on Monday the controller would be available alongside a 512GB edition of the Steam Machine in a bundle for \u00a3938. PC gaming giant Valve unveils new console to rival Xbox and PlayStation The Steam Machine is a console designed to allow gamers to play PC games on their TV.",
+      "what_to_watch": "Why everything from your phone to your PC may get pricier in 2026 Valve's Steam Machine pricing also follows a wave of device makers hiking prices up to swallow rising memory and storage costs. The gaming giant said in a blog post on Monday that its new gaming PC, which also doubles as a console, would retail at \u00a3879.",
+      "key_points": [
+        "Studio makes game free for 10th anniversary Valve hikes Steam Deck prices by more than 40%, blaming rising costs The gaming giant said the handheld had not changed but the rise reflected \"the current state of component.",
+        "Steam Machine launches with \u00a3879 price tag as Valve cites component costs Valve has launched the Steam Machine gaming computer at a higher price than it previously expected, in what it has attributed to soaring.",
+        "The developer said on Monday the controller would be available alongside a 512GB edition of the Steam Machine in a bundle for \u00a3938.",
+        "The gaming giant said in a blog post on Monday that its new gaming PC, which also doubles as a console, would retail at \u00a3879 in the UK and $1,049 in the US.",
+        "Valve announced earlier in 2026 that it was raising prices of its handheld device Steam Deck by 40% due to similar expenses.",
+        "Gamers frustrated as Hollow Knight: Silksong crashes stores on launch Social media users also struggle to grab the game on the Nintendo, PlayStation and Xbox game stores.",
+        "\"Over the past year or so, that has changed quickly and significantly, most visibly for RAM [random access memory] and storage components.\" Piers Harding-Rolls of Ampere Analysis said the market research firm had.",
+        "Phone maker Nothing recently cancelled its plans to release a new handset in September , citing Ram costs, while Apple has said it will raise some product prices due to the rising expense of memory chips.",
+        "PC gaming giant Valve unveils new console to rival Xbox and PlayStation The Steam Machine is a console designed to allow gamers to play PC games on their TV.",
+        "The device was unveiled in November as a PC \"optimised for gaming\" that can also be used as a console.",
+        "Gaming consoles such as the PS5 and Nintendo Switch 2 have also seen price hikes.",
+        "It is a spiritual sequel to the 2014 device of the same name, which failed to break into a market dominated by the three big gaming giants of Sony, Nintendo and Microsoft."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7efe71729d33c492.webp",
+      "image_url": "https://ichef.bbci.co.uk/news/480/cpsprodpb/6028/live/b268cc10-fb60-11f0-82aa-61d6ba92387c.jpg.webp",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://spectrum.ieee.org/europe-tech-sovereignty-package",
+      "title": "Is Europe Finally Ready to Take Back Control Of Its Tech Stack?",
+      "description": "Open source and European industry may benefit, if the EU overcomes inertia",
+      "excerpt": "Open source and European industry may benefit, if the EU overcomes inertia",
+      "summary": "In their August 1955 proposal for the research project, the scientists introduced the term artificial intelligence and envisioned machines capable of simulating human intelligence. Therefore, you must launch at least 40 percent more radiator mass, endure higher atmospheric drag, and sacrifice valuable launch volume just to survive the degradation of the thermal coating. In 1959 Arthur Lee Samuel , a computer science professor at Stanford , introduced the term machine learning to describe programs that could improve their performance through experience. When the state faced the most destructive storm in the company\u2019s history, Hurricane Helene, Georgia Power deployed a rapid response team that utilized its \u201csmart grid\u201d and restored power to more than 1 million customers within days. See full bio \u2192 AI Is Learning to Read the Room Beyond Dexterity: Why Contact May Define the Next Era of Robotics This 1976 University Experiment Spun Up the U.S. To understand how big this baseline area is in practice, I used the Stefan-Boltzmann law to model the heat-rejection area needed to keep a single chip that.",
+      "what_happened": "In their August 1955 proposal for the research project, the scientists introduced the term artificial intelligence and envisioned machines capable of simulating human intelligence. Therefore, you must launch at least 40 percent more radiator mass, endure higher atmospheric drag, and sacrifice valuable launch volume just to survive the degradation of the thermal coating.",
+      "why_matters": "In 1959 Arthur Lee Samuel , a computer science professor at Stanford , introduced the term machine learning to describe programs that could improve their performance through experience. When the state faced the most destructive storm in the company\u2019s history, Hurricane Helene, Georgia Power deployed a rapid response team that utilized its \u201csmart grid\u201d and restored power to more than 1 million customers within days.",
+      "what_to_watch": "See full bio \u2192 AI Is Learning to Read the Room Beyond Dexterity: Why Contact May Define the Next Era of Robotics This 1976 University Experiment Spun Up the U.S. To understand how big this baseline area is in practice, I used the Stefan-Boltzmann law to model the heat-rejection area needed to keep a single chip that.",
+      "key_points": [
+        "In their August 1955 proposal for the research project, the scientists introduced the term artificial intelligence and envisioned machines capable of simulating human intelligence.",
+        "To understand how big this baseline area is in practice, I used the Stefan-Boltzmann law to model the heat-rejection area needed to keep a single chip that draws 700 watts of power - such as the H100 GPU chip, an AI.",
+        "Therefore, you must launch at least 40 percent more radiator mass, endure higher atmospheric drag, and sacrifice valuable launch volume just to survive the degradation of the thermal coating.",
+        "It showed that the cost to launch and run a GPU in space for a year is at least an order of magnitude higher than the same feat in a terrestrial data center.",
+        "This increase adds significantly to the launch cost and further erodes the economics of a space-based data center.",
+        "The ideas and theories that underpin AI predate modern computers such as the ENIAC , unveiled in 1946.",
+        "The EU trails both the U.S.",
+        "A new phase of growth - often described as \u201cAI spring\u201d - emerged in the 2010s with advances in deep learning , the rise of large language models , the transformer architecture , and generative AI (GenAI).",
+        "We are moving away from the \u201claunch and forget\u201d era toward an era of \u201cautonomous logistics.\u201d As our thermal model demonstrated, the harsh environment of space steadily attacks the hardware.",
+        "To make the economics of orbital computation work, the infrastructure must be serviceable and the rockets to launch them reusable.",
+        "John McCarthy developed Lisp in 1958, and it became the dominant programming language for AI research and development.",
+        "The Chips Act 2.0 allows the Commission to fund certain fabs as \u201cstrategic projects\u201d and fast-track them through permitting."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/88c40d0db1a88b5a.img",
+      "image_url": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202000%201909'%3E%3C/svg%3E",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://news.mit.edu/2026/new-chip-could-help-tiny-robots-traverse-complex-environments-0623",
+      "title": "New chip could help tiny robots traverse complex environments",
+      "description": "Gleanmer is a new system that can construct detailed 3D maps of a robot\u2019s environment at high speed while operating at extremely low power. The advance could enable tiny devices to avoid obstacles and safely navigate in the real world.",
+      "excerpt": "Gleanmer is a new system that can construct detailed 3D maps of a robot\u2019s environment at high speed while operating at extremely low power. The advance could enable tiny devices to avoid obstacles and safely navigate in the real world.",
+      "summary": "The advance could enable tiny devices to avoid obstacles and safely navigate in the real world. Gleanmer is a new system that can construct detailed 3D maps of a robot\u2019s environment at high speed while operating at extremely low power.",
+      "what_happened": "The advance could enable tiny devices to avoid obstacles and safely navigate in the real world. Gleanmer is a new system that can construct detailed 3D maps of a robot\u2019s environment at high speed while operating at extremely low power.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "The advance could enable tiny devices to avoid obstacles and safely navigate in the real world.",
+        "Gleanmer is a new system that can construct detailed 3D maps of a robot\u2019s environment at high speed while operating at extremely low power."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1d3e6103cbb1a999.jpg",
+      "image_url": "https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202606/MIT-Map-Chip-01_0.jpg?itok=jbBtQhXM",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2199578/amazon-ordered-to-bargain-with-teamsters/",
+      "title": "Amazon ordered to bargain with Teamsters in case that could set back union progress - Engadget",
+      "description": "Amazon violated federal law when it refused to recognize a union, a judge ruled.",
+      "excerpt": "Amazon violated federal law when it refused to recognize a union, a judge ruled.",
+      "summary": "\"Amazon's strategy these last few years has been to delay, delay, delay,\" the Teamsters organization said in a press release earlier this year. Amazon did neither of those things, the judge ruled. With big changes potentially coming to the NLRB, Jeff Bezos' company may be able to undo that progress soon. Amazon did neither of those things, the judge ruled. Amazon did neither of those things, the judge ruled.",
+      "what_happened": "\"Amazon's strategy these last few years has been to delay, delay, delay,\" the Teamsters organization said in a press release earlier this year. Amazon did neither of those things, the judge ruled.",
+      "why_matters": "With big changes potentially coming to the NLRB, Jeff Bezos' company may be able to undo that progress soon. Amazon did neither of those things, the judge ruled.",
+      "what_to_watch": "Amazon did neither of those things, the judge ruled.",
+      "key_points": [
+        "\"Amazon's strategy these last few years has been to delay, delay, delay,\" the Teamsters organization said in a press release earlier this year.",
+        "Amazon did neither of those things, the judge ruled.",
+        "The board could then overturn the ruling and use the new precedent to set back the recent wins made by unions formed by Amazon staffers .",
+        "Amazon workers have made unionization inroads over the past few years.",
+        "The judge's ruling is based on a precedent set during the more labor-friendly Biden administration.",
+        "Amazon ordered to bargain with Teamsters in case that could set back union progress A labor judge ruled that Amazon failed to recognize the Teamsters union as required by law.",
+        "Amazon denied any wrongdoing and said it believed that the Cemex precedent is unlawful.",
+        "Amazon violated federal law when it refused to recognize a union, a judge ruled.",
+        "However, Amazon vowed to appeal the order to an NLRB board that could soon be dominated by Trump appointees.",
+        "With the NLRB board stripped down by Trump ( illegally , according to Senator Elizabeth Warren), Amazon could use the case as a way to undo Cemex .",
+        "A labor judge ruled that Amazon violated federal law when it refused to recognize the Teamsters union after it received support from majority of workers at a San Francisco delivery center.",
+        "Failing that, firms must ask the NLRB to hold an election testing its support."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next",
+        "what changes for developers or users"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty.",
+        "Lead with the actual product, model, or API name."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/9df9b984bb49692f.jpg",
+      "image_url": "https://img2.zergnet.com/8769361_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/jun/22/anthropic-claude-fable-ai-model-artificial-intelligence-national-security",
+      "title": "AI models capable of devastating attacks on governments and business months away, rare Five Eyes statement warns",
+      "description": "Signal agencies in Australia, the US, the UK, New Zealand and Canada sound alarm after Trump blocks foreign nationals from Anthropic\u2019s Fable AI model",
+      "excerpt": "Signal agencies in Australia, the US, the UK, New Zealand and Canada sound alarm after Trump blocks foreign nationals from Anthropic\u2019s Fable AI model",
+      "summary": "Signal agencies in Australia, the US, the UK, New Zealand and Canada sound alarm after Trump blocks foreign nationals from Anthropic\u2019s Fable AI model",
+      "what_happened": "Signal agencies in Australia, the US, the UK, New Zealand and Canada sound alarm after Trump blocks foreign nationals from Anthropic\u2019s Fable AI model",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Signal agencies in Australia, the US, the UK, New Zealand and Canada sound alarm after Trump blocks foreign nationals from Anthropic\u2019s Fable AI model"
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/bc9f3026fa00eb59.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/d2a5274919d8ac6deed2ef6835d67933fedd18d2/257_0_4800_3840/master/4800.jpg?width=465&dpr=1&s=none&crop=none",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 7,
+  "has_cta": true,
+  "slides": [
+    "NVIDIA Brings Trusted 24 7 AI Agents to Telecom Operations.",
+    "Shipping huggingface hub every week with AI open tools and a human.",
+    "NVIDIA Powers Over 400 of the World's 500 Fastest Supercomputers.",
+    "Steam Machine launches with 879 price tag as Valve cites component costs.",
+    "Is Europe Finally Ready to Take Back Control Of Its Tech Stack.",
+    "Amazon ordered to bargain with Teamsters in case that could set back.",
+    "FOLLOW @graitech"
+  ]
+}
