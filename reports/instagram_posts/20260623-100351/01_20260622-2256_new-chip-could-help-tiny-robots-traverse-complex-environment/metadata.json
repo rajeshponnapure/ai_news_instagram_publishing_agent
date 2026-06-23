@@ -1,0 +1,298 @@
+{
+  "email_received_at": "2026-06-22T22:56-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "New chip could help tiny robots traverse complex environments",
+  "subject": "\ud83d\udea8 AI Alert: 81 new launches \u2014 MIT News AI, Bloomberg Tech",
+  "source_date": "Mon, 22 Jun 2026 22:56:22 -0700",
+  "companies": [
+    "Anthropic",
+    "Amazon",
+    "Intel",
+    "MIT News AI",
+    "Fable AI",
+    "Guardian AI",
+    "Powerful AI",
+    "Frontier AI"
+  ],
+  "models": [],
+  "topics": [
+    "model release",
+    "regulation or safety",
+    "developer tools",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://news.mit.edu/2026/new-chip-could-help-tiny-robots-traverse-complex-environments-0623",
+  "article_title": "New chip could help tiny robots traverse complex environments",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1d3e6103cbb1a999.jpg",
+  "article_image_url": "https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202606/MIT-Map-Chip-01_0.jpg?itok=jbBtQhXM",
+  "article_items": [
+    {
+      "url": "https://news.mit.edu/2026/new-chip-could-help-tiny-robots-traverse-complex-environments-0623",
+      "title": "New chip could help tiny robots traverse complex environments",
+      "description": "Gleanmer is a new system that can construct detailed 3D maps of a robot\u2019s environment at high speed while operating at extremely low power. The advance could enable tiny devices to avoid obstacles and safely navigate in the real world.",
+      "excerpt": "Gleanmer is a new system that can construct detailed 3D maps of a robot\u2019s environment at high speed while operating at extremely low power. The advance could enable tiny devices to avoid obstacles and safely navigate in the real world.",
+      "summary": "Our chip allows you to store very large maps in a very small space, and do it in a very energy efficient manner,\u201d says Vivienne Sze, a professor in the Department of Electrical Engineering and Computer Science (EECS), a member of the Research Laboratory of Electronics (RLE), and senior author of a paper on the chip . Share this news article on: Miniaturizing the brain of a drone Chip upgrade helps miniature drones navigate Q&A: Vivienne Sze on crossing the hardware-software divide for efficient artificial. The researchers plan to further improve energy efficiency by moving the processing units on the chip closer to the sensors that gather environmental data. On Campus and Around the world Centers, Labs, & Programs New chip could help tiny robots traverse complex environments New chip could help tiny robots traverse complex environments A new chip developed by MIT researchers could help tiny, low-power UAVs avoid obstacles as. Importantly, the map captures the obstacles and free space around the robot, and together these let the robot plan a safe, collision-free path. By reusing compact Gaussians along the path as it plans, the chip lets a robot chart a safe trajectory using only.",
+      "what_happened": "Our chip allows you to store very large maps in a very small space, and do it in a very energy efficient manner,\u201d says Vivienne Sze, a professor in the Department of Electrical Engineering and Computer Science (EECS), a member of the Research Laboratory of Electronics (RLE), and senior author of a paper on the chip . Share this news article on: Miniaturizing the brain of a drone Chip upgrade helps miniature drones navigate Q&A: Vivienne Sze on crossing the hardware-software divide for efficient artificial.",
+      "why_matters": "The researchers plan to further improve energy efficiency by moving the processing units on the chip closer to the sensors that gather environmental data. On Campus and Around the world Centers, Labs, & Programs New chip could help tiny robots traverse complex environments New chip could help tiny robots traverse complex environments A new chip developed by MIT researchers could help tiny, low-power UAVs avoid obstacles as.",
+      "what_to_watch": "Importantly, the map captures the obstacles and free space around the robot, and together these let the robot plan a safe, collision-free path. By reusing compact Gaussians along the path as it plans, the chip lets a robot chart a safe trajectory using only about 20 percent of the energy it would otherwise need.",
+      "key_points": [
+        "Our chip allows you to store very large maps in a very small space, and do it in a very energy efficient manner,\u201d says Vivienne Sze, a professor in the Department of Electrical Engineering and Computer Science (EECS), a.",
+        "Share this news article on: Miniaturizing the brain of a drone Chip upgrade helps miniature drones navigate Q&A: Vivienne Sze on crossing the hardware-software divide for efficient artificial intelligence Computers that.",
+        "It required only about 2.5 percent of the power that the best existing chip for map construction would need.",
+        "The researchers plan to further improve energy efficiency by moving the processing units on the chip closer to the sensors that gather environmental data.",
+        "By reusing compact Gaussians along the path as it plans, the chip lets a robot chart a safe trajectory using only about 20 percent of the energy it would otherwise need.",
+        "The chip allows small autonomous robots and other battery-limited devices to construct detailed 3D maps of their environments in real-time using only about as much power as a single LED.",
+        "The work was recently presented at the IEEE Very Large-Scale Integrated Circuits Symposium.",
+        "The same principle runs through their algorithm - most computations operate directly on compact Gaussians rather than the original pixels, enabling energy efficiency.",
+        "The chip can also reconstruct obstacles and free space directly from live data streamed from an iPhone camera.",
+        "1 university for 2026-27 More about MIT News at Massachusetts Institute of Technology This website is managed by the MIT News Office, part of the Institute Office of Communications .",
+        "Then we accelerate the workload that is performed by that efficient algorithm, so in the end, our chip is as efficient as possible,\u201d Li says.",
+        "This work is supported, in part, by the MIT-MathWorks Fellowship, Amazon, the U.S."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1d3e6103cbb1a999.jpg",
+      "image_url": "https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202606/MIT-Map-Chip-01_0.jpg?itok=jbBtQhXM",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/jun/22/anthropic-claude-fable-ai-model-artificial-intelligence-national-security",
+      "title": "AI models capable of devastating attacks on governments and business months away, rare Five Eyes statement warns",
+      "description": "Signal agencies in Australia, the US, the UK, New Zealand and Canada sound alarm after Trump blocks foreign nationals from Anthropic\u2019s Fable AI model",
+      "excerpt": "Signal agencies in Australia, the US, the UK, New Zealand and Canada sound alarm after Trump blocks foreign nationals from Anthropic\u2019s Fable AI model",
+      "summary": "One of the major tech company\u2019s latest inventions is called Fable 5, a supposedly more community-friendly version of Mythos \u2013 a powerful AI model released earlier this year capable of detecting vulnerabilities in cyber systems that is only available to vetted organisations and companies because of concerns it could be exploited. \u201cWe can only see what\u2019s been released but there could be other models being developed by the likes of China, or other states and other actors and companies, that are just as advanced.\u201d In. The surprising public intervention by signals agencies for Australia, the US, the UK, New Zealand and Canada comes after the Trump administration earlier this month decided to block \u201cforeign nationals\u201d from using a much-hyped AI model built by tech company Anthropic, called Fable. Does it change the picture? \u201cI think we have to anticipate that the next Mythos or the next Fable is just around the corner,\u201d Shen said. Signal agencies in Australia, the US, the UK, New Zealand and Canada sound alarm after Trump blocks foreign nationals from Anthropic\u2019s Fable AI model Support the Guardian AI models capable of devastating.",
+      "what_happened": "One of the major tech company\u2019s latest inventions is called Fable 5, a supposedly more community-friendly version of Mythos \u2013 a powerful AI model released earlier this year capable of detecting vulnerabilities in cyber systems that is only available to vetted organisations and companies because of concerns it could be exploited. \u201cWe can only see what\u2019s been released but there could be other models being developed by the likes of China, or other states and other actors and companies, that are just as advanced.\u201d In.",
+      "why_matters": "The surprising public intervention by signals agencies for Australia, the US, the UK, New Zealand and Canada comes after the Trump administration earlier this month decided to block \u201cforeign nationals\u201d from using a much-hyped AI model built by tech company Anthropic, called Fable. Does it change the picture?",
+      "what_to_watch": "\u201cI think we have to anticipate that the next Mythos or the next Fable is just around the corner,\u201d Shen said. Signal agencies in Australia, the US, the UK, New Zealand and Canada sound alarm after Trump blocks foreign nationals from Anthropic\u2019s Fable AI model Support the Guardian AI models capable of devastating.",
+      "key_points": [
+        "Signal agencies in Australia, the US, the UK, New Zealand and Canada sound alarm after Trump blocks foreign nationals from Anthropic\u2019s Fable AI model Support the Guardian AI models capable of devastating attacks on.",
+        "One of the major tech company\u2019s latest inventions is called Fable 5, a supposedly more community-friendly version of Mythos \u2013 a powerful AI model released earlier this year capable of detecting vulnerabilities in cyber.",
+        "\u201cWe can only see what\u2019s been released but there could be other models being developed by the likes of China, or other states and other actors and companies, that are just as advanced.\u201d In March, the Albanese government.",
+        "The Five Eyes is an intelligence alliance set up between the five countries after the second world war.",
+        "\u201cIn this environment, cyber resilience is integral to advancing business continuity, market confidence, and long-term value.\u201d The cybersecurity agencies said the leaps in AI models showed the technology would lower.",
+        "The non-binding memorandum of understanding means companies agree to share details of AI progress with the government and \u201cpromote safety\u201d.",
+        "While no AI models or companies are mentioned in the Five Eyes statement by name, many around the world have their eyes on Anthropic\u2019s advanced tier of tools.",
+        "\u201cI think we have to anticipate that the next Mythos or the next Fable is just around the corner,\u201d Shen said.",
+        "The surprising public intervention by signals agencies for Australia, the US, the UK, New Zealand and Canada comes after the Trump administration earlier this month decided to block \u201cforeign nationals\u201d from using a.",
+        "Does it change the picture?",
+        "The timeline is not years, it is months,\u201d the warning by Five Eyes agencies said.",
+        "\u201cWhat\u2019s different about the latest [AI models] ones is they\u2019re very good at generating exploits,\u201d Olivia Shen, an expert in national security and AI at the University of Sydney\u2019s United States Studies Centre, said."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/bc9f3026fa00eb59.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/d2a5274919d8ac6deed2ef6835d67933fedd18d2/257_0_4800_3840/master/4800.jpg?width=465&dpr=1&s=none&crop=none",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.msn.com/en-in/news/India/two-techies-from-india-and-pakistan-built-an-ai-startup-now-both-are-billionaires-thanks-to-elon-musk-heres-all-about-aman-sanger-and-sualeh-asif/ar-AA25VVWz",
+      "title": "Two techies from India and Pakistan built an AI startup - now both are billionaires thanks to Elon Musk. Here's all about Aman Sanger and Sualeh Asif",
+      "description": "Two young entrepreneurs, Aman Sanger from India and Sualeh Asif from Pakistan, have joined the billionaire ranks. Their company, Cursor, a popular AI coding assistant, was reportedly acquired by Elon Musk for $60 billion. This deal is expected to net each of them around $2.7 billion. Cursor, founded in 2022, has rapidly grown into a leading AI firm.",
+      "excerpt": "Two young entrepreneurs, Aman Sanger from India and Sualeh Asif from Pakistan, have joined the billionaire ranks. Their company, Cursor, a popular AI coding assistant, was reportedly acquired by Elon Musk for $60 billion. This deal is expected to net each of them around $2.7 billion. Cursor, founded in 2022, has rapidly grown into a leading AI firm.",
+      "summary": "Their company, Cursor, a popular AI coding assistant, was reportedly acquired by Elon Musk for $60 billion. This deal is expected to net each of them around $2.7 billion. This deal is expected to net each of them around $2.7 billion. Cursor, founded in 2022, has rapidly grown into a leading AI firm. This deal is expected to net each of them around $2.7 billion.",
+      "what_happened": "Their company, Cursor, a popular AI coding assistant, was reportedly acquired by Elon Musk for $60 billion. This deal is expected to net each of them around $2.7 billion.",
+      "why_matters": "This deal is expected to net each of them around $2.7 billion. Cursor, founded in 2022, has rapidly grown into a leading AI firm.",
+      "what_to_watch": "This deal is expected to net each of them around $2.7 billion.",
+      "key_points": [
+        "Their company, Cursor, a popular AI coding assistant, was reportedly acquired by Elon Musk for $60 billion.",
+        "This deal is expected to net each of them around $2.7 billion.",
+        "Cursor, founded in 2022, has rapidly grown into a leading AI firm.",
+        "Two young entrepreneurs, Aman Sanger from India and Sualeh Asif from Pakistan, have joined the billionaire ranks."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/f026835e3c689e9e.png",
+      "image_url": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA25VYmm.img?w=768&h=576&m=4&q=100",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.therobotreport.com/bear-robotics-acquires-kinisi-robotics-to-boost-its-physical-ai-capabilities/",
+      "title": "Bear Robotics acquires Kinisi Robotics to boost its physical AI capabilities - The Robot Report",
+      "description": "Kinisi's KR1 humanoid robot, its Bristol-based engineering team, and its physical AI capabilities will be integrated into Bear Robotics.",
+      "excerpt": "Kinisi's KR1 humanoid robot, its Bristol-based engineering team, and its physical AI capabilities will be integrated into Bear Robotics.",
+      "summary": "Kinisi's KR1 humanoid robot, its Bristol-based engineering team, and its physical AI capabilities will be integrated into Bear Robotics.",
+      "what_happened": "Kinisi's KR1 humanoid robot, its Bristol-based engineering team, and its physical AI capabilities will be integrated into Bear Robotics.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Kinisi's KR1 humanoid robot, its Bristol-based engineering team, and its physical AI capabilities will be integrated into Bear Robotics."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/22adfb6a7399b0bb.jpg",
+      "image_url": "https://www.therobotreport.com/wp-content/uploads/2026/06/kinisi-announcement-featured.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/jun/18/california-billionaire-tax-ballot-tech-opposition",
+      "title": "California \u2018billionaire tax\u2019 makes ballot despite opposition from tech moguls",
+      "description": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "excerpt": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "summary": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "what_happened": "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Wealth tax criticized by billionaires and Gavin Newsom would levy a one-time 5% tax on residents worth over $1bn"
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e54963f129a234ea.jpg",
+      "image_url": "https://i.guim.co.uk/img/media/38e509e5c6cebd21b697c28446bba95920578c09/305_0_3560_2848/master/3560.jpg?width=465&dpr=1&s=none&crop=none",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-04-24-deepseek-v4",
+      "title": "DeepSeek V4 in vLLM: Efficient Long-context Attention",
+      "description": "A first-principles walkthrough of DeepSeek V4's long-context attention, and how we implemented it in vLLM.",
+      "excerpt": "A first-principles walkthrough of DeepSeek V4's long-context attention, and how we implemented it in vLLM.",
+      "summary": "A first-principles walkthrough of DeepSeek V4's long-context attention, and how we implemented it in vLLM.",
+      "what_happened": "A first-principles walkthrough of DeepSeek V4's long-context attention, and how we implemented it in vLLM.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "A first-principles walkthrough of DeepSeek V4's long-context attention, and how we implemented it in vLLM."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/1bb100b5b343b3f7.img",
+      "image_url": "https://vllm.ai/blog-assets/figures/2026-04-dsv4/c4a_animation.gif",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2199149/uber-board-sued-for-alleged-poor-oversight-that-led-to-sexual-abuse-of-its-passengers/",
+      "title": "Uber's board sued for alleged poor oversight that led to sexual abuse of its passengers - Engadget",
+      "description": "Uber's shareholders have filed a lawsuit against the ride-sharing giant.",
+      "excerpt": "Uber's shareholders have filed a lawsuit against the ride-sharing giant.",
+      "summary": "Uber's shareholders have filed a lawsuit against the ride-sharing giant.",
+      "what_happened": "Uber's shareholders have filed a lawsuit against the ride-sharing giant.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Uber's shareholders have filed a lawsuit against the ride-sharing giant."
+      ],
+      "rag_angles": [
+        "what behavior may change",
+        "which companies or users are affected",
+        "what enforcement or court signal comes next"
+      ],
+      "rag_rules": [
+        "State the rule, complaint, restriction, or risk plainly.",
+        "Explain who is affected: users, companies, developers, creators, or governments.",
+        "Do not turn legal uncertainty into certainty."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/7eabfa406f8bca7e.jpg",
+      "image_url": "https://img5.zergnet.com/8764022_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/anthropic-aims-transform-enterprise-collaboration-artifacts",
+      "title": "Anthropic Aims to for Enterprise Collaboration With Artifacts",
+      "description": "Anthropic Aims to Transform Enterprise Collaboration With Artifacts",
+      "excerpt": "Anthropic Aims to Transform Enterprise Collaboration With Artifacts",
+      "summary": "Anthropic Aims to Transform Enterprise Collaboration With Artifacts",
+      "what_happened": "Anthropic Aims to Transform Enterprise Collaboration With Artifacts",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "Anthropic Aims to Transform Enterprise Collaboration With Artifacts"
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e2b0b8c78a44b256.png",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltfa3a070f135cd1d7/6a319c7729bcbf0008c72ca5/Cursor.png?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/403e0f2d5d062d3e.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/15c5b987a5e6f873.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/b3763009c0f601a6.webp"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltef46e96defe80790/6a3010b8fa8a9d8c431b14e4/Foxconn.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltee176ce55650ab85/6a21c0c5563cbbc1f1a60149/Meta.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltd6f862d65d39c0f6/6a3164f78a574a00087ff10d/IBMAI.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ]
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 5,
+  "has_cta": true,
+  "slides": [
+    "New chip could help tiny robots traverse complex environments.",
+    "The surprising public intervention by signals agencies for Australia, the US.",
+    "Two techies from India and Pakistan built an AI startup now both.",
+    "Anthropic Aims to for Enterprise Collaboration With Artifacts.",
+    "FOLLOW @graitech"
+  ]
+}
