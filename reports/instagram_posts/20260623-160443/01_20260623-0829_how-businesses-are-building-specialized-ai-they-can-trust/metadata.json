@@ -1,0 +1,344 @@
+{
+  "email_received_at": "2026-06-23T08:29-07:00",
+  "recommended_post_time": "08:00",
+  "headline": "How Businesses Are Building Specialized AI They Can Trust",
+  "subject": "\ud83d\udea8 AI Alert: 98 new launches \u2014 The Verge AI, CNBC Technology",
+  "source_date": "Tue, 23 Jun 2026 08:29:01 -0700",
+  "companies": [
+    "OpenAI",
+    "Google",
+    "Meta",
+    "NVIDIA",
+    "Perplexity",
+    "Stability AI",
+    "The Verge AI",
+    "Building Specialized AI"
+  ],
+  "models": [],
+  "topics": [
+    "model release",
+    "funding or business",
+    "regulation or safety",
+    "hardware and compute",
+    "media generation"
+  ],
+  "article_url": "https://blogs.nvidia.com/blog/nvidia-agent-toolkit-open-models-tools-skills-secure-runtime-ai-agents/",
+  "article_title": "How Businesses Are Building Specialized AI They Can Trust",
+  "article_image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6819f0bc5e71c6ab.png",
+  "article_image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/agentic-ai-agent-toolkit-kv-r3b-1920x1080-2.png",
+  "article_items": [
+    {
+      "url": "https://blogs.nvidia.com/blog/nvidia-agent-toolkit-open-models-tools-skills-secure-runtime-ai-agents/",
+      "title": "How Businesses Are Building Specialized AI They Can Trust",
+      "description": "NVIDIA Agent Toolkit - comprising models, tools, skills and a secure runtime - provides an open, modular foundation for building safer, faster, lower-cost digital AI coworkers that enterprises and developers can customize, specialize, control and trust.",
+      "excerpt": "NVIDIA Agent Toolkit - comprising models, tools, skills and a secure runtime - provides an open, modular foundation for building safer, faster, lower-cost digital AI coworkers that enterprises and developers can customize, specialize, control and trust.",
+      "summary": "NVIDIA Nemotron open models give teams flexibility to customize, evaluate and deploy agents for their own needs. NVIDIA Agent Toolkit provides an open, modular foundation that enables this combination. Agents Take Shape Across Industries In life sciences, agents can help researchers call domain models for protein design, virtual screening, genomics analysis and biomarker discovery. In software, cybersecurity, industrial operations and customer workflows, agents can connect to the tools and data teams already use, helping people move faster through complex workflows. To tap into these specialized agents, businesses are using a foundation they can adapt and own: one built on models they can customize, tools that connect to systems they already use and infrastructure that lets agents operate safely at scale.",
+      "what_happened": "NVIDIA Nemotron open models give teams flexibility to customize, evaluate and deploy agents for their own needs. NVIDIA Agent Toolkit provides an open, modular foundation that enables this combination.",
+      "why_matters": "Agents Take Shape Across Industries In life sciences, agents can help researchers call domain models for protein design, virtual screening, genomics analysis and biomarker discovery. In software, cybersecurity, industrial operations and customer workflows, agents can connect to the tools and data teams already use, helping people move faster through complex workflows.",
+      "what_to_watch": "To tap into these specialized agents, businesses are using a foundation they can adapt and own: one built on models they can customize, tools that connect to systems they already use and infrastructure that lets agents operate safely at scale.",
+      "key_points": [
+        "NVIDIA Nemotron open models give teams flexibility to customize, evaluate and deploy agents for their own needs.",
+        "To tap into these specialized agents, businesses are using a foundation they can adapt and own: one built on models they can customize, tools that connect to systems they already use and infrastructure that lets agents.",
+        "Artificial Intelligence Inference \ufeff Agentic AI \ufeff Open Source \ufeff Generative AI \ufeff AI for Good \ufeff Research \ufeff AI Infrastructure AI Factory \ufeff Cloud \ufeff Hardware \ufeff Networking \ufeff Sovereign AI \ufeff Physical AI Robotics \ufeff Driving \ufeff.",
+        "The toolkit\u2019s users can work with third-party agent harnesses - or agent orchestration frameworks - of their choice, including Hermes Agents and OpenClaw.",
+        "The Building Blocks for Specialized AI Coworkers Enterprises and developers building secure, specialized AI agents require: Tools and skills, which connect agents to the actions and domain expertise needed to get work.",
+        "For example, Cadence and Synopsys are building autonomous agents for chip design and engineering workflows.",
+        "Agents Take Shape Across Industries In life sciences, agents can help researchers call domain models for protein design, virtual screening, genomics analysis and biomarker discovery.",
+        "NVIDIA Agent Toolkit - comprising models, tools, skills and a secure runtime - provides an open, modular foundation for building safer, faster, lower-cost digital AI coworkers that enterprises and developers can.",
+        "Plus, physical agents in robotics systems trained in digital twins of hospitals can scale surgical assistance and hospital automation to meet care demands.",
+        "In software, cybersecurity, industrial operations and customer workflows, agents can connect to the tools and data teams already use, helping people move faster through complex workflows.",
+        "And that matters because the most valuable agents across industries will be specialized.",
+        "NVIDIA Agent Toolkit provides an open, modular foundation that enables this combination."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what behavior may change"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "State the rule, complaint, restriction, or risk plainly."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/6819f0bc5e71c6ab.png",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/agentic-ai-agent-toolkit-kv-r3b-1920x1080-2.png",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/608be88f8116d02a.jpg",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/2d80a5f3853e704a.png"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/agentic-ai-press-nvidia-agent-toolkit-diagram-5398200-1920x1080-r2.jpg",
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/agentic-ai-agent-toolkit-kv-r3b-1920x1080-2-1280x720.png"
+      ]
+    },
+    {
+      "url": "https://www.mitsloanme.com/article/nvidias-new-cooling-system-cuts-data-center-water-use-to-near-zero-but-not-ais/",
+      "title": "Nvidia\u2019s New Cooling System Cuts Data Center Water Use to Near Zero\u2014But Not AI\u2019s",
+      "description": "The technology addresses on-site consumption, while power generation and chip manufacturing remain major contributors.",
+      "excerpt": "The technology addresses on-site consumption, while power generation and chip manufacturing remain major contributors.",
+      "summary": "The company recently unveiled a warm-water cooling architecture that it says can eliminate nearly all water use inside a data center, a claim Nvidia Chief Sustainability Officer Josh Parker reinforced in comments to Axios, saying that the industry\u2019s water challenge is \u201clargely solved.\u201d The technology represents a meaningful engineering advance. The system delivers coolant to racks at approximately 45 C and removes it at around 55 C, temperatures high enough to allow passive heat rejection through external. The company\u2019s claims focus on water consumed within the data center\u2019s boundaries. Reduced water withdrawals, lower cooling energy consumption, and quieter facilities could improve both operational efficiency and sustainability metrics. For data center operators, the next phase of sustainability may therefore depend less on cooling technology alone and more on accelerating the transition to low-water, low-carbon energy sources. Nvidia\u2019s New Cooling System Cuts Data Center Water Use to Near Zero - But Not AI\u2019s The technology addresses on-site.",
+      "what_happened": "The company recently unveiled a warm-water cooling architecture that it says can eliminate nearly all water use inside a data center, a claim Nvidia Chief Sustainability Officer Josh Parker reinforced in comments to Axios, saying that the industry\u2019s water challenge is \u201clargely solved.\u201d The technology represents a meaningful engineering advance. The system delivers coolant to racks at approximately 45 C and removes it at around 55 C, temperatures high enough to allow passive heat rejection through external.",
+      "why_matters": "The company\u2019s claims focus on water consumed within the data center\u2019s boundaries. Reduced water withdrawals, lower cooling energy consumption, and quieter facilities could improve both operational efficiency and sustainability metrics.",
+      "what_to_watch": "For data center operators, the next phase of sustainability may therefore depend less on cooling technology alone and more on accelerating the transition to low-water, low-carbon energy sources. Nvidia\u2019s New Cooling System Cuts Data Center Water Use to Near Zero - But Not AI\u2019s The technology addresses on-site.",
+      "key_points": [
+        "Nvidia\u2019s New Cooling System Cuts Data Center Water Use to Near Zero - But Not AI\u2019s The technology addresses on-site consumption, while power generation and chip manufacturing remain major contributors.",
+        "The company recently unveiled a warm-water cooling architecture that it says can eliminate nearly all water use inside a data center, a claim Nvidia Chief Sustainability Officer Josh Parker reinforced in comments to.",
+        "The company\u2019s claims focus on water consumed within the data center\u2019s boundaries.",
+        "The technology addresses on-site consumption, while power generation and chip manufacturing remain major contributors.",
+        "The system delivers coolant to racks at approximately 45 C and removes it at around 55 C, temperatures high enough to allow passive heat rejection through external radiators in many climates without requiring chillers.",
+        "However, despite rapid renewable deployment, projections from the International Energy Agency suggest that fossil fuels will continue supplying a significant portion of the additional electricity required to meet.",
+        "Until then, eliminating water use inside the data center does not necessarily eliminate AI\u2019s broader water footprint.",
+        "Power generation remains the largest contributor.",
+        "Get free, timely updates from MIT Sloan Management Review Middle East with new ideas, research, frameworks, and more.",
+        "The result is a sustainability paradox.",
+        "For data center operators, the next phase of sustainability may therefore depend less on cooling technology alone and more on accelerating the transition to low-water, low-carbon energy sources.",
+        "Significant water consumption occurs upstream, particularly during electricity generation and semiconductor manufacturing."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/4ba06d9183715010.jpg",
+      "image_url": "https://www.mitsloanme.com/wp-content/uploads/2026/06/AI-water.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.mitsloanme.com/article/38-of-uae-and-saudi-firms-have-agentic-ai-in-production-highest-globally/",
+      "title": "38% of UAE and Saudi Firms Have Agentic AI in Production, Highest Globally",
+      "description": "Confluent\u2019s report, based on responses by over 4,000 global IT leaders, highlights that the Gulf organizations have cracked the code to sustaining this momentum.",
+      "excerpt": "Confluent\u2019s report, based on responses by over 4,000 global IT leaders, highlights that the Gulf organizations have cracked the code to sustaining this momentum.",
+      "summary": "Get free, timely updates from MIT Sloan Management Review Middle East with new ideas, research, frameworks, and more. With this figure, the two emerge as one of the leading markets globally in deploying agentic AI solutions. It reveals that 95% of IT leaders in these markets believe data streaming platforms can speed up AI adoption, and the same percentage expect data streaming to enhance the effects of their AI investments. According to Confluent\u2019s 2026 Data Streaming Report , the figures are among the highest recorded globally. It reveals that 95% of IT leaders in these markets believe data streaming platforms can speed up AI adoption, and the same percentage expect data streaming to enhance the effects of their AI investments.",
+      "what_happened": "Get free, timely updates from MIT Sloan Management Review Middle East with new ideas, research, frameworks, and more. With this figure, the two emerge as one of the leading markets globally in deploying agentic AI solutions.",
+      "why_matters": "It reveals that 95% of IT leaders in these markets believe data streaming platforms can speed up AI adoption, and the same percentage expect data streaming to enhance the effects of their AI investments. According to Confluent\u2019s 2026 Data Streaming Report , the figures are among the highest recorded globally.",
+      "what_to_watch": "It reveals that 95% of IT leaders in these markets believe data streaming platforms can speed up AI adoption, and the same percentage expect data streaming to enhance the effects of their AI investments.",
+      "key_points": [
+        "Notably, in the UAE and Saudi Arabia, 90% and 88% of respondents, respectively, rank data streaming as a strategic business priority, placing it above AI and machine learning technologies.",
+        "It reveals that 95% of IT leaders in these markets believe data streaming platforms can speed up AI adoption, and the same percentage expect data streaming to enhance the effects of their AI investments.",
+        "According to Confluent\u2019s 2026 Data Streaming Report , the figures are among the highest recorded globally.",
+        "However, nearly three-quarters of IT leaders in both countries reported facing at least three major obstacles to AI adoption: insufficient infrastructure for real-time data processing, uncertainty around data lineage.",
+        "Data infrastructure and quality is seen as a specific challenge for agentic AI deployment by over 66% respondents in both markets.",
+        "\u201cWhat the UAE and Saudi Arabia data tells us is genuinely encouraging.",
+        "38% of UAE and Saudi Firms Have Agentic AI in Production, Highest Globally Thirty-eight percent of organizations in the UAE and Saudi Arabia are already running agentic AI in production.",
+        "Get free, timely updates from MIT Sloan Management Review Middle East with new ideas, research, frameworks, and more.",
+        "With this figure, the two emerge as one of the leading markets globally in deploying agentic AI solutions.",
+        "Confluent\u2019s report, based on responses by over 4,000 global IT leaders, highlights that the Gulf organizations have cracked the code to sustaining this momentum.",
+        "The focus on data streaming as a strategic priority reflects an understanding that sustaining AI performance at scale requires the right data infrastructure underneath it,\u201d said Karim Azar, AVP & GM, Confluent Middle.",
+        "AI systems depend on fresh, accurate, and contextual information, but too many are still being built on fragmented data, batch processes, and infrastructure that was not designed for continuous intelligence,\u201d said Shaun."
+      ],
+      "rag_angles": [
+        "what this says about AI demand",
+        "how the move changes competition",
+        "what customers or developers may see next",
+        "what the capability unlocks"
+      ],
+      "rag_rules": [
+        "Make the business move concrete: who is involved, what changed, and why now.",
+        "Tie funding, partnerships, or revenue to product direction or competitive pressure.",
+        "Avoid hype words unless the article gives evidence.",
+        "Separate proven capability from claimed capability."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8321d86481250227.jpg",
+      "image_url": "https://www.mitsloanme.com/wp-content/uploads/2026/06/Agentic-AI-rollout.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://www.engadget.com/2198368/oversight-board-meta-regular-people-needs-more-protection-from-sexualized-deepfakes/",
+      "title": "The Oversight Board says Meta needs to do more to protect regular people from sexualized deepfakes - Engadget",
+      "description": "Meta's Oversight Board has made several suggestions to make reporting sexualized AI deepfakes easier and more effective for ordinary people.",
+      "excerpt": "Meta's Oversight Board has made several suggestions to make reporting sexualized AI deepfakes easier and more effective for ordinary people.",
+      "summary": "After the Board itself raised the issue with Meta, the company merely made the post adults-only but concluded that it did not merit removal under its community standards. It launched the investigation after it received an appeal from the user who reported an AI-generated video on Instagram showing a woman adjusting her dress, with her underwear visible in a few frames. For the particular case that started this investigation, the Board has overturned Meta's decision to leave the video up and has required the company to remove the post. Two users originally reported the video to Meta, but the company didn't remove the deepfake. If it does choose to adopt them, the Board will monitor its implementations. According to the Board's report, the reporter said they were a friend of the person being impersonated in the video without content.",
+      "what_happened": "After the Board itself raised the issue with Meta, the company merely made the post adults-only but concluded that it did not merit removal under its community standards. It launched the investigation after it received an appeal from the user who reported an AI-generated video on Instagram showing a woman adjusting her dress, with her underwear visible in a few frames.",
+      "why_matters": "For the particular case that started this investigation, the Board has overturned Meta's decision to leave the video up and has required the company to remove the post. Two users originally reported the video to Meta, but the company didn't remove the deepfake.",
+      "what_to_watch": "If it does choose to adopt them, the Board will monitor its implementations. According to the Board's report, the reporter said they were a friend of the person being impersonated in the video without content.",
+      "key_points": [
+        "According to the Board's report, the reporter said they were a friend of the person being impersonated in the video without content.",
+        "After the Board itself raised the issue with Meta, the company merely made the post adults-only but concluded that it did not merit removal under its community standards.",
+        "For the particular case that started this investigation, the Board has overturned Meta's decision to leave the video up and has required the company to remove the post.",
+        "Two users originally reported the video to Meta, but the company didn't remove the deepfake.",
+        "The user who appealed to the Board had submitted an appeal to Meta first, but the company still didn't remove the video from Instagram.",
+        "It launched the investigation after it received an appeal from the user who reported an AI-generated video on Instagram showing a woman adjusting her dress, with her underwear visible in a few frames.",
+        "Meta told the Board that at the time the post was originally reported, it had no indications that the individual in the AI deepfake was a real person.",
+        "The person who was depicted in the AI video had already closed her account.",
+        "If the depicted individual herself had reported the video, it would have violated its Adult Sexual Exploitation policy.",
+        "The video was posted by an account claiming to be a news outlet but was actually ran by a user in the Philippines.",
+        "In mid-2025, it called the company's inability to enforce its rules consistently \" incoherent and unjustifiable .\" Back in March, the Board urged Meta to create a new rule for AI content that's separate from its.",
+        "This isn't the first time the Board has been critical of Meta in matters involving AI content and moderation."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/8a00b77ed53a9b45.jpg",
+      "image_url": "https://img4.zergnet.com/8769419_300.jpg",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://aibusiness.com/generative-ai/getty-images-enters-content-deal-with-openai",
+      "title": "Getty Images Enters Into Content Deal With OpenAI",
+      "description": "Getty Images Enters Into Content Deal With OpenAI",
+      "excerpt": "Getty Images Enters Into Content Deal With OpenAI",
+      "summary": "Getty\u2019s deal with OpenAI provided a short-term bounce for the company, with its share price rising dramatically in the hours after the agreement was revealed, although this was against a backdrop of a near-40 % drop in value since the start of the year. In 2023, for example, it initiated legal proceedings in the U.K. Rebellions Aims to Take on Nvidia in AI Inference Chip Battle Choosing Your First Generative AI Use Cases To get started with generative AI, first focus on areas that can improve human experiences with information. But with advances in AI making it ever easier to digitally recreate the editorial and stock images that are the core of Getty\u2019s business, the company is looking for new revenue streams in a rapidly changing. In 2023, for example, it initiated legal proceedings in the U.K.",
+      "what_happened": "Getty\u2019s deal with OpenAI provided a short-term bounce for the company, with its share price rising dramatically in the hours after the agreement was revealed, although this was against a backdrop of a near-40 % drop in value since the start of the year. In 2023, for example, it initiated legal proceedings in the U.K.",
+      "why_matters": "Rebellions Aims to Take on Nvidia in AI Inference Chip Battle Choosing Your First Generative AI Use Cases To get started with generative AI, first focus on areas that can improve human experiences with information. But with advances in AI making it ever easier to digitally recreate the editorial and stock images that are the core of Getty\u2019s business, the company is looking for new revenue streams in a rapidly changing.",
+      "what_to_watch": "In 2023, for example, it initiated legal proceedings in the U.K.",
+      "key_points": [
+        "Getty\u2019s deal with OpenAI provided a short-term bounce for the company, with its share price rising dramatically in the hours after the agreement was revealed, although this was against a backdrop of a near-40 % drop in.",
+        "In 2023, for example, it initiated legal proceedings in the U.K.",
+        "Related: SpaceX Signs Compute Deal With Open Source Model Provider However, while Getty said its images could be used to enhance \u201cthe richness of visual responses,\u201d it is not clear at this stage whether there will be.",
+        "Nor has there been any reference to the possibility of Getty images being used to train OpenAI\u2019s generative models.",
+        "Getty Images Enters Into Content Deal With OpenAI Getty Images Enters Into Content Deal With OpenAI The stock image provider\u2019s stock has dropped sharply over the last year amid the rise of generative AI.",
+        "Getty has long been one of the world\u2019s foremost image libraries, with an archive of millions of pictures and working partnerships with more than 600,000 content creators.",
+        "for 26 years, including spells as editor of leading consumer news website and weekly Auto Express and respected buying guide CarBuyer.",
+        "Rebellions Aims to Take on Nvidia in AI Inference Chip Battle Choosing Your First Generative AI Use Cases To get started with generative AI, first focus on areas that can improve human experiences with information.",
+        "But with advances in AI making it ever easier to digitally recreate the editorial and stock images that are the core of Getty\u2019s business, the company is looking for new revenue streams in a rapidly changing landscape.",
+        "Graham Hope has worked in automotive journalism in the U.K.",
+        "Getty Images agreed to a deal with OpenAI to provide access to its licensed content libraries in ChatGPT\u2019s search and discovery features.",
+        "For example, there has been no mention yet of whether ChatGPT will be able to alter the images supplied."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "what this says about AI demand"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Make the business move concrete: who is involved, what changed, and why now."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/e2b0b8c78a44b256.png",
+      "image_url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltfa3a070f135cd1d7/6a319c7729bcbf0008c72ca5/Cursor.png?width=1280&auto=webp&quality=80&disable=upscale",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/c80e1f4d56bf2e7b.webp",
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/15c5b987a5e6f873.webp"
+      ],
+      "extra_image_urls": [
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltd2b3dadf34e75859/6a397ebf63c5af93ffb05f5e/Artifacts.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltee176ce55650ab85/6a21c0c5563cbbc1f1a60149/Meta.jpg?width=1280&auto=webp&quality=80&disable=upscale"
+      ]
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/telecom-ai-agents-dtw-ignite-2026/",
+      "title": "NVIDIA Brings Trusted, 24/7 AI Agents to Telecom Operations",
+      "description": "At DTW Ignite 2026, NVIDIA and its partners are showcasing the data, models, simulation and secure runtime stack enabling telcos to build more secure agentic workflows across autonomous networks and operations.",
+      "excerpt": "At DTW Ignite 2026, NVIDIA and its partners are showcasing the data, models, simulation and secure runtime stack enabling telcos to build more secure agentic workflows across autonomous networks and operations.",
+      "summary": "At DTW Ignite 2026, NVIDIA and its partners are showcasing the data, models, simulation and secure runtime stack enabling telcos to build more secure agentic workflows across autonomous networks and operations.",
+      "what_happened": "At DTW Ignite 2026, NVIDIA and its partners are showcasing the data, models, simulation and secure runtime stack enabling telcos to build more secure agentic workflows across autonomous networks and operations.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "At DTW Ignite 2026, NVIDIA and its partners are showcasing the data, models, simulation and secure runtime stack enabling telcos to build more secure agentic workflows across autonomous networks and operations."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/386665e0ef295177.jpg",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/telco-tm-forum-1920x1080-1.jpg",
+      "extra_image_paths": [
+        "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/01fff42f3fc4aace.jpg"
+      ],
+      "extra_image_urls": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/06/telco-tm-forum-1920x1080-1-1280x720.jpg"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/blog/huggingface-hub-release-ci",
+      "title": "Shipping huggingface_hub every week with AI, open tools, and a human in the loop",
+      "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "excerpt": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "summary": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "what_happened": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science."
+      ],
+      "rag_angles": [
+        "what changes for developers or users",
+        "what the launch makes easier, faster, cheaper, or more accessible",
+        "what limitation or rollout detail readers should watch next",
+        "why a reader should care in one sentence"
+      ],
+      "rag_rules": [
+        "Lead with the actual product, model, or API name.",
+        "Explain what changed before explaining why it matters.",
+        "Anchor credibility with dates, model names, pricing, availability, benchmarks, regions, or partners when the source provides them.",
+        "Every slide must contain one real idea, not filler."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/3c2e5dab09c5a640.png",
+      "image_url": "https://huggingface.co/blog/assets/huggingface-hub-release-ci/thumbnail.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/top500-green500-supercomputers-isc-2026/",
+      "title": "NVIDIA Powers Over 400 of the World\u2019s 500 Fastest Supercomputers",
+      "description": "NVIDIA technologies power more than 400 of the world\u2019s 500 fastest supercomputers. 81% of the TOP500.",
+      "excerpt": "NVIDIA technologies power more than 400 of the world\u2019s 500 fastest supercomputers. 81% of the TOP500.",
+      "summary": "NVIDIA technologies power more than 400 of the world\u2019s 500 fastest supercomputers.",
+      "what_happened": "NVIDIA technologies power more than 400 of the world\u2019s 500 fastest supercomputers.",
+      "why_matters": "",
+      "what_to_watch": "",
+      "key_points": [
+        "NVIDIA technologies power more than 400 of the world\u2019s 500 fastest supercomputers."
+      ],
+      "rag_angles": [
+        "why a reader should care in one sentence",
+        "what changed in practical terms",
+        "what to watch after the announcement"
+      ],
+      "rag_rules": [
+        "Every slide must contain one real idea, not filler.",
+        "Use short paragraphs and active verbs.",
+        "Remove decorative symbols, cookie text, newsletter footer text, and generic labels.",
+        "Do not use phrases like primary entities, likely themes, game changer, revolutionary, this article discusses, or read more."
+      ],
+      "image_path": "/home/runner/work/ai_news_instagram_publishing_agent/ai_news_instagram_publishing_agent/data/article_assets/22854eecdb436183.png",
+      "image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/06/hpc-corp-blog-isc26-wrap-up-blog-1280x680-5375050.png",
+      "extra_image_paths": [],
+      "extra_image_urls": []
+    }
+  ],
+  "carousel_part": null,
+  "carousel_total_parts": null,
+  "content_slide_count": 7,
+  "has_cta": true,
+  "slides": [
+    "CrowdStrike is running specialized security agents that triage alerts with 98.5% accuracy.",
+    "Nvidia's New Cooling System Cuts Data Center Water Use to Near Zero-But.",
+    "38 of UAE and Saudi Firms Have Agentic AI in Production Highest.",
+    "The Oversight Board says Meta needs to do more to protect regular.",
+    "Getty Images Enters Into Content Deal With OpenAI.",
+    "NVIDIA Brings Trusted 24 7 AI Agents to Telecom Operations.",
+    "FOLLOW @graitech"
+  ]
+}
